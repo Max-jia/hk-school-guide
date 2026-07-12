@@ -27,13 +27,6 @@
   // ===== 小学 适配分 =====
   function fitSchool(school, profile) {
     let score = 0; const reasons = []; const ft = school.finance_type;
-    const label = profile.homeLabel || "所选区";
-    const dist = haversineKm(profile.home, { lat: school.lat, lng: school.lng });
-    if (dist != null) {
-      const maxKm = profile.maxCommuteKm || 8;
-      if (dist > maxKm) reasons.push(`⚠️ 距 ${label} 中心约 ${dist.toFixed(1)} 公里，超出通勤范围`);
-      else { score += 40 * (1 - dist / maxKm); reasons.push(`距 ${label} 中心约 ${dist.toFixed(1)} 公里`); }
-    }
     if (ft === "官立" || ft === "资助") {
       if (profile.net && school.school_net === profile.net) { score += 30; reasons.push(`✅ 在你的校网内（${profile.net} 网），可参加统一派位`); }
       else if (school.school_net && school.school_net !== "不限校网") { score += 10; reasons.push(`不在你校网（${school.school_net} 网），仅"自行分配"可报`); }
