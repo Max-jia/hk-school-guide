@@ -84,6 +84,7 @@
     }
   </style>
 <script src="./assets/lang.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/opencc-js@1.3.1/dist/umd/full.min.js"></script>
 </head>
 <body>
 
@@ -257,6 +258,10 @@ const PS_REPORTS = [
 ];
 
 // ========== 小學 Tab 渲染 ==========
+// 簡體→繁體轉換（使用 OpenCC 完整字典，支援所有簡體字搜尋繁體校名）
+var cn2hk = OpenCC.Converter({ from: 'cn', to: 'hk' });
+function toTC(str) { return cn2hk(str); }
+
 let psFilter = 'all';
 
 function renderPs() {
@@ -267,9 +272,9 @@ function renderPs() {
   let filtered = PS_REPORTS.filter(r => {
     if (psFilter !== 'all' && r.t !== psFilter) return false;
     if (search) {
-      const hay = (r.n + ' ' + r.d + ' ' + r.h).toLowerCase();
-      if (!hay.includes(search)) {
-        const chars = search.replace(/\s/g,'').split('');
+      var q2 = search; var q2tc = toTC(search); var hay = (r.n + ' ' + r.d + ' ' + r.h).toLowerCase(); if (!hay.includes(q2) && q2tc !== q2 && hay.includes(q2tc)) q2 = q2tc;
+      if (!hay.includes(q2)) {
+        const chars = q2.replace(/\s/g,'').split('');
         if (!chars.every(c => hay.includes(c))) return false;
       }
     }
@@ -337,11 +342,9 @@ function renderKg() {
   let filtered = UNIQUE_KG.filter(r => {
     if (tierFilter !== 'all' && r.t !== tierFilter) return false;
     if (search) {
-      const hay = (r.n + ' ' + r.d + ' ' + r.h + ' ' + r.c).toLowerCase();
-      // 拼音模糊：用字符包含匹配
-      if (!hay.includes(search)) {
-        // 嘗試每個字單獨匹配
-        const chars = search.replace(/\s/g,'').split('');
+      var q = search; var qtc = toTC(search); var hay = (r.n + ' ' + r.d + ' ' + r.h + ' ' + r.c).toLowerCase(); if (!hay.includes(q) && qtc !== q && hay.includes(qtc)) q = qtc;
+      if (!hay.includes(q)) {
+        const chars = q.replace(/\s/g,'').split('');
         if (!chars.every(c => hay.includes(c))) return false;
       }
     }
