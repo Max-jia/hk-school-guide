@@ -28,21 +28,21 @@
   function fitSchool(school, profile) {
     let score = 0; const reasons = []; const ft = school.finance_type;
     if (ft === "官立" || ft === "资助") {
-      if (profile.net && school.school_net === profile.net) { score += 30; reasons.push(`✅ 在你的校网内（${profile.net} 网），可参加统一派位`); }
-      else if (school.school_net && school.school_net !== "不限校网") { score += 10; reasons.push(`不在你校网（${school.school_net} 网），仅"自行分配"可报`); }
-      else { score += 15; reasons.push(`校网待确认`); }
-    } else { score += 18; reasons.push(`${ft}·全港自由招生，不受校网限制`); }
+      if (profile.net && school.school_net === profile.net) { score += 45; reasons.push(`✅ 在你的校网内（${profile.net} 网），可参加统一派位`); }
+      else if (school.school_net && school.school_net !== "不限校网") { score += 15; reasons.push(`不在你校网（${school.school_net} 网），仅"自行分配"可报`); }
+      else { score += 20; reasons.push(`校网待确认`); }
+    } else { score += 25; reasons.push(`${ft}·全港自由招生，不受校网限制`); }
     const table = {
-      local: { 官立: 20, 资助: 20, 直资: 12, 私立: 6, 英基: 2 },
-      dss: { 直资: 20, 私立: 12, 资助: 8, 官立: 8, 英基: 4 },
-      international: { 英基: 20, 私立: 16, 直资: 8, 资助: 2, 官立: 2 },
-      any: { 官立: 12, 资助: 12, 直资: 12, 私立: 12, 英基: 12 },
+      local: { 官立: 28, 资助: 28, 直资: 16, 私立: 8, 英基: 2 },
+      dss: { 直资: 28, 私立: 16, 资助: 10, 官立: 10, 英基: 4 },
+      international: { 英基: 28, 私立: 20, 直资: 10, 资助: 2, 官立: 2 },
+      any: { 官立: 16, 资助: 16, 直资: 16, 私立: 16, 英基: 16 },
     }[profile.track || "any"] || {};
     if (table[ft] != null) score += table[ft];
     const b = profile.budget || "any";
-    if (b === "free") { if (ft === "官立" || ft === "资助") { score += 10; reasons.push(`免费（官津）`); } else reasons.push(`💰 收费学校，可能超预算`); }
-    else if (b === "mid") { if (ft === "直资") { score += 10; reasons.push(`直资·学费中等`); } else if (ft === "官立" || ft === "资助") score += 6; }
-    else if (b === "high") score += 8;
+    if (b === "free") { if (ft === "官立" || ft === "资助") { score += 15; reasons.push(`免费（官津）`); } else reasons.push(`💰 收费学校，可能超预算`); }
+    else if (b === "mid") { if (ft === "直资") { score += 15; reasons.push(`直资·学费中等`); } else if (ft === "官立" || ft === "资助") score += 9; }
+    else if (b === "high") score += 12;
 
     // ⑧ 孩子性格配分（8分）：根据学校特征推断氛围，匹配性格偏好
     const pers = profile.personality;
