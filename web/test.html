@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>择校匹配 · 功能测试页（朴素版）</title>
+  <style>
+    /* 说明：这是"朴素测试页"，只为验证功能，不追求好看。正式好看的界面在步骤3做。 */
+    body { font-family: -apple-system, "PingFang SC", sans-serif; max-width: 760px; margin: 20px auto; padding: 0 16px; color: #222; }
+    h1 { font-size: 20px; }
+    .note { background: #fff8e1; border: 1px solid #ffe082; padding: 8px 12px; border-radius: 8px; font-size: 13px; color: #795548; }
+    .form { display: grid; gap: 12px; margin: 16px 0; }
+    label { font-size: 14px; font-weight: 600; }
+    select, input { padding: 6px 8px; font-size: 14px; }
+    button { padding: 10px 16px; font-size: 15px; background: #2f7d6b; color: #fff; border: 0; border-radius: 8px; cursor: pointer; }
+    .card { border: 1px solid #e0e0e0; border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
+    .rank { color: #2f7d6b; font-weight: 700; }
+    .score { float: right; background: #2f7d6b; color: #fff; border-radius: 12px; padding: 2px 10px; font-size: 13px; }
+    .reason { font-size: 13px; color: #555; margin: 3px 0 0 0; }
+  </style>
+</head>
+<body>
+  <h1>🏫 择校匹配 · 功能测试页</h1>
+  <p class="note">这是给你验证"匹配逻辑对不对"的朴素页面，故意不做美化。正式漂亮的界面等你确认设计方向后在步骤3做。语言/精确学费匹配待深字段数据补齐。</p>
+
+  <div class="form">
+    <div><label>① 你家所在校网</label><br /><select id="net"></select></div>
+    <div><label>② 规划路线</label><br />
+      <select id="track">
+        <option value="local">本地路线（考 DSE）</option>
+        <option value="dss">直资路线</option>
+        <option value="international">国际路线</option>
+        <option value="any">还没想好</option>
+      </select>
+    </div>
+    <div><label>③ 学费预算</label><br />
+      <select id="budget">
+        <option value="free">只考虑免费（官津）</option>
+        <option value="mid">可接受中等学费（直资）</option>
+        <option value="high">预算充足（私立/国际都行）</option>
+      </select>
+    </div>
+    <div><label>④ 可接受通勤距离（公里）</label><br /><input id="commute" type="number" value="5" min="1" max="20" /></div>
+    <button onclick="run()">🔍 帮我匹配学校</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="./data/schools.js"></script>
+  <script src="./match.js"></script>
+  <script>
+    // 从学校库里取出所有校网编号，填进下拉框
+    const nets = [...new Set(SCHOOLS.map(s => s.school_net).filter(n => n && /^\d+$/.test(n)))].sort((a,b)=>a-b);
+    const sel = document.getElementById("net");
+    nets.forEach(n => { const o = document.createElement("option"); o.value = n; o.textContent = n + " 校网"; sel.appendChild(o); });
+
+    function run() {
+      const net = sel.value;
+      // 家的坐标：取该校网学校的中心点近似（正式版会用住址精确定位）
+      const inNet = SCHOOLS.filter(s => s.school_net === net);
+      const home = {
+        lat: inNet.reduce((a,s)=>a+s.lat,0)/inNet.length,
+        lng: inNet.reduce((a,s)=>a+s.lng,0)/inNet.length,
+      };
+      const profile = {
+        net, home,
+        track: document.getElementById("track").value,
+        budget: document.getElementById("budget").value,
+        maxCommuteKm: +document.getElementById("commute").value,
+      };
+      const top = Match.rankSchools(SCHOOLS, profile, 12);
+      document.getElementById("results").innerHTML =
+        `<h3>为你匹配的前 12 所：</h3>` + top.map((r,i)=>`
+          <div class="card">
+            <span class="score">${r.score}分</span>
+            <span class="rank">#${i+1}</span> <b>${r.school.name_zh}</b>
+            <span style="color:#888">｜${r.school.finance_type}｜${r.school.district_zh}</span>
+            ${r.reasons.map(x=>`<div class="reason">· ${x}</div>`).join("")}
+          </div>`).join("");
+    }
+  </script>
+</body>
+</html>

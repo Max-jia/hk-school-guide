@@ -1,0 +1,144 @@
+/* report.css — 深度择校报告统一样式 (2026-07 现代升级)
+   气质：干净 · 温暖 · 专业 · 大留白
+   参考：Stripe/Linear/Notion 现代文档设计 */
+
+/* === Hero 标题区（统一模块·按等级配色）=== */
+.report-hero {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+/* S级：暗金 */
+.hero-tier-s { background: linear-gradient(160deg, #1a1a2e 0%, #2d2d3f 40%, #3d3540 100%); }
+.hero-tier-s h1, .hero-tier-s .sub, .hero-tier-s .tier-mega { color: #fff; }
+.hero-tier-s .tier-mega { background: rgba(255,215,0,.15); border: 1px solid rgba(255,215,0,.25); }
+/* A+级：蓝紫 */
+.hero-tier-aplus { background: linear-gradient(160deg, #1a1a3e 0%, #2d2d5e 40%, #3d3560 100%); }
+.hero-tier-aplus h1, .hero-tier-aplus .sub, .hero-tier-aplus .tier-mega { color: #fff; }
+.hero-tier-aplus .tier-mega { background: rgba(147,140,255,.12); border: 1px solid rgba(147,140,255,.2); }
+/* A级：深绿 */
+.hero-tier-a { background: linear-gradient(160deg, #1a2e2a 0%, #1f4a3a 40%, #1f6f5c 100%); }
+.hero-tier-a h1, .hero-tier-a .sub, .hero-tier-a .tier-mega { color: #fff; }
+.hero-tier-a .tier-mega { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.15); }
+/* B级：暖灰 */
+.hero-tier-b { background: linear-gradient(160deg, #2e2a26 0%, #3d3832 40%, #4a4440 100%); }
+.hero-tier-b h1, .hero-tier-b .sub, .hero-tier-b .tier-mega { color: #fff; }
+.hero-tier-b .tier-mega { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); }
+/* 通用 */
+.report-hero .tier-mega {
+  font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 6px; display: inline-block; margin-bottom: 16px;
+}
+.report-hero .hero-title-row { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+.report-hero .hero-title-row h1 {
+  font-family: "Newsreader", serif;
+  font-size: 36px; font-weight: 700; letter-spacing: -0.01em;
+  margin: 0; line-height: 1.2; flex: 0 1 auto;
+}
+.report-hero .sub { font-size: 15px; opacity: .85; }
+
+/* === 简繁切换按钮 === */
+.report-hero .container { position: relative; }
+.lang-switch { display: inline-block; margin-left: 12px; vertical-align: middle; }
+.lang-switch a {
+  display: inline-block; font-size: 12px; font-weight: 600;
+  color: rgba(255,255,255,.75); text-decoration: none;
+  border: 1px solid rgba(255,255,255,.35); border-radius: 4px;
+  padding: 2px 10px; transition: all .15s;
+}
+.lang-switch a:hover { background: rgba(255,255,255,.15); color: #fff; border-color: rgba(255,255,255,.6); }
+
+/* === 正文区 === */
+.report-body { max-width: 780px; margin: 0 auto; padding: 40px 20px 72px; }
+
+/* === 章节 === */
+.chapter { margin: 48px 0 0; padding-top: 36px; border-top: 1px solid #e7e3d9; }
+.chapter:first-of-type { border-top: none; margin-top: 0; }
+.chapter h2 {
+  font-family: "Newsreader", serif;
+  font-size: 24px; font-weight: 600; letter-spacing: -0.01em;
+  margin: 0 0 20px; display: flex; align-items: center; gap: 12px; color: #22302b;
+}
+.chapter h2 .num {
+  background: #1f6f5c; color: #fff; border-radius: 8px;
+  width: 28px; height: 28px; display: inline-flex; align-items: center;
+  justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0;
+}
+.chapter h3 { font-size: 17px; font-weight: 600; margin: 24px 0 10px; color: #22302b; }
+
+/* === 表格 === */
+table.dt {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  margin: 16px 0 20px; font-size: 14px; border-radius: 10px;
+  overflow: hidden; border: 1px solid #e7e3d9;
+}
+table.dt td, table.dt th { padding: 12px 16px; text-align: left; line-height: 1.55; }
+table.dt th {
+  background: #f2f0e9; font-weight: 600; width: 140px;
+  color: #6b7770; font-size: 13px; letter-spacing: 0.02em;
+}
+table.dt td { background: #fff; border-top: 1px solid #e7e3d9; }
+table.dt tr:first-child td { border-top: none; }
+
+/* === 提示框 === */
+.callout {
+  background: #fff; border: 1px solid #e7e3d9;
+  border-left: 3px solid #1f6f5c; padding: 16px 20px;
+  border-radius: 0 10px 10px 0; margin: 20px 0; font-size: 14.5px;
+  line-height: 1.65;
+}
+.callout.warn {
+  background: #fbeee1; border-left-color: #e0894b; border-color: #f2d7bf;
+}
+.callout.warn strong { color: #a0522d; }
+
+/* === 专家标签 === */
+.expert-tag {
+  display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.03em;
+  padding: 2px 10px; border-radius: 6px; background: #ede7f6; color: #5b3fa0;
+  margin-left: 8px; vertical-align: middle; text-transform: uppercase;
+}
+
+/* === 雷达图区 === */
+.radar-wrap { display: flex; gap: 56px; align-items: center; flex-wrap: wrap; margin: 20px 0; }
+.radar-svg { flex-shrink: 0; }
+.radar-legend { display: flex; flex-direction: column; gap: 10px; font-size: 14px; }
+.radar-legend .rleg-dot { width: 10px; height: 10px; border-radius: 3px; }
+.radar-legend .rleg-val { font-weight: 700; margin-left: auto; }
+
+/* === 优缺点对比 === */
+.pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+.pro-box {
+  background: #e6f0ec; border-radius: 10px; padding: 18px; border: 1px solid #cfe4dd;
+}
+.con-box {
+  background: #fbeee1; border-radius: 10px; padding: 18px; border: 1px solid #f2d7bf;
+}
+.pro-box h4, .con-box h4 { margin: 0 0 10px; font-size: 15px; }
+.pro-box li, .con-box li { margin: 6px 0; font-size: 14px; line-height: 1.55; }
+
+/* === 来源标注 === */
+.source-note { font-size: 13px; color: #6b7770; margin: 6px 0; line-height: 1.6; }
+
+/* === 行动号召底部 === */
+.cta-banner {
+  background: linear-gradient(135deg, #1f6f5c, #2a9d8f); color: #fff;
+  border-radius: 14px; padding: 32px 28px; margin: 48px 0 0; text-align: center;
+}
+
+/* === 响应式 === */
+@media (max-width: 768px) {
+  .report-body { padding: 28px 16px 48px; }
+  table.dt th { width: 110px; }
+}
+@media (max-width: 600px) {
+  .pros-cons { grid-template-columns: 1fr; }
+  .report-hero h1 { font-size: 26px; }
+  .report-hero { padding: 40px 0 28px; }
+  .report-body { padding: 20px 12px 36px; }
+  .report-hero .tier-mega { font-size: 11px; padding: 4px 10px; }
+  table.dt, table.dt td, table.dt th { font-size: 13px; }
+  table.dt th { width: 90px; }
+  .radar-wrap { gap: 24px; justify-content: center; }
+  .chapter { margin: 32px 0 0; padding-top: 24px; }
+  .chapter h2 { font-size: 19px; }
+}

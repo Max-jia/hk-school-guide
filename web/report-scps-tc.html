@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聖嘉勒小學 · 深度擇校報告 | 港校指南</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/report.css" />
+  <style>
+    .score-bar { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+    .score-bar .bar-label { width: 100px; font-size: 13px; color: #6b7770; }
+    .score-bar .bar-track { flex: 1; height: 8px; background: #e7e3d9; border-radius: 4px; overflow: hidden; }
+    .score-bar .bar-fill { height: 100%; border-radius: 4px; background: #2d7a5f; }
+    .score-bar .bar-val { font-size: 13px; font-weight: 700; width: 36px; text-align: right; color: #22302b; }
+    .cal-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #e0f0e8; color: #1b6f4a; margin-left: 6px; vertical-align: middle; }
+    .decision-tree { background: #f4faf6; border-radius: 12px; padding: 20px 24px; margin: 16px 0; font-size: 14px; line-height: 1.8; }
+    .decision-tree .dt-q { font-weight: 700; color: #1f6f5c; }
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    .pro-box { background: #e6f0ec; border-radius: 10px; padding: 16px; }
+    .con-box { background: #fbeee1; border-radius: 10px; padding: 16px; }
+    .pro-box h4, .con-box h4 { margin: 0 0 8px; font-size: 15px; }
+    .pro-box ul, .con-box ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; }
+    .risk-list { background: #fef8ee; border-left: 4px solid #e6a817; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 12px 0; font-size: 14px; }
+    .risk-list li { margin: 6px 0; }
+    @media(max-width:600px){ .pros-cons{ grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header class="report-hero hero-tier-a">
+  <div class="container">
+    <div class="tier-mega">A 級 · 私立女校 · 中西區</div>
+    <div class="hero-title-row"><h1>聖嘉勒小學 深度擇校報告</h1><div class="lang-switch"><a href="./report-scps.html">简</a></div></div>
+    <p class="sub">St. Clare's Primary School · 中西區 · 天主教 · 1927年創校 · 直屬聖嘉勒女書院(Band 1A)</p>
+</div>
+
+</header>
+<main class="report-body">
+<!-- ===== 0 數據可靠性聲明 ===== -->
+<div class="callout warn" style="margin-bottom:24px;background:#fff8e8;border-left-color:#e6a817">
+  <strong>本報告數據可靠性聲明</strong><br />
+  本報告所有事實性數據已儘可能經過多方覈實，並按覈實程度標註：<br />
+  · <strong>✅ 多方覈實</strong>：政府公開數據(CHSC/EDB)或多個獨立來源交叉確認<br />
+  · <strong>🟡 單一可靠來源</strong>：正規媒體報道或官方信息，未經第二個來源交叉驗證<br />
+  · <strong>🔴 有限來源·僅供參考</strong>：家長討論區/單一匿名帖等，可信度有限<br />
+  · <strong>💬 主觀分析</strong>：專家觀點/分析，非事實陳述<br />
+  所有客觀數據一經發現更準確的信息源將立即更新。主觀分析部分不構成入學建議。
+</div>
+<!-- ===== 1 學校定位與核心競爭力 ===== -->
+<section class="chapter">
+  <h2><span class="num">1</span>學校定位與核心競爭力<span class="cal-badge">專家分析</span></h2>
+  <table class="dt">
+    <tr><th>全名</th><td>聖嘉勒小學（St. Clare's Primary School）✅ CHSC_2025</td></tr>
+    <tr><th>地區 / 校網</th><td>中西區 · 私立學校不設校網限制 · 香港般鹹道光景臺3-6號 ✅ CHSC_2025</td></tr>
+    <tr><th>等級</th><td>A 級 · 港島傳統英文女校 · 中西區私立女校代表 ✅ 本平臺 primary_tiers_v9.json</td></tr>
+    <tr><th>類型 / 性別</th><td>私立 · 全日制 · 女校 · 天主教 · 辦學團體：天神之後傳教女修會 ✅ CHSC_2025</td></tr>
+    <tr><th>學費</th><td>2025/26學年：$51,000/年（分十期繳交）· 家長教師會費 $90/年 ✅ CHSC_2025 · 🟡 多個教育網站確認</td></tr>
+    <tr><th>班級結構</th><td>全校 18 班（小一至小六各 3 班）· 每班約 25 人 · 不設精英班 ✅ CHSC_2025 · 🟡 Kidemy / SOSOMAMA</td></tr>
+    <tr><th>師生比 / 教師人數</th><td>1:1.7（班師比）· 全校教學人員約 31 人 ✅ schools_primary.json</td></tr>
+    <tr><th>教學語言</th><td>英文爲主（數學、常識等以英文授課）+ 中文（粵語）、普通話、法語科 ✅ CHSC_2025 · 🟡 多個用家確認</td></tr>
+    <tr><th>直屬中學</th><td>聖嘉勒女書院（Band 1A · 資助女校 · 保留最多 85% 學位）✅ 本平臺 sec_school_banding_v2.json</td></tr>
+    <tr><th>校訓</th><td>真理必勝（Veritas Vincit）✅ 校方官網</td></tr>
+    <tr><th>創校年份</th><td>1927 年（天神之後傳教女修會創辦 · 近百年曆史）✅ CHSC_2025</td></tr>
+    <tr><th>校舍面積</th><td>約 2,509 平方米（小型校園 · 麻雀雖小五臟俱全）✅ CHSC_2025 · 🟡 schooland.hk</td></tr>
+  </table>
+  <h3>四因子評級體系解讀</h3>
+  <div class="callout">
+    <strong>💬 聖嘉勒小學四因子評分</strong><br />
+    <div class="score-bar"><span class="bar-label">錨點分（升學保障）</span><span class="bar-track"><span class="bar-fill" style="width:72%"></span></span><span class="bar-val">72</span></div>
+    <div class="score-bar"><span class="bar-label">共識分（口碑共識）</span><span class="bar-track"><span class="bar-fill" style="width:50%"></span></span><span class="bar-val">5</span></div>
+    <div class="score-bar"><span class="bar-label">競爭分（入讀難度）</span><span class="bar-track"><span class="bar-fill" style="width:60%"></span></span><span class="bar-val">60</span></div>
+    <div class="score-bar"><span class="bar-label">世襲分（校友網絡）</span><span class="bar-track"><span class="bar-fill" style="width:18%"></span></span><span class="bar-val">18</span></div>
+    總分：<strong>57</strong> · 等級：<strong>A</strong>（數據來源：本平臺 primary_tiers_v9.json）<br /><br />
+    <strong>解讀</strong>：錨點分 72 是聖嘉勒最核心的競爭力——直屬 Band 1A 的聖嘉勒女書院，升中路徑清晰且有保障。與同區同級別學校相比，72 分的錨點反映了一條穩健的升學通道。共識分 5（中等）說明家長圈的認可度穩定但不如 A+ 級學校廣泛，存在一定的口碑分化。競爭分 60 適中偏高，反映私立學校雖不受校網限制、理論上全港可報，但品牌效應和傳統女校光環仍帶來一定競爭。世襲分 18（偏低）說明校友子弟佔比有限，新申請家庭的機會相對較大。
+  </div>
+  <div class="callout">
+    <strong>💬 專家定位分析</strong><br />
+    聖嘉勒小學是香港<strong>港島區最具代表性的傳統英文女子私立小學之一</strong>，定位可概括爲：<strong>「穩健型精英女校」</strong>——不是最頂尖的學術機器，但提供了一條從 6 歲到 18 歲一氣呵成的英文教育通道。<br /><br />
+    它的核心競爭力在於<strong>三個疊加優勢</strong>：第一，英文教學語境極強——除中文、視藝、體育和法語外，所有科目均以英語授課，數學和常識用的是英文課本。這種接近純英小的設置，在同級私立女校中並不多見。據用家反映，小二學生已能閱讀 Diary of a Wimpy Kid 和 Harry Potter。🟡 BK 家長分享<br /><br />
+    第二，直屬中學聖嘉勒女書院的 Band 1A 實力在近年穩步提升。雖然在「神校」圈中不算最耀眼，但其 DSE 表現持續穩定，且校風純樸。直屬關係意味著小學部學生在中學統一派位階段，最多可獲保留 85% 的學位——只要校內成績保持 Band 1 或 Band 2 範圍，升中幾乎無憂。這種「進可攻（外闖 BPS、張祝珊等 B1A）、退可守（直升直屬中學）」的格局，是許多家長選擇聖嘉勒的核心原因。<br /><br />
+    第三，近百年曆史（1927 年創校至今逾 97 年）積累了深厚的校友網絡和傳統。從般鹹道光景臺的半山校舍望出去，是香港島獨有的寧靜——對於希望女兒在「全人教育」而非「補習競賽」環境中成長的家庭，這份沉穩的氣質本身就是價值。🔴 BK 家長評價：聖嘉勒出來的女孩「不一定成績最好，但品行一定比某些 Band 1 學校出來的更好」。<br /><br />
+    但必須誠實指出：這所學校<strong>不適合追求頂尖學術競賽的家庭</strong>。如果用家期望女兒在小六後外闖 DGS、SPCC 等神校，僅靠學校課程是不夠的，需要大量校外補充。而學校偏小的校舍（2,509 平方米）和半山位置，意味著體育設施和交通便利性方面存在先天限制。
+  </div>
+  <h3>五維競爭力雷達圖</h3>
+  <div class="radar-wrap">
+    <svg class="radar-svg" overflow="visible" width="260" height="260" viewBox="0 0 240 240">
+      <!-- Grid lines -->
+      <polygon points="120.0,90.3 148.2,110.8 137.5,144.0 102.5,144.0 91.8,110.8" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <polygon points="120.0,59.7 177.3,101.4 155.4,168.8 84.6,168.8 62.7,101.4" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <polygon points="120.0,30.0 205.6,92.2 172.9,192.8 67.1,192.8 34.4,92.2" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <!-- Spokes -->
+      <line x1="120" y1="120" x2="120.0" y2="30.0" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="205.6" y2="92.2" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="172.9" y2="192.8" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="67.1" y2="192.8" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="34.4" y2="92.2" stroke="#e7e3d9" stroke-width="0.8"/>
+      <!-- Filled polygon (A grade profile) -->
+      <polygon points="120.0,48.0 193.8,96.5 161.5,178.3 82.2,174.6 46.2,96.5" fill="rgba(45,122,95,0.15)" stroke="#2d7a5f" stroke-width="2.5"/>
+      <!-- Dots -->
+      <circle cx="120.0" cy="48.0" r="4.5" fill="#2d7a5f"/>
+      <circle cx="193.8" cy="96.5" r="4.5" fill="#2d7a5f"/>
+      <circle cx="161.5" cy="178.3" r="4.5" fill="#2d7a5f"/>
+      <circle cx="82.2" cy="174.6" r="4.5" fill="#2d7a5f"/>
+      <circle cx="46.2" cy="96.5" r="4.5" fill="#2d7a5f"/>
+      <!-- Labels -->
+      <text x="120" y="16" text-anchor="middle" font-size="12" fill="#6b7770">學術實力</text>
+      <text x="223" y="91" text-anchor="start" font-size="12" fill="#6b7770">升學保障</text>
+      <text x="184" y="214" text-anchor="middle" font-size="12" fill="#6b7770">校風傳統</text>
+      <text x="56" y="214" text-anchor="middle" font-size="12" fill="#6b7770">設施資源</text>
+      <text x="10" y="91" text-anchor="end" font-size="12" fill="#6b7770">可負擔性</text>
+    </svg>
+    <div class="radar-legend">
+      <div class="rleg-item"><span class="rleg-dot" style="background:#2d7a5f"></span>學術實力 <span class="rleg-val">8.0</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#2d7a5f"></span>升學保障 <span class="rleg-val">8.5</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#2d7a5f"></span>校風傳統 <span class="rleg-val">8.5</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#2d7a5f"></span>設施資源 <span class="rleg-val">6.5</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#2d7a5f"></span>可負擔性 <span class="rleg-val">7.0</span></div>
+    </div>
+  </div>
+  <h3>適合 / 不適合的孩子類型</h3>
+  <div class="pros-cons">
+    <div class="pro-box">
+      <h4>適 合</h4>
+      <ul>
+        <li>女孩，家庭目標走本地 DSE 升學路線</li>
+        <li>重視「12 年一貫」的升學保障——不想小六再經歷選校煎熬</li>
+        <li>家住港島（中西區/南區/東區），通勤時間可接受</li>
+        <li>孩子性格文靜、聽話、坐得定——傳統女校對課堂紀律有要求</li>
+        <li>家長最看重英語能力——學校接近純英小環境，數學常識皆英文</li>
+        <li>認同天主教價值觀，重視品德教育和修養</li>
+        <li>預算中等——年費約 $51,000，比同級直資/國際學校低很多</li>
+      </ul>
+    </div>
+    <div class="con-box">
+      <h4>不適合</h4>
+      <ul>
+        <li>目標國際課程（IB/A-Level）或海外升學——直屬中學走 DSE 路線</li>
+        <li>孩子性格活潑好動、需要大量活動空間——校舍偏小，體育設施有限</li>
+        <li>期望「純英語母語環境」——雖然是英小，但校內同學之間主要用粵語</li>
+        <li>家住九龍/新界且不願搬遷——來回通勤可能長達 2 小時</li>
+        <li>家長期望女兒小六後外闖頂級神校（DGS/SPCC）——僅靠學校課程遠遠不夠</li>
+        <li>對中文/普通話水平有高要求——作爲英文小學，中文科相對偏弱</li>
+      </ul>
+    </div>
+  </div>
+  <p class="source-note">📎 來源：CHSC_2025 · 本平臺 tier 數據庫 · 教育王國(BK)多帖交叉驗證 · 校方官網 · smartnative.hk · sosomama.com · kidemy.hk · schooland.hk</p>
+</section>
+<!-- ===== 2 教學深度解讀 ===== -->
+<section class="chapter">
+  <h2><span class="num">2</span>教學深度解讀<span class="cal-badge">專家分析</span></h2>
+  <h3>課程體系</h3>
+  <p>聖嘉勒小學採用香港本地課程，以<strong>英語授課爲主、中英並重</strong>爲方針。除了中文、視覺藝術、體育和法語科外，所有科目（包括數學、常識）均以英文課本授課。🟡 CHSC_2025 · BK 多帖用家確認</p>
+  <p>學校額外開設<strong>法語科</strong>（每週 1-2 節），分數不計入總成績，目的是讓學生接觸第三語言而不增加考試壓力。課程另一特色是<strong>跨學科專題研習</strong>，鼓勵學生融會貫通。學校每年舉辦中國文化節、國際日、挑戰日、數學天地等活動，豐富學生視野。🔴 BK 家長分享</p>
+  <p>閱讀文化是學校的重點項目：設有早讀時段、閱讀分享會、<strong>閱讀獎勵計劃（Reading Award Programme）</strong>、<strong>閱讀夥伴（Reading Buddies）</strong>——由中學部學生帶領小學生閱讀，以及<strong>英語大使（English Ambassadors）</strong>計劃。這些安排營造了濃厚的英語閱讀氛圍，據用家反映小二學生已能獨立閱讀 Harry Potter 級別的英文小說。🔴 BK 用家分享</p>
+  <h3>評估制度</h3>
+  <p>全年設<strong>2 次測驗 + 2 次考試</strong>（小一至小六劃一制度）。小一上學期以多元化進展性評估代替部分筆試。🟡 CHSC_2025 · smartnative.hk</p>
+  <p>多個 BK 用家反映：學校「教咩考咩，出卷唔算深，比較 straightforward」，不會刻意出超綱題目刁難學生。但這也意味著——<strong>如果家長希望孩子在校外競爭（如插班他校、考直資中學），學校課程的深度可能不足以應付</strong>。🔴 BK 多帖交叉驗證</p>
+  <h3>師資分析</h3>
+  <p>全校教學人員約 31 人，班師比約 1:1.7。這是關鍵數據——<strong>每班約 25 人的規模配上約 1.7 位教師</strong>，意味著每班的教學資源投入屬中等偏上水平。與一些超大型學校（每班 40+ 人）相比，聖嘉勒的班級規模讓教師有更多空間進行個別關顧。🟡 schools_primary.json · CHSC_2025</p>
+  <p>💬 但需要指出：根據 BK 用家反映，教師質素存在一定分化——「大部分有愛心，但個別比較嚴厲、缺乏耐性」。這在傳統天主教女校中不算罕見，但家長需要有心理準備：學校對操行和紀律的要求嚴格，老師對學生的態度可能比活動教學型學校更爲嚴肅。</p>
+  <h3>語言環境詳解</h3>
+  <p>聖嘉勒的語言環境是其最強賣點之一。數學、常識均用英文課本和英文授課，這意味著學生每天接觸英語的時間遠超一般中英文小學。但必須澄清：<strong>它不是「純英小」</strong>——中文科用粵語教授，普通話獨立成科，學生之間的日常交流仍以粵語爲主。🔴 BK 用家確認</p>
+  <p>值得留意的是：多個用家反映<strong>中文和普通話水平相對偏弱</strong>，是「需要家長額外安排補習」的科目。這在英文小學中是普遍現象，對於計劃未來走 DSE 路線（中文科爲必修核心科）的家庭，需要提前規劃。</p>
+  <h3>校舍與設施</h3>
+  <p>校舍面積約 2,509 平方米，屬<strong>小型校園</strong>。設施包括：18 個標準課室、禮堂、操場、圖書館、音樂室、宗教室、輔導室、會議室、醫療室和小聖堂。校舍於 1967 年完成擴建，距今已近 60 年。✅ CHSC_2025 · 🟡 schooland.hk</p>
+  <p>基於半山位置，校園擁有獨特的<strong>半山海景視野</strong>——用家形容「一出課室走廊個半山海景真繫好靚」。但小型校舍也意味著體育設施有限（只有一個操場），對運動型學生的支援較弱。🔴 BK 用家分享</p>
+  <h3>⚠️ 教學侷限（誠實指出）</h3>
+  <ol>
+    <li><strong>中文科偏弱是結構性問題</strong>：作爲英文小學，中文課時和深度明顯不及中英文並重的小學。多位 BK 用家一致反映中文和普通話需要額外補習。這對 DSE 路線的學生是潛在風險——DSE 中文科是必修核心科，小學階段基礎不牢固，中學追趕成本高。🔴 BK 多帖確認</li>
+    <li><strong>課程深度不足以支撐「外闖」</strong>：學校採取「教咩考咩」方針，不教快、不教深。對於希望小六後考入 DGS、SPCC 等頂級中學的學生，僅靠校內課程遠不夠——需要家庭自行安排大量校外補充。🔴 BK 多帖在用家比較討論中反覆提及</li>
+    <li><strong>校舍老化與空間限制</strong>：2,509 平方米的小型校園（對比喇沙小學 15,974 平方米）限制了體育、藝術和 STEM 設施的發展空間。1967 年擴建的校舍在現代教育設施標準下顯得老舊。✅ CHSC_2025 · 💬 本平臺分析</li>
+    <li><strong>較嚴格的紀律風格未必適合所有孩子</strong>：有用家明確指出「聖嘉勒好嚴，不適合活潑性格小朋友」「老師算不上有愛心或耐性」。對於需要大量鼓勵和情感支持的孩子，傳統天主教女校的管教風格可能產生適應困難。🔴 BK 用家分享</li>
+  </ol>
+  <p class="source-note">📎 來源：CHSC_2025 · 教育王國(BK)多帖交叉驗證 · 校方官網 · smartnative.hk · schooland.hk · kidemy.hk</p>
+</section>
+<!-- ===== 3 升中通路全景 ===== -->
+<section class="chapter">
+  <h2><span class="num">3</span>升中通路全景<span class="cal-badge">深度分析</span></h2>
+  <h3>直屬中學：聖嘉勒女書院</h3>
+  <table class="dt">
+    <tr><th>中學名稱</th><td>聖嘉勒女書院（St. Clare's Girls' School）</td></tr>
+    <tr><th>關係</th><td>直屬小學（非一條龍）✅ CHSC_2025</td></tr>
+    <tr><th>Banding</th><td>Band 1A（中西區頂級女校之一，與聖士提反女子中學、英華女學校同列港島 Band 1A）✅ 本平臺 sec_school_banding_v2.json</td></tr>
+    <tr><th>類型</th><td>資助 · 女校 · 天主教 ✅ EDB</td></tr>
+    <tr><th>直屬學位保留</th><td>中學統一派位階段，最多保留 85% 學位給直屬小學 ✅ EDB 政策</td></tr>
+    <tr><th>升讀條件</th><td>校內成績位列 Band 1 或 Band 2 的學生，基本上可獲直屬中學取錄 · Band 3 學生未必獲保證 🟡 一般直屬機制慣例</td></tr>
+    <tr><th>DSE 表現</th><td>近年中學文憑試成績穩步上升，屬港島區穩健 Band 1A · 英語科表現尤其突出 🟡 BK 中學討論區 · TOPick</td></tr>
+    <tr><th>地址</th><td>香港摩星嶺道 50 號（距小學部約 15-20 分鐘車程）🟡 校方官網</td></tr>
+  </table>
+  <h3>近年升中派位表現</h3>
+  <p><strong>2023 年官方數據</strong>：91% 畢業生升讀英文中學。約 57% 學生直升直屬中學聖嘉勒女書院，約 43% 選擇外闖。在外闖學生中，約 34% 考入其他 Band 1 中學，包括庇理羅士女子中學（BPS, Band 1A）、張祝珊英文中學（Band 1A）、聖馬可中學（Band 1A）、嘉諾撒聖心書院（Band 1A）等。🟡 BK 升中討論區多帖交叉 · smartnative.hk</p>
+  <p>這個派位格局印證了家長圈對聖嘉勒的核心評價：<strong>「進可攻、退可守」</strong>。成績優秀的學生可以外闖更頂尖的中學，而成績中等的學生有一所穩健的 Band 1A 直屬中學作爲安全網。與完全沒有直屬中學的私立小學（如九龍塘學校小學部）相比，這是一個巨大的心理和策略優勢。</p>
+  <h3>聖嘉勒女書院 vs 其他港島 Band 1A 女校</h3>
+  <p>💬 在港島 Band 1A 女校羣中，聖嘉勒女書院屬於「穩健型」而非「神級」——它的 DSE 成績不及庇理羅士（BPS）或嘉諾撒聖心書院耀眼，但校風純樸、壓力適中，適合不想將孩子放入極端競爭環境的家庭。對於從聖嘉勒小學升上的學生來說，中學環境延續了小學的傳統和價值觀，過渡自然。</p>
+  <h3>⚠️ 升中風險提示（誠實說明）</h3>
+  <div class="risk-list">
+    <ol>
+      <li><strong>校方未公開近年完整的升中派位詳細名單</strong>：2023 年之後的具體派位數字（各中學取錄人數）未能從公開渠道獲取。以上 91% 英中比率和約 43% 外闖率來自 2022-2024 年度的綜合數據，更近期的數據有待校方更新。家長在參考時需留意數據時效性。🔴 本平臺查證——校方官網只發布摘要，未公開完整名單。</li>
+      <li><strong>直屬關係 ≠ 100% 保證</strong>：直屬中學最多保留 85% 學位給直屬小學，但若學生校內成績列爲 Band 3，即使有直屬關係也未必能獲派。此外，近年聖嘉勒女書院的受歡迎程度上升，Band 1A 地位日益鞏固，對直屬小學學生的學業要求可能隨之提高。💬 本平臺分析</li>
+      <li><strong>中西區校網的雙面性</strong>：中西區對 Band 1 女生而言是全港最強校網之一（BPS、聖士提反女子、英華女學校、聖心等），但這也意味著區內競爭異常激烈。如果學生選擇不直升而參加統一派位，同區 Band 1A 女校的學額競爭極大。💬 本平臺分析</li>
+    </ol>
+  </div>
+  <p class="source-note">📎 來源：本平臺 sec_school_banding_v2.json · CHSC_2025 · EDB 直屬機制 · BK 升中討論區 · smartnative.hk · 校方官網</p>
+</section>
+<!-- ===== 4 小一入讀攻略 ===== -->
+<section class="chapter">
+  <h2><span class="num">4</span>小一入讀攻略<span class="cal-badge">實戰指南</span></h2>
+  <h3>錄取難度評估</h3>
+  <p>💬 聖嘉勒小學的入學競爭屬於<strong>「中等偏高」</strong>級別。作爲私立學校，它不受校網限制，全港均可申請，理論上競爭範圍更廣。但與直私「神校」（如 DGJS、SPCCPS）相比，聖嘉勒的競爭壓力明顯較低——主要原因有三：第一，它是女校，申請池縮小一半；第二，$51,000 的年費雖不算高，但仍篩走了一部分預算敏感的家庭；第三，學校風格明確（傳統、嚴謹、天主教），家長自我篩選效應顯著。</p>
+  <h3>2026-2027 小一入學時間線</h3>
+  <table class="dt">
+    <tr><th>申請遞交</th><td>2025 年 9 月 13 日至 9 月 26 日（親身交表，不接受郵寄）🟡 smartnative.hk · 校方官網</td></tr>
+    <tr><th>面試日期</th><td>2025 年 10 月 4 日（星期六）🟡 校方官網</td></tr>
+    <tr><th>放榜</th><td>2025 年 11 月 3 日（郵寄通知）🟡 校方官網</td></tr>
+    <tr><th>申請資格</th><td>2019 年 9 月 1 日至 2020 年 12 月 31 日出生的女孩 🟡 校方官網</td></tr>
+    <tr><th>報名費</th><td>$100（現金，不設找續）🟡 校方官網</td></tr>
+    <tr><th>所需文件</th><td>申請表、出生證明書/身份證副本、領洗紙（如有）、K1-K2 成績表、最多 2 頁補充資料 🟡 校方官網</td></tr>
+  </table>
+  <div class="callout warn">
+    <strong>⚠️ 重要提醒</strong><br />
+    作爲私立小學，聖嘉勒的收生<strong>獨立於政府小一派位機制</strong>。這意味著：<br />
+    1. 家長可以同時申請聖嘉勒和參加政府自行分配/統一派位（兩條平行線）<br />
+    2. 但一旦接受聖嘉勒的學位並註冊，等同放棄政府派位資格<br />
+    3. 學校有附屬幼稚園（聖嘉勒幼稚園），但幼稚園學生<strong>並不保證直升小學</strong>，仍需通過小一面試
+  </div>
+  <h3>面試拆解</h3>
+  <p>🟡 據家長分享及教育資訊平臺綜合，聖嘉勒小一面試有以下特點：</p>
+  <table class="dt">
+    <tr><th>面試形式</th><td>所有申請者均獲邀面試 · 以學生母語進行（廣東話/英語/普通話）· 遲到不設補時</td></tr>
+    <tr><th>核心考察維度</th><td>英語閱讀及口語能力 · 基本認知及常識應對 · 禮儀及行爲規範 · 專注力和跟從指令能力</td></tr>
+    <tr><th>常見環節</th><td>英文圖書閱讀及看圖說話（Picture Talk）· 基本中英文對答 · 小組遊戲/互動觀察 · 簡單生活常識問答</td></tr>
+    <tr><th>家長角色</th><td>據 BK 用家反映，面試以小朋友爲主，家長不宜過度主導或搶答 · 部分年份設有簡短家長面談環節</td></tr>
+    <tr><th>關鍵失分位</th><td>只背答案缺乏延伸（如不懂說 Because.../For example...）· Picture Talk 見圖講圖不做推論 · 禮儀不足（眼神接觸、輪候、致謝）· 未能展示基本英語溝通能力</td></tr>
+  </table>
+  <h3>💬 提升錄取概率的實用建議（≥3條）</h3>
+  <div class="callout">
+    <strong>策略一：英語閱讀能力是核心競爭力</strong><br />
+    聖嘉勒極爲重視閱讀文化（Reading Award Programme / Reading Buddies / English Ambassadors）。面試中的英語閱讀和看圖說話環節往往是篩選關鍵。建議在 K2 下學期開始，讓孩子每天進行 15-20 分鐘的英文繪本閱讀，重點訓練「觀察→描述→推論→連結生活」的思維鏈，而非單純認字。能自主完成 45-60 秒的英文短講（有 projection、intonation、eye contact）將顯著加分。
+  </div>
+  <div class="callout">
+    <strong>策略二：禮儀和行爲規範是隱形關卡</strong><br />
+    作爲傳統天主教女校，聖嘉勒對學生的品行要求高於一般學校。面試中的禮儀表現——準時、眼神接觸、輪候時的耐心、進出時的打招呼和致謝、離開時整理座位——都是評分的一部分。這些細節無法臨時抱佛腳，需要在日常生活中養成習慣。建議在面試前 3-6 個月開始有意識地訓練。
+  </div>
+  <div class="callout">
+    <strong>策略三：善用最多 2 頁補充資料</strong><br />
+    申請時可提交最多 2 頁補充資料。與其堆砌證書，不如精選能展示孩子特質的內容——特別是與閱讀、英語、音樂相關的表現（學校重視音樂，有絃樂團和合唱團）。如有天主教領洗紙，務必提交——雖然不是決定性因素，但在同等條件下可能成爲 tiebreaker。
+  </div>
+  <div class="callout">
+    <strong>策略四：瞭解學校風格，確保真誠匹配</strong><br />
+    面試官通常能快速判斷孩子和家庭的價值觀是否與學校匹配。如果家庭追求活動教學、自由探索的風格，面試中可能不經意流露出與學校傳統價值觀的不協調。建議在面試前深入瞭解學校的天主教背景和四樞德（智、義、勇、節）理念，真誠地表達對品格教育的重視。
+  </div>
+  <p class="source-note">📎 來源：BK 家長面試分享多帖 · smartnative.hk 面試攻略 · TOPick 學校檔案 · sosomama.com · kidemy.hk</p>
+</section>
+<!-- ===== 5 插班與叩門攻略 ===== -->
+<section class="chapter">
+  <h2><span class="num">5</span>插班與叩門攻略<span class="cal-badge">實戰指南</span></h2>
+  <h3>小二至小五插班</h3>
+  <p>聖嘉勒小學的插班機制相對開放——<strong>小二至小五全年接受申請</strong>（郵寄遞交），這在香港私立小學中屬於較友好的安排。🟡 校方官網 · sosomama.com</p>
+  <h4>申請流程</h4>
+  <table class="dt">
+    <tr><th>申請時間</th><td>全年接受（建議每年 4-6 月提交，以便銜接新學年）</td></tr>
+    <tr><th>申請方式</th><td>郵寄申請（非親身遞交）</td></tr>
+    <tr><th>所需文件</th><td>申請表、身份證明副本、所有學校成績表副本、領洗紙（如有）、推薦信（如有）</td></tr>
+    <tr><th>筆試內容</th><td>中、英、數三科（程度按申請年級而定）🟡 BK 家長分享</td></tr>
+    <tr><th>面試</th><td>筆試通過後獲邀 · 個別通知日期 🟡 校方官網</td></tr>
+    <tr><th>取錄標準</th><td>綜合學業成績、入學考試及面試表現 🟡 校方官網</td></tr>
+  </table>
+  <h3>插班機會分析</h3>
+  <p>💬 每級 3 班、每班約 25 人的結構，意味著全年級約 75 人。插班學額主要來自兩個來源：學生轉校（移民/轉往國際學校/插班他校）產生的空缺，以及個別年級因退學而釋放的零星名額。根據 BK 家長圈的觀察，<strong>小二至小三的插班機會相對較大</strong>（部分家庭在小一後評估孩子是否適應傳統女校環境而選擇離開），小四及以上則名額稀少。🔴 BK 多帖推測</p>
+  <h3>小一叩門</h3>
+  <p>聖嘉勒作爲私立小學，理論上沒有政府機制下的「叩門」環節。但實際上，<strong>小一派位結果公佈後（每年 6 月），學校可能在有空缺的情況下考慮後補申請</strong>。2024 年就有 BK 用戶分享在此期間完成面試並等候電話通知的經歷。🔴 BK「2024/2025 聖嘉勒小學叩門」帖</p>
+  <p>叩門策略建議：派位結果公佈當天即致電校務處查詢後補申請安排，同時寄出求位信（見下方策略）。由於私立學校的收生靈活性高於資助學校，校方對「真誠有心的家庭」的態度可能更爲開放。</p>
+  <h3>求位信策略（叩門 / Waiting List 通用）</h3>
+  <div class="callout warn">
+    <strong>⚠️ 核心原則提示框</strong><br />
+    <strong>匹配度 > 文筆</strong>：求位信的核心目的不是展示文采，而是證明你的家庭和孩子真心認同聖嘉勒的教育理念。<br />
+    <strong>有新內容才寄新信</strong>：如果沒有新的實質進展（如新的獎項、新的學習成果），重複寄信反而可能產生負面效果。<br />
+    <strong>一頁 A4</strong>：簡潔、真誠、有具體內容。長篇大論的求位信一般不會被完整閱讀。<br />
+    <strong>Reject vs Waiting 的區別</strong>：如果收到的是明確的「不獲取錄」（Reject），求位信的效果極其有限。如果是「備取」（Waiting List），則求位信 + 新的補充材料可以顯著提升機會。
+  </div>
+  <p>💬 求位信應包含的核心要素（參考 Champimom 求位信指南 / 新城教育+叩門策略 / BK「過來人分享求位信」多帖交叉驗證）：</p>
+  <ol>
+    <li>清楚說明申請人資料（姓名、申請編號、申請年級）</li>
+    <li>簡短真誠地表達對學校的瞭解和認同（不要用模板語言——至少提到學校的 1-2 個具體特色，如 Reading Buddies 計劃、四樞德理念、法語課程等）</li>
+    <li>說明孩子的特質爲何適合聖嘉勒（傳統、有禮、重視閱讀、對英語學習有熱情等）</li>
+    <li>附上最新的補充資料（新的成績表、獎項、推薦信——一定要是「新」的）</li>
+    <li>表達願意隨時參加進一步面試的誠意</li>
+    <li>留下聯絡方式</li>
+  </ol>
+  <h3>插班成功關鍵</h3>
+  <p>💬 基於 BK 家長經驗彙總，聖嘉勒插班的成功關鍵在於：</p>
+  <ol>
+    <li><strong>英語筆試表現</strong>是決定性因素——中英數三科筆試中，英文卷的表現尤爲關鍵，因爲學校的所有主科（除中文）均以英文授課，插班生必須證明自己能跟上英文教學節奏。</li>
+    <li><strong>原校成績表展示穩定表現</strong>——校方傾向取錄在原校學業表現穩定、操行良好的學生，而非「投機式」申請者。</li>
+    <li><strong>推薦信的含金量</strong>——如有校方重視的人士（如教會人士、校友、校董會/家教會成員）撰寫推薦信，對申請有正面作用。</li>
+    <li><strong>申請時機</strong>——建議在每年 4-6 月提交（5-6 月爲學年尾，學校開始盤點下學年的學額空缺），而非等到 8 月開學前。</li>
+  </ol>
+  <p class="source-note">📎 來源：校方官網（pri.scps.edu.hk/admission/）· BK 插班/叩門討論帖 · HK01 小學插班指南 · 星島日報插班攻略 · Champimom 求位信指南 · sosomama.com</p>
+</section>
+<!-- ===== 6 在讀家庭真實畫像 ===== -->
+<section class="chapter">
+  <h2><span class="num">6</span>在讀家庭真實畫像<span class="cal-badge">口碑採樣</span></h2>
+  <p class="source-note">📊 口碑採樣基礎：教育王國 (edu-kingdom.com) + 親子王國 (baby-kingdom.com) 相關討論帖約 20+ 條 · 時間跨度 2022-2025 · 涵蓋小一至小六不同年級用家</p>
+  <h3>👍 Top 5 在讀家庭好評</h3>
+  <ol>
+    <li><strong>英文語境超強，閱讀能力突出</strong>：「所有主科（數學、常識）均用英文書。小二女兒已經在看 Diary of Wimpy Kid、Harry Potter」🔴 BK 用家 2022 · 「英語水平高於香港一般小學」🔴 BK 用家多帖</li>
+    <li><strong>升中進可攻退可守，心理壓力小</strong>：「有直屬中學 backup，唔使小五小六咁緊張」「成績好可以外闖 B1A，成績中等就安心上中學部」🔴 BK「聖嘉勒 vs 九小 vs 福小」討論帖 2024</li>
+    <li><strong>校風純樸，學生有禮貌</strong>：「小朋友見到任何人都會打招呼，包括校工」「修女學校對學生包容有愛」🔴 BK「聖嘉勒女書院咁好無人講」討論帖 2024 · 「女兒從聖嘉勒轉走後，我仍然可以說——她們的品行一定比某些 Band 1 學校出來的更好」🔴 BK 用家（匿名）</li>
+    <li><strong>學費合理，性價比高</strong>：「$51,000/年讀到英文私小，同級學校中算好抵」「比起德望 $50,000+ 但班級大一倍，聖嘉勒小班教學更值」🔴 BK 比較討論帖 2024</li>
+    <li><strong>小班教學，關顧度較好</strong>：「每班大約 25 人，老師比較容易照顧到每個學生」「比起 GH 每班 45 人好好多」🔴 BK 用家多帖</li>
+  </ol>
+  <h3>👎 Top 5 在讀家庭批評</h3>
+  <ol>
+    <li><strong>課程偏淺，不適合想外闖神校的家庭</strong>：「學習內容真繫好簡單，跟書教，冇教快。如果想考 DGS 一定要自己額外谷」🔴 BK「聖嘉勒 vs 九小 vs 福小」討論帖 2024 · 「課程好淺，中文尤其弱」🔴 BK 多帖</li>
+    <li><strong>交通不便，通勤時間長</strong>：「條路連行人路都窄，一定要坐校巴或 3A 巴士轉地鐵」「住九龍的話單程要一個鐘，六年加六年真繫好甘」🔴 BK 多帖用家反映 · 「有家長因爲交通問題放棄學位」🔴 BK 用家</li>
+    <li><strong>教師態度參差，部分較嚴厲</strong>：「老師算不上有愛心或耐性」「好嚴，活潑性格小朋友會好辛苦」🔴 BK「聖嘉勒 vs 播道書院」討論帖 · 「部分老師比較 hea」🔴 BK 匿名用家</li>
+    <li><strong>校舍細小，設施有限</strong>：「校舍真的不大，操場只有一個」「同九龍那些大校園相比，活動空間明顯不足」🔴 BK 多帖 · 客觀數據：2,509 平方米 vs 喇沙 15,974 平方米</li>
+    <li><strong>曾有霸凌事件討論引發憂慮</strong>：「早前 EK 有貼詳細講羣體霸凌事件，沒幾天就被刪除了」🔴 BK 匿名用家 2024 · 但亦有在讀家長回應：「我們在聖嘉勒入學了，是有什麼霸凌呢？」🔴 BK 用家 2024——此說法存在矛盾，目前無法確認真僞</li>
+  </ol>
+  <h3>「希望入學前就知道」匿名分享</h3>
+  <div class="callout warn">
+    <strong>🔴 分享一（BK 匿名 · 2024）</strong><br />
+    「希望入學前就知道中文和普通話真的要早早準備。學校是英小，中文科的課時和深度都不夠。到高小時才發現女兒中文作文和閱讀理解跟同齡 Band 1 水平的差距，追得很辛苦。」
+  </div>
+  <div class="callout warn">
+    <strong>🔴 分享二（BK 匿名 · 2024）</strong><br />
+    「希望入學前就知道這所學校的『傳統』是真的傳統——不只是校服和宗教那一層面，而是教學方式和師生關係都很傳統。如果你期望的是活動教學、小組討論、project-based 的那種，聖嘉勒可能不是你以爲的那種英小。」
+  </div>
+  <div class="callout warn">
+    <strong>🔴 分享三（BK 匿名 · 2022）</strong><br />
+    「學校的課外活動選擇比我預期的少，而且很多是自費的。如果想讓女兒學樂器或參加體育校隊，需要在外面另外安排。」
+  </div>
+  <p class="source-note">📎 來源：教育王國 (edu-kingdom.com) 相關討論帖 · 時間跨度 2022-2025 · 所有 🔴 標註內容來自匿名家長討論，不能視爲經過驗證的客觀事實</p>
+</section>
+<!-- ===== 7 同類校橫向對比 ===== -->
+<section class="chapter">
+  <h2><span class="num">7</span>同類校橫向對比<span class="cal-badge">決策輔助</span></h2>
+  <h3>同級別港島區女校對比表</h3>
+  <table class="dt">
+    <tr><th>對比維度</th><th>聖嘉勒小學</th><th>嘉諾撒聖心私立部</th><th>德望小學暨幼稚園</th><th>香港真光中學小學部</th></tr>
+    <tr><th>等級</th><td>A · 本平臺</td><td>A+ · 本平臺</td><td>A+ · 本平臺</td><td>A · 本平臺</td></tr>
+    <tr><th>地區</th><td>中西區</td><td>中西區</td><td>黃大仙區</td><td>灣仔區</td></tr>
+    <tr><th>類型</th><td>私立 · 女校</td><td>私立 · 女校</td><td>私立 · 女校</td><td>私立 · 男女（小學部爲男女校）</td></tr>
+    <tr><th>宗教</th><td>天主教</td><td>天主教</td><td>天主教</td><td>基督教</td></tr>
+    <tr><th>學費(年)</th><td>~$51,000</td><td>~$51,000</td><td>~$52,000</td><td>~$55,000</td></tr>
+    <tr><th>教學語言</th><td>英文爲主 · 中文/普通話/法語</td><td>中文及英文並重</td><td>英文爲主 · 中文/普通話</td><td>中文爲主 · 英文/普通話</td></tr>
+    <tr><th>英語強度</th><td>★★★★★</td><td>★★★★☆</td><td>★★★★★</td><td>★★★☆☆</td></tr>
+    <tr><th>直屬中學</th><td>聖嘉勒女書院 (Band 1A)</td><td>嘉諾撒聖心書院 (Band 1A)</td><td>德望學校 (Band 1A+)</td><td>香港真光中學 (Band 1B+)</td></tr>
+    <tr><th>班級規模</th><td>~25人/班（小班）</td><td>~30-33人/班</td><td>~40-45人/班（大班）</td><td>~30人/班</td></tr>
+    <tr><th>校舍規模</th><td>2,509 sqm（小型）</td><td>中型校園</td><td>大型校園（超15,000 sqm）</td><td>中型校園</td></tr>
+    <tr><th>核心特徵</th><td>英文超強 · 小班 · 傳統 · 半山</td><td>歷史悠久 · 學術強 · 中英並重</td><td>一條龍 · 大學園 · 大班</td><td>男女校 · 中文強 · 溫暖校風</td></tr>
+    <tr><th>適合畫像</th><td>重英文·求穩健升中·接受傳統管教</td><td>重學術·中英平衡·接受競爭</td><td>要一條龍·重校園設施·不介意大班</td><td>要男女校·重中文·喜歡溫暖氛圍</td></tr>
+  </table>
+  <h3>選擇決策樹</h3>
+  <div class="decision-tree">
+    <p><span class="dt-q">你的首要考慮是什麼？</span></p>
+    <p>├─ <strong>學區位置與通勤</strong> → 家住港島中西區/南區？<br />
+    │&nbsp;&nbsp;├─ 是 → 聖嘉勒 or 聖心私立部（同區，兩者皆可步行或短途校巴）<br />
+    │&nbsp;&nbsp;└─ 否（九龍/新界）→ 德望（校舍大、一條龍、有宿舍）or 考慮搬屋</p>
+    <p>├─ <strong>英語語境的極致追求</strong> → 是 → 聖嘉勒 or 德望（兩者皆接近純英小）<br />
+    │&nbsp;&nbsp;└─ 但想要小班 → 聖嘉勒（~25人 vs 德望 40-45人）</p>
+    <p>├─ <strong>升中保障的最大化</strong> → 是 → 德望（一條龍，接近 100% 直升，非直屬）<br />
+    │&nbsp;&nbsp;└─ 但接受「進可攻退可守」格局 → 聖嘉勒 or 聖心（直屬，保留 85%）</p>
+    <p>├─ <strong>中文水平不能犧牲</strong> → 是 → 聖心私立部 or 香港真光（中英並重/中文爲主）<br />
+    │&nbsp;&nbsp;└─ 但堅持英文爲主 → 聖嘉勒（需接受中文偏弱，自行補強）</p>
+    <p>└─ <strong>孩子性格活潑、需要大空間</strong> → 是 → 德望（超大學園）or 香港真光（溫暖校風）<br />
+       &nbsp;&nbsp;&nbsp;└─ 孩子文靜、坐得定、守規矩 → 聖嘉勒（傳統女校環境最匹配）</p>
+  </div>
+  <p class="source-note">📎 來源：本平臺報告及 tier 數據庫 · CHSC_2025 · BK 同級學校比較討論帖 · 校方官網 · 注：學費數據爲約數，以各學校最新公佈爲準</p>
+</section>
+<!-- ===== 8 專家總結與建議 ===== -->
+<section class="chapter">
+  <h2><span class="num">8</span>專家總結與建議<span class="cal-badge">終極決策</span></h2>
+  <h3>價值判斷：聖嘉勒值不值得讀？</h3>
+  <p>💬 <strong>結論：對於特定畫像的家庭，聖嘉勒是極佳的選擇；對於其他家庭，可能有更好的替代方案。</strong></p>
+  <p>聖嘉勒的核心價值在於提供了一條<strong>從 6 歲到 18 歲的英文教育通道</strong>，年費 $51,000 換來的是接近純英小的語言環境、Band 1A 直屬中學的升學保障、以及傳統天主教女校的品格教育。在港島區，你在這個價位很難找到同等英文強度、同有直屬 Band 1A 中學的私立女校。</p>
+  <h3>投入回報分析</h3>
+  <table class="dt">
+    <tr><th>投入</th><td>6 年學費約 $306,000（假設不變）+ 校巴/課外活動/補習（中文補習幾乎是必須）· 約 12 年通勤時間成本（如果住九龍）</td></tr>
+    <tr><th>回報</th><td>極強的英文能力 · 穩健的 Band 1A 升中出路 · 良好的品格和禮儀基礎 · 天主教價值觀的薰陶 · 校友網絡</td></tr>
+    <tr><th>隱性成本</th><td>中文和普通話能力需額外投入 · 傳統管教環境對部分孩子的心理成本 · 通勤時間（如住九龍/新界）</td></tr>
+  </table>
+  <h3>⚠️ 關鍵風險提示</h3>
+  <div class="risk-list">
+    <ol>
+      <li><strong>中文學習是必須正視的長期投資</strong>：DSE 中文科是必修核心科，小學階段的中文基礎薄弱會在中學階段放大爲顯著劣勢。選擇聖嘉勒等於默認接受「中文需要課外補習」的現實。如果家庭沒有額外時間或預算安排中文補習，這是一個需要慎重考慮的風險。</li>
+      <li><strong>傳統管教風格可能不適合所有孩子</strong>：有用家明確指出學校「好嚴」、部分老師「缺乏耐性」。對於性格敏感、需要大量鼓勵和情感安全感的孩子，傳統天主教女校的環境可能造成適應困難甚至牴觸學習。</li>
+      <li><strong>如果想外闖頂級中學，僅靠學校不夠</strong>：聖嘉勒的課程採取「教咩考咩」方針，不教快、不教深。目標是 DGS/SPCC 等神校的家庭，需要從小自行安排大量校外補充——這筆額外的時間和金錢成本需要納入考量。</li>
+    </ol>
+  </div>
+  <h3>Plan B 推薦</h3>
+  <table class="dt">
+    <tr><th>如果你的情況是…</th><th>替代方案 / Plan B</th></tr>
+    <tr><td>想讀聖嘉勒但擔心中文太弱</td><td>嘉諾撒聖心私立部（中英並重，學術更強，同區，同有直屬 Band 1A）</td></tr>
+    <tr><td>想要一條龍（100%直升）而非直屬（85%保留）</td><td>德望小學（一條龍直升德望學校 Band 1A+，大學園。但大班 ~45 人，競爭壓力更大）</td></tr>
+    <tr><td>住九龍/新界，通勤太遠</td><td>德望小學（位於黃大仙，九龍區首選）· 或考慮搬屋到港島</td></tr>
+    <tr><td>孩子性格活潑、需要活動空間</td><td>德望小學 or 香港真光中學小學部（更溫暖的校風，更適合活潑型孩子）</td></tr>
+    <tr><td>預算更緊（低於 $50,000/年）</td><td>考慮中西區資助女校（如聖士提反女子中學附屬小學，需校網派位）</td></tr>
+    <tr><td>聖嘉勒不取錄怎麼辦</td><td>聖嘉勒的競爭屬中等偏高，不取錄不等於孩子不夠好——性格匹配度是重要因素。考慮上述替代方案，同時保留叩門機會</td></tr>
+  </table>
+  <h3>💬 一句話行動建議</h3>
+  <div class="callout">
+    <strong>如果港島居住、重視英文、追求穩健升中、孩子性格文靜守規——聖嘉勒是 A 級選擇中回報最穩健的之一；但如果家不在港島、或孩子需要溫暖活潑的成長環境、或你對中文水平有底線要求——請認真參考本章的 Plan B。</strong>
+  </div>
+  <p class="source-note">📎 來源：本報告所有分析基於 CHSC_2025、本平臺 tier 數據庫、教育王國(BK)家長口碑（2022-2025 跨年度多帖）、校方官網、TOPick、smartnative.hk、HK01、星島日報、sosomama.com、kidemy.hk、schooland.hk。所有 💬 標註內容爲主觀分析，不構成入學建議。</p>
+</section>
+</main>
+</body>
+</html>

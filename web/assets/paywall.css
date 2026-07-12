@@ -1,0 +1,67 @@
+/* paywall.css — 付费墙样式 */
+.paywall-overlay {
+  margin: 32px 0;
+  padding: 36px 24px;
+  background: linear-gradient(160deg, #f8faf7 0%, #f0f4f0 50%, #faf8f4 100%);
+  border: 2px dashed #cfe4dd;
+  border-radius: 14px;
+  text-align: center;
+}
+.paywall-overlay h3 {
+  font-family: "Newsreader", serif;
+  font-size: 20px; font-weight: 700;
+  color: #22302b; margin: 0 0 8px;
+}
+.paywall-overlay .pw-sub {
+  font-size: 14px; color: #6b7770; margin: 0 0 16px;
+}
+.paywall-features {
+  display: inline-block; text-align: left;
+  font-size: 14px; color: #4b564f; line-height: 2;
+  margin: 0 0 20px;
+}
+.paywall-buttons {
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+}
+.paywall-buttons .pw-btn {
+  display: inline-flex; flex-direction: column; align-items: center;
+  padding: 14px 24px; border-radius: 12px; font-weight: 700;
+  text-decoration: none; cursor: pointer; transition: all .15s ease;
+  min-width: 160px; border: 1px solid transparent;
+}
+.pw-btn-primary {
+  background: #1f6f5c; color: #fff;
+}
+.pw-btn-primary:hover { background: #175547; }
+.pw-btn-secondary {
+  background: #fff; color: #1f6f5c; border-color: #1f6f5c !important;
+}
+.pw-btn-secondary:hover { background: #e6f0ec; }
+.pw-btn-all {
+  background: linear-gradient(135deg, #a0522d, #c46a1f); color: #fff;
+  font-size: 15px; padding: 16px 28px;
+}
+.pw-btn-all:hover { filter: brightness(1.1); }
+.pw-btn .pw-price { font-size: 22px; font-weight: 800; }
+.pw-btn .pw-label { font-size: 12px; opacity: .8; margin-top: 2px; }
+.pw-recover {
+  margin-top: 14px; font-size: 13px; color: #6b7770;
+}
+.pw-recover a { color: #1f6f5c; text-decoration: underline; }
+
+/* 解锁后隐藏付费墙 */
+body.purchased .paywall-overlay { display: none; }
+body.purchased #premium-content { display: block !important; }
+
+/* 免费标识 */
+.free-badge {
+  display: inline-block; background: #e6f0ec; color: #1f6f5c;
+  font-size: 12px; font-weight: 700; padding: 3px 10px;
+  border-radius: 20px; margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+  .paywall-overlay { padding: 24px 16px; }
+  .paywall-buttons { flex-direction: column; align-items: center; }
+  .pw-btn { width: 100%; max-width: 280px; }
+}

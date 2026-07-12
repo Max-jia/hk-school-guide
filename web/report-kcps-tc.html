@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>蘇浙小學 · 深度擇校報告 | 港校指南</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/report.css" />
+  <style>
+    .score-bar { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+    .score-bar .bar-label { width: 100px; font-size: 13px; color: #6b7770; }
+    .score-bar .bar-track { flex: 1; height: 8px; background: #e7e3d9; border-radius: 4px; overflow: hidden; }
+    .score-bar .bar-fill { height: 100%; border-radius: 4px; background: #8b7355; }
+    .score-bar .bar-val { font-size: 13px; font-weight: 700; width: 36px; text-align: right; color: #22302b; }
+    .cal-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #ede7f6; color: #5b3fa0; margin-left: 6px; vertical-align: middle; }
+    .decision-tree { background: #f4faf6; border-radius: 12px; padding: 20px 24px; margin: 16px 0; font-size: 14px; line-height: 1.8; }
+    .decision-tree .dt-q { font-weight: 700; color: #1f6f5c; }
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    .pro-box { background: #e6f0ec; border-radius: 10px; padding: 16px; }
+    .con-box { background: #fbeee1; border-radius: 10px; padding: 16px; }
+    .pro-box h4, .con-box h4 { margin: 0 0 8px; font-size: 15px; }
+    .pro-box ul, .con-box ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; }
+    .risk-list { background: #fef8ee; border-left: 4px solid #e6a817; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 12px 0; font-size: 14px; }
+    .risk-list li { margin: 6px 0; }
+    @media(max-width:600px){ .pros-cons{ grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header class="report-hero hero-tier-b">
+  <div class="container">
+    <div class="tier-mega">B 級 · 私立男女校 · 東區</div>
+    <div class="hero-title-row"><h1>蘇浙小學 深度擇校報告</h1><div class="lang-switch"><a href="./report-kcps.html">简</a></div></div>
+    <p class="sub">Kiangsu &amp; Chekiang Primary School · 北角清華街 · 1953年創校 · 全港唯一普通話非牟利私立小學</p>
+</div>
+
+</header>
+<main class="report-body">
+<!-- ===== 0 數據可靠性聲明 ===== -->
+<div class="callout warn" style="margin-bottom:24px;background:#fff8e8;border-left-color:#e6a817">
+  <strong>本報告數據可靠性聲明</strong><br />
+  本報告所有事實性數據已儘可能經過多方覈實，並按覈實程度標註：<br />
+  · <strong>✅ 多方覈實</strong>：政府公開數據(CHSC/EDB)或多個獨立來源交叉確認<br />
+  · <strong>🟡 單一可靠來源</strong>：正規媒體報道或官方信息，未經第二個來源交叉驗證<br />
+  · <strong>🔴 有限來源·僅供參考</strong>：家長討論區/單一匿名帖等，可信度有限<br />
+  · <strong>💬 主觀分析</strong>：專家觀點/分析，非事實陳述<br />
+  所有客觀數據一經發現更準確的信息源將立即更新。主觀分析部分不構成入學建議。
+</div>
+<!-- ===== 1 學校定位與核心競爭力 ===== -->
+<section class="chapter">
+  <h2><span class="num">1</span>學校定位與核心競爭力<span class="cal-badge">專家分析</span></h2>
+  <table class="dt">
+    <tr><th>全名</th><td>蘇浙小學校（Kiangsu &amp; Chekiang Primary School）✅ CHSC_2025</td></tr>
+    <tr><th>地區 / 地址</th><td>東區 · 香港北角清華街30號（另有寶馬山道20號校舍）· 不限校網 ✅ CHSC_2025</td></tr>
+    <tr><th>等級</th><td>B 級 · 本平臺綜合評級（四因子模型+家長口碑+升中數據交叉）💬 本平臺評級</td></tr>
+    <tr><th>類型 / 性別</th><td>私立 · 非牟利 · 男女校 · 無宗教背景 ✅ CHSC_2025</td></tr>
+    <tr><th>創校年份</th><td>1953 年 · 由香港蘇浙滬同鄉會創辦 ✅ 校方官網 · 多個來源交叉確認</td></tr>
+    <tr><th>學費（主流班）</th><td>HK$46,500/年（分10期繳交）· 國際班全年約 HK$101,500 ✅ CHSC_2025 · 🟡 校方/升學網站綜合</td></tr>
+    <tr><th>師生比</th><td>約 1:1.9 ✅ CHSC_2025</td></tr>
+    <tr><th>教學語言（主流班）</th><td>全普通話教學（英文科除外）· 英文科由外籍教師(NET)授課 ✅ CHSC_2025 · 🟡 校方官網 · GoStudy</td></tr>
+    <tr><th>教學語言（國際班）</th><td>全英語教學（英國國家課程）· 每日設普通話課 🟡 校方官網 · GoStudy · 多個升學網站</td></tr>
+    <tr><th>上課時段</th><td>上午班 · 全日班 ✅ CHSC_2025</td></tr>
+    <tr><th>辦學團體</th><td>香港蘇浙滬同鄉會 · 校董會包括江浙滬籍社會賢達 ✅ 校方官網</td></tr>
+    <tr><th>校長</th><td>王寶明 🟡 校方官網 · 明報</td></tr>
+    <tr><th>聯繫中學</th><td>蘇浙公學（同一辦學團體·非直屬/非一條龍）· 但學生成績好一般不會選讀 🟡 教育王國多帖</td></tr>
+  </table>
+  <div class="callout">
+    <strong>💬 專家定位分析</strong><br />
+    蘇浙小學是全港<strong>唯一以普通話爲主要教學語言的非牟利私立小學</strong>——這句話本身就是它的核心競爭力。1953年由香港蘇浙滬同鄉會創辦，七十多年來一直堅持以普通話教學，在香港教育史上佔有獨特地位。對於不會廣東話的內地來港家庭而言，蘇浙幾乎是<strong>「零語言障礙」的私立小學首選</strong>——孩子入學第一天就能用母語上課，不需要先過廣東話這一關。<br /><br />
+    蘇浙分爲<strong>主流班（本地課程）和國際班（英國課程）</strong>兩條軌道。主流班走香港本地課程，以普通話教學、英文科由外籍教師教授（使用比同級高一級的Longman教材）；國際班走英國國家課程，全英語教學、每日設普通話課。兩條軌道的共通點是<strong>中英文並重、升中表現出色</strong>——約70-80%畢業生能升讀Band 1中學，這在全港私立小學中屬於中上水平。<br /><br />
+    家長需要特別注意的是：<strong>蘇浙公學雖然是同一辦學團體的中學，但並非蘇浙小學的直屬或一條龍中學</strong>。實際上，蘇浙小學成績較好的畢業生一般不會選擇蘇浙公學，而是透過自行分配或統一派位進入其他Band 1中學。這意味著蘇浙小學的升中優勢來自於<strong>教學質量本身（學生成績好）</strong>，而非依靠直升機制。<br /><br />
+    一句話定調：<strong>蘇浙小學是內地來港家庭在私立小學賽道中的「最佳切入點」——全普通話教學讓孩子無縫適應、學費在私立學校中極具性價比、升中成績有據可查。但它不是「快樂教育」——傳統教學風格、較高的學術要求、頻密的測驗默書，需要家長和孩子都有心理準備。</strong>
+  </div>
+  <h3>五維競爭力雷達圖</h3>
+  <div class="radar-wrap">
+    <svg class="radar-svg" overflow="visible" width="260" height="260" viewBox="0 0 240 240">
+      <polygon points="120.0,90.3 148.2,110.8 137.5,144.0 102.5,144.0 91.8,110.8" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <polygon points="120.0,59.7 177.3,101.4 155.4,168.8 84.6,168.8 62.7,101.4" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <polygon points="120.0,30.0 205.6,92.2 172.9,192.8 67.1,192.8 34.4,92.2" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <line x1="120" y1="120" x2="120.0" y2="30.0" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="205.6" y2="92.2" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="172.9" y2="192.8" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="67.1" y2="192.8" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="34.4" y2="92.2" stroke="#e7e3d9" stroke-width="0.8"/>
+      <polygon points="120.0,48.0 201.5,99.5 161.2,180.5 69.8,180.5 38.5,99.5" fill="rgba(139,115,85,0.15)" stroke="#8b7355" stroke-width="2.5"/>
+      <circle cx="120.0" cy="48.0" r="4.5" fill="#8b7355"/>
+      <circle cx="201.5" cy="99.5" r="4.5" fill="#8b7355"/>
+      <circle cx="161.2" cy="180.5" r="4.5" fill="#8b7355"/>
+      <circle cx="69.8" cy="180.5" r="4.5" fill="#8b7355"/>
+      <circle cx="38.5" cy="99.5" r="4.5" fill="#8b7355"/>
+      <text x="120" y="16" text-anchor="middle" font-size="12" fill="#6b7770">學術實力</text>
+      <text x="223" y="91" text-anchor="start" font-size="12" fill="#6b7770">升學保障</text>
+      <text x="184" y="214" text-anchor="middle" font-size="12" fill="#6b7770">校風傳統</text>
+      <text x="56" y="214" text-anchor="middle" font-size="12" fill="#6b7770">設施資源</text>
+      <text x="10" y="91" text-anchor="end" font-size="12" fill="#6b7770">可負擔性</text>
+    </svg>
+    <div class="radar-legend">
+      <div class="rleg-item"><span class="rleg-dot" style="background:#8b7355"></span>學術實力 <span class="rleg-val">8.0</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#8b7355"></span>升學保障 <span class="rleg-val">7.0</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#8b7355"></span>校風傳統 <span class="rleg-val">6.0</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#8b7355"></span>設施資源 <span class="rleg-val">6.5</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#8b7355"></span>可負擔性 <span class="rleg-val">7.5</span></div>
+    </div>
+  </div>
+  <h3>適合 / 不適合的孩子類型</h3>
+  <div class="pros-cons">
+    <div class="pro-box">
+      <h4>適 合</h4>
+      <ul>
+        <li>內地來港家庭——全普通話教學環境，孩子入學零語言障礙</li>
+        <li>重視中英雙語的家庭——普通話沉浸+外籍教師英文課，雙語基礎紮實</li>
+        <li>能接受傳統教學風格的家庭——不介意較多功課和頻密測驗默書</li>
+        <li>預算中等但想走私立路線的家庭——學費在私立小學中屬中低水平，性價比高</li>
+        <li>孩子性格文靜、坐得住——傳統課堂模式對專注力有一定要求</li>
+        <li>希望孩子升學有保障——約70-80%升讀Band 1中學</li>
+      </ul>
+    </div>
+    <div class="con-box">
+      <h4>不適合</h4>
+      <ul>
+        <li>追求「快樂教育」或活動教學法的家庭——蘇浙教學風格傳統嚴謹</li>
+        <li>孩子活潑好動、坐不住——校舍空間有限、課外活動較少、課堂規矩較嚴</li>
+        <li>目標純國際課程（IB/A-Level）的家庭——主流班走本地DSE路線</li>
+        <li>預算非常充裕、追求頂級校園設施的家庭——校舍超過50年曆史，設施偏舊</li>
+        <li>完全不會普通話的本地家庭——主流班全普通話教學可能構成適應挑戰</li>
+        <li>孩子有特殊學習需要（SEN）——學校對SEN支援有限 🟡 多個升學網站</li>
+      </ul>
+    </div>
+  </div>
+  <p class="source-note">📎 來源：CHSC_2025 · 校方官網 · 教育王國(BK)多帖 · GoStudy · 明報 · 多個升學網站綜合</p>
+</section>
+<!-- ===== 2 教學深度解讀 ===== -->
+<section class="chapter">
+  <h2><span class="num">2</span>教學深度解讀<span class="cal-badge">專家分析</span></h2>
+  <h3>課程體系：兩條軌道，一個基因</h3>
+  <p>蘇浙小學設有<strong>主流班（Mainstream Section）和國際班（International Section）</strong>兩條教學軌道。主流班採用香港本地課程，以<strong>全普通話爲教學語言</strong>（英文科除外），英文科由外籍教師（NET）授課，使用Longman教材且<strong>比同年級高一級</strong>（例如小一使用小二教材）。國際班採用經調整的英國國家課程（modified UK National Curriculum），全英語教學，每日設普通話課，音樂及體育科亦以普通話授課。🟡 GoStudy · 校方官網 · 多個升學網站綜合</p>
+  <p>💬 兩條軌道的共通基因是<strong>「語文先行」</strong>——無論走哪條軌道，蘇浙對中英文的重視程度都遠超一般小學。主流班的英文教材比同級高一年，國際班的普通話每日必修——這種「雙語雙軌」的設計在本地課程私立小學中較爲少見。但需要注意的是：這不是「50/50雙語平衡」——主流班以普通話爲主導（英文課時佔比較低），國際班以英語爲主導（普通話爲第二語言），兩者各有側重。🟡 GoStudy · 教育王國BK家長分享</p>
+  <h3>功課量與考試頻率</h3>
+  <p>蘇浙的教學風格偏向<strong>傳統和嚴謹</strong>，功課量在私立小學中屬於中等偏上水平。根據教育王國多位家長分享：每日功課約<strong>2-5樣</strong>，設有功課堂，大部分可在校完成。測驗和默書<strong>頻密但範圍較細</strong>，容易應付。學校採用<strong>「背默」</strong>制度，重視語文科目的背誦和基礎打底。🟡 教育王國BK多帖交叉</p>
+  <p>學校每日比其他小學多上半小時課，教學進度較快——一個學期的課程量相當於其他學校一個學期多。🔴 教育王國家長：「學校每日多上半小時課，一個學期比其他學校學得快」</p>
+  <p>💬 對比分析：與「Happy School」（如北角循道）相比，蘇浙的學術壓力明顯較高；但與「催谷型名校」（如聖方濟各英文小學）相比，蘇浙的功課量仍在可控範圍內。關鍵是家長需要接受蘇浙是「傳統學校」而非「活動教學學校」的定位。</p>
+  <h3>師資分析</h3>
+  <p>師生比約1:1.9（✅ CHSC_2025），在私立小學中屬於中等水平。主流班英文科由外籍教師（NET）教授，國際班教師以英語爲母語。🟡 校方官網 · GoStudy</p>
+  <p>💬 師生比1:1.9意味著每班約有接近2位教師資源。但需要注意的是，蘇浙的教學風格強調教師主導和紀律——老師在課堂上有較高權威，教學氛圍偏向傳統。這與某些國際學校的「學生中心」風格有顯著差異。</p>
+  <h3>語言環境詳解</h3>
+  <p>蘇浙的語言環境是其最獨特的賣點，但不同軌道的情況差異很大：</p>
+  <table class="dt">
+    <tr><th>主流班</th><td>全普通話教學（英文科除外）· 師生溝通、講故事、遊戲均用普通話 · 英文由NET授課 · 普通話科獨立設置 · 課餘學生多使用普通話（因同學多爲普通話背景家庭）🟡 校方官網 · 教育王國多帖</td></tr>
+    <tr><th>國際班</th><td>全英語教學 · 每日1節普通話課 · 音樂及體育以普通話授課 · 課餘英語爲主 · 普通話作爲第二語言學習 🟡 GoStudy · 校方官網</td></tr>
+  </table>
+  <p>💬 一個有意思的現象：因爲校內約有10%學生來自不同國家（英、美、德、加、日、意等），加上國際班的存在，<strong>課餘時間的語言環境相當多元</strong>——主流班學生有機會接觸英語，國際班學生有機會練習普通話。這種「非正式語言交流」可能比課堂教學更有效。</p>
+  <h3>⚠️ 教學侷限（誠實指出）</h3>
+  <ol>
+    <li><strong>教學風格傳統·不適合所有孩子</strong>：蘇浙採用傳統教學模式——教師主導、背誦默書、功課量偏多。對活潑好動、需要活動空間和探索式學習的孩子而言，這種風格可能構成壓力和不適應。學校甚至自己表明「多功課」，家長需有充分心理準備。🔴 教育王國多帖 · 💬 專家分析</li>
+    <li><strong>校舍老舊·空間與設施有限</strong>：校舍超過50年曆史，沒有正式籃球場或泳池。課外活動以朗誦、舞蹈爲主，較少鼓勵校外體育比賽。對於重視體育發展和校園設施的家庭，這是需要考慮的因素。🔴 教育王國BK家長多帖 · 🟡 明報</li>
+    <li><strong>非普教中·但中文沉浸極深</strong>：雖然是普通話教學，但蘇浙的「普通話環境」是全校性的沉浸式環境——不僅是中文科，幾乎所有科目都用普通話。對於普通話能力較弱的本地香港家庭孩子，入學初期可能面臨較大適應壓力。部分外籍學生到高小後因中文背誦壓力而轉校。🔴 教育王國BK家長分享</li>
+    <li><strong>沒有直屬/一條龍中學</strong>：雖然同一辦學團體設有蘇浙公學，但並非直屬或一條龍關係。學生升中需要與全港小學生一起競爭（參加呈分試/自行分配/統一派位），沒有直升保障。對期望「一條龍升中」的家庭，這是一個需要正視的現實。🟡 教育王國多帖 · 💬 專家分析</li>
+  </ol>
+  <p class="source-note">📎 來源：CHSC_2025 · 教育王國(BK)多帖 · 校方官網 · GoStudy · 明報 · 多個升學網站綜合</p>
+</section>
+<!-- ===== 3 升中通路全景 ===== -->
+<section class="chapter">
+  <h2><span class="num">3</span>升中通路全景<span class="cal-badge">深度分析</span></h2>
+  <h3>蘇浙公學：同根但非直屬</h3>
+  <table class="dt">
+    <tr><th>辦學團體</th><td>香港蘇浙滬同鄉會（蘇浙小學及蘇浙公學均由同一團體創辦）✅ 校方官網</td></tr>
+    <tr><th>關係類型</th><td>非直屬 · 非一條龍 · 非聯繫——學生須透過正常升中機制（呈分試+自行/統一派位）報讀任何中學 🟡 教育王國多帖共識</td></tr>
+    <tr><th>實際情況</th><td>蘇浙小學成績較好的畢業生一般不會選擇蘇浙公學，而是升讀其他Band 1中學 🔴 教育王國BK多帖</td></tr>
+  </table>
+  <div class="callout">
+    <strong>💬 升中機制深度解讀</strong><br />
+    蘇浙小學沒有直屬或一條龍中學，這意味著所有畢業生必須透過<strong>中學學位分配辦法（SSPA）</strong>升中——包括呈分試、自行分配學位、統一派位三個階段。對於家長來說，這既是限制也是機會：限制在於沒有直升保障，機會在於<strong>學生可以自由選擇全港任何中學</strong>，不受聯繫/直屬關係的約束。<br /><br />
+    從實際結果來看，蘇浙小學畢業生的升中去向相當廣泛且多元——這所學校的教學質量足以讓學生在各類中學的面試和筆試中具備競爭力。一個值得注意的細節是：<strong>約40%學生提早經面試入圍</strong>（自行分配階段），這在沒有直屬中學的小學中屬於較高的比例，說明蘇浙學生的面試表現和學術水平受到中學認可。🔴 教育王國BK用家分享
+  </div>
+  <h3>升中派位實際表現</h3>
+  <table class="dt">
+    <tr><th>指標</th><th>數據</th><th>來源</th></tr>
+    <tr><td>升讀Band 1中學比例</td><td>約70-80%</td><td>🔴 教育王國BK多帖用家分享</td></tr>
+    <tr><td>B1:B2:B3比例</td><td>約6:3:1</td><td>🔴 教育王國畢業生家長估算</td></tr>
+    <tr><td>提早面試入圍率</td><td>約40%</td><td>🔴 教育王國BK用家分享</td></tr>
+    <tr><td>有家長稱全級最後一名</td><td>仍能入讀B1C中學</td><td>🔴 教育王國2024年用家分享</td></tr>
+  </table>
+  <h3>常見升中去向（教育王國多帖歸納）</h3>
+  <p>🔴 根據教育王國多個帖文中的家長分享，蘇浙畢業生常見升讀的中學包括：<strong>庇理羅士女子中學</strong>（Band 1A）、<strong>張祝珊英文中學</strong>（Band 1A）、<strong>聖保羅書院</strong>（Band 1A-）、<strong>聖馬可中學</strong>（Band 1B+）、<strong>香港中國婦女會中學</strong>（Band 1B）、<strong>嘉諾撒書院</strong>（Band 1B+）、<strong>中華基金中學</strong>（Band 1B）、<strong>港島民生書院</strong>（Band 2A）等。校方未在官網公開完整的年度升中派位統計，以上爲家長羣體的口碑歸納。</p>
+  <h3>⚠️ 升中風險提示</h3>
+  <div class="risk-list">
+    <ol>
+      <li><strong>沒有直升保障·全靠學術實力</strong>：與一條龍學校（如培僑書院、港大同學會小學）不同，蘇浙學生必須通過呈分試和升中派位機制競爭中學學位。如果孩子在呈分試中表現不理想，升中結果會受直接影響。約70-80%升讀Band 1的比例雖然不錯，但仍有20-30%的學生未能進入Band 1中學。💬 專家分析</li>
+      <li><strong>校方未公開完整升中數據</strong>：學校官網未提供逐年詳細的升中派位統計。家長羣體中的「80%Band 1」說法來自用家估算和分享，缺乏官方數據背書。對於習慣了內地學校公開升學率數據的家長，這種不透明可能令人不安。🔴 教育王國多帖 · 💬 專家分析</li>
+      <li><strong>普通話優勢在中學面試中不一定是加分項</strong>：雖然近年部分直資中學（如李國寶中學）設有普通話面試環節，但大多數Band 1中學的面試仍以粵語和英語爲主。蘇浙學生的普通話優勢在升中面試中的轉化率，取決於目標中學的具體要求。💬 專家分析</li>
+    </ol>
+  </div>
+  <p class="source-note">📎 來源：教育王國(BK)多帖用家分享 · 校方官網 · EDB升中機制 · 本平臺中學Banding數據 · 多個升學網站綜合</p>
+</section>
+<!-- ===== 4 小一入讀攻略 ===== -->
+<section class="chapter">
+  <h2><span class="num">4</span>小一入讀攻略<span class="cal-badge">實戰指南</span></h2>
+  <h3>錄取難度總評</h3>
+  <p>💬 <strong>中高競爭</strong>。蘇浙小學每年約有<strong>400-500人報名</strong>，主流班約錄取<strong>180人</strong>，錄取率約<strong>10-15%</strong>。這個競爭程度在私立小學中屬於中高水平——比寶山、聖保羅男女等S級神校的個位數錄取率寬鬆，但比一般私立小學的20-30%錄取率更爲激烈。值得注意的競爭格局特點是：<strong>絕大多數申請人家庭爲港漂（內地來港家庭），本土香港學生約佔1/4</strong>。這意味著競爭主要發生在內地家庭之間，而非與全港所有家庭競爭。🟡 多個升學網站綜合 · 🔴 教育王國BK多帖</p>
+  <div class="callout warn">
+    <strong>💬 競爭的微妙變化</strong><br />
+    有教育王國家長反映，近年部分內地家庭因移民等原因缺席面試，加上高才通家庭的學童年齡分佈變化，<strong>實際競爭可能較歷史數據略爲緩和</strong>。但這只是部分家長的觀察，不宜過度解讀爲「競爭已大幅下降」。🔴 教育王國BK 2024年帖
+  </div>
+  <h3>招生流程</h3>
+  <table class="dt">
+    <tr><th>招生班級</th><td>主流班小一 · 國際班小一（兩條軌道分開招生）🟡 校方官網</td></tr>
+    <tr><th>報名時間</th><td>通常每年8-10月（具體日期以校方公告爲準，建議密切留意學校官網或致電查詢）🟡 多個升學網站綜合</td></tr>
+    <tr><th>蘇浙幼稚園生</th><td>設有優先面試機會，面試時間早於外校生。直升小學的比例較高 🔴 教育王國BK多帖</td></tr>
+    <tr><th>面試輪次</th><td>一輪面試（主流班全普通話·國際班全英語）🟡 GoStudy · 多個升學網站</td></tr>
+  </table>
+  <h3>面試詳解</h3>
+  <table class="dt">
+    <tr><th>面試語言</th><td>主流班：全普通話 · 國際班：全英語 🟡 GoStudy · 教育王國BK多帖</td></tr>
+    <tr><th>面試時長</th><td>約5-20分鐘（不同家長反映差異較大，部分稱很快完成）🔴 教育王國BK多帖</td></tr>
+    <tr><th>家長參與</th><td>家長需陪同面試 · 老師用普通話問學生·用廣東話問家長簡單問題 🟡 多個升學網站</td></tr>
+    <tr><th>面試形式</th><td>小組觀察 + 個別對答 · 問基本資料（姓名/家庭等）· 看圖說故事 · 解難題目 🟡 GoStudy</td></tr>
+    <tr><th>評分重點</th><td>語言理解與表達(40%) · 社交與禮儀(30%) · 手眼協調(20%) · 家庭認同感(10%) 🟡 多個升學網站綜合</td></tr>
+  </table>
+  <div class="callout">
+    <strong>💬 面試核心考察什麼？</strong><br />
+    根據多位家長的分享，蘇浙面試最看重的是<strong>孩子的「受教性」和語言基礎</strong>——老師在找的是「坐得住、聽得懂、能回應」的孩子，而非「最聰明」或「最多才藝」的孩子。面試時間雖然不長（部分家長反映只有5分鐘），但老師能在短時間內判斷孩子的語言能力和行爲規範。<br /><br />
+    一個有趣的細節：<strong>有家長反映，如果申請表上填寫籍貫爲浙江或江蘇，被錄取的機會可能更大</strong>——這與學校的辦學背景（蘇浙滬同鄉會）有關。但這只是家長羣體的流傳說法，校方從未官方確認。🔴 教育王國BK多帖
+  </div>
+  <h3>提升錄取概率的 6 條務實建議</h3>
+  <ol>
+    <li><strong>如果孩子目前在蘇浙幼稚園就讀——這是最直接的路徑</strong>：蘇浙幼稚園生享有優先面試機會，面試時間早於外校生，直升比例較高。如果目標是蘇浙小學主流班，從幼稚園階段就開始佈局是最保險的做法。🟡 多個升學網站 · 🔴 教育王國BK</li>
+    <li><strong>確保孩子的普通話（或英語）達到基本溝通水平</strong>：面試評分中語言理解與表達佔40%，是最重的單項。孩子需要能聽懂老師的提問並用普通話（或英語）作出基本回應。不需要流利如母語者，但至少要能進行簡單對話。🟡 GoStudy · 多個升學網站</li>
+    <li><strong>培養孩子的禮儀和社交規範</strong>：社交與禮儀佔30%，是第二重要的評分項。見面問好、回答時看著對方、不隨意走動或哭鬧——這些基本禮儀在短時間的面試中可能就是決定性的。🟡 多個升學網站綜合</li>
+    <li><strong>家長面試環節不要輕視</strong>：老師會用廣東話問家長簡單問題。家長需要展現對學校<strong>全普通話教學理念的認同</strong>，而非僅僅因爲「不會廣東話所以來蘇浙」。提前瞭解學校的辦學歷史和特色，能讓你在面試中留下更好的印象。🟡 GoStudy · 教育王國BK</li>
+    <li><strong>報名時誠實填寫家庭背景</strong>：學校的辦學基因與江浙滬文化密不可分。如果家庭確有江浙滬背景，可以在申請中自然體現——但不必刻意誇大或編造。誠實永遠是最好的策略。🔴 教育王國BK · 💬 專家建議</li>
+    <li><strong>不要把蘇浙當作「備胎」</strong>：部分內地家庭同時申請多所私立/直資小學，把蘇浙當作次選。但面試官能感受到家長的誠意程度。如果你真心希望孩子入讀蘇浙，從報名表到面試都要展現出對這所學校的真正興趣。💬 專家建議</li>
+  </ol>
+  <p class="source-note">📎 來源：校方官網 · GoStudy · 教育王國(BK)多帖 · 多個升學網站綜合 · Champimom</p>
+</section>
+<!-- ===== 5 插班與叩門攻略 ===== -->
+<section class="chapter">
+  <h2><span class="num">5</span>插班與叩門攻略<span class="cal-badge">深度攻略</span></h2>
+  <h3>插班概述</h3>
+  <p>蘇浙小學主流班<strong>小二至小五通常設有插班學額</strong>，視乎當年是否有學生退學或轉校而定的空缺。與其他私立小學相比，蘇浙的插班有一個獨特的背景因素：<strong>部分外籍學生到高小（小四以上）後因中文背誦壓力而轉校</strong>，這可能爲插班申請者創造機會。此外，內地家庭因工作調動或移民計劃變更而遷出香港，也會釋放少量學額。🟡 教育王國BK多帖 · 💬 專家分析</p>
+  <p>💬 從家長分享來看，蘇浙插班的難度因年級而異：<strong>小二、小三插班相對有機會</strong>（低年級學額流動性較大），<strong>小四及以上學額較少</strong>（但外籍生轉校可能釋放位置）。關鍵是家長需要主動、持續地與學校保持聯繫——不能只寄一次申請表就乾等。🔴 教育王國BK多帖</p>
+  <div class="callout warn">
+    <strong>⚠️ 插班最佳時機</strong><br />
+    建議在<strong>小四上學期之前完成插班</strong>。原因是香港小學的小五下學期開始第一次呈分試——這是決定升中Banding的最關鍵考試。如果插班發生在小五或之後，孩子可能錯過部分呈分試，直接影響升中結果。而且從內地學校轉來的孩子需要時間適應全普通話（而非簡體中文）的教學環境，以及英文科Longman教材高一級的進度。💬 專家分析
+  </div>
+  <h3>小二至小五插班流程</h3>
+  <table class="dt">
+    <tr><th>申請時間</th><td>通常每年4-6月開放申請（具體日期須密切留意校方官網公告）🟡 升學網站綜合</td></tr>
+    <tr><th>申請方式</th><td>親臨學校索取申請表或於校網下載 · 填妥後連同所需文件交回校務處 🟡 校方官網</td></tr>
+    <tr><th>所需文件</th><td>插班申請表 · 最近兩學年成績表 · 課外活動/比賽證書（如有）· 推薦信（如有）🟡 升學網站綜合</td></tr>
+    <tr><th>筆試內容</th><td>中文：閱讀理解+寫作（普通話·繁體字）· 英文：Reading Comprehension+Grammar+Writing（比同級高一級水平）· 數學：應用題+運算 🟡 升學網站綜合</td></tr>
+    <tr><th>面試形式</th><td>中英文個人面試（主流班以普通話爲主）· 可能包括小組觀察 🟡 多個升學網站綜合</td></tr>
+    <tr><th>錄取標準</th><td>筆試表現+面試表現+原校成績+課外活動/特長 💬 專家分析</td></tr>
+  </table>
+  <h3>內地轉學生特別注意</h3>
+  <div class="callout warn">
+    <strong>⚠️ 從內地學校轉來蘇浙的三大適應挑戰</strong><br />
+    1. <strong>繁體字</strong>：蘇浙主流班使用繁體中文教材和書寫。內地學生需要從簡體轉爲繁體，這需要一定的過渡期（通常3-6個月）。<br />
+    2. <strong>英文進度</strong>：蘇浙英文科使用Longman教材且比同級高一級。內地公立學校的英文進度通常落後於香港同年級水平，插班前建議做針對性補習。<br />
+    3. <strong>香港本地課程</strong>：常識科、數學科的課程框架和考試模式與內地不同，需要時間適應。💬 專家分析
+  </div>
+  <h3>求位信策略（叩門核心武器）</h3>
+  <p>🟡 根據香港多位升學專家及教育王國家長過來人分享，針對蘇浙小學的求位信應遵循以下原則：</p>
+  <div class="callout">
+    <strong>求位信黃金法則（蘇浙專版）</strong><br />
+    <strong>時機</strong>：統一派位結果公佈後3-5天寄出或親自遞交<br />
+    <strong>長度</strong>：一頁A4爲限<br />
+    <strong>結構</strong>：<br />
+    第一段：孩子是誰 + 爲何選擇蘇浙（必須具體提及蘇浙的全普通話教學傳統和雙語特色——證明你做過功課，而非模板信）<br />
+    第二段：孩子的普通話/英語能力 + 與蘇浙教學風格的匹配度（如果是內地家庭，可以自然提到孩子母語爲普通話，能快速融入蘇浙的語言環境）<br />
+    第三段：懇求一次面試機會 + 表達誠意 + 聯絡方式<br />
+    <strong>附件</strong>：成績表 · 獎項證書 · 突出的語言能力證明（如普通話水平測試/PSC成績等）<br />
+    <strong>忌</strong>：「一信走天涯」——蘇浙的辦學基因（江浙滬同鄉會·全普通話·傳統嚴謹）與其他私立小學截然不同，求位信必須針對這些特點度身訂造
+  </div>
+  <h3>插班 / 叩門核心原則</h3>
+  <div class="callout">
+    <strong>六大核心原則</strong><br />
+    1. <strong>匹配度 &gt; 文筆</strong>：蘇浙更看重孩子是否真正適合全普通話傳統教學環境——與其寫一封辭藻華麗的求位信，不如如實描述孩子的語言能力和學習習慣<br />
+    2. <strong>有新內容才寄新信</strong>：如果孩子取得了新獎項、新成績或通過了普通話測試，可再寄信更新。不要每週寄一封內容相同的信<br />
+    3. <strong>一頁A4</strong>：校長每日接收大量求位信，長篇大論只會被跳過<br />
+    4. <strong>語言能力證明是加分項</strong>：與其他學校不同，蘇浙重視學生的普通話能力——任何普通話相關的證書/比賽成績都可以附上<br />
+    5. <strong>Reject vs Waiting的區別</strong>：如果收到的是Reject（明確拒絕），後續再寄求位信的機會極低；如果是Waiting（候補），則應積極保持聯繫<br />
+    6. <strong>不要忽視英文</strong>：蘇浙的主流班雖然以普通話教學，但英文科使用Longman高一級教材——英文能力同樣是評估的重要指標
+  </div>
+  <p class="source-note">📎 來源：校方官網 · Champimom求位信指南 · 星島頭條叩門策略 · 教育王國(BK)「過來人分享求位信」多帖交叉驗證 · 新城教育+叩門攻略</p>
+</section>
+<!-- ===== 6 在讀家庭真實畫像 ===== -->
+<section class="chapter">
+  <h2><span class="num">6</span>在讀家庭真實畫像<span class="cal-badge">口碑採樣</span></h2>
+  <p class="source-note"><strong>口碑採樣標註</strong>：教育王國 (edu-kingdom.com) 及 Baby Kingdom 多個帖文 · 時間跨度：2015-2025 · 分析帖數：15+ · 🔴 以下內容均源自家長匿名分享，可信度有限，僅供參考</p>
+  <div class="pros-cons">
+    <div class="pro-box">
+      <h4>👍 家長最滿意的 5 點</h4>
+      <ol>
+        <li><strong>普通話教學環境無可替代</strong>：對於內地來港家庭，蘇浙的全普通話環境是最大吸引力。「小朋友返學完全不用擔心廣東話問題，老師同學都講普通話，適應零難度。」🔴 BK家長 · 多帖交叉</li>
+        <li><strong>語文基礎打得紮實</strong>：多位家長提到蘇浙的語文教學質量出色——普通話沉浸式環境讓孩子達到母語水平，英文科Longman高一級教材則確保了英文進度不落後於英文小學。「語文基礎強，校風好，學費平，成績好，是出名的低讀（性價比高）。」🔴 BK資深用家</li>
+        <li><strong>升中成績有保障</strong>：約70-80%Band 1升中比例在沒有直屬中學的私立小學中表現出色。「全級倒數第一都系B1C升中」——雖然是匿名分享，但能反映家長對學校教學質量的信心。🔴 BK 2024年帖</li>
+        <li><strong>學費性價比極高</strong>：主流班全年學費約$46,500，在私立小學中屬於中低水平。對比國際學校動輒$150,000+或直資學校$30,000-$70,000，蘇浙以相對低廉的學費提供了高質量的雙語教育。🔴 BK多帖</li>
+        <li><strong>校風淳樸·同學背景多元</strong>：家長普遍對校風評價正面——「老師很好，同學很好，不會歧視。」校內既有本地香港同學也有不同國籍的同學，形成了一個相對國際化但不失傳統紀律的校園文化。🔴 BK家長分享</li>
+      </ol>
+    </div>
+    <div class="con-box">
+      <h4>👎 家長最不滿的 5 點</h4>
+      <ol>
+        <li><strong>校舍老舊·空間有限</strong>：多位家長指出校舍超過50年曆史，設施陳舊，沒有標準籃球場或游泳池。「校舍比較舊同細，課外活動較少，主力發展朗誦、舞蹈。」🔴 BK多帖</li>
+        <li><strong>課外活動選擇少</strong>：與108項課外活動的學校相比，蘇浙的課外活動以朗誦和舞蹈爲主，體育類活動選擇有限。「學校不鼓勵參加校外體育比賽」——這對熱愛運動的孩子可能是個減分項。🔴 BK多帖</li>
+        <li><strong>中文背誦壓力大</strong>：學校採用背默制度，對中文背誦有一定要求。部分外籍學生到高小後因中文壓力而轉校，本地學生雖然適應較好，但「背默」對不擅長背誦的孩子仍是一大挑戰。🔴 BK多帖</li>
+        <li><strong>沒有直屬中學·升中要靠自己</strong>：雖然升中成績不錯，但沒有直屬或一條龍中學意味著家長和孩子在五、六年級時需要投入大量精力應對升中——包括呈分試、自行分配面試、統一派位選校等。「蘇浙公學成績好一般不會選讀」意味著學校的聯繫中學實際上對成績較好的學生沒有幫助。🔴 BK多帖</li>
+        <li><strong>教學風格傳統·不適合活潑孩子</strong>：「傳統、嚴謹、較谷」是家長對學校的普遍描述。對活潑好動或需要較多自由空間的孩子，這種風格可能構成壓力。部分家長反映「如果孩子唔繫好乖嗰種，可能要考慮清楚」。🔴 BK多帖</li>
+      </ol>
+    </div>
+  </div>
+  <h3>「希望入學前就知道」—— 匿名家長分享</h3>
+  <div class="callout warn">
+    <p><strong>#1 「蘇浙唔系Happy School，真系要谷㗎」</strong><br />
+    「當初揀蘇浙系因爲普通話教學，諗住小朋友唔使適應廣東話。但入咗先知，每日功課幾樣，仲有背默，測驗密過其他學校。小朋友唔系唔開心，但絕對唔系hea住讀嘅學校。好處系中文同英文底真系打得好好，但家長要有心理準備陪讀。」🔴 BK匿名家長 2023</p>
+  </div>
+  <div class="callout warn">
+    <p><strong>#2 「升中真系要靠自己，學校唔會幫你安排好」</strong><br />
+    「蘇浙成績好系事實，但升中全部靠自己——呈分試、面試、選校，學校唔會好似一條龍咁幫你安排好曬。我個女當年全級考得唔錯，自行入咗張祝珊，但系成個過程家長要跟得好貼。如果你係想一條龍唔使煩升中嗰種家長，蘇浙未必啱你。」🔴 BK匿名家長 2022</p>
+  </div>
+  <div class="callout warn">
+    <p><strong>#3 「同學大部分系普通話家庭，廣東話用得少」</strong><br />
+    「我小朋友系本地香港家庭，最初揀蘇浙系想小朋友學好普通話。確實學得好好，但系返學之後發現大部分同學都系普通話家庭，課餘時間大家都系講普通話。小朋友嘅廣東話反而有少少退步。如果你想小朋友兩文三語都平衡，可能要考慮下呢點。」🔴 BK匿名家長 2024</p>
+  </div>
+  <p class="source-note">📎 來源：教育王國 (edu-kingdom.com) · Baby Kingdom · GoStudy · 以上口碑來自家長匿名分享，不代表本平臺立場</p>
+</section>
+<!-- ===== 7 同類校橫向對比 ===== -->
+<section class="chapter">
+  <h2><span class="num">7</span>同類校橫向對比<span class="cal-badge">幫你決策</span></h2>
+  <h3>港島東區及同類私立小學一表對比</h3>
+  <table class="dt">
+    <tr>
+      <th>&nbsp;</th>
+      <th style="background:#f0ebe3;color:#8b7355;">蘇浙小學（主流班）</th>
+      <th>福建中學附屬學校</th>
+      <th>滬江小學</th>
+      <th>香港嘉諾撒學校</th>
+    </tr>
+    <tr>
+      <th>等級</th>
+      <td style="background:#f0ebe3;">B</td>
+      <td>A</td>
+      <td>B</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>地區 / 校網</th>
+      <td style="background:#f0ebe3;">東區 · 不限校網</td>
+      <td>觀塘區 · 不限校網</td>
+      <td>東區 · 14/16校網</td>
+      <td>東區 · 14校網</td>
+    </tr>
+    <tr>
+      <th>類型/性別</th>
+      <td style="background:#f0ebe3;">私立·男女校</td>
+      <td>直資·男女校</td>
+      <td>資助·男女校</td>
+      <td>資助·女校</td>
+    </tr>
+    <tr>
+      <th>學費/年</th>
+      <td style="background:#f0ebe3;">~$46,500</td>
+      <td>~$36,000</td>
+      <td>免費</td>
+      <td>免費</td>
+    </tr>
+    <tr>
+      <th>教學語言</th>
+      <td style="background:#f0ebe3;">全普通話（英文科除外）</td>
+      <td>普通話+英語（雙語）</td>
+      <td>中文（粵語）爲主</td>
+      <td>中文（粵語）爲主</td>
+    </tr>
+    <tr>
+      <th>與中學關係</th>
+      <td style="background:#f0ebe3;">同一辦學團體·非直屬</td>
+      <td>一條龍·福建中學</td>
+      <td>聯繫·滬江維多利亞學校</td>
+      <td>聯繫·嘉諾撒書院</td>
+    </tr>
+    <tr>
+      <th>升中Band 1比例</th>
+      <td style="background:#f0ebe3;">~70-80%</td>
+      <td>~60-70%</td>
+      <td>~50-60%</td>
+      <td>~50-60%</td>
+    </tr>
+    <tr>
+      <th>教學風格</th>
+      <td style="background:#f0ebe3;">傳統·嚴謹·較谷</td>
+      <td>傳統與活動結合</td>
+      <td>學業導向·勤力型</td>
+      <td>傳統·天主教·女校</td>
+    </tr>
+    <tr>
+      <th>內地家庭友好度</th>
+      <td style="background:#f0ebe3;">極高（全普通話）</td>
+      <td>中高（普通話+英語）</td>
+      <td>低（粵語教學）</td>
+      <td>低（粵語教學）</td>
+    </tr>
+    <tr>
+      <th>入讀難度</th>
+      <td style="background:#f0ebe3;">中高</td>
+      <td>中高</td>
+      <td>中等</td>
+      <td>中等（僅收女生）</td>
+    </tr>
+    <tr>
+      <th>校舍設施</th>
+      <td style="background:#f0ebe3;">偏舊·空間有限</td>
+      <td>新淨·設備良好</td>
+      <td>中型·標準校舍</td>
+      <td>中型·標準校舍</td>
+    </tr>
+  </table>
+  <h3>選擇決策樹</h3>
+  <div class="decision-tree">
+    <p><span class="dt-q">Q1: 你的孩子會普通話嗎？</span><br />
+    → 會，且普通話是母語/熟練 → 繼續 Q2<br />
+    → 不太會，主要說粵語或英語 → 考慮 <strong>福建中學附屬學校</strong>（雙語環境·A級）或 <strong>滬江小學</strong>（粵語教學·東區B級）</p>
+    <p><span class="dt-q">Q2: 你重視「一條龍升中」還是「升中自由選擇」？</span><br />
+    → 一定要一條龍，不想煩升中 → <strong>福建中學附屬學校</strong>（一條龍福建中學·A級·直資）或考慮港大同學會小學（一條龍·A+級）<br />
+    → 不怕升中競爭，想要自由選擇任何中學 → 繼續 Q3</p>
+    <p><span class="dt-q">Q3: 你的預算和教學偏好？</span><br />
+    → 預算有限（學費&lt;$50,000/年）+ 重視普通話沉浸 → <strong>蘇浙小學主流班</strong>是最佳選擇<br />
+    → 預算充裕（學費&lt;$40,000/年直資）+ 想要雙語+一條龍 → <strong>福建中學附屬學校</strong><br />
+    → 預算充足 + 想要全英語國際課程 + 每日普通話 → 可考慮蘇浙小學國際班（學費~$101,500/年）或港島其他國際學校</p>
+    <p><span class="dt-q">Q4: 你的孩子是女孩嗎？</span><br />
+    → 是，且家住東區 → <strong>香港嘉諾撒學校</strong>（免費資助·聯繫Band 1B+嘉諾撒書院·校風純樸）可作爲備選<br />
+    → 男孩/男女不限 → 蘇浙小學（私立·男女校）是東區內地家庭的最務實選擇</p>
+  </div>
+  <p class="source-note">📎 來源：本平臺評級數據庫 · CHSC_2025 · EDB校網數據 · 教育王國(BK)多帖 · GoStudy · 蘇浙/福建/滬江/嘉諾撒官網 · 多個升學網站綜合</p>
+</section>
+<!-- ===== 8 專家總結與建議 ===== -->
+<section class="chapter">
+  <h2><span class="num">8</span>專家總結與建議<span class="cal-badge">行動指南</span></h2>
+  <h3>價值判斷：蘇浙小學值不值得爭取？</h3>
+  <p>💬 <strong>對於內地來港家庭——非常值得。</strong>蘇浙小學的核心價值在於<strong>以相對低廉的私立學費（主流班~$46,500/年），提供了全港獨一無二的全普通話教學環境</strong>。對於不會廣東話的孩子而言，這意味著入學第一天就能用母語學習——這在其他本地課程小學中幾乎不可能實現（大多數小學以粵語教學，少數英文小學以英語教學）。</p>
+  <p>但如果你選擇蘇浙的<strong>唯一原因是「不想學廣東話」</strong>——建議三思。孩子在香港生活，長遠而言廣東話仍然是一項重要的社交和就業技能。蘇浙的普通話環境是優勢，但不應該成爲孩子與本地社會之間的隔離牆。</p>
+  <h3>投入 vs 回報</h3>
+  <div class="callout">
+    <strong>💬 真實成本估算（6年小學·主流班）</strong><br />
+    · 學費：<strong>$46,500/年 × 6年 = $279,000</strong>（CHSC_2025數據）<br />
+    · 校車：約$1,000-$2,000/月（因居住地區差異大）<br />
+    · 課外活動/補習：約$2,000-$6,000/月（因家庭選擇差異極大）<br />
+    · 書本/校服/雜費：約$5,000-$8,000/年<br /><br />
+    <strong>回報</strong>：約70-80%畢業生升讀Band 1中學。如果進入知名Band 1中學（如張祝珊英文中學或庇理羅士女子中學——均爲Band 1A），6年中學全免費（官立/資助），對比國際學校6年中學約$100-150萬開支，累計節省可觀。<br /><br />
+    對比：如果選擇一條龍直資學校（如福建中學附屬學校，學費約$36,000/年），雖然每年節省約$10,000學費且有直升保障，但教學語言爲雙語而非全普通話。家長需要權衡：<strong>你是願意爲全普通話環境多付約$10,000/年，還是選擇更便宜的直資一條龍？</strong>
+  </div>
+  <h3>⚠️ 風險提示</h3>
+  <div class="risk-list">
+    <ol>
+      <li><strong>沒有直升中學保障</strong>：蘇浙小學不設一條龍或直屬中學，所有畢業生需透過SSPA升中。雖然升中成績出色（約70-80%Band 1），但沒有任何制度性保障——呈分試表現仍是決定性因素。</li>
+      <li><strong>傳統教學風格可能不適合所有孩子</strong>：蘇浙的教學風格傳統嚴謹，功課量偏多，有背默要求。對於活潑好動、需要較多自由探索空間的孩子，這種風格可能導致學習動機下降。</li>
+      <li><strong>語言環境的雙面刃</strong>：全普通話環境對內地家庭是優勢，但可能減少孩子接觸和練習廣東話的機會。在香港生活長遠而言，廣東話能力仍是重要的社交資本。</li>
+      <li><strong>校舍設施偏舊</strong>：超過50年曆史的校舍在空間和設施上與新式千禧校舍有明顯差距。課外活動選擇相對有限。</li>
+    </ol>
+  </div>
+  <h3>Plan B 推薦</h3>
+  <table class="dt">
+    <tr><th>如果你…</th><th>Plan B</th></tr>
+    <tr><td>蘇浙未錄取·仍想在東區讀私立</td><td><strong>福建中學附屬學校</strong>（觀塘·直資·A級·一條龍福建中學·雙語環境·普通話+英語·學費更低~$36,000/年）</td></tr>
+    <tr><td>預算充裕·想要英語國際課程</td><td><strong>蘇浙小學國際班</strong>（同一學校·全英語英國課程·學費~$101,500/年·每日普通話課）或港島其他國際學校</td></tr>
+    <tr><td>想要一條龍·不想煩升中</td><td><strong>港大同學會小學</strong>（東區·直資·A+級·一條龍港大同學會書院Band 1A++·IB+DSE雙軌）或 <strong>福建中學附屬學校</strong></td></tr>
+    <tr><td>家住東區·預算有限·接受粵語教學</td><td><strong>滬江小學</strong>（東區·資助·免費·聯繫滬江維多利亞學校Band 1A·學業表現穩定）</td></tr>
+    <tr><td>家有女孩·想走天主教女校路線</td><td><strong>香港嘉諾撒學校</strong>（東區14校網·資助·免費·聯繫嘉諾撒書院Band 1B+·校風純樸）</td></tr>
+  </table>
+  <h3>一句話行動建議</h3>
+  <div class="callout" style="font-size:16px;text-align:center;">
+    <strong>如果你的孩子母語是普通話、你希望在香港找到一所「不需要先學廣東話就能上課」的私立小學，並且願意接受傳統教學風格和升中競爭——那麼蘇浙小學是全港最精準匹配你需求的選擇。它不是最豪華的學校，但它可能是最適合你家孩子的起點。</strong>
+  </div>
+  <p class="source-note" style="margin-top:16px;">💬 本文所有主觀分析部分爲專家觀點，不構成入學建議。數據來源標註詳見各章節。報告生成日期：2026年7月。</p>
+</section>
+</main>
+</body>
+</html>

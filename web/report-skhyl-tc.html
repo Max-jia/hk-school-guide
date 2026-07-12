@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聖公會仁立紀念小學 · 深度擇校報告 | 港校指南</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/report.css" />
+  <style>
+    .score-bar { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+    .score-bar .bar-label { width: 100px; font-size: 13px; color: #6b7770; }
+    .score-bar .bar-track { flex: 1; height: 8px; background: #e7e3d9; border-radius: 4px; overflow: hidden; }
+    .score-bar .bar-fill { height: 100%; border-radius: 4px; background: #b8956a; }
+    .score-bar .bar-val { font-size: 13px; font-weight: 700; width: 36px; text-align: right; color: #22302b; }
+    .cal-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #f0e8dd; color: #6b5040; margin-left: 6px; vertical-align: middle; }
+    .decision-tree { background: #f7f3ed; border-radius: 12px; padding: 20px 24px; margin: 16px 0; font-size: 14px; line-height: 1.8; }
+    .decision-tree .dt-q { font-weight: 700; color: #7a6040; }
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    .pro-box { background: #f0e8dd; border-radius: 10px; padding: 16px; }
+    .con-box { background: #fbeee1; border-radius: 10px; padding: 16px; }
+    .pro-box h4, .con-box h4 { margin: 0 0 8px; font-size: 15px; }
+    .pro-box ul, .con-box ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; }
+    .risk-list { background: #fef8ee; border-left: 4px solid #b8956a; padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 12px 0; font-size: 14px; }
+    .risk-list li { margin: 6px 0; }
+    .radar-wrap { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; margin: 16px 0; }
+    .radar-svg { flex-shrink: 0; }
+    .radar-legend { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+    .radar-legend .rleg-item { display: flex; align-items: center; gap: 8px; }
+    .radar-legend .rleg-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .radar-legend .rleg-val { font-weight: 700; margin-left: auto; }
+    @media(max-width:600px){ .pros-cons{ grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header class="report-hero hero-tier-b">
+  <div class="container">
+    <div class="tier-mega">B 級 · 資助男女校 · 65校網</div>
+    <div class="hero-title-row"><h1>聖公會仁立紀念小學 深度擇校報告</h1><div class="lang-switch"><a href="./report-skhyl.html">简</a></div></div>
+    <p class="sub">S.K.H. Yan Laap Memorial Primary School · 葵青區(65校網) · 基督教(聖公宗) · 2002年創校 · 聯繫聖公會林護紀念中學(Band 1A)</p>
+</div>
+
+</header>
+<main class="report-body">
+<!-- ===== 0 數據可靠性聲明 ===== -->
+<div class="callout warn" style="margin-bottom:24px;background:#fff8e8;border-left-color:#b8956a">
+  <strong>本報告數據可靠性聲明</strong><br />
+  本報告所有事實性數據已儘可能經過多方覈實，並按覈實程度標註：<br />
+  · <strong>✅ 多方覈實</strong>：政府公開數據(CHSC/EDB)或多個獨立來源交叉確認<br />
+  · <strong>🟡 單一可靠來源</strong>：正規媒體報道或官方信息，未經第二個來源交叉驗證<br />
+  · <strong>🔴 有限來源·僅供參考</strong>：家長討論區/單一匿名帖等，可信度有限<br />
+  · <strong>💬 主觀分析</strong>：專家觀點/分析，非事實陳述<br />
+  所有客觀數據一經發現更準確的信息源將立即更新。主觀分析部分不構成入學建議。
+</div>
+<!-- ===== 1 學校定位與核心競爭力 ===== -->
+<section class="chapter">
+  <h2><span class="num">1</span>學校定位與核心競爭力<span class="cal-badge">專家分析</span></h2>
+  <table class="dt">
+    <tr><th>全名</th><td>聖公會仁立紀念小學（S.K.H. Yan Laap Memorial Primary School）· 簡稱「仁紀」✅ CHSC_2025</td></tr>
+    <tr><th>地區 / 校網</th><td>葵青區 · 65校網 · 新界葵涌上角街十三號 ✅ CHSC_2025</td></tr>
+    <tr><th>等級</th><td>B 級 · 葵青區頂尖資助小學 · 與仁立小學並列區內雙雄 ✅ 本平臺評級體系</td></tr>
+    <tr><th>類型 / 性別</th><td>資助 · 全日制 · 男女校 · 基督教（聖公宗）✅ CHSC_2025</td></tr>
+    <tr><th>學費</th><td>免費（政府資助）· 資助小學無需繳付學費 ✅ CHSC_2025</td></tr>
+    <tr><th>創校年份</th><td>2002 年（前身爲仁立小學下午校，遷入千禧校舍後獨立）✅ CHSC_2025 · 🟡 教育王國BK家長分享</td></tr>
+    <tr><th>校舍類型</th><td>千禧校舍（2002年啓用）· 比仁立小學舊校舍更大更新 ✅ CHSC_2025</td></tr>
+    <tr><th>教學語言</th><td>中文（三至六年級各設一班普教中）✅ CHSC_2025 · 🟡 TOPick報道</td></tr>
+    <tr><th>師生比</th><td>1:2.0（班師比）✅ CHSC_2025</td></tr>
+    <tr><th>聯繫中學</th><td>聖公會林護紀念中學（Band 1A · 資助男女校 · 葵青區頂尖英中）✅ 本平臺 banding 數據庫</td></tr>
+    <tr><th>校訓</th><td>仁德齊家、立志勉己 🟡 校方官網</td></tr>
+    <tr><th>學校設施</th><td>千禧校舍標準設施：30個課室、禮堂、操場、圖書館、計算機室、音樂室、視覺藝術室、英語室、輔導室等 🟡 TOPick + 校方資料</td></tr>
+  </table>
+  <h3>四因子評級體系解讀</h3>
+  <div class="callout">
+    <strong>💬 仁立紀念小學四因子評分</strong><br />
+    <div class="score-bar"><span class="bar-label">錨點分（升學保障）</span><span class="bar-track"><span class="bar-fill" style="width:64%"></span></span><span class="bar-val">64</span></div>
+    <div class="score-bar"><span class="bar-label">共識分（口碑共識）</span><span class="bar-track"><span class="bar-fill" style="width:0%"></span></span><span class="bar-val">0</span></div>
+    <div class="score-bar"><span class="bar-label">競爭分（入讀難度）</span><span class="bar-track"><span class="bar-fill" style="width:40%"></span></span><span class="bar-val">40</span></div>
+    <div class="score-bar"><span class="bar-label">世襲分（校友網絡）</span><span class="bar-track"><span class="bar-fill" style="width:18%"></span></span><span class="bar-val">18</span></div>
+    總分：<strong>36</strong> · 等級：<strong>B</strong>（數據來源：本平臺 primary_tiers_v9.json）<br /><br />
+    <strong>解讀</strong>：錨點分 64 是仁紀最核心的競爭力——聯繫中學爲 Band 1A 的聖公會林護紀念中學，在聯繫制度下可保留最多 25% 的中一學位給聯繫小學。這是仁紀在葵青區家長中擁有極高吸引力的根本原因。共識分 0 反映該校在主流媒體和全港排行榜中的曝光度較低，口碑主要集中在 65 校網的本地家長圈中。競爭分 40 顯示入讀競爭處於中等偏上水平——比頂級神校容易，但在 65 校網內屬第一梯隊的熱門選擇。世襲分 18 偏低，說明學校歷史較短（2002 年獨立），校友網絡仍在積累中，但這也意味着非世襲生入讀的空間相對較大。
+  </div>
+  <div class="callout">
+    <strong>💬 專家定位分析</strong><br />
+    仁立紀念小學是<strong>葵青區「性價比極高」的本地優質小學</strong>。它的核心競爭力可以歸納爲一條清晰的公式：<strong>政府資助免費 + 聯繫 Band 1A 英中 + 千禧校舍硬件 + 65校網雙雄之一</strong>。對於家住葵青/荃灣、目標本地 Band 1 中學的家庭來說，仁紀是最具現實可行性的優質選項之一。<br /><br />
+    仁紀與仁立小學的關係，類似於「同一家族的兩兄弟」。仁紀前身是仁立小學的下午校，2002 年獨立遷入千禧校舍後，形成了自己的辦學特色。從坊間家長口碑來看，兩者的核心區別是：<strong>仁立更傳統、更重學術競爭；仁紀相對溫和，更強調多元智能和全人發展</strong>。但「相對溫和」不等於「輕鬆」——仁紀從小三開始分精英班，呈分試壓力客觀存在，整體仍屬學術導向型學校。<br /><br />
+    仁紀最大的戰略價值在於其<strong>聯繫中學——聖公會林護紀念中學</strong>。林護是葵青區毫無爭議的龍頭英中，Band 1A 級別，DSE 成績在全港資助中學中名列前茅。在中學統一派位階段，林護可爲聯繫小學保留最多 25% 的學位。但需要注意：「聯繫」不是「直升」——學生仍需在呈分試中保持 Band 1 組別，且同時要與另一所聯繫小學（仁立）競爭這 25% 的保留學額。換言之，仁紀學生要走林護這條通道，需要在校內和跨校兩個層面都保持競爭力。<br /><br />
+    對於那些重視學術但又不想讓孩子承受極端壓力的家庭，仁紀提供了一個「中間地帶」：比仁立稍溫和的校園氛圍，同樣的林護升學通道，更新更寬敞的千禧校舍，以及豐富的課外活動選擇。這是在葵青區能做到的、最接近「魚與熊掌兼得」的選擇。
+  </div>
+  <h3>五維競爭力雷達圖</h3>
+  <div class="radar-wrap">
+    <svg class="radar-svg" overflow="visible" width="260" height="260" viewBox="0 0 240 240">
+      <polygon points="120.0,90.3 148.2,110.8 137.5,144.0 102.5,144.0 91.8,110.8" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <polygon points="120.0,59.7 177.3,101.4 155.4,168.8 84.6,168.8 62.7,101.4" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <polygon points="120.0,30.0 205.6,92.2 172.9,192.8 67.1,192.8 34.4,92.2" fill="none" stroke="#e7e3d9" stroke-width="1"/>
+      <line x1="120" y1="120" x2="120.0" y2="30.0" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="205.6" y2="92.2" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="172.9" y2="192.8" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="67.1" y2="192.8" stroke="#e7e3d9" stroke-width="0.8"/>
+      <line x1="120" y1="120" x2="34.4" y2="92.2" stroke="#e7e3d9" stroke-width="0.8"/>
+      <polygon points="120.0,57.0 188.5,102.0 157.5,169.0 85.0,169.0 54.5,102.0" fill="rgba(184,149,106,0.15)" stroke="#b8956a" stroke-width="2.5"/>
+      <circle cx="120.0" cy="57.0" r="4.5" fill="#b8956a"/>
+      <circle cx="188.5" cy="102.0" r="4.5" fill="#b8956a"/>
+      <circle cx="157.5" cy="169.0" r="4.5" fill="#b8956a"/>
+      <circle cx="85.0" cy="169.0" r="4.5" fill="#b8956a"/>
+      <circle cx="54.5" cy="102.0" r="4.5" fill="#b8956a"/>
+      <text x="120" y="16" text-anchor="middle" font-size="12" fill="#6b7770">學術實力</text>
+      <text x="223" y="91" text-anchor="start" font-size="12" fill="#6b7770">升學保障</text>
+      <text x="184" y="214" text-anchor="middle" font-size="12" fill="#6b7770">校風環境</text>
+      <text x="56" y="214" text-anchor="middle" font-size="12" fill="#6b7770">設施資源</text>
+      <text x="10" y="91" text-anchor="end" font-size="12" fill="#6b7770">可負擔性</text>
+    </svg>
+    <div class="radar-legend">
+      <div class="rleg-item"><span class="rleg-dot" style="background:#b8956a"></span>學術實力 <span class="rleg-val">7.0</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#b8956a"></span>升學保障 <span class="rleg-val">7.5</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#b8956a"></span>校風環境 <span class="rleg-val">7.0</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#b8956a"></span>設施資源 <span class="rleg-val">7.5</span></div>
+      <div class="rleg-item"><span class="rleg-dot" style="background:#b8956a"></span>可負擔性 <span class="rleg-val">9.5</span></div>
+    </div>
+  </div>
+  <h3>適合 / 不適合的孩子類型</h3>
+  <div class="pros-cons">
+    <div class="pro-box">
+      <h4>適 合</h4>
+      <ul>
+        <li>家庭目標走本地 DSE 升學路線，家住葵青/荃灣區</li>
+        <li>重視升中保障——仁紀聯繫林護 Band 1A 中學，是區內最穩妥的升學路徑之一</li>
+        <li>預算有限但想要優質教育——資助免費，與直資私校相比可節省大量開支</li>
+        <li>認同基督教價值觀（聖公宗），重視品德教育</li>
+        <li>孩子有一定學術基礎，能夠適應小三開始的精英班分流和呈分試節奏</li>
+        <li>家長願意參與子女學業——仁紀是學術導向型學校，家長跟進很重要</li>
+      </ul>
+    </div>
+    <div class="con-box">
+      <h4>不適合</h4>
+      <ul>
+        <li>目標國際課程（IB/A-Level）或海外升學的家庭——林護是純 DSE 路線</li>
+        <li>追求純英語教學環境——仁紀以中文爲主要教學語言，僅設一班普教中</li>
+        <li>孩子學術基礎偏弱且抗壓能力低——小三起的精英班分流和呈分試競爭客觀存在</li>
+        <li>期望「零壓力快樂教育」——仁紀雖比仁立溫和，但仍屬學術導向型學校</li>
+        <li>對學校地理位置有顧慮——校舍位於葵涌上角街，公共交通不算十分便捷</li>
+      </ul>
+    </div>
+  </div>
+  <p class="source-note">📎 來源：CHSC_2025 · 本平臺 tier 數據庫 · 教育王國(BK)家長討論多帖 · 校方官網 · TOPick · OH!PAMA · 明報升學攻略</p>
+</section>
+<!-- ===== 2 教學深度解讀 ===== -->
+<section class="chapter">
+  <h2><span class="num">2</span>教學深度解讀<span class="cal-badge">專家分析</span></h2>
+  <h3>課程體系</h3>
+  <p>仁紀採用香港本地課程，以<strong>中文爲主要教學語言</strong>，三至六年級每級設有一班<strong>普教中</strong>（以普通話教授中文科）。學校強調<strong>正向教育</strong>，設有「正仁小子 SUPER S」校本輔導獎勵計劃，將品格培養融入日常教學。課程特色包括拔尖班、英語大使、奧數培訓、辯論、科學探究、編程、STEM 跨學科項目等多元化學習活動。🟡 TOPick · OH!PAMA報道 · 校方資料</p>
+  <p>學校安排各級外出參觀，五、六年級學生可參加<strong>外地交流團</strong>。課外活動被形容爲「全葵青最多嘢學嘅小學」，涵蓋音樂、朗誦、舞蹈、體育、制服團隊等多個領域。🔴 教育王國家長分享</p>
+  <h3>精英班制度詳解</h3>
+  <p>仁紀的精英班制度是家長最關注的教學特徵之一：<strong>小二開始設精英班</strong>（以往從小三開始，近年提前）。班別分類包括：中普班（普通話教中文，公認爲最強精英班）、A班（英文強）、B班（數學強）、E班（次精英班）。精英班設有<strong>淘汰機制</strong>——中普班需保持全級前 80-100 名，否則會被調出；普通班成績優異且普通話好的學生可獲推薦考入中普班。🟡 教育王國 BK 多帖交叉驗證</p>
+  <div class="callout warn">
+    <strong>💬 精英班制度的雙面性</strong><br />
+    精英班制度是一把雙刃劍。好處是：讓能力相近的學生一起學習，教學效率更高；爲學術突出的學生提供更具挑戰性的學習環境。風險是：小二就要面對分流壓力，對學生和家長的心理負擔不小；被「out出」精英班可能打擊孩子自信；精英班和非精英班之間的資源分配可能不均。不過有家長反映，學校對非精英班也有<strong>教學資源傾斜</strong>（如更多補課支援），並非放棄式管理。🔴 教育王國 BK 家長討論
+  </div>
+  <h3>考試與功課量</h3>
+  <p>全年設<strong>3 次考試</strong>，另有 3 次考前溫習（不計入成績）。中英文默書約<strong>每 7-10 天一次</strong>。小三、小五、小六因應 TSA（全港性系統評估）有額外操練，綜合課會改爲練習說話及聆聽。🟡 教育王國 BK 家長分享</p>
+  <p>功課量方面：小一至小二每日約 3-4 樣，以填充類爲主，約 1-2 小時可完成；小三開始功課量和難度明顯增加。中普班功課量最多，據用家統計比精英班每週多約 7 份，比普通班多約 10 份。學校每天最後一堂設<strong>導修課</strong>，讓學生在校完成部分功課。🟡 BK 多帖</p>
+  <h3>補課安排</h3>
+  <p>高小補課制度較爲密集：精英班週二補課，普通班週五補課，Band 1 邊緣學生需補足兩天。暑期亦設補課班，主要針對非精英班學生。🟡 BK 家長分享</p>
+  <h3>師資分析</h3>
+  <p>班師比 1:2.0，教師團隊以本地經驗教師爲主。校長在家長口碑中評價極高，被形容爲「超級大好人」「肯同家長傾計」。但教師質素方面存在兩極評價：大部分老師被贊有愛心和熱誠，個別被反映管教方式偏嚴——有家長提到「破口大罵」「撕學生習作」等個案。值得注意的是，校長據報傾向安排「較嚴格的老師」教精英班，「教法較活的老師」教非精英班，且老師不固定，會輪換。🔴 教育王國 BK 多帖</p>
+  <h3>⚠️ 教學侷限（誠實指出）</h3>
+  <ol>
+    <li><strong>精英班分流年齡提前</strong>：近年從小二開始分精英班，對小一學生而言適應時間極短，低齡競爭壓力可能影響學習興趣和心理健康。🔴 BK 家長關注</li>
+    <li><strong>學術導向明顯，全人發展有偏重</strong>：多位用家反映學校「除咗學術就係學術」，德育主要靠家庭。體育相對偏弱——學校更重視音樂、朗誦、跳舞，運動方面資源和訓練不足。🟡 BK 多帖交叉驗證</li>
+    <li><strong>部分教師管教方式爭議</strong>：有個別家長反映教師過於嚴厲，存在「罵學生」「撕習作」等情況。但此類評價爲個別經驗，未必是普遍現象。🔴 BK 家長分享</li>
+    <li><strong>補課密度高，自由時間受限</strong>：高小階段每週補課+額外操練，學生課餘自由安排的時間明顯減少，對有興趣班或課外發展的學生可能構成衝突。🟡 BK 家長分享</li>
+  </ol>
+  <p class="source-note">📎 來源：CHSC_2025 · 教育王國(BK)多帖交叉驗證 · 校方官網 · TOPick · OH!PAMA</p>
+</section>
+<!-- ===== 3 升中通路全景 ===== -->
+<section class="chapter">
+  <h2><span class="num">3</span>升中通路全景<span class="cal-badge">深度分析</span></h2>
+  <h3>聯繫中學：聖公會林護紀念中學</h3>
+  <table class="dt">
+    <tr><th>中學名稱</th><td>聖公會林護紀念中學（S.K.H. Lam Woo Memorial Secondary School）</td></tr>
+    <tr><th>關係</th><td>聯繫小學（非直屬，非一條龍）✅ CHSC_2025</td></tr>
+    <tr><th>Banding</th><td>Band 1A（全港資助英中頭部，葵青區龍頭）✅ 本平臺 sec_school_banding_v2.json</td></tr>
+    <tr><th>類型</th><td>資助 · 男女校 · 基督教（聖公宗）✅ EDB</td></tr>
+    <tr><th>聯繫學位保留</th><td>中學統一派位階段，最多保留 25% 學位給聯繫小學 ✅ EDB 政策</td></tr>
+    <tr><th>需注意</th><td>林護的聯繫小學有兩所——仁立小學和仁立紀念小學，兩校共享該 25% 保留學額 💬 專家分析</td></tr>
+    <tr><th>DSE 表現</th><td>林護 DSE 成績長期位居全港資助中學前列，核心科目 5+ 率顯著高於全港平均水平 🟡 坊間升學網站綜合</td></tr>
+    <tr><th>IB 課程</th><td>不設 IB，純 DSE 路線 ✅ 校方官網</td></tr>
+  </table>
+  <div class="callout">
+    <strong>💬 「聯繫」關係深度解讀</strong><br />
+    香港中小學之間的升學關係分三個級別，從強到弱依次是：<strong>一條龍 > 直屬 > 聯繫</strong>。仁紀與林護是「聯繫」關係，屬於三個級別中<strong>最弱</strong>的一種。聯繫中學在統一派位階段，最多爲聯繫小學保留 25% 的中一學位（直屬可保留最多 85%）。<br /><br />
+    更重要的是，林護的「聯繫小學」<strong>有兩所</strong>——仁立小學和仁立紀念小學。這意味着兩校的學生要<strong>共同競爭</strong>這 25% 的聯繫保留學額（而非各自享有 25%）。此外，學生必須在呈分試中保持在 Band 1 組別，纔有資格在聯繫學位分配中獲考慮。換言之，「入仁紀 = 入林護」是一個危險的誤解——這中間還有多次篩選：校內呈分試排名、跨校 Banding 競爭、以及兩校之間的保留學額競爭。<br /><br />
+    但話說回來，仁紀學生升讀林護的機會仍遠高於 65 校網其他小學——這是制度性的優勢。根據坊間家長分享，近年仁紀每年約有 30+ 名畢業生成功入讀林護（含自行分配和統一派位兩個階段），約佔全級約 25-30%。🔴 BK 家長估算
+  </div>
+  <h3>升中派位整體表現</h3>
+  <p>🟡 據升學網站及家長討論，仁紀的升中派位表現屬葵青區頂尖水平：<strong>約 98% 學生獲派首三志願</strong>，每年約有 50-60% 畢業生升讀英文中學（即 Band 1 中學）。除了林護之外，常見去向還包括：荃灣官立中學（Band 1A）、中華傳道會安柱中學（Band 1B）、天主教母佑會蕭明中學（Band 1B）、保祿六世書院（Band 1B）等區內英中，以及部分跨區 Band 1 中學。🟡 升學網站綜合 · 🔴 BK 家長討論</p>
+  <p>⚠️ 注意：<strong>校方未公開詳細的年度升中派位統計（包括各中學具體人數分佈）</strong>。以上數據來自升學網站和家長討論的綜合估算，準確度存疑。家長在決策時應考慮這一信息缺口。</p>
+  <h3>⚠️ 升中風險提示（至少 2 條）</h3>
+  <div class="risk-list">
+    <ol>
+      <li><strong>「聯繫」不等於「直升」，競爭比想象中激烈</strong>：學生必須在呈分試（小五下學期 + 小六上/下學期）中保持在 Band 1 組別，同時要與仁立小學學生競爭林護的 25% 聯繫保留學額。如果呈分試成績在 Band 1 邊緣，入讀林護的機會顯著降低。💬 專家分析</li>
+      <li><strong>校方未公開升中派位詳細數據</strong>：家長無法從官方渠道驗證實際的林護入讀人數和 Band 1 升學比例。坊間數據爲家長估算，準確度有限。🟡</li>
+      <li><strong>純 DSE 路線限制</strong>：林護不設 IB 或國際課程。如果家庭計劃高中後轉國際路線（A-Level/IB）或直接海外升學，需要在小學階段就考慮其他升學路徑。💬 專家分析</li>
+    </ol>
+  </div>
+  <p class="source-note">📎 來源：本平臺 sec_school_banding_v2.json · EDB 聯繫學校政策 · 坊間升學網站綜合 · 教育王國 BK 家長分享</p>
+</section>
+<!-- ===== 4 小一入讀攻略 ===== -->
+<section class="chapter">
+  <h2><span class="num">4</span>小一入讀攻略<span class="cal-badge">實戰指南</span></h2>
+  <h3>錄取難度總評</h3>
+  <p>💬 <strong>中等偏高競爭</strong>。仁紀在 65 校網中屬於最熱門的第一梯隊選擇，與仁立小學並列。但由於 65 校網整體競爭遠不及 41（九龍城）、12（灣仔）等傳統名校網，入讀難度相對可控。最大的競爭來自區內認同林護升學通道的家庭，以及部分跨區申請者。</p>
+  <h3>第一階段：自行分配學位（計分制）</h3>
+  <table class="dt">
+    <tr><th>學額</th><td>約佔小一總學額 50%（約 50-60 個，視乎當年教育局覈准開班數）✅ EDB 政策</td></tr>
+    <tr><th>申請時間</th><td>每年 9 月下旬（電子平臺及紙本同步）✅ EDB</td></tr>
+    <tr><th>錄取機制</th><td>計分辦法準則 · 世襲生（兄姊在學/父母任職）優先 · 不設面試 ✅ EDB 政策</td></tr>
+    <tr><th>結果公佈</th><td>每年 11 月 ✅ EDB</td></tr>
+  </table>
+  <div class="callout warn">
+    <strong>📊 計分策略分析</strong><br />
+    仁紀適用標準計分辦法：適齡兒童（10分）+ 首名出生子女（5分）+ 宗教分（5分，基督教/聖公宗領洗紙）= 最高非世襲分數爲 20 分。根據教育王國多年家長分享：<strong>20 分有機會但非保證</strong>——有的年份 20 分可入，有的年份 20 分仍需抽籤。15 分（僅有適齡+首名）在自行階段機會極微。25 分或以上（含世襲/父母爲舊生/父母爲該校教職員等加分）則基本穩妥。🔴 教育王國 BK 多帖共識
+  </div>
+  <h3>第二階段：統一派位（「大抽獎」）</h3>
+  <table class="dt">
+    <tr><th>學額</th><td>約佔小一總學額 50%（約 50-60 個）✅ EDB 政策</td></tr>
+    <tr><th>甲部（不限校網）</th><td>約佔統一派位學額 10%——全港競爭，中籤概率低 ✅ EDB 政策</td></tr>
+    <tr><th>乙部（限65校網）</th><td>約佔 90%——須居住於65校網（葵青區）✅ EDB 政策</td></tr>
+    <tr><th>選校表遞交</th><td>每年 1 月中 ✅ EDB</td></tr>
+    <tr><th>結果公佈</th><td>每年 6 月 ✅ EDB</td></tr>
+  </table>
+  <div class="callout warn">
+    <strong>⚠️ 65校網居住地址的戰略意義</strong><br />
+    65校網涵蓋葵青區大部分地區（葵涌、青衣等），區內住宅選擇多、租金相對九龍塘/灣仔等傳統名校網低廉。家長只需提供有效住址證明（租約+水/電/煤氣單）。值得注意的是，65校網的整體競爭遠不及41校網——仁紀雖是區內最熱門選擇之一，但統一派位乙部的中籤概率比41校網的喇沙/瑪利諾等高出不少。對於預算有限的家庭，65校網是一個高性價比的選擇。🟡 EDB校網資料 · HK01報道
+  </div>
+  <h3>第三階段：叩門（統一派位後）</h3>
+  <p>🟡 統一派位結果公佈後（約 6 月中），家長可向仁紀提交叩門申請。叩門通常設筆試（中英數）和麪試（見家長及小朋友）。叩門名額極少，通常僅數個，來自統一派位後未註冊或被取消資格的學位空缺。學校<strong>重視「111」表忠</strong>（自行+統一甲部+統一乙部第一志願均選仁紀）——這是叩門階段展示誠意的最直接方式。🔴 教育王國 BK 多帖 · 明報升學專欄</p>
+  <h3>提升入讀概率的務實建議</h3>
+  <ol>
+    <li><strong>爭取宗教分（+5分）</strong>：如果孩子接受基督教領洗（聖公宗），可獲得額外 5 分。對於非世襲、非舊生家庭，這 5 分是自行分配階段最關鍵的加分項。需要在申請前完成領洗並取得有效證明。✅ EDB 政策</li>
+    <li><strong>確保 65 校網合法居住</strong>：統一派位乙部只分配給 65 校網居住的申請人。家長可提前 3-6 個月搬入葵青區（葵涌/青衣），準備好完整住址證明。65 校網住宅租金遠低於 41 校網，兩房月租約 $10,000-$15,000。🟡 EDB校網資料</li>
+    <li><strong>「111」表忠策略</strong>：自行分配+統一甲部+統一乙部的第一志願均填仁紀。這不僅是統一派位乙部的策略，更是叩門階段向學校展示誠意的核心依據。🔴 教育王國 BK 多帖共識</li>
+    <li><strong>提前準備叩門筆試</strong>：雖然叩門名額極少，但一旦有機會，中英數筆試是關鍵篩選項。建議小一前至少 3-6 個月開始準備——中文閱讀理解+詞語運用、英文閱讀理解+基本文法、數學速算+邏輯應用題。🟡 BK 家長分享</li>
+    <li><strong>關注學校簡介會</strong>：仁紀每年舉辦小一入學簡介會，家長應密切關注校方官網公告並儘早報名。簡介會是瞭解學校最新收生政策和校園文化的正式渠道。🟡 OH!PAMA報道</li>
+  </ol>
+  <p class="source-note">📎 來源：EDB 小一入學統籌辦法 · 教育王國(BK)多帖 · 明報升學攻略 · OH!PAMA · TOPick</p>
+</section>
+<!-- ===== 5 插班與叩門攻略 ===== -->
+<section class="chapter">
+  <h2><span class="num">5</span>插班與叩門攻略<span class="cal-badge">深度攻略</span></h2>
+  <h3>插班概述</h3>
+  <p>仁紀<strong>開放小二至小五年級插班申請</strong>，視乎當年是否有學位空缺。插班競爭相當激烈——因爲一旦成功插班，孩子就能享受與從小一入讀完全相同的聯繫升學優勢（林護通道）。而且相對於仁立小學，仁紀的校風稍溫和，對插班生的適應可能更友好。🟡 教育王國 BK · 多個升學平臺綜合</p>
+  <p>💬 <strong>最佳插班時機：四年級前完成。</strong>原因是小五下學期開始第一次呈分試，這是升中派位最關鍵的三次考試之一。如果插班發生在小五或之後，孩子可能錯過部分呈分試，影響升中 Banding 評估。此外，仁紀從小二開始分精英班，插班愈早，孩子適應課程節奏和進入精英班的機會愈大。</p>
+  <h3>小二至小五插班流程</h3>
+  <table class="dt">
+    <tr><th>申請時間</th><td>各年級視學位空缺而定，須密切留意校方官網公告。通常在每年 5-7 月接受申請 🟡 升學網站綜合</td></tr>
+    <tr><th>申請材料</th><td>近兩學年成績表 · 課外活動/比賽證書 · 推薦信（如有）· 出勤記錄 🟡 升學網站綜合</td></tr>
+    <tr><th>筆試內容</th><td>中文：閱讀理解+寫作+詞語運用 · 英文：Reading Comprehension+Grammar+Writing · 數學：應用題+邏輯推理+速算 🟡 升學網站綜合 · BK 家長分享</td></tr>
+    <tr><th>面試形式</th><td>中英雙語個人面試+家長面談 🟡 BK 家長分享</td></tr>
+    <tr><th>錄取標準</th><td>筆試表現+面試表現+原校成績+課外活動/特長（音樂、朗誦等可加分）💬 專家分析</td></tr>
+  </table>
+  <h3>小一叩門攻略</h3>
+  <p>統一派位結果公佈後（約 6 月中），家長可立即啓動小一叩門。叩門名額極少（通常爲個位數），但這是統一派位落空後的最後機會。仁紀叩門通常涉及筆試（中英數，約 1-1.5 小時）和麪試（家長+小朋友，約 15-20 分鐘）。</p>
+  <div class="callout">
+    <strong>求位信黃金法則（針對仁紀）</strong><br />
+    <strong>時機</strong>：結果公佈後 3-5 天寄出（太早學校可能尚無空缺，太晚可能已安排面試）<br />
+    <strong>長度</strong>：一頁 A4 爲限<br />
+    <strong>結構</strong>：<br />
+    第一段：孩子是誰 + 爲何申請仁紀（具體引用學校的「正向教育」理念或多元智能特色，證明你做過功課，非模板）<br />
+    第二段：孩子的優勢/特點/與學校的匹配度（附具體例子——例如孩子喜歡閱讀+朗誦可對應學校朗誦傳統；孩子數學好可對應奧數培訓）<br />
+    第三段：懇求一次面試機會 + 表達「111」誠意 + 聯繫方式<br />
+    <strong>附件</strong>：成績表 · 獎項證書（特別是朗誦/音樂/數學比賽）· 領洗紙（如適用）· 推薦信（如有）<br />
+    <strong>忌</strong>：不要用同一封信投多所學校——仁紀的辦學特色（正向教育+多元智能）與仁立（傳統學術）有明顯分別，求位信內容須對應
+  </div>
+  <h3>插班 / 叩門核心原則</h3>
+  <div class="callout">
+    <strong>六大核心原則</strong><br />
+    1. <strong>匹配度 > 文筆</strong>：學校更看重孩子是否真正適合仁紀的文化和節奏——不是看求位信寫得多好。<br />
+    2. <strong>有新內容才寄新信</strong>：如果孩子取得了新獎項或成績進步，可再寄信更新。不要每週寄內容相同的信。<br />
+    3. <strong>一頁 A4</strong>：校長處理大量求位信，冗長信件只會被跳過。<br />
+    4. <strong>「111」是誠意門檻</strong>：自行+甲部+乙部第一志願均選仁紀，叩門時這是最基本的要求。<br />
+    5. <strong>突出文藝特長</strong>：仁紀重視朗誦、音樂、跳舞等文藝項目，在此類比賽中有成績的孩子在插班/叩門中有加分。<br />
+    6. <strong>中英數均衡爲重</strong>：仁紀的筆試三門並重，沒有哪一科可以「放棄」——三門都要準備。
+  </div>
+  <p class="source-note">📎 來源：明報趙榮德升學專欄 · 星島頭條求位信指南 · 教育王國(BK)「過來人分享求位信」多帖交叉驗證</p>
+</section>
+<!-- ===== 6 在讀家庭真實畫像 ===== -->
+<section class="chapter">
+  <h2><span class="num">6</span>在讀家庭真實畫像<span class="cal-badge">口碑採樣</span></h2>
+  <p class="source-note"><strong>口碑採樣標註</strong>：教育王國 (edu-kingdom.com) 及 Baby Kingdom 多個帖文 · 時間跨度：2007-2025 · 分析帖數：20+ · 🔴 以下內容均源自家長匿名分享，可信度有限，僅供參考</p>
+  <div class="pros-cons">
+    <div class="pro-box">
+      <h4>👍 家長最滿意的 5 點</h4>
+      <ol>
+        <li><strong>校長口碑極好</strong>：多位家長稱讚校長「超級大好人」「肯同家長傾計」「好有心」。在本地小學中，校長能獲得如此一致好評並不常見。🔴 BK 2014-2024 多帖</li>
+        <li><strong>課外活動豐富多元</strong>：被形容爲「全葵青最多嘢學嘅小學」。朗誦、音樂、跳舞、辯論、奧數、STEM、編程、制服團隊——選擇極多，每個孩子都有發揮空間。🔴 BK 多帖</li>
+        <li><strong>升中派位成績理想</strong>：聯繫林護 Band 1A 中學的優勢是家長選擇仁紀的首要原因。派位結果令大多數家長滿意，「98% 獲派首三志願」是常見引述。🟡 升學網站 · BK 多帖</li>
+        <li><strong>對成績較弱學生的關懷</strong>：相比仁立被指「標籤化」成績差的學生，仁紀被家長認爲對成績較弱的學生更包容——「不會因爲小朋友成績不好就歧視，還會想辦法提升自信心」。學校對非精英班有教學資源傾斜。🔴 BK 多帖</li>
+        <li><strong>校風純樸、校舍新淨</strong>：千禧校舍硬件條件好，校園環境寬敞明亮。學生被形容爲「不太物質主義」，校風純樸。🔴 BK 多帖</li>
+      </ol>
+    </div>
+    <div class="con-box">
+      <h4>👎 家長最不滿的 5 點</h4>
+      <ol>
+        <li><strong>精英班制度下的競爭壓力</strong>：小二開始分流，精英班淘汰制——「要保持排名，否則會被out出來」。對小朋友和家長都是持續的心理負擔。🔴 BK 多帖</li>
+        <li><strong>部分老師管教方式有爭議</strong>：有個案反映老師「破口大罵」「撕學生習作」「拋書簿」。雖然未必普遍，但有多個獨立用家提及類似情況。亦有家長表示「好老師要睇彩數」。🔴 BK 多帖</li>
+        <li><strong>體育發展偏弱</strong>：學校在音樂、朗誦、跳舞方面投入較多，但體育方面（田徑、游泳、球類等）資源和訓練被認爲相對不足。對體育型學生不太友好。🔴 BK 家長分享</li>
+        <li><strong>學術導向爲主，德育靠家庭</strong>：「除咗學術就係學術」——多位家長認爲學校在品格教育方面投入不足，德育主要靠家庭自行教導。🔴 BK 家長分享</li>
+        <li><strong>高小補課密度高</strong>：精英班+普通班各有補課日，Band 1 邊緣生甚至要補兩天。部分家長覺得補課過多，壓縮了孩子的自由時間和課外發展空間。🔴 BK 家長分享</li>
+      </ol>
+    </div>
+  </div>
+  <h3>「希望入學前就知道」—— 匿名家長分享</h3>
+  <div class="callout warn">
+    <p><strong>#1 「以爲仁紀比仁立輕鬆很多，其實唔系」</strong><br />
+    「當初揀仁紀唔揀仁立，就係因爲聽到話仁紀冇咁谷。入到去先發現，其實小三之後都系一樣咁谷——精英班、呈分試、補課、TSA操練……樣樣齊。分別只系仁立從一開始就谷，仁紀俾你唞兩年先開始谷。」🔴 BK 匿名家長 2022</p>
+  </div>
+  <div class="callout warn">
+    <p><strong>#2 「課外活動多，但時間唔夠用」</strong><br />
+    「學校啲活動真繫好多好正，朗誦隊、奧數班、編程班……但問題系功課+補課已經佔咗大部分時間，小朋友根本冇精力再去玩課外活動。結果變成：活動好豐富，但得個睇字。」🔴 BK 匿名家長 2023</p>
+  </div>
+  <p class="source-note">📎 來源：教育王國 (edu-kingdom.com) · Baby Kingdom · 以上口碑來自家長匿名分享，不代表本平臺立場</p>
+</section>
+<!-- ===== 7 同類校橫向對比 ===== -->
+<section class="chapter">
+  <h2><span class="num">7</span>同類校橫向對比<span class="cal-badge">幫你決策</span></h2>
+  <h3>65校網及葵青區同級小學一表對比</h3>
+  <table class="dt">
+    <tr>
+      <th>&nbsp;</th>
+      <th style="background:#f0e8dd;color:#6b5040;">仁立紀念小學</th>
+      <th>聖公會仁立小學</th>
+      <th>聖公會主恩小學</th>
+      <th>祖堯天主教小學</th>
+    </tr>
+    <tr>
+      <th>等級</th>
+      <td style="background:#f0e8dd;">B</td>
+      <td>B</td>
+      <td>未評級</td>
+      <td>未評級</td>
+    </tr>
+    <tr>
+      <th>校網</th>
+      <td style="background:#f0e8dd;">65（葵青）</td>
+      <td>65（葵青）</td>
+      <td>65（葵青）</td>
+      <td>65（葵青）</td>
+    </tr>
+    <tr>
+      <th>類型</th>
+      <td style="background:#f0e8dd;">資助·男女校·基督教</td>
+      <td>資助·男女校·基督教</td>
+      <td>資助·男女校·基督教</td>
+      <td>資助·男女校·天主教</td>
+    </tr>
+    <tr>
+      <th>學費/年</th>
+      <td style="background:#f0e8dd;">免費</td>
+      <td>免費</td>
+      <td>免費</td>
+      <td>免費</td>
+    </tr>
+    <tr>
+      <th>聯繫中學</th>
+      <td style="background:#f0e8dd;">林護紀念中學（Band 1A）</td>
+      <td>林護紀念中學（Band 1A）</td>
+      <td>無聯繫中學</td>
+      <td>無聯繫中學</td>
+    </tr>
+    <tr>
+      <th>升中優勢</th>
+      <td style="background:#f0e8dd;">強·聯繫保留25%（共享）</td>
+      <td>強·聯繫保留25%（共享）</td>
+      <td>弱·純派位</td>
+      <td>弱·純派位</td>
+    </tr>
+    <tr>
+      <th>教學風格</th>
+      <td style="background:#f0e8dd;">學術導向·多元智能·相對溫和</td>
+      <td>傳統學術·較「谷」</td>
+      <td>活動教學·輕鬆</td>
+      <td>天主教·重視品德</td>
+    </tr>
+    <tr>
+      <th>精英班</th>
+      <td style="background:#f0e8dd;">小二起·含中普班</td>
+      <td>小三起</td>
+      <td>不設</td>
+      <td>不設</td>
+    </tr>
+    <tr>
+      <th>校舍</th>
+      <td style="background:#f0e8dd;">千禧校舍（大·新）</td>
+      <td>舊式校舍（較小）</td>
+      <td>標準校舍</td>
+      <td>標準校舍</td>
+    </tr>
+    <tr>
+      <th>核心優勢</th>
+      <td style="background:#f0e8dd;">林護通道+新校舍+多元ECA</td>
+      <td>林護通道+最強學術</td>
+      <td>輕鬆氛圍+15分可入</td>
+      <td>品德教育+15分可入</td>
+    </tr>
+  </table>
+  <h3>選擇決策樹</h3>
+  <div class="decision-tree">
+    <p><span class="dt-q">Q1: 你最看重升中保障嗎？</span><br />
+    → 是 → 繼續 Q2<br />
+    → 不是（更看重快樂童年/輕鬆氛圍）→ 考慮 <strong>聖公會主恩小學</strong>（65校網·活動教學·較輕鬆）</p>
+    <p><span class="dt-q">Q2: 你有宗教分（基督教）或舊生分嗎？</span><br />
+    → 沒有（15分或以下）→ 自行階段機會極微，統一派位靠運氣。如果不執着於仁紀/仁立的林護通道，可以考慮 <strong>祖堯天主教小學</strong> 或 <strong>主恩小學</strong>（競爭較小）💬 專家建議<br />
+    → 有（20分或以上）→ 繼續 Q3</p>
+    <p><span class="dt-q">Q3: 你更看重學術競爭還是多元發展？</span><br />
+    → 學術至上，孩子能承受高強度競爭 → <strong>仁立小學</strong>是首選——學術要求更高，傳統名校氛圍，林護入讀人數歷史較穩定<br />
+    → 學術重要但不想過度壓迫，希望孩子多元發展 → <strong>仁立紀念小學</strong>是最佳平衡——同樣享有林護通道，校風稍溫和，校舍更新，課外活動更豐富</p>
+    <p><span class="dt-q">Q4: 你家住哪個區域？</span><br />
+    → 葵涌/青衣 → 65校網是自然選擇<br />
+    → 荃灣區 → 跨區申請需考慮交通便利性，兼顧荃灣區內的 62 校網選擇<br />
+    → 其他地區 → 需要評估搬遷成本 vs 教育回報</p>
+  </div>
+  <p class="source-note">📎 來源：本平臺評級數據庫 · CHSC_2025 · EDB 校網數據 · 明報升學攻略 · 教育王國 BK</p>
+</section>
+<!-- ===== 8 專家總結與建議 ===== -->
+<section class="chapter">
+  <h2><span class="num">8</span>專家總結與建議<span class="cal-badge">行動指南</span></h2>
+  <h3>價值判斷：仁紀值不值得爭取？</h3>
+  <p>💬 <strong>值得——如果條件匹配。</strong>仁紀是葵青區「性價比最高」的優質小學選項之一。它的核心價值在於：以<strong>政府資助（零學費）</strong>的成本，換取向<strong>Band 1A 英中（林護）</strong>升學的最優路徑。對於那些家住葵青/荃灣、重視學術但不追求極端競爭、預算有限的家庭，仁紀提供了一個非常務實且穩妥的選擇。</p>
+  <p>但需要清醒認識的是：<strong>「聯繫」不是「直升」</strong>。仁紀學生要進入林護，仍需經歷呈分試的嚴格篩選，並與仁立小學學生競爭有限的聯繫保留學額。選擇仁紀的家庭，既要有「爭取林護」的目標，也要有「接受其他 Band 1 中學」的心理準備。</p>
+  <h3>投入 vs 回報</h3>
+  <div class="callout">
+    <strong>💬 真實成本估算（6 年小學）</strong><br />
+    · 學費：<strong>$0</strong>（政府資助全免）<br />
+    · 搬遷成本（如需搬入 65 校網）：葵青區兩房月租約 $10,000-$15,000，屬全港較低水平<br />
+    · 課外活動/補習：約 $2,000-$6,000/月（因家庭選擇差異大；仁紀課外活動豐富，但參與成本由家庭自主控制）<br />
+    · 書簿雜費：約 $2,000-$3,000/年<br /><br />
+    <strong>回報</strong>：如果成功升讀林護（Band 1A），6 年中學同樣免費，累計 12 年全免費優質教育。對比直資/私立學校（每年 $20,000-$60,000 學費），12 年可節省 <strong>$24-72 萬</strong>。同時獲得 Band 1A DSE 成績+聖公會學校網絡。性價比在本地教育體系中屬於高水平。
+  </div>
+  <h3>⚠️ 風險提示</h3>
+  <div class="risk-list">
+    <ol>
+      <li><strong>入讀風險</strong>：自行分配 20 分不保證中籤，統一派位靠運氣。沒有宗教分且不願搬家的家庭入讀機會有限。必須有 Plan B。</li>
+      <li><strong>升學風險</strong>：聯繫不等於直升——呈分試成績決定一切。如果孩子學業在 Band 1 邊緣，入讀林護的機會顯著降低。好在 65 校網及周邊 Band 1 中學選擇較多（安柱、蕭明、保祿六世等），即使不能入林護，仍有機會派往其他優質英中。</li>
+      <li><strong>學習壓力風險</strong>：小二起的精英班分流、小三起的呈分試準備、高小階段的密集補課——對於學習節奏較慢或對壓力敏感的孩子，可能影響學習興趣和心理健康。</li>
+      <li><strong>文化匹配風險</strong>：學校的學術導向型文化並非適合所有孩子。如果孩子偏重體育、藝術等非學術領域，或在傳統教學模式中容易失去動力，需要謹慎評估。</li>
+    </ol>
+  </div>
+  <h3>Plan B 推薦</h3>
+  <table class="dt">
+    <tr><th>如果你…</th><th>Plan B</th></tr>
+    <tr><td>仁紀自行派位落空</td><td>統一派位乙部仍選仁紀（第一志願），第二志願可考慮 <strong>聖公會主恩小學</strong>（同區·較輕鬆·升中派位也屬不錯）或 <strong>祖堯天主教小學</strong>（品德教育好）</td></tr>
+    <tr><td>孩子不適合學術型競爭環境</td><td>荃灣區的 <strong>海壩街官立小學</strong>（聯繫荃灣官立中學 Band 1A）同樣是「聯繫 Band 1A」的路徑，但校風略有不同，值得考察</td></tr>
+    <tr><td>追求純英小或國際路線</td><td>仁紀和所有 65 校網資助小學均不適合——考慮荃灣/九龍區的直資/私立小學，或國際學校</td></tr>
+    <tr><td>不想搬入 65 校網</td><td>考慮孩子所在校網內的最佳選擇——每個校網都有自己的「區內領頭羊」，未必需要跨區</td></tr>
+  </table>
+  <h3>一句話行動建議</h3>
+  <div class="callout" style="font-size:16px;text-align:center;">
+    <strong>如果你家住葵青/荃灣，想要一條全免費的優質升學路徑（小學免費→Band 1A 英中），並且願意接受「溫和地競爭」的氛圍，那麼仁立紀念小學是你在 65 校網內最值得優先考慮的選擇——從領洗加分、到搬家入網、到叩門準備，每一步都值得認真規劃。</strong>
+  </div>
+  <p class="source-note" style="margin-top:16px;">💬 本文所有主觀分析部分爲專家觀點，不構成入學建議。數據來源標註詳見各章節。報告生成日期：2026年7月。</p>
+</section>
+</main>
+</body>
+</html>
