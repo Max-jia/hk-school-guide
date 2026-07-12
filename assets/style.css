@@ -4,17 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --ink: #020617;          /* 主文字：墨黑 */
+  --ink: #0c0a09;          /* 主文字：碳黑 */
   --muted: #64748b;        /* 次要文字：冷灰 */
-  --bg: #f8fafc;           /* 页面底：冷白 */
+  --bg: #fafaf9;           /* 页面底：暖白 */
   --surface: #ffffff;      /* 卡片白 */
-  --soft: #e8ecf1;         /* 柔色块：浅灰蓝 */
-  --primary: #0f172a;      /* 主色：深蓝黑 · 权威感 */
-  --primary-dark: #1e3a8a;
-  --primary-soft: #e0e7ff;
-  --accent: #a16207;       /* 点缀：暖金（行动/信任）· WCAG AA */
+  --soft: #e7e5e4;         /* 柔色块：暖石灰 */
+  --primary: #1c1917;      /* 主色：暖黑 · 低調沉穩 */
+  --primary-dark: #44403c;
+  --primary-soft: #e7e5e4;
+  --accent: #a16207;       /* 点缀：暖金 · 信任感 */
   --accent-soft: #fef3c7;
-  --border: #cbd5e1;
+  --border: #d6d3d1;
   --radius: 4px;
   --shadow: 0 1px 3px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.04);
 }
