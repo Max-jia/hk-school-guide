@@ -38,12 +38,12 @@
 }
 .pw-btn-secondary:hover { background: #e6f0ec; }
 .pw-btn-all {
-  background: linear-gradient(135deg, #a0522d, #c46a1f); color: #fff;
-  font-size: 15px; padding: 16px 28px;
+  background: linear-gradient(135deg, #6b2010, #8b3a1a); color: #fff;
+  font-size: 16px; padding: 18px 30px;
 }
-.pw-btn-all:hover { filter: brightness(1.1); }
-.pw-btn .pw-price { font-size: 22px; font-weight: 800; }
-.pw-btn .pw-label { font-size: 12px; opacity: .8; margin-top: 2px; }
+.pw-btn-all:hover { filter: brightness(1.15); }
+.pw-btn .pw-price { font-size: 26px; font-weight: 800; line-height: 1.2; }
+.pw-btn .pw-label { font-size: 14px; font-weight: 600; opacity: 1; margin-top: 4px; }
 .pw-recover {
   margin-top: 14px; font-size: 13px; color: #6b7770;
 }
