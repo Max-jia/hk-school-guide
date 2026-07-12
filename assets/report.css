@@ -91,14 +91,16 @@ table.dt tr:first-child td { border-top: none; }
 /* === 提示框 === */
 .callout {
   background: #fff; border: 1px solid #e7e3d9;
-  border-left: 3px solid #1f6f5c; padding: 16px 20px;
+  border-left: 4px solid #1f6f5c; padding: 16px 20px;
   border-radius: 0 10px 10px 0; margin: 20px 0; font-size: 14.5px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 .callout.warn {
-  background: #fbeee1; border-left-color: #e0894b; border-color: #f2d7bf;
+  background: #fef6ee; border-left-color: #a0522d; border-color: #f2d7bf;
 }
 .callout.warn strong { color: #a0522d; }
+.callout p { margin: 0 0 8px; }
+.callout p:last-child { margin: 0; }
 
 /* === 专家标签 === */
 .expert-tag {
@@ -146,9 +148,16 @@ table.dt tr:first-child td { border-top: none; }
   .report-hero { padding: 32px 0 20px; }
   .report-hero h1, .hero-title-row h1 { font-size: 20px !important; }
   .report-hero .hero-title-row { flex-direction: column; align-items: flex-start; gap: 6px; }
-  .report-body { padding: 16px 10px 32px; font-size: 15px; line-height: 1.75; }
+  .report-body { padding: 16px 14px 32px; font-size: 15px; line-height: 1.75; }
   .report-body p { margin: 0 0 12px; }
   .report-hero .tier-mega { font-size: 11px; padding: 3px 8px; }
+  /* 手机端结构化 */
+  .callout { padding: 14px 14px; margin: 16px 0; font-size: 14px; border-left-width: 4px; }
+  .callout.warn { border-left-color: #a0522d; }
+  .report-body ul, .report-body ol { padding-left: 18px; }
+  .report-body li { margin: 5px 0; line-height: 1.65; }
+  .chapter h3 { font-size: 16px; margin: 20px 0 8px; padding-bottom: 4px; border-bottom: 1px solid #e7e3d9; }
+  .chapter h4 { font-size: 15px; margin: 16px 0 6px; color: #4b564f; }
   .report-hero .sub { font-size: 13px; }
   /* 表格：水平滚动 */
   .chapter { overflow-x: hidden; }
