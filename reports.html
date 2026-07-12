@@ -151,6 +151,7 @@
       <button class="filter-pill" onclick="setPsFilter('S', this)">🏆 S 级<span class="cnt">·3</span></button>
       <button class="filter-pill" onclick="setPsFilter('A+', this)">🥇 A+ 级<span class="cnt">·9</span></button>
       <button class="filter-pill" onclick="setPsFilter('A', this)">🌟 A 级<span class="cnt">·20</span></button>
+      <button class="filter-pill" onclick="setPsFilter('B', this)">💚 B 级<span class="cnt">·29</span></button>
     </div>
     <div id="psContent"></div>
   </div>
@@ -165,7 +166,7 @@
 // 付费墙预埋：每份报告 data-premium=true，后续接入支付时启用 .premium-badge 样式
 const KG_REPORTS = [
   // S 级 (3)
-  {n:'寶山幼兒園',t:'S',d:'湾仔区',h:'全能学术神幼·约74%升神小',c:'braemar-hill',premium:true},
+  {n:'寶山幼兒園',t:'S',d:'湾仔区',h:'全能学术神幼·约74%升神小',c:'braemar-hill',premium:false},
   {n:'基督堂幼稚園',t:'S',d:'九龙城区',h:'全港升读女拔/男拔比例最高的幼稚园·全外教沉浸',c:'cckg',premium:true},
   {n:'國際英文幼稚園',t:'S',d:'九龙城区',h:'St. Cat·全港最知名名幼·自信表达见称',c:'stcat',premium:true},
   // A+ 级 (17)
@@ -226,7 +227,7 @@ const UNIQUE_KG = [...new Map(KG_REPORTS.map(r => [r.c, r])).values()];
 
 // ========== 小学报告数据 (32所) ==========
 const PS_REPORTS = [
-  {n:'拔萃女小學',t:'S',d:'油尖旺区',h:'全港#1·一条龙直升女拔·DSE状元摇篮',c:'dgjs',premium:true},
+  {n:'拔萃女小學',t:'S',d:'油尖旺区',h:'全港#1·一条龙直升女拔·DSE状元摇篮',c:'dgjs',premium:false},
   {n:'拔萃男書院',t:'S',d:'九龙城区',h:'IB+DSE双轨·IB全球顶尖·一条龙直升',c:'dbs',premium:true},
   {n:'聖保羅男女中學附屬小學',t:'S',d:'南区',h:'全港#3·23名DSE状元·录取率约5%',c:'spccps',premium:true},
   {n:'英華小學',t:'A+',d:'深水埗区',h:'200+年历史·25:1竞争·一条龙Band 1A+',c:'ywps',premium:true},
@@ -311,7 +312,7 @@ function renderPs() {
     html += '<div class="section-header"><span class="s-icon">' + gl.icon + '</span><h2>' + gl.label + '</h2><span class="s-count">' + schools.length + ' 所</span></div><div class="report-grid">';
     schools.forEach(s => {
       const tc = s.t==='S'?'s':s.t==='A+'?'aplus':s.t==='A'?'a':'b';
-      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/💚B级').split('/')[{S:0,'A+':1,A:2,B:3}[s.t]]+'</span><span class="rc-premium-tag">🔒 付费</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
+      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/💚B级').split('/')[{S:0,'A+':1,A:2,B:3}[s.t]]+'</span><span class="rc-premium-tag" style="background:#e6f0ec;color:#1f6f5c">🎉 免费试看</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
     });
     html += '</div>';
   }
@@ -350,7 +351,7 @@ function renderKg() {
     html += '<div class="section-header"><span class="s-icon">' + gl.icon + '</span><h2>' + gl.label + '</h2><span class="s-count">' + schools.length + ' 所</span></div><div class="report-grid">';
     schools.forEach(s => {
       const tc = s.t==='S'?'s':s.t==='A+'?'aplus':'a';
-      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/🔗连锁品牌').split('/')[{S:0,'A+':1,A:2,brand:3}[s.t]]+'</span><span class="rc-premium-tag">🔒 付费</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
+      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/🔗连锁品牌').split('/')[{S:0,'A+':1,A:2,brand:3}[s.t]]+'</span><span class="rc-premium-tag" style="background:#e6f0ec;color:#1f6f5c">🎉 免费试看</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
     });
     html += '</div>';
   }
