@@ -312,7 +312,7 @@ function renderPs() {
     html += '<div class="section-header"><span class="s-icon">' + gl.icon + '</span><h2>' + gl.label + '</h2><span class="s-count">' + schools.length + ' 所</span></div><div class="report-grid">';
     schools.forEach(s => {
       const tc = s.t==='S'?'s':s.t==='A+'?'aplus':s.t==='A'?'a':'b';
-      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/💚B级').split('/')[{S:0,'A+':1,A:2,B:3}[s.t]]+'</span><span class="rc-premium-tag" style="background:#e6f0ec;color:#1f6f5c">🎉 免费试看</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
+      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/💚B级').split('/')[{S:0,'A+':1,A:2,B:3}[s.t]]+'</span>'+(s.premium ? '<span class="rc-premium-tag">🔒 付费</span>' : '<span class="rc-premium-tag" style="background:#e6f0ec;color:#1f6f5c">🎉 免费试看</span>')+'<h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
     });
     html += '</div>';
   }
@@ -351,7 +351,7 @@ function renderKg() {
     html += '<div class="section-header"><span class="s-icon">' + gl.icon + '</span><h2>' + gl.label + '</h2><span class="s-count">' + schools.length + ' 所</span></div><div class="report-grid">';
     schools.forEach(s => {
       const tc = s.t==='S'?'s':s.t==='A+'?'aplus':'a';
-      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/🔗连锁品牌').split('/')[{S:0,'A+':1,A:2,brand:3}[s.t]]+'</span><span class="rc-premium-tag" style="background:#e6f0ec;color:#1f6f5c">🎉 免费试看</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
+      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/🔗连锁品牌').split('/')[{S:0,'A+':1,A:2,brand:3}[s.t]]+'</span>'+(s.premium ? '<span class="rc-premium-tag">🔒 付费</span>' : '<span class="rc-premium-tag" style="background:#e6f0ec;color:#1f6f5c">🎉 免费试看</span>')+'<h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
     });
     html += '</div>';
   }
