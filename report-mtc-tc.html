@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="zh-HK" data-report-code="mtc">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,6 +24,9 @@
     .risk-list li { margin: 6px 0; }
     @media(max-width:600px){ .pros-cons{ grid-template-columns: 1fr; } }
   </style>
+
+<link rel="stylesheet" href="./assets/paywall.css">
+<script src="./assets/paywall.js"></script>
 </head>
 <body>
 <header class="report-hero hero-tier-b">
@@ -134,6 +137,43 @@
   </div>
   <p class="source-note">📎 來源：CHSC_2025 · 本平臺 tier 數據庫 · 教育王國(BK)家長討論多帖 · 校方官網 · TOPick · 星島日報</p>
 </section>
+<!-- ===== 付费墙 ===== -->
+<div class="paywall-overlay" id="paywall">
+  <h3>解鎖全部 8 章深度分析</h3>
+  <p class="pw-sub">試讀結束。購買後解鎖教學解讀、升學通路、入讀攻略等全部內容</p>
+
+  <!-- 全解鎖（置頂·主推） -->
+  <div class="pw-all-access">
+    <div class="pw-badge">🔥 最划算 · 含後續新增</div>
+    <a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03">
+      <span class="pw-price">HK$198</span>
+      <span class="pw-label">一鍵解鎖全部 112 份報告</span>
+    </a>
+    <div class="pw-strike"><s>原價 HK$399</s> 省 HK$201</div>
+  </div>
+
+  <!-- 單份解鎖 -->
+  <div class="pw-features">
+    ✅ 教學解讀 &nbsp; ✅ 升學通路 &nbsp; ✅ 入讀攻略<br>
+    ✅ 插班叩門 &nbsp; ✅ 家庭畫像 &nbsp; ✅ 同類對比 &nbsp; ✅ 專家總結
+  </div>
+  <div class="pw-buttons">
+    <a class="pw-btn pw-btn-primary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
+      <span class="pw-price">HK$19.9</span>
+      <span class="pw-label">單份解鎖 · 本報告</span>
+    </a>
+    <a class="pw-btn pw-btn-secondary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
+      <span class="pw-price">HK$19.9</span>
+      <span class="pw-label">註冊購買 · 永久保存</span>
+    </a>
+  </div>
+  <div class="pw-single-strike"><s>原價 HK$29.9</s></div>
+
+  <div class="pw-recover">已購買？<a href="/unlock.html">點此恢復 →</a></div>
+</div>
+
+<div id="premium-content" style="display:none">
+
 <!-- ===== 2 教學深度解讀 ===== -->
 <section class="chapter">
   <h2><span class="num">2</span>教學深度解讀<span class="cal-badge">專家分析</span></h2>
@@ -445,6 +485,7 @@
   </div>
   <p class="source-note" style="margin-top:16px;">💬 本文所有主觀分析部分爲專家觀點，不構成入學建議。數據來源標註詳見各章節。報告生成日期：2026年7月。</p>
 </section>
+</div>
 </main>
 </body>
 </html>

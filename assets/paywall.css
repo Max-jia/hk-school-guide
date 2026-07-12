@@ -35,7 +35,7 @@
 .pw-all-access .pw-btn-all {
   display: inline-block;
   background: #fff !important;
-  color: #1f6f5c !important;
+  color: #175547 !important;
   font-size: 17px; font-weight: 800;
   padding: 14px 36px; border-radius: 12px;
   text-decoration: none !important;
@@ -44,6 +44,20 @@
 .pw-all-access .pw-btn-all:hover { transform: scale(1.03); }
 .pw-all-access .pw-btn-all .pw-price { font-size: 28px; display: block; line-height: 1.1; }
 .pw-all-access .pw-btn-all .pw-label { font-size: 14px; font-weight: 600; opacity: 1; }
+
+/* 底部CTA横幅中的全解锁按钮（无pw-all-access父容器时使用） */
+.pw-btn-all {
+  background: #fff !important;
+  color: #175547 !important;
+  font-weight: 800;
+  padding: 14px 36px;
+  border-radius: 12px;
+  text-decoration: none !important;
+  transition: transform .15s ease;
+}
+.pw-btn-all:hover { transform: scale(1.03); }
+.pw-btn-all .pw-price { font-size: 28px; display: block; line-height: 1.1; }
+.pw-btn-all .pw-label { font-size: 14px; font-weight: 600; }
 .pw-all-access .pw-strike {
   font-size: 14px; color: rgba(255,255,255,.6);
   margin-top: 8px;
@@ -70,11 +84,13 @@
 }
 .pw-btn-primary:hover { background: #175547 !important; border-color: #175547 !important; }
 .pw-btn-secondary {
-  background: #fff !important; color: #1f6f5c !important; border: 2px solid #1f6f5c !important;
+  background: #fff !important; color: #175547 !important; border: 2px solid #175547 !important;
 }
-.pw-btn-secondary:hover { background: #e6f0ec !important; }
+.pw-btn-secondary:hover { background: #e6f0ec !important; border-color: #175547 !important; }
 .pw-btn .pw-price { font-size: 22px; font-weight: 800; line-height: 1.2; }
-.pw-btn .pw-label { font-size: 12px; font-weight: 600; opacity: .75; margin-top: 2px; }
+.pw-btn .pw-label { font-size: 12px; font-weight: 500; margin-top: 2px; }
+.pw-btn-primary .pw-label { color: rgba(255,255,255,.88); }
+.pw-btn-secondary .pw-label { color: #6b7770; }
 
 .pw-single-strike {
   font-size: 13px; color: #999;
@@ -103,6 +119,8 @@ body.purchased #premium-content { display: block !important; }
   .pw-all-access { padding: 18px 16px; }
   .pw-all-access .pw-btn-all { padding: 12px 24px; }
   .pw-all-access .pw-btn-all .pw-price { font-size: 24px; }
+  .pw-btn-all { padding: 12px 24px; }
+  .pw-btn-all .pw-price { font-size: 24px; }
   .pw-buttons { flex-direction: column; align-items: center; }
   .pw-btn { width: 100%; max-width: 280px; }
 }

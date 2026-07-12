@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="zh-HK" data-report-code="skhcf">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +30,9 @@
     .timeline-item .tl-text { font-size: 14px; color: #22302b; }
     @media(max-width:600px){ .pros-cons{ grid-template-columns: 1fr; } }
   </style>
+
+<link rel="stylesheet" href="./assets/paywall.css">
+<script src="./assets/paywall.js"></script>
 </head>
 <body>
 <header class="report-hero hero-tier-b">
@@ -146,6 +149,43 @@
   </div>
   <p class="source-note">📎 來源：CHSC_2025 · 本平臺 tier 數據庫 · 教育王國(BK)家長討論多帖(2013-2025跨度) · 維基百科 · 百度百科 · 校方官網 · GoodSchool.hk · yimieducation.com</p>
 </section>
+<!-- ===== 付费墙 ===== -->
+<div class="paywall-overlay" id="paywall">
+  <h3>解鎖全部 8 章深度分析</h3>
+  <p class="pw-sub">試讀結束。購買後解鎖教學解讀、升學通路、入讀攻略等全部內容</p>
+
+  <!-- 全解鎖（置頂·主推） -->
+  <div class="pw-all-access">
+    <div class="pw-badge">🔥 最划算 · 含後續新增</div>
+    <a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03">
+      <span class="pw-price">HK$198</span>
+      <span class="pw-label">一鍵解鎖全部 112 份報告</span>
+    </a>
+    <div class="pw-strike"><s>原價 HK$399</s> 省 HK$201</div>
+  </div>
+
+  <!-- 單份解鎖 -->
+  <div class="pw-features">
+    ✅ 教學解讀 &nbsp; ✅ 升學通路 &nbsp; ✅ 入讀攻略<br>
+    ✅ 插班叩門 &nbsp; ✅ 家庭畫像 &nbsp; ✅ 同類對比 &nbsp; ✅ 專家總結
+  </div>
+  <div class="pw-buttons">
+    <a class="pw-btn pw-btn-primary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
+      <span class="pw-price">HK$19.9</span>
+      <span class="pw-label">單份解鎖 · 本報告</span>
+    </a>
+    <a class="pw-btn pw-btn-secondary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
+      <span class="pw-price">HK$19.9</span>
+      <span class="pw-label">註冊購買 · 永久保存</span>
+    </a>
+  </div>
+  <div class="pw-single-strike"><s>原價 HK$29.9</s></div>
+
+  <div class="pw-recover">已購買？<a href="/unlock.html">點此恢復 →</a></div>
+</div>
+
+<div id="premium-content" style="display:none">
+
 <!-- ===== 2 教學深度解讀 ===== -->
 <section class="chapter">
   <h2><span class="num">2</span>教學深度解讀<span class="cal-badge">專家分析</span></h2>
@@ -505,8 +545,10 @@
   <p class="source-note">📎 本報告所有客觀數據來源：CHSC_2025 · EDB · 本平臺 primary_tiers_v9.json · 維基百科 · 百度百科 · 校方官網 · 教育王國(BK) · Baby Kingdom · House730 · CTgoodjobs · lifenewshk.com · SOSOMAMA · GoodSchool.hk · yimieducation.com · ieduglobe.com · 微信公衆號報導 · Champimom · 新城教育+。報告生成日期：2026-07-12。</p>
 </section>
 <!-- ===== 底部 CTA ===== -->
-<div class="cta-banner">
-  <p style="margin:0;font-size:15px;line-height:1.7">以上分析基於公開數據和家長口碑綜合整理。<br />擇校沒有「最好」，只有「最合適」。<br /><strong>如需更多學校對比或個性化建議，歡迎繼續探索港校指南。</strong></p>
+<div class="cta-banner" style="background:linear-gradient(135deg,#2d6a4f,#40916c);border-radius:16px;padding:32px 28px;margin:32px 0;text-align:center;color:#fff">
+  <h3 style="font-family:Newsreader,serif;font-size:22px;font-weight:700;margin:0 0 8px;color:#fff">📄 獲取更多學校的深度擇校報告</h3>
+  <p style="font-size:15px;color:rgba(255,255,255,.85);margin:0 auto 24px;max-width:520px">我們爲全港 90+ 所評級學校準備了同等深度的擇校報告——每一份都包含專家解讀、入讀攻略、家長口碑和橫向對比。找到最適合你家的那一所。</p>
+  <a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03" style="display:inline-block;text-decoration:none"><span class="pw-price">HK$198</span><span class="pw-label">一鍵解鎖全部 112 份報告（含後續新增）</span></a>
 </div>
 </main>
 </body>
