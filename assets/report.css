@@ -50,6 +50,14 @@
 /* === 正文区 === */
 .report-body { max-width: 780px; margin: 0 auto; padding: 40px 20px 72px; }
 
+/* === 统一正文字体（解决110份报告排版不一致）=== */
+.report-body { font-size: 16px; line-height: 1.8; color: #2d3a33; }
+.report-body p { margin: 0 0 14px; }
+.report-body ul, .report-body ol { margin: 8px 0 16px; padding-left: 22px; }
+.report-body li { margin: 6px 0; line-height: 1.7; }
+.report-body strong { color: #1a2520; font-weight: 700; }
+.report-body em { color: #4b564f; }
+
 /* === 章节 === */
 .chapter { margin: 48px 0 0; padding-top: 36px; border-top: 1px solid #e7e3d9; }
 .chapter:first-of-type { border-top: none; margin-top: 0; }
@@ -63,7 +71,8 @@
   width: 28px; height: 28px; display: inline-flex; align-items: center;
   justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0;
 }
-.chapter h3 { font-size: 17px; font-weight: 600; margin: 24px 0 10px; color: #22302b; }
+.chapter h3 { font-size: 18px; font-weight: 600; margin: 24px 0 10px; color: #22302b; }
+.chapter h4 { font-size: 16px; font-weight: 600; margin: 18px 0 8px; color: #2d3a33; }
 
 /* === 表格 === */
 table.dt {
@@ -137,7 +146,8 @@ table.dt tr:first-child td { border-top: none; }
   .report-hero { padding: 32px 0 20px; }
   .report-hero h1, .hero-title-row h1 { font-size: 20px !important; }
   .report-hero .hero-title-row { flex-direction: column; align-items: flex-start; gap: 6px; }
-  .report-body { padding: 16px 10px 32px; }
+  .report-body { padding: 16px 10px 32px; font-size: 15px; line-height: 1.75; }
+  .report-body p { margin: 0 0 12px; }
   .report-hero .tier-mega { font-size: 11px; padding: 3px 8px; }
   .report-hero .sub { font-size: 13px; }
   /* 表格：水平滚动 */
