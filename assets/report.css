@@ -50,13 +50,21 @@
 /* === 正文区 === */
 .report-body { max-width: 780px; margin: 0 auto; padding: 40px 20px 72px; }
 
-/* === 统一正文字体（解决110份报告排版不一致）=== */
-.report-body { font-size: 16px; line-height: 1.8; color: #2d3a33; }
-.report-body p { margin: 0 0 14px; }
-.report-body ul, .report-body ol { margin: 8px 0 16px; padding-left: 22px; }
-.report-body li { margin: 6px 0; line-height: 1.7; }
+/* === 统一正文字体 + Tailwind Typography prose 精华 === */
+.report-body { font-size: 16px; line-height: 1.8; color: #2d3a33; max-width: 72ch; }
+.report-body p { margin: 0 0 1.2em; }
+.report-body p:last-child { margin-bottom: 0; }
+.report-body ul, .report-body ol { margin: 1em 0; padding-left: 1.5em; }
+.report-body li { margin: .4em 0; line-height: 1.7; padding-left: .2em; }
+.report-body li::marker { color: #8a9b91; }
 .report-body strong { color: #1a2520; font-weight: 700; }
-.report-body em { color: #4b564f; }
+.report-body em { color: #4b564f; font-style: italic; }
+.report-body a { color: #1f6f5c; text-decoration: underline; text-underline-offset: 2px; }
+.report-body a:hover { color: #175547; }
+.report-body blockquote { border-left: 3px solid #1f6f5c; padding: .5em 1em; margin: 1.2em 0; color: #4b564f; font-style: italic; background: #f8faf7; border-radius: 0 6px 6px 0; }
+.report-body img { max-width: 100%; border-radius: 8px; }
+.report-body hr { border: 0; border-top: 1px solid #e7e3d9; margin: 2em 0; }
+.report-body h3 + p, .report-body h4 + p { margin-top: .3em; }
 
 /* === 章节 === */
 .chapter { margin: 48px 0 0; padding-top: 36px; border-top: 1px solid #e7e3d9; }
