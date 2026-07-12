@@ -1,28 +1,28 @@
-/* report.css — 深度择校报告统一样式 (2026-07 现代升级)
-   气质：干净 · 温暖 · 专业 · 大留白
-   参考：Stripe/Linear/Notion 现代文档设计 */
+/* report.css — 深度择校报告统一样式 (2026-07 · 方案O)
+   气质：干净 · 克制 · 专业 · 大留白
+   参考：McKinsey/BCG 顾问报告 + Swiss Modernism */
 
-/* === Hero 标题区（统一模块·按等级配色）=== */
+/* === Hero 标题区（按等级配色·方案O indigo调）=== */
 .report-hero {
   padding: 56px 0 40px;
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
-/* S级：暗金 */
-.hero-tier-s { background: linear-gradient(160deg, #1a1a2e 0%, #2d2d3f 40%, #3d3540 100%); }
+/* S级：深紫金 */
+.hero-tier-s { background: linear-gradient(160deg, #1e1b4b 0%, #312e81 40%, #4338ca 100%); }
 .hero-tier-s h1, .hero-tier-s .sub, .hero-tier-s .tier-mega { color: #fff; }
-.hero-tier-s .tier-mega { background: rgba(255,215,0,.15); border: 1px solid rgba(255,215,0,.25); }
-/* A+级：蓝紫 */
-.hero-tier-aplus { background: linear-gradient(160deg, #1a1a3e 0%, #2d2d5e 40%, #3d3560 100%); }
+.hero-tier-s .tier-mega { background: rgba(255,215,0,.12); border: 1px solid rgba(255,215,0,.2); }
+/* A+级：indigo */
+.hero-tier-aplus { background: linear-gradient(160deg, #1e1b4b 0%, #3730a3 40%, #4f46e5 100%); }
 .hero-tier-aplus h1, .hero-tier-aplus .sub, .hero-tier-aplus .tier-mega { color: #fff; }
-.hero-tier-aplus .tier-mega { background: rgba(147,140,255,.12); border: 1px solid rgba(147,140,255,.2); }
-/* A级：深绿 */
-.hero-tier-a { background: linear-gradient(160deg, #1a2e2a 0%, #1f4a3a 40%, #1f6f5c 100%); }
+.hero-tier-aplus .tier-mega { background: rgba(165,180,252,.12); border: 1px solid rgba(165,180,252,.2); }
+/* A级：蓝紫 */
+.hero-tier-a { background: linear-gradient(160deg, #1e293b 0%, #334155 40%, #475569 100%); }
 .hero-tier-a h1, .hero-tier-a .sub, .hero-tier-a .tier-mega { color: #fff; }
-.hero-tier-a .tier-mega { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.15); }
+.hero-tier-a .tier-mega { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); }
 /* B级：暖灰 */
-.hero-tier-b { background: linear-gradient(160deg, #2e2a26 0%, #3d3832 40%, #4a4440 100%); }
+.hero-tier-b { background: linear-gradient(160deg, #2e2a26 0%, #3d3832 40%, #57534e 100%); }
 .hero-tier-b h1, .hero-tier-b .sub, .hero-tier-b .tier-mega { color: #fff; }
-.hero-tier-b .tier-mega { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); }
+.hero-tier-b .tier-mega { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); }
 /* 通用 */
 .report-hero .tier-mega {
   font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
@@ -31,10 +31,10 @@
 .report-hero .hero-title-row { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
 .report-hero .hero-title-row h1 {
   font-family: "Newsreader", serif;
-  font-size: 36px; font-weight: 700; letter-spacing: -0.01em;
-  margin: 0; line-height: 1.2; flex: 0 1 auto;
+  font-size: 42px; font-weight: 700; letter-spacing: -0.02em;
+  margin: 0; line-height: 1.15; flex: 0 1 auto;
 }
-.report-hero .sub { font-size: 15px; opacity: .85; }
+.report-hero .sub { font-size: 16px; opacity: .8; }
 
 /* === 简繁切换按钮 === */
 .report-hero .container { position: relative; }
@@ -48,72 +48,69 @@
 .lang-switch a:hover { background: rgba(255,255,255,.15); color: #fff; border-color: rgba(255,255,255,.6); }
 
 /* === 正文区 === */
-.report-body { max-width: 780px; margin: 0 auto; padding: 40px 20px 72px; }
-
-/* === 统一正文字体 + Tailwind Typography prose 精华 === */
-.report-body { font-size: 16px; line-height: 1.8; color: #2d3a33; max-width: 72ch; }
+.report-body { max-width: 960px; margin: 0 auto; padding: 48px 32px 80px; font-size: 16px; line-height: 1.85; color: #1e293b; }
 .report-body p { margin: 0 0 1.2em; }
 .report-body p:last-child { margin-bottom: 0; }
 .report-body ul, .report-body ol { margin: 1em 0; padding-left: 1.5em; }
 .report-body li { margin: .4em 0; line-height: 1.7; padding-left: .2em; }
-.report-body li::marker { color: #8a9b91; }
-.report-body strong { color: #1a2520; font-weight: 700; }
-.report-body em { color: #4b564f; font-style: italic; }
-.report-body a { color: #1f6f5c; text-decoration: underline; text-underline-offset: 2px; }
-.report-body a:hover { color: #175547; }
-.report-body blockquote { border-left: 3px solid #1f6f5c; padding: .5em 1em; margin: 1.2em 0; color: #4b564f; font-style: italic; background: #f8faf7; border-radius: 0 6px 6px 0; }
+.report-body li::marker { color: #94a3b8; }
+.report-body strong { color: #0f172a; font-weight: 700; }
+.report-body em { color: #475569; font-style: italic; }
+.report-body a { color: #6366f1; text-decoration: underline; text-underline-offset: 2px; }
+.report-body a:hover { color: #4f46e5; }
+.report-body blockquote { border-left: 3px solid #6366f1; padding: .5em 1em; margin: 1.2em 0; color: #475569; font-style: italic; background: #f8fafc; border-radius: 0 6px 6px 0; }
 .report-body img { max-width: 100%; border-radius: 8px; }
-.report-body hr { border: 0; border-top: 1px solid #e7e3d9; margin: 2em 0; }
+.report-body hr { border: 0; border-top: 1px solid #e2e8f0; margin: 2em 0; }
 .report-body h3 + p, .report-body h4 + p { margin-top: .3em; }
 
 /* === 章节 === */
-.chapter { margin: 48px 0 0; padding-top: 36px; border-top: 1px solid #e7e3d9; }
+.chapter { margin: 48px 0 0; padding-top: 36px; border-top: 1px solid #e2e8f0; }
 .chapter:first-of-type { border-top: none; margin-top: 0; }
 .chapter h2 {
   font-family: "Newsreader", serif;
-  font-size: 24px; font-weight: 600; letter-spacing: -0.01em;
-  margin: 0 0 20px; display: flex; align-items: center; gap: 12px; color: #22302b;
+  font-size: 28px; font-weight: 600; letter-spacing: -0.01em;
+  margin: 0 0 24px; display: flex; align-items: center; gap: 14px; color: #0f172a;
 }
 .chapter h2 .num {
-  background: #1f6f5c; color: #fff; border-radius: 8px;
-  width: 28px; height: 28px; display: inline-flex; align-items: center;
-  justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0;
+  background: #6366f1; color: #fff; border-radius: 8px;
+  width: 32px; height: 32px; display: inline-flex; align-items: center;
+  justify-content: center; font-size: 14px; font-weight: 700; flex-shrink: 0;
 }
-.chapter h3 { font-size: 18px; font-weight: 600; margin: 24px 0 10px; color: #22302b; }
-.chapter h4 { font-size: 16px; font-weight: 600; margin: 18px 0 8px; color: #2d3a33; }
+.chapter h3 { font-size: 18px; font-weight: 600; margin: 24px 0 10px; color: #0f172a; }
+.chapter h4 { font-size: 16px; font-weight: 600; margin: 18px 0 8px; color: #1e293b; }
 
-/* === 表格 === */
+/* === 表格（McKinsey极简风）=== */
 table.dt {
-  width: 100%; border-collapse: separate; border-spacing: 0;
-  margin: 16px 0 20px; font-size: 14px; border-radius: 10px;
-  overflow: hidden; border: 1px solid #e7e3d9;
+  width: 100%; border-collapse: collapse; border-spacing: 0;
+  margin: 16px 0 20px; font-size: 14px;
 }
-table.dt td, table.dt th { padding: 12px 16px; text-align: left; line-height: 1.55; }
+table.dt td, table.dt th { padding: 10px 16px; text-align: left; line-height: 1.55; }
 table.dt th {
-  background: #f2f0e9; font-weight: 600; width: 140px;
-  color: #6b7770; font-size: 13px; letter-spacing: 0.02em;
+  font-weight: 600; width: 140px;
+  color: #64748b; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  border-bottom: 2px solid #cbd5e1;
 }
-table.dt td { background: #fff; border-top: 1px solid #e7e3d9; }
-table.dt tr:first-child td { border-top: none; }
+table.dt td { border-bottom: 1px solid #e2e8f0; }
+table.dt tr:last-child td { border-bottom: none; }
 
 /* === 提示框 === */
 .callout {
-  background: #fff; border: 1px solid #e7e3d9;
-  border-left: 4px solid #1f6f5c; padding: 16px 20px;
-  border-radius: 0 10px 10px 0; margin: 20px 0; font-size: 14.5px;
+  background: #fff; border: 1px solid #e2e8f0;
+  border-left: 3px solid #6366f1; padding: 16px 20px;
+  border-radius: 0 8px 8px 0; margin: 20px 0; font-size: 14.5px;
   line-height: 1.7;
 }
 .callout.warn {
-  background: #fef6ee; border-left-color: #a0522d; border-color: #f2d7bf;
+  background: #fff7ed; border-left-color: #f97316; border-color: #fed7aa;
 }
-.callout.warn strong { color: #a0522d; }
+.callout.warn strong { color: #c2410c; }
 .callout p { margin: 0 0 8px; }
 .callout p:last-child { margin: 0; }
 
 /* === 专家标签 === */
 .expert-tag {
   display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.03em;
-  padding: 2px 10px; border-radius: 6px; background: #ede7f6; color: #5b3fa0;
+  padding: 2px 10px; border-radius: 6px; background: #e0e7ff; color: #4338ca;
   margin-left: 8px; vertical-align: middle; text-transform: uppercase;
 }
 
@@ -127,29 +124,32 @@ table.dt tr:first-child td { border-top: none; }
 /* === 优缺点对比 === */
 .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
 .pro-box {
-  background: #e6f0ec; border-radius: 10px; padding: 18px; border: 1px solid #cfe4dd;
+  background: #eef2ff; border-radius: 8px; padding: 18px; border: 1px solid #c7d2fe;
 }
 .con-box {
-  background: #fbeee1; border-radius: 10px; padding: 18px; border: 1px solid #f2d7bf;
+  background: #fff7ed; border-radius: 8px; padding: 18px; border: 1px solid #fed7aa;
 }
 .pro-box h4, .con-box h4 { margin: 0 0 10px; font-size: 15px; }
 .pro-box li, .con-box li { margin: 6px 0; font-size: 14px; line-height: 1.55; }
 
 /* === 来源标注 === */
-.source-note { font-size: 13px; color: #6b7770; margin: 6px 0; line-height: 1.6; }
+.source-note { font-size: 13px; color: #64748b; margin: 6px 0; line-height: 1.6; }
 
 /* === 行动号召底部 === */
 .cta-banner {
-  background: linear-gradient(135deg, #1f6f5c, #2a9d8f); color: #fff;
-  border-radius: 14px; padding: 32px 28px; margin: 48px 0 0; text-align: center;
+  background: linear-gradient(135deg, #4338ca, #6366f1); color: #fff;
+  border-radius: 12px; padding: 32px 28px; margin: 48px 0 0; text-align: center;
 }
+
+/* === 四因子评分条（覆写报告内联样式）=== */
+.report-body .score-bar .bar-label { width: auto; min-width: 100px; white-space: nowrap; }
 
 /* === 响应式 === */
 @media (max-width: 768px) {
-  .report-body { padding: 24px 16px 40px; }
+  .report-body { padding: 24px 18px 40px; }
   table.dt th { width: 100px; }
   .report-hero { padding: 40px 0 28px; }
-  .report-hero h1, .hero-title-row h1 { font-size: 24px; }
+  .report-hero h1, .hero-title-row h1 { font-size: 26px; }
 }
 @media (max-width: 600px) {
   .pros-cons { grid-template-columns: 1fr; }
@@ -159,35 +159,29 @@ table.dt tr:first-child td { border-top: none; }
   .report-body { padding: 16px 14px 32px; font-size: 15px; line-height: 1.75; }
   .report-body p { margin: 0 0 12px; }
   .report-hero .tier-mega { font-size: 11px; padding: 3px 8px; }
-  /* 手机端结构化 */
-  .callout { padding: 14px 14px; margin: 16px 0; font-size: 14px; border-left-width: 4px; }
-  .callout.warn { border-left-color: #a0522d; }
+  .callout { padding: 14px 14px; margin: 16px 0; font-size: 14px; border-left-width: 3px; }
+  .callout.warn { border-left-color: #f97316; }
   .report-body ul, .report-body ol { padding-left: 18px; }
   .report-body li { margin: 5px 0; line-height: 1.65; }
-  .chapter h3 { font-size: 16px; margin: 20px 0 8px; padding-bottom: 4px; border-bottom: 1px solid #e7e3d9; }
-  .chapter h4 { font-size: 15px; margin: 16px 0 6px; color: #4b564f; }
+  .chapter h3 { font-size: 16px; margin: 20px 0 8px; padding-bottom: 4px; border-bottom: 1px solid #e2e8f0; }
+  .chapter h4 { font-size: 15px; margin: 16px 0 6px; color: #475569; }
   .report-hero .sub { font-size: 13px; }
-  /* 表格：水平滚动 */
   .chapter { overflow-x: hidden; }
   table.dt { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   table.dt td, table.dt th { font-size: 13px; padding: 8px 10px; }
   table.dt th { width: 80px; }
-  /* 雷达图缩小 */
   .radar-svg { width: 200px; height: 200px; }
   .radar-wrap { gap: 16px; justify-content: center; }
   .radar-legend { font-size: 13px; }
-  /* 章节 */
   .chapter { margin: 28px 0 0; padding-top: 20px; }
   .chapter h2 { font-size: 18px; gap: 8px; }
+  .chapter h2 .num { width: 24px; height: 24px; font-size: 11px; }
   .chapter h3 { font-size: 16px; }
-  /* 付费墙 */
   .paywall-overlay { padding: 20px 12px; }
   .paywall-overlay h3 { font-size: 17px; }
   .paywall-buttons { flex-direction: column; align-items: center; }
   .paywall-buttons .pw-btn { width: 100%; max-width: 280px; }
-  /* 分享按钮 */
   .lang-switch { margin-left: 6px; }
   .lang-switch a { font-size: 11px; padding: 2px 8px; }
-  /* 来源标注 */
   .source-note { font-size: 12px; }
 }
