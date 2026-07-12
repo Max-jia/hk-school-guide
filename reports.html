@@ -289,3 +289,79 @@ const PS_REPORTS = [
 {n:'番禺會所華仁小學',t:'B',d:'東區',h:'Pun U Association Wah Yan Primary School',c:'wyps',premium:true},
 {n:'聖公會仁立小學',t:'B',d:'葵青區',h:'S.K.H. Yan Laap Primary School · 葵青区(65校',c:'ylaps',premium:true}
 ];
+
+// ========== 小学 Tab 渲染 ==========
+let psFilter = 'all';
+
+function renderPs() {
+  const search = document.getElementById('searchPs').value.trim().toLowerCase();
+  document.getElementById('clearPs').style.display = search ? 'block' : 'none';
+  let filtered = PS_REPORTS.filter(r => {
+    if (psFilter !== 'all' && r.t !== psFilter) return false;
+    if (search) { const hay = (r.n + ' ' + r.d + ' ' + r.h).toLowerCase(); if (!hay.includes(search)) { const chars = search.replace(/\\s/g,'').split(''); if (!chars.every(c => hay.includes(c))) return false; } }
+    return true;
+  });
+  const groups = {S:[],'A+':[],A:[],B:[]};
+  filtered.forEach(r => groups[r.t] ? groups[r.t].push(r) : null);
+  let html = '';
+  document.getElementById('resultCountPs').textContent = search ? '「' + document.getElementById('searchPs').value + '」匹配 ' + filtered.length + ' 所' : '';
+  for (const [tier, schools] of Object.entries(groups)) {
+    if (!schools.length) continue;
+    const labels = {S:{icon:'🏆',label:'S 级神校'},'A+':{icon:'🥇',label:'A+ 级一流名校'},A:{icon:'🌟',label:'A 级区内名校'},B:{icon:'💚',label:'B 级优质学校'}};
+    const gl = labels[tier];
+    html += '<div class="section-header"><span class="s-icon">' + gl.icon + '</span><h2>' + gl.label + '</h2><span class="s-count">' + schools.length + ' 所</span></div><div class="report-grid">';
+    schools.forEach(s => {
+      const tc = s.t==='S'?'s':s.t==='A+'?'aplus':s.t==='A'?'a':'b';
+      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/💚B级').split('/')[{S:0,'A+':1,A:2,B:3}[s.t]]+'</span><span class="rc-premium-tag">🔒 付费</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
+    });
+    html += '</div>';
+  }
+  if (!filtered.length) html = '<div class="no-results">😕 没有匹配的报告，试试其他关键词</div>';
+  document.getElementById('psContent').innerHTML = html;
+}
+
+function setPsFilter(t, btn) { psFilter = t; document.querySelectorAll('#filterTierPs .filter-pill').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderPs(); }
+function filterPs() { renderPs(); }
+
+function switchTab(tab, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-kg').style.display = tab === 'kg' ? 'block' : 'none';
+  document.getElementById('tab-ps').style.display = tab === 'ps' ? 'block' : 'none';
+  btn.classList.add('active');
+  if (tab === 'ps') renderPs();
+}
+
+let tierFilter = 'all';
+function renderKg() {
+  const search = document.getElementById('searchKg').value.trim().toLowerCase();
+  document.getElementById('clearKg').style.display = search ? 'block' : 'none';
+  let filtered = UNIQUE_KG.filter(r => {
+    if (tierFilter !== 'all' && r.t !== tierFilter) return false;
+    if (search) { const hay = (r.n + ' ' + r.d + ' ' + r.h + ' ' + r.c).toLowerCase(); if (!hay.includes(search)) { const chars = search.replace(/\\s/g,'').split(''); if (!chars.every(c => hay.includes(c))) return false; } }
+    return true;
+  });
+  const groups = {S:[],'A+':[],A:[],brand:[]};
+  const groupLabels = {S:{icon:'🏆',label:'S 级神校'},'A+':{icon:'🥇',label:'A+ 级一流名校'},A:{icon:'🌟',label:'A 级区内名校'},brand:{icon:'🔗',label:'连锁品牌报告'}};
+  filtered.forEach(r => groups[r.t] ? groups[r.t].push(r) : null);
+  let html = '';
+  document.getElementById('resultCount').textContent = search ? '「' + document.getElementById('searchKg').value + '」匹配 ' + filtered.length + ' 所' : '';
+  for (const [tier, schools] of Object.entries(groups)) {
+    if (!schools.length) continue;
+    const gl = groupLabels[tier];
+    html += '<div class="section-header"><span class="s-icon">' + gl.icon + '</span><h2>' + gl.label + '</h2><span class="s-count">' + schools.length + ' 所</span></div><div class="report-grid">';
+    schools.forEach(s => {
+      const tc = s.t==='S'?'s':s.t==='A+'?'aplus':'a';
+      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/🔗连锁品牌').split('/')[{S:0,'A+':1,A:2,brand:3}[s.t]]+'</span><span class="rc-premium-tag">🔒 付费</span><h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
+    });
+    html += '</div>';
+  }
+  if (!filtered.length) html = '<div class="no-results">😕 没有匹配的报告，试试其他关键词</div>';
+  document.getElementById('kgContent').innerHTML = html;
+  document.getElementById('statTotal').textContent = UNIQUE_KG.length;
+}
+function setTierFilter(t, btn) { tierFilter = t; document.querySelectorAll('#filterTier .filter-pill').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderKg(); }
+function filterKg() { renderKg(); }
+renderKg();
+</script>
+</body>
+</html>
