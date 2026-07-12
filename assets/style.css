@@ -4,25 +4,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --ink: #164e63;
+  --ink: #1e293b;
   --muted: #64748b;
-  --bg: #ecfeff;           /* 页面底：冰蓝白 */
-  --surface: #ffffff;
-  --soft: #e8f1f6;
-  --primary: #0891b2;      /* 主色：深海蓝 */
-  --primary-dark: #0e7490;
-  --primary-soft: #cffafe;
-  --accent: #059669;       /* 点缀：翡翠绿 */
-  --accent-soft: #d1fae5;
-  --border: #a5f3fc;
-  --radius: 4px;
-  --shadow: 0 1px 3px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.04);
+  --bg: #fafaf7;
+  --surface: rgba(255,255,255,0.7);
+  --soft: rgba(255,255,255,0.5);
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --primary-soft: rgba(99,102,241,0.08);
+  --accent: #f97316;
+  --accent-soft: rgba(249,115,22,0.08);
+  --border: rgba(0,0,0,0.06);
+  --radius: 16px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.06);
 }
 
+/* 動態光暈 — 淺色版 */
+@keyframes blob1 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(80px,-50px) scale(1.2); } 66% { transform: translate(-40px,40px) scale(0.9); } }
+@keyframes blob2 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(-60px,-40px) scale(1.15); } 66% { transform: translate(50px,30px) scale(0.9); } }
+@keyframes blob3 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(40px,60px) scale(1.25); } 66% { transform: translate(-50px,-30px) scale(0.85); } }
+.blob { position: fixed; border-radius: 50%; filter: blur(120px); opacity: 0.15; pointer-events: none; z-index: 0; }
+.blob-1 { width: 700px; height: 700px; background: #818cf8; top: -250px; right: -150px; animation: blob1 22s ease-in-out infinite; }
+.blob-2 { width: 550px; height: 550px; background: #fda4af; bottom: -200px; left: -120px; animation: blob2 26s ease-in-out infinite; }
+.blob-3 { width: 450px; height: 450px; background: #fde68a; top: 40%; left: 45%; animation: blob3 24s ease-in-out infinite; }
+
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; background: #ecfeff !important; }
+html { scroll-behavior: smooth; background: #fafaf7 !important; }
 body {
-  margin: 0; color: var(--ink); background: #ecfeff !important;
+  margin: 0; color: var(--ink); background: linear-gradient(180deg, #fefefe 0%, #f5f4f1 50%, #faf9f6 100%) fixed !important;
   font-family: "Roboto", "PingFang SC", "Microsoft YaHei", sans-serif;
   line-height: 1.7; font-size: 16px; -webkit-font-smoothing: antialiased;
 }

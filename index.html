@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>港校指南 · 帮内地来港家庭选对香港学校</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{ink:'#164e63',muted:'#64748b',bg:'#ecfeff',surface:'#ffffff',primary:'#0891b2','primary-dark':'#0e7490',accent:'#059669',border:'#a5f3fc',soft:'#e8f1f6'},fontFamily:{sans:['Roboto','PingFang SC','Microsoft YaHei','sans-serif'],serif:['Newsreader','serif']}}}}</script>
+  <script>tailwind.config={theme:{extend:{colors:{ink:'#1e293b',muted:'#64748b',bg:'#fafaf7',surface:'rgba(255,255,255,0.7)',primary:'#6366f1','primary-dark':'#4f46e5',accent:'#f97316',border:'rgba(0,0,0,0.06)',soft:'rgba(255,255,255,0.5)'},fontFamily:{sans:['Roboto','PingFang SC','Microsoft YaHei','sans-serif'],serif:['Newsreader','serif']}}}}</script>
   <link rel="stylesheet" href="./assets/style.css" />
 <script src="./assets/lang.js"></script>
 </head>
-<body class="bg-bg min-h-screen" style="background:#ecfeff">
-  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+<body class="bg-bg min-h-screen relative" style="background:linear-gradient(180deg,#fefefe 0%,#f5f4f1 50%,#faf9f6 100%) fixed">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <nav class="sticky top-0 z-50 bg-white/60 backdrop-blur-xl border-b border-border">
     <div class="max-w-6xl mx-auto px-5 flex items-center justify-between h-16">
       <a href="./index.html" class="font-serif text-xl font-bold text-ink tracking-tight flex items-center gap-2 no-underline hover:text-primary transition-colors">
         <span class="w-2.5 h-2.5 rounded-full bg-accent inline-block"></span>港校指南
@@ -33,7 +36,7 @@
         <p class="text-[17px] text-muted mb-8 max-w-lg leading-relaxed">与其在小红书翻 300 篇攻略，不如 30 秒看结果。按你家的住址、预算、孩子性格，从全港学校中匹配出最适合的那几所 — <b class="text-ink">完全免费</b>。</p>
         <div class="flex gap-3.5 flex-wrap mb-8">
           <a href="./primary.html" class="inline-flex items-center gap-2 px-7 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-colors text-[15px] tracking-wide">开始匹配 → 免费</a>
-          <a href="./kindergarten.html" class="inline-flex items-center px-7 py-4 bg-white text-ink font-bold rounded-lg border-2 border-border hover:border-primary hover:text-primary transition-colors text-[15px]">幼稚园匹配 →</a>
+          <a href="./kindergarten.html" class="inline-flex items-center px-7 py-4 bg-white/60 backdrop-blur-xl text-ink font-bold rounded-lg border border-border hover:border-primary hover:text-primary transition-colors text-[15px]">幼稚园匹配 →</a>
         </div>
         <div class="flex flex-wrap gap-x-8 gap-y-1.5 text-sm text-muted pt-3 border-t border-border">
           <span><b class="text-ink text-base" id="c-primary">—</b> 所小学</span>
@@ -43,16 +46,16 @@
       </div>
       <div class="hidden md:block">
         <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3">匹配预览</div>
-        <div class="bg-soft border border-border p-6" style="border-radius:2px">
+        <div class="bg-surface backdrop-blur-xl border border-border p-6" style="border-radius:12px">
           <div class="flex items-center justify-between mb-4">
             <span class="text-xs font-bold tracking-wider text-muted uppercase">41 校网 · 本地路线</span>
-            <span class="text-xs font-bold text-primary bg-primary/5 px-2.5 py-1 tracking-wider" style="border-radius:2px">推荐 98</span>
+            <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 tracking-wider" style="border-radius:100px">推荐 98</span>
           </div>
           <div class="font-serif text-[17px] font-semibold text-ink mb-2">嘉諾撒聖家學校（联合道）</div>
           <div class="text-[13px] text-muted leading-relaxed mb-3">免费 · 资助 · 九龙城区 · 41 校网</div>
           <div class="text-[13px] text-muted space-y-1">
-            <div class="flex items-center gap-2"><span class="w-1 h-1 bg-primary flex-shrink" style="border-radius:1px"></span> 校网内 · 可参加统一派位</div>
-            <div class="flex items-center gap-2"><span class="w-1 h-1 bg-[#ccc] flex-shrink" style="border-radius:1px"></span> 免费 · 政府资助</div>
+            <div class="flex items-center gap-2"><span class="w-1 h-1 bg-primary flex-shrink rounded-full"></span> 校网内 · 可参加统一派位</div>
+            <div class="flex items-center gap-2"><span class="w-1 h-1 bg-primary/30 flex-shrink rounded-full"></span> 免费 · 政府资助</div>
           </div>
         </div>
       </div>
@@ -65,13 +68,13 @@
       <h2 class="font-serif text-[28px] md:text-[34px] font-semibold leading-tight mb-2">从哪个阶段开始？</h2>
       <p class="text-muted text-[16px] mb-10 max-w-lg">小学和幼稚园规则完全不同，选对入口事半功倍。</p>
       <div class="grid md:grid-cols-2 gap-6">
-        <a href="./primary.html" class="group block bg-white border border-border p-8 hover:border-primary/40 transition-colors duration-200" style="border-radius:4px">
+        <a href="./primary.html" class="group block bg-surface backdrop-blur-xl border border-border p-8 hover:border-primary/40 transition-colors duration-200" style="border-radius:4px">
           <div class="text-xs font-bold tracking-widest uppercase text-muted mb-4">01 · 覆盖 669 所</div>
           <h3 class="font-serif text-[22px] font-semibold text-ink mb-3 group-hover:text-primary transition-colors">小学择校</h3>
           <p class="text-muted text-[15px] leading-relaxed mb-5">输入校网、预算、孩子性格，一键匹配最适合的学校。官津、直资、私立的区别，帮你一次算清。</p>
           <span class="text-accent font-bold text-sm tracking-wide group-hover:translate-x-1 inline-block transition-transform">进入小学择校 →</span>
         </a>
-        <a href="./kindergarten.html" class="group block bg-white border border-border p-8 hover:border-primary/40 transition-colors duration-200" style="border-radius:4px">
+        <a href="./kindergarten.html" class="group block bg-surface backdrop-blur-xl border border-border p-8 hover:border-primary/40 transition-colors duration-200" style="border-radius:4px">
           <div class="text-xs font-bold tracking-widest uppercase text-muted mb-4">02 · 覆盖 962 所</div>
           <h3 class="font-serif text-[22px] font-semibold text-ink mb-3 group-hover:text-primary transition-colors">幼稚园 / PN 择校</h3>
           <p class="text-muted text-[15px] leading-relaxed mb-5">按地区、上课时段帮你就近匹配。名园优先，可只看设有 PN 班的学校。</p>
@@ -93,12 +96,12 @@
           <p class="text-muted text-[15px] leading-relaxed">升学率等第三方估算数据一律标注来源。能核实的才写，查不到的宁可不写。收费产品，口碑就是生命线。</p>
         </div>
       </div>
-      <div class="mt-14 bg-primary p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4" style="border-radius:2px">
+      <div class="mt-14 bg-surface backdrop-blur-xl border border-border p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4" style="border-radius:12px">
         <div>
-          <div class="font-serif text-lg font-semibold text-white mb-1">112 份深度择校报告</div>
-          <div class="text-sm text-white/70">已覆盖全港评级名幼及小学，持续扩充中</div>
+          <div class="font-serif text-lg font-semibold text-ink mb-1">112 份深度择校报告</div>
+          <div class="text-sm text-muted">已覆盖全港评级名幼及小学，持续扩充中</div>
         </div>
-        <a href="./reports.html" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-colors text-sm tracking-wide flex-shrink-0">查看全部报告 →</a>
+        <a href="./reports.html" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-full hover:bg-primary-dark transition-colors text-sm tracking-wide flex-shrink-0 shadow-lg shadow-primary/25">查看全部报告 →</a>
       </div>
     </section>
   </main>
