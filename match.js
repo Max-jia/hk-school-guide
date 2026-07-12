@@ -50,6 +50,39 @@
     if (b === "free") { if (ft === "官立" || ft === "资助") { score += 10; reasons.push(`免费（官津）`); } else reasons.push(`💰 收费学校，可能超预算`); }
     else if (b === "mid") { if (ft === "直资") { score += 10; reasons.push(`直资·学费中等`); } else if (ft === "官立" || ft === "资助") score += 6; }
     else if (b === "high") score += 8;
+
+    // ⑧ 孩子性格配分（8分）：根据学校特征推断氛围，匹配性格偏好
+    const pers = profile.personality;
+    if (pers && pers !== "balanced") {
+      var pScore = 0;
+      var isHighTier = (school.tier === "S" || school.tier === "A+");
+      var isDss = (ft === "直资");
+      var isReligious = (school.religion_zh && (school.religion_zh.indexOf("天主") >= 0 || school.religion_zh.indexOf("基督") >= 0));
+      var isGovt = (ft === "官立");
+      if (pers === "active") {
+        // 活泼好动 → 活动型学校：直资非宗教、有多元活动特征
+        if (isDss && !isReligious) pScore += 5;
+        else if (isDss) pScore += 3;
+        if (school.features && /活动|STEAM|课外|探索|体验/.test(school.features)) pScore += 3;
+        reasons.push("🎯 活动丰富·适合活泼孩子");
+      } else if (pers === "quiet") {
+        // 安静守规 → 传统纪律型：宗教背景、官立
+        if (isReligious && isGovt) pScore += 5;
+        else if (isReligious) pScore += 4;
+        else if (isGovt) pScore += 3;
+        if (school.religion_zh && school.religion_zh !== "不適用") pScore += 3;
+        reasons.push("📏 校风严谨·适合安静守规的孩子");
+      } else if (pers === "challenge") {
+        // 喜欢挑战 → 名校竞争型
+        if (school.tier === "S") pScore += 8;
+        else if (school.tier === "A+") pScore += 6;
+        else if (school.tier === "A") pScore += 4;
+        else if (isHighTier) pScore += 5;
+        if (pScore > 0) reasons.push("🏅 名校竞争环境·适合喜欢挑战的孩子");
+      }
+      score += Math.min(8, pScore);
+    }
+
     return { fit: Math.round(Math.min(100, score)), reasons };
   }
 

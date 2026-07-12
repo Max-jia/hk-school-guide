@@ -92,6 +92,19 @@
             <option value="">不限</option><option value="rated">仅已评级名校</option><option value="S">S 级 · 顶尖神校</option><option value="Aplus">A+ 级及以上</option><option value="A">A 级及以上</option><option value="B">✅ B 级及以上</option>
           </select>
         </div>
+        <!-- ⑧ -->
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+            <label class="text-sm font-bold text-ink">⑧ 孩子性格</label>
+            <p class="text-xs text-muted leading-tight">帮助我们推荐氛围更匹配的学校</p>
+          </div>
+          <select id="personality" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="balanced">均衡适应 · 各类型都可以</option>
+            <option value="active">活泼好动 · 喜欢探索和动手</option>
+            <option value="quiet">安静专注 · 守规矩、适应传统课堂</option>
+            <option value="challenge">喜欢挑战 · 抗压能力强、追求卓越</option>
+          </select>
+        </div>
       </div>
       <div class="mt-6">
         <button class="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-colors shadow-sm text-base" onclick="run()">帮我匹配学校</button>
@@ -143,6 +156,7 @@
         net, home, homeLabel: district,
         budget: document.getElementById("budget").value,
         track: document.getElementById("track").value,
+        personality: document.getElementById("personality").value,
         maxCommuteKm: +document.getElementById("commute").value,
       };
       let pool = SCHOOLS;

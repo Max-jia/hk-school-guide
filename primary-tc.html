@@ -80,6 +80,15 @@
             <option value="B">✅ B 級及以上</option>
           </select>
         </div>
+        <div class="field">
+          <label>⑧ 孩子性格 <span class="hint">幫助推薦氛圍更匹配的學校</span></label>
+          <select id="personality">
+            <option value="balanced">均衡適應 · 各類型都可以</option>
+            <option value="active">活潑好動 · 喜歡探索和動手</option>
+            <option value="quiet">安靜專注 · 守規矩、適應傳統課堂</option>
+            <option value="challenge">喜歡挑戰 · 抗壓能力強、追求卓越</option>
+          </select>
+        </div>
       </div>
       <div class="wz-actions">
         <button class="btn btn-primary" onclick="run()">🔍 幫我匹配學校</button>
@@ -131,6 +140,7 @@
         net, home, homeLabel: district,
         budget: document.getElementById("budget").value,
         track: document.getElementById("track").value,
+        personality: document.getElementById("personality").value,
         maxCommuteKm: +document.getElementById("commute").value,
       };
       let pool = SCHOOLS;
