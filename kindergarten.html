@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>幼稚园 / PN 择校 · 港校指南</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{ink:"#22302b",muted:"#6b7770",bg:"#fbfaf6",surface:"#ffffff",primary:"#1f6f5c","primary-dark":"#175547",accent:"#a0522d",border:"#e7e3d9",soft:"#f2f0e9"},fontFamily:{sans:["Roboto","PingFang SC","Microsoft YaHei","sans-serif"],serif:["Newsreader","serif"]}}}}</script>
+  <link rel="stylesheet" href="./assets/style.css" />
+<script src="./assets/lang.js"></script>
+</head>
+<body>
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+    <div class="max-w-6xl mx-auto px-5 flex items-center justify-between h-16">
+      <a href="./index.html" class="font-serif text-xl font-bold text-ink tracking-tight flex items-center gap-2 no-underline hover:text-primary transition-colors">
+        <span class="w-2.5 h-2.5 rounded-full bg-accent inline-block"></span>港校指南
+      </a>
+      <div class="flex gap-6 text-[15px] font-semibold">
+        <a href="./index.html" class="text-muted hover:text-primary transition-colors">首页</a>
+        <a href="./primary.html" class="text-muted hover:text-primary transition-colors">小学择校</a>
+        <a href="./reports.html" class="text-muted hover:text-primary transition-colors">深度报告</a>
+        <a href="./kindergarten.html" class="text-primary border-b-2 border-primary pb-0.5">幼稚园择校</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-5 py-10">
+    <h1 class="font-serif text-3xl font-bold mb-1">🎨 幼稚园 / PN 择校匹配</h1>
+    <p class="text-muted mb-6">幼稚园不按校网派位，就近+实力最重要。按你家的条件从全港幼稚园中智能匹配。</p>
+
+    <div class="bg-surface border border-border rounded-2xl p-6 md:p-8 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-x-6 gap-y-5">
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">① 家庭住址（所在地区）</label>
+          </div>
+          <select id="district" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition"></select>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">② 通勤范围</label>
+          <span class="text-xs text-muted -mt-0.5">公里 · 距区中心</span>
+          </div>
+          <input id="commute" type="number" value="3" min="1" max="15" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition" />
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">③ 年度学费预算（上限）</label>
+          </div>
+          <select id="budget" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="">不限</option>
+            <option value="0:1">免费 / 半日免费</option>
+            <option value="0:5000">$5,000 以内</option>
+            <option value="0:20000">$20,000 以内</option>
+            <option value="0:50000">$50,000 以内</option>
+            <option value="0:80000">$80,000 以内</option>
+            <option value="0:120000">$120,000 以内</option>
+            <option value="0:200000">$200,000 以内</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">④ 学校类型偏好</label>
+          </div>
+          <select id="ktype" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="">不限</option>
+            <option value="券校">券校（免费计划）</option>
+            <option value="私立">私立</option>
+            <option value="国际">国际</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">⑤ 授课语言偏好</label>
+          </div>
+          <select id="lang" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="">不限</option>
+            <option value="普通话">重视普通话</option>
+            <option value="英语">重视英语</option>
+            <option value="粤语">粤语即可</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">⑥ 直升小学</label>
+          <span class="text-xs text-muted -mt-0.5">已覆盖主要龙幼</span>
+          </div>
+          <select id="feeder" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="">不限</option>
+            <option value="yes">优先有直属/联系小学</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">⑦ 上课时段</label>
+          </div>
+          <select id="session" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="any">不限</option>
+            <option value="上午">上午班</option>
+            <option value="下午">下午班</option>
+            <option value="全日">全日班</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">⑧ PN 班</label>
+          <span class="text-xs text-muted -mt-0.5">2岁幼儿班</span>
+          </div>
+          <select id="pn" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="any">不限</option>
+            <option value="yes">须设有 PN 班</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="min-h-[2.5em]">
+          <label class="text-sm font-bold text-ink">⑨ 幼稚园评级</label>
+          </div>
+          <select id="tier" class="w-full px-4 py-3 text-[15px] border border-border rounded-xl bg-white text-ink focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition">
+            <option value="">不限</option>
+            <option value="rated">仅已评级名园</option>
+            <option value="S">🏆 S 级</option>
+            <option value="Aplus">🥇 A+ 及以上</option>
+            <option value="A">🌟 A 及以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="mt-6">
+        <button class="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-colors shadow-sm text-base" onclick="run()">🔍 帮我匹配幼稚园</button>
+      </div>
+    </div>
+
+    <p class="text-sm text-primary-dark bg-primary/5 border border-primary/10 rounded-xl px-4 py-3" style="margin-top:16px">学费为官方概览或已核实数据（约数·参考）；名园等级为多源共识评级（参考·非官方）；PN 数据来自教育局「提供2-3岁幼儿服务」；授课语言仅名园已逐所核实、其余仅供参考。报名前请向心仪学校官网确认最新信息。</p>
+
+    <div id="results" class="results"></div>
+  </main>
+
+  <footer class="border-t border-border mt-12 py-7">
+    <div class="max-w-6xl mx-auto px-5 text-sm text-muted leading-relaxed">数据来源：香港教育局 data.gov.hk · 园所等级为多源共识<b>参考评级（非官方）</b> · PN 依官方「提供2-3岁服务」· 信息仅供参考</div>
+  </footer>
+
+  <script src="./data/kindergartens.js"></script>
+  <script src="./match.js"></script>
+  <script>
+    // 填充地区下拉
+    const dSel = document.getElementById("district");
+    const districts = [...new Set(KINDERGARTENS.map(k => k.district_zh).filter(Boolean))].sort();
+    districts.forEach(d => { const o = document.createElement("option"); o.value = d; o.textContent = d; dSel.appendChild(o); });
+
+    function run() {
+      const district = dSel.value;
+      const inDistrict = KINDERGARTENS.filter(k => k.district_zh === district);
+      const home = inDistrict.length ? {
+        lat: inDistrict.reduce((a, k) => a + k.lat, 0) / inDistrict.length,
+        lng: inDistrict.reduce((a, k) => a + k.lng, 0) / inDistrict.length,
+      } : null;
+      // 硬筛选：时段 / PN / 评级
+      let pool = KINDERGARTENS;
+      const sp = document.getElementById("session").value;
+      if (sp && sp !== "any") pool = pool.filter(k => (k.sessions || []).includes(sp));
+      if (document.getElementById("pn").value === "yes") pool = pool.filter(k => k.has_pn);
+      const tv = document.getElementById("tier").value;
+      if (tv === "rated") pool = pool.filter(k => k.tier);
+      else if (tv === "S") pool = pool.filter(k => k.tier === "S");
+      else if (tv === "Aplus") pool = pool.filter(k => ["S", "A+"].includes(k.tier));
+      else if (tv === "A") pool = pool.filter(k => ["S", "A+", "A"].includes(k.tier));
+      // 评分参数（直升/预算/通勤/类型/语言）
+      const bv = document.getElementById("budget").value;
+      const profile = {
+        home, homeLabel: district,
+        maxCommuteKm: +document.getElementById("commute").value,
+        budgetMax: bv ? Number(bv.split(":")[1]) : null,
+        typePref: document.getElementById("ktype").value || null,
+        langPref: document.getElementById("lang").value || null,
+        wantFeeder: document.getElementById("feeder").value === "yes",
+      };
+      render(Match.rankKindergartens(pool, profile, 20), district);
+    }
+
+    function render(top, district) {
+      const box = document.getElementById("results");
+      if (!top.length) { box.innerHTML = `<p class="note">没有符合条件的幼稚园，试试放宽筛选（如放宽时段/评级或学费上限）。</p>`; box.scrollIntoView({ behavior: "smooth" }); return; }
+      box.innerHTML = `<h3>为你匹配的前 ${top.length} 所（${district}）</h3>
+        <p class="section-sub" style="margin-top:-2px">推荐分 = 园所实力(60%：等级+师生比) + 与你条件适配(40%：直升/预算/通勤/类型/语言)；徽章=园所口碑（参考·非官方）。</p>` +
+        top.map((r, i) => {
+          const s = r.school;
+          const meta = Match.tierMeta(s.tier);
+          return `<div class="school-card">
+            <span class="score-pill">推荐 ${r.score}</span>
+            <div><span class="sc-rank">#${i + 1}</span><span class="sc-name">${s.name_display || s.name_zh}</span></div>
+            <div class="tier-row"><span class="tier-badge ${meta.cls}">${meta.label}</span><span class="tier-blurb">${meta.blurb}</span></div>
+            <div class="badges">
+              <span class="badge">${s.district_zh || ""}</span>
+              ${s.note ? `<span class="badge" style="background:#fbe4e4;color:#a33">${s.note}</span>` : ""}
+              ${s.has_pn ? `<span class="badge free">🍼 设有 PN 班</span>` : ""}
+              ${s.kg_type ? `<span class="badge">${s.kg_type}</span>` : ""}
+              ${s.fees ? `<span class="badge">💰 ${s.fees}</span>` : ""}
+              ${s.teaching_language ? `<span class="badge">🗣️ ${s.teaching_language}</span>` : ""}
+              ${s.feeder_primary ? `<span class="badge free">🎓 直升 ${s.feeder_primary}</span>` : ""}
+              ${s.teacher_ratio ? `<span class="badge">师生比 ${s.teacher_ratio}</span>` : ""}
+              ${(s.sessions && s.sessions.length) ? `<span class="badge">${s.sessions.join("/")}</span>` : ""}
+            </div>
+            <ul class="reasons">${r.reasons.map(x => `<li>· ${x}</li>`).join("")}</ul>
+            <div class="sc-foot">${s.tier
+            ? (() => {
+                const MAP = {寶山幼兒園:'braemar-hill',香港創價幼稚園:'soka',基督堂幼稚園:'cckg',國際英文幼稚園:'stcat',
+                  民生書院幼稚園:'munsang',根德園幼稚園:'kentville',聖保祿幼稚園:'spk',劍鳴幼稚園:'keenmind',
+                  宣道幼稚園:'alliance',協恩中學附屬幼稚園:'hy',蘇浙小學校:'kiangsu',嘉諾撒聖心幼稚園:'shck',
+                  香港靈糧堂幼稚園:'llc','天主教聖瑪加利大幼稚園':'smm','香港培正小學':'pc',救恩學校:'ky',
+                  綠楊幼稚園:'ly',寶血幼稚園:'pb',高主教書院幼稚園部:'rc',聖公會幼稚園:'skh',聖保羅堂幼稚園:'spc',
+                  金巴倫英文幼稚園:'snicholas',聖羅撒幼稚園:'srl',崇真小學暨幼稚園:'tt',約克國際幼稚園:'york',
+                  香港培道小學:'pt','聖士提反女子中學附屬幼稚園':'ssgc','聖母無玷聖心幼稚園':'ihm',九龍禮賢學校:'krs',基督教中心幼稚園:'ccc',
+                  '銅鑼灣維多利亞國際幼稚園':'veo-cwb','維多利亞(何文田)國際幼稚園':'veo-hmt','維多利亞(寶翠園)幼稚園':'veo-bcy',
+                  '學之園幼稚園(海翩康城)':'lh-hp','學之園幼稚園（凱帆薈）':'lh-sf',
+                  '迦南幼稚園(九龍塘)':'canaan-klt','迦南幼稚園(中環堅道)':'canaan-cd',
+                  '啓思小學附屬幼稚園':'cpskg','耀中國際幼稚園（根德道）':'ycis-kt',
+                  '多多國際幼稚園（九龍塘）':'tutor-klt','約克英文小學暨幼稚園(九龍塘)':'york-klt'};
+                const BRAND_MAP = {'维多利亚':'victoria','学之园':'lh','耀中':'ycis','迦南':'canaan','启思':'creative','康杰':'goodhealth','明慧':'mingwai','朗思':'think','多多':'tutor','约克':'york'}; // 连锁品牌：所有分校共用同一份报告
+                let code = MAP[s.name_zh];
+                if (!code) { for (const [k,v] of Object.entries(BRAND_MAP)) { if (s.name_zh.includes(k)) { code = v; break; } } }
+                return code
+                  ? '<a class="btn btn-accent" href="./report-'+code+'.html" target="_blank">📄 查看完整深度报告 →</a>'
+                  : '<button class="btn btn-ghost" disabled>📄 深度报告（仅限26所名园）</button>';
+              })()
+            : ''
+          }</div>
+          </div>`;
+        }).join("");
+      box.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  </script>
+</body>
+</html>

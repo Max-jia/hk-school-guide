@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>港校指南 · 幫內地來港家庭選對香港學校</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+<script src="./assets/lang.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><span class="dot"></span>港校指南</div>
+      <div class="nav-links">
+        <a href="./index-tc.html">首頁</a>
+        <a href="./primary-tc.html">小學擇校</a>
+        <a href="./reports-tc.html">深度報告</a>
+        <a href="./kindergarten-tc.html">幼稚園擇校</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>在香港，<span class="hl">爲孩子選對學校</span><br />不再一頭霧水</h1>
+        <p class="sub">專爲內地來港家庭打造。按你家的住址、預算、規劃路線，從全港學校裏智能匹配出最適合的那幾所——數據來自香港教育局官方，<b>完全免費</b>。</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="./primary-tc.html">開始小學擇校 →</a>
+          <a class="btn btn-ghost" href="./kindergarten-tc.html">幼稚園/PN 擇校</a>
+        </div>
+        <div class="trust">
+          <span>🏫 <b id="c-primary">—</b> 所小學</span>
+          <span>🎨 <b id="c-kg">—</b> 所幼稚園</span>
+          <span>🏛️ 數據源自 <b>香港教育局</b></span>
+          <span>🔎 來源透明 · 估算必標註</span>
+        </div>
+      </div>
+      <div class="hero-preview">
+        <div class="pv-title">匹配結果示意 · 41 校網 / 本地路線 / 免費</div>
+        <div class="school-card" style="box-shadow:none;border-color:#eee">
+          <span class="score-pill">98分</span>
+          <div><span class="sc-rank">#1</span><span class="sc-name">嘉諾撒聖家學校（聯合道）</span></div>
+          <div class="badges"><span class="badge free">免費·資助</span><span class="badge">九龍城區</span><span class="badge">41校網</span></div>
+          <ul class="reasons">
+            <li>· 距離約 0.3 公里，通勤方便</li>
+            <li>· ✅ 在你的校網內，可參加統一派位</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">你在爲哪個階段選校？</h2>
+      <p class="section-sub">兩個階段規則不同，我們分開幫你。</p>
+      <div class="entry-cards">
+        <a class="entry-card" href="./primary-tc.html">
+          <span class="ec-tag">覆蓋全港 693 所</span>
+          <h3>🎒 小學擇校</h3>
+          <p>輸入住址（校網）、預算、規劃路線，一鍵匹配。看得懂官津/直資/私立的區別，算得清你的校網。</p>
+          <span class="ec-go">進入小學擇校 →</span>
+        </a>
+        <a class="entry-card" href="./kindergarten-tc.html">
+          <span class="ec-tag">覆蓋全港 1006 所</span>
+          <h3>🎨 幼稚園 / PN 擇校</h3>
+          <p>按你家所在地區、上課時段（上午/下午/全日）幫你就近匹配。名園優先，可只看設有 PN 班的。</p>
+          <span class="ec-go">進入幼稚園擇校 →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">爲什麼值得信</h2>
+      <div class="entry-cards">
+        <div class="entry-card" style="cursor:default">
+          <h3 style="font-size:18px">🏛️ 官方數據打底</h3>
+          <p>學校基礎資料來自香港教育局每月更新的開放數據，不是道聽途說。</p>
+        </div>
+        <div class="entry-card" style="cursor:default">
+          <h3 style="font-size:18px">🔍 有一說一</h3>
+          <p>升學率等第三方估算數據一律標註來源，能覈實的才寫實。收費產品，口碑第一。</p>
+        </div>
+      </div>
+      <p class="note info" style="margin-top:20px">🚧 當前爲早期版本：核心「就近 + 校網 + 類型 + 預算」匹配已可用；語言、精確學費、升學數據等「深字段」正在分批補充中。</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">港校指南 · 幫助內地來港家庭解決香港升學信息不對稱 · 數據來源：香港教育局 data.gov.hk（每月更新）<br />本站信息僅供參考，最終以學校及教育局官方公佈爲準。</div>
+  </footer>
+
+  <script src="./data/schools.js"></script>
+  <script src="./data/kindergartens.js"></script>
+  <script>
+    // 顯示真實數量（保持和數據同步）
+    document.getElementById("c-primary").textContent = (window.SCHOOLS || []).length;
+    document.getElementById("c-kg").textContent = (window.KINDERGARTENS || []).length;
+  </script>
+</body>
+</html>
