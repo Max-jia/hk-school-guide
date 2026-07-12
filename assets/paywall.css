@@ -34,16 +34,16 @@
 }
 .pw-all-access .pw-btn-all {
   display: inline-block;
-  background: #fff;
-  color: #1f6f5c;
+  background: #fff !important;
+  color: #1f6f5c !important;
   font-size: 17px; font-weight: 800;
   padding: 14px 36px; border-radius: 12px;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: transform .15s ease;
 }
 .pw-all-access .pw-btn-all:hover { transform: scale(1.03); }
 .pw-all-access .pw-btn-all .pw-price { font-size: 28px; display: block; line-height: 1.1; }
-.pw-all-access .pw-btn-all .pw-label { font-size: 13px; font-weight: 600; opacity: .75; }
+.pw-all-access .pw-btn-all .pw-label { font-size: 14px; font-weight: 600; opacity: 1; }
 .pw-all-access .pw-strike {
   font-size: 14px; color: rgba(255,255,255,.6);
   margin-top: 8px;
@@ -66,13 +66,13 @@
   min-width: 160px;
 }
 .pw-btn-primary {
-  background: #1f6f5c; color: #fff; border: 2px solid #1f6f5c;
+  background: #1f6f5c !important; color: #fff !important; border: 2px solid #1f6f5c !important;
 }
-.pw-btn-primary:hover { background: #175547; border-color: #175547; }
+.pw-btn-primary:hover { background: #175547 !important; border-color: #175547 !important; }
 .pw-btn-secondary {
-  background: #fff; color: #1f6f5c; border: 2px solid #1f6f5c;
+  background: #fff !important; color: #1f6f5c !important; border: 2px solid #1f6f5c !important;
 }
-.pw-btn-secondary:hover { background: #e6f0ec; }
+.pw-btn-secondary:hover { background: #e6f0ec !important; }
 .pw-btn .pw-price { font-size: 22px; font-weight: 800; line-height: 1.2; }
 .pw-btn .pw-label { font-size: 12px; font-weight: 600; opacity: .75; margin-top: 2px; }
 
