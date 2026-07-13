@@ -46,6 +46,7 @@ a:hover { color: var(--primary-dark); }
 .brand { font-family: "Newsreader", serif; font-weight: 700; font-size: 21px; letter-spacing: 0; color: var(--ink); display: flex; align-items: center; gap: 8px; }
 .brand .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); display: inline-block; }
 .nav-links { display: flex; gap: 22px; font-size: 15px; }
+@media (max-width: 639px) { .brand-text { display: none; } }
 .nav-links a { color: var(--muted); font-weight: 600; }
 .nav-links a:hover { color: var(--primary); }
 
