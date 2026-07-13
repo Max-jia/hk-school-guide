@@ -164,7 +164,6 @@
           const s = r.school;
           const feeFree = (s.finance_type === "官立" || s.finance_type === "資助");
           const meta = Match.tierMeta(s.tier);
-          const sess = (s.sessions && s.sessions.length) ? `<span class="badge">${s.sessions.join("/")}</span>` : "";
           return `<div class="school-card">
             <span class="score-pill">推薦 ${r.score}</span>
             <div><span class="sc-rank">#${i + 1}</span><span class="sc-name">${s.name_display || s.name_zh}</span></div>
@@ -179,7 +178,6 @@
               ${s.teacher_ratio ? `<span class="badge">師生比 ${s.teacher_ratio}</span>` : ""}
               ${s.teaching_language ? `<span class="badge">🗣️ ${s.teaching_language}</span>` : ""}
               ${s.school_bus ? `<span class="badge">🚌 ${s.school_bus}</span>` : ""}
-              ${sess}
             </div>
             <ul class="reasons">${r.reasons.map(x => `<li>· ${x}</li>`).join("")}</ul>
             <div class="sc-foot">${getReportLink(s)}</div>
