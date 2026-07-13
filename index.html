@@ -8,7 +8,7 @@
   <script>tailwind.config={theme:{extend:{colors:{ink:'#1e293b',muted:'#64748b',bg:'#fafaf7',surface:'rgba(255,255,255,0.7)',primary:'#6366f1','primary-dark':'#4f46e5',accent:'#f97316',border:'rgba(0,0,0,0.06)',soft:'rgba(255,255,255,0.5)'},fontFamily:{sans:['Roboto','PingFang SC','Microsoft YaHei','sans-serif'],serif:['Newsreader','serif']}}}}</script>
   <link rel="stylesheet" href="./assets/style.css" />
 <script src="./assets/lang.js"></script>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
 <body class="bg-bg min-h-screen relative" style="background:linear-gradient(180deg,#fefefe 0%,#f5f4f1 50%,#faf9f6 100%) fixed">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
@@ -23,6 +23,7 @@
         <a href="./primary.html" class="text-muted hover:text-primary transition-colors">小学择校</a>
         <a href="./reports.html" class="text-muted hover:text-primary transition-colors">深度择校报告 <span class="inline-block w-1.5 h-1.5 rounded-full bg-accent align-middle ml-0.5" style="margin-top:-2px"></span></a>
         <a href="./kindergarten.html" class="text-muted hover:text-primary transition-colors">幼稚园择校</a>
+        <a href="#" id="nav-auth-btn" class="text-muted hover:text-primary transition-colors" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
       </div>
     </div>
   </nav>
@@ -119,6 +120,19 @@
     // 显示真实数量（保持和数据同步）
     document.getElementById("c-primary").textContent = (window.SCHOOLS || []).length;
     document.getElementById("c-kg").textContent = (window.KINDERGARTENS || []).length;
+
+    // 登录状态：自动更新导航栏按钮
+    (function(){
+      var btn = document.getElementById('nav-auth-btn');
+      if (!btn || typeof Auth === 'undefined') return;
+      Auth.getUser().then(function(user){
+        if (user) {
+          btn.textContent = '👤 ' + (user.email || '已登录');
+          btn.href = '#';
+          btn.onclick = function(e){ e.preventDefault(); Auth.signOut().then(function(){ location.reload(); }); };
+        }
+      }).catch(function(){});
+    })();
   </script>
 </body>
 </html>

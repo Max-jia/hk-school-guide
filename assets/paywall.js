@@ -14,6 +14,9 @@
       localStorage.setItem('pending_report', REPORT_CODE);
     }
 
+    // 显示登录状态（如果已登录）
+    addAuthUI();
+
     if (IS_FREE) { showContent(); return; }
 
     // 1. 检查 localStorage
@@ -40,6 +43,25 @@
     addShareButton();
   }
 
+  // 登录状态显示：在报告 hero 区域显示用户信息和登出按钮
+  function addAuthUI() {
+    if (typeof Auth === 'undefined') return;
+    // 等 paywall.css 的 body.purchased 逻辑跑完再检查
+    setTimeout(function(){
+      Auth.getUser().then(function(user){
+        if (!user) return;
+        var container = document.querySelector('.report-hero .hero-title-row');
+        if (!container) container = document.querySelector('.report-hero .container');
+        if (!container || document.getElementById('auth-ui')) return;
+        var html = '<div id="auth-ui" style="display:inline-flex;align-items:center;gap:8px;margin-left:12px;font-size:12px;color:rgba(255,255,255,.7)">' +
+          '<span>👤 ' + (user.email || '已登录') + '</span>' +
+          '<button onclick="Auth.signOut().then(function(){location.reload()})" style="font-size:11px;padding:2px 10px;border:1px solid rgba(255,255,255,.4);border-radius:4px;background:none;color:rgba(255,255,255,.8);cursor:pointer">登出</button>' +
+          '</div>';
+        container.insertAdjacentHTML('beforeend', html);
+      }).catch(function(){});
+    }, 600);
+  }
+
   function addShareButton() {
     var container = document.querySelector('.report-hero .container');
     if (!container) return;
@@ -63,7 +85,7 @@
 
   function activateToken(token) {
     // 调用 Supabase Edge Function 验证并消耗 token
-    fetch('https://YOUR_SUPABASE_PROJECT.supabase.co/functions/v1/activate-token', {
+    fetch('https://sjnjbshnuokatlcrdnqp.supabase.co/functions/v1/activate-token', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token: token, report: REPORT_CODE })
@@ -86,10 +108,15 @@
 
   function checkSupabase() {
     if (typeof supabase === 'undefined') return;
-    supabase.auth.getSession().then(function(_a){
+    // 使用 auth.js 初始化好的 client
+    var sb = (window.Auth && window.Auth.getSB) ? window.Auth.getSB() : supabase.createClient(
+      'https://sjnjbshnuokatlcrdnqp.supabase.co',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNqbmpic2hudW9rYXRsY3JkbnFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3OTYzMTYsImV4cCI6MjA5NzM3MjMxNn0.BWcr37x2VIllupuuvTF81uVjFCzxgfIrC5RfUbnoWsg'
+    );
+    sb.auth.getSession().then(function(_a){
       var session = _a.data.session;
       if (!session) return;
-      supabase.from('purchases').select('report_id,is_all_access')
+      sb.from('purchases').select('report_id,is_all_access')
         .eq('user_id', session.user.id)
         .or('report_id.eq.'+REPORT_CODE+',is_all_access.eq.true')
         .then(function(_b){
@@ -109,13 +136,134 @@
       setTimeout(function(){ if (!document.body.classList.contains('purchased')) checkSupabase(); }, 500);
     });
 
-    // 把所有 Stripe 链接加上 report 参数
-    var buttons = document.querySelectorAll('.pw-btn[href*="stripe.com"]');
-    buttons.forEach(function(btn){
-      var href = btn.getAttribute('href');
-      if (href && !href.includes('report=') && href.includes('test_28EaEWgTm')) {
-        btn.setAttribute('href', href + '?report=' + REPORT_CODE);
+    // 辅助：带登录跳 Stripe
+    function openStripeWithAuth(url) {
+      if (typeof Auth !== 'undefined' && Auth.showModal) {
+        Auth.showModal({
+          onSuccess: function(user) {
+            var finalUrl = url;
+            if (user && user.id) {
+              finalUrl += (finalUrl.includes('?') ? '&' : '?') + 'client_reference_id=' + user.id;
+            }
+            window.open(finalUrl, '_blank');
+          }
+        });
+      } else {
+        window.open(url, '_blank');
       }
+    }
+
+    // 0. 更新全解锁按钮文案（从"一键"改为"注册"）
+    document.querySelectorAll('.pw-all-access .pw-label').forEach(function(el){
+      if (el.textContent.indexOf('一键解锁') >= 0) {
+        el.textContent = el.textContent.replace('一键解锁', '注册解锁');
+      }
+      if (el.textContent.indexOf('一鍵解鎖') >= 0) {
+        el.textContent = el.textContent.replace('一鍵解鎖', '註冊解鎖');
+      }
+    });
+    document.querySelectorAll('.pw-all-access .pw-strike').forEach(function(el){
+      if (el.textContent.indexOf('省') >= 0 && el.textContent.indexOf('换手机') < 0) {
+        el.innerHTML = el.innerHTML + ' · <span style="color:rgba(255,255,255,.75)">换手机也能看</span>';
+      }
+    });
+
+    // 1.「HK$198 一键解锁全部」→ 必须先注册登录，再跳 Stripe
+    var allAccessBtns = document.querySelectorAll('.pw-btn-all[href*="stripe.com"]');
+    allAccessBtns.forEach(function(btn){
+      var stripeUrl = btn.getAttribute('href');
+      btn.setAttribute('data-stripe-url', stripeUrl);
+      btn.removeAttribute('href');
+      btn.style.cursor = 'pointer';
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        openStripeWithAuth(stripeUrl);
+      });
+    });
+
+    // 2.「单份解锁」按钮旁边加限制提示
+    var singleBtns = document.querySelectorAll('.pw-btn-primary[href*="stripe.com"]');
+    singleBtns.forEach(function(btn){
+      // 避免重复加
+      if (btn.parentNode.querySelector('.pw-single-notice')) return;
+      var notice = document.createElement('div');
+      notice.className = 'pw-single-notice';
+      notice.style.cssText = 'font-size:12px;color:#94a3b8;margin-top:10px;text-align:center;line-height:1.6';
+      notice.innerHTML = '💡 仅保存在当前浏览器<br>换手机或清缓存后需重新购买<br><a href="#" style="color:#6366f1;font-weight:600">推荐注册解锁全部 →</a>';
+      notice.querySelector('a').addEventListener('click', function(e){
+        e.preventDefault();
+        // 滚动到顶部的全解锁区
+        var allAccess = document.querySelector('.pw-all-access');
+        if (allAccess) allAccess.scrollIntoView({ behavior: 'smooth' });
+      });
+      btn.parentNode.insertBefore(notice, btn.nextSibling);
+    });
+
+    // 3.「创建帐号」按钮 → 仅注册入口（不购买）
+    var regBtns = document.querySelectorAll('.pw-btn-secondary[href*="stripe.com"]');
+    regBtns.forEach(function(btn){
+      // 更新文案
+      var label = btn.querySelector('.pw-label');
+      if (label) {
+        if (label.textContent.indexOf('註冊購買') >= 0 || label.textContent.indexOf('注册购买') >= 0) {
+          label.textContent = '创建帐号 · 永久保存购买记录';
+        }
+      }
+      btn.removeAttribute('href');
+      btn.style.cursor = 'pointer';
+      // 隐藏价格（创建帐号不是购买行为）
+      var price2 = btn.querySelector('.pw-price');
+      if (price2) price2.style.display = 'none';
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        if (typeof Auth !== 'undefined' && Auth.showModal) {
+          Auth.showModal({ onSuccess: function(){ location.reload(); } });
+        }
+      });
+    });
+
+    // 3b. 已登录状态：隐藏创建帐号按钮 + 更新单份解锁提示 + 全解锁跳过登录
+    if (typeof Auth !== 'undefined') {
+      Auth.getUser().then(function(user){
+        if (!user) return;
+
+        // 隐藏「创建帐号」按钮
+        regBtns.forEach(function(btn){ btn.style.display = 'none'; });
+
+        // 全解锁按钮：已登录直接跳 Stripe（不再弹登录窗）
+        allAccessBtns.forEach(function(btn){
+          var url = btn.getAttribute('data-stripe-url');
+          if (url) {
+            btn.setAttribute('href', url + (url.includes('?') ? '&' : '?') + 'client_reference_id=' + user.id);
+            btn.style.cursor = '';
+            // 移除旧的 click listener（新 href 生效）
+            var newBtn = btn.cloneNode(true);
+            newBtn.setAttribute('href', url + (url.includes('?') ? '&' : '?') + 'client_reference_id=' + user.id);
+            newBtn.style.cursor = '';
+            newBtn.setAttribute('target', '_blank');
+            newBtn.setAttribute('rel', 'noopener');
+            btn.parentNode.replaceChild(newBtn, btn);
+          }
+        });
+
+        // 更新单份解锁下方的提示
+        var notices = document.querySelectorAll('.pw-single-notice');
+        notices.forEach(function(n){
+          n.innerHTML = '💡 已登录 · 购买记录永久保存至 <b>' + (user.email || '你的帐号') + '</b>';
+          n.style.color = '#64748b';
+        });
+      }).catch(function(){});
+    }
+    var recoverLinks = document.querySelectorAll('.pw-recover a[href*="unlock"]');
+    recoverLinks.forEach(function(link){
+      link.textContent = '已注册？登录恢复 →';
+      link.setAttribute('href', '#');
+      link.addEventListener('click', function(e){
+        e.preventDefault();
+        if (typeof Auth !== 'undefined' && Auth.showModal) {
+          Auth.showModal({ onSuccess: function(){ location.reload(); } });
+        }
+      });
     });
   }
 

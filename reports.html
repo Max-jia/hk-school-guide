@@ -6,7 +6,7 @@
   <title>深度择校报告 · 港校指南</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/opencc-js@1.3.1/dist/umd/full.min.js"></script>
-  <script>tailwind.config={theme:{extend:{colors:{ink:"#22302b",muted:"#6b7770",bg:"#fbfaf6",surface:"#ffffff",primary:"#1f6f5c","primary-dark":"#175547",accent:"#a0522d",border:"#e7e3d9",soft:"#f2f0e9"},fontFamily:{sans:["Roboto","PingFang SC","Microsoft YaHei","sans-serif"],serif:["Newsreader","serif"]}}}}</script>
+  <script>tailwind.config={theme:{extend:{colors:{ink:"#1e293b",muted:"#64748b",bg:"#fafaf7",surface:"rgba(255,255,255,0.7)",primary:"#6366f1","primary-dark":"#4f46e5",accent:"#f97316",border:"rgba(0,0,0,0.06)",soft:"rgba(255,255,255,0.5)"},fontFamily:{sans:["Roboto","PingFang SC","Microsoft YaHei","sans-serif"],serif:["Newsreader","serif"]}}}}</script>
   <link rel="stylesheet" href="./assets/style.css" />
   <style>
     .reports-hero { padding: 56px 0 32px; text-align: center; }
@@ -87,7 +87,7 @@
     }
   </style>
 <script src="./assets/lang.js"></script>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
 <body>
 
   <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
@@ -102,7 +102,7 @@
         <a href="./kindergarten.html" class="text-muted hover:text-primary transition-colors">幼稚园择校</a>
       </div>
     </div>
-  </nav>
+   <a href="#" id="nav-auth-btn" style="margin-left:auto;color:var(--muted);font-weight:600" onclick="event.preventDefault();if(typeof Auth!=="undefined")Auth.showModal({onSuccess:function(){location.reload()}})">登录</a></nav>
 
 <main class="max-w-6xl mx-auto px-5">
   <div class="pt-16 pb-8 text-center">
