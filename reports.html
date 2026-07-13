@@ -101,9 +101,10 @@
         <a href="./primary.html" class="text-muted hover:text-primary transition-colors">小学择校</a>
         <a href="./reports.html" class="text-primary border-b-2 border-primary pb-0.5">深度择校报告</a>
         <a href="./kindergarten.html" class="text-muted hover:text-primary transition-colors">幼稚园择校</a>
+        <a href="#" id="nav-auth-btn" class="text-muted hover:text-primary transition-colors ml-2" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
       </div>
     </div>
-   <a href="#" id="nav-auth-btn" style="margin-left:auto;color:var(--muted);font-weight:600" onclick="event.preventDefault();if(typeof Auth!=="undefined")Auth.showModal({onSuccess:function(){location.reload()}})">登录</a></nav>
+  </nav>
 
 <main class="max-w-6xl mx-auto px-5">
   <div class="pt-16 pb-8 text-center">
