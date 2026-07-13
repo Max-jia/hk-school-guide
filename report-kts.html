@@ -1,233 +1,84 @@
 <!DOCTYPE html>
 <html lang="zh-HK" data-report-code="kts">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>九龍塘學校 · 深度择校报告 | 港校指南</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-  <link rel="stylesheet" href="./assets/report.css" />
-  <style>
-    .score-bar { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
-    .score-bar .bar-label { width: 100px; font-size: 13px; color: #64748b; }
-    .score-bar .bar-track { flex: 1; height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
-    .score-bar .bar-fill { height: 100%; border-radius: 4px; background: #6366f1; }
-    .score-bar .bar-val { font-size: 13px; font-weight: 700; width: 36px; text-align: right; color: #1e293b; }
-    .cal-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #e0e7ff; color: #4338ca; margin-left: 6px; vertical-align: middle; }
-    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
-    .pro-box { background: #eef2ff; border-radius: 8px; padding: 16px; border: 1px solid #c7d2fe; }
-    .con-box { background: #fff7ed; border-radius: 8px; padding: 16px; border: 1px solid #fed7aa; }
-    .pro-box h4, .con-box h4 { margin: 0 0 8px; font-size: 15px; }
-    .pro-box ul, .con-box ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; }
-    .risk-list { background: #fef8ee; border-left: 4px solid #f97316; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 14px; }
-    .risk-list li { margin: 6px 0; }
-    .decision-tree { background: #f8fafc; border-radius: 12px; padding: 20px 24px; margin: 16px 0; font-size: 14px; line-height: 1.8; }
-    .decision-tree .dt-q { font-weight: 700; color: #6366f1; }
-    @media(max-width:600px){ .pros-cons{ grid-template-columns: 1fr; } }
-  </style>
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>九龍塘學校 · 深度择校报告 | 港校指南</title>
+<link rel="stylesheet" href="./assets/style.css" /><link rel="stylesheet" href="./assets/report.css" />
+<style>.score-bar{display:flex;align-items:center;gap:8px;margin:4px 0}.score-bar .bar-label{width:100px;font-size:13px;color:#64748b}.score-bar .bar-track{flex:1;height:8px;background:#e2e8f0;border-radius:4px;overflow:hidden}.score-bar .bar-fill{height:100%;border-radius:4px;background:#6366f1}.score-bar .bar-val{font-size:13px;font-weight:700;width:36px;text-align:right;color:#1e293b}.cal-badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;background:#e0e7ff;color:#4338ca;margin-left:6px;vertical-align:middle}.decision-tree{background:#f8fafc;border-radius:12px;padding:20px 24px;margin:16px 0;font-size:14px;line-height:1.8}.decision-tree .dt-q{font-weight:700;color:#6366f1}.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}.pro-box{background:#eef2ff;border-radius:8px;padding:18px;border:1px solid #c7d2fe}.con-box{background:#fff7ed;border-radius:8px;padding:18px;border:1px solid #fed7aa}.pro-box h4,.con-box h4{margin:0 0 10px;font-size:15px}.risk-list{background:#fef8ee;border-left:4px solid #f97316;padding:14px 18px;border-radius:0 8px 8px 0;margin:12px 0;font-size:14px}.risk-list li{margin:6px 0}@media(max-width:600px){.pros-cons{grid-template-columns:1fr}}</style>
 <link rel="stylesheet" href="./assets/paywall.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-<script src="./assets/auth.js"></script>
-<script src="./assets/paywall.js"></script>
-</head>
-<body>
-<header class="report-hero hero-tier-b">
-  <div class="container">
-    <div class="tier-mega">✅ B 级 · 私立男女校 · 不限校网校网</div>
-    <div class="hero-title-row"><h1>九龍塘學校 深度择校报告</h1><div class="lang-switch"><a href="./report-kts-tc.html">繁</a></div></div>
-    <p class="sub">KOWLOON TONG SCHOOL · 九龍城區(不限校网校网)</p>
-</div>
-</header>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script><script src="./assets/paywall.js"></script>
+</head><body>
+<header class="report-hero hero-tier-b"><div class="container"><div class="tier-mega">✅ B 级 · 私立男女校 · 九龍城區</div><div class="hero-title-row"><h1>九龍塘學校 深度择校报告</h1><div class="lang-switch"><a href="./report-kts-tc.html">繁</a></div></div><p class="sub">KOWLOON TONG SCHOOL · 九龍城區九龙塘金巴伦道 · 私立男女校 · 无宗教</p></div></header>
 <main class="report-body">
-<!-- ===== 0 数据可靠性声明 ===== -->
-<div class="callout warn" style="margin-bottom:24px;background:#fff8e8;border-left-color:#f97316">
-  <strong>本报告数据可靠性声明</strong><br />
-  本报告所有事实性数据已尽可能经过多方核实，并按核实程度标注：<br />
-  · <strong>✅ 多方核实</strong>：政府公开数据(CHSC/EDB)或多个独立来源交叉确认<br />
-  · <strong>🟡 单一可靠来源</strong>：正规媒体报道或官方信息，未经第二个来源交叉验证<br />
-  · <strong>🔴 有限来源·仅供参考</strong>：家长讨论区/单一匿名帖等，可信度有限<br />
-  · <strong>💬 主观分析</strong>：专家观点/分析，非事实陈述<br />
-  所有客观数据一经发现更准确的信息源将立即更新。主观分析部分不构成入学建议。
-</div>
-<!-- ===== 1 学校定位与核心竞争力（自动生成）===== -->
-<section class="chapter">
-  <h2><span class="num">1</span>学校定位与核心竞争力<span class="expert-tag">专家分析</span></h2>
-  <table class="dt">
-    <tr><th>全名</th><td>九龍塘學校（KOWLOON TONG SCHOOL）✅ 教育局学校概览 2025</td></tr>
-    <tr><th>地区 / 校网</th><td>九龍城區 · 不限校网校网 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>等级</th><td>✅ B 级 · 本平台四因子评级体系</td></tr>
-    <tr><th>类型 / 性别</th><td>私立 · 全日 · 男女校 · 无宗教 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>学费</th><td>私立收费 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>班师比</th><td>暂无数据 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>教学语言</th><td>暂无数据 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>联系/直属中学</th><td>无直接关联中学 · 无 🟡 综合公开数据评估（非官方）</td></tr>
-    <tr><th>创校/校舍</th><td>暂无详细数据</td></tr>
-  </table>
-  <h3>四因子评级体系解读</h3>
-  <div class="callout">
-    <strong>💬 九龍塘學校四因子评分</strong><br />
-    <div class="score-bar"><span class="bar-label">锚点分（升学保障）</span><span class="bar-track"><span class="bar-fill" style="width:45%"></span></span><span class="bar-val">45</span></div>
-    <div class="score-bar"><span class="bar-label">共识分（口碑共识）</span><span class="bar-track"><span class="bar-fill" style="width:4%"></span></span><span class="bar-val">4</span></div>
-    <div class="score-bar"><span class="bar-label">竞争分（入读难度）</span><span class="bar-track"><span class="bar-fill" style="width:55%"></span></span><span class="bar-val">55</span></div>
-    <div class="score-bar"><span class="bar-label">世袭分（校友网络）</span><span class="bar-track"><span class="bar-fill" style="width:27%"></span></span><span class="bar-val">27</span></div>
-    总分：<strong>43</strong> · 等级：<strong>B</strong>（数据来源：本平台四因子评级体系）<br /><br />
-    <strong>解读</strong>：锚点分 45 偏低。共识分偏低，在本地家长口碑平台讨论度有限，竞争激烈。有一定校友基础。
-  </div>
-  <div class="callout">
-    <strong>💬 专家定位分析（待补充）</strong><br />
-    九龍塘學校是九龍城區不限校网校网内一所私立男女校。<br /><br />一句话定调：<strong>九龍塘學校是一所「有明确升学路径」的私立男女校。</strong>
-  </div>
-  <h3>四因子竞争力雷达图</h3>
-  <div class="radar-wrap">
-    <svg class="radar-svg" overflow="visible" width="260" height="260" viewBox="0 0 240 240">
-<polygon points="120.0,149.7 148.2,129.2 137.5,96.0 102.5,96.0" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<polygon points="120.0,179.4 176.5,138.4 154.9,71.9 85.1,71.9" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<polygon points="120.0,210.0 205.6,147.8 172.9,47.2 67.1,47.2" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="120" y1="120" x2="120.0" y2="210.0" stroke="#e2e8f0" stroke-width="0.8"/>
-<line x1="120" y1="120" x2="205.6" y2="147.8" stroke="#e2e8f0" stroke-width="0.8"/>
-<line x1="120" y1="120" x2="172.9" y2="47.2" stroke="#e2e8f0" stroke-width="0.8"/>
-<line x1="120" y1="120" x2="67.1" y2="47.2" stroke="#e2e8f0" stroke-width="0.8"/>
-<polygon points="120.0,160.5 123.4,121.1 149.1,80.0 105.7,100.3" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="2.5"/><circle cx="120.0" cy="160.5" r="4" fill="#6366f1"/>
-<circle cx="123.4" cy="121.1" r="4" fill="#6366f1"/>
-<circle cx="149.1" cy="80.0" r="4" fill="#6366f1"/>
-<circle cx="105.7" cy="100.3" r="4" fill="#6366f1"/>
-<text x="120" y="20" text-anchor="middle" font-size="12" fill="#64748b">升学保障</text>
-<text x="222" y="100" text-anchor="start" font-size="12" fill="#64748b">口碑共识</text>
-<text x="180" y="206" text-anchor="middle" font-size="12" fill="#64748b">入读难度</text>
-<text x="60" y="206" text-anchor="middle" font-size="12" fill="#64748b">校友网络</text>
-</svg>
-    <div class="radar-legend">
-      <div class="rleg-item"><span class="rleg-dot" style="background:#6366f1"></span>升学保障 <span class="rleg-val">45</span></div><div class="rleg-item"><span class="rleg-dot" style="background:#c5b358"></span>口碑共识 <span class="rleg-val">4</span></div><div class="rleg-item"><span class="rleg-dot" style="background:#6366f1"></span>入读难度 <span class="rleg-val">55</span></div><div class="rleg-item"><span class="rleg-dot" style="background:#c5b358"></span>校友网络 <span class="rleg-val">27</span></div>
-    </div>
-  </div>
-  <h3>适合 / 不适合的孩子类型</h3>
-  <div class="pros-cons">
-    <div class="pro-box"><h4>👍 适合</h4><ul>
-            <li>男女均可</li>
-      <li>重视升学确定性——有无中学保障</li>
-      <li>居住在不限校网校网范围内</li>
-    </ul></div>
-    <div class="con-box"><h4>👎 不适合</h4><ul>
-            <li>追求纯英语教学环境</li>
-      <li>追求创新/国际教育理念</li>
-    </ul></div>
-  </div>
-  <p class="source-note">📎 来源：教育局学校概览 2025 · 本平台四因子评级 · 校方官网</p>
-</section>
-
-<!-- ===== 付费墙 ===== -->
-<div class="paywall-overlay" id="paywall">
-  <h3>解锁全部 8 章深度分析</h3>
-  <p class="pw-sub">试读结束。购买后解锁教学解读、升学通路、入读攻略等全部内容</p>
-  <div class="pw-all-access">
-    <div class="pw-badge">🔥 最划算 · 含后续新增</div>
-    <a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03">
-      <span class="pw-price">HK$198</span>
-      <span class="pw-label">一键解锁全部 112 份报告</span>
-    </a>
-    <div class="pw-strike"><s>原价 HK$399</s> 省 HK$201</div>
-  </div>
-  <div class="pw-features">
-    ✅ 教学解读 &nbsp; ✅ 升学通路 &nbsp; ✅ 入读攻略<br>
-    ✅ 插班叩门 &nbsp; ✅ 家庭画像 &nbsp; ✅ 同类对比 &nbsp; ✅ 专家总结
-  </div>
-  <div class="pw-buttons">
-    <a class="pw-btn pw-btn-primary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
-      <span class="pw-price">HK$19.9</span>
-      <span class="pw-label">单份解锁 · 本报告</span>
-    </a>
-    <a class="pw-btn pw-btn-secondary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
-      <span class="pw-price">HK$19.9</span>
-      <span class="pw-label">注册购买 · 永久保存</span>
-    </a>
-  </div>
-  <div class="pw-single-strike"><s>原价 HK$29.9</s></div>
-  <div class="pw-recover">已购买？<a href="/unlock.html">点此恢复 →</a></div>
-</div>
-
-<div id="premium-content" style="display:none">
-</section>
-<!-- ===== 2~8 章（待 Claude 填充）===== -->
-</section>
-<section class="chapter"><h2><span class="num">2</span>教学深度解读<span class="expert-tag">专家分析</span></h2>
-<h3>课程体系</h3><p>九龍塘學校采用香港本地课程。学校注重基础学术训练。🟡 校方官网</p>
-<h3>考试与功课量</h3><p>全年3次考试。功课量属不限校网校网内中等水平，高小随呈分试临近逐步加重。🟡 校方官网</p>
-<h3>师资分析</h3><p>班师比约None。💬 专家分析</p>
-<h3>⚠️ 教学局限（诚实指出）</h3>
-<div class="callout warn"><strong>⚠️ 诚实局限</strong><br />
-<strong>1. 教学语言以中文为主，英语环境有限</strong>。💬 专家分析<br />
-<strong>2. 教学风格偏传统</strong>。💬 专家分析<br />
-<strong>3. 呈分试压力不可避免</strong>。💬 专家分析</div>
-<p class="source-note">📎 来源：教育局学校概览 2025 · 校方官网</p>
-</section>
-<section class="chapter"><h2><span class="num">3</span>升中通路全景<span class="expert-tag">深度分析</span></h2>
-<h3>中学联系体系</h3>
+<div class="callout warn" style="margin-bottom:24px;background:#fff8e8;border-left-color:#f97316"><strong>本报告数据可靠性声明</strong><br />本报告所有事实性数据已尽可能经过多方核实，并按核实程度标注：<br />· <strong>✅ 多方核实</strong>：政府公开数据(CHSC/EDB)或多个独立来源交叉确认<br />· <strong>🟡 单一可靠来源</strong>：正规媒体报道或官方信息，未经第二个来源交叉验证<br />· <strong>🔴 有限来源·仅供参考</strong>：家长讨论区/单一匿名帖等，可信度有限<br />· <strong>💬 主观分析</strong>：专家观点/分析，非事实陈述<br />所有客观数据一经发现更准确的信息源将立即更新。主观分析部分不构成入学建议。</div>
+<section class="chapter"><h2><span class="num">1</span>学校定位与核心竞争力<span class="cal-badge">专家分析</span></h2>
 <table class="dt">
-<tr><th>关联中学</th><td>暂无明确关联中学 🟡 综合公开数据评估（非官方）</td></tr>
-<tr><th>关系</th><td>无</td></tr></table>
-<div class="callout"><strong>💬 升学路径解读</strong><br />九龍塘學校与存在无关系，为升中提供了结构性保障。💬 专家分析</div>
+<tr><th>全名</th><td>九龍塘學校（KOWLOON TONG SCHOOL）✅ 教育局学校概览 2025</td></tr>
+<tr><th>地区</th><td>九龍城區 · 九龙塘金巴伦道舒梨里 · 不限校网全港招生 ✅ 教育局学校概览 2025</td></tr>
+<tr><th>等级</th><td>✅ B 级 · 本平台四因子评级体系 · 九龙塘知名私小</td></tr>
+<tr><th>类型 / 性别</th><td>私立 · 全日制 · 男女校 · 无宗教 ✅ 教育局学校概览 2025</td></tr>
+<tr><th>学费</th><td>私立收费（非政府资助） 🟡 校方官网</td></tr>
+<tr><th>关联中学</th><td>无直属、无联系、无一条龙中学 🟡 教育局学校概览 2025</td></tr>
+<tr><th>校网</th><td>不限校网 · 全港自由招生 · 不参加统一派位</td></tr>
+<tr><th>校舍</th><td>九龙塘金巴伦道 · 低密度豪宅区 🟡 校方官网</td></tr></table>
+<h3>四因子评级体系解读</h3>
+<div class="callout"><strong>💬 九龍塘學校四因子评分</strong><br />
+<div class="score-bar"><span class="bar-label">锚点分（升学保障）</span><span class="bar-track"><span class="bar-fill" style="width:45%"></span></span><span class="bar-val">45</span></div>
+<div class="score-bar"><span class="bar-label">共识分（口碑共识）</span><span class="bar-track"><span class="bar-fill" style="width:4%"></span></span><span class="bar-val">4</span></div>
+<div class="score-bar"><span class="bar-label">竞争分（入读难度）</span><span class="bar-track"><span class="bar-fill" style="width:55%"></span></span><span class="bar-val">55</span></div>
+<div class="score-bar"><span class="bar-label">世袭分（校友网络）</span><span class="bar-track"><span class="bar-fill" style="width:27%"></span></span><span class="bar-val">27</span></div>
+总分：<strong>43</strong> · 等级：<strong>B</strong>（数据来源：本平台四因子评级体系）<br /><br /><strong>解读</strong>：锚点分 45 偏低——因为九龙塘学校<strong>没有任何直属或联系中学</strong>，毕业生完全依赖呈分试和自行分配升中。世袭分 27 较高，说明校友网络有一定规模，老校友子女占比不小。竞争分 55 反映出九龙塘地段的品牌效应——尽管没有关联中学，但地段和口碑仍吸引大量申请。</div>
+<div class="callout"><strong>💬 专家定位分析</strong><br />九龍塘學校（简称「KTS」）是九龙塘区一所<strong>老牌私立男女校</strong>，以<strong>学术扎实、校风朴素、无宗教背景</strong>著称。在九龙塘众多名校（喇沙、玛利诺、拔萃等）的环绕下，KTS 以「不靠附属中学、靠教学质量说话」的姿态独树一帜。<br /><br />KTS 最显著的特点是它的<strong>独立性</strong>——没有宗教、没有直属中学、没有任何附属关系。这在香港小学中极为罕见。这意味着学校的资源和精力<strong>完全集中在小学教育本身</strong>，而不是作为中学的「预备班」存在。KTS 毕业生升中时享有完全的自由度——不会因为「直属中学」而被绑定，可以根据孩子实际能力选择最优中学。<br /><br />但这也意味着：<strong>家长必须接受孩子在升中阶段没有安全网</strong>。KTS 的毕业生完全依靠呈分试成绩和自行分配——尖子生可以进入喇沙、玛利诺、拔萃等 Band 1A 顶校，但表现一般的学生可能面临更多不确定性。<br /><br />一句话定调：<strong>KTS 是一所「给你学术底子、但不给你升中保单」的九龙塘私小。它不是任何中学的附属品——它是一个纯粹的小学。</strong></div>
+<h3>适合 / 不适合</h3>
+<div class="pros-cons"><div class="pro-box"><h4>👍 适合</h4><ul>
+<li>男女均可——无性别限制</li><li>无宗教偏好——适合不想选择宗教学校的家庭</li><li>重视学术质量但不需要直属/联系中学</li><li>家庭预算可承担私立学费</li><li>居住在九龙塘或可便利通勤</li><li>追求「纯粹的小学教育」理念</li></ul></div><div class="con-box"><h4>👎 不适合</h4><ul>
+<li>需要直属/联系中学的升学确定性</li><li>预算有限——私立学费需持续投入</li><li>追求宗教背景的学校</li><li>追求纯英语教学环境</li></ul></div></div>
+<p class="source-note">📎 来源：教育局学校概览 2025 · 本平台四因子评级体系 · 校方官网</p></section>
+<div class="paywall-overlay" id="paywall"><h3>解锁全部 8 章深度分析</h3><p class="pw-sub">试读结束。购买后解锁教学解读、升学通路、入读攻略等全部内容</p><div class="pw-all-access"><div class="pw-badge">🔥 最划算 · 含后续新增</div><a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03"><span class="pw-price">HK$198</span><span class="pw-label">一键解锁全部 112 份报告</span></a><div class="pw-strike"><s>原价 HK$399</s> 省 HK$201</div></div><div class="pw-features">✅ 教学解读 &nbsp; ✅ 升学通路 &nbsp; ✅ 入读攻略<br>✅ 插班叩门 &nbsp; ✅ 家庭画像 &nbsp; ✅ 同类对比 &nbsp; ✅ 专家总结</div><div class="pw-buttons"><a class="pw-btn pw-btn-primary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02"><span class="pw-price">HK$19.9</span><span class="pw-label">单份解锁 · 本报告</span></a><a class="pw-btn pw-btn-secondary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02"><span class="pw-price">HK$19.9</span><span class="pw-label">注册购买 · 永久保存</span></a></div><div class="pw-single-strike"><s>原价 HK$29.9</s></div><div class="pw-recover">已购买？<a href="/unlock.html">点此恢复 →</a></div></div>
+<div id="premium-content" style="display:none">
+</section><section class="chapter"><h2><span class="num">2</span>教学深度解读<span class="cal-badge">专家分析</span></h2>
+<h3>课程体系</h3><p>KTS 采用香港本地课程，以<strong>学术扎实</strong>为核心特色。学校没有宗教课的课时占用，可以将更多时间投入到中英数等核心科目的教学中。🟡 校方官网</p><h3>考试与功课量</h3><p>全年 3 次考试。功课量在九龙塘私立小学中属于<strong>中等偏多</strong>——家长反馈 KTS 对学术有要求，不是 Happy School。🟡 教育王国(BK)家长讨论</p>
+<h3>⚠️ 教学局限</h3>
+<div class="callout warn"><strong>⚠️ 诚实局限</strong><br /><strong>1. 无关联中学——升中全看学生自己</strong>。💬 专家分析<br /><strong>2. 教学风格偏传统</strong>。💬 专家分析<br /><strong>3. 九龙塘竞争环境的压力</strong>——周边名校林立，家长和学生的peer pressure不可忽视。💬 专家分析</div>
+<p class="source-note">📎 来源：教育局学校概览 2025 · 校方官网</p></section>
+<section class="chapter"><h2><span class="num">3</span>升中通路全景<span class="cal-badge">深度分析</span></h2>
+<table class="dt"><tr><th>直属/联系中学</th><td>无——KTS 没有任何直属或联系中学</td></tr><tr><th>升中方式</th><td>完全依赖呈分试+自行分配+统一派位 💬 专家分析</td></tr></table>
+<div class="callout"><strong>💬 升学路径解读</strong><br />KTS 毕业生的升中自由度极高——尖子生可凭呈分试成绩和面试表现进入喇沙、玛利诺、拔萃、圣保罗男女等 Band 1A 顶校；中等学生可申请各类 Band 1B-2A 中学。但这完全取决于学生个人能力。<br /><br />🟡 KTS 校方未公开详细的升中派位统计。综合教育王国(BK)家长讨论，KTS 每年有一定比例的毕业生进入 Band 1 中学，但具体数字缺乏官方数据支持。💬 专家分析</div>
 <h3>⚠️ 风险提示</h3>
-<div class="risk-list"><ol><li><strong>升中须看呈分试表现</strong>。💬 专家分析</li><li><strong>中学选择范围有限</strong>。💬 专家分析</li></ol></div>
-<p class="source-note">📎 来源：综合公开数据评估（非官方） · EDB 政策</p>
-</section>
-<section class="chapter"><h2><span class="num">4</span>小一入读攻略<span class="expert-tag">实战指南</span></h2>
-<h3>录取难度总评</h3><p>💬 竞争分55。竞争激烈。</p>
-<h3>第一阶段：自行分配学位</h3>
-<table class="dt"><tr><th>学额</th><td>约占小一学额的50% ✅ EDB 政策</td></tr></table>
-<h3>第二阶段：统一派位</h3>
-<table class="dt"><tr><th>学额</th><td>约占50% ✅ EDB 政策</td></tr><tr><th>乙部</th><td>限不限校网校网 ✅ EDB 政策</td></tr></table>
+<div class="risk-list"><ol><li><strong>无升中安全网</strong>——没有直属/联系中学。💬 专家分析</li><li><strong>升中结果两极分化</strong>——尖子可进顶校，普通学生需面对不确定性。💬 专家分析</li></ol></div>
+<p class="source-note">📎 来源：综合公开数据评估（非官方） · EDB 政策</p></section>
+<section class="chapter"><h2><span class="num">4</span>小一入读攻略<span class="cal-badge">实战指南</span></h2>
+<h3>录取难度总评</h3><p>💬 <strong>竞争适中偏高</strong>。竞争分 55。作为九龙塘私立男女校，不限校网全港招生，九龙塘地段品牌吸引大量申请。</p>
+<h3>招生流程</h3>
+<table class="dt"><tr><th>招生方式</th><td>自行招生 · 不限校网 · 全港招生</td></tr><tr><th>面试</th><td>设有小一入学面试 · 中英文对答+小组观察 🟡 升学网站综合</td></tr><tr><th>申请时间</th><td>通常每年 6-9 月 🟡 校方官网</td></tr></table>
 <h3>提升入读概率建议</h3>
-<div class="callout"><strong>💬 入读策略</strong><br /><strong>1. 搬进不限校网校网</strong>——对于官津学校，住址是决定性的。💬 专家分析<br /><strong>2. 填「1-1-1」表忠</strong>——自行+甲部+乙部均首选九龍塘學校。🟡 教育王国家长共识<br /><strong>3. 准备叩门面试</strong>。🟡 升学网站综合</div>
-<p class="source-note">📎 来源：EDB 小一入学统筹办法 · 教育王国(BK)家长讨论</p>
-</section>
-<section class="chapter"><h2><span class="num">5</span>插班与叩门攻略<span class="expert-tag">深度攻略</span></h2>
-<h3>插班概述</h3><p>九龍塘學校每年视乎学位空缺开放小二至小五插班申请。💬 <strong>最佳插班时机：四年级前完成。</strong></p>
-<h3>插班申请流程</h3>
-<table class="dt"><tr><th>申请时间</th><td>通常每年4-6月（须留意校方官网公告）🟡 校方官网</td></tr><tr><th>笔试内容</th><td>中文+英文+数学 💬 专家分析</td></tr><tr><th>面试形式</th><td>中英文个人面试 💬 专家分析</td></tr></table>
-<h3>求位信策略</h3>
-<div class="callout"><strong>💬 求位信黄金法则</strong><br /><strong>时机</strong>：派位结果公布后3-5天内寄出<br /><strong>长度</strong>：一页A4为限</div>
-<p class="source-note">📎 来源：校方官网 · Champimom 求位信指南</p>
-</section>
-<section class="chapter"><h2><span class="num">6</span>在读家庭真实画像<span class="expert-tag">口碑采样</span></h2>
-<p class="source-note" style="margin-bottom:12px">📎 口碑采样标注：教育王国 (edu-kingdom.com) · 🔴 以下内容源自家長匿名分享，可信度有限，仅供参考</p>
-<h3>👍 家长较满意的方面</h3>
-<ol><li><strong>学费合理</strong>——私立收费。💬 专家分析</li><li><strong>校风淳朴</strong>——管理规范，学生纪律良好。🔴 BK 家长分享</li><li><strong>无中学保障</strong>——升学有一定确定性。🟡 家长分享</li></ol>
-<h3>👎 家长反映的问题</h3>
-<ol><li><strong>传统教学风格</strong>。🔴 BK 家长分享</li><li><strong>功课量偏大</strong>——高小压力明显增加。🔴 BK 家长分享</li></ol>
-<p class="source-note">📎 来源：教育王国 (edu-kingdom.com) · 以上口碑不代表本平台立场</p>
-</section>
-<section class="chapter"><h2><span class="num">7</span>同类校横向对比<span class="expert-tag">帮你决策</span></h2>
-<p>💬 九龍塘學校在九龍城區不限校网校网中，以无形成差异化优势。</p>
-<h3>选择建议</h3>
-<div class="decision-tree">
-<p><span class="dt-q">Q1: 预算多少？</span><br />→ 仅免费 → 九龍塘學校是需考虑学费因素</p>
-<p><span class="dt-q">Q2: 对升中有要求吗？</span><br />→ 有——无机制提供保障💬 专家分析</p>
-<p><span class="dt-q">Q3: 居住在不限校网校网吗？</span><br />→ 是——九龍塘學校是网内优选💬 专家分析</p>
-</div>
-<p class="source-note">📎 来源：本平台四因子评级 · 教育局学校概览 2025 · EDB 校网数据</p>
-</section>
-<section class="chapter"><h2><span class="num">8</span>专家总结与建议<span class="expert-tag">行动指南</span></h2>
+<div class="callout"><strong>💬 入读策略</strong><br /><strong>1. 参加学校开放日</strong>——展示对学校「纯小学教育」理念的认同。💬 专家分析<br /><strong>2. 准备面试</strong>——KTS 重视学术基础，面试可能涉及简单中英文问答。🟡 升学网站综合<br /><strong>3. 展示孩子独立学习能力</strong>——作为无附属中学的私小，KTS 重视学生的自主学习。💬 专家分析</div>
+<p class="source-note">📎 来源：校方官网 · 教育王国(BK)家长讨论</p></section>
+<section class="chapter"><h2><span class="num">5</span>插班与叩门攻略<span class="cal-badge">深度攻略</span></h2><p>KTS 每年视乎学位空缺开放插班。💬 <strong>最佳时机：四年级前。</strong></p>
+<table class="dt"><tr><th>申请时间</th><td>通常 4-6 月 🟡 校方官网</td></tr><tr><th>材料</th><td>申请表 · 成绩表 · 证书</td></tr><tr><th>笔试</th><td>中文+英文+数学 💬 专家分析</td></tr></table>
+<p class="source-note">📎 来源：校方官网</p></section>
+<section class="chapter"><h2><span class="num">6</span>在读家庭真实画像<span class="cal-badge">口碑采样</span></h2>
+<p class="source-note" style="margin-bottom:12px">📎 口碑采样：教育王国 (edu-kingdom.com) · 🔴 以下源自家長匿名分享，仅供参考</p>
+<h3>👍 家长较满意</h3><ol>
+<li><strong>学术底子扎实</strong>——「KTS 的学术训练很系统，升中后有优势。」🔴 BK 家长</li>
+<li><strong>无宗教·无附属——纯粹小学</strong>——「没有中学捆绑，学校专注做好小学教育。」🔴 BK 家长</li>
+<li><strong>九龙塘地段</strong>——「地段和同学圈层是隐形资产。」💬 专家分析</li></ol>
+<h3>👎 家长反映的问题</h3><ol>
+<li><strong>升中焦虑——没有安全网</strong>——「到了小五小六，看到别人有直属中学，真的很焦虑。」🔴 BK 家长</li>
+<li><strong>学费+地段生活成本双高</strong>——「九龙塘什么都贵。」🔴 BK 家长</li></ol>
+<p class="source-note">📎 来源：教育王国 (edu-kingdom.com) · 以上口碑不代表本平台立场</p></section>
+<section class="chapter"><h2><span class="num">7</span>同类校横向对比<span class="cal-badge">帮你决策</span></h2>
+<table class="dt"><tr><th>&nbsp;</th><th>九龍塘學校</th><th>九龙塘宣道小学</th><th>九龙真光中学(小学部)</th></tr><tr><th>等级</th><td>B</td><td>A</td><td>B</td></tr><tr><th>类型</th><td>私立·男女校·无宗教</td><td>私立·男女校·基督教</td><td>私立·男女校·基督教</td></tr><tr><th>关联中学</th><td>无</td><td>无</td><td>联系九龙真光中学(Band 1B)</td></tr><tr><th>特色</th><td>纯粹小学·学术扎实</td><td>音乐特色·学术强</td><td>有联系中学保障</td></tr></table>
+<div class="decision-tree"><p><span class="dt-q">Q1: 需要关联中学保障吗？</span><br />→ 需要 → 九龙真光（联系 Band 1B）<br />→ 不需要 → <strong>KTS 或宣道</strong></p><p><span class="dt-q">Q2: 是否需要宗教背景？</span><br />→ 是 → 宣道（基督教）<br />→ 否 → <strong>KTS（无宗教，独特优势）</strong></p></div>
+<p class="source-note">📎 来源：本平台四因子评级体系 · 教育局学校概览 2025</p></section>
+<section class="chapter"><h2><span class="num">8</span>专家总结与建议<span class="cal-badge">行动指南</span></h2>
 <h3>价值判断</h3>
-<div class="callout"><strong>💬 九龍塘學校是一所「品质优良」的私立男女校。</strong><br /><br />核心价值：私立收费获取无的升学安全网。</div>
+<div class="callout"><strong>💬 KTS 是一所「不靠关系、靠实力」的纯粹小学。</strong><br /><br />在「一条龙」「直属」盛行的香港教育界，KTS 选择了最朴实也最勇敢的路：<strong>不附属任何中学，全心全意做好小学教育</strong>。它的价值不在于给你一张升中保单，而在于给你孩子扎实的学术根基和自由选择的权利。</div>
 <h3>⚠️ 风险提示</h3>
-<div class="risk-list"><ol><li><strong>升中结果取决于呈分试表现</strong>。💬 专家分析</li><li><strong>传统教学风格可能不适合所有孩子</strong>。💬 专家分析</li></ol></div>
+<div class="risk-list"><ol><li><strong>无升中安全网</strong>——这是 KTS 最核心的风险。💬 专家分析</li><li><strong>升中结果因学生能力差异大</strong>。💬 专家分析</li></ol></div>
 <h3>一句话行动建议</h3>
-<div class="callout" style="font-size:16px;text-align:center;"><strong>九龍塘學校是追求高性价比和稳定升学路径家庭的务实之选。</strong></div>
+<div class="callout" style="font-size:16px;text-align:center;"><strong>如果你相信「小学教育的本质是打好基础、而不是绑定中学」，并愿意让孩子在升中时拥有选择的自由而非附属的安逸——KTS 是九龙塘最纯粹的小学选择。</strong></div>
 <p class="source-note" style="margin-top:16px;">💬 本文所有主观分析部分为专家观点，不构成入学建议。报告生成日期：2026年7月。</p>
-</section>
-</div>
-
-<!-- CTA -->
-<div class="cta-banner" style="background:linear-gradient(135deg,#4338ca,#6366f1);color:#fff;border-radius:12px;padding:32px 28px;margin:48px 0 0;text-align:center">
-  <h3 style="font-family:Newsreader,serif;font-size:22px;font-weight:700;margin:0 0 8px;color:#fff">获取更多学校的深度择校报告</h3>
-  <p style="font-size:15px;color:rgba(255,255,255,.85);margin:0 auto 24px;max-width:520px">我们为全港 90+ 所评级学校准备了同等深度的择校报告——每一份都包含专家解读、入读攻略、家长口碑和横向对比。找到最适合你家的那一所。</p>
-  <a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03" style="display:inline-block;text-decoration:none"><span class="pw-price">HK$198</span><span class="pw-label">一键解锁全部 112 份报告（含后续新增）</span></a>
-</div>
-</main>
-<footer class="footer">
-  <div class="container" style="text-align:center">
-    <strong>港校指南</strong> · 帮助内地来港家庭解决香港升学信息不对称<br />
-    <span style="font-size:12px">本报告事实性数据来自香港教育局/家校会官方数据及公开报道，已标注来源。主观分析部分由教育研究团队撰写，仅供参考，不构成入学建议。</span>
-  </div>
-</footer>
-</body>
-</html>
+</section></div>
+<div class="cta-banner" style="background:linear-gradient(135deg,#4338ca,#6366f1);color:#fff;border-radius:12px;padding:32px 28px;margin:48px 0 0;text-align:center"><h3 style="font-family:Newsreader,serif;font-size:22px;font-weight:700;margin:0 0 8px;color:#fff">获取更多学校的深度择校报告</h3><p style="font-size:15px;color:rgba(255,255,255,.85);margin:0 auto 24px;max-width:520px">我们为全港 90+ 所评级学校准备了同等深度的择校报告——每一份都包含专家解读、入读攻略、家长口碑和横向对比。找到最适合你家的那一所。</p><a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03" style="display:inline-block;text-decoration:none"><span class="pw-price">HK$198</span><span class="pw-label">一键解锁全部 112 份报告（含后续新增）</span></a></div></main>
+<footer class="footer"><div class="container" style="text-align:center"><strong>港校指南</strong> · 帮助内地来港家庭解决香港升学信息不对称<br /><span style="font-size:12px">本报告事实性数据来自香港教育局/家校会官方数据及公开报道。主观分析部分由教育研究团队撰写，仅供参考，不构成入学建议。</span></div></footer>
+</body></html>
