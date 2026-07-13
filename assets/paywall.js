@@ -1,10 +1,11 @@
 /* paywall.js — 付费墙检查逻辑（双轨：无注册+注册用户） */
 
 (function(){
-  // 从 URL 提取报告代码
+  // 从 URL 提取报告代码（去除 -tc 后缀，简体/繁体共享同一份购买记录）
   var path = location.pathname;
   var match = path.match(/report-([a-z0-9-]+)\.html/);
-  var REPORT_CODE = match ? match[1] : (document.documentElement.getAttribute('data-report-code') || '');
+  var RAW_CODE = match ? match[1] : (document.documentElement.getAttribute('data-report-code') || '');
+  var REPORT_CODE = RAW_CODE.replace(/-tc$/, '');  // 简繁统一
   var IS_FREE = document.documentElement.getAttribute('data-report-free') === 'true';
 
   // 等 DOM 就绪后再检查（避免 document.body 为 null）
