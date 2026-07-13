@@ -170,7 +170,7 @@
     });
 
     // 1.「HK$198 一键解锁全部」→ 必须先注册登录，再跳 Stripe
-    var allAccessBtns = document.querySelectorAll('.pw-btn-all[href*="stripe.com"]');
+    var allAccessBtns = document.querySelectorAll('.pw-all-access .pw-btn-all[href*="stripe.com"]');
     allAccessBtns.forEach(function(btn){
       var stripeUrl = btn.getAttribute('href');
       btn.setAttribute('data-stripe-url', stripeUrl);
