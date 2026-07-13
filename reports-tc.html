@@ -263,6 +263,12 @@ const PS_REPORTS = [
 var cn2hk = OpenCC.Converter({ from: 'cn', to: 'hk' });
 function toTC(str) { return cn2hk(str); }
 
+function isUnlocked(code) {
+  if (localStorage.getItem('all_access') === 'true') return true;
+  if (localStorage.getItem('purchased_' + code) === 'true') return true;
+  return false;
+}
+
 let psFilter = 'all';
 
 function renderPs() {
@@ -300,7 +306,7 @@ function renderPs() {
       const tierLabel = s.t==='S'?'🏆 S 級':s.t==='A+'?'🥇 A+ 級':'🌟 A 級';
       html += `<a class="report-card" href="./report-${s.c}.html" data-premium="${s.premium}">
         <span class="rc-tier ${tc}">${tierLabel}</span>
-        <span class="rc-premium-tag">🔒 付費</span>
+        <span class="rc-premium-tag" style="${isUnlocked(s.c)?'background:#d1fae5;color:#059669':''}">${isUnlocked(s.c)?'✅ 已解鎖':'🔒 付費'}</span>
         <h3>${s.n}</h3>
         <div class="rc-meta">📍 ${s.d}</div>
         <div class="rc-highlight">${s.h}</div>
@@ -373,7 +379,7 @@ function renderKg() {
       html += `<a class="report-card" href="./report-${s.c}.html" data-premium="${s.premium}">
         <span class="rc-tier ${tc}">${tierLabel}</span>
         <!-- 付費上線時移除下行 display:none -->
-        <span class="rc-premium-tag">🔒 付費</span>
+        <span class="rc-premium-tag" style="${isUnlocked(s.c)?'background:#d1fae5;color:#059669':''}">${isUnlocked(s.c)?'✅ 已解鎖':'🔒 付費'}</span>
         <h3>${s.n}<span class="premium-badge">付費</span></h3>
         <div class="rc-meta">📍 ${s.d}</div>
         <div class="rc-highlight">${s.h}</div>
