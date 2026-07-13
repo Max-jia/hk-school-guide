@@ -143,7 +143,8 @@
           onSuccess: function(user) {
             var finalUrl = url;
             if (user && user.id) {
-              finalUrl += (finalUrl.includes('?') ? '&' : '?') + 'client_reference_id=' + user.id;
+              var refId = user.id + '::' + (url.includes('7sY8wO') ? 'all' : REPORT_CODE);
+              finalUrl += (finalUrl.includes('?') ? '&' : '?') + 'client_reference_id=' + refId;
             }
             window.open(finalUrl, '_blank');
           }
@@ -238,11 +239,20 @@
             btn.style.cursor = '';
             // 移除旧的 click listener（新 href 生效）
             var newBtn = btn.cloneNode(true);
-            newBtn.setAttribute('href', url + (url.includes('?') ? '&' : '?') + 'client_reference_id=' + user.id);
+            newBtn.setAttribute('href', url + (url.includes('?') ? '&' : '?') + 'client_reference_id=' + user.id + '::all');
             newBtn.style.cursor = '';
             newBtn.setAttribute('target', '_blank');
             newBtn.setAttribute('rel', 'noopener');
             btn.parentNode.replaceChild(newBtn, btn);
+          }
+        });
+
+        // 单份解锁按钮：已登录时带 client_reference_id（格式: user_id::report_code）
+        singleBtns.forEach(function(btn){
+          var url = btn.getAttribute('href');
+          if (url && url.includes('stripe.com')) {
+            var sep = url.includes('?') ? '&' : '?';
+            btn.setAttribute('href', url + sep + 'client_reference_id=' + user.id + '::' + REPORT_CODE);
           }
         });
 
