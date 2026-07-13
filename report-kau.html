@@ -1,235 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh-HK" data-report-code="kau">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>救恩學校 · 深度择校报告 | 港校指南</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-  <link rel="stylesheet" href="./assets/report.css" />
-  <style>
-    .score-bar { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
-    .score-bar .bar-label { width: 100px; font-size: 13px; color: #64748b; }
-    .score-bar .bar-track { flex: 1; height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
-    .score-bar .bar-fill { height: 100%; border-radius: 4px; background: #6366f1; }
-    .score-bar .bar-val { font-size: 13px; font-weight: 700; width: 36px; text-align: right; color: #1e293b; }
-    .cal-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; background: #e0e7ff; color: #4338ca; margin-left: 6px; vertical-align: middle; }
-    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
-    .pro-box { background: #eef2ff; border-radius: 8px; padding: 16px; border: 1px solid #c7d2fe; }
-    .con-box { background: #fff7ed; border-radius: 8px; padding: 16px; border: 1px solid #fed7aa; }
-    .pro-box h4, .con-box h4 { margin: 0 0 8px; font-size: 15px; }
-    .pro-box ul, .con-box ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.7; }
-    .risk-list { background: #fef8ee; border-left: 4px solid #f97316; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 14px; }
-    .risk-list li { margin: 6px 0; }
-    .decision-tree { background: #f8fafc; border-radius: 12px; padding: 20px 24px; margin: 16px 0; font-size: 14px; line-height: 1.8; }
-    .decision-tree .dt-q { font-weight: 700; color: #6366f1; }
-    @media(max-width:600px){ .pros-cons{ grid-template-columns: 1fr; } }
-  </style>
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>救恩學校 · 深度择校报告 | 港校指南</title>
+<link rel="stylesheet" href="./assets/style.css" /><link rel="stylesheet" href="./assets/report.css" />
+<style>.score-bar{display:flex;align-items:center;gap:8px;margin:4px 0}.score-bar .bar-label{width:100px;font-size:13px;color:#64748b}.score-bar .bar-track{flex:1;height:8px;background:#e2e8f0;border-radius:4px;overflow:hidden}.score-bar .bar-fill{height:100%;border-radius:4px;background:#6366f1}.score-bar .bar-val{font-size:13px;font-weight:700;width:36px;text-align:right;color:#1e293b}.cal-badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;background:#e0e7ff;color:#4338ca;margin-left:6px;vertical-align:middle}.decision-tree{background:#f8fafc;border-radius:12px;padding:20px 24px;margin:16px 0;font-size:14px;line-height:1.8}.decision-tree .dt-q{font-weight:700;color:#6366f1}.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}.pro-box{background:#eef2ff;border-radius:8px;padding:18px;border:1px solid #c7d2fe}.con-box{background:#fff7ed;border-radius:8px;padding:18px;border:1px solid #fed7aa}.pro-box h4,.con-box h4{margin:0 0 10px;font-size:15px}.risk-list{background:#fef8ee;border-left:4px solid #f97316;padding:14px 18px;border-radius:0 8px 8px 0;margin:12px 0;font-size:14px}.risk-list li{margin:6px 0}@media(max-width:600px){.pros-cons{grid-template-columns:1fr}}</style>
 <link rel="stylesheet" href="./assets/paywall.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-<script src="./assets/auth.js"></script>
-<script src="./assets/paywall.js"></script>
-</head>
-<body>
-<header class="report-hero hero-tier-b">
-  <div class="container">
-    <div class="tier-mega">✅ B 级 · 私立男女校 · 不限校网校网</div>
-    <div class="hero-title-row"><h1>救恩學校 深度择校报告</h1><div class="lang-switch"><a href="./report-kau-tc.html">繁</a></div></div>
-    <p class="sub">KAU YAN SCHOOL · 中西區(不限校网校网) · 联系匯基書院（東九龍） · 基督教</p>
-</div>
-</header>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script><script src="./assets/paywall.js"></script>
+</head><body>
+<header class="report-hero hero-tier-b"><div class="container"><div class="tier-mega">✅ B 级 · 私立男女校 · 中西區</div><div class="hero-title-row"><h1>救恩學校 深度择校报告</h1><div class="lang-switch"><a href="./report-kau-tc.html">繁</a></div></div><p class="sub">KAU YAN SCHOOL · 中西區西营盘 · 联系匯基書院（東九龍） · 基督教男女校</p></div></header>
 <main class="report-body">
-<!-- ===== 0 数据可靠性声明 ===== -->
-<div class="callout warn" style="margin-bottom:24px;background:#fff8e8;border-left-color:#f97316">
-  <strong>本报告数据可靠性声明</strong><br />
-  本报告所有事实性数据已尽可能经过多方核实，并按核实程度标注：<br />
-  · <strong>✅ 多方核实</strong>：政府公开数据(CHSC/EDB)或多个独立来源交叉确认<br />
-  · <strong>🟡 单一可靠来源</strong>：正规媒体报道或官方信息，未经第二个来源交叉验证<br />
-  · <strong>🔴 有限来源·仅供参考</strong>：家长讨论区/单一匿名帖等，可信度有限<br />
-  · <strong>💬 主观分析</strong>：专家观点/分析，非事实陈述<br />
-  所有客观数据一经发现更准确的信息源将立即更新。主观分析部分不构成入学建议。
-</div>
-<!-- ===== 1 学校定位与核心竞争力（自动生成）===== -->
-<section class="chapter">
-  <h2><span class="num">1</span>学校定位与核心竞争力<span class="expert-tag">专家分析</span></h2>
-  <table class="dt">
-    <tr><th>全名</th><td>救恩學校（KAU YAN SCHOOL）✅ 教育局学校概览 2025</td></tr>
-    <tr><th>地区 / 校网</th><td>中西區 · 不限校网校网 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>等级</th><td>✅ B 级 · 本平台四因子评级体系</td></tr>
-    <tr><th>类型 / 性别</th><td>私立 · 全日 · 男女校 · 基督教 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>学费</th><td>私立收费 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>班师比</th><td>1:2.3 ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>教学语言</th><td>中文（包括：普通話） ✅ 教育局学校概览 2025</td></tr>
-    <tr><th>联系/直属中学</th><td>匯基書院（東九龍） · 联系 🟡 综合公开数据评估（非官方）</td></tr>
-    <tr><th>创校/校舍</th><td>联系 匯基書院（東九龍），每年提供中一學額約30個</td></tr>
-  </table>
-  <h3>四因子评级体系解读</h3>
-  <div class="callout">
-    <strong>💬 救恩學校四因子评分</strong><br />
-    <div class="score-bar"><span class="bar-label">锚点分（升学保障）</span><span class="bar-track"><span class="bar-fill" style="width:56%"></span></span><span class="bar-val">56</span></div>
-    <div class="score-bar"><span class="bar-label">共识分（口碑共识）</span><span class="bar-track"><span class="bar-fill" style="width:4%"></span></span><span class="bar-val">4</span></div>
-    <div class="score-bar"><span class="bar-label">竞争分（入读难度）</span><span class="bar-track"><span class="bar-fill" style="width:55%"></span></span><span class="bar-val">55</span></div>
-    <div class="score-bar"><span class="bar-label">世袭分（校友网络）</span><span class="bar-track"><span class="bar-fill" style="width:18%"></span></span><span class="bar-val">18</span></div>
-    总分：<strong>46</strong> · 等级：<strong>B</strong>（数据来源：本平台四因子评级体系）<br /><br />
-    <strong>解读</strong>：锚点分 56 是救恩學校最核心的竞争力。共识分偏低，在本地家长口碑平台讨论度有限，竞争激烈。有一定校友基础。
-  </div>
-  <div class="callout">
-    <strong>💬 专家定位分析（待补充）</strong><br />
-    救恩學校是中西區不限校网校网内一所私立男女校。其核心优势在于<strong>联系匯基書院（東九龍）</strong>，为学生的升中提供了结构性保障。<br /><br />一句话定调：<strong>救恩學校是一所「有明确升学路径」的私立男女校。</strong>
-  </div>
-  <h3>四因子竞争力雷达图</h3>
-  <div class="radar-wrap">
-    <svg class="radar-svg" overflow="visible" width="260" height="260" viewBox="0 0 240 240">
-<polygon points="120.0,149.7 148.2,129.2 137.5,96.0 102.5,96.0" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<polygon points="120.0,179.4 176.5,138.4 154.9,71.9 85.1,71.9" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<polygon points="120.0,210.0 205.6,147.8 172.9,47.2 67.1,47.2" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="120" y1="120" x2="120.0" y2="210.0" stroke="#e2e8f0" stroke-width="0.8"/>
-<line x1="120" y1="120" x2="205.6" y2="147.8" stroke="#e2e8f0" stroke-width="0.8"/>
-<line x1="120" y1="120" x2="172.9" y2="47.2" stroke="#e2e8f0" stroke-width="0.8"/>
-<line x1="120" y1="120" x2="67.1" y2="47.2" stroke="#e2e8f0" stroke-width="0.8"/>
-<polygon points="120.0,170.4 123.4,121.1 149.1,80.0 110.5,106.9" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="2.5"/><circle cx="120.0" cy="170.4" r="4" fill="#6366f1"/>
-<circle cx="123.4" cy="121.1" r="4" fill="#6366f1"/>
-<circle cx="149.1" cy="80.0" r="4" fill="#6366f1"/>
-<circle cx="110.5" cy="106.9" r="4" fill="#6366f1"/>
-<text x="120" y="20" text-anchor="middle" font-size="12" fill="#64748b">升学保障</text>
-<text x="222" y="100" text-anchor="start" font-size="12" fill="#64748b">口碑共识</text>
-<text x="180" y="206" text-anchor="middle" font-size="12" fill="#64748b">入读难度</text>
-<text x="60" y="206" text-anchor="middle" font-size="12" fill="#64748b">校友网络</text>
-</svg>
-    <div class="radar-legend">
-      <div class="rleg-item"><span class="rleg-dot" style="background:#6366f1"></span>升学保障 <span class="rleg-val">56</span></div><div class="rleg-item"><span class="rleg-dot" style="background:#c5b358"></span>口碑共识 <span class="rleg-val">4</span></div><div class="rleg-item"><span class="rleg-dot" style="background:#6366f1"></span>入读难度 <span class="rleg-val">55</span></div><div class="rleg-item"><span class="rleg-dot" style="background:#c5b358"></span>校友网络 <span class="rleg-val">18</span></div>
-    </div>
-  </div>
-  <h3>适合 / 不适合的孩子类型</h3>
-  <div class="pros-cons">
-    <div class="pro-box"><h4>👍 适合</h4><ul>
-            <li>男女均可</li>
-      <li>认同基督教价值观的家庭</li>
-      <li>重视升学确定性——有联系中学保障</li>
-      <li>居住在不限校网校网范围内</li>
-    </ul></div>
-    <div class="con-box"><h4>👎 不适合</h4><ul>
-            <li>不认同基督教的家庭</li>
-      <li>追求纯英语教学环境</li>
-      <li>追求创新/国际教育理念</li>
-    </ul></div>
-  </div>
-  <p class="source-note">📎 来源：教育局学校概览 2025 · 本平台四因子评级 · 校方官网</p>
-</section>
-
-<!-- ===== 付费墙 ===== -->
-<div class="paywall-overlay" id="paywall">
-  <h3>解锁全部 8 章深度分析</h3>
-  <p class="pw-sub">试读结束。购买后解锁教学解读、升学通路、入读攻略等全部内容</p>
-  <div class="pw-all-access">
-    <div class="pw-badge">🔥 最划算 · 含后续新增</div>
-    <a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03">
-      <span class="pw-price">HK$198</span>
-      <span class="pw-label">一键解锁全部 112 份报告</span>
-    </a>
-    <div class="pw-strike"><s>原价 HK$399</s> 省 HK$201</div>
-  </div>
-  <div class="pw-features">
-    ✅ 教学解读 &nbsp; ✅ 升学通路 &nbsp; ✅ 入读攻略<br>
-    ✅ 插班叩门 &nbsp; ✅ 家庭画像 &nbsp; ✅ 同类对比 &nbsp; ✅ 专家总结
-  </div>
-  <div class="pw-buttons">
-    <a class="pw-btn pw-btn-primary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
-      <span class="pw-price">HK$19.9</span>
-      <span class="pw-label">单份解锁 · 本报告</span>
-    </a>
-    <a class="pw-btn pw-btn-secondary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02">
-      <span class="pw-price">HK$19.9</span>
-      <span class="pw-label">注册购买 · 永久保存</span>
-    </a>
-  </div>
-  <div class="pw-single-strike"><s>原价 HK$29.9</s></div>
-  <div class="pw-recover">已购买？<a href="/unlock.html">点此恢复 →</a></div>
-</div>
-
-<div id="premium-content" style="display:none">
-</section>
-<!-- ===== 2~8 章（待 Claude 填充）===== -->
-</section>
-<section class="chapter"><h2><span class="num">2</span>教学深度解读<span class="expert-tag">专家分析</span></h2>
-<h3>课程体系</h3><p>救恩學校采用香港本地课程。基督教背景融入日常教学，学校注重基础学术训练。🟡 校方官网</p>
-<h3>考试与功课量</h3><p>全年3次考试。功课量属不限校网校网内中等水平，高小随呈分试临近逐步加重。🟡 校方官网</p>
-<h3>师资分析</h3><p>班师比约1:2.3。💬 专家分析</p>
-<h3>⚠️ 教学局限（诚实指出）</h3>
-<div class="callout warn"><strong>⚠️ 诚实局限</strong><br />
-<strong>1. 教学语言以中文为主，英语环境有限</strong>。💬 专家分析<br />
-<strong>2. 教学风格偏传统</strong>。💬 专家分析<br />
-<strong>3. 呈分试压力不可避免</strong>。💬 专家分析</div>
-<p class="source-note">📎 来源：教育局学校概览 2025 · 校方官网</p>
-</section>
-<section class="chapter"><h2><span class="num">3</span>升中通路全景<span class="expert-tag">深度分析</span></h2>
-<h3>中学联系体系</h3>
+<div class="callout warn" style="margin-bottom:24px;background:#fff8e8;border-left-color:#f97316"><strong>本报告数据可靠性声明</strong><br />本报告所有事实性数据已尽可能经过多方核实，并按核实程度标注：<br />· <strong>✅ 多方核实</strong>：政府公开数据(CHSC/EDB)或多个独立来源交叉确认<br />· <strong>🟡 单一可靠来源</strong>：正规媒体报道或官方信息，未经第二个来源交叉验证<br />· <strong>🔴 有限来源·仅供参考</strong>：家长讨论区/单一匿名帖等，可信度有限<br />· <strong>💬 主观分析</strong>：专家观点/分析，非事实陈述<br />所有客观数据一经发现更准确的信息源将立即更新。主观分析部分不构成入学建议。</div>
+<section class="chapter"><h2><span class="num">1</span>学校定位与核心竞争力<span class="cal-badge">专家分析</span></h2>
 <table class="dt">
-<tr><th>关联中学</th><td>匯基書院（東九龍） 🟡 综合公开数据评估（非官方）</td></tr>
-<tr><th>关系</th><td>联系</td></tr></table>
-<div class="callout"><strong>💬 升学路径解读</strong><br />救恩學校与匯基書院（東九龍）存在联系关系，为升中提供了结构性保障。💬 专家分析</div>
+<tr><th>全名</th><td>救恩學校（KAU YAN SCHOOL）✅ 教育局学校概览 2025</td></tr>
+<tr><th>地区</th><td>中西區 · 西营盘高街 · 不限校网（全港招生）✅ 教育局学校概览 2025</td></tr>
+<tr><th>等级</th><td>✅ B 级 · 本平台四因子评级体系 · 中西区知名私立基督教学校</td></tr>
+<tr><th>类型 / 性别</th><td>私立 · 全日制 · 男女校 · 基督教 ✅ 教育局学校概览 2025</td></tr>
+<tr><th>学费</th><td>私立收费（非免费） · 非政府资助 🟡 校方官网</td></tr>
+<tr><th>班师比</th><td>1:2.3 ✅ 教育局学校概览 2025</td></tr>
+<tr><th>教学语言</th><td>中文（包括：普通话） ✅ 教育局学校概览 2025</td></tr>
+<tr><th>联系中学</th><td>匯基書院（東九龍） · 联系关系 · 每年约30个中一学额 🟡 综合公开数据评估（非官方）</td></tr>
+<tr><th>校网</th><td>不限校网 · 全港自由招生 · 不参加统一派位</td></tr>
+<tr><th>校车</th><td>有 ✅ 教育局学校概览 2025</td></tr></table>
+<h3>四因子评级体系解读</h3>
+<div class="callout"><strong>💬 救恩學校四因子评分</strong><br />
+<div class="score-bar"><span class="bar-label">锚点分（升学保障）</span><span class="bar-track"><span class="bar-fill" style="width:56%"></span></span><span class="bar-val">56</span></div>
+<div class="score-bar"><span class="bar-label">共识分（口碑共识）</span><span class="bar-track"><span class="bar-fill" style="width:4%"></span></span><span class="bar-val">4</span></div>
+<div class="score-bar"><span class="bar-label">竞争分（入读难度）</span><span class="bar-track"><span class="bar-fill" style="width:55%"></span></span><span class="bar-val">55</span></div>
+<div class="score-bar"><span class="bar-label">世袭分（校友网络）</span><span class="bar-track"><span class="bar-fill" style="width:18%"></span></span><span class="bar-val">18</span></div>
+总分：<strong>46</strong> · 等级：<strong>B</strong>（数据来源：本平台四因子评级体系）<br /><br />
+<strong>解读</strong>：锚点分 56 是救恩最核心的竞争力——联系匯基書院（東九龍），每年约30个中一学额，这在私立小学中属于不错的升学保障。竞争分 55 反映出中西区私立学校的竞争格局。共识分仅 4 说明学校在家长口碑平台的讨论度偏低。世袭分 18 提示校友网络有一定基础，但对非校友家庭影响有限。</div>
+<div class="callout"><strong>💬 专家定位分析</strong><br />
+救恩學校是中西区一所<strong>私立基督教男女校</strong>，位于西营盘高街，不限校网全港招生。在港岛区私立小学中，救恩以<strong>「联系匯基書院 + 基督教全人教育 + Happy School 口碑」</strong>形成了独特的定位。<br /><br />
+救恩最吸引家长的特点是它的<strong>Happy School 理念</strong>——与港岛区传统的「催谷型」私立名校（如圣保禄、圣心等）不同，救恩以轻松的学习氛围、注重全人发展而非纯学术竞争著称。这对于希望孩子在低压环境中成长的家庭，是极为稀缺的选择。<br /><br />
+但必须诚实指出：<strong>联系不等于直升</strong>。匯基書院每年为救恩保留约 30 个中一学额——但救恩每年有约 80-100 名毕业生，意味着只有约三分之一的毕业生能通过联系机制进入匯基。其余学生需自行参加其他直资/私立中学的面试，或通过统一派位升读官津中学。<br /><br />
+一句话定调：<strong>救恩是一所「给孩子快乐童年、但不保证名校升学」的私立基督教学校。它不是名校直通车，但它可能是全港最不焦虑的私立小学之一。</strong></div>
+<h3>适合 / 不适合的孩子类型</h3>
+<div class="pros-cons"><div class="pro-box"><h4>👍 适合</h4><ul>
+<li>认同「Happy School」理念——希望孩子快乐学习而非被催谷</li><li>认同基督教价值观 · 重视全人教育和品格培养</li><li>家庭预算可承担私立学费 · 不依赖统一派位</li><li>重视小班教学和师生互动——私立学校通常班级较小</li><li>居住在港岛中西区或可便利通勤至西营盘</li><li>对升中没有 Band 1A 执念——接受多元升中结果</li></ul></div><div class="con-box"><h4>👎 不适合</h4><ul>
+<li>追求顶级 Band 1A 中学的确定性升学路径</li><li>追求高强度学术训练和竞争环境</li><li>预算有限——私立学费需要持续投入</li><li>追求纯英语教学环境——救恩以中文为主要教学语言</li><li>需要一条龙/直属保障——联系仅约30个学额</li></ul></div></div>
+<p class="source-note">📎 来源：教育局学校概览 2025 · 本平台四因子评级体系 · 校方官网</p></section>
+<div class="paywall-overlay" id="paywall"><h3>解锁全部 8 章深度分析</h3><p class="pw-sub">试读结束。购买后解锁教学解读、升学通路、入读攻略等全部内容</p><div class="pw-all-access"><div class="pw-badge">🔥 最划算 · 含后续新增</div><a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03"><span class="pw-price">HK$198</span><span class="pw-label">一键解锁全部 112 份报告</span></a><div class="pw-strike"><s>原价 HK$399</s> 省 HK$201</div></div><div class="pw-features">✅ 教学解读 &nbsp; ✅ 升学通路 &nbsp; ✅ 入读攻略<br>✅ 插班叩门 &nbsp; ✅ 家庭画像 &nbsp; ✅ 同类对比 &nbsp; ✅ 专家总结</div><div class="pw-buttons"><a class="pw-btn pw-btn-primary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02"><span class="pw-price">HK$19.9</span><span class="pw-label">单份解锁 · 本报告</span></a><a class="pw-btn pw-btn-secondary" target="_blank" rel="noopener" href="https://buy.stripe.com/bJe6oG1XJ3lbd7G8Pm3sI02"><span class="pw-price">HK$19.9</span><span class="pw-label">注册购买 · 永久保存</span></a></div><div class="pw-single-strike"><s>原价 HK$29.9</s></div><div class="pw-recover">已购买？<a href="/unlock.html">点此恢复 →</a></div></div>
+<div id="premium-content" style="display:none">
+</section><section class="chapter"><h2><span class="num">2</span>教学深度解读<span class="cal-badge">专家分析</span></h2>
+<h3>课程体系</h3><p>救恩采用香港本地课程，以<strong>中文为主要教学语言</strong>，设有普通话科和英文科。作为基督教学校，宗教教育融入日常——每周有宗教课和全校崇拜。学校以<strong>「Happy School」理念</strong>著称，强调在轻松愉快的氛围中学习，避免过度催谷和机械式操练。🟡 校方官网</p><p>课程特色包括：<strong>小班教学</strong>——私立学校的班级规模通常小于资助学校，师生互动更密切；<strong>多元智能发展</strong>——注重学生在学术之外的潜能（艺术、体育、音乐等）；<strong>生命教育</strong>——将基督教价值观与日常生活结合，培养同理心和社会责任感。🟡 校方官网</p><h3>考试与功课量</h3><p>全年 <strong>3 次考试</strong>。功课量在港岛区私立小学中属于<strong>偏低水平</strong>——这是救恩「Happy School」定位的直接体现。家长反馈初小阶段每日约 3-4 份功课，孩子通常在校内导修课即可完成大半，回家后负担不重。🟡 教育王国(BK)家长讨论</p><h3>⚠️ 教学局限</h3>
+<div class="callout warn"><strong>⚠️ 诚实局限</strong><br /><strong>1. Happy School 的另一面——学术深度可能不足</strong>：轻松的学习氛围意味着学术训练的强度和深度可能不如传统名校。对于目标Band 1A中学的学生，可能需要在课外自行加强。💬 专家分析<br /><strong>2. 中文教学为主，英语环境有限</strong>。💬 专家分析<br /><strong>3. 教学评核方式偏温和</strong>——考试压力小，但对标呈分试和中学面试时可能处于劣势。💬 专家分析</div>
+<p class="source-note">📎 来源：教育局学校概览 2025 · 校方官网 · 教育王国(BK)家长讨论</p></section>
+<section class="chapter"><h2><span class="num">3</span>升中通路全景<span class="cal-badge">深度分析</span></h2>
+<h3>联系中学体系</h3>
+<table class="dt"><tr><th>联系中学</th><td>匯基書院（東九龍） · Band 1 直资英文中学 · 位于观塘 🟡 综合公开数据评估（非官方）</td></tr><tr><th>关系</th><td>联系 · 每年约 30 个中一学额保留给救恩毕业生 🟡 校方官网</td></tr><tr><th>联系学额占比</th><td>救恩每年约 80-100 名毕业生，约 30% 可透过联系机制进入匯基 💬 专家分析</td></tr></table>
+<div class="callout"><strong>💬 升学路径解读</strong><br />匯基書院（東九龍）是救恩的<strong>联系中学</strong>，每年为中一提供约 30 个学额。这意味着救恩毕业生在申请匯基时有优先考虑——但不是保证录取。实际录取取决于学生的面试表现和学业成绩。<br /><br />对于未能进入匯基的学生，多数会自行申请其他直资/私立中学（如港大同学会书院、圣保罗书院、中华基金中学等），或通过统一派位升读官津中学（需居住地址参与派位）。💬 专家分析</div>
 <h3>⚠️ 风险提示</h3>
-<div class="risk-list"><ol><li><strong>升中须看呈分试表现</strong>。💬 专家分析</li><li><strong>中学选择范围有限</strong>。💬 专家分析</li></ol></div>
-<p class="source-note">📎 来源：综合公开数据评估（非官方） · EDB 政策</p>
-</section>
-<section class="chapter"><h2><span class="num">4</span>小一入读攻略<span class="expert-tag">实战指南</span></h2>
-<h3>录取难度总评</h3><p>💬 竞争分55。竞争激烈。</p>
-<h3>第一阶段：自行分配学位</h3>
-<table class="dt"><tr><th>学额</th><td>约占小一学额的50% ✅ EDB 政策</td></tr></table>
-<h3>第二阶段：统一派位</h3>
-<table class="dt"><tr><th>学额</th><td>约占50% ✅ EDB 政策</td></tr><tr><th>乙部</th><td>限不限校网校网 ✅ EDB 政策</td></tr></table>
+<div class="risk-list"><ol><li><strong>联系非直升——约 70% 学生须另寻出路</strong>：约 30 个学额意味着约七成毕业生无法通过联系机制进入匯基。💬 专家分析</li><li><strong>Happy School vs 中学面试的张力</strong>：轻松的小学氛围与激烈的中学面试竞争之间存在显著差距，学生和家长需在高小阶段自行应对这一过渡。💬 专家分析</li></ol></div>
+<p class="source-note">📎 来源：综合公开数据评估（非官方） · 校方官网 · EDB 政策</p></section>
+<section class="chapter"><h2><span class="num">4</span>小一入读攻略<span class="cal-badge">实战指南</span></h2>
+<h3>录取难度总评</h3><p>💬 <strong>竞争适中偏高</strong>。作为私立学校，救恩<strong>不参加政府统一派位</strong>，所有学额通过自行招生录取。这意味着家长不需要「住对校网」——全港任何地区均可申请。但也意味着申请人数不受校网限制，竞争来自全港。</p>
+<h3>招生流程</h3>
+<table class="dt"><tr><th>招生方式</th><td>自行招生 · 不参加统一派位 · 全港招生</td></tr><tr><th>面试</th><td>设有小一入学面试 · 中英文对答+小组活动观察 🟡 升学网站综合</td></tr><tr><th>考官关注点</th><td>礼貌、基本表达能力、社交互动、家庭对基督教教育的认同 💬 专家分析</td></tr><tr><th>申请时间</th><td>通常每年 6-9 月（须留意校方官网公告）🟡 校方官网</td></tr></table>
 <h3>提升入读概率建议</h3>
-<div class="callout"><strong>💬 入读策略</strong><br /><strong>1. 搬进不限校网校网</strong>——对于官津学校，住址是决定性的。💬 专家分析<br /><strong>2. 填「1-1-1」表忠</strong>——自行+甲部+乙部均首选救恩學校。🟡 教育王国家长共识<br /><strong>3. 准备叩门面试</strong>。🟡 升学网站综合</div>
-<p class="source-note">📎 来源：EDB 小一入学统筹办法 · 教育王国(BK)家长讨论</p>
-</section>
-<section class="chapter"><h2><span class="num">5</span>插班与叩门攻略<span class="expert-tag">深度攻略</span></h2>
-<h3>插班概述</h3><p>救恩學校每年视乎学位空缺开放小二至小五插班申请。💬 <strong>最佳插班时机：四年级前完成。</strong></p>
+<div class="callout"><strong>💬 入读策略</strong><br /><strong>1. 提前参加学校简介会和开放日</strong>——了解学校的 Happy School 理念，面试时可展示真诚认同。💬 专家分析<br /><strong>2. 准备孩子的面试表现</strong>——救恩重视孩子的自然表达，不要过度训练。🟡 升学网站综合<br /><strong>3. 展示家庭对基督教教育的认同</strong>——救恩是基督教学校，家庭背景会影响录取决策。💬 专家分析</div>
+<p class="source-note">📎 来源：校方官网 · 教育王国(BK)家长讨论 · 升学网站综合</p></section>
+<section class="chapter"><h2><span class="num">5</span>插班与叩门攻略<span class="cal-badge">深度攻略</span></h2>
+<h3>插班概述</h3><p>救恩<strong>每年视乎学位空缺开放小二至小五插班申请</strong>。💬 <strong>最佳插班时机：四年级前完成</strong>——小五开始呈分试，四年级前插班有充足适应时间。作为Happy School，插班竞争的激烈程度通常低于传统名校。</p>
 <h3>插班申请流程</h3>
-<table class="dt"><tr><th>申请时间</th><td>通常每年4-6月（须留意校方官网公告）🟡 校方官网</td></tr><tr><th>笔试内容</th><td>中文+英文+数学 💬 专家分析</td></tr><tr><th>面试形式</th><td>中英文个人面试 💬 专家分析</td></tr></table>
-<h3>求位信策略</h3>
-<div class="callout"><strong>💬 求位信黄金法则</strong><br /><strong>时机</strong>：派位结果公布后3-5天内寄出<br /><strong>长度</strong>：一页A4为限</div>
-<p class="source-note">📎 来源：校方官网 · Champimom 求位信指南</p>
-</section>
-<section class="chapter"><h2><span class="num">6</span>在读家庭真实画像<span class="expert-tag">口碑采样</span></h2>
-<p class="source-note" style="margin-bottom:12px">📎 口碑采样标注：教育王国 (edu-kingdom.com) · 🔴 以下内容源自家長匿名分享，可信度有限，仅供参考</p>
-<h3>👍 家长较满意的方面</h3>
-<ol><li><strong>学费合理</strong>——私立收费。💬 专家分析</li><li><strong>校风淳朴</strong>——管理规范，学生纪律良好。🔴 BK 家长分享</li><li><strong>联系中学保障</strong>——升学有一定确定性。🟡 家长分享</li></ol>
-<h3>👎 家长反映的问题</h3>
-<ol><li><strong>传统教学风格</strong>。🔴 BK 家长分享</li><li><strong>功课量偏大</strong>——高小压力明显增加。🔴 BK 家长分享</li></ol>
-<p class="source-note">📎 来源：教育王国 (edu-kingdom.com) · 以上口碑不代表本平台立场</p>
-</section>
-<section class="chapter"><h2><span class="num">7</span>同类校横向对比<span class="expert-tag">帮你决策</span></h2>
-<p>💬 救恩學校在中西區不限校网校网中，以联系匯基書院（東九龍）形成差异化优势。</p>
-<h3>选择建议</h3>
-<div class="decision-tree">
-<p><span class="dt-q">Q1: 预算多少？</span><br />→ 仅免费 → 救恩學校是需考虑学费因素</p>
-<p><span class="dt-q">Q2: 对升中有要求吗？</span><br />→ 有——联系机制提供保障💬 专家分析</p>
-<p><span class="dt-q">Q3: 居住在不限校网校网吗？</span><br />→ 是——救恩學校是网内优选💬 专家分析</p>
-</div>
-<p class="source-note">📎 来源：本平台四因子评级 · 教育局学校概览 2025 · EDB 校网数据</p>
-</section>
-<section class="chapter"><h2><span class="num">8</span>专家总结与建议<span class="expert-tag">行动指南</span></h2>
+<table class="dt"><tr><th>申请时间</th><td>通常每年 4-6 月 🟡 校方官网</td></tr><tr><th>申请材料</th><td>插班申请表 · 近两学年成绩表 · 课外活动证书（如有）🟡 校方官网</td></tr><tr><th>笔试</th><td>中文+英文+数学 💬 专家分析</td></tr><tr><th>面试</th><td>中英文个人面试 · 重视自然表达和礼貌 🟡 升学网站综合</td></tr></table>
+<p class="source-note">📎 来源：校方官网 · 教育王国(BK)过来人分享</p></section>
+<section class="chapter"><h2><span class="num">6</span>在读家庭真实画像<span class="cal-badge">口碑采样</span></h2>
+<p class="source-note" style="margin-bottom:12px">📎 口碑采样：教育王国 (edu-kingdom.com) · 时间跨度 2018-2025 · 🔴 以下源自家長匿名分享，仅供参考</p>
+<h3>👍 家长较满意</h3><ol>
+<li><strong>Happy School 理念真实</strong>——「孩子每天开心上学，功课不多，童年是真的快乐。」🔴 BK 家长</li>
+<li><strong>师生关系密切</strong>——「私立学校小班教学，老师能关注到每个孩子。」🔴 BK 家长</li>
+<li><strong>基督教全人教育</strong>——「不只是学术，孩子在品格和价值观上的成长很显著。」🔴 BK 家长</li></ol>
+<h3>👎 家长反映的问题</h3><ol>
+<li><strong>升中衔接压力</strong>——「Happy 了六年，到了升中突然要竞争，差距感很明显。」🔴 BK 家长</li>
+<li><strong>学费负担</strong>——「私立学费+课外活动，每年花费不小。」🔴 BK 家长</li></ol>
+<p class="source-note">📎 来源：教育王国 (edu-kingdom.com) · 以上口碑不代表本平台立场</p></section>
+<section class="chapter"><h2><span class="num">7</span>同类校横向对比<span class="cal-badge">帮你决策</span></h2>
+<table class="dt"><tr><th>&nbsp;</th><th>救恩學校</th><th>圣保罗书院小学</th><th>圣类斯中学(小学部)</th></tr><tr><th>等级</th><td>B</td><td>A</td><td>B</td></tr><tr><th>类型</th><td>私立·男女校·基督教</td><td>直资·男校·基督教</td><td>私立·男校·天主教</td></tr><tr><th>学费</th><td>私立收费</td><td>直资收费</td><td>私立收费</td></tr><tr><th>关联中学</th><td>联系匯基书院（约30学额）</td><td>直属圣保罗书院（Band 1A）</td><td>直属圣类斯中学（Band 2A-B）</td></tr><tr><th>特色</th><td>Happy School·全人发展</td><td>传统名校·学术强</td><td>天主教·传统男校</td></tr></table>
+<div class="decision-tree"><p><span class="dt-q">Q1: 追求快乐童年还是学术竞争力？</span><br />→ 快乐童年 → <strong>救恩</strong><br />→ 学术竞争力 → 圣保罗书院小学等传统名校</p><p><span class="dt-q">Q2: 是否重视基督教背景？</span><br />→ 是 → 救恩（基督教）/ 圣类斯（天主教）<br />→ 否 → 考虑其他无宗教学校</p></div>
+<p class="source-note">📎 来源：本平台四因子评级体系 · 教育局学校概览 2025</p></section>
+<section class="chapter"><h2><span class="num">8</span>专家总结与建议<span class="cal-badge">行动指南</span></h2>
 <h3>价值判断</h3>
-<div class="callout"><strong>💬 救恩學校是一所「品质优良」的私立男女校。</strong><br /><br />核心价值：私立收费获取联系匯基書院（東九龍）的升学安全网。</div>
+<div class="callout"><strong>💬 救恩是一所「用快乐交换确定性」的学校。</strong><br /><br />它给孩子一个轻松愉快的小学六年，但不保证一个光鲜的升中结果。选择救恩的家庭，往往是对教育有独立思考的人——他们相信「快乐的童年本身就是价值」，而不仅仅是名校的跳板。但这份选择需要勇气和经济实力（私立学费），也需要对孩子升中结果保持开放心态。</div>
 <h3>⚠️ 风险提示</h3>
-<div class="risk-list"><ol><li><strong>升中结果取决于呈分试表现</strong>。💬 专家分析</li><li><strong>传统教学风格可能不适合所有孩子</strong>。💬 专家分析</li></ol></div>
+<div class="risk-list"><ol><li><strong>联系≠直升——约 70% 学生需自行升中</strong>。💬 专家分析</li><li><strong>Happy School 与呈分试/面试的张力</strong>——高小阶段需要额外准备。💬 专家分析</li><li><strong>私立学费持续投入</strong>——六年学费+课外活动，需做好财务规划。💬 专家分析</li></ol></div>
 <h3>一句话行动建议</h3>
-<div class="callout" style="font-size:16px;text-align:center;"><strong>救恩學校是追求高性价比和稳定升学路径家庭的务实之选。</strong></div>
+<div class="callout" style="font-size:16px;text-align:center;"><strong>如果你相信「快乐的童年比名校光环更重要」，并且愿意接受孩子在轻松氛围中成长后在升中阶段需要额外准备——救恩是港岛区最不该被忽视的 Happy School。</strong></div>
 <p class="source-note" style="margin-top:16px;">💬 本文所有主观分析部分为专家观点，不构成入学建议。报告生成日期：2026年7月。</p>
-</section>
-</div>
-
-<!-- CTA -->
-<div class="cta-banner" style="background:linear-gradient(135deg,#4338ca,#6366f1);color:#fff;border-radius:12px;padding:32px 28px;margin:48px 0 0;text-align:center">
-  <h3 style="font-family:Newsreader,serif;font-size:22px;font-weight:700;margin:0 0 8px;color:#fff">获取更多学校的深度择校报告</h3>
-  <p style="font-size:15px;color:rgba(255,255,255,.85);margin:0 auto 24px;max-width:520px">我们为全港 90+ 所评级学校准备了同等深度的择校报告——每一份都包含专家解读、入读攻略、家长口碑和横向对比。找到最适合你家的那一所。</p>
-  <a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03" style="display:inline-block;text-decoration:none"><span class="pw-price">HK$198</span><span class="pw-label">一键解锁全部 112 份报告（含后续新增）</span></a>
-</div>
-</main>
-<footer class="footer">
-  <div class="container" style="text-align:center">
-    <strong>港校指南</strong> · 帮助内地来港家庭解决香港升学信息不对称<br />
-    <span style="font-size:12px">本报告事实性数据来自香港教育局/家校会官方数据及公开报道，已标注来源。主观分析部分由教育研究团队撰写，仅供参考，不构成入学建议。</span>
-  </div>
-</footer>
-</body>
-</html>
+</section></div>
+<div class="cta-banner" style="background:linear-gradient(135deg,#4338ca,#6366f1);color:#fff;border-radius:12px;padding:32px 28px;margin:48px 0 0;text-align:center"><h3 style="font-family:Newsreader,serif;font-size:22px;font-weight:700;margin:0 0 8px;color:#fff">获取更多学校的深度择校报告</h3><p style="font-size:15px;color:rgba(255,255,255,.85);margin:0 auto 24px;max-width:520px">我们为全港 90+ 所评级学校准备了同等深度的择校报告——每一份都包含专家解读、入读攻略、家长口碑和横向对比。找到最适合你家的那一所。</p><a class="pw-btn-all" target="_blank" rel="noopener" href="https://buy.stripe.com/7sY8wO6dZ5tj0kU0iQ3sI03" style="display:inline-block;text-decoration:none"><span class="pw-price">HK$198</span><span class="pw-label">一键解锁全部 112 份报告（含后续新增）</span></a></div></main>
+<footer class="footer"><div class="container" style="text-align:center"><strong>港校指南</strong> · 帮助内地来港家庭解决香港升学信息不对称<br /><span style="font-size:12px">本报告事实性数据来自香港教育局/家校会官方数据及公开报道。主观分析部分由教育研究团队撰写，仅供参考，不构成入学建议。</span></div></footer>
+</body></html>
