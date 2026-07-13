@@ -233,7 +233,7 @@ const KG_REPORTS = [
 // 去重（安全网）
 const UNIQUE_KG = [...new Map(KG_REPORTS.map(r => [r.c, r])).values()];
 
-// ========== 小学报告数据 (32所) ==========
+// ========== 小学报告数据 (43所) ==========
 const PS_REPORTS = [
   {n:'拔萃女小學',t:'S',d:'油尖旺区',h:'全港#1·一条龙直升女拔·DSE状元摇篮',c:'dgjs',premium:false},
   {n:'拔萃男書院',t:'S',d:'九龙城区',h:'IB+DSE双轨·IB全球顶尖·一条龙直升',c:'dbs',premium:true},
@@ -295,7 +295,18 @@ const PS_REPORTS = [
 {n:'滬江小學',t:'B',d:'東區',h:'Shanghai Alumni Primary School (SAPS) · ',c:'sppcs2',premium:true},
 {n:'香港真光中學附屬小學暨幼稚園',t:'B',d:'灣仔區',h:'True Light Primary &amp; Kindergarten (T',c:'tlps',premium:true},
 {n:'番禺會所華仁小學',t:'B',d:'東區',h:'Pun U Association Wah Yan Primary School',c:'wyps',premium:true},
-{n:'聖公會仁立小學',t:'B',d:'葵青區',h:'S.K.H. Yan Laap Primary School · 葵青区(65校',c:'ylaps',premium:true}
+{n:'聖公會仁立小學',t:'B',d:'葵青區',h:'S.K.H. Yan Laap Primary School · 葵青区(65校',c:'ylaps',premium:true},
+{n:'聖羅撒學校',t:'A',d:'九龍城區',h:'41校网·直属聖羅撒書院(Band 1B)·85%保留位',c:'srl',premium:true},
+{n:'九龍塘天主教華德學校',t:'brand',d:'九龍城區',h:'天主教男女校·九龙城区稀缺·全人教育',c:'ktbwcs',premium:true},
+{n:'救恩學校',t:'B',d:'中西區',h:'Happy School·联系匯基書院·基督教男女校',c:'kau',premium:true},
+{n:'聖類斯中學(小學部)',t:'B',d:'中西區',h:'直属聖類斯中學·85%保留位·港岛传统男校',c:'sls',premium:true},
+{n:'九龍塘學校',t:'B',d:'九龍城區',h:'纯小学教育·无宗教·无附属·九龙塘私小',c:'kts',premium:true},
+{n:'循道學校',t:'B',d:'油尖旺區',h:'31校网·基督教资助男女校·油尖旺旗舰',c:'mc',premium:true},
+{n:'油蔴地天主教小學(海泓道)',t:'B',d:'油尖旺區',h:'31校网·千禧校舍·天主教男女校·学术扎实',c:'ycps',premium:true},
+{n:'大埔舊墟公立學校',t:'B',d:'大埔區',h:'84校网·无宗教·60年历史·大埔区最知名资助小学',c:'tpom',premium:true},
+{n:'塘尾道官立小學',t:'B',d:'油尖旺區',h:'41校网·联系伊利沙伯中學(Band 1A++)·免费官立',c:'tmrgps',premium:true},
+{n:'聖母小學',t:'B',d:'黃大仙區',h:'直属聖母書院·85%保留位·$40,000/年·全港招生',c:'olps',premium:true},
+{n:'佐敦道官立小學',t:'B',d:'油尖旺區',h:'31校网·联系伊利沙伯中學(Band 1A++)·免费官立',c:'jrgps',premium:true}
 ];
 
 // 检查报告是否已解锁
