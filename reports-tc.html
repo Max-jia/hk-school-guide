@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>深度擇校報告 · 港校指南</title>
-  <meta name="description" content="香港小學及幼稚園深度擇校報告。112份報告覆蓋全港S/A+/A/B評級名校，四因子評級體系，專家解讀，升學通路，入讀攻略。數據來源香港教育局CHSC。" />
+  <meta name="description" content="香港小學及幼稚園深度擇校報告。123份報告覆蓋全港S/A+/A/B評級名校，四因子評級體系，專家解讀，升學通路，入讀攻略。數據來源香港教育局CHSC。" />
   <link rel="stylesheet" href="./assets/style.css" />
   <style>
     .reports-hero { padding: 56px 0 32px; text-align: center; }
@@ -119,8 +119,8 @@
 
   <!-- Tabs -->
   <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('kg',this)">🎨 幼稚園深度報告</button>
-    <button class="tab-btn" onclick="switchTab('ps',this)">📘 小學深度報告</button>
+    <button class="tab-btn active" onclick="switchTab('kg',this)" id="tabBtnKg">🎨 幼稚園深度報告</button>
+    <button class="tab-btn" onclick="switchTab('ps',this)" id="tabBtnPs">📘 小學深度報告</button>
   </div>
 
   <!-- 幼稚園 Tab -->
@@ -134,13 +134,13 @@
     <div class="filter-row" id="filterTier">
       <button class="filter-pill active" onclick="setTierFilter('all', this)">全部</button>
       <button class="filter-pill" onclick="setTierFilter('S', this)">🏆 S 級<span class="cnt">·3</span></button>
-      <button class="filter-pill" onclick="setTierFilter('A+', this)">🥇 A+ 級<span class="cnt">·17</span></button>
+      <button class="filter-pill" onclick="setTierFilter('A+', this)">🥇 A+ 級<span class="cnt">·9</span></button>
       <button class="filter-pill" onclick="setTierFilter('A', this)">🌟 A 級<span class="cnt">·21</span></button>
       <button class="filter-pill" onclick="setTierFilter('brand', this)">🔗 連鎖品牌<span class="cnt">·10</span></button>
     </div>
     <div id="kgContent"></div>
   
-      <button class="filter-pill" onclick="setPsFilter('B', this)">💚 B 級<span class="cnt">·6</span></button>
+      <button class="filter-pill" onclick="setPsFilter('B', this)">💚 B 級<span class="cnt">·40</span></button>
     </div>
 
   <!-- 小學 Tab -->
@@ -269,7 +269,11 @@ const PS_REPORTS = [
   {n:'油蔴地天主教小學(海泓道)',t:'B',d:'油尖旺區',h:'31校網·千禧校舍',c:'ycps',premium:true},
   {n:'塘尾道官立小學',t:'B',d:'油尖旺區',h:'41校網·聯繫伊利沙伯中學(1A++)',c:'tmrgps',premium:true},
   {n:'佐敦道官立小學',t:'B',d:'油尖旺區',h:'31校網·聯繫伊利沙伯中學(1A++)',c:'jrgps',premium:true},
+  {n:'聖伯多祿天主教小學',t:'B',d:'南區',h:'直屬聖伯多祿中學·師生比1:2.1·天主教·免費資助·18校網',c:'aspcps',premium:true},
+  {n:'培基小學',t:'B',d:'沙田區',h:'兩文三語·數理英文授課·法語課外·聯繫培基書院(Band 1B)·91校網',c:'puikei',premium:true},
+  {n:'香港浸會大學附屬學校王錦輝中小學',t:'暂无评级',d:'沙田區',h:'直資一條龍·DSE+A-Level雙軌·英文教學·7,000人爭160學位·不限校網',c:'wkf',premium:true},
 ];
+
 
 // ========== 小學 Tab 渲染 ==========
 // 簡體→繁體轉換（使用 OpenCC 完整字典，支援所有簡體字搜尋繁體校名）
