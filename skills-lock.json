@@ -6,6 +6,12 @@
       "sourceType": "github",
       "skillPath": "SKILL.md",
       "computedHash": "559f73948d6b9d67d67d463b53b692207931cc074039058ac0a5fcdbb3f513ee"
+    },
+    "last30days": {
+      "source": "mvanhorn/last30days-skill",
+      "sourceType": "github",
+      "skillPath": "skills/last30days/SKILL.md",
+      "computedHash": "346d7ee7855a985581f56278578b6a4e329904e62d53073008ef1e845bfa869b"
     }
   }
 }
