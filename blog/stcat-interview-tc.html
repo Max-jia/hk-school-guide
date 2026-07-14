@@ -23,14 +23,26 @@
 .blog-body a { color: #6366f1; }
 @media(max-width:600px){ .blog-body h1{font-size:26px} .blog-body{padding:20px 16px 40px;font-size:16px} }
 </style>
-</head><body>
-<nav class="nav"><div class="container nav-inner">
-  <a href="../index.html" class="brand"><span class="dot"></span>港校指南</a>
-  <div class="nav-links"><a href="../index.html">首页</a><a href="../primary.html">小學擇校</a><a href="../reports.html">深度擇校報告</a><a href="../kindergarten.html">幼稚園擇校</a><a href="../blog/">Blog</a></div>
-</div></nav>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="../assets/auth.js"></script></head><body>
+<nav class="site-nav">
+    <div class="site-nav-inner">
+      <div class="site-nav-left">
+        <a href="../index-tc.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港校指南</span></a>
+        <a href="./stcat-interview.html" class="site-lang">简</a>
+      </div>
+      <div class="site-nav-menu">
+        <a href="../index-tc.html">首頁</a>
+        <a href="../primary-tc.html">小學擇校</a>
+        <a href="../reports-tc.html">深度擇校報告</a>
+        <a href="../kindergarten-tc.html">幼稚園擇校</a>
+        <a href="../blog/index-tc.html" class="active">Blog</a>
+        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登入</a>
+      </div>
+    </div>
+  </nav>
 <main class="blog-body">
 
-<h1>St. Catherine 國際英文幼稚園 K1 面試完整攻略</h1><div class="lang-switch"><a href="./stcat-interview.html">简</a></div>
+<h1>St. Catherine 國際英文幼稚園 K1 面試完整攻略</h1>
 <p class="blog-meta">📅 2026年7月12日 · 🏷️ 幼稚園面试 · St. Catherine · 名幼攻略</p>
 
 <p>St. Catherine's（國際英文幼稚園，簡稱 St. Cat）是全港三所 S 級神幼之一，每年 K1 申請人數數以千計。它的面試不考學術——考的是孩子的<strong>自然狀態、社交能力和家庭的教育理念</strong>。本文根據校方資訊、GoStudy 和多位 BK 家長的實戰經驗，拆解 St. Cat K1 面試全流程。</p>

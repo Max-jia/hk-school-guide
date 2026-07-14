@@ -20,14 +20,26 @@
 .blog-body li { margin: 6px 0; }
 @media(max-width:600px){ .blog-body h1{font-size:26px} .blog-body{padding:20px 16px 40px;font-size:16px} }
 </style>
-</head><body>
-<nav class="nav"><div class="container nav-inner">
-  <a href="../index.html" class="brand"><span class="dot"></span>港校指南</a>
-  <div class="nav-links"><a href="../index.html">首页</a><a href="../primary.html">小學擇校</a><a href="../reports.html">深度擇校報告</a><a href="../kindergarten.html">幼稚園擇校</a><a href="../blog/">Blog</a></div>
-</div></nav>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="../assets/auth.js"></script></head><body>
+<nav class="site-nav">
+    <div class="site-nav-inner">
+      <div class="site-nav-left">
+        <a href="../index-tc.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港校指南</span></a>
+        <a href="./knocking-letter-guide.html" class="site-lang">简</a>
+      </div>
+      <div class="site-nav-menu">
+        <a href="../index-tc.html">首頁</a>
+        <a href="../primary-tc.html">小學擇校</a>
+        <a href="../reports-tc.html">深度擇校報告</a>
+        <a href="../kindergarten-tc.html">幼稚園擇校</a>
+        <a href="../blog/index-tc.html" class="active">Blog</a>
+        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登入</a>
+      </div>
+    </div>
+  </nav>
 <main class="blog-body">
 
-<h1>香港小學叩門求位信完整攻略（附模板）：派位放榜後你只有 72 小時</h1><div class="lang-switch"><a href="./knocking-letter-guide.html">简</a></div>
+<h1>香港小學叩門求位信完整攻略（附模板）：派位放榜後你只有 72 小時</h1>
 <p class="blog-meta">📅 2026年7月2日 · 🏷️ 叩门攻略 · 求位信 · 派位放榜</p>
 
 <p>每年 6 月，香港小一統一派位放榜。對家長來說，這一天要麼是天堂，要麼是地獄。如果派位結果不理想——你只有<strong>72 小時</strong>的黃金窗口來寫一封求位信（叩門信），直接寄給你心儀的學校，爭取最後的候補名額。這篇文章告訴你求位信怎麼寫、什麼時候寄、有什麼禁忌。</p>

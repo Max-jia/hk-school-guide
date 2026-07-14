@@ -20,14 +20,26 @@
 .blog-body li { margin: 6px 0; }
 @media(max-width:600px){ .blog-body h1{font-size:26px} .blog-body{padding:20px 16px 40px;font-size:16px} }
 </style>
-</head><body>
-<nav class="nav"><div class="container nav-inner">
-  <a href="../index.html" class="brand"><span class="dot"></span>港校指南</a>
-  <div class="nav-links"><a href="../index.html">首页</a><a href="../primary.html">小學擇校</a><a href="../reports.html">深度擇校報告</a><a href="../kindergarten.html">幼稚園擇校</a><a href="../blog/">Blog</a></div>
-</div></nav>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="../assets/auth.js"></script></head><body>
+<nav class="site-nav">
+    <div class="site-nav-inner">
+      <div class="site-nav-left">
+        <a href="../index-tc.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港校指南</span></a>
+        <a href="./primary-rankings-2026.html" class="site-lang">简</a>
+      </div>
+      <div class="site-nav-menu">
+        <a href="../index-tc.html">首頁</a>
+        <a href="../primary-tc.html">小學擇校</a>
+        <a href="../reports-tc.html">深度擇校報告</a>
+        <a href="../kindergarten-tc.html">幼稚園擇校</a>
+        <a href="../blog/index-tc.html" class="active">Blog</a>
+        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登入</a>
+      </div>
+    </div>
+  </nav>
 <main class="blog-body">
 
-<h1>2026 香港小學排名全解析：哪個排名更值得參考？</h1><div class="lang-switch"><a href="./primary-rankings-2026.html">简</a></div>
+<h1>2026 香港小學排名全解析：哪個排名更值得參考？</h1>
 <p class="blog-meta">📅 2026年7月6日 · 🏷️ 小學排名 · 選校指南 · 数據分析</p>
 
 <p>香港沒有官方的「小學排名」。教育局不公佈排名，坊間所有的排名都是第三方機構根據各自標準評估的。目前最知名的三套排名體系——<strong>HKPEP 教育競爭力排名、Kidemy 升中成績排名、本平台四因子評級</strong>——各有側重。本文幫你理解它們的差異，讓你不會被「排名」這個詞誤導。</p>

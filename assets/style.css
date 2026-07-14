@@ -168,3 +168,24 @@ select:focus, input:focus { outline: 2px solid var(--primary-soft); border-color
   .paywall-buttons { flex-direction: column; }
   .paywall-buttons .pw-btn { width: 100%; }
 }
+
+/* ============================================================
+   全站统一导航栏（简繁通用 / 不依赖 Tailwind）
+   —— 所有页面用同一段 <nav class="site-nav"> 结构，样式集中在这里
+   ============================================================ */
+.site-nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.site-nav-inner { max-width: 72rem; margin: 0 auto; padding: 0 20px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+/* 左组：品牌 + 语言切换，抱成一团靠左 */
+.site-nav-left { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.site-brand { font-family: "Newsreader", serif; font-weight: 700; font-size: 20px; letter-spacing: -.01em; color: var(--ink); display: flex; align-items: center; gap: 8px; text-decoration: none; transition: color .15s; }
+.site-brand:hover { color: var(--primary); }
+.site-brand-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.site-lang { font-size: 13px; color: var(--muted); text-decoration: none; font-weight: 400; transition: color .15s; }
+.site-lang:hover { color: var(--primary); }
+/* 右组：菜单 + 登录 */
+.site-nav-menu { display: flex; align-items: center; gap: 24px; font-size: 15px; font-weight: 600; }
+.site-nav-menu a { color: var(--muted); text-decoration: none; transition: color .15s; }
+.site-nav-menu a:hover { color: var(--primary); }
+.site-nav-menu a.active { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 2px; }
+.site-nav-login { margin-left: 8px; }
+@media (max-width: 639px) { .site-brand-text { display: none; } .site-nav-menu { gap: 16px; font-size: 14px; } }

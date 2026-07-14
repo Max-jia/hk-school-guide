@@ -23,14 +23,26 @@
 .blog-body a { color: #6366f1; }
 @media(max-width:600px){ .blog-body h1{font-size:26px} .blog-body{padding:20px 16px 40px;font-size:16px} }
 </style>
-</head><body>
-<nav class="nav"><div class="container nav-inner">
-  <a href="../index.html" class="brand"><span class="dot"></span>港校指南</a>
-  <div class="nav-links"><a href="../index.html">首页</a><a href="../primary.html">小学择校</a><a href="../reports.html">深度择校报告</a><a href="../kindergarten.html">幼稚园择校</a><a href="../blog/">Blog</a></div>
-</div></nav>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="../assets/auth.js"></script></head><body>
+<nav class="site-nav">
+    <div class="site-nav-inner">
+      <div class="site-nav-left">
+        <a href="../index.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港校指南</span></a>
+        <a href="./through-train-guide-tc.html" class="site-lang">繁</a>
+      </div>
+      <div class="site-nav-menu">
+        <a href="../index.html">首页</a>
+        <a href="../primary.html">小学择校</a>
+        <a href="../reports.html">深度择校报告</a>
+        <a href="../kindergarten.html">幼稚园择校</a>
+        <a href="../blog/" class="active">Blog</a>
+        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
+      </div>
+    </div>
+  </nav>
 <main class="blog-body">
 
-<h1>一條龍/直屬/聯繫：三個詞搞錯，可能毀了你孩子的升中路</h1><div class="lang-switch"><a href="./through-train-guide-tc.html">繁</a></div>
+<h1>一條龍/直屬/聯繫：三個詞搞錯，可能毀了你孩子的升中路</h1>
 <p class="blog-meta">📅 2026年7月13日 · 🏷️ 小学择校 · 升中通路 · 深度解读</p>
 
 <p>在香港選小學，有一件事比學校排名更重要——搞清楚這所學校跟中學的<strong>關係</strong>。</p>

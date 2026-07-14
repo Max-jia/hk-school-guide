@@ -89,18 +89,22 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
 <body>
 
-<nav class="nav">
-  <div class="container nav-inner">
-    <a href="./index-tc.html" class="brand"><span class="dot"></span><span class="brand-text">港校指南</span></a>
-    <div class="nav-links">
-      <a href="./index-tc.html">首頁</a>
-      <a href="./primary-tc.html">小學擇校</a>
-      <a href="./kindergarten-tc.html">幼稚園擇校</a>
-        <a href="./blog/" class="text-muted hover:text-primary transition-colors">Blog</a>
-      <a href="./reports-tc.html" style="color:var(--primary)">深度擇校報告</a>
+<nav class="site-nav">
+    <div class="site-nav-inner">
+      <div class="site-nav-left">
+        <a href="./index-tc.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港校指南</span></a>
+        <a href="./reports.html" class="site-lang">简</a>
+      </div>
+      <div class="site-nav-menu">
+        <a href="./index-tc.html">首頁</a>
+        <a href="./primary-tc.html">小學擇校</a>
+        <a href="./reports-tc.html" class="active">深度擇校報告</a>
+        <a href="./kindergarten-tc.html">幼稚園擇校</a>
+        <a href="./blog/index-tc.html">Blog</a>
+        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登入</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <main class="container">
   <div class="reports-hero">
