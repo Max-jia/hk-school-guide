@@ -299,7 +299,7 @@ const PS_REPORTS = [
 {n:'番禺會所華仁小學',t:'B',d:'東區',h:'Pun U Association Wah Yan Primary School',c:'wyps',premium:true},
 {n:'聖公會仁立小學',t:'B',d:'葵青區',h:'S.K.H. Yan Laap Primary School · 葵青区(65校',c:'ylaps',premium:true},
 {n:'聖羅撒學校',t:'A',d:'九龍城區',h:'41校网·直属聖羅撒書院(Band 1B)·85%保留位',c:'srl',premium:true},
-{n:'九龍塘天主教華德學校',t:'brand',d:'九龍城區',h:'天主教男女校·九龙城区稀缺·全人教育',c:'ktbwcs',premium:true},
+{n:'九龍塘天主教華德學校',t:'B',d:'九龍城區',h:'天主教男女校·41校网·资助免费·九龙城区',c:'ktbwcs',premium:true},
 {n:'救恩學校',t:'B',d:'中西區',h:'Happy School·联系匯基書院·基督教男女校',c:'kau',premium:true},
 {n:'聖類斯中學(小學部)',t:'B',d:'中西區',h:'直属聖類斯中學·85%保留位·港岛传统男校',c:'sls',premium:true},
 {n:'九龍塘學校',t:'B',d:'九龍城區',h:'纯小学教育·无宗教·无附属·九龙塘私小',c:'kts',premium:true},
@@ -311,7 +311,8 @@ const PS_REPORTS = [
 {n:'佐敦道官立小學',t:'B',d:'油尖旺區',h:'31校网·联系伊利沙伯中學(Band 1A++)·免费官立',c:'jrgps',premium:true},
   {n:'聖伯多祿天主教小學',t:'B',d:'南區',h:'直属聖伯多祿中學·师生比1:2.1·天主教·免费资助·18校网',c:'aspcps',premium:true},
   {n:'培基小學',t:'B',d:'沙田區',h:'两文三语·数理英文授课·法语课外·联系培基书院(Band 1B)·91校网',c:'puikei',premium:true},
-  {n:'香港浸會大學附屬學校王錦輝中小學',t:'暂无评级',d:'沙田區',h:'直资一条龙·DSE+A-Level双轨·英文教学·7,000人争160学位·不限校网',c:'wkf',premium:true},
+  {n:'香港浸會大學附屬學校王錦輝中小學',t:'S',d:'沙田區',h:'S级·非传统赛道·一条龙·A-Level 8状元·3剑桥·76% A*/A·全英四语',c:'wkf',premium:true},
+  {n:'啓思小學',t:'A',d:'九龍城區',h:'A级·非传统赛道·IB理念·69/100·65%教师10年+·联系启思中学',c:'cps',premium:true},
 ];
 
 // 检查报告是否已解锁
@@ -332,18 +333,19 @@ function renderPs() {
     if (search) { var q2 = search; var q2tc = toTC(search); var hay = (r.n + ' ' + r.d + ' ' + r.h).toLowerCase(); if (!hay.includes(q2) && q2tc !== q2 && hay.includes(q2tc)) q2 = q2tc; if (!hay.includes(q2)) { const chars = q2.replace(/\\s/g,'').split(''); if (!chars.every(c => hay.includes(c))) return false; } }
     return true;
   });
-  const groups = {S:[],'A+':[],A:[],B:[]};
-  filtered.forEach(r => groups[r.t] ? groups[r.t].push(r) : null);
+  const groups = {S:[],'A+':[],A:[],B:[],brand:[],'暂无评级':[]};
+  filtered.forEach(r => { if (groups[r.t]) groups[r.t].push(r); });
   let html = '';
   document.getElementById('resultCountPs').textContent = search ? '「' + document.getElementById('searchPs').value + '」匹配 ' + filtered.length + ' 所' : '';
   for (const [tier, schools] of Object.entries(groups)) {
     if (!schools.length) continue;
-    const labels = {S:{icon:'🏆',label:'S 级神校'},'A+':{icon:'🥇',label:'A+ 级一流名校'},A:{icon:'🌟',label:'A 级区内名校'},B:{icon:'💚',label:'B 级优质学校'}};
-    const gl = labels[tier];
+    const labels = {S:{icon:'🏆',label:'S 级神校'},'A+':{icon:'🥇',label:'A+ 级一流名校'},A:{icon:'🌟',label:'A 级区内名校'},B:{icon:'💚',label:'B 级优质学校'},brand:{icon:'🔗',label:'连锁品牌报告'},'暂无评级':{icon:'📋',label:'暂无评级'}};
+    const gl = labels[tier] || {icon:'📋',label:tier};
     html += '<div class="section-header"><span class="s-icon">' + gl.icon + '</span><h2>' + gl.label + '</h2><span class="s-count">' + schools.length + ' 所</span></div><div class="report-grid">';
     schools.forEach(s => {
-      const tc = s.t==='S'?'s':s.t==='A+'?'aplus':s.t==='A'?'a':'b';
-      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+tc+'">'+('🏆S级/🥇A+级/🌟A级/💚B级').split('/')[{S:0,'A+':1,A:2,B:3}[s.t]]+'</span>'+(isUnlocked(s.c) ? '<span class="rc-premium-tag" style="background:#d1fae5;color:#059669">✅ 已解锁</span>' : (s.premium ? '<span class="rc-premium-tag">🔒 付费</span>' : '<span class="rc-premium-tag" style="background:#e0e7ff;color:#6366f1">🎉 免费试看</span>'))+'<h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
+      const tierMap = {S:{cls:'s',badge:'🏆S级'},'A+':{cls:'aplus',badge:'🥇A+级'},A:{cls:'a',badge:'🌟A级'},B:{cls:'b',badge:'💚B级'},brand:{cls:'brand',badge:'🔗品牌'},'暂无评级':{cls:'b',badge:'📋暂无评级'}};
+      const ti = tierMap[s.t] || {cls:'b',badge:s.t};
+      html += '<a class="report-card" href="./report-'+s.c+'.html" data-premium="'+s.premium+'"><span class="rc-tier '+ti.cls+'">'+ti.badge+'</span>'+(isUnlocked(s.c) ? '<span class="rc-premium-tag" style="background:#d1fae5;color:#059669">✅ 已解锁</span>' : (s.premium ? '<span class="rc-premium-tag">🔒 付费</span>' : '<span class="rc-premium-tag" style="background:#e0e7ff;color:#6366f1">🎉 免费试看</span>'))+'<h3>'+s.n+'</h3><div class="rc-meta">📍 '+s.d+'</div><div class="rc-highlight">'+s.h+'</div><span class="rc-arrow">→</span></a>';
     });
     html += '</div>';
   }
@@ -390,8 +392,8 @@ function renderKg() {
   document.getElementById('kgContent').innerHTML = html;
   document.getElementById('statTotal').textContent = UNIQUE_KG.length + PS_REPORTS.length;
   var elKg = document.getElementById('tabBtnKg'), elPs = document.getElementById('tabBtnPs');
-  if (elKg) elKg.textContent += '（'+UNIQUE_KG.length+'份）';
-  if (elPs) elPs.textContent += '（'+PS_REPORTS.length+'份）';
+  if (elKg && !elKg._counted) { elKg._counted = true; elKg.textContent += '（'+UNIQUE_KG.length+'份）'; }
+  if (elPs && !elPs._counted) { elPs._counted = true; elPs.textContent += '（'+PS_REPORTS.length+'份）'; }
 }
 function setTierFilter(t, btn) { tierFilter = t; document.querySelectorAll('#filterTier .filter-pill').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderKg(); }
 function filterKg() { renderKg(); }

@@ -271,7 +271,8 @@ const PS_REPORTS = [
   {n:'佐敦道官立小學',t:'B',d:'油尖旺區',h:'31校網·聯繫伊利沙伯中學(1A++)',c:'jrgps',premium:true},
   {n:'聖伯多祿天主教小學',t:'B',d:'南區',h:'直屬聖伯多祿中學·師生比1:2.1·天主教·免費資助·18校網',c:'aspcps',premium:true},
   {n:'培基小學',t:'B',d:'沙田區',h:'兩文三語·數理英文授課·法語課外·聯繫培基書院(Band 1B)·91校網',c:'puikei',premium:true},
-  {n:'香港浸會大學附屬學校王錦輝中小學',t:'暂无评级',d:'沙田區',h:'直資一條龍·DSE+A-Level雙軌·英文教學·7,000人爭160學位·不限校網',c:'wkf',premium:true},
+  {n:'香港浸會大學附屬學校王錦輝中小學',t:'S',d:'沙田區',h:'S級·非傳統賽道·一條龍·A-Level 8狀元·3劍橋·76% A*/A·全英四語',c:'wkf',premium:true},
+  {n:'啓思小學',t:'A',d:'九龍城區',h:'A級·非傳統賽道·IB理念·69/100·65%教師10年+·聯繫啟思中學',c:'cps',premium:true},
 ];
 
 
@@ -376,9 +377,9 @@ function renderKg() {
   });
 
   // 分組
-  const groups = {S:[],'A+':[],A:[],brand:[]};
-  const groupLabels = {S:{icon:'🏆',label:'S 級神校'},'A+':{icon:'🥇',label:'A+ 級一流名校'},A:{icon:'🌟',label:'A 級區內名校'},brand:{icon:'🔗',label:'連鎖品牌報告'}};
-  filtered.forEach(r => groups[r.t] ? groups[r.t].push(r) : null);
+  const groups = {S:[],'A+':[],A:[],B:[],brand:[],'暂无评级':[]};
+  const groupLabels = {S:{icon:'🏆',label:'S 級神校'},'A+':{icon:'🥇',label:'A+ 級一流名校'},A:{icon:'🌟',label:'A 級區內名校'},B:{icon:'💚',label:'B 級優質學校'},brand:{icon:'🔗',label:'連鎖品牌報告'},'暂无评级':{icon:'📋',label:'暂无评级'}};
+  filtered.forEach(r => { if (groups[r.t]) groups[r.t].push(r); });
 
   // 渲染
   let html = '';
@@ -391,10 +392,10 @@ function renderKg() {
     html += `<div class="section-header"><span class="s-icon">${gl.icon}</span><h2>${gl.label}</h2><span class="s-count">${schools.length} 所</span></div>`;
     html += '<div class="report-grid">';
     schools.forEach(s => {
-      const tc = s.t==='S'?'s':s.t==='A+'?'aplus':'a';
-      const tierLabel = s.t==='S'?'🏆 S 級':s.t==='A+'?'🥇 A+ 級':s.t==='A'?'🌟 A 級':'🔗 連鎖品牌';
+      const tierMap = {S:{cls:'s',badge:'🏆 S 級'},'A+':{cls:'aplus',badge:'🥇 A+ 級'},A:{cls:'a',badge:'🌟 A 級'},B:{cls:'b',badge:'💚 B 級'},brand:{cls:'brand',badge:'🔗 連鎖品牌'},'暂无评级':{cls:'b',badge:'📋 暂无评级'}};
+      const ti = tierMap[s.t] || {cls:'b',badge:s.t};
       html += `<a class="report-card" href="./report-${s.c}.html" data-premium="${s.premium}">
-        <span class="rc-tier ${tc}">${tierLabel}</span>
+        <span class="rc-tier ${ti.cls}">${ti.badge}</span>
         <!-- 付費上線時移除下行 display:none -->
         <span class="rc-premium-tag" style="${isUnlocked(s.c)?'background:#d1fae5;color:#059669':''}">${isUnlocked(s.c)?'✅ 已解鎖':'🔒 付費'}</span>
         <h3>${s.n}<span class="premium-badge">付費</span></h3>
@@ -425,6 +426,11 @@ function filterKg() { renderKg(); }
 
 // 初始渲染
 renderKg();
+(function() {
+  var elKg = document.getElementById('tabBtnKg'), elPs = document.getElementById('tabBtnPs');
+  if (elKg && !elKg._counted) { elKg._counted = true; elKg.textContent += '（'+UNIQUE_KG.length+'份）'; }
+  if (elPs && !elPs._counted) { elPs._counted = true; elPs.textContent += '（'+PS_REPORTS.length+'份）'; }
+})();
 </script>
 </body>
 </html>

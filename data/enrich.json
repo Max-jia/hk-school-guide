@@ -1,6 +1,6 @@
 {
   "_note": "评级名校的深字段补充（学费为参考值·约数，直属/一条龙关系来自教育平台排名资料，参考·非官方）。官津学校学费由程序批量填『免费』。",
-  "_updated": "2026-07-09",
+  "_updated": "2026-07-15",
   "primary": {
     "拔萃女小學": {
       "fees": "约 $8.6万/年",
@@ -95,6 +95,69 @@
     },
     "香港真光中學附屬小學暨幼稚園": {
       "fees": "约 .4万/年"
+    },
+    "啓思小學": {
+      "fees": "$145,970–$149,160/年（分11期）",
+      "fees_note": "✅ PSP2025: P1-P3 $145,970, P4-P6 $149,160",
+      "teaching_language": "中文（普通话/粤语可选）+ 英文",
+      "teaching_language_note": "✅ PSP2025: 低年级起设外籍英语教师(NET)",
+      "through_train": "联系 啓思中學（直資·IB+DSE雙軌·西貢將軍澳）",
+      "through_train_note": "🟡 非一条龙/直属，中学自行决定录取名额",
+      "teachers": "53人·100%师资培训·98%学士·39%硕博·65%十年以上经验",
+      "teachers_note": "✅ PSP2025 教师数据",
+      "class": "24班（每级4班）",
+      "facilities": "27课室·1礼堂·1操场·1图书馆·6特别室·校园约3,400平方米",
+      "facilities_note": "✅ PSP2025",
+      "school_bus": "有",
+      "school_bus_note": "✅ PSP2025",
+      "principal": "陳素明女士",
+      "founded": 1985,
+      "religion": "基督教",
+      "features": "IB理念融合本地课程·脑基础教学·探究式学习·小一不设考试·STEAM教育",
+      "features_note": "✅ PSP2025 + 校方官网",
+      "secondary_info": {
+        "name": "啓思中學",
+        "type": "直資·英文·男女校",
+        "location": "西貢將軍澳",
+        "ib_avg_2025": 36.2,
+        "ib_global_avg": 30.58,
+        "ib_40plus_pct": "21.9%",
+        "dse_band": "约 Band 2B–2A（仅DSE）· 含IB整体约Band 1水平",
+        "fees": "$93,450–$148,565/年",
+        "note": "🟡 BigExam + SOSOMAMA 综合"
+      }
+    },
+    "香港浸會大學附屬學校王錦輝中小學": {
+      "fees": "本地$44,800/年·国际$50,320/年（分10期）",
+      "fees_note": "✅ EDB·PSP2025·设学费减免计划",
+      "teaching_language": "英文为主·中文普通话·第三语言必修（法/德/日/西）",
+      "teaching_language_note": "✅ EDB·🟡 TOPick+校方",
+      "through_train": "一条龙 本校（12年一贯·无呈分试·直升率>90%）",
+      "through_train_note": "✅ EDB: 一条龙办学模式",
+      "class": "小一5班(约160学位)·全校中小学12年一贯",
+      "school_bus": "有",
+      "school_bus_note": "✅ PSP2025",
+      "facilities": "濒危物种展览馆·攀石场·室内泳池·STEAM教室·表演艺术中心·校园面积大",
+      "facilities_note": "🟡 BK家长形容「大到似大学」·多源确认",
+      "features": "一条龙12年·DSE+A-Level双轨·第三语言·小三前不设考试·不排名次·星岛辩论赛英文组金奖",
+      "features_note": "✅ 校方+TOPick+星岛·🟡 Ohpama",
+      "principal": "陳偉佳博士",
+      "founded": 2006,
+      "competition": "约7,000申请→160学位·录取率约2-3%·簡介會3000名额3分钟爆满",
+      "competition_note": "🟡 TOPick 2025+校方",
+      "secondary_info": {
+        "name": "本校中学部",
+        "type": "直资·一条龙·英文",
+        "dse_band": "约Band 1C-2A",
+        "dse_note": "🟡 BK+BigExam·DSE非主力赛道",
+        "al_2025_4a_stars": 8,
+        "al_2025_a_star_pct": "76%",
+        "al_2025_qs100_pct": "约90%",
+        "al_2025_cambridge": 3,
+        "al_2025_cuhk_medicine": 1,
+        "al_note": "🟡 TOPick+星岛+文汇報 2025-08",
+        "fees": "同小学部"
+      }
     }
   },
   "kindergarten_by_keyword": [
