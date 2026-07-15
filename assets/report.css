@@ -170,6 +170,13 @@ table.dt tr:last-child td { border-bottom: none; }
   table.dt { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   table.dt td, table.dt th { font-size: 13px; padding: 8px 10px; }
   table.dt th { width: 80px; }
+  /* 手机端：表格卡片化 — 每行变成标签在上、内容在下 */
+  @media (max-width: 480px) {
+    table.dt, table.dt tbody, table.dt tr, table.dt th, table.dt td { display: block; width: 100%; box-sizing: border-box; }
+    table.dt tr { margin-bottom: 12px; border-bottom: 1px solid var(--border); }
+    table.dt th { font-size: 11px; color: var(--muted); padding: 0 0 2px; border-bottom: none; width: 100%; }
+    table.dt td { font-size: 13px; padding: 0 0 10px; border-bottom: none; }
+  }
   .radar-svg { width: 200px; height: 200px; }
   .radar-wrap { gap: 16px; justify-content: center; }
   .radar-legend { font-size: 13px; }
