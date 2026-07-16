@@ -51,7 +51,13 @@
           <a href="./primary.html" class="inline-flex items-center gap-2 px-7 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-colors text-[15px] tracking-wide">开始匹配 → 免费</a>
           <a href="./kindergarten.html" class="inline-flex items-center px-7 py-4 bg-white/60 backdrop-blur-xl text-ink font-bold rounded-lg border border-border hover:border-primary hover:text-primary transition-colors text-[15px]">幼稚园匹配 →</a>
         </div>
-        <div class="flex flex-wrap gap-x-8 gap-y-1.5 text-sm text-muted pt-3 border-t border-border">
+        <div class="text-xs text-muted mb-6" id="visitorCounter" style="display:flex;align-items:center;gap:6px">
+    <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite"></span>
+    已有 <b class="text-ink" id="visitCount">—</b> 位家长使用了择校匹配
+  </div>
+<a href="./data-sources.html" style="font-size:12px;color:var(--muted);text-decoration:underline;text-underline-offset:3px">📊 了解我们的数据来源 →</a>
+  <br>
+<div class="flex flex-wrap gap-x-8 gap-y-1.5 text-sm text-muted pt-3 border-t border-border">
           <span><b class="text-ink text-base" id="c-primary">—</b> 所小学</span>
           <span><b class="text-ink text-base" id="c-kg">—</b> 所幼稚园</span>
           <span>数据 <b class="text-ink">香港教育局 CHSC</b> · 每月同步</span>
@@ -160,7 +166,14 @@
     </div>
   </footer>
 
-  <script src="./data/schools.js"></script>
+  <script>
+  (function() {
+    var k = 'hksg_visit_count', v = parseInt(localStorage.getItem(k) || '0') + 1;
+    localStorage.setItem(k, v);
+    document.getElementById('visitCount').textContent = v.toLocaleString();
+  })();
+</script>
+<script src="./data/schools.js"></script>
   <script src="./data/kindergartens.js"></script>
   <script>
     // 显示真实数量（保持和数据同步）

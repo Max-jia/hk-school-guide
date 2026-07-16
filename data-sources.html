@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数据来源 · 港校指南</title>
+  <meta name="description" content="港校指南数据来源说明：每个字段来自哪里、更新频率、可信度。我们如何确保择校数据准确。" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <style>
+    body { background: #fafaf7; }
+    .ds-hero { text-align: center; padding: 56px 20px 32px; }
+    .ds-hero h1 { font-family: "Newsreader", serif; font-size: 36px; font-weight: 800; }
+    .ds-hero .sub { color: var(--muted); font-size: 16px; margin-top: 8px; }
+    .ds-section { max-width: 820px; margin: 0 auto 40px; padding: 0 20px; }
+    .ds-section h2 { font-family: "Newsreader", serif; font-size: 24px; font-weight: 700; margin: 0 0 16px; }
+    .ds-table { width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    .ds-table th { background: #f1f5f9; padding: 12px 16px; text-align: left; font-size: 12px; color: #64748b; font-weight: 700; text-transform: uppercase; }
+    .ds-table td { padding: 10px 16px; border-bottom: 1px solid #f1f5f9; }
+    .ds-table tr:last-child td { border-bottom: none; }
+    .ds-badge { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 4px; font-weight: 700; }
+    .ds-official { background: #d1fae5; color: #059669; }
+    .ds-platform { background: #e0e7ff; color: #6366f1; }
+    .ds-parent { background: #fef3c7; color: #92400e; }
+    .ds-community { background: #fce7f3; color: #be185d; }
+    .ds-principle { display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0; }
+    .ds-principle-card { flex: 1; min-width: 220px; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+    .ds-principle-card h3 { font-size: 16px; margin: 0 0 8px; }
+    .ds-principle-card p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.6; }
+    .ds-footer-note { text-align: center; padding: 20px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); }
+    @media (max-width: 600px) { .ds-hero h1 { font-size: 26px; } }
+  </style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <div class="site-nav-left">
+      <a href="./index.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港校指南</span></a>
+      <a href="./data-sources-tc.html" class="site-lang">繁</a>
+    </div>
+    <div class="site-nav-menu">
+      <a href="./index.html">首页</a><a href="./primary.html">小学择校</a><a href="./reports.html">深度择校报告</a><a href="./interview-questions.html">面试题库</a><a href="./kindergarten.html">幼稚园择校</a><a href="./blog/">Blog</a>
+      <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <div class="ds-hero"><h1>📊 我们的数据从哪来</h1><p class="sub">每一所学校、每一个数字，都有来源 · 每月同步 · 估算必标注</p></div>
+  
+  <div class="ds-section">
+    <div class="ds-principle">
+      <div class="ds-principle-card"><h3>🏛️ 官方优先</h3><p>基础字段（校名/地址/学费/师生比/班级）优先使用香港教育局 CHSC 每月更新的开放数据。</p></div>
+      <div class="ds-principle-card"><h3>🔍 交叉验证</h3><p>升学/口碑等非官方数据，必须 ≥2 个独立来源交叉确认才列为「🟡 多源确认」。</p></div>
+      <div class="ds-principle-card"><h3>📝 诚实标注</h3><p>每一项数据标注来源和可信度。查不到的不编造——诚信标注「校方未公开」或「暂无数据」。</p></div>
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <h2>小学数据来源</h2>
+    <table class="ds-table">
+      <tr><th>字段</th><th>来源</th><th>更新频率</th><th>可信度</th></tr>
+      <tr><td>校名·地址·电话·官网</td><td><span class="ds-badge ds-official">EDB CHSC</span></td><td>每月</td><td>✅ 官方</td></tr>
+      <tr><td>办学类型·宗教·性别</td><td><span class="ds-badge ds-official">EDB PSP2025</span></td><td>每年</td><td>✅ 官方</td></tr>
+      <tr><td>学费</td><td><span class="ds-badge ds-official">EDB PSP</span> + 本平台核实</td><td>每年</td><td>✅ 官方·资助免费为官方确认</td></tr>
+      <tr><td>师生比·班级结构</td><td><span class="ds-badge ds-official">EDB PSP2025</span></td><td>每年</td><td>✅ 官方</td></tr>
+      <tr><td>教学语言</td><td><span class="ds-badge ds-official">EDB PSP2025</span> + 校方</td><td>每年</td><td>✅ 官方</td></tr>
+      <tr><td>校车·设施</td><td><span class="ds-badge ds-official">EDB PSP2025</span></td><td>每年</td><td>✅ 官方</td></tr>
+      <tr><td>升中通路(一条龙/直属/联系)</td><td><span class="ds-badge ds-official">EDB</span> + 本平台锚点库</td><td>每年</td><td>✅ 官方+多源</td></tr>
+      <tr><td>学校评级(A轨四因子·B轨五维)</td><td><span class="ds-badge ds-platform">本平台评级体系</span></td><td>持续性</td><td>💬 参考·非官方</td></tr>
+      <tr><td>教师培训/经验数据</td><td><span class="ds-badge ds-official">EDB PSP2025</span></td><td>每年</td><td>✅ 官方</td></tr>
+      <tr><td>升中派位/Banding参考</td><td><span class="ds-badge ds-platform">BigExam·SOSOMAMA</span> + BK综合</td><td>每年</td><td>🟡 多源综合</td></tr>
+      <tr><td>IB/A-Level成绩</td><td><span class="ds-badge ds-platform">校方公布</span> + TOPick·星岛</td><td>每年</td><td>🟡 多源确认</td></tr>
+      <tr><td>面试题目</td><td><span class="ds-badge ds-parent">BK·Ohpama·Kidemy</span></td><td>每年</td><td>🔴 家长分享·非官方</td></tr>
+      <tr><td>在读家长口碑</td><td><span class="ds-badge ds-community">BK·亲子王国</span> + 小红书(辅助)</td><td>持续性</td><td>🔴 有限来源·仅供参考</td></tr>
+    </table>
+  </div>
+
+  <div class="ds-section">
+    <h2>幼稚园数据来源</h2>
+    <table class="ds-table">
+      <tr><th>字段</th><th>来源</th><th>更新频率</th><th>可信度</th></tr>
+      <tr><td>校名·地址·类型</td><td><span class="ds-badge ds-official">EDB CHSC</span></td><td>每月</td><td>✅ 官方</td></tr>
+      <tr><td>免费计划(PN/半日/全日)</td><td><span class="ds-badge ds-official">EDB 幼稚园概览KGP</span></td><td>每年</td><td>✅ 官方</td></tr>
+      <tr><td>学费</td><td><span class="ds-badge ds-official">EDB KGP</span> + 校方核实</td><td>每年</td><td>✅ 官方·名园约数</td></tr>
+      <tr><td>师生比·PN设置</td><td><span class="ds-badge ds-official">EDB KGP</span></td><td>每年</td><td>✅ 官方</td></tr>
+      <tr><td>评级(名园共识版)</td><td><span class="ds-badge ds-platform">本平台多源共识</span></td><td>持续性</td><td>💬 参考·非官方</td></tr>
+      <tr><td>升学/直升小学</td><td><span class="ds-badge ds-community">BK·校方</span></td><td>持续性</td><td>🟡 多源综合</td></tr>
+    </table>
+  </div>
+</main>
+<div class="ds-footer-note">本页所有来源均为公开可核实信息。我们承诺：不编造数据 · 不隐藏来源 · 发现错误即更正。<br />如有疑问，请联系我们核实具体数据。</div>
+<footer class="footer"><div class="container" style="text-align:center"><strong>港校指南</strong> · 帮助内地来港家庭解决香港升学信息不对称</div></footer>
+</body>
+</html>

@@ -43,7 +43,12 @@
           <a class="btn btn-primary" href="./primary-tc.html">開始小學擇校 →</a>
           <a class="btn btn-ghost" href="./kindergarten-tc.html">幼稚園/PN 擇校</a>
         </div>
-        <div class="trust">
+        <div style="font-size:12px;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:6px" id="visitorCounter">
+    <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e"></span>
+    已有 <b style="color:var(--ink)" id="visitCount">—</b> 位家長使用了擇校匹配
+  </div>
+<div style="text-align:center;margin-bottom:16px"><a href="./data-sources-tc.html" style="font-size:12px;color:var(--muted);text-decoration:underline;text-underline-offset:3px">📊 了解我們的數據來源 →</a></div>
+<div class="trust">
           <span>🏫 <b id="c-primary">—</b> 所小學</span>
           <span>🎨 <b id="c-kg">—</b> 所幼稚園</span>
           <span>🏛️ 數據源自 <b>香港教育局</b></span>
@@ -140,7 +145,14 @@
     <div class="container">港校指南 · 幫香港家長輕鬆揀啱學校 · 數據來源：香港教育局 data.gov.hk（每月更新）<br />本站信息僅供參考，最終以學校及教育局官方公佈爲準。</div>
   </footer>
 
-  <script src="./data/schools.js"></script>
+  <script>
+  (function() {
+    var k = 'hksg_visit_count', v = parseInt(localStorage.getItem(k) || '0') + 1;
+    localStorage.setItem(k, v);
+    document.getElementById('visitCount').textContent = v.toLocaleString();
+  })();
+</script>
+<script src="./data/schools.js"></script>
   <script src="./data/kindergartens.js"></script>
   <script>
     // 顯示真實數量（保持和數據同步）
