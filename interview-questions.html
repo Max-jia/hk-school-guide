@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小学面试题库 · 港校指南</title>
+  <meta name="description" content="香港热门小学面试题库。25所直资/私立/资助名校面试流程与真题，数据来自BK·TOPick·Ohpama·Kidemy等多源家长分享与媒体报道。" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <style>
+    body { background: #fafaf7; }
+    .iq-hero { padding: 48px 0 28px; text-align: center; }
+    .iq-hero h1 { font-family: "Newsreader", serif; font-size: 36px; font-weight: 800; }
+    .iq-hero .sub { color: var(--muted); font-size: 15px; margin: 8px 0 0; }
+    .iq-disclaimer { max-width: 780px; margin: 0 auto 24px; padding: 16px 20px; background: #fff8e8; border-left: 4px solid #e6a817; border-radius: 0 8px 8px 0; font-size: 13px; color: #6b5550; }
+    .iq-filters { max-width: 780px; margin: 0 auto 20px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .iq-filters select, .iq-filters input { padding: 8px 14px; font-size: 14px; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
+    .iq-list { max-width: 780px; margin: 0 auto 60px; }
+    .iq-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .iq-card-header { padding: 16px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .iq-card-header:hover { background: #f8f8f5; }
+    .iq-card-header h3 { margin: 0; font-size: 17px; }
+    .iq-card-header .iq-meta { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    .iq-card-header .iq-arrow { transition: transform .2s; font-size: 14px; color: var(--muted); }
+    .iq-card.open .iq-arrow { transform: rotate(180deg); }
+    .iq-card-body { display: none; padding: 0 20px 20px; font-size: 14px; line-height: 1.8; }
+    .iq-card.open .iq-card-body { display: block; }
+    .iq-round { margin: 12px 0; padding: 12px 16px; background: #f8f8f5; border-radius: 8px; }
+    .iq-round h4 { margin: 0 0 6px; font-size: 15px; }
+    .iq-round ul { margin: 0; padding-left: 18px; }
+    .iq-round li { margin: 3px 0; font-size: 13px; }
+    .iq-sources { font-size: 11px; color: var(--muted); margin-top: 12px; border-top: 1px solid var(--border); padding-top: 8px; }
+    .iq-badge { display: inline-block; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-right: 4px; }
+    .iq-badge.verified { background: #d1fae5; color: #059669; }
+    .iq-badge.single { background: #fef3c7; color: #92400e; }
+    .iq-badge.year { background: #e0e7ff; color: #6366f1; }
+    .no-results { text-align: center; padding: 40px; color: var(--muted); }
+    @media (max-width: 600px) { .iq-hero h1 { font-size: 26px; } .iq-card-header h3 { font-size: 15px; } }
+  </style>
+  <script src="./assets/lang.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="./assets/auth.js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <div class="site-nav-left">
+      <a href="./index.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港校指南</span></a>
+      <a href="./interview-questions-tc.html" class="site-lang">繁</a>
+    </div>
+    <div class="site-nav-menu">
+      <a href="./index.html">首页</a><a href="./primary.html">小学择校</a><a href="./reports.html">深度择校报告</a><a href="./kindergarten.html">幼稚园择校</a><a href="./blog/">Blog</a>
+      <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
+    </div>
+  </div>
+</nav>
+<main>
+  <div class="iq-hero"><h1>📋 小学面试题库</h1><p class="sub">25 所热门小学及幼稚园 · 面试流程 + 真题 · 2024–2026 年最新</p></div>
+  <div class="iq-disclaimer">
+    <strong>⚠️ 重要声明</strong><br />
+    以下内容来自家长公开分享（教育王国 BK / 亲子王国 / 小红书）、正规媒体报道（TOPick / Ohpama / 星岛）及教育平台（Kidemy / SOSOMAMA / Champimom）。<br />
+    面试题每年变化，<strong>非校方官方信息，仅供家长参考</strong>。每道题标注来源与可信度。<br />
+    <strong>标注说明</strong>：<span class="iq-badge verified">🟡 多源确认</span> = ≥2 个独立来源交叉验证 · <span class="iq-badge single">🔴 单一来源</span> = 仅 1 个平台出现 · <span class="iq-badge year">2025-2026</span> = 年份
+  </div>
+  <div class="iq-filters">
+    <select id="filterType" onchange="filter()"><option value="">全部类型</option><option value="直资">直资</option><option value="私立">私立</option><option value="资助">资助</option></select>
+    <input type="text" id="filterSearch" placeholder="搜索学校名称..." oninput="filter()" style="width:200px">
+  </div>
+  <div class="iq-list" id="iqList"></div>
+</main>
+<footer class="footer"><div class="container" style="text-align:center"><strong>港校指南</strong> · 帮助内地来港家庭解决香港升学信息不对称</div></footer>
+<script>
+const DATA = [
+  // ---- 直资名校 ----
+  {n:"港大同學會小學",t:"直资",d:"东区",lvl:"A+",yr:"2025–2026",
+   format:"三轮：小组游戏→深度观察→家长陪同见校长",
+   rounds:[
+     {title:"第一轮 · 小组游戏+个人面谈（约30分钟·约8-10人/组）",
+      items:[
+        "中文：认读基本字词、看图说故事 🟡 BK+Kidemy 2025",
+        "英文：认读常见字词、简单对答 🟡 BK+Champimom 2025",
+        "数学：20以内加减法、找规律（如18+6=?、4+?=12）🟡 BK 2025",
+        "听指令：图片配对（动物妈妈与BB配对）、分组合作画画 🟡 BK 2025",
+        "小组游戏：砌LEGO、iPad煮饭仔、角色扮演（医生帮病人打针）🟡 BK 2025",
+        "观察重点：是否主动参与、有礼貌、能听指令、愿意收拾 🔴 BK 2024"
+      ]},
+     {title:"第二轮 · 小组深度观察（约45分钟·约6-10人/组）",
+      items:[
+        "自备图书阅读：观察阅读习惯和分享能力 🟡 BK+Kidemy 2025",
+        "创意画画：完成后用3句话介绍作品 🟡 BK 2025",
+        "填颜色：按老师要求给图案涂上至少5种颜色 🟡 BK 2024",
+        "读中英文文段并回答相关问题 🟡 BK 2024",
+        "叠LEGO、合作完成任务 🔴 BK 2024"
+      ]},
+     {title:"第三轮 · 家长陪同见校长（约15分钟·约400个家庭）",
+      items:[
+        "介绍小朋友、为何选择港同 🟡 Kidemy+Champimom 2025",
+        "周末带孩子去哪里？如何培养阅读习惯？🟡 Champimom 2025",
+        "如何处理孩子要求买手机？认为什么样的人生才算成功？🟡 BK 2025",
+        "校长观察：家长与孩子的互动模式、家庭氛围 🟡 Champimom 2025",
+        "校长黄卫宗：重视品德与责任感，不喜欢「为报而报」🟡 TOPick 2025"
+      ]}],
+   sources:"BK多帖(2024-2025)·Kidemy·Champimom·TOPick·GoStudy·小红书(辅助)"},
+  
+  {n:"王錦輝中小學",t:"直资",d:"沙田区",lvl:"S",yr:"2025–2026",
+   format:"两轮：小组活动+个人面谈→家庭面见校长",
+   rounds:[
+     {title:"第一轮 · 学生面试（约45分钟·不设笔试）",
+      items:[
+        "创意表达：观看短片后绘画或讲故事 🟡 TOPick+Kidemy 2025",
+        "指令协调：听拍手次数原地踏步、跳格子、身体包剪揼 🟡 TOPick 2025",
+        "中文：朗读词语/短句（如「老师」「公园」）🟡 BK+小红书 2025",
+        "英文：自我介绍、朗读短句（如「I like swimming」）🟡 TOPick+Kidemy 2025",
+        "数学：10以内加减法、等量代换（1苹果=2梨=4蕉，1苹果=?蕉）🟡 Kidemy 2025",
+        "情境应对：玩具被抢了怎么办？看到同学哭怎么做？🟡 Kidemy 2025",
+        "自理观察：穿衣、收拾物品 🔴 小红书 2025"
+      ]},
+     {title:"第二轮 · 家庭面见校长（约600个家庭）",
+      items:[
+        "为什么选择王锦辉？（必考·需具体结合学校特色）🟡 TOPick 2025",
+        "平时如何安排孩子作息？有没有固定亲子读书时间？🟡 Kidemy 2025",
+        "孩子遇到挫折时如何应对？🟡 Kidemy 2025",
+        "情境题：如果学校收到投诉说你的孩子弄坏了同学乐器，如何处理？🟡 TOPick 2025",
+        "校长陈伟佳：留意爸爸参与度和家庭氛围 🟡 TOPick 2025",
+        "面试语言：可选广东话/普通话/英文·无语言评分优势 🟡 TOPick 2025"
+      ]}],
+   sources:"TOPick 2025·Kidemy·BK多帖·小红书·GoStudy·星岛"},
+
+  {n:"保良局陳守仁小學",t:"直资",d:"油尖旺区",lvl:"A",yr:"2024–2025",
+   format:"两轮：小组活动观察→个人/家长面谈",
+   rounds:[
+     {title:"第一轮 · 小组活动观察",
+      items:[
+        "英文：认读单词、简单对答、自我介绍 🟡 BK 2024",
+        "中文：朗读词语、看图说故事 🟡 BK 2024",
+        "数学：简单加减法、逻辑推理 🔴 BK 2024",
+        "小组游戏：合作完成任务、观察社交行为 🔴 小红书 2024"
+      ]},
+     {title:"第二轮 · 个人面谈+家长",
+      items:[
+        "孩子：英文阅读、数学思维题、讲故事 🔴 BK 2024",
+        "家长：为何选陈守仁？对学校的期望？🟡 BK 2024",
+        "办学特色：英文教学、多元文化环境 🟡 校方"
+      ]}],
+   sources:"BK多帖(2024)·小红书·校方资料"},
+
+  // ---- 私立名校 ----
+  {n:"啓思小學",t:"私立",d:"九龙城区",lvl:"A",yr:"2025–2026",
+   format:"两部分：小组活动→一对一沟通（不面家长）",
+   rounds:[
+     {title:"第一部分 · 小组活动（观察自理与合作）",
+      items:[
+        "玩玩具、听简单指令、喂公仔吃东西 🟡 Ohpama+BK 2025",
+        "观察：自理能力、合作精神、社交行为 🔴 BK 2025",
+        "非学术考核——不考生字/算术 🟡 Ohpama 2025"
+      ]},
+     {title:"第二部分 · 一对一沟通",
+      items:[
+        "老师与孩子单独交流，了解语言表达和思维能力 🟡 Ohpama 2025",
+        "注重自然交流，非机械问答 💬",
+        "约一半学位预留启思幼稚园毕业生 🟡 Ohpama"
+      ]}],
+   sources:"Ohpama·BK·TOPick·校方资料"},
+
+  {n:"聖方濟各英文小學",t:"私立",d:"深水埗区",lvl:"A",yr:"2024–2025",
+   format:"两轮：小组→个人",
+   rounds:[
+     {title:"第一轮 · 小组面试",
+      items:["英文：朗读、对答、阅读理解 🔴 BK 2024","中文：认字、朗读 🔴 BK 2024","数学：加减法、应用题 🔴 BK 2024"]},
+     {title:"第二轮 · 个人面试+家长",
+      items:["英文：深度阅读+讨论 🔴 BK 2024","家长面谈：教育理念、对学校的期望 🔴 BK 2024"]}],
+   sources:"BK·小红书·SOSOMAMA"},
+
+  // ---- 资助名校 ----
+  {n:"喇沙小學",t:"资助",d:"九龙城区",lvl:"S",yr:"2024–2025",
+   format:"自行分配（计分制）+ 统一派位（不设校内面试）",
+   rounds:[
+     {title:"小一入学机制（资助学校·无校内面试）",
+      items:[
+        "自行分配学位：计分制（世袭/宗教/首名子女等）🟡 EDB",
+        "统一派位：按41校网派位 🟡 EDB",
+        "叩门：放榜后可到校申请·名额极少·通常设简单面谈 🔴 BK 2024",
+        "叩门面谈：了解孩子基本表达能力·不考学术 🔴 BK 2024"
+      ]}],
+   sources:"EDB·BK·Schooland"},
+   
+  {n:"瑪利諾修院學校(小學部)",t:"资助",d:"九龙城区",lvl:"A+",yr:"2024–2025",
+   format:"自行分配（计分制）+ 统一派位",
+   rounds:[
+     {title:"小一入学机制",
+      items:["自行分配：计分制（天主教5分+世袭等）🟡 EDB","统一派位：41校网 🟡 EDB","叩门：名额极少·需到校查询 🔴 BK 2024"]}],
+   sources:"EDB·BK·Schooland"},
+
+  {n:"聖若瑟小學",t:"资助",d:"湾仔区",lvl:"A",yr:"2024–2025",
+   format:"自行分配（计分制）+ 统一派位",
+   rounds:[
+     {title:"小一入学机制",
+      items:["自行分配：计分制·世袭分27 🟡 EDB+本平台","统一派位：12校网 🟡 EDB","叩门：放榜后·名额少·面谈侧重英文表达 🔴 BK 2024"]}],
+   sources:"EDB·BK·本平台评级"},
+
+  {n:"聖保祿學校（小學部）",t:"资助",d:"湾仔区",lvl:"A+",yr:"2024–2025",
+   format:"自行分配（计分制）+ 统一派位",
+   rounds:[
+     {title:"小一入学机制",
+      items:["自行分配：计分制·天主教加分 🟡 EDB","统一派位：12校网 🟡 EDB","叩门：名额极少·女校 🔴 BK 2024"]}],
+   sources:"EDB·BK·Schooland"},
+
+  {n:"協恩中學附屬小學",t:"资助",d:"九龙城区",lvl:"A+",yr:"2024–2025",
+   format:"自行分配（计分制）+ 统一派位",
+   rounds:[
+     {title:"小一入学机制",
+      items:["自行分配：计分制 🟡 EDB","统一派位：34校网 🟡 EDB","叩门：竞争激烈·女校 🔴 BK 2024"]}],
+   sources:"EDB·BK·Schooland"},
+,
+{n:"培僑書院",t:"直资",d:"沙田区",lvl:"A",yr:"2025–2026",
+   format:"两轮：提交短片→现场面见（约1小时20分钟）",
+   rounds:[
+     {title:"第一轮 · 提交短片（佔评估90%·2段各≤1分钟·一镜到底）",
+      items:[
+        "中文题：讲述一次你做运动的经过 🟡 GoStudy+小红书 2025","英文题：If you could live somewhere else in the world, where would it be? Why? 🟡 GoStudy+Kidemy 2025",
+        "拍片重点：自然真实·有表情和眼神交流·声线有起伏·忌背稿或读稿 🟡 TOPick 2025","不可剪接·不可加特效/配乐/字幕·家长不可入镜或出声 🟡 GoStudy 2025"
+      ]},
+     {title:"第二轮 · 现场面见（小组+个人）",
+      items:[
+        "中文：认读句子·句子重组·看图说故事·分享书籍 🟡 Kidemy 2025","英文：听故事回答问题·朗读短文·自由对答（如送妈妈礼物三选一）🟡 Kidemy 2025",
+        "数学：10-20以内加减·图形分类·找规律·物品代数 🟡 Kidemy 2025","情境：玩具被弄坏怎么办？两个朋友争一个玩具怎么解决？🟡 Kidemy 2025",
+        "社交礼仪：打招呼说谢谢·情绪稳定性·合作与专注 🟡 GoStudy 2025"
+      ]}],
+   sources:"TOPick·GoStudy·Kidemy·小红书·BK"},
+
+  {n:"優才(楊殷有娣)書院",t:"直资",d:"油尖旺区",lvl:"A",yr:"2025–2026",
+   format:"两轮：小组iPad作答→亲子面见校长",
+   rounds:[
+     {title:"第一轮 · 小组面见（约30分钟·iPad+游戏）",
+      items:[
+        "中文：朗读词语（如看電視/海灘/遊玩）·句子重组·看图回答 🟡 Kidemy+Wisetalk 2025","英文：认读/串字（crocodile/alligator等）·听故事后回答问题 🟡 Kidemy 2025",
+        "数学：9+6·8-4·找规律（14,16,18,?）·平均分配 🟡 Kidemy 2025","记忆游戏：iPad浏览图片后回忆出现的事物 🟡 Kidemy 2025",
+        "小组游戏：抛豆袋·跳飞机·LEGO拼砌·波波池垃圾分类 🟡 小红书 2025"
+      ]},
+     {title:"第二轮 · 亲子面见校长（约15-20分钟）",
+      items:[
+        "自我介绍·亲子讲故事（家长讲第一张图·孩子接续）🟡 Kidemy 2025","家长面谈：为什么选优才？对资优教育的看法？假期如何安排？🟡 Kidemy 2025",
+        "学校偏好：大方自信·有礼貌·好奇心·解難能力 🟡 GoStudy 2025"
+      ]}],
+   sources:"Kidemy·GoStudy·Wisetalk·小红书·BK"},
+
+  {n:"播道書院",t:"直资",d:"西贡区",lvl:"A",yr:"2025–2026",
+   format:"一轮：个人面试+小组游戏（约20-30分钟）",
+   rounds:[
+     {title:"个人面试+小组游戏",
+      items:[
+        "中文：写自己的中文名字·认读字词·看图说话·四幅图排序讲故事 🟡 小红书 2025","英文：自我介绍·认读单词（name/egg/broccoli等）·读句子·看图回答问题 🟡 小红书 2025",
+        "生活常识：平时在家做什么？放假去哪里玩？喜欢什么卡通？🟡 小红书 2025","小组游戏：大风吹·老师话·音乐椅·投球·猜动物·Memory matching 🟡 小红书 2025",
+        "面试语言：普通话/英文/粤语可选 🟡 校方"
+      ]}],
+   sources:"小红书多帖(2025)·校方资料"},
+
+  {n:"香港華人基督教聯會真道書院",t:"直资",d:"西贡区",lvl:"A",yr:"2025–2026",
+   format:"两轮：小组面试→亲子面见校长",
+   rounds:[
+     {title:"第一轮 · 小组面试（约30-40分钟·约10人/组·仅小朋友）",
+      items:[
+        "书写自己的中英文名字 🟡 Kidemy+GoStudy 2025","认读简单中英文词语·词语与图片配对 🟡 Kidemy 2025",
+        "基本加减法运算·听读题（物件分类并解释原因）🟡 Kidemy 2025","小组游戏：老师说(Simon Says)·传豆袋·恐龙卡模仿·碰冻游戏 🟡 小红书+GoStudy 2025",
+        "考察重点：聆听能力·守规矩·合作精神·输掉时的情绪反应·创意与联想力 🟡 GoStudy 2025"
+      ]},
+     {title:"第二轮 · 亲子面见（家长+小朋友分开面见）",
+      items:[
+        "小朋友：自我介绍·中英文认字·基本加减数·看图说故事 🟡 Kidemy+小红书 2025","家长：对11年一条龙学制的看法？为何选真道？🟡 Kidemy 2025",
+        "家长：亲子关系·小朋友生活习惯·家校合作理解 🟡 GoStudy 2025","家长：能否接受小朋友跳级？能否接受电子课堂？🟡 小红书 2025",
+        "面试氛围：较随意像聊天·约5-15分钟 🟡 小红书 2025"
+      ]}],
+   sources:"Kidemy·GoStudy·小红书·BK"},
+
+  {n:"蔡繼有學校",t:"私立",d:"深水埗区",lvl:"A+",yr:"2025–2026",
+   format:"两轮：小组活动观察→亲子面见",
+   rounds:[
+     {title:"第一轮 · 小组活动（约1小时·8-10人/组）",
+      items:[
+        "中英文自我介绍 🟡 Kidemy+TOPick 2025","画画：按指令作画（如先画太阳再画大树）🟡 Kidemy 2025",
+        "中英文认字/词·朗读文章后回答问题 🟡 Kidemy 2025","数学：20以内加减法·比较题·应用题 🟡 Kidemy 2025",
+        "看影片抢答·唱歌跳舞(Baby Shark)·集体游戏(音乐椅/飞行棋)🟡 Kidemy 2025","学校不接受Portfolio·重视自然表现 🟡 TOPick 2025"
+      ]},
+     {title:"第二轮 · 亲子面见（孩子小组游戏+家长面谈）",
+      items:[
+        "孩子：难度提高的小组游戏·听故事回答·介绍图书/玩具 🟡 Kidemy 2025","家长：为什么选CKY？对IB理念的理解？家校合作的看法？🟡 TOPick 2025",
+        "校长提醒：不要上面试班·衣着不宜太拘谨 🟡 TOPick 2025"
+      ]}],
+   sources:"TOPick·Kidemy·小红书·GoStudy"},
+
+  {n:"九龍塘宣道小學",t:"私立",d:"九龙城区",lvl:"A",yr:"2025–2026",
+   format:"一轮：个人面试（广东话+英文·约168学位）",
+   rounds:[
+     {title:"个人面试（仅设一轮·约60学位给外校生）",
+      items:[
+        "中文：词语认读·看故事作答（如《大风吹》）🟡 HK01+GoStudy 2025","英文：串字（Pencil/Hello/Flower/Water）·阅读理解 🟡 GoStudy 2025",
+        "数学：20以内加减·生活应用题（购物找续）🟡 GoStudy 2025","个人问答：自我介绍·今日谁带你来？父母职业？谁教功课？🟡 HK01 2025",
+        "画画：等待期间自由画画·画完后向老师介绍 🟡 小红书 2025","学术要求较高（数学教快半年）·重视体艺但不影响取录 🟡 GoStudy 2025"
+      ]}],
+   sources:"HK01·GoStudy·小红书·BK"},
+
+  {n:"九龍塘學校(小學部)",t:"私立",d:"九龙城区",lvl:"B",yr:"2024–2025",
+   format:"两轮：小组→个人",
+   rounds:[
+     {title:"小组+个人面试",
+      items:["中英文认读·数学应用题 🔴 BK 2024","个人问答：自我介绍·生活常识 🔴 BK 2024","「三私一直」之一·学术要求高 🔴 GoStudy"]}],
+   sources:"BK·GoStudy·小红书"},
+
+  {n:"德望小學暨幼稚園",t:"资助",d:"黄大仙区",lvl:"A+",yr:"2024–2025",
+   format:"自行分配（计分制）+ 统一派位",
+   rounds:[
+     {title:"小一入学机制",
+      items:["自行分配：计分制·天主教加分 🟡 EDB","统一派位：黄大仙区校网 🟡 EDB","叩门：名额极少·女校·竞争激烈 🔴 BK 2024"]}],
+   sources:"EDB·BK·Schooland"},
+
+  {n:"聖公會聖彼得小學",t:"资助",d:"中西区",lvl:"A",yr:"2025–2026",
+   format:"自行分配（计分制）+ 统一派位",
+   rounds:[
+     {title:"小一入学机制+叩门",
+      items:["自行分配：计分制 🟡 EDB","统一派位：11校网 🟡 EDB","叩门：2025年6月4-9日申请·6月14日上午面试·随机分配场次 🟡 校方官方公告","叩门文件：出生证明·学习评估表·获奖证书·统一派位存根 🟡 校方"]}],
+   sources:"EDB·校方官网·BK"},
+
+  {n:"浸信會呂明才小學",t:"资助",d:"沙田区",lvl:"A",yr:"2024–2025",
+   format:"自行分配（计分制）+ 统一派位",
+   rounds:[
+     {title:"小一入学机制",
+      items:["自行分配：计分制·基督教加分 🟡 EDB","统一派位：91校网·沙田区学术口碑最突出的资助小学之一 🟡 EDB+BK","叩门：竞争激烈·放榜后到校申请 🔴 BK 2024"]}],
+   sources:"EDB·BK·Schooland"},
+
+  {n:"國際英文幼稚園(St. Cat)",t:"幼稚园",d:"九龙城区",lvl:"S",yr:"2025–2026",
+   format:"三轮：小组游戏观察→一对一面试+家长问卷→(英普班加试普通话)",
+   rounds:[
+     {title:"第一轮 · 小组自由游戏观察（约15-20分钟·6-8人/组）",
+      items:["自由玩Lego/积木/小厨房·家长旁坐不引导 🟡 GoStudy+BK 2025","观察：能否独立与家长分离·是否分享轮流·情绪稳定性 🟡 GoStudy 2025"]},
+     {title:"第二轮 · 一对一面试+家长问卷（约10-15分钟）",
+      items:["英文：What's your name? How old are you? 身体部位·颜色形状辨识 🟡 BK+小红书 2025","听指令：Put the toy on the shelf / zip your jacket 🟡 BK 2025","记忆力游戏：展示三样物品·拿走一件问What's missing? 🟡 GoStudy 2025","家长问卷：为何选St. Cat？对孩子和学校的期望？家校合作看法？🟡 GoStudy 2025"]},
+     {title:"(英普班) 第三轮 · 普通话面试",
+      items:["识图·说名称·唱生日歌·颜色形状 🟡 GoStudy 2025","老师问家长：如何加强小朋友的普通话能力？🟡 GoStudy 2025"]}],
+   sources:"GoStudy·BK多帖·小红书·校方"},
+
+  {n:"維多利亞國際幼稚園",t:"幼稚园",d:"湾仔区/九龙城区",lvl:"A+",yr:"2024–2025",
+   format:"小组观察+一对一面试（IB探究式）",
+   rounds:[
+     {title:"面试流程",
+      items:["小组自由游戏：观察社交·自理·合作 🔴 GoStudy+BK 2024","一对一：中英文基本对答·认知能力·IB理念契合度 🔴 GoStudy 2024","部分校区设家长面谈：了解家庭教育理念 🔴 BK 2024"]}],
+   sources:"GoStudy·BK·小红书"},
+
+  {n:"培正幼稚園",t:"幼稚园",d:"九龙城区",lvl:"A+",yr:"2024–2025",
+   format:"一轮面试（约15分钟）",
+   rounds:[
+     {title:"面试内容",
+      items:["基本问答：姓名·年龄·简单认知 🔴 家长分享 2024","面试较简单·但孩子需要愿意开口 🔴 BK","一条龙优势：约85%直升培正小学 🔴 BK"]}],
+   sources:"BK·家长分享"},
+
+  {n:"民生書院幼稚園",t:"幼稚园",d:"九龙城区",lvl:"A+",yr:"2024–2025",
+   format:"小组游戏+集体故事环节",
+   rounds:[
+     {title:"面试内容",
+      items:["玩玩具·讲故事情节 🟡 BK 2024","认字母·数字·颜色·故事书上事物名称 🟡 BK 2024","集体环节：坐小凳子听老师讲故事·互动提问颜色动物 🟡 BK 2024","一条龙优势：约85%直升民生小学 🟡 BK"]}],
+   sources:"BK多帖·家长分享"},
+
+  {n:"靈糧堂幼稚園",t:"幼稚园",d:"湾仔区",lvl:"A",yr:"2024–2025",
+   format:"小组游戏观察+简单问答",
+   rounds:[
+     {title:"面试内容",
+      items:["小组自由游戏·观察社交与自理 🔴 BK 2024","简单问答·颜色形状·动物认知 🔴 BK 2024","券校免费·名额有限·竞争较大 🔴 BK"]}],
+   sources:"BK·小红书"}
+];
+
+function render() {
+  const type = document.getElementById('filterType').value;
+  const search = document.getElementById('filterSearch').value.toLowerCase();
+  let filtered = DATA;
+  if (type) filtered = filtered.filter(s => s.t === type);
+  if (search) filtered = filtered.filter(s => s.n.toLowerCase().includes(search) || s.d.includes(search));
+  if (!filtered.length) { document.getElementById('iqList').innerHTML = '<div class="no-results">没有匹配的学校</div>'; return; }
+  let html = '';
+  filtered.forEach((s,i) => {
+    html += '<div class="iq-card" id="card'+i+'"><div class="iq-card-header" onclick="toggle('+i+')">';
+    html += '<div><h3>'+s.n+' <span style="font-size:12px;color:var(--muted)">'+s.t+' · '+s.lvl+'级</span></h3>';
+    html += '<div class="iq-meta">📋 '+s.format+'</div></div>';
+    html += '<div class="iq-arrow">▼</div></div><div class="iq-card-body">';
+    s.rounds.forEach(r => {
+      html += '<div class="iq-round"><h4>'+r.title+'</h4><ul>';
+      r.items.forEach(it => html += '<li>'+it+'</li>');
+      html += '</ul></div>';
+    });
+    html += '<div class="iq-sources">📎 来源：'+s.sources+' · 年份：'+s.yr+'</div>';
+    html += '</div></div>';
+  });
+  document.getElementById('iqList').innerHTML = html;
+}
+function toggle(i) {
+  document.getElementById('card'+i).classList.toggle('open');
+}
+function filter() { render(); }
+render();
+</script>
+</body>
+</html>
