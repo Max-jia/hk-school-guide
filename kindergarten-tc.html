@@ -131,6 +131,7 @@
   <script>
     // 填充地區下拉
     const dSel = document.getElementById("district");
+    const oAll = document.createElement("option"); oAll.value = ""; oAll.textContent = "不限住址"; dSel.appendChild(oAll);
     const districts = [...new Set(KINDERGARTENS.map(k => k.district_zh).filter(Boolean))].sort();
     districts.forEach(d => { const o = document.createElement("option"); o.value = d; o.textContent = d; dSel.appendChild(o); });
 
@@ -167,7 +168,7 @@
     function render(top, district) {
       const box = document.getElementById("results");
       if (!top.length) { box.innerHTML = `<p class="note">沒有符合條件的幼稚園，試試放寬篩選（如放寬時段/評級或學費上限）。</p>`; box.scrollIntoView({ behavior: "smooth" }); return; }
-      box.innerHTML = `<h3>爲你匹配的前 ${top.length} 所（${district}）</h3>
+      box.innerHTML = `<h3>爲你匹配的前 ${top.length} 所（${district || "全港"}）</h3>
         <p class="section-sub" style="margin-top:-2px">推薦分 = 園所實力(60%：等級+師生比) + 與你條件適配(40%：直升/預算/通勤/類型/語言)；徽章=園所口碑（參考·非官方）。</p>` +
         top.map((r, i) => {
           const s = r.school;

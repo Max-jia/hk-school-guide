@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>幼稚园 / PN 择校 · 港校指南</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{ink:"#1e293b",muted:"#64748b",bg:"#fafaf7",surface:"rgba(255,255,255,0.7)",primary:"#6366f1","primary-dark":"#4f46e5",accent:"#f97316",border:"rgba(0,0,0,0.06)",soft:"rgba(255,255,255,0.5)"},fontFamily:{sans:["Roboto","PingFang SC","Microsoft YaHei","sans-serif"],serif:["Newsreader","serif"]}}}}</script>
+  <script>tailwind.config={theme:{extend:{colors:{ink:"#1e293b",muted:"#64748b",bg:"#f8fafc",surface:"#ffffff",primary:"#2563eb","primary-dark":"#1d4ed8",accent:"#d97706",success:"#059669",border:"rgba(0,0,0,0.08)",soft:"#f1f5f9"},fontFamily:{sans:["Roboto","PingFang SC","Microsoft YaHei","sans-serif"],serif:["Newsreader","serif"]}}}}</script>
   <link rel="stylesheet" href="./assets/style.css" />
 <script src="./assets/lang.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
@@ -154,6 +154,7 @@
   <script>
     // 填充地区下拉
     const dSel = document.getElementById("district");
+    const oAll = document.createElement("option"); oAll.value = ""; oAll.textContent = "不限住址"; dSel.appendChild(oAll);
     const districts = [...new Set(KINDERGARTENS.map(k => k.district_zh).filter(Boolean))].sort();
     districts.forEach(d => { const o = document.createElement("option"); o.value = d; o.textContent = d; dSel.appendChild(o); });
 
@@ -190,7 +191,7 @@
     function render(top, district) {
       const box = document.getElementById("results");
       if (!top.length) { box.innerHTML = `<p class="note">没有符合条件的幼稚园，试试放宽筛选（如放宽时段/评级或学费上限）。</p>`; box.scrollIntoView({ behavior: "smooth" }); return; }
-      box.innerHTML = `<h3>为你匹配的前 ${top.length} 所（${district}）</h3>
+      box.innerHTML = `<h3>为你匹配的前 ${top.length} 所（${district || "全港"}）</h3>
         <p class="section-sub" style="margin-top:-2px">推荐分 = 园所实力(60%：等级+师生比) + 与你条件适配(40%：直升/预算/通勤/类型/语言)；徽章=园所口碑（参考·非官方）。</p>` +
         top.map((r, i) => {
           const s = r.school;

@@ -130,6 +130,7 @@
     }
     // 填充校網下拉（帶地區名，方便家長認領）
     const netSel = document.getElementById("net");
+    const oAll = document.createElement("option"); oAll.value = ""; oAll.textContent = "不限校網"; netSel.appendChild(oAll);
     const netNums = [...new Set(SCHOOLS.map(s => s.school_net).filter(n => n && /^\d+$/.test(n)))].sort((a, b) => a - b);
     netNums.forEach(n => {
       const o = document.createElement("option");
@@ -172,7 +173,7 @@
     function render(top, net) {
       const box = document.getElementById("results");
       if (!top.length) { box.innerHTML = `<p class="note">沒有完全符合條件的學校，試試放寬篩選（例如放寬評級或性別限制）。</p>`; box.scrollIntoView({ behavior: "smooth" }); return; }
-      box.innerHTML = `<h3>爲你匹配的前 ${top.length} 所（校網 ${net}）</h3>
+      box.innerHTML = `<h3>爲你匹配的前 ${top.length} 所（校網 ${net || "全港"}）</h3>
         <p class="section-sub" style="margin-top:-2px">推薦分 = 學校實力(45%) + 與你條件的適配(55%)，好學校+合適→分高；徽章=學校等級（參考·非官方）。</p>` +
         top.map((r, i) => {
           const s = r.school;

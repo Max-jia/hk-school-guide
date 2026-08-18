@@ -29,7 +29,8 @@
     let score = 0; const reasons = []; const ft = school.finance_type;
     if (ft === "官立" || ft === "资助") {
       if (profile.net && school.school_net === profile.net) { score += 45; reasons.push(`✅ 在你的校网内（${profile.net} 网），可参加统一派位`); }
-      else if (school.school_net && school.school_net !== "不限校网") { score += 15; reasons.push(`不在你校网（${school.school_net} 网），仅"自行分配"可报`); }
+      else if (profile.net && school.school_net && school.school_net !== "不限校网") { score += 15; reasons.push(`不在你校网（${school.school_net} 网），仅"自行分配"可报`); }
+      else if (!profile.net) { score += 20; reasons.push(`不限校网 · 全港官津均可考虑`); }
       else { score += 20; reasons.push(`校网待确认`); }
     } else { score += 25; reasons.push(`${ft}·全港自由招生，不受校网限制`); }
     const table = {
