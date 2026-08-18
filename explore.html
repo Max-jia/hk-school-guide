@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K2LHYDEZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0K2LHYDEZ9');
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>探索 · 港学荟 — 择校工具与制度指南</title>
+  <meta name="description" content="香港择校工具与制度指南：小学/幼稚园匹配、计分制、一条龙直属联系、官津直资私立区别。数据来自香港教育局 CHSC。" />
+  <meta name="google-site-verification" content="eUo-ly0N80KncfFd11q521V8IDtDMPAf9tJlIUl4wBU" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/tailwind.css" />
+  <style>
+    :root { --ink:#1C1C1C; --muted:#57534E; --bg:#FBF9F5; --surface:#FFFFFF; --primary:#0F766E; --primary-dark:#115E59; --primary-soft:rgba(15,118,110,0.08); --accent:#C2410C; --accent-soft:rgba(194,65,12,0.08); --border:#E4E0D8; }
+    .eyebrow { font-size:12px; font-weight:700; letter-spacing:0.18em; color:var(--muted); }
+    .tool-card { display:block; background:#fff; border:1px solid var(--border); padding:28px 28px 24px; transition:border-color .15s; }
+    .tool-card:hover { border-color:var(--primary); }
+    .tool-num { font-family:"Newsreader",serif; font-size:20px; font-weight:600; color:var(--primary); }
+    .rule-line { display:block; padding:16px 0; border-bottom:1px solid var(--border); }
+    .rule-line a { color:var(--ink); }
+    .rule-line a:hover { color:var(--primary); }
+    .rule-line .rd { font-size:13px; color:var(--muted); }
+  </style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
+<body style="background:#FBF9F5!important">
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <div class="site-nav-left">
+        <a href="./index.html" class="site-brand"><span class="site-brand-dot"></span><span class="site-brand-text">港学荟</span></a>
+        <a href="./explore-tc.html" class="site-lang">繁</a>
+      </div>
+      <div class="site-nav-menu">
+        <a href="./index.html">首页</a>
+        <a href="./explore.html" class="active">探索</a>
+        <a href="./reports.html">深度报告</a>
+        <a href="./interview-questions.html">面试题库</a>
+        <a href="./blog/">Blog</a>
+        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 工具入口 -->
+    <section class="max-w-3xl mx-auto px-5 pt-20 pb-14 md:pt-24 text-center">
+      <div class="eyebrow mb-5">香港择校 · 工具与制度</div>
+      <h1 class="font-serif text-[36px] md:text-[46px] font-bold leading-[1.12] text-ink mb-6">先搞清楚规则，再谈选校。</h1>
+      <p class="text-[16px] text-muted leading-relaxed mb-10 max-w-lg mx-auto">香港小学和幼稚园是两套完全不同的规则。先用工具缩小范围，再读制度把规则弄明白。</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-5 pb-16">
+      <div class="grid md:grid-cols-2 gap-5">
+        <a href="./primary.html" class="tool-card">
+          <div class="tool-num mb-3">小学</div>
+          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">小学择校匹配</h2>
+          <p class="text-muted text-[14px] leading-relaxed mb-5">输入校网、预算、孩子性格，从全港 669 所小学中排出最合适的几所。官津、直资、私立一次算清。</p>
+          <span class="text-primary font-bold text-[14px]">进入匹配 →</span>
+        </a>
+        <a href="./kindergarten.html" class="tool-card">
+          <div class="tool-num mb-3">幼稚园</div>
+          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">幼稚园 / PN 择校匹配</h2>
+          <p class="text-muted text-[14px] leading-relaxed mb-5">按地区、上课时段、PN 班需求，从全港 962 所幼稚园中就近匹配。名园优先浮现。</p>
+          <span class="text-primary font-bold text-[14px]">进入匹配 →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 制度速览 -->
+    <section class="border-t border-border">
+      <div class="max-w-4xl mx-auto px-5 py-16">
+        <div class="flex items-end justify-between mb-4">
+          <h2 class="font-serif text-[24px] font-bold text-ink">制度速览</h2>
+          <a href="./blog/" class="text-primary font-bold text-[14px] hover:underline">全部文章 →</a>
+        </div>
+        <div class="rule-line"><a href="./blog/p1-scoring-guide.html" class="font-semibold text-[16px]">小学计分制：自行派位最高 40 分，怎么算</a><div class="rd mt-1">9 月派表、10 月交表，每年这个时间家长都在算分。</div></div>
+        <div class="rule-line"><a href="./blog/through-train-guide.html" class="font-semibold text-[16px]">一条龙 / 直属 / 联系：三种升中关系的区别</a><div class="rd mt-1">100% 直升、85% 保留、25% 联系——差一个词，差一条路。</div></div>
+        <div class="rule-line"><a href="./blog/school-types-guide.html" class="font-semibold text-[16px]">官津 vs 直资 vs 私立：四种学校怎么选</a><div class="rd mt-1">学费、校网、面试，三个维度看懂香港小学分类。</div></div>
+        <div class="rule-line"><a href="./blog/school-net-41-vs-12.html" class="font-semibold text-[16px]">41 校网 vs 12 校网：两大顶级校网对比</a><div class="rd mt-1">名校资源、Band 1 通路、居住成本，一次看全。</div></div>
+        <div class="rule-line"><a href="./blog/net40-ranking.html" class="font-semibold text-[16px]">40 校网 26 间小学完整比较</a><div class="rd mt-1">深水埗 / 长沙湾 / 荔枝角，升中通路才是关键。</div></div>
+      </div>
+    </section>
+
+    <!-- 数据声明 -->
+    <section class="border-t border-border">
+      <div class="max-w-4xl mx-auto px-5 py-10 text-[13px] text-muted leading-relaxed">
+        <p>学校资料来自香港教育局 CHSC 开放数据，每月同步。评级为四因子模型（锚点分），属平台自研参考评级，非官方。能核实的才写，查不到的宁可不写。<a href="./data-sources.html" class="text-primary font-bold">查看数据来源 →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-border py-10">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-6 text-sm text-muted">
+      <div>
+        <div class="text-ink font-serif text-base mb-2"><b>港学荟</b> · 帮内地来港家庭选对香港学校</div>
+        <div>数据来源 香港教育局 data.gov.hk · 每月更新 · 仅供参考</div>
+      </div>
+      <div class="flex gap-8">
+        <div class="flex flex-col gap-1.5">
+          <div class="text-xs font-bold tracking-widest uppercase mb-1">择校工具</div>
+          <a href="./primary.html" class="hover:text-primary hover:underline">小学择校匹配</a>
+          <a href="./kindergarten.html" class="hover:text-primary hover:underline">幼稚园择校匹配</a>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="text-xs font-bold tracking-widest uppercase mb-1">内容</div>
+          <a href="./reports.html" class="hover:text-primary hover:underline">深度报告</a>
+          <a href="./blog/" class="hover:text-primary hover:underline">Blog</a>
+          <a href="./data-sources.html" class="hover:text-primary hover:underline">数据来源</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // 登录状态：自动更新导航栏按钮
+  (function(){
+    var btn = document.getElementById('nav-auth-btn');
+    if (!btn || typeof Auth === 'undefined') return;
+    Auth.getUser().then(function(user){
+      if (user) {
+        btn.textContent = user.email || '已登录';
+        btn.href = '#';
+        btn.onclick = function(e){ e.preventDefault(); Auth.signOut().then(function(){ location.reload(); }); };
+      }
+    }).catch(function(){});
+  })();
+  </script>
+</body>
+</html>
