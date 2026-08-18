@@ -15,6 +15,42 @@
   <title>港学荟 · 深度择校报告，数据可核实</title>
   <meta name="description" content="香港小学及幼稚园深度择校报告。搜索学校名称直接查看报告；不知道选哪所，先用匹配工具缩小范围。数据来自香港教育局 CHSC，每月同步。" />
   <meta name="google-site-verification" content="eUo-ly0N80KncfFd11q521V8IDtDMPAf9tJlIUl4wBU" />
+  <link rel="canonical" href="https://hkschool.guide/" />
+  <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkschool.guide/index-tc.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://hkschool.guide/" />
+  <link rel="alternate" hreflang="x-default" href="https://hkschool.guide/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="港学荟 · 深度择校报告，数据可核实" />
+  <meta property="og:description" content="香港小学及幼稚园深度择校报告。搜索学校名称直接查看；不知道选哪所，先用匹配工具。数据来自香港教育局 CHSC。" />
+  <meta property="og:url" content="https://hkschool.guide/" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="zh_HK" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "港学荟",
+    "url": "https://hkschool.guide/",
+    "description": "香港小学及幼稚园深度择校报告平台，数据来自香港教育局 CHSC。",
+    "inLanguage": "zh-Hans",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://hkschool.guide/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "港学荟",
+    "url": "https://hkschool.guide/",
+    "logo": "https://hkschool.guide/assets/favicon.svg",
+    "description": "帮助内地来港家庭选对香港学校的择校平台。"
+  }
+  </script>
   <link rel="stylesheet" href="./assets/tailwind.css" />
   <link rel="stylesheet" href="./assets/style.css" />
   <style>
@@ -277,6 +313,11 @@
       items[sel].setAttribute('aria-selected', 'true');
       items[sel].scrollIntoView({ block: 'nearest' });
     }
+    // URL ?q= 參數自動填入（支援 Google SearchAction）
+    (function() {
+      var q = new URLSearchParams(location.search).get('q');
+      if (q && input) { input.value = q; render(q); }
+    })();
     input.addEventListener('input', function() { render(input.value); });
     input.addEventListener('keydown', function(e) {
       if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
