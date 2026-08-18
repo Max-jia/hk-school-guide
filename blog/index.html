@@ -24,6 +24,12 @@
 .blog-card p { color: var(--muted); font-size: 15px; margin: 0; line-height: 1.6; }
 .blog-nav { max-width: 780px; margin: 0 auto; padding: 20px; }
 @media(max-width:600px){ .blog-hero h1{font-size:26px} .blog-card h2{font-size:18px} }
+
+.cat-bar { max-width:780px; margin:0 auto; padding:0 20px 10px; display:flex; gap:8px; flex-wrap:wrap; }
+.cat-chip { font-size:13px; font-weight:600; padding:7px 16px; border:1px solid var(--border); border-radius:100px; color:var(--muted); cursor:pointer; background:#fff; transition:all .15s; }
+.cat-chip:hover { border-color:var(--primary); color:var(--primary); }
+.cat-chip.active { background:var(--primary); border-color:var(--primary); color:#fff; }
+.blog-card[hidden] { display:none; }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="../assets/auth.js"></script></head><body>
 <nav class="site-nav">
@@ -45,55 +51,61 @@
 
 <main>
 <div class="blog-hero"><h1>📝 港校指南 Blog</h1><p class="sub">香港小学及幼稚园择校攻略 · 面试技巧 · 教育趋势</p></div>
+<div class="cat-bar" role="tablist" aria-label="文章分類">
+  <button class="cat-chip active" data-cat="all">全部</button>
+  <button class="cat-chip" data-cat="trends">熱搜學校</button>
+  <button class="cat-chip" data-cat="system">制度攻略</button>
+  <button class="cat-chip" data-cat="guide">升學實戰</button>
+</div>
 
 <div class="blog-list">
-  <a class="blog-card" href="./st-margaret-kg.html"><h2>圣玛加利大幼稚园：跑马地 A+ 天主教券校，学费全免——本周家长都在搜什么？</h2><p class="meta">📅 2026年8月18日 · 🏷️ 热搜幼稚园 · Google Trends</p><p>「圣玛加利大幼稚园校服」搜索量 Breakout。免费券校到底值不值得读？报名、校服、面试一次讲清。</p></a>
-  <a class="blog-card" href="./p1-scoring-guide.html"><h2>小学计分制全解：20分校董、10分校友、5分宗教——小一自行派位40分怎么算</h2><p class="meta">📅 2026年8月17日 · 🏷️ 小一派位 · 制度攻略</p><p>「小学计分制」搜索量 +3,150%。完整计分表、各分数段机会、同分抽签、常见误区，一张表算清。</p></a>
-  <a class="blog-card" href="./st-margaret-primary.html"><h2>圣玛加利男女英文中小学：$53,570 一条龙直资、不限校网——和「圣玛加利大」不是同一间</h2><p class="meta">📅 2026年8月16日 · 🏷️ 热搜小学 · Google Trends</p><p>「st margaret 小学」搜索量 +300%。全英教学一条龙直资，和跑马地圣玛加利大幼稚园是两间名字很像的学校，一文分清。</p></a>
-  <a class="blog-card" href="./net40-ranking.html"><h2>40校网小学排名 2026：深水埗 26 间小学完整比较，升中通路才是关键</h2><p class="meta">📅 2026年8月15日 · 🏷️ 校网攻略 · 40网</p><p>「40校网小学排名」搜索量 Breakout。26 间学校完整表：官立联系网、玛利诺神父直属，排名之外的重点是升中通路。</p></a>
-  <a class="blog-card" href="./funful-kg.html"><h2>海濱方方樂趣幼稚園：荃灣私立园，全日/半日学费多少？搜索量暴涨 4,700% 的幼稚园值不值</h2><p class="meta">📅 2026年8月14日 · 🏷️ 热搜幼稚园 · 荃湾</p><p>「方方乐趣幼稚园」搜索量 +4,700%。半日 $88,272/年、全日 $119,928/年、师生比 1:7.5、有 PN。学费班别一次看清。</p></a>
-  <a class="blog-card" href="./wellcome-kg.html"><h2>宏廣国际幼稚园：屯门 Wellcome 英语幼稚园，2026/27 招生已开、半日 $67,392 起</h2><p class="meta">📅 2026年8月13日 · 🏷️ 热搜幼稚园 · 屯门</p><p>「宏廣国际幼稚园」搜索量 +2,700%。英语教学、有 PN，附官网招生程序：报名费 $40、面试安排、注册费。</p></a>
-  <a class="blog-card" href="./zenith-kg.html"><h2>英藝幼稚園五校園對比：將軍澳/沙田/兆康/大埔/賞湖，學費師生比一表看清</h2><p class="meta">📅 2026年8月12日 · 🏷️ 热搜幼稚园 · 品牌对比</p><p>「zenith kindergarten」搜索量 Breakout。5 间分校学费 $74,400-$135,276、师生比 1:2.5 至 1:12.4，全部有 PN。</p></a>
-  <a class="blog-card" href="./cheungchau-kg.html"><h2>長洲幼稚園全攻略：5 間學校一次看清——免費券校、全日班、師生比全表</h2><p class="meta">📅 2026年8月11日 · 🏷️ 地区攻略 · 离岛</p><p>「长洲幼稚园」搜索量 +800%。岛上 5 间幼稚园全表：圣心半日免费、两间路德会全日约 $3.4 万、国民学校有 PN。</p></a>
-  <a class="blog-card" href="./hyps-primary.html"><h2>協恩中學附屬小學：34網資助名校，直屬Band 1A協恩中學——2026熱搜背後</h2><p class="meta">📅 2026年8月10日 · 🏷️ 热搜小学 · 九龙城</p><p>「協恩中學附屬小學」搜索量 Breakout。免费资助女校、直属协恩中学（1A）、师生比 1:2.2、锚点分 95。</p></a>
-  <a class="blog-card" href="./dgs-primary.html"><h2>拔萃女小學 DGS：一條龍直升拔萃女書院，$8.6萬年費的私立名校值不值</h2><p class="meta">📅 2026年8月9日 · 🏷️ 热搜小学 · 私立</p><p>「dgs primary school」搜索量 +400%。私立一条龙直升拔萃女书院（1A），不受校网限制，有校车。</p></a>
-  <a class="blog-card" href="./lht-primary.html"><h2>陸慶濤小學 LHT：將軍澳直資一條龍，$13,000 年費讀出 Band 1B 升中通路</h2><p class="meta">📅 2026年8月8日 · 🏷️ 热搜小学 · 直资</p><p>「lht 小學」搜索量 Breakout。LHT = 陆庆涛，不是岭南。一条龙直升罗氏基金中学（1B），年费仅 $13,000。</p></a>
-  <a class="blog-card" href="./delia-primary.html"><h2>地利亞英文小學暨幼稚園：深水埗英文私立小學，$34,000/年（附與閩僑分校分別）</h2><p class="meta">📅 2026年8月7日 · 🏷️ 热搜小学 · 私立</p><p>「delia english primary school & kindergarten」搜索量 Breakout。带幼稚园部那间在深水埗，和葵青闽侨分校是两间不同 Delia。</p></a>
-  <a class="blog-card" href="./mulberry-kg.html"><h2>懋柏禮國際幼稚園：Mulberry House 雙校園，Montessori 英語教學——和「童樂天」別搞混</h2><p class="meta">📅 2026年8月6日 · 🏷️ 热搜幼稚园 · 国际</p><p>「mulberry house international kindergarten」搜索量 Breakout。南区/大埔双校园；沙田那间是 Mulberry Tree，不同品牌。</p></a>
-  <a class="blog-card" href="./plk-camoes-primary.html"><h2>陳守仁小學：油尖旺A級直資，英文教學+學費親民，中產家長的隱藏寶石</h2><p class="meta">📅 2026年7月4日 · 🏷️ 熱搜學校</p><p>英文教學+直資學費+不限校網——同時滿足這三條的A級學校全港沒幾所。</p></a>
-  <a class="blog-card" href="./hkuga-primary.html"><h2>港大同學會小學：全港少數IB+DSE雙軌一條龍，A+級直資的性價比之王</h2><p class="meta">📅 2026年6月27日 · 🏷️ 熱搜學校</p><p>一條龍12年不用換學校+IB+DSE雙軌+學費合理。還沒想清楚走本地還是國際路線？這所可能是答案。</p></a>
-  <a class="blog-card" href="./st-joseph-primary.html"><h2>聖若瑟小學：灣仔12校網最強男校，為什麼2026年家長都在搜？</h2><p class="meta">📅 2026年7月11日 · 🏷️ 熱搜學校</p><p>Google Trends Breakout——免費讀Band 1A中學的通道。英文教學+12校網+聯繫聖若瑟書院。</p></a>
-  <a class="blog-card" href="./school-net-41-vs-12.html"><h2>41校網 vs 12校網：九龍塘 vs 灣仔——香港兩大頂級校網終極對比</h2><p class="meta">📅 2026年7月7日</p><p>全港最頂尖兩個小學校網終極對比：名校資源、Band 1中學通路、居住成本、選校策略。</p></a>
-  <a class="blog-card" href="./knocking-letter-guide.html"><h2>香港小學叩門求位信完整攻略（附模板）：派位放榜後你只有72小時</h2><p class="meta">📅 2026年7月2日</p><p>派位不理想？求位信怎麼寫、什麼時候寄、有什麼禁忌？附可直接使用的叩門信模板。</p></a>
-  <a class="blog-card" href="./talent-scheme-school-guide.html"><h2>高才通/優才子女香港插班全流程：2026年內地來港家庭必讀的小學入學指南</h2><p class="meta">📅 2026年7月13日</p><p>高才通、優才、專才來港後孩子怎麼上學？什麼時候插班最好？一文講清從簽證到入學的每一步。</p></a>
-  <a class="blog-card" href="./trending-kindergartens-2026.html"><h2>2026 香港熱搜幼稚園對比：靈糧堂 vs 維多利亞 vs 培正 vs 民生——7 所名幼怎麼選？</h2><p class="meta">📅 2026年7月14日 · 🏷️ 幼稚园 · Google Trends</p><p>Google Trends Breakout：7所热搜名幼的核心差异、学费、升小优势，一表对比。</p></a>
-  <a class="blog-card" href="./breakout-schools-2026.html">
+  <a class="blog-card" data-cat="trends" href="./st-margaret-kg.html"><h2>圣玛加利大幼稚园：跑马地 A+ 天主教券校，学费全免——本周家长都在搜什么？</h2><p class="meta">📅 2026年8月18日 · 🏷️ 热搜幼稚园 · Google Trends</p><p>「圣玛加利大幼稚园校服」搜索量 Breakout。免费券校到底值不值得读？报名、校服、面试一次讲清。</p></a>
+  <a class="blog-card" data-cat="system" href="./p1-scoring-guide.html"><h2>小学计分制全解：20分校董、10分校友、5分宗教——小一自行派位40分怎么算</h2><p class="meta">📅 2026年8月17日 · 🏷️ 小一派位 · 制度攻略</p><p>「小学计分制」搜索量 +3,150%。完整计分表、各分数段机会、同分抽签、常见误区，一张表算清。</p></a>
+  <a class="blog-card" data-cat="trends" href="./st-margaret-primary.html"><h2>圣玛加利男女英文中小学：$53,570 一条龙直资、不限校网——和「圣玛加利大」不是同一间</h2><p class="meta">📅 2026年8月16日 · 🏷️ 热搜小学 · Google Trends</p><p>「st margaret 小学」搜索量 +300%。全英教学一条龙直资，和跑马地圣玛加利大幼稚园是两间名字很像的学校，一文分清。</p></a>
+  <a class="blog-card" data-cat="system" href="./net40-ranking.html"><h2>40校网小学排名 2026：深水埗 26 间小学完整比较，升中通路才是关键</h2><p class="meta">📅 2026年8月15日 · 🏷️ 校网攻略 · 40网</p><p>「40校网小学排名」搜索量 Breakout。26 间学校完整表：官立联系网、玛利诺神父直属，排名之外的重点是升中通路。</p></a>
+  <a class="blog-card" data-cat="trends" href="./funful-kg.html"><h2>海濱方方樂趣幼稚園：荃灣私立园，全日/半日学费多少？搜索量暴涨 4,700% 的幼稚园值不值</h2><p class="meta">📅 2026年8月14日 · 🏷️ 热搜幼稚园 · 荃湾</p><p>「方方乐趣幼稚园」搜索量 +4,700%。半日 $88,272/年、全日 $119,928/年、师生比 1:7.5、有 PN。学费班别一次看清。</p></a>
+  <a class="blog-card" data-cat="trends" href="./wellcome-kg.html"><h2>宏廣国际幼稚园：屯门 Wellcome 英语幼稚园，2026/27 招生已开、半日 $67,392 起</h2><p class="meta">📅 2026年8月13日 · 🏷️ 热搜幼稚园 · 屯门</p><p>「宏廣国际幼稚园」搜索量 +2,700%。英语教学、有 PN，附官网招生程序：报名费 $40、面试安排、注册费。</p></a>
+  <a class="blog-card" data-cat="trends" href="./zenith-kg.html"><h2>英藝幼稚園五校園對比：將軍澳/沙田/兆康/大埔/賞湖，學費師生比一表看清</h2><p class="meta">📅 2026年8月12日 · 🏷️ 热搜幼稚园 · 品牌对比</p><p>「zenith kindergarten」搜索量 Breakout。5 间分校学费 $74,400-$135,276、师生比 1:2.5 至 1:12.4，全部有 PN。</p></a>
+  <a class="blog-card" data-cat="trends" href="./cheungchau-kg.html"><h2>長洲幼稚園全攻略：5 間學校一次看清——免費券校、全日班、師生比全表</h2><p class="meta">📅 2026年8月11日 · 🏷️ 地区攻略 · 离岛</p><p>「长洲幼稚园」搜索量 +800%。岛上 5 间幼稚园全表：圣心半日免费、两间路德会全日约 $3.4 万、国民学校有 PN。</p></a>
+  <a class="blog-card" data-cat="trends" href="./hyps-primary.html"><h2>協恩中學附屬小學：34網資助名校，直屬Band 1A協恩中學——2026熱搜背後</h2><p class="meta">📅 2026年8月10日 · 🏷️ 热搜小学 · 九龙城</p><p>「協恩中學附屬小學」搜索量 Breakout。免费资助女校、直属协恩中学（1A）、师生比 1:2.2、锚点分 95。</p></a>
+  <a class="blog-card" data-cat="trends" href="./dgs-primary.html"><h2>拔萃女小學 DGS：一條龍直升拔萃女書院，$8.6萬年費的私立名校值不值</h2><p class="meta">📅 2026年8月9日 · 🏷️ 热搜小学 · 私立</p><p>「dgs primary school」搜索量 +400%。私立一条龙直升拔萃女书院（1A），不受校网限制，有校车。</p></a>
+  <a class="blog-card" data-cat="trends" href="./lht-primary.html"><h2>陸慶濤小學 LHT：將軍澳直資一條龍，$13,000 年費讀出 Band 1B 升中通路</h2><p class="meta">📅 2026年8月8日 · 🏷️ 热搜小学 · 直资</p><p>「lht 小學」搜索量 Breakout。LHT = 陆庆涛，不是岭南。一条龙直升罗氏基金中学（1B），年费仅 $13,000。</p></a>
+  <a class="blog-card" data-cat="trends" href="./delia-primary.html"><h2>地利亞英文小學暨幼稚園：深水埗英文私立小學，$34,000/年（附與閩僑分校分別）</h2><p class="meta">📅 2026年8月7日 · 🏷️ 热搜小学 · 私立</p><p>「delia english primary school & kindergarten」搜索量 Breakout。带幼稚园部那间在深水埗，和葵青闽侨分校是两间不同 Delia。</p></a>
+  <a class="blog-card" data-cat="trends" href="./mulberry-kg.html"><h2>懋柏禮國際幼稚園：Mulberry House 雙校園，Montessori 英語教學——和「童樂天」別搞混</h2><p class="meta">📅 2026年8月6日 · 🏷️ 热搜幼稚园 · 国际</p><p>「mulberry house international kindergarten」搜索量 Breakout。南区/大埔双校园；沙田那间是 Mulberry Tree，不同品牌。</p></a>
+  <a class="blog-card" data-cat="trends" href="./plk-camoes-primary.html"><h2>陳守仁小學：油尖旺A級直資，英文教學+學費親民，中產家長的隱藏寶石</h2><p class="meta">📅 2026年7月4日 · 🏷️ 熱搜學校</p><p>英文教學+直資學費+不限校網——同時滿足這三條的A級學校全港沒幾所。</p></a>
+  <a class="blog-card" data-cat="trends" href="./hkuga-primary.html"><h2>港大同學會小學：全港少數IB+DSE雙軌一條龍，A+級直資的性價比之王</h2><p class="meta">📅 2026年6月27日 · 🏷️ 熱搜學校</p><p>一條龍12年不用換學校+IB+DSE雙軌+學費合理。還沒想清楚走本地還是國際路線？這所可能是答案。</p></a>
+  <a class="blog-card" data-cat="trends" href="./st-joseph-primary.html"><h2>聖若瑟小學：灣仔12校網最強男校，為什麼2026年家長都在搜？</h2><p class="meta">📅 2026年7月11日 · 🏷️ 熱搜學校</p><p>Google Trends Breakout——免費讀Band 1A中學的通道。英文教學+12校網+聯繫聖若瑟書院。</p></a>
+  <a class="blog-card" data-cat="system" href="./school-net-41-vs-12.html"><h2>41校網 vs 12校網：九龍塘 vs 灣仔——香港兩大頂級校網終極對比</h2><p class="meta">📅 2026年7月7日</p><p>全港最頂尖兩個小學校網終極對比：名校資源、Band 1中學通路、居住成本、選校策略。</p></a>
+  <a class="blog-card" data-cat="guide" href="./knocking-letter-guide.html"><h2>香港小學叩門求位信完整攻略（附模板）：派位放榜後你只有72小時</h2><p class="meta">📅 2026年7月2日</p><p>派位不理想？求位信怎麼寫、什麼時候寄、有什麼禁忌？附可直接使用的叩門信模板。</p></a>
+  <a class="blog-card" data-cat="guide" href="./talent-scheme-school-guide.html"><h2>高才通/優才子女香港插班全流程：2026年內地來港家庭必讀的小學入學指南</h2><p class="meta">📅 2026年7月13日</p><p>高才通、優才、專才來港後孩子怎麼上學？什麼時候插班最好？一文講清從簽證到入學的每一步。</p></a>
+  <a class="blog-card" data-cat="trends" href="./trending-kindergartens-2026.html"><h2>2026 香港熱搜幼稚園對比：靈糧堂 vs 維多利亞 vs 培正 vs 民生——7 所名幼怎麼選？</h2><p class="meta">📅 2026年7月14日 · 🏷️ 幼稚园 · Google Trends</p><p>Google Trends Breakout：7所热搜名幼的核心差异、学费、升小优势，一表对比。</p></a>
+  <a class="blog-card" data-cat="trends" href="./breakout-schools-2026.html">
     <h2>Google Trends 告訴我們：2026年香港家長正在瘋狂搜索這 8 所小學</h2>
     <p class="meta">📅 2026年6月25日 · 🏷️ Google Trends · 热搜学校</p>
     <p>聖伯多祿、培基、陳守仁、聖若瑟…這些學校的搜索量正在Breakout。背後反映了什麼選校趨勢？</p>
   </a>
 
-  <a class="blog-card" href="./primary-rankings-2026.html">
+  <a class="blog-card" data-cat="system" href="./primary-rankings-2026.html">
     <h2>2026 香港小學排名全解析：HKPEP vs Kidemy，哪個排名更值得參考？</h2>
     <p class="meta">📅 2026年7月6日 · 🏷️ 小学排名 · 数据分析</p>
     <p>三套排名體系對比：HKPEP教育競爭力、Kidemy升中成績、本平台四因子。排名不是終點，是幫你縮小選擇範圍的工具。</p>
   </a>
-  <a class="blog-card" href="./stcat-interview.html">
+  <a class="blog-card" data-cat="guide" href="./stcat-interview.html">
     <h2>St. Catherine 國際英文幼稚園 K1 面試完整攻略（含家長問卷拆解）</h2>
     <p class="meta">📅 2026年7月12日 · 🏷️ 幼稚园面试 · St. Catherine</p>
     <p>St. Cat 面試考什麼？小朋友和家長各要準備什麼？一文拆解全流程+家長問卷答題技巧+面試潛規則。</p>
   </a>
-  <a class="blog-card" href="./through-train-guide.html">
+  <a class="blog-card" data-cat="system" href="./through-train-guide.html">
     <h2>一條龍/直屬/聯繫：三個詞搞錯，可能毀了你孩子的升中路</h2>
     <p class="meta">📅 2026年7月13日 · 🏷️ 升中通路 · 深度解读</p>
     <p>一條龍=100%直升？直屬=85%保留？聯繫=25%還要跟別校搶？一文講清三種關係的本質差異。</p>
   </a>
-  <a class="blog-card" href="./school-types-guide.html">
+  <a class="blog-card" data-cat="system" href="./school-types-guide.html">
     <h2>官津 vs 直資 vs 私立：哪種小學適合你家？一文說清四種學校的區別</h2>
     <p class="meta">📅 2026年7月10日 · 🏷️ 小学择校 · 入门指南</p>
     <p>香港669所小学分五类。学费差多少？要不要住对校网？一条龙跟这些有什么关系？5分钟帮你搞清楚。</p>
   </a>
-  <a class="blog-card" href="./hot-schools-2026-07.html">
+  <a class="blog-card" data-cat="trends" href="./hot-schools-2026-07.html">
     <h2>2026年7月香港热搜小学：苏浙 vs 王锦辉，家长在搜什么？</h2>
     <p class="meta">📅 2026年6月30日 · 🏷️ 小学择校 · Google Trends</p>
     <p>Google Trends 显示两所小学搜索量飙升。一文拆解苏浙小学和王锦辉中小学的核心差异——不是哪所更好，是哪所更适合你家。</p>
@@ -102,4 +114,18 @@
 </main>
 
 <footer class="footer"><div class="container" style="text-align:center"><strong>港校指南</strong> · 帮助内地来港家庭解决香港升学信息不对称</div></footer>
+
+<script>
+// Blog 分類篩選
+document.querySelectorAll('.cat-chip').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.cat-chip').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var cat = btn.getAttribute('data-cat');
+    document.querySelectorAll('.blog-card').forEach(function(card){
+      card.hidden = cat !== 'all' && card.getAttribute('data-cat') !== cat;
+    });
+  });
+});
+</script>
 </body></html>
