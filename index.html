@@ -10,19 +10,51 @@
   gtag('js', new Date());
   gtag('config', 'G-0K2LHYDEZ9');
 </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2720%27 fill=%27%230F766E%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2752%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27serif%27%3E港%3C/text%3E%3C/svg%3E" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>港校指南 · 帮内地来港家庭选对香港学校</title>
-  <meta name="description" content="香港小学择校平台。全港669所小学、962所幼稚园数据，按校网、预算、孩子性格智能匹配。每月同步香港教育局CHSC官方数据，完全免费。" />
+  <title>港校指南 · 深度择校报告，数据可核实</title>
+  <meta name="description" content="香港小学及幼稚园深度择校报告。搜索学校名称直接查看报告；不知道选哪所，先用匹配工具缩小范围。数据来自香港教育局 CHSC，每月同步。" />
   <meta name="google-site-verification" content="eUo-ly0N80KncfFd11q521V8IDtDMPAf9tJlIUl4wBU" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{ink:"#1e293b",muted:"#64748b",bg:"#fafaf7",surface:"rgba(255,255,255,0.7)",primary:"#6366f1","primary-dark":"#4f46e5",accent:"#f97316",border:"rgba(0,0,0,0.06)",soft:"rgba(255,255,255,0.5)"},fontFamily:{sans:["Roboto","PingFang SC","Microsoft YaHei","sans-serif"],serif:["Newsreader","serif"]}}}}</script>
+  <link rel="stylesheet" href="./assets/tailwind.css" />
   <link rel="stylesheet" href="./assets/style.css" />
-<script src="./assets/lang.js"></script>
+  <style>
+    /* 港校指南 2.0 — 极简 Editorial tokens（本页覆盖，全站阶段 D 统一） */
+    :root { --ink:#1C1C1C; --muted:#57534E; --bg:#FBF9F5; --surface:#FFFFFF; --primary:#0F766E; --primary-dark:#115E59; --primary-soft:rgba(15,118,110,0.08); --accent:#C2410C; --accent-soft:rgba(194,65,12,0.08); --border:#E4E0D8; }
+    .eyebrow { font-size:12px; font-weight:700; letter-spacing:0.18em; color:var(--muted); }
+    /* 搜索框 */
+    .search-wrap { position:relative; max-width:560px; margin:0 auto; }
+    .search-input { width:100%; padding:16px 20px; font-size:16px; border:1.5px solid var(--border); border-radius:10px; background:#fff; color:var(--ink); outline:none; transition:border-color .15s; }
+    .search-input:focus { border-color:var(--primary); }
+    .search-drop { position:absolute; top:calc(100% + 6px); left:0; right:0; background:#fff; border:1px solid var(--border); border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,.06); max-height:320px; overflow-y:auto; display:none; z-index:30; }
+    .search-drop.open { display:block; }
+    .search-item { display:flex; align-items:baseline; gap:8px; padding:11px 16px; cursor:pointer; border-bottom:1px solid #F0F0F0; }
+    .search-item:last-child { border-bottom:none; }
+    .search-item:hover { background:#F8FAFF; }
+    .search-item .sn { font-size:15px; font-weight:600; color:var(--ink); }
+    .search-item .st { font-size:11px; font-weight:700; color:var(--muted); border:1px solid var(--border); padding:0 6px; flex-shrink:0; }
+    .search-item .sd { font-size:12px; color:var(--muted); margin-left:auto; flex-shrink:0; }
+    .search-empty { padding:14px 16px; font-size:14px; color:var(--muted); }
+    /* 场景卡片 */
+    .path-card { display:block; background:#fff; border:1px solid var(--border); padding:26px 26px 22px; transition:border-color .15s; }
+    .path-card:hover { border-color:var(--primary); }
+    .path-num { font-family:"Newsreader",serif; font-size:20px; font-weight:600; color:var(--primary); }
+    /* 报告卡片 */
+    .rpt-card { display:block; background:#fff; border:1px solid var(--border); padding:20px 20px 16px; transition:border-color .15s; }
+    .rpt-card:hover { border-color:var(--primary); }
+    .rpt-tier { display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.08em; padding:2px 8px; border:1px solid var(--border); color:var(--muted); }
+    .rpt-tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 8px; }
+    .rpt-tag-paid { background:#F3EFE6; color:#3F3F46; }
+    .rpt-tag-free { background:var(--primary-soft); color:var(--primary); }
+    /* S 级卡视觉主次（等级真实差异，非杜撰受欢迎度） */
+    .rpt-featured { border-color:#99F6E4; }
+    .rpt-featured h3 { color:var(--primary); }
+    .blog-line { display:block; padding:14px 0; border-bottom:1px solid var(--border); }
+    .blog-line a { color:var(--ink); }
+    .blog-line a:hover { color:var(--primary); }
+    .blog-line .bd { font-size:13px; color:var(--muted); }
+  </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
-<body class="bg-bg min-h-screen relative" style="background:linear-gradient(180deg,#fefefe 0%,#f5f4f1 50%,#faf9f6 100%) fixed">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
+<body style="background:#FBF9F5!important">
   <nav class="site-nav">
     <div class="site-nav-inner">
       <div class="site-nav-left">
@@ -31,167 +63,242 @@
       </div>
       <div class="site-nav-menu">
         <a href="./index.html" class="active">首页</a>
-        <a href="./primary.html">小学择校</a>
-        <a href="./reports.html">深度择校报告</a><a href="./interview-questions.html">面试题库</a>
-        <a href="./kindergarten.html">幼稚园择校</a>
+        <a href="./reports.html">深度报告</a>
+        <a href="./interview-questions.html">面试题库</a>
         <a href="./blog/">Blog</a>
         <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
       </div>
     </div>
   </nav>
 
-  <header class="pt-20 pb-12 md:pt-28 md:pb-16">
-    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
-      <div>
-        <div class="inline-block text-xs font-bold tracking-widest uppercase text-muted mb-4 border-b-2 border-accent pb-1.5">香港择校数据平台</div>
-        <p class="text-[16px] text-muted mb-3 font-medium tracking-wide">全港 <b class="text-ink">669</b> 所小学 · <b class="text-ink">962</b> 所幼稚园</p>
-        <h1 class="font-serif text-[44px] md:text-[60px] font-bold leading-[1.06] tracking-[-0.02em] text-ink mb-5">适合你家的，<br>不超过 <span class="text-accent">10</span> 所。</h1>
-        <p class="text-[17px] text-muted mb-8 max-w-lg leading-relaxed">与其在小红书翻 300 篇攻略，不如 30 秒看结果。按你家的住址、预算、孩子性格，从全港学校中匹配出最适合的那几所 — <b class="text-ink">完全免费</b>。</p>
-        <div class="flex gap-3.5 flex-wrap mb-8">
-          <a href="./primary.html" class="inline-flex items-center gap-2 px-7 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-colors text-[15px] tracking-wide">开始匹配 → 免费</a>
-          <a href="./kindergarten.html" class="inline-flex items-center px-7 py-4 bg-white/60 backdrop-blur-xl text-ink font-bold rounded-lg border border-border hover:border-primary hover:text-primary transition-colors text-[15px]">幼稚园匹配 →</a>
+  <main>
+    <!-- Hero：搜索即入口（深蓝品牌区） -->
+    <section style="background:#115E59">
+      <div class="max-w-3xl mx-auto px-5 pt-24 pb-12 md:pt-28 text-center">
+        <div class="eyebrow mb-5" style="color:#99F6E4">香港择校 · 深度报告平台</div>
+        <h1 class="font-serif text-[40px] md:text-[52px] font-bold leading-[1.1] tracking-[-0.02em] text-white mb-6">把一所学校，讲透。</h1>
+        <p class="text-[16px] leading-relaxed mb-8" style="color:#CCFBF1">120+ 份深度报告，数据来自香港教育局 CHSC，每月同步。</p>
+        <div class="search-wrap">
+          <input type="text" id="schoolSearch" class="search-input" placeholder="输入学校名称，如「拔萃女小学」「协恩」" autocomplete="off" aria-label="搜索学校报告" aria-expanded="false" role="combobox" aria-controls="searchDrop" aria-autocomplete="list" />
+          <div class="search-drop" id="searchDrop" role="listbox" aria-label="搜索结果"></div>
         </div>
-        <div class="text-xs text-muted mb-6" id="visitorCounter" style="display:flex;align-items:center;gap:6px">
-    <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite"></span>
-    已有 <b class="text-ink" id="visitCount">—</b> 位家长使用了择校匹配
-  </div>
-<a href="./data-sources.html" style="font-size:12px;color:var(--muted);text-decoration:underline;text-underline-offset:3px">📊 了解我们的数据来源 →</a>
-  <br>
-<div class="flex flex-wrap gap-x-8 gap-y-1.5 text-sm text-muted pt-3 border-t border-border">
-          <span><b class="text-ink text-base" id="c-primary">—</b> 所小学</span>
-          <span><b class="text-ink text-base" id="c-kg">—</b> 所幼稚园</span>
-          <span>数据 <b class="text-ink">香港教育局 CHSC</b> · 每月同步</span>
-        </div>
-      </div>
-      <div class="hidden md:block">
-        <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3">匹配预览</div>
-        <div class="bg-surface backdrop-blur-xl border border-border p-6" style="border-radius:12px">
-          <div class="flex items-center justify-between mb-4">
-            <span class="text-xs font-bold tracking-wider text-muted uppercase">41 校网 · 本地路线</span>
-            <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 tracking-wider" style="border-radius:100px">推荐 98</span>
-          </div>
-          <div class="font-serif text-[17px] font-semibold text-ink mb-2">嘉諾撒聖家學校（联合道）</div>
-          <div class="text-[13px] text-muted leading-relaxed mb-3">免费 · 资助 · 九龙城区 · 41 校网</div>
-          <div class="text-[13px] text-muted space-y-1">
-            <div class="flex items-center gap-2"><span class="w-1 h-1 bg-primary flex-shrink rounded-full"></span> 校网内 · 可参加统一派位</div>
-            <div class="flex items-center gap-2"><span class="w-1 h-1 bg-primary/30 flex-shrink rounded-full"></span> 免费 · 政府资助</div>
-          </div>
-        </div>
-    </div>
-  </header>
-
-  <!-- 最新深度择校报告 -->
-  <section class="max-w-6xl mx-auto px-5 pb-8">
-    <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3 border-b-2 border-accent pb-1.5 inline-block">最新深度报告</div>
-    <h2 class="font-serif text-[24px] md:text-[28px] font-semibold leading-tight mb-6">不只排名 · 8 章讲透一所学校 · 数据可核实</h2>
-    <div class="grid md:grid-cols-4 gap-4">
-      <a href="./report-wkf.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px">
-        <span class="inline-block text-[10px] font-bold px-2 py-0.5 mb-2 text-ink" style="background:#fbe9d0;border-radius:4px">🏆 S 级</span>
-        <h3 class="font-semibold text-[15px] text-ink mb-1 group-hover:text-primary transition-colors">王錦輝中小學</h3>
-        <p class="text-[12px] text-muted mb-2">沙田 · 直资一条龙</p>
-        <p class="text-[12px] text-muted leading-relaxed">A-Level 8状元·3剑桥·76% A*/A</p>
-      </a>
-      <a href="./report-cps.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px">
-        <span class="inline-block text-[10px] font-bold px-2 py-0.5 mb-2 text-ink" style="background:#e2eef6;border-radius:4px">🌟 A 级</span>
-        <h3 class="font-semibold text-[15px] text-ink mb-1 group-hover:text-primary transition-colors">啓思小學</h3>
-        <p class="text-[12px] text-muted mb-2">九龙塘 · IB PYP 认证</p>
-        <p class="text-[12px] text-muted leading-relaxed">65%教师10年+·生本教育·AI冠军</p>
-      </a>
-      <a href="./report-puikei.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px">
-        <span class="inline-block text-[10px] font-bold px-2 py-0.5 mb-2 text-ink" style="background:#d1fae5;border-radius:4px">💚 B 级</span>
-        <h3 class="font-semibold text-[15px] text-ink mb-1 group-hover:text-primary transition-colors">培基小學</h3>
-        <p class="text-[12px] text-muted mb-2">沙田 · 91校网资助</p>
-        <p class="text-[12px] text-muted leading-relaxed">两文三语·英文数理·法语课外</p>
-      </a>
-      <a href="./report-aspcps.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px">
-        <span class="inline-block text-[10px] font-bold px-2 py-0.5 mb-2 text-ink" style="background:#d1fae5;border-radius:4px">💚 B 级</span>
-        <h3 class="font-semibold text-[15px] text-ink mb-1 group-hover:text-primary transition-colors">聖伯多祿天主教小學</h3>
-        <p class="text-[12px] text-muted mb-2">南區 · 18校网资助</p>
-        <p class="text-[12px] text-muted leading-relaxed">师生比1:2.1·直属中學·天主教</p>
-      </a>
-    </div>
-    <div class="text-center mt-6">
-      <a href="./reports.html" class="text-primary font-bold text-[14px] hover:underline">查看全部深度报告 →</a>
-    </div>
-  </section>
-
-  <main class="max-w-6xl mx-auto px-5">
-    <section class="py-14 md:py-20">
-      <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3 border-b-2 border-accent pb-1.5 inline-block">开始择校</div>
-      <h2 class="font-serif text-[28px] md:text-[34px] font-semibold leading-tight mb-2">从哪个阶段开始？</h2>
-      <p class="text-muted text-[16px] mb-10 max-w-lg">小学和幼稚园规则完全不同，选对入口事半功倍。</p>
-      <div class="grid md:grid-cols-2 gap-6">
-        <a href="./primary.html" class="group block bg-surface backdrop-blur-xl border border-border p-8 hover:border-primary/40 transition-colors duration-200" style="border-radius:4px">
-          <div class="text-xs font-bold tracking-widest uppercase text-muted mb-4">01 · 覆盖 669 所</div>
-          <h3 class="font-serif text-[22px] font-semibold text-ink mb-3 group-hover:text-primary transition-colors">小学择校</h3>
-          <p class="text-muted text-[15px] leading-relaxed mb-5">输入校网、预算、孩子性格，一键匹配最适合的学校。官津、直资、私立的区别，帮你一次算清。</p>
-          <span class="text-accent font-bold text-sm tracking-wide group-hover:translate-x-1 inline-block transition-transform">进入小学择校 →</span>
-        </a>
-        <a href="./kindergarten.html" class="group block bg-surface backdrop-blur-xl border border-border p-8 hover:border-primary/40 transition-colors duration-200" style="border-radius:4px">
-          <div class="text-xs font-bold tracking-widest uppercase text-muted mb-4">02 · 覆盖 962 所</div>
-          <h3 class="font-serif text-[22px] font-semibold text-ink mb-3 group-hover:text-primary transition-colors">幼稚园 / PN 择校</h3>
-          <p class="text-muted text-[15px] leading-relaxed mb-5">按地区、上课时段帮你就近匹配。名园优先，可只看设有 PN 班的学校。</p>
-          <span class="text-accent font-bold text-sm tracking-wide group-hover:translate-x-1 inline-block transition-transform">进入幼稚园择校 →</span>
-        </a>
+        <p class="text-[13px] mt-3" style="color:#99F6E4">试试输入：王锦辉 · 圣保罗 · 培基 · 圣玛加利</p>
       </div>
     </section>
 
-    <section class="py-14 md:py-20 border-t border-border">
-      <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3 border-b-2 border-accent pb-1.5 inline-block">Why Trust Us</div>
-      <h2 class="font-serif text-[28px] md:text-[34px] font-semibold leading-tight mb-12">数据即口碑</h2>
-      <div class="grid md:grid-cols-2 gap-10">
-        <div class="border-l-[3px] border-primary pl-6">
-          <h3 class="font-serif text-xl font-semibold text-ink mb-3">每月同步教育局数据</h3>
-          <p class="text-muted text-[15px] leading-relaxed">学校资料来自香港教育局 CHSC 每月更新的开放数据库。不是小红书道听途说，不是中介二手整理。</p>
+    <!-- 两条使用路径 -->
+    <section class="max-w-4xl mx-auto px-5 py-12">
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="path-card">
+          <div class="path-num mb-3">场景一</div>
+          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">已经有心仪的学校</h2>
+          <p class="text-muted text-[14px] leading-relaxed mb-5">直接用上方搜索框输入学校名称，跳转对应深度报告。也可以浏览全部报告列表。</p>
+          <a href="./reports.html" class="text-primary font-bold text-[14px] hover:underline">浏览全部 120+ 份报告 →</a>
         </div>
-        <div class="border-l-[3px] border-accent pl-6">
-          <h3 class="font-serif text-xl font-semibold text-ink mb-3">来源透明 · 宁缺毋滥</h3>
-          <p class="text-muted text-[15px] leading-relaxed">升学率等第三方估算数据一律标注来源。能核实的才写，查不到的宁可不写。收费产品，口碑就是生命线。</p>
+        <div class="path-card">
+          <div class="path-num mb-3">场景二</div>
+          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">还在纠结选哪所</h2>
+          <p class="text-muted text-[14px] leading-relaxed mb-5">先用匹配工具按校网、预算、孩子性格缩小范围，再读报告的升中通路与入读攻略。</p>
+          <div class="flex gap-3">
+            <a href="./primary.html" class="inline-flex px-4 py-2.5 bg-primary text-white font-bold rounded-lg text-[13px] hover:bg-primary-dark transition-colors">小学匹配</a>
+            <a href="./kindergarten.html" class="inline-flex px-4 py-2.5 bg-white text-ink font-bold rounded-lg border border-border text-[13px] hover:border-primary hover:text-primary transition-colors">幼稚园匹配</a>
+          </div>
         </div>
       </div>
-      <div class="mt-14 bg-surface backdrop-blur-xl border border-border p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4" style="border-radius:12px">
+    </section>
+
+    <!-- 信任带 -->
+    <section class="border-t border-border">
+      <div class="max-w-4xl mx-auto px-5 py-6 flex flex-wrap justify-center gap-x-10 gap-y-2 text-[13px] text-muted">
+        <span>全港 <b class="text-ink">669</b> 所小学 · <b class="text-ink">962</b> 所幼稚园</span>
+        <span>数据 香港教育局 CHSC · 每月同步</span>
+      </div>
+    </section>
+
+    <!-- 报告展示 -->
+    <section id="reports" class="max-w-6xl mx-auto px-5 py-16">
+      <div class="flex items-end justify-between mb-8">
         <div>
-          <div class="font-serif text-lg font-semibold text-ink mb-1">126 份深度择校报告</div>
-          <div class="text-sm text-muted">已覆盖全港评级名幼及小学，持续扩充中</div>
+          <h2 class="font-serif text-[28px] md:text-[32px] font-bold text-ink leading-tight">深度报告</h2>
+          <p class="text-muted text-[15px] mt-2">S 级与 A+ 级每校一份，从教学到口碑一次讲透。先免费试看，再决定。</p>
         </div>
-        <a href="./reports.html" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-full hover:bg-primary-dark transition-colors text-sm tracking-wide flex-shrink-0 shadow-lg shadow-primary/25">查看全部报告 →</a>
+        <a href="./reports.html" class="text-primary font-bold text-[14px] whitespace-nowrap hover:underline hidden md:block">查看全部 →</a>
+      </div>
+
+      <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3">免费试看</div>
+      <div class="grid md:grid-cols-2 gap-4 mb-12">
+        <a href="./report-dgjs.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-free">免费试看</span></div>
+          <h3 class="font-serif text-[20px] font-semibold text-ink mb-1">拔萃女小學</h3>
+          <p class="text-[13px] text-muted mb-1">油尖旺区 · 私立一条龙</p>
+          <p class="text-[13px] text-muted leading-relaxed">全港 #1 · 一条龙直升女拔 · DSE 状元摇篮</p>
+        </a>
+        <a href="./report-braemar-hill.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-free">免费试看</span></div>
+          <h3 class="font-serif text-[20px] font-semibold text-ink mb-1">寶山幼兒園</h3>
+          <p class="text-[13px] text-muted mb-1">湾仔区 · 私立幼稚园</p>
+          <p class="text-[13px] text-muted leading-relaxed">全能学术神幼 · 约 74% 升读神小</p>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-3 mb-3">
+        <div class="text-xs font-bold tracking-widest uppercase text-muted">付费报告</div>
+        <div class="text-[12px] text-muted">每份单次买断 · 可重复查看</div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="./report-wkf.html" class="rpt-card rpt-featured">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-paid">付费报告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">王錦輝中小學</h3>
+          <p class="text-[13px] text-muted mb-1">沙田区 · 直资一条龙</p>
+          <p class="text-[13px] text-muted leading-relaxed">A-Level 8 状元 · 76% A*/A · 全英四语</p>
+        </a>
+        <a href="./report-spccps.html" class="rpt-card rpt-featured">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-paid">付费报告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">聖保羅男女中學附屬小學</h3>
+          <p class="text-[13px] text-muted mb-1">南区 · 资助男女校</p>
+          <p class="text-[13px] text-muted leading-relaxed">全港 #3 · 23 名 DSE 状元 · 录取率约 5%</p>
+        </a>
+        <a href="./report-hyps.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">A+ 级</span><span class="rpt-tag rpt-tag-paid">付费报告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">協恩中學附屬小學</h3>
+          <p class="text-[13px] text-muted mb-1">九龙城区 · 34 校网资助</p>
+          <p class="text-[13px] text-muted leading-relaxed">34 校网皇牌 · 87% 直升协恩 · 德育体育顶尖</p>
+        </a>
+        <a href="./report-cps.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">A 级</span><span class="rpt-tag rpt-tag-paid">付费报告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">啓思小學</h3>
+          <p class="text-[13px] text-muted mb-1">九龙城区 · IB 理念</p>
+          <p class="text-[13px] text-muted leading-relaxed">IB 理念 · 65% 教师 10 年+ · 联系启思中学</p>
+        </a>
+        <a href="./report-puikei.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">B 级</span><span class="rpt-tag rpt-tag-paid">付费报告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">培基小學</h3>
+          <p class="text-[13px] text-muted mb-1">沙田区 · 91 校网资助</p>
+          <p class="text-[13px] text-muted leading-relaxed">两文三语 · 联系培基书院（Band 1B）</p>
+        </a>
+        <a href="./report-aspcps.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">B 级</span><span class="rpt-tag rpt-tag-paid">付费报告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">聖伯多祿天主教小學</h3>
+          <p class="text-[13px] text-muted mb-1">南區 · 18 校网资助</p>
+          <p class="text-[13px] text-muted leading-relaxed">直属聖伯多祿中學 · 师生比 1:2.1</p>
+        </a>
+      </div>
+      <div class="text-center mt-8 md:hidden">
+        <a href="./reports.html" class="text-primary font-bold text-[14px] hover:underline">查看全部报告 →</a>
+      </div>
+    </section>
+
+    <!-- Blog 引流 -->
+    <section class="border-t border-border">
+      <div class="max-w-6xl mx-auto px-5 py-16">
+        <div class="flex items-end justify-between mb-4">
+          <h2 class="font-serif text-[24px] font-bold text-ink">最新研究</h2>
+          <a href="./blog/" class="text-primary font-bold text-[14px] hover:underline">全部文章 →</a>
+        </div>
+        <div class="blog-line"><a href="./blog/st-margaret-kg.html" class="font-semibold text-[16px]">圣玛加利大幼稚园：跑马地 A+ 天主教券校，学费全免</a><div class="bd mt-1">2026年8月18日 · 热搜幼稚园</div></div>
+        <div class="blog-line"><a href="./blog/p1-scoring-guide.html" class="font-semibold text-[16px]">小学计分制全解：20分校董、10分校友、5分宗教</a><div class="bd mt-1">2026年8月17日 · 小一派位</div></div>
+        <div class="blog-line"><a href="./blog/st-margaret-primary.html" class="font-semibold text-[16px]">圣玛加利男女英文中小学：和「圣玛加利大」不是同一间</a><div class="bd mt-1">2026年8月16日 · 热搜小学</div></div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-border mt-8 py-10">
-    <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-sm text-muted">
-      <div><b class="text-ink font-serif text-base">港校指南</b> · 帮助内地来港家庭解决香港升学信息不对称</div>
-      <div>数据来源 香港教育局 data.gov.hk · 每月更新 · 仅供参考</div>
+  <footer class="border-t border-border py-10">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-6 text-sm text-muted">
+      <div>
+        <div class="text-ink font-serif text-base mb-2"><b>港校指南</b> · 帮内地来港家庭选对香港学校</div>
+        <div>数据来源 香港教育局 data.gov.hk · 每月更新 · 仅供参考</div>
+      </div>
+      <div class="flex gap-8">
+        <div class="flex flex-col gap-1.5">
+          <div class="text-xs font-bold tracking-widest uppercase mb-1">择校工具</div>
+          <a href="./primary.html" class="hover:text-primary hover:underline">小学择校匹配</a>
+          <a href="./kindergarten.html" class="hover:text-primary hover:underline">幼稚园择校匹配</a>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="text-xs font-bold tracking-widest uppercase mb-1">内容</div>
+          <a href="./reports.html" class="hover:text-primary hover:underline">深度报告</a>
+          <a href="./blog/" class="hover:text-primary hover:underline">Blog</a>
+          <a href="./data-sources.html" class="hover:text-primary hover:underline">数据来源</a>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script src="./data/report-index.js"></script>
   <script>
+  // 学校搜索：输入即查报告（含键盘导航与 ARIA）
   (function() {
-    var k = 'hksg_visit_count', v = parseInt(localStorage.getItem(k) || '0') + 1;
-    localStorage.setItem(k, v);
-    document.getElementById('visitCount').textContent = v.toLocaleString();
-  })();
-</script>
-<script src="./data/schools.js"></script>
-  <script src="./data/kindergartens.js"></script>
-  <script>
-    // 显示真实数量（保持和数据同步）
-    document.getElementById("c-primary").textContent = (window.SCHOOLS || []).length;
-    document.getElementById("c-kg").textContent = (window.KINDERGARTENS || []).length;
-
-    // 登录状态：自动更新导航栏按钮
-    (function(){
-      var btn = document.getElementById('nav-auth-btn');
-      if (!btn || typeof Auth === 'undefined') return;
-      Auth.getUser().then(function(user){
-        if (user) {
-          btn.textContent = '👤 ' + (user.email || '已登录');
-          btn.href = '#';
-          btn.onclick = function(e){ e.preventDefault(); Auth.signOut().then(function(){ location.reload(); }); };
+    var input = document.getElementById('schoolSearch');
+    var drop = document.getElementById('searchDrop');
+    if (!input || !drop || typeof REPORT_INDEX === 'undefined') return;
+    var list = REPORT_INDEX || [];
+    var sel = -1; // 键盘选中项
+    function close() { drop.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); sel = -1; }
+    function render(q) {
+      q = (q || '').trim();
+      if (!q) { close(); return; }
+      var hits = list.filter(function(r) { return r.n.indexOf(q) !== -1 || (r.ns || '').indexOf(q) !== -1; }).slice(0, 8);
+      sel = -1;
+      if (!hits.length) {
+        drop.innerHTML = '<div class="search-empty" role="status">没有找到「' + q + '」的报告，试试其他名称，或 <a href="./reports.html" class="text-primary font-bold">浏览全部报告</a></div>';
+        drop.classList.add('open'); input.setAttribute('aria-expanded', 'true'); return;
+      }
+      drop.innerHTML = hits.map(function(r, i) {
+        var tierLabel = r.t === 'brand' ? '品牌' : r.t + ' 级';
+        return '<div class="search-item" role="option" aria-selected="false" data-idx="' + i + '"><span class="sn">' + r.n + '</span><span class="st">' + tierLabel + '</span><span class="sd">' + r.d + '</span></div>';
+      }).join('');
+      drop.classList.add('open'); input.setAttribute('aria-expanded', 'true');
+      drop.querySelectorAll('.search-item').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var r = hits[+el.getAttribute('data-idx')];
+          if (r) location.href = './report-' + r.c + '.html';
+        });
+      });
+    }
+    // 鍵盤導航：↓↑ 移動選中，Enter 確認，Esc 關閉
+    function move(delta) {
+      var items = drop.querySelectorAll('.search-item');
+      if (!items.length) return;
+      if (sel >= 0) items[sel].setAttribute('aria-selected', 'false');
+      sel = (sel + delta + items.length) % items.length;
+      items[sel].setAttribute('aria-selected', 'true');
+      items[sel].scrollIntoView({ block: 'nearest' });
+    }
+    input.addEventListener('input', function() { render(input.value); });
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+      else if (e.key === 'Escape') { close(); }
+      else if (e.key === 'Enter') {
+        e.preventDefault();
+        var q = input.value.trim();
+        if (!q) return;
+        if (sel >= 0) {
+          var hit = list.filter(function(r) { return r.n.indexOf(q) !== -1 || (r.ns || '').indexOf(q) !== -1; })[sel];
+          if (hit) { location.href = './report-' + hit.c + '.html'; return; }
         }
-      }).catch(function(){});
-    })();
+        var first = list.filter(function(r) { return r.n.indexOf(q) !== -1 || (r.ns || '').indexOf(q) !== -1; })[0];
+        if (first) location.href = './report-' + first.c + '.html';
+        else location.href = './reports.html';
+      }
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.search-wrap')) close();
+    });
+  })();
+
+  // 登录状态：自动更新导航栏按钮
+  (function(){
+    var btn = document.getElementById('nav-auth-btn');
+    if (!btn || typeof Auth === 'undefined') return;
+    Auth.getUser().then(function(user){
+      if (user) {
+        btn.textContent = user.email || '已登录';
+        btn.href = '#';
+        btn.onclick = function(e){ e.preventDefault(); Auth.signOut().then(function(){ location.reload(); }); };
+      }
+    }).catch(function(){});
+  })();
   </script>
 </body>
 </html>

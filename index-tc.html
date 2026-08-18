@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-HK">
 <head>
   <meta charset="UTF-8" />
 <!-- Google tag (gtag.js) -->
@@ -10,13 +10,51 @@
   gtag('js', new Date());
   gtag('config', 'G-0K2LHYDEZ9');
 </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2720%27 fill=%27%230F766E%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2752%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27serif%27%3E港%3C/text%3E%3C/svg%3E" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>港校指南 · 幫香港家長揀啱小學同幼稚園</title>
-  <meta name="description" content="香港小學擇校平台。全港669所小學、962所幼稚園數據，按校網、預算、孩子性格智能匹配。每月同步香港教育局CHSC官方數據，完全免費。" />
+  <title>港校指南 · 深度擇校報告，數據可核實</title>
+  <meta name="description" content="香港小學及幼稚園深度擇校報告。搜尋學校名稱直接查看報告；不知道選哪所，先用匹配工具縮小範圍。數據來自香港教育局 CHSC，每月同步。" />
+  <meta name="google-site-verification" content="eUo-ly0N80KncfFd11q521V8IDtDMPAf9tJlIUl4wBU" />
+  <link rel="stylesheet" href="./assets/tailwind.css" />
   <link rel="stylesheet" href="./assets/style.css" />
-<script src="./assets/lang.js"></script>
+  <style>
+    /* 港校指南 2.0 — 極簡 Editorial tokens（本頁覆蓋，全站階段 D 統一） */
+    :root { --ink:#1C1C1C; --muted:#57534E; --bg:#FBF9F5; --surface:#FFFFFF; --primary:#0F766E; --primary-dark:#115E59; --primary-soft:rgba(15,118,110,0.08); --accent:#C2410C; --accent-soft:rgba(194,65,12,0.08); --border:#E4E0D8; }
+    .eyebrow { font-size:12px; font-weight:700; letter-spacing:0.18em; color:var(--muted); }
+    /* 搜尋框 */
+    .search-wrap { position:relative; max-width:560px; margin:0 auto; }
+    .search-input { width:100%; padding:16px 20px; font-size:16px; border:1.5px solid var(--border); border-radius:10px; background:#fff; color:var(--ink); outline:none; transition:border-color .15s; }
+    .search-input:focus { border-color:var(--primary); }
+    .search-drop { position:absolute; top:calc(100% + 6px); left:0; right:0; background:#fff; border:1px solid var(--border); border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,.06); max-height:320px; overflow-y:auto; display:none; z-index:30; }
+    .search-drop.open { display:block; }
+    .search-item { display:flex; align-items:baseline; gap:8px; padding:11px 16px; cursor:pointer; border-bottom:1px solid #F0F0F0; }
+    .search-item:last-child { border-bottom:none; }
+    .search-item:hover { background:#F8FAFF; }
+    .search-item .sn { font-size:15px; font-weight:600; color:var(--ink); }
+    .search-item .st { font-size:11px; font-weight:700; color:var(--muted); border:1px solid var(--border); padding:0 6px; flex-shrink:0; }
+    .search-item .sd { font-size:12px; color:var(--muted); margin-left:auto; flex-shrink:0; }
+    .search-empty { padding:14px 16px; font-size:14px; color:var(--muted); }
+    /* 場景卡片 */
+    .path-card { display:block; background:#fff; border:1px solid var(--border); padding:26px 26px 22px; transition:border-color .15s; }
+    .path-card:hover { border-color:var(--primary); }
+    .path-num { font-family:"Newsreader",serif; font-size:20px; font-weight:600; color:var(--primary); }
+    /* 報告卡片 */
+    .rpt-card { display:block; background:#fff; border:1px solid var(--border); padding:20px 20px 16px; transition:border-color .15s; }
+    .rpt-card:hover { border-color:var(--primary); }
+    .rpt-tier { display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.08em; padding:2px 8px; border:1px solid var(--border); color:var(--muted); }
+    .rpt-tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 8px; }
+    .rpt-tag-paid { background:#F3EFE6; color:#3F3F46; }
+    .rpt-tag-free { background:var(--primary-soft); color:var(--primary); }
+    /* S 級卡視覺主次（等級真實差異，非杜撰受歡迎度） */
+    .rpt-featured { border-color:#99F6E4; }
+    .rpt-featured h3 { color:var(--primary); }
+    .blog-line { display:block; padding:14px 0; border-bottom:1px solid var(--border); }
+    .blog-line a { color:var(--ink); }
+    .blog-line a:hover { color:var(--primary); }
+    .blog-line .bd { font-size:13px; color:var(--muted); }
+  </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
-<body>
+<body style="background:#FBF9F5!important">
   <nav class="site-nav">
     <div class="site-nav-inner">
       <div class="site-nav-left">
@@ -25,139 +63,242 @@
       </div>
       <div class="site-nav-menu">
         <a href="./index-tc.html" class="active">首頁</a>
-        <a href="./primary-tc.html">小學擇校</a>
-        <a href="./reports-tc.html">深度擇校報告</a><a href="./interview-questions-tc.html">面試題庫</a>
-        <a href="./kindergarten-tc.html">幼稚園擇校</a>
-        <a href="./blog/index-tc.html">Blog</a>
+        <a href="./reports-tc.html">深度報告</a>
+        <a href="./interview-questions-tc.html">面試題庫</a>
+        <a href="./blog/">Blog</a>
         <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登入</a>
       </div>
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>揀學校<span class="hl">唔使再靠估</span><br />校網、直資一次過睇清</h1>
-        <p class="sub">想搏 Band 1 定係走直資國際線？填幾項，即刻幫你排出最啱你屋企嘅學校。官津、直資、私立、國際全部有齊，數據嚟自香港教育局，<b>完全免費</b>。</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="./primary-tc.html">開始小學擇校 →</a>
-          <a class="btn btn-ghost" href="./kindergarten-tc.html">幼稚園/PN 擇校</a>
+  <main>
+    <!-- Hero：搜尋即入口（深藍品牌區） -->
+    <section style="background:#115E59">
+      <div class="max-w-3xl mx-auto px-5 pt-24 pb-12 md:pt-28 text-center">
+        <div class="eyebrow mb-5" style="color:#99F6E4">香港擇校 · 深度報告平台</div>
+        <h1 class="font-serif text-[40px] md:text-[52px] font-bold leading-[1.1] tracking-[-0.02em] text-white mb-6">把一所學校，講透。</h1>
+        <p class="text-[16px] leading-relaxed mb-8" style="color:#CCFBF1">120+ 份深度報告，數據來自香港教育局 CHSC，每月同步。</p>
+        <div class="search-wrap">
+          <input type="text" id="schoolSearch" class="search-input" placeholder="輸入學校名稱，如「拔萃女小學」「協恩」" autocomplete="off" aria-label="搜尋學校報告" aria-expanded="false" role="combobox" aria-controls="searchDrop" aria-autocomplete="list" />
+          <div class="search-drop" id="searchDrop" role="listbox" aria-label="搜尋結果"></div>
         </div>
-        <div style="font-size:12px;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:6px" id="visitorCounter">
-    <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e"></span>
-    已有 <b style="color:var(--ink)" id="visitCount">—</b> 位家長使用了擇校匹配
-  </div>
-<div style="text-align:center;margin-bottom:16px"><a href="./data-sources-tc.html" style="font-size:12px;color:var(--muted);text-decoration:underline;text-underline-offset:3px">📊 了解我們的數據來源 →</a></div>
-<div class="trust">
-          <span>🏫 <b id="c-primary">—</b> 所小學</span>
-          <span>🎨 <b id="c-kg">—</b> 所幼稚園</span>
-          <span>🏛️ 數據源自 <b>香港教育局</b></span>
-          <span>🔎 來源透明 · 估算必標註</span>
-        </div>
-      </div>
-      <div class="hero-preview">
-        <div class="pv-title">匹配結果示意 · 41 校網 / 本地路線 / 免費</div>
-        <div class="school-card" style="box-shadow:none;border-color:#eee">
-          <span class="score-pill">98分</span>
-          <div><span class="sc-rank">#1</span><span class="sc-name">嘉諾撒聖家學校（聯合道）</span></div>
-          <div class="badges"><span class="badge free">免費·資助</span><span class="badge">九龍城區</span><span class="badge">41校網</span></div>
-          <ul class="reasons">
-            <li>· 距離約 0.3 公里，通勤方便</li>
-            <li>· ✅ 在你的校網內，可參加統一派位</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- 最新深度擇校報告 -->
-  <section style="max-width:72rem;margin:0 auto;padding:0 20px 32px">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;border-bottom:2px solid var(--accent);padding-bottom:6px;display:inline-block">最新深度報告</div>
-    <h2 style="font-family:Newsreader,serif;font-size:24px;font-weight:600;margin-bottom:20px">不只排名 · 8 章講透一所學校 · 數據可核實</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
-      <a href="./report-wkf.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px;text-decoration:none;color:var(--ink)">
-        <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 6px;margin-bottom:8px;background:#fbe9d0;border-radius:4px">🏆 S 級</span>
-        <h3 style="font-size:15px;font-weight:600;margin:0 0 4px">王錦輝中小學</h3>
-        <p style="font-size:12px;color:var(--muted);margin:0 0 8px">沙田 · 直資一條龍</p>
-        <p style="font-size:12px;color:var(--muted);line-height:1.5">A-Level 8狀元·3劍橋·76% A*/A</p>
-      </a>
-      <a href="./report-cps.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px;text-decoration:none;color:var(--ink)">
-        <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 6px;margin-bottom:8px;background:#e2eef6;border-radius:4px">🌟 A 級</span>
-        <h3 style="font-size:15px;font-weight:600;margin:0 0 4px">啓思小學</h3>
-        <p style="font-size:12px;color:var(--muted);margin:0 0 8px">九龍塘 · IB PYP 認證</p>
-        <p style="font-size:12px;color:var(--muted);line-height:1.5">65%教師10年+·生本教育·AI冠軍</p>
-      </a>
-      <a href="./report-puikei.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px;text-decoration:none;color:var(--ink)">
-        <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 6px;margin-bottom:8px;background:#d1fae5;border-radius:4px">💚 B 級</span>
-        <h3 style="font-size:15px;font-weight:600;margin:0 0 4px">培基小學</h3>
-        <p style="font-size:12px;color:var(--muted);margin:0 0 8px">沙田 · 91校網資助</p>
-        <p style="font-size:12px;color:var(--muted);line-height:1.5">兩文三語·英文數理·法語課外</p>
-      </a>
-      <a href="./report-aspcps.html" class="group block bg-surface border border-border p-5 hover:border-primary/40 transition-colors" style="border-radius:4px;text-decoration:none;color:var(--ink)">
-        <span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 6px;margin-bottom:8px;background:#d1fae5;border-radius:4px">💚 B 級</span>
-        <h3 style="font-size:15px;font-weight:600;margin:0 0 4px">聖伯多祿天主教小學</h3>
-        <p style="font-size:12px;color:var(--muted);margin:0 0 8px">南區 · 18校網資助</p>
-        <p style="font-size:12px;color:var(--muted);line-height:1.5">師生比1:2.1·直屬中學·天主教</p>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:20px">
-      <a href="./reports-tc.html" style="color:var(--primary);font-weight:700;font-size:14px">查看全部深度報告 →</a>
-    </div>
-  </section>
-
-  <main class="container">
-    <section class="section">
-      <h2 class="section-title">你在爲哪個階段選校？</h2>
-      <p class="section-sub">兩個階段規則不同，我們分開幫你。</p>
-      <div class="entry-cards">
-        <a class="entry-card" href="./primary-tc.html">
-          <span class="ec-tag">覆蓋全港 693 所</span>
-          <h3>🎒 小學擇校</h3>
-          <p>輸入住址（校網）、預算、規劃路線，一鍵匹配。看得懂官津/直資/私立的區別，算得清你的校網。</p>
-          <span class="ec-go">進入小學擇校 →</span>
-        </a>
-        <a class="entry-card" href="./kindergarten-tc.html">
-          <span class="ec-tag">覆蓋全港 1006 所</span>
-          <h3>🎨 幼稚園 / PN 擇校</h3>
-          <p>按你家所在地區、上課時段（上午/下午/全日）幫你就近匹配。名園優先，可只看設有 PN 班的。</p>
-          <span class="ec-go">進入幼稚園擇校 →</span>
-        </a>
+        <p class="text-[13px] mt-3" style="color:#99F6E4">試試輸入：王錦輝 · 聖保羅 · 培基 · 聖瑪加利</p>
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="section-title">爲什麼值得信</h2>
-      <div class="entry-cards">
-        <div class="entry-card" style="cursor:default">
-          <h3 style="font-size:18px">🏛️ 官方數據打底</h3>
-          <p>學校基礎資料來自香港教育局每月更新的開放數據，不是道聽途說。</p>
+    <!-- 兩條使用路徑 -->
+    <section class="max-w-4xl mx-auto px-5 py-12">
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="path-card">
+          <div class="path-num mb-3">場景一</div>
+          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">已經有心儀的學校</h2>
+          <p class="text-muted text-[14px] leading-relaxed mb-5">直接用上方搜尋框輸入學校名稱，跳轉對應深度報告。也可以瀏覽全部報告列表。</p>
+          <a href="./reports-tc.html" class="text-primary font-bold text-[14px] hover:underline">瀏覽全部 120+ 份報告 →</a>
         </div>
-        <div class="entry-card" style="cursor:default">
-          <h3 style="font-size:18px">🔍 有一說一</h3>
-          <p>升學率等第三方估算數據一律標註來源，能覈實的才寫實。收費產品，口碑第一。</p>
+        <div class="path-card">
+          <div class="path-num mb-3">場景二</div>
+          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">還在糾結選哪所</h2>
+          <p class="text-muted text-[14px] leading-relaxed mb-5">先用匹配工具按校網、預算、孩子性格縮小範圍，再讀報告的升中通路與入讀攻略。</p>
+          <div class="flex gap-3">
+            <a href="./primary-tc.html" class="inline-flex px-4 py-2.5 bg-primary text-white font-bold rounded-lg text-[13px] hover:bg-primary-dark transition-colors">小學匹配</a>
+            <a href="./kindergarten-tc.html" class="inline-flex px-4 py-2.5 bg-white text-ink font-bold rounded-lg border border-border text-[13px] hover:border-primary hover:text-primary transition-colors">幼稚園匹配</a>
+          </div>
         </div>
       </div>
-      <p class="note info" style="margin-top:20px">🚧 當前爲早期版本：核心「就近 + 校網 + 類型 + 預算」匹配已可用；語言、精確學費、升學數據等「深字段」正在分批補充中。</p>
+    </section>
+
+    <!-- 信任帶 -->
+    <section class="border-t border-border">
+      <div class="max-w-4xl mx-auto px-5 py-6 flex flex-wrap justify-center gap-x-10 gap-y-2 text-[13px] text-muted">
+        <span>全港 <b class="text-ink">669</b> 所小學 · <b class="text-ink">962</b> 所幼稚園</span>
+        <span>數據 香港教育局 CHSC · 每月同步</span>
+      </div>
+    </section>
+
+    <!-- 報告展示 -->
+    <section id="reports" class="max-w-6xl mx-auto px-5 py-16">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="font-serif text-[28px] md:text-[32px] font-bold text-ink leading-tight">深度報告</h2>
+          <p class="text-muted text-[15px] mt-2">S 級與 A+ 級每校一份，從教學到口碑一次講透。先免費試看，再決定。</p>
+        </div>
+        <a href="./reports-tc.html" class="text-primary font-bold text-[14px] whitespace-nowrap hover:underline hidden md:block">查看全部 →</a>
+      </div>
+
+      <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3">免費試看</div>
+      <div class="grid md:grid-cols-2 gap-4 mb-12">
+        <a href="./report-dgjs.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 級</span><span class="rpt-tag rpt-tag-free">免費試看</span></div>
+          <h3 class="font-serif text-[20px] font-semibold text-ink mb-1">拔萃女小學</h3>
+          <p class="text-[13px] text-muted mb-1">油尖旺區 · 私立一條龍</p>
+          <p class="text-[13px] text-muted leading-relaxed">全港 #1 · 一條龍直升女拔 · DSE 狀元搖籃</p>
+        </a>
+        <a href="./report-braemar-hill.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 級</span><span class="rpt-tag rpt-tag-free">免費試看</span></div>
+          <h3 class="font-serif text-[20px] font-semibold text-ink mb-1">寶山幼兒園</h3>
+          <p class="text-[13px] text-muted mb-1">灣仔區 · 私立幼稚園</p>
+          <p class="text-[13px] text-muted leading-relaxed">全能學術神幼 · 約 74% 升讀神小</p>
+        </a>
+      </div>
+
+      <div class="flex items-center gap-3 mb-3">
+        <div class="text-xs font-bold tracking-widest uppercase text-muted">付費報告</div>
+        <div class="text-[12px] text-muted">每份單次買斷 · 可重複查看</div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="./report-wkf.html" class="rpt-card rpt-featured">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 級</span><span class="rpt-tag rpt-tag-paid">付費報告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">王錦輝中小學</h3>
+          <p class="text-[13px] text-muted mb-1">沙田區 · 直資一條龍</p>
+          <p class="text-[13px] text-muted leading-relaxed">A-Level 8 狀元 · 76% A*/A · 全英四語</p>
+        </a>
+        <a href="./report-spccps.html" class="rpt-card rpt-featured">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 級</span><span class="rpt-tag rpt-tag-paid">付費報告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">聖保羅男女中學附屬小學</h3>
+          <p class="text-[13px] text-muted mb-1">南區 · 資助男女校</p>
+          <p class="text-[13px] text-muted leading-relaxed">全港 #3 · 23 名 DSE 狀元 · 錄取率約 5%</p>
+        </a>
+        <a href="./report-hyps.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">A+ 級</span><span class="rpt-tag rpt-tag-paid">付費報告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">協恩中學附屬小學</h3>
+          <p class="text-[13px] text-muted mb-1">九龍城區 · 34 校網資助</p>
+          <p class="text-[13px] text-muted leading-relaxed">34 校網皇牌 · 87% 直升協恩 · 德育體育頂尖</p>
+        </a>
+        <a href="./report-cps.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">A 級</span><span class="rpt-tag rpt-tag-paid">付費報告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">啓思小學</h3>
+          <p class="text-[13px] text-muted mb-1">九龍城區 · IB 理念</p>
+          <p class="text-[13px] text-muted leading-relaxed">IB 理念 · 65% 教師 10 年+ · 聯繫啟思中學</p>
+        </a>
+        <a href="./report-puikei.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">B 級</span><span class="rpt-tag rpt-tag-paid">付費報告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">培基小學</h3>
+          <p class="text-[13px] text-muted mb-1">沙田區 · 91 校網資助</p>
+          <p class="text-[13px] text-muted leading-relaxed">兩文三語 · 聯繫培基書院（Band 1B）</p>
+        </a>
+        <a href="./report-aspcps.html" class="rpt-card">
+          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">B 級</span><span class="rpt-tag rpt-tag-paid">付費報告</span></div>
+          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">聖伯多祿天主教小學</h3>
+          <p class="text-[13px] text-muted mb-1">南區 · 18 校網資助</p>
+          <p class="text-[13px] text-muted leading-relaxed">直屬聖伯多祿中學 · 師生比 1:2.1</p>
+        </a>
+      </div>
+      <div class="text-center mt-8 md:hidden">
+        <a href="./reports-tc.html" class="text-primary font-bold text-[14px] hover:underline">查看全部報告 →</a>
+      </div>
+    </section>
+
+    <!-- Blog 引流 -->
+    <section class="border-t border-border">
+      <div class="max-w-6xl mx-auto px-5 py-16">
+        <div class="flex items-end justify-between mb-4">
+          <h2 class="font-serif text-[24px] font-bold text-ink">最新研究</h2>
+          <a href="./blog/" class="text-primary font-bold text-[14px] hover:underline">全部文章 →</a>
+        </div>
+        <div class="blog-line"><a href="./blog/st-margaret-kg-tc.html" class="font-semibold text-[16px]">聖瑪加利大幼稚園：跑馬地 A+ 天主教券校，學費全免</a><div class="bd mt-1">2026年8月18日 · 熱搜幼稚園</div></div>
+        <div class="blog-line"><a href="./blog/p1-scoring-guide-tc.html" class="font-semibold text-[16px]">小學計分制全解：20分校董、10分校友、5分宗教</a><div class="bd mt-1">2026年8月17日 · 小一派位</div></div>
+        <div class="blog-line"><a href="./blog/st-margaret-primary-tc.html" class="font-semibold text-[16px]">聖瑪加利男女英文中小學：和「聖瑪加利大」不是同一間</a><div class="bd mt-1">2026年8月16日 · 熱搜小學</div></div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">港校指南 · 幫香港家長輕鬆揀啱學校 · 數據來源：香港教育局 data.gov.hk（每月更新）<br />本站信息僅供參考，最終以學校及教育局官方公佈爲準。</div>
+  <footer class="border-t border-border py-10">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-6 text-sm text-muted">
+      <div>
+        <div class="text-ink font-serif text-base mb-2"><b>港校指南</b> · 幫內地來港家庭選對香港學校</div>
+        <div>數據來源 香港教育局 data.gov.hk · 每月更新 · 僅供參考</div>
+      </div>
+      <div class="flex gap-8">
+        <div class="flex flex-col gap-1.5">
+          <div class="text-xs font-bold tracking-widest uppercase mb-1">擇校工具</div>
+          <a href="./primary-tc.html" class="hover:text-primary hover:underline">小學擇校匹配</a>
+          <a href="./kindergarten-tc.html" class="hover:text-primary hover:underline">幼稚園擇校匹配</a>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="text-xs font-bold tracking-widest uppercase mb-1">內容</div>
+          <a href="./reports-tc.html" class="hover:text-primary hover:underline">深度報告</a>
+          <a href="./blog/" class="hover:text-primary hover:underline">Blog</a>
+          <a href="./data-sources-tc.html" class="hover:text-primary hover:underline">數據來源</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <script src="./data/report-index.js"></script>
   <script>
+  // 學校搜尋：輸入即查報告（含鍵盤導航與 ARIA）
   (function() {
-    var k = 'hksg_visit_count', v = parseInt(localStorage.getItem(k) || '0') + 1;
-    localStorage.setItem(k, v);
-    document.getElementById('visitCount').textContent = v.toLocaleString();
+    var input = document.getElementById('schoolSearch');
+    var drop = document.getElementById('searchDrop');
+    if (!input || !drop || typeof REPORT_INDEX === 'undefined') return;
+    var list = REPORT_INDEX || [];
+    var sel = -1; // 鍵盤選中項
+    function close() { drop.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); sel = -1; }
+    function render(q) {
+      q = (q || '').trim();
+      if (!q) { close(); return; }
+      var hits = list.filter(function(r) { return r.n.indexOf(q) !== -1 || (r.ns || '').indexOf(q) !== -1; }).slice(0, 8);
+      sel = -1;
+      if (!hits.length) {
+        drop.innerHTML = '<div class="search-empty" role="status">沒有找到「' + q + '」的報告，試試其他名稱，或 <a href="./reports-tc.html" class="text-primary font-bold">瀏覽全部報告</a></div>';
+        drop.classList.add('open'); input.setAttribute('aria-expanded', 'true'); return;
+      }
+      drop.innerHTML = hits.map(function(r, i) {
+        var tierLabel = r.t === 'brand' ? '品牌' : r.t + ' 級';
+        return '<div class="search-item" role="option" aria-selected="false" data-idx="' + i + '"><span class="sn">' + r.n + '</span><span class="st">' + tierLabel + '</span><span class="sd">' + r.d + '</span></div>';
+      }).join('');
+      drop.classList.add('open'); input.setAttribute('aria-expanded', 'true');
+      drop.querySelectorAll('.search-item').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var r = hits[+el.getAttribute('data-idx')];
+          if (r) location.href = './report-' + r.c + '.html';
+        });
+      });
+    }
+    // 鍵盤導航：↓↑ 移動選中，Enter 確認，Esc 關閉
+    function move(delta) {
+      var items = drop.querySelectorAll('.search-item');
+      if (!items.length) return;
+      if (sel >= 0) items[sel].setAttribute('aria-selected', 'false');
+      sel = (sel + delta + items.length) % items.length;
+      items[sel].setAttribute('aria-selected', 'true');
+      items[sel].scrollIntoView({ block: 'nearest' });
+    }
+    input.addEventListener('input', function() { render(input.value); });
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+      else if (e.key === 'Escape') { close(); }
+      else if (e.key === 'Enter') {
+        e.preventDefault();
+        var q = input.value.trim();
+        if (!q) return;
+        if (sel >= 0) {
+          var hit = list.filter(function(r) { return r.n.indexOf(q) !== -1 || (r.ns || '').indexOf(q) !== -1; })[sel];
+          if (hit) { location.href = './report-' + hit.c + '.html'; return; }
+        }
+        var first = list.filter(function(r) { return r.n.indexOf(q) !== -1 || (r.ns || '').indexOf(q) !== -1; })[0];
+        if (first) location.href = './report-' + first.c + '.html';
+        else location.href = './reports-tc.html';
+      }
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.search-wrap')) close();
+    });
   })();
-</script>
-<script src="./data/schools.js"></script>
-  <script src="./data/kindergartens.js"></script>
-  <script>
-    // 顯示真實數量（保持和數據同步）
-    document.getElementById("c-primary").textContent = (window.SCHOOLS || []).length;
-    document.getElementById("c-kg").textContent = (window.KINDERGARTENS || []).length;
+
+  // 登入狀態：自動更新導航欄按鈕
+  (function(){
+    var btn = document.getElementById('nav-auth-btn');
+    if (!btn || typeof Auth === 'undefined') return;
+    Auth.getUser().then(function(user){
+      if (user) {
+        btn.textContent = user.email || '已登入';
+        btn.href = '#';
+        btn.onclick = function(e){ e.preventDefault(); Auth.signOut().then(function(){ location.reload(); }); };
+      }
+    }).catch(function(){});
+  })();
   </script>
 </body>
 </html>
