@@ -81,6 +81,10 @@
     .pp-card .pp-name { font-weight: 600; }
     .pp-card .pp-district { font-size: 12px; color: var(--muted); }
 
+
+    .rc-chapters { display:flex; align-items:center; gap:3px; margin-top:12px; }
+    .rc-ch-dot { width:14px; height:3px; background:var(--primary); opacity:.35; border-radius:2px; }
+    .rc-ch-label { font-size:11px; color:var(--muted); margin-left:6px; letter-spacing:.05em; }
     .no-results { text-align: center; padding: 40px; color: var(--muted); }
 
     @media (max-width: 600px) {
@@ -334,6 +338,7 @@ function renderPs() {
         <h3>${s.n}</h3>
         <div class="rc-meta">${s.d}</div>
         <div class="rc-highlight">${s.h}</div>
+        <div class="rc-chapters">${'<span class="rc-ch-dot"></span>'.repeat(8)}<span class="rc-ch-label">8 章深度分析</span></div>
         <span class="rc-arrow">→</span>
       </a>`;
     });
@@ -407,6 +412,7 @@ function renderKg() {
         <h3>${s.n}<span class="premium-badge">付費</span></h3>
         <div class="rc-meta">${s.d}</div>
         <div class="rc-highlight">${s.h}</div>
+        <div class="rc-chapters">${'<span class="rc-ch-dot"></span>'.repeat(8)}<span class="rc-ch-label">8 章深度分析</span></div>
         <span class="rc-arrow">→</span>
       </a>`;
     });
