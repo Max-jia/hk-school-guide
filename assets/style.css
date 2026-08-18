@@ -61,7 +61,7 @@ a:hover { color: var(--primary-dark); }
 /* 按钮 */
 .btn { display: inline-block; padding: 14px 24px; border-radius: 10px; font-weight: 700; font-size: 15px;
   border: 0; cursor: pointer; transition: transform .1s ease, background .2s ease, box-shadow .2s ease; }
-.btn:hover { box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+.btn:hover { opacity: .92; }
 .btn:active { transform: translateY(1px); }
 .btn-primary { background: var(--primary); color: #fff; }
 .btn-primary:hover { background: var(--primary-dark); }
@@ -88,16 +88,15 @@ a:hover { color: var(--primary-dark); }
 .section-title { font-family: "Newsreader", serif; font-size: 26px; font-weight: 600; margin: 0 0 6px; }
 .section-sub { color: var(--muted); margin: 0 0 24px; }
 .entry-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.entry-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow);
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; display: block; }
-.entry-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(34,48,43,.1); border-color: var(--primary); }
+.entry-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; transition: border-color .15s ease; display: block; }
+.entry-card:hover { border-color: var(--primary); }
 .entry-card .ec-tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 3px 10px; border-radius: 20px; background: var(--primary-soft); color: var(--primary-dark); }
 .entry-card h3 { font-family: "Newsreader", serif; font-size: 22px; font-weight: 600; margin: 14px 0 6px; color: var(--ink); }
 .entry-card p { color: var(--muted); margin: 0 0 14px; font-size: 15px; }
 .entry-card .ec-go { color: var(--accent); font-weight: 700; }
 
 /* 表单/向导 */
-.wizard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+.wizard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
 .wz-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field label { font-weight: 700; font-size: 14px; }
@@ -109,8 +108,8 @@ select:focus, input:focus { outline: 2px solid var(--primary-soft); border-color
 /* 结果卡 */
 .results { margin-top: 28px; display: grid; gap: 14px; }
 .results h3 { margin: 0 0 4px; }
-.school-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow); position: relative; transition: transform .15s ease, box-shadow .15s ease; }
-.school-card:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(34,48,43,.1); }
+.school-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; position: relative; transition: border-color .15s ease; }
+.school-card:hover { border-color: var(--primary); }
 .sc-rank { color: var(--primary); font-weight: 800; margin-right: 6px; }
 .sc-name { font-weight: 700; font-size: 17px; }
 .sc-meta { color: var(--muted); font-size: 14px; margin-left: 4px; }
