@@ -70,6 +70,10 @@
             <option value="any">暫未確定</option>
           </select>
         </div>
+      </div>
+      <details class="mt-4">
+        <summary class="cursor-pointer text-sm font-semibold text-primary hover:underline">還想更準？補充篩選（可選）</summary>
+        <div class="wz-grid" style="margin-top:16px">
         <div class="field">
           <label>⑤ 通勤範圍 <span class="hint">公里 · 距區中心</span></label>
           <input id="commute" type="number" value="5" min="1" max="20" />
@@ -103,7 +107,8 @@
             <option value="challenge">喜歡挑戰 · 抗壓能力強、追求卓越</option>
           </select>
         </div>
-      </div>
+        </div>
+      </details>
       <div class="wz-actions">
         <button class="btn btn-primary" onclick="run()">幫我匹配學校</button>
       </div>
