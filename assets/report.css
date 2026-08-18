@@ -14,9 +14,9 @@
 /* A+级：indigo */
 .hero-tier-aplus { background: linear-gradient(160deg, #134E4A 0%, #115E59 40%, #115E59 100%); }
 .hero-tier-aplus h1, .hero-tier-aplus .sub, .hero-tier-aplus .tier-mega { color: #fff; }
-.hero-tier-aplus .tier-mega { background: rgba(165,180,252,.12); border: 1px solid rgba(165,180,252,.2); }
+.hero-tier-aplus .tier-mega { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); }
 /* A级：蓝紫 */
-.hero-tier-a { background: linear-gradient(160deg, #1C1C1C 0%, #334155 40%, #57534E 100%); }
+.hero-tier-a { background: linear-gradient(160deg, #1C1C1C 0%, #3F3F46 40%, #57534E 100%); }
 .hero-tier-a h1, .hero-tier-a .sub, .hero-tier-a .tier-mega { color: #fff; }
 .hero-tier-a .tier-mega { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); }
 /* B级：暖灰 */
