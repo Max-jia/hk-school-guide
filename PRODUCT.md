@@ -36,7 +36,7 @@ web
 
 ## Brand Commitments
 
-- 名称：港校指南（hkschool.guide）
+- 名称：港学荟（hkschool.guide）
 - 语气：**专家顾问型**——客观、权威、数据说话；文案去 AI 味（无 emoji 装饰、无三连排比腔）
 - 视觉方向（2026-08 用户确认）：极简 Editorial——近黑墨色 + 纸白 + 沉稳蓝（`#2563EB`），不用 AI 紫粉、不用渐层装饰、不用 emoji 徽章
 - 数据诚实为品牌底线（CLAUDE.md 铁规矩）
