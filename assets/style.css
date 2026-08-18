@@ -1,22 +1,30 @@
 /* style.css — 港校指南 设计系统
-   气质：编辑感·可信·温暖·大留白。字体：Newsreader标题+Roboto正文。 */
+   气质：编辑感·可信·温暖·大留白。字体：Newsreader标题+Roboto正文。
+   v2: Flat Design · hover/focus反馈 · 无障碍优化 */
 
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --ink: #1e293b;
-  --muted: #64748b;
-  --bg: #fafaf7;
-  --surface: rgba(255,255,255,0.7);
-  --soft: rgba(255,255,255,0.5);
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --primary-soft: rgba(99,102,241,0.08);
-  --accent: #f97316;
-  --accent-soft: rgba(249,115,22,0.08);
-  --border: rgba(0,0,0,0.06);
+  --ink: #1C1C1C;
+  --muted: #57534E;
+  --bg: #FBF9F5;
+  --surface: #ffffff;
+  --soft: #F3EFE6;
+  --primary: #0F766E;
+  --primary-dark: #115E59;
+  --primary-soft: rgba(15,118,110,0.08);
+  --accent: #C2410C;
+  --accent-soft: rgba(194,65,12,0.08);
+  --success: #059669;
+  --success-soft: rgba(5,150,105,0.08);
+  --border: #E4E0D8;
+
+  /* 交互 */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --focus-ring: 0 0 0 3px rgba(37,99,235,0.3);
   --radius: 16px;
-  --shadow: 0 4px 24px rgba(0,0,0,0.06);
+  --shadow: 0 4px 24px #E4E0D8;
 }
 
 /* 動態光暈 — 淺色版 */
@@ -24,14 +32,14 @@
 @keyframes blob2 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(-60px,-40px) scale(1.15); } 66% { transform: translate(50px,30px) scale(0.9); } }
 @keyframes blob3 { 0%,100% { transform: translate(0,0) scale(1); } 33% { transform: translate(40px,60px) scale(1.25); } 66% { transform: translate(-50px,-30px) scale(0.85); } }
 .blob { position: fixed; border-radius: 50%; filter: blur(120px); opacity: 0.15; pointer-events: none; z-index: 0; }
-.blob-1 { width: 700px; height: 700px; background: #818cf8; top: -250px; right: -150px; animation: blob1 22s ease-in-out infinite; }
+.blob-1 { width: 700px; height: 700px; background: #2DD4BF; top: -250px; right: -150px; animation: blob1 22s ease-in-out infinite; }
 .blob-2 { width: 550px; height: 550px; background: #fda4af; bottom: -200px; left: -120px; animation: blob2 26s ease-in-out infinite; }
 .blob-3 { width: 450px; height: 450px; background: #fde68a; top: 40%; left: 45%; animation: blob3 24s ease-in-out infinite; }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; background: #fafaf7 !important; }
+html { scroll-behavior: smooth; background: #FBF9F5 !important; }
 body {
-  margin: 0; color: var(--ink); background: linear-gradient(180deg, #fefefe 0%, #f5f4f1 50%, #faf9f6 100%) fixed !important;
+  margin: 0; color: var(--ink); background: linear-gradient(180deg, #FBF9F5 0%, #FBF9F5 50%, #FBF9F5 100%) fixed !important;
   font-family: "Roboto", "PingFang SC", "Microsoft YaHei", sans-serif;
   line-height: 1.7; font-size: 16px; -webkit-font-smoothing: antialiased;
 }
@@ -188,6 +196,19 @@ select:focus, input:focus { outline: 2px solid var(--primary-soft); border-color
 .site-nav-menu a:hover { color: var(--primary); }
 .site-nav-menu a.active { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 2px; }
 .site-nav-login { margin-left: 8px; }
+
+/* ============================================================
+   全局交互反馈（v2：Flat Design·hover/focus·无障碍）
+   ============================================================ */
+a, button, [role="button"], .clickable { transition: all var(--transition-fast); }
+a:hover, button:hover { opacity: 0.85; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: none; box-shadow: var(--focus-ring); border-radius: 4px;
+}
+input, select, textarea { transition: border-color var(--transition-fast), box-shadow var(--transition-fast); }
+input:focus, select:focus, textarea:focus { border-color: var(--primary); box-shadow: var(--focus-ring); }
+::selection { background: var(--primary-soft); color: var(--primary-dark); }
+
 /* 平板/小屏 */
 @media (max-width: 768px) { .site-nav-inner { padding: 0 12px; } }
 /* 手机端 */
