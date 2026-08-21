@@ -31,8 +31,8 @@
 .report-hero .hero-title-row { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
 .report-hero .hero-title-row h1 {
   font-family: "Newsreader", serif;
-  font-size: 42px; font-weight: 700; letter-spacing: -0.02em;
-  margin: 0; line-height: 1.15; flex: 0 1 auto;
+  font-size: 48px; font-weight: 700; letter-spacing: -0.02em;
+  margin: 0; line-height: 1.12; flex: 0 1 auto;
 }
 .report-hero .sub { font-size: 16px; opacity: .8; }
 
@@ -73,8 +73,8 @@
 }
 .chapter h2 .num {
   background: #CCFBF1; color: #0F766E; border-radius: 8px;
-  width: 32px; height: 32px; display: inline-flex; align-items: center;
-  justify-content: center; font-size: 14px; font-weight: 700; flex-shrink: 0;
+  width: 36px; height: 36px; display: inline-flex; align-items: center;
+  justify-content: center; font-size: 15px; font-weight: 700; flex-shrink: 0;
 }
 .chapter h3 { font-size: 18px; font-weight: 600; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 1px solid #F3EFE6; color: #1C1C1C; }
 .chapter h4 { font-size: 15px; font-weight: 600; margin: 18px 0 8px; color: #57534E; }
@@ -187,4 +187,16 @@ table.dt tr:last-child td { border-bottom: none; }
   .lang-switch { margin-left: 6px; }
   .lang-switch a { font-size: 11px; padding: 2px 8px; }
   .source-note { font-size: 12px; }
+}
+
+/* === 關鍵事實條（hero 資訊掃描）=== */
+.hero-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-top: 18px; max-width: 720px; }
+.hero-fact {
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18);
+  border-radius: 8px; padding: 8px 12px; font-size: 13px; color: #fff; opacity: .92;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .hero-facts { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .hero-fact { font-size: 12px; padding: 7px 10px; }
 }
