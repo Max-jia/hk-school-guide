@@ -16,7 +16,7 @@
   <link rel="alternate" hreflang="x-default" href="https://hkschool.guide/reports-tc.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="深度擇校報告 · 港學薈" />
-  <meta property="og:description" content="全港 120+ 份小學及幼稚園深度擇校報告，8 章講透一所學校。HK$19.9 單份買斷，S 級免費試看。" />
+  <meta property="og:description" content="全港 120+ 份小學及幼稚園深度擇校報告，8 章講透一所學校。HK$9.9 單份買斷，S 級免費試看。" />
   <meta property="og:url" content="https://hkschool.guide/reports-tc.html" />
   <meta name="twitter:card" content="summary" />
   <script type="application/ld+json">
@@ -346,7 +346,7 @@ function renderPs() {
       const tierLabel = s.t==='S'?'S 級':s.t==='A+'?'A+ 級':'A 級';
       html += `<a class="report-card" href="./report-${s.c}.html" data-premium="${s.premium}">
         <span class="rc-tier ${tc}">${tierLabel}</span>
-        <span class="rc-premium-tag" style="${isUnlocked(s.c)?'background:#d1fae5;color:#059669':(s.premium?'background:#C2410C;color:#fff':'background:#CCFBF1;color:#0F766E')}">${isUnlocked(s.c)?'已解鎖':(s.premium?'付費 HK$19.9':'免費試看')}</span>
+        <span class="rc-premium-tag" style="${isUnlocked(s.c)?'background:#d1fae5;color:#059669':(s.premium?'background:#C2410C;color:#fff':'background:#CCFBF1;color:#0F766E')}">${isUnlocked(s.c)?'已解鎖':(s.premium?'付費 HK$9.9':'免費試看')}</span>
         <h3>${s.n}</h3>
         <div class="rc-meta">${s.d}</div>
         <div class="rc-highlight">${s.h}</div>
@@ -420,7 +420,7 @@ function renderKg() {
       html += `<a class="report-card" href="./report-${s.c}.html" data-premium="${s.premium}">
         <span class="rc-tier ${ti.cls}">${ti.badge}</span>
         <!-- 付費上線時移除下行 display:none -->
-        <span class="rc-premium-tag" style="${isUnlocked(s.c)?'background:#d1fae5;color:#059669':(s.premium?'background:#C2410C;color:#fff':'background:#CCFBF1;color:#0F766E')}">${isUnlocked(s.c)?'已解鎖':(s.premium?'付費 HK$19.9':'免費試看')}</span>
+        <span class="rc-premium-tag" style="${isUnlocked(s.c)?'background:#d1fae5;color:#059669':(s.premium?'background:#C2410C;color:#fff':'background:#CCFBF1;color:#0F766E')}">${isUnlocked(s.c)?'已解鎖':(s.premium?'付費 HK$9.9':'免費試看')}</span>
         <h3>${s.n}<span class="premium-badge">付費</span></h3>
         <div class="rc-meta">${s.d}</div>
         <div class="rc-highlight">${s.h}</div>
