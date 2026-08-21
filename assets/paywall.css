@@ -127,3 +127,6 @@ body.purchased #premium-content { display: block !important; }
 
 /* 樣張標記條 */
 .pw-sample-note { font-size: 12px; color: var(--muted); border: 1px solid var(--border); border-left: 3px solid var(--primary); background: var(--surface); padding: 10px 14px; margin-bottom: 18px; line-height: 1.6; }
+
+/* 全解鎖降級（主推單份） */
+.pw-badge-alt { background: var(--soft); color: var(--muted); }
