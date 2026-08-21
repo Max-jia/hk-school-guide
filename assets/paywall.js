@@ -117,6 +117,14 @@
     sb.auth.getSession().then(function(_a){
       var session = _a.data.session;
       if (!session) return;
+      // 白名單：指定帳號自動解鎖全部報告（臨時授權機制）
+      var WHITELIST = ['jiayongchun001@gmail.com'];
+      if (WHITELIST.indexOf((session.user.email || '').toLowerCase()) >= 0) {
+        localStorage.setItem('purchased_' + REPORT_CODE, 'true');
+        localStorage.setItem('all_access', 'true');
+        showContent();
+        return;
+      }
       sb.from('purchases').select('report_id,is_all_access')
         .eq('user_id', session.user.id)
         .or('report_id.eq.'+REPORT_CODE+',is_all_access.eq.true')
