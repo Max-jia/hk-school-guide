@@ -38,8 +38,7 @@
     .rule-line a { color:var(--ink); }
     .rule-line a:hover { color:var(--primary); }
     .rule-line .rd { font-size:13px; color:var(--muted); }
-  </style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
+  </style></head>
 <body style="background:#FBF9F5!important">
   <nav class="site-nav">
     <div class="site-nav-inner">
@@ -53,7 +52,6 @@
         <a href="./reports-tc.html">深度報告</a>
         <a href="./interview-questions-tc.html">面試題庫</a>
         <a href="./blog/">Blog</a>
-        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登入</a>
       </div>
     </div>
   </nav>
@@ -129,18 +127,6 @@
   </footer>
 
   <script>
-  // 登入狀態：自動更新導航欄按鈕
-  (function(){
-    var btn = document.getElementById('nav-auth-btn');
-    if (!btn || typeof Auth === 'undefined') return;
-    Auth.getUser().then(function(user){
-      if (user) {
-        btn.textContent = user.email || '已登入';
-        btn.href = '#';
-        btn.onclick = function(e){ e.preventDefault(); Auth.signOut().then(function(){ location.reload(); }); };
-      }
-    }).catch(function(){});
-  })();
   </script>
 </body>
 </html>

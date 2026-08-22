@@ -92,8 +92,7 @@
     .blog-line a { color:var(--ink); }
     .blog-line a:hover { color:var(--primary); }
     .blog-line .bd { font-size:13px; color:var(--muted); }
-  </style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
+  </style></head>
 <body style="background:#FBF9F5!important">
   <nav class="site-nav">
     <div class="site-nav-inner">
@@ -107,7 +106,6 @@
         <a href="./reports.html">深度报告</a>
         <a href="./interview-questions.html">面试题库</a>
         <a href="./blog/">Blog</a>
-        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
       </div>
     </div>
   </nav>
@@ -339,19 +337,6 @@
     document.addEventListener('click', function(e) {
       if (!e.target.closest('.search-wrap')) close();
     });
-  })();
-
-  // 登录状态：自动更新导航栏按钮
-  (function(){
-    var btn = document.getElementById('nav-auth-btn');
-    if (!btn || typeof Auth === 'undefined') return;
-    Auth.getUser().then(function(user){
-      if (user) {
-        btn.textContent = user.email || '已登录';
-        btn.href = '#';
-        btn.onclick = function(e){ e.preventDefault(); Auth.signOut().then(function(){ location.reload(); }); };
-      }
-    }).catch(function(){});
   })();
   </script>
 </body>

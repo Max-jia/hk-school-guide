@@ -130,3 +130,6 @@ body.purchased #premium-content { display: block !important; }
 
 /* 全解鎖降級（主推單份） */
 .pw-badge-alt { background: var(--soft); color: var(--muted); }
+
+/* 無登入版：隱藏重複的「注册购买」按鈕（與單份解鎖相同連結） */
+.pw-buttons .pw-btn-secondary { display: none; }

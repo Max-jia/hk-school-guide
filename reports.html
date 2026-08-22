@@ -109,8 +109,7 @@
       .stats-row { gap: 20px; }
       .stat-item .num { font-size: 28px; }
     }
-  </style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="./assets/auth.js"></script></head>
+  </style></head>
 <body>
 
   <nav class="site-nav">
@@ -125,7 +124,6 @@
         <a href="./reports.html" class="active">深度择校报告</a>
         <a href="./kindergarten.html">幼稚园择校</a>
         <a href="./blog/">Blog</a>
-        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登录</a>
       </div>
     </div>
   </nav>

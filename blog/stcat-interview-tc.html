@@ -40,8 +40,7 @@
 .blog-body li { margin: 6px 0; }
 .blog-body a { color: #0F766E; }
 @media(max-width:600px){ .blog-body h1{font-size:26px} .blog-body{padding:20px 16px 40px;font-size:16px} }
-</style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="../assets/auth.js"></script></head><body>
+</style></head><body>
 <nav class="site-nav">
     <div class="site-nav-inner">
       <div class="site-nav-left">
@@ -54,7 +53,6 @@
         <a href="../reports-tc.html">深度擇校報告</a><a href="../interview-questions-tc.html">面試題庫</a>
         <a href="../kindergarten-tc.html">幼稚園擇校</a>
         <a href="../blog/index-tc.html" class="active">Blog</a>
-        <a href="#" id="nav-auth-btn" class="site-nav-login" onclick="event.preventDefault();if(typeof Auth!=='undefined')Auth.showModal({onSuccess:function(){location.reload()}})">登入</a>
       </div>
     </div>
   </nav>
