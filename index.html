@@ -88,7 +88,66 @@
     .rpt-chapters { display:flex; align-items:center; gap:3px; margin-top:14px; }
     .rpt-ch-dot { width:14px; height:3px; background:var(--primary); opacity:.35; border-radius:2px; }
     .rpt-ch-label { font-size:11px; color:var(--muted); margin-left:6px; letter-spacing:.05em; }
-    .blog-line { display:block; padding:14px 0; border-bottom:1px solid var(--border); }
+
+    /* 3.1 封面牆（Pudding 風格 · 生成插畫版） */
+    .cover-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:14px; }
+    .cover-card { position:relative; aspect-ratio:1/1; border-radius:10px; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:14px; color:#fff; text-decoration:none; background:#1C1C1C; transition:transform .2s ease, box-shadow .2s ease; }
+    .cover-card img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
+    .cover-card:hover { transform:translateY(-4px); box-shadow:0 12px 28px rgba(0,0,0,.16); }
+    .cover-card:hover img { transform:scale(1.05); }
+    /* 底部渐变遮罩：保证白字在亮色插画上可读 */
+    .cover-card::after { content:""; position:absolute; inset:auto 0 0 0; height:66%; background:linear-gradient(to top, rgba(12,12,12,.76), rgba(12,12,12,0)); }
+    .cc-top { position:relative; z-index:1; display:flex; justify-content:space-between; align-items:center; }
+    /* 角标用实底深色：浅色插画上也能清晰可读 */
+    .cc-tier { font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; background:rgba(12,12,12,.55); padding:3px 8px; border-radius:100px; }
+    .cc-price { font-size:11px; font-weight:700; padding:3px 8px; border-radius:100px; background:rgba(0,0,0,.45); }
+    .cc-bottom { position:relative; z-index:1; }
+    .cc-name { font-family:"Newsreader",serif; font-size:23px; font-weight:700; line-height:1.12; letter-spacing:-.01em; text-shadow:0 1px 10px rgba(0,0,0,.4); }
+    .cc-meta { font-size:11px; opacity:.92; margin-top:4px; letter-spacing:.02em; text-shadow:0 1px 6px rgba(0,0,0,.45); }
+    @media(max-width:600px){ .cover-grid { grid-template-columns:repeat(2,1fr); gap:10px; } .cover-card { padding:12px; } .cc-name { font-size:17px; } .cc-meta { font-size:10px; } }
+    /* 3.2 免费工具双卡片（Pudding 式：顶部色带 + 衬线标题） */
+    .tool-card { flex:1 1 0%; display:block; border:1.5px solid #1C1C1C; border-radius:10px; padding:18px 20px 16px; text-decoration:none; background:#fff; box-shadow:3px 3px 0 rgba(28,28,28,.85); transition:transform .15s ease, box-shadow .15s ease; position:relative; overflow:hidden; }
+    .tool-card:hover { transform:translate(-2px,-2px); box-shadow:5px 5px 0 rgba(28,28,28,.85); }
+    .tool-card::before { content:""; position:absolute; left:0; top:0; right:0; height:6px; background:var(--tool-c,var(--primary)); }
+    .tool-card .tc-title { font-family:"Newsreader",serif; font-size:21px; font-weight:700; letter-spacing:-.01em; }
+    .tool-card .tc-desc { font-size:13px; color:var(--muted); margin-top:6px; line-height:1.5; }
+    .tool-card .tc-cta { display:inline-block; margin-top:12px; font-size:13px; font-weight:700; color:var(--tool-c,#1C1C1C); border-bottom:2px solid var(--tool-c,#1C1C1C); }
+    /* 3.3 热门分类 chips（Pudding 式：8 色板色块贴纸） */
+    .chip { display:inline-block; padding:11px 20px; border-radius:100px; font-size:13px; font-weight:700; color:#fff; text-decoration:none; letter-spacing:.02em; border:2px solid #1C1C1C; transition:transform .15s ease, box-shadow .15s ease; box-shadow:inset 0 -3px 0 rgba(0,0,0,.18), 2px 2px 0 rgba(28,28,28,.85); }
+    .chip:hover { transform:translateY(-2px); box-shadow:inset 0 -3px 0 rgba(0,0,0,.18), 0 8px 16px rgba(0,0,0,.14); }
+    /* 3.4 数据可信区（Pudding 式：大衬线数字 + 彩色圆盘/几何） */
+    .trust-cell { position:relative; padding:20px 18px 22px; background:#fff; border:1px solid var(--border); border-top:6px solid var(--trust-c,var(--primary)); border-radius:0 0 10px 10px; overflow:hidden; }
+    .trust-cell::after { content:""; position:absolute; right:-22px; top:-22px; width:72px; height:72px; border-radius:50%; background:var(--trust-c,var(--primary)); opacity:.10; }
+    .trust-n { font-family:"Newsreader",serif; font-size:38px; font-weight:700; letter-spacing:-.01em; line-height:1; }
+    .trust-row { font-size:13px; color:var(--ink); margin-top:10px; line-height:1.55; font-weight:600; }
+    .trust-src { font-size:12px; color:var(--muted); margin-top:6px; line-height:1.5; }
+    /* 3.5 定价卡（Pudding 式：贴纸标签 + 色条 + 大衬线价格） */
+    .plan-card { position:relative; border:1.5px solid #1C1C1C; border-radius:10px; padding:26px 22px 22px; background:#fff; display:flex; flex-direction:column; gap:12px; box-shadow:4px 4px 0 rgba(28,28,28,.9); transition:transform .15s ease; }
+    .plan-card:hover { transform:translate(-2px,-2px); box-shadow:6px 6px 0 rgba(28,28,28,.9); }
+    .plan-card::before { content:""; position:absolute; left:0; top:0; bottom:0; width:10px; border-radius:10px 0 0 10px; background:var(--plan-c,#1C1C1C); }
+    .plan-card .pl-name { align-self:flex-start; font-size:12px; font-weight:700; letter-spacing:.04em; color:#fff; background:var(--plan-c,#1C1C1C); padding:4px 12px; border-radius:100px; transform:rotate(-1deg); }
+    .plan-card .pl-price { font-family:"Newsreader",serif; font-size:34px; font-weight:700; letter-spacing:-.01em; }
+    .plan-card .pl-list { font-size:13px; color:var(--muted); line-height:1.6; flex:1; }
+    .plan-card .pl-btn { display:block; text-align:center; padding:10px 12px; border-radius:8px; background:#1C1C1C; color:#fff; font-size:13px; font-weight:700; text-decoration:none; margin-top:auto; transition:opacity .15s ease, transform .15s ease; }
+    .plan-card .pl-btn:hover { opacity:.85; transform:rotate(-.5deg); }
+    .plan-free .pl-btn { background:#fff; color:#1C1C1C; border:1.5px solid #1C1C1C; }
+    /* 3.6 FAQ 折叠项（Pudding 式：衬线问题 + 金色圆点） */
+    .faq-item { border-bottom:2px solid #1C1C1C; padding:18px 6px; }
+    .faq-item summary { font-family:"Newsreader",serif; font-size:17px; font-weight:700; cursor:pointer; list-style:none; display:flex; justify-content:flex-start; align-items:center; gap:14px; }
+    .faq-item summary::before { content:""; flex:0 0 auto; width:12px; height:12px; border-radius:50%; background:#E8B300; border:1.5px solid #1C1C1C; transform:rotate(-2deg); }
+    .faq-item summary::after { content:"+"; font-size:20px; color:#1C1C1C; margin-left:auto; }
+    .faq-item[open] summary::after { content:"–"; }
+    .faq-item p { font-size:14px; color:var(--muted); line-height:1.75; margin-top:12px; padding-left:26px; }
+    /* 3.7 区块大标题（Pudding 式：编号眉题 + 衬线大标题 + 粗规则线） */
+    .sec-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:26px; padding-bottom:12px; border-bottom:3px solid #1C1C1C; position:relative; }
+    .sec-head::after { content:""; position:absolute; left:0; bottom:-6px; width:56px; height:9px; background:var(--sec-dot,#E8B300); border:1.5px solid #1C1C1C; border-radius:2px; transform:rotate(-1.5deg); }
+    .sec-eyebrow { font-size:11px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--sec-c,var(--primary)); }
+    .sec-title { font-family:"Newsreader",serif; font-size:28px; font-weight:700; letter-spacing:-.01em; line-height:1.15; }
+    .sec-more { position:relative; font-size:13px; font-weight:700; color:#1C1C1C; text-decoration:none; border-bottom:2px solid var(--sec-c,var(--primary)); }
+    .sec-more:hover { color:var(--sec-c,var(--primary)); }
+    .blog-line { display:flex; gap:16px; align-items:baseline; padding:16px 2px; border-bottom:2px solid #1C1C1C; }
+    .blog-line .bn { font-family:"Newsreader",serif; font-size:20px; font-weight:700; color:#fff; background:var(--bn-c,var(--primary)); padding:1px 8px; border:1.5px solid #1C1C1C; border-radius:4px; transform:rotate(-2deg); flex:0 0 auto; }
+    .blog-line .bt { flex:1; }
     .blog-line a { color:var(--ink); }
     .blog-line a:hover { color:var(--primary); }
     .blog-line .bd { font-size:13px; color:var(--muted); }
@@ -101,133 +160,92 @@
         <a href="./index-tc.html" class="site-lang">繁</a>
       </div>
       <div class="site-nav-menu">
-        <a href="./index.html" class="active">首页</a>
-        <a href="./explore.html">探索</a>
-        <a href="./reports.html">深度报告</a>
-        <a href="./interview-questions.html">面试题库</a>
+        <a href="./reports.html">全部报告</a>
+        <a href="./explore.html">择校工具</a>
         <a href="./blog/">Blog</a>
       </div>
     </div>
   </nav>
 
   <main>
-    <!-- Hero：搜索即入口（深蓝品牌区） -->
-    <section style="background:#115E59">
-      <div class="max-w-3xl mx-auto px-5 pt-24 pb-12 md:pt-28 text-center">
-        <div class="eyebrow mb-5" style="color:#99F6E4">香港择校 · 深度报告平台</div>
-        <h1 class="font-serif text-[40px] md:text-[52px] font-bold leading-[1.1] tracking-[-0.02em] text-white mb-6">把一所学校，讲透。</h1>
-        <p class="text-[16px] leading-relaxed mb-8" style="color:#CCFBF1">120+ 份深度报告，数据来自香港教育局 CHSC，每月同步。</p>
-        <div class="search-wrap">
-          <input type="text" id="schoolSearch" class="search-input" placeholder="输入学校名称，如「拔萃女小学」「协恩」" autocomplete="off" aria-label="搜索学校报告" aria-expanded="false" role="combobox" aria-controls="searchDrop" aria-autocomplete="list" />
+    <!-- Pudding 式：小字標語 + 縮圖網格 -->
+    <section class="max-w-6xl mx-auto px-5 pt-8 pb-2">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-8" style="border-bottom:1px solid var(--border);padding-bottom:20px">
+        <div>
+          <p class="text-ink" style="font-size:24px;font-weight:700;letter-spacing:-.01em;line-height:1.3;font-family:'Newsreader',serif">用 8 章数据，讲透每一所香港学校。</p>
+          <p class="text-muted" style="font-size:13px;margin-top:4px">每份 HK$9.9 单份买断 · 数据来自香港教育局 CHSC</p>
+        </div>
+        <div class="search-wrap" style="margin:0;width:100%;max-width:520px">
+          <input type="text" id="schoolSearch" class="search-input" style="padding:14px 20px;font-size:15px;width:100%" placeholder="搜索学校名称，如「协恩」「王锦辉」" autocomplete="off" aria-label="搜索学校报告" aria-expanded="false" role="combobox" aria-controls="searchDrop" aria-autocomplete="list" />
           <div class="search-drop" id="searchDrop" role="listbox" aria-label="搜索结果"></div>
         </div>
-        <p class="text-[13px] mt-3" style="color:#99F6E4">试试输入：王锦辉 · 圣保罗 · 培基 · 圣玛加利</p>
+      </div>
+      <!-- 擇校入口條 -->
+      <div class="mb-2"><span class="text-muted" style="font-size:13px">不知道选哪所？用免费工具快速缩小范围</span></div>
+      <div class="flex flex-wrap gap-3 pb-2">
+        <!-- 免费工具入口（升级为双卡片：引流核心） -->
+        <a href="./primary.html" class="tool-card" style="--tool-c:#12B5CB">
+          <div class="tc-title">小学择校匹配</div>
+          <div class="tc-desc">校网 · 预算 · 类型 · 路线，2 分钟出推荐榜单</div>
+          <div class="tc-cta">免费开始 →</div>
+        </a>
+        <a href="./kindergarten.html" class="tool-card" style="--tool-c:#F28C28">
+          <div class="tc-title">幼稚园匹配</div>
+          <div class="tc-desc">按地区 · 时段 · PN，找离家近又有口碑的园</div>
+          <div class="tc-cta">免费开始 →</div>
+        </a>
       </div>
     </section>
 
-    <!-- 两条使用路径 -->
-    <section class="max-w-4xl mx-auto px-5 py-12">
-      <div class="grid md:grid-cols-2 gap-5">
-        <div class="path-card">
-          <div class="path-num mb-3">场景一</div>
-          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">已经有心仪的学校</h2>
-          <p class="text-muted text-[14px] leading-relaxed mb-5">直接用上方搜索框输入学校名称，跳转对应深度报告。也可以浏览全部报告列表。</p>
-          <a href="./reports.html" class="text-primary font-bold text-[14px] hover:underline">浏览全部 120+ 份报告 →</a>
-        </div>
-        <div class="path-card">
-          <div class="path-num mb-3">场景二</div>
-          <h2 class="font-serif text-[20px] font-semibold text-ink mb-2">还在纠结选哪所</h2>
-          <p class="text-muted text-[14px] leading-relaxed mb-5">先用匹配工具按校网、预算、孩子性格缩小范围，再读报告的升中通路与入读攻略。</p>
-          <div class="flex gap-3">
-            <a href="./primary.html" class="inline-flex px-4 py-2.5 bg-primary text-white font-bold rounded-lg text-[13px] hover:bg-primary-dark transition-colors">小学匹配</a>
-            <a href="./kindergarten.html" class="inline-flex px-4 py-2.5 bg-white text-ink font-bold rounded-lg border border-border text-[13px] hover:border-primary hover:text-primary transition-colors">幼稚园匹配</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- 報告縮圖牆 -->
+    <section id="reports" class="max-w-6xl mx-auto px-5 py-6">
 
-    <!-- 信任带 -->
-    <section class="border-t border-border">
-      <div class="max-w-4xl mx-auto px-5 py-6 flex flex-wrap justify-center gap-x-10 gap-y-2 text-[13px] text-muted">
-        <span>全港 <b class="text-ink">669</b> 所小学 · <b class="text-ink">962</b> 所幼稚园</span>
-        <span>数据 香港教育局 CHSC · 每月同步</span>
-      </div>
-    </section>
-
-    <!-- 报告展示 -->
+    <!-- 精選報告封面牆（Pudding 風格 · AI 生成插畫） -->
     <section id="reports" class="max-w-6xl mx-auto px-5 py-16">
-      <div class="flex items-end justify-between mb-8">
-        <div>
-          <h2 class="font-serif text-[28px] md:text-[32px] font-bold text-ink leading-tight">深度报告</h2>
-          <p class="text-muted text-[15px] mt-2">S 级与 A+ 级每校一份，从教学到口碑一次讲透。先免费试看，再决定。</p>
-        </div>
-        <a href="./reports.html" class="text-primary font-bold text-[14px] whitespace-nowrap hover:underline hidden md:block">查看全部 →</a>
+      <div class="sec-head" style="--sec-c:#D64550;--sec-dot:#D64550">
+        <div><div class="sec-eyebrow">Reports</div><h2 class="sec-title">精选报告</h2></div>
+        <a href="./reports.html" class="sec-more" style="--sec-c:#D64550">全部报告 →</a>
       </div>
-
-      <div class="text-xs font-bold tracking-widest uppercase text-muted mb-3">免费试看</div>
-      <div class="grid md:grid-cols-2 gap-4 mb-12">
-        <a href="./report-dgjs.html" class="rpt-card rpt-featured">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-free">免费</span></div>
-          <h3 class="font-serif text-[20px] font-semibold text-ink mb-1">拔萃女小學</h3>
-          <p class="text-[13px] text-muted mb-1">油尖旺区 · 私立一条龙</p>
-          <p class="text-[13px] text-muted leading-relaxed">全港 #1 · 一条龙直升女拔 · DSE 状元摇篮</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+      <div class="cover-grid">
+        <a href="./report-dgjs.html" class="cover-card">
+          <img src="assets/covers/dgjs.jpg" alt="拔萃女小學" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">S 级</span><span class="cc-price">免费</span></div>
+          <div class="cc-bottom"><div class="cc-name">拔萃女小學</div><div class="cc-meta">油尖旺 · 私立一条龙</div></div>
         </a>
-        <a href="./report-braemar-hill.html" class="rpt-card rpt-featured">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-free">免费</span></div>
-          <h3 class="font-serif text-[20px] font-semibold text-ink mb-1">寶山幼兒園</h3>
-          <p class="text-[13px] text-muted mb-1">湾仔区 · 私立幼稚园</p>
-          <p class="text-[13px] text-muted leading-relaxed">全能学术神幼 · 约 74% 升读神小</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+        <a href="./report-braemar-hill.html" class="cover-card">
+          <img src="assets/covers/braemar-hill.jpg" alt="寶山幼兒園" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">S 级</span><span class="cc-price">免费</span></div>
+          <div class="cc-bottom"><div class="cc-name">寶山幼兒園</div><div class="cc-meta">湾仔 · 私立幼稚园</div></div>
         </a>
-      </div>
-
-      <div class="flex items-center gap-3 mb-3">
-        <div class="text-xs font-bold tracking-widest uppercase text-muted">付费报告</div>
-        <div class="text-[12px] text-muted">每份单次买断 · 可重复查看</div>
-      </div>
-      <div class="grid md:grid-cols-3 gap-4">
-        <a href="./report-wkf.html" class="rpt-card rpt-featured">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-paid">付费 HK$9.9 买断</span></div>
-          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">王錦輝中小學</h3>
-          <p class="text-[13px] text-muted mb-1">沙田区 · 直资一条龙</p>
-          <p class="text-[13px] text-muted leading-relaxed">A-Level 8 状元 · 76% A*/A · 全英四语</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+        <a href="./report-wkf.html" class="cover-card">
+          <img src="assets/covers/wkf.jpg" alt="王錦輝中小學" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">S 级</span><span class="cc-price">HK$9.9</span></div>
+          <div class="cc-bottom"><div class="cc-name">王錦輝中小學</div><div class="cc-meta">沙田 · 直资一条龙</div></div>
         </a>
-        <a href="./report-spccps.html" class="rpt-card rpt-featured">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">S 级</span><span class="rpt-tag rpt-tag-paid">付费 HK$9.9 买断</span></div>
-          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">聖保羅男女中學附屬小學</h3>
-          <p class="text-[13px] text-muted mb-1">南区 · 资助男女校</p>
-          <p class="text-[13px] text-muted leading-relaxed">全港 #3 · 23 名 DSE 状元 · 录取率约 5%</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+        <a href="./report-spccps.html" class="cover-card">
+          <img src="assets/covers/spccps.jpg" alt="聖保羅男女中學附屬小學" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">S 级</span><span class="cc-price">HK$9.9</span></div>
+          <div class="cc-bottom"><div class="cc-name">聖保羅男女附小</div><div class="cc-meta">南区 · 资助</div></div>
         </a>
-        <a href="./report-hyps.html" class="rpt-card">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">A+ 级</span><span class="rpt-tag rpt-tag-paid">付费 HK$9.9 买断</span></div>
-          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">協恩中學附屬小學</h3>
-          <p class="text-[13px] text-muted mb-1">九龙城区 · 34 校网资助</p>
-          <p class="text-[13px] text-muted leading-relaxed">34 校网皇牌 · 87% 直升协恩 · 德育体育顶尖</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+        <a href="./report-hyps.html" class="cover-card">
+          <img src="assets/covers/hyps.jpg" alt="協恩中學附屬小學" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">A+ 级</span><span class="cc-price">HK$9.9</span></div>
+          <div class="cc-bottom"><div class="cc-name">協恩中學附屬小學</div><div class="cc-meta">九龙城 · 34校网</div></div>
         </a>
-        <a href="./report-cps.html" class="rpt-card">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">A 级</span><span class="rpt-tag rpt-tag-paid">付费 HK$9.9 买断</span></div>
-          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">啓思小學</h3>
-          <p class="text-[13px] text-muted mb-1">九龙城区 · IB 理念</p>
-          <p class="text-[13px] text-muted leading-relaxed">IB 理念 · 65% 教师 10 年+ · 联系启思中学</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+        <a href="./report-cps.html" class="cover-card">
+          <img src="assets/covers/cps.jpg" alt="啓思小學" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">A 级</span><span class="cc-price">HK$9.9</span></div>
+          <div class="cc-bottom"><div class="cc-name">啓思小學</div><div class="cc-meta">九龙塘 · IB理念</div></div>
         </a>
-        <a href="./report-puikei.html" class="rpt-card">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">B 级</span><span class="rpt-tag rpt-tag-paid">付费 HK$9.9 买断</span></div>
-          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">培基小學</h3>
-          <p class="text-[13px] text-muted mb-1">沙田区 · 91 校网资助</p>
-          <p class="text-[13px] text-muted leading-relaxed">两文三语 · 联系培基书院（Band 1B）</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+        <a href="./report-puikei.html" class="cover-card">
+          <img src="assets/covers/puikei.jpg" alt="培基小學" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">B 级</span><span class="cc-price">HK$9.9</span></div>
+          <div class="cc-bottom"><div class="cc-name">培基小學</div><div class="cc-meta">沙田 · 91校网</div></div>
         </a>
-        <a href="./report-aspcps.html" class="rpt-card">
-          <div class="flex items-center gap-2 mb-2"><span class="rpt-tier">B 级</span><span class="rpt-tag rpt-tag-paid">付费 HK$9.9 买断</span></div>
-          <h3 class="font-serif text-[19px] font-semibold text-ink mb-1">聖伯多祿天主教小學</h3>
-          <p class="text-[13px] text-muted mb-1">南區 · 18 校网资助</p>
-          <p class="text-[13px] text-muted leading-relaxed">直属聖伯多祿中學 · 师生比 1:2.1</p>
-        <div class="rpt-chapters"><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-dot"></span><span class="rpt-ch-label">8 章深度分析</span></div>
+        <a href="./report-aspcps.html" class="cover-card">
+          <img src="assets/covers/aspcps.jpg" alt="聖伯多祿天主教小學" loading="lazy" width="512" height="512">
+          <div class="cc-top"><span class="cc-tier">B 级</span><span class="cc-price">HK$9.9</span></div>
+          <div class="cc-bottom"><div class="cc-name">聖伯多祿天主教小學</div><div class="cc-meta">南区 · 18校网</div></div>
         </a>
       </div>
       <div class="text-center mt-8 md:hidden">
@@ -235,16 +253,119 @@
       </div>
     </section>
 
-    <!-- Blog 引流 -->
+    <!-- 热门分类入口（Pudding 式：8 色板色块） -->
     <section class="border-t border-border">
       <div class="max-w-6xl mx-auto px-5 py-16">
-        <div class="flex items-end justify-between mb-4">
-          <h2 class="font-serif text-[24px] font-bold text-ink">最新研究</h2>
-          <a href="./blog/" class="text-primary font-bold text-[14px] hover:underline">全部文章 →</a>
+        <div class="sec-head" style="--sec-c:#2D5BFF;--sec-dot:#2D5BFF">
+          <div><div class="sec-eyebrow">Browse</div><h2 class="sec-title">按需浏览</h2></div>
         </div>
-        <div class="blog-line"><a href="./blog/st-margaret-kg.html" class="font-semibold text-[16px]">圣玛加利大幼稚园：跑马地 A+ 天主教券校，学费全免</a><div class="bd mt-1">2026年8月18日 · 热搜幼稚园</div></div>
-        <div class="blog-line"><a href="./blog/p1-scoring-guide.html" class="font-semibold text-[16px]">小学计分制全解：20分校董、10分校友、5分宗教</a><div class="bd mt-1">2026年8月17日 · 小一派位</div></div>
-        <div class="blog-line"><a href="./blog/st-margaret-primary.html" class="font-semibold text-[16px]">圣玛加利男女英文中小学：和「圣玛加利大」不是同一间</a><div class="bd mt-1">2026年8月16日 · 热搜小学</div></div>
+        <div class="flex flex-wrap gap-3">
+          <a href="./reports.html#tab-ps" class="chip" style="background:#D64550">神校 S 级</a>
+          <a href="./reports.html#tab-ps" class="chip" style="background:#2D5BFF">一条龙名校</a>
+          <a href="./reports.html#tab-kg" class="chip" style="background:#E8B300;color:#1C1C1C">名牌幼稚园</a>
+          <a href="./reports.html#tab-kg" class="chip" style="background:#7B5EA7">IB 国际路线</a>
+          <a href="./interview-questions.html" class="chip" style="background:#12B5CB">面试题库</a>
+          <a href="./explore.html" class="chip" style="background:#1C1C1C">择校工具汇总</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 数据可信区（Pudding 式：大衬线数字 + 彩色圆盘） -->
+    <section class="border-t border-border">
+      <div class="max-w-6xl mx-auto px-5 py-16">
+        <div class="sec-head" style="--sec-c:#2BA84A;--sec-dot:#2BA84A">
+          <div><div class="sec-eyebrow">Trust the data</div><h2 class="sec-title">数据，只写能核实的</h2></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+          <div class="trust-cell" style="--trust-c:#D64550">
+            <div class="trust-n">669</div>
+            <div class="trust-row">所小学全量数据</div>
+            <div class="trust-src">香港教育局 CHSC · 每月同步</div>
+          </div>
+          <div class="trust-cell" style="--trust-c:#2D5BFF">
+            <div class="trust-n">962</div>
+            <div class="trust-row">所幼稚园全量数据</div>
+            <div class="trust-src">香港教育局 CHSC · 每月同步</div>
+          </div>
+          <div class="trust-cell" style="--trust-c:#E8B300">
+            <div class="trust-n">8 章</div>
+            <div class="trust-row">统一深度报告结构</div>
+            <div class="trust-src">四因子锚点评级 · 不追排名</div>
+          </div>
+          <div class="trust-cell" style="--trust-c:#12B5CB">
+            <div class="trust-n">参考·非官方</div>
+            <div class="trust-row">第三方估算一律标注来源</div>
+            <div class="trust-src">查不到的内容如实标「校方未公开」</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 定价与解锁（Pudding 式：粗黑边贴纸卡） -->
+    <section class="border-t border-border" style="background:#FAF7F2">
+      <div class="max-w-6xl mx-auto px-5 py-16">
+        <div class="sec-head" style="--sec-c:#F28C28;--sec-dot:#F28C28">
+          <div><div class="sec-eyebrow">Pricing</div><h2 class="sec-title">怎么买报告</h2></div>
+          <a href="./unlock.html" class="sec-more" style="--sec-c:#F28C28">解锁说明 →</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="plan-card plan-free" style="--plan-c:#2BA84A">
+            <div class="pl-name">免费试读</div>
+            <div class="pl-price">HK$0</div>
+            <div class="pl-list">拔萃女小 · 宝山幼儿园 2 份完整报告，先看水准再掏钱</div>
+            <a href="./report-dgjs.html" class="pl-btn">试读第一份 →</a>
+          </div>
+          <div class="plan-card" style="--plan-c:#D64550">
+            <div class="pl-name">单份买断</div>
+            <div class="pl-price">HK$9.9</div>
+            <div class="pl-list">任选一所 · 永久阅读 · 简繁双版通用</div>
+            <a href="./unlock.html" class="pl-btn">去解锁 →</a>
+          </div>
+          <div class="plan-card" style="--plan-c:#1C1C1C">
+            <div class="pl-name">全部解锁</div>
+            <div class="pl-price">一次付清</div>
+            <div class="pl-list">120+ 份报告全开放 · 后续新增报告零加价</div>
+            <a href="./unlock.html" class="pl-btn">去看方案 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题（Pudding 式：衬线题目 + 金色圆点） -->
+    <section class="border-t border-border" style="background:#FAF7F2">
+      <div class="max-w-5xl mx-auto px-5 py-16">
+        <div class="sec-head" style="--sec-c:#E8B300;--sec-dot:#E8B300">
+          <div><div class="sec-eyebrow">FAQ</div><h2 class="sec-title">常见问题</h2></div>
+        </div>
+        <details class="faq-item">
+          <summary>报告买了在哪里看？</summary>
+          <p>付款后直接在当前页解锁，浏览器本地记住阅读权限；换设备可用同一支付记录恢复。</p>
+        </details>
+        <details class="faq-item">
+          <summary>数据多久更新一次？</summary>
+          <p>学校基础数据每月同步香港教育局 CHSC 开放数据；评级与关键事实遇到可靠新信息会即时修正并标注日期。</p>
+        </details>
+        <details class="faq-item">
+          <summary>只买一份还是全部解锁，哪个划算？</summary>
+          <p>只看一两所学校就买单份；研究多所或想对比校网，直接全部解锁，后续新增报告都包含。</p>
+        </details>
+        <details class="faq-item">
+          <summary>繁体版和简体版内容一样吗？</summary>
+          <p>一样。右上角可切换简/繁，购买记录两边通用，无需重复付款。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Blog 引流（Pudding 式：编号色块 + 粗规则线） -->
+    <section class="border-t border-border">
+      <div class="max-w-6xl mx-auto px-5 py-16">
+        <div class="sec-head" style="--sec-c:#7B5EA7;--sec-dot:#7B5EA7">
+          <div><div class="sec-eyebrow">New research</div><h2 class="sec-title">最新研究</h2></div>
+          <a href="./blog/" class="sec-more" style="--sec-c:#7B5EA7">全部文章 →</a>
+        </div>
+        <div class="blog-line"><span class="bn" style="--bn-c:#D64550">01</span><div class="bt"><a href="./blog/st-margaret-kg.html" class="font-semibold text-[16px]">圣玛加利大幼稚园：跑马地 A+ 天主教券校，学费全免</a><div class="bd mt-1">2026年8月18日 · 热搜幼稚园</div></div></div>
+        <div class="blog-line"><span class="bn" style="--bn-c:#2D5BFF">02</span><div class="bt"><a href="./blog/p1-scoring-guide.html" class="font-semibold text-[16px]">小学计分制全解：20分校董、10分校友、5分宗教</a><div class="bd mt-1">2026年8月17日 · 小一派位</div></div></div>
+        <div class="blog-line"><span class="bn" style="--bn-c:#E8B300;color:#1C1C1C">03</span><div class="bt"><a href="./blog/st-margaret-primary.html" class="font-semibold text-[16px]">圣玛加利男女英文中小学：和「圣玛加利大」不是同一间</a><div class="bd mt-1">2026年8月16日 · 热搜小学</div></div></div>
       </div>
     </section>
   </main>
@@ -269,6 +390,7 @@
         </div>
       </div>
     </div>
+    <div class="max-w-6xl mx-auto px-5 mt-8 pt-4 text-xs text-muted border-t border-border">© 2026 港学荟 hkschool.guide · 仅供家长选校参考，不构成入学建议</div>
   </footer>
 
   <script src="./data/report-index.js"></script>
