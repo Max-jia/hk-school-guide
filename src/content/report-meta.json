@@ -1,0 +1,1040 @@
+{
+ "PS_REPORTS": [
+  {
+   "n": "拔萃女小學",
+   "t": "S",
+   "d": "油尖旺区",
+   "h": "全港#1·一条龙直升女拔·DSE状元摇篮",
+   "c": "dgjs",
+   "premium": false
+  },
+  {
+   "n": "拔萃男書院",
+   "t": "S",
+   "d": "九龙城区",
+   "h": "IB+DSE双轨·IB全球顶尖·一条龙直升",
+   "c": "dbs",
+   "premium": true
+  },
+  {
+   "n": "聖保羅男女中學附屬小學",
+   "t": "S",
+   "d": "南区",
+   "h": "全港#3·23名DSE状元·录取率约5%",
+   "c": "spccps",
+   "premium": true
+  },
+  {
+   "n": "英華小學",
+   "t": "A+",
+   "d": "深水埗区",
+   "h": "200+年历史·25:1竞争·一条龙Band 1A+",
+   "c": "ywps",
+   "premium": true
+  },
+  {
+   "n": "港大同學會小學",
+   "t": "A+",
+   "d": "东区",
+   "h": "录取率约2%·IB+DSE双轨·港同书院一条龙",
+   "c": "hkups",
+   "premium": true
+  },
+  {
+   "n": "香港培正小學",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "135年红蓝精神·数学理科突出·85%直升",
+   "c": "pcps",
+   "premium": true
+  },
+  {
+   "n": "瑪利諾修院學校(小學部)",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "百年女神校·41校网·全英教学·免费",
+   "c": "mcs",
+   "premium": true
+  },
+  {
+   "n": "喇沙小學",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "全港#4·85%直升喇沙书院·资助男校天花板",
+   "c": "lsps",
+   "premium": true
+  },
+  {
+   "n": "聖保祿學校（小學部）",
+   "t": "A+",
+   "d": "湾仔区",
+   "h": "铜锣湾神校·DSE+IGCSE+A-Level三轨",
+   "c": "spcs",
+   "premium": true
+  },
+  {
+   "n": "協恩中學附屬小學",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "34校网皇牌·87%直升协恩·德育体育顶尖",
+   "c": "hyps",
+   "premium": true
+  },
+  {
+   "n": "德望小學暨幼稚園",
+   "t": "A+",
+   "d": "黄大仙区",
+   "h": "四大女直之一·332A达标96%·5位状元",
+   "c": "ghps",
+   "premium": true
+  },
+  {
+   "n": "天神嘉諾撒學校",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "一条龙SMCC·免费资助·高压催谷型",
+   "c": "hacs",
+   "premium": true
+  },
+  {
+   "n": "聖保羅書院小學",
+   "t": "A",
+   "d": "南区",
+   "h": "170+年历史·IAL+DSE双轨·直资男校",
+   "c": "spcps",
+   "premium": true
+  },
+  {
+   "n": "嘉諾撒聖心學校私立部",
+   "t": "A",
+   "d": "中西区",
+   "h": "160年历史·近100%升Band 1英中",
+   "c": "shckps",
+   "premium": true
+  },
+  {
+   "n": "聖士提反女子中學附屬小學",
+   "t": "A",
+   "d": "中西区",
+   "h": "11校网·百年名校·69%教师硕博",
+   "c": "ssgps",
+   "premium": true
+  },
+  {
+   "n": "瑪利曼小學",
+   "t": "A",
+   "d": "湾仔区",
+   "h": "12校网·全英教学·零测验仅3考试",
+   "c": "mps",
+   "premium": true
+  },
+  {
+   "n": "聖若瑟小學",
+   "t": "A",
+   "d": "湾仔区",
+   "h": "12校网·直属Band 1A+·全英教学·免费",
+   "c": "sjps",
+   "premium": true
+  },
+  {
+   "n": "嘉諾撒聖瑪利學校",
+   "t": "A",
+   "d": "油尖旺区",
+   "h": "一条龙SMCC·7名DSE状元·31校网",
+   "c": "smcs",
+   "premium": true
+  },
+  {
+   "n": "培僑書院",
+   "t": "A",
+   "d": "沙田区",
+   "h": "爱国亲中·DSE+IFY双轨·50%入三大",
+   "c": "pkcps",
+   "premium": true
+  },
+  {
+   "n": "香港華人基督教聯會真道書院",
+   "t": "A",
+   "d": "西贡区",
+   "h": "11年一贯制·IB均分39·双轨直资",
+   "c": "logos",
+   "premium": true
+  },
+  {
+   "n": "嘉諾撒聖心學校",
+   "t": "A",
+   "d": "中西区",
+   "h": "11校网·资助免费·60%直升·性价比高",
+   "c": "shck",
+   "premium": true
+  },
+  {
+   "n": "保良局陳守仁小學",
+   "t": "A",
+   "d": "油尖旺区",
+   "h": "平民国际学校·40:1竞争·无龙但升中强",
+   "c": "tsl",
+   "premium": true
+  },
+  {
+   "n": "播道書院",
+   "t": "A",
+   "d": "西贡区",
+   "h": "一条龙·全英教学·将军澳热门·人人皆资优",
+   "c": "evangel",
+   "premium": true
+  },
+  {
+   "n": "優才(楊殷有娣)書院",
+   "t": "A",
+   "d": "油尖旺区",
+   "h": "IB全球#12·港首间资优学校·双轨直资",
+   "c": "gt",
+   "premium": true
+  },
+  {
+   "n": "民生書院小學",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "百年龙校·85%直升·九龙塘名幼之首",
+   "c": "munsangps",
+   "premium": true
+  },
+  {
+   "n": "九龍塘宣道小學",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "三私一直·全港#9·音乐教育著名",
+   "c": "aps",
+   "premium": true
+  },
+  {
+   "n": "聖方濟各英文小學",
+   "t": "A",
+   "d": "深水埗区",
+   "h": "三私一直·英文小学·学术催谷型",
+   "c": "sfa",
+   "premium": true
+  },
+  {
+   "n": "浸信會沙田圍呂明才小學",
+   "t": "A",
+   "d": "沙田区",
+   "h": "91校网·恒温泳池·世袭超收全港之冠",
+   "c": "skhlmc",
+   "premium": true
+  },
+  {
+   "n": "福建中學附屬學校",
+   "t": "A",
+   "d": "观塘区",
+   "h": "40:1竞争·96%入港前五大·内地家庭热门",
+   "c": "fssas",
+   "premium": true
+  },
+  {
+   "n": "聖嘉勒小學",
+   "t": "A",
+   "d": "中西区",
+   "h": "近百年·英文教学·传统女名校",
+   "c": "scps",
+   "premium": true
+  },
+  {
+   "n": "聖士提反書院附屬小學",
+   "t": "A",
+   "d": "南区",
+   "h": "全港最大校园·唯一寄宿小学·直属Band 1A+",
+   "c": "sscps",
+   "premium": true
+  },
+  {
+   "n": "高主教書院小學部",
+   "t": "A",
+   "d": "湾仔区",
+   "h": "15年一贯·20:1竞争·直属Band 1A",
+   "c": "rcps",
+   "premium": true
+  },
+  {
+   "n": "愛秩序灣官立小學",
+   "t": "B",
+   "d": "東區",
+   "h": "Aldrich Bay Government Primary School · ",
+   "c": "aogps",
+   "premium": true
+  },
+  {
+   "n": "般咸道官立小學",
+   "t": "B",
+   "d": "中西區",
+   "h": "Bonham Road Government Primary School · ",
+   "c": "brgps",
+   "premium": true
+  },
+  {
+   "n": "嘉諾撒聖家學校",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Holy Family Canossian School · 九龙城区(41校网",
+   "c": "hfc",
+   "premium": true
+  },
+  {
+   "n": "嘉諾撒聖家學校(九龍塘)",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Holy Family Canossian School (Kowloon To",
+   "c": "hfcklt",
+   "premium": true
+  },
+  {
+   "n": "軒尼詩道官立小學",
+   "t": "B",
+   "d": "灣仔區",
+   "h": "Hennessy Road Government Primary School ",
+   "c": "hrgp",
+   "premium": true
+  },
+  {
+   "n": "軒尼詩道官立小學(銅鑼灣)",
+   "t": "B",
+   "d": "灣仔區",
+   "h": "Hennessy Road Government Primary School ",
+   "c": "hrgps",
+   "premium": true
+  },
+  {
+   "n": "國際基督教優質音樂中學暨小學",
+   "t": "B",
+   "d": "黃大仙區",
+   "h": "International Christian Quality Music Se",
+   "c": "icqm",
+   "premium": true
+  },
+  {
+   "n": "苏浙小学",
+   "t": "B",
+   "d": "东区",
+   "h": "Kiangsu &amp; Chekiang Primary School · ",
+   "c": "kcps",
+   "premium": true
+  },
+  {
+   "n": "九龍塘官立小學",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Kowloon Tong Government Primary School ·",
+   "c": "ktgps",
+   "premium": true
+  },
+  {
+   "n": "九龍真光中學（小學部）",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Kowloon True Light School (Primary Secti",
+   "c": "ktl",
+   "premium": true
+  },
+  {
+   "n": "基督教香港信義會宏信書院",
+   "t": "B",
+   "d": "元朗區",
+   "h": "ELCHK Lutheran Academy · 元朗榄口村 · 基督教 · 全",
+   "c": "la",
+   "premium": true
+  },
+  {
+   "n": "靈糧堂秀德小學",
+   "t": "B",
+   "d": "離島區",
+   "h": "Ling Liang Church Sau Tak Primary School",
+   "c": "lht",
+   "premium": true
+  },
+  {
+   "n": "浸信會呂明才小學",
+   "t": "B",
+   "d": "沙田區",
+   "h": "Baptist Lui Ming Choi Primary School · 沙",
+   "c": "lmc",
+   "premium": true
+  },
+  {
+   "n": "馬頭涌官立小學",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Ma Tau Chung Government Primary School ·",
+   "c": "mtc",
+   "premium": true
+  },
+  {
+   "n": "馬頭涌官立小學(紅磡灣)",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Ma Tau Chung Government Primary School (",
+   "c": "mtcps",
+   "premium": true
+  },
+  {
+   "n": "保良局建造商會學校",
+   "t": "B",
+   "d": "灣仔區",
+   "h": "HKCA Po Leung Kuk School · 天后庙道62号 · IB世",
+   "c": "plkcastar",
+   "premium": true
+  },
+  {
+   "n": "保良局陸慶濤小學",
+   "t": "B",
+   "d": "西貢區",
+   "h": "Po Leung Kuk Luk Hing Too Primary School",
+   "c": "plklht",
+   "premium": true
+  },
+  {
+   "n": "香港培道小學",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Pooi To Primary School · 九龙城区(不限校网) · 私立",
+   "c": "py2",
+   "premium": true
+  },
+  {
+   "n": "港九街坊婦女會孫方中小學",
+   "t": "B",
+   "d": "大埔區",
+   "h": "HKKKWA Sun Fong Chung Primary School · 大",
+   "c": "skhcf",
+   "premium": true
+  },
+  {
+   "n": "聖三一堂小學",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "Holy Trinity Primary School · 九龙城区 · 基督教",
+   "c": "skhhs",
+   "premium": true
+  },
+  {
+   "n": "聖公會基恩小學",
+   "t": "B",
+   "d": "中西區",
+   "h": "S.K.H. Kei Yan Primary School · 中西区(11校网",
+   "c": "skhke",
+   "premium": true
+  },
+  {
+   "n": "聖公會聖彼得小學",
+   "t": "B",
+   "d": "中西區",
+   "h": "S.K.H. St. Peter's Primary School · 中西区(",
+   "c": "skhsm",
+   "premium": true
+  },
+  {
+   "n": "聖公會仁立紀念小學",
+   "t": "B",
+   "d": "葵青區",
+   "h": "S.K.H. Yan Laap Memorial Primary School ",
+   "c": "skhyl2",
+   "premium": true
+  },
+  {
+   "n": "聖保祿天主教小學",
+   "t": "B",
+   "d": "灣仔區",
+   "h": "St. Paul's Primary Catholic School · 湾仔区",
+   "c": "sppcs",
+   "premium": true
+  },
+  {
+   "n": "滬江小學",
+   "t": "B",
+   "d": "東區",
+   "h": "Shanghai Alumni Primary School (SAPS) · ",
+   "c": "sppcs2",
+   "premium": true
+  },
+  {
+   "n": "香港真光中學附屬小學暨幼稚園",
+   "t": "B",
+   "d": "灣仔區",
+   "h": "True Light Primary &amp; Kindergarten (T",
+   "c": "tlps",
+   "premium": true
+  },
+  {
+   "n": "番禺會所華仁小學",
+   "t": "B",
+   "d": "東區",
+   "h": "Pun U Association Wah Yan Primary School",
+   "c": "wyps",
+   "premium": true
+  },
+  {
+   "n": "聖公會仁立小學",
+   "t": "B",
+   "d": "葵青區",
+   "h": "S.K.H. Yan Laap Primary School · 葵青区(65校",
+   "c": "ylaps",
+   "premium": true
+  },
+  {
+   "n": "聖羅撒學校",
+   "t": "A",
+   "d": "九龍城區",
+   "h": "41校网·直属聖羅撒書院(Band 1B)·85%保留位",
+   "c": "srl",
+   "premium": true
+  },
+  {
+   "n": "九龍塘天主教華德學校",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "天主教男女校·41校网·资助免费·九龙城区",
+   "c": "ktbwcs",
+   "premium": true
+  },
+  {
+   "n": "救恩學校",
+   "t": "B",
+   "d": "中西區",
+   "h": "Happy School·联系匯基書院·基督教男女校",
+   "c": "kau",
+   "premium": true
+  },
+  {
+   "n": "聖類斯中學(小學部)",
+   "t": "B",
+   "d": "中西區",
+   "h": "直属聖類斯中學·85%保留位·港岛传统男校",
+   "c": "sls",
+   "premium": true
+  },
+  {
+   "n": "九龍塘學校",
+   "t": "B",
+   "d": "九龍城區",
+   "h": "纯小学教育·无宗教·无附属·九龙塘私小",
+   "c": "kts",
+   "premium": true
+  },
+  {
+   "n": "循道學校",
+   "t": "B",
+   "d": "油尖旺區",
+   "h": "31校网·基督教资助男女校·油尖旺旗舰",
+   "c": "mc",
+   "premium": true
+  },
+  {
+   "n": "油蔴地天主教小學(海泓道)",
+   "t": "B",
+   "d": "油尖旺區",
+   "h": "31校网·千禧校舍·天主教男女校·学术扎实",
+   "c": "ycps",
+   "premium": true
+  },
+  {
+   "n": "大埔舊墟公立學校",
+   "t": "B",
+   "d": "大埔區",
+   "h": "84校网·无宗教·60年历史·大埔区最知名资助小学",
+   "c": "tpom",
+   "premium": true
+  },
+  {
+   "n": "塘尾道官立小學",
+   "t": "B",
+   "d": "油尖旺區",
+   "h": "41校网·联系伊利沙伯中學(Band 1A++)·免费官立",
+   "c": "tmrgps",
+   "premium": true
+  },
+  {
+   "n": "聖母小學",
+   "t": "B",
+   "d": "黃大仙區",
+   "h": "直属聖母書院·85%保留位·$40,000/年·全港招生",
+   "c": "olps",
+   "premium": true
+  },
+  {
+   "n": "佐敦道官立小學",
+   "t": "B",
+   "d": "油尖旺區",
+   "h": "31校网·联系伊利沙伯中學(Band 1A++)·免费官立",
+   "c": "jrgps",
+   "premium": true
+  },
+  {
+   "n": "聖伯多祿天主教小學",
+   "t": "B",
+   "d": "南區",
+   "h": "直属聖伯多祿中學·师生比1:2.1·天主教·免费资助·18校网",
+   "c": "aspcps",
+   "premium": true
+  },
+  {
+   "n": "培基小學",
+   "t": "B",
+   "d": "沙田區",
+   "h": "两文三语·数理英文授课·法语课外·联系培基书院(Band 1B)·91校网",
+   "c": "puikei",
+   "premium": true
+  },
+  {
+   "n": "香港浸會大學附屬學校王錦輝中小學",
+   "t": "S",
+   "d": "沙田區",
+   "h": "S级·非传统赛道·一条龙·A-Level 8状元·3剑桥·76% A*/A·全英四语",
+   "c": "wkf",
+   "premium": true
+  },
+  {
+   "n": "啓思小學",
+   "t": "A",
+   "d": "九龍城區",
+   "h": "A级·非传统赛道·IB理念·69/100·65%教师10年+·联系启思中学",
+   "c": "cps",
+   "premium": true
+  }
+ ],
+ "KG_REPORTS": [
+  {
+   "n": "寶山幼兒園",
+   "t": "S",
+   "d": "湾仔区",
+   "h": "全能学术神幼·约74%升神小",
+   "c": "braemar-hill",
+   "premium": false
+  },
+  {
+   "n": "基督堂幼稚園",
+   "t": "S",
+   "d": "九龙城区",
+   "h": "全港升读女拔/男拔比例最高的幼稚园·全外教沉浸",
+   "c": "cckg",
+   "premium": true
+  },
+  {
+   "n": "國際英文幼稚園",
+   "t": "S",
+   "d": "九龙城区",
+   "h": "St. Cat·全港最知名名幼·自信表达见称",
+   "c": "stcat",
+   "premium": true
+  },
+  {
+   "n": "香港創價幼稚園",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "Happy School代表·券校名幼·品格教育",
+   "c": "soka",
+   "premium": true
+  },
+  {
+   "n": "聖保祿幼稚園",
+   "t": "A+",
+   "d": "湾仔区",
+   "h": "约80%直升Band 1A圣保禄学校·性价比最高龙幼",
+   "c": "spk",
+   "premium": true
+  },
+  {
+   "n": "協恩中學附屬幼稚園",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "协恩一条龙·每年66个K1学位·全港最难入之一",
+   "c": "hy",
+   "premium": true
+  },
+  {
+   "n": "民生書院幼稚園",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "约85%直升民小·Band 1一条龙·九龙塘龙头",
+   "c": "munsang",
+   "premium": true
+  },
+  {
+   "n": "宣道幼稚園",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "宣小联系·重视音乐·学术纪律并重",
+   "c": "alliance",
+   "premium": true
+  },
+  {
+   "n": "天主教聖瑪加利大幼稚園",
+   "t": "A+",
+   "d": "湾仔区",
+   "h": "12校网券幼·升小成绩亮眼·免费",
+   "c": "smm",
+   "premium": true
+  },
+  {
+   "n": "香港培正小學",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "培正一条龙·中文教育旗舰·DSE状元摇篮",
+   "c": "pc",
+   "premium": true
+  },
+  {
+   "n": "聖公會幼稚園",
+   "t": "A+",
+   "d": "湾仔区",
+   "h": "SKH·全港最受欢迎券幼·升小成绩顶尖",
+   "c": "skh",
+   "premium": true
+  },
+  {
+   "n": "根德園幼稚園",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "历史档案·1966-2026·传统学术名幼巅峰",
+   "c": "kentville",
+   "premium": true
+  },
+  {
+   "n": "聖士提反女子中學附屬幼稚園",
+   "t": "A+",
+   "d": "中西区",
+   "h": "女校一条龙·Band 1A圣士提反·中西区名幼",
+   "c": "ssgc",
+   "premium": true
+  },
+  {
+   "n": "銅鑼灣維多利亞國際幼稚園",
+   "t": "A+",
+   "d": "湾仔区",
+   "h": "VEO旗舰·IB PYP·刘德华杨幂子女在读",
+   "c": "veo-cwb",
+   "premium": true
+  },
+  {
+   "n": "維多利亞(何文田)國際幼稚園",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "VEO九龙旗舰·IB认证·哈佛Project Zero",
+   "c": "veo-hmt",
+   "premium": true
+  },
+  {
+   "n": "維多利亞(寶翠園)幼稚園",
+   "t": "A+",
+   "d": "中西区",
+   "h": "VEO港岛西·中西区11校网·国际路线",
+   "c": "veo-bcy",
+   "premium": true
+  },
+  {
+   "n": "學之園幼稚園(海翩康城)",
+   "t": "A+",
+   "d": "西贡区",
+   "h": "LH旗舰·将军澳首选·双语沉浸·升小支援",
+   "c": "lh-hp",
+   "premium": true
+  },
+  {
+   "n": "學之園幼稚園（凱帆薈）",
+   "t": "A+",
+   "d": "油尖旺区",
+   "h": "LH唯一全日班+户外游乐场·西九龙热门",
+   "c": "lh-sf",
+   "premium": true
+  },
+  {
+   "n": "耀中國際幼稚園（根德道）",
+   "t": "A+",
+   "d": "九龙城区",
+   "h": "耀中九龙塘旗舰·师生比1:1.9·一条龙IB",
+   "c": "ycis-kt",
+   "premium": true
+  },
+  {
+   "n": "劍鳴幼稚園",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "蒙特梭利·学术型·最接近KV基因",
+   "c": "keenmind",
+   "premium": true
+  },
+  {
+   "n": "蘇浙小學校",
+   "t": "A",
+   "d": "东区",
+   "h": "普英双语·苏小联系·东区名幼",
+   "c": "kiangsu",
+   "premium": true
+  },
+  {
+   "n": "救恩學校",
+   "t": "A",
+   "d": "中西区",
+   "h": "Happy School·联系汇基书院·中西区券幼",
+   "c": "ky",
+   "premium": true
+  },
+  {
+   "n": "香港靈糧堂幼稚園",
+   "t": "A",
+   "d": "湾仔区",
+   "h": "创意音乐教育·Happy School·铜锣湾名幼",
+   "c": "llc",
+   "premium": true
+  },
+  {
+   "n": "綠楊幼稚園",
+   "t": "A",
+   "d": "荃湾区",
+   "h": "荃湾老牌名幼·1:6.9师生比·区内叩门强",
+   "c": "ly",
+   "premium": true
+  },
+  {
+   "n": "寶血幼稚園",
+   "t": "A",
+   "d": "湾仔区",
+   "h": "12校网券幼·生命教育·寶血小學叩门优势",
+   "c": "pb",
+   "premium": true
+  },
+  {
+   "n": "高主教書院幼稚園部",
+   "t": "A",
+   "d": "东区",
+   "h": "高主教一条龙·IB+DSE双轨·东区名幼",
+   "c": "rc",
+   "premium": true
+  },
+  {
+   "n": "金巴倫英文幼稚園",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "蒙特梭利·1:4.9师生比·九龙塘英语名幼",
+   "c": "snicholas",
+   "premium": true
+  },
+  {
+   "n": "崇真小學暨幼稚園",
+   "t": "A",
+   "d": "深水埗区",
+   "h": "ACK/EPK双轨·125年历史·升中保障",
+   "c": "tt",
+   "premium": true
+  },
+  {
+   "n": "約克國際幼稚園",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "英语教学·九龙塘名幼·学术进取",
+   "c": "york",
+   "premium": true
+  },
+  {
+   "n": "約克英文小學暨幼稚園(九龍塘)",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "约克主校·英语沉浸·九龙塘传统名幼",
+   "c": "york-klt",
+   "premium": true
+  },
+  {
+   "n": "香港培道小學",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "100%直升培道小学·券幼·校舍设施新",
+   "c": "pt",
+   "premium": true
+  },
+  {
+   "n": "聖母無玷聖心幼稚園",
+   "t": "A",
+   "d": "沙田区",
+   "h": "沙田名幼·天主教·活动教学+蒙特梭利",
+   "c": "ihm",
+   "premium": true
+  },
+  {
+   "n": "九龍禮賢學校",
+   "t": "A",
+   "d": "深水埗区",
+   "h": "幼小一条龙·基督教·品德教育出色",
+   "c": "krs",
+   "premium": true
+  },
+  {
+   "n": "聖保羅堂幼稚園",
+   "t": "A",
+   "d": "中西区",
+   "h": "中西区名幼·圣公会·11校网地利",
+   "c": "spc",
+   "premium": true
+  },
+  {
+   "n": "基督教中心幼稚園",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "41校网券幼·两文三语·区内口碑好",
+   "c": "ccc",
+   "premium": true
+  },
+  {
+   "n": "迦南幼稚園(九龍塘)",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "迦南旗舰·券校·金巴伦道总部",
+   "c": "canaan-klt",
+   "premium": true
+  },
+  {
+   "n": "迦南幼稚園(中環堅道)",
+   "t": "A",
+   "d": "中西区",
+   "h": "迦南最新分校·师生比1:4.0·中西区",
+   "c": "canaan-cd",
+   "premium": true
+  },
+  {
+   "n": "啓思小學附屬幼稚園",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "非连锁·IB风格·约90%直升啓思小學",
+   "c": "cpskg",
+   "premium": true
+  },
+  {
+   "n": "多多國際幼稚園（九龍塘）",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "多多旗舰·英语沉浸·内地家庭热门",
+   "c": "tutor-klt",
+   "premium": true
+  },
+  {
+   "n": "維多利亞幼稚園",
+   "t": "brand",
+   "d": "全港9校",
+   "h": "VEO品牌总览·IB PYP·两文三语·1965年创校",
+   "c": "victoria",
+   "premium": true
+  },
+  {
+   "n": "學之園幼稚園",
+   "t": "brand",
+   "d": "全港8校",
+   "h": "LH品牌总览·双语沉浸·升小支援系统·2000年创校",
+   "c": "lh",
+   "premium": true
+  },
+  {
+   "n": "耀中国际幼稚园",
+   "t": "brand",
+   "d": "全港3校",
+   "h": "耀中品牌总览·双教师制·一条龙IB·IGCSE",
+   "c": "ycis",
+   "premium": true
+  },
+  {
+   "n": "迦南幼稚园",
+   "t": "brand",
+   "d": "全港12校",
+   "h": "迦南品牌总览·1965年创校·券校连锁·覆盖全港",
+   "c": "canaan",
+   "premium": true
+  },
+  {
+   "n": "啓思幼稚園",
+   "t": "brand",
+   "d": "全港11校",
+   "h": "启思品牌总览·活动教学·剑桥英语·逆势扩张",
+   "c": "creative",
+   "premium": true
+  },
+  {
+   "n": "康杰中英文幼稚园",
+   "t": "brand",
+   "d": "全港4校",
+   "h": "康杰品牌总览·基督教·主题教学·德育出色",
+   "c": "goodhealth",
+   "premium": true
+  },
+  {
+   "n": "明慧國際幼稚園",
+   "t": "brand",
+   "d": "全港3校",
+   "h": "明慧品牌总览·国际课程元素·英语较强",
+   "c": "mingwai",
+   "premium": true
+  },
+  {
+   "n": "朗思國際幼稚園",
+   "t": "brand",
+   "d": "全港3校",
+   "h": "朗思品牌总览·国际课程·英语教学",
+   "c": "think",
+   "premium": true
+  },
+  {
+   "n": "多多幼稚园",
+   "t": "brand",
+   "d": "全港4校",
+   "h": "多多品牌总览·英语沉浸·内地家庭欢迎",
+   "c": "tutor",
+   "premium": true
+  },
+  {
+   "n": "維多利亞(海之戀)國際幼稚園",
+   "t": "A+",
+   "d": "荃湾区",
+   "h": "VEO体系·IB PYP·两文三语·2022创校",
+   "c": "veo-op",
+   "premium": true
+  },
+  {
+   "n": "約克蒙特梭利國際幼稚園(元朗)",
+   "t": "A",
+   "d": "元朗区",
+   "h": "约克系蒙特梭利·英语教学·国际幼儿学校",
+   "c": "york-montessori-yl",
+   "premium": true
+  },
+  {
+   "n": "德怡國際幼稚園(元朗)",
+   "t": "A",
+   "d": "元朗区",
+   "h": "TOPKIDS国际课程·Deborah体系·全英语",
+   "c": "topkids-yl",
+   "premium": true
+  }
+ ],
+ "TIER_CFG": {
+  "S": {
+   "c": "#C2453B",
+   "b": "S 级"
+  },
+  "A+": {
+   "c": "#D97A1F",
+   "b": "A+ 级"
+  },
+  "A": {
+   "c": "#178B9E",
+   "b": "A 级"
+  },
+  "B": {
+   "c": "#6A4E93",
+   "b": "B 级"
+  },
+  "brand": {
+   "c": "#1E8C46",
+   "b": "品牌"
+  },
+  "暂无评级": {
+   "c": "#6D6D6D",
+   "b": "暂无评级"
+  }
+ }
+}

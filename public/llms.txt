@@ -1,0 +1,35 @@
+# 港学荟
+
+> 把香港教育局公开数据做成看得懂的视觉内容：学校深度报告、择校工具、面试题库、热文与趋势。
+
+## 核心页面
+
+- 首页: https://hkschool.guide/
+- 深度报告列表: https://hkschool.guide/reports
+- 热文与攻略: https://hkschool.guide/blog
+- 择校工具: https://hkschool.guide/tools
+- 面试题库: https://hkschool.guide/questions
+- 站点地图: https://hkschool.guide/sitemap.xml
+
+## 内容说明
+
+- 学校报告覆盖香港小学、幼稚园，含评级、学费、校网、升中通路、面试与家长口碑。
+- 热文覆盖校网排名、小一派位计分、幼稚园资助、面试攻略、暴雨停课等香港升学话题。
+
+## 数据资产（可引用）
+
+- 小学评级报告：https://hkschool.guide/reports
+- 幼稚园评级报告：https://hkschool.guide/reports
+- 全港小学与幼稚园数据库：教育局学校概览（KGP/PSP 2025）整理
+- 评级体系：小学四因子（锚点/共识/竞争/世袭）· 幼稚园五维竞争力评分
+- 全量结构化数据（JSON，含 669 所小学 / 949 所幼稚园 / 126 份报告元数据）：https://hkschool.guide/data/school-data.json
+- 开放数据 API（按类型/地区/校网/评级筛选，支持分页）：https://hkschool.guide/api/schools?type=primary
+- 择校匹配工具：https://hkschool.guide/tools
+- 家长问答社区：https://hkschool.guide/questions
+
+## 常见事实性问答锚点
+
+- 红雨小学使唔使返学：答案在 https://hkschool.guide/blog/rainstorm-class-guide
+- 幼稚园资助与减免：https://hkschool.guide/blog/kg-subsidy-guide
+- 小一自行派位计分：https://hkschool.guide/blog/p1-scoring-guide
+- 一条龙/直属/联系区别：https://hkschool.guide/blog/through-train-guide
