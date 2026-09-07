@@ -245,7 +245,7 @@ export default function StoryGrid() {
       </section>
 
       <section className="mt-8 bg-[var(--p-band-blog)] py-6 md:py-10">
-        <SectionHeader index="02" title="热文阅读" href="/blog" linkLabel="查看全部 33 篇" />
+        <SectionHeader index="02" title="热文阅读" href="/blog" linkLabel="查看全部 40 篇" />
         <CardList stories={BLOGS} />
         {/* 原 promo 黑条降级：热文区底部一行小字（避免首屏双黑块竞争） */}
         <p className="mt-2 px-4 pb-8 text-center text-sm text-[var(--p-secondary)]">

@@ -18,7 +18,7 @@ const MENU: { label: string; sub: string; href: string; rot: string }[] = [
   { label: "择校工具", sub: "输入条件 · 排出结果", href: "/tools", rot: "-rotate-1" },
   { label: "学校对比", sub: "2-3 所并排看", href: "/compare", rot: "rotate-2" },
   { label: "面试题库", sub: "按学校筛真题", href: "/questions", rot: "rotate-2" },
-  { label: "热文", sub: "33 篇择校攻略", href: "/blog", rot: "-rotate-1" },
+  { label: "热文", sub: "40 篇择校攻略", href: "/blog", rot: "-rotate-1" },
 ];
 
 export default function SiteHeader() {

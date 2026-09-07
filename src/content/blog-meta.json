@@ -10,6 +10,24 @@
  },
  {
   "cat": "guide",
+  "slug": "hk-school-agency-red-flags",
+  "date": "9月7日",
+  "tag": "避坑指南",
+  "cover": "/covers/blog_hk-school-agency-red-flags.svg",
+  "title": "香港择校中介避坑指南：5句红旗话术+一套DIY尽调流程",
+  "tease": "收费30倍价差、低价引流、卖学籍灰色产业。5句听到就走的红旗话术＋一套不花钱的DIY择校尽调流程。"
+ },
+ {
+  "cat": "guide",
+  "slug": "hk-school-net-diy-analysis",
+  "date": "9月7日",
+  "tag": "校网分析",
+  "cover": "/covers/blog_hk-school-net-diy-analysis.svg",
+  "title": "香港小学校网怎么查？用免费官方数据DIY竞争比分析（5步教程）",
+  "tease": "中介报价5,580到17万，但数据源全部免费公开。用教育局文件＋学校年报＋收生公布，5步算清自己校网的竞争比。"
+ },
+ {
+  "cat": "guide",
   "slug": "kg-open-day-guide-2026",
   "date": "9月4日",
   "tag": "升学实战",
@@ -34,6 +52,15 @@
   "cover": "/covers/blog_hy-kg-search-2026.svg",
   "title": "协恩幼稚园热搜背后：免费名幼，为什么30人争1位？",
   "tease": "「協恩幼稚園」搜索24 Breakout。券校半日免费、1:7.6、K1仅66学额——但升学链2017已断。"
+ },
+ {
+  "cat": "system",
+  "slug": "hk-p1-admission-guide-2027",
+  "date": "9月7日",
+  "tag": "小一派位",
+  "cover": "/covers/blog_hk-p1-admission-guide-2027.svg",
+  "title": "香港小一入学2027/28完整攻略：自行分配学位、统一派位、计分表与填表策略",
+  "tease": "自行分配＋统一派位两阶段、官方计分表、1-1-1策略、2027/28关键时间表一次讲清，全部以教育局官方文件为准。"
  },
  {
   "cat": "system",
