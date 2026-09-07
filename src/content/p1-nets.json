@@ -1,0 +1,6718 @@
+{
+ "meta": {
+  "title": "2027/28学年小一学校网小学名册（官立及资助）",
+  "source": "教育局《2027年度小一入学 自行分配学位阶段 各小一学校网小学名册》",
+  "source_url": "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/index.html",
+  "compiled": "2026-08",
+  "extracted": "2026-09-07",
+  "note": "名册只收录2027/28学年开办小一班级的官立及资助学校；直资/私立/英基及特殊学校不在此列。统一派位阶段部分学校亦供其他校网选择（暂定统一派位学额），此处为自行分配阶段所属校网。",
+  "total_schools": 433
+ },
+ "nets": [
+  {
+   "net": "11",
+   "area": "中環、上環、西營盤、石塘咀、堅尼地城、山頂",
+   "area_short": "中環、上環、西營盤、石塘咀、堅尼地城、山頂",
+   "count": 16,
+   "schools": [
+    {
+     "net": "11",
+     "no": "132853",
+     "name": "聖嘉祿學校",
+     "name_en": "St Charles School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 25,
+     "address": "香港堅尼地城蒲飛路２５號 (2817 3325)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "170194",
+     "name": "聖士提反女子中學附屬小學",
+     "name_en": "St Stephen’s Girls’ Primary School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港柏道３３號 (2540 5088)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "510882",
+     "name": "李陞小學",
+     "name_en": "Li Sing Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 25,
+     "address": "香港西營盤高街１１９號 (2540 8966)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "511382",
+     "name": "天主教總堂區學校",
+     "name_en": "Catholic Mission School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "香港律打街 (2547 7618)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "511552",
+     "name": "香港潮商學校",
+     "name_en": "Chiu Sheung School, Hong Kong",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "香港薄扶林道７９號Ｂ (2546 1869)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "512443",
+     "name": "英皇書院同學會小學",
+     "name_en": "King’s College Ob/Assn Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "香港必列者士街５８號 (2547 7468)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "513539",
+     "name": "聖公會基恩小學",
+     "name_en": "SKH Kei Yan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "香港荷李活道１０９號 (2524 0896)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "513555",
+     "name": "聖公會呂明才紀念小學",
+     "name_en": "SKH Lui Ming Choi Memorial Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港堅尼地城加惠民道３１號 (2817 2305)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "513601",
+     "name": "聖公會聖馬太小學",
+     "name_en": "SKH St Matthew’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "香港上環新街１２—２０號 (2548 3368)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "513628",
+     "name": "聖公會聖彼得小學",
+     "name_en": "SKH St Peter’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "香港山道７０及８８號 (2546 2624)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "513687",
+     "name": "嘉諾撒聖心學校",
+     "name_en": "Sacred Heart Canossian School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "香港中環堅道２６號 (2524 8679)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "513750",
+     "name": "新會商會學校",
+     "name_en": "San Wui Commercial Society School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "香港上環居賢坊１號 (2559 2406)",
+     "remarks": [
+      "S",
+      "U1",
+      "#1"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "513954",
+     "name": "聖安多尼學校",
+     "name_en": "St Anthony’s School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "香港薄扶林道６９號Ａ (2546 6263)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "528781",
+     "name": "般咸道官立小學",
+     "name_en": "Bonham Road Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 25,
+     "address": "香港般咸道９號Ａ (2517 1216)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "534242",
+     "name": "中西區聖安多尼學校",
+     "name_en": "Central & Western District St Anthony’s",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "香港醫院道２號 (2546 0369)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "11",
+     "no": "536377",
+     "name": "英皇書院同學會小學第二校",
+     "name_en": "King’s College Ob/Assn Primary School No. 2",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "香港上環普慶坊４０號 (2547 7575)",
+     "remarks": [
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "12",
+   "area": "灣仔、銅鑼灣、跑馬地、大坑、渣甸山、掃桿埔、肇輝臺、東山臺、勵德邨、玫瑰新邨、松柏新邨、栢景臺、金龍臺",
+   "area_short": "灣仔、銅鑼灣、跑馬地…",
+   "count": 14,
+   "schools": [
+    {
+     "net": "12",
+     "no": "170054",
+     "name": "聖保祿天主教小學",
+     "name_en": "St Paul’s Primary Catholic School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "香港跑馬地黃泥涌道８１Ａ號 (2576 3181)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "170062",
+     "name": "嘉諾撒聖方濟各學校",
+     "name_en": "St Francis’ Canossian School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "香港灣仔聖佛蘭士街４２及４４號 (2528 1763)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "170151",
+     "name": "聖若瑟小學",
+     "name_en": "St Joseph’s Primary School",
+     "type": "男",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "香港灣仔活道４８號 (2574 2259)",
+     "remarks": [
+      "S",
+      "#2"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "510084",
+     "name": "軒尼詩道官立小學",
+     "name_en": "Hennessy Road Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "香港灣仔譚臣道１６９號 (2572 6633)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "510190",
+     "name": "保良局金銀業貿易場張凝文學校",
+     "name_en": "Po Leung Kuk Gold & Silver Exchange",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "香港銅鑼灣連道２及１２號 (2890 8131)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "510238",
+     "name": "官立嘉道理爵士小學",
+     "name_en": "Sir Ellis Kadoorie (Sookunpo) Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "香港掃桿埔東院道９號 (2577 3489)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "510335",
+     "name": "東華三院李賜豪小學",
+     "name_en": "TWGHS Li Chi Ho Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "香港灣仔皇后大道東２８０號 (2575 0470)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "511293",
+     "name": "佛教黃焯菴小學",
+     "name_en": "Buddhist Wong Cheuk Um Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 25,
+     "address": "香港銅鑼灣東院道１１號 (2576 2638)",
+     "remarks": [
+      "S",
+      "U2"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "512648",
+     "name": "李陞大坑學校",
+     "name_en": "Li Sing Tai Hang School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "香港大坑浣紗街７３號 (2577 5188)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "512850",
+     "name": "瑪利曼小學",
+     "name_en": "Marymount Primary School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "香港大坑道３３６號 (2572 8728)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "513180",
+     "name": "寶覺小學",
+     "name_en": "Po Kok Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 38,
+     "address": "香港跑馬地山光道９及１１號 (2573 7911)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "513318",
+     "name": "寶血小學",
+     "name_en": "Precious Blood Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "香港跑馬地成和道７２號 (2572 3851)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "513580",
+     "name": "聖公會聖雅各小學",
+     "name_en": "SKH St James’ Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "香港灣仔堅尼地道１１０號 (2574 9369)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "12",
+     "no": "601667",
+     "name": "軒尼詩道官立小學（銅鑼灣）",
+     "name_en": "Hennessy Road Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "香港銅鑼灣東院道３號 (2157 2788)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "14",
+   "area": "北角、鰂魚涌、太古城、康山、鯉景灣、康東邨、西灣臺、嘉亨灣",
+   "area_short": "北角、鰂魚涌、太古城、康山、鯉景灣、康東邨、西灣臺、嘉亨灣",
+   "count": 10,
+   "schools": [
+    {
+     "net": "14",
+     "no": "136204",
+     "name": "北角衞理小學",
+     "name_en": "North Point Methodist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港北角百福道２Ａ號 (2571 3599)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "510157",
+     "name": "北角官立小學",
+     "name_en": "North Point Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "香港北角英皇道８８８號 (2561 7130)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "510750",
+     "name": "北角循道學校",
+     "name_en": "Chinese Methodist School (North Point)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港北角百福道１５號 (2561 9693)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "510920",
+     "name": "番禺會所華仁小學",
+     "name_en": "Pun U Assn Wah Yan Primary School",
+     "type": "男",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "香港北角百福道２號 (2572 2140)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "511250",
+     "name": "佛教中華康山學校",
+     "name_en": "Buddhist Chung Wah Kornhill Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 50,
+     "address": "香港鰂魚涌康愉街２號 (2884 4115)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "511358",
+     "name": "香港嘉諾撒學校",
+     "name_en": "Canossa School (Hong Kong)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 75,
+     "address": "香港鰂魚涌海澤街８號 (2561 0115)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "513610",
+     "name": "聖公會聖米迦勒小學",
+     "name_en": "SKH St Michael’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港北角炮台山道２３號 (2570 9473)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "513822",
+     "name": "滬江小學",
+     "name_en": "Shanghai Alumni Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "香港鰂魚涌康怡花園康盛街１４號 (2884 4775)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "514446",
+     "name": "太古小學",
+     "name_en": "Taikoo Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "香港英皇道１１００號 (2561 5555)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "14",
+     "no": "579556",
+     "name": "丹拿山循道學校",
+     "name_en": "Chinese Methodist School, Tanner Hill",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港北角百福道４號 (2561 5822)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "16",
+   "area": "柴灣、筲箕灣、西灣河、阿公岩、石澳、大浪灣、耀東邨、興東邨、東熹苑、東霖苑、逸濤灣、杏花邨、山翠苑、興華邨、漁灣邨、環翠邨、小西灣邨、翠灣邨、富景花園、富怡花園、富欣花園、曉翠苑、佳翠苑、杏翠苑、連翠邨、海德園",
+   "area_short": "柴灣、筲箕灣、西灣河…",
+   "count": 11,
+   "schools": [
+    {
+     "net": "16",
+     "no": "150436",
+     "name": "天主教明德學校",
+     "name_en": "Meng Tak Catholic School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "香港柴灣祥民道１１號 (2557 2244)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "510858",
+     "name": "中華基督教會基灣小學",
+     "name_en": "CCC Kei Wan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港筲箕灣西灣河街６３號 (2560 8007)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "513709",
+     "name": "慈幼學校",
+     "name_en": "Salesian School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "香港筲箕灣柴灣道１６號 (2885 0032)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "513857",
+     "name": "筲箕灣崇真學校",
+     "name_en": "Shaukiwan Tsung Tsin School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港筲箕灣巴色道３號 (2560 6272)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "514497",
+     "name": "香港中國婦女會丘佐榮學校",
+     "name_en": "The HKCWC Hioe Tjo Yoeng Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "香港筲箕灣西灣河街６１號 (2560 2051)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "514551",
+     "name": "救世軍韋理夫人紀念學校",
+     "name_en": "The Salvation Army Ann Wyllie Memorial",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港杏花邨盛泰道１００號 (2558 2111)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "515248",
+     "name": "勵志會梁李秀娛紀念小學",
+     "name_en": "END Leung Lee Sau Yu Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "香港筲箕灣耀興道２５號 (2967 9622)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "534196",
+     "name": "愛秩序灣官立小學",
+     "name_en": "Aldrich Bay Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "香港筲箕灣愛禮街１號 (2561 1118)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "535613",
+     "name": "培僑小學",
+     "name_en": "Pui Kiu Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "香港柴灣小西灣富怡道１２號 (2897 7866)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "543306",
+     "name": "中華基督教會基灣小學（愛蝶灣）",
+     "name_en": "CCC Kei Wan Primary School (Aldrich Bay)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港筲箕灣愛信道３９號 (2915 4140)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "16",
+     "no": "554618",
+     "name": "聖公會柴灣聖米迦勒小學",
+     "name_en": "SKH Chai Wan St Michael’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港柴灣柴灣道３８０號 (3102 8101)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "18",
+   "area": "香港仔、鴨脷洲、薄扶林、黃竹坑、赤柱、淺水灣、深水灣、舂坎角、壽臣山、置富花園、薄扶林花園、華富邨、華貴邨、嘉隆苑、碧瑤灣、田灣、石排灣、海怡半島、貝沙灣、紅山半島、陽明山莊、港島南岸",
+   "area_short": "香港仔、鴨脷洲、薄扶林…",
+   "count": 9,
+   "schools": [
+    {
+     "net": "18",
+     "no": "511137",
+     "name": "鴨脷洲街坊學校",
+     "name_en": "Aplichau Kaifong Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "香港鴨脷洲利東邨利東邨道９號 (2871 1669)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "512036",
+     "name": "東華三院鶴山學校",
+     "name_en": "Tung Wah Group of Hospitals Hok Shan",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "香港華富邨華林徑５號 (2551 1142)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "513385",
+     "name": "嘉諾撒培德學校",
+     "name_en": "Pui Tak Canossian Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 25,
+     "address": "香港香港仔大道１８０號 (2552 9529)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "513431",
+     "name": "聖公會置富始南小學",
+     "name_en": "SKH Chi Fu Chi Nam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "香港薄扶林置富花園置富徑３號 (2550 4004)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "514233",
+     "name": "聖伯多祿天主教小學",
+     "name_en": "St Peter’s Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "香港鴨脷洲利東邨第二期 (2874 8311)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "530000",
+     "name": "聖公會田灣始南小學",
+     "name_en": "SKH Tin Wan Chi Nam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "香港香港仔田灣新街５號 (2550 8326)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "535591",
+     "name": "海怡寶血小學",
+     "name_en": "Precious Blood Primary School (South",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "香港鴨脷洲鴨脷洲橋道３５５號 (2551 1378)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "536989",
+     "name": "香港南區官立小學",
+     "name_en": "Hong Kong Southern District Government",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "香港鴨脷洲鴨脷洲橋道３２５號 (2550 9662)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "18",
+     "no": "560529",
+     "name": "香港仔聖伯多祿天主教小學",
+     "name_en": "Aberdeen St Peter’s Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "香港石排灣邨 (2873 5101)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "31",
+   "area": "尖沙咀、油麻地、佐敦道、京士柏、嘉文花園、漾日居、君臨天下、凱旋門、爵士花園、帝庭園、衛理苑、海富苑、駿發花園、富榮花園、柏景灣、擎天半島、港景峰、帝柏海灣、君頤峰、帝峯皇殿、御金．國峯、TheAustin、GrandAustin",
+   "area_short": "尖沙咀、油麻地、佐敦道…",
+   "count": 10,
+   "schools": [
+    {
+     "net": "31",
+     "no": "510343",
+     "name": "東華三院羅裕積小學",
+     "name_en": "TWGHS Lo Yu Chik Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍油麻地碧街５１號 (2780 0039)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "510823",
+     "name": "佐敦道官立小學",
+     "name_en": "Jordan Road Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍油麻地南京街１號Ｂ (2332 4249)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "510904",
+     "name": "循道學校",
+     "name_en": "Methodist School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍衛理道１２號 (3976 2200)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "511021",
+     "name": "油蔴地天主教小學",
+     "name_en": "Yaumati Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍油麻地東莞街４１號 (2780 7311)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "514136",
+     "name": "嘉諾撒聖瑪利學校",
+     "name_en": "St Mary’s Canossian School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍尖沙咀柯士甸道１６２號 (2739 0081)",
+     "remarks": [
+      "P",
+      "S",
+      "U3"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "514454",
+     "name": "德信學校",
+     "name_en": "Tak Sun School",
+     "type": "男",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍柯士甸道１０３號 (2367 3446)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "514713",
+     "name": "東莞同鄉會方樹泉學校",
+     "name_en": "TKDS Fong Shu Chuen School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍油麻地東莞街４３號 (2780 2296)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "514837",
+     "name": "中華基督教會灣仔堂基道小學",
+     "name_en": "CCC Wanchai Church Kei To Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "九龍油麻地東莞街４５號 (2780 4455)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "515000",
+     "name": "油蔴地街坊會學校",
+     "name_en": "Yaumati Kaifong Association School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "九龍油麻地眾坊街８０號 (2388 8327)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "31",
+     "no": "535796",
+     "name": "油蔴地天主教小學（海泓道）",
+     "name_en": "Yaumati Catholic Primary School (Hoi Wang",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍油麻地海泓道１０號 (2625 0766)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "32",
+   "area": "旺角、大角咀、維港灣、頌賢花園、港灣豪庭、凱帆軒、西九龍紀律部隊宿舍、君滙港、大同新邨、富多來新邨、浪澄灣、一號銀海、海桃灣、利奧坊、奧柏．御峯、奧朗．御峯、榮富苑、亮賢居、萬盛閣、百匯軒、別樹華軒、別樹一居、",
+   "area_short": "旺角、大角咀、維港灣…",
+   "count": 7,
+   "schools": [
+    {
+     "net": "32",
+     "no": "317098",
+     "name": "中華基督教會協和小學",
+     "name_en": "CCC Heep Woh Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "九龍太子道１９１號Ｂ (2381 9119)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "32",
+     "no": "510688",
+     "name": "塘尾道官立小學",
+     "name_en": "Tong Mei Road Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍塘尾道１７０號 (2393 0800)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "32",
+     "no": "510947",
+     "name": "聖公會基榮小學",
+     "name_en": "SKH Kei Wing Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍荔枝角道２３號 (2380 0349)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "32",
+     "no": "512362",
+     "name": "中華基督教會基全小學",
+     "name_en": "CCC Kei Tsun Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "九龍大角咀道１５０號 (2392 8221)",
+     "remarks": [
+      "S",
+      "#3"
+     ]
+    },
+    {
+     "net": "32",
+     "no": "513849",
+     "name": "路德會沙崙學校",
+     "name_en": "Sharon Lutheran School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍大角咀櫻桃街１８號 (2392 0221)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "32",
+     "no": "514390",
+     "name": "大角嘴天主教小學",
+     "name_en": "Tai Kok Tsui Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍大角咀道１４８號 (2393 3559)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "32",
+     "no": "539520",
+     "name": "大角嘴天主教小學（海帆道）",
+     "name_en": "Tai Kok Tsui Catholic Primary School (Hoi",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍大角咀海帆道２０號 (2191 4270)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "34",
+   "area": "何文田、土瓜灣、馬頭角、加多利山、窩打老道山、愛民邨、何文田邨、俊民苑、御龍居、欣圖軒、冠熹苑、馬頭圍邨、真善美村、帝庭豪園、賀龍居、樂民新村、曉暉華庭、海悅豪庭、欣榮花園、傲雲峰、翔龍灣、半山壹號、啟德、啟晴邨、德朗邨、煥然壹居、啟德1號、天寰、嘉匯、龍譽、啟悅苑、啟欣苑、啟朗苑、天璽．天、天璽．海、啟德海灣、嘉峯匯、澐璟",
+   "area_short": "何文田、土瓜灣、馬頭角…",
+   "count": 18,
+   "schools": [
+    {
+     "net": "34",
+     "no": "114090",
+     "name": "保良局何壽南小學",
+     "name_en": "PLK Stanley Ho Sau Nan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍九龍城沐虹街１１號 (2326 2627)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "134872",
+     "name": "九龍靈光小學",
+     "name_en": "Emmanuel Primary School, Kowloon",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "九龍馬頭圍盛德街３６—３８號 (2711 1232)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "510050",
+     "name": "農圃道官立小學",
+     "name_en": "Farm Road Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍土瓜灣農圃道８號 (2711 0682)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "510130",
+     "name": "馬頭涌官立小學",
+     "name_en": "Ma Tau Chung Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍土瓜灣福祥街１號 (2711 5548)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "510939",
+     "name": "聖公會聖十架小學",
+     "name_en": "SKH Holy Cross Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍九龍城沐虹街９號 (2320 4931)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "511161",
+     "name": "浸信會孔憲紹天虹小學",
+     "name_en": "Baptist Hung Hin Shiu Rainbow Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍九龍城沐安街２號 (2328 7971)",
+     "remarks": [
+      "H1",
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "511420",
+     "name": "陳瑞祺（喇沙）小學",
+     "name_en": "Chan Sui Ki (La Salle) Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍何文田常盛街２２號 (2711 6278)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "511862",
+     "name": "聖公會牧愛小學",
+     "name_en": "SKH Good Shepherd Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "九龍土瓜灣馬頭圍道１７１號 (2712 3094)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "511927",
+     "name": "協恩中學附屬小學",
+     "name_en": "Heep Yunn Primary School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "九龍農圃道１號 (2711 1263)",
+     "remarks": [
+      "F",
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "512052",
+     "name": "聖公會聖匠小學",
+     "name_en": "SKH Holy Carpenter Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "九龍貴州街１４號 (2333 2313)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "512176",
+     "name": "合一堂學校",
+     "name_en": "Hop Yat Church School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍公主道７號 (2711 2440)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "512192",
+     "name": "基督教香港信義會紅磡信義學校",
+     "name_en": "ELCHK Hung Hom Lutheran Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "九龍炮仗街３９號 (2712 1543)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "512524",
+     "name": "九龍婦女福利會李炳紀念學校",
+     "name_en": "KWWC Li Ping Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "九龍衛理道３３號 (2384 6904)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "512664",
+     "name": "天主教領島學校",
+     "name_en": "Ling To Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍愛民邨俊民苑 (2713 9233)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "513113",
+     "name": "獻主會小學",
+     "name_en": "Oblate Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍土瓜灣順風街１號 (2364 8375)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "514250",
+     "name": "聖羅撒學校",
+     "name_en": "St Rose of Lima’s School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍基堤道４號 (2338 2807)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "560634",
+     "name": "中華基督教會灣仔堂基道小學（九龍城）",
+     "name_en": "CCC Wanchai Church Kei To Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "九龍土瓜灣靠背壟道１７０號 (2714 7000)",
+     "remarks": [
+      "S",
+      "U4"
+     ]
+    },
+    {
+     "net": "34",
+     "no": "569631",
+     "name": "獻主會聖馬善樂小學",
+     "name_en": "St. Eugene de Mazenod Oblate Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "九龍土瓜灣天光道２４號 (2715 1011)",
+     "remarks": [
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "35",
+   "area": "紅磡、大環山、黃埔新邨、黃埔花園、家維邨、海逸豪園、半島豪庭、海名軒、都會軒、昇御門、海濱南岸、維港．星岸、煥然懿居、啟岸、環海．東岸",
+   "area_short": "紅磡、大環山、黃埔新邨…",
+   "count": 7,
+   "schools": [
+    {
+     "net": "35",
+     "no": "512044",
+     "name": "天神嘉諾撒學校",
+     "name_en": "Holy Angels Canossian School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "九龍紅磡鶴園街２１號 (2362 4448)",
+     "remarks": [
+      "S",
+      "U5",
+      "#4"
+     ]
+    },
+    {
+     "net": "35",
+     "no": "513458",
+     "name": "聖公會奉基小學",
+     "name_en": "SKH Fung Kei Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍紅磡黃埔花園德定街４號 (2764 8909)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "35",
+     "no": "513644",
+     "name": "聖公會聖提摩太小學",
+     "name_en": "SKH St Timothy’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍紅磡鶴園街１４及１９號 (2362 5953)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "35",
+     "no": "521990",
+     "name": "葛量洪校友會黃埔學校",
+     "name_en": "GCEPSA Whampoa Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍紅磡黃埔花園德安街３０號 (2334 3673)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "35",
+     "no": "522007",
+     "name": "黃埔宣道小學",
+     "name_en": "Alliance Primary School, Whampoa",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍紅磡黃埔花園德豐街２１號 (2336 7742)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "35",
+     "no": "539171",
+     "name": "馬頭涌官立小學（紅磡灣）",
+     "name_en": "Ma Tau Chung Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍紅磡灣愛景街３號 (2363 8989)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "35",
+     "no": "540218",
+     "name": "聖公會奉基千禧小學",
+     "name_en": "SKH Fung Kei Millennium Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍紅磡黃埔花園德定街２號 (2362 7123)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "40",
+   "area": "深水埗、長沙灣、荔枝角、石硤尾、又一村、麗閣邨、麗安邨、怡閣苑、怡靖苑、南昌邨、富昌邨、榮昌邨、長沙灣邨、元洲邨、幸福邨、幸俊苑、泓景臺、昇悅居、宇晴軒、碧海藍天、海麗邨、曼克頓山、美孚新邨、清麗苑、盈暉臺、蘇屋邨、李鄭屋邨、寶麗苑、寶熙苑、爾登華庭、爾登豪庭、澤安邨、畢架山花園、帝景峰、畢架山峰、石硤尾邨、白田邨、大坑東邨、南山邨、又一居、海盈邨、海達邨、凱樂苑、麗翠苑、南昌一號、匯璽、維港匯",
+   "area_short": "深水埗、長沙灣、荔枝角…",
+   "count": 20,
+   "schools": [
+    {
+     "net": "40",
+     "no": "114545",
+     "name": "郭怡雅神父紀念學校",
+     "name_en": "Father Cucchiara Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍深水埗荔盈街５號 (2495 1922)",
+     "remarks": [
+      "S",
+      "#5"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "510505",
+     "name": "福榮街官立小學",
+     "name_en": "Fuk Wing Street Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍深水埗福榮街２３１號 (2386 9426)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "510874",
+     "name": "李鄭屋官立小學",
+     "name_en": "Li Cheng Uk Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍深水埗東京街４３號 (2386 8049)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "510963",
+     "name": "聖公會聖紀文小學",
+     "name_en": "SKH St Clement’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 60,
+     "address": "九龍長沙灣幸福街５號 (2361 5663)",
+     "remarks": []
+    },
+    {
+     "net": "40",
+     "no": "510971",
+     "name": "天主教善導小學",
+     "name_en": "Good Counsel Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍深水埗廣利道９號 (2386 5392)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "511129",
+     "name": "大坑東宣道小學",
+     "name_en": "Alliance Primary School, Tai Hang Tung",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 60,
+     "address": "九龍大坑東棠蔭街１３及２３號 (2777 8949)",
+     "remarks": []
+    },
+    {
+     "net": "40",
+     "no": "511730",
+     "name": "基督教香港信義會深信學校",
+     "name_en": "The ELCHK Faith Lutheran School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "九龍石硤尾培德街８號 (2779 0106)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "512010",
+     "name": "旅港開平商會學校",
+     "name_en": "Hoi Ping Chamber of Com Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍荔枝角道７００號 (2387 5605)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "512214",
+     "name": "寶血會嘉靈學校",
+     "name_en": "Ka Ling School of The Precious Blood",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 75,
+     "address": "九龍深水埗海壇街２８０號 (2386 4542)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "513130",
+     "name": "長沙灣天主教小學",
+     "name_en": "Cheung Sha Wan Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍長沙灣東京街 7 號 (2776 1423)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "513490",
+     "name": "聖公會基愛小學",
+     "name_en": "SKH Kei Oi Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍廣利道１５號 (2386 2463)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "513636",
+     "name": "聖公會聖多馬小學",
+     "name_en": "SKH St Thomas’ Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 45,
+     "address": "九龍深水埗東沙島街１４５號 (2779 3076)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "514055",
+     "name": "聖方濟愛德小學",
+     "name_en": "St Francis of Assisi’s Caritas School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 60,
+     "address": "九龍石硤尾偉智街７號 (2777 2752)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "514500",
+     "name": "香港四邑商工總會新會商會學校",
+     "name_en": "HK Sze Yap C & I Assn San Wui Commercial",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "九龍大坑東棠蔭街２１號 (2777 9515)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "543276",
+     "name": "荔枝角天主教小學",
+     "name_en": "Laichikok Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 75,
+     "address": "九龍深水埗興華街西６號 (2743 3836)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "543551",
+     "name": "深水埗官立小學",
+     "name_en": "Sham Shui Po Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍深水埗深旺道１０１號 (2959 0555)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "554626",
+     "name": "聖公會基福小學",
+     "name_en": "SKH Kei Fook Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 90,
+     "address": "九龍深水埗長沙灣道５５５號 (2387 1121)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "554650",
+     "name": "聖公會聖安德烈小學",
+     "name_en": "SKH St Andrew’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 90,
+     "address": "九龍深水埗海麗街３號 (2959 1551)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "575534",
+     "name": "瑪利諾神父教會學校（小學部）",
+     "name_en": "Maryknoll Fathers’ School (Primary Section)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍深水埗海麗街１１號 (2778 8235)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "40",
+     "no": "579513",
+     "name": "中華基督教會協和小學（長沙灣）",
+     "name_en": "CCC Heep Woh Primary School (Cheung Sha",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "九龍深水埗東京街１８號 (2111 9099)",
+     "remarks": [
+      "P"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "41",
+   "area": "九龍城、九龍塘、筆架山道、廣播道、美東邨、曉薈",
+   "area_short": "九龍城、九龍塘、筆架山道、廣播道、美東邨、曉薈",
+   "count": 10,
+   "schools": [
+    {
+     "net": "41",
+     "no": "131806",
+     "name": "耀山學校",
+     "name_en": "Iu Shan School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 13,
+     "address": "九龍嘉林邊道２４號 (2336 2115)",
+     "remarks": [
+      "S",
+      "#6"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "510017",
+     "name": "華德學校",
+     "name_en": "Bishop Walsh Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍聯合道１５０號 (2337 2058)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "511722",
+     "name": "拔萃小學",
+     "name_en": "Diocesan Preparatory School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 30,
+     "address": "九龍九龍塘志士達道１號及３號 (2336 1448)",
+     "remarks": [
+      "F"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "512060",
+     "name": "嘉諾撒聖家學校",
+     "name_en": "Holy Family Canossian School",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 45,
+     "address": "九龍九龍城聯合道１０２號 (2382 1035)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "512591",
+     "name": "喇沙小學",
+     "name_en": "La Salle Primary School",
+     "type": "男",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 90,
+     "address": "九龍九龍塘喇沙利道１號Ｄ (2336 2609)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "512826",
+     "name": "瑪利諾修院學校（小學部）",
+     "name_en": "Maryknoll Convent School (Primary Section)",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 75,
+     "address": "九龍九龍塘窩打老道１３０號 (2336 0611)",
+     "remarks": [
+      "F"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "539180",
+     "name": "九龍塘官立小學",
+     "name_en": "Kowloon Tong Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍九龍塘添福道６號 (2336 0991)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "540196",
+     "name": "嘉諾撒聖家學校（九龍塘）",
+     "name_en": "Holy Family Canossian School (Kowloon",
+     "type": "女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 60,
+     "address": "九龍九龍塘添福路８號 (2336 5981)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "41",
+     "no": "560642",
+     "name": "中華基督教會基華小學（九龍塘）",
+     "name_en": "CCC Kei Wa Primary School (Kowloon Tong)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 60,
+     "address": "九龍九龍塘牛津道１號Ｂ (2267 6676)",
+     "remarks": []
+    },
+    {
+     "net": "41",
+     "no": "579548",
+     "name": "九龍塘天主教華德學校",
+     "name_en": "Kowloon Tong Bishop Walsh Catholic School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍延文禮士道３９號 (2337 3768)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "43",
+   "area": "新蒲崗、東頭（二）邨、黃大仙上邨、黃大仙下邨、竹園南邨、竹園北邨、盈福苑、翠竹花園、橫頭磡邨、樂富邨、富強苑、康強苑、嘉強苑、德強苑、天馬苑、天宏苑、鵬程苑、新光中心、豪苑、啓德花園、豪門、譽．港灣、現崇山、東匯邨、景泰苑",
+   "area_short": "新蒲崗、東頭（二）邨、黃大仙上邨…",
+   "count": 8,
+   "schools": [
+    {
+     "net": "43",
+     "no": "510181",
+     "name": "保良局陳南昌夫人小學",
+     "name_en": "PLK Mrs Chan Nam Chong Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍新蒲崗康強街３０號 (2759 9365)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "43",
+     "no": "510718",
+     "name": "黃大仙官立小學",
+     "name_en": "Wong Tai Sin Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍黃大仙正德街１００號 (2320 2437)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "43",
+     "no": "511196",
+     "name": "福德學校",
+     "name_en": "Bishop Ford Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍東頭村培民街２０號 (2336 0206)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "43",
+     "no": "511340",
+     "name": "嘉諾撒小學",
+     "name_en": "Canossa Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍黃大仙親仁街５號 (2322 2445)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "43",
+     "no": "513059",
+     "name": "天主教伍華小學",
+     "name_en": "Ng Wah Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍新蒲崗彩虹道５號 (2383 8079)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "43",
+     "no": "513512",
+     "name": "聖公會基德小學",
+     "name_en": "SKH Kei Tak Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍黃大仙大成街 (2320 3077)",
+     "remarks": [
+      "S",
+      "#7"
+     ]
+    },
+    {
+     "net": "43",
+     "no": "514160",
+     "name": "聖博德學校",
+     "name_en": "St Patrick’s School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍橫頭磡富美東街１２號 (2337 0133)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "43",
+     "no": "514926",
+     "name": "黃大仙天主教小學",
+     "name_en": "Wong Tai Sin Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍黃大仙正德街１０２號 (2320 8367)",
+     "remarks": [
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "45",
+   "area": "慈雲山、鑽石山、富山邨、彩虹邨、采頤花園、彩雲邨、彩輝邨、瓊山苑、瓊麗苑、新麗花園、帝峯豪苑、宏景花園、星河明居、龍蟠苑、鳳德邨、鳳凰新村、慈樂邨、慈民邨、慈正邨、彩峰苑、悅庭軒、嘉峰臺、曉暉花園、啟鑽苑、啟翔苑、峻弦",
+   "area_short": "慈雲山、鑽石山、富山邨…",
+   "count": 12,
+   "schools": [
+    {
+     "net": "45",
+     "no": "511579",
+     "name": "彩雲聖若瑟小學",
+     "name_en": "Choi Wan St Joseph’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍清水灣道彩雲邨 (2755 7180)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "512125",
+     "name": "真鐸學校",
+     "name_en": "Chun Tok School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "九龍鑽石山斧山道１７１號 (2326 5111)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "512370",
+     "name": "中華基督教會基慈小學",
+     "name_en": "CCC Kei Tsz Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍慈雲山道１５２號 (2322 5122)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "512389",
+     "name": "中華基督教會基華小學",
+     "name_en": "CCC Kei Wa Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍黃大仙彩虹邨黃菊路３號 (2320 0683)",
+     "remarks": [
+      "S",
+      "#8"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "514004",
+     "name": "聖文德天主教小學",
+     "name_en": "St Bonaventure Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍鑽石山鳳德邨鳳禮道４號 (2320 2727)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "518484",
+     "name": "伊斯蘭鮑伯濤紀念小學",
+     "name_en": "Islamic Dharwood Pau Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "伊斯蘭教",
+     "quota": 50,
+     "address": "九龍慈雲山慈樂邨第一期 (2320 1300)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "518492",
+     "name": "嗇色園主辦可立小學",
+     "name_en": "Ho Lap Primary School (Sponsored by Sik Sik",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "儒釋道三教",
+     "quota": 63,
+     "address": "九龍慈雲山雙鳳街８８號 (2321 6003)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "535788",
+     "name": "慈雲山聖文德天主教小學",
+     "name_en": "TWS St Bonaventure Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍慈雲山慈正邨寧華街 (2320 6226)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "543241",
+     "name": "保良局錦泰小學",
+     "name_en": "PLK Grandmont Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍黃大仙蒲崗村道１８０號 (2326 2886)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "543250",
+     "name": "聖博德天主教小學（蒲崗村道）",
+     "name_en": "St Patrick’s Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍黃大仙蒲崗村道１７８號 (2246 0783)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "543268",
+     "name": "慈雲山天主教小學",
+     "name_en": "Tsz Wan Shan Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍黃大仙蒲崗村道１７２號 (2327 3332)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "45",
+     "no": "550418",
+     "name": "嘉諾撒小學（新蒲崗）",
+     "name_en": "Canossa Primary School (San Po Kong)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 75,
+     "address": "九龍新蒲崗彩頤里９號 (2323 8883)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "46",
+   "area": "九龍灣、佐敦谷、坪石邨、清水灣道8號、啟業邨、啟泰苑、麗晶花園、德福花園、牛頭角下邨、淘大花園、得寶花園、彩盈邨、彩德邨、彩福邨、彩霞邨、順緻苑、順利邨、順安邨、順天邨、順利紀律部隊宿舍、安泰邨、彩興苑、泰峯、皓日",
+   "area_short": "九龍灣、佐敦谷、坪石邨…",
+   "count": 9,
+   "schools": [
+    {
+     "net": "46",
+     "no": "511242",
+     "name": "佛教慈敬學校",
+     "name_en": "Buddhist Chi King Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 50,
+     "address": "九龍九龍灣啟禮道１２號 (2759 7722)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "511366",
+     "name": "迦密梁省德學校",
+     "name_en": "Carmel Leung Sing Tak School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍觀塘安秀道３３號 (2345 8063)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "511692",
+     "name": "浸信宣道會呂明才小學",
+     "name_en": "CB Lui Ming Choi Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍觀塘彩霞道７８號 (2754 7024)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "513164",
+     "name": "坪石天主教小學",
+     "name_en": "Ping Shek Estate Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍觀塘坪石邨第一校舍 (2321 2988)",
+     "remarks": [
+      "P",
+      "S",
+      "#9"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "514519",
+     "name": "香港道教聯合會雲泉學校",
+     "name_en": "Hong Kong Taoist Association Wun Tsuen",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 63,
+     "address": "九龍觀塘安茵街２號 (2757 0854)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "543187",
+     "name": "天主教柏德學校",
+     "name_en": "Bishop Paschang Catholic School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍九龍灣宏照道６號 (2799 3003)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "550248",
+     "name": "九龍灣聖若翰天主教小學",
+     "name_en": "Kowloon Bay St John The Baptist Catholic",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍觀塘啟業道２３號 (2343 2311)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "550396",
+     "name": "聖公會九龍灣基樂小學",
+     "name_en": "SKH Kowloon Bay Kei Lok Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍九龍灣啟仁街６號 (2796 9393)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "46",
+     "no": "575615",
+     "name": "佐敦谷聖若瑟天主教小學",
+     "name_en": "Jordan Valley St Joseph’s Catholic Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍觀塘彩霞道８０號 (2305 0061)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "48",
+   "area": "鯉魚門、茶果嶺、裕民坊、馬環村、馬游塘、秀茂坪邨、寶達邨、曉麗苑、安基苑、牛頭角上邨、樂華邨、秀茂坪紀律部隊宿舍、花園大廈、和樂邨、翠屏邨、寶珮苑、樂雅苑、康利苑、雲漢邨、祥和苑、振華苑、藍田邨、康田苑、康華苑、康盈苑、康瑞苑、康逸苑、康柏苑、康雅苑、平田邨、興田邨、德田邨、廣田邨、啓田邨、安田邨、麗港城、油塘中心、高俊苑、高怡邨、高翔苑、油美苑、油塘邨、油麗邨、鯉安苑、鯉魚門邨、匯景花園、鯉灣天下、安達邨、凱滙、曉茵邨、親海駅、蔚藍東岸",
+   "area_short": "鯉魚門、茶果嶺、裕民坊…",
+   "count": 23,
+   "schools": [
+    {
+     "net": "48",
+     "no": "510530",
+     "name": "觀塘官立小學",
+     "name_en": "Kwun Tong Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍觀塘牛頭角道２４０號 (2756 0762)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "510564",
+     "name": "天主教佑華小學",
+     "name_en": "Our Lady of China Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍觀塘翠屏邨第四期 (2348 2366)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "512303",
+     "name": "中華基督教會基法小學",
+     "name_en": "CCC Kei Faat Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "九龍觀塘月華街３４號 (2341 8088)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "512729",
+     "name": "樂善堂楊仲明學校",
+     "name_en": "LST Yeung Chung Ming Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍牛頭角樂華南邨 (2755 9195)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "512770",
+     "name": "閩僑小學",
+     "name_en": "Man Kiu Association Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "九龍牛頭角上邨（安善道） (2757 0490)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "513466",
+     "name": "聖公會基顯小學",
+     "name_en": "SKH Kei Hin Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍牛頭角上邨（安善道） (2750 7771)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "513474",
+     "name": "聖公會基樂小學",
+     "name_en": "SKH Kei Lok Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍牛頭角樂華邨第一期 (2755 5611)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "513598",
+     "name": "聖公會聖約翰曾肇添小學",
+     "name_en": "SKH St John’s Tsang Shiu Tim Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍觀塘安翠街１１號 (2322 6125)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "513768",
+     "name": "秀茂坪天主教小學",
+     "name_en": "Sau Mau Ping Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍觀塘寶達邨 (2348 4218)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "513962",
+     "name": "聖安當小學",
+     "name_en": "St Antonius Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍油塘油塘道１號 (2348 4283)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "514080",
+     "name": "聖若翰天主教小學",
+     "name_en": "St John The Baptist Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍觀塘宜安街２９號 (2389 0428)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "518425",
+     "name": "聖公會李兆強小學",
+     "name_en": "SKH Lee Shiu Keung Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍觀塘藍田平田邨安田街第一校舍 (2346 5430)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "518433",
+     "name": "藍田循道衛理小學",
+     "name_en": "Lam Tin Methodist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍觀塘藍田平田邨安田街 (2346 1033)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "518441",
+     "name": "香港道教聯合會圓玄學院陳呂重德紀念學校",
+     "name_en": "HK Taoist Assn The Yuen Yuen Institute Chan",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 63,
+     "address": "九龍油塘高超道 (2709 9978)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "519596",
+     "name": "聖愛德華天主教小學",
+     "name_en": "St Edward’s Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "九龍觀塘藍田慶田街８號 (2717 9585)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "535648",
+     "name": "基督教聖約教會堅樂小學",
+     "name_en": "The Mission Covenant Church Holm Glad",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "九龍觀塘秀茂坪邨秀明道７７號 (2757 4566)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "535664",
+     "name": "秀明小學",
+     "name_en": "Sau Ming Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍觀塘秀茂坪秀豐街５號 (2349 3478)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "535800",
+     "name": "樂華天主教小學",
+     "name_en": "Lok Wah Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "九龍觀塘振華道８１號 (2758 5767)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "540242",
+     "name": "路德會聖馬太學校（秀茂坪）",
+     "name_en": "St Matthew’s Lutheran School (Sau Mau Ping)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "九龍觀塘秀茂坪秀明道１２３號 (2772 3797)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "550400",
+     "name": "聖公會德田李兆強小學",
+     "name_en": "SKH Tak Tin Lee Shiu Keung Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "九龍觀塘藍田慶田街３號 (2775 9338)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "560430",
+     "name": "聖公會油塘基顯小學",
+     "name_en": "SKH Yautong Kei Hin Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "九龍油塘油塘道２３號 (2757 0322)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "560448",
+     "name": "中華基督教會基法小學（油塘）",
+     "name_en": "CCC Kei Faat Primary School (Yau Tong)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "九龍油塘油塘道２５號 (2389 5458)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "48",
+     "no": "572373",
+     "name": "觀塘官立小學（秀明道）",
+     "name_en": "Kwun Tong Government Primary School (Sau",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "九龍觀塘秀茂坪秀明道１３０號 (2709 2220)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "62",
+   "area": "荃灣、老圍、柴灣角、川龍、汀九、油柑頭、深井、青龍頭、馬灣、大嶼山東北、福來邨、祈德尊新邨、荃錦中心、荃灣廣場、翠豐臺、荃灣中心、荃景花園、荃威花園、錦豐園、荃德花園、麗城花園、翠濤閣、灣景花園、麗都花園、海韻花園、浪翠園、豪景花園、愉景新城、恒麗苑、石圍角邨、象山邨、綠楊新邨、荃灣花園、荃昌中心、荃豐中心、華都中心、富華中心、怡景園、荃灣城市廣場、海濱花園、東亞花園、富麗花園、海灣花園、名逸居、寶雲匯、朗逸峰、爵悅庭、萬景峰、荃新天地、縉庭山、韻濤居、碧堤半島、縉皇居、寶石大廈、白田壩村、光板田村、木棉下村、西樓角村、海壩村、三棟屋村、咸田村、荃灣楊屋村、河背村、關門口村、馬閃排村、芙蓉山、環宇海灣、尚翠苑、柏傲灣、海之戀、全．城匯、映日灣",
+   "area_short": "荃灣、老圍、柴灣角…",
+   "count": 18,
+   "schools": [
+    {
+     "net": "62",
+     "no": "113107",
+     "name": "荃灣潮州公學",
+     "name_en": "Tsuen Wan Chiu Chow Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界荃灣海壩街８０號 (2490 5410)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "113174",
+     "name": "天佑小學",
+     "name_en": "Mary of Providence Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 25,
+     "address": "新界荃灣河背街６８號 (2492 2929)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "113417",
+     "name": "中華基督教會全完第一小學",
+     "name_en": "CCC Chuen Yuen First Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界荃灣永順街３６號 (2490 0336)",
+     "remarks": [
+      "P",
+      "S",
+      "#10"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "113751",
+     "name": "荃灣天主教小學",
+     "name_en": "Tsuen Wan Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "新界荃灣德華街３７-４１號 (2492 3460)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "113778",
+     "name": "路德會聖十架學校",
+     "name_en": "Holy Cross Lutheran School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界荃灣路德圍３１號 (2415 7878)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "114774",
+     "name": "香港道教聯合會圓玄學院石圍角小學",
+     "name_en": "HKTA The Yuen Yuen Institute Shek Wai",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 50,
+     "address": "新界荃灣石圍角邨第二小學校舍 (2416 5447)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "114790",
+     "name": "中華基督教會基慧小學",
+     "name_en": "CCC Kei Wai Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界荃灣荃景圍１６７—１８５號 (2498 0383)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "114863",
+     "name": "寶血會伍季明紀念學校",
+     "name_en": "Kwai-ming Wu Memorial School of the",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界荃灣蕙荃路２２—６６號綠楊新邨 (2498 9119)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "150819",
+     "name": "靈光小學",
+     "name_en": "Emmanuel Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 13,
+     "address": "新界深井青山公路１３咪 (2491 0256)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "510513",
+     "name": "海壩街官立小學",
+     "name_en": "Hoi Pa Street Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界荃灣啓志街１號 (2490 2828)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "511412",
+     "name": "柴灣角天主教小學",
+     "name_en": "Chai Wan Kok Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界荃灣安賢街２—１０號 (2490 3463)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "514632",
+     "name": "荃灣公立何傳耀紀念小學",
+     "name_en": "Tsuen Wan Public Ho Chuen Yiu Memorial",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界荃灣石圍角邨第一小學校舍 (2416 9596)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "522015",
+     "name": "香港浸信會聯會小學",
+     "name_en": "Hong Kong Baptist Convention Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界荃灣麗城花園麗順路２號 (2492 0699)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "522180",
+     "name": "天主教石鐘山紀念小學",
+     "name_en": "Shak Chung Shan Memorial Catholic Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "新界荃灣海濱花園永順街３９號 (2408 6373)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "528773",
+     "name": "荃灣官立小學",
+     "name_en": "Tsuen Wan Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界荃灣青山公路６００號 (2415 6313)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "550469",
+     "name": "中華基督教會基慧小學（馬灣）",
+     "name_en": "CCC Kei Wai Primary School (Ma Wan)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界荃灣馬灣珀林路１２號 (2986 3111)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "575526",
+     "name": "寶血會思源學校",
+     "name_en": "Si Yuan School of the Precious Blood",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界荃灣城門道２號 (3590 6061)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "62",
+     "no": "575607",
+     "name": "深井天主教小學",
+     "name_en": "Sham Tseng Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界荃灣青山公路深井段３７號 (2490 3912)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "64",
+   "area": "上葵涌村、打磚坪村、中葵涌村、大白田村、油麻磡村、梨木樹邨、雍雅軒、石蔭邨、石籬邨、怡峰苑、安蔭邨、寧峰苑、嘉翠園、和記新邨、昇柏山",
+   "area_short": "上葵涌村、打磚坪村、中葵涌村…",
+   "count": 8,
+   "schools": [
+    {
+     "net": "64",
+     "no": "113980",
+     "name": "聖公會主愛小學",
+     "name_en": "SKH Chu Oi Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界葵涌石蔭童子街４５號 (2426 7424)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "64",
+     "no": "114006",
+     "name": "石籬天主教小學",
+     "name_en": "Shek Lei Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界葵涌石排街１１號 (2420 3186)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "64",
+     "no": "114413",
+     "name": "梨木樹天主教小學",
+     "name_en": "Lei Muk Shue Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界葵涌梨木樹邨第二校舍 (2426 3333)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "64",
+     "no": "114430",
+     "name": "嗇色園主辦可信學校",
+     "name_en": "Ho Shun Primary School (Sponsored by Sik",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "儒釋道三教",
+     "quota": 38,
+     "address": "新界葵涌梨木樹邨第三校舍 (2424 8861)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "64",
+     "no": "115789",
+     "name": "慈幼葉漢小學",
+     "name_en": "Salesian Yip Hon Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界葵涌安蔭邨 (2420 2727)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "64",
+     "no": "531510",
+     "name": "聖公會主愛小學（梨木樹）",
+     "name_en": "SKH Chu Oi Primary School (Lei Muk Shue)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "新界葵涌梨木樹邨 (2401 1985)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "64",
+     "no": "554669",
+     "name": "慈幼葉漢千禧小學",
+     "name_en": "Salesian Yip Hon Millennium Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "新界葵涌石排街９號 (2429 1177)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "64",
+     "no": "575720",
+     "name": "石籬聖若望天主教小學",
+     "name_en": "Shek Lei St. John’s Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "新界葵涌大白田街９９號 (3595 0036)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "65",
+   "area": "光輝圍、下葵涌村、鍾山臺、九華徑、翠瑤苑、麗瑤邨、荔景邨、悅麗苑、賢麗苑、祖堯邨、華員邨、華景山莊、海峰花園、荔灣花園、浩景臺、荔欣苑、華荔邨、大窩口邨、葵蓉苑、葵涌邨、葵盛邨、月海灣、高盛臺、葵芳邨、芊紅居、葵興邨、葵涌廣場、葵康苑、葵俊苑、新葵興花園、新葵芳花園、葵芳閣、葵賢苑、葵聯邨、葵馥苑、葵翠邨、荔景臺、荔景紀律部隊宿舍",
+   "area_short": "光輝圍、下葵涌村、鍾山臺…",
+   "count": 11,
+   "schools": [
+    {
+     "net": "65",
+     "no": "113190",
+     "name": "聖公會主恩小學",
+     "name_en": "SKH Chu Yan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界葵盛葵盛西邨第二號校舍（近第８座）",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "113247",
+     "name": "亞斯理衛理小學",
+     "name_en": "Asbury Methodist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界葵涌荔景邨第二校舍 (2742 9499)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "113972",
+     "name": "聖公會仁立小學",
+     "name_en": "SKH Yan Laap Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界葵涌葵盛圍３９９號 (2420 7986)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "114030",
+     "name": "佛教林炳炎紀念學校（香港佛教聯合會主辦",
+     "name_en": "Buddhist Lam Bing Yim Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 50,
+     "address": "新界荃灣大廈街３３號 (2422 0125)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "114170",
+     "name": "中華傳道會許大同學校",
+     "name_en": "CNEC Ta Tung School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界葵涌葵興邨第一座校舍 (2421 9159)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "114316",
+     "name": "基督教香港信義會葵盛信義學校",
+     "name_en": "ELCHK Kwai Shing Lutheran Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界葵涌葵盛邨屋邨學校第六座校舍（近葵盛東巴士",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "510769",
+     "name": "中華基督教會全完第二小學",
+     "name_en": "CCC Chuen Yuen Second Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "新界荃灣大窩口上角街３號 (2420 1220)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "511560",
+     "name": "祖堯天主教小學",
+     "name_en": "Cho Yiu Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界葵涌祖堯邨敬祖路１０號 (2742 3701)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "512290",
+     "name": "中華基督教會基真小學",
+     "name_en": "CCC Kei Chun Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界葵涌華荔徑１１號 (2741 9907)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "522031",
+     "name": "佛教林金殿紀念小學",
+     "name_en": "Buddhist Lim Kim Tian Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 63,
+     "address": "新界葵涌葵芳邨第五期 (2422 1747)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "65",
+     "no": "543195",
+     "name": "聖公會仁立紀念小學",
+     "name_en": "SKH Yan Laap Memorial Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界葵涌大窩口上角街１３號 (2428 6600)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "66",
+   "area": "青衣、青泰苑、青雅苑、長發邨、長安邨、青宏苑、灝景灣、盈翠半島、偉景花園、長亨邨、長宏邨、青衣邨、宏福花園、青怡花園、海悅花園、曉峰園、翠怡花園、海欣花園、長康邨、青盛苑、青華苑、長青邨、美景花園、藍澄灣、綠悠雅苑、大王下村、新屋村、鹽田角村、藍田村、薈藍、明翹匯",
+   "area_short": "青衣、青泰苑、青雅苑…",
+   "count": 11,
+   "schools": [
+    {
+     "net": "66",
+     "no": "114936",
+     "name": "青衣商會小學",
+     "name_en": "Tsing Yi Trade Assn Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界青衣長康邨青康路１２號 (2497 9288)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "115010",
+     "name": "保良局陳溢小學",
+     "name_en": "PLK Chan Yat Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界青衣長康邨第二小學（近康美樓） (2497 6073)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "115150",
+     "name": "荃灣商會學校",
+     "name_en": "Tsuen Wan Trade Assn Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界青衣青衣邨一區第一屋邨小學 (2497 7911)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "115355",
+     "name": "中華傳道會呂明才小學",
+     "name_en": "CNEC Lui Ming Choi Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界青衣長發邨 (2497 7557)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "115363",
+     "name": "東華三院黃士心小學",
+     "name_en": "TWGHS Wong See Sum Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界青衣長安邨（近安洋樓） (2497 8784)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "115487",
+     "name": "仁濟醫院趙曾學韞小學",
+     "name_en": "YCH Chiu Tsang Hok Wan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "新界青衣青衣邨第二期屋邨小學 (2433 1788)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "115770",
+     "name": "聖公會何澤芸小學",
+     "name_en": "SKH Ho Chak Wan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界青衣長亨邨 (2432 2789)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "535737",
+     "name": "聖公會青衣邨何澤芸小學",
+     "name_en": "SKH Tsing Yi Estate Ho Chak Wan Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界青衣青綠街３號 (2432 7331)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "543179",
+     "name": "聖公會青衣主恩小學",
+     "name_en": "SKH Tsing Yi Chu Yan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界青衣長宏邨 (2433 2225)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "543217",
+     "name": "保良局世德小學",
+     "name_en": "Po Leung Kuk Castar Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界青衣青綠街２３號 (2436 3923)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "66",
+     "no": "560685",
+     "name": "東華三院周演森小學",
+     "name_en": "TWGHS Chow Yin Sum Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "新界青衣青芊街８號 (2433 1081)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "70",
+   "area": "屯門西（屯門河道以西）、藍地、舊墟、美樂花園、兆山苑、蝴蝶邨、湖景邨、白角、龍鼓灘、兆禧苑、海翠花園、新屯門中心、邁亞美海灣、悅湖山莊、龍門居、富健花園、啓豐園、慧豐園、和平新村、紫翠花園、鍾屋村、麒麟圍、兆康苑、澤豐花園、大興邨、大興花園、翠林花園、石排頭、山景邨、良景邨、康德花園、田景邨、建生邨、新圍苑、兆畦苑、綠怡居、卓爾居、寶田邨、茵翠豪庭、亦園村、順風圍、泥圍、福亨村、桃園圍、青磚圍、紫田村、小坑村、寶怡花園、盈豐園、海麗花園、兆邦苑、兆隆苑、楊小坑、青山村、豫豐花園、兆軒苑、屯子圍、森築苑、龍逸邨、欣田邨、和田邨、菁田邨、富澤豪庭、NOVOLAND、業旺邨",
+   "area_short": "屯門西（屯門河道以西）、藍地、舊墟…",
+   "count": 18,
+   "schools": [
+    {
+     "net": "70",
+     "no": "114200",
+     "name": "中華基督教會何福堂小學",
+     "name_en": "CCC Hoh Fuk Tong Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界屯門龍門路４１號 (2459 7156)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "114510",
+     "name": "保良局莊啟程第二小學",
+     "name_en": "PLK Vicwood K T Chong No. 2 Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門良才里２號 (2462 1722)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "114529",
+     "name": "台山商會學校",
+     "name_en": "Toi Shan Association Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門大興邨石排頭路１４號 (2462 2866)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "114839",
+     "name": "仁德天主教小學",
+     "name_en": "Yan Tak Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界屯門蝴蝶邨 (2463 6171)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "114880",
+     "name": "樂善堂梁黃蕙芳紀念學校",
+     "name_en": "LST Leung Wong Wai Fong Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門山景邨 (2466 6712)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "114910",
+     "name": "保良局梁周順琴小學",
+     "name_en": "PLK Leung Chow Shun Kam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門湖景邨 (2467 8107)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "114944",
+     "name": "五邑鄒振猷學校",
+     "name_en": "FDBWA Chow Chin Yau School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門蝴蝶邨兆山苑 (2467 1882)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "114960",
+     "name": "香港路德會增城兆霖學校",
+     "name_en": "Lutheran Tsang Shing Siu Leun School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界屯門蝴蝶邨 (2466 5885)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "115037",
+     "name": "道教青松小學",
+     "name_en": "Taoist Ching Chung Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 63,
+     "address": "新界屯門山景邨 (2465 1222)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "115258",
+     "name": "仁濟醫院羅陳楚思小學",
+     "name_en": "YCH Law Chan Chor Si Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門湖景路２９號 (2441 3366)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "115304",
+     "name": "保良局方王錦全小學",
+     "name_en": "PLK Fong Wong Kam Chuen Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門良景邨 (2466 1882)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "115380",
+     "name": "香港紅卍字會屯門卍慈小學",
+     "name_en": "HK Red Swastika Society Tuen Mun Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門良景邨 (2461 1968)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "115517",
+     "name": "僑港伍氏宗親會伍時暢紀念學校",
+     "name_en": "HK ENG C A Wu Si Chong Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門建生邨 (2454 4122)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "115568",
+     "name": "中華基督教會蒙黃花沃紀念小學",
+     "name_en": "CCC Mong Wong Far Yok Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界屯門田景邨 (2456 3678)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "115576",
+     "name": "柏立基教育學院校友會何壽基學校",
+     "name_en": "SRBCEPSA Ho Sau Ki School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門田景邨 (2455 6111)",
+     "remarks": [
+      "P",
+      "S",
+      "#11"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "510289",
+     "name": "屯門官立小學",
+     "name_en": "Tuen Mun Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門兆康苑 (2465 1662)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "540200",
+     "name": "保良局志豪小學",
+     "name_en": "PLK Horizon East Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門興富街３號 (2702 0707)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "70",
+     "no": "575500",
+     "name": "道教青松小學（湖景邨）",
+     "name_en": "Taoist Ching Chung Primary School (Wu King",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 50,
+     "address": "新界屯門湖景邨 (2465 2881)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "71",
+   "area": "屯門東（屯門河道以東）、虎地、龍珠島、新墟、小欖、掃管笏、大欖涌、井頭村、友愛邨、兆安苑、安定邨、置樂花園、華都花園、屯門市廣場、屯門時代廣場、三聖邨、景峰花園、怡樂花園、偉景花園、恒福花園、恒順園、冠峰園、翠寧花園、兆麟苑、黃金海岸、帝濤灣、叠茵庭、富泰邨、南浪海灣、嘉悅半島、豐景園、漣山、翠濤居、瑜翠園、浪濤灣、愛琴灣、愛琴海岸、聚康山莊、彩暉花園、嘉和里、海景花園、小秀村、蟠龍半島、青山別墅、景新臺、海典軒、怡峰園、彩華花園、龍成花園、瓏門、星堤、滿名山、御半山、帝御、御海灣、OMABytheSea、飛揚、凱和山、兆翠苑、顯發邨、黄金海灣",
+   "area_short": "屯門東（屯門河道以東）、虎地、龍珠島…",
+   "count": 15,
+   "schools": [
+    {
+     "net": "71",
+     "no": "112550",
+     "name": "圓玄學院陳國超興德小學",
+     "name_en": "The Yuen Yuen Institute Chan Kwok Chiu",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門慶平路 (2448 2211)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "114146",
+     "name": "青山天主教小學",
+     "name_en": "Castle Peak Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界屯門鄉事會路２號 (2457 4634)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "114642",
+     "name": "伊斯蘭學校",
+     "name_en": "Islamic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "伊斯蘭教",
+     "quota": 50,
+     "address": "新界屯門友愛邨 (2450 2270)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "114715",
+     "name": "東華三院鄧肇堅小學",
+     "name_en": "TWGHS Tang Shiu Kin Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門安定邨 (2403 0311)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "114758",
+     "name": "路德會呂祥光小學",
+     "name_en": "Lui Cheung Kwong Lutheran Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界屯門安定邨 (2450 3128)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "114766",
+     "name": "順德聯誼總會胡少渠紀念小學",
+     "name_en": "STFA Wu Siu Kui Memorial Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門安定邨 (2450 3833)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "114898",
+     "name": "順德聯誼總會何日東小學",
+     "name_en": "STFA Ho Yat Tung Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門友愛邨 (2458 6111)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "114928",
+     "name": "仁愛堂劉皇發夫人小學",
+     "name_en": "YOT Madam Lau Wong Fat Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門安定邨 (2451 0372)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "115053",
+     "name": "博愛醫院歷屆總理聯誼會鄭任安夫人學校",
+     "name_en": "AD&FDPOHL Mrs. Cheng Yam On School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門屯利街３號 (2451 2333)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "115061",
+     "name": "聖公會蒙恩小學",
+     "name_en": "SKH Mung Yan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "新界屯門景峰徑１號 (2459 8909)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "115100",
+     "name": "仁濟醫院何式南小學",
+     "name_en": "YCH Ho Sik Nam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門１６區（近友愛體育館）(2451 0325)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "511323",
+     "name": "中華基督教會拔臣小學",
+     "name_en": "CCC But San Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "新界屯門新墟青山公路２８號 (2459 6221)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "550426",
+     "name": "博愛醫院歷屆總理聯誼會鄭任安夫人千禧小學",
+     "name_en": "AD&FDPOH Mrs. Cheng Yam On Millennium",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門掃管笏路１１１號 (2451 0088)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "584118",
+     "name": "保良局西區婦女福利會馮李佩瑤小學",
+     "name_en": "PLK Women’s Welfare Club Western District co-ed",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界屯門掃管笏管青路１１號 (2411 2208)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "71",
+     "no": "584126",
+     "name": "順德聯誼總會李金小學",
+     "name_en": "STFA Lee Kam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界屯門掃管笏路２３號 (2441 1222)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "72",
+   "area": "天水圍、廈村、洪水橋、流浮山、屏山、輞井、稔灣、田心、嘉湖山莊、天耀邨、天瑞邨、天愛苑、天慈邨、天麗苑、天頌苑、天華邨、天盛苑、天祐苑、天富苑、天悅邨、天澤邨、天恒邨、天恩邨、天逸邨、俊宏軒、慧景軒、沙江圍、鳳降村、新生村、祥降圍、巷尾村、丹桂村、唐人新村、塘坊村、馮家圍、永寧村、羅屋村、錫降村、柏雨花園、金莎花園、綠悅、栢慧豪園、深灣畔、天晴邨、翠峰、尚城、泉薈、金閣豪園、洪福邨、尚築、富豪．悅庭、娉廷、朗逸豪園、屏欣苑、柏巒、溱林、WetlandSeasonsBay、滙都、YOHOWEST、樂翹軒I、樂翹樓I、朗天苑、大井圍^、大井盛屋村^",
+   "area_short": "天水圍、廈村、洪水橋…",
+   "count": 24,
+   "schools": [
+    {
+     "net": "72",
+     "no": "112755",
+     "name": "元朗寶覺小學",
+     "name_en": "Yuen Long Po Kok Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 38,
+     "address": "新界元朗洪水橋丹桂村路５５號 (2476 2258)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "115711",
+     "name": "嗇色園主辦可銘學校",
+     "name_en": "Ho Ming Primary School (Sponsored by Sik",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "儒釋道三教",
+     "quota": 50,
+     "address": "新界元朗天水圍天柏路２號 (2445 0101)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "115720",
+     "name": "伊利沙伯中學舊生會小學",
+     "name_en": "QES Old Students’ Assn Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天耀邨第一期 (2448 0883)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "115738",
+     "name": "香港潮陽小學",
+     "name_en": "Chiu Yang Primary School of Hong Kong",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天耀邨第三期 (2446 3018)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "115746",
+     "name": "東華三院姚達之紀念小學（元朗）",
+     "name_en": "TWGHS Yiu Dak Chi Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界天水圍天瑞邨第一期屋邨小學 (2445 1264)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "115800",
+     "name": "樂善堂梁銶琚學校",
+     "name_en": "LST Leung Kau Kui Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍第四期天瑞邨屋邨小學校舍",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "516848",
+     "name": "天水圍官立小學",
+     "name_en": "Tin Shui Wai Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天瑞路１０號 (2447 4288)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "516872",
+     "name": "天水圍天主教小學",
+     "name_en": "Tin Shui Wai Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "新界元朗天水圍天柏路２８號 (2617 8212)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "529532",
+     "name": "伊利沙伯中學舊生會小學分校",
+     "name_en": "QES Old Students’ Assn Branch Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍三區第四期 (2447 8686)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "529591",
+     "name": "東華三院李東海小學",
+     "name_en": "TWGHS Leo Tung-hai Lee Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天壇街１９號 (2446 1188)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "529770",
+     "name": "獅子會何德心小學",
+     "name_en": "Lions Clubs International Ho Tak Sum Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍三區四期天盛苑第二小學",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "530409",
+     "name": "天水圍循道衞理小學",
+     "name_en": "Tin Shui Wai Methodist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界元朗天水圍三十一區第一期天頌苑 (2448 0373)",
+     "remarks": [
+      "P",
+      "S",
+      "U6"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "535621",
+     "name": "金巴崙長老會耀道小學",
+     "name_en": "Cumberland Presbyterian Church Yao Dao",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界元朗天水圍天富苑 (2617 7926)",
+     "remarks": [
+      "P",
+      "S",
+      "U7"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "535630",
+     "name": "香港青年協會李兆基小學",
+     "name_en": "HKFYG Lee Shau Kee Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天榮路１１號 (2448 1011)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "535699",
+     "name": "中華基督教青年會小學",
+     "name_en": "Chinese YMCA Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界元朗天水圍天富苑第四期 (2445 0580)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "535745",
+     "name": "香港普通話研習社科技創意小學",
+     "name_en": "Xianggang Putonghua Yanxishe Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天秀路２５號天富苑第二期",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "535770",
+     "name": "宣道會葉紹蔭紀念小學",
+     "name_en": "Christian Alliance S Y Yeh Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界元朗天水圍天澤邨 (3152 2973)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "540170",
+     "name": "順德聯誼總會伍冕端小學",
+     "name_en": "Shun Tak Fraternal Assn Wu Mien Tuen",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界天水圍天恒邨 (3157 0630)",
+     "remarks": [
+      "P",
+      "S",
+      "U8"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "540188",
+     "name": "十八鄉鄉事委員會公益社小學",
+     "name_en": "Shap Pat Heung Rural Committee Kung Yik",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天城路２２號 (2448 6623)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "543233",
+     "name": "基督教培恩小學",
+     "name_en": "Christian Pui Yan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界元朗天水圍天業路２號 (2342 0555)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "543322",
+     "name": "樂善堂梁銶琚學校（分校）",
+     "name_en": "LST Leung Kau Kui Primary School (Branch)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍１０１區天恩邨第二小學校舍",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "549371",
+     "name": "聖公會天水圍靈愛小學",
+     "name_en": "SKH Tin Shui Wai Ling Oi Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界元朗天水圍天瑞路８２號 (2446 1633)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "550370",
+     "name": "元朗公立中學校友會鄧英業小學",
+     "name_en": "Yuen Long Public Middle School Alumni",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍天瑞路８６號 (2617 8200)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "72",
+     "no": "554634",
+     "name": "潮陽百欣小學",
+     "name_en": "Chiu Yang Por Yen Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗天水圍１０４區天華路５５號第一校舍",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "73",
+   "area": "元朗西（元朗主渠以西、教育路以南、大棠路以西）、橫洲、吳屋村、鳳池村、禮修村、馬田村、龍田村、山下村、朗屏邨、紅棗田村、白沙村、大棠村、楊家村、黃泥墩村、水邊圍邨、栢麗豪園、藝典居、御豪山莊、朗庭園、翠韻華庭、華翠豪園、御景園、御庭居、振華花園（二、三期）、定福花園、水田村、銀田花園、麗昌花園、東頭圍新村、福慶村、忠心圍、東頭圍、林屋村、西頭圍、橫洲楊屋村、欖口園、欖口村、水邊村、原築、翹翠峰、逸林首府、朗景台、怡豐花園、振興新村、溱柏、朗城匯、深涌村^、水蕉新村^、大旗嶺^、祟正新村^、田寮村^、水蕉老圍^、木橋頭村^、大井圍^、大井盛屋村^",
+   "area_short": "元朗西（元朗主渠以西、教育路以南、大棠路以西）…",
+   "count": 9,
+   "schools": [
+    {
+     "net": "73",
+     "no": "114685",
+     "name": "光明學校",
+     "name_en": "Kwong Ming School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗水邊圍邨 (2476 2616)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "115223",
+     "name": "元朗朗屏邨東莞學校",
+     "name_en": "YL Long Ping Estate Tung Koon Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界元朗朗屏邨第一期 (2476 2433)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "115274",
+     "name": "元朗朗屏邨惠州學校",
+     "name_en": "YL Long Ping Estate Wai Chow School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗朗屏邨第二期 (2476 3903)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "115347",
+     "name": "博愛醫院歷屆總理聯誼會梁省德學校",
+     "name_en": "AD&FD of POHL Leung Sing Tak School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界元朗朗屏邨第三期 (2474 5566)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "115495",
+     "name": "元朗公立中學校友會小學",
+     "name_en": "Yuen Long Public Middle School Alumni",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界元朗公園北路２號 (2475 0328)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "510955",
+     "name": "聖公會靈愛小學",
+     "name_en": "SKH Ling Oi Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "新界元朗媽廟路１５號 (2477 4109)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "515051",
+     "name": "元朗商會小學",
+     "name_en": "Yuen Long Merchants Association Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界元朗青山公路２４４號 (2476 2268)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "572357",
+     "name": "佛教陳榮根紀念學校",
+     "name_en": "Buddhist Chan Wing Kan Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 50,
+     "address": "新界元朗馬田欖口村路２３號 (2475 3663)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "73",
+     "no": "572403",
+     "name": "南元朗官立小學",
+     "name_en": "South Yuen Long Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗欖口村路２１號 (2478 1230)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "74",
+   "area": "元朗東（元朗主渠以東、教育路以北、大棠路以東）、元朗市中心（東部）、元朗舊墟、坳頭、錦田、落馬洲、米埔、八鄉、新田、十八鄉、石崗、山貝、東成里、鈞樂新村、上下攸田、港頭村、瓦窰頭、塘頭埔村、南坑村、南坑排、楊屋村、石塘村、新元朗中心、朗晴居、鳳庭苑、采葉庭、蝶翠峰、新時代廣場、西邊圍、南邊圍、高埔村、長春新村、北圍村、吉慶圍、泰康圍、錦田城門新村、金錢圍、水流田、大江埔、七星崗、攸潭美、大生圍、逢吉鄉、沙埔村、錦綉花園、加州花園、加州豪園、洲頭、南生圍、麒麟村、鹿尾村、安龍村、蕃田村、新龍村、葡萄園、翠巒、新時代中城、六本木、葡萄薈、尚豪庭、尚悅、譽88、爾巒、世宙、映御、朗屏8號、朗善邨、朗晴邨、ParkYOHO、宏富苑、石湖塘、TheYOHOHub、深涌村^、水蕉新村^、大旗嶺^、祟正新村^、田寮村^、水蕉老圍^、木橋頭村^",
+   "area_short": "元朗東（元朗主渠以東、教育路以北、大棠路以東）…",
+   "count": 12,
+   "schools": [
+    {
+     "net": "74",
+     "no": "112666",
+     "name": "通德學校",
+     "name_en": "Tung Tak School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 13,
+     "address": "新界錦田城門新村 (2476 1101)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "114847",
+     "name": "港澳信義會黃陳淑英紀念學校",
+     "name_en": "HKMLC Wong Chan Sook Ying Memorial",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 25,
+     "address": "新界元朗錦綉花園 (2471 8502)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "115533",
+     "name": "佛教榮茵學校",
+     "name_en": "Buddhist Wing Yan School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 50,
+     "address": "新界元朗鳳攸南街６號 (2475 0433)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "150770",
+     "name": "聖公會聖約瑟小學",
+     "name_en": "SKH St Joseph’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 30,
+     "address": "新界元朗錦田波地路１２號 (2476 4962)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "510360",
+     "name": "元朗官立小學",
+     "name_en": "Yuen Long Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗坳頭 (2476 1160)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "511609",
+     "name": "中華基督教會元朗真光小學",
+     "name_en": "CCC Chun Kwong Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 30,
+     "address": "新界元朗鐘聲徑 (2476 2696)",
+     "remarks": []
+    },
+    {
+     "net": "74",
+     "no": "511625",
+     "name": "鐘聲學校",
+     "name_en": "Chung Sing School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 75,
+     "address": "新界元朗舊墟路２９號 (2476 2505)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "512249",
+     "name": "錦田公立蒙養學校",
+     "name_en": "Kam Tin Mung Yeung Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 13,
+     "address": "新界元朗錦田 (2476 2414)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "513148",
+     "name": "八鄉中心小學",
+     "name_en": "Pat Heung Central Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "新界元朗八鄉錦田蓮花地１９９號 (2488 1520)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "514683",
+     "name": "惇裕學校",
+     "name_en": "Tun Yu School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "新界元朗新田 (2471 1915)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "540226",
+     "name": "基督教宣道會徐澤林紀念小學",
+     "name_en": "C. & M. A. Chui Chak Lam Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 60,
+     "address": "新界元朗建德街 (2381 3904)",
+     "remarks": [
+      "P"
+     ]
+    },
+    {
+     "net": "74",
+     "no": "554685",
+     "name": "光明英來學校",
+     "name_en": "Kwong Ming Ying Loi School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界元朗元政路１２號 (2476 2610)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "80",
+   "area": "上水、石湖墟、馬草壟、掃管埔、打石湖、華山村、彩園邨、旭蒲苑、彩蒲苑、天平邨、翠麗花園、太平邨、龍豐花園、順欣花園、上水中心、維也納花園、上水已婚警察宿舍、威尼斯花園、奕翠園、歐意花園、新都廣場、安盛苑、清河邨、皇府山、御皇庭、天巒、御林皇府、祥龍圍邨、寶石湖邨、清濤苑、彩石邨",
+   "area_short": "上水、石湖墟、馬草壟…",
+   "count": 14,
+   "schools": [
+    {
+     "net": "80",
+     "no": "113000",
+     "name": "東莞學校",
+     "name_en": "Tung Koon School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "新界上水馬會道（近石湖墟） (2670 0334)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "114405",
+     "name": "鳳溪第一小學",
+     "name_en": "Fung Kai No. 1 Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界上水馬會道１９號及１５號 (2670 9353)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "114804",
+     "name": "香海正覺蓮社佛教陳式宏學校",
+     "name_en": "HHCKLA Buddhist Chan Shi Wan Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 50,
+     "address": "新界上水彩園邨 (2671 6665)",
+     "remarks": [
+      "S",
+      "#12"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "114979",
+     "name": "上水惠州公立學校",
+     "name_en": "Wai Chow Public School (Sheung Shui)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界上水天平路５１號 (2673 1183)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "115266",
+     "name": "石湖墟公立學校",
+     "name_en": "Shek Wu Hui Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界上水天平邨 (2672 1274)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "115398",
+     "name": "東華三院港九電器商聯會小學",
+     "name_en": "TWGHS HK & KLN E.A.M.A. Ltd. School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界上水智昌路 2 號(2672 3285)",
+     "remarks": [
+      "S",
+      "#13"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "115525",
+     "name": "聖公會榮真小學",
+     "name_en": "SKH Wing Chun Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界粉嶺吉祥街３號 (2670 3338)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "115681",
+     "name": "李志達紀念學校",
+     "name_en": "Lee Chi Tat Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界上水石湖墟天平路３０號 (2673 8581)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "512257",
+     "name": "金錢村何東學校",
+     "name_en": "Kam Tsin Village Ho Tung School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "新界上水金錢村 (2670 3849)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "515086",
+     "name": "育賢學校",
+     "name_en": "Yuk Yin School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "新界上水馬會道（近石湖墟） (2672 9917)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "550450",
+     "name": "香海正覺蓮社佛教正慧小學",
+     "name_en": "HHCKLA Buddhist Wisdom Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 63,
+     "address": "新界上水清城路６號 (2668 9088)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "554596",
+     "name": "曾梅千禧學校",
+     "name_en": "Tsang Mui Millennium School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界上水清城路１號 (2670 3111)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "566462",
+     "name": "鳳溪創新小學",
+     "name_en": "Fung Kai Innovative School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界上水馬會道１９Ａ號 (2639 2201)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "80",
+     "no": "578320",
+     "name": "東華三院馬錦燦紀念小學",
+     "name_en": "TWGHS Ma Kam Chan Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 75,
+     "address": "新界上水清城路２號 (2671 1071)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "81",
+   "area": "粉嶺、聯和墟、鹿頸、打鼓嶺、和合石村、萊洞、蓮麻坑、萬屋邊、塘坑、馬尾下、麻雀嶺、禾坑、丹竹坑、祥華邨、孔嶺、華明邨、粉嶺中心、欣翠花園、欣盛苑、碧湖花園、蔚翠花園、粉嶺名都、海裕苑、榮福中心、榮輝中心、嘉盛苑、嘉福邨、景盛苑、海聯廣場、華慧園、翠彤苑、花都廣場、華心邨、靈山村、昌盛苑、雍盛苑、牽晴間、綠悠軒、萬豪居、帝庭軒、暉明邨、皇后山邨、山麗苑、樂嶺都匯",
+   "area_short": "粉嶺、聯和墟、鹿頸…",
+   "count": 13,
+   "schools": [
+    {
+     "net": "81",
+     "no": "112992",
+     "name": "寶血會培靈學校",
+     "name_en": "Pui Ling School of The Precious Blood",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "新界粉嶺安樂村安樂門街１３號 (2675 6617)",
+     "remarks": [
+      "S",
+      "#14"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "113409",
+     "name": "上水宣道小學",
+     "name_en": "Alliance Primary School, Sheung Shui",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "新界粉嶺聯和墟和睦路２號 (2670 2257)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "115169",
+     "name": "五旬節靳茂生小學",
+     "name_en": "Pentecostal Gin Mao Sheng Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界粉嶺璧峰路４號 (2670 0103)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "115339",
+     "name": "香海正覺蓮社佛教正覺蓮社學校",
+     "name_en": "HHCKLA Buddhist Ching Kok Lin Assn",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 63,
+     "address": "新界粉嶺一鳴路１２號 (2675 4411)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "115592",
+     "name": "鳳溪廖潤琛紀念學校",
+     "name_en": "Fung Kai Liu Yun-sum Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界粉嶺華明邨第一期 (2677 2311)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "510785",
+     "name": "粉嶺官立小學",
+     "name_en": "Fanling Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界粉嶺祥華邨 (2669 2024)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "511749",
+     "name": "粉嶺公立學校",
+     "name_en": "Fanling Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "新界粉嶺粉嶺村 (2670 2297)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "514365",
+     "name": "打鼓嶺嶺英公立學校",
+     "name_en": "Ta Ku Ling Ling Ying Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "新界打鼓嶺週田村 (2674 0538)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "529540",
+     "name": "五旬節于良發小學",
+     "name_en": "Pentecostal Yu Leung Fat Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界粉嶺暉明路１６號 (2679 5626)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "535680",
+     "name": "聖公會嘉福榮真小學",
+     "name_en": "SKH Ka Fuk Wing Chun Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界粉嶺嘉福邨小學校舍 (2947 6888)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "539953",
+     "name": "基督教粉嶺神召會小學",
+     "name_en": "Fanling Assembly of God Church Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界粉嶺和鳴里２號 (2947 9966)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "617407",
+     "name": "東華三院曾憲備小學",
+     "name_en": "TWGHs Tseng Hin Pei Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界粉嶺龍馬路５３號 (2370 9811)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "81",
+     "no": "618128",
+     "name": "救世軍中原慈善基金皇后山學校",
+     "name_en": "The Salvation Army Centaline Charity Fund",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界粉嶺龍峻路２號 (3151 0323)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "83",
+   "area": "沙頭角、鴨洲、吉澳、西流江、烏蛟騰",
+   "area_short": "沙頭角、鴨洲、吉澳、西流江、烏蛟騰",
+   "count": 2,
+   "schools": [
+    {
+     "net": "83",
+     "no": "112836",
+     "name": "福德學社小學",
+     "name_en": "Fuk Tak Education Society Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "新界沙頭角山咀村及崗下村 (2674 2120)",
+     "remarks": [
+      "PR1",
+      "S"
+     ]
+    },
+    {
+     "net": "83",
+     "no": "115460",
+     "name": "沙頭角中心小學",
+     "name_en": "Sha Tau Kok Central Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 25,
+     "address": "新界沙頭角墟 (2674 9080)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "84",
+   "area": "大埔、大埔頭、大埔尾、泮涌、錦山、九龍坑、林村、舊墟、三門仔、大美督、大埔墟、樟樹灘、大窩、南華莆、水圍、大元邨、富善邨、明雅苑、新興花園、康樂園、大埔中心、太和邨、寶雅苑、海寶花園、富亨邨、頌雅苑、汀雅苑、太湖花園、大埔花園、怡雅苑、帝欣苑、樂賢居、圍頭村、錦石新村、廣福邨、新達廣場、運頭塘邨、逸雅苑、景雅苑、德雅苑、富雅花園、寶湖花園、新峰花園、翡翠花園、大埔寶馬山、悠然山莊、天賦海灣、逸瓏灣、嵐山、寶鄉邨、富蝶邨、天鑽、雲滙、海日灣、SiliconHill",
+   "area_short": "大埔、大埔頭、大埔尾…",
+   "count": 19,
+   "schools": [
+    {
+     "net": "84",
+     "no": "113328",
+     "name": "大埔舊墟公立學校",
+     "name_en": "Tai Po Old Market Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔安祥路１０號 (2665 4610)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "114707",
+     "name": "新界婦孺福利會有限公司梁省德學校",
+     "name_en": "NTWJWAL Leung Sing Tak Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔大元邨 (2664 1223)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "114855",
+     "name": "大埔浸信會公立學校",
+     "name_en": "Tai Po Baptist Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界大埔富善邨 (2656 3933)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "114995",
+     "name": "聖公會阮鄭夢芹小學",
+     "name_en": "SKH Yuen Chen Maun Chen Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界大埔廣福邨 (2658 9183)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115045",
+     "name": "香港道教聯合會雲泉吳禮和紀念學校",
+     "name_en": "HK Taoist Assn Wun Tsuen Ng Lai Wo",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 50,
+     "address": "新界大埔大元邨 (2667 2111)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115126",
+     "name": "大埔崇德黃建常紀念學校",
+     "name_en": "Sung Tak Wong Kin Sheung Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔東昌街 (2653 5565)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115142",
+     "name": "三水同鄉會禤景榮學校",
+     "name_en": "Sam Shui Natives Assn Huen King Wing School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界大埔富善邨 (2661 9383)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115290",
+     "name": "港九街坊婦女會孫方中小學",
+     "name_en": "HK & KLN KFWA Sun Fong Chung Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔富善邨 (2661 8896)",
+     "remarks": [
+      "P",
+      "S",
+      "U9"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115401",
+     "name": "林村公立黃福鑾紀念學校",
+     "name_en": "Lam Tsuen Public Wong Fook Luen Memorial",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔太和邨 (2650 3355)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115657",
+     "name": "天主教聖母聖心小學",
+     "name_en": "Sacred Heart of Mary Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界大埔富亨邨第一期 (2660 6161)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115665",
+     "name": "保良局田家炳小學",
+     "name_en": "PLK Tin Ka Ping Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔第六區運頭塘邨 (2652 1222)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115703",
+     "name": "大埔循道衛理小學",
+     "name_en": "Tai Po Methodist School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界大埔棟樑路１０號 (2662 2011)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "115762",
+     "name": "仁濟醫院蔡衍濤小學",
+     "name_en": "Yan Chai Hospital Choi Hin To Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔第六區運頭塘邨 (2656 6116)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "510254",
+     "name": "大埔官立小學",
+     "name_en": "Tai Po Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界大埔大埔太和路８號 (2656 2382)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "542580",
+     "name": "香港教育大學賽馬會小學",
+     "name_en": "The EdUHK Jockey Club Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界大埔露屏路１０號 (2948 1122)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "543225",
+     "name": "大埔舊墟公立學校（寶湖道）",
+     "name_en": "Tai Po Old Market Public School (Plover Cove)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界大埔寶湖道７號 (2665 2333)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "543284",
+     "name": "保良局田家炳千禧小學",
+     "name_en": "PLK Tin Ka Ping Millennium Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界大埔大埔公路大埔滘段４６４１號（近鹿茵山",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "575844",
+     "name": "聖公會阮鄭夢芹銀禧小學",
+     "name_en": "SKH Yuen Chen Maun Chen Jubilee Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界大埔富亨邨第四期 (2666 0606)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "84",
+     "no": "623709",
+     "name": "五旬節聖潔會永光小學",
+     "name_en": "The Pentecostal Holiness Church Wing Kwong",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界大埔彩蝶街１０號 (2627 5600)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "88",
+   "area": "大圍、白田、銅鑼灣、沙田頭、田心、上徑口、美林邨、美城苑、美松苑、美田邨、海福花園、新田圍邨、隆亨邨、新翠邨、世界花園、景田苑、秦石邨、豐盛苑、顯徑邨、金獅花園、瑞峰花園、金禧花園、嘉田苑、雲疊花園、愉景花園、沙田花園、翠景花園、湖景花園、曉翠山莊、恒峰花園、名城、溱岸８號、顯耀邨",
+   "area_short": "大圍、白田、銅鑼灣…",
+   "count": 11,
+   "schools": [
+    {
+     "net": "88",
+     "no": "112950",
+     "name": "聖母無玷聖心學校",
+     "name_en": "Immaculate Heart of Mary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界沙田大圍美田路１號 (2691 2171)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "114723",
+     "name": "循理會美林小學",
+     "name_en": "Free Methodist Mei Lam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田大圍美城苑 (2605 2868)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "114820",
+     "name": "保良局王賜豪（田心谷）小學",
+     "name_en": "PLK Dr. Jimmy Wong Chi-ho (Tin Sum",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田隆亨邨 (2606 2363)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "114901",
+     "name": "循理會白普理基金循理小學",
+     "name_en": "FMB Chun Lei Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田新翠邨 (2605 7755)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "114987",
+     "name": "九龍城浸信會禧年（恩平）小學",
+     "name_en": "KC Baptist Church Hay Nien (Yan Ping)",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田新翠邨 (2605 3811)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "115002",
+     "name": "香港九龍塘基督教中華宣道會陳元喜小學",
+     "name_en": "Christian Alliance H C Chan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界沙田美林邨 (2699 8030)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "115070",
+     "name": "東莞工商總會張煌偉小學",
+     "name_en": "GCC&ITKD Cheong Wong Wai Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田新翠邨 (2699 2566)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "115193",
+     "name": "東華三院冼次雲小學",
+     "name_en": "TWGHs Sin Chu Wan Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田大圍積福街３８號 (2694 9272)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "115215",
+     "name": "迦密愛禮信小學",
+     "name_en": "Carmel Alison Lam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田顯徑邨 (2699 6945)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "115320",
+     "name": "香港中文大學校友會聯會張煊昌學校",
+     "name_en": "CUHKFAA Thomas Cheung School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田顯徑邨嘉田苑 (2693 1898)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "88",
+     "no": "510602",
+     "name": "沙田官立小學",
+     "name_en": "Shatin Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界沙田新田圍邨 (2605 3304)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "89",
+   "area": "馬鞍山、烏溪沙、大水坑、十四鄉、恆安邨、耀安邨、錦鞍苑、富安花園、錦禧苑、錦英苑、富寶花園、新港城、利安邨、錦龍苑、雅典居、海濤居、海柏花園、福安花園、頌安邨、錦豐苑、雅景臺、聽濤雅苑、翠擁華庭、帝琴灣、錦泰苑、觀瀾雅軒、海典灣、銀湖天峰、欣安邨、SierraSea",
+   "area_short": "馬鞍山、烏溪沙、大水坑…",
+   "count": 11,
+   "schools": [
+    {
+     "net": "89",
+     "no": "115185",
+     "name": "基督教香港信義會馬鞍山信義學校",
+     "name_en": "The Evangelical Lutheran Church of Hong",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田馬鞍山恆安邨 (2642 9118)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "115240",
+     "name": "馬鞍山聖若瑟小學",
+     "name_en": "Ma On Shan St. Joseph’s Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界沙田馬鞍山恆安邨 (2642 9186)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "115410",
+     "name": "九龍城浸信會禧年小學",
+     "name_en": "KC Baptist Church Hay Nien Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田馬鞍山恆信街３號富安花園 (2641 1213)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "115428",
+     "name": "保良局莊啟程小學",
+     "name_en": "PLK Chong Kee Ting Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田馬鞍山耀安邨 (2641 0221)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "115649",
+     "name": "吳氏宗親總會泰伯紀念學校",
+     "name_en": "Ng Clan’s Assn Tai Pak Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田馬鞍山錦英苑 (2640 4033)",
+     "remarks": [
+      "P",
+      "S",
+      "#15"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "115797",
+     "name": "馬鞍山靈糧小學",
+     "name_en": "Ma On Shan Ling Liang Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界沙田馬鞍山利安邨 (2643 0707)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "516899",
+     "name": "香港道教聯合會純陽小學",
+     "name_en": "HK Taoist Assn Shun Yeung Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 50,
+     "address": "新界沙田馬鞍山鞍駿街３０號 (2642 2355)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "535605",
+     "name": "馬鞍山循道衛理小學",
+     "name_en": "Ma On Shan Methodist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界沙田馬鞍山恆明街１１號 (2630 9219)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "535702",
+     "name": "保良局雨川小學",
+     "name_en": "PLK Riverain Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界沙田馬鞍山鞍駿街２８號 (2633 3170)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "535729",
+     "name": "聖公會馬鞍山主風小學",
+     "name_en": "SKH Ma On Shan Holy Spirit Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界沙田馬鞍山寧泰路３５號 (2604 8487)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "89",
+     "no": "571962",
+     "name": "香港九龍塘基督教中華宣道會台山陳元喜小學",
+     "name_en": "Christian Alliance Toi Shan H C Chan Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界沙田馬鞍山頌安邨 (2633 9277)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "91",
+   "area": "火炭、馬料水、排頭、小瀝源、沙田圍、圓洲角、山尾、九肚山、赤泥坪、亞公角、乙明邨、博康邨、沙角邨、愉城苑、富豪花園、河畔花園、花園城、沙田第一城、愉田苑、濱景花園、廣源邨、帝堡城、曾大屋、廣林苑、康林苑、翠湖花園、碧濤花園、晴碧花園、欣廷軒、愉翠苑、瀝源邨、禾輋邨、穗禾苑、銀禧花園、希爾頓中心、沙田廣場、新城市廣場、好運中心、駿景園、華翠園、碩門邨、御龍山、豐和邨、水泉澳邨、駿洋邨、旭禾苑、愉德苑、澐瀚、玖瓏山、雍雅山、名日．九肚山",
+   "area_short": "火炭、馬料水、排頭…",
+   "count": 17,
+   "schools": [
+    {
+     "net": "91",
+     "no": "114391",
+     "name": "沙田崇真學校",
+     "name_en": "Shatin Tsung Tsin School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田瀝源邨 (2691 8194)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "114472",
+     "name": "聖公會主風小學",
+     "name_en": "SKH Holy Spirit Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田瀝源邨 (2604 9051)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "114561",
+     "name": "天主教聖華學校",
+     "name_en": "The Little Flower’s Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 50,
+     "address": "新界沙田禾輋邨 (2692 4593)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "114596",
+     "name": "基督教香港信義會睿信學校",
+     "name_en": "ELCHK Wisdom Lutheran School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田博康邨 (2691 1426)",
+     "remarks": [
+      "H2",
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "114634",
+     "name": "保良局蕭漢森小學",
+     "name_en": "Po Leung Kuk Siu Hon-sum Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田火炭坳背灣街３號 (2604 1966)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "114871",
+     "name": "救世軍田家炳學校",
+     "name_en": "Salvation Army Tin Ka Ping School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田博康邨 (2648 9283)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "115118",
+     "name": "保良局朱正賢小學",
+     "name_en": "Po Leung Kuk Chee Jing Yin Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田博康邨 (2646 9181)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "115134",
+     "name": "胡素貞博士紀念學校",
+     "name_en": "Dr Catherine F Woo Memorial School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田第一城得寶街８號 (2646 8902)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "115371",
+     "name": "世界龍岡學校黃耀南小學",
+     "name_en": "LKWFSL Wong Yiu Nam Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田廣源邨 (2637 8637)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "115509",
+     "name": "沙田循道衛理小學",
+     "name_en": "Sha Tin Methodist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田廣源邨 (2636 6533)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "115584",
+     "name": "培基小學",
+     "name_en": "Stewards Pooi Kei Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田火炭樂霞坊 (2602 5353)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "115614",
+     "name": "路德會梁鉅鏐小學",
+     "name_en": "Leung Kui Kau Lutheran Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界沙田安景街５號 (2637 9023)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "150720",
+     "name": "慈航學校",
+     "name_en": "Chi Hong Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 63,
+     "address": "新界沙田源昌里１號 (2648 6834)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "510734",
+     "name": "浸信會呂明才小學",
+     "name_en": "Baptist Lui Ming Choi Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 50,
+     "address": "新界沙田第一城得榮街２號 (2648 3132)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "533882",
+     "name": "浸信會沙田圍呂明才小學",
+     "name_en": "Baptist (Sha Tin Wai) Lui Ming Choi Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界沙田圓洲角路８號 (2647 6242)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "579220",
+     "name": "沙田圍胡素貞博士紀念學校",
+     "name_en": "Sha Tin Wai Dr Catherine F Woo Memorial School co-ed",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界沙田乙明邨街２號 (2646 8926)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "91",
+     "no": "610160",
+     "name": "東華三院蔡榮星小學",
+     "name_en": "TWGHs Tsoi Wing Sing Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界沙田水泉澳博泉街１９號 (2959 3606)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "95",
+   "area": "西貢、將軍澳、坑口、清水灣、井欄樹、魷魚灣、蠔涌、對面海、西貢北、糧船灣、滘西洲、鹽田仔、雞公山、匡湖居、翠塘花園、富寧花園、安寧花園、厚德邨、明德邨、景林邨、浩明苑、寶林邨、英明苑、欣明苑、翠林邨、景明苑、康盛花園、廣明苑、富康花園、寶盈花園、彩明苑、頌明苑、顯明苑、寶明苑、唐明苑、和明苑、裕明苑、煜明苑、尚德邨、健明邨、善明邨、富麗花園、茵怡花園、新都城、疊翠軒、維景灣畔、蔚藍灣畔、將軍澳中心、東港城、新寶城、清水灣半島、將軍澳廣場、都會駅、城中駅、日出康城、天晉、怡明邨、安峯、賢庭居、邑庭居、寶庭居、安楹苑、安麗苑、安樺苑、安柏苑、安秀苑、朗然",
+   "area_short": "西貢、將軍澳、坑口…",
+   "count": 21,
+   "schools": [
+    {
+     "net": "95",
+     "no": "115479",
+     "name": "樂善堂劉德學校",
+     "name_en": "Lok Sin Tong Lau Tak Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 50,
+     "address": "新界將軍澳寶林邨 (2701 3072)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "115630",
+     "name": "港澳信義會小學",
+     "name_en": "HK and Macau Lutheran Church Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界將軍澳集福路４號 (2701 9803)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "510696",
+     "name": "將軍澳官立小學",
+     "name_en": "Tseung Kwan O Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳厚德邨 (2701 3194)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "510742",
+     "name": "安博官立小學",
+     "name_en": "Erudite Government Primary School",
+     "type": "男女",
+     "finance": "官立",
+     "religion": "",
+     "quota": 63,
+     "address": "新界西貢安禧街８號 (2366 1530)",
+     "remarks": [
+      "H3",
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "516864",
+     "name": "西貢中心李少欽紀念學校",
+     "name_en": "Sai Kung Central Lee Siu Yam Memorial",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界西貢惠民路１８號 (2791 6681)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "516880",
+     "name": "香海正覺蓮社佛教黃藻森學校",
+     "name_en": "HHCKLA Buddhist Wong Cho Sum School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 63,
+     "address": "新界將軍澳景林邨 (2623 4773)",
+     "remarks": [
+      "P",
+      "S",
+      "U10"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "516996",
+     "name": "仁濟醫院陳耀星小學",
+     "name_en": "Yan Chai Hospital Chan Iu Seng Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳煜明苑 (2706 1932)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "518468",
+     "name": "東華三院王余家潔紀念小學",
+     "name_en": "TWGHS Wong Yee Jar Jat Memorial Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳學林里８號 (2706 1336)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "518476",
+     "name": "順德聯誼總會梁潔華小學",
+     "name_en": "STFA Leung Kit Wah Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳貿泰路２號 (2623 3628)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "518506",
+     "name": "保良局馮晴紀念小學",
+     "name_en": "PLK Fung Ching Memorial Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳培成路２號 (2706 6620)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "522040",
+     "name": "博愛醫院陳國威小學",
+     "name_en": "Pok Oi Hospital Chan Kwok Wai Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳尚德邨 (2178 5700)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "522163",
+     "name": "基督教神召會梁省德小學",
+     "name_en": "Assembly of God Leung Sing Tak Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界將軍澳文曲里２號 (2191 1929)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "522171",
+     "name": "基督教宣道會宣基小學",
+     "name_en": "C & M A Sun Kei Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界將軍澳尚德邨 (2191 6996)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "524581",
+     "name": "佛教志蓮小學",
+     "name_en": "Chi Lin Buddhist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "佛教",
+     "quota": 63,
+     "address": "新界將軍澳唐俊街１號 (2246 3959)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "524824",
+     "name": "仁愛堂田家炳小學",
+     "name_en": "Yan Oi Tong Tin Ka Ping Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳唐俊街３號 (2457 1302)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "528986",
+     "name": "西貢崇真天主教學校（小學部）",
+     "name_en": "Sai Kung Sung Tsun Catholic School (Primary",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 38,
+     "address": "新界西貢普通道 (2792 2246)",
+     "remarks": [
+      "P",
+      "S",
+      "U11"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "529249",
+     "name": "保良局黃永樹小學",
+     "name_en": "PLK Wong Wing Shu Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界將軍澳唐賢街２號 (2177 0050)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "529257",
+     "name": "將軍澳天主教小學",
+     "name_en": "Tseung Kwan O Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "新界將軍澳唐賢街６號 (2623 5679)",
+     "remarks": [
+      "P",
+      "S",
+      "#16"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "538809",
+     "name": "港澳信義會明道小學",
+     "name_en": "HK and Macau Lutheran Church Ming Tao",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界將軍澳彩明苑彩明街７號 (3129 4294)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "554600",
+     "name": "天主教聖安德肋小學",
+     "name_en": "St Andrew’s Catholic Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "新界將軍澳翠嶺路３０號 (2246 3313)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "95",
+     "no": "556483",
+     "name": "將軍澳循道衛理小學",
+     "name_en": "Tseung Kwan O Methodist Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 75,
+     "address": "新界將軍澳唐俊街１５號 (2706 0770)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "96",
+   "area": "南丫島、蒲台島",
+   "area_short": "南丫島、蒲台島",
+   "count": 1,
+   "schools": [
+    {
+     "net": "96",
+     "no": "513105",
+     "name": "南丫北段公立小學",
+     "name_en": "Northern Lamma School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 13,
+     "address": "新界南丫島榕樹灣榕樹嶺一號 (2982 0242)",
+     "remarks": [
+      "R",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "97",
+   "area": "長洲、索罟群島",
+   "area_short": "長洲、索罟群島",
+   "count": 2,
+   "schools": [
+    {
+     "net": "97",
+     "no": "150550",
+     "name": "長洲聖心學校",
+     "name_en": "Cheung Chau Sacred Heart School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 25,
+     "address": "新界長洲東灣教堂路 (2981 0330)",
+     "remarks": [
+      "R",
+      "S"
+     ]
+    },
+    {
+     "net": "97",
+     "no": "512559",
+     "name": "國民學校",
+     "name_en": "Kwok Man School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 38,
+     "address": "新界長洲國民路３０號 (2981 0432)",
+     "remarks": [
+      "R",
+      "S"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "98",
+   "area": "大嶼山（大嶼山東北除外）、東涌、富東邨、裕東苑、東堤灣畔、逸東邨、映灣園、海堤灣畔、藍天海岸、海珀名邸、迎東邨、滿東邨、裕雅苑、翔東邨、雋東邨、裕興苑",
+   "area_short": "大嶼山（大嶼山東北除外）、東涌、富東邨…",
+   "count": 10,
+   "schools": [
+    {
+     "net": "98",
+     "no": "510149",
+     "name": "梅窩學校",
+     "name_en": "Mui Wo School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 13,
+     "address": "新界大嶼山銀礦灣 (2984 8461)",
+     "remarks": [
+      "S"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "511315",
+     "name": "杯澳公立學校",
+     "name_en": "Bui O Public School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 13,
+     "address": "新界大嶼山貝澳羅屋村２號 (2984 1189)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "514411",
+     "name": "中華基督教會大澳小學",
+     "name_en": "CCC Tai O Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 13,
+     "address": "新界大嶼山大澳街市街２４—２６號 (2985 7515)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "522023",
+     "name": "青松侯寶垣小學",
+     "name_en": "Ching Chung Hau Po Woon Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "道教",
+     "quota": 63,
+     "address": "新界大嶼山東涌富東邨 (2109 0070)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "522066",
+     "name": "寶安商會溫浩根小學",
+     "name_en": "Po On Commercial Association Wan Ho Kan",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界大嶼山東涌富東邨 (2109 0045)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "522074",
+     "name": "嗇色園主辦可譽中學暨可譽小學",
+     "name_en": "Ho Yu College and Primary School (Sponsored",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "儒釋道三教",
+     "quota": 63,
+     "address": "新界大嶼山東涌健東路４—６號 (2109 1001)",
+     "remarks": [
+      "P",
+      "S",
+      "U12"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "530026",
+     "name": "靈糧堂秀德小學",
+     "name_en": "Ling Liang Church Sau Tak Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界大嶼山東涌文東路３５號 (2109 4688)",
+     "remarks": [
+      "P",
+      "S",
+      "U13"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "535672",
+     "name": "香港教育工作者聯會黃楚標學校",
+     "name_en": "HKFEW Wong Cho Bau School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "",
+     "quota": 63,
+     "address": "新界大嶼山東涌逸東邨 (2109 0087)",
+     "remarks": [
+      "P",
+      "S",
+      "U14"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "535753",
+     "name": "救世軍林拔中紀念學校",
+     "name_en": "The Salvation Army Lam Butt Chung",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 63,
+     "address": "新界大嶼山東涌逸東街８號逸東邨 (2109 0328)",
+     "remarks": [
+      "P",
+      "S"
+     ]
+    },
+    {
+     "net": "98",
+     "no": "536547",
+     "name": "東涌天主教學校",
+     "name_en": "Tung Chung Catholic School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 63,
+     "address": "新界大嶼山東涌逸東街８號逸東（二）邨",
+     "remarks": [
+      "P",
+      "S",
+      "U15"
+     ]
+    }
+   ]
+  },
+  {
+   "net": "99",
+   "area": "坪洲、愉景灣、稔樹灣、大白灣",
+   "area_short": "坪洲、愉景灣、稔樹灣、大白灣",
+   "count": 2,
+   "schools": [
+    {
+     "net": "99",
+     "no": "113433",
+     "name": "聖家學校",
+     "name_en": "Holy Family School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "天主教",
+     "quota": 13,
+     "address": "新界坪洲聖家路１號 (2983 0785)",
+     "remarks": [
+      "P",
+      "R",
+      "S"
+     ]
+    },
+    {
+     "net": "99",
+     "no": "115819",
+     "name": "聖公會偉倫小學",
+     "name_en": "SKH Wei Lun Primary School",
+     "type": "男女",
+     "finance": "資助",
+     "religion": "基督教",
+     "quota": 38,
+     "address": "新界大嶼山愉景灣第１３區 (2987 8608)",
+     "remarks": [
+      "P",
+      "R",
+      "S"
+     ]
+    }
+   ]
+  }
+ ]
+}

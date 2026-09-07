@@ -36,3 +36,5 @@
 - 小一入学 2027/28 全流程（自行分配＋统一派位＋计分表）：https://hkschool.guide/blog/hk-p1-admission-guide-2027
 - 小学校网竞争比 DIY 分析：https://hkschool.guide/blog/hk-school-net-diy-analysis
 - 择校中介避坑（红旗话术＋尽调流程）：https://hkschool.guide/blog/hk-school-agency-red-flags
+- 小一校网数据库（36 网 × 433 所官津小学，官方名册）：https://hkschool.guide/tools/p1-school-net
+- 小一派位交表自查工具（计分器＋清单＋结果卡）：https://hkschool.guide/tools/p1-self-check

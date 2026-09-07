@@ -9,10 +9,12 @@ import Match from "@/lib/match";
 import schoolsJson from "@/content/schools.json";
 import kgsJson from "@/content/kindergartens.json";
 import netsJson from "@/content/nets.json";
+import p1NetsJson from "@/content/p1-nets.json";
 import reportMeta from "@/content/report-meta.json";
 
 /* ---------- 类型 ---------- */
 type School = {
+  school_no?: number;
   name_zh: string;
   name_display?: string;
   district_zh?: string;
@@ -27,6 +29,7 @@ type School = {
   features?: string;
   gender?: string;
   tier?: string;
+  p1_2027?: boolean;
   lat: number;
   lng: number;
 };
@@ -46,6 +49,7 @@ type Kg = {
   teacher_ratio?: string;
   sessions?: string[];
   tier?: string;
+  p1_2027?: boolean;
   lat: number;
   lng: number;
 };
@@ -54,6 +58,7 @@ type Result = { school: School | Kg; score: number; fit: number; reasons: string
 const SCHOOLS = schoolsJson as School[];
 const KGS = kgsJson as Kg[];
 const NETS = netsJson as Record<string, string>;
+const P1_NETS = p1NetsJson as { nets: { net: string; area_short: string }[] };
 const META = reportMeta as any;
 const TIER_CFG = META.TIER_CFG as Record<string, { c: string; b: string }>;
 
@@ -69,16 +74,9 @@ function reportCode(s: School | Kg, isKg: boolean): string | undefined {
 }
 
 /* ---------- 小学表单选项 ---------- */
-const NET_OPTIONS = (() => {
-  const nums = [...new Set(SCHOOLS.map((s) => s.school_net).filter((n): n is string => !!n && /^\d+$/.test(n)))]
-    .sort((a, b) => Number(a) - Number(b));
-  return [{ v: "", label: "不限校网" }].concat(
-    nums.map((n) => {
-      const area = NETS[n!] ? "（" + NETS[n!].slice(0, 16) + "…）" : "";
-      return { v: n, label: `${n} 网 ${area}` };
-    })
-  );
-})();
+const NET_OPTIONS = [{ v: "", label: "不限校网" }].concat(
+  P1_NETS.nets.map((n) => ({ v: n.net, label: `${n.net} 网（${n.area_short}）` }))
+);
 const BUDGETS = [
   { v: "free", label: "仅免费（官立 / 资助）" },
   { v: "mid", label: "可接受中等学费（直资）" },
@@ -177,12 +175,13 @@ export default function ToolsPage() {
   const boxRef = useRef<HTMLDivElement>(null);
 
   function runPs() {
-    /* 与正式站 primary.html 相同：校网 → 主流区 → 区中心为家 */
-    const inNet = SCHOOLS.filter((s) => s.school_net === net);
+    /* 校网 → 主流区：只统计参加 2027/28 小一统筹办法的官津小学（p1_2027） */
+    const roster = SCHOOLS.filter((s) => s.p1_2027 !== false);
+    const inNet = net ? roster.filter((s) => s.school_net === net) : roster;
     const cnt: Record<string, number> = {};
     inNet.forEach((s) => (cnt[s.district_zh || ""] = (cnt[s.district_zh || ""] || 0) + 1));
     const d = Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a])[0] || "";
-    const inD = SCHOOLS.filter((s) => s.district_zh === d);
+    const inD = roster.filter((s) => s.district_zh === d);
     const base = inD.length ? inD : inNet;
     const home = base.length
       ? { lat: base.reduce((a, s) => a + s.lat, 0) / base.length, lng: base.reduce((a, s) => a + s.lng, 0) / base.length }
@@ -196,7 +195,8 @@ export default function ToolsPage() {
       personality,
       maxCommuteKm: +commute,
     };
-    let pool: School[] = SCHOOLS;
+    let pool: School[] = net ? roster.filter((s) => s.school_net === net) : SCHOOLS;
+    pool = pool.filter((s, i, arr) => arr.findIndex((x) => x.school_no === s.school_no) === i);
     if (gender) pool = pool.filter((s) => s.gender === gender);
     if (psOnlyReport) pool = pool.filter((s) => reportCode(s, false));
     if (tier === "rated") pool = pool.filter((s) => s.tier);
@@ -269,6 +269,14 @@ export default function ToolsPage() {
           <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">NEW</span>
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一派位 · 交表前自查工具</span>
           <span className="text-sm text-[var(--p-secondary)]">计分计算器 ＋ 5条清单 ＋ 结果卡 →</span>
+        </a>
+        <a
+          href="/tools/p1-school-net"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-white)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
+        >
+          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">NEW</span>
+          <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一校网数据库 · 36 网 × 433 所官津小学</span>
+          <span className="text-sm text-[var(--p-secondary)]">官方名册名单、学额、地址，逐校可核对 →</span>
         </a>
 
         {/* tab */}

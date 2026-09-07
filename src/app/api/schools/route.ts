@@ -30,6 +30,7 @@ type SchoolRow = {
   pn?: boolean;
   sessions?: string[];
   tier?: string | null;
+  p1_2027?: boolean;
   report?: string | null;
 };
 
@@ -64,6 +65,7 @@ function loadRows(): SchoolRow[] {
       language: s.teaching_language,
       sessions: s.sessions || [],
       tier: tierOf(s.tier),
+      p1_2027: (s as { p1_2027?: boolean }).p1_2027 === true,
       report: PS_CODE[s.name_zh] || PS_CODE[name] || null,
     });
   }
@@ -99,6 +101,7 @@ export async function GET(req: NextRequest) {
   const district = sp.get("district");
   const net = sp.get("net");
   const tier = sp.get("tier");
+  const p1 = sp.get("p1");
   const q = sp.get("q");
   const limit = Math.min(Number(sp.get("limit") || 50), 200);
   const offset = Math.max(Number(sp.get("offset") || 0), 0);
@@ -109,6 +112,7 @@ export async function GET(req: NextRequest) {
   if (district) rows = rows.filter((r) => r.district === district);
   if (net) rows = rows.filter((r) => r.net === net);
   if (tier) rows = rows.filter((r) => r.tier === String(tier).toUpperCase());
+  if (p1 === "1") rows = rows.filter((r) => r.p1_2027 === true);
   if (q) {
     const chars = q.trim().toLowerCase().split("");
     rows = rows.filter((r) => chars.every((c) => r.name.toLowerCase().includes(c)));
