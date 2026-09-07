@@ -262,6 +262,15 @@ export default function ToolsPage() {
           </p>
         </div>
 
+        <a
+          href="/tools/p1-self-check"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-hl-yellow-bg)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-hl-yellow-border)]"
+        >
+          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">NEW</span>
+          <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一派位 · 交表前自查工具</span>
+          <span className="text-sm text-[var(--p-secondary)]">计分计算器 ＋ 5条清单 ＋ 结果卡 →</span>
+        </a>
+
         {/* tab */}
         <div className="mb-6 flex gap-2 font-mono text-sm uppercase">
           {(["ps", "kg"] as const).map((t) => (
