@@ -75,7 +75,11 @@ export default function UnlockPage() {
             }
             setStatus("支付验证通过 · 已解锁「" + j.report + "」· 正在打开…");
             setTimeout(() => {
-              window.location.href = "/reports/" + j.report + "?t=" + Date.now();
+              const dest =
+                j.report === "p1-sim"
+                  ? "/tools/p1-simulator/report"
+                  : "/reports/" + j.report;
+              window.location.href = dest + "?t=" + Date.now();
             }, 800);
           } else if (tries < maxTries) {
             tries += 1;

@@ -1,3 +1,10 @@
+## 2026-09-07 Pro 模拟器上线（变现第一刀）
+- **产品**：小一志愿结构模拟器 `/tools/p1-simulator` —— 免费填表＋实时结构快照；Pro 完整体检报告 HK$68（Stripe 新价格档 sim=6800 分）
+- **交付物**：风险等级 A/B/C ＋ 8 项结构检查 ＋ 修改建议 ＋ 叩门预案，报告页支持打印保存 PDF（window.print）和下载 PNG（html-to-image）
+- **检查引擎**：`src/lib/sim-engine.ts` 纯函数（乙部数量/保底/冲刺比例/重复/甲部/计分适配/空洞），明确「不预测录取概率」
+- **支付复用**：/api/checkout 增加 product=sim 档，/unlock 页支付成功后跳 `/tools/p1-simulator/report`
+- **数据**：校网学校建议来自官方名册 `p1-nets.json`；输入只存用户浏览器 localStorage，不上传
+
 ## 2026-09-03 三份报告部署事故与修复
 - **问题**:约克蒙特梭利(元朗)/德怡(元朗)/海之恋 VEO 三份报告线上仍为旧版薄内容;部署"成功"但未生效,后续修复中又出现全站 404、API 500。
 - **根因**:① 本地 `.vercel/project.json` 指向 pudding-clone,部署到错误项目;② hk-school-guide 项目 `framework=null`,Next.js 被当静态上传全站 404;③ 该项目生产 env 为空,`/api/verify` 返回 500。

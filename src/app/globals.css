@@ -435,3 +435,12 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
   .blog-article h1 { font-size: 26px; }
   .blog-article { font-size: 16px; }
 }
+
+/* ===== 打印（Pro 体检报告 PDF） ===== */
+@media print {
+  header, footer, nav { display: none !important; }
+  body { background: #FFFFFF !important; }
+  main { padding: 0 !important; }
+  #sim-report-page { margin: 0 !important; }
+  #sim-report-page .rounded-\[12px\] { border-width: 2px !important; border-color: #1C1C1C !important; }
+}

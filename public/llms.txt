@@ -38,3 +38,4 @@
 - 择校中介避坑（红旗话术＋尽调流程）：https://hkschool.guide/blog/hk-school-agency-red-flags
 - 小一校网数据库（36 网 × 433 所官津小学，官方名册）：https://hkschool.guide/tools/p1-school-net
 - 小一派位交表自查工具（计分器＋清单＋结果卡）：https://hkschool.guide/tools/p1-self-check
+- 小一志愿结构模拟器（填表推演＋Pro 体检报告）：https://hkschool.guide/tools/p1-simulator

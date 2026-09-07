@@ -278,6 +278,14 @@ export default function ToolsPage() {
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一校网数据库 · 36 网 × 433 所官津小学</span>
           <span className="text-sm text-[var(--p-secondary)]">官方名册名单、学额、地址，逐校可核对 →</span>
         </a>
+        <a
+          href="/tools/p1-simulator"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-hl-yellow-bg)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-hl-yellow-border)]"
+        >
+          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">PRO</span>
+          <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一志愿结构模拟器 · 完整体检报告 HK$68</span>
+          <span className="text-sm text-[var(--p-secondary)]">填表前推演：风险等级＋修改建议＋叩门预案 →</span>
+        </a>
 
         {/* tab */}
         <div className="mb-6 flex gap-2 font-mono text-sm uppercase">
