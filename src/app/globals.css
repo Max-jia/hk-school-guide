@@ -390,9 +390,14 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
 .blog-article h2 { font-family: var(--p-serif); font-size: 24px; font-weight: 600; margin: 40px 0 16px; border-top: 1px solid var(--p-gray-300); padding-top: 28px; }
 .blog-article h3 { font-size: 19px; font-weight: 600; margin: 28px 0 12px; }
 .blog-article p { margin: 0 0 1.2em; }
-.blog-article table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; display: block; overflow-x: auto; }
-.blog-article table td, .blog-article table th { padding: 9px 14px; border-bottom: 1px solid var(--p-gray-300); text-align: left; }
-.blog-article table th { font-weight: 600; color: var(--p-secondary); font-size: 12px; background: var(--p-bg-yellow); width: 140px; }
+.blog-article table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; table-layout: auto; }
+.blog-article .blog-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 20px 0; }
+.blog-article .blog-table-wrap table { margin: 0; }
+.blog-article table td, .blog-article table th { padding: 10px 14px; border-bottom: 1px solid var(--p-gray-300); text-align: left; vertical-align: top; line-height: 1.6; }
+.blog-article table th { font-weight: 600; color: var(--p-secondary); font-size: 12px; background: var(--p-bg-yellow); width: auto; white-space: nowrap; }
+@media (max-width: 640px) {
+  .blog-article .blog-table-wrap table { width: max-content; min-width: 100%; }
+}
 .blog-article .highlight { background: var(--p-hl-bg); border-left: 4px solid var(--p-hl-border); padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
 .blog-article .warn { background: #fff7ed; border-left: 4px solid #f97316; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
 .blog-article ul { margin: 0 0 1.2em; padding-left: 1.5em; }
