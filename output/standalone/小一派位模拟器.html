@@ -19,6 +19,12 @@
   select,input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);font-size:14px;font-family:inherit;color:var(--ink)}
   .row .schoolwrap{flex:1;min-width:0}
   .row select.school{width:100%}
+  .ss{position:relative;flex:1;min-width:0}
+  .ss input{width:100%}
+  .ss-pop{position:absolute;top:100%;left:0;right:0;z-index:50;background:#fff;border:1px solid var(--line);border-radius:6px;max-height:230px;overflow:auto;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+  .ss-net{padding:4px 10px;font-size:11px;color:var(--muted);background:#FBF9F5;border-bottom:1px solid #F0EDE7}
+  .ss-item{padding:7px 10px;font-size:13px;cursor:pointer;border-bottom:1px solid #F0EDE7}
+  .ss-item:hover{background:var(--bg)}
   .row input{flex:1;min-width:0}
   .row{display:flex;gap:8px;margin-bottom:8px;align-items:center}
   .row input{flex:1}
@@ -152,39 +158,47 @@ function isInOptions(name,id){
 function schoolControl(cont,id,arr,idx){
   cont.innerHTML="";
   var isB = id==="partB";
-  var name = arr[idx].name || "";
-  var custom = Boolean(arr[idx].custom) || (name && !isInOptions(name,id));
-  if(!custom){
-    // 学校下拉（按校网分组）
-    var sel=document.createElement("select"); sel.className="school";
-    var opt0=document.createElement("option"); opt0.value=""; opt0.textContent=isB?"（选择本网学校…）":"（选择学校…）"; sel.appendChild(opt0);
-    var ns=netsFor(id);
+  var box=document.createElement("div"); box.className="ss";
+  var inp=document.createElement("input"); inp.type="text";
+  inp.placeholder=isB?"搜索本网学校（如：李鄭屋）":"搜索全港学校（如：喇沙）";
+  var pop=document.createElement("div"); pop.className="ss-pop";
+  box.appendChild(inp); box.appendChild(pop); cont.appendChild(box);
+  inp.value=arr[idx].name||"";
+
+  function groupsFor(q){
+    var ns=netsFor(id), ql=q.toLowerCase(), out=[];
     for(var k=0;k<ns.length;k++){
-      var g=document.createElement("optgroup"); g.label=ns[k].net+" 网";
+      var items=[];
       for(var j=0;j<ns[k].schools.length;j++){
         var sc=ns[k].schools[j];
-        var o=document.createElement("option"); o.value=sc.name; o.textContent=sc.name+(sc.quota?"（学额"+sc.quota+"）":"");
-        g.appendChild(o);
+        if(sc.name.indexOf(q)!==-1 || sc.name.toLowerCase().indexOf(ql)!==-1 || ns[k].net===q || ns[k].area_short.indexOf(q)!==-1){
+          items.push(sc);
+        }
       }
-      sel.appendChild(g);
+      if(items.length) out.push({net:ns[k].net, items:items.slice(0,25)});
     }
-    var oc=document.createElement("option"); oc.value="__custom__"; oc.textContent="其他学校（自行填写：直资/私立等）"; sel.appendChild(oc);
-    sel.value=name;
-    sel.addEventListener("change",function(e){
-      if(e.target.value==="__custom__"){ arr[idx].name=""; arr[idx].custom=true; }
-      else{ arr[idx].name=e.target.value; arr[idx].custom=false; }
-      save(); schoolControl(cont,id,arr,idx);
-    });
-    cont.appendChild(sel);
-  }else{
-    // 自填输入（含名单外学校）
-    var inp=document.createElement("input"); inp.type="text";
-    inp.placeholder=(isB?"乙部第 "+(idx+1)+" 志愿（已选其他学校，可自填）":"甲部第 "+(idx+1)+" 志愿（已选其他学校，可自填）");
-    inp.value=name;
-    inp.addEventListener("input",function(e){ arr[idx].name=e.target.value; save(); });
-    inp.addEventListener("blur",function(){ if(arr[idx].name && isInOptions(arr[idx].name,id)){ arr[idx].custom=false; schoolControl(cont,id,arr,idx); } });
-    cont.appendChild(inp);
+    return out;
   }
+  function renderPop(q){
+    if(!q){ pop.style.display="none"; return; }
+    var groups=groupsFor(q), total=0, h="";
+    groups.forEach(function(g){ total+=g.items.length; });
+    if(!total){ pop.style.display="none"; return; }
+    for(var k=0;k<groups.length;k++){
+      h+='<div class="ss-net">'+groups[k].net+' 网</div>';
+      for(var j=0;j<groups[k].items.length;j++){
+        var sc=groups[k].items[j];
+        h+='<div class="ss-item" data-name="'+esc(sc.name)+'">'+esc(sc.name)+(sc.quota?"（学额"+sc.quota+"）":"")+'</div>';
+      }
+    }
+    pop.innerHTML=h; pop.style.display="block";
+  }
+  inp.addEventListener("input",function(){ arr[idx].name=inp.value; arr[idx].custom=false; save(); renderPop(inp.value.trim()); });
+  pop.addEventListener("mousedown",function(e){
+    var it=e.target.closest ? e.target.closest(".ss-item") : null;
+    if(it){ arr[idx].name=it.getAttribute("data-name"); arr[idx].custom=false; save(); renderList(id,arr,id==="partA"?3:arr.length); }
+  });
+  inp.addEventListener("blur",function(){ setTimeout(function(){ pop.style.display="none"; },150); });
 }
 function renderList(id, arr, max){
   var box=$(id); box.innerHTML="";
