@@ -17,6 +17,9 @@
   label{display:block;margin-bottom:12px}
   label .t{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;letter-spacing:.05em}
   select,input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);font-size:14px;font-family:inherit;color:var(--ink)}
+  .row .schoolwrap{flex:1;min-width:0}
+  .row select.school{width:100%}
+  .row input{flex:1;min-width:0}
   .row{display:flex;gap:8px;margin-bottom:8px;align-items:center}
   .row input{flex:1}
   .row select.tier{width:88px;flex:none}
@@ -113,14 +116,63 @@ function render(){
   renderList("partA", state.partA, 3);
   renderList("partB", state.partB, state.partB.length);
 }
+function netsFor(id){
+  return id==="partA" ? P1.nets : [curNet()];
+}
+function isInOptions(name,id){
+  if(!name) return false;
+  var ns=netsFor(id);
+  for(var k=0;k<ns.length;k++){
+    for(var j=0;j<ns[k].schools.length;j++){
+      if(ns[k].schools[j].name===name) return true;
+    }
+  }
+  return false;
+}
+function schoolControl(cont,id,arr,idx){
+  cont.innerHTML="";
+  var isB = id==="partB";
+  var name = arr[idx].name || "";
+  var custom = Boolean(arr[idx].custom) || (name && !isInOptions(name,id));
+  if(!custom){
+    // 学校下拉（按校网分组）
+    var sel=document.createElement("select"); sel.className="school";
+    var opt0=document.createElement("option"); opt0.value=""; opt0.textContent=isB?"（选择本网学校…）":"（选择学校…）"; sel.appendChild(opt0);
+    var ns=netsFor(id);
+    for(var k=0;k<ns.length;k++){
+      var g=document.createElement("optgroup"); g.label=ns[k].net+" 网";
+      for(var j=0;j<ns[k].schools.length;j++){
+        var sc=ns[k].schools[j];
+        var o=document.createElement("option"); o.value=sc.name; o.textContent=sc.name+(sc.quota?"（学额"+sc.quota+"）":"");
+        g.appendChild(o);
+      }
+      sel.appendChild(g);
+    }
+    var oc=document.createElement("option"); oc.value="__custom__"; oc.textContent="其他学校（自行填写：直资/私立等）"; sel.appendChild(oc);
+    sel.value=name;
+    sel.addEventListener("change",function(e){
+      if(e.target.value==="__custom__"){ arr[idx].name=""; arr[idx].custom=true; }
+      else{ arr[idx].name=e.target.value; arr[idx].custom=false; }
+      save(); schoolControl(cont,id,arr,idx);
+    });
+    cont.appendChild(sel);
+  }else{
+    // 自填输入（含名单外学校）
+    var inp=document.createElement("input"); inp.type="text";
+    inp.placeholder=(isB?"乙部第 "+(idx+1)+" 志愿（已选其他学校，可自填）":"甲部第 "+(idx+1)+" 志愿（已选其他学校，可自填）");
+    inp.value=name;
+    inp.addEventListener("input",function(e){ arr[idx].name=e.target.value; save(); });
+    inp.addEventListener("blur",function(){ if(arr[idx].name && isInOptions(arr[idx].name,id)){ arr[idx].custom=false; schoolControl(cont,id,arr,idx); } });
+    cont.appendChild(inp);
+  }
+}
 function renderList(id, arr, max){
   var box=$(id); box.innerHTML="";
   for(var i=0;i<max;i++){
     if(!arr[i]){arr[i]={name:"",tier:"match"};}
     var d=document.createElement("div"); d.className="row";
-    var inp=document.createElement("input"); inp.type="text"; inp.placeholder=(id==="partA"?"甲部第 "+(i+1)+" 志愿（全港任选）":"乙部第 "+(i+1)+" 志愿（网内）"); inp.value=arr[i].name||"";
-    inp.addEventListener("input",(function(idx){return function(e){arr[idx].name=e.target.value;save();};})(i));
-    d.appendChild(inp);
+    var cont=document.createElement("div"); cont.className="schoolwrap"; d.appendChild(cont);
+    schoolControl(cont,id,arr,i);
     if(id==="partB"){
       var q=quotaOf(arr[i].name||"");
       if(q>0&&q<=30){var sp=document.createElement("span");sp.className="quota";sp.textContent="学额"+q;d.appendChild(sp);}
