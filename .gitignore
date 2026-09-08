@@ -78,3 +78,6 @@ next-env.d.ts
 # Local temp files
 temp/
 .env*
+
+# PDF 生成环境
+.venv-pdf/
