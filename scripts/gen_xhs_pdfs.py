@@ -9,13 +9,27 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.lib import colors
 from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.cidfonts import UnicodeCIDFont
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
                                 TableStyle, PageBreak)
 
-pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
+# 嵌入式中文字体（避免查看器缺字体导致空白）
+_FONT_CANDIDATES = [
+    ("Songti", "/System/Library/Fonts/Supplemental/Songti.ttc"),
+    ("STHeiti", "/System/Library/Fonts/STHeiti Light.ttc"),
+    ("ArialUni", "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
+]
+FONT_NAME = "Songti"
+for name, path in _FONT_CANDIDATES:
+    try:
+        pdfmetrics.registerFont(TTFont(name, path, subfontIndex=0))
+        FONT_NAME = name
+        break
+    except Exception:
+        continue
+print("embedded font:", FONT_NAME)
 
 INK = colors.HexColor("#1C1C1C")
 CREAM = colors.HexColor("#F7F1E5")
@@ -37,7 +51,7 @@ os.makedirs(TMP, exist_ok=True)
 
 
 def mkstyle(name, **kw):
-    base = dict(fontName="STSong-Light", fontSize=10.5, leading=16,
+    base = dict(fontName=FONT_NAME, fontSize=10.5, leading=16,
                 textColor=INK, alignment=TA_LEFT, spaceAfter=4, wordWrap="CJK")
     base.update(kw)
     return ParagraphStyle(name, **base)
@@ -68,14 +82,14 @@ def cover_bg(canvas, doc):
     canvas.setLineWidth(2)
     canvas.rect(8 * mm, 8 * mm, PAGE_W - 16 * mm, PAGE_H - 16 * mm, stroke=1, fill=0)
     canvas.setFillColor(INK)
-    canvas.setFont("STSong-Light", 9)
+    canvas.setFont(FONT_NAME, 9)
     canvas.drawCentredString(PAGE_W / 2, 18 * mm, "港学荟 hkschool.guide - 数据可核实")
     canvas.restoreState()
 
 
 def footer(canvas, doc):
     canvas.saveState()
-    canvas.setFont("STSong-Light", 8)
+    canvas.setFont(FONT_NAME, 8)
     canvas.setFillColor(MUTED)
     canvas.drawString(MARGIN, 10 * mm, "港学荟 hkschool.guide - 内容仅供参考")
     canvas.drawRightString(PAGE_W - MARGIN, 10 * mm, "第 %d 页" % doc.page)
@@ -105,7 +119,7 @@ def T(data, widths):
         rows.append([Paragraph(str(c), S_CELL) if c != "" else "" for c in r])
     t = Table(rows, colWidths=[w * mm for w in widths], hAlign="LEFT")
     style = [
-        ("FONTNAME", (0, 0), (-1, -1), "STSong-Light"),
+        ("FONTNAME", (0, 0), (-1, -1), FONT_NAME),
         ("FONTSIZE", (0, 0), (-1, -1), 9.5),
         ("TEXTCOLOR", (0, 0), (-1, -1), INK),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
