@@ -17,8 +17,13 @@
   label{display:block;margin-bottom:12px}
   label .t{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;letter-spacing:.05em}
   select,input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);font-size:14px;font-family:inherit;color:var(--ink)}
-  .row .schoolwrap{flex:1;min-width:0;display:flex}
+  .row .schoolwrap{flex:1;min-width:0;display:flex;flex-wrap:wrap}
   .row .sinput,.row .sselect{flex:1 1 0;min-width:0;width:auto}
+  .row .sresults{flex-basis:100%;display:none;margin-top:6px;border:1px solid var(--line);border-radius:8px;max-height:180px;overflow:auto;background:#fff}
+  .row .sresults.show{display:block}
+  .row .sr-net{padding:4px 10px;font-size:11px;color:var(--muted);background:#FBF9F5;border-bottom:1px solid #F0EDE7}
+  .row .sr-item{padding:7px 10px;font-size:13px;cursor:pointer;border-bottom:1px solid #F0EDE7}
+  .row .sr-item:hover{background:var(--bg)}
   .row input{flex:1;min-width:0}
   .row{display:flex;gap:8px;margin-bottom:8px;align-items:center}
   .row input{flex:1}
@@ -156,48 +161,68 @@ function schoolControl(cont,id,arr,idx){
   var isB = id==="partB";
   var name = arr[idx].name || "";
   var inp=document.createElement("input"); inp.type="text"; inp.className="sinput";
-  inp.placeholder=isB?"输入搜索本网学校，或点下拉":"输入搜索全港学校，或点下拉";
+  inp.placeholder=isB?"搜索本网学校…":"搜索全港学校…";
   inp.value=name;
   var sel=document.createElement("select"); sel.className="sselect";
+  var res=document.createElement("div"); res.className="sresults";
 
-  function buildOptions(q){
+  // 下拉：始终完整分组，不随搜索变化
+  function buildFull(){
     sel.innerHTML="";
     var o0=document.createElement("option"); o0.value=""; o0.textContent=isB?"（选择本网学校…）":"（选择学校…）"; sel.appendChild(o0);
-    var ns=netsFor(id), ql=String(q||"").trim().toLowerCase(), any=false;
+    var ns=netsFor(id);
     for(var k=0;k<ns.length;k++){
       var g=document.createElement("optgroup"); g.label=ns[k].net+" 网";
-      var added=0;
       for(var j=0;j<ns[k].schools.length;j++){
         var sc=ns[k].schools[j];
-        if(ql){
-          var hit = sc.name.toLowerCase().indexOf(ql)!==-1 ||
-                    (sc.simp||sc.name).toLowerCase().indexOf(ql)!==-1 ||
-                    ns[k].net===ql ||
-                    ns[k].area_short.toLowerCase().indexOf(ql)!==-1;
-          if(!hit) continue;
-        }
-        var o=document.createElement("option"); o.value=sc.name;
-        o.textContent=sc.name+(sc.quota?"（学额"+sc.quota+"）":"");
-        g.appendChild(o); added++;
+        var o=document.createElement("option"); o.value=sc.name; o.textContent=sc.name+(sc.quota?"（学额"+sc.quota+"）":"");
+        g.appendChild(o);
       }
-      if(added){ sel.appendChild(g); any=true; }
+      sel.appendChild(g);
     }
-    if(!any){ sel.appendChild(o0); }
+    if(name){ sel.value=name; }
   }
-  buildOptions("");
-  if(name && sel.querySelector('option[value="'+esc(name)+'"]')){ sel.value=name; }
+  buildFull();
 
+  // 搜索：独立结果列表，点选直接填入
+  function renderResults(q){
+    if(!q){ res.className="sresults"; res.innerHTML=""; return; }
+    var ns = isB ? [curNet()] : P1.nets, ql=q.toLowerCase(), h="", any=false;
+    for(var k=0;k<ns.length;k++){
+      var items=[];
+      for(var j=0;j<ns[k].schools.length;j++){
+        var sc=ns[k].schools[j];
+        if(sc.name.toLowerCase().indexOf(ql)!==-1 || (sc.simp||sc.name).toLowerCase().indexOf(ql)!==-1 || ns[k].net===ql || ns[k].area_short.toLowerCase().indexOf(ql)!==-1){
+          items.push(sc);
+        }
+      }
+      if(items.length){
+        any=true; h+='<div class="sr-net">'+ns[k].net+' 网</div>';
+        items.slice(0,15).forEach(function(sc){
+          h+='<div class="sr-item" data-name="'+esc(sc.name)+'">'+esc(sc.name)+(sc.quota?"（学额"+sc.quota+"）":"")+'</div>';
+        });
+      }
+    }
+    res.innerHTML=h;
+    res.className = any ? "sresults show" : "sresults";
+  }
   inp.addEventListener("input",function(){
-    arr[idx].name=inp.value; arr[idx].custom=false; save();
-    buildOptions(inp.value);
+    arr[idx].name=inp.value; arr[idx].custom=false; save(); renderResults(inp.value.trim());
+  });
+  res.addEventListener("mousedown",function(e){
+    e.preventDefault();
+    var it=e.target.closest?e.target.closest(".sr-item"):null;
+    if(it){
+      arr[idx].name=it.getAttribute("data-name"); arr[idx].custom=false;
+      inp.value=arr[idx].name; renderResults(""); save();
+      renderList(id,arr,id==="partA"?3:arr.length);
+    }
   });
   sel.addEventListener("change",function(){
-    if(sel.value){
-      arr[idx].name=sel.value; arr[idx].custom=false; inp.value=sel.value; save();
-      buildOptions(""); sel.value=sel.value;
-    }
+    if(sel.value){ arr[idx].name=sel.value; arr[idx].custom=false; inp.value=sel.value; save(); }
   });
-  cont.appendChild(inp); cont.appendChild(sel);
+  inp.addEventListener("blur",function(){ setTimeout(function(){ renderResults(""); },150); });
+  cont.appendChild(inp); cont.appendChild(sel); cont.appendChild(res);
 }
 function renderList(id, arr, max){
   var box=$(id); box.innerHTML="";
