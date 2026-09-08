@@ -7,7 +7,7 @@ import p1NetsJson from "@/content/p1-nets.json";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
 
 const P1 = p1NetsJson as {
-  nets: { net: string; area_short: string; count: number; schools: { name: string }[] }[];
+  nets: { net: string; area_short: string; count: number; schools: { name: string; quota: number | null }[] }[];
 };
 
 const TIERS: { v: SimTier; label: string }[] = [
@@ -33,6 +33,13 @@ export default function P1Simulator() {
   const schoolNames = useMemo(() => {
     const n = P1.nets.find((x) => x.net === net);
     return n ? n.schools.map((s) => s.name) : [];
+  }, [net]);
+
+  const quotaMap = useMemo(() => {
+    const n = P1.nets.find((x) => x.net === net);
+    const m = new Map<string, number>();
+    if (n) for (const sc of n.schools) m.set(sc.name, sc.quota ?? 0);
+    return m;
   }, [net]);
 
   useEffect(() => {
@@ -73,6 +80,9 @@ export default function P1Simulator() {
     else if (bCount < 20) tips.push({ kind: "info", text: `乙部 ${bCount}/30，还有空位可以补保底。` });
     if (dupNames.length) tips.push({ kind: "danger", text: `乙部有重复志愿：${dupNames.join("、")}` });
     if (score <= 20 && sprintCount >= 6) tips.push({ kind: "info", text: `计分 ${score} 分但冲刺 ${sprintCount} 所，底牌和目标错配。` });
+    const a1 = partA.find((x) => x.name.trim())?.name.trim() || "";
+    const b1 = filledB[0]?.name.trim() || "";
+    if (a1 && b1 && a1 !== b1) tips.push({ kind: "info", text: "甲一与乙一不是同一所（1-1-1 未对齐），若目标校在网内建议统一。" });
     if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，建议解锁完整报告再核对一遍。" });
     return tips.slice(0, 3);
   }, [safeCount, bCount, dupNames, score, sprintCount]);
@@ -199,6 +209,11 @@ export default function P1Simulator() {
                   list="p1-sim-schools"
                   className={inputCls}
                 />
+                {(quotaMap.get(s.name.trim()) ?? 0) > 0 && (quotaMap.get(s.name.trim()) ?? 0) <= 30 && (
+                  <span className="shrink-0 self-center rounded bg-[var(--p-hl-yellow-bg)] px-2 py-1 font-mono text-xs text-[var(--p-fg)]">
+                    学额{quotaMap.get(s.name.trim())}
+                  </span>
+                )}
                 <select
                   value={s.tier}
                   onChange={(e) => setRow(partB, setPartB, i, { tier: e.target.value as SimTier })}
@@ -275,6 +290,9 @@ export default function P1Simulator() {
             </button>
             <span className="text-xs text-[var(--p-secondary)]">输入只保存在你自己的浏览器，不上传服务器。</span>
           </div>
+          <p className="mt-4 text-sm text-[var(--p-secondary)]">
+            已有兑换码？<a className="underline" href="/redeem">去兑换 →</a>
+          </p>
         </section>
 
         <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">

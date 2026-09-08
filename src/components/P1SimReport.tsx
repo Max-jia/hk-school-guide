@@ -113,6 +113,9 @@ export default function P1SimReport() {
             <p className="mt-3 text-xs text-[var(--p-secondary)]">
               支付后自动回跳并解锁，永久可看。
             </p>
+            <p className="mt-4 text-sm text-[var(--p-secondary)]">
+              有兑换码？<a className="underline" href="/redeem">去兑换 →</a>
+            </p>
           </section>
         ) : !report || !input ? (
           <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-8 text-center">

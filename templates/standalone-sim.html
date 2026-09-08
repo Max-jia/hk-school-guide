@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>港学荟 · 小一派位志愿结构模拟器（单文件版）</title>
+<style>
+  :root{--ink:#1C1C1C;--muted:#57534E;--bg:#F7F1E5;--surface:#FFFFFF;--line:#E4E0D8;--teal:#0F766E;--red:#C2410C;--yellow:#E6A817;--green:#0F766E}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Songti SC","PingFang SC","Microsoft YaHei",serif;line-height:1.7}
+  .wrap{max-width:860px;margin:0 auto;padding:24px 16px 80px}
+  h1{font-size:30px;line-height:1.2;margin:8px 0}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 20px}
+  .note{background:#fef9e7;border-left:4px solid var(--yellow);padding:12px 16px;font-size:13px;margin:0 0 20px;border-radius:0 8px 8px 0}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:20px}
+  .card h2{font-size:18px;margin:0 0 12px}
+  label{display:block;margin-bottom:12px}
+  label .t{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;letter-spacing:.05em}
+  select,input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);font-size:14px;font-family:inherit;color:var(--ink)}
+  .row{display:flex;gap:8px;margin-bottom:8px;align-items:center}
+  .row input{flex:1}
+  .row select.tier{width:88px;flex:none}
+  .quota{flex:none;background:#fef9e7;border-radius:6px;padding:6px 8px;font-size:12px;font-family:ui-monospace,Menlo,monospace}
+  .btn{background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:11px 18px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .add{border:1px dashed var(--line);background:none;border-radius:8px;padding:9px;width:100%;font-size:13px;color:var(--muted);cursor:pointer;font-family:inherit}
+  .grade{display:flex;align-items:center;gap:18px;background:#FBF9F5;border-left:6px solid var(--ink);border-radius:10px;padding:18px 20px;margin-bottom:18px}
+  .grade .g{font-size:52px;font-weight:800;font-family:Georgia,serif}
+  .grade p{margin:0}
+  .check{border-bottom:1px solid var(--line);padding:10px 0}
+  .check .tag{display:inline-block;border-radius:6px;padding:2px 10px;font-size:12px;font-weight:700;margin-right:8px}
+  .pass{background:#E7F6F2;color:var(--green)}
+  .warn{background:#FEF3E2;color:#B45309}
+  .fail{background:#FDEBE7;color:var(--red)}
+  .check b{display:block}
+  .check span.d{color:var(--muted);font-size:13px}
+  .foot{margin-top:32px;font-size:12px;color:var(--muted);text-align:center}
+  .suggest li{margin:4px 0}
+  @media print{.no-print{display:none}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>小一派位 · 志愿结构模拟器</h1>
+  <p class="sub">港学荟 · 单文件版 | 输入志愿自动体检：只查表结构，不预测录取概率</p>
+  <div class="note">⚠️ 本工具不预测录取结果（统一派位含随机编号）。它只回答一个问题：你这张表有没有结构性错误。数据依据教育局 2027/28 官方名册，所有信息可核实。</div>
+
+  <div class="card no-print">
+    <h2>① 基本信息</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <label><span class="t">所属校网</span><select id="net"></select></label>
+      <label><span class="t">乙类计分（10-35）</span><select id="score"></select></label>
+    </div>
+  </div>
+
+  <div class="card no-print">
+    <h2>② 甲部志愿（全港任选，最多 3）</h2>
+    <div id="partA"></div>
+  </div>
+
+  <div class="card no-print">
+    <h2>③ 乙部志愿（校网内，最多 30）</h2>
+    <div id="partB"></div>
+    <button class="add" id="addRow">＋ 添加志愿</button>
+  </div>
+
+  <div class="no-print" style="display:flex;gap:10px;flex-wrap:wrap">
+    <button class="btn" id="runBtn">开始体检</button>
+    <button class="btn ghost" id="printBtn">打印 / 存 PDF</button>
+    <button class="btn ghost" id="resetBtn">清空重填</button>
+  </div>
+
+  <div id="result" style="margin-top:24px"></div>
+
+  <div class="foot">
+    港学荟 hkschool.guide · 数据来源：教育局 2027/28 小一入学官方名册（2026-09 整理）<br>
+    本文件为单机版，输入只保存在你自己的浏览器。
+  </div>
+</div>
+
+<script>
+"use strict";
+var P1 = __P1_DATA__;
+var TIERS = [{v:"sprint",t:"冲刺"},{v:"match",t:"匹配"},{v:"safe",t:"保底"}];
+var SCORES = [10,15,20,25,30,35];
+var LOCK = "standalone_sim_v1";
+
+function $(id){return document.getElementById(id);}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+var state = {net:P1.nets[0].net, score:20, partA:[], partB:[]};
+function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){}}
+function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse(raw); if(d&&d.net&&P1.nets.some(function(n){return n.net===d.net;})){state=d;}}}catch(e){}}
+
+function curNet(){for(var i=0;i<P1.nets.length;i++){if(P1.nets[i].net===state.net)return P1.nets[i];}return P1.nets[0];}
+function quotaOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i].quota;}return 0;}
+
+function tierSelect(v){var h='<select class="tier">';for(var i=0;i<TIERS.length;i++){h+='<option value="'+TIERS[i].v+'"'+(TIERS[i].v===v?' selected':'')+'>'+TIERS[i].t+'</option>';}h+='</select>';return h;}
+
+function render(){
+  var netSel=$("net"); netSel.innerHTML="";
+  P1.nets.forEach(function(n){var o=document.createElement("option");o.value=n.net;o.textContent=n.net+" 网（"+n.area_short+"）";netSel.value=state.net;netSel.appendChild(o);});
+  netSel.value=state.net;
+  var sc=$("score"); sc.innerHTML="";
+  SCORES.forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v+" 分";sc.appendChild(o);});
+  sc.value=state.score;
+  renderList("partA", state.partA, 3);
+  renderList("partB", state.partB, 30);
+}
+function renderList(id, arr, max){
+  var box=$(id); box.innerHTML="";
+  for(var i=0;i<arr.length;i++){
+    var d=document.createElement("div"); d.className="row";
+    var inp=document.createElement("input"); inp.type="text"; inp.placeholder=(id==="partA"?"甲部第 "+(i+1)+" 志愿（全港任选）":"乙部第 "+(i+1)+" 志愿（网内）"); inp.value=arr[i].name||"";
+    inp.addEventListener("input",(function(idx){return function(e){arr[idx].name=e.target.value;save();};})(i));
+    d.appendChild(inp);
+    if(id==="partB"){
+      var q=quotaOf(arr[i].name||"");
+      if(q>0&&q<=30){var sp=document.createElement("span");sp.className="quota";sp.textContent="学额"+q;d.appendChild(sp);}
+    }
+    var sel=document.createElement("div"); sel.innerHTML=tierSelect(arr[i].tier||"match"); var selEl=sel.firstChild;
+    selEl.addEventListener("change",(function(idx){return function(e){arr[idx].tier=e.target.value;save();};})(i));
+    d.appendChild(selEl);
+    box.appendChild(d);
+  }
+  for(var j=arr.length;j<max;j++){arr.push({name:"",tier:"match"});}
+}
+function addRow(){if(state.partB.length<30){state.partB.push({name:"",tier:"match"});renderList("partB",state.partB,30);save();}}
+
+function runCheck(){
+  var partA=state.partA.filter(function(s){return s.name.trim();});
+  var partB=state.partB.filter(function(s){return s.name.trim();});
+  var score=Math.min(35,Math.max(10,state.score));
+  var sprint=partB.filter(function(s){return s.tier==="sprint";}).length;
+  var match=partB.filter(function(s){return s.tier==="match";}).length;
+  var safe=partB.filter(function(s){return s.tier==="safe";}).length;
+  var total=partB.length;
+  var seen={},dups=[];
+  partB.forEach(function(s){var k=s.name.trim();if(seen[k]){if(dups.indexOf(k)<0)dups.push(k);}seen[k]=1;});
+  var checks=[];
+
+  if(total<=9){checks.push({t:"乙部志愿数量",s:"fail",d:"只填了 "+total+"/30 个志愿，结构严重空洞。",f:"把网内真实可接受的学校填满（至少 20 个）。"});}
+  else if(total<20){checks.push({t:"乙部志愿数量",s:"warn",d:"填了 "+total+"/30，还有不少空位没用上。",f:"空位用来补「派到也满意」的保底校。"});}
+  else if(total<30){checks.push({t:"乙部志愿数量",s:"warn",d:"填了 "+total+"/30，建议尽量填满。"});}
+  else{checks.push({t:"乙部志愿数量",s:"pass",d:"30 个志愿全部填满。"});}
+
+  if(safe===0){checks.push({t:"保底校数量",s:"fail",d:"没有任何一间保底校——最危险的结构错误。",f:"至少补 2 所「派到也满意」的保底校。"});}
+  else if(safe===1){checks.push({t:"保底校数量",s:"warn",d:"只有 1 所保底校，安全垫偏薄。",f:"保底校加到 2-3 所。"});}
+  else{checks.push({t:"保底校数量",s:"pass",d:"有 "+safe+" 所保底校，安全垫足够。"});}
+
+  if(sprint>=6&&sprint/total>0.6){checks.push({t:"冲刺/匹配/保底比例",s:"warn",d:"冲刺校占 "+sprint+"/"+total+"（超六成），结构失衡。",f:"冲刺控制在 30% 以内，中段由匹配校扛。"});}
+  else{checks.push({t:"冲刺/匹配/保底比例",s:"pass",d:"冲刺 "+sprint+" · 匹配 "+match+" · 保底 "+safe+"，比例大致健康。"});}
+
+  if(dups.length){checks.push({t:"重复志愿",s:"fail",d:"乙部出现重复："+dups.join("、")+"。",f:"同一间学校只填一次，重复不提高命中率。"});}
+  else{checks.push({t:"重复志愿",s:"pass",d:"乙部没有重复学校。"});}
+
+  if(partA.length<=1){checks.push({t:"甲部志愿",s:"warn",d:"甲部只填了 "+partA.length+"/3。",f:"甲部填满 3 间（全港任选，不占乙部名额）。"});}
+  else{checks.push({t:"甲部志愿",s:"pass",d:"甲部填满 3 个选择。"});}
+
+  if(score<=20&&sprint>=6){checks.push({t:"计分与冲刺匹配",s:"warn",d:"计分 "+score+" 分却放了 "+sprint+" 所冲刺校，底牌和目标错配。",f:"冲刺留 2-3 所即可，重心放匹配校。"});}
+  else{checks.push({t:"计分与冲刺匹配",s:"pass",d:"计分 "+score+" 分与冲刺数量没有明显错配。"});}
+
+  if(safe<2&&total<30){checks.push({t:"空洞检查",s:"warn",d:"还有 "+(30-total)+" 个空位，且保底不足 2 所。",f:"空位补「派到也满意」的学校。"});}
+  else{checks.push({t:"空洞检查",s:"pass",d:"没有明显「填了也后悔」的空洞。"});}
+
+  var a1=partA[0]?partA[0].name.trim():"",b1=partB[0]?partB[0].name.trim():"";
+  if(a1&&b1){
+    if(a1===b1){checks.push({t:"1-1-1 诚意矩阵",s:"pass",d:"甲一与乙一都是「"+a1+"」，一致性形成叩门诚意筹码。"});}
+    else{checks.push({t:"1-1-1 诚意矩阵",s:"warn",d:"甲一「"+a1+"」与乙一「"+b1+"」不是同一所。",f:"目标校在网内建议甲一乙一统一；在网外本条不适用。"});}
+  }
+  if(b1&&partB[0].tier==="sprint"&&score<=20){checks.push({t:"乙一撞热门预警",s:"warn",d:"乙一「"+b1+"」是冲刺档，计分仅 "+score+" 分，同分靠抽签。",f:"乙一保留心仪校，乙二务必「守得住」。"});}
+  else{checks.push({t:"乙一撞热门预警",s:"pass",d:"乙一没有明显撞车风险。"});}
+  var b2=partB[1]?partB[1].name.trim():"";
+  if(b2&&partB[1].tier==="sprint"){checks.push({t:"乙二宜守不宜攻",s:"warn",d:"乙二「"+b2+"」仍是冲刺档，热门校学额多在乙一用尽。",f:"乙二改放匹配档里真实能接受的学校。"});}
+  else{checks.push({t:"乙二宜守不宜攻",s:"pass",d:"乙二没有采用高风险策略。"});}
+
+  var fails=0,warns=0;
+  checks.forEach(function(c){if(c.s==="fail")fails++;if(c.s==="warn")warns++;});
+  var grade,gl;
+  if(fails>=2){grade="C";gl="高风险：表结构有明显错误，先改表再交";}
+  else if(fails===1||warns>=3){grade="B";gl="需调整：结构基本成立，但有几处必须补强";}
+  else{grade="A";gl="结构健康：这张表没有明显的结构性错误";}
+  var sugg=[];
+  checks.forEach(function(c){if(c.s!=="pass"&&c.f){sugg.push(c.f);}});
+  if(!sugg.length){sugg.push("保持当前结构，交表前对照《小一入学指南》复核一遍。");}
+  sugg.push("统一派位含随机编号，任何「保录取」承诺都不可信——你的可控变量只有这张表本身。");
+
+  var h='<div class="grade" style="border-left-color:'+(grade==="A"?"#0F766E":grade==="B"?"#B45309":"#C2410C")+'">';
+  h+='<div class="g">'+grade+'</div><div><b style="font-size:18px">'+esc(gl)+'</b><p style="font-size:13px;color:var(--muted)">乙类计分 '+score+' 分 · 甲部 '+partA.length+'/3 · 乙部 '+total+'/30 · 冲刺 '+sprint+' · 匹配 '+match+' · 保底 '+safe+'</p></div></div>';
+  h+='<div class="card"><h2>检查明细</h2>';
+  checks.forEach(function(c){
+    var tag=c.s==="pass"?"通过":c.s==="warn"?"需注意":"错误";
+    var cls=c.s==="pass"?"pass":c.s==="warn"?"warn":"fail";
+    h+='<div class="check"><span class="tag '+cls+'">'+tag+'</span><b>'+esc(c.t)+'</b><span class="d">'+esc(c.d)+(c.f?'<br>建议：'+esc(c.f):"")+'</span></div>';
+  });
+  h+='</div>';
+  h+='<div class="card"><h2>修改建议</h2><ul class="suggest">';
+  sugg.forEach(function(x){h+='<li>'+esc(x)+'</li>';});
+  h+='</ul></div>';
+  h+='<div class="card"><h2>叩门预案（派位不理想时）</h2><ul class="suggest">';
+  var knock=partB.filter(function(s){return s.tier==="match"||s.tier==="safe";}).slice(0,3);
+  if(knock.length){knock.forEach(function(s){h+='<li><b>'+esc(s.name)+'</b> - '+(s.tier==="safe"?"保底档，叩门命中面相对大":"匹配档，叩门目标性价比高")+'</li>';});}
+  else{h+='<li>（先补保底校）没有可用的匹配 / 保底校，叩门预案无从谈起。</li>';}
+  h+='<li>材料提前备好：出生证明 · 住址证明 · 成绩表 · 奖项 · 自荐信；放榜后立即行动。</li>';
+  h+='</ul></div>';
+  h+='<div class="foot">体检完成时间：'+new Date().toLocaleString("zh-HK",{timeZone:"Asia/Hong_Kong"})+' | 仅作结构自查，不构成入学建议</div>';
+  $("result").innerHTML=h;
+  $("result").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+$("net").addEventListener("change",function(e){state.net=e.target.value;save();renderList("partA",state.partA,3);renderList("partB",state.partB,30);});
+$("score").addEventListener("change",function(e){state.score=Number(e.target.value);save();});
+$("addRow").addEventListener("click",addRow);
+$("runBtn").addEventListener("click",runCheck);
+$("printBtn").addEventListener("click",function(){window.print();});
+$("resetBtn").addEventListener("click",function(){if(confirm("确定清空重填？")){state={net:state.net,score:20,partA:[],partB:[]};render();$("result").innerHTML="";save();}});
+
+load();render();
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>港学荟 · 小一派位志愿结构模拟器（单文件版）</title>
+<style>
+  :root{--ink:#1C1C1C;--muted:#57534E;--bg:#F7F1E5;--surface:#FFFFFF;--line:#E4E0D8;--teal:#0F766E;--red:#C2410C;--yellow:#E6A817;--green:#0F766E}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Songti SC","PingFang SC","Microsoft YaHei",serif;line-height:1.7}
+  .wrap{max-width:860px;margin:0 auto;padding:24px 16px 80px}
+  h1{font-size:30px;line-height:1.2;margin:8px 0}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 20px}
+  .note{background:#fef9e7;border-left:4px solid var(--yellow);padding:12px 16px;font-size:13px;margin:0 0 20px;border-radius:0 8px 8px 0}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:20px}
+  .card h2{font-size:18px;margin:0 0 12px}
+  label{display:block;margin-bottom:12px}
+  label .t{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;letter-spacing:.05em}
+  select,input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);font-size:14px;font-family:inherit;color:var(--ink)}
+  .row{display:flex;gap:8px;margin-bottom:8px;align-items:center}
+  .row input{flex:1}
+  .row select.tier{width:88px;flex:none}
+  .quota{flex:none;background:#fef9e7;border-radius:6px;padding:6px 8px;font-size:12px;font-family:ui-monospace,Menlo,monospace}
+  .btn{background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:11px 18px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .add{border:1px dashed var(--line);background:none;border-radius:8px;padding:9px;width:100%;font-size:13px;color:var(--muted);cursor:pointer;font-family:inherit}
+  .grade{display:flex;align-items:center;gap:18px;background:#FBF9F5;border-left:6px solid var(--ink);border-radius:10px;padding:18px 20px;margin-bottom:18px}
+  .grade .g{font-size:52px;font-weight:800;font-family:Georgia,serif}
+  .grade p{margin:0}
+  .check{border-bottom:1px solid var(--line);padding:10px 0}
+  .check .tag{display:inline-block;border-radius:6px;padding:2px 10px;font-size:12px;font-weight:700;margin-right:8px}
+  .pass{background:#E7F6F2;color:var(--green)}
+  .warn{background:#FEF3E2;color:#B45309}
+  .fail{background:#FDEBE7;color:var(--red)}
+  .check b{display:block}
+  .check span.d{color:var(--muted);font-size:13px}
+  .foot{margin-top:32px;font-size:12px;color:var(--muted);text-align:center}
+  .suggest li{margin:4px 0}
+  @media print{.no-print{display:none}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>小一派位 · 志愿结构模拟器</h1>
+  <p class="sub">港学荟 · 单文件版 | 输入志愿自动体检：只查表结构，不预测录取概率</p>
+  <div class="note">⚠️ 本工具不预测录取结果（统一派位含随机编号）。它只回答一个问题：你这张表有没有结构性错误。数据依据教育局 2027/28 官方名册，所有信息可核实。</div>
+
+  <div class="card no-print">
+    <h2>① 基本信息</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <label><span class="t">所属校网</span><select id="net"></select></label>
+      <label><span class="t">乙类计分（10-35）</span><select id="score"></select></label>
+    </div>
+  </div>
+
+  <div class="card no-print">
+    <h2>② 甲部志愿（全港任选，最多 3）</h2>
+    <div id="partA"></div>
+  </div>
+
+  <div class="card no-print">
+    <h2>③ 乙部志愿（校网内，最多 30）</h2>
+    <div id="partB"></div>
+    <button class="add" id="addRow">＋ 添加志愿</button>
+  </div>
+
+  <div class="no-print" style="display:flex;gap:10px;flex-wrap:wrap">
+    <button class="btn" id="runBtn">开始体检</button>
+    <button class="btn ghost" id="printBtn">打印 / 存 PDF</button>
+    <button class="btn ghost" id="resetBtn">清空重填</button>
+  </div>
+
+  <div id="result" style="margin-top:24px"></div>
+
+  <div class="foot">
+    港学荟 hkschool.guide · 数据来源：教育局 2027/28 小一入学官方名册（2026-09 整理）<br>
+    本文件为单机版，输入只保存在你自己的浏览器。
+  </div>
+</div>
+
+<script>
+"use strict";
+var P1 = {"nets":[{"net":"11","area_short":"中環、上環、西營盤、石塘咀、堅尼地城、山頂","schools":[{"name":"聖嘉祿學校","quota":25},{"name":"聖士提反女子中學附屬小學","quota":50},{"name":"李陞小學","quota":25},{"name":"天主教總堂區學校","quota":38},{"name":"香港潮商學校","quota":50},{"name":"英皇書院同學會小學","quota":25},{"name":"聖公會基恩小學","quota":38},{"name":"聖公會呂明才紀念小學","quota":50},{"name":"聖公會聖馬太小學","quota":25},{"name":"聖公會聖彼得小學","quota":75},{"name":"嘉諾撒聖心學校","quota":63},{"name":"新會商會學校","quota":25},{"name":"聖安多尼學校","quota":38},{"name":"般咸道官立小學","quota":25},{"name":"中西區聖安多尼學校","quota":38},{"name":"英皇書院同學會小學第二校","quota":38}]},{"net":"12","area_short":"灣仔、銅鑼灣、跑馬地…","schools":[{"name":"聖保祿天主教小學","quota":50},{"name":"嘉諾撒聖方濟各學校","quota":50},{"name":"聖若瑟小學","quota":63},{"name":"軒尼詩道官立小學","quota":63},{"name":"保良局金銀業貿易場張凝文學校","quota":38},{"name":"官立嘉道理爵士小學","quota":50},{"name":"東華三院李賜豪小學","quota":38},{"name":"佛教黃焯菴小學","quota":25},{"name":"李陞大坑學校","quota":25},{"name":"瑪利曼小學","quota":50},{"name":"寶覺小學","quota":38},{"name":"寶血小學","quota":38},{"name":"聖公會聖雅各小學","quota":63},{"name":"軒尼詩道官立小學（銅鑼灣）","quota":63}]},{"net":"14","area_short":"北角、鰂魚涌、太古城、康山、鯉景灣、康東邨、西灣臺、嘉亨灣","schools":[{"name":"北角衞理小學","quota":50},{"name":"北角官立小學","quota":63},{"name":"北角循道學校","quota":50},{"name":"番禺會所華仁小學","quota":50},{"name":"佛教中華康山學校","quota":50},{"name":"香港嘉諾撒學校","quota":75},{"name":"聖公會聖米迦勒小學","quota":50},{"name":"滬江小學","quota":50},{"name":"太古小學","quota":63},{"name":"丹拿山循道學校","quota":50}]},{"net":"16","area_short":"柴灣、筲箕灣、西灣河…","schools":[{"name":"天主教明德學校","quota":50},{"name":"中華基督教會基灣小學","quota":50},{"name":"慈幼學校","quota":38},{"name":"筲箕灣崇真學校","quota":50},{"name":"香港中國婦女會丘佐榮學校","quota":63},{"name":"救世軍韋理夫人紀念學校","quota":50},{"name":"勵志會梁李秀娛紀念小學","quota":63},{"name":"愛秩序灣官立小學","quota":63},{"name":"培僑小學","quota":63},{"name":"中華基督教會基灣小學（愛蝶灣）","quota":50},{"name":"聖公會柴灣聖米迦勒小學","quota":50}]},{"net":"18","area_short":"香港仔、鴨脷洲、薄扶林…","schools":[{"name":"鴨脷洲街坊學校","quota":50},{"name":"東華三院鶴山學校","quota":50},{"name":"嘉諾撒培德學校","quota":25},{"name":"聖公會置富始南小學","quota":50},{"name":"聖伯多祿天主教小學","quota":50},{"name":"聖公會田灣始南小學","quota":63},{"name":"海怡寶血小學","quota":50},{"name":"香港南區官立小學","quota":50},{"name":"香港仔聖伯多祿天主教小學","quota":63}]},{"net":"31","area_short":"尖沙咀、油麻地、佐敦道…","schools":[{"name":"東華三院羅裕積小學","quota":50},{"name":"佐敦道官立小學","quota":50},{"name":"循道學校","quota":50},{"name":"油蔴地天主教小學","quota":63},{"name":"嘉諾撒聖瑪利學校","quota":50},{"name":"德信學校","quota":50},{"name":"東莞同鄉會方樹泉學校","quota":63},{"name":"中華基督教會灣仔堂基道小學","quota":38},{"name":"油蔴地街坊會學校","quota":25},{"name":"油蔴地天主教小學（海泓道）","quota":63}]},{"net":"32","area_short":"旺角、大角咀、維港灣…","schools":[{"name":"中華基督教會協和小學","quota":75},{"name":"塘尾道官立小學","quota":50},{"name":"聖公會基榮小學","quota":50},{"name":"中華基督教會基全小學","quota":38},{"name":"路德會沙崙學校","quota":63},{"name":"大角嘴天主教小學","quota":63},{"name":"大角嘴天主教小學（海帆道）","quota":63}]},{"net":"34","area_short":"何文田、土瓜灣、馬頭角…","schools":[{"name":"保良局何壽南小學","quota":63},{"name":"九龍靈光小學","quota":25},{"name":"農圃道官立小學","quota":50},{"name":"馬頭涌官立小學","quota":63},{"name":"聖公會聖十架小學","quota":63},{"name":"浸信會孔憲紹天虹小學","quota":63},{"name":"陳瑞祺（喇沙）小學","quota":63},{"name":"聖公會牧愛小學","quota":25},{"name":"協恩中學附屬小學","quota":38},{"name":"聖公會聖匠小學","quota":38},{"name":"合一堂學校","quota":50},{"name":"基督教香港信義會紅磡信義學校","quota":25},{"name":"九龍婦女福利會李炳紀念學校","quota":25},{"name":"天主教領島學校","quota":50},{"name":"獻主會小學","quota":63},{"name":"聖羅撒學校","quota":50},{"name":"中華基督教會灣仔堂基道小學（九龍城）","quota":38},{"name":"獻主會聖馬善樂小學","quota":38}]},{"net":"35","area_short":"紅磡、大環山、黃埔新邨…","schools":[{"name":"天神嘉諾撒學校","quota":38},{"name":"聖公會奉基小學","quota":50},{"name":"聖公會聖提摩太小學","quota":50},{"name":"葛量洪校友會黃埔學校","quota":63},{"name":"黃埔宣道小學","quota":63},{"name":"馬頭涌官立小學（紅磡灣）","quota":63},{"name":"聖公會奉基千禧小學","quota":50}]},{"net":"40","area_short":"深水埗、長沙灣、荔枝角…","schools":[{"name":"郭怡雅神父紀念學校","quota":63},{"name":"福榮街官立小學","quota":50},{"name":"李鄭屋官立小學","quota":50},{"name":"聖公會聖紀文小學","quota":60},{"name":"天主教善導小學","quota":50},{"name":"大坑東宣道小學","quota":60},{"name":"基督教香港信義會深信學校","quota":25},{"name":"旅港開平商會學校","quota":50},{"name":"寶血會嘉靈學校","quota":75},{"name":"長沙灣天主教小學","quota":63},{"name":"聖公會基愛小學","quota":50},{"name":"聖公會聖多馬小學","quota":45},{"name":"聖方濟愛德小學","quota":60},{"name":"香港四邑商工總會新會商會學校","quota":25},{"name":"荔枝角天主教小學","quota":75},{"name":"深水埗官立小學","quota":63},{"name":"聖公會基福小學","quota":90},{"name":"聖公會聖安德烈小學","quota":90},{"name":"瑪利諾神父教會學校（小學部）","quota":50},{"name":"中華基督教會協和小學（長沙灣）","quota":75}]},{"net":"41","area_short":"九龍城、九龍塘、筆架山道、廣播道、美東邨、曉薈","schools":[{"name":"耀山學校","quota":13},{"name":"華德學校","quota":50},{"name":"拔萃小學","quota":30},{"name":"嘉諾撒聖家學校","quota":45},{"name":"喇沙小學","quota":90},{"name":"瑪利諾修院學校（小學部）","quota":75},{"name":"九龍塘官立小學","quota":50},{"name":"嘉諾撒聖家學校（九龍塘）","quota":60},{"name":"中華基督教會基華小學（九龍塘）","quota":60},{"name":"九龍塘天主教華德學校","quota":50}]},{"net":"43","area_short":"新蒲崗、東頭（二）邨、黃大仙上邨…","schools":[{"name":"保良局陳南昌夫人小學","quota":50},{"name":"黃大仙官立小學","quota":50},{"name":"福德學校","quota":50},{"name":"嘉諾撒小學","quota":50},{"name":"天主教伍華小學","quota":50},{"name":"聖公會基德小學","quota":50},{"name":"聖博德學校","quota":50},{"name":"黃大仙天主教小學","quota":50}]},{"net":"45","area_short":"慈雲山、鑽石山、富山邨…","schools":[{"name":"彩雲聖若瑟小學","quota":50},{"name":"真鐸學校","quota":38},{"name":"中華基督教會基慈小學","quota":50},{"name":"中華基督教會基華小學","quota":50},{"name":"聖文德天主教小學","quota":63},{"name":"伊斯蘭鮑伯濤紀念小學","quota":50},{"name":"嗇色園主辦可立小學","quota":63},{"name":"慈雲山聖文德天主教小學","quota":63},{"name":"保良局錦泰小學","quota":63},{"name":"聖博德天主教小學（蒲崗村道）","quota":63},{"name":"慈雲山天主教小學","quota":63},{"name":"嘉諾撒小學（新蒲崗）","quota":75}]},{"net":"46","area_short":"九龍灣、佐敦谷、坪石邨…","schools":[{"name":"佛教慈敬學校","quota":50},{"name":"迦密梁省德學校","quota":63},{"name":"浸信宣道會呂明才小學","quota":63},{"name":"坪石天主教小學","quota":50},{"name":"香港道教聯合會雲泉學校","quota":63},{"name":"天主教柏德學校","quota":63},{"name":"九龍灣聖若翰天主教小學","quota":63},{"name":"聖公會九龍灣基樂小學","quota":63},{"name":"佐敦谷聖若瑟天主教小學","quota":50}]},{"net":"48","area_short":"鯉魚門、茶果嶺、裕民坊…","schools":[{"name":"觀塘官立小學","quota":50},{"name":"天主教佑華小學","quota":50},{"name":"中華基督教會基法小學","quota":25},{"name":"樂善堂楊仲明學校","quota":50},{"name":"閩僑小學","quota":50},{"name":"聖公會基顯小學","quota":50},{"name":"聖公會基樂小學","quota":50},{"name":"聖公會聖約翰曾肇添小學","quota":63},{"name":"秀茂坪天主教小學","quota":63},{"name":"聖安當小學","quota":63},{"name":"聖若翰天主教小學","quota":50},{"name":"聖公會李兆強小學","quota":63},{"name":"藍田循道衛理小學","quota":63},{"name":"香港道教聯合會圓玄學院陳呂重德紀念學校","quota":63},{"name":"聖愛德華天主教小學","quota":63},{"name":"基督教聖約教會堅樂小學","quota":63},{"name":"秀明小學","quota":63},{"name":"樂華天主教小學","quota":50},{"name":"路德會聖馬太學校（秀茂坪）","quota":50},{"name":"聖公會德田李兆強小學","quota":75},{"name":"聖公會油塘基顯小學","quota":75},{"name":"中華基督教會基法小學（油塘）","quota":75},{"name":"觀塘官立小學（秀明道）","quota":63}]},{"net":"62","area_short":"荃灣、老圍、柴灣角…","schools":[{"name":"荃灣潮州公學","quota":50},{"name":"天佑小學","quota":25},{"name":"中華基督教會全完第一小學","quota":50},{"name":"荃灣天主教小學","quota":38},{"name":"路德會聖十架學校","quota":50},{"name":"香港道教聯合會圓玄學院石圍角小學","quota":50},{"name":"中華基督教會基慧小學","quota":50},{"name":"寶血會伍季明紀念學校","quota":50},{"name":"靈光小學","quota":13},{"name":"海壩街官立小學","quota":63},{"name":"柴灣角天主教小學","quota":50},{"name":"荃灣公立何傳耀紀念小學","quota":50},{"name":"香港浸信會聯會小學","quota":63},{"name":"天主教石鐘山紀念小學","quota":63},{"name":"荃灣官立小學","quota":63},{"name":"中華基督教會基慧小學（馬灣）","quota":63},{"name":"寶血會思源學校","quota":50},{"name":"深井天主教小學","quota":50}]},{"net":"64","area_short":"上葵涌村、打磚坪村、中葵涌村…","schools":[{"name":"聖公會主愛小學","quota":63},{"name":"石籬天主教小學","quota":50},{"name":"梨木樹天主教小學","quota":50},{"name":"嗇色園主辦可信學校","quota":38},{"name":"慈幼葉漢小學","quota":50},{"name":"聖公會主愛小學（梨木樹）","quota":38},{"name":"慈幼葉漢千禧小學","quota":63},{"name":"石籬聖若望天主教小學","quota":38}]},{"net":"65","area_short":"光輝圍、下葵涌村、鍾山臺…","schools":[{"name":"聖公會主恩小學","quota":50},{"name":"亞斯理衛理小學","quota":50},{"name":"聖公會仁立小學","quota":63},{"name":"佛教林炳炎紀念學校（香港佛教聯合會主辦","quota":50},{"name":"中華傳道會許大同學校","quota":50},{"name":"基督教香港信義會葵盛信義學校","quota":50},{"name":"中華基督教會全完第二小學","quota":38},{"name":"祖堯天主教小學","quota":50},{"name":"中華基督教會基真小學","quota":63},{"name":"佛教林金殿紀念小學","quota":63},{"name":"聖公會仁立紀念小學","quota":63}]},{"net":"66","area_short":"青衣、青泰苑、青雅苑…","schools":[{"name":"青衣商會小學","quota":50},{"name":"保良局陳溢小學","quota":50},{"name":"荃灣商會學校","quota":50},{"name":"中華傳道會呂明才小學","quota":50},{"name":"東華三院黃士心小學","quota":50},{"name":"仁濟醫院趙曾學韞小學","quota":38},{"name":"聖公會何澤芸小學","quota":63},{"name":"聖公會青衣邨何澤芸小學","quota":63},{"name":"聖公會青衣主恩小學","quota":63},{"name":"保良局世德小學","quota":50},{"name":"東華三院周演森小學","quota":38}]},{"net":"70","area_short":"屯門西（屯門河道以西）、藍地、舊墟…","schools":[{"name":"中華基督教會何福堂小學","quota":63},{"name":"保良局莊啟程第二小學","quota":63},{"name":"台山商會學校","quota":63},{"name":"仁德天主教小學","quota":50},{"name":"樂善堂梁黃蕙芳紀念學校","quota":50},{"name":"保良局梁周順琴小學","quota":63},{"name":"五邑鄒振猷學校","quota":50},{"name":"香港路德會增城兆霖學校","quota":50},{"name":"道教青松小學","quota":63},{"name":"仁濟醫院羅陳楚思小學","quota":63},{"name":"保良局方王錦全小學","quota":50},{"name":"香港紅卍字會屯門卍慈小學","quota":50},{"name":"僑港伍氏宗親會伍時暢紀念學校","quota":50},{"name":"中華基督教會蒙黃花沃紀念小學","quota":63},{"name":"柏立基教育學院校友會何壽基學校","quota":50},{"name":"屯門官立小學","quota":50},{"name":"保良局志豪小學","quota":63},{"name":"道教青松小學（湖景邨）","quota":50}]},{"net":"71","area_short":"屯門東（屯門河道以東）、虎地、龍珠島…","schools":[{"name":"圓玄學院陳國超興德小學","quota":63},{"name":"青山天主教小學","quota":50},{"name":"伊斯蘭學校","quota":50},{"name":"東華三院鄧肇堅小學","quota":63},{"name":"路德會呂祥光小學","quota":63},{"name":"順德聯誼總會胡少渠紀念小學","quota":50},{"name":"順德聯誼總會何日東小學","quota":50},{"name":"仁愛堂劉皇發夫人小學","quota":50},{"name":"博愛醫院歷屆總理聯誼會鄭任安夫人學校","quota":50},{"name":"聖公會蒙恩小學","quota":75},{"name":"仁濟醫院何式南小學","quota":63},{"name":"中華基督教會拔臣小學","quota":25},{"name":"博愛醫院歷屆總理聯誼會鄭任安夫人千禧小學","quota":63},{"name":"保良局西區婦女福利會馮李佩瑤小學","quota":50},{"name":"順德聯誼總會李金小學","quota":63}]},{"net":"72","area_short":"天水圍、廈村、洪水橋…","schools":[{"name":"元朗寶覺小學","quota":38},{"name":"嗇色園主辦可銘學校","quota":50},{"name":"伊利沙伯中學舊生會小學","quota":63},{"name":"香港潮陽小學","quota":63},{"name":"東華三院姚達之紀念小學（元朗）","quota":63},{"name":"樂善堂梁銶琚學校","quota":63},{"name":"天水圍官立小學","quota":63},{"name":"天水圍天主教小學","quota":63},{"name":"伊利沙伯中學舊生會小學分校","quota":63},{"name":"東華三院李東海小學","quota":63},{"name":"獅子會何德心小學","quota":63},{"name":"天水圍循道衞理小學","quota":63},{"name":"金巴崙長老會耀道小學","quota":63},{"name":"香港青年協會李兆基小學","quota":63},{"name":"中華基督教青年會小學","quota":63},{"name":"香港普通話研習社科技創意小學","quota":63},{"name":"宣道會葉紹蔭紀念小學","quota":63},{"name":"順德聯誼總會伍冕端小學","quota":63},{"name":"十八鄉鄉事委員會公益社小學","quota":63},{"name":"基督教培恩小學","quota":63},{"name":"樂善堂梁銶琚學校（分校）","quota":63},{"name":"聖公會天水圍靈愛小學","quota":63},{"name":"元朗公立中學校友會鄧英業小學","quota":63},{"name":"潮陽百欣小學","quota":63}]},{"net":"73","area_short":"元朗西（元朗主渠以西、教育路以南、大棠路以西）…","schools":[{"name":"光明學校","quota":63},{"name":"元朗朗屏邨東莞學校","quota":50},{"name":"元朗朗屏邨惠州學校","quota":63},{"name":"博愛醫院歷屆總理聯誼會梁省德學校","quota":50},{"name":"元朗公立中學校友會小學","quota":50},{"name":"聖公會靈愛小學","quota":25},{"name":"元朗商會小學","quota":50},{"name":"佛教陳榮根紀念學校","quota":50},{"name":"南元朗官立小學","quota":63}]},{"net":"74","area_short":"元朗東（元朗主渠以東、教育路以北、大棠路以東）…","schools":[{"name":"通德學校","quota":13},{"name":"港澳信義會黃陳淑英紀念學校","quota":25},{"name":"佛教榮茵學校","quota":50},{"name":"聖公會聖約瑟小學","quota":30},{"name":"元朗官立小學","quota":63},{"name":"中華基督教會元朗真光小學","quota":30},{"name":"鐘聲學校","quota":75},{"name":"錦田公立蒙養學校","quota":13},{"name":"八鄉中心小學","quota":25},{"name":"惇裕學校","quota":25},{"name":"基督教宣道會徐澤林紀念小學","quota":60},{"name":"光明英來學校","quota":63}]},{"net":"80","area_short":"上水、石湖墟、馬草壟…","schools":[{"name":"東莞學校","quota":38},{"name":"鳳溪第一小學","quota":50},{"name":"香海正覺蓮社佛教陳式宏學校","quota":50},{"name":"上水惠州公立學校","quota":63},{"name":"石湖墟公立學校","quota":50},{"name":"東華三院港九電器商聯會小學","quota":50},{"name":"聖公會榮真小學","quota":50},{"name":"李志達紀念學校","quota":63},{"name":"金錢村何東學校","quota":38},{"name":"育賢學校","quota":25},{"name":"香海正覺蓮社佛教正慧小學","quota":63},{"name":"曾梅千禧學校","quota":63},{"name":"鳳溪創新小學","quota":50},{"name":"東華三院馬錦燦紀念小學","quota":75}]},{"net":"81","area_short":"粉嶺、聯和墟、鹿頸…","schools":[{"name":"寶血會培靈學校","quota":38},{"name":"上水宣道小學","quota":38},{"name":"五旬節靳茂生小學","quota":50},{"name":"香海正覺蓮社佛教正覺蓮社學校","quota":63},{"name":"鳳溪廖潤琛紀念學校","quota":50},{"name":"粉嶺官立小學","quota":63},{"name":"粉嶺公立學校","quota":38},{"name":"打鼓嶺嶺英公立學校","quota":38},{"name":"五旬節于良發小學","quota":63},{"name":"聖公會嘉福榮真小學","quota":50},{"name":"基督教粉嶺神召會小學","quota":50},{"name":"東華三院曾憲備小學","quota":63},{"name":"救世軍中原慈善基金皇后山學校","quota":63}]},{"net":"83","area_short":"沙頭角、鴨洲、吉澳、西流江、烏蛟騰","schools":[{"name":"福德學社小學","quota":25},{"name":"沙頭角中心小學","quota":25}]},{"net":"84","area_short":"大埔、大埔頭、大埔尾…","schools":[{"name":"大埔舊墟公立學校","quota":50},{"name":"新界婦孺福利會有限公司梁省德學校","quota":50},{"name":"大埔浸信會公立學校","quota":50},{"name":"聖公會阮鄭夢芹小學","quota":63},{"name":"香港道教聯合會雲泉吳禮和紀念學校","quota":50},{"name":"大埔崇德黃建常紀念學校","quota":50},{"name":"三水同鄉會禤景榮學校","quota":63},{"name":"港九街坊婦女會孫方中小學","quota":50},{"name":"林村公立黃福鑾紀念學校","quota":50},{"name":"天主教聖母聖心小學","quota":50},{"name":"保良局田家炳小學","quota":50},{"name":"大埔循道衛理小學","quota":63},{"name":"仁濟醫院蔡衍濤小學","quota":50},{"name":"大埔官立小學","quota":63},{"name":"香港教育大學賽馬會小學","quota":50},{"name":"大埔舊墟公立學校（寶湖道）","quota":63},{"name":"保良局田家炳千禧小學","quota":63},{"name":"聖公會阮鄭夢芹銀禧小學","quota":50},{"name":"五旬節聖潔會永光小學","quota":50}]},{"net":"88","area_short":"大圍、白田、銅鑼灣…","schools":[{"name":"聖母無玷聖心學校","quota":50},{"name":"循理會美林小學","quota":50},{"name":"保良局王賜豪（田心谷）小學","quota":50},{"name":"循理會白普理基金循理小學","quota":50},{"name":"九龍城浸信會禧年（恩平）小學","quota":50},{"name":"香港九龍塘基督教中華宣道會陳元喜小學","quota":63},{"name":"東莞工商總會張煌偉小學","quota":50},{"name":"東華三院冼次雲小學","quota":50},{"name":"迦密愛禮信小學","quota":50},{"name":"香港中文大學校友會聯會張煊昌學校","quota":50},{"name":"沙田官立小學","quota":63}]},{"net":"89","area_short":"馬鞍山、烏溪沙、大水坑…","schools":[{"name":"基督教香港信義會馬鞍山信義學校","quota":50},{"name":"馬鞍山聖若瑟小學","quota":50},{"name":"九龍城浸信會禧年小學","quota":50},{"name":"保良局莊啟程小學","quota":50},{"name":"吳氏宗親總會泰伯紀念學校","quota":50},{"name":"馬鞍山靈糧小學","quota":63},{"name":"香港道教聯合會純陽小學","quota":50},{"name":"馬鞍山循道衛理小學","quota":63},{"name":"保良局雨川小學","quota":63},{"name":"聖公會馬鞍山主風小學","quota":63},{"name":"香港九龍塘基督教中華宣道會台山陳元喜小學","quota":63}]},{"net":"91","area_short":"火炭、馬料水、排頭…","schools":[{"name":"沙田崇真學校","quota":50},{"name":"聖公會主風小學","quota":50},{"name":"天主教聖華學校","quota":50},{"name":"基督教香港信義會睿信學校","quota":50},{"name":"保良局蕭漢森小學","quota":50},{"name":"救世軍田家炳學校","quota":50},{"name":"保良局朱正賢小學","quota":50},{"name":"胡素貞博士紀念學校","quota":50},{"name":"世界龍岡學校黃耀南小學","quota":50},{"name":"沙田循道衛理小學","quota":50},{"name":"培基小學","quota":50},{"name":"路德會梁鉅鏐小學","quota":63},{"name":"慈航學校","quota":63},{"name":"浸信會呂明才小學","quota":50},{"name":"浸信會沙田圍呂明才小學","quota":63},{"name":"沙田圍胡素貞博士紀念學校","quota":50},{"name":"東華三院蔡榮星小學","quota":63}]},{"net":"95","area_short":"西貢、將軍澳、坑口…","schools":[{"name":"樂善堂劉德學校","quota":50},{"name":"港澳信義會小學","quota":63},{"name":"將軍澳官立小學","quota":63},{"name":"安博官立小學","quota":63},{"name":"西貢中心李少欽紀念學校","quota":63},{"name":"香海正覺蓮社佛教黃藻森學校","quota":63},{"name":"仁濟醫院陳耀星小學","quota":63},{"name":"東華三院王余家潔紀念小學","quota":63},{"name":"順德聯誼總會梁潔華小學","quota":63},{"name":"保良局馮晴紀念小學","quota":63},{"name":"博愛醫院陳國威小學","quota":63},{"name":"基督教神召會梁省德小學","quota":63},{"name":"基督教宣道會宣基小學","quota":63},{"name":"佛教志蓮小學","quota":63},{"name":"仁愛堂田家炳小學","quota":63},{"name":"西貢崇真天主教學校（小學部）","quota":38},{"name":"保良局黃永樹小學","quota":63},{"name":"將軍澳天主教小學","quota":63},{"name":"港澳信義會明道小學","quota":63},{"name":"天主教聖安德肋小學","quota":63},{"name":"將軍澳循道衛理小學","quota":75}]},{"net":"96","area_short":"南丫島、蒲台島","schools":[{"name":"南丫北段公立小學","quota":13}]},{"net":"97","area_short":"長洲、索罟群島","schools":[{"name":"長洲聖心學校","quota":25},{"name":"國民學校","quota":38}]},{"net":"98","area_short":"大嶼山（大嶼山東北除外）、東涌、富東邨…","schools":[{"name":"梅窩學校","quota":13},{"name":"杯澳公立學校","quota":13},{"name":"中華基督教會大澳小學","quota":13},{"name":"青松侯寶垣小學","quota":63},{"name":"寶安商會溫浩根小學","quota":63},{"name":"嗇色園主辦可譽中學暨可譽小學","quota":63},{"name":"靈糧堂秀德小學","quota":63},{"name":"香港教育工作者聯會黃楚標學校","quota":63},{"name":"救世軍林拔中紀念學校","quota":63},{"name":"東涌天主教學校","quota":63}]},{"net":"99","area_short":"坪洲、愉景灣、稔樹灣、大白灣","schools":[{"name":"聖家學校","quota":13},{"name":"聖公會偉倫小學","quota":38}]}]};
+var TIERS = [{v:"sprint",t:"冲刺"},{v:"match",t:"匹配"},{v:"safe",t:"保底"}];
+var SCORES = [10,15,20,25,30,35];
+var LOCK = "standalone_sim_v1";
+
+function $(id){return document.getElementById(id);}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+var state = {net:P1.nets[0].net, score:20, partA:[], partB:[]};
+function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){}}
+function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse(raw); if(d&&d.net&&P1.nets.some(function(n){return n.net===d.net;})){state=d;}}}catch(e){}}
+
+function curNet(){for(var i=0;i<P1.nets.length;i++){if(P1.nets[i].net===state.net)return P1.nets[i];}return P1.nets[0];}
+function quotaOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i].quota;}return 0;}
+
+function tierSelect(v){var h='<select class="tier">';for(var i=0;i<TIERS.length;i++){h+='<option value="'+TIERS[i].v+'"'+(TIERS[i].v===v?' selected':'')+'>'+TIERS[i].t+'</option>';}h+='</select>';return h;}
+
+function render(){
+  var netSel=$("net"); netSel.innerHTML="";
+  P1.nets.forEach(function(n){var o=document.createElement("option");o.value=n.net;o.textContent=n.net+" 网（"+n.area_short+"）";netSel.value=state.net;netSel.appendChild(o);});
+  netSel.value=state.net;
+  var sc=$("score"); sc.innerHTML="";
+  SCORES.forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v+" 分";sc.appendChild(o);});
+  sc.value=state.score;
+  renderList("partA", state.partA, 3);
+  renderList("partB", state.partB, 30);
+}
+function renderList(id, arr, max){
+  var box=$(id); box.innerHTML="";
+  for(var i=0;i<arr.length;i++){
+    var d=document.createElement("div"); d.className="row";
+    var inp=document.createElement("input"); inp.type="text"; inp.placeholder=(id==="partA"?"甲部第 "+(i+1)+" 志愿（全港任选）":"乙部第 "+(i+1)+" 志愿（网内）"); inp.value=arr[i].name||"";
+    inp.addEventListener("input",(function(idx){return function(e){arr[idx].name=e.target.value;save();};})(i));
+    d.appendChild(inp);
+    if(id==="partB"){
+      var q=quotaOf(arr[i].name||"");
+      if(q>0&&q<=30){var sp=document.createElement("span");sp.className="quota";sp.textContent="学额"+q;d.appendChild(sp);}
+    }
+    var sel=document.createElement("div"); sel.innerHTML=tierSelect(arr[i].tier||"match"); var selEl=sel.firstChild;
+    selEl.addEventListener("change",(function(idx){return function(e){arr[idx].tier=e.target.value;save();};})(i));
+    d.appendChild(selEl);
+    box.appendChild(d);
+  }
+  for(var j=arr.length;j<max;j++){arr.push({name:"",tier:"match"});}
+}
+function addRow(){if(state.partB.length<30){state.partB.push({name:"",tier:"match"});renderList("partB",state.partB,30);save();}}
+
+function runCheck(){
+  var partA=state.partA.filter(function(s){return s.name.trim();});
+  var partB=state.partB.filter(function(s){return s.name.trim();});
+  var score=Math.min(35,Math.max(10,state.score));
+  var sprint=partB.filter(function(s){return s.tier==="sprint";}).length;
+  var match=partB.filter(function(s){return s.tier==="match";}).length;
+  var safe=partB.filter(function(s){return s.tier==="safe";}).length;
+  var total=partB.length;
+  var seen={},dups=[];
+  partB.forEach(function(s){var k=s.name.trim();if(seen[k]){if(dups.indexOf(k)<0)dups.push(k);}seen[k]=1;});
+  var checks=[];
+
+  if(total<=9){checks.push({t:"乙部志愿数量",s:"fail",d:"只填了 "+total+"/30 个志愿，结构严重空洞。",f:"把网内真实可接受的学校填满（至少 20 个）。"});}
+  else if(total<20){checks.push({t:"乙部志愿数量",s:"warn",d:"填了 "+total+"/30，还有不少空位没用上。",f:"空位用来补「派到也满意」的保底校。"});}
+  else if(total<30){checks.push({t:"乙部志愿数量",s:"warn",d:"填了 "+total+"/30，建议尽量填满。"});}
+  else{checks.push({t:"乙部志愿数量",s:"pass",d:"30 个志愿全部填满。"});}
+
+  if(safe===0){checks.push({t:"保底校数量",s:"fail",d:"没有任何一间保底校——最危险的结构错误。",f:"至少补 2 所「派到也满意」的保底校。"});}
+  else if(safe===1){checks.push({t:"保底校数量",s:"warn",d:"只有 1 所保底校，安全垫偏薄。",f:"保底校加到 2-3 所。"});}
+  else{checks.push({t:"保底校数量",s:"pass",d:"有 "+safe+" 所保底校，安全垫足够。"});}
+
+  if(sprint>=6&&sprint/total>0.6){checks.push({t:"冲刺/匹配/保底比例",s:"warn",d:"冲刺校占 "+sprint+"/"+total+"（超六成），结构失衡。",f:"冲刺控制在 30% 以内，中段由匹配校扛。"});}
+  else{checks.push({t:"冲刺/匹配/保底比例",s:"pass",d:"冲刺 "+sprint+" · 匹配 "+match+" · 保底 "+safe+"，比例大致健康。"});}
+
+  if(dups.length){checks.push({t:"重复志愿",s:"fail",d:"乙部出现重复："+dups.join("、")+"。",f:"同一间学校只填一次，重复不提高命中率。"});}
+  else{checks.push({t:"重复志愿",s:"pass",d:"乙部没有重复学校。"});}
+
+  if(partA.length<=1){checks.push({t:"甲部志愿",s:"warn",d:"甲部只填了 "+partA.length+"/3。",f:"甲部填满 3 间（全港任选，不占乙部名额）。"});}
+  else{checks.push({t:"甲部志愿",s:"pass",d:"甲部填满 3 个选择。"});}
+
+  if(score<=20&&sprint>=6){checks.push({t:"计分与冲刺匹配",s:"warn",d:"计分 "+score+" 分却放了 "+sprint+" 所冲刺校，底牌和目标错配。",f:"冲刺留 2-3 所即可，重心放匹配校。"});}
+  else{checks.push({t:"计分与冲刺匹配",s:"pass",d:"计分 "+score+" 分与冲刺数量没有明显错配。"});}
+
+  if(safe<2&&total<30){checks.push({t:"空洞检查",s:"warn",d:"还有 "+(30-total)+" 个空位，且保底不足 2 所。",f:"空位补「派到也满意」的学校。"});}
+  else{checks.push({t:"空洞检查",s:"pass",d:"没有明显「填了也后悔」的空洞。"});}
+
+  var a1=partA[0]?partA[0].name.trim():"",b1=partB[0]?partB[0].name.trim():"";
+  if(a1&&b1){
+    if(a1===b1){checks.push({t:"1-1-1 诚意矩阵",s:"pass",d:"甲一与乙一都是「"+a1+"」，一致性形成叩门诚意筹码。"});}
+    else{checks.push({t:"1-1-1 诚意矩阵",s:"warn",d:"甲一「"+a1+"」与乙一「"+b1+"」不是同一所。",f:"目标校在网内建议甲一乙一统一；在网外本条不适用。"});}
+  }
+  if(b1&&partB[0].tier==="sprint"&&score<=20){checks.push({t:"乙一撞热门预警",s:"warn",d:"乙一「"+b1+"」是冲刺档，计分仅 "+score+" 分，同分靠抽签。",f:"乙一保留心仪校，乙二务必「守得住」。"});}
+  else{checks.push({t:"乙一撞热门预警",s:"pass",d:"乙一没有明显撞车风险。"});}
+  var b2=partB[1]?partB[1].name.trim():"";
+  if(b2&&partB[1].tier==="sprint"){checks.push({t:"乙二宜守不宜攻",s:"warn",d:"乙二「"+b2+"」仍是冲刺档，热门校学额多在乙一用尽。",f:"乙二改放匹配档里真实能接受的学校。"});}
+  else{checks.push({t:"乙二宜守不宜攻",s:"pass",d:"乙二没有采用高风险策略。"});}
+
+  var fails=0,warns=0;
+  checks.forEach(function(c){if(c.s==="fail")fails++;if(c.s==="warn")warns++;});
+  var grade,gl;
+  if(fails>=2){grade="C";gl="高风险：表结构有明显错误，先改表再交";}
+  else if(fails===1||warns>=3){grade="B";gl="需调整：结构基本成立，但有几处必须补强";}
+  else{grade="A";gl="结构健康：这张表没有明显的结构性错误";}
+  var sugg=[];
+  checks.forEach(function(c){if(c.s!=="pass"&&c.f){sugg.push(c.f);}});
+  if(!sugg.length){sugg.push("保持当前结构，交表前对照《小一入学指南》复核一遍。");}
+  sugg.push("统一派位含随机编号，任何「保录取」承诺都不可信——你的可控变量只有这张表本身。");
+
+  var h='<div class="grade" style="border-left-color:'+(grade==="A"?"#0F766E":grade==="B"?"#B45309":"#C2410C")+'">';
+  h+='<div class="g">'+grade+'</div><div><b style="font-size:18px">'+esc(gl)+'</b><p style="font-size:13px;color:var(--muted)">乙类计分 '+score+' 分 · 甲部 '+partA.length+'/3 · 乙部 '+total+'/30 · 冲刺 '+sprint+' · 匹配 '+match+' · 保底 '+safe+'</p></div></div>';
+  h+='<div class="card"><h2>检查明细</h2>';
+  checks.forEach(function(c){
+    var tag=c.s==="pass"?"通过":c.s==="warn"?"需注意":"错误";
+    var cls=c.s==="pass"?"pass":c.s==="warn"?"warn":"fail";
+    h+='<div class="check"><span class="tag '+cls+'">'+tag+'</span><b>'+esc(c.t)+'</b><span class="d">'+esc(c.d)+(c.f?'<br>建议：'+esc(c.f):"")+'</span></div>';
+  });
+  h+='</div>';
+  h+='<div class="card"><h2>修改建议</h2><ul class="suggest">';
+  sugg.forEach(function(x){h+='<li>'+esc(x)+'</li>';});
+  h+='</ul></div>';
+  h+='<div class="card"><h2>叩门预案（派位不理想时）</h2><ul class="suggest">';
+  var knock=partB.filter(function(s){return s.tier==="match"||s.tier==="safe";}).slice(0,3);
+  if(knock.length){knock.forEach(function(s){h+='<li><b>'+esc(s.name)+'</b> - '+(s.tier==="safe"?"保底档，叩门命中面相对大":"匹配档，叩门目标性价比高")+'</li>';});}
+  else{h+='<li>（先补保底校）没有可用的匹配 / 保底校，叩门预案无从谈起。</li>';}
+  h+='<li>材料提前备好：出生证明 · 住址证明 · 成绩表 · 奖项 · 自荐信；放榜后立即行动。</li>';
+  h+='</ul></div>';
+  h+='<div class="foot">体检完成时间：'+new Date().toLocaleString("zh-HK",{timeZone:"Asia/Hong_Kong"})+' | 仅作结构自查，不构成入学建议</div>';
+  $("result").innerHTML=h;
+  $("result").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+$("net").addEventListener("change",function(e){state.net=e.target.value;save();renderList("partA",state.partA,3);renderList("partB",state.partB,30);});
+$("score").addEventListener("change",function(e){state.score=Number(e.target.value);save();});
+$("addRow").addEventListener("click",addRow);
+$("runBtn").addEventListener("click",runCheck);
+$("printBtn").addEventListener("click",function(){window.print();});
+$("resetBtn").addEventListener("click",function(){if(confirm("确定清空重填？")){state={net:state.net,score:20,partA:[],partB:[]};render();$("result").innerHTML="";save();}});
+
+load();render();
+</script>
+</body>
+</html>

@@ -171,6 +171,47 @@ export function runSimCheck(input: SimInput): SimReport {
     checks.push({ id: "blank", title: "空洞检查", status: "pass", detail: "没有明显「填了也后悔」的空洞。" });
   }
 
+  // 8) 1-1-1 诚意矩阵：甲一与乙一是否同一学校
+  const a1 = partA[0]?.name?.trim() || "";
+  const b1 = partB[0]?.name?.trim() || "";
+  if (a1 && b1) {
+    if (a1 === b1) {
+      checks.push({
+        id: "111", title: "1-1-1 诚意矩阵",
+        status: "pass", detail: `甲部第一志愿与乙部第一志愿都是「${a1}」，一致性能在叩门阶段形成诚意筹码。`,
+      });
+    } else {
+      checks.push({
+        id: "111", title: "1-1-1 诚意矩阵",
+        status: "warn", detail: `甲部第一志愿「${a1}」与乙部第一志愿「${b1}」不是同一所——若目标校在你校网内，建议甲一乙一统一为同一间（1-1-1）；若目标校在网外，本条不适用。`,
+        fix: "1-1-1 = 自行分配、甲部第一志愿、乙部第一志愿全填同一间，是叩门时最有力的诚意证明。",
+      });
+    }
+  }
+
+  // 9) 乙一撞车预警：第一志愿冲刺且计分不占优
+  if (b1 && partB[0].tier === "sprint" && score <= 20) {
+    checks.push({
+      id: "b1-collision", title: "乙一撞热门预警",
+      status: "warn", detail: `乙部第一志愿「${b1}」是冲刺档，而计分仅 ${score} 分——热门校同分靠抽签，第一志愿命中率并不占优。`,
+      fix: "乙一可以保留心仪冲刺校，但乙二务必换成「守得住」的学校，并确保尾部保底充足。",
+    });
+  } else {
+    checks.push({ id: "b1-collision", title: "乙一撞热门预警", status: "pass", detail: "乙一没有明显的撞车风险。" });
+  }
+
+  // 10) 乙二宜守不宜攻
+  const b2 = partB[1]?.name?.trim() || "";
+  if (b2 && partB[1].tier === "sprint") {
+    checks.push({
+      id: "b2-advice", title: "乙二宜守不宜攻",
+      status: "warn", detail: `乙部第二志愿「${b2}」仍是冲刺档——热门校学额大多在乙一用尽，乙二继续冲，滑档风险高。`,
+      fix: "乙二改放「匹配档」里你真实能接受的学校，这是填表攻略里最实用的一条。",
+    });
+  } else {
+    checks.push({ id: "b2-advice", title: "乙二宜守不宜攻", status: "pass", detail: "乙二没有采用高风险策略。" });
+  }
+
   const fails = checks.filter((c) => c.status === "fail").length;
   const warns = checks.filter((c) => c.status === "warn").length;
   let grade: "A" | "B" | "C";
