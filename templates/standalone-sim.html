@@ -49,11 +49,11 @@
   <div class="note">⚠️ 本工具不预测录取结果（统一派位含随机编号）。它只回答一个问题：你这张表有没有结构性错误。数据依据教育局 2027/28 官方名册，所有信息可核实。</div>
 
   <div class="card no-print">
-    <h2>① 基本信息</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-      <label><span class="t">所属校网</span><select id="net"></select></label>
-      <label><span class="t">乙类计分（10-35）</span><select id="score"></select></label>
-    </div>
+    <h2>① 基本信息（选校网 + 勾条件，分数自动算）</h2>
+    <label><span class="t">所属校网</span><select id="net"></select></label>
+    <div id="relBox"></div>
+    <div id="orgBox"></div>
+    <div id="scoreShow" style="margin-top:10px;padding:12px 16px;background:var(--ink);color:var(--bg);border-radius:8px;font-weight:700"></div>
   </div>
 
   <div class="card no-print">
@@ -85,16 +85,21 @@
 "use strict";
 var P1 = __P1_DATA__;
 var TIERS = [{v:"sprint",t:"冲刺"},{v:"match",t:"匹配"},{v:"safe",t:"保底"}];
-var SCORES = [10,15,20,25,30,35];
+var REL_PTS = {work:20, sec:20, manager:20, grad:10, first:5};
+var ORG_PTS = {religion:5, member:5};
+var REL_OPTS = [["","无"],["work","父/母全职在与该小学同一校址的幼稚园或中学部工作（20分）"],["sec","兄/姊在与该小学同一校址的中学部就读（20分）"],["manager","父/母为该小学的校董（20分）"],["grad","父/母或兄/姊为该小学的毕业生（10分）"],["first","首名出生子女（家庭中最年长的孩子，5分）"]];
+var ORG_OPTS = [["","无"],["religion","与该校办学团体有相同宗教信仰（5分）"],["member","父/母为该小学主办社团的成员（5分）"]];
+function calcScore(){ return (REL_PTS[state.rel]||0) + (ORG_PTS[state.org]||0) + 10; }
 var LOCK = "standalone_sim_v1";
 
 function $(id){return document.getElementById(id);}
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
-var state = {net:P1.nets[0].net, score:20, partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}], partB:[]};
+var state = {net:P1.nets[0].net, rel:"", org:"", partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}], partB:[]};
 for(var __i=0;__i<10;__i++){state.partB.push({name:"",tier:"match"});}
 function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){}}
 function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse(raw); if(d&&d.net&&P1.nets.some(function(n){return n.net===d.net;})){state=d;}}}catch(e){}
+  if(!state.rel) state.rel=""; if(!state.org) state.org="";
   while(state.partA.length<3){state.partA.push({name:"",tier:"match"});}
   if(state.partA.length>3){state.partA=state.partA.slice(0,3);}
   if(!state.partB||state.partB.length<1){state.partB=[{name:"",tier:"match"}];}
@@ -106,13 +111,28 @@ function quotaOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.s
 
 function tierSelect(v){var h='<select class="tier">';for(var i=0;i<TIERS.length;i++){h+='<option value="'+TIERS[i].v+'"'+(TIERS[i].v===v?' selected':'')+'>'+TIERS[i].t+'</option>';}h+='</select>';return h;}
 
+function renderRadios(boxId,field,opts,label){
+  var box=$(boxId); box.innerHTML="";
+  var lb=document.createElement("div"); lb.className="t"; lb.textContent=label; box.appendChild(lb);
+  for(var i=0;i<opts.length;i++){
+    var lab=document.createElement("label"); lab.style.cssText="display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px;cursor:pointer";
+    var r=document.createElement("input"); r.type="radio"; r.name=field; r.value=opts[i][0]; r.checked=(state[field]===opts[i][0]);
+    r.addEventListener("change",(function(v){return function(e){ if(e.target.checked){ state[field]=v; save(); updateScore(); } };})(opts[i][0]));
+    var sp=document.createElement("span"); sp.textContent=opts[i][1]; sp.style.flex="1";
+    lab.appendChild(r); lab.appendChild(sp); box.appendChild(lab);
+  }
+}
+function updateScore(){
+  var sc=calcScore();
+  $("scoreShow").textContent="乙类计分："+sc+" 分（关系项 "+(REL_PTS[state.rel]||0)+" + 办学团体项 "+(ORG_PTS[state.org]||0)+" + 适龄 10，最高 35）";
+}
 function render(){
   var netSel=$("net"); netSel.innerHTML="";
   P1.nets.forEach(function(n){var o=document.createElement("option");o.value=n.net;o.textContent=n.net+" 网（"+n.area_short+"）";netSel.value=state.net;netSel.appendChild(o);});
   netSel.value=state.net;
-  var sc=$("score"); sc.innerHTML="";
-  SCORES.forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v+" 分";sc.appendChild(o);});
-  sc.value=state.score;
+  renderRadios("relBox","rel",REL_OPTS,"关系项（5 项只可选一项，最高 20 分）");
+  renderRadios("orgBox","org",ORG_OPTS,"办学团体项（2 项只可选一项，最高 5 分）");
+  updateScore();
   renderList("partA", state.partA, 3);
   renderList("partB", state.partB, state.partB.length);
 }
@@ -197,7 +217,7 @@ function addRow(){
 function runCheck(){
   var partA=state.partA.filter(function(s){return s.name.trim();});
   var partB=state.partB.filter(function(s){return s.name.trim();});
-  var score=Math.min(35,Math.max(10,state.score));
+  var score=calcScore();
   var sprint=partB.filter(function(s){return s.tier==="sprint";}).length;
   var match=partB.filter(function(s){return s.tier==="match";}).length;
   var safe=partB.filter(function(s){return s.tier==="safe";}).length;
@@ -276,12 +296,12 @@ function runCheck(){
 }
 
 $("net").addEventListener("change",function(e){state.net=e.target.value;save();renderList("partB",state.partB,state.partB.length);});
-$("score").addEventListener("change",function(e){state.score=Number(e.target.value);save();});
+
 $("addRow").addEventListener("click",addRow);
 $("runBtn").addEventListener("click",runCheck);
 $("printBtn").addEventListener("click",function(){window.print();});
 $("resetBtn").addEventListener("click",function(){if(confirm("确定清空重填？")){
-  state={net:state.net,score:20,partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}],partB:[]};
+  state={net:state.net,rel:"",org:"",partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}],partB:[]};
   for(var __i=0;__i<10;__i++){state.partB.push({name:"",tier:"match"});}
   render();$("result").innerHTML="";save();}});
 
