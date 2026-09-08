@@ -4,10 +4,11 @@ import { useEffect, useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import p1NetsJson from "@/content/p1-nets.json";
+import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
 
 const P1 = p1NetsJson as {
-  nets: { net: string; area_short: string; count: number; schools: { name: string; quota: number | null }[] }[];
+  nets: { net: string; area_short: string; count: number; schools: { name: string; simp: string; quota: number | null }[] }[];
 };
 
 const TIERS: { v: SimTier; label: string }[] = [
@@ -30,9 +31,15 @@ export default function P1Simulator() {
   const [buying, setBuying] = useState(false);
   const [savedTip, setSavedTip] = useState(false);
 
-  const schoolNames = useMemo(() => {
+  const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
+    const out: SchoolOpt[] = [];
+    for (const n of P1.nets) for (const sc of n.schools) out.push({ name: sc.name, simp: sc.simp, quota: sc.quota, net: n.net, area_short: n.area_short });
+    return out;
+  }, []);
+
+  const netSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const n = P1.nets.find((x) => x.net === net);
-    return n ? n.schools.map((s) => s.name) : [];
+    return n ? n.schools.map((sc) => ({ name: sc.name, simp: sc.simp, quota: sc.quota, net: n.net, area_short: n.area_short })) : [];
   }, [net]);
 
   const quotaMap = useMemo(() => {
@@ -124,11 +131,6 @@ export default function P1Simulator() {
   return (
     <main className="w-full">
       <SiteHeader />
-      <datalist id="p1-sim-schools">
-        {schoolNames.map((n) => (
-          <option key={n} value={n} />
-        ))}
-      </datalist>
       <div className="mx-auto max-w-[880px] px-4 pb-24">
         <div className="py-8">
           <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Tools · Pro 模拟器</p>
@@ -174,12 +176,11 @@ export default function P1Simulator() {
           <div className="mt-4 grid gap-2">
             {partA.map((s, i) => (
               <div key={i} className="flex gap-2">
-                <input
+                <SchoolCombobox
+                  options={allSchoolOpts}
                   value={s.name}
-                  onChange={(e) => setRow(partA, setPartA, i, { name: e.target.value })}
-                  placeholder={`甲部第 ${i + 1} 志愿（全港任选）`}
-                  list="p1-sim-schools"
-                  className={inputCls}
+                  onChange={(v) => setRow(partA, setPartA, i, { name: v })}
+                  placeholder={`甲部第 ${i + 1} 志愿（全港任选，可搜索或下拉）`}
                 />
                 <select
                   value={s.tier}
@@ -202,12 +203,11 @@ export default function P1Simulator() {
           <div className="mt-4 grid gap-2">
             {partB.map((s, i) => (
               <div key={i} className="flex gap-2">
-                <input
+                <SchoolCombobox
+                  options={netSchoolOpts}
                   value={s.name}
-                  onChange={(e) => setRow(partB, setPartB, i, { name: e.target.value })}
-                  placeholder={`乙部第 ${i + 1} 志愿（网内学校，可自定义）`}
-                  list="p1-sim-schools"
-                  className={inputCls}
+                  onChange={(v) => setRow(partB, setPartB, i, { name: v })}
+                  placeholder={`乙部第 ${i + 1} 志愿（可搜索或下拉）`}
                 />
                 {(quotaMap.get(s.name.trim()) ?? 0) > 0 && (quotaMap.get(s.name.trim()) ?? 0) <= 30 && (
                   <span className="shrink-0 self-center rounded bg-[var(--p-hl-yellow-bg)] px-2 py-1 font-mono text-xs text-[var(--p-fg)]">
