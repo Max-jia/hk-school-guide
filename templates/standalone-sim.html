@@ -19,8 +19,10 @@
   select,input[type=text]{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);font-size:14px;font-family:inherit;color:var(--ink)}
   .row .schoolwrap{flex:1;min-width:0}
   .row select.school{width:100%}
-  .ss{position:relative;flex:1;min-width:0}
-  .ss input{width:100%}
+  .ss{position:relative;flex:1;min-width:0;display:flex}
+  .ss input{flex:1;min-width:0}
+  .ss-btn{flex:none;width:38px;border:1px solid var(--line);border-left:0;border-radius:0 6px 6px 0;background:var(--bg);cursor:pointer;font-size:13px;color:var(--muted)}
+  .ss-btn:hover{background:#EFEAE0}
   .ss-pop{position:absolute;top:100%;left:0;right:0;z-index:50;background:#fff;border:1px solid var(--line);border-radius:6px;max-height:230px;overflow:auto;box-shadow:0 4px 12px rgba(0,0,0,.12)}
   .ss-net{padding:4px 10px;font-size:11px;color:var(--muted);background:#FBF9F5;border-bottom:1px solid #F0EDE7}
   .ss-item{padding:7px 10px;font-size:13px;cursor:pointer;border-bottom:1px solid #F0EDE7}
@@ -161,8 +163,9 @@ function schoolControl(cont,id,arr,idx){
   var box=document.createElement("div"); box.className="ss";
   var inp=document.createElement("input"); inp.type="text";
   inp.placeholder=isB?"搜索本网学校（如：李鄭屋）":"搜索全港学校（如：喇沙）";
+  var btn=document.createElement("button"); btn.type="button"; btn.className="ss-btn"; btn.textContent="▾";
   var pop=document.createElement("div"); pop.className="ss-pop";
-  box.appendChild(inp); box.appendChild(pop); cont.appendChild(box);
+  box.appendChild(inp); box.appendChild(btn); box.appendChild(pop); cont.appendChild(box);
   inp.value=arr[idx].name||"";
 
   function groupsFor(q){
@@ -179,9 +182,10 @@ function schoolControl(cont,id,arr,idx){
     }
     return out;
   }
-  function renderPop(q){
-    if(!q){ pop.style.display="none"; return; }
-    var groups=groupsFor(q), total=0, h="";
+  function renderPop(q, forceAll){
+    var query = forceAll ? "" : (q || "");
+    var groups = query ? groupsFor(query) : netsFor(id).map(function(n){ return {net:n.net, items:n.schools}; });
+    var total=0, h="";
     groups.forEach(function(g){ total+=g.items.length; });
     if(!total){ pop.style.display="none"; return; }
     for(var k=0;k<groups.length;k++){
@@ -193,8 +197,14 @@ function schoolControl(cont,id,arr,idx){
     }
     pop.innerHTML=h; pop.style.display="block";
   }
-  inp.addEventListener("input",function(){ arr[idx].name=inp.value; arr[idx].custom=false; save(); renderPop(inp.value.trim()); });
+  function togglePop(){
+    if(pop.style.display==="block"){ pop.style.display="none"; }
+    else{ renderPop(inp.value.trim(), true); }
+  }
+  inp.addEventListener("input",function(){ arr[idx].name=inp.value; arr[idx].custom=false; save(); if(pop.style.display==="block"){ renderPop(inp.value.trim(), false); } });
+  btn.addEventListener("mousedown",function(e){ e.preventDefault(); togglePop(); });
   pop.addEventListener("mousedown",function(e){
+    e.preventDefault();
     var it=e.target.closest ? e.target.closest(".ss-item") : null;
     if(it){ arr[idx].name=it.getAttribute("data-name"); arr[idx].custom=false; save(); renderList(id,arr,id==="partA"?3:arr.length); }
   });
