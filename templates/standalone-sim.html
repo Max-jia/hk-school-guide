@@ -88,9 +88,15 @@ var LOCK = "standalone_sim_v1";
 function $(id){return document.getElementById(id);}
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
-var state = {net:P1.nets[0].net, score:20, partA:[], partB:[]};
+var state = {net:P1.nets[0].net, score:20, partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}], partB:[]};
+for(var __i=0;__i<10;__i++){state.partB.push({name:"",tier:"match"});}
 function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){}}
-function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse(raw); if(d&&d.net&&P1.nets.some(function(n){return n.net===d.net;})){state=d;}}}catch(e){}}
+function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse(raw); if(d&&d.net&&P1.nets.some(function(n){return n.net===d.net;})){state=d;}}}catch(e){}
+  while(state.partA.length<3){state.partA.push({name:"",tier:"match"});}
+  if(state.partA.length>3){state.partA=state.partA.slice(0,3);}
+  if(!state.partB||state.partB.length<1){state.partB=[{name:"",tier:"match"}];}
+  if(state.partB.length>30){state.partB=state.partB.slice(0,30);}
+}
 
 function curNet(){for(var i=0;i<P1.nets.length;i++){if(P1.nets[i].net===state.net)return P1.nets[i];}return P1.nets[0];}
 function quotaOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i].quota;}return 0;}
@@ -105,11 +111,12 @@ function render(){
   SCORES.forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v+" 分";sc.appendChild(o);});
   sc.value=state.score;
   renderList("partA", state.partA, 3);
-  renderList("partB", state.partB, 30);
+  renderList("partB", state.partB, state.partB.length);
 }
 function renderList(id, arr, max){
   var box=$(id); box.innerHTML="";
-  for(var i=0;i<arr.length;i++){
+  for(var i=0;i<max;i++){
+    if(!arr[i]){arr[i]={name:"",tier:"match"};}
     var d=document.createElement("div"); d.className="row";
     var inp=document.createElement("input"); inp.type="text"; inp.placeholder=(id==="partA"?"甲部第 "+(i+1)+" 志愿（全港任选）":"乙部第 "+(i+1)+" 志愿（网内）"); inp.value=arr[i].name||"";
     inp.addEventListener("input",(function(idx){return function(e){arr[idx].name=e.target.value;save();};})(i));
@@ -123,9 +130,17 @@ function renderList(id, arr, max){
     d.appendChild(selEl);
     box.appendChild(d);
   }
-  for(var j=arr.length;j<max;j++){arr.push({name:"",tier:"match"});}
+  save();
 }
-function addRow(){if(state.partB.length<30){state.partB.push({name:"",tier:"match"});renderList("partB",state.partB,30);save();}}
+function addRow(){
+  if(state.partB.length<30){
+    state.partB.push({name:"",tier:"match"});
+    renderList("partB",state.partB,state.partB.length);
+    save();
+  }else{
+    alert("乙部最多 30 个志愿，已填满。");
+  }
+}
 
 function runCheck(){
   var partA=state.partA.filter(function(s){return s.name.trim();});
@@ -208,12 +223,15 @@ function runCheck(){
   $("result").scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-$("net").addEventListener("change",function(e){state.net=e.target.value;save();renderList("partA",state.partA,3);renderList("partB",state.partB,30);});
+$("net").addEventListener("change",function(e){state.net=e.target.value;save();renderList("partB",state.partB,state.partB.length);});
 $("score").addEventListener("change",function(e){state.score=Number(e.target.value);save();});
 $("addRow").addEventListener("click",addRow);
 $("runBtn").addEventListener("click",runCheck);
 $("printBtn").addEventListener("click",function(){window.print();});
-$("resetBtn").addEventListener("click",function(){if(confirm("确定清空重填？")){state={net:state.net,score:20,partA:[],partB:[]};render();$("result").innerHTML="";save();}});
+$("resetBtn").addEventListener("click",function(){if(confirm("确定清空重填？")){
+  state={net:state.net,score:20,partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}],partB:[]};
+  for(var __i=0;__i<10;__i++){state.partB.push({name:"",tier:"match"});}
+  render();$("result").innerHTML="";save();}});
 
 load();render();
 </script>
