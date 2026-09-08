@@ -2,17 +2,19 @@
 // 用法：node scripts/gen-standalone-sim.mjs
 import fs from "fs";
 import path from "path";
+import { Converter } from "opencc-js";
 
 const ROOT = process.cwd();
 const template = fs.readFileSync(path.join(ROOT, "templates/standalone-sim.html"), "utf8");
 const p1 = JSON.parse(fs.readFileSync(path.join(ROOT, "src/content/p1-nets.json"), "utf8"));
 
 // 精简数据：36 网 + 校名/学额
+const toSimp = Converter({ from: "hk", to: "cn" });
 const data = {
   nets: p1.nets.map((n) => ({
     net: n.net,
     area_short: n.area_short,
-    schools: n.schools.map((s) => ({ name: s.name, quota: s.quota })),
+    schools: n.schools.map((s) => ({ name: s.name, simp: toSimp(s.name), quota: s.quota })),
   })),
 };
 
