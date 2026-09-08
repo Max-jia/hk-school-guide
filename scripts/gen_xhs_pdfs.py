@@ -16,14 +16,14 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
 
 # ---------- 字体（嵌入） ----------
 _FONT_CANDIDATES = [
-    ("Songti", "/System/Library/Fonts/Supplemental/Songti.ttc"),
+    ("Songti", "/System/Library/Fonts/Supplemental/Songti.ttc", 2),
     ("STHeiti", "/System/Library/Fonts/STHeiti Light.ttc"),
     ("ArialUni", "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
 ]
 FONT = "Songti"
-for name, path in _FONT_CANDIDATES:
+for name, path, idx in _FONT_CANDIDATES:
     try:
-        pdfmetrics.registerFont(TTFont(name, path, subfontIndex=0))
+        pdfmetrics.registerFont(TTFont(name, path, subfontIndex=idx))
         FONT = name
         break
     except Exception:
