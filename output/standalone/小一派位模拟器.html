@@ -119,6 +119,7 @@
     </div>
     <p class="sub" style="font-size:12px;margin:0 0 10px">可拖拽或点 ↑↓ 调顺序；每行可直接搜索校名（支持简体/繁体），或点 ▾ 下拉</p>
     <div id="partA"></div>
+    <div id="partAWarn"></div>
   </div>
 
   <div class="card no-print">
@@ -192,6 +193,17 @@ function updateRowBadge(cont, name){
     badge.textContent=""; badge.style.display="none";
   }
 }
+function updatePartAWarn(){
+  var box=$("partAWarn"); if(!box) return;
+  var all={}; P1.nets.forEach(function(n){ n.schools.forEach(function(s){ all[s.name]=1; }); });
+  var oo=null;
+  for(var i=0;i<state.partA.length;i++){ var nm=String(state.partA[i].name||"").trim(); if(nm&&!all[nm]){ oo=nm; break; } }
+  if(oo){
+    box.innerHTML='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C;margin-top:10px"><b>⚠️ 「'+esc(oo)+'」不在官津名册内</b>（可能是直资/私立/国际学校）——不参加统一派位，甲部填了也不会被派位，请走自行申请，或改填官津学校。</div>';
+  }else{
+    box.innerHTML="";
+  }
+}
 
 // 全港学校：官津来自教育局名册 + 直资/私立/国际来自本站整理（供底牌卡/两校对比）
 var EXTRA=(P1.extra||[]);
@@ -242,6 +254,7 @@ function render(){
   updateScore();
   renderList("partA", state.partA, 3);
   renderList("partB", state.partB, state.partB.length);
+  updatePartAWarn();
 }
 function netsFor(id){
   return id==="partA" ? P1.nets : [curNet()];
@@ -297,6 +310,7 @@ function schoolControl(cont,id,arr,idx){
   inp.addEventListener("input",function(){
     arr[idx].name=inp.value; arr[idx].custom=false; save();
     updateRowBadge(cont, arr[idx].name);
+    updatePartAWarn();
     renderPop(inp.value.trim(), false);
   });
   inp.addEventListener("focus",function(){
@@ -310,6 +324,7 @@ function schoolControl(cont,id,arr,idx){
       arr[idx].name=it.getAttribute("data-name"); arr[idx].custom=false;
       inp.value=arr[idx].name; pop.className="cb-pop"; save();
       updateRowBadge(cont, arr[idx].name);
+      updatePartAWarn();
     }
   });
   inp.addEventListener("blur",function(){ setTimeout(function(){ pop.className="cb-pop"; },150); });
@@ -362,7 +377,7 @@ function renderWorkbench(){
   var wb=$("workbench"); if(!wb) return;
   var pos=computeSlideLine(), adv=suggestOrder(), h="";
   var allNames={}; P1.nets.forEach(function(n){ n.schools.forEach(function(s){ allNames[s.name]=1; }); });
-  var oo=null, arr=state.partA.concat(state.partB);
+  var oo=null, arr=state.partB;
   for(var oi=0;oi<arr.length;oi++){ if(arr[oi].name.trim()&&!allNames[arr[oi].name.trim()]){ oo=arr[oi].name.trim(); break; } }
   if(oo){ h+='<div class="wb" style="background:#FDEBE7;border-color:#C2410C"><p style="color:#C2410C;font-weight:bold">⚠️ 「'+esc(oo)+'」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。</p></div>'; }
   if(pos.positions.length){

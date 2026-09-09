@@ -162,11 +162,15 @@ export default function P1Simulator() {
     return names;
   }, [partA, filledB, allSchoolOpts, kidGender]);
 
-  const outOfRosterName = useMemo(() => {
-    const arr = [...partA.filter((x) => x.name.trim()), ...filledB];
-    const hit = arr.find((x) => !allSchoolOpts.some((o) => o.name === x.name.trim()));
+  const partAOutOfRoster = useMemo(() => {
+    const hit = partA.find((x) => x.name.trim() && !allSchoolOpts.some((o) => o.name === x.name.trim()));
     return hit ? hit.name.trim() : null;
-  }, [partA, filledB, allSchoolOpts]);
+  }, [partA, allSchoolOpts]);
+
+  const partBOutOfRoster = useMemo(() => {
+    const hit = filledB.find((x) => !allSchoolOpts.some((o) => o.name === x.name.trim()));
+    return hit ? hit.name.trim() : null;
+  }, [filledB, allSchoolOpts]);
 
   const slide = useMemo(
     () => computeSlideLine(filledB, (n) => quotaMap.get(n) ?? null),
@@ -421,6 +425,11 @@ export default function P1Simulator() {
               </div>
             ))}
           </div>
+          {partAOutOfRoster && (
+            <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
+              ⚠️ 「{partAOutOfRoster}」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部填了也不会被派位，请走自行申请，或改填官津学校。
+            </p>
+          )}
         </section>
 
         {/* 乙部 */}
@@ -492,6 +501,11 @@ export default function P1Simulator() {
               </div>
             ))}
           </div>
+          {partBOutOfRoster && (
+            <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
+              ⚠️ 「{partBOutOfRoster}」不在官津名册内（可能是直资/私立/国际或他网学校）——不参加本网统一派位，乙部填了也不会被派位，请走自行申请，或改填本网官津学校。
+            </p>
+          )}
           {/* 网内学校体检（Pro）：逐校标签 */}
           {filledB.length > 0 && (
             <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
@@ -619,11 +633,6 @@ export default function P1Simulator() {
         {/* 免费快照 */}
         <section className="mt-6 rounded-[12px] border-2 border-[var(--p-fg)] bg-[var(--p-bg)] p-6">
           <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">实时结构快照（免费）</h2>
-          {outOfRosterName && (
-            <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
-              ⚠️ 「{outOfRosterName}」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。
-            </p>
-          )}
           <div className="mt-3 flex flex-wrap gap-4 font-mono text-sm text-[var(--p-secondary)]">
             <span>乙部 {bCount}/30</span>
             <span>冲刺 {filledB.filter((s) => s.tier === "sprint").length}</span>
