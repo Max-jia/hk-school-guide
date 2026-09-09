@@ -309,6 +309,19 @@ export function computeSlideLine(
   if (positions.length === 0) {
     return { positions: [], slideLineIndex: null, worstFall: null, note: "乙部还没有填写志愿。" };
   }
+  // 只填 1 所：谈不上「滑档」，也不会有第二个落点——不画线，直接说明
+  if (positions.length === 1) {
+    const only = positions[0];
+    const scarce = only.band === "稀缺";
+    return {
+      positions,
+      slideLineIndex: null,
+      worstFall: null,
+      note: scarce
+        ? `你只填了 1 所（${only.name}，学额仅 ${only.quota ?? "?"}）——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。`
+        : `你只填了 1 所（${only.name}，学额 ${only.quota ?? "?"}）——谈不上滑档：这所不中，你不会有第二个落点（不会自动滑到别处）。补上 2-3 所保底校，滑档线才有意义。`,
+    };
+  }
   // 滑档线：第一个「充裕」，且其后没有「稀缺」的位置
   let slideLineIndex: number | null = null;
   for (let i = 0; i < positions.length; i++) {
@@ -343,12 +356,15 @@ export function computeSlideLine(
   let note: string;
   const scarceCount = positions.filter((p) => p.band === "稀缺").length;
   if (slideLineIndex !== null) {
-    note = `按当前顺序，第 ${slideLineIndex} 位起相对安全；最坏情况会落到第 ${worstFall.index} 位（${worstFall.name}）。`;
+    note = `按当前顺序，第 ${slideLineIndex} 位起相对安全（这条线之前是热门抽签区）；最坏情况会落到第 ${worstFall.index} 位「${worstFall.name}」。`;
   } else {
     note = `本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。`;
   }
   if (scarceCount > 0) {
-    note += ` 前段有 ${scarceCount} 所学额稀缺校，命中依赖抽签。`;
+    note += ` 滑档线前有 ${scarceCount} 所学额稀缺校，命中依赖抽签。`;
+  }
+  if (positions.length <= 2) {
+    note += ` 目前只有 ${positions.length} 个志愿，结构很薄——滑档线仅供参考，请先补满志愿再看。`;
   }
   return { positions, slideLineIndex, worstFall, note };
 }

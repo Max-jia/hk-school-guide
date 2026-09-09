@@ -341,6 +341,12 @@ function computeSlideLine(){
     var q=quotaOf(s.name.trim()); return {name:s.name.trim(), band:quotaBand(q), quota:q};
   });
   if(!pos.length) return {positions:[],slideLineIndex:null,worstFall:null,note:"乙部还没有填写志愿。"};
+  if(pos.length===1){
+    var only=pos[0];
+    return {positions:pos,slideLineIndex:null,worstFall:null,note:only.band==="稀缺"
+      ? "你只填了 1 所（"+only.name+"，学额仅 "+(only.quota||"?")+"）——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。"
+      : "你只填了 1 所（"+only.name+"，学额 "+(only.quota||"?")+"）——谈不上滑档：这所不中，你不会有第二个落点（不会自动滑到别处）。补上 2-3 所保底校，滑档线才有意义。"};
+  }
   var line=null;
   for(var i=0;i<pos.length;i++){
     if(pos[i].band==="充裕"){ var ok=true; for(var j=i+1;j<pos.length;j++){ if(pos[j].band==="稀缺"){ok=false;break;} } if(ok){line=i+1;break;} }
@@ -349,8 +355,9 @@ function computeSlideLine(){
   var first=pos.findIndex(function(p){return p.band!=="稀缺";});
   var worst = first>=0 ? {index:first+1,name:pos[first].name} : {index:pos.length+1,name:"（无安全落点）"};
   var scarce=pos.filter(function(p){return p.band==="稀缺";}).length;
-  var note = line!==null ? "按当前顺序，第 "+line+" 位起相对安全；最坏情况会落到第 "+worst.index+" 位（"+worst.name+"）。" : "本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。";
-  if(scarce>0) note+=" 前段有 "+scarce+" 所学额稀缺校，命中依赖抽签。";
+  var note = line!==null ? "按当前顺序，第 "+line+" 位起相对安全（这条线之前是热门抽签区）；最坏情况会落到第 "+worst.index+" 位「"+worst.name+"」。" : "本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。";
+  if(scarce>0) note+=" 滑档线前有 "+scarce+" 所学额稀缺校，命中依赖抽签。";
+  if(pos.length<=2) note+=" 目前只有 "+pos.length+" 个志愿，结构很薄——滑档线仅供参考，请先补满志愿再看。";
   return {positions:pos,slideLineIndex:line,worstFall:worst,note:note};
 }
 function suggestOrder(){
@@ -379,9 +386,11 @@ function renderWorkbench(){
   var allNames={}; P1.nets.forEach(function(n){ n.schools.forEach(function(s){ allNames[s.name]=1; }); });
   var oo=null, arr=state.partB;
   for(var oi=0;oi<arr.length;oi++){ if(arr[oi].name.trim()&&!allNames[arr[oi].name.trim()]){ oo=arr[oi].name.trim(); break; } }
-  if(oo){ h+='<div class="wb" style="background:#FDEBE7;border-color:#C2410C"><p style="color:#C2410C;font-weight:bold">⚠️ 「'+esc(oo)+'」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。</p></div>'; }
+  if(oo){ h+='<div class="wb" style="background:#FDEBE7;border-color:#C2410C"><p style="color:#C2410C;font-weight:bold">⚠️ 「'+esc(oo)+'」不在官津名册内（可能是直资/私立/国际或他网学校）——不参加本网统一派位，乙部填了也不会被派位，请走自行申请，或改填本网官津学校。</p></div>'; }
   if(pos.positions.length){
-    h+='<div class="wb"><h4>滑档线（实时）</h4><p>'+esc(pos.note)+'</p><div class="bar">';
+    h+='<div class="wb"><h4>滑档线（实时）</h4>';
+    h+='<div style="background:#fef9e7;border-radius:6px;padding:8px 10px;font-size:12px;color:#44403C;margin:6px 0"><b>什么是滑档线？</b><br>派位按你填的顺序一所一所试：第一志愿没中，就试第二志愿，一路往下。<b>「滑档」</b>= 前面都没中，落到后面的志愿。<b>滑档线</b>= 从第几位开始相对安全（学额充裕、竞争相对低），你大概率会停在这条线附近；线之前是热门抽签区。<b>最坏落点</b>= 假设线前所有热门校都落空，你会停在哪一所。注意：这是结构推导，不是录取概率——同分照样抽签。</div>';
+    h+='<p>'+esc(pos.note)+'</p><div class="bar">';
     for(var i=0;i<pos.positions.length;i++){
       var p=pos.positions[i];
       var bg=p.band==="稀缺"?"#FDEBE7":p.band==="普通"?"#FEF3E2":"#E7F6F2";

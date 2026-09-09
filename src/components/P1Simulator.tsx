@@ -560,6 +560,14 @@ export default function P1Simulator() {
           {slide.positions.length > 0 && (
             <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
               <p className="font-serif text-lg font-bold text-[var(--p-fg)]">滑档线（实时）</p>
+              <div className="mt-2 rounded-[8px] bg-[var(--p-hl-yellow-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
+                <b className="text-[var(--p-fg)]">什么是滑档线？</b><br />
+                派位按你填的顺序一所一所试：第一志愿没中，就试第二志愿，一路往下。
+                <b>「滑档」</b>= 前面都没中，落到后面的志愿。
+                <b>滑档线</b>= 从第几位开始相对安全（学额充裕、竞争相对低），你大概率会停在这条线附近；线之前是热门抽签区。
+                <b>最坏落点</b>= 假设线前所有热门校都落空，你会停在哪一所。
+                注意：这是结构推导，不是录取概率——同分照样抽签。
+              </div>
               <p className="mt-1 text-sm text-[var(--p-fg)]">{slide.note}</p>
               <div className="mt-3 flex items-end gap-1">
                 {slide.positions.map((p, i) => (
