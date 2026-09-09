@@ -5,10 +5,11 @@ import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
 import { assessSchoolFit } from "@/lib/sim-engine";
 
 export default function SchoolFitCard({
-  options, score, unlocked, buying, buy,
+  options, score, kidGender, unlocked, buying, buy,
 }: {
   options: SchoolOpt[];
   score: number;
+  kidGender: string;
   unlocked: boolean;
   buying: boolean;
   buy: () => void;
@@ -19,6 +20,10 @@ export default function SchoolFitCard({
 
   const school = options.find((o) => o.name === picked);
   const outOfRoster = picked.trim() && !school;
+  const genderBad =
+    school?.gender &&
+    kidGender !== "不限" &&
+    ((school.gender === "男校" && kidGender === "女") || (school.gender === "女校" && kidGender === "男"));
 
   function analyse() {
     if (!picked.trim() || outOfRoster || locked) return;
@@ -59,6 +64,12 @@ export default function SchoolFitCard({
       {outOfRoster && (
         <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
           ⚠️ 「{picked.trim()}」不在官津名册内（可能是直资/私立/国际学校）——不看计分，走自行申请。
+        </p>
+      )}
+
+      {genderBad && school && (
+        <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
+          ⚠️ 性别不符：{school.name} 为{school.gender}，{kidGender === "女" ? "女孩" : "男孩"}不会获派；这张底牌卡没有实际意义，请改填男女校或在志愿表中移除。
         </p>
       )}
 

@@ -146,6 +146,22 @@ export default function P1Simulator() {
     return [...dup];
   }, [filledB]);
 
+  const genderMismatchNames = useMemo(() => {
+    const names: string[] = [];
+    const arr = [...partA.filter((x) => x.name.trim()), ...filledB];
+    for (const s of arr) {
+      const info = allSchoolOpts.find((o) => o.name === s.name.trim());
+      if (
+        info?.gender &&
+        kidGender !== "不限" &&
+        ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"))
+      ) {
+        if (!names.includes(s.name.trim())) names.push(s.name.trim());
+      }
+    }
+    return names;
+  }, [partA, filledB, allSchoolOpts, kidGender]);
+
   const outOfRosterName = useMemo(() => {
     const arr = [...partA.filter((x) => x.name.trim()), ...filledB];
     const hit = arr.find((x) => !allSchoolOpts.some((o) => o.name === x.name.trim()));
@@ -167,6 +183,12 @@ export default function P1Simulator() {
     if (bCount <= Math.floor(targetB * 0.4)) tips.push({ kind: "danger", text: `乙部只填了 ${bCount}/${targetB} 个志愿，结构严重空洞。` });
     else if (bCount < targetB) tips.push({ kind: "info", text: `乙部 ${bCount}/${targetB}，还有空位可以补保底。` });
     if (dupNames.length) tips.push({ kind: "danger", text: `乙部有重复志愿：${dupNames.join("、")}` });
+    if (genderMismatchNames.length) {
+      tips.push({
+        kind: "danger",
+        text: `性别不符：${genderMismatchNames.join("、")} 为${kidGender === "女" ? "男校" : "女校"}，${kidGender === "女" ? "女孩" : "男孩"}不会获派，请移除或改填男女校。`,
+      });
+    }
     const score = calcScore(rel, org);
     if (score <= 20 && sprintCount >= 6) tips.push({ kind: "info", text: `计分 ${score} 分但冲刺 ${sprintCount} 所，底牌和目标错配。` });
     const a1 = partA.find((x) => x.name.trim())?.name.trim() || "";
@@ -281,6 +303,22 @@ export default function P1Simulator() {
     try { localStorage.setItem(PLANS_KEY, JSON.stringify(next)); } catch { /* ignore */ }
   }
 
+  function genderBadge(name: string, options: SchoolOpt[]) {
+    const info = options.find((o) => o.name === name.trim());
+    if (
+      info?.gender &&
+      kidGender !== "不限" &&
+      ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"))
+    ) {
+      return (
+        <span className="shrink-0 self-center rounded bg-[#FDEBE7] px-2 py-1 text-xs font-bold text-[#C2410C]">
+          ⚠️ {info.gender}
+        </span>
+      );
+    }
+    return null;
+  }
+
   const inputCls =
     "w-full rounded-[6px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] px-3 py-2 text-sm text-[var(--p-fg)] outline-none";
   const tierCls =
@@ -372,6 +410,7 @@ export default function P1Simulator() {
                   onChange={(v) => setRow(partA, setPartA, i, { name: v })}
                   placeholder={`甲部第 ${i + 1} 志愿（全港任选，可搜索或下拉）`}
                 />
+                {genderBadge(s.name, allSchoolOpts)}
                 <select
                   value={s.tier}
                   onChange={(e) => setRow(partA, setPartA, i, { tier: e.target.value as SimTier })}
@@ -429,21 +468,7 @@ export default function P1Simulator() {
                   onChange={(v) => setRow(partB, setPartB, i, { name: v })}
                   placeholder={`乙部第 ${i + 1} 志愿（可搜索或下拉）`}
                 />
-                {(() => {
-                  const info = netSchoolOpts.find((o) => o.name === s.name.trim());
-                  if (
-                    info?.gender &&
-                    kidGender !== "不限" &&
-                    ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"))
-                  ) {
-                    return (
-                      <span className="shrink-0 self-center rounded bg-[#FDEBE7] px-2 py-1 text-xs font-bold text-[#C2410C]">
-                        ⚠️ {info.gender}
-                      </span>
-                    );
-                  }
-                  return null;
-                })()}
+                {genderBadge(s.name, netSchoolOpts)}
                 {(quotaMap.get(s.name.trim()) ?? 0) > 0 && (quotaMap.get(s.name.trim()) ?? 0) <= 30 && (
                   <span className="shrink-0 self-center rounded bg-[var(--p-hl-yellow-bg)] px-2 py-1 font-mono text-xs text-[var(--p-fg)]">
                     学额{quotaMap.get(s.name.trim())}
@@ -616,7 +641,7 @@ export default function P1Simulator() {
           </ul>
         </section>
 
-        <SchoolFitCard options={allSchoolOpts} score={calcScore(rel, org)} unlocked={unlocked} buying={buying} buy={buy} />
+        <SchoolFitCard options={allSchoolOpts} score={calcScore(rel, org)} kidGender={kidGender} unlocked={unlocked} buying={buying} buy={buy} />
 
         <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} />
 

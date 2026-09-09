@@ -44,6 +44,7 @@
   .row input{flex:1}
   .row select.tier{width:88px;flex:none}
   .quota{flex:none;background:#fef9e7;border-radius:6px;padding:6px 8px;font-size:12px;font-family:ui-monospace,Menlo,monospace}
+  .gender-badge{flex:none;background:#FDEBE7;color:#C2410C;font-weight:700;border-radius:6px;padding:6px 8px;font-size:12px;display:none}
   .btn{background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:11px 18px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
   .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
   .add{border:1px dashed var(--line);background:none;border-radius:8px;padding:9px;width:100%;font-size:13px;color:var(--muted);cursor:pointer;font-family:inherit}
@@ -178,6 +179,19 @@ function curNet(){for(var i=0;i<P1.nets.length;i++){if(P1.nets[i].net===state.ne
 function quotaOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i].quota;}return 0;}
 function detailOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i];}return null;}
 function genderBad(d){ if(!d||!d.gender||state.kidGender==="不限") return false; return (d.gender==="男校"&&state.kidGender==="女")||(d.gender==="女校"&&state.kidGender==="男"); }
+function updateRowBadge(cont, name){
+  var row=cont.closest?cont.closest(".row"):null;
+  if(!row) return;
+  var badge=row.querySelector(".gender-badge");
+  if(!badge) return;
+  var d=detailAll(String(name||"").trim());
+  if(d&&genderBad(d)){
+    badge.textContent="⚠️ "+d.gender;
+    badge.style.display="inline-block";
+  }else{
+    badge.textContent=""; badge.style.display="none";
+  }
+}
 
 // 全港学校：官津来自教育局名册 + 直资/私立/国际来自本站整理（供底牌卡/两校对比）
 var EXTRA=(P1.extra||[]);
@@ -282,6 +296,7 @@ function schoolControl(cont,id,arr,idx){
   }
   inp.addEventListener("input",function(){
     arr[idx].name=inp.value; arr[idx].custom=false; save();
+    updateRowBadge(cont, arr[idx].name);
     renderPop(inp.value.trim(), false);
   });
   inp.addEventListener("focus",function(){
@@ -294,6 +309,7 @@ function schoolControl(cont,id,arr,idx){
     if(it){
       arr[idx].name=it.getAttribute("data-name"); arr[idx].custom=false;
       inp.value=arr[idx].name; pop.className="cb-pop"; save();
+      updateRowBadge(cont, arr[idx].name);
     }
   });
   inp.addEventListener("blur",function(){ setTimeout(function(){ pop.className="cb-pop"; },150); });
@@ -422,9 +438,9 @@ function renderList(id, arr, max){
     }
     var cont=document.createElement("div"); cont.className="schoolwrap"; d.appendChild(cont);
     schoolControl(cont,id,arr,i);
+    var gb=document.createElement("span"); gb.className="gender-badge"; d.appendChild(gb);
+    updateRowBadge(cont, arr[i].name||"");
     if(id==="partB"){
-      var dInfo=detailOf(arr[i].name||"");
-      if(genderBad(dInfo)){ var gs=document.createElement("span"); gs.className="quota"; gs.style.background="#FDEBE7"; gs.style.color="#C2410C"; gs.style.fontWeight="bold"; gs.textContent="⚠️ "+dInfo.gender; d.appendChild(gs); }
       var q=quotaOf(arr[i].name||"");
       if(q>0&&q<=30){var sp=document.createElement("span");sp.className="quota";sp.textContent="学额"+q;d.appendChild(sp);}
     }
@@ -482,6 +498,9 @@ function runFit(){
     h+='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C"><b>「'+esc(label)+'」是'+esc(type)+'学校</b>——不参与派位、不走计分，直接向学校自行申请，可同时申请多间。</div>';
   } else {
     var fit=assessFit(calcScore(), d.quota);
+    if(genderBad(d)){
+      h+='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C;margin-bottom:8px"><b>⚠️ 性别不符：'+esc(d.name)+' 为'+esc(d.gender)+'，'+(state.kidGender==="女"?"女孩":"男孩")+'不会获派</b>；这张底牌卡没有实际意义，请改填男女校或在志愿表中移除。</div>';
+    }
     var tone=fit.tone==="good"?"#0F766E":fit.tone==="mid"?"#B45309":"#C2410C";
     var bg=fit.tone==="good"?"#E7F6F2":fit.tone==="mid"?"#FEF3E2":"#FDEBE7";
     h+='<div style="border-left:4px solid '+tone+';background:'+bg+';border-radius:8px;padding:14px 16px">';
@@ -647,7 +666,7 @@ function runCheck(){
   $("result").scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-$("gender").addEventListener("change",function(e){ state.kidGender=e.target.value; save(); renderList("partB",state.partB,state.partB.length); });
+$("gender").addEventListener("change",function(e){ state.kidGender=e.target.value; save(); renderList("partA",state.partA,3); renderList("partB",state.partB,state.partB.length); });
 $("net").addEventListener("change",function(e){
   state.net=e.target.value; save();
   $("bCountLabel").textContent=curNet().schools.length;

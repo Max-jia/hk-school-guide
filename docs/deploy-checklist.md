@@ -167,6 +167,10 @@ curl -s "https://hkschool.guide/blog/rainstorm-class-guide" | grep -o "中学红
 - **Next.js 16 路由参数名冲突**：`/api/questions/[id]/...` 与 `/api/questions/[qid]/...` 同级动态段参数名不一致，dev/build 报 `You cannot use different slug names for the same dynamic path`；已将 `[qid]` 统一为 `[id]` 并同步路由代码。下次改动 questions API 时注意同级动态段必须同名。
 - 单文件版 runCheck 的「非派位学校提醒」检查原先被包在 `if(a1&&b1)` 内（甲一或乙一为空时漏检），已移出。
 
+### 追加修复（同日）
+
+- **性别提示补全**：原先「⚠️男校/女校」徽章只在乙部行内出现，甲部（全港任选）填男/女校无任何提示；已补到甲部行 + 免费实时快照 + 底牌卡（性别不符横幅）。单文件版此前选中学校后徽章不实时刷新（整行不重绘），改为选中即刷新生效；切换「不限」同步隐藏。
+
 ### 部署后验证命令
 
 ```bash
