@@ -5,6 +5,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import p1NetsJson from "@/content/p1-nets.json";
 import reportMeta from "@/content/report-meta.json";
+import schoolsJson from "@/content/schools.json";
 
 type SchoolRow = {
   net: string;
@@ -24,6 +25,11 @@ const P1 = p1NetsJson as {
   nets: { net: string; area: string; area_short: string; count: number; schools: SchoolRow[] }[];
 };
 const META = reportMeta as any;
+const DSS = (schoolsJson as {
+  school_no?: number; name_zh: string; name_display?: string; district_zh?: string; finance_type?: string; fees?: string;
+}[])
+  .filter((s) => s.finance_type === "直资")
+  .sort((a, b) => (a.district_zh || "").localeCompare(b.district_zh || "", "zh-HK"));
 const PS_CODE: Record<string, string> = {};
 (META.PS_REPORTS as { n: string; c: string }[]).forEach((r) => (PS_CODE[r.n] = r.c));
 
@@ -158,6 +164,28 @@ export default function P1SchoolNet() {
           {list.length === 0 && (
             <p className="py-8 text-center text-[var(--p-secondary)]">没有匹配的学校</p>
           )}
+        </div>
+
+        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+          <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">直资小学速查（自行申请 · 不参与派位）</h2>
+          <p className="mt-2 text-sm text-[var(--p-secondary)]">
+            以下直资小学（含聖保羅書院小學、拔萃男書院、保良局陳守仁等）不在小一统筹办法内，
+            不参加官津派位，也不能填进乙部志愿；它们<b className="text-[var(--p-fg)]">自行招生、全港申请、不限校网</b>，
+            适合作为派位体系外的自行申请通道。私立/国际学校请直接到各校官网查询收生安排。
+          </p>
+          <div className="mt-4 grid gap-2 md:grid-cols-2">
+            {DSS.map((s2) => (
+              <div key={s2.school_no ?? s2.name_zh} className="rounded-[8px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] px-3 py-2 text-sm">
+                <p className="font-bold text-[var(--p-fg)]">{s2.name_display || s2.name_zh}</p>
+                <p className="text-xs text-[var(--p-secondary)]">
+                  {s2.district_zh || "—"} · {s2.fees || "学费见官网"} · 直资
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-3 text-xs text-[var(--p-secondary)]">
+            说明：本页上方名单为参加派位的官立/资助学校（名册 433 所）；直资/私立/国际不在名册内，属另一套招生体系。
+          </p>
         </div>
 
         <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
