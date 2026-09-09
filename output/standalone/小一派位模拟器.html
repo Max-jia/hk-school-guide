@@ -356,10 +356,9 @@ function computeSlideLine(){
     if(pos[i].band==="充裕"){ var ok=true; for(var j=i+1;j<pos.length;j++){ if(pos[j].band==="稀缺"){ok=false;break;} } if(ok){line=i+1;break;} }
   }
   if(line===null){ for(var i2=0;i2<pos.length;i2++){ if(pos[i2].band==="普通"){ var ok2=true; for(var j2=i2+1;j2<pos.length;j2++){ if(pos[j2].band==="稀缺"){ok2=false;break;} } if(ok2){line=i2+1;break;} } } }
-  var first=pos.findIndex(function(p){return p.band!=="稀缺";});
-  var worst = first>=0 ? {index:first+1,name:pos[first].name} : {index:pos.length+1,name:"（无安全落点）"};
+  var worst = line!==null ? {index:line,name:pos[line-1].name} : {index:pos.length+1,name:"（无安全落点）"};
   var scarce=pos.filter(function(p){return p.band==="稀缺";}).length;
-  var note = line!==null ? "按当前顺序，第 "+line+" 位起相对安全（这条线之前是热门抽签区）；最坏情况会落到第 "+worst.index+" 位「"+worst.name+"」。" : "本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。";
+  var note = line!==null ? "按当前顺序，第 "+line+" 位起相对安全（这条线之前是热门抽签区）；假设抽签区全落空，你会停在滑档线第 "+worst.index+" 位「"+worst.name+"」。" : "本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。";
   if(scarce>0) note+=" 抽签区里有 "+scarce+" 所竞争激烈的学校（学额稀缺或传统热门校，如喇沙），命中依赖抽签。";
   if(pos.length<=2) note+=" 目前只有 "+pos.length+" 个志愿，结构很薄——滑档线仅供参考，请先补满志愿再看。";
   return {positions:pos,slideLineIndex:line,worstFall:worst,note:note};

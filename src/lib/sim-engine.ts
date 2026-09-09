@@ -431,18 +431,18 @@ export function computeSlideLine(
       }
     }
   }
-  // 最坏落点：假设前面所有稀缺校都落空，落到第一个非稀缺位置
-  const firstNonScarce = positions.findIndex((p) => p.band !== "稀缺");
+  // 最坏落点：假设滑档线前的抽签区（稀缺/热门）全部落空，
+  // 电脑一路试下来会停在滑档线所在的相对安全位；若没有滑档线则无安全落点。
   let worstFall: SlideResult["worstFall"] = null;
-  if (firstNonScarce >= 0) {
-    worstFall = { index: firstNonScarce + 1, name: positions[firstNonScarce].name };
+  if (slideLineIndex !== null) {
+    worstFall = { index: slideLineIndex, name: positions[slideLineIndex - 1].name };
   } else {
     worstFall = { index: positions.length + 1, name: "（无安全落点）" };
   }
   let note: string;
   const scarceCount = positions.filter((p) => p.band === "稀缺").length;
   if (slideLineIndex !== null) {
-    note = `按当前顺序，第 ${slideLineIndex} 位起相对安全（这条线之前是热门抽签区）；最坏情况会落到第 ${worstFall.index} 位「${worstFall.name}」。`;
+    note = `按当前顺序，第 ${slideLineIndex} 位起相对安全（这条线之前是热门抽签区）；假设抽签区全落空，你会停在滑档线第 ${worstFall.index} 位「${worstFall.name}」。`;
   } else {
     note = `本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。`;
   }
