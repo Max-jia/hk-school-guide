@@ -22,13 +22,22 @@ export default function P1SimReport() {
   const [img, setImg] = useState<{ dataUrl: string; name: string } | null>(null);
 
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(INPUT_KEY);
-      if (raw) {
-        const d = JSON.parse(raw) as SimInput;
-        if (d && Array.isArray(d.partA) && Array.isArray(d.partB)) setInput(d);
-      }
-    } catch { /* ignore */ }
+    function reload() {
+      try {
+        const raw = localStorage.getItem(INPUT_KEY);
+        if (raw) {
+          const d = JSON.parse(raw) as SimInput;
+          if (d && Array.isArray(d.partA) && Array.isArray(d.partB)) setInput(d);
+        }
+      } catch { /* ignore */ }
+    }
+    reload();
+    // 模拟器与报告页同时开着时，切回本页自动刷新草稿
+    window.addEventListener("focus", reload);
+    return () => window.removeEventListener("focus", reload);
+  }, []);
+
+  useEffect(() => {
     setUnlocked(localStorage.getItem(LOCK_KEY) === "true");
   }, []);
 

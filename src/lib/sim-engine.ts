@@ -72,6 +72,36 @@ export function runSimCheck(input: SimInput): SimReport {
   const partB = input.partB.filter((s) => s.name.trim());
   const score = Math.min(35, Math.max(10, input.score));
 
+  // 空表保护：甲部、乙部一个学校都没填时，不做任何“通过”判定
+  if (partA.length === 0 && partB.length === 0) {
+    const netCount0 = input.netSchoolCount && input.netSchoolCount > 0 ? input.netSchoolCount : 30;
+    return {
+      grade: "C",
+      gradeLabel: "未填写数据：先回模拟器填好志愿表再来体检",
+      net: input.net,
+      score,
+      partACount: 0,
+      partBCount: 0,
+      targetB: Math.min(30, netCount0),
+      sprint: 0,
+      match: 0,
+      safe: 0,
+      duplicateNames: [],
+      checks: [
+        {
+          id: "empty",
+          title: "志愿表为空",
+          status: "fail",
+          detail: "甲部和乙部都没有填写任何学校，当前没有可体检的内容。",
+          fix: "回到模拟器填写志愿（校网、学校、计分都会自动保存草稿），再打开报告。",
+        },
+      ],
+      suggestions: ["回到模拟器，填好甲部 3 个志愿 + 乙部本网学校，报告会自动带上你的数据。"],
+      knockList: [{ name: "（先填志愿）", reason: "没有志愿数据，叩门预案无从谈起" }],
+      generatedAt: new Date().toLocaleString("zh-HK", { timeZone: "Asia/Hong_Kong" }),
+    };
+  }
+
   const sprint = countByTier(partB, "sprint");
   const match = countByTier(partB, "match");
   const safe = countByTier(partB, "safe");
@@ -123,14 +153,20 @@ export function runSimCheck(input: SimInput): SimReport {
   }
 
   // 3) 冲刺比例
-  if (sprint >= 6 && sprint / Math.max(total, 1) > 0.6) {
+  if (total === 0) {
+    checks.push({
+      id: "sprint-ratio", title: "冲刺/匹配/保底比例",
+      status: "fail", detail: "乙部一个志愿都没填，结构为空——没有比例可言，更谈不上“健康”。",
+      fix: "先把网内可接受的学校填上，至少补 2 所保底校。",
+    });
+  } else if (sprint >= 6 && sprint / total > 0.6) {
     checks.push({
       id: "sprint-ratio", title: "冲刺/匹配/保底比例",
       status: "warn", detail: `冲刺校占了 ${sprint}/${total}（超过六成），结构失衡。`,
       fix: "冲刺校控制在 30% 以内（一般 2–5 所），中段由匹配校扛，尾部保底收底。",
     });
   } else {
-    checks.push({ id: "sprint-ratio", title: "冲刺/匹配/保底比例", status: "pass", detail: `冲刺 ${sprint} · 匹配 ${match} · 保底 ${safe}，结构比例大致健康。` });
+    checks.push({ id: "sprint-ratio", title: "冲刺/匹配/保底比例", status: "pass", detail: `冲刺 ${sprint} · 匹配 ${match} · 保底 ${safe}，冲刺占比未失衡（保底数量由专项检查把关）。` });
   }
 
   // 4) 重复志愿
@@ -156,13 +192,18 @@ export function runSimCheck(input: SimInput): SimReport {
   }
 
   // 6) 计分适配
-  if (score <= 20 && sprint >= 6) {
+  if (total === 0) {
+    checks.push({
+      id: "fit", title: "计分与冲刺匹配",
+      status: "warn", detail: `乙部还没有志愿，计分 ${score} 分暂时没有用武之地；先把本网学校填上。`,
+    });
+  } else if (score <= 20 && sprint >= 6) {
     checks.push({
       id: "fit", title: "计分与冲刺匹配",
       status: "warn", detail: `乙类计分 ${score} 分，却放了 ${sprint} 所冲刺校——底牌和目标明显错配。`,
       fix: "计分不高时，自行阶段热门校基本靠抽签。冲刺留 2–3 所即可，把志愿重心放到匹配校。",
     });
-  } else {
+  } else if (total > 0) {
     checks.push({ id: "fit", title: "计分与冲刺匹配", status: "pass", detail: `计分 ${score} 分与冲刺校数量没有明显错配。` });
   }
 
@@ -201,7 +242,7 @@ export function runSimCheck(input: SimInput): SimReport {
       status: "warn", detail: `乙部第一志愿「${b1}」是冲刺档，而计分仅 ${score} 分——热门校同分靠抽签，第一志愿命中率并不占优。`,
       fix: "乙一可以保留心仪冲刺校，但乙二务必换成「守得住」的学校，并确保尾部保底充足。",
     });
-  } else {
+  } else if (b1) {
     checks.push({ id: "b1-collision", title: "乙一撞热门预警", status: "pass", detail: "乙一没有明显的撞车风险。" });
   }
 
@@ -213,7 +254,7 @@ export function runSimCheck(input: SimInput): SimReport {
       status: "warn", detail: `乙部第二志愿「${b2}」仍是冲刺档——热门校学额大多在乙一用尽，乙二继续冲，滑档风险高。`,
       fix: "乙二改放「匹配档」里你真实能接受的学校，这是填表攻略里最实用的一条。",
     });
-  } else {
+  } else if (b2) {
     checks.push({ id: "b2-advice", title: "乙二宜守不宜攻", status: "pass", detail: "乙二没有采用高风险策略。" });
   }
 

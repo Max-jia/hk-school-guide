@@ -203,9 +203,21 @@ export default function P1Simulator() {
     return tips.slice(0, 3);
   }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB, allSchoolOpts]);
 
-  function save() {
+  // 输入变化自动写入本机草稿：填校网/学校/计分条件都会实时保存，报告页才能读到
+  function persist() {
     try {
       localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, kidGender, score: calcScore(rel, org), netSchoolCount: targetB, partA, partB }));
+    } catch { /* ignore */ }
+  }
+
+  useEffect(() => {
+    persist();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [net, rel, org, kidGender, partA, partB, targetB]);
+
+  function save() {
+    persist();
+    try {
       setSavedTip(true);
       setTimeout(() => setSavedTip(false), 1500);
     } catch { /* ignore */ }

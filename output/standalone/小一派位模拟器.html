@@ -592,6 +592,17 @@ function runCheck(){
   var partA=state.partA.filter(function(s){return s.name.trim();});
   var partB=state.partB.filter(function(s){return s.name.trim();});
   var score=calcScore();
+  // 空表保护：甲部、乙部一个学校都没填时，不做任何“通过”判定
+  if(partA.length===0&&partB.length===0){
+    var h0='<div class="grade" style="border-left-color:#C2410C">';
+    h0+='<div class="g">C</div><div><b style="font-size:18px">未填写数据：先回模拟器填好志愿表再来体检</b><p style="font-size:13px;color:var(--muted)">甲部和乙部都没有填写任何学校，当前没有可体检的内容。</p></div></div>';
+    h0+='<div class="card"><h2>检查明细</h2><div class="check"><span class="tag fail">错误</span><b>志愿表为空</b><span class="d">甲部和乙部都没有填写任何学校，当前没有可体检的内容。<br>建议：回到模拟器填写志愿（校网、学校、计分都会自动保存草稿），再打开报告。</span></div></div>';
+    h0+='<div class="card"><h2>修改建议</h2><ul class="suggest"><li>填好甲部 3 个志愿 + 乙部本网学校，报告会自动带上你的数据。</li></ul></div>';
+    h0+='<div class="foot">体检完成时间：'+new Date().toLocaleString("zh-HK",{timeZone:"Asia/Hong_Kong"})+' | 仅作结构自查，不构成入学建议</div>';
+    $("result").innerHTML=h0;
+    $("result").scrollIntoView({behavior:"smooth",block:"start"});
+    return;
+  }
   var sprint=partB.filter(function(s){return s.tier==="sprint";}).length;
   var match=partB.filter(function(s){return s.tier==="match";}).length;
   var safe=partB.filter(function(s){return s.tier==="safe";}).length;
@@ -610,8 +621,9 @@ function runCheck(){
   else if(safe===1){checks.push({t:"保底校数量",s:"warn",d:"只有 1 所保底校，安全垫偏薄。",f:"保底校加到 2-3 所。"});}
   else{checks.push({t:"保底校数量",s:"pass",d:"有 "+safe+" 所保底校，安全垫足够。"});}
 
-  if(sprint>=6&&sprint/total>0.6){checks.push({t:"冲刺/匹配/保底比例",s:"warn",d:"冲刺校占 "+sprint+"/"+total+"（超六成），结构失衡。",f:"冲刺控制在 30% 以内，中段由匹配校扛。"});}
-  else{checks.push({t:"冲刺/匹配/保底比例",s:"pass",d:"冲刺 "+sprint+" · 匹配 "+match+" · 保底 "+safe+"，比例大致健康。"});}
+  if(total===0){checks.push({t:"冲刺/匹配/保底比例",s:"fail",d:"乙部一个志愿都没填，结构为空——没有比例可言，更谈不上“健康”。",f:"先把网内可接受的学校填上，至少补 2 所保底校。"});}
+  else if(sprint>=6&&sprint/total>0.6){checks.push({t:"冲刺/匹配/保底比例",s:"warn",d:"冲刺校占 "+sprint+"/"+total+"（超六成），结构失衡。",f:"冲刺控制在 30% 以内，中段由匹配校扛。"});}
+  else{checks.push({t:"冲刺/匹配/保底比例",s:"pass",d:"冲刺 "+sprint+" · 匹配 "+match+" · 保底 "+safe+"，冲刺占比未失衡（保底数量由专项检查把关）。"});}
 
   if(dups.length){checks.push({t:"重复志愿",s:"fail",d:"乙部出现重复："+dups.join("、")+"。",f:"同一间学校只填一次，重复不提高命中率。"});}
   else{checks.push({t:"重复志愿",s:"pass",d:"乙部没有重复学校。"});}
@@ -619,7 +631,8 @@ function runCheck(){
   if(partA.length<=1){checks.push({t:"甲部志愿",s:"warn",d:"甲部只填了 "+partA.length+"/3。",f:"甲部填满 3 间（全港任选，不占乙部名额）。"});}
   else{checks.push({t:"甲部志愿",s:"pass",d:"甲部填满 3 个选择。"});}
 
-  if(score<=20&&sprint>=6){checks.push({t:"计分与冲刺匹配",s:"warn",d:"计分 "+score+" 分却放了 "+sprint+" 所冲刺校，底牌和目标错配。",f:"冲刺留 2-3 所即可，重心放匹配校。"});}
+  if(total===0){checks.push({t:"计分与冲刺匹配",s:"warn",d:"乙部还没有志愿，计分 "+score+" 分暂时没有用武之地；先把本网学校填上。"});}
+  else if(score<=20&&sprint>=6){checks.push({t:"计分与冲刺匹配",s:"warn",d:"计分 "+score+" 分却放了 "+sprint+" 所冲刺校，底牌和目标错配。",f:"冲刺留 2-3 所即可，重心放匹配校。"});}
   else{checks.push({t:"计分与冲刺匹配",s:"pass",d:"计分 "+score+" 分与冲刺数量没有明显错配。"});}
 
   if(safe<2&&total<target){checks.push({t:"空洞检查",s:"warn",d:"还有 "+(target-total)+" 个空位，且保底不足 2 所。",f:"空位补「派到也满意」的学校。"});}
@@ -633,10 +646,10 @@ function runCheck(){
   var outOfRoster=(function(){var all={};P1.nets.forEach(function(n){n.schools.forEach(function(s){all[s.name]=1;});});var arr=partA.concat(partB);for(var i=0;i<arr.length;i++){if(arr[i].name.trim()&&!all[arr[i].name.trim()]){return arr[i].name.trim();}}return null;})();
   if(outOfRoster){checks.push({t:"非派位学校提醒",s:"warn",d:"「"+outOfRoster+"」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。",f:"把该学校放到自行申请清单（可同时申请多间直资/私立）。"});}
   if(b1&&partB[0].tier==="sprint"&&score<=20){checks.push({t:"乙一撞热门预警",s:"warn",d:"乙一「"+b1+"」是冲刺档，计分仅 "+score+" 分，同分靠抽签。",f:"乙一保留心仪校，乙二务必「守得住」。"});}
-  else{checks.push({t:"乙一撞热门预警",s:"pass",d:"乙一没有明显撞车风险。"});}
+  else if(b1){checks.push({t:"乙一撞热门预警",s:"pass",d:"乙一没有明显撞车风险。"});}
   var b2=partB[1]?partB[1].name.trim():"";
   if(b2&&partB[1].tier==="sprint"){checks.push({t:"乙二宜守不宜攻",s:"warn",d:"乙二「"+b2+"」仍是冲刺档，热门校学额多在乙一用尽。",f:"乙二改放匹配档里真实能接受的学校。"});}
-  else{checks.push({t:"乙二宜守不宜攻",s:"pass",d:"乙二没有采用高风险策略。"});}
+  else if(b2){checks.push({t:"乙二宜守不宜攻",s:"pass",d:"乙二没有采用高风险策略。"});}
 
   var fails=0,warns=0;
   checks.forEach(function(c){if(c.s==="fail")fails++;if(c.s==="warn")warns++;});
