@@ -45,6 +45,7 @@
   .row select.tier{width:88px;flex:none}
   .quota{flex:none;background:#fef9e7;border-radius:6px;padding:6px 8px;font-size:12px;font-family:ui-monospace,Menlo,monospace}
   .gender-badge{flex:none;background:#FDEBE7;color:#C2410C;font-weight:700;border-radius:6px;padding:6px 8px;font-size:12px;display:none}
+  .stage-badge{display:inline-block;vertical-align:middle;border-radius:999px;padding:2px 8px;font-size:10px;font-weight:700;font-family:ui-monospace,Menlo,monospace;margin-left:6px;line-height:1.6}
   .btn{background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:11px 18px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
   .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
   .add{border:1px dashed var(--line);background:none;border-radius:8px;padding:9px;width:100%;font-size:13px;color:var(--muted);cursor:pointer;font-family:inherit}
@@ -68,12 +69,16 @@
   <h1>小一派位 · 志愿结构模拟器</h1>
   <p class="sub">港学荟 · 单文件版 | 输入志愿自动体检：只查表结构，不预测录取概率</p>
   <div class="note">⚠️ 本工具不预测录取结果（统一派位含随机编号）。它只回答一个问题：你这张表有没有结构性错误。数据依据教育局 2027/28 官方名册，所有信息可核实。</div>
+  <div class="note" style="margin-top:10px;padding:10px 14px;font-size:13px">
+    <b style="color:#B45309">阶段一 · 自行分配（看计分）</b>：底牌卡用这里，计分 × 学额看相对位置，只能申请 1 间学校。<br>
+    <b style="color:#0F766E">阶段二 · 统一派位（随机编号，不看计分）</b>：甲部＋乙部志愿表、滑档线、顺序建议都是这里——10 分和 35 分完全平等，只看志愿顺序和随机编号。
+  </div>
   <div class="note" style="margin-top:10px;padding:10px 14px">
     <b>数据版本：2027/28 · 更新于 2026-09</b> ｜ 下一版：2028/29（2027 年 9 月更新）。校网与学额每年 9 月随教育局新名册更新，旧客户可享优惠续新。
   </div>
 
   <div class="card no-print">
-    <h2>① 基本信息（选校网 + 勾条件，分数自动算）</h2>
+    <h2>① 基本信息（选校网 + 勾条件，分数自动算）<span class="stage-badge" style="background:#FEF3E2;color:#B45309">阶段一 · 自行分配用</span></h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <label><span class="t">所属校网</span><select id="net"></select></label>
       <label><span class="t">孩子性别（用于排除男/女校）</span><select id="gender">
@@ -88,7 +93,7 @@
   </div>
 
   <div class="card no-print">
-    <h2>底牌卡 · 我这点分能进吗</h2>
+    <h2>底牌卡 · 我这点分能进吗 <span class="stage-badge" style="background:#FEF3E2;color:#B45309">阶段一 · 自行分配</span></h2>
     <p class="sub" style="font-size:12px;margin:0 0 10px">选一所官津学校，结合你的计分（<span id="fitScore"></span> 分）和该校学额，给出相对竞争位置。直资/私立/国际不走计分，可直接申请。</p>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
       <div id="fitCb" style="flex:1;min-width:220px"></div>
@@ -110,12 +115,13 @@
   </div>
 
   <div class="card no-print">
-    <h2>② 甲部志愿（全港任选，最多 3）</h2>
+    <h2>② 甲部志愿（全港任选，最多 3）<span class="stage-badge" style="background:#E7F6F2;color:#0F766E">阶段二 · 统一派位</span></h2>
     <div class="sub" style="font-size:12px;margin:0 0 10px;background:#FBF9F5;border:1px solid var(--line);border-radius:8px;padding:8px 10px">
       <b>冲刺 / 匹配 / 保底 是什么意思？</b><br>
       派位按你填的<b>顺序 + 随机编号</b>逐一分派：<b>冲刺</b>=最想进、竞争激烈，命中靠运气，放 1-2 间；
       <b>匹配</b>=底牌相当、真实能接受的，是志愿表主力；<b>保底</b>=学额充足、派到也满意的安全垫。
       工具会检查你标的是否和实际学额/竞争匹配。
+      <b style="color:#B45309">注意：乙部不看计分——10 分和 35 分在这里完全平等，只按志愿顺序＋随机编号派位；你的计分只影响阶段一（自行分配）。</b>
     </div>
     <p class="sub" style="font-size:12px;margin:0 0 10px">可拖拽或点 ↑↓ 调顺序；每行可直接搜索校名（支持简体/繁体），或点 ▾ 下拉</p>
     <div id="partA"></div>
@@ -123,7 +129,7 @@
   </div>
 
   <div class="card no-print">
-    <h2>③ 乙部志愿（校网内，本网共 <span id="bCountLabel"></span> 所）</h2>
+    <h2>③ 乙部志愿（校网内，本网共 <span id="bCountLabel"></span> 所）<span class="stage-badge" style="background:#E7F6F2;color:#0F766E">阶段二 · 统一派位</span></h2>
     <div class="sub" style="font-size:12px;margin:0 0 10px;background:#FBF9F5;border:1px solid var(--line);border-radius:8px;padding:8px 10px">
       <b>冲刺 / 匹配 / 保底 是什么意思？</b><br>
       派位按你填的<b>顺序 + 随机编号</b>逐一分派：<b>冲刺</b>=最想进、竞争激烈，命中靠运气，放 1-2 间；
@@ -391,7 +397,7 @@ function renderWorkbench(){
   for(var oi=0;oi<arr.length;oi++){ if(arr[oi].name.trim()&&!allNames[arr[oi].name.trim()]){ oo=arr[oi].name.trim(); break; } }
   if(oo){ h+='<div class="wb" style="background:#FDEBE7;border-color:#C2410C"><p style="color:#C2410C;font-weight:bold">⚠️ 「'+esc(oo)+'」不在官津名册内（可能是直资/私立/国际或他网学校）——不参加本网统一派位，乙部填了也不会被派位，请走自行申请，或改填本网官津学校。</p></div>'; }
   if(pos.positions.length){
-    h+='<div class="wb"><h4>滑档线（实时）</h4>';
+    h+='<div class="wb"><h4>滑档线（实时）<span class="stage-badge" style="background:#E7F6F2;color:#0F766E">阶段二 · 统一派位</span></h4>';
     h+='<div style="background:#fef9e7;border-radius:6px;padding:8px 10px;font-size:12px;color:#44403C;margin:6px 0"><b>什么是滑档线？</b><br>派位像「大风吹」：电脑按你的志愿顺序一位一位看，前面没中就看下一位。<b>「滑档」</b>= 前面的志愿都没中，落到后面。<b>滑档线</b>= 从第几位开始相对安全——这所学校学额较多、竞争相对没那么激烈（热门名校除外），你大概率会停在这条线附近；线之前是「抽签区」。<b>最坏落点</b>= 假设抽签区的热门校全落空，你会停在哪一所。注意：学额多 ≠ 容易进——喇沙这类神校就算 90 个名额也挤破头，已按抽签区处理；滑档线是竞争度推导，不是录取概率。</div>';
     h+='<p>'+esc(pos.note)+'</p><div class="bar">';
     for(var i=0;i<pos.positions.length;i++){

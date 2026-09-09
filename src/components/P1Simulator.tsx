@@ -355,12 +355,25 @@ export default function P1Simulator() {
           <p className="mt-3 rounded-[8px] border-l-4 border-[var(--p-hl-yellow-border)] bg-[var(--p-hl-yellow-bg)] px-4 py-3 text-sm text-[var(--p-fg)]">
             ⚠️ 我们不预测录取概率（随机编号不可模拟）。这个模拟器只回答一个问题：<strong>你这张表，有没有结构性错误。</strong>
           </p>
+          <div className="mt-3 grid gap-2 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-4 text-sm sm:grid-cols-2">
+            <div>
+              <p className="font-mono text-xs font-bold uppercase text-[#B45309]">阶段一 · 自行分配（看计分）</p>
+              <p className="mt-1 text-[var(--p-secondary)]">底牌卡用这里：计分 × 学额，看你在某校的相对位置。自行分配只能申请 1 间学校。</p>
+            </div>
+            <div>
+              <p className="font-mono text-xs font-bold uppercase text-[#0F766E]">阶段二 · 统一派位（随机编号，不看计分）</p>
+              <p className="mt-1 text-[var(--p-secondary)]">甲部＋乙部志愿表、滑档线、顺序建议都是这里：10 分和 35 分完全平等，只看志愿顺序和随机编号。</p>
+            </div>
+          </div>
           <DataVersionBadge />
         </div>
 
         {/* 第一步：校网与计分 */}
         <section className="rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
-          <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">① 基本信息</h2>
+          <div className="flex flex-wrap items-center gap-2">
+            <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">① 基本信息</h2>
+            <span className="rounded-full bg-[#FEF3E2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#B45309]">阶段一 · 自行分配用</span>
+          </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             <label className="block">
               <span className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">所属校网</span>
@@ -416,7 +429,10 @@ export default function P1Simulator() {
 
         {/* 甲部 */}
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
-          <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 甲部志愿（不受校网限制，最多 3 个）</h2>
+          <div className="flex flex-wrap items-center gap-2">
+            <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 甲部志愿（不受校网限制，最多 3 个）</h2>
+            <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
+          </div>
           <div className="mt-4 grid gap-2">
             {partA.map((s, i) => (
               <div key={i} className="flex gap-2">
@@ -448,6 +464,7 @@ export default function P1Simulator() {
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
           <div className="flex flex-wrap items-center gap-3">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">③ 乙部志愿（所属校网，最多 30 个）</h2>
+            <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
             <span className="font-mono text-xs uppercase text-[var(--p-secondary)]">已填 {bCount}/{targetB}（本网共 {targetB} 所）</span>
           </div>
           <div className="mt-2 rounded-[8px] bg-[var(--p-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
@@ -455,6 +472,7 @@ export default function P1Simulator() {
             派位按你填的<b>顺序 + 随机编号</b>逐一分派，所以志愿顺序很重要：<b>冲刺</b>=最想进、竞争激烈，命中靠运气，放 1-2 间；
             <b>匹配</b>=底牌相当、真实能接受的，是志愿表主力；<b>保底</b>=学额充足、派到也满意的安全垫。
             工具会检查你标的是否和实际学额/竞争匹配。
+            <b className="text-[#B45309]">注意：乙部不看计分——10 分和 35 分在这里完全平等，只按志愿顺序＋随机编号派位；你的计分只影响阶段一（自行分配）。</b>
           </div>
           <p className="mt-2 text-xs text-[var(--p-secondary)]">
             💡 可拖拽或点 ↑↓ 调整顺序，滑档线和顺序建议会实时重算
@@ -571,7 +589,10 @@ export default function P1Simulator() {
           {/* 决策工作台：滑档线 + 顺序建议（实时联动） */}
           {slide.positions.length > 0 && (
             <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
-              <p className="font-serif text-lg font-bold text-[var(--p-fg)]">滑档线（实时）</p>
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="font-serif text-lg font-bold text-[var(--p-fg)]">滑档线（实时）</p>
+                <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
+              </div>
               <div className="mt-2 rounded-[8px] bg-[var(--p-hl-yellow-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
                 <b className="text-[var(--p-fg)]">什么是滑档线？</b><br />
                 派位像「大风吹」：电脑按你的志愿顺序一位一位看，前面没中就看下一位。
