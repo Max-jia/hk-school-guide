@@ -77,6 +77,9 @@ export default function SchoolFitCard({
       {school && (
         <div className="mt-3 rounded-[8px] bg-[var(--p-bg)] px-4 py-3">
           <p className="font-mono text-xs font-bold uppercase text-[var(--p-secondary)]">甲类资格预检（官方：凡属此类别必获录取）</p>
+          <p className="mt-1 text-[11px] leading-relaxed text-[var(--p-secondary)]">
+            官方甲类仅限：兄/姊在同一小学（小学部）就读、或父/母在该小学任职。兄/姊在同一校址中学部就读、父/母在同址中学部任职属计分 20 分关系项，不是甲类必录取。
+          </p>
           <div className="mt-1.5 flex flex-wrap gap-x-5 gap-y-1 text-sm text-[var(--p-fg)]">
             <label className="flex cursor-pointer items-center gap-2">
               <input type="checkbox" checked={sibAtSchool} onChange={(e) => setSibAtSchool(e.target.checked)} className="mt-0" />

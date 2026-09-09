@@ -338,7 +338,11 @@ export default function P1Simulator() {
       .filter((o) => !filled.has(o.name) && !genderBadSchool(o))
       .sort((a, b) => rank(a) - rank(b) || (b.quota ?? 0) - (a.quota ?? 0));
     const need = Math.max(0, targetB - filled.size);
-    const picks = candidates.slice(0, need).map((o) => ({ name: o.name, tier: "match" as SimTier }));
+    // 自动标档：学额充裕→保底（安全垫），普通/稀缺→匹配（可接受），避免补齐后保底为 0
+    const picks = candidates.slice(0, need).map((o) => ({
+      name: o.name,
+      tier: (relativeBand(o.name, o.quota ?? null) === "充裕" ? "safe" : "match") as SimTier,
+    }));
     if (picks.length === 0) {
       setSavedTip(true);
       setTimeout(() => setSavedTip(false), 1500);
@@ -746,7 +750,7 @@ export default function P1Simulator() {
         <section className="mt-6 rounded-[12px] border-2 border-[var(--p-fg)] bg-[var(--p-bg)] p-6">
           <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">实时结构快照（免费）</h2>
           <div className="mt-3 flex flex-wrap gap-4 font-mono text-sm text-[var(--p-secondary)]">
-            <span>乙部 {bCount}/30</span>
+            <span>乙部 {bCount}/{targetB}</span>
             <span>冲刺 {filledB.filter((s) => s.tier === "sprint").length}</span>
             <span>匹配 {filledB.filter((s) => s.tier === "match").length}</span>
             <span>保底 {safeCount}</span>
@@ -884,7 +888,7 @@ export default function P1Simulator() {
             <div className="min-w-0 flex-1">
           <h2 className="font-serif text-xl font-bold text-[var(--p-fg)]">完整体检报告（Pro）</h2>
           <p className="mt-1 text-sm text-[var(--p-secondary)]">
-                风险等级（A/B/C）＋ 8 项结构检查明细 ＋ 修改建议 ＋ 三套预案（叩门 72h／直资私立后手／注册时限），可保存为一页 PDF。
+                风险等级（A/B/C）＋ 逐项结构检查明细 ＋ 修改建议 ＋ 三套预案（叩门 72h／直资私立后手／注册时限），可保存为一页 PDF。
               </p>
               <p className="mt-2 font-mono text-sm">
                 <span className="text-2xl font-bold text-[var(--p-fg)]">HK$68</span>

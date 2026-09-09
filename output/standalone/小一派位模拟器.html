@@ -400,8 +400,14 @@ function suggestOrder(){
   for(var i=0;i<Math.min(sug.length,filled.length);i++){
     var cur=filled[i].name.trim(), sg=sug[i]?sug[i].name.trim():"（后移）";
     if(cur!==sg){
-      var b=relBand(cur, quotaOf(cur));
-      diffs.push({index:i+1,current:cur,suggested:sg,why:(sug[i]?(sug[i].tier==="sprint"?"冲刺校（学额"+q(sug[i])+"），够得着才值得冲":sug[i].tier==="match"?"匹配校（学额"+q(sug[i])+"），守得住的中段":"保底校（学额"+q(sug[i])+"，"+b+"），安全垫"):"该位置建议放保底或匹配校")});
+      var why="该位置建议放保底或匹配校。";
+      if(sug[i]){
+        var sb=relBand(sug[i].name,q(sug[i]));
+        if(sug[i].tier==="sprint"){ why="冲刺校（学额"+q(sug[i])+(sb==="稀缺"?"，热门/抽签区":"")+"），放乙一可以、乙二慎选"; }
+        else if(sug[i].tier==="match"){ why=sb==="稀缺"?"匹配校（学额"+q(sug[i])+"，热门/抽签区）——放乙一可、乙二慎选，别当「守得住」":"匹配校（学额"+q(sug[i])+"），守得住的中段"; }
+        else{ why="保底校（学额"+q(sug[i])+"，"+sb+"），安全垫"; }
+      }
+      diffs.push({index:i+1,current:cur,suggested:sg,why:why});
     }
   }
   return {suggested:sug,differences:diffs,note:"建议原则：乙一放「最想要又够得着」的冲刺校，乙二必须守得住，保底校放在前 60% 位置内。"};
@@ -535,7 +541,7 @@ function fillMissing(){
     return za-zb||((b.quota||0)-(a.quota||0));
   });
   var need=Math.max(0,n-Object.keys(filled).length);
-  var picks=cands.slice(0,need).map(function(sc){return {name:sc.name,tier:"match"};});
+  var picks=cands.slice(0,need).map(function(sc){return {name:sc.name,tier:(relBand(sc.name,sc.quota)==="充裕"?"safe":"match")};});
   if(!picks.length){ alert("网内学校已全部列出或已填满。"); return; }
   var filledArr=state.partB.filter(function(s){return s.name.trim();}).map(function(s){return {name:s.name,tier:s.tier};});
   var blanks=[]; for(var i=filledArr.length+picks.length;i<n;i++){ blanks.push({name:"",tier:"match"}); }
@@ -710,10 +716,6 @@ function runCheck(){
   if(partA.length<=1){checks.push({t:"甲部志愿",s:"warn",d:"甲部只填了 "+partA.length+"/3。",f:"甲部填满 3 间（全港任选，不占乙部名额）。"});}
   else{checks.push({t:"甲部志愿",s:"pass",d:"甲部填满 3 个选择。"});}
 
-  if(total===0){checks.push({t:"计分与冲刺匹配",s:"warn",d:"乙部还没有志愿，计分 "+score+" 分暂时没有用武之地；先把本网学校填上。"});}
-  else if(score<=20&&sprint>=6){checks.push({t:"计分与冲刺匹配",s:"warn",d:"计分 "+score+" 分却放了 "+sprint+" 所冲刺校，底牌和目标错配。",f:"冲刺留 2-3 所即可，重心放匹配校。"});}
-  else{checks.push({t:"计分与冲刺匹配",s:"pass",d:"计分 "+score+" 分与冲刺数量没有明显错配。"});}
-
   if(safe<2&&total<target){checks.push({t:"空洞检查",s:"warn",d:"还有 "+(target-total)+" 个空位，且保底不足 2 所。",f:"空位补「派到也满意」的学校。"});}
   else{checks.push({t:"空洞检查",s:"pass",d:"没有明显「填了也后悔」的空洞。"});}
 
@@ -724,7 +726,7 @@ function runCheck(){
   }
   var outOfRoster=(function(){var all={};P1.nets.forEach(function(n){n.schools.forEach(function(s){all[s.name]=1;});});var arr=partA.concat(partB);for(var i=0;i<arr.length;i++){if(arr[i].name.trim()&&!all[arr[i].name.trim()]){return arr[i].name.trim();}}return null;})();
   if(outOfRoster){checks.push({t:"非派位学校提醒",s:"warn",d:"「"+outOfRoster+"」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。",f:"把该学校放到自行申请清单（可同时申请多间直资/私立）。"});}
-  if(b1&&partB[0].tier==="sprint"&&score<=20){checks.push({t:"乙一撞热门预警",s:"warn",d:"乙一「"+b1+"」是冲刺档，计分仅 "+score+" 分，同分靠抽签。",f:"乙一保留心仪校，乙二务必「守得住」。"});}
+  if(b1&&partB[0].tier==="sprint"){checks.push({t:"乙一撞热门预警",s:"warn",d:"乙一「"+b1+"」是冲刺档——热门校命中靠抽签，乙二务必换「守得住」的学校。",f:"乙一保留心仪校，乙二务必「守得住」。"});}
   else if(b1){checks.push({t:"乙一撞热门预警",s:"pass",d:"乙一没有明显撞车风险。"});}
   var b2=partB[1]?partB[1].name.trim():"";
   if(b2&&partB[1].tier==="sprint"){checks.push({t:"乙二宜守不宜攻",s:"warn",d:"乙二「"+b2+"」仍是冲刺档，热门校学额多在乙一用尽。",f:"乙二改放匹配档里真实能接受的学校。"});}
@@ -742,7 +744,7 @@ function runCheck(){
   sugg.push("统一派位含随机编号，任何「保录取」承诺都不可信——你的可控变量只有这张表本身。");
 
   var h='<div class="grade" style="border-left-color:'+(grade==="A"?"#0F766E":grade==="B"?"#B45309":"#C2410C")+'">';
-  h+='<div class="g">'+grade+'</div><div><b style="font-size:18px">'+esc(gl)+'</b><p style="font-size:13px;color:var(--muted)">乙类计分 '+score+' 分 · 甲部 '+partA.length+'/3 · 乙部 '+total+'/30 · 冲刺 '+sprint+' · 匹配 '+match+' · 保底 '+safe+'</p></div></div>';
+  h+='<div class="g">'+grade+'</div><div><b style="font-size:18px">'+esc(gl)+'</b><p style="font-size:13px;color:var(--muted)">乙类计分 '+score+' 分 · 甲部 '+partA.length+'/3 · 乙部 '+total+'/'+target+' · 冲刺 '+sprint+' · 匹配 '+match+' · 保底 '+safe+'</p></div></div>';
   h+='<div class="card"><h2>志愿表抄录卡（交表时照着抄）</h2>';
   h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">';
   h+='<div><b style="font-size:12px;color:var(--muted)">甲部（全港任选 · 最多 3）</b><ul class="suggest">';

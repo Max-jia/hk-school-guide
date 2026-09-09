@@ -32,7 +32,7 @@ export function dpScoreTips(rel: string, org: string): { ok: boolean; tips: stri
   if (s === 15) tips.push("常见组合参考：首名出生子女（5）＋宗教（5）＋适龄（10）＝20 分；毕业校友（10）＋适龄（10）＝20 分。");
   if (s === 20) tips.push("常见组合参考：毕业校友（10）＋宗教（5）＋适龄（10）＝25 分；20 分关系（同址兄姊/父母任职/校董）＋适龄（10）＝30 分。");
   if (s === 25) tips.push("若家庭符合 20 分关系（同址兄姊就读/父母任职/校董），可到 30 分；再加办学团体 5 分可到 35 分顶格。");
-  tips.push(`当前最高可得分：${s} 分（适龄 10 ＋ 关系 ${DP_REL_OPTS.find((o) => o.v === rel)?.pts ?? 0} ＋ 办学团体 ${DP_ORG_OPTS.find((o) => o.v === org)?.pts ?? 0}）。`);
+  tips.push(`当前得分：${s} 分（适龄 10 ＋ 关系 ${DP_REL_OPTS.find((o) => o.v === rel)?.pts ?? 0} ＋ 办学团体 ${DP_ORG_OPTS.find((o) => o.v === org)?.pts ?? 0}）。适龄 10 分以翌年 9 月开学时年满 5 岁 8 个月至 7 岁为准。`);
   return { ok: true, tips };
 }
 
@@ -117,7 +117,7 @@ export function buildDiscretionaryReport(
     fit: ass.fit,
     strategy: ass.strategy,
     timeline: [
-      { when: "交表（2026-09-17~25）", action: "向所选学校递交自行分配申请表；只可交 1 间，多交全部作废。" },
+      { when: "交表（2026-09-17~25）", action: "电子平台 9/17-25 递交；直接交回申请学校 9/21-25。只可交 1 间，多交全部作废。" },
       { when: "放榜（2026-11-23）", action: "学校公布结果；可于上午 10 时起经小一入学电子平台查阅。" },
       { when: "注册（2026-11-25~26）", action: ass.catA ? "甲类必录取——获录取后须在指定日期注册，注册＝退出统一派位。" : "若获录取，须在指定日期注册；逾期视为放弃。注册＝退出统一派位。" },
       { when: "未获录取", action: "自动参加统一派位（无须另行申请）；统派仍可把该校放第一志愿（双保险）。" },

@@ -70,7 +70,7 @@ function findDuplicates(list: SimSchool[]): string[] {
 export function runSimCheck(input: SimInput): SimReport {
   const partA = input.partA.filter((s) => s.name.trim());
   const partB = input.partB.filter((s) => s.name.trim());
-  const score = Math.min(35, Math.max(10, input.score));
+  const score = Number.isFinite(input.score) ? Math.min(35, Math.max(10, input.score)) : 10;
 
   // 空表保护：甲部、乙部一个学校都没填时，不做任何“通过”判定
   if (partA.length === 0 && partB.length === 0) {
@@ -191,23 +191,7 @@ export function runSimCheck(input: SimInput): SimReport {
     checks.push({ id: "partA", title: "甲部志愿", status: "pass", detail: "甲部填满 3 个选择。" });
   }
 
-  // 6) 计分适配
-  if (total === 0) {
-    checks.push({
-      id: "fit", title: "计分与冲刺匹配",
-      status: "warn", detail: `乙部还没有志愿，计分 ${score} 分暂时没有用武之地；先把本网学校填上。`,
-    });
-  } else if (score <= 20 && sprint >= 6) {
-    checks.push({
-      id: "fit", title: "计分与冲刺匹配",
-      status: "warn", detail: `乙类计分 ${score} 分，却放了 ${sprint} 所冲刺校——底牌和目标明显错配。`,
-      fix: "计分不高时，自行阶段热门校基本靠抽签。冲刺留 2–3 所即可，把志愿重心放到匹配校。",
-    });
-  } else if (total > 0) {
-    checks.push({ id: "fit", title: "计分与冲刺匹配", status: "pass", detail: `计分 ${score} 分与冲刺校数量没有明显错配。` });
-  }
-
-  // 7) 空洞（填了也后悔）
+  // 6) 空洞（填了也后悔）
   if (safe < 2 && total < target) {
     checks.push({
       id: "blank", title: "空洞检查",
@@ -217,7 +201,7 @@ export function runSimCheck(input: SimInput): SimReport {
     checks.push({ id: "blank", title: "空洞检查", status: "pass", detail: "没有明显「填了也后悔」的空洞。" });
   }
 
-  // 8) 1-1-1 诚意矩阵：甲一与乙一是否同一学校
+  // 7) 1-1-1 诚意矩阵：甲一与乙一是否同一学校
   const a1 = partA[0]?.name?.trim() || "";
   const b1 = partB[0]?.name?.trim() || "";
   if (a1 && b1) {
@@ -235,18 +219,18 @@ export function runSimCheck(input: SimInput): SimReport {
     }
   }
 
-  // 9) 乙一撞车预警：第一志愿冲刺且计分不占优
-  if (b1 && partB[0].tier === "sprint" && score <= 20) {
+  // 8) 乙一撞车预警：第一志愿冲刺（热门校命中靠抽签，乙二务必守得住）
+  if (b1 && partB[0].tier === "sprint") {
     checks.push({
       id: "b1-collision", title: "乙一撞热门预警",
-      status: "warn", detail: `乙部第一志愿「${b1}」是冲刺档，而计分仅 ${score} 分——热门校同分靠抽签，第一志愿命中率并不占优。`,
+      status: "warn", detail: `乙部第一志愿「${b1}」是冲刺档——热门校学额多在前段被消化，命中靠抽签；乙二务必换成「守得住」的学校。`,
       fix: "乙一可以保留心仪冲刺校，但乙二务必换成「守得住」的学校，并确保尾部保底充足。",
     });
   } else if (b1) {
     checks.push({ id: "b1-collision", title: "乙一撞热门预警", status: "pass", detail: "乙一没有明显的撞车风险。" });
   }
 
-  // 10) 乙二宜守不宜攻
+  // 9) 乙二宜守不宜攻
   const b2 = partB[1]?.name?.trim() || "";
   if (b2 && partB[1].tier === "sprint") {
     checks.push({
@@ -521,8 +505,8 @@ function explainWhy(s: SimSchool | undefined, quotaOf: (name: string) => number 
   const q = quotaOf(s.name.trim());
   const band = relativeBand(s.name.trim(), q);
   const tierLabel = s.tier === "sprint" ? "冲刺" : s.tier === "match" ? "匹配" : "保底";
-  if (s.tier === "sprint") return `${tierLabel}校（学额${q ?? "?"}），够得着才值得冲`;
-  if (s.tier === "match") return `${tierLabel}校（学额${q ?? "?"}），守得住的中段`;
+  if (s.tier === "sprint") return `${tierLabel}校（学额${q ?? "?"}${band === "稀缺" ? "，热门/抽签区" : ""}），放乙一可以，乙二慎选`;
+  if (s.tier === "match") return band === "稀缺" ? `${tierLabel}校（学额${q ?? "?"}，热门/抽签区）——放乙一可、乙二慎选，别当「守得住」` : `${tierLabel}校（学额${q ?? "?"}），守得住的中段`;
   return `${tierLabel}校（学额${q ?? "?"}，${band}），安全垫`;
 }
 

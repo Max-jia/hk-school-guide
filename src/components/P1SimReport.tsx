@@ -121,7 +121,7 @@ export default function P1SimReport() {
             <p className="text-4xl">🔒</p>
             <h2 className="mt-3 font-serif text-2xl font-bold text-[var(--p-fg)]">这份报告还没解锁</h2>
             <p className="mx-auto mt-2 max-w-[420px] text-sm text-[var(--p-secondary)]">
-              完整体检报告包含风险等级（A/B/C）、8 项结构检查明细、修改建议和三套预案（叩门 72h／直资私立后手／注册时限），
+              完整体检报告包含风险等级（A/B/C）、逐项结构检查明细、修改建议和三套预案（叩门 72h／直资私立后手／注册时限），
               可保存为一页 PDF。
             </p>
             <button
