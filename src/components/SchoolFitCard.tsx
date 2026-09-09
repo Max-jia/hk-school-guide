@@ -1,0 +1,97 @@
+"use client";
+
+import { useState } from "react";
+import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
+import { assessSchoolFit } from "@/lib/sim-engine";
+
+export default function SchoolFitCard({
+  options, score, unlocked, buying, buy,
+}: {
+  options: SchoolOpt[];
+  score: number;
+  unlocked: boolean;
+  buying: boolean;
+  buy: () => void;
+}) {
+  const [picked, setPicked] = useState("");
+  const [count, setCount] = useState(0);
+  const locked = !unlocked && count >= 1;
+
+  const school = options.find((o) => o.name === picked);
+  const outOfRoster = picked.trim() && !school;
+
+  function analyse() {
+    if (!picked.trim() || outOfRoster || locked) return;
+    if (!unlocked) setCount((c) => c + 1);
+  }
+
+  const fit = school ? assessSchoolFit(score, school.quota ?? null) : null;
+  const toneColor =
+    fit?.tone === "good" ? "#0F766E" : fit?.tone === "mid" ? "#B45309" : "#C2410C";
+  const toneBg =
+    fit?.tone === "good" ? "#E7F6F2" : fit?.tone === "mid" ? "#FEF3E2" : "#FDEBE7";
+
+  return (
+    <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+      <div className="flex items-center gap-2">
+        <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">底牌卡 · 我这点分能进吗</h2>
+        {!unlocked && (
+          <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>
+        )}
+      </div>
+      <p className="mt-1 text-sm text-[var(--p-secondary)]">
+        选一所官津学校，结合你的计分（{score} 分）和该校学额，给出相对竞争位置。免费 1 次，解锁后不限次。
+      </p>
+
+      <div className="mt-4 flex flex-wrap items-center gap-3">
+        <div className="min-w-0 flex-1">
+          <SchoolCombobox options={options} value={picked} onChange={setPicked} placeholder="选择一所官津学校…" />
+        </div>
+        <button
+          onClick={analyse}
+          disabled={!picked.trim() || outOfRoster || locked}
+          className="rounded-[8px] bg-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-bg)] disabled:opacity-40"
+        >
+          {locked ? "已用免费次数 · 解锁后继续" : "分析"}
+        </button>
+      </div>
+
+      {outOfRoster && (
+        <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
+          ⚠️ 「{picked.trim()}」不在官津名册内（可能是直资/私立/国际学校）——不看计分，走自行申请。
+        </p>
+      )}
+
+      {fit && school && (
+        <div className="relative mt-4">
+          <div className="rounded-[12px] border-l-4 px-5 py-4" style={{ borderColor: toneColor, background: toneBg }}>
+            <div className="flex items-center gap-3">
+              <span className="font-serif text-2xl font-bold" style={{ color: toneColor }}>{fit.label}</span>
+              <span className="font-mono text-xs text-[var(--p-secondary)]">
+                {school.name} · 计分 {score} 分 · 学额 {school.quota ?? "—"}
+              </span>
+            </div>
+            <p className="mt-2 text-sm text-[var(--p-fg)]">{fit.advice}</p>
+            <p className="mt-2 text-xs text-[var(--p-secondary)]">
+              ⓘ 本卡为相对竞争位置（计分段位 × 学额稀缺度），非录取概率；同分一律抽签，数据依据教育局 2027/28 名册。
+            </p>
+          </div>
+          {locked && (
+            <div className="absolute inset-0 flex items-center justify-center rounded-[12px] bg-[rgba(255,255,255,.82)]">
+              <div className="rounded-[10px] bg-[#FEF3E2] px-6 py-4 text-center text-[#B45309]">
+                <p className="font-bold">🔒 免费次数已用完</p>
+                <button
+                  onClick={buy}
+                  disabled={buying}
+                  className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-5 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
+                >
+                  {buying ? "正在前往支付…" : "解锁 · HK$68"}
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </section>
+  );
+}

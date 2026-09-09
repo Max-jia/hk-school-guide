@@ -424,3 +424,40 @@ function explainWhy(s: SimSchool | undefined, quotaOf: (name: string) => number 
   if (s.tier === "match") return `${tierLabel}校（学额${q ?? "?"}），守得住的中段`;
   return `${tierLabel}校（学额${q ?? "?"}，${band}），安全垫`;
 }
+
+
+// ================= 底牌卡：相对竞争位置（非录取概率） =================
+
+export type FitTone = "good" | "mid" | "warn";
+
+export type FitResult = {
+  label: string;
+  advice: string;
+  tone: FitTone;
+};
+
+// 输入：乙类计分（10-35）+ 该校自行分配学额（名册 quota）
+// 输出：相对竞争位置结论（基于计分组合段位 × 学额稀缺度，不是录取概率）
+export function assessSchoolFit(score: number, quota: number | null): FitResult {
+  const q = quota ?? 50;
+  const scarce = q <= 25;
+  const roomy = q > 50;
+
+  if (score >= 30) {
+    if (roomy) return { label: "优势明显", advice: `计分 ${score} 分＋学额充裕（${q}），在这所学校处于有利位置；同分仍要抽签。`, tone: "good" };
+    if (scarce) return { label: "组合强但学额紧", advice: `计分 ${score} 分但学额仅 ${q}，竞争烈度高，仍要抽签。`, tone: "mid" };
+    return { label: "组合强", advice: `计分 ${score} 分，处于该校申请者前列组合；同分抽签。`, tone: "good" };
+  }
+  if (score === 25) {
+    if (roomy) return { label: "可冲", advice: `计分 ${score} 分＋学额充裕（${q}），值得放前；同分抽签。`, tone: "good" };
+    if (scarce) return { label: "拼运气", advice: `计分 ${score} 分但学额仅 ${q}，热门校同分靠抽签。`, tone: "mid" };
+    return { label: "有机会", advice: `计分 ${score} 分（校友/强关系组合），热门校竞争仍大。`, tone: "mid" };
+  }
+  if (score === 20) {
+    if (roomy) return { label: "有机会", advice: `计分 ${score} 分（最常见组合）但学额充裕（${q}），可以一试。`, tone: "mid" };
+    if (scarce) return { label: "基本靠抽签", advice: `计分 ${score} 分＋学额仅 ${q}——最常见组合撞上最紧张学额，热门校基本靠抽签。`, tone: "warn" };
+    return { label: "看运气", advice: `计分 ${score} 分是自行分配最常见组合，热门校同分抽签。`, tone: "warn" };
+  }
+  if (score === 15) return { label: "偏弱", advice: `计分 ${score} 分在自行分配阶段不占优，建议把重心放统一派位乙部。`, tone: "warn" };
+  return { label: "仅适龄分", advice: `计分 ${score} 分只有适龄基础分，自行分配基本陪跑，全力准备乙部＋叩门。`, tone: "warn" };
+}

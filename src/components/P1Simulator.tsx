@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import p1NetsJson from "@/content/p1-nets.json";
 import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
 import SchoolCompare from "@/components/SchoolCompare";
+import SchoolFitCard from "@/components/SchoolFitCard";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
 import { computeSlideLine, suggestOrder } from "@/lib/sim-engine";
 
@@ -523,6 +524,8 @@ export default function P1Simulator() {
             ))}
           </ul>
         </section>
+
+        <SchoolFitCard options={allSchoolOpts} score={calcScore(rel, org)} unlocked={unlocked} buying={buying} buy={buy} />
 
         <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} />
 
