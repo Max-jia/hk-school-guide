@@ -443,6 +443,8 @@ function runCheck(){
   if(a1&&b1){
     if(a1===b1){checks.push({t:"1-1-1 诚意矩阵",s:"pass",d:"甲一与乙一都是「"+a1+"」，一致性形成叩门诚意筹码。"});}
     else{checks.push({t:"1-1-1 诚意矩阵",s:"warn",d:"甲一「"+a1+"」与乙一「"+b1+"」不是同一所。",f:"目标校在网内建议甲一乙一统一；在网外本条不适用。"});}
+  var outOfRoster=(function(){var all={};P1.nets.forEach(function(n){n.schools.forEach(function(s){all[s.name]=1;});});var arr=partA.concat(partB);for(var i=0;i<arr.length;i++){if(arr[i].name.trim()&&!all[arr[i].name.trim()]){return arr[i].name.trim();}}return null;})();
+  if(outOfRoster){checks.push({t:"非派位学校提醒",s:"warn",d:"「"+outOfRoster+"」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。",f:"把该学校放到自行申请清单（可同时申请多间直资/私立）。"});}
   }
   if(b1&&partB[0].tier==="sprint"&&score<=20){checks.push({t:"乙一撞热门预警",s:"warn",d:"乙一「"+b1+"」是冲刺档，计分仅 "+score+" 分，同分靠抽签。",f:"乙一保留心仪校，乙二务必「守得住」。"});}
   else{checks.push({t:"乙一撞热门预警",s:"pass",d:"乙一没有明显撞车风险。"});}

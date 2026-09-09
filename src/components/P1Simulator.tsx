@@ -141,9 +141,19 @@ export default function P1Simulator() {
     const a1 = partA.find((x) => x.name.trim())?.name.trim() || "";
     const b1 = filledB[0]?.name.trim() || "";
     if (a1 && b1 && a1 !== b1) tips.push({ kind: "info", text: "甲一与乙一不是同一所（1-1-1 未对齐），若目标校在网内建议统一。" });
+    // 甲部/乙部出现非名册学校（直资/私立等）——不参加派位
+    const outOfRoster = [...partA.filter((x) => x.name.trim()), ...filledB].find(
+      (x) => !allSchoolOpts.some((o) => o.name === x.name.trim())
+    );
+    if (outOfRoster) {
+      tips.push({
+        kind: "danger",
+        text: `「${outOfRoster.name.trim()}」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。`,
+      });
+    }
     if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，建议解锁完整报告再核对一遍。" });
     return tips.slice(0, 3);
-  }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB]);
+  }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB, allSchoolOpts]);
 
   function save() {
     try {
