@@ -684,7 +684,6 @@
   "teacher_ratio": "1:1.9",
   "school_bus": "有",
   "sessions": [
-   "下午",
    "全日"
   ],
   "tier": "A",
@@ -1624,7 +1623,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文（包括：普通話）及英文",
   "school_net": "71",
-  "through_train": "联系 順德聯誼總會梁銶琚中學、<br>順德聯誼總會譚伯羽中學",
+  "through_train": "联系 順德聯誼總會梁銶琚中學、、順德聯誼總會譚伯羽中學",
   "teacher_ratio": "1:1.9",
   "school_bus": "無",
   "sessions": [
@@ -5994,7 +5993,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "72",
-  "through_train": "一条龙 伊利沙伯中學舊生會中學、<br>伊利沙伯中學舊生會湯國華中學",
+  "through_train": "一条龙 伊利沙伯中學舊生會中學、、伊利沙伯中學舊生會湯國華中學",
   "teacher_ratio": "1:1.9",
   "school_bus": "有",
   "sessions": [
@@ -7144,7 +7143,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "72",
-  "through_train": "一条龙 伊利沙伯中學舊生會中學、<br>伊利沙伯中學舊生會湯國華中學",
+  "through_train": "一条龙 伊利沙伯中學舊生會中學、、伊利沙伯中學舊生會湯國華中學",
   "teacher_ratio": "1:2.0",
   "school_bus": "有",
   "sessions": [
@@ -8064,7 +8063,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "70",
-  "through_train": "联系 保良局百周年李兆忠紀念中學、<br>保良局董玉娣中學",
+  "through_train": "联系 保良局百周年李兆忠紀念中學、、保良局董玉娣中學",
   "teacher_ratio": "1:2.3",
   "school_bus": "無",
   "sessions": [
@@ -12181,7 +12180,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "73",
-  "through_train": "联系 新界鄉議局元朗區中學、趙聿修紀念中學、<br>天水圍官立中學",
+  "through_train": "联系 新界鄉議局元朗區中學、趙聿修紀念中學、、天水圍官立中學",
   "teacher_ratio": "1:2.0",
   "school_bus": "有",
   "sessions": [
@@ -12204,7 +12203,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "40",
-  "through_train": "联系 荃灣官立中學、何文田官立中學、<br>賽馬會官立中學、九龍工業中學",
+  "through_train": "联系 荃灣官立中學、何文田官立中學、、賽馬會官立中學、九龍工業中學",
   "teacher_ratio": "1:1.9",
   "school_bus": "有",
   "sessions": [
@@ -12227,7 +12226,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "31",
-  "through_train": "联系 伊利沙伯中學、何文田官立中學、<br>賽馬會官立中學、九龍工業學校",
+  "through_train": "联系 伊利沙伯中學、何文田官立中學、、賽馬會官立中學、九龍工業學校",
   "teacher_ratio": "1:2.3",
   "school_bus": "無",
   "sessions": [
@@ -12273,7 +12272,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "18",
-  "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學",
+  "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、、鄧肇堅維多利亞官立中學",
   "teacher_ratio": "1:1.9",
   "school_bus": "有",
   "sessions": [
@@ -12319,7 +12318,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "48",
-  "through_train": "联系 觀塘官立中學、何文田官立中學、<br>觀塘功樂官立中學、賽馬會官立中學",
+  "through_train": "联系 觀塘官立中學、何文田官立中學、、觀塘功樂官立中學、賽馬會官立中學",
   "teacher_ratio": "1:2.0",
   "school_bus": "有",
   "sessions": [
@@ -12365,7 +12364,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "74",
-  "through_train": "联系 新界鄉議局元朗區中學、趙聿修紀念中學、<br>天水圍官立中學",
+  "through_train": "联系 新界鄉議局元朗區中學、趙聿修紀念中學、、天水圍官立中學",
   "teacher_ratio": "1:2.1",
   "school_bus": "無",
   "sessions": [
@@ -12388,7 +12387,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "12",
-  "through_train": "联系 皇仁書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學、何東中學",
+  "through_train": "联系 皇仁書院、庇理羅士女子中學、金文泰中學、、鄧肇堅維多利亞官立中學、何東中學",
   "teacher_ratio": "1:1.9",
   "school_bus": "有",
   "sessions": [
@@ -12411,7 +12410,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "16",
-  "through_train": "联系 皇仁書院、筲箕灣官立中學、筲箕灣東官立中學、<br> 金文泰中學",
+  "through_train": "联系 皇仁書院、筲箕灣官立中學、筲箕灣東官立中學、、 金文泰中學",
   "teacher_ratio": "1:2.0",
   "school_bus": "有",
   "sessions": [
@@ -12549,7 +12548,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "11",
-  "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學",
+  "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、、鄧肇堅維多利亞官立中學",
   "teacher_ratio": "1:2.2",
   "school_bus": "有",
   "sessions": [
@@ -12618,7 +12617,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "70",
-  "through_train": "联系 屯門官立中學、南屯門官立中學、<br>新界鄉議局元朗區中學",
+  "through_train": "联系 屯門官立中學、南屯門官立中學、、新界鄉議局元朗區中學",
   "teacher_ratio": "1:1.8",
   "school_bus": "有",
   "sessions": [
@@ -12641,7 +12640,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "95",
-  "through_train": "联系 將軍澳官立中學、何文田官立中學、<br>賽馬會官立中學、觀塘功樂官立中學",
+  "through_train": "联系 將軍澳官立中學、何文田官立中學、、賽馬會官立中學、觀塘功樂官立中學",
   "teacher_ratio": "1:1.9",
   "school_bus": "有",
   "sessions": [
@@ -12664,7 +12663,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "11",
-  "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學",
+  "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、、鄧肇堅維多利亞官立中學",
   "teacher_ratio": "1:2.2",
   "school_bus": "無",
   "sessions": [
@@ -12687,7 +12686,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "34",
-  "through_train": "联系 伊利沙伯官立中學、何文田官立中學、<br>賽馬會官立中學",
+  "through_train": "联系 伊利沙伯官立中學、何文田官立中學、、賽馬會官立中學",
   "teacher_ratio": "1:2.0",
   "school_bus": "有",
   "sessions": [
@@ -12802,7 +12801,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "12",
-  "through_train": "联系 皇仁書院、庇理羅士女子中學、何東中學、<br>金文泰中學、鄧肇堅維多利亞官立中學",
+  "through_train": "联系 皇仁書院、庇理羅士女子中學、何東中學、、金文泰中學、鄧肇堅維多利亞官立中學",
   "teacher_ratio": "1:1.9",
   "school_bus": "有",
   "sessions": [
@@ -12825,7 +12824,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "40",
-  "through_train": "联系 荃灣官立中學、何文田官立中學、<br>九龍工業學校、賽馬會官立中學",
+  "through_train": "联系 荃灣官立中學、何文田官立中學、、九龍工業學校、賽馬會官立中學",
   "teacher_ratio": "1:2.0",
   "school_bus": "無",
   "sessions": [
@@ -12871,7 +12870,7 @@
   "fees": "免费（政府资助）",
   "teaching_language": "中文",
   "school_net": "32",
-  "through_train": "联系 伊利沙伯中學、何文田官立中學、<br>九龍工業學校、賽馬會官立中學",
+  "through_train": "联系 伊利沙伯中學、何文田官立中學、、九龍工業學校、賽馬會官立中學",
   "teacher_ratio": "1:2.0",
   "school_bus": "無",
   "sessions": [

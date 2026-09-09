@@ -445,6 +445,9 @@ export default function P1Simulator() {
               <p className="mt-2 text-xs text-[var(--p-secondary)]">
                 红=学额稀缺 · 黄=普通 · 绿=充裕（相对竞争烈度，非录取概率）
               </p>
+              <p className="mt-1 text-[11px] text-[var(--p-secondary)]">
+                ⓘ 滑档线与顺序建议为本站方法论（基于学额相对竞争度推导），非教育局规则；录取仍以随机编号为准。
+              </p>
             </div>
           )}
 
