@@ -5,6 +5,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import p1NetsJson from "@/content/p1-nets.json";
 import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
+import SchoolCompare from "@/components/SchoolCompare";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
 import { computeSlideLine, suggestOrder } from "@/lib/sim-engine";
 
@@ -522,6 +523,8 @@ export default function P1Simulator() {
             ))}
           </ul>
         </section>
+
+        <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} />
 
         {/* 付费墙 */}
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
