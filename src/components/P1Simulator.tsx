@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import p1NetsJson from "@/content/p1-nets.json";
 import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
+import { computeSlideLine, suggestOrder } from "@/lib/sim-engine";
 
 const P1 = p1NetsJson as {
   nets: { net: string; area_short: string; count: number; schools: { name: string; simp: string; quota: number | null }[] }[];
@@ -50,6 +51,7 @@ export default function P1Simulator() {
   const [unlocked, setUnlocked] = useState(false);
   const [buying, setBuying] = useState(false);
   const [savedTip, setSavedTip] = useState(false);
+  const [dragIdx, setDragIdx] = useState<number | null>(null);
 
   const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const out: SchoolOpt[] = [];
@@ -107,6 +109,15 @@ export default function P1Simulator() {
     return [...dup];
   }, [filledB]);
 
+  const slide = useMemo(
+    () => computeSlideLine(filledB, (n) => quotaMap.get(n) ?? null),
+    [filledB, quotaMap]
+  );
+  const advice = useMemo(
+    () => suggestOrder(filledB, (n) => quotaMap.get(n) ?? null),
+    [filledB, quotaMap]
+  );
+
   const snapshot = useMemo(() => {
     const tips: { kind: "danger" | "info" | "ok"; text: string }[] = [];
     if (safeCount === 0) tips.push({ kind: "danger", text: "没有保底校——这是最危险的结构错误。" });
@@ -128,6 +139,14 @@ export default function P1Simulator() {
       setSavedTip(true);
       setTimeout(() => setSavedTip(false), 1500);
     } catch { /* ignore */ }
+  }
+
+  function moveRow(list: SimSchool[], setter: (v: SimSchool[]) => void, from: number, to: number) {
+    if (to < 0 || to >= list.length || from === to) return;
+    const next = [...list];
+    const [it] = next.splice(from, 1);
+    next.splice(to, 0, it);
+    setter(next);
   }
 
   function setRow(list: SimSchool[], setter: (v: SimSchool[]) => void, i: number, patch: Partial<SimSchool>) {
@@ -251,9 +270,33 @@ export default function P1Simulator() {
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">③ 乙部志愿（所属校网，最多 30 个）</h2>
             <span className="font-mono text-xs uppercase text-[var(--p-secondary)]">已填 {bCount}/{targetB}（本网共 {targetB} 所）</span>
           </div>
-          <div className="mt-4 grid gap-2">
+          <p className="mt-2 text-xs text-[var(--p-secondary)]">
+            💡 可拖拽或点 ↑↓ 调整顺序，滑档线和顺序建议会实时重算
+          </p>
+          <div className="mt-3 grid gap-2">
             {partB.map((s, i) => (
-              <div key={i} className="flex gap-2">
+              <div
+                key={i}
+                draggable
+                onDragStart={() => setDragIdx(i)}
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={() => {
+                  if (dragIdx !== null && dragIdx !== i) moveRow(partB, setPartB, dragIdx, i);
+                  setDragIdx(null);
+                }}
+                className={`flex items-center gap-2 rounded-[8px] border px-2 py-1.5 ${
+                  dragIdx === i ? "border-[var(--p-hl-border)] bg-[var(--p-hl-yellow-bg)]" : "border-[var(--p-gray-300)]"
+                }`}
+              >
+                <span className="w-10 shrink-0 text-center font-mono text-xs text-[var(--p-secondary)]">{i + 1}</span>
+                <button
+                  type="button"
+                  onClick={() => moveRow(partB, setPartB, i, i - 1)}
+                  disabled={i === 0}
+                  className="shrink-0 rounded border border-[var(--p-gray-300)] px-1.5 text-xs disabled:opacity-30"
+                >
+                  ↑
+                </button>
                 <SchoolCombobox
                   options={netSchoolOpts}
                   value={s.name}
@@ -268,13 +311,79 @@ export default function P1Simulator() {
                 <select
                   value={s.tier}
                   onChange={(e) => setRow(partB, setPartB, i, { tier: e.target.value as SimTier })}
-                  className={tierCls + " w-24"}
+                  className={tierCls + " w-20"}
                 >
                   {TIERS.map((t) => <option key={t.v} value={t.v}>{t.label}</option>)}
                 </select>
+                <button
+                  type="button"
+                  onClick={() => moveRow(partB, setPartB, i, i + 1)}
+                  disabled={i >= partB.length - 1}
+                  className="shrink-0 rounded border border-[var(--p-gray-300)] px-1.5 text-xs disabled:opacity-30"
+                >
+                  ↓
+                </button>
               </div>
             ))}
           </div>
+          {/* 决策工作台：滑档线 + 顺序建议（实时联动） */}
+          {slide.positions.length > 0 && (
+            <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
+              <p className="font-serif text-lg font-bold text-[var(--p-fg)]">滑档线（实时）</p>
+              <p className="mt-1 text-sm text-[var(--p-fg)]">{slide.note}</p>
+              <div className="mt-3 flex items-end gap-1">
+                {slide.positions.map((p, i) => (
+                  <div key={i} className="flex-1 text-center">
+                    <div
+                      className="flex h-7 items-center justify-center rounded font-mono text-[11px]"
+                      style={{
+                        background: p.band === "稀缺" ? "#FDEBE7" : p.band === "普通" ? "#FEF3E2" : "#E7F6F2",
+                        color: p.band === "稀缺" ? "#C2410C" : p.band === "普通" ? "#B45309" : "#0F766E",
+                        border: slide.slideLineIndex === i + 1 ? "2px solid #1C1C1C" : "1px solid var(--p-gray-300)",
+                      }}
+                      title={p.name}
+                    >
+                      {i + 1}
+                    </div>
+                    {slide.slideLineIndex === i + 1 && (
+                      <div className="font-mono text-[10px] text-[var(--p-fg)]">▲滑档线</div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              <p className="mt-2 text-xs text-[var(--p-secondary)]">
+                红=学额稀缺 · 黄=普通 · 绿=充裕（相对竞争烈度，非录取概率）
+              </p>
+            </div>
+          )}
+
+          {advice.suggested.length > 0 && (
+            <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
+              <p className="font-serif text-lg font-bold text-[var(--p-fg)]">顺序建议（可参考调整）</p>
+              <ol className="m-0 mt-2 list-none space-y-1 p-0">
+                {advice.suggested.map((sg, i) => (
+                  <li key={i} className="text-sm text-[var(--p-fg)]">
+                    {i + 1}. {sg.name}
+                    <span className="text-[var(--p-secondary)]">
+                      （{sg.tier === "sprint" ? "冲刺" : sg.tier === "match" ? "匹配" : "保底"}）
+                    </span>
+                  </li>
+                ))}
+              </ol>
+              {advice.differences.length > 0 && (
+                <div className="mt-3 rounded-[8px] bg-[#FEF3E2] px-3 py-2 text-sm text-[#B45309]">
+                  <p className="font-bold">与当前顺序的差异：</p>
+                  {advice.differences.map((d, i) => (
+                    <p key={i} className="mt-1">
+                      第 {d.index} 位：当前「{d.current}」→ 建议「{d.suggested}」· {d.why}
+                    </p>
+                  ))}
+                </div>
+              )}
+              <p className="mt-2 text-xs text-[var(--p-secondary)]">{advice.note}</p>
+            </div>
+          )}
+
           {partB.length < targetB && (
             <button
               onClick={() => setPartB((p) => [...p, { name: "", tier: "match" }])}

@@ -268,3 +268,159 @@ export function runSimCheck(input: SimInput): SimReport {
 }
 
 export { TIER_LABEL };
+
+
+// ================= v2：决策工作台扩展 =================
+
+export type RiskBand = "稀缺" | "普通" | "充裕";
+
+export function quotaBand(q: number | null | undefined): RiskBand {
+  if (!q) return "普通";
+  if (q <= 25) return "稀缺";
+  if (q <= 50) return "普通";
+  return "充裕";
+}
+
+export type SlidePosition = {
+  name: string;
+  band: RiskBand;
+  quota: number | null;
+};
+
+export type SlideResult = {
+  positions: SlidePosition[];
+  slideLineIndex: number | null; // 1-based：从这一位起相对安全
+  worstFall: { index: number; name: string } | null; // 最坏落点（第一个非稀缺）
+  note: string;
+};
+
+// 滑档模拟：按当前顺序，用学额稀缺度标风险，推导滑档线与最坏落点
+// 明确：这是顺序推导 + 相对竞争烈度，不是录取概率预测
+export function computeSlideLine(
+  partB: { name: string }[],
+  quotaOf: (name: string) => number | null
+): SlideResult {
+  const positions: SlidePosition[] = partB
+    .filter((s) => s.name.trim())
+    .map((s) => {
+      const q = quotaOf(s.name.trim());
+      return { name: s.name.trim(), band: quotaBand(q), quota: q };
+    });
+  if (positions.length === 0) {
+    return { positions: [], slideLineIndex: null, worstFall: null, note: "乙部还没有填写志愿。" };
+  }
+  // 滑档线：第一个「充裕」，且其后没有「稀缺」的位置
+  let slideLineIndex: number | null = null;
+  for (let i = 0; i < positions.length; i++) {
+    if (positions[i].band === "充裕") {
+      let restSafe = true;
+      for (let j = i + 1; j < positions.length; j++) {
+        if (positions[j].band === "稀缺") { restSafe = false; break; }
+      }
+      if (restSafe) { slideLineIndex = i + 1; break; }
+    }
+  }
+  // 没有充裕则找第一个「普通」且其后无稀缺的位置
+  if (slideLineIndex === null) {
+    for (let i = 0; i < positions.length; i++) {
+      if (positions[i].band === "普通") {
+        let restSafe = true;
+        for (let j = i + 1; j < positions.length; j++) {
+          if (positions[j].band === "稀缺") { restSafe = false; break; }
+        }
+        if (restSafe) { slideLineIndex = i + 1; break; }
+      }
+    }
+  }
+  // 最坏落点：假设前面所有稀缺校都落空，落到第一个非稀缺位置
+  const firstNonScarce = positions.findIndex((p) => p.band !== "稀缺");
+  let worstFall: SlideResult["worstFall"] = null;
+  if (firstNonScarce >= 0) {
+    worstFall = { index: firstNonScarce + 1, name: positions[firstNonScarce].name };
+  } else {
+    worstFall = { index: positions.length + 1, name: "（无安全落点）" };
+  }
+  let note: string;
+  const scarceCount = positions.filter((p) => p.band === "稀缺").length;
+  if (slideLineIndex !== null) {
+    note = `按当前顺序，第 ${slideLineIndex} 位起相对安全；最坏情况会落到第 ${worstFall.index} 位（${worstFall.name}）。`;
+  } else {
+    note = `本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。`;
+  }
+  if (scarceCount > 0) {
+    note += ` 前段有 ${scarceCount} 所学额稀缺校，命中依赖抽签。`;
+  }
+  return { positions, slideLineIndex, worstFall, note };
+}
+
+export type OrderAdvice = {
+  suggested: SimSchool[];
+  differences: { index: number; current: string; suggested: string; why: string }[];
+  note: string;
+};
+
+// 乙部顺序建议：规则写死（乙一够得着 / 乙二守得住 / 保底在安全窗口）
+export function suggestOrder(
+  partB: SimSchool[],
+  quotaOf: (name: string) => number | null
+): OrderAdvice {
+  const filled = partB.filter((s) => s.name.trim());
+  if (filled.length === 0) {
+    return { suggested: [], differences: [], note: "乙部还没有填写志愿。" };
+  }
+  const sprint = filled.filter((s) => s.tier === "sprint");
+  const match = filled.filter((s) => s.tier === "match");
+  const safe = filled.filter((s) => s.tier === "safe");
+  const q = (s: SimSchool) => quotaOf(s.name.trim()) ?? 0;
+
+  // 冲刺：学额大的（够得着）排前
+  const sprintSorted = [...sprint].sort((a, b) => q(b) - q(a));
+  // 匹配：学额大的排前
+  const matchSorted = [...match].sort((a, b) => q(b) - q(a));
+  // 保底：学额大的排前（最稳的放最后兜底）
+  const safeSorted = [...safe].sort((a, b) => q(b) - q(a));
+
+  const total = filled.length;
+  const safeWindow = Math.max(2, Math.floor(total * 0.6)); // 保底必须在前 60% 内
+  let suggested: SimSchool[] = [];
+  // 结构：冲刺在前（至少乙一是冲刺或第一所匹配），匹配中段，保底在安全窗口
+  suggested = suggested.concat(sprintSorted, matchSorted);
+  // 把保底插入到 safeWindow 位置附近：先保证前 safeWindow 位有保底
+  const safeInsertAt = Math.min(safeWindow - 1, suggested.length);
+  if (safeSorted.length > 0) {
+    suggested = [
+      ...suggested.slice(0, safeInsertAt),
+      ...safeSorted,
+      ...suggested.slice(safeInsertAt),
+    ];
+  }
+  // 与当前顺序对比差异
+  const differences: OrderAdvice["differences"] = [];
+  const maxLen = Math.min(suggested.length, filled.length);
+  for (let i = 0; i < maxLen; i++) {
+    const cur = filled[i].name.trim();
+    const sug = suggested[i]?.name.trim();
+    if (cur !== sug) {
+      const band = quotaBand(quotaOf(cur));
+      differences.push({
+        index: i + 1,
+        current: cur,
+        suggested: sug || "（后移）",
+        why: explainWhy(suggested[i], quotaOf),
+      });
+    }
+  }
+  const note =
+    "建议原则：乙一放「最想要又够得着」的冲刺校，乙二必须守得住，保底校放在前 60% 位置内。当前顺序与建议有差异的位置已标出，可参考调整。";
+  return { suggested, differences, note };
+}
+
+function explainWhy(s: SimSchool | undefined, quotaOf: (name: string) => number | null): string {
+  if (!s) return "该位置建议放保底或匹配校。";
+  const q = quotaOf(s.name.trim());
+  const band = quotaBand(q);
+  const tierLabel = s.tier === "sprint" ? "冲刺" : s.tier === "match" ? "匹配" : "保底";
+  if (s.tier === "sprint") return `${tierLabel}校（学额${q ?? "?"}），够得着才值得冲`;
+  if (s.tier === "match") return `${tierLabel}校（学额${q ?? "?"}），守得住的中段`;
+  return `${tierLabel}校（学额${q ?? "?"}，${band}），安全垫`;
+}

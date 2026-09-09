@@ -27,6 +27,18 @@
   .cb-net{padding:5px 10px;font-size:11px;font-weight:700;color:var(--muted);background:#FBF9F5}
   .cb-item{padding:7px 10px;font-size:13px;cursor:pointer}
   .cb-item:hover{background:var(--bg)}
+  .row .idx{flex:none;width:26px;text-align:center;font-size:11px;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+  .row .mv{flex:none;width:22px;border:1px solid var(--line);background:var(--bg);border-radius:4px;cursor:pointer;font-size:11px;padding:2px 0}
+  .row .mv:disabled{opacity:.3;cursor:default}
+  .row.dragging{outline:2px solid var(--teal)}
+  .wb{flex-basis:100%;margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:12px 14px;background:#FBF9F5}
+  .wb h4{margin:0 0 6px;font-size:14px}
+  .wb p{margin:4px 0;font-size:12.5px;color:#44403C}
+  .wb .bar{display:flex;gap:3px;margin:8px 0 4px}
+  .wb .seg{flex:1;height:26px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;font-family:ui-monospace,Menlo,monospace}
+  .wb .line-note{font-size:11px;color:var(--muted)}
+  .wb ol{margin:6px 0 0;padding-left:18px}
+  .wb ol li{font-size:12.5px;margin:2px 0}
   .row input{flex:1;min-width:0}
   .row{display:flex;gap:8px;margin-bottom:8px;align-items:center}
   .row input{flex:1}
@@ -66,14 +78,15 @@
 
   <div class="card no-print">
     <h2>② 甲部志愿（全港任选，最多 3）</h2>
-    <p class="sub" style="font-size:12px;margin:0 0 10px">每行可直接输入校名搜索（支持简体/繁体），或点下拉选择</p>
+    <p class="sub" style="font-size:12px;margin:0 0 10px">可拖拽或点 ↑↓ 调顺序；每行可直接搜索校名（支持简体/繁体），或点 ▾ 下拉</p>
     <div id="partA"></div>
   </div>
 
   <div class="card no-print">
     <h2>③ 乙部志愿（校网内，本网共 <span id="bCountLabel"></span> 所）</h2>
-    <p class="sub" style="font-size:12px;margin:0 0 10px">每行可直接输入校名搜索（支持简体/繁体），或点下拉选择</p>
+    <p class="sub" style="font-size:12px;margin:0 0 10px">可拖拽或点 ↑↓ 调顺序；每行可直接搜索校名（支持简体/繁体），或点 ▾ 下拉</p>
     <div id="partB"></div>
+    <div id="workbench"></div>
     <button class="add" id="addRow">＋ 添加志愿</button>
   </div>
 
@@ -108,7 +121,7 @@ function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").repl
 var state = {net:P1.nets[0].net, rel:"", org:"", partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}], partB:[]};
 function initB(count){ for(var __i=0;__i<count;__i++){state.partB.push({name:"",tier:"match"});} }
 initB(Math.min(10, P1.nets[0].schools.length));
-function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){}}
+function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){} if(typeof renderWorkbench==="function"){renderWorkbench();}}
 function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse(raw); if(d&&d.net&&P1.nets.some(function(n){return n.net===d.net;})){state=d;}}}catch(e){}
   if(!state.rel) state.rel=""; if(!state.org) state.org="";
   while(state.partA.length<3){state.partA.push({name:"",tier:"match"});}
@@ -217,11 +230,102 @@ function schoolControl(cont,id,arr,idx){
   });
   inp.addEventListener("blur",function(){ setTimeout(function(){ pop.className="cb-pop"; },150); });
 }
+var dragIdx=null;
+function moveRow(arr,from,to){
+  if(to<0||to>=arr.length||from===to) return;
+  var it=arr.splice(from,1)[0]; arr.splice(to,0,it);
+  renderList("partB",state.partB,state.partB.length); save();
+}
+function quotaBand(q){ if(!q) return "普通"; if(q<=25) return "稀缺"; if(q<=50) return "普通"; return "充裕"; }
+function computeSlideLine(){
+  var pos=state.partB.filter(function(s){return s.name.trim();}).map(function(s){
+    var q=quotaOf(s.name.trim()); return {name:s.name.trim(), band:quotaBand(q), quota:q};
+  });
+  if(!pos.length) return {positions:[],slideLineIndex:null,worstFall:null,note:"乙部还没有填写志愿。"};
+  var line=null;
+  for(var i=0;i<pos.length;i++){
+    if(pos[i].band==="充裕"){ var ok=true; for(var j=i+1;j<pos.length;j++){ if(pos[j].band==="稀缺"){ok=false;break;} } if(ok){line=i+1;break;} }
+  }
+  if(line===null){ for(var i2=0;i2<pos.length;i2++){ if(pos[i2].band==="普通"){ var ok2=true; for(var j2=i2+1;j2<pos.length;j2++){ if(pos[j2].band==="稀缺"){ok2=false;break;} } if(ok2){line=i2+1;break;} } } }
+  var first=pos.findIndex(function(p){return p.band!=="稀缺";});
+  var worst = first>=0 ? {index:first+1,name:pos[first].name} : {index:pos.length+1,name:"（无安全落点）"};
+  var scarce=pos.filter(function(p){return p.band==="稀缺";}).length;
+  var note = line!==null ? "按当前顺序，第 "+line+" 位起相对安全；最坏情况会落到第 "+worst.index+" 位（"+worst.name+"）。" : "本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。";
+  if(scarce>0) note+=" 前段有 "+scarce+" 所学额稀缺校，命中依赖抽签。";
+  return {positions:pos,slideLineIndex:line,worstFall:worst,note:note};
+}
+function suggestOrder(){
+  var filled=state.partB.filter(function(s){return s.name.trim();});
+  if(!filled.length) return {suggested:[],differences:[],note:"乙部还没有填写志愿。"};
+  var q=function(s){return quotaOf(s.name.trim())||0;};
+  var sprint=filled.filter(function(s){return s.tier==="sprint";}).sort(function(a,b){return q(b)-q(a);});
+  var match=filled.filter(function(s){return s.tier==="match";}).sort(function(a,b){return q(b)-q(a);});
+  var safe=filled.filter(function(s){return s.tier==="safe";}).sort(function(a,b){return q(b)-q(a);});
+  var total=filled.length, win=Math.max(2,Math.floor(total*0.6));
+  var sug=sprint.concat(match);
+  if(safe.length){ var at=Math.min(win-1,sug.length); sug=sug.slice(0,at).concat(safe,sug.slice(at)); }
+  var diffs=[];
+  for(var i=0;i<Math.min(sug.length,filled.length);i++){
+    var cur=filled[i].name.trim(), sg=sug[i]?sug[i].name.trim():"（后移）";
+    if(cur!==sg){
+      var b=quotaBand(quotaOf(cur));
+      diffs.push({index:i+1,current:cur,suggested:sg,why:(sug[i]?(sug[i].tier==="sprint"?"冲刺校（学额"+q(sug[i])+"），够得着才值得冲":sug[i].tier==="match"?"匹配校（学额"+q(sug[i])+"），守得住的中段":"保底校（学额"+q(sug[i])+"，"+b+"），安全垫"):"该位置建议放保底或匹配校")});
+    }
+  }
+  return {suggested:sug,differences:diffs,note:"建议原则：乙一放「最想要又够得着」的冲刺校，乙二必须守得住，保底校放在前 60% 位置内。"};
+}
+function renderWorkbench(){
+  var wb=$("workbench"); if(!wb) return;
+  var pos=computeSlideLine(), adv=suggestOrder(), h="";
+  if(pos.positions.length){
+    h+='<div class="wb"><h4>滑档线（实时）</h4><p>'+esc(pos.note)+'</p><div class="bar">';
+    for(var i=0;i<pos.positions.length;i++){
+      var p=pos.positions[i];
+      var bg=p.band==="稀缺"?"#FDEBE7":p.band==="普通"?"#FEF3E2":"#E7F6F2";
+      var c=p.band==="稀缺"?"#C2410C":p.band==="普通"?"#B45309":"#0F766E";
+      var bd=pos.slideLineIndex===i+1?"2px solid #1C1C1C":"1px solid #E4E0D8";
+      h+='<div class="seg" style="background:'+bg+';color:'+c+';border:'+bd+'" title="'+esc(p.name)+'">'+(i+1)+'</div>';
+    }
+    h+='</div>';
+    if(pos.slideLineIndex!==null) h+='<div class="line-note">▲ 第 '+pos.slideLineIndex+' 位为滑档线</div>';
+    h+='<p class="line-note">红=学额稀缺 · 黄=普通 · 绿=充裕（相对竞争烈度，非录取概率）</p>';
+    h+='</div>';
+  }
+  if(adv.suggested.length){
+    h+='<div class="wb"><h4>顺序建议（可参考调整）</h4><ol>';
+    for(var k=0;k<adv.suggested.length;k++){
+      h+='<li>'+esc(adv.suggested[k].name)+'（'+(adv.suggested[k].tier==="sprint"?"冲刺":adv.suggested[k].tier==="match"?"匹配":"保底")+'）</li>';
+    }
+    h+='</ol>';
+    if(adv.differences.length){
+      h+='<div style="background:#FEF3E2;border-radius:6px;padding:8px 10px;margin-top:8px"><b>与当前顺序的差异：</b>';
+      for(var m=0;m<adv.differences.length;m++){
+        h+='<p>第 '+adv.differences[m].index+' 位：当前「'+esc(adv.differences[m].current)+'」→ 建议「'+esc(adv.differences[m].suggested)+'」· '+esc(adv.differences[m].why)+'</p>';
+      }
+      h+='</div>';
+    }
+    h+='<p class="line-note">'+esc(adv.note)+'</p></div>';
+  }
+  wb.innerHTML=h;
+}
 function renderList(id, arr, max){
   var box=$(id); box.innerHTML="";
-  for(var i=0;i<max;i++){
+  for(let i=0;i<max;i++){
     if(!arr[i]){arr[i]={name:"",tier:"match"};}
     var d=document.createElement("div"); d.className="row";
+    if(id==="partB"){
+      d.draggable=true;
+      (function(row,idx){
+        row.addEventListener("dragstart",function(){dragIdx=idx;row.classList.add("dragging");});
+        row.addEventListener("dragover",function(e){e.preventDefault();});
+        row.addEventListener("drop",function(){ if(dragIdx!==null&&dragIdx!==idx){moveRow(state.partB,dragIdx,idx);} dragIdx=null; });
+        row.addEventListener("dragend",function(){dragIdx=null;row.classList.remove("dragging");});
+      })(d,i);
+      var idx=document.createElement("span"); idx.className="idx"; idx.textContent=(i+1); d.appendChild(idx);
+      var up=document.createElement("button"); up.type="button"; up.className="mv"; up.textContent="↑"; up.disabled=(i===0);
+      up.addEventListener("click",function(){moveRow(state.partB,i,i-1);});
+      d.appendChild(up);
+    }
     var cont=document.createElement("div"); cont.className="schoolwrap"; d.appendChild(cont);
     schoolControl(cont,id,arr,i);
     if(id==="partB"){
@@ -231,9 +335,15 @@ function renderList(id, arr, max){
     var sel=document.createElement("div"); sel.innerHTML=tierSelect(arr[i].tier||"match"); var selEl=sel.firstChild;
     selEl.addEventListener("change",(function(idx){return function(e){arr[idx].tier=e.target.value;save();};})(i));
     d.appendChild(selEl);
+    if(id==="partB"){
+      var dn=document.createElement("button"); dn.type="button"; dn.className="mv"; dn.textContent="↓"; dn.disabled=(i>=arr.length-1);
+      dn.addEventListener("click",function(){moveRow(state.partB,i,i+1);});
+      d.appendChild(dn);
+    }
     box.appendChild(d);
   }
   save();
+  renderWorkbench();
 }
 function addRow(){
   var n=curNet().schools.length;
