@@ -148,3 +148,30 @@ curl -s "https://hkschool.guide/blog/rainstorm-class-guide" | grep -o "中学红
 ### 已撤下（不放在公开站）
 - **小红书分发**：曾做成 `/xhs` 公开页并加入导航/sitemap，后确认属运营内部工具，已从站内移除（页面 404、导航/sitemap 无残留）。
 - 素材数据保留在本地 `src/content/xhs-pack.json`（22 篇趋势文：标题/正文/话题标签），供发布时取用；不在公开站渲染。
+
+## 八、2026-09-09 决策工具 v2 打磨发布（市场研究第 1-2 项 + P2）
+
+### 本次上线内容
+
+- **两校对比**（打磨第 1 项）：全港 669 所并排对比（升中通路/学额/性别宗教/班制/学费/语言/地区/类型），免费 1 次、Pro 无限次；跨体系自动提示「直资走自行申请」
+- **底牌卡**（打磨第 2 项）：「我这点分能进吗」= 计分段位 × 学额稀缺度 → 相对竞争位置（优势明显/可冲/拼运气/基本靠抽签/偏弱/仅适龄分），标注「非录取概率」
+- **P2 数据版本与续费**：模拟器/校网库/报告标注「2027/28 版 · 更新于 2026-09」+ 下一版预告 + 旧客户优惠续新入口（复购钩子）
+- **三套预案**：叩门黄金 72h / 直资私立后手 / 注册时限红线；时间点依据教育局《小一入学统筹办法要点（2027 年 9 月入学）》官方文件（6/2-3 放榜、6/10-11 注册），逐条可核实
+- **方案存档**（Pro）：最多 3 套志愿方案，并排对比保底/滑档线/结构等级（localStorage 本机保存）
+- **传播素材**：两校对比新增「导出小红书卡片（3:4）」→ 1080×1440 PNG（Pro）
+- **志愿表抄录卡**：报告新增甲部/乙部按顺序抄录区，打印 PDF 时照着抄
+- **单文件版同步**：底牌卡 + 两校对比 + 三套预案 + 数据版本 + 抄录卡，生成脚本扩充直资/私立/国际 141 所；文件约 177KB
+
+### 本次修复
+
+- **Next.js 16 路由参数名冲突**：`/api/questions/[id]/...` 与 `/api/questions/[qid]/...` 同级动态段参数名不一致，dev/build 报 `You cannot use different slug names for the same dynamic path`；已将 `[qid]` 统一为 `[id]` 并同步路由代码。下次改动 questions API 时注意同级动态段必须同名。
+- 单文件版 runCheck 的「非派位学校提醒」检查原先被包在 `if(a1&&b1)` 内（甲一或乙一为空时漏检），已移出。
+
+### 部署后验证命令
+
+```bash
+curl -s "https://hkschool.guide/tools/p1-simulator" | grep -o "数据版本：2027/28\|方案存档 · A/B 试错"
+curl -s "https://hkschool.guide/tools/p1-simulator/report" | grep -o "三套预案\|注册时限红线"
+curl -s -X POST "https://hkschool.guide/api/questions/x/replies/x/like" -H "Content-Type: application/json" -d '{}'
+# 点赞接口路由已从 [qid] 改为 [id]，应返回业务错误（404/400）而非 500/route not found
+```

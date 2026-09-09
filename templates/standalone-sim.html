@@ -67,6 +67,9 @@
   <h1>小一派位 · 志愿结构模拟器</h1>
   <p class="sub">港学荟 · 单文件版 | 输入志愿自动体检：只查表结构，不预测录取概率</p>
   <div class="note">⚠️ 本工具不预测录取结果（统一派位含随机编号）。它只回答一个问题：你这张表有没有结构性错误。数据依据教育局 2027/28 官方名册，所有信息可核实。</div>
+  <div class="note" style="margin-top:10px;padding:10px 14px">
+    <b>数据版本：2027/28 · 更新于 2026-09</b> ｜ 下一版：2028/29（2027 年 9 月更新）。校网与学额每年 9 月随教育局新名册更新，旧客户可享优惠续新。
+  </div>
 
   <div class="card no-print">
     <h2>① 基本信息（选校网 + 勾条件，分数自动算）</h2>
@@ -81,6 +84,28 @@
     <div id="relBox"></div>
     <div id="orgBox"></div>
     <div id="scoreShow" style="margin-top:10px;padding:12px 16px;background:var(--ink);color:var(--bg);border-radius:8px;font-weight:700"></div>
+  </div>
+
+  <div class="card no-print">
+    <h2>底牌卡 · 我这点分能进吗</h2>
+    <p class="sub" style="font-size:12px;margin:0 0 10px">选一所官津学校，结合你的计分（<span id="fitScore"></span> 分）和该校学额，给出相对竞争位置。直资/私立/国际不走计分，可直接申请。</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <div id="fitCb" style="flex:1;min-width:220px"></div>
+      <button class="btn ghost" id="fitBtn" style="flex:none">分析</button>
+    </div>
+    <div id="fitResult" style="margin-top:12px"></div>
+  </div>
+
+  <div class="card no-print">
+    <h2>两校对比 · 别凭感觉选校</h2>
+    <p class="sub" style="font-size:12px;margin:0 0 10px">选两所学校并排对比：升中通路 / 学额 / 性别宗教 / 班制 / 学费 / 校网。直资/私立不参与派位，可同时申请多间。</p>
+    <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center">
+      <div id="cmpA"></div>
+      <div style="font-family:Georgia,serif;font-weight:800;color:var(--red)">VS</div>
+      <div id="cmpB"></div>
+    </div>
+    <button class="btn" id="cmpBtn" style="margin-top:10px">开始对比</button>
+    <div id="cmpResult" style="margin-top:12px"></div>
   </div>
 
   <div class="card no-print">
@@ -154,6 +179,26 @@ function quotaOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.s
 function detailOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i];}return null;}
 function genderBad(d){ if(!d||!d.gender||state.kidGender==="不限") return false; return (d.gender==="男校"&&state.kidGender==="女")||(d.gender==="女校"&&state.kidGender==="男"); }
 
+// 全港学校：官津来自教育局名册 + 直资/私立/国际来自本站整理（供底牌卡/两校对比）
+var EXTRA=(P1.extra||[]);
+var ALL=[];
+P1.nets.forEach(function(n){ n.schools.forEach(function(s){
+  ALL.push({name:s.name, simp:s.simp||s.name, typeLabel:(s.finance==="官立"?"官立":s.finance==="资助"?"资助":"官津"), net:n.net, district:"", gender:s.gender||"", religion:s.religion||"", sessions:s.sessions||[], through_train:s.through_train||"", language:s.language||"", fees:"", quota:s.quota, inRoster:true});
+});});
+EXTRA.forEach(function(x){ ALL.push({name:x.name, simp:x.simp||x.name, typeLabel:x.typeLabel, net:"", district:x.district, gender:x.gender, religion:x.religion, sessions:x.sessions, through_train:x.through_train, language:x.language, fees:x.fees, quota:null, inRoster:false}); });
+ALL.sort(function(a,b){return a.name.localeCompare(b.name,"zh-HK");});
+function detailAll(name){ name=String(name).trim(); for(var i=0;i<ALL.length;i++){ if(ALL[i].name===name) return ALL[i]; } return null; }
+
+var FIT_ARR=[{name:"",tier:"match"}];
+var CMP_A_ARR=[{name:"",tier:"match"}];
+var CMP_B_ARR=[{name:"",tier:"match"}];
+function renderExtraInputs(){
+  schoolControl($("fitCb"),"partA",FIT_ARR,0);
+  schoolControl($("cmpA"),"partA",CMP_A_ARR,0);
+  schoolControl($("cmpB"),"partA",CMP_B_ARR,0);
+  $("fitScore").textContent=calcScore();
+}
+
 function tierSelect(v){var h='<select class="tier">';for(var i=0;i<TIERS.length;i++){h+='<option value="'+TIERS[i].v+'"'+(TIERS[i].v===v?' selected':'')+'>'+TIERS[i].t+'</option>';}h+='</select>';return h;}
 
 function renderRadios(boxId,field,opts,label){
@@ -170,6 +215,7 @@ function renderRadios(boxId,field,opts,label){
 function updateScore(){
   var sc=calcScore();
   $("scoreShow").textContent="乙类计分："+sc+" 分（关系项 "+(REL_PTS[state.rel]||0)+" + 办学团体项 "+(ORG_PTS[state.org]||0)+" + 适龄 10，最高 35）";
+  var fs=$("fitScore"); if(fs){ fs.textContent=sc; }
 }
 function render(){
   var netSel=$("net"); netSel.innerHTML="";
@@ -406,6 +452,99 @@ function addRow(){
   }
 }
 
+// ===== 底牌卡：相对竞争位置（非录取概率） =====
+function assessFit(score, quota){
+  var q=quota||50, scarce=q<=25, roomy=q>50;
+  if(score>=30){
+    if(roomy) return {label:"优势明显",advice:"计分 "+score+" 分＋学额充裕（"+q+"），在这所学校处于有利位置；同分仍要抽签。",tone:"good"};
+    if(scarce) return {label:"组合强但学额紧",advice:"计分 "+score+" 分但学额仅 "+q+"，竞争烈度高，仍要抽签。",tone:"mid"};
+    return {label:"组合强",advice:"计分 "+score+" 分，处于该校申请者前列组合；同分抽签。",tone:"good"};
+  }
+  if(score===25){
+    if(roomy) return {label:"可冲",advice:"计分 "+score+" 分＋学额充裕（"+q+"），值得放前；同分抽签。",tone:"good"};
+    if(scarce) return {label:"拼运气",advice:"计分 "+score+" 分但学额仅 "+q+"，热门校同分靠抽签。",tone:"mid"};
+    return {label:"有机会",advice:"计分 "+score+" 分（校友/强关系组合），热门校竞争仍大。",tone:"mid"};
+  }
+  if(score===20){
+    if(roomy) return {label:"有机会",advice:"计分 "+score+" 分（最常见组合）但学额充裕（"+q+"），可以一试。",tone:"mid"};
+    if(scarce) return {label:"基本靠抽签",advice:"计分 "+score+" 分＋学额仅 "+q+"——最常见组合撞上最紧张学额，热门校基本靠抽签。",tone:"warn"};
+    return {label:"看运气",advice:"计分 "+score+" 分是自行分配最常见组合，热门校同分抽签。",tone:"warn"};
+  }
+  if(score===15) return {label:"偏弱",advice:"计分 "+score+" 分在自行分配阶段不占优，建议把重心放统一派位乙部。",tone:"warn"};
+  return {label:"仅适龄分",advice:"计分 "+score+" 分只有适龄基础分，自行分配基本陪跑，全力准备乙部＋叩门。",tone:"warn"};
+}
+function runFit(){
+  var name=FIT_ARR[0].name.trim();
+  if(!name) return;
+  var d=detailAll(name), h="";
+  if(!d||!d.inRoster){
+    var label=d?d.name:name, type=d?d.typeLabel:"直资/私立/国际";
+    h+='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C"><b>「'+esc(label)+'」是'+esc(type)+'学校</b>——不参与派位、不走计分，直接向学校自行申请，可同时申请多间。</div>';
+  } else {
+    var fit=assessFit(calcScore(), d.quota);
+    var tone=fit.tone==="good"?"#0F766E":fit.tone==="mid"?"#B45309":"#C2410C";
+    var bg=fit.tone==="good"?"#E7F6F2":fit.tone==="mid"?"#FEF3E2":"#FDEBE7";
+    h+='<div style="border-left:4px solid '+tone+';background:'+bg+';border-radius:8px;padding:14px 16px">';
+    h+='<div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap"><b style="font-size:18px;color:'+tone+'">'+esc(fit.label)+'</b><span style="font-size:12px;color:var(--muted)">'+esc(d.name)+' · 计分 '+calcScore()+' 分 · 学额 '+(d.quota||"—")+'</span></div>';
+    h+='<p style="margin:8px 0 0;font-size:13px">'+esc(fit.advice)+'</p>';
+    h+='<p style="margin:6px 0 0;font-size:11px;color:var(--muted)">ⓘ 本卡为相对竞争位置（计分段位 × 学额稀缺度），非录取概率；同分一律抽签，数据依据教育局 2027/28 名册。</p>';
+    h+='</div>';
+  }
+  $("fitResult").innerHTML=h;
+}
+
+// ===== 两校对比 =====
+function cmpRowHtml(label, av, bv){
+  return '<div style="display:flex;border-bottom:1px solid var(--line)"><div style="width:104px;flex:none;padding:8px 10px;font-size:12px;color:var(--muted);background:#FBF9F5">'+esc(label)+'</div><div style="flex:1;padding:8px 10px;font-size:13px">'+(av||"—")+'</div><div style="flex:1;padding:8px 10px;font-size:13px">'+(bv||"—")+'</div></div>';
+}
+function runCmp(){
+  var na=CMP_A_ARR[0].name.trim(), nb=CMP_B_ARR[0].name.trim();
+  if(!na||!nb||na===nb) return;
+  var a=detailAll(na), b=detailAll(nb);
+  var h='<div style="border:2px solid var(--ink);border-radius:10px;background:#fff;overflow:hidden">';
+  h+='<div style="display:flex;justify-content:space-between;padding:10px 12px;border-bottom:1px solid var(--line)"><b>港学荟 · 两校对比</b><span style="font-size:11px;color:var(--muted)">hkschool.guide · 2027/28</span></div>';
+  h+='<div style="display:flex;border-bottom:1px solid var(--line)"><div style="width:104px;flex:none"></div><div style="flex:1;padding:10px;text-align:center;font-weight:800">'+(a?esc(a.name):esc(na))+'</div><div style="flex:1;padding:10px;text-align:center;font-weight:800">'+(b?esc(b.name):esc(nb))+'</div></div>';
+  h+=cmpRowHtml("学校类型", a?esc(a.typeLabel):"—", b?esc(b.typeLabel):"—");
+  h+=cmpRowHtml("校网", a&&a.net?a.net+" 网":"不限校网", b&&b.net?b.net+" 网":"不限校网");
+  h+=cmpRowHtml("地区", a?esc(a.district||"—"):"—", b?esc(b.district||"—"):"—");
+  h+=cmpRowHtml("性别", a?esc(a.gender||"—"):"—", b?esc(b.gender||"—"):"—");
+  h+=cmpRowHtml("宗教", a?esc(a.religion||"—"):"—", b?esc(b.religion||"—"):"—");
+  h+=cmpRowHtml("班制", a&&a.sessions.length?a.sessions.join("/"):"—", b&&b.sessions.length?b.sessions.join("/"):"—");
+  h+=cmpRowHtml("升中通路", a?esc(a.through_train||"无公开关系"):"—", b?esc(b.through_train||"无公开关系"):"—");
+  h+=cmpRowHtml("教学语言", a?esc(a.language||"—"):"—", b?esc(b.language||"—"):"—");
+  h+=cmpRowHtml("学费", a?esc(a.fees||(a.inRoster?"免费（官津）":"见官网")):"—", b?esc(b.fees||(b.inRoster?"免费（官津）":"见官网")):"—");
+  h+=cmpRowHtml("自行分配学额", a&&a.quota?a.quota+" 个":"不参与派位", b&&b.quota?b.quota+" 个":"不参与派位");
+  h+='</div>';
+  var tip="";
+  if((a&&!a.inRoster)||(b&&!b.inRoster)){ tip="提示：不参与派位的学校（直资/私立/国际）走自行申请，不限校网，可同时申请多间。"; }
+  else if(a&&b){ tip="提示：两所均为官津，比较重点看升中通路与学额稀缺度；志愿顺序按家庭真实意愿排。"; }
+  if(tip) h+='<p style="margin:8px 2px;font-size:12px;color:var(--muted)">'+tip+'</p>';
+  $("cmpResult").innerHTML=h;
+}
+
+// ===== 三套预案（时间点来自教育局官方文件） =====
+function buildContingency(knock){
+  var targets=knock.filter(function(k){return k.name!=="（先补保底校）";}).map(function(k){return k.name;});
+  var targetText=targets.length?targets.slice(0,3).join("、"):"你心仪的学校";
+  return [
+    {id:"knock",title:"叩门黄金 72 小时",timeline:[
+      {when:"放榜日（2027-06-02/03）",action:"第一时间确认结果：邮寄／小一入学电子平台／SMS，任何渠道先看到先行动。"},
+      {when:"放榜后 72 小时内",action:"向目标校递信："+targetText+"。电话确认收信方式后亲赴或速递，别等「通知」。「先到先处理」是叩门的普遍规则。"},
+      {when:"注册限期前",action:"若已获派不理想的学校，先照常注册保底，再继续叩门——注册不等于放弃叩门，放弃叩门才是放弃机会。"}
+    ],tips:["材料一份备齐：出生证明、住址证明、成绩表、奖项证明、自荐信（含为什么选这所、孩子的亮点）","叩门目标 2–3 所即可，优先 1-1-1 学校（自行/甲一/乙一同校，诚意最足）"],source:"教育局《小一入学统筹办法要点（二○二七年九月小一入学）》：统一派位结果 2027-06-02 至 06-03 派递，06-10 至 06-11 注册"},
+    {id:"dss",title:"直资／私立后手",timeline:[
+      {when:"派位前（每年 9–11 月）",action:"直资/私立小一不参与派位，须自行向学校申请；2027/28 学年直资报名多集中于 2026 年 9–11 月，逐校官网核对。"},
+      {when:"派位后（4–6 月插班季）",action:"若派位不理想，关注目标直资/私立学校的插班申请窗口（各校自定，多在 4–6 月），可同步准备。"},
+      {when:"接受学位前",action:"红线：接受直资小一学位后，将不能透过派位获派学位；已获派位也会被取消——接受前先想清楚。"}
+    ],tips:["直资/私立可同时申请多间，不受校网限制，是「网外后手」的主力","部分私立允许继续参加派位，但须按学校要求申报；接受直资学位则彻底退出派位"],source:"教育局《小一入学统筹办法要点》：直资、私立及英基小一不在此办法之内，家长可自行向学校申请"},
+    {id:"register",title:"注册时限红线",timeline:[
+      {when:"自行分配获录取",action:"于学校公布的指定日期内到校注册；逾期办理注册，视为放弃自行分配学位。"},
+      {when:"统一派位（2027-06-10/11）",action:"须于 2027 年 6 月 10 日至 11 日的学校办公时间内，前往获派小学办理注册手续；逾期视为放弃。"},
+      {when:"放弃学位的后果",action:"学位将拨作他用，且不会因「后悔」恢复；注册是单行道，先保住一个学位再谈叩门。"}
+    ],tips:["把 6/10–6/11 两个日期提前写进日历，并设 6/9 提醒——逾期放弃是最冤的失误","注册当天带齐：派位结果信、子女身份证明、住址证明（各校要求略有差异，提前电话确认）"],source:"教育局《小一入学统筹办法要点（二○二七年九月小一入学）》：家长须于 2027-06-10 至 06-11 的学校办公时间内办理注册"}
+  ];
+}
+
 function runCheck(){
   var partA=state.partA.filter(function(s){return s.name.trim();});
   var partB=state.partB.filter(function(s){return s.name.trim();});
@@ -447,9 +586,9 @@ function runCheck(){
   if(a1&&b1){
     if(a1===b1){checks.push({t:"1-1-1 诚意矩阵",s:"pass",d:"甲一与乙一都是「"+a1+"」，一致性形成叩门诚意筹码。"});}
     else{checks.push({t:"1-1-1 诚意矩阵",s:"warn",d:"甲一「"+a1+"」与乙一「"+b1+"」不是同一所。",f:"目标校在网内建议甲一乙一统一；在网外本条不适用。"});}
+  }
   var outOfRoster=(function(){var all={};P1.nets.forEach(function(n){n.schools.forEach(function(s){all[s.name]=1;});});var arr=partA.concat(partB);for(var i=0;i<arr.length;i++){if(arr[i].name.trim()&&!all[arr[i].name.trim()]){return arr[i].name.trim();}}return null;})();
   if(outOfRoster){checks.push({t:"非派位学校提醒",s:"warn",d:"「"+outOfRoster+"」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。",f:"把该学校放到自行申请清单（可同时申请多间直资/私立）。"});}
-  }
   if(b1&&partB[0].tier==="sprint"&&score<=20){checks.push({t:"乙一撞热门预警",s:"warn",d:"乙一「"+b1+"」是冲刺档，计分仅 "+score+" 分，同分靠抽签。",f:"乙一保留心仪校，乙二务必「守得住」。"});}
   else{checks.push({t:"乙一撞热门预警",s:"pass",d:"乙一没有明显撞车风险。"});}
   var b2=partB[1]?partB[1].name.trim():"";
@@ -469,6 +608,14 @@ function runCheck(){
 
   var h='<div class="grade" style="border-left-color:'+(grade==="A"?"#0F766E":grade==="B"?"#B45309":"#C2410C")+'">';
   h+='<div class="g">'+grade+'</div><div><b style="font-size:18px">'+esc(gl)+'</b><p style="font-size:13px;color:var(--muted)">乙类计分 '+score+' 分 · 甲部 '+partA.length+'/3 · 乙部 '+total+'/30 · 冲刺 '+sprint+' · 匹配 '+match+' · 保底 '+safe+'</p></div></div>';
+  h+='<div class="card"><h2>志愿表抄录卡（交表时照着抄）</h2>';
+  h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">';
+  h+='<div><b style="font-size:12px;color:var(--muted)">甲部（全港任选 · 最多 3）</b><ul class="suggest">';
+  partA.forEach(function(s,i){h+='<li>甲'+(i+1)+'：'+esc(s.name.trim()||"（空）")+'</li>';});
+  h+='</ul></div>';
+  h+='<div><b style="font-size:12px;color:var(--muted)">乙部（校网内 · 按顺序填）</b><ul class="suggest">';
+  partB.forEach(function(s,i){h+='<li>乙'+(i+1)+'：'+esc(s.name.trim())+(s.tier==="sprint"?"（冲刺）":s.tier==="match"?"（匹配）":"（保底）")+'</li>';});
+  h+='</ul></div></div></div>';
   h+='<div class="card"><h2>检查明细</h2>';
   checks.forEach(function(c){
     var tag=c.s==="pass"?"通过":c.s==="warn"?"需注意":"错误";
@@ -479,12 +626,22 @@ function runCheck(){
   h+='<div class="card"><h2>修改建议</h2><ul class="suggest">';
   sugg.forEach(function(x){h+='<li>'+esc(x)+'</li>';});
   h+='</ul></div>';
-  h+='<div class="card"><h2>叩门预案（派位不理想时）</h2><ul class="suggest">';
-  var knock=partB.filter(function(s){return s.tier==="match"||s.tier==="safe";}).slice(0,3);
-  if(knock.length){knock.forEach(function(s){h+='<li><b>'+esc(s.name)+'</b> - '+(s.tier==="safe"?"保底档，叩门命中面相对大":"匹配档，叩门目标性价比高")+'</li>';});}
-  else{h+='<li>（先补保底校）没有可用的匹配 / 保底校，叩门预案无从谈起。</li>';}
-  h+='<li>材料提前备好：出生证明 · 住址证明 · 成绩表 · 奖项 · 自荐信；放榜后立即行动。</li>';
-  h+='</ul></div>';
+  h+='<div class="card"><h2>三套预案（按时间轴行动）</h2>';
+  var knock=partB.filter(function(s){return s.tier==="match"||s.tier==="safe";}).slice(0,3).map(function(s){return {name:s.name, reason:s.tier==="safe"?"保底档，叩门命中面相对大":"匹配档，叩门目标性价比高"};});
+  if(!knock.length){knock.push({name:"（先补保底校）",reason:"没有可用的匹配 / 保底校，叩门预案无从谈起"});}
+  buildContingency(knock).forEach(function(p){
+    h+='<div style="border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:10px">';
+    h+='<b>'+esc(p.title)+'</b>';
+    h+='<ul class="suggest">';
+    p.timeline.forEach(function(t){ h+='<li><b>'+esc(t.when)+'</b>：'+esc(t.action)+'</li>'; });
+    h+='</ul>';
+    h+='<ul class="suggest" style="font-size:12px;color:var(--muted)">';
+    p.tips.forEach(function(x){ h+='<li>'+esc(x)+'</li>'; });
+    h+='</ul>';
+    h+='<p style="font-size:11px;color:var(--muted);margin-top:6px">出处：'+esc(p.source)+'</p>';
+    h+='</div>';
+  });
+  h+='</div>';
   h+='<div class="foot">体检完成时间：'+new Date().toLocaleString("zh-HK",{timeZone:"Asia/Hong_Kong"})+' | 仅作结构自查，不构成入学建议</div>';
   $("result").innerHTML=h;
   $("result").scrollIntoView({behavior:"smooth",block:"start"});
@@ -500,12 +657,14 @@ $("net").addEventListener("change",function(e){
 $("addRow").addEventListener("click",addRow);
 $("runBtn").addEventListener("click",runCheck);
 $("printBtn").addEventListener("click",function(){window.print();});
+$("fitBtn").addEventListener("click",runFit);
+$("cmpBtn").addEventListener("click",runCmp);
 $("resetBtn").addEventListener("click",function(){if(confirm("确定清空重填？")){
   state={net:state.net,rel:"",org:"",partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}],partB:[]};
   initB(Math.min(10, curNet().schools.length));
   render();$("result").innerHTML="";save();}});
 
-load();render();
+load();render();renderExtraInputs();
 </script>
 </body>
 </html>

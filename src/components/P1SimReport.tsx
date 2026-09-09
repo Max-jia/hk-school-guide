@@ -3,8 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import DataVersionBadge from "@/components/DataVersionBadge";
 import { toPng } from "html-to-image";
 import { runSimCheck, type SimInput } from "@/lib/sim-engine";
+import { buildContingency } from "@/lib/sim-engine";
+import { DATA_LABEL, DATA_VERSION, DATA_UPDATED_AT } from "@/lib/data-version";
 import p1NetsJson from "@/content/p1-nets.json";
 
 const LOCK_KEY = "purchased_p1-sim";
@@ -37,6 +40,7 @@ export default function P1SimReport() {
     const netCount = n ? Math.min(30, n.schools.length) : 30;
     return runSimCheck({ ...input, netSchoolCount: netCount });
   }, [input, P1]);
+  const contingency = useMemo(() => (report ? buildContingency(report.knockList) : null), [report]);
 
   function buy() {
     setBuying(true);
@@ -108,7 +112,7 @@ export default function P1SimReport() {
             <p className="text-4xl">🔒</p>
             <h2 className="mt-3 font-serif text-2xl font-bold text-[var(--p-fg)]">这份报告还没解锁</h2>
             <p className="mx-auto mt-2 max-w-[420px] text-sm text-[var(--p-secondary)]">
-              完整体检报告包含风险等级（A/B/C）、8 项结构检查明细、修改建议和叩门预案清单，
+              完整体检报告包含风险等级（A/B/C）、8 项结构检查明细、修改建议和三套预案（叩门 72h／直资私立后手／注册时限），
               可保存为一页 PDF。
             </p>
             <button
@@ -143,7 +147,7 @@ export default function P1SimReport() {
               {/* 头部 */}
               <div className="flex items-baseline justify-between border-b-2 border-[#1C1C1C] pb-3">
                 <span className="font-serif text-xl font-bold text-[#1C1C1C]">港学荟 · 志愿结构体检报告</span>
-                <span className="font-mono text-xs text-[#57534E]">Pro 模拟器 · {report.generatedAt}</span>
+                <span className="font-mono text-xs text-[#57534E]">Pro 模拟器 · 数据 {DATA_LABEL}</span>
               </div>
 
               {/* 输入摘要 */}
@@ -153,6 +157,36 @@ export default function P1SimReport() {
                 <span>甲部：{report.partACount}/3</span>
                 <span>乙部：{report.partBCount}/{report.targetB}</span>
                 <span>结构：冲刺 {report.sprint} · 匹配 {report.match} · 保底 {report.safe}</span>
+              </div>
+
+              {/* 志愿表抄录卡（交表时照着抄） */}
+              <div className="mt-5 rounded-[10px] border border-[#E4E0D8] p-4">
+                <p className="font-serif text-base font-bold text-[#1C1C1C]">志愿表抄录卡（交表时照着抄）</p>
+                <div className="mt-2 grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <p className="font-mono text-xs font-bold text-[#57534E]">甲部（全港任选 · 最多 3）</p>
+                    <ol className="m-0 mt-1 list-none space-y-1 p-0 text-sm">
+                      {input.partA.map((s, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="w-5 shrink-0 font-mono text-xs text-[#8A8378]">甲{i + 1}</span>
+                          <span className="text-[#1C1C1C]">{s.name.trim() || "（空）"}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                  <div>
+                    <p className="font-mono text-xs font-bold text-[#57534E]">乙部（校网内 · 按顺序填）</p>
+                    <ol className="m-0 mt-1 list-none space-y-1 p-0 text-sm">
+                      {input.partB.filter((s) => s.name.trim()).map((s, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="w-5 shrink-0 font-mono text-xs text-[#8A8378]">乙{i + 1}</span>
+                          <span className="text-[#1C1C1C]">{s.name}</span>
+                          <span className="text-[#8A8378]">（{s.tier === "sprint" ? "冲刺" : s.tier === "match" ? "匹配" : "保底"}）</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
               </div>
 
               {/* 风险等级 */}
@@ -204,27 +238,34 @@ export default function P1SimReport() {
                 ))}
               </ol>
 
-              {/* 叩门预案 */}
-              <h3 className="mt-6 font-serif text-lg font-bold text-[#1C1C1C]">叩门预案（派位结果不理想时用）</h3>
-              <ul className="m-0 mt-2 list-none space-y-1 p-0 text-sm">
-                {report.knockList.map((k, i) => (
-                  <li key={i}>
-                    <strong className="text-[#1C1C1C]">{k.name}</strong>
-                    <span className="text-[#57534E]"> — {k.reason}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-3 rounded-[8px] bg-[#FBF9F5] px-4 py-3 text-sm text-[#57534E]">
-                <p className="font-bold text-[#1C1C1C]">叩门材料提前备好：</p>
-                <p className="mt-1">出生证明 · 住址证明 · 成绩表 · 奖项证明 · 自荐信（附模板）</p>
-                <p className="mt-1">时间：放榜（6 月初）后立即行动，别等通知。</p>
-              </div>
+              {/* 三套预案 */}
+              <h3 className="mt-6 font-serif text-lg font-bold text-[#1C1C1C]">三套预案（按时间轴行动）</h3>
+              {contingency?.map((p) => (
+                <div key={p.id} className="mt-4 rounded-[10px] border border-[#E4E0D8] p-4">
+                  <p className="font-bold text-[#1C1C1C]">{p.title}</p>
+                  <ul className="m-0 mt-2 list-none space-y-1.5 p-0 text-sm">
+                    {p.timeline.map((t, i) => (
+                      <li key={i} className="flex gap-2">
+                        <span className="shrink-0 font-mono text-xs font-bold text-[#57534E]">{t.when}</span>
+                        <span className="text-[#44403C]">{t.action}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <ul className="m-0 mt-2 list-disc pl-5 text-sm text-[#57534E]">
+                    {p.tips.map((tip, i) => (
+                      <li key={i}>{tip}</li>
+                    ))}
+                  </ul>
+                  <p className="mt-2 text-[11px] leading-relaxed text-[#8A8378]">出处：{p.source}</p>
+                </div>
+              ))}
 
               {/* 页脚 */}
               <div className="mt-6 border-t border-[#E4E0D8] pt-3 text-xs leading-relaxed text-[#8A8378]">
-                依据：教育局 2027/28《小一入学统筹办法》及官方校网名册 · 本报告仅作结构自查，不构成入学建议、不预测录取结果
+                依据：教育局 {DATA_VERSION}《小一入学统筹办法》及官方校网名册（更新于 {DATA_UPDATED_AT}）
+                · 本报告仅作结构自查，不构成入学建议、不预测录取结果
                 <br />
-                港学荟 hkschool.guide · 生成于 {report.generatedAt}
+                港学荟 hkschool.guide · 生成于 {report.generatedAt} · 每年 9 月随新名册更新
               </div>
             </div>
           </div>

@@ -7,8 +7,10 @@ import p1NetsJson from "@/content/p1-nets.json";
 import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
 import SchoolCompare from "@/components/SchoolCompare";
 import SchoolFitCard from "@/components/SchoolFitCard";
+import DataVersionBadge from "@/components/DataVersionBadge";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
-import { computeSlideLine, suggestOrder } from "@/lib/sim-engine";
+import { computeSlideLine, suggestOrder, runSimCheck } from "@/lib/sim-engine";
+import { RENEW_NOTE } from "@/lib/data-version";
 
 const P1 = p1NetsJson as {
   nets: {
@@ -50,6 +52,21 @@ const INIT_NET = P1.nets[0].net;
 const INIT_B_COUNT = Math.min(10, P1.nets[0].schools.length);
 const EMPTY_B: SimSchool[] = Array.from({ length: INIT_B_COUNT }, () => ({ name: "", tier: "match" }));
 
+type SavedPlan = {
+  id: string;
+  name: string;
+  savedAt: string;
+  net: string;
+  rel: string;
+  org: string;
+  kidGender: string;
+  partA: SimSchool[];
+  partB: SimSchool[];
+};
+
+const PLANS_KEY = "p1sim_plans";
+const PLAN_SLOTS = ["方案 A", "方案 B", "方案 C"];
+
 export default function P1Simulator() {
   const [net, setNet] = useState(INIT_NET);
   const [rel, setRel] = useState("");
@@ -61,6 +78,8 @@ export default function P1Simulator() {
   const [buying, setBuying] = useState(false);
   const [savedTip, setSavedTip] = useState(false);
   const [dragIdx, setDragIdx] = useState<number | null>(null);
+  const [plans, setPlans] = useState<SavedPlan[]>([]);
+  const [planTip, setPlanTip] = useState("");
 
   const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const out: SchoolOpt[] = [];
@@ -105,8 +124,12 @@ export default function P1Simulator() {
         if (d.partA) setPartA(d.partA);
         if (d.partB) setPartB(d.partB);
       }
-    } catch { /* ignore */ }
-  }, []);
+      } catch { /* ignore */ }
+      try {
+        const pRaw = localStorage.getItem(PLANS_KEY);
+        if (pRaw) setPlans(JSON.parse(pRaw) as SavedPlan[]);
+      } catch { /* ignore */ }
+    }, []);
 
   const filledB = partB.filter((s) => s.name.trim());
   const bCount = filledB.length;
@@ -191,6 +214,73 @@ export default function P1Simulator() {
       .finally(() => setBuying(false));
   }
 
+  function quotaOfAny(netName: string, schoolName: string): number | null {
+    const n = P1.nets.find((x) => x.net === netName);
+    const sc = n?.schools.find((s) => s.name === schoolName.trim());
+    return sc?.quota ?? null;
+  }
+
+  function planMetrics(plan: SavedPlan) {
+    const n = P1.nets.find((x) => x.net === plan.net);
+    const netCount = n ? Math.min(30, n.schools.length) : 30;
+    const rep = runSimCheck({
+      net: plan.net,
+      score: calcScore(plan.rel, plan.org),
+      partA: plan.partA,
+      partB: plan.partB,
+      netSchoolCount: netCount,
+    });
+    const slide = computeSlideLine(
+      plan.partB.filter((s) => s.name.trim()),
+      (nm) => quotaOfAny(plan.net, nm)
+    );
+    return { rep, slide };
+  }
+
+  function savePlan() {
+    const used = new Set(plans.map((p) => p.name));
+    const slot = PLAN_SLOTS.find((n) => !used.has(n));
+    if (!slot) {
+      setPlanTip("最多保存 3 套方案，先删除一套再保存。");
+      return;
+    }
+    const plan: SavedPlan = {
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+      name: slot,
+      savedAt: new Date().toLocaleString("zh-HK", { timeZone: "Asia/Hong_Kong" }),
+      net,
+      rel,
+      org,
+      kidGender,
+      partA,
+      partB,
+    };
+    const next = [...plans, plan];
+    setPlans(next);
+    try { localStorage.setItem(PLANS_KEY, JSON.stringify(next)); } catch { /* ignore */ }
+    setPlanTip(`已保存「${slot}」`);
+    setTimeout(() => setPlanTip(""), 1800);
+  }
+
+  function restorePlan(id: string) {
+    const p = plans.find((x) => x.id === id);
+    if (!p) return;
+    setNet(p.net);
+    setRel(p.rel);
+    setOrg(p.org);
+    setKidGender(p.kidGender);
+    setPartA(p.partA);
+    setPartB(p.partB);
+    setPlanTip(`已载入「${p.name}」，可继续调整`);
+    setTimeout(() => setPlanTip(""), 2000);
+  }
+
+  function deletePlan(id: string) {
+    const next = plans.filter((p) => p.id !== id);
+    setPlans(next);
+    try { localStorage.setItem(PLANS_KEY, JSON.stringify(next)); } catch { /* ignore */ }
+  }
+
   const inputCls =
     "w-full rounded-[6px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] px-3 py-2 text-sm text-[var(--p-fg)] outline-none";
   const tierCls =
@@ -211,6 +301,7 @@ export default function P1Simulator() {
           <p className="mt-3 rounded-[8px] border-l-4 border-[var(--p-hl-yellow-border)] bg-[var(--p-hl-yellow-bg)] px-4 py-3 text-sm text-[var(--p-fg)]">
             ⚠️ 我们不预测录取概率（随机编号不可模拟）。这个模拟器只回答一个问题：<strong>你这张表，有没有结构性错误。</strong>
           </p>
+          <DataVersionBadge />
         </div>
 
         {/* 第一步：校网与计分 */}
@@ -529,13 +620,125 @@ export default function P1Simulator() {
 
         <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} />
 
+        {/* 方案存档（Pro）：多套顺序 A/B 试错 */}
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+          <div className="flex items-center gap-2">
+            <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">方案存档 · A/B 试错</h2>
+            {!unlocked && (
+              <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>
+            )}
+          </div>
+          <p className="mt-1 text-sm text-[var(--p-secondary)]">
+            最多存 3 套志愿方案（不同校网/顺序/保底配置），并排对比每套的保底位置、滑档线和结构等级——调表前先看差异，不再凭感觉改。
+          </p>
+
+          {unlocked && (
+            <div className="mt-4">
+              <div className="flex flex-wrap items-center gap-3">
+                <button
+                  onClick={savePlan}
+                  className="rounded-[8px] bg-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-bg)]"
+                >
+                  保存当前为方案
+                </button>
+                {planTip && <span className="text-sm text-[var(--p-hl-border)]">{planTip}</span>}
+              </div>
+
+              {plans.length === 0 && (
+                <p className="mt-4 rounded-[8px] bg-[var(--p-bg)] px-4 py-3 text-sm text-[var(--p-secondary)]">
+                  还没有保存的方案。先调好一套顺序（比如「全热门」），存为方案 A；再改成「保底前移」，存为方案 B，对比两套的滑档线差异。
+                </p>
+              )}
+
+              {plans.length > 0 && (
+                <div className="mt-4 overflow-x-auto">
+                  <table className="w-full border-collapse text-sm">
+                    <thead>
+                      <tr className="border-b border-[var(--p-gray-300)] text-left">
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">方案</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">校网</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">乙部</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">保底</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">冲刺</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">滑档线</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">最坏落点</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">等级</th>
+                        <th className="py-2 font-mono text-xs text-[var(--p-secondary)]">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {plans.map((p) => {
+                        const { rep, slide } = planMetrics(p);
+                        const gColor = rep.grade === "A" ? "#0F766E" : rep.grade === "B" ? "#B45309" : "#C2410C";
+                        return (
+                          <tr key={p.id} className="border-b border-[var(--p-gray-300)]">
+                            <td className="py-2 pr-3 font-bold text-[var(--p-fg)]">{p.name}</td>
+                            <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">{p.net}</td>
+                            <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">{rep.partBCount}/{rep.targetB}</td>
+                            <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">{rep.safe}</td>
+                            <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">{rep.sprint}</td>
+                            <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">
+                              {slide.slideLineIndex ? `第 ${slide.slideLineIndex} 位` : "—"}
+                            </td>
+                            <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">
+                              {slide.worstFall ? `${slide.worstFall.index} · ${slide.worstFall.name}` : "—"}
+                            </td>
+                            <td className="py-2 pr-3">
+                              <span className="rounded px-2 py-0.5 font-mono text-xs font-bold" style={{ color: gColor, background: gColor + "14" }}>
+                                {rep.grade}
+                              </span>
+                            </td>
+                            <td className="py-2">
+                              <div className="flex gap-2">
+                                <button onClick={() => restorePlan(p.id)} className="rounded border border-[var(--p-gray-300)] px-2 py-1 text-xs text-[var(--p-fg)]">
+                                  载入
+                                </button>
+                                <button onClick={() => deletePlan(p.id)} className="rounded border border-[#FDEBE7] bg-[#FDEBE7] px-2 py-1 text-xs text-[#C2410C]">
+                                  删除
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+              <p className="mt-3 text-xs text-[var(--p-secondary)]">
+                方案只保存在你自己的浏览器（localStorage），换设备或清缓存会丢失；等级为「结构等级」，非录取概率。
+              </p>
+            </div>
+          )}
+
+          {!unlocked && (
+            <div className="relative mt-4">
+              <div className="rounded-[10px] border border-dashed border-[var(--p-gray-300)] bg-[var(--p-bg)] px-4 py-6 text-center text-sm text-[var(--p-secondary)]">
+                解锁后可保存 3 套方案并排对比（保底位置 / 滑档线 / 结构等级）
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center rounded-[10px] bg-[rgba(255,255,255,.82)]">
+                <div className="rounded-[10px] bg-[#FEF3E2] px-6 py-4 text-center text-[#B45309]">
+                  <p className="font-bold">方案存档是 Pro 功能</p>
+                  <button
+                    onClick={buy}
+                    disabled={buying}
+                    className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-5 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
+                  >
+                    {buying ? "正在前往支付…" : "解锁方案存档 · HK$68"}
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </section>
+
         {/* 付费墙 */}
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
           <div className="flex flex-wrap items-center gap-4">
             <div className="min-w-0 flex-1">
-              <h2 className="font-serif text-xl font-bold text-[var(--p-fg)]">完整体检报告（Pro）</h2>
-              <p className="mt-1 text-sm text-[var(--p-secondary)]">
-                风险等级（A/B/C）＋ 8 项结构检查明细 ＋ 修改建议 ＋ 叩门预案清单，可保存为一页 PDF。
+          <h2 className="font-serif text-xl font-bold text-[var(--p-fg)]">完整体检报告（Pro）</h2>
+          <p className="mt-1 text-sm text-[var(--p-secondary)]">
+                风险等级（A/B/C）＋ 8 项结构检查明细 ＋ 修改建议 ＋ 三套预案（叩门 72h／直资私立后手／注册时限），可保存为一页 PDF。
               </p>
               <p className="mt-2 font-mono text-sm">
                 <span className="text-2xl font-bold text-[var(--p-fg)]">HK$68</span>
@@ -567,6 +770,9 @@ export default function P1Simulator() {
           </div>
           <p className="mt-4 text-sm text-[var(--p-secondary)]">
             已有兑换码？<a className="underline" href="/redeem">去兑换 →</a>
+          </p>
+          <p className="mt-2 rounded-[8px] bg-[var(--p-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
+            {RENEW_NOTE}
           </p>
         </section>
 

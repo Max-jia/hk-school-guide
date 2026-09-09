@@ -3,8 +3,8 @@ import { likeReply } from "@/lib/qa-store";
 
 export const dynamic = "force-dynamic";
 
-export async function POST(req: NextRequest, { params }: { params: Promise<{ qid: string; rid: string }> }) {
-  const { qid, rid } = await params;
+export async function POST(req: NextRequest, { params }: { params: Promise<{ id: string; rid: string }> }) {
+  const { id: qid, rid } = await params;
   let body: { deviceId?: string };
   try {
     body = await req.json();

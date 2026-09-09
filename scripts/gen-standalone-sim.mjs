@@ -7,6 +7,7 @@ import { Converter } from "opencc-js";
 const ROOT = process.cwd();
 const template = fs.readFileSync(path.join(ROOT, "templates/standalone-sim.html"), "utf8");
 const p1 = JSON.parse(fs.readFileSync(path.join(ROOT, "src/content/p1-nets.json"), "utf8"));
+const schools = JSON.parse(fs.readFileSync(path.join(ROOT, "src/content/schools.json"), "utf8"));
 
 // 精简数据：36 网 + 校名/学额
 const toSimp = Converter({ from: "hk", to: "cn" });
@@ -21,11 +22,34 @@ const data = {
       language: s.language || "",
     })),
   })),
+  extra: schools
+    .filter((s) => s.finance_type !== "官立" && s.finance_type !== "资助")
+    .map((s) => ({
+      name: s.name_display || s.name_zh,
+      simp: toSimp(s.name_display || s.name_zh),
+      typeLabel: typeLabelOf(s.finance_type),
+      district: s.district_zh || "",
+      gender: s.gender || "",
+      religion: s.religion_zh || "",
+      sessions: s.sessions || [],
+      through_train: s.through_train || "",
+      language: s.teaching_language || "",
+      fees: s.fees || "",
+      quota: null,
+    })),
 };
 
-const out = template.replace("__P1_DATA__", JSON.stringify(data));
+function typeLabelOf(f) {
+  if (f === "直资") return "直资";
+  if (f === "私立") return "私立";
+  if (f === "英基" || (f || "").toUpperCase().includes("PRIVATE INDEPENDENT")) return "国际";
+  return f || "—";
+}
+
+const out = template
+  .replace("__P1_DATA__", JSON.stringify(data));
 const dir = path.join(ROOT, "output/standalone");
 fs.mkdirSync(dir, { recursive: true });
 const file = path.join(dir, "小一派位模拟器.html");
 fs.writeFileSync(file, out, "utf8");
-console.log("OK:", file, "|", Math.round(out.length / 1024) + "KB", "| 校数:", data.nets.reduce((a, n) => a + n.schools.length, 0));
+console.log("OK:", file, "|", Math.round(out.length / 1024) + "KB", "| 官津:", data.nets.reduce((a, n) => a + n.schools.length, 0), "| 直资/私立/国际:", data.extra.length);

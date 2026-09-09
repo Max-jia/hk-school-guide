@@ -55,6 +55,8 @@ export default function SchoolCompare({
   const [b, setB] = useState("");
   const [count, setCount] = useState(0);
   const cardRef = useRef<HTMLDivElement>(null);
+  const xhsRef = useRef<HTMLDivElement>(null);
+  const [exporting, setExporting] = useState(false);
 
   const options = useMemo<CompareSchool[]>(() => {
     const map = new Map<string, CompareSchool>();
@@ -118,6 +120,20 @@ export default function SchoolCompare({
     } catch { /* ignore */ }
   }
 
+  async function downloadXhs() {
+    const node = xhsRef.current;
+    if (!node) return;
+    setExporting(true);
+    try {
+      const dataUrl = await toPng(node, { pixelRatio: 2, cacheBust: true });
+      const link = document.createElement("a");
+      link.download = "港学荟-两校对比-小红书卡片.png";
+      link.href = dataUrl;
+      link.click();
+    } catch { /* ignore */ }
+    setExporting(false);
+  }
+
   function row(label: string, av: string, bv: string) {
     return (
       <tr className="border-b border-[var(--p-gray-300)]">
@@ -155,9 +171,14 @@ export default function SchoolCompare({
           {locked ? "已用免费次数 · 解锁后继续" : "开始对比"}
         </button>
         {unlocked && canCompare && (
-          <button onClick={download} className="rounded-[8px] border border-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-fg)]">
-            下载对比图
-          </button>
+          <>
+            <button onClick={download} className="rounded-[8px] border border-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-fg)]">
+              下载对比图
+            </button>
+            <button onClick={downloadXhs} disabled={exporting} className="rounded-[8px] bg-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50">
+              {exporting ? "生成中…" : "导出小红书卡片（3:4）"}
+            </button>
+          </>
         )}
       </div>
 
@@ -207,6 +228,76 @@ export default function SchoolCompare({
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {/* 小红书 3:4 导出卡（离屏渲染，仅导出用） */}
+      {canCompare && schoolA && schoolB && (
+        <div
+          ref={xhsRef}
+          aria-hidden
+          style={{
+            position: "fixed",
+            left: -9999,
+            top: 0,
+            width: 540,
+            height: 720,
+            backgroundColor: "#F7F1E5",
+            fontFamily: "'Songti SC','PingFang SC','Microsoft YaHei',serif",
+            color: "#1C1C1C",
+            padding: 36,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 20 }}>
+            <span style={{ fontWeight: 800 }}>港学荟 · 两校对比</span>
+            <span style={{ fontSize: 16, color: "#57534E" }}>2027/28</span>
+          </div>
+          <div style={{ marginTop: 30, textAlign: "center" }}>
+            <div style={{ fontSize: 34, fontWeight: 800, lineHeight: 1.25 }}>
+              {schoolA.name}
+              <span style={{ margin: "0 16px", color: "#C2410C", fontFamily: "Georgia,serif" }}>VS</span>
+              {schoolB.name}
+            </div>
+            <div style={{ marginTop: 8, fontSize: 16, color: "#57534E" }}>
+              {schoolA.typeLabel} · {schoolA.gender || "男女校"}　vs　{schoolB.typeLabel} · {schoolB.gender || "男女校"}
+            </div>
+          </div>
+          <div style={{ marginTop: 28, border: "1.5px solid #1C1C1C", borderRadius: 12, overflow: "hidden", background: "#FFFFFF" }}>
+            {[
+              ["校网", schoolA.net ? `${schoolA.net} 网` : "不限校网", schoolB.net ? `${schoolB.net} 网` : "不限校网"],
+              ["宗教", schoolA.religion || "—", schoolB.religion || "—"],
+              ["班制", schoolA.sessions.join("/") || "—", schoolB.sessions.join("/") || "—"],
+              ["升中通路", schoolA.through_train || "无公开关系", schoolB.through_train || "无公开关系"],
+              ["教学语言", schoolA.language || "—", schoolB.language || "—"],
+              ["自行分配学额", schoolA.quota ? `${schoolA.quota} 个` : "不参与派位", schoolB.quota ? `${schoolB.quota} 个` : "不参与派位"],
+              ["学费", schoolA.fees || (schoolA.inRoster ? "免费（官津）" : "见官网"), schoolB.fees || (schoolB.inRoster ? "免费（官津）" : "见官网")],
+            ].map((row, i) => (
+              <div
+                key={i}
+                style={{
+                  display: "flex",
+                  borderBottom: i < 6 ? "1px solid #E4E0D8" : "none",
+                  fontSize: 18,
+                }}
+              >
+                <div style={{ width: 110, flex: "none", padding: "12px 14px", background: "#FBF9F5", color: "#57534E" }}>
+                  {row[0]}
+                </div>
+                <div style={{ flex: 1, padding: "12px 14px", fontWeight: 700 }}>{row[1]}</div>
+                <div style={{ flex: 1, padding: "12px 14px", fontWeight: 700 }}>{row[2]}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ marginTop: 20, fontSize: 15, color: "#57534E", lineHeight: 1.7 }}>
+            别凭感觉选校：升中通路、学额稀缺度、班制差异，一张图看全。
+            {(!schoolA.inRoster || !schoolB.inRoster) && " 直资/私立不参与派位，可同时申请多间。"}
+          </div>
+          <div style={{ marginTop: "auto", paddingTop: 20, borderTop: "1px solid #D8D2C8", fontSize: 14, color: "#8A8378", display: "flex", justifyContent: "space-between" }}>
+            <span>数据依据教育局 2027/28 名册，可核实</span>
+            <span>hkschool.guide</span>
+          </div>
         </div>
       )}
     </section>
