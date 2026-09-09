@@ -70,7 +70,7 @@
   <p class="sub">港学荟 · 单文件版 | 输入志愿自动体检：只查表结构，不预测录取概率</p>
   <div class="note">⚠️ 本工具不预测录取结果（统一派位含随机编号）。它只回答一个问题：你这张表有没有结构性错误。数据依据教育局 2027/28 官方名册，所有信息可核实。</div>
   <div class="note" style="margin-top:10px;padding:10px 14px;font-size:13px">
-    <b style="color:#B45309">阶段一 · 自行分配（看计分）</b>：底牌卡用这里，计分 × 学额看相对位置，只能申请 1 间学校。<br>
+    <b style="color:#B45309">阶段一 · 自行分配（看计分）</b>：底牌卡＋甲类预检用这里，只有 1 次机会——失败自动进统一派位（无损失）、录取须注册（退出统派），填的一定是「录取了也不后悔」的学校。<br>
     <b style="color:#0F766E">阶段二 · 统一派位（随机编号，不看计分）</b>：甲部＋乙部志愿表、滑档线、顺序建议都是这里——10 分和 35 分完全平等，只看志愿顺序和随机编号。
   </div>
   <div class="note" style="margin-top:10px;padding:10px 14px">
@@ -98,6 +98,11 @@
     <div style="display:flex;gap:10px;flex-wrap:wrap">
       <div id="fitCb" style="flex:1;min-width:220px"></div>
       <button class="btn ghost" id="fitBtn" style="flex:none">分析</button>
+    </div>
+    <div id="fitCatA" style="display:none;margin-top:10px;background:#FBF9F5;border:1px solid var(--line);border-radius:8px;padding:8px 10px">
+      <div style="font-size:11px;color:var(--muted);font-weight:700">甲类资格预检（官方：凡属此类别必获录取）</div>
+      <label style="display:flex;align-items:center;gap:6px;margin:6px 0;font-size:13px;cursor:pointer"><input type="checkbox" id="fitSib"> 兄/姊正在该校就读</label>
+      <label style="display:flex;align-items:center;gap:6px;margin:6px 0;font-size:13px;cursor:pointer"><input type="checkbox" id="fitParent"> 父/母在该校任职</label>
     </div>
     <div id="fitResult" style="margin-top:12px"></div>
   </div>
@@ -210,6 +215,12 @@ function updatePartAWarn(){
     box.innerHTML="";
   }
 }
+function updateFitCatA(){
+  var box=$("fitCatA"); if(!box) return;
+  var nm=FIT_ARR[0].name.trim();
+  var d=nm?detailAll(nm):null;
+  box.style.display=(d&&d.inRoster)?"block":"none";
+}
 
 // 全港学校：官津来自教育局名册 + 直资/私立/国际来自本站整理（供底牌卡/两校对比）
 var EXTRA=(P1.extra||[]);
@@ -246,7 +257,8 @@ function renderRadios(boxId,field,opts,label){
 }
 function updateScore(){
   var sc=calcScore();
-  $("scoreShow").textContent="乙类计分："+sc+" 分（关系项 "+(REL_PTS[state.rel]||0)+" + 办学团体项 "+(ORG_PTS[state.org]||0)+" + 适龄 10，最高 35）";
+  var loc=sc>=30?"定位：强势组合 · 自行分配可锁定心仪校":sc===25?"定位：有竞争力 · 热门校同分抽签":sc===20?"定位：最常见组合 · 热门校基本靠抽签":"定位：底牌偏弱 · 重心放统一派位乙部";
+  $("scoreShow").innerHTML="乙类计分："+sc+" 分（关系项 "+(REL_PTS[state.rel]||0)+" + 办学团体项 "+(ORG_PTS[state.org]||0)+" + 适龄 10，最高 35）<br><span style=\"font-size:12px;opacity:.85\">"+loc+"</span>";
   var fs=$("fitScore"); if(fs){ fs.textContent=sc; }
 }
 function render(){
@@ -317,6 +329,7 @@ function schoolControl(cont,id,arr,idx){
     arr[idx].name=inp.value; arr[idx].custom=false; save();
     updateRowBadge(cont, arr[idx].name);
     updatePartAWarn();
+    updateFitCatA();
     renderPop(inp.value.trim(), false);
   });
   inp.addEventListener("focus",function(){
@@ -331,6 +344,7 @@ function schoolControl(cont,id,arr,idx){
       inp.value=arr[idx].name; pop.className="cb-pop"; save();
       updateRowBadge(cont, arr[idx].name);
       updatePartAWarn();
+      updateFitCatA();
     }
   });
   inp.addEventListener("blur",function(){ setTimeout(function(){ pop.className="cb-pop"; },150); });
@@ -526,11 +540,20 @@ function runFit(){
   var name=FIT_ARR[0].name.trim();
   if(!name) return;
   var d=detailAll(name), h="";
+  var catABox=$("fitCatA"); if(catABox){ catABox.style.display=(d&&d.inRoster)?"block":"none"; }
   if(!d||!d.inRoster){
     var label=d?d.name:name, type=d?d.typeLabel:"直资/私立/国际";
     h+='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C"><b>「'+esc(label)+'」是'+esc(type)+'学校</b>——不参与派位、不走计分，直接向学校自行申请，可同时申请多间。</div>';
   } else {
     var fit=assessFit(calcScore(), d.quota, d.name);
+    var catA=($("fitSib")&&$("fitSib").checked)||($("fitParent")&&$("fitParent").checked);
+    if(catA){
+      h+='<div style="border-left:4px solid #0F766E;background:#E7F6F2;border-radius:8px;padding:12px 14px;margin-bottom:8px">';
+      h+='<b style="color:#0F766E">甲类 · 必录取（官方规则）</b>';
+      h+='<p style="margin:6px 0 0;font-size:13px">你符合「'+($("fitSib").checked?"兄/姊在该校就读":"")+($("fitSib").checked&&$("fitParent").checked?" ／ ":"")+($("fitParent").checked?"父/母在该校任职":"")+'」条件，属官方甲类——只要申请，必获录取，不看计分、不用抽签。</p>';
+      h+='<p style="margin:6px 0 0;font-size:13px;color:#B45309">⚠️ 关键提醒：获录取后须在指定日期注册，等于退出统一派位。如果这不是你最想去的学校，请想清楚再填——填了被录取，就不能再去统派抽心仪校了。</p>';
+      h+='</div>';
+    }
     if(genderBad(d)){
       h+='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C;margin-bottom:8px"><b>⚠️ 性别不符：'+esc(d.name)+' 为'+esc(d.gender)+'，'+(state.kidGender==="女"?"女孩":"男孩")+'不会获派</b>；这张底牌卡没有实际意义，请改填男女校或在志愿表中移除。</div>';
     }
@@ -541,6 +564,15 @@ function runFit(){
     h+='<p style="margin:8px 0 0;font-size:13px">'+esc(fit.advice)+'</p>';
     h+='<p style="margin:6px 0 0;font-size:11px;color:var(--muted)">ⓘ 本卡为相对竞争位置（计分段位 × 学额稀缺度），非录取概率；同分一律抽签，数据依据教育局 2027/28 名册。</p>';
     h+='</div>';
+    if(!catA){
+      var sc=calcScore();
+      var st=sc>=30?["强势组合 · 可锁定心仪校","自行分配直接填你最想去的那间：中了就注册，等于提前上岸；不中自动进统派，没损失。","#0F766E","#E7F6F2"]:sc===25?["有竞争力 · 放心冲","热门校同分靠抽签，但失败无损失——自行分配就该冲最想进的，别保守。","#0F766E","#E7F6F2"]:sc===20?["最常见组合 · 冲一下不亏","热门校基本靠抽签，中了是惊喜，不中自动进统派继续抽。填最想去的，别浪费这次免费机会。","#B45309","#FEF3E2"]:["底牌偏弱 · 重心放统派","自行分配陪跑为主，别抱期待；把精力放在统一派位乙部结构和叩门预案上。","#C2410C","#FDEBE7"];
+      h+='<div style="border-left:4px solid '+st[2]+';background:'+st[3]+';border-radius:8px;padding:12px 14px;margin-top:8px">';
+      h+='<b>自行分配投表策略 · '+esc(st[0])+'</b>';
+      h+='<p style="margin:6px 0 0;font-size:13px">'+esc(st[1])+'</p>';
+      h+='<p style="margin:6px 0 0;font-size:11px;color:var(--muted)">规则底线：只能申请 1 间（多交作废）· 失败自动参加统一派位（无损失）· 录取须注册（退出统派）· 没中仍可在统派把同一校放第一志愿（双保险）。</p>';
+      h+='</div>';
+    }
   }
   $("fitResult").innerHTML=h;
 }

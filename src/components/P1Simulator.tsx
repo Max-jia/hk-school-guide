@@ -358,7 +358,7 @@ export default function P1Simulator() {
           <div className="mt-3 grid gap-2 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-4 text-sm sm:grid-cols-2">
             <div>
               <p className="font-mono text-xs font-bold uppercase text-[#B45309]">阶段一 · 自行分配（看计分）</p>
-              <p className="mt-1 text-[var(--p-secondary)]">底牌卡用这里：计分 × 学额，看你在某校的相对位置。自行分配只能申请 1 间学校。</p>
+              <p className="mt-1 text-[var(--p-secondary)]">底牌卡＋甲类预检用这里。只有 1 次机会：失败自动进统一派位（无损失）、录取须注册（退出统派）——填的一定是「录取了也不后悔」的学校。</p>
             </div>
             <div>
               <p className="font-mono text-xs font-bold uppercase text-[#0F766E]">阶段二 · 统一派位（随机编号，不看计分）</p>
@@ -402,6 +402,15 @@ export default function P1Simulator() {
               </span>
               <span className="block text-xs opacity-80">
                 关系项 {REL_PTS[rel] || 0} + 办学团体项 {ORG_PTS[org] || 0} + 适龄 10（最高 35）
+              </span>
+              <span className="mt-1 block text-xs font-bold text-[var(--p-hl-yellow-border)]">
+                {(() => {
+                  const s = calcScore(rel, org);
+                  if (s >= 30) return "定位：强势组合 · 自行分配可锁定心仪校";
+                  if (s === 25) return "定位：有竞争力 · 热门校同分抽签";
+                  if (s === 20) return "定位：最常见组合 · 热门校基本靠抽签";
+                  return "定位：底牌偏弱 · 重心放统一派位乙部";
+                })()}
               </span>
             </div>
           </div>

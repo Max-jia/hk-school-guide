@@ -16,6 +16,8 @@ export default function SchoolFitCard({
 }) {
   const [picked, setPicked] = useState("");
   const [count, setCount] = useState(0);
+  const [sibAtSchool, setSibAtSchool] = useState(false);
+  const [parentAtSchool, setParentAtSchool] = useState(false);
   const locked = !unlocked && count >= 1;
 
   const school = options.find((o) => o.name === picked);
@@ -24,6 +26,7 @@ export default function SchoolFitCard({
     school?.gender &&
     kidGender !== "不限" &&
     ((school.gender === "男校" && kidGender === "女") || (school.gender === "女校" && kidGender === "男"));
+  const catA = Boolean(school) && (sibAtSchool || parentAtSchool);
 
   function analyse() {
     if (!picked.trim() || outOfRoster || locked) return;
@@ -35,6 +38,15 @@ export default function SchoolFitCard({
     fit?.tone === "good" ? "#0F766E" : fit?.tone === "mid" ? "#B45309" : "#C2410C";
   const toneBg =
     fit?.tone === "good" ? "#E7F6F2" : fit?.tone === "mid" ? "#FEF3E2" : "#FDEBE7";
+
+  // 自行分配投表策略（本站方法论，非官方规则；失败无损失、录取即锁定是官方规则）
+  function strategy(score: number): { title: string; text: string; tone: "good" | "mid" | "warn" } {
+    if (score >= 30) return { title: "强势组合 · 可锁定心仪校", text: "自行分配直接填你最想去的那间：中了就注册，等于提前上岸；不中自动进统派，没损失。", tone: "good" };
+    if (score === 25) return { title: "有竞争力 · 放心冲", text: "热门校同分靠抽签，但失败无损失——自行分配就该冲最想进的，别保守。", tone: "good" };
+    if (score === 20) return { title: "最常见组合 · 冲一下不亏", text: "热门校基本靠抽签，中了是惊喜，不中自动进统派继续抽。填最想去的，别浪费这次免费机会。", tone: "mid" };
+    return { title: "底牌偏弱 · 重心放统派", text: "自行分配陪跑为主，别抱期待；把精力放在统一派位乙部结构和叩门预案上。", tone: "warn" };
+  }
+  const strat = school && !catA ? strategy(score) : null;
 
   return (
     <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
@@ -62,6 +74,22 @@ export default function SchoolFitCard({
         </button>
       </div>
 
+      {school && (
+        <div className="mt-3 rounded-[8px] bg-[var(--p-bg)] px-4 py-3">
+          <p className="font-mono text-xs font-bold uppercase text-[var(--p-secondary)]">甲类资格预检（官方：凡属此类别必获录取）</p>
+          <div className="mt-1.5 flex flex-wrap gap-x-5 gap-y-1 text-sm text-[var(--p-fg)]">
+            <label className="flex cursor-pointer items-center gap-2">
+              <input type="checkbox" checked={sibAtSchool} onChange={(e) => setSibAtSchool(e.target.checked)} className="mt-0" />
+              兄/姊正在 {school.name} 就读
+            </label>
+            <label className="flex cursor-pointer items-center gap-2">
+              <input type="checkbox" checked={parentAtSchool} onChange={(e) => setParentAtSchool(e.target.checked)} className="mt-0" />
+              父/母在 {school.name} 任职
+            </label>
+          </div>
+        </div>
+      )}
+
       {outOfRoster && (
         <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
           ⚠️ 「{picked.trim()}」不在官津名册内（可能是直资/私立/国际学校）——不看计分，走自行申请。
@@ -72,6 +100,18 @@ export default function SchoolFitCard({
         <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
           ⚠️ 性别不符：{school.name} 为{school.gender}，{kidGender === "女" ? "女孩" : "男孩"}不会获派；这张底牌卡没有实际意义，请改填男女校或在志愿表中移除。
         </p>
+      )}
+
+      {catA && school && (
+        <div className="mt-3 rounded-[10px] border-l-4 border-[#0F766E] bg-[#E7F6F2] px-4 py-3">
+          <p className="font-bold text-[#0F766E]">甲类 · 必录取（官方规则）</p>
+          <p className="mt-1 text-sm text-[var(--p-fg)]">
+            你符合「{sibAtSchool ? "兄/姊在该校就读" : ""}{sibAtSchool && parentAtSchool ? " ／ " : ""}{parentAtSchool ? "父/母在该校任职" : ""}」条件，属官方甲类——只要申请，必获录取，不看计分、不用抽签。
+          </p>
+          <p className="mt-1 text-sm text-[#B45309]">
+            ⚠️ 关键提醒：获录取后须在指定日期注册，等于退出统一派位。如果这不是你最想去的学校，请想清楚再填——填了被录取，就不能再去统派抽心仪校了。
+          </p>
+        </div>
       )}
 
       {fit && school && (
@@ -88,6 +128,21 @@ export default function SchoolFitCard({
               ⓘ 本卡为相对竞争位置（计分段位 × 学额稀缺度），非录取概率；同分一律抽签，数据依据教育局 2027/28 名册。
             </p>
           </div>
+          {strat && (
+            <div
+              className="mt-3 rounded-[10px] border-l-4 px-4 py-3"
+              style={{
+                borderColor: strat.tone === "good" ? "#0F766E" : strat.tone === "mid" ? "#B45309" : "#C2410C",
+                background: strat.tone === "good" ? "#E7F6F2" : strat.tone === "mid" ? "#FEF3E2" : "#FDEBE7",
+              }}
+            >
+              <p className="font-bold text-[var(--p-fg)]">自行分配投表策略 · {strat.title}</p>
+              <p className="mt-1 text-sm text-[var(--p-fg)]">{strat.text}</p>
+              <p className="mt-1.5 text-xs leading-relaxed text-[var(--p-secondary)]">
+                规则底线：只能申请 1 间（多交作废）· 失败自动参加统一派位（无损失）· 录取须注册（退出统派）· 没中仍可在统派把同一校放第一志愿（双保险）。
+              </p>
+            </div>
+          )}
           {locked && (
             <div className="absolute inset-0 flex items-center justify-center rounded-[12px] bg-[rgba(255,255,255,.82)]">
               <div className="rounded-[10px] bg-[#FEF3E2] px-6 py-4 text-center text-[#B45309]">
