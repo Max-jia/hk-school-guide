@@ -37,10 +37,12 @@ function calcScore(rel: string, org: string): number {
 }
 
 const EMPTY_A: SimSchool[] = Array.from({ length: 3 }, () => ({ name: "", tier: "sprint" }));
-const EMPTY_B: SimSchool[] = Array.from({ length: 10 }, () => ({ name: "", tier: "match" }));
+const INIT_NET = P1.nets[0].net;
+const INIT_B_COUNT = Math.min(10, P1.nets[0].schools.length);
+const EMPTY_B: SimSchool[] = Array.from({ length: INIT_B_COUNT }, () => ({ name: "", tier: "match" }));
 
 export default function P1Simulator() {
-  const [net, setNet] = useState(P1.nets[0].net);
+  const [net, setNet] = useState(INIT_NET);
   const [rel, setRel] = useState("");
   const [org, setOrg] = useState("");
   const [partA, setPartA] = useState<SimSchool[]>(EMPTY_A);
@@ -65,6 +67,12 @@ export default function P1Simulator() {
     const m = new Map<string, number>();
     if (n) for (const sc of n.schools) m.set(sc.name, sc.quota ?? 0);
     return m;
+  }, [net]);
+
+  // 乙部可填上限 = 本网官津学校数（官方 30 只是表格上限）
+  const targetB = useMemo(() => {
+    const n = P1.nets.find((x) => x.net === net);
+    return n ? Math.min(30, n.schools.length) : 30;
   }, [net]);
 
   useEffect(() => {
@@ -102,8 +110,8 @@ export default function P1Simulator() {
   const snapshot = useMemo(() => {
     const tips: { kind: "danger" | "info" | "ok"; text: string }[] = [];
     if (safeCount === 0) tips.push({ kind: "danger", text: "没有保底校——这是最危险的结构错误。" });
-    if (bCount <= 9) tips.push({ kind: "danger", text: `乙部只填了 ${bCount} 个志愿，结构严重空洞。` });
-    else if (bCount < 20) tips.push({ kind: "info", text: `乙部 ${bCount}/30，还有空位可以补保底。` });
+    if (bCount <= Math.floor(targetB * 0.4)) tips.push({ kind: "danger", text: `乙部只填了 ${bCount}/${targetB} 个志愿，结构严重空洞。` });
+    else if (bCount < targetB) tips.push({ kind: "info", text: `乙部 ${bCount}/${targetB}，还有空位可以补保底。` });
     if (dupNames.length) tips.push({ kind: "danger", text: `乙部有重复志愿：${dupNames.join("、")}` });
     const score = calcScore(rel, org);
     if (score <= 20 && sprintCount >= 6) tips.push({ kind: "info", text: `计分 ${score} 分但冲刺 ${sprintCount} 所，底牌和目标错配。` });
@@ -112,11 +120,11 @@ export default function P1Simulator() {
     if (a1 && b1 && a1 !== b1) tips.push({ kind: "info", text: "甲一与乙一不是同一所（1-1-1 未对齐），若目标校在网内建议统一。" });
     if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，建议解锁完整报告再核对一遍。" });
     return tips.slice(0, 3);
-  }, [safeCount, bCount, dupNames, rel, org, sprintCount]);
+  }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB]);
 
   function save() {
     try {
-      localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, score: calcScore(rel, org), partA, partB }));
+      localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, score: calcScore(rel, org), netSchoolCount: targetB, partA, partB }));
       setSavedTip(true);
       setTimeout(() => setSavedTip(false), 1500);
     } catch { /* ignore */ }
@@ -241,7 +249,7 @@ export default function P1Simulator() {
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
           <div className="flex flex-wrap items-center gap-3">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">③ 乙部志愿（所属校网，最多 30 个）</h2>
-            <span className="font-mono text-xs uppercase text-[var(--p-secondary)]">已填 {bCount}/30</span>
+            <span className="font-mono text-xs uppercase text-[var(--p-secondary)]">已填 {bCount}/{targetB}（本网共 {targetB} 所）</span>
           </div>
           <div className="mt-4 grid gap-2">
             {partB.map((s, i) => (
@@ -267,13 +275,16 @@ export default function P1Simulator() {
               </div>
             ))}
           </div>
-          {partB.length < 30 && (
+          {partB.length < targetB && (
             <button
               onClick={() => setPartB((p) => [...p, { name: "", tier: "match" }])}
               className="mt-3 rounded-[8px] border border-dashed border-[var(--p-gray-300)] px-4 py-2 text-sm text-[var(--p-secondary)] hover:border-[var(--p-fg)] hover:text-[var(--p-fg)]"
             >
-              ＋ 添加志愿（{partB.length}/30）
+              ＋ 添加志愿（{partB.length}/{targetB}）
             </button>
+          )}
+          {partB.length >= targetB && (
+            <p className="mt-3 text-xs text-[var(--p-secondary)]">本网共 {targetB} 所官津学校，已全部列出。</p>
           )}
         </section>
 

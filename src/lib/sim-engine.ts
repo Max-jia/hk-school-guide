@@ -14,6 +14,7 @@ export type SimInput = {
   score: number; // 乙类计分 10–35
   partA: SimSchool[]; // 甲部，最多 3
   partB: SimSchool[]; // 乙部，最多 30
+  netSchoolCount?: number; // 本网参加派位的官津学校数（乙部可填上限）
 };
 
 export type CheckStatus = "pass" | "warn" | "fail";
@@ -33,6 +34,7 @@ export type SimReport = {
   score: number;
   partACount: number;
   partBCount: number;
+  targetB: number;
   sprint: number;
   match: number;
   safe: number;
@@ -74,30 +76,33 @@ export function runSimCheck(input: SimInput): SimReport {
   const match = countByTier(partB, "match");
   const safe = countByTier(partB, "safe");
   const total = partB.length;
+  const netCount = input.netSchoolCount && input.netSchoolCount > 0 ? input.netSchoolCount : 30;
+  const target = Math.min(30, netCount); // 乙部可填上限 = 本网学校数（官方30只是表格上限）
   const duplicates = findDuplicates(partB);
 
   const checks: CheckItem[] = [];
 
-  // 1) 乙部志愿数量
-  if (total <= 9) {
+  // 1) 乙部志愿数量（上限 = 本网学校数，不是30）
+  if (total <= Math.floor(target * 0.4)) {
     checks.push({
       id: "b-count", title: "乙部志愿数量",
-      status: "fail", detail: `只填了 ${total}/30 个志愿，结构严重空洞。`,
-      fix: "把网内真实可接受的学校填满（至少 20 个），每个都别抱着「填了也后悔」的心态。",
+      status: "fail", detail: `本网共 ${target} 所官津学校，你只填了 ${total} 个志愿，结构严重空洞。`,
+      fix: `把网内 ${target} 所真实可接受的学校尽量填满，每个都别抱着「填了也后悔」的心态。`,
     });
-  } else if (total < 20) {
+  } else if (total < target) {
     checks.push({
       id: "b-count", title: "乙部志愿数量",
-      status: "warn", detail: `填了 ${total}/30，还有不少空位没用上。`,
-      fix: "空位不是用来「随便填」的，但用来补「派到也满意」的保底校是划算的。",
+      status: "warn", detail: `本网共 ${target} 所官津学校，你填了 ${total} 个，还有 ${target - total} 个空位。`,
+      fix: "空位用来补「派到也满意」的学校，填满不浪费选择权。",
     });
-  } else if (total < 30) {
+  } else if (total > target) {
     checks.push({
       id: "b-count", title: "乙部志愿数量",
-      status: "warn", detail: `填了 ${total}/30，建议尽量填满。`,
+      status: "warn", detail: `本网官津学校只有 ${target} 所，你却填了 ${total} 个——多出的可能是直资/私立或他网学校，统一派位乙部不会派位这些学校。`,
+      fix: "乙部只填本网官津学校；直资/私立走自主申请，可填在志愿表备注里而不是乙部。",
     });
   } else {
-    checks.push({ id: "b-count", title: "乙部志愿数量", status: "pass", detail: "30 个志愿全部填满，没有浪费空位。" });
+    checks.push({ id: "b-count", title: "乙部志愿数量", status: "pass", detail: `本网 ${target} 所官津学校全部填满，没有浪费空位。` });
   }
 
   // 2) 保底校
@@ -162,10 +167,10 @@ export function runSimCheck(input: SimInput): SimReport {
   }
 
   // 7) 空洞（填了也后悔）
-  if (safe < 2 && total < 30) {
+  if (safe < 2 && total < target) {
     checks.push({
       id: "blank", title: "空洞检查",
-      status: "warn", detail: `还有 ${30 - total} 个空位，且保底校不足 2 所——这些空位应该用来补「派到也满意」的学校。`,
+      status: "warn", detail: `还有 ${target - total} 个空位，且保底校不足 2 所——这些空位应该用来补「派到也满意」的学校。`,
     });
   } else {
     checks.push({ id: "blank", title: "空洞检查", status: "pass", detail: "没有明显「填了也后悔」的空洞。" });
@@ -250,6 +255,7 @@ export function runSimCheck(input: SimInput): SimReport {
     score,
     partACount: partA.length,
     partBCount: total,
+    targetB: target,
     sprint,
     match,
     safe,

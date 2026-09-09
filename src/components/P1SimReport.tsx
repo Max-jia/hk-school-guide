@@ -5,6 +5,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { toPng } from "html-to-image";
 import { runSimCheck, type SimInput } from "@/lib/sim-engine";
+import p1NetsJson from "@/content/p1-nets.json";
 
 const LOCK_KEY = "purchased_p1-sim";
 const INPUT_KEY = "p1sim_input";
@@ -28,7 +29,14 @@ export default function P1SimReport() {
     setUnlocked(localStorage.getItem(LOCK_KEY) === "true");
   }, []);
 
-  const report = useMemo(() => (input ? runSimCheck(input) : null), [input]);
+  const P1 = p1NetsJson as { nets: { net: string; schools: { name: string }[] }[] };
+
+  const report = useMemo(() => {
+    if (!input) return null;
+    const n = P1.nets.find((x) => x.net === input.net);
+    const netCount = n ? Math.min(30, n.schools.length) : 30;
+    return runSimCheck({ ...input, netSchoolCount: netCount });
+  }, [input, P1]);
 
   function buy() {
     setBuying(true);
@@ -143,7 +151,7 @@ export default function P1SimReport() {
                 <span>校网：{report.net}</span>
                 <span>乙类计分：{report.score} 分</span>
                 <span>甲部：{report.partACount}/3</span>
-                <span>乙部：{report.partBCount}/30</span>
+                <span>乙部：{report.partBCount}/{report.targetB}</span>
                 <span>结构：冲刺 {report.sprint} · 匹配 {report.match} · 保底 {report.safe}</span>
               </div>
 

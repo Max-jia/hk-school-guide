@@ -71,7 +71,7 @@
   </div>
 
   <div class="card no-print">
-    <h2>③ 乙部志愿（校网内，最多 30）</h2>
+    <h2>③ 乙部志愿（校网内，本网共 <span id="bCountLabel"></span> 所）</h2>
     <p class="sub" style="font-size:12px;margin:0 0 10px">每行可直接输入校名搜索（支持简体/繁体），或点下拉选择</p>
     <div id="partB"></div>
     <button class="add" id="addRow">＋ 添加志愿</button>
@@ -106,7 +106,8 @@ function $(id){return document.getElementById(id);}
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
 var state = {net:P1.nets[0].net, rel:"", org:"", partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}], partB:[]};
-for(var __i=0;__i<10;__i++){state.partB.push({name:"",tier:"match"});}
+function initB(count){ for(var __i=0;__i<count;__i++){state.partB.push({name:"",tier:"match"});} }
+initB(Math.min(10, P1.nets[0].schools.length));
 function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){}}
 function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse(raw); if(d&&d.net&&P1.nets.some(function(n){return n.net===d.net;})){state=d;}}}catch(e){}
   if(!state.rel) state.rel=""; if(!state.org) state.org="";
@@ -140,6 +141,7 @@ function render(){
   var netSel=$("net"); netSel.innerHTML="";
   P1.nets.forEach(function(n){var o=document.createElement("option");o.value=n.net;o.textContent=n.net+" 网（"+n.area_short+"）";netSel.value=state.net;netSel.appendChild(o);});
   netSel.value=state.net;
+  $("bCountLabel").textContent=curNet().schools.length;
   renderRadios("relBox","rel",REL_OPTS,"关系项（5 项只可选一项，最高 20 分）");
   renderRadios("orgBox","org",ORG_OPTS,"办学团体项（2 项只可选一项，最高 5 分）");
   updateScore();
@@ -234,12 +236,13 @@ function renderList(id, arr, max){
   save();
 }
 function addRow(){
-  if(state.partB.length<30){
+  var n=curNet().schools.length;
+  if(state.partB.length<n){
     state.partB.push({name:"",tier:"match"});
     renderList("partB",state.partB,state.partB.length);
     save();
   }else{
-    alert("乙部最多 30 个志愿，已填满。");
+    alert("本网共 "+n+" 所官津学校，已全部列出。");
   }
 }
 
@@ -255,10 +258,11 @@ function runCheck(){
   partB.forEach(function(s){var k=s.name.trim();if(seen[k]){if(dups.indexOf(k)<0)dups.push(k);}seen[k]=1;});
   var checks=[];
 
-  if(total<=9){checks.push({t:"乙部志愿数量",s:"fail",d:"只填了 "+total+"/30 个志愿，结构严重空洞。",f:"把网内真实可接受的学校填满（至少 20 个）。"});}
-  else if(total<20){checks.push({t:"乙部志愿数量",s:"warn",d:"填了 "+total+"/30，还有不少空位没用上。",f:"空位用来补「派到也满意」的保底校。"});}
-  else if(total<30){checks.push({t:"乙部志愿数量",s:"warn",d:"填了 "+total+"/30，建议尽量填满。"});}
-  else{checks.push({t:"乙部志愿数量",s:"pass",d:"30 个志愿全部填满。"});}
+  var target=Math.min(30, curNet().schools.length);
+  if(total<=Math.floor(target*0.4)){checks.push({t:"乙部志愿数量",s:"fail",d:"本网共 "+target+" 所官津学校，你只填了 "+total+" 个志愿，结构严重空洞。",f:"把网内 "+target+" 所真实可接受的学校尽量填满。"});}
+  else if(total<target){checks.push({t:"乙部志愿数量",s:"warn",d:"本网共 "+target+" 所官津学校，你填了 "+total+" 个，还有 "+(target-total)+" 个空位。",f:"空位用来补「派到也满意」的学校，填满不浪费选择权。"});}
+  else if(total>target){checks.push({t:"乙部志愿数量",s:"warn",d:"本网官津学校只有 "+target+" 所，你却填了 "+total+" 个——多出的可能是直资/私立或他网学校，乙部不会派位这些学校。",f:"乙部只填本网官津学校；直资/私立走自主申请。"});}
+  else{checks.push({t:"乙部志愿数量",s:"pass",d:"本网 "+target+" 所官津学校全部填满，没有浪费空位。"});}
 
   if(safe===0){checks.push({t:"保底校数量",s:"fail",d:"没有任何一间保底校——最危险的结构错误。",f:"至少补 2 所「派到也满意」的保底校。"});}
   else if(safe===1){checks.push({t:"保底校数量",s:"warn",d:"只有 1 所保底校，安全垫偏薄。",f:"保底校加到 2-3 所。"});}
@@ -276,7 +280,7 @@ function runCheck(){
   if(score<=20&&sprint>=6){checks.push({t:"计分与冲刺匹配",s:"warn",d:"计分 "+score+" 分却放了 "+sprint+" 所冲刺校，底牌和目标错配。",f:"冲刺留 2-3 所即可，重心放匹配校。"});}
   else{checks.push({t:"计分与冲刺匹配",s:"pass",d:"计分 "+score+" 分与冲刺数量没有明显错配。"});}
 
-  if(safe<2&&total<30){checks.push({t:"空洞检查",s:"warn",d:"还有 "+(30-total)+" 个空位，且保底不足 2 所。",f:"空位补「派到也满意」的学校。"});}
+  if(safe<2&&total<target){checks.push({t:"空洞检查",s:"warn",d:"还有 "+(target-total)+" 个空位，且保底不足 2 所。",f:"空位补「派到也满意」的学校。"});}
   else{checks.push({t:"空洞检查",s:"pass",d:"没有明显「填了也后悔」的空洞。"});}
 
   var a1=partA[0]?partA[0].name.trim():"",b1=partB[0]?partB[0].name.trim():"";
@@ -324,14 +328,18 @@ function runCheck(){
   $("result").scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-$("net").addEventListener("change",function(e){state.net=e.target.value;save();renderList("partB",state.partB,state.partB.length);});
+$("net").addEventListener("change",function(e){
+  state.net=e.target.value; save();
+  $("bCountLabel").textContent=curNet().schools.length;
+  renderList("partB",state.partB,state.partB.length);
+});
 
 $("addRow").addEventListener("click",addRow);
 $("runBtn").addEventListener("click",runCheck);
 $("printBtn").addEventListener("click",function(){window.print();});
 $("resetBtn").addEventListener("click",function(){if(confirm("确定清空重填？")){
   state={net:state.net,rel:"",org:"",partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}],partB:[]};
-  for(var __i=0;__i<10;__i++){state.partB.push({name:"",tier:"match"});}
+  initB(Math.min(10, curNet().schools.length));
   render();$("result").innerHTML="";save();}});
 
 load();render();
