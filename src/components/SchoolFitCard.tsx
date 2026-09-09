@@ -30,7 +30,7 @@ export default function SchoolFitCard({
     if (!unlocked) setCount((c) => c + 1);
   }
 
-  const fit = school ? assessSchoolFit(score, school.quota ?? null) : null;
+  const fit = school ? assessSchoolFit(score, school.quota ?? null, school.name) : null;
   const toneColor =
     fit?.tone === "good" ? "#0F766E" : fit?.tone === "mid" ? "#B45309" : "#C2410C";
   const toneBg =

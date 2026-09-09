@@ -322,6 +322,51 @@ export function quotaBand(q: number | null | undefined): RiskBand {
   return "充裕";
 }
 
+// 传统热门校修正名单：学额多 ≠ 容易进。
+// 这些学校在常见择校讨论中公认竞争激烈（即使学额 >50），滑档线一律按「抽签区」处理，不算相对安全位。
+// 名单基于常见择校讨论整理，非官方热度数据；只用于相对竞争度推导，不预测录取结果。
+const HOT_SCHOOLS = new Set([
+  "喇沙小學",
+  "瑪利諾修院學校（小學部）",
+  "嘉諾撒聖家學校",
+  "嘉諾撒聖家學校（九龍塘）",
+  "聖若瑟小學",
+  "番禺會所華仁小學",
+  "協恩中學附屬小學",
+  "天神嘉諾撒學校",
+  "嘉諾撒聖心學校",
+  "聖士提反女子中學附屬小學",
+  "瑪利曼小學",
+  "聖保祿天主教小學",
+  "嘉諾撒聖方濟各學校",
+  "嘉諾撒聖瑪利學校",
+  "德信學校",
+  "聖羅撒學校",
+  "瑪利諾神父教會學校（小學部）",
+  "香港嘉諾撒學校",
+  "油蔴地天主教小學",
+  "中華基督教會協和小學",
+  "馬頭涌官立小學",
+  "陳瑞祺（喇沙）小學",
+  "軒尼詩道官立小學",
+  "聖公會聖彼得小學",
+  "聖公會呂明才紀念小學",
+  "中西區聖安多尼學校",
+  "循道學校",
+  "大角嘴天主教小學",
+  "長沙灣天主教小學",
+]);
+
+export function isHotSchool(name: string): boolean {
+  return HOT_SCHOOLS.has(String(name || "").trim());
+}
+
+// 相对竞争档：热门校一律按「稀缺/抽签区」处理，避免把喇沙这类学额大户误判为安全位
+export function relativeBand(name: string, quota: number | null | undefined): RiskBand {
+  if (isHotSchool(name)) return "稀缺";
+  return quotaBand(quota);
+}
+
 export type SlidePosition = {
   name: string;
   band: RiskBand;
@@ -345,7 +390,7 @@ export function computeSlideLine(
     .filter((s) => s.name.trim())
     .map((s) => {
       const q = quotaOf(s.name.trim());
-      return { name: s.name.trim(), band: quotaBand(q), quota: q };
+      return { name: s.name.trim(), band: relativeBand(s.name.trim(), q), quota: q };
     });
   if (positions.length === 0) {
     return { positions: [], slideLineIndex: null, worstFall: null, note: "乙部还没有填写志愿。" };
@@ -359,11 +404,11 @@ export function computeSlideLine(
       slideLineIndex: null,
       worstFall: null,
       note: scarce
-        ? `你只填了 1 所（${only.name}，学额仅 ${only.quota ?? "?"}）——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。`
+        ? `你只填了 1 所（${only.name}${isHotSchool(only.name) && (only.quota ?? 0) > 25 ? `，学额 ${only.quota} 但属传统热门校` : `，学额仅 ${only.quota ?? "?"}`}）——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。`
         : `你只填了 1 所（${only.name}，学额 ${only.quota ?? "?"}）——谈不上滑档：这所不中，你不会有第二个落点（不会自动滑到别处）。补上 2-3 所保底校，滑档线才有意义。`,
     };
   }
-  // 滑档线：第一个「充裕」，且其后没有「稀缺」的位置
+  // 滑档线：第一个「充裕」（且非热门校），且其后没有「稀缺/热门」的位置
   let slideLineIndex: number | null = null;
   for (let i = 0; i < positions.length; i++) {
     if (positions[i].band === "充裕") {
@@ -402,7 +447,7 @@ export function computeSlideLine(
     note = `本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。`;
   }
   if (scarceCount > 0) {
-    note += ` 滑档线前有 ${scarceCount} 所学额稀缺校，命中依赖抽签。`;
+    note += ` 抽签区里有 ${scarceCount} 所竞争激烈的学校（学额稀缺或传统热门校，如喇沙），命中依赖抽签。`;
   }
   if (positions.length <= 2) {
     note += ` 目前只有 ${positions.length} 个志愿，结构很薄——滑档线仅供参考，请先补满志愿再看。`;
@@ -458,7 +503,6 @@ export function suggestOrder(
     const cur = filled[i].name.trim();
     const sug = suggested[i]?.name.trim();
     if (cur !== sug) {
-      const band = quotaBand(quotaOf(cur));
       differences.push({
         index: i + 1,
         current: cur,
@@ -475,7 +519,7 @@ export function suggestOrder(
 function explainWhy(s: SimSchool | undefined, quotaOf: (name: string) => number | null): string {
   if (!s) return "该位置建议放保底或匹配校。";
   const q = quotaOf(s.name.trim());
-  const band = quotaBand(q);
+  const band = relativeBand(s.name.trim(), q);
   const tierLabel = s.tier === "sprint" ? "冲刺" : s.tier === "match" ? "匹配" : "保底";
   if (s.tier === "sprint") return `${tierLabel}校（学额${q ?? "?"}），够得着才值得冲`;
   if (s.tier === "match") return `${tierLabel}校（学额${q ?? "?"}），守得住的中段`;
@@ -493,26 +537,27 @@ export type FitResult = {
   tone: FitTone;
 };
 
-// 输入：乙类计分（10-35）+ 该校自行分配学额（名册 quota）
+// 输入：乙类计分（10-35）+ 该校自行分配学额（名册 quota）+ 校名（用于热门校修正）
 // 输出：相对竞争位置结论（基于计分组合段位 × 学额稀缺度，不是录取概率）
-export function assessSchoolFit(score: number, quota: number | null): FitResult {
+export function assessSchoolFit(score: number, quota: number | null, name?: string): FitResult {
   const q = quota ?? 50;
-  const scarce = q <= 25;
-  const roomy = q > 50;
+  const hot = name ? isHotSchool(name) : false;
+  const scarce = q <= 25 || hot;
+  const roomy = q > 50 && !hot;
 
   if (score >= 30) {
     if (roomy) return { label: "优势明显", advice: `计分 ${score} 分＋学额充裕（${q}），在这所学校处于有利位置；同分仍要抽签。`, tone: "good" };
-    if (scarce) return { label: "组合强但学额紧", advice: `计分 ${score} 分但学额仅 ${q}，竞争烈度高，仍要抽签。`, tone: "mid" };
+    if (scarce) return { label: "组合强但竞争烈度高", advice: hot && q > 25 ? `计分 ${score} 分＋传统热门校（学额 ${q} 仍挤破头），竞争烈度高，仍要抽签。` : `计分 ${score} 分但学额仅 ${q}，竞争烈度高，仍要抽签。`, tone: "mid" };
     return { label: "组合强", advice: `计分 ${score} 分，处于该校申请者前列组合；同分抽签。`, tone: "good" };
   }
   if (score === 25) {
     if (roomy) return { label: "可冲", advice: `计分 ${score} 分＋学额充裕（${q}），值得放前；同分抽签。`, tone: "good" };
-    if (scarce) return { label: "拼运气", advice: `计分 ${score} 分但学额仅 ${q}，热门校同分靠抽签。`, tone: "mid" };
+    if (scarce) return { label: "拼运气", advice: hot && q > 25 ? `计分 ${score} 分＋传统热门校（学额 ${q} 仍挤破头），同分靠抽签。` : `计分 ${score} 分但学额仅 ${q}，热门校同分靠抽签。`, tone: "mid" };
     return { label: "有机会", advice: `计分 ${score} 分（校友/强关系组合），热门校竞争仍大。`, tone: "mid" };
   }
   if (score === 20) {
     if (roomy) return { label: "有机会", advice: `计分 ${score} 分（最常见组合）但学额充裕（${q}），可以一试。`, tone: "mid" };
-    if (scarce) return { label: "基本靠抽签", advice: `计分 ${score} 分＋学额仅 ${q}——最常见组合撞上最紧张学额，热门校基本靠抽签。`, tone: "warn" };
+    if (scarce) return { label: "基本靠抽签", advice: hot && q > 25 ? `计分 ${score} 分（最常见组合）＋传统热门校（学额 ${q} 仍挤破头）——基本靠抽签。` : `计分 ${score} 分＋学额仅 ${q}——最常见组合撞上最紧张学额，热门校基本靠抽签。`, tone: "warn" };
     return { label: "看运气", advice: `计分 ${score} 分是自行分配最常见组合，热门校同分抽签。`, tone: "warn" };
   }
   if (score === 15) return { label: "偏弱", advice: `计分 ${score} 分在自行分配阶段不占优，建议把重心放统一派位乙部。`, tone: "warn" };

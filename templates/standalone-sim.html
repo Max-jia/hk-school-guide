@@ -336,15 +336,19 @@ function moveRow(arr,from,to){
   renderList("partB",state.partB,state.partB.length); save();
 }
 function quotaBand(q){ if(!q) return "普通"; if(q<=25) return "稀缺"; if(q<=50) return "普通"; return "充裕"; }
+// 传统热门校修正名单：学额多≠容易进（基于常见择校讨论整理，非官方热度数据；只用于相对竞争度推导）
+var HOT_SCHOOLS=["喇沙小學","瑪利諾修院學校（小學部）","嘉諾撒聖家學校","嘉諾撒聖家學校（九龍塘）","聖若瑟小學","番禺會所華仁小學","協恩中學附屬小學","天神嘉諾撒學校","嘉諾撒聖心學校","聖士提反女子中學附屬小學","瑪利曼小學","聖保祿天主教小學","嘉諾撒聖方濟各學校","嘉諾撒聖瑪利學校","德信學校","聖羅撒學校","瑪利諾神父教會學校（小學部）","香港嘉諾撒學校","油蔴地天主教小學","中華基督教會協和小學","馬頭涌官立小學","陳瑞祺（喇沙）小學","軒尼詩道官立小學","聖公會聖彼得小學","聖公會呂明才紀念小學","中西區聖安多尼學校","循道學校","大角嘴天主教小學","長沙灣天主教小學"];
+function isHot(name){ return HOT_SCHOOLS.indexOf(String(name||"").trim())>=0; }
+function relBand(name,q){ if(isHot(name)) return "稀缺"; return quotaBand(q); }
 function computeSlideLine(){
   var pos=state.partB.filter(function(s){return s.name.trim();}).map(function(s){
-    var q=quotaOf(s.name.trim()); return {name:s.name.trim(), band:quotaBand(q), quota:q};
+    var q=quotaOf(s.name.trim()); return {name:s.name.trim(), band:relBand(s.name.trim(),q), quota:q};
   });
   if(!pos.length) return {positions:[],slideLineIndex:null,worstFall:null,note:"乙部还没有填写志愿。"};
   if(pos.length===1){
     var only=pos[0];
     return {positions:pos,slideLineIndex:null,worstFall:null,note:only.band==="稀缺"
-      ? "你只填了 1 所（"+only.name+"，学额仅 "+(only.quota||"?")+"）——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。"
+      ? "你只填了 1 所（"+only.name+(isHot(only.name)&&(only.quota||0)>25?"，学额 "+only.quota+" 但属传统热门校）":"，学额仅 "+(only.quota||"?")+"）")+"——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。"
       : "你只填了 1 所（"+only.name+"，学额 "+(only.quota||"?")+"）——谈不上滑档：这所不中，你不会有第二个落点（不会自动滑到别处）。补上 2-3 所保底校，滑档线才有意义。"};
   }
   var line=null;
@@ -356,7 +360,7 @@ function computeSlideLine(){
   var worst = first>=0 ? {index:first+1,name:pos[first].name} : {index:pos.length+1,name:"（无安全落点）"};
   var scarce=pos.filter(function(p){return p.band==="稀缺";}).length;
   var note = line!==null ? "按当前顺序，第 "+line+" 位起相对安全（这条线之前是热门抽签区）；最坏情况会落到第 "+worst.index+" 位「"+worst.name+"」。" : "本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。";
-  if(scarce>0) note+=" 滑档线前有 "+scarce+" 所学额稀缺校，命中依赖抽签。";
+  if(scarce>0) note+=" 抽签区里有 "+scarce+" 所竞争激烈的学校（学额稀缺或传统热门校，如喇沙），命中依赖抽签。";
   if(pos.length<=2) note+=" 目前只有 "+pos.length+" 个志愿，结构很薄——滑档线仅供参考，请先补满志愿再看。";
   return {positions:pos,slideLineIndex:line,worstFall:worst,note:note};
 }
@@ -374,7 +378,7 @@ function suggestOrder(){
   for(var i=0;i<Math.min(sug.length,filled.length);i++){
     var cur=filled[i].name.trim(), sg=sug[i]?sug[i].name.trim():"（后移）";
     if(cur!==sg){
-      var b=quotaBand(quotaOf(cur));
+      var b=relBand(cur, quotaOf(cur));
       diffs.push({index:i+1,current:cur,suggested:sg,why:(sug[i]?(sug[i].tier==="sprint"?"冲刺校（学额"+q(sug[i])+"），够得着才值得冲":sug[i].tier==="match"?"匹配校（学额"+q(sug[i])+"），守得住的中段":"保底校（学额"+q(sug[i])+"，"+b+"），安全垫"):"该位置建议放保底或匹配校")});
     }
   }
@@ -389,7 +393,7 @@ function renderWorkbench(){
   if(oo){ h+='<div class="wb" style="background:#FDEBE7;border-color:#C2410C"><p style="color:#C2410C;font-weight:bold">⚠️ 「'+esc(oo)+'」不在官津名册内（可能是直资/私立/国际或他网学校）——不参加本网统一派位，乙部填了也不会被派位，请走自行申请，或改填本网官津学校。</p></div>'; }
   if(pos.positions.length){
     h+='<div class="wb"><h4>滑档线（实时）</h4>';
-    h+='<div style="background:#fef9e7;border-radius:6px;padding:8px 10px;font-size:12px;color:#44403C;margin:6px 0"><b>什么是滑档线？</b><br>派位按你填的顺序一所一所试：第一志愿没中，就试第二志愿，一路往下。<b>「滑档」</b>= 前面都没中，落到后面的志愿。<b>滑档线</b>= 从第几位开始相对安全（学额充裕、竞争相对低），你大概率会停在这条线附近；线之前是热门抽签区。<b>最坏落点</b>= 假设线前所有热门校都落空，你会停在哪一所。注意：这是结构推导，不是录取概率——同分照样抽签。</div>';
+    h+='<div style="background:#fef9e7;border-radius:6px;padding:8px 10px;font-size:12px;color:#44403C;margin:6px 0"><b>什么是滑档线？</b><br>派位像「大风吹」：电脑按你的志愿顺序一位一位看，前面没中就看下一位。<b>「滑档」</b>= 前面的志愿都没中，落到后面。<b>滑档线</b>= 从第几位开始相对安全——这所学校学额较多、竞争相对没那么激烈（热门名校除外），你大概率会停在这条线附近；线之前是「抽签区」。<b>最坏落点</b>= 假设抽签区的热门校全落空，你会停在哪一所。注意：学额多 ≠ 容易进——喇沙这类神校就算 90 个名额也挤破头，已按抽签区处理；滑档线是竞争度推导，不是录取概率。</div>';
     h+='<p>'+esc(pos.note)+'</p><div class="bar">';
     for(var i=0;i<pos.positions.length;i++){
       var p=pos.positions[i];
@@ -493,21 +497,21 @@ function addRow(){
 }
 
 // ===== 底牌卡：相对竞争位置（非录取概率） =====
-function assessFit(score, quota){
-  var q=quota||50, scarce=q<=25, roomy=q>50;
+function assessFit(score, quota, name){
+  var q=quota||50, hot=name?isHot(name):false, scarce=q<=25||hot, roomy=q>50&&!hot;
   if(score>=30){
     if(roomy) return {label:"优势明显",advice:"计分 "+score+" 分＋学额充裕（"+q+"），在这所学校处于有利位置；同分仍要抽签。",tone:"good"};
-    if(scarce) return {label:"组合强但学额紧",advice:"计分 "+score+" 分但学额仅 "+q+"，竞争烈度高，仍要抽签。",tone:"mid"};
+    if(scarce) return {label:"组合强但竞争烈度高",advice:(hot&&q>25?"计分 "+score+" 分＋传统热门校（学额 "+q+" 仍挤破头），竞争烈度高，仍要抽签。":"计分 "+score+" 分但学额仅 "+q+"，竞争烈度高，仍要抽签。"),tone:"mid"};
     return {label:"组合强",advice:"计分 "+score+" 分，处于该校申请者前列组合；同分抽签。",tone:"good"};
   }
   if(score===25){
     if(roomy) return {label:"可冲",advice:"计分 "+score+" 分＋学额充裕（"+q+"），值得放前；同分抽签。",tone:"good"};
-    if(scarce) return {label:"拼运气",advice:"计分 "+score+" 分但学额仅 "+q+"，热门校同分靠抽签。",tone:"mid"};
+    if(scarce) return {label:"拼运气",advice:(hot&&q>25?"计分 "+score+" 分＋传统热门校（学额 "+q+" 仍挤破头），同分靠抽签。":"计分 "+score+" 分但学额仅 "+q+"，热门校同分靠抽签。"),tone:"mid"};
     return {label:"有机会",advice:"计分 "+score+" 分（校友/强关系组合），热门校竞争仍大。",tone:"mid"};
   }
   if(score===20){
     if(roomy) return {label:"有机会",advice:"计分 "+score+" 分（最常见组合）但学额充裕（"+q+"），可以一试。",tone:"mid"};
-    if(scarce) return {label:"基本靠抽签",advice:"计分 "+score+" 分＋学额仅 "+q+"——最常见组合撞上最紧张学额，热门校基本靠抽签。",tone:"warn"};
+    if(scarce) return {label:"基本靠抽签",advice:(hot&&q>25?"计分 "+score+" 分（最常见组合）＋传统热门校（学额 "+q+" 仍挤破头）——基本靠抽签。":"计分 "+score+" 分＋学额仅 "+q+"——最常见组合撞上最紧张学额，热门校基本靠抽签。"),tone:"warn"};
     return {label:"看运气",advice:"计分 "+score+" 分是自行分配最常见组合，热门校同分抽签。",tone:"warn"};
   }
   if(score===15) return {label:"偏弱",advice:"计分 "+score+" 分在自行分配阶段不占优，建议把重心放统一派位乙部。",tone:"warn"};
@@ -521,7 +525,7 @@ function runFit(){
     var label=d?d.name:name, type=d?d.typeLabel:"直资/私立/国际";
     h+='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C"><b>「'+esc(label)+'」是'+esc(type)+'学校</b>——不参与派位、不走计分，直接向学校自行申请，可同时申请多间。</div>';
   } else {
-    var fit=assessFit(calcScore(), d.quota);
+    var fit=assessFit(calcScore(), d.quota, d.name);
     if(genderBad(d)){
       h+='<div style="background:#FDEBE7;border:1px solid #C2410C;border-radius:8px;padding:10px 12px;font-size:13px;color:#C2410C;margin-bottom:8px"><b>⚠️ 性别不符：'+esc(d.name)+' 为'+esc(d.gender)+'，'+(state.kidGender==="女"?"女孩":"男孩")+'不会获派</b>；这张底牌卡没有实际意义，请改填男女校或在志愿表中移除。</div>';
     }
