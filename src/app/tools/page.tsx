@@ -263,10 +263,26 @@ export default function ToolsPage() {
         </div>
 
         <a
-          href="/tools/p1-self-check"
-          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-hl-yellow-bg)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-hl-yellow-border)]"
+          href="/tools/p1-discretionary"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-white)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
         >
           <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">NEW</span>
+          <span className="font-serif text-lg font-bold text-[var(--p-fg)]">自行分配投表决策台 · 阶段一</span>
+          <span className="text-sm text-[var(--p-secondary)]">计分防算错＋甲类必录取预检＋候选校对比＋投表决策报告 →</span>
+        </a>
+        <a
+          href="/tools/p1-simulator"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-hl-yellow-bg)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-hl-yellow-border)]"
+        >
+          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">PRO</span>
+          <span className="font-serif text-lg font-bold text-[var(--p-fg)]">统一派位选校表决策台 · 阶段二（模拟器）</span>
+          <span className="text-sm text-[var(--p-secondary)]">甲部＋乙部志愿结构体检＋滑档线＋三套预案＋体检报告 HK$68 →</span>
+        </a>
+        <a
+          href="/tools/p1-self-check"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-white)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
+        >
+          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">工具</span>
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一派位 · 交表前自查工具</span>
           <span className="text-sm text-[var(--p-secondary)]">计分计算器 ＋ 5条清单 ＋ 结果卡 →</span>
         </a>
@@ -274,17 +290,9 @@ export default function ToolsPage() {
           href="/tools/p1-school-net"
           className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-white)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
         >
-          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">NEW</span>
+          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">数据</span>
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一校网数据库 · 36 网 × 433 所官津小学</span>
           <span className="text-sm text-[var(--p-secondary)]">官方名册名单、学额、地址，逐校可核对 →</span>
-        </a>
-        <a
-          href="/tools/p1-simulator"
-          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-hl-yellow-bg)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-hl-yellow-border)]"
-        >
-          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">PRO</span>
-          <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一志愿结构模拟器 · 完整体检报告 HK$68</span>
-          <span className="text-sm text-[var(--p-secondary)]">填表前推演：风险等级＋修改建议＋叩门预案 →</span>
         </a>
 
         {/* tab */}

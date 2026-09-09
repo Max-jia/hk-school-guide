@@ -9,7 +9,7 @@ import SchoolCompare from "@/components/SchoolCompare";
 import SchoolFitCard from "@/components/SchoolFitCard";
 import DataVersionBadge from "@/components/DataVersionBadge";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
-import { computeSlideLine, suggestOrder, runSimCheck } from "@/lib/sim-engine";
+import { computeSlideLine, suggestOrder, runSimCheck, relativeBand } from "@/lib/sim-engine";
 import { RENEW_NOTE } from "@/lib/data-version";
 
 const P1 = p1NetsJson as {
@@ -319,6 +319,47 @@ export default function P1Simulator() {
     try { localStorage.setItem(PLANS_KEY, JSON.stringify(next)); } catch { /* ignore */ }
   }
 
+  function genderBadSchool(o: SchoolOpt) {
+    return (
+      o?.gender &&
+      kidGender !== "不限" &&
+      ((o.gender === "男校" && kidGender === "女") || (o.gender === "女校" && kidGender === "男"))
+    );
+  }
+
+  // 一键补齐：把网内未填、性别符合的学校按「竞争度」从充裕到稀缺排入剩余志愿
+  function fillMissing() {
+    const filled = new Set(filledB.map((s) => s.name.trim()));
+    const rank = (o: SchoolOpt) => {
+      const b = relativeBand(o.name, o.quota ?? null);
+      return b === "充裕" ? 0 : b === "普通" ? 1 : 2;
+    };
+    const candidates = netSchoolOpts
+      .filter((o) => !filled.has(o.name) && !genderBadSchool(o))
+      .sort((a, b) => rank(a) - rank(b) || (b.quota ?? 0) - (a.quota ?? 0));
+    const need = Math.max(0, targetB - filled.size);
+    const picks = candidates.slice(0, need).map((o) => ({ name: o.name, tier: "match" as SimTier }));
+    if (picks.length === 0) {
+      setSavedTip(true);
+      setTimeout(() => setSavedTip(false), 1500);
+      return;
+    }
+    // 保留已填顺序，剩余空位补入候选
+    const filledArr = filledB.map((s) => ({ ...s }));
+    const blanks = Array.from({ length: Math.max(0, targetB - filledArr.length - picks.length) }, () => ({ name: "", tier: "match" as SimTier }));
+    setPartB([...filledArr, ...picks, ...blanks]);
+    setSavedTip(true);
+    setTimeout(() => setSavedTip(false), 1500);
+  }
+
+  // 按建议顺序一键重排（只重排已填学校，空位保留在末尾）
+  function applyAdvice() {
+    const sug: SimSchool[] = advice.suggested.map((s) => ({ ...s }));
+    const len = partB.length;
+    while (sug.length < len) sug.push({ name: "", tier: "match" });
+    setPartB(sug);
+  }
+
   function genderBadge(name: string, options: SchoolOpt[]) {
     const info = options.find((o) => o.name === name.trim());
     if (
@@ -365,6 +406,9 @@ export default function P1Simulator() {
               <p className="mt-1 text-[var(--p-secondary)]">甲部＋乙部志愿表、滑档线、顺序建议都是这里：10 分和 35 分完全平等，只看志愿顺序和随机编号。</p>
             </div>
           </div>
+          <p className="mt-3 text-sm">
+            阶段一还没想好？<a className="underline" href="/tools/p1-discretionary">先去「自行分配投表决策台」定这唯一一票 →</a>
+          </p>
           <DataVersionBadge />
         </div>
 
@@ -663,18 +707,36 @@ export default function P1Simulator() {
                   ))}
                 </div>
               )}
+              <button
+                onClick={applyAdvice}
+                disabled={advice.differences.length === 0}
+                className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-40"
+              >
+                按建议顺序一键重排
+              </button>
               <p className="mt-2 text-xs text-[var(--p-secondary)]">{advice.note}</p>
             </div>
           )}
 
-          {partB.length < targetB && (
-            <button
-              onClick={() => setPartB((p) => [...p, { name: "", tier: "match" }])}
-              className="mt-3 rounded-[8px] border border-dashed border-[var(--p-gray-300)] px-4 py-2 text-sm text-[var(--p-secondary)] hover:border-[var(--p-fg)] hover:text-[var(--p-fg)]"
-            >
-              ＋ 添加志愿（{partB.length}/{targetB}）
-            </button>
-          )}
+          <div className="mt-3 flex flex-wrap gap-2">
+            {partB.length < targetB && (
+              <button
+                onClick={() => setPartB((p) => [...p, { name: "", tier: "match" }])}
+                className="rounded-[8px] border border-dashed border-[var(--p-gray-300)] px-4 py-2 text-sm text-[var(--p-secondary)] hover:border-[var(--p-fg)] hover:text-[var(--p-fg)]"
+              >
+                ＋ 添加志愿（{partB.length}/{targetB}）
+              </button>
+            )}
+            {filledB.length < targetB && (
+              <button
+                onClick={fillMissing}
+                className="rounded-[8px] border border-dashed border-[var(--p-hl-border)] px-4 py-2 text-sm font-bold text-[var(--p-hl-border)] hover:bg-[var(--p-hl-bg)]"
+                title="把网内未填、性别符合的学校按学额充裕度自动补入"
+              >
+                一键补齐剩余 {targetB - filledB.length} 所（按学额充裕度）
+              </button>
+            )}
+          </div>
           {partB.length >= targetB && (
             <p className="mt-3 text-xs text-[var(--p-secondary)]">本网共 {targetB} 所官津学校，已全部列出。</p>
           )}

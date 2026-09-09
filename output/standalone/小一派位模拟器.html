@@ -144,7 +144,10 @@
     <p class="sub" style="font-size:12px;margin:0 0 10px">可拖拽或点 ↑↓ 调顺序；每行可直接搜索校名（支持简体/繁体），或点 ▾ 下拉</p>
     <div id="partB"></div>
     <div id="workbench"></div>
-    <button class="add" id="addRow">＋ 添加志愿</button>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+      <button class="add" id="addRow" style="flex:1">＋ 添加志愿</button>
+      <button class="add" id="fillBtn" style="flex:1;border-color:var(--teal);color:var(--teal)">一键补齐剩余（按学额充裕度）</button>
+    </div>
   </div>
 
   <div class="no-print" style="display:flex;gap:10px;flex-wrap:wrap">
@@ -440,6 +443,7 @@ function renderWorkbench(){
       }
       h+='</div>';
     }
+    h+='<button class="btn" style="margin-top:8px;font-size:12px;padding:7px 12px" onclick="applyAdvice()">按建议顺序一键重排</button>';
     h+='<p class="line-note">'+esc(adv.note)+'</p></div>';
   }
   // 逐校标签（单文件版=已购，全量显示）
@@ -513,6 +517,40 @@ function addRow(){
   }else{
     alert("本网共 "+n+" 所官津学校，已全部列出。");
   }
+}
+
+// 一键补齐：把网内未填、性别符合的学校按学额充裕度填入剩余空行
+function fillMissing(){
+  var n=curNet().schools.length;
+  var filled={}; state.partB.forEach(function(s){ if(s.name.trim()) filled[s.name.trim()]=1; });
+  var cands=[];
+  curNet().schools.forEach(function(sc){
+    if(filled[sc.name]) return;
+    if(state.kidGender!=="不限"&&((sc.gender==="男校"&&state.kidGender==="女")||(sc.gender==="女校"&&state.kidGender==="男"))) return;
+    cands.push(sc);
+  });
+  cands.sort(function(a,b){
+    var ra=relBand(a.name,a.quota), rb=relBand(b.name,b.quota);
+    var za=ra==="充裕"?0:ra==="普通"?1:2, zb=rb==="充裕"?0:rb==="普通"?1:2;
+    return za-zb||((b.quota||0)-(a.quota||0));
+  });
+  var need=Math.max(0,n-Object.keys(filled).length);
+  var picks=cands.slice(0,need).map(function(sc){return {name:sc.name,tier:"match"};});
+  if(!picks.length){ alert("网内学校已全部列出或已填满。"); return; }
+  var filledArr=state.partB.filter(function(s){return s.name.trim();}).map(function(s){return {name:s.name,tier:s.tier};});
+  var blanks=[]; for(var i=filledArr.length+picks.length;i<n;i++){ blanks.push({name:"",tier:"match"}); }
+  state.partB=filledArr.concat(picks,blanks);
+  renderList("partB",state.partB,state.partB.length);
+  save();
+}
+// 按建议顺序一键重排（只重排已填学校，空位保留在末尾）
+function applyAdvice(){
+  var adv=suggestOrder();
+  var sug=adv.suggested.map(function(s){return {name:s.name,tier:s.tier};});
+  while(sug.length<state.partB.length){ sug.push({name:"",tier:"match"}); }
+  state.partB=sug;
+  renderList("partB",state.partB,state.partB.length);
+  save();
 }
 
 // ===== 底牌卡：相对竞争位置（非录取概率） =====
@@ -752,6 +790,7 @@ $("net").addEventListener("change",function(e){
 });
 
 $("addRow").addEventListener("click",addRow);
+$("fillBtn").addEventListener("click",fillMissing);
 $("runBtn").addEventListener("click",runCheck);
 $("printBtn").addEventListener("click",function(){window.print();});
 $("fitBtn").addEventListener("click",runFit);
