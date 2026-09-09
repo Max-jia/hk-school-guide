@@ -17,14 +17,32 @@ const TIERS: { v: SimTier; label: string }[] = [
   { v: "safe", label: "保底" },
 ];
 
-const SCORE_OPTIONS = [10, 15, 20, 25, 30, 35];
+const REL_PTS: Record<string, number> = { work: 20, sec: 20, manager: 20, grad: 10, first: 5 };
+const ORG_PTS: Record<string, number> = { religion: 5, member: 5 };
+const REL_OPTS: { v: string; label: string }[] = [
+  { v: "", label: "无" },
+  { v: "work", label: "父/母全职在与该小学同一校址的幼稚园或中学部工作（20分）" },
+  { v: "sec", label: "兄/姊在与该小学同一校址的中学部就读（20分）" },
+  { v: "manager", label: "父/母为该小学的校董（20分）" },
+  { v: "grad", label: "父/母或兄/姊为该小学的毕业生（10分）" },
+  { v: "first", label: "首名出生子女（家庭中最年长的孩子，5分）" },
+];
+const ORG_OPTS: { v: string; label: string }[] = [
+  { v: "", label: "无" },
+  { v: "religion", label: "与该校办学团体有相同宗教信仰（5分）" },
+  { v: "member", label: "父/母为该小学主办社团的成员（5分）" },
+];
+function calcScore(rel: string, org: string): number {
+  return (REL_PTS[rel] || 0) + (ORG_PTS[org] || 0) + 10;
+}
 
 const EMPTY_A: SimSchool[] = Array.from({ length: 3 }, () => ({ name: "", tier: "sprint" }));
 const EMPTY_B: SimSchool[] = Array.from({ length: 10 }, () => ({ name: "", tier: "match" }));
 
 export default function P1Simulator() {
   const [net, setNet] = useState(P1.nets[0].net);
-  const [score, setScore] = useState(20);
+  const [rel, setRel] = useState("");
+  const [org, setOrg] = useState("");
   const [partA, setPartA] = useState<SimSchool[]>(EMPTY_A);
   const [partB, setPartB] = useState<SimSchool[]>(EMPTY_B);
   const [unlocked, setUnlocked] = useState(false);
@@ -55,10 +73,11 @@ export default function P1Simulator() {
       const raw = localStorage.getItem("p1sim_input");
       if (raw) {
         const d = JSON.parse(raw) as {
-          net?: string; score?: number; partA?: SimSchool[]; partB?: SimSchool[];
+          net?: string; rel?: string; org?: string; partA?: SimSchool[]; partB?: SimSchool[];
         };
         if (d.net && P1.nets.some((n) => n.net === d.net)) setNet(d.net);
-        if (typeof d.score === "number") setScore(d.score);
+        if (typeof d.rel === "string") setRel(d.rel);
+        if (typeof d.org === "string") setOrg(d.org);
         if (d.partA) setPartA(d.partA);
         if (d.partB) setPartB(d.partB);
       }
@@ -86,17 +105,18 @@ export default function P1Simulator() {
     if (bCount <= 9) tips.push({ kind: "danger", text: `乙部只填了 ${bCount} 个志愿，结构严重空洞。` });
     else if (bCount < 20) tips.push({ kind: "info", text: `乙部 ${bCount}/30，还有空位可以补保底。` });
     if (dupNames.length) tips.push({ kind: "danger", text: `乙部有重复志愿：${dupNames.join("、")}` });
+    const score = calcScore(rel, org);
     if (score <= 20 && sprintCount >= 6) tips.push({ kind: "info", text: `计分 ${score} 分但冲刺 ${sprintCount} 所，底牌和目标错配。` });
     const a1 = partA.find((x) => x.name.trim())?.name.trim() || "";
     const b1 = filledB[0]?.name.trim() || "";
     if (a1 && b1 && a1 !== b1) tips.push({ kind: "info", text: "甲一与乙一不是同一所（1-1-1 未对齐），若目标校在网内建议统一。" });
     if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，建议解锁完整报告再核对一遍。" });
     return tips.slice(0, 3);
-  }, [safeCount, bCount, dupNames, score, sprintCount]);
+  }, [safeCount, bCount, dupNames, rel, org, sprintCount]);
 
   function save() {
     try {
-      localStorage.setItem("p1sim_input", JSON.stringify({ net, score, partA, partB }));
+      localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, score: calcScore(rel, org), partA, partB }));
       setSavedTip(true);
       setTimeout(() => setSavedTip(false), 1500);
     } catch { /* ignore */ }
@@ -157,16 +177,39 @@ export default function P1Simulator() {
                 ))}
               </select>
             </label>
-            <label className="block">
+            <div className="block">
               <span className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">
-                乙类计分（不确定？去 <a className="underline" href="/tools/p1-self-check">计分器</a> 算）
+                乙类计分 · 勾选条件自动计算
               </span>
-              <select value={score} onChange={(e) => setScore(Number(e.target.value))} className={inputCls}>
-                {SCORE_OPTIONS.map((v) => (
-                  <option key={v} value={v}>{v} 分</option>
-                ))}
-              </select>
-            </label>
+              <div className="rounded-[8px] bg-[var(--p-fg)] px-4 py-3 text-[var(--p-bg)]">
+                <span className="text-lg font-bold">
+                  乙类计分：{calcScore(rel, org)} 分
+                </span>
+                <span className="block text-xs opacity-80">
+                  关系项 {REL_PTS[rel] || 0} + 办学团体项 {ORG_PTS[org] || 0} + 适龄 10（最高 35）
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <fieldset className="block">
+              <legend className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">关系项（只可选一项，最高 20 分）</legend>
+              {REL_OPTS.map((o) => (
+                <label key={o.v} className="flex cursor-pointer items-start gap-2 py-1 text-sm text-[var(--p-fg)]">
+                  <input type="radio" name="rel" checked={rel === o.v} onChange={() => setRel(o.v)} className="mt-1" />
+                  <span>{o.label}</span>
+                </label>
+              ))}
+            </fieldset>
+            <fieldset className="block">
+              <legend className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">办学团体项（只可选一项，最高 5 分）</legend>
+              {ORG_OPTS.map((o) => (
+                <label key={o.v} className="flex cursor-pointer items-start gap-2 py-1 text-sm text-[var(--p-fg)]">
+                  <input type="radio" name="org" checked={org === o.v} onChange={() => setOrg(o.v)} className="mt-1" />
+                  <span>{o.label}</span>
+                </label>
+              ))}
+            </fieldset>
           </div>
         </section>
 
