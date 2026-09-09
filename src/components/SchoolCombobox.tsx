@@ -8,6 +8,11 @@ export type SchoolOpt = {
   quota?: number | null;
   net?: string;
   area_short?: string;
+  gender?: string;
+  sessions?: string[];
+  through_train?: string;
+  language?: string;
+  religion?: string;
 };
 
 export default function SchoolCombobox({
@@ -112,3 +117,4 @@ export default function SchoolCombobox({
     </div>
   );
 }
+

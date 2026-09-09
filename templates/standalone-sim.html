@@ -70,7 +70,14 @@
 
   <div class="card no-print">
     <h2>① 基本信息（选校网 + 勾条件，分数自动算）</h2>
-    <label><span class="t">所属校网</span><select id="net"></select></label>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <label><span class="t">所属校网</span><select id="net"></select></label>
+      <label><span class="t">孩子性别（用于排除男/女校）</span><select id="gender">
+        <option value="不限">不限（先不筛选）</option>
+        <option value="男">男孩</option>
+        <option value="女">女孩</option>
+      </select></label>
+    </div>
     <div id="relBox"></div>
     <div id="orgBox"></div>
     <div id="scoreShow" style="margin-top:10px;padding:12px 16px;background:var(--ink);color:var(--bg);border-radius:8px;font-weight:700"></div>
@@ -78,12 +85,24 @@
 
   <div class="card no-print">
     <h2>② 甲部志愿（全港任选，最多 3）</h2>
+    <div class="sub" style="font-size:12px;margin:0 0 10px;background:#FBF9F5;border:1px solid var(--line);border-radius:8px;padding:8px 10px">
+      <b>冲刺 / 匹配 / 保底 是什么意思？</b><br>
+      派位按你填的<b>顺序 + 随机编号</b>逐一分派：<b>冲刺</b>=最想进、竞争激烈，命中靠运气，放 1-2 间；
+      <b>匹配</b>=底牌相当、真实能接受的，是志愿表主力；<b>保底</b>=学额充足、派到也满意的安全垫。
+      工具会检查你标的是否和实际学额/竞争匹配。
+    </div>
     <p class="sub" style="font-size:12px;margin:0 0 10px">可拖拽或点 ↑↓ 调顺序；每行可直接搜索校名（支持简体/繁体），或点 ▾ 下拉</p>
     <div id="partA"></div>
   </div>
 
   <div class="card no-print">
     <h2>③ 乙部志愿（校网内，本网共 <span id="bCountLabel"></span> 所）</h2>
+    <div class="sub" style="font-size:12px;margin:0 0 10px;background:#FBF9F5;border:1px solid var(--line);border-radius:8px;padding:8px 10px">
+      <b>冲刺 / 匹配 / 保底 是什么意思？</b><br>
+      派位按你填的<b>顺序 + 随机编号</b>逐一分派：<b>冲刺</b>=最想进、竞争激烈，命中靠运气，放 1-2 间；
+      <b>匹配</b>=底牌相当、真实能接受的，是志愿表主力；<b>保底</b>=学额充足、派到也满意的安全垫。
+      工具会检查你标的是否和实际学额/竞争匹配。
+    </div>
     <p class="sub" style="font-size:12px;margin:0 0 10px">可拖拽或点 ↑↓ 调顺序；每行可直接搜索校名（支持简体/繁体），或点 ▾ 下拉</p>
     <div id="partB"></div>
     <div id="workbench"></div>
@@ -118,7 +137,7 @@ var LOCK = "standalone_sim_v1";
 function $(id){return document.getElementById(id);}
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
-var state = {net:P1.nets[0].net, rel:"", org:"", partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}], partB:[]};
+var state = {net:P1.nets[0].net, rel:"", org:"", kidGender:"不限", partA:[{name:"",tier:"match"},{name:"",tier:"match"},{name:"",tier:"match"}], partB:[]};
 function initB(count){ for(var __i=0;__i<count;__i++){state.partB.push({name:"",tier:"match"});} }
 initB(Math.min(10, P1.nets[0].schools.length));
 function save(){try{localStorage.setItem(LOCK, JSON.stringify(state));}catch(e){} if(typeof renderWorkbench==="function"){renderWorkbench();}}
@@ -132,6 +151,8 @@ function load(){try{var raw=localStorage.getItem(LOCK); if(raw){var d=JSON.parse
 
 function curNet(){for(var i=0;i<P1.nets.length;i++){if(P1.nets[i].net===state.net)return P1.nets[i];}return P1.nets[0];}
 function quotaOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i].quota;}return 0;}
+function detailOf(name){var n=curNet();name=String(name).trim();for(var i=0;i<n.schools.length;i++){if(n.schools[i].name===name)return n.schools[i];}return null;}
+function genderBad(d){ if(!d||!d.gender||state.kidGender==="不限") return false; return (d.gender==="男校"&&state.kidGender==="女")||(d.gender==="女校"&&state.kidGender==="男"); }
 
 function tierSelect(v){var h='<select class="tier">';for(var i=0;i<TIERS.length;i++){h+='<option value="'+TIERS[i].v+'"'+(TIERS[i].v===v?' selected':'')+'>'+TIERS[i].t+'</option>';}h+='</select>';return h;}
 
@@ -154,6 +175,7 @@ function render(){
   var netSel=$("net"); netSel.innerHTML="";
   P1.nets.forEach(function(n){var o=document.createElement("option");o.value=n.net;o.textContent=n.net+" 网（"+n.area_short+"）";netSel.value=state.net;netSel.appendChild(o);});
   netSel.value=state.net;
+  $("gender").value=state.kidGender;
   $("bCountLabel").textContent=curNet().schools.length;
   renderRadios("relBox","rel",REL_OPTS,"关系项（5 项只可选一项，最高 20 分）");
   renderRadios("orgBox","org",ORG_OPTS,"办学团体项（2 项只可选一项，最高 5 分）");
@@ -306,6 +328,27 @@ function renderWorkbench(){
     }
     h+='<p class="line-note">'+esc(adv.note)+'</p></div>';
   }
+  // 逐校标签（单文件版=已购，全量显示）
+  var filled=state.partB.filter(function(x){return x.name.trim();});
+  if(filled.length){
+    h+='<div class="wb"><h4>网内学校体检（逐校标签）</h4>';
+    for(var i=0;i<filled.length;i++){
+      var d=detailOf(filled[i].name.trim());
+      if(!d) continue;
+      var bad=genderBad(d);
+      h+='<div style="border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-top:6px;background:#fff">';
+      h+='<b>'+esc(d.name)+(bad?' <span style="color:#C2410C;font-size:12px">⚠️性别不符</span>':'')+'</b>';
+      h+='<div style="margin-top:4px;font-size:12px;color:#44403C">';
+      if(d.gender) h+='<span style="display:inline-block;background:#FBF9F5;border-radius:4px;padding:1px 6px;margin:2px 3px 2px 0">'+esc(d.gender)+'</span>';
+      if(d.religion) h+='<span style="display:inline-block;background:#FBF9F5;border-radius:4px;padding:1px 6px;margin:2px 3px 2px 0">'+esc(d.religion)+'</span>';
+      if(d.sessions&&d.sessions.length) h+='<span style="display:inline-block;background:#FBF9F5;border-radius:4px;padding:1px 6px;margin:2px 3px 2px 0">'+esc(d.sessions.join("/"))+'班</span>';
+      if(d.through_train) h+='<span style="display:inline-block;background:#fef9e7;border-radius:4px;padding:1px 6px;margin:2px 3px 2px 0">🔗'+esc(d.through_train)+'</span>';
+      if(d.quota) h+='<span style="display:inline-block;background:#FBF9F5;border-radius:4px;padding:1px 6px;margin:2px 3px 2px 0">学额'+d.quota+'</span>';
+      if(d.language) h+='<span style="display:inline-block;background:#FBF9F5;border-radius:4px;padding:1px 6px;margin:2px 3px 2px 0">'+esc(d.language.slice(0,18))+'</span>';
+      h+='</div></div>';
+    }
+    h+='</div>';
+  }
   wb.innerHTML=h;
 }
 function renderList(id, arr, max){
@@ -329,6 +372,8 @@ function renderList(id, arr, max){
     var cont=document.createElement("div"); cont.className="schoolwrap"; d.appendChild(cont);
     schoolControl(cont,id,arr,i);
     if(id==="partB"){
+      var dInfo=detailOf(arr[i].name||"");
+      if(genderBad(dInfo)){ var gs=document.createElement("span"); gs.className="quota"; gs.style.background="#FDEBE7"; gs.style.color="#C2410C"; gs.style.fontWeight="bold"; gs.textContent="⚠️ "+dInfo.gender; d.appendChild(gs); }
       var q=quotaOf(arr[i].name||"");
       if(q>0&&q<=30){var sp=document.createElement("span");sp.className="quota";sp.textContent="学额"+q;d.appendChild(sp);}
     }
@@ -438,6 +483,7 @@ function runCheck(){
   $("result").scrollIntoView({behavior:"smooth",block:"start"});
 }
 
+$("gender").addEventListener("change",function(e){ state.kidGender=e.target.value; save(); renderList("partB",state.partB,state.partB.length); });
 $("net").addEventListener("change",function(e){
   state.net=e.target.value; save();
   $("bCountLabel").textContent=curNet().schools.length;

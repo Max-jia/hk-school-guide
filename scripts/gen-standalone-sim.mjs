@@ -14,7 +14,12 @@ const data = {
   nets: p1.nets.map((n) => ({
     net: n.net,
     area_short: n.area_short,
-    schools: n.schools.map((s) => ({ name: s.name, simp: toSimp(s.name), quota: s.quota })),
+    schools: n.schools.map((s) => ({
+      name: s.name, simp: toSimp(s.name), quota: s.quota,
+      gender: s.gender || "", religion: s.religion || "",
+      sessions: s.sessions || [], through_train: s.through_train || "",
+      language: s.language || "",
+    })),
   })),
 };
 

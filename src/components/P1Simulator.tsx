@@ -9,7 +9,13 @@ import type { SimSchool, SimTier } from "@/lib/sim-engine";
 import { computeSlideLine, suggestOrder } from "@/lib/sim-engine";
 
 const P1 = p1NetsJson as {
-  nets: { net: string; area_short: string; count: number; schools: { name: string; simp: string; quota: number | null }[] }[];
+  nets: {
+    net: string; area_short: string; count: number;
+    schools: {
+      name: string; simp: string; quota: number | null;
+      gender?: string; sessions?: string[]; through_train?: string; language?: string; religion?: string;
+    }[];
+  }[];
 };
 
 const TIERS: { v: SimTier; label: string }[] = [
@@ -46,6 +52,7 @@ export default function P1Simulator() {
   const [net, setNet] = useState(INIT_NET);
   const [rel, setRel] = useState("");
   const [org, setOrg] = useState("");
+  const [kidGender, setKidGender] = useState("不限");
   const [partA, setPartA] = useState<SimSchool[]>(EMPTY_A);
   const [partB, setPartB] = useState<SimSchool[]>(EMPTY_B);
   const [unlocked, setUnlocked] = useState(false);
@@ -55,14 +62,18 @@ export default function P1Simulator() {
 
   const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const out: SchoolOpt[] = [];
-    for (const n of P1.nets) for (const sc of n.schools) out.push({ name: sc.name, simp: sc.simp, quota: sc.quota, net: n.net, area_short: n.area_short });
+    for (const n of P1.nets) for (const sc of n.schools) out.push(toOpt(sc, n.net, n.area_short));
     return out;
   }, []);
 
   const netSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const n = P1.nets.find((x) => x.net === net);
-    return n ? n.schools.map((sc) => ({ name: sc.name, simp: sc.simp, quota: sc.quota, net: n.net, area_short: n.area_short })) : [];
+    return n ? n.schools.map((sc) => toOpt(sc, n.net, n.area_short)) : [];
   }, [net]);
+
+  function toOpt(sc: (typeof P1.nets)[number]["schools"][number], net: string, area_short: string): SchoolOpt {
+    return { name: sc.name, simp: sc.simp, quota: sc.quota, net, area_short, gender: sc.gender, sessions: sc.sessions, through_train: sc.through_train, language: sc.language, religion: sc.religion };
+  }
 
   const quotaMap = useMemo(() => {
     const n = P1.nets.find((x) => x.net === net);
@@ -83,11 +94,12 @@ export default function P1Simulator() {
       const raw = localStorage.getItem("p1sim_input");
       if (raw) {
         const d = JSON.parse(raw) as {
-          net?: string; rel?: string; org?: string; partA?: SimSchool[]; partB?: SimSchool[];
+          net?: string; rel?: string; org?: string; kidGender?: string; partA?: SimSchool[]; partB?: SimSchool[];
         };
         if (d.net && P1.nets.some((n) => n.net === d.net)) setNet(d.net);
         if (typeof d.rel === "string") setRel(d.rel);
         if (typeof d.org === "string") setOrg(d.org);
+        if (typeof d.kidGender === "string") setKidGender(d.kidGender);
         if (d.partA) setPartA(d.partA);
         if (d.partB) setPartB(d.partB);
       }
@@ -135,7 +147,7 @@ export default function P1Simulator() {
 
   function save() {
     try {
-      localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, score: calcScore(rel, org), netSchoolCount: targetB, partA, partB }));
+      localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, kidGender, score: calcScore(rel, org), netSchoolCount: targetB, partA, partB }));
       setSavedTip(true);
       setTimeout(() => setSavedTip(false), 1500);
     } catch { /* ignore */ }
@@ -204,18 +216,26 @@ export default function P1Simulator() {
                 ))}
               </select>
             </label>
-            <div className="block">
-              <span className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">
-                乙类计分 · 勾选条件自动计算
+            <label className="block">
+              <span className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">孩子性别（用于排除男/女校）</span>
+              <select value={kidGender} onChange={(e) => setKidGender(e.target.value)} className={inputCls}>
+                {["不限", "男", "女"].map((g) => (
+                  <option key={g} value={g}>{g === "不限" ? "不限（先不筛选）" : `${g}孩`}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <div className="mt-4">
+            <span className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">
+              乙类计分 · 勾选条件自动计算
+            </span>
+            <div className="rounded-[8px] bg-[var(--p-fg)] px-4 py-3 text-[var(--p-bg)]">
+              <span className="text-lg font-bold">
+                乙类计分：{calcScore(rel, org)} 分
               </span>
-              <div className="rounded-[8px] bg-[var(--p-fg)] px-4 py-3 text-[var(--p-bg)]">
-                <span className="text-lg font-bold">
-                  乙类计分：{calcScore(rel, org)} 分
-                </span>
-                <span className="block text-xs opacity-80">
-                  关系项 {REL_PTS[rel] || 0} + 办学团体项 {ORG_PTS[org] || 0} + 适龄 10（最高 35）
-                </span>
-              </div>
+              <span className="block text-xs opacity-80">
+                关系项 {REL_PTS[rel] || 0} + 办学团体项 {ORG_PTS[org] || 0} + 适龄 10（最高 35）
+              </span>
             </div>
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -270,6 +290,12 @@ export default function P1Simulator() {
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">③ 乙部志愿（所属校网，最多 30 个）</h2>
             <span className="font-mono text-xs uppercase text-[var(--p-secondary)]">已填 {bCount}/{targetB}（本网共 {targetB} 所）</span>
           </div>
+          <div className="mt-2 rounded-[8px] bg-[var(--p-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
+            <b className="text-[var(--p-fg)]">冲刺 / 匹配 / 保底 是什么意思？</b><br />
+            派位按你填的<b>顺序 + 随机编号</b>逐一分派，所以志愿顺序很重要：<b>冲刺</b>=最想进、竞争激烈，命中靠运气，放 1-2 间；
+            <b>匹配</b>=底牌相当、真实能接受的，是志愿表主力；<b>保底</b>=学额充足、派到也满意的安全垫。
+            工具会检查你标的是否和实际学额/竞争匹配。
+          </div>
           <p className="mt-2 text-xs text-[var(--p-secondary)]">
             💡 可拖拽或点 ↑↓ 调整顺序，滑档线和顺序建议会实时重算
           </p>
@@ -303,6 +329,21 @@ export default function P1Simulator() {
                   onChange={(v) => setRow(partB, setPartB, i, { name: v })}
                   placeholder={`乙部第 ${i + 1} 志愿（可搜索或下拉）`}
                 />
+                {(() => {
+                  const info = netSchoolOpts.find((o) => o.name === s.name.trim());
+                  if (
+                    info?.gender &&
+                    kidGender !== "不限" &&
+                    ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"))
+                  ) {
+                    return (
+                      <span className="shrink-0 self-center rounded bg-[#FDEBE7] px-2 py-1 text-xs font-bold text-[#C2410C]">
+                        ⚠️ {info.gender}
+                      </span>
+                    );
+                  }
+                  return null;
+                })()}
                 {(quotaMap.get(s.name.trim()) ?? 0) > 0 && (quotaMap.get(s.name.trim()) ?? 0) <= 30 && (
                   <span className="shrink-0 self-center rounded bg-[var(--p-hl-yellow-bg)] px-2 py-1 font-mono text-xs text-[var(--p-fg)]">
                     学额{quotaMap.get(s.name.trim())}
@@ -326,6 +367,56 @@ export default function P1Simulator() {
               </div>
             ))}
           </div>
+          {/* 网内学校体检（Pro）：逐校标签 */}
+          {filledB.length > 0 && (
+            <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
+              <div className="flex items-center gap-2">
+                <p className="font-serif text-lg font-bold text-[var(--p-fg)]">网内学校体检</p>
+                {!unlocked && (
+                  <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>
+                )}
+              </div>
+              <div className="mt-3 grid gap-2">
+                {filledB.slice(0, unlocked ? filledB.length : 1).map((s2, i2) => {
+                  const info = netSchoolOpts.find((o) => o.name === s2.name.trim());
+                  if (!info) return null;
+                  const genderBad = kidGender !== "不限" && ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"));
+                  return (
+                    <div key={i2} className="rounded-[8px] border border-[var(--p-gray-300)] bg-[var(--p-white)] px-3 py-2 text-sm">
+                      <p className="font-bold text-[var(--p-fg)]">
+                        {info.name}
+                        {genderBad && <span className="ml-2 rounded bg-[#FDEBE7] px-1.5 py-0.5 text-xs font-bold text-[#C2410C]">性别不符</span>}
+                      </p>
+                      <div className="mt-1 flex flex-wrap gap-1.5 text-xs text-[var(--p-secondary)]">
+                        {info.gender && <span className="rounded bg-[var(--p-bg)] px-1.5 py-0.5">{(info.gender || "").replace("校", "")}校</span>}
+                        {info.religion && <span className="rounded bg-[var(--p-bg)] px-1.5 py-0.5">{info.religion}</span>}
+                        {info.sessions?.length ? <span className="rounded bg-[var(--p-bg)] px-1.5 py-0.5">{info.sessions.join("/")}班</span> : null}
+                        {info.through_train ? <span className="rounded bg-[var(--p-hl-yellow-bg)] px-1.5 py-0.5">🔗 {info.through_train}</span> : null}
+                        {info.quota ? <span className="rounded bg-[var(--p-bg)] px-1.5 py-0.5">学额{info.quota}</span> : null}
+                        {info.language ? <span className="rounded bg-[var(--p-bg)] px-1.5 py-0.5">{info.language.slice(0, 18)}</span> : null}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              {!unlocked && (
+                <div className="mt-3 rounded-[8px] bg-[#FEF3E2] px-3 py-2 text-sm text-[#B45309]">
+                  <p className="font-bold">🔒 逐校体检是 Pro 功能</p>
+                  <p className="mt-1">
+                    解锁后可查看全部志愿学校的性别 / 宗教 / 班制 / 升中通路 / 学额标签，自动标出「填了也白填」的学校。
+                  </p>
+                  <button
+                    onClick={buy}
+                    disabled={buying}
+                    className="mt-2 rounded-[8px] bg-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
+                  >
+                    {buying ? "正在前往支付…" : "解锁完整逐校体检 · HK$68"}
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* 决策工作台：滑档线 + 顺序建议（实时联动） */}
           {slide.positions.length > 0 && (
             <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">

@@ -28,7 +28,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣嘉禄学校"
+     "simp": "圣嘉禄学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -44,7 +50,13 @@
       "P",
       "S"
      ],
-     "simp": "圣士提反女子中学附属小学"
+     "simp": "圣士提反女子中学附属小学",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 聖士提反女子中學",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -60,7 +72,13 @@
       "P",
       "S"
      ],
-     "simp": "李升小学"
+     "simp": "李升小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -75,7 +93,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "天主教总堂区学校"
+     "simp": "天主教总堂区学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "英文"
     },
     {
      "net": "11",
@@ -90,7 +114,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "香港潮商学校"
+     "simp": "香港潮商学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "11",
@@ -105,7 +135,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "英皇书院同学会小学"
+     "simp": "英皇书院同学会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "11",
@@ -120,7 +156,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会基恩小学"
+     "simp": "圣公会基恩小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -135,7 +177,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会吕明才纪念小学"
+     "simp": "圣公会吕明才纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "11",
@@ -150,7 +198,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会圣马太小学"
+     "simp": "圣公会圣马太小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -165,7 +219,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会圣彼得小学"
+     "simp": "圣公会圣彼得小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -180,7 +240,14 @@
      "remarks": [
       "S"
      ],
-     "simp": "嘉诺撒圣心学校"
+     "simp": "嘉诺撒圣心学校",
+     "gender": "女校",
+     "sessions": [
+      "下午",
+      "全日"
+     ],
+     "through_train": "联系 嘉諾撒聖心書院",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "11",
@@ -197,7 +264,13 @@
       "U1",
       "#1"
      ],
-     "simp": "新会商会学校"
+     "simp": "新会商会学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 新會商會陳白沙紀念中學",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -212,7 +285,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣安多尼学校"
+     "simp": "圣安多尼学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "11",
@@ -227,7 +306,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "般咸道官立小学"
+     "simp": "般咸道官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -242,7 +327,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "中西区圣安多尼学校"
+     "simp": "中西区圣安多尼学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "11",
@@ -257,7 +348,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "英皇书院同学会小学第二校"
+     "simp": "英皇书院同学会小学第二校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -280,7 +377,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣保禄天主教小学"
+     "simp": "圣保禄天主教小学",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 聖保祿中學",
+     "language": "中文"
     },
     {
      "net": "12",
@@ -296,7 +399,13 @@
       "P",
       "S"
      ],
-     "simp": "嘉诺撒圣方济各学校"
+     "simp": "嘉诺撒圣方济各学校",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 嘉諾撒聖方濟各書院",
+     "language": "中文"
     },
     {
      "net": "12",
@@ -312,7 +421,13 @@
       "S",
       "#2"
      ],
-     "simp": "圣若瑟小学"
+     "simp": "圣若瑟小学",
+     "gender": "男校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 聖若瑟書院",
+     "language": "英文"
     },
     {
      "net": "12",
@@ -328,7 +443,13 @@
       "P",
       "S"
      ],
-     "simp": "轩尼诗道官立小学"
+     "simp": "轩尼诗道官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 皇仁書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學、何東中學",
+     "language": "中文"
     },
     {
      "net": "12",
@@ -343,7 +464,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "保良局金银业贸易场张凝文学校"
+     "simp": "保良局金银业贸易场张凝文学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "12",
@@ -359,7 +486,13 @@
       "P",
       "S"
      ],
-     "simp": "官立嘉道理爵士小学"
+     "simp": "官立嘉道理爵士小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 官立嘉道理爵士中學（西九龍）",
+     "language": "英文"
     },
     {
      "net": "12",
@@ -374,7 +507,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "东华三院李赐豪小学"
+     "simp": "东华三院李赐豪小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "12",
@@ -390,7 +529,13 @@
       "S",
       "U2"
      ],
-     "simp": "佛教黄焯庵小学"
+     "simp": "佛教黄焯庵小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 佛教黃鳳翎中學",
+     "language": "中文"
     },
     {
      "net": "12",
@@ -406,7 +551,13 @@
       "P",
       "S"
      ],
-     "simp": "李升大坑学校"
+     "simp": "李升大坑学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "12",
@@ -422,7 +573,13 @@
       "P",
       "S"
      ],
-     "simp": "玛利曼小学"
+     "simp": "玛利曼小学",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 瑪利曼中學",
+     "language": "英文"
     },
     {
      "net": "12",
@@ -437,7 +594,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "宝觉小学"
+     "simp": "宝觉小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "12",
@@ -452,7 +615,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "宝血小学"
+     "simp": "宝血小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "12",
@@ -467,7 +636,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会圣雅各小学"
+     "simp": "圣公会圣雅各小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "12",
@@ -483,7 +658,13 @@
       "P",
       "S"
      ],
-     "simp": "轩尼诗道官立小学（铜锣湾）"
+     "simp": "轩尼诗道官立小学（铜锣湾）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 皇仁書院、庇理羅士女子中學、何東中學、<br>金文泰中學、鄧肇堅維多利亞官立中學",
+     "language": "中文"
     }
    ]
   },
@@ -506,7 +687,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "北角卫理小学"
+     "simp": "北角卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -522,7 +709,13 @@
       "P",
       "S"
      ],
-     "simp": "北角官立小学"
+     "simp": "北角官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 筲箕灣官立中學、金文泰中學、筲箕灣東官立中學",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -537,7 +730,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "北角循道学校"
+     "simp": "北角循道学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -552,7 +751,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "番禺会所华仁小学"
+     "simp": "番禺会所华仁小学",
+     "gender": "男校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 香港華仁書院",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -567,7 +772,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "佛教中华康山学校"
+     "simp": "佛教中华康山学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -583,7 +794,13 @@
       "P",
       "S"
      ],
-     "simp": "香港嘉诺撒学校"
+     "simp": "香港嘉诺撒学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 嘉諾撒書院",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "14",
@@ -599,7 +816,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会圣米迦勒小学"
+     "simp": "圣公会圣米迦勒小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -615,7 +838,13 @@
       "P",
       "S"
      ],
-     "simp": "沪江小学"
+     "simp": "沪江小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 滬江維多利亞學校",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -631,7 +860,13 @@
       "P",
       "S"
      ],
-     "simp": "太古小学"
+     "simp": "太古小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "14",
@@ -647,7 +882,13 @@
       "P",
       "S"
      ],
-     "simp": "丹拿山循道学校"
+     "simp": "丹拿山循道学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -671,7 +912,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教明德学校"
+     "simp": "天主教明德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "16",
@@ -687,7 +934,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会基湾小学"
+     "simp": "中华基督教会基湾小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "16",
@@ -703,7 +956,13 @@
       "P",
       "S"
      ],
-     "simp": "慈幼学校"
+     "simp": "慈幼学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 慈幼英文學校",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "16",
@@ -719,7 +978,13 @@
       "P",
       "S"
      ],
-     "simp": "筲箕湾崇真学校"
+     "simp": "筲箕湾崇真学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "16",
@@ -735,7 +1000,13 @@
       "P",
       "S"
      ],
-     "simp": "香港中国妇女会丘佐荣学校"
+     "simp": "香港中国妇女会丘佐荣学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "16",
@@ -750,7 +1021,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "救世军韦理夫人纪念学校"
+     "simp": "救世军韦理夫人纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "16",
@@ -766,7 +1043,13 @@
       "P",
       "S"
      ],
-     "simp": "励志会梁李秀娱纪念小学"
+     "simp": "励志会梁李秀娱纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "16",
@@ -782,7 +1065,13 @@
       "P",
       "S"
      ],
-     "simp": "爱秩序湾官立小学"
+     "simp": "爱秩序湾官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 皇仁書院、筲箕灣官立中學、筲箕灣東官立中學、<br> 金文泰中學",
+     "language": "中文"
     },
     {
      "net": "16",
@@ -798,7 +1087,13 @@
       "P",
       "S"
      ],
-     "simp": "培侨小学"
+     "simp": "培侨小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 培僑中學（北角）、培僑書院（沙田）",
+     "language": "中文"
     },
     {
      "net": "16",
@@ -814,7 +1109,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会基湾小学（爱蝶湾）"
+     "simp": "中华基督教会基湾小学（爱蝶湾）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "16",
@@ -830,7 +1131,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会柴湾圣米迦勒小学"
+     "simp": "圣公会柴湾圣米迦勒小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     }
    ]
   },
@@ -853,7 +1160,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "鸭脷洲街坊学校"
+     "simp": "鸭脷洲街坊学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "18",
@@ -869,7 +1182,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院鹤山学校"
+     "simp": "东华三院鹤山学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "18",
@@ -885,7 +1204,13 @@
       "P",
       "S"
      ],
-     "simp": "嘉诺撒培德学校"
+     "simp": "嘉诺撒培德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 嘉諾撒培德書院",
+     "language": "中文"
     },
     {
      "net": "18",
@@ -901,7 +1226,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会置富始南小学"
+     "simp": "圣公会置富始南小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "18",
@@ -916,7 +1247,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣伯多禄天主教小学"
+     "simp": "圣伯多禄天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 聖伯多祿中學",
+     "language": "中文"
     },
     {
      "net": "18",
@@ -932,7 +1269,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会田湾始南小学"
+     "simp": "圣公会田湾始南小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "18",
@@ -948,7 +1291,13 @@
       "P",
       "S"
      ],
-     "simp": "海怡宝血小学"
+     "simp": "海怡宝血小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "18",
@@ -964,7 +1313,13 @@
       "P",
       "S"
      ],
-     "simp": "香港南区官立小学"
+     "simp": "香港南区官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 英皇書院、庇理羅士女子中學、金文泰中學、<br>鄧肇堅維多利亞官立中學",
+     "language": "中文"
     },
     {
      "net": "18",
@@ -980,7 +1335,13 @@
       "P",
       "S"
      ],
-     "simp": "香港仔圣伯多禄天主教小学"
+     "simp": "香港仔圣伯多禄天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 聖伯多祿中學",
+     "language": "中文"
     }
    ]
   },
@@ -1004,7 +1365,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院罗裕积小学"
+     "simp": "东华三院罗裕积小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "31",
@@ -1020,7 +1387,13 @@
       "P",
       "S"
      ],
-     "simp": "佐敦道官立小学"
+     "simp": "佐敦道官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 伊利沙伯中學、何文田官立中學、<br>賽馬會官立中學、九龍工業學校",
+     "language": "中文"
     },
     {
      "net": "31",
@@ -1036,7 +1409,13 @@
       "P",
       "S"
      ],
-     "simp": "循道学校"
+     "simp": "循道学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "31",
@@ -1052,7 +1431,13 @@
       "P",
       "S"
      ],
-     "simp": "油蔴地天主教小学"
+     "simp": "油蔴地天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "31",
@@ -1069,7 +1454,13 @@
       "S",
       "U3"
      ],
-     "simp": "嘉诺撒圣玛利学校"
+     "simp": "嘉诺撒圣玛利学校",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 嘉諾撒聖瑪利書院",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "31",
@@ -1085,7 +1476,13 @@
       "P",
       "S"
      ],
-     "simp": "德信学校"
+     "simp": "德信学校",
+     "gender": "男校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 德信中學",
+     "language": "中文"
     },
     {
      "net": "31",
@@ -1101,7 +1498,13 @@
       "P",
       "S"
      ],
-     "simp": "东莞同乡会方树泉学校"
+     "simp": "东莞同乡会方树泉学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "31",
@@ -1117,7 +1520,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会湾仔堂基道小学"
+     "simp": "中华基督教会湾仔堂基道小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "31",
@@ -1133,7 +1542,13 @@
       "P",
       "S"
      ],
-     "simp": "油蔴地街坊会学校"
+     "simp": "油蔴地街坊会学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "31",
@@ -1149,7 +1564,13 @@
       "P",
       "S"
      ],
-     "simp": "油蔴地天主教小学（海泓道）"
+     "simp": "油蔴地天主教小学（海泓道）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     }
    ]
   },
@@ -1172,7 +1593,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "中华基督教会协和小学"
+     "simp": "中华基督教会协和小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "32",
@@ -1188,7 +1615,13 @@
       "P",
       "S"
      ],
-     "simp": "塘尾道官立小学"
+     "simp": "塘尾道官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 伊利沙伯中學、何文田官立中學、<br>九龍工業學校、賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "32",
@@ -1203,7 +1636,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会基荣小学"
+     "simp": "圣公会基荣小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "32",
@@ -1219,7 +1658,13 @@
       "S",
       "#3"
      ],
-     "simp": "中华基督教会基全小学"
+     "simp": "中华基督教会基全小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "32",
@@ -1234,7 +1679,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "路德会沙仑学校"
+     "simp": "路德会沙仑学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "32",
@@ -1249,7 +1700,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "大角嘴天主教小学"
+     "simp": "大角嘴天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "32",
@@ -1265,7 +1722,13 @@
       "P",
       "S"
      ],
-     "simp": "大角嘴天主教小学（海帆道）"
+     "simp": "大角嘴天主教小学（海帆道）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -1289,7 +1752,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局何寿南小学"
+     "simp": "保良局何寿南小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 保良局第一張永慶中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "34",
@@ -1304,7 +1773,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "九龙灵光小学"
+     "simp": "九龙灵光小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1320,7 +1795,13 @@
       "P",
       "S"
      ],
-     "simp": "农圃道官立小学"
+     "simp": "农圃道官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 伊利沙伯官立中學、何文田官立中學、<br>賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1336,7 +1817,13 @@
       "P",
       "S"
      ],
-     "simp": "马头涌官立小学"
+     "simp": "马头涌官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 伊利沙伯中學、何文田官立中學、賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1352,7 +1839,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会圣十架小学"
+     "simp": "圣公会圣十架小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1369,7 +1862,13 @@
       "P",
       "S"
      ],
-     "simp": "浸信会孔宪绍天虹小学"
+     "simp": "浸信会孔宪绍天虹小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1384,7 +1883,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "陈瑞祺（喇沙）小学"
+     "simp": "陈瑞祺（喇沙）小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1399,7 +1904,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会牧爱小学"
+     "simp": "圣公会牧爱小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1416,7 +1927,13 @@
       "P",
       "S"
      ],
-     "simp": "协恩中学附属小学"
+     "simp": "协恩中学附属小学",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 協恩中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "34",
@@ -1431,7 +1948,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会圣匠小学"
+     "simp": "圣公会圣匠小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1446,7 +1969,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "合一堂学校"
+     "simp": "合一堂学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "34",
@@ -1461,7 +1990,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "基督教香港信义会红磡信义学校"
+     "simp": "基督教香港信义会红磡信义学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1477,7 +2012,13 @@
       "P",
       "S"
      ],
-     "simp": "九龙妇女福利会李炳纪念学校"
+     "simp": "九龙妇女福利会李炳纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1492,7 +2033,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "天主教领岛学校"
+     "simp": "天主教领岛学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "34",
@@ -1508,7 +2055,13 @@
       "P",
       "S"
      ],
-     "simp": "献主会小学"
+     "simp": "献主会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1524,7 +2077,13 @@
       "P",
       "S"
      ],
-     "simp": "圣罗撒学校"
+     "simp": "圣罗撒学校",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 聖羅撒書院",
+     "language": "中文"
     },
     {
      "net": "34",
@@ -1540,7 +2099,13 @@
       "S",
       "U4"
      ],
-     "simp": "中华基督教会湾仔堂基道小学（九龙城）"
+     "simp": "中华基督教会湾仔堂基道小学（九龙城）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 中華基督教會基道中學",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "34",
@@ -1555,7 +2120,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "献主会圣马善乐小学"
+     "simp": "献主会圣马善乐小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -1580,7 +2151,13 @@
       "U5",
       "#4"
      ],
-     "simp": "天神嘉诺撒学校"
+     "simp": "天神嘉诺撒学校",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 嘉諾撒聖瑪利書院",
+     "language": "中文"
     },
     {
      "net": "35",
@@ -1595,7 +2172,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会奉基小学"
+     "simp": "圣公会奉基小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "35",
@@ -1610,7 +2193,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会圣提摩太小学"
+     "simp": "圣公会圣提摩太小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "35",
@@ -1626,7 +2215,13 @@
       "P",
       "S"
      ],
-     "simp": "葛量洪校友会黄埔学校"
+     "simp": "葛量洪校友会黄埔学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "35",
@@ -1642,7 +2237,13 @@
       "P",
       "S"
      ],
-     "simp": "黄埔宣道小学"
+     "simp": "黄埔宣道小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "35",
@@ -1658,7 +2259,13 @@
       "P",
       "S"
      ],
-     "simp": "马头涌官立小学（红磡湾）"
+     "simp": "马头涌官立小学（红磡湾）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 伊利沙伯中學、何文田官立中學、賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "35",
@@ -1674,7 +2281,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会奉基千禧小学"
+     "simp": "圣公会奉基千禧小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     }
    ]
   },
@@ -1698,7 +2311,13 @@
       "S",
       "#5"
      ],
-     "simp": "郭怡雅神父纪念学校"
+     "simp": "郭怡雅神父纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "40",
@@ -1714,7 +2333,13 @@
       "P",
       "S"
      ],
-     "simp": "福荣街官立小学"
+     "simp": "福荣街官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 荃灣官立中學、何文田官立中學、<br>九龍工業學校、賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1730,7 +2355,13 @@
       "P",
       "S"
      ],
-     "simp": "李郑屋官立小学"
+     "simp": "李郑屋官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 官立嘉道理爵士中學（西九龍）",
+     "language": "英文"
     },
     {
      "net": "40",
@@ -1743,7 +2374,13 @@
      "quota": 60,
      "address": "九龍長沙灣幸福街５號 (2361 5663)",
      "remarks": [],
-     "simp": "圣公会圣纪文小学"
+     "simp": "圣公会圣纪文小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1758,7 +2395,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "天主教善导小学"
+     "simp": "天主教善导小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1771,7 +2414,13 @@
      "quota": 60,
      "address": "九龍大坑東棠蔭街１３及２３號 (2777 8949)",
      "remarks": [],
-     "simp": "大坑东宣道小学"
+     "simp": "大坑东宣道小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1786,7 +2435,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "基督教香港信义会深信学校"
+     "simp": "基督教香港信义会深信学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1801,7 +2456,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "旅港开平商会学校"
+     "simp": "旅港开平商会学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "40",
@@ -1816,7 +2477,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "宝血会嘉灵学校"
+     "simp": "宝血会嘉灵学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "40",
@@ -1831,7 +2498,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "长沙湾天主教小学"
+     "simp": "长沙湾天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1846,7 +2519,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会基爱小学"
+     "simp": "圣公会基爱小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "40",
@@ -1861,7 +2540,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "圣公会圣多马小学"
+     "simp": "圣公会圣多马小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "40",
@@ -1876,7 +2561,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "圣方济爱德小学"
+     "simp": "圣方济爱德小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 長沙灣天主教英文中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "40",
@@ -1891,7 +2582,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "香港四邑商工总会新会商会学校"
+     "simp": "香港四邑商工总会新会商会学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 香港四邑商工總會黃棣珊紀念中學",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1906,7 +2603,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "荔枝角天主教小学"
+     "simp": "荔枝角天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1922,7 +2625,13 @@
       "P",
       "S"
      ],
-     "simp": "深水埗官立小学"
+     "simp": "深水埗官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 荃灣官立中學、何文田官立中學、<br>賽馬會官立中學、九龍工業中學",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1937,7 +2646,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "圣公会基福小学"
+     "simp": "圣公会基福小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1952,7 +2667,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "圣公会圣安德烈小学"
+     "simp": "圣公会圣安德烈小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1968,7 +2689,13 @@
       "P",
       "S"
      ],
-     "simp": "玛利诺神父教会学校（小学部）"
+     "simp": "玛利诺神父教会学校（小学部）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 瑪利諾神父教會學校",
+     "language": "中文"
     },
     {
      "net": "40",
@@ -1983,7 +2710,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "中华基督教会协和小学（长沙湾）"
+     "simp": "中华基督教会协和小学（长沙湾）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     }
    ]
   },
@@ -2007,7 +2740,13 @@
       "S",
       "#6"
      ],
-     "simp": "耀山学校"
+     "simp": "耀山学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "41",
@@ -2023,7 +2762,13 @@
       "P",
       "S"
      ],
-     "simp": "华德学校"
+     "simp": "华德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "41",
@@ -2038,7 +2783,13 @@
      "remarks": [
       "F"
      ],
-     "simp": "拔萃小学"
+     "simp": "拔萃小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "英文"
     },
     {
      "net": "41",
@@ -2053,7 +2804,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "嘉诺撒圣家学校"
+     "simp": "嘉诺撒圣家学校",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 嘉諾撒聖家書院",
+     "language": "中文"
     },
     {
      "net": "41",
@@ -2068,7 +2825,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "喇沙小学"
+     "simp": "喇沙小学",
+     "gender": "男校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 喇沙書院",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "41",
@@ -2083,7 +2846,13 @@
      "remarks": [
       "F"
      ],
-     "simp": "玛利诺修院学校（小学部）"
+     "simp": "玛利诺修院学校（小学部）",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 瑪利諾修院學校（中學部）",
+     "language": "英文"
     },
     {
      "net": "41",
@@ -2099,7 +2868,13 @@
       "P",
       "S"
      ],
-     "simp": "九龙塘官立小学"
+     "simp": "九龙塘官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 伊利沙伯中學、何文田官立中學、賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "41",
@@ -2114,7 +2889,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "嘉诺撒圣家学校（九龙塘）"
+     "simp": "嘉诺撒圣家学校（九龙塘）",
+     "gender": "女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 嘉諾撒聖家書院",
+     "language": "中文"
     },
     {
      "net": "41",
@@ -2127,7 +2908,13 @@
      "quota": 60,
      "address": "九龍九龍塘牛津道１號Ｂ (2267 6676)",
      "remarks": [],
-     "simp": "中华基督教会基华小学（九龙塘）"
+     "simp": "中华基督教会基华小学（九龙塘）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "41",
@@ -2143,7 +2930,13 @@
       "P",
       "S"
      ],
-     "simp": "九龙塘天主教华德学校"
+     "simp": "九龙塘天主教华德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     }
    ]
   },
@@ -2167,7 +2960,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局陈南昌夫人小学"
+     "simp": "保良局陈南昌夫人小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 保良局第一張永慶中學",
+     "language": "中文"
     },
     {
      "net": "43",
@@ -2183,7 +2982,13 @@
       "P",
       "S"
      ],
-     "simp": "黄大仙官立小学"
+     "simp": "黄大仙官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 觀塘官立中學、何文田官立中學、 賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "43",
@@ -2198,7 +3003,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "福德学校"
+     "simp": "福德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "43",
@@ -2214,7 +3025,13 @@
       "P",
       "S"
      ],
-     "simp": "嘉诺撒小学"
+     "simp": "嘉诺撒小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "43",
@@ -2230,7 +3047,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教伍华小学"
+     "simp": "天主教伍华小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "直属 天主教伍華中學",
+     "language": "中文"
     },
     {
      "net": "43",
@@ -2246,7 +3069,13 @@
       "S",
       "#7"
      ],
-     "simp": "圣公会基德小学"
+     "simp": "圣公会基德小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "43",
@@ -2262,7 +3091,13 @@
       "P",
       "S"
      ],
-     "simp": "圣博德学校"
+     "simp": "圣博德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "43",
@@ -2277,7 +3112,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "黄大仙天主教小学"
+     "simp": "黄大仙天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     }
    ]
   },
@@ -2300,7 +3141,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "彩云圣若瑟小学"
+     "simp": "彩云圣若瑟小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "45",
@@ -2315,7 +3162,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "真铎学校"
+     "simp": "真铎学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "45",
@@ -2331,7 +3184,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会基慈小学"
+     "simp": "中华基督教会基慈小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "45",
@@ -2347,7 +3206,13 @@
       "S",
       "#8"
      ],
-     "simp": "中华基督教会基华小学"
+     "simp": "中华基督教会基华小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "45",
@@ -2363,7 +3228,13 @@
       "P",
       "S"
      ],
-     "simp": "圣文德天主教小学"
+     "simp": "圣文德天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 聖文德書院",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "45",
@@ -2379,7 +3250,13 @@
       "P",
       "S"
      ],
-     "simp": "伊斯兰鲍伯涛纪念小学"
+     "simp": "伊斯兰鲍伯涛纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "英文"
     },
     {
      "net": "45",
@@ -2395,7 +3272,13 @@
       "P",
       "S"
      ],
-     "simp": "啬色园主办可立小学"
+     "simp": "啬色园主办可立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "45",
@@ -2411,7 +3294,13 @@
       "P",
       "S"
      ],
-     "simp": "慈云山圣文德天主教小学"
+     "simp": "慈云山圣文德天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 聖文德書院",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "45",
@@ -2427,7 +3316,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局锦泰小学"
+     "simp": "保良局锦泰小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 保良局第一張永慶中學",
+     "language": "中文"
     },
     {
      "net": "45",
@@ -2443,7 +3338,13 @@
       "P",
       "S"
      ],
-     "simp": "圣博德天主教小学（蒲岗村道）"
+     "simp": "圣博德天主教小学（蒲岗村道）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "45",
@@ -2459,7 +3360,13 @@
       "P",
       "S"
      ],
-     "simp": "慈云山天主教小学"
+     "simp": "慈云山天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "45",
@@ -2475,7 +3382,13 @@
       "P",
       "S"
      ],
-     "simp": "嘉诺撒小学（新蒲岗）"
+     "simp": "嘉诺撒小学（新蒲岗）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -2499,7 +3412,13 @@
       "P",
       "S"
      ],
-     "simp": "佛教慈敬学校"
+     "simp": "佛教慈敬学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "46",
@@ -2515,7 +3434,13 @@
       "P",
       "S"
      ],
-     "simp": "迦密梁省德学校"
+     "simp": "迦密梁省德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "46",
@@ -2531,7 +3456,13 @@
       "P",
       "S"
      ],
-     "simp": "浸信宣道会吕明才小学"
+     "simp": "浸信宣道会吕明才小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "46",
@@ -2548,7 +3479,13 @@
       "S",
       "#9"
      ],
-     "simp": "坪石天主教小学"
+     "simp": "坪石天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "46",
@@ -2564,7 +3501,13 @@
       "P",
       "S"
      ],
-     "simp": "香港道教联合会云泉学校"
+     "simp": "香港道教联合会云泉学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "英文"
     },
     {
      "net": "46",
@@ -2580,7 +3523,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教柏德学校"
+     "simp": "天主教柏德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "46",
@@ -2596,7 +3545,13 @@
       "P",
       "S"
      ],
-     "simp": "九龙湾圣若翰天主教小学"
+     "simp": "九龙湾圣若翰天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "46",
@@ -2612,7 +3567,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会九龙湾基乐小学"
+     "simp": "圣公会九龙湾基乐小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "46",
@@ -2628,7 +3589,13 @@
       "P",
       "S"
      ],
-     "simp": "佐敦谷圣若瑟天主教小学"
+     "simp": "佐敦谷圣若瑟天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -2651,7 +3618,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "观塘官立小学"
+     "simp": "观塘官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 觀塘官立中學、何文田官立中學、<br>觀塘功樂官立中學、賽馬會官立中學",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2667,7 +3640,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教佑华小学"
+     "simp": "天主教佑华小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "48",
@@ -2682,7 +3661,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "中华基督教会基法小学"
+     "simp": "中华基督教会基法小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2698,7 +3683,13 @@
       "P",
       "S"
      ],
-     "simp": "乐善堂杨仲明学校"
+     "simp": "乐善堂杨仲明学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 樂善堂王仲銘中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "48",
@@ -2714,7 +3705,13 @@
       "P",
       "S"
      ],
-     "simp": "闽侨小学"
+     "simp": "闽侨小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "48",
@@ -2730,7 +3727,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会基显小学"
+     "simp": "圣公会基显小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2746,7 +3749,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会基乐小学"
+     "simp": "圣公会基乐小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "48",
@@ -2762,7 +3771,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会圣约翰曾肇添小学"
+     "simp": "圣公会圣约翰曾肇添小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2778,7 +3793,13 @@
       "P",
       "S"
      ],
-     "simp": "秀茂坪天主教小学"
+     "simp": "秀茂坪天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "48",
@@ -2794,7 +3815,13 @@
       "P",
       "S"
      ],
-     "simp": "圣安当小学"
+     "simp": "圣安当小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "48",
@@ -2810,7 +3837,13 @@
       "P",
       "S"
      ],
-     "simp": "圣若翰天主教小学"
+     "simp": "圣若翰天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2826,7 +3859,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会李兆强小学"
+     "simp": "圣公会李兆强小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2842,7 +3881,13 @@
       "P",
       "S"
      ],
-     "simp": "蓝田循道卫理小学"
+     "simp": "蓝田循道卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": ""
     },
     {
      "net": "48",
@@ -2858,7 +3903,13 @@
       "P",
       "S"
      ],
-     "simp": "香港道教联合会圆玄学院陈吕重德纪念学校"
+     "simp": "香港道教联合会圆玄学院陈吕重德纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "48",
@@ -2874,7 +3925,13 @@
       "P",
       "S"
      ],
-     "simp": "圣爱德华天主教小学"
+     "simp": "圣爱德华天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2890,7 +3947,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教圣约教会坚乐小学"
+     "simp": "基督教圣约教会坚乐小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2906,7 +3969,13 @@
       "P",
       "S"
      ],
-     "simp": "秀明小学"
+     "simp": "秀明小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "48",
@@ -2922,7 +3991,13 @@
       "P",
       "S"
      ],
-     "simp": "乐华天主教小学"
+     "simp": "乐华天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "48",
@@ -2938,7 +4013,13 @@
       "P",
       "S"
      ],
-     "simp": "路德会圣马太学校（秀茂坪）"
+     "simp": "路德会圣马太学校（秀茂坪）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2954,7 +4035,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会德田李兆强小学"
+     "simp": "圣公会德田李兆强小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "48",
@@ -2970,7 +4057,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会油塘基显小学"
+     "simp": "圣公会油塘基显小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "48",
@@ -2986,7 +4079,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会基法小学（油塘）"
+     "simp": "中华基督教会基法小学（油塘）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "48",
@@ -3002,7 +4101,13 @@
       "P",
       "S"
      ],
-     "simp": "观塘官立小学（秀明道）"
+     "simp": "观塘官立小学（秀明道）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": ""
     }
    ]
   },
@@ -3026,7 +4131,13 @@
       "P",
       "S"
      ],
-     "simp": "荃湾潮州公学"
+     "simp": "荃湾潮州公学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3041,7 +4152,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "天佑小学"
+     "simp": "天佑小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3058,7 +4175,13 @@
       "S",
       "#10"
      ],
-     "simp": "中华基督教会全完第一小学"
+     "simp": "中华基督教会全完第一小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3074,7 +4197,13 @@
       "P",
       "S"
      ],
-     "simp": "荃湾天主教小学"
+     "simp": "荃湾天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3090,7 +4219,13 @@
       "P",
       "S"
      ],
-     "simp": "路德会圣十架学校"
+     "simp": "路德会圣十架学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "62",
@@ -3106,7 +4241,13 @@
       "P",
       "S"
      ],
-     "simp": "香港道教联合会圆玄学院石围角小学"
+     "simp": "香港道教联合会圆玄学院石围角小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3122,7 +4263,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会基慧小学"
+     "simp": "中华基督教会基慧小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3138,7 +4285,13 @@
       "P",
       "S"
      ],
-     "simp": "宝血会伍季明纪念学校"
+     "simp": "宝血会伍季明纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3153,7 +4306,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "灵光小学"
+     "simp": "灵光小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3169,7 +4328,13 @@
       "P",
       "S"
      ],
-     "simp": "海坝街官立小学"
+     "simp": "海坝街官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 荃灣官立中學、何文田官立中學",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3185,7 +4350,13 @@
       "P",
       "S"
      ],
-     "simp": "柴湾角天主教小学"
+     "simp": "柴湾角天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "62",
@@ -3200,7 +4371,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "荃湾公立何传耀纪念小学"
+     "simp": "荃湾公立何传耀纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3216,7 +4393,13 @@
       "P",
       "S"
      ],
-     "simp": "香港浸信会联会小学"
+     "simp": "香港浸信会联会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3232,7 +4415,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教石钟山纪念小学"
+     "simp": "天主教石钟山纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "62",
@@ -3248,7 +4437,13 @@
       "P",
       "S"
      ],
-     "simp": "荃湾官立小学"
+     "simp": "荃湾官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 荃灣官立中學、何文田官立中學",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3264,7 +4459,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会基慧小学（马湾）"
+     "simp": "中华基督教会基慧小学（马湾）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3280,7 +4481,13 @@
       "P",
       "S"
      ],
-     "simp": "宝血会思源学校"
+     "simp": "宝血会思源学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "62",
@@ -3296,7 +4503,13 @@
       "P",
       "S"
      ],
-     "simp": "深井天主教小学"
+     "simp": "深井天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -3320,7 +4533,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会主爱小学"
+     "simp": "圣公会主爱小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "64",
@@ -3336,7 +4555,13 @@
       "P",
       "S"
      ],
-     "simp": "石篱天主教小学"
+     "simp": "石篱天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "64",
@@ -3352,7 +4577,13 @@
       "P",
       "S"
      ],
-     "simp": "梨木树天主教小学"
+     "simp": "梨木树天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "64",
@@ -3368,7 +4599,13 @@
       "P",
       "S"
      ],
-     "simp": "啬色园主办可信学校"
+     "simp": "啬色园主办可信学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "64",
@@ -3384,7 +4621,13 @@
       "P",
       "S"
      ],
-     "simp": "慈幼叶汉小学"
+     "simp": "慈幼叶汉小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "64",
@@ -3399,7 +4642,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会主爱小学（梨木树）"
+     "simp": "圣公会主爱小学（梨木树）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "64",
@@ -3415,7 +4664,13 @@
       "P",
       "S"
      ],
-     "simp": "慈幼叶汉千禧小学"
+     "simp": "慈幼叶汉千禧小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "64",
@@ -3431,7 +4686,13 @@
       "P",
       "S"
      ],
-     "simp": "石篱圣若望天主教小学"
+     "simp": "石篱圣若望天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -3454,7 +4715,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会主恩小学"
+     "simp": "圣公会主恩小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "65",
@@ -3470,7 +4737,13 @@
       "P",
       "S"
      ],
-     "simp": "亚斯理卫理小学"
+     "simp": "亚斯理卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": ""
     },
     {
      "net": "65",
@@ -3486,7 +4759,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会仁立小学"
+     "simp": "圣公会仁立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 聖公會林護紀念中學",
+     "language": "中文及英文"
     },
     {
      "net": "65",
@@ -3502,7 +4781,13 @@
       "P",
       "S"
      ],
-     "simp": "佛教林炳炎纪念学校（香港佛教联合会主办"
+     "simp": "佛教林炳炎纪念学校（香港佛教联合会主办",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "65",
@@ -3518,7 +4803,13 @@
       "P",
       "S"
      ],
-     "simp": "中华传道会许大同学校"
+     "simp": "中华传道会许大同学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "65",
@@ -3534,7 +4825,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教香港信义会葵盛信义学校"
+     "simp": "基督教香港信义会葵盛信义学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "65",
@@ -3550,7 +4847,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会全完第二小学"
+     "simp": "中华基督教会全完第二小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 中華基督教會全完中學",
+     "language": "中文"
     },
     {
      "net": "65",
@@ -3566,7 +4869,13 @@
       "P",
       "S"
      ],
-     "simp": "祖尧天主教小学"
+     "simp": "祖尧天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "65",
@@ -3582,7 +4891,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会基真小学"
+     "simp": "中华基督教会基真小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "65",
@@ -3598,7 +4913,13 @@
       "P",
       "S"
      ],
-     "simp": "佛教林金殿纪念小学"
+     "simp": "佛教林金殿纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "65",
@@ -3614,7 +4935,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会仁立纪念小学"
+     "simp": "圣公会仁立纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 聖公會林護紀念中學",
+     "language": "中文"
     }
    ]
   },
@@ -3638,7 +4965,13 @@
       "P",
       "S"
      ],
-     "simp": "青衣商会小学"
+     "simp": "青衣商会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "66",
@@ -3654,7 +4987,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局陈溢小学"
+     "simp": "保良局陈溢小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "66",
@@ -3670,7 +5009,13 @@
       "P",
       "S"
      ],
-     "simp": "荃湾商会学校"
+     "simp": "荃湾商会学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "66",
@@ -3686,7 +5031,13 @@
       "P",
       "S"
      ],
-     "simp": "中华传道会吕明才小学"
+     "simp": "中华传道会吕明才小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "66",
@@ -3701,7 +5052,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "东华三院黄士心小学"
+     "simp": "东华三院黄士心小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "66",
@@ -3717,7 +5074,13 @@
       "P",
       "S"
      ],
-     "simp": "仁济医院赵曾学韫小学"
+     "simp": "仁济医院赵曾学韫小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "66",
@@ -3733,7 +5096,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会何泽芸小学"
+     "simp": "圣公会何泽芸小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "66",
@@ -3749,7 +5118,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会青衣邨何泽芸小学"
+     "simp": "圣公会青衣邨何泽芸小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "66",
@@ -3765,7 +5140,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会青衣主恩小学"
+     "simp": "圣公会青衣主恩小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "66",
@@ -3781,7 +5162,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局世德小学"
+     "simp": "保良局世德小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "66",
@@ -3797,7 +5184,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院周演森小学"
+     "simp": "东华三院周演森小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -3821,7 +5214,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会何福堂小学"
+     "simp": "中华基督教会何福堂小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3837,7 +5236,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局庄启程第二小学"
+     "simp": "保良局庄启程第二小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": ""
     },
     {
      "net": "70",
@@ -3853,7 +5258,13 @@
       "P",
       "S"
      ],
-     "simp": "台山商会学校"
+     "simp": "台山商会学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3869,7 +5280,13 @@
       "P",
       "S"
      ],
-     "simp": "仁德天主教小学"
+     "simp": "仁德天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 屯門天主教中學",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3885,7 +5302,13 @@
       "P",
       "S"
      ],
-     "simp": "乐善堂梁黄蕙芳纪念学校"
+     "simp": "乐善堂梁黄蕙芳纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3901,7 +5324,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局梁周顺琴小学"
+     "simp": "保良局梁周顺琴小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 保良局百周年李兆忠紀念中學、保良局董玉娣中學",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3917,7 +5346,13 @@
       "P",
       "S"
      ],
-     "simp": "五邑邹振猷学校"
+     "simp": "五邑邹振猷学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3933,7 +5368,13 @@
       "P",
       "S"
      ],
-     "simp": "香港路德会增城兆霖学校"
+     "simp": "香港路德会增城兆霖学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "70",
@@ -3949,7 +5390,13 @@
       "P",
       "S"
      ],
-     "simp": "道教青松小学"
+     "simp": "道教青松小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3965,7 +5412,13 @@
       "P",
       "S"
      ],
-     "simp": "仁济医院罗陈楚思小学"
+     "simp": "仁济医院罗陈楚思小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 仁濟醫院第二中學",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3980,7 +5433,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "保良局方王锦全小学"
+     "simp": "保良局方王锦全小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 保良局百周年李兆忠紀念中學、<br>保良局董玉娣中學",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -3996,7 +5455,13 @@
       "P",
       "S"
      ],
-     "simp": "香港红卍字会屯门卍慈小学"
+     "simp": "香港红卍字会屯门卍慈小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -4012,7 +5477,13 @@
       "P",
       "S"
      ],
-     "simp": "侨港伍氏宗亲会伍时畅纪念学校"
+     "simp": "侨港伍氏宗亲会伍时畅纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -4028,7 +5499,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会蒙黄花沃纪念小学"
+     "simp": "中华基督教会蒙黄花沃纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -4045,7 +5522,13 @@
       "S",
       "#11"
      ],
-     "simp": "柏立基教育学院校友会何寿基学校"
+     "simp": "柏立基教育学院校友会何寿基学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -4061,7 +5544,13 @@
       "P",
       "S"
      ],
-     "simp": "屯门官立小学"
+     "simp": "屯门官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 屯門官立中學、南屯門官立中學、<br>新界鄉議局元朗區中學",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -4077,7 +5566,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局志豪小学"
+     "simp": "保良局志豪小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 保良局百周年李兆忠紀念中學、保良局董玉娣中學",
+     "language": "中文"
     },
     {
      "net": "70",
@@ -4093,7 +5588,13 @@
       "P",
       "S"
      ],
-     "simp": "道教青松小学（湖景邨）"
+     "simp": "道教青松小学（湖景邨）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -4117,7 +5618,13 @@
       "P",
       "S"
      ],
-     "simp": "圆玄学院陈国超兴德小学"
+     "simp": "圆玄学院陈国超兴德小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4132,7 +5639,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "青山天主教小学"
+     "simp": "青山天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 屯門天主教中學",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4148,7 +5661,13 @@
       "P",
       "S"
      ],
-     "simp": "伊斯兰学校"
+     "simp": "伊斯兰学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "英文"
     },
     {
      "net": "71",
@@ -4164,7 +5683,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院邓肇坚小学"
+     "simp": "东华三院邓肇坚小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "71",
@@ -4180,7 +5705,13 @@
       "P",
       "S"
      ],
-     "simp": "路德会吕祥光小学"
+     "simp": "路德会吕祥光小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 路德會呂祥光中學",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4196,7 +5727,13 @@
       "P",
       "S"
      ],
-     "simp": "顺德联谊总会胡少渠纪念小学"
+     "simp": "顺德联谊总会胡少渠纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 順德聯誼總會梁銶琚中學、順德聯誼總會譚伯羽中學",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4212,7 +5749,13 @@
       "P",
       "S"
      ],
-     "simp": "顺德联谊总会何日东小学"
+     "simp": "顺德联谊总会何日东小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 順德聯誼總會梁銶琚中學、順德聯誼總會譚伯羽中學",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4228,7 +5771,13 @@
       "P",
       "S"
      ],
-     "simp": "仁爱堂刘皇发夫人小学"
+     "simp": "仁爱堂刘皇发夫人小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4244,7 +5793,13 @@
       "P",
       "S"
      ],
-     "simp": "博爱医院历届总理联谊会郑任安夫人学校"
+     "simp": "博爱医院历届总理联谊会郑任安夫人学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4260,7 +5815,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会蒙恩小学"
+     "simp": "圣公会蒙恩小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4276,7 +5837,13 @@
       "P",
       "S"
      ],
-     "simp": "仁济医院何式南小学"
+     "simp": "仁济医院何式南小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 仁濟醫院第二中學",
+     "language": "中文及英文"
     },
     {
      "net": "71",
@@ -4292,7 +5859,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会拔臣小学"
+     "simp": "中华基督教会拔臣小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "71",
@@ -4308,7 +5881,13 @@
       "P",
       "S"
      ],
-     "simp": "博爱医院历届总理联谊会郑任安夫人千禧小学"
+     "simp": "博爱医院历届总理联谊会郑任安夫人千禧小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "71",
@@ -4324,7 +5903,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局西区妇女福利会冯李佩瑶小学"
+     "simp": "保良局西区妇女福利会冯李佩瑶小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 保良局百周年李兆忠紀念中學、保良局董玉娣中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "71",
@@ -4340,7 +5925,13 @@
       "P",
       "S"
      ],
-     "simp": "顺德联谊总会李金小学"
+     "simp": "顺德联谊总会李金小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 順德聯誼總會梁銶琚中學、<br>順德聯誼總會譚伯羽中學",
+     "language": "中文（包括：普通話）及英文"
     }
    ]
   },
@@ -4364,7 +5955,13 @@
       "P",
       "S"
      ],
-     "simp": "元朗宝觉小学"
+     "simp": "元朗宝觉小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4380,7 +5977,13 @@
       "P",
       "S"
      ],
-     "simp": "啬色园主办可铭学校"
+     "simp": "啬色园主办可铭学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4396,7 +5999,13 @@
       "P",
       "S"
      ],
-     "simp": "伊利沙伯中学旧生会小学"
+     "simp": "伊利沙伯中学旧生会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 伊利沙伯中學舊生會中學、<br>伊利沙伯中學舊生會湯國華中學",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4411,7 +6020,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "香港潮阳小学"
+     "simp": "香港潮阳小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4427,7 +6042,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院姚达之纪念小学（元朗）"
+     "simp": "东华三院姚达之纪念小学（元朗）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4443,7 +6064,13 @@
       "P",
       "S"
      ],
-     "simp": "乐善堂梁𨱇琚学校"
+     "simp": "乐善堂梁𨱇琚学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4459,7 +6086,13 @@
       "P",
       "S"
      ],
-     "simp": "天水围官立小学"
+     "simp": "天水围官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 趙聿修紀念中學、元朗公立中學、天水圍官立中學",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4475,7 +6108,13 @@
       "P",
       "S"
      ],
-     "simp": "天水围天主教小学"
+     "simp": "天水围天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 天主教崇德英文書院、天主教培聖中學",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4491,7 +6130,13 @@
       "P",
       "S"
      ],
-     "simp": "伊利沙伯中学旧生会小学分校"
+     "simp": "伊利沙伯中学旧生会小学分校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 伊利沙伯中學舊生會中學、<br>伊利沙伯中學舊生會湯國華中學",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4507,7 +6152,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院李东海小学"
+     "simp": "东华三院李东海小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4523,7 +6174,13 @@
       "P",
       "S"
      ],
-     "simp": "狮子会何德心小学"
+     "simp": "狮子会何德心小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4540,7 +6197,13 @@
       "S",
       "U6"
      ],
-     "simp": "天水围循道卫理小学"
+     "simp": "天水围循道卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 天水圍循道衛理中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4557,7 +6220,13 @@
       "S",
       "U7"
      ],
-     "simp": "金巴仑长老会耀道小学"
+     "simp": "金巴仑长老会耀道小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 金巴崙長老會耀道中學",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "72",
@@ -4573,7 +6242,13 @@
       "P",
       "S"
      ],
-     "simp": "香港青年协会李兆基小学"
+     "simp": "香港青年协会李兆基小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4589,7 +6264,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教青年会小学"
+     "simp": "中华基督教青年会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4605,7 +6286,13 @@
       "P",
       "S"
      ],
-     "simp": "香港普通话研习社科技创意小学"
+     "simp": "香港普通话研习社科技创意小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4621,7 +6308,13 @@
       "P",
       "S"
      ],
-     "simp": "宣道会叶绍荫纪念小学"
+     "simp": "宣道会叶绍荫纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4638,7 +6331,13 @@
       "S",
       "U8"
      ],
-     "simp": "顺德联谊总会伍冕端小学"
+     "simp": "顺德联谊总会伍冕端小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 順德聯誼總會翁祐中學",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4654,7 +6353,13 @@
       "P",
       "S"
      ],
-     "simp": "十八乡乡事委员会公益社小学"
+     "simp": "十八乡乡事委员会公益社小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "72",
@@ -4670,7 +6375,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教培恩小学"
+     "simp": "基督教培恩小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "72",
@@ -4686,7 +6397,13 @@
       "P",
       "S"
      ],
-     "simp": "乐善堂梁𨱇琚学校（分校）"
+     "simp": "乐善堂梁𨱇琚学校（分校）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4702,7 +6419,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会天水围灵爱小学"
+     "simp": "圣公会天水围灵爱小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "72",
@@ -4718,7 +6441,13 @@
       "P",
       "S"
      ],
-     "simp": "元朗公立中学校友会邓英业小学"
+     "simp": "元朗公立中学校友会邓英业小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 元朗公立中學校友會鄧兆棠中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "72",
@@ -4734,7 +6463,13 @@
       "P",
       "S"
      ],
-     "simp": "潮阳百欣小学"
+     "simp": "潮阳百欣小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -4758,7 +6493,13 @@
       "P",
       "S"
      ],
-     "simp": "光明学校"
+     "simp": "光明学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "73",
@@ -4774,7 +6515,13 @@
       "P",
       "S"
      ],
-     "simp": "元朗朗屏邨东莞学校"
+     "simp": "元朗朗屏邨东莞学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "73",
@@ -4790,7 +6537,13 @@
       "P",
       "S"
      ],
-     "simp": "元朗朗屏邨惠州学校"
+     "simp": "元朗朗屏邨惠州学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "73",
@@ -4806,7 +6559,13 @@
       "P",
       "S"
      ],
-     "simp": "博爱医院历届总理联谊会梁省德学校"
+     "simp": "博爱医院历届总理联谊会梁省德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "73",
@@ -4822,7 +6581,13 @@
       "P",
       "S"
      ],
-     "simp": "元朗公立中学校友会小学"
+     "simp": "元朗公立中学校友会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 元朗公立中學校友會鄧兆棠中學",
+     "language": "中文"
     },
     {
      "net": "73",
@@ -4838,7 +6603,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会灵爱小学"
+     "simp": "圣公会灵爱小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "73",
@@ -4854,7 +6625,13 @@
       "P",
       "S"
      ],
-     "simp": "元朗商会小学"
+     "simp": "元朗商会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "73",
@@ -4870,7 +6647,13 @@
       "P",
       "S"
      ],
-     "simp": "佛教陈荣根纪念学校"
+     "simp": "佛教陈荣根纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "73",
@@ -4886,7 +6669,13 @@
       "P",
       "S"
      ],
-     "simp": "南元朗官立小学"
+     "simp": "南元朗官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 新界鄉議局元朗區中學、趙聿修紀念中學、<br>天水圍官立中學",
+     "language": "中文"
     }
    ]
   },
@@ -4909,7 +6698,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "通德学校"
+     "simp": "通德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -4925,7 +6720,13 @@
       "P",
       "S"
      ],
-     "simp": "港澳信义会黄陈淑英纪念学校"
+     "simp": "港澳信义会黄陈淑英纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -4941,7 +6742,13 @@
       "P",
       "S"
      ],
-     "simp": "佛教荣茵学校"
+     "simp": "佛教荣茵学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -4956,7 +6763,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "圣公会圣约瑟小学"
+     "simp": "圣公会圣约瑟小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -4972,7 +6785,13 @@
       "P",
       "S"
      ],
-     "simp": "元朗官立小学"
+     "simp": "元朗官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 新界鄉議局元朗區中學、趙聿修紀念中學、<br>天水圍官立中學",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -4985,7 +6804,13 @@
      "quota": 30,
      "address": "新界元朗鐘聲徑 (2476 2696)",
      "remarks": [],
-     "simp": "中华基督教会元朗真光小学"
+     "simp": "中华基督教会元朗真光小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -5000,7 +6825,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "钟声学校"
+     "simp": "钟声学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -5015,7 +6846,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "锦田公立蒙养学校"
+     "simp": "锦田公立蒙养学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -5030,7 +6867,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "八乡中心小学"
+     "simp": "八乡中心小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "74",
@@ -5045,7 +6888,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "惇裕学校"
+     "simp": "惇裕学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -5060,7 +6909,13 @@
      "remarks": [
       "P"
      ],
-     "simp": "基督教宣道会徐泽林纪念小学"
+     "simp": "基督教宣道会徐泽林纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "74",
@@ -5076,7 +6931,13 @@
       "P",
       "S"
      ],
-     "simp": "光明英来学校"
+     "simp": "光明英来学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -5099,7 +6960,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "东莞学校"
+     "simp": "东莞学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5114,7 +6981,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "凤溪第一小学"
+     "simp": "凤溪第一小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5130,7 +7003,13 @@
       "S",
       "#12"
      ],
-     "simp": "香海正觉莲社佛教陈式宏学校"
+     "simp": "香海正觉莲社佛教陈式宏学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5146,7 +7025,13 @@
       "P",
       "S"
      ],
-     "simp": "上水惠州公立学校"
+     "simp": "上水惠州公立学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5162,7 +7047,13 @@
       "P",
       "S"
      ],
-     "simp": "石湖墟公立学校"
+     "simp": "石湖墟公立学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5178,7 +7069,13 @@
       "S",
       "#13"
      ],
-     "simp": "东华三院港九电器商联会小学"
+     "simp": "东华三院港九电器商联会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5193,7 +7090,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "圣公会荣真小学"
+     "simp": "圣公会荣真小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5209,7 +7112,13 @@
       "P",
       "S"
      ],
-     "simp": "李志达纪念学校"
+     "simp": "李志达纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5224,7 +7133,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "金钱村何东学校"
+     "simp": "金钱村何东学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5240,7 +7155,13 @@
       "P",
       "S"
      ],
-     "simp": "育贤学校"
+     "simp": "育贤学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5256,7 +7177,13 @@
       "P",
       "S"
      ],
-     "simp": "香海正觉莲社佛教正慧小学"
+     "simp": "香海正觉莲社佛教正慧小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5272,7 +7199,13 @@
       "P",
       "S"
      ],
-     "simp": "曾梅千禧学校"
+     "simp": "曾梅千禧学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "80",
@@ -5288,7 +7221,13 @@
       "P",
       "S"
      ],
-     "simp": "凤溪创新小学"
+     "simp": "凤溪创新小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "80",
@@ -5304,7 +7243,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院马锦灿纪念小学"
+     "simp": "东华三院马锦灿纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     }
    ]
   },
@@ -5328,7 +7273,13 @@
       "S",
       "#14"
      ],
-     "simp": "宝血会培灵学校"
+     "simp": "宝血会培灵学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5344,7 +7295,13 @@
       "P",
       "S"
      ],
-     "simp": "上水宣道小学"
+     "simp": "上水宣道小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "81",
@@ -5359,7 +7316,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "五旬节靳茂生小学"
+     "simp": "五旬节靳茂生小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "81",
@@ -5375,7 +7338,13 @@
       "P",
       "S"
      ],
-     "simp": "香海正觉莲社佛教正觉莲社学校"
+     "simp": "香海正觉莲社佛教正觉莲社学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5390,7 +7359,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "凤溪廖润琛纪念学校"
+     "simp": "凤溪廖润琛纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5406,7 +7381,13 @@
       "P",
       "S"
      ],
-     "simp": "粉岭官立小学"
+     "simp": "粉岭官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 粉嶺官立中學、上水官立中學",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5421,7 +7402,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "粉岭公立学校"
+     "simp": "粉岭公立学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5436,7 +7423,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "打鼓岭岭英公立学校"
+     "simp": "打鼓岭岭英公立学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5452,7 +7445,13 @@
       "P",
       "S"
      ],
-     "simp": "五旬节于良发小学"
+     "simp": "五旬节于良发小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "81",
@@ -5468,7 +7467,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会嘉福荣真小学"
+     "simp": "圣公会嘉福荣真小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5484,7 +7489,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教粉岭神召会小学"
+     "simp": "基督教粉岭神召会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "81",
@@ -5500,7 +7511,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院曾宪备小学"
+     "simp": "东华三院曾宪备小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "81",
@@ -5516,7 +7533,13 @@
       "P",
       "S"
      ],
-     "simp": "救世军中原慈善基金皇后山学校"
+     "simp": "救世军中原慈善基金皇后山学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -5540,7 +7563,13 @@
       "PR1",
       "S"
      ],
-     "simp": "福德学社小学"
+     "simp": "福德学社小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "83",
@@ -5556,7 +7585,13 @@
       "P",
       "S"
      ],
-     "simp": "沙头角中心小学"
+     "simp": "沙头角中心小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -5580,7 +7615,13 @@
       "P",
       "S"
      ],
-     "simp": "大埔旧墟公立学校"
+     "simp": "大埔旧墟公立学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "84",
@@ -5596,7 +7637,13 @@
       "P",
       "S"
      ],
-     "simp": "新界妇孺福利会有限公司梁省德学校"
+     "simp": "新界妇孺福利会有限公司梁省德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": ""
     },
     {
      "net": "84",
@@ -5612,7 +7659,13 @@
       "P",
       "S"
      ],
-     "simp": "大埔浸信会公立学校"
+     "simp": "大埔浸信会公立学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "84",
@@ -5628,7 +7681,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会阮郑梦芹小学"
+     "simp": "圣公会阮郑梦芹小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "84",
@@ -5644,7 +7703,13 @@
       "P",
       "S"
      ],
-     "simp": "香港道教联合会云泉吴礼和纪念学校"
+     "simp": "香港道教联合会云泉吴礼和纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "84",
@@ -5660,7 +7725,13 @@
       "P",
       "S"
      ],
-     "simp": "大埔崇德黄建常纪念学校"
+     "simp": "大埔崇德黄建常纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "84",
@@ -5676,7 +7747,13 @@
       "P",
       "S"
      ],
-     "simp": "三水同乡会禤景荣学校"
+     "simp": "三水同乡会禤景荣学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "84",
@@ -5693,7 +7770,13 @@
       "S",
       "U9"
      ],
-     "simp": "港九街坊妇女会孙方中小学"
+     "simp": "港九街坊妇女会孙方中小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 港九街坊婦女會孫方中書院",
+     "language": "中文"
     },
     {
      "net": "84",
@@ -5709,7 +7792,13 @@
       "P",
       "S"
      ],
-     "simp": "林村公立黄福銮纪念学校"
+     "simp": "林村公立黄福銮纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "84",
@@ -5725,7 +7814,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教圣母圣心小学"
+     "simp": "天主教圣母圣心小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "84",
@@ -5741,7 +7836,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局田家炳小学"
+     "simp": "保良局田家炳小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "84",
@@ -5757,7 +7858,13 @@
       "P",
       "S"
      ],
-     "simp": "大埔循道卫理小学"
+     "simp": "大埔循道卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "84",
@@ -5773,7 +7880,13 @@
       "P",
       "S"
      ],
-     "simp": "仁济医院蔡衍涛小学"
+     "simp": "仁济医院蔡衍涛小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "84",
@@ -5789,7 +7902,13 @@
       "P",
       "S"
      ],
-     "simp": "大埔官立小学"
+     "simp": "大埔官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 新界鄉議局大埔區中學、粉嶺官立中學",
+     "language": "中文"
     },
     {
      "net": "84",
@@ -5805,7 +7924,13 @@
       "P",
       "S"
      ],
-     "simp": "香港教育大学赛马会小学"
+     "simp": "香港教育大学赛马会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "84",
@@ -5821,7 +7946,13 @@
       "P",
       "S"
      ],
-     "simp": "大埔旧墟公立学校（宝湖道）"
+     "simp": "大埔旧墟公立学校（宝湖道）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "84",
@@ -5837,7 +7968,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局田家炳千禧小学"
+     "simp": "保良局田家炳千禧小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "84",
@@ -5853,7 +7990,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会阮郑梦芹银禧小学"
+     "simp": "圣公会阮郑梦芹银禧小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "84",
@@ -5869,7 +8012,13 @@
       "P",
       "S"
      ],
-     "simp": "五旬节圣洁会永光小学"
+     "simp": "五旬节圣洁会永光小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     }
    ]
   },
@@ -5893,7 +8042,13 @@
       "P",
       "S"
      ],
-     "simp": "圣母无玷圣心学校"
+     "simp": "圣母无玷圣心学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 聖母無玷聖心書院",
+     "language": "中文"
     },
     {
      "net": "88",
@@ -5909,7 +8064,13 @@
       "P",
       "S"
      ],
-     "simp": "循理会美林小学"
+     "simp": "循理会美林小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "88",
@@ -5925,7 +8086,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局王赐豪（田心谷）小学"
+     "simp": "保良局王赐豪（田心谷）小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "88",
@@ -5941,7 +8108,13 @@
       "P",
       "S"
      ],
-     "simp": "循理会白普理基金循理小学"
+     "simp": "循理会白普理基金循理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "88",
@@ -5957,7 +8130,13 @@
       "P",
       "S"
      ],
-     "simp": "九龙城浸信会禧年（恩平）小学"
+     "simp": "九龙城浸信会禧年（恩平）小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "88",
@@ -5973,7 +8152,13 @@
       "P",
       "S"
      ],
-     "simp": "香港九龙塘基督教中华宣道会陈元喜小学"
+     "simp": "香港九龙塘基督教中华宣道会陈元喜小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "88",
@@ -5989,7 +8174,13 @@
       "P",
       "S"
      ],
-     "simp": "东莞工商总会张煌伟小学"
+     "simp": "东莞工商总会张煌伟小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 東莞工商總會劉百樂中學",
+     "language": "中文"
     },
     {
      "net": "88",
@@ -6005,7 +8196,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院冼次云小学"
+     "simp": "东华三院冼次云小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "88",
@@ -6020,7 +8217,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "迦密爱礼信小学"
+     "simp": "迦密爱礼信小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "88",
@@ -6036,7 +8239,13 @@
       "P",
       "S"
      ],
-     "simp": "香港中文大学校友会联会张煊昌学校"
+     "simp": "香港中文大学校友会联会张煊昌学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "88",
@@ -6052,7 +8261,13 @@
       "P",
       "S"
      ],
-     "simp": "沙田官立小学"
+     "simp": "沙田官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 沙田官立中學、梁文燕紀念中學",
+     "language": "中文"
     }
    ]
   },
@@ -6076,7 +8291,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教香港信义会马鞍山信义学校"
+     "simp": "基督教香港信义会马鞍山信义学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "89",
@@ -6092,7 +8313,13 @@
       "P",
       "S"
      ],
-     "simp": "马鞍山圣若瑟小学"
+     "simp": "马鞍山圣若瑟小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "89",
@@ -6108,7 +8335,13 @@
       "P",
       "S"
      ],
-     "simp": "九龙城浸信会禧年小学"
+     "simp": "九龙城浸信会禧年小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "89",
@@ -6124,7 +8357,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局庄启程小学"
+     "simp": "保良局庄启程小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "89",
@@ -6141,7 +8380,13 @@
       "S",
       "#15"
      ],
-     "simp": "吴氏宗亲总会泰伯纪念学校"
+     "simp": "吴氏宗亲总会泰伯纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "89",
@@ -6157,7 +8402,13 @@
       "P",
       "S"
      ],
-     "simp": "马鞍山灵粮小学"
+     "simp": "马鞍山灵粮小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "89",
@@ -6173,7 +8424,13 @@
       "P",
       "S"
      ],
-     "simp": "香港道教联合会纯阳小学"
+     "simp": "香港道教联合会纯阳小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "89",
@@ -6189,7 +8446,13 @@
       "P",
       "S"
      ],
-     "simp": "马鞍山循道卫理小学"
+     "simp": "马鞍山循道卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "89",
@@ -6205,7 +8468,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局雨川小学"
+     "simp": "保良局雨川小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "89",
@@ -6221,7 +8490,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会马鞍山主风小学"
+     "simp": "圣公会马鞍山主风小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "89",
@@ -6237,7 +8512,13 @@
       "P",
       "S"
      ],
-     "simp": "香港九龙塘基督教中华宣道会台山陈元喜小学"
+     "simp": "香港九龙塘基督教中华宣道会台山陈元喜小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -6261,7 +8542,13 @@
       "P",
       "S"
      ],
-     "simp": "沙田崇真学校"
+     "simp": "沙田崇真学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 馬鞍山崇真中學",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "91",
@@ -6277,7 +8564,13 @@
       "P",
       "S"
      ],
-     "simp": "圣公会主风小学"
+     "simp": "圣公会主风小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6293,7 +8586,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教圣华学校"
+     "simp": "天主教圣华学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6310,7 +8609,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教香港信义会睿信学校"
+     "simp": "基督教香港信义会睿信学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6326,7 +8631,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局萧汉森小学"
+     "simp": "保良局萧汉森小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6342,7 +8653,13 @@
       "P",
       "S"
      ],
-     "simp": "救世军田家炳学校"
+     "simp": "救世军田家炳学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6358,7 +8675,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局朱正贤小学"
+     "simp": "保良局朱正贤小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6374,7 +8697,13 @@
       "P",
       "S"
      ],
-     "simp": "胡素贞博士纪念学校"
+     "simp": "胡素贞博士纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6390,7 +8719,13 @@
       "P",
       "S"
      ],
-     "simp": "世界龙冈学校黄耀南小学"
+     "simp": "世界龙冈学校黄耀南小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6406,7 +8741,13 @@
       "P",
       "S"
      ],
-     "simp": "沙田循道卫理小学"
+     "simp": "沙田循道卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "91",
@@ -6422,7 +8763,13 @@
       "P",
       "S"
      ],
-     "simp": "培基小学"
+     "simp": "培基小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 香港神託會培基書院",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "91",
@@ -6438,7 +8785,13 @@
       "P",
       "S"
      ],
-     "simp": "路德会梁巨镠小学"
+     "simp": "路德会梁巨镠小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6454,7 +8807,13 @@
       "P",
       "S"
      ],
-     "simp": "慈航学校"
+     "simp": "慈航学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6470,7 +8829,13 @@
       "P",
       "S"
      ],
-     "simp": "浸信会吕明才小学"
+     "simp": "浸信会吕明才小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 浸信會呂明才中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "91",
@@ -6486,7 +8851,13 @@
       "P",
       "S"
      ],
-     "simp": "浸信会沙田围吕明才小学"
+     "simp": "浸信会沙田围吕明才小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 浸信會呂明才中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "91",
@@ -6502,7 +8873,13 @@
       "P",
       "S"
      ],
-     "simp": "沙田围胡素贞博士纪念学校"
+     "simp": "沙田围胡素贞博士纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "91",
@@ -6518,7 +8895,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院蔡荣星小学"
+     "simp": "东华三院蔡荣星小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     }
    ]
   },
@@ -6542,7 +8925,13 @@
       "P",
       "S"
      ],
-     "simp": "乐善堂刘德学校"
+     "simp": "乐善堂刘德学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6558,7 +8947,13 @@
       "P",
       "S"
      ],
-     "simp": "港澳信义会小学"
+     "simp": "港澳信义会小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 港澳信義會慕德中學",
+     "language": "中文（包括：普通話）"
     },
     {
      "net": "95",
@@ -6574,7 +8969,13 @@
       "P",
       "S"
      ],
-     "simp": "将军澳官立小学"
+     "simp": "将军澳官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 將軍澳官立中學、何文田官立中學、<br>賽馬會官立中學、觀塘功樂官立中學",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6591,7 +8992,13 @@
       "P",
       "S"
      ],
-     "simp": "安博官立小学"
+     "simp": "安博官立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 伊利沙伯中學、何文田官立中學、 賽馬會官立中學、九龍工業學校",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6607,7 +9014,13 @@
       "P",
       "S"
      ],
-     "simp": "西贡中心李少钦纪念学校"
+     "simp": "西贡中心李少钦纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "95",
@@ -6624,7 +9037,13 @@
       "S",
       "U10"
      ],
-     "simp": "香海正觉莲社佛教黄藻森学校"
+     "simp": "香海正觉莲社佛教黄藻森学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 香海正覺蓮社佛教正覺中學",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "95",
@@ -6640,7 +9059,13 @@
       "P",
       "S"
      ],
-     "simp": "仁济医院陈耀星小学"
+     "simp": "仁济医院陈耀星小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "95",
@@ -6656,7 +9081,13 @@
       "P",
       "S"
      ],
-     "simp": "东华三院王余家洁纪念小学"
+     "simp": "东华三院王余家洁纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6672,7 +9103,13 @@
       "P",
       "S"
      ],
-     "simp": "顺德联谊总会梁洁华小学"
+     "simp": "顺德联谊总会梁洁华小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6688,7 +9125,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局冯晴纪念小学"
+     "simp": "保良局冯晴纪念小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6704,7 +9147,13 @@
       "P",
       "S"
      ],
-     "simp": "博爱医院陈国威小学"
+     "simp": "博爱医院陈国威小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6720,7 +9169,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教神召会梁省德小学"
+     "simp": "基督教神召会梁省德小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "95",
@@ -6736,7 +9191,13 @@
       "P",
       "S"
      ],
-     "simp": "基督教宣道会宣基小学"
+     "simp": "基督教宣道会宣基小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6752,7 +9213,13 @@
       "P",
       "S"
      ],
-     "simp": "佛教志莲小学"
+     "simp": "佛教志莲小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6768,7 +9235,13 @@
       "P",
       "S"
      ],
-     "simp": "仁爱堂田家炳小学"
+     "simp": "仁爱堂田家炳小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6785,7 +9258,13 @@
       "S",
       "U11"
      ],
-     "simp": "西贡崇真天主教学校（小学部）"
+     "simp": "西贡崇真天主教学校（小学部）",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 西貢崇真天主教學校（中學部）",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "95",
@@ -6801,7 +9280,13 @@
       "P",
       "S"
      ],
-     "simp": "保良局黄永树小学"
+     "simp": "保良局黄永树小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6818,7 +9303,13 @@
       "S",
       "#16"
      ],
-     "simp": "将军澳天主教小学"
+     "simp": "将军澳天主教小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6834,7 +9325,13 @@
       "P",
       "S"
      ],
-     "simp": "港澳信义会明道小学"
+     "simp": "港澳信义会明道小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "联系 港澳信義會慕德中學",
+     "language": "中文"
     },
     {
      "net": "95",
@@ -6850,7 +9347,13 @@
       "P",
       "S"
      ],
-     "simp": "天主教圣安德肋小学"
+     "simp": "天主教圣安德肋小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "95",
@@ -6866,7 +9369,13 @@
       "P",
       "S"
      ],
-     "simp": "将军澳循道卫理小学"
+     "simp": "将军澳循道卫理小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -6890,7 +9399,13 @@
       "R",
       "S"
      ],
-     "simp": "南丫北段公立小学"
+     "simp": "南丫北段公立小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -6914,7 +9429,13 @@
       "R",
       "S"
      ],
-     "simp": "长洲圣心学校"
+     "simp": "长洲圣心学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "97",
@@ -6930,7 +9451,13 @@
       "R",
       "S"
      ],
-     "simp": "国民学校"
+     "simp": "国民学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   },
@@ -6953,7 +9480,13 @@
      "remarks": [
       "S"
      ],
-     "simp": "梅窝学校"
+     "simp": "梅窝学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "98",
@@ -6969,7 +9502,13 @@
       "P",
       "S"
      ],
-     "simp": "杯澳公立学校"
+     "simp": "杯澳公立学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "98",
@@ -6985,7 +9524,13 @@
       "P",
       "S"
      ],
-     "simp": "中华基督教会大澳小学"
+     "simp": "中华基督教会大澳小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "98",
@@ -7001,7 +9546,13 @@
       "P",
       "S"
      ],
-     "simp": "青松侯宝垣小学"
+     "simp": "青松侯宝垣小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文及英文"
     },
     {
      "net": "98",
@@ -7017,7 +9568,13 @@
       "P",
       "S"
      ],
-     "simp": "宝安商会温浩根小学"
+     "simp": "宝安商会温浩根小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": ""
     },
     {
      "net": "98",
@@ -7034,7 +9591,13 @@
       "S",
       "U12"
      ],
-     "simp": "啬色园主办可誉中学暨可誉小学"
+     "simp": "啬色园主办可誉中学暨可誉小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 嗇色園主辦可譽中學暨可譽小學",
+     "language": "中文"
     },
     {
      "net": "98",
@@ -7051,7 +9614,13 @@
       "S",
       "U13"
      ],
-     "simp": "灵粮堂秀德小学"
+     "simp": "灵粮堂秀德小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 靈糧堂怡文中學",
+     "language": "中文及英文"
     },
     {
      "net": "98",
@@ -7068,7 +9637,13 @@
       "S",
       "U14"
      ],
-     "simp": "香港教育工作者联会黄楚标学校"
+     "simp": "香港教育工作者联会黄楚标学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 香港教育工作者聯會黃楚標中學",
+     "language": "中文"
     },
     {
      "net": "98",
@@ -7084,7 +9659,13 @@
       "P",
       "S"
      ],
-     "simp": "救世军林拔中纪念学校"
+     "simp": "救世军林拔中纪念学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     },
     {
      "net": "98",
@@ -7101,7 +9682,13 @@
       "S",
       "U15"
      ],
-     "simp": "东涌天主教学校"
+     "simp": "东涌天主教学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "一条龙 東涌天主教學校",
+     "language": "中文"
     }
    ]
   },
@@ -7126,7 +9713,13 @@
       "R",
       "S"
      ],
-     "simp": "圣家学校"
+     "simp": "圣家学校",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文（包括：普通話）及英文"
     },
     {
      "net": "99",
@@ -7143,7 +9736,13 @@
       "R",
       "S"
      ],
-     "simp": "圣公会伟伦小学"
+     "simp": "圣公会伟伦小学",
+     "gender": "男女校",
+     "sessions": [
+      "全日"
+     ],
+     "through_train": "",
+     "language": "中文"
     }
    ]
   }
