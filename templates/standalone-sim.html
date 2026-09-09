@@ -299,6 +299,10 @@ function suggestOrder(){
 function renderWorkbench(){
   var wb=$("workbench"); if(!wb) return;
   var pos=computeSlideLine(), adv=suggestOrder(), h="";
+  var allNames={}; P1.nets.forEach(function(n){ n.schools.forEach(function(s){ allNames[s.name]=1; }); });
+  var oo=null, arr=state.partA.concat(state.partB);
+  for(var oi=0;oi<arr.length;oi++){ if(arr[oi].name.trim()&&!allNames[arr[oi].name.trim()]){ oo=arr[oi].name.trim(); break; } }
+  if(oo){ h+='<div class="wb" style="background:#FDEBE7;border-color:#C2410C"><p style="color:#C2410C;font-weight:bold">⚠️ 「'+esc(oo)+'」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。</p></div>'; }
   if(pos.positions.length){
     h+='<div class="wb"><h4>滑档线（实时）</h4><p>'+esc(pos.note)+'</p><div class="bar">';
     for(var i=0;i<pos.positions.length;i++){

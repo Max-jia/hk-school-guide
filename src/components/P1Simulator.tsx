@@ -121,6 +121,12 @@ export default function P1Simulator() {
     return [...dup];
   }, [filledB]);
 
+  const outOfRosterName = useMemo(() => {
+    const arr = [...partA.filter((x) => x.name.trim()), ...filledB];
+    const hit = arr.find((x) => !allSchoolOpts.some((o) => o.name === x.name.trim()));
+    return hit ? hit.name.trim() : null;
+  }, [partA, filledB, allSchoolOpts]);
+
   const slide = useMemo(
     () => computeSlideLine(filledB, (n) => quotaMap.get(n) ?? null),
     [filledB, quotaMap]
@@ -141,16 +147,7 @@ export default function P1Simulator() {
     const a1 = partA.find((x) => x.name.trim())?.name.trim() || "";
     const b1 = filledB[0]?.name.trim() || "";
     if (a1 && b1 && a1 !== b1) tips.push({ kind: "info", text: "甲一与乙一不是同一所（1-1-1 未对齐），若目标校在网内建议统一。" });
-    // 甲部/乙部出现非名册学校（直资/私立等）——不参加派位
-    const outOfRoster = [...partA.filter((x) => x.name.trim()), ...filledB].find(
-      (x) => !allSchoolOpts.some((o) => o.name === x.name.trim())
-    );
-    if (outOfRoster) {
-      tips.push({
-        kind: "danger",
-        text: `「${outOfRoster.name.trim()}」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。`,
-      });
-    }
+
     if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，建议解锁完整报告再核对一遍。" });
     return tips.slice(0, 3);
   }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB, allSchoolOpts]);
@@ -504,6 +501,11 @@ export default function P1Simulator() {
         {/* 免费快照 */}
         <section className="mt-6 rounded-[12px] border-2 border-[var(--p-fg)] bg-[var(--p-bg)] p-6">
           <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">实时结构快照（免费）</h2>
+          {outOfRosterName && (
+            <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
+              ⚠️ 「{outOfRosterName}」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部乙部填了也不会被派位，请走自行申请。
+            </p>
+          )}
           <div className="mt-3 flex flex-wrap gap-4 font-mono text-sm text-[var(--p-secondary)]">
             <span>乙部 {bCount}/30</span>
             <span>冲刺 {filledB.filter((s) => s.tier === "sprint").length}</span>
