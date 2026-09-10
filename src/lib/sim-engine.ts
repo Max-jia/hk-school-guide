@@ -544,8 +544,15 @@ export function assessSchoolFit(score: number, quota: number | null, name?: stri
     if (scarce) return { label: "基本靠抽签", advice: hot && q > 25 ? `计分 ${score} 分（最常见组合）＋传统热门校（学额 ${q} 仍挤破头）——基本靠抽签。` : `计分 ${score} 分＋学额仅 ${q}——最常见组合撞上最紧张学额，热门校基本靠抽签。`, tone: "warn" };
     return { label: "看运气", advice: `计分 ${score} 分是自行分配最常见组合，热门校同分抽签。`, tone: "warn" };
   }
-  if (score === 15) return { label: "偏弱", advice: `计分 ${score} 分在自行分配阶段不占优，建议把重心放统一派位乙部。`, tone: "warn" };
-  return { label: "仅适龄分", advice: `计分 ${score} 分只有适龄基础分，自行分配基本陪跑，全力准备乙部＋叩门。`, tone: "warn" };
+  if (score === 15) {
+    if (roomy) return { label: "有机会", advice: `计分 ${score} 分（常见低分组合）但学额充裕（${q}），可以一试；同分仍要抽签。`, tone: "mid" };
+    if (scarce) return { label: "偏弱", advice: hot && q > 25 ? `计分 ${score} 分＋传统热门校（学额 ${q} 仍挤破头），自行分配不占优——重心放统一派位乙部。` : `计分 ${score} 分＋学额仅 ${q}，自行分配不占优——重心放统一派位乙部。`, tone: "warn" };
+    return { label: "看运气", advice: `计分 ${score} 分（常见低分组合）＋学额一般（${q}），自行分配看运气，重点准备乙部。`, tone: "warn" };
+  }
+  // score <= 10：仅适龄分，同样按学额/热门度区分
+  if (roomy) return { label: "可一试", advice: `计分 ${score} 分（仅适龄）但学额充裕（${q}），低分也有机会；同分抽签。`, tone: "mid" };
+  if (scarce) return { label: "仅适龄分 · 陪跑", advice: hot && q > 25 ? `计分 ${score} 分只有适龄基础分，且该校是传统热门校（学额 ${q} 仍挤破头）——自行分配基本陪跑，全力准备乙部＋叩门。` : `计分 ${score} 分只有适龄基础分，且该校学额仅 ${q}——自行分配基本陪跑，全力准备乙部＋叩门。`, tone: "warn" };
+  return { label: "看运气", advice: `计分 ${score} 分只有适龄基础分，学额一般（${q}）可一试，别抱太大期望；重心放乙部。`, tone: "warn" };
 }
 
 
