@@ -229,9 +229,9 @@ function updateFitCatA(){
 var EXTRA=(P1.extra||[]);
 var ALL=[];
 P1.nets.forEach(function(n){ n.schools.forEach(function(s){
-  ALL.push({name:s.name, simp:s.simp||s.name, typeLabel:(s.finance==="官立"?"官立":s.finance==="资助"?"资助":"官津"), net:n.net, district:"", gender:s.gender||"", religion:s.religion||"", sessions:s.sessions||[], through_train:s.through_train||"", language:s.language||"", fees:"", quota:s.quota, inRoster:true});
+  ALL.push({name:s.name, simp:s.simp||s.name, typeLabel:(s.finance==="官立"?"官立":s.finance==="资助"?"资助":"官津"), net:n.net, district:s.district||"", gender:s.gender||"", religion:s.religion||"", sessions:s.sessions||[], through_train:s.through_train||"", language:s.language||"", fees:s.fees||"", quota:s.quota, inRoster:true, tier:s.tier||"", teacherRatio:s.teacherRatio||"", schoolBus:s.schoolBus||"", p12027:s.p12027});
 });});
-EXTRA.forEach(function(x){ ALL.push({name:x.name, simp:x.simp||x.name, typeLabel:x.typeLabel, net:"", district:x.district, gender:x.gender, religion:x.religion, sessions:x.sessions, through_train:x.through_train, language:x.language, fees:x.fees, quota:null, inRoster:false}); });
+EXTRA.forEach(function(x){ ALL.push({name:x.name, simp:x.simp||x.name, typeLabel:x.typeLabel, net:"", district:x.district, gender:x.gender, religion:x.religion, sessions:x.sessions, through_train:x.through_train, language:x.language, fees:x.fees, quota:null, inRoster:false, tier:x.tier||"", teacherRatio:x.teacherRatio||"", schoolBus:x.schoolBus||"", p12027:x.p12027}); });
 ALL.sort(function(a,b){return a.name.localeCompare(b.name,"zh-HK");});
 function detailAll(name){ name=String(name).trim(); for(var i=0;i<ALL.length;i++){ if(ALL[i].name===name) return ALL[i]; } return null; }
 
@@ -626,8 +626,18 @@ function runFit(){
 }
 
 // ===== 两校对比 =====
-function cmpRowHtml(label, av, bv){
-  return '<div style="display:flex;border-bottom:1px solid var(--line)"><div style="width:104px;flex:none;padding:8px 10px;font-size:12px;color:var(--muted);background:#FBF9F5">'+esc(label)+'</div><div style="flex:1;padding:8px 10px;font-size:13px">'+(av||"—")+'</div><div style="flex:1;padding:8px 10px;font-size:13px">'+(bv||"—")+'</div></div>';
+var TIER_CFG={"S":{c:"#C2453B",b:"S 级"},"A+":{c:"#D97A1F",b:"A+ 级"},"A":{c:"#178B9E",b:"A 级"},"B":{c:"#6A4E93",b:"B 级"},"brand":{c:"#1E8C46",b:"品牌"},"暂无评级":{c:"#6D6D6D",b:"暂无评级"}};
+function cmpBandLabel(s){
+  if(!s||!s.inRoster) return "不参与派位";
+  var b=relBand(s.name,s.quota||null);
+  return b==="稀缺"?"竞争激烈（学额紧张/热门）":b==="充裕"?"学额较充裕":"竞争一般";
+}
+function cmpTierBadge(tier){
+  var cfg=TIER_CFG[tier||"暂无评级"]||TIER_CFG["暂无评级"];
+  return '<span style="color:'+cfg.c+';border:1px solid '+cfg.c+';border-radius:6px;padding:1px 7px;font-size:12px;font-weight:700">'+esc(cfg.b)+'</span>';
+}
+function cmpRowHtml(label, av, bv, diff){
+  return '<div style="display:flex;border-bottom:1px solid var(--line)'+(diff?";background:#FEF3E2":"")+'"><div style="width:104px;flex:none;padding:8px 10px;font-size:12px;color:var(--muted);background:#FBF9F5">'+(diff?'<b style="color:#B45309">● </b>':'')+esc(label)+'</div><div style="flex:1;padding:8px 10px;font-size:13px">'+(av||"—")+'</div><div style="flex:1;padding:8px 10px;font-size:13px">'+(bv||"—")+'</div></div>';
 }
 function runCmp(){
   var na=CMP_A_ARR[0].name.trim(), nb=CMP_B_ARR[0].name.trim();
@@ -636,21 +646,48 @@ function runCmp(){
   var h='<div style="border:2px solid var(--ink);border-radius:10px;background:#fff;overflow:hidden">';
   h+='<div style="display:flex;justify-content:space-between;padding:10px 12px;border-bottom:1px solid var(--line)"><b>港学荟 · 两校对比</b><span style="font-size:11px;color:var(--muted)">hkschool.guide · 2027/28</span></div>';
   h+='<div style="display:flex;border-bottom:1px solid var(--line)"><div style="width:104px;flex:none"></div><div style="flex:1;padding:10px;text-align:center;font-weight:800">'+(a?esc(a.name):esc(na))+'</div><div style="flex:1;padding:10px;text-align:center;font-weight:800">'+(b?esc(b.name):esc(nb))+'</div></div>';
-  h+=cmpRowHtml("学校类型", a?esc(a.typeLabel):"—", b?esc(b.typeLabel):"—");
-  h+=cmpRowHtml("校网", a&&a.net?a.net+" 网":"不限校网", b&&b.net?b.net+" 网":"不限校网");
-  h+=cmpRowHtml("地区", a?esc(a.district||"—"):"—", b?esc(b.district||"—"):"—");
-  h+=cmpRowHtml("性别", a?esc(a.gender||"—"):"—", b?esc(b.gender||"—"):"—");
-  h+=cmpRowHtml("宗教", a?esc(a.religion||"—"):"—", b?esc(b.religion||"—"):"—");
-  h+=cmpRowHtml("班制", a&&a.sessions.length?a.sessions.join("/"):"—", b&&b.sessions.length?b.sessions.join("/"):"—");
-  h+=cmpRowHtml("升中通路", a?esc(a.through_train||"无公开关系"):"—", b?esc(b.through_train||"无公开关系"):"—");
-  h+=cmpRowHtml("教学语言", a?esc(a.language||"—"):"—", b?esc(b.language||"—"):"—");
-  h+=cmpRowHtml("学费", a?esc(a.fees||(a.inRoster?"免费（官津）":"见官网")):"—", b?esc(b.fees||(b.inRoster?"免费（官津）":"见官网")):"—");
-  h+=cmpRowHtml("自行分配学额", a&&a.quota?a.quota+" 个":"不参与派位", b&&b.quota?b.quota+" 个":"不参与派位");
+  // 差异速览
+  var diffs=[];
+  if(a&&b){
+    if(a.inRoster!==b.inRoster){
+      diffs.push("入学通道不同："+esc(a.name)+" "+(a.inRoster?"参加派位（官津）":"不派位（自行申请）")+"，"+esc(b.name)+" "+(b.inRoster?"参加派位（官津）":"不派位（自行申请）")+"——官津走派位，非官津可自行申请并同时报多间，申请策略完全不同。");
+    }
+    if((a.through_train||"")!==(b.through_train||"")){
+      diffs.push("升中保障不同："+esc(a.through_train||"无公开关系")+" vs "+esc(b.through_train||"无公开关系")+"——一条龙 > 直属 > 联系 > 无，直接影响初中路径。");
+    }
+    if(a.inRoster&&b.inRoster){
+      var qa=a.quota||0, qb=b.quota||0, ba=relBand(a.name,qa), bb=relBand(b.name,qb);
+      if(ba!==bb){ diffs.push("入学难度不同："+esc(a.name)+" "+cmpBandLabel(a)+"，"+esc(b.name)+" "+cmpBandLabel(b)+"——热门/学额紧张的一所命中主要靠抽签。"); }
+      else if(Math.abs(qa-qb)>=30){ diffs.push("学额差异大："+esc(a.name)+" "+qa+" 个 vs "+esc(b.name)+" "+qb+" 个——但两者竞争烈度相近，命中仍主要靠抽签。"); }
+    }
+    if(a.gender!==b.gender){ diffs.push("性别不同："+esc(a.name)+" "+esc(a.gender||"男女校")+"，"+esc(b.name)+" "+esc(b.gender||"男女校")+"——按孩子性别只能考虑匹配的一所。"); }
+    if((a.tier||"")!==(b.tier||"")){ diffs.push("本站评级不同："+esc(a.name)+" "+(a.tier||"暂无评级")+"，"+esc(b.name)+" "+(b.tier||"暂无评级")+"——口碑/实力定位有差异（评级非录取依据）。"); }
+    if((a.fees||"")!==(b.fees||"")){ diffs.push("收费不同："+esc(a.fees||"免费（官津）")+" vs "+esc(b.fees||"免费（官津）")+"——预算差异。"); }
+    if(!diffs.length) diffs.push("两所在关键维度上没有明显差异——重点比较课程风格、距离与家庭偏好。");
+  }
+  if(diffs.length){
+    h+='<div style="background:#FEF3E2;padding:10px 12px;font-size:12px;color:#7C4A03;line-height:1.7">';
+    h+='<b style="color:#B45309">这组对比最该看什么</b>';
+    diffs.slice(0,4).forEach(function(d){ h+='<div style="margin-top:4px">'+d+'</div>'; });
+    h+='</div>';
+  }
+  h+=cmpRowHtml("学校类型", a?esc(a.typeLabel):"—", b?esc(b.typeLabel):"—", a&&b&&a.typeLabel!==b.typeLabel);
+  h+=cmpRowHtml("入学通道", a?(a.inRoster?"参加派位":"自行申请（不派位）"):"—", b?(b.inRoster?"参加派位":"自行申请（不派位）"):"—", a&&b&&a.inRoster!==b.inRoster);
+  h+=cmpRowHtml("本站评级", a?cmpTierBadge(a.tier):"—", b?cmpTierBadge(b.tier):"—", a&&b&&(a.tier||"")!==(b.tier||""));
+  h+=cmpRowHtml("升中通路", a?esc(a.through_train||"无公开关系"):"—", b?esc(b.through_train||"无公开关系"):"—", a&&b&&(a.through_train||"")!==(b.through_train||""));
+  h+=cmpRowHtml("入学难度", a?esc(cmpBandLabel(a)+(a.quota?"（学额"+a.quota+"）":"")):"—", b?esc(cmpBandLabel(b)+(b.quota?"（学额"+b.quota+"）":"")):"—", a&&b&&a.inRoster&&b.inRoster&&(relBand(a.name,a.quota||0)!==relBand(b.name,b.quota||0)||(a.quota||0)!==(b.quota||0)));
+  h+=cmpRowHtml("教学语言", a?esc(a.language||"—"):"—", b?esc(b.language||"—"):"—", a&&b&&(a.language||"")!==(b.language||""));
+  h+=cmpRowHtml("课程体系", a?(a.typeLabel==="国际"?"国际课程（非本地）":"本地课程（DSE 体系）"):"—", b?(b.typeLabel==="国际"?"国际课程（非本地）":"本地课程（DSE 体系）"):"—", false);
+  h+=cmpRowHtml("班制", a&&a.sessions.length?a.sessions.join("/"):"—", b&&b.sessions.length?b.sessions.join("/"):"—", a&&b&&a.sessions.join("/")!==b.sessions.join("/"));
+  h+=cmpRowHtml("师生比", a?esc(a.teacherRatio||"—"):"—", b?esc(b.teacherRatio||"—"):"—", a&&b&&(a.teacherRatio||"")!==(b.teacherRatio||""));
+  h+=cmpRowHtml("校车", a?esc(a.schoolBus||"—"):"—", b?esc(b.schoolBus||"—"):"—", a&&b&&(a.schoolBus||"")!==(b.schoolBus||""));
+  h+=cmpRowHtml("性别", a?esc(a.gender||"男女校"):"—", b?esc(b.gender||"男女校"):"—", a&&b&&a.gender!==b.gender);
+  h+=cmpRowHtml("宗教", a?esc(a.religion||"—"):"—", b?esc(b.religion||"—"):"—", a&&b&&(a.religion||"")!==(b.religion||""));
+  h+=cmpRowHtml("地区 / 校网", a?esc((a.district||"—")+(a.net?" · "+a.net+" 网":"")):"—", b?esc((b.district||"—")+(b.net?" · "+b.net+" 网":"")):"—", a&&b&&(a.net||"")!==(b.net||""));
+  h+=cmpRowHtml("学费", a?esc(a.fees||(a.inRoster?"免费（官津）":"见官网")):"—", b?esc(b.fees||(b.inRoster?"免费（官津）":"见官网")):"—", a&&b&&(a.fees||"")!==(b.fees||""));
+  h+=cmpRowHtml("2027/28 开班", a?(a.p12027===false?"未确认":"开办"):"—", b?(b.p12027===false?"未确认":"开办"):"—", false);
   h+='</div>';
-  var tip="";
-  if((a&&!a.inRoster)||(b&&!b.inRoster)){ tip="提示：不参与派位的学校（直资/私立/国际）走自行申请，不限校网，可同时申请多间。"; }
-  else if(a&&b){ tip="提示：两所均为官津，比较重点看升中通路与学额稀缺度；志愿顺序按家庭真实意愿排。"; }
-  if(tip) h+='<p style="margin:8px 2px;font-size:12px;color:var(--muted)">'+tip+'</p>';
+  h+='<p style="margin:8px 2px;font-size:11px;color:var(--muted)">● = 两校在该维度存在差异，重点核对。评级为本站量化口碑（非录取依据）；课程体系为按学校类型推断，请以校方为准。</p>';
   $("cmpResult").innerHTML=h;
 }
 

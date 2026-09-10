@@ -11,22 +11,36 @@ const schools = JSON.parse(fs.readFileSync(path.join(ROOT, "src/content/schools.
 
 // 精简数据：36 网 + 校名/学额
 const toSimp = Converter({ from: "hk", to: "cn" });
+const schoolMap = new Map(schools.map((s) => [s.name_zh, s]));
 const data = {
   nets: p1.nets.map((n) => ({
     net: n.net,
     area_short: n.area_short,
-    schools: n.schools.map((s) => ({
-      name: s.name, simp: toSimp(s.name), quota: s.quota,
-      gender: s.gender || "", religion: s.religion || "",
-      sessions: s.sessions || [], through_train: s.through_train || "",
-      language: s.language || "",
-    })),
+    schools: n.schools.map((s) => {
+      const ext = schoolMap.get(s.name) || {};
+      return {
+        name: s.name, simp: toSimp(s.name), quota: s.quota,
+        gender: s.gender || "", religion: s.religion || "",
+        sessions: s.sessions || [], through_train: s.through_train || "",
+        language: s.language || "",
+        district: ext.district_zh || "",
+        fees: ext.fees || "",
+        tier: ext.tier || "",
+        teacherRatio: ext.teacher_ratio || "",
+        schoolBus: ext.school_bus || "",
+        p12027: ext.p1_2027 === undefined ? null : ext.p1_2027,
+      };
+    }),
   })),
   extra: schools
     .filter((s) => s.finance_type !== "官立" && s.finance_type !== "资助")
     .map((s) => ({
       name: s.name_display || s.name_zh,
       simp: toSimp(s.name_display || s.name_zh),
+      tier: s.tier || "",
+      teacherRatio: s.teacher_ratio || "",
+      schoolBus: s.school_bus || "",
+      p12027: s.p1_2027 === undefined ? null : s.p1_2027,
       typeLabel: typeLabelOf(s.finance_type),
       district: s.district_zh || "",
       gender: s.gender || "",
