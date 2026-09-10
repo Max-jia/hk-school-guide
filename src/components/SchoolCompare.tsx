@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState, type ReactNode } from "react";
 import SchoolCombobox from "@/components/SchoolCombobox";
 import schoolsJson from "@/content/schools.json";
 import p1NetsJson from "@/content/p1-nets.json";
+import reportMeta from "@/content/report-meta.json";
 import { toPng } from "html-to-image";
+import { relativeBand } from "@/lib/sim-engine";
 
 type CompareSchool = {
   name: string;
@@ -19,7 +21,14 @@ type CompareSchool = {
   language: string;
   quota: number | null;
   inRoster: boolean;
+  tier?: string;
+  teacherRatio?: string;
+  schoolBus?: string;
+  p12027?: boolean;
 };
+
+const META = reportMeta as any;
+const TIER_CFG = (META.TIER_CFG || {}) as Record<string, { c: string; b: string }>;
 
 const P1 = p1NetsJson as {
   nets: {
@@ -33,8 +42,11 @@ const P1 = p1NetsJson as {
 const SCHOOLS = schoolsJson as {
   name_zh: string; name_display?: string; district_zh?: string; finance_type?: string;
   gender?: string; religion_zh?: string; sessions?: string[]; through_train?: string;
-  fees?: string; teaching_language?: string;
+  fees?: string; teaching_language?: string; tier?: string; teacher_ratio?: string;
+  school_bus?: string; p1_2027?: boolean;
 }[];
+
+const SCHOOL_MAP = new Map(SCHOOLS.map((s) => [s.name_zh, s]));
 
 function typeLabel(f: string): string {
   if (f === "官立" || f === "資助") return f === "官立" ? "官立" : "资助";
@@ -62,19 +74,24 @@ export default function SchoolCompare({
     const map = new Map<string, CompareSchool>();
     for (const n of P1.nets) {
       for (const sc of n.schools) {
+        const ext = SCHOOL_MAP.get(sc.name);
         map.set(sc.name, {
           name: sc.name,
           typeLabel: typeLabel(sc.finance),
           net: n.net,
-          district: "",
+          district: ext?.district_zh || "",
           gender: sc.gender || "",
           religion: sc.religion || "",
           sessions: sc.sessions || [],
           through_train: sc.through_train || "",
-          fees: "",
+          fees: ext?.fees || "",
           language: sc.language || "",
           quota: sc.quota,
           inRoster: true,
+          tier: ext?.tier,
+          teacherRatio: ext?.teacher_ratio,
+          schoolBus: ext?.school_bus,
+          p12027: ext?.p1_2027,
         });
       }
     }
@@ -93,6 +110,10 @@ export default function SchoolCompare({
         language: s.teaching_language || "",
         quota: null,
         inRoster: false,
+        tier: s.tier,
+        teacherRatio: s.teacher_ratio,
+        schoolBus: s.school_bus,
+        p12027: s.p1_2027,
       });
     }
     return [...map.values()].sort((x, y) => x.name.localeCompare(y.name, "zh-HK"));
@@ -134,15 +155,71 @@ export default function SchoolCompare({
     setExporting(false);
   }
 
-  function row(label: string, av: string, bv: string) {
+  function row(label: string, av: ReactNode, bv: ReactNode, diff = false) {
     return (
-      <tr className="border-b border-[var(--p-gray-300)]">
-        <td className="w-24 py-2 pr-3 text-xs text-[var(--p-secondary)]">{label}</td>
+      <tr className={"border-b border-[var(--p-gray-300)]" + (diff ? " bg-[#FEF3E2]" : "")}>
+        <td className="w-24 py-2 pr-3 text-xs text-[var(--p-secondary)]">
+          {diff && <span className="mr-1 font-bold text-[#B45309]">●</span>}{label}
+        </td>
         <td className="py-2 pr-2 text-sm text-[var(--p-fg)]">{av || "—"}</td>
         <td className="py-2 text-sm text-[var(--p-fg)]">{bv || "—"}</td>
       </tr>
     );
   }
+
+  function bandLabel(s: CompareSchool): string {
+    if (!s.inRoster) return "不参与派位";
+    const b = relativeBand(s.name, s.quota ?? null);
+    if (b === "稀缺") return "竞争激烈（学额紧张/热门）";
+    if (b === "充裕") return "学额较充裕";
+    return "竞争一般";
+  }
+
+  function tierBadge(tier?: string) {
+    const cfg = TIER_CFG[tier || "暂无评级"] || TIER_CFG["暂无评级"];
+    return (
+      <span style={{ color: cfg.c, border: `1px solid ${cfg.c}`, borderRadius: 6, padding: "1px 7px", fontSize: 12, fontWeight: 700 }}>
+        {cfg.b}
+      </span>
+    );
+  }
+
+  const keyDiffs = useMemo(() => {
+    if (!schoolA || !schoolB) return [] as string[];
+    const out: string[] = [];
+    if (schoolA.inRoster !== schoolB.inRoster) {
+      out.push(
+        `入学通道不同：${schoolA.name} ${schoolA.inRoster ? "参加派位（官津）" : "不派位（自行申请）"}，${schoolB.name} ${schoolB.inRoster ? "参加派位（官津）" : "不派位（自行申请）"}——官津走派位，非官津可自行申请并同时报多间，申请策略完全不同。`
+      );
+    }
+    if ((schoolA.through_train || "") !== (schoolB.through_train || "")) {
+      out.push(
+        `升中保障不同：${schoolA.through_train || "无公开关系"} vs ${schoolB.through_train || "无公开关系"}——一条龙 > 直属 > 联系 > 无，直接影响初中路径。`
+      );
+    }
+    if (schoolA.inRoster && schoolB.inRoster) {
+      const qa = schoolA.quota ?? 0;
+      const qb = schoolB.quota ?? 0;
+      const ba = relativeBand(schoolA.name, qa);
+      const bb = relativeBand(schoolB.name, qb);
+      if (ba !== bb) {
+        out.push(`入学难度不同：${schoolA.name} ${bandLabel(schoolA)}，${schoolB.name} ${bandLabel(schoolB)}——热门/学额紧张的一所命中主要靠抽签。`);
+      } else if (Math.abs(qa - qb) >= 30) {
+        out.push(`学额差异大：${schoolA.name} ${qa} 个 vs ${schoolB.name} ${qb} 个——但两者竞争烈度相近（均${ba === "稀缺" ? "热门/紧张" : ba === "充裕" ? "较充裕" : "一般"}），命中仍主要靠抽签。`);
+      }
+    }
+    if (schoolA.gender !== schoolB.gender) {
+      out.push(`性别不同：${schoolA.name} ${schoolA.gender || "男女校"}，${schoolB.name} ${schoolB.gender || "男女校"}——按孩子性别只能考虑匹配的一所。`);
+    }
+    if ((schoolA.tier || "") !== (schoolB.tier || "")) {
+      out.push(`本站评级不同：${schoolA.name} ${schoolA.tier || "暂无评级"}，${schoolB.name} ${schoolB.tier || "暂无评级"}——口碑/实力定位有差异（评级非录取依据）。`);
+    }
+    if ((schoolA.fees || "") !== (schoolB.fees || "")) {
+      out.push(`收费不同：${schoolA.fees || "免费（官津）"} vs ${schoolB.fees || "免费（官津）"}——预算差异。`);
+    }
+    if (out.length === 0) out.push("两所在关键维度上没有明显差异——重点比较课程风格、距离与家庭偏好。");
+    return out.slice(0, 4);
+  }, [schoolA, schoolB]);
 
   return (
     <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
@@ -153,7 +230,7 @@ export default function SchoolCompare({
         )}
       </div>
       <p className="mt-1 text-sm text-[var(--p-secondary)]">
-        选两所学校并排对比：升中通路 / 学额 / 性别宗教 / 班制 / 学费。免费对比 1 次，解锁后不限次并可导出对比图。
+        选两所学校并排对比：入学通道 / 本站评级 / 升中通路 / 入学难度 / 收费 / 语言班制。差异自动标 ●，顶部给出「这组对比最该看什么」。免费对比 1 次，解锁后不限次并可导出对比图。
       </p>
 
       <div className="mt-4 grid gap-3 md:grid-cols-[1fr_auto_1fr]">
@@ -187,6 +264,14 @@ export default function SchoolCompare({
           <div ref={cardRef} className="rounded-[12px] border-2 border-[#1C1C1C] bg-[#FBF9F5] p-5">
             <p className="font-serif text-lg font-bold text-[#1C1C1C]">港学荟 · 两校对比</p>
             <p className="mt-0.5 font-mono text-[11px] text-[#57534E]">hkschool.guide · 2027/28 · 数据可核实</p>
+            {keyDiffs.length > 0 && (
+              <div className="mt-3 rounded-[8px] bg-[#FEF3E2] px-3 py-2.5 text-xs leading-relaxed text-[#7C4A03]">
+                <p className="font-bold text-[#B45309]">这组对比最该看什么</p>
+                {keyDiffs.map((d, i) => (
+                  <p key={i} className="mt-1">{d}</p>
+                ))}
+              </div>
+            )}
             <table className="mt-3 w-full border-collapse">
               <thead>
                 <tr>
@@ -196,21 +281,25 @@ export default function SchoolCompare({
                 </tr>
               </thead>
               <tbody>
-                {row("学校类型", schoolA.typeLabel, schoolB.typeLabel)}
-                {row("校网", schoolA.net ? `${schoolA.net} 网` : "不限校网", schoolB.net ? `${schoolB.net} 网` : "不限校网")}
-                {row("地区", schoolA.district || "—", schoolB.district || "—")}
-                {row("性别", schoolA.gender, schoolB.gender)}
-                {row("宗教", schoolA.religion, schoolB.religion)}
-                {row("班制", schoolA.sessions.join("/") || "—", schoolB.sessions.join("/") || "—")}
-                {row("升中通路", schoolA.through_train || "无公开关系", schoolB.through_train || "无公开关系")}
-                {row("教学语言", schoolA.language || "—", schoolB.language || "—")}
-                {row("学费", schoolA.fees || (schoolA.inRoster ? "免费（官津）" : "见官网"), schoolB.fees || (schoolB.inRoster ? "免费（官津）" : "见官网"))}
-                {row("自行分配学额", schoolA.quota ? `${schoolA.quota} 个` : "不参与派位", schoolB.quota ? `${schoolB.quota} 个` : "不参与派位")}
+                {row("学校类型", schoolA.typeLabel, schoolB.typeLabel, schoolA.typeLabel !== schoolB.typeLabel)}
+                {row("入学通道", schoolA.inRoster ? "参加派位" : "自行申请（不派位）", schoolB.inRoster ? "参加派位" : "自行申请（不派位）", schoolA.inRoster !== schoolB.inRoster)}
+                {row("本站评级", tierBadge(schoolA.tier), tierBadge(schoolB.tier), (schoolA.tier || "") !== (schoolB.tier || ""))}
+                {row("升中通路", schoolA.through_train || "无公开关系", schoolB.through_train || "无公开关系", (schoolA.through_train || "") !== (schoolB.through_train || ""))}
+                {row("入学难度", `${bandLabel(schoolA)}${schoolA.quota ? `（学额${schoolA.quota}）` : ""}`, `${bandLabel(schoolB)}${schoolB.quota ? `（学额${schoolB.quota}）` : ""}`, (schoolA.inRoster && schoolB.inRoster && (relativeBand(schoolA.name, schoolA.quota ?? null) !== relativeBand(schoolB.name, schoolB.quota ?? null) || (schoolA.quota ?? 0) !== (schoolB.quota ?? 0))))}
+                {row("教学语言", schoolA.language || "—", schoolB.language || "—", (schoolA.language || "") !== (schoolB.language || ""))}
+                {row("课程体系", schoolA.typeLabel === "国际" ? "国际课程（非本地）" : "本地课程（DSE 体系）", schoolB.typeLabel === "国际" ? "国际课程（非本地）" : "本地课程（DSE 体系）", false)}
+                {row("班制", schoolA.sessions.join("/") || "—", schoolB.sessions.join("/") || "—", schoolA.sessions.join("/") !== schoolB.sessions.join("/"))}
+                {row("师生比", schoolA.teacherRatio || "—", schoolB.teacherRatio || "—", (schoolA.teacherRatio || "") !== (schoolB.teacherRatio || ""))}
+                {row("校车", schoolA.schoolBus || "—", schoolB.schoolBus || "—", (schoolA.schoolBus || "") !== (schoolB.schoolBus || ""))}
+                {row("性别", schoolA.gender || "男女校", schoolB.gender || "男女校", schoolA.gender !== schoolB.gender)}
+                {row("宗教", schoolA.religion || "—", schoolB.religion || "—", (schoolA.religion || "") !== (schoolB.religion || ""))}
+                {row("地区 / 校网", `${schoolA.district || "—"}${schoolA.net ? ` · ${schoolA.net} 网` : ""}`, `${schoolB.district || "—"}${schoolB.net ? ` · ${schoolB.net} 网` : ""}`, (schoolA.net || "") !== (schoolB.net || ""))}
+                {row("学费", schoolA.fees || (schoolA.inRoster ? "免费（官津）" : "见官网"), schoolB.fees || (schoolB.inRoster ? "免费（官津）" : "见官网"), (schoolA.fees || "") !== (schoolB.fees || ""))}
+                {row("2027/28 开班", schoolA.p12027 === false ? "未确认" : "开办", schoolB.p12027 === false ? "未确认" : "开办", false)}
               </tbody>
             </table>
             <p className="mt-3 text-[11px] text-[#57534E]">
-              {(!schoolA.inRoster || !schoolB.inRoster) && "提示：不参与派位的学校（直资/私立/国际）走自行申请，不限校网，可同时申请多间。"}
-              {schoolA.inRoster && schoolB.inRoster && "提示：两所均为官津，比较重点看升中通路与学额稀缺度；志愿顺序按家庭真实意愿排。"}
+              ● = 两校在该维度存在差异，重点核对。评级为本站量化口碑（非录取依据）；课程体系为按学校类型推断，请以校方为准。
             </p>
           </div>
           {locked && (
@@ -266,12 +355,12 @@ export default function SchoolCompare({
           </div>
           <div style={{ marginTop: 28, border: "1.5px solid #1C1C1C", borderRadius: 12, overflow: "hidden", background: "#FFFFFF" }}>
             {[
-              ["校网", schoolA.net ? `${schoolA.net} 网` : "不限校网", schoolB.net ? `${schoolB.net} 网` : "不限校网"],
-              ["宗教", schoolA.religion || "—", schoolB.religion || "—"],
-              ["班制", schoolA.sessions.join("/") || "—", schoolB.sessions.join("/") || "—"],
+              ["本站评级", (TIER_CFG[schoolA.tier || "暂无评级"] || TIER_CFG["暂无评级"]).b, (TIER_CFG[schoolB.tier || "暂无评级"] || TIER_CFG["暂无评级"]).b],
+              ["入学通道", schoolA.inRoster ? "参加派位" : "自行申请", schoolB.inRoster ? "参加派位" : "自行申请"],
               ["升中通路", schoolA.through_train || "无公开关系", schoolB.through_train || "无公开关系"],
               ["教学语言", schoolA.language || "—", schoolB.language || "—"],
-              ["自行分配学额", schoolA.quota ? `${schoolA.quota} 个` : "不参与派位", schoolB.quota ? `${schoolB.quota} 个` : "不参与派位"],
+              ["班制", schoolA.sessions.join("/") || "—", schoolB.sessions.join("/") || "—"],
+              ["入学难度", `${bandLabel(schoolA)}${schoolA.quota ? `（${schoolA.quota}学额）` : ""}`, `${bandLabel(schoolB)}${schoolB.quota ? `（${schoolB.quota}学额）` : ""}`],
               ["学费", schoolA.fees || (schoolA.inRoster ? "免费（官津）" : "见官网"), schoolB.fees || (schoolB.inRoster ? "免费（官津）" : "见官网")],
             ].map((row, i) => (
               <div
@@ -279,14 +368,14 @@ export default function SchoolCompare({
                 style={{
                   display: "flex",
                   borderBottom: i < 6 ? "1px solid #E4E0D8" : "none",
-                  fontSize: 18,
+                  fontSize: 16,
                 }}
               >
-                <div style={{ width: 110, flex: "none", padding: "12px 14px", background: "#FBF9F5", color: "#57534E" }}>
+                <div style={{ width: 100, flex: "none", padding: "10px 12px", background: "#FBF9F5", color: "#57534E" }}>
                   {row[0]}
                 </div>
-                <div style={{ flex: 1, padding: "12px 14px", fontWeight: 700 }}>{row[1]}</div>
-                <div style={{ flex: 1, padding: "12px 14px", fontWeight: 700 }}>{row[2]}</div>
+                <div style={{ flex: 1, padding: "10px 12px", fontWeight: 700 }}>{row[1]}</div>
+                <div style={{ flex: 1, padding: "10px 12px", fontWeight: 700 }}>{row[2]}</div>
               </div>
             ))}
           </div>
