@@ -16,6 +16,7 @@ export default function SchoolFitCard({
 }) {
   const [picked, setPicked] = useState("");
   const [count, setCount] = useState(0);
+  const [analysed, setAnalysed] = useState(false);
   const [sibAtSchool, setSibAtSchool] = useState(false);
   const [parentAtSchool, setParentAtSchool] = useState(false);
   const locked = !unlocked && count >= 1;
@@ -30,6 +31,7 @@ export default function SchoolFitCard({
 
   function analyse() {
     if (!picked.trim() || outOfRoster || locked) return;
+    setAnalysed(true);
     if (!unlocked) setCount((c) => c + 1);
   }
 
@@ -63,7 +65,7 @@ export default function SchoolFitCard({
 
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <div className="min-w-0 flex-1">
-          <SchoolCombobox options={options} value={picked} onChange={setPicked} placeholder="选择一所官津学校…" />
+          <SchoolCombobox options={options} value={picked} onChange={(v) => { setPicked(v); setAnalysed(false); }} placeholder="选择一所官津学校…" />
         </div>
         <button
           onClick={analyse}
@@ -117,7 +119,7 @@ export default function SchoolFitCard({
         </div>
       )}
 
-      {fit && school && (
+      {analysed && fit && school && (
         <div className="relative mt-4">
           <div className="rounded-[12px] border-l-4 px-5 py-4" style={{ borderColor: toneColor, background: toneBg }}>
             <div className="flex items-center gap-3">
