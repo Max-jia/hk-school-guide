@@ -10,6 +10,7 @@ import { relativeBand } from "@/lib/sim-engine";
 
 type CompareSchool = {
   name: string;
+  simp: string;
   typeLabel: string;
   net: string;
   district: string;
@@ -34,13 +35,13 @@ const P1 = p1NetsJson as {
   nets: {
     net: string;
     schools: {
-      name: string; quota: number | null; finance: string; gender?: string; religion?: string;
+      name: string; simp?: string; quota: number | null; finance: string; gender?: string; religion?: string;
       sessions?: string[]; through_train?: string; language?: string;
     }[];
   }[];
 };
 const SCHOOLS = schoolsJson as {
-  name_zh: string; name_display?: string; district_zh?: string; finance_type?: string;
+  name_zh: string; name_display?: string; simp?: string; district_zh?: string; finance_type?: string;
   gender?: string; religion_zh?: string; sessions?: string[]; through_train?: string;
   fees?: string; teaching_language?: string; tier?: string; teacher_ratio?: string;
   school_bus?: string; p1_2027?: boolean;
@@ -66,6 +67,7 @@ export default function SchoolCompare({
   const [a, setA] = useState("");
   const [b, setB] = useState("");
   const [count, setCount] = useState(0);
+  const [analysed, setAnalysed] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   const xhsRef = useRef<HTMLDivElement>(null);
   const [exporting, setExporting] = useState(false);
@@ -77,6 +79,7 @@ export default function SchoolCompare({
         const ext = SCHOOL_MAP.get(sc.name);
         map.set(sc.name, {
           name: sc.name,
+          simp: sc.simp || sc.name,
           typeLabel: typeLabel(sc.finance),
           net: n.net,
           district: ext?.district_zh || "",
@@ -99,6 +102,7 @@ export default function SchoolCompare({
       if (map.has(s.name_zh)) continue;
       map.set(s.name_zh, {
         name: s.name_display || s.name_zh,
+        simp: s.simp || s.name_display || s.name_zh,
         typeLabel: typeLabel(s.finance_type || ""),
         net: "",
         district: s.district_zh || "",
@@ -126,6 +130,7 @@ export default function SchoolCompare({
 
   function doCompare() {
     if (!canCompare || locked) return;
+    setAnalysed(true);
     if (!unlocked) setCount((c) => c + 1);
   }
 
@@ -234,9 +239,9 @@ export default function SchoolCompare({
       </p>
 
       <div className="mt-4 grid gap-3 md:grid-cols-[1fr_auto_1fr]">
-        <SchoolCombobox options={options} value={a} onChange={setA} placeholder="选择第一所学校…" />
+        <SchoolCombobox options={options} value={a} onChange={(v) => { setA(v); setAnalysed(false); }} placeholder="选择第一所学校…" />
         <div className="hidden items-center justify-center font-mono text-xs text-[var(--p-secondary)] md:flex">VS</div>
-        <SchoolCombobox options={options} value={b} onChange={setB} placeholder="选择第二所学校…" />
+        <SchoolCombobox options={options} value={b} onChange={(v) => { setB(v); setAnalysed(false); }} placeholder="选择第二所学校…" />
       </div>
 
       <div className="mt-4 flex flex-wrap gap-3">
@@ -247,7 +252,7 @@ export default function SchoolCompare({
         >
           {locked ? "已用免费次数 · 解锁后继续" : "开始对比"}
         </button>
-        {unlocked && canCompare && (
+        {unlocked && canCompare && analysed && (
           <>
             <button onClick={download} className="rounded-[8px] border border-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-fg)]">
               下载对比图
@@ -259,7 +264,7 @@ export default function SchoolCompare({
         )}
       </div>
 
-      {canCompare && schoolA && schoolB && (
+      {analysed && canCompare && schoolA && schoolB && (
         <div className="relative mt-5">
           <div ref={cardRef} className="rounded-[12px] border-2 border-[#1C1C1C] bg-[#FBF9F5] p-5">
             <p className="font-serif text-lg font-bold text-[#1C1C1C]">港学荟 · 两校对比</p>
@@ -321,7 +326,7 @@ export default function SchoolCompare({
       )}
 
       {/* 小红书 3:4 导出卡（离屏渲染，仅导出用） */}
-      {canCompare && schoolA && schoolB && (
+      {analysed && canCompare && schoolA && schoolB && (
         <div
           ref={xhsRef}
           aria-hidden
