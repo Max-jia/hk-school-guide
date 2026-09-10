@@ -665,8 +665,8 @@ export default function P1Simulator() {
                     <div
                       className="flex h-7 items-center justify-center rounded font-mono text-[11px]"
                       style={{
-                        background: p.band === "稀缺" ? "#FDEBE7" : p.band === "普通" ? "#FEF3E2" : "#E7F6F2",
-                        color: p.band === "稀缺" ? "#C2410C" : p.band === "普通" ? "#B45309" : "#0F766E",
+                        background: p.band === "稀缺" ? "#B91C1C" : p.band === "普通" ? "#B45309" : "#0F766E",
+                        color: "#FFFFFF",
                         border: slide.slideLineIndex === i + 1 ? "2px solid #1C1C1C" : "1px solid var(--p-gray-300)",
                       }}
                       title={p.name}
@@ -679,9 +679,12 @@ export default function P1Simulator() {
                   </div>
                 ))}
               </div>
-              <p className="mt-2 text-xs text-[var(--p-secondary)]">
-                红=学额稀缺 · 黄=普通 · 绿=充裕（相对竞争烈度，非录取概率）
-              </p>
+              <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold">
+                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#B91C1C" }}>学额稀缺</span>
+                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#B45309" }}>普通</span>
+                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#0F766E" }}>充裕</span>
+                <span className="font-normal text-[var(--p-secondary)]">相对竞争烈度，非录取概率</span>
+              </div>
               <p className="mt-1 text-[11px] text-[var(--p-secondary)]">
                 ⓘ 滑档线与顺序建议为本站方法论（基于学额相对竞争度推导），非教育局规则；录取仍以随机编号为准。
               </p>

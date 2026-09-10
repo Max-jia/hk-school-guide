@@ -425,14 +425,18 @@ function renderWorkbench(){
     h+='<p>'+esc(pos.note)+'</p><div class="bar">';
     for(var i=0;i<pos.positions.length;i++){
       var p=pos.positions[i];
-      var bg=p.band==="稀缺"?"#FDEBE7":p.band==="普通"?"#FEF3E2":"#E7F6F2";
-      var c=p.band==="稀缺"?"#C2410C":p.band==="普通"?"#B45309":"#0F766E";
+      var bg=p.band==="稀缺"?"#B91C1C":p.band==="普通"?"#B45309":"#0F766E";
+      var c="#FFFFFF";
       var bd=pos.slideLineIndex===i+1?"2px solid #1C1C1C":"1px solid #E4E0D8";
       h+='<div class="seg" style="background:'+bg+';color:'+c+';border:'+bd+'" title="'+esc(p.name)+'">'+(i+1)+'</div>';
     }
     h+='</div>';
     if(pos.slideLineIndex!==null) h+='<div class="line-note">▲ 第 '+pos.slideLineIndex+' 位为滑档线</div>';
-    h+='<p class="line-note">红=学额稀缺 · 黄=普通 · 绿=充裕（相对竞争烈度，非录取概率）</p>';
+    h+='<div style="margin-top:6px;font-size:11px;font-weight:700;display:flex;gap:8px;flex-wrap:wrap;align-items:center">';
+    h+='<span style="background:#B91C1C;color:#fff;border-radius:4px;padding:1px 7px">学额稀缺</span>';
+    h+='<span style="background:#B45309;color:#fff;border-radius:4px;padding:1px 7px">普通</span>';
+    h+='<span style="background:#0F766E;color:#fff;border-radius:4px;padding:1px 7px">充裕</span>';
+    h+='<span style="font-weight:400;color:var(--muted)">相对竞争烈度，非录取概率</span></div>';
     h+='<p class="line-note">ⓘ 滑档线与顺序建议为本站方法论（基于学额相对竞争度推导），非教育局规则；录取仍以随机编号为准。</p>';
     h+='</div>';
   }
