@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     "把教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
+  verification: {
+    google: "eUo-ly0N80KncfFd11q521V8IDtDMPAf9tJlIUl4wBU",
+  },
   openGraph: {
     type: "website",
     siteName: "港学荟",
