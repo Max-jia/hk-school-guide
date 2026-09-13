@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "香港择校匹配工具：按校网、预算、性格筛学校",
+  title: "香港择校与小一派位工具：匹配、模拟、校网查询",
   description:
-    "输入校网、预算、孩子性格，从 669 所小学、962 所幼稚园中筛出适合的学校。免费、即时、数据来自教育局公开资料。",
+    "香港小学、幼稚园与小一派位工具：学校匹配、志愿结构模拟、计分自查、校网数据库。数据来自教育局公开资料。",
   alternates: { canonical: "/tools" },
 };
 
