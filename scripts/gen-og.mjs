@@ -62,10 +62,18 @@ ${teaseMarkup}
 </svg>`;
 }
 
-function render(svgPath, pngPath) {
-  // qlmanage -t -s 1200 输出同目录 {name}.svg.png
-  execFileSync("qlmanage", ["-t", "-s", "1200", "-o", TMP, svgPath], { stdio: "pipe" });
-  fs.renameSync(pngPath, path.join(OUT, path.basename(pngPath)));
+const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+
+// 用 Chrome headless 按 1200x630 精确渲染。
+// 之前的 qlmanage 做法有两个坑:它把 SVG 塞进 1200x1200 的方形画布并放大裁切,
+// 而且写出的是 {slug}.svg.png —— 但站点引用的是 {slug}.png,等于每次都没生成到。
+function render(svgPath, outPng) {
+  execFileSync(
+    CHROME,
+    ["--headless", "--disable-gpu", "--hide-scrollbars", "--window-size=1200,630",
+     `--screenshot=${outPng}`, `file://${svgPath}`],
+    { stdio: "pipe" }
+  );
 }
 
 async function main() {
@@ -83,7 +91,7 @@ async function main() {
     });
     const svgPath = path.join(TMP, `${p.slug}.svg`);
     fs.writeFileSync(svgPath, svg);
-    render(svgPath, svgPath + ".png");
+    render(svgPath, path.join(OUT, `${p.slug}.png`));
   }
   const homeSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <rect width="1200" height="630" fill="#1C1C1C"/>
@@ -92,7 +100,7 @@ async function main() {
 <text x="80" y="540" font-family="Menlo, monospace" font-size="15" fill="rgba(255,255,255,.5)" letter-spacing="2">hkschool.guide · 校网排名 / 计分制 / 热搜学校 / 择校工具</text>
 </svg>`;
   fs.writeFileSync(path.join(TMP, "og-home.svg"), homeSvg);
-  render(path.join(TMP, "og-home.svg"), path.join(TMP, "og-home.svg.png"));
+  render(path.join(TMP, "og-home.svg"), path.join(ROOT, "public", "og-home.png"));
   console.log(`OK: ${META.length} 篇文章图 + og-home.png`);
 }
 
