@@ -1,5 +1,8 @@
 "use client";
 
+import Localize from "@/components/Localize";
+import { type Locale } from "@/lib/i18n";
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -23,7 +26,7 @@ const LOCK_KEY = "purchased_p1-sim";
 
 type Candidate = { name: string; sib: boolean; parent: boolean };
 
-export default function P1Discretionary() {
+export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) {
   const [rel, setRel] = useState("");
   const [org, setOrg] = useState("");
   const [candidates, setCandidates] = useState<Candidate[]>([{ name: "", sib: false, parent: false }]);
@@ -111,8 +114,9 @@ export default function P1Discretionary() {
   const toneBg = (t: string) => (t === "good" ? "#E7F6F2" : t === "mid" ? "#FEF3E2" : "#FDEBE7");
 
   return (
+    <Localize locale={locale}>
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[880px] px-4 pb-24">
         <div className="py-8">
           <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Tools · 阶段一 · 自行分配</p>
@@ -380,7 +384,8 @@ export default function P1Discretionary() {
           )}
         </section>
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
+    </Localize>
   );
 }

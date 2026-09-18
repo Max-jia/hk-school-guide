@@ -4,6 +4,7 @@ import path from "path";
 import blogMeta from "@/content/blog-meta.json";
 import districts from "@/content/districts.json";
 import { SITE_URL, toISODate } from "@/lib/seo";
+import { LOCALES, localeHref, languageAlternates } from "@/lib/i18n";
 
 const REPORTS_DIR = path.join(process.cwd(), "src/content/reports");
 const DISTRICTS = districts as { slug: string }[];
@@ -25,6 +26,29 @@ function reportSitemap(): MetadataRoute.Sitemap {
     });
 }
 
+/**
+ * 每条路径同时输出繁體(根)与简体(/cn)两个 URL,并互相声明 hreflang。
+ * 简体版本不是机器镜像:两个 URL 都进 sitemap,Google 才知道两条都能被抓取。
+ */
+function withLocales(entries: MetadataRoute.Sitemap): MetadataRoute.Sitemap {
+  const out: MetadataRoute.Sitemap = [];
+  for (const e of entries) {
+    const path = e.url.replace(SITE_URL, "") || "/";
+    // sitemap 里的 hreflang 必须是绝对 URL,相对路径会被 Google 忽略
+    const rel = languageAlternates(path);
+    const languages: Record<string, string> = {};
+    for (const [lang, href] of Object.entries(rel)) languages[lang] = `${SITE_URL}${href}`;
+    for (const locale of LOCALES) {
+      out.push({
+        ...e,
+        url: `${SITE_URL}${localeHref(path, locale)}`,
+        alternates: { languages },
+      });
+    }
+  }
+  return out;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = (blogMeta as { slug: string; date: string }[]).map((p) => {
     const iso = toISODate(p.date);
@@ -36,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [
+  const base: MetadataRoute.Sitemap = [
     {
       url: SITE_URL,
       lastModified: new Date(),
@@ -112,4 +136,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...posts,
     ...reportSitemap(),
   ];
+  return withLocales(base);
 }

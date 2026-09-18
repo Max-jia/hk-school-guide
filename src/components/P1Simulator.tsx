@@ -1,5 +1,8 @@
 "use client";
 
+import Localize from "@/components/Localize";
+import { type Locale } from "@/lib/i18n";
+
 import { useEffect, useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -67,7 +70,7 @@ type SavedPlan = {
 const PLANS_KEY = "p1sim_plans";
 const PLAN_SLOTS = ["方案 A", "方案 B", "方案 C"];
 
-export default function P1Simulator() {
+export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   const [net, setNet] = useState(INIT_NET);
   const [rel, setRel] = useState("");
   const [org, setOrg] = useState("");
@@ -386,8 +389,9 @@ export default function P1Simulator() {
     "rounded-[6px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] px-2 py-2 text-sm text-[var(--p-fg)] outline-none";
 
   return (
+    <Localize locale={locale}>
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[880px] px-4 pb-24">
         <div className="py-8">
           <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Tools · Pro 模拟器</p>
@@ -940,7 +944,8 @@ export default function P1Simulator() {
           </p>
         </div>
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
+    </Localize>
   );
 }

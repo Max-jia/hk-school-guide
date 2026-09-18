@@ -1,5 +1,8 @@
 "use client";
 
+import Localize from "@/components/Localize";
+import { type Locale } from "@/lib/i18n";
+
 import { useCallback, useEffect, useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -34,7 +37,7 @@ function bandOf(score: number) {
   return { t: "仅适龄分", d: "自行阶段基本陪跑，全力准备统一派位＋叩门预案。别焦虑，也别被中介 PUA。" };
 }
 
-export default function P1SelfCheck() {
+export default function P1SelfCheck({ locale = "tc" }: { locale?: Locale }) {
   const [a, setA] = useState("");
   const [b, setB] = useState("");
   const [checks, setChecks] = useState<boolean[]>(Array(CHECKS.length).fill(false));
@@ -104,8 +107,9 @@ export default function P1SelfCheck() {
   });
 
   return (
+    <Localize locale={locale}>
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[880px] px-4 pb-24">
         <div className="py-8">
           <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Tools · 小一派位</p>
@@ -361,7 +365,8 @@ export default function P1SelfCheck() {
           </p>
         </div>
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
+    </Localize>
   );
 }

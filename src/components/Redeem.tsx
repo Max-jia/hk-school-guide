@@ -3,10 +3,12 @@
 import { useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import Localize from "@/components/Localize";
+import { type Locale } from "@/lib/i18n";
 
 const LOCK_KEY = "purchased_p1-sim";
 
-export default function Redeem() {
+export default function Redeem({ locale = "tc" }: { locale?: Locale }) {
   const [code, setCode] = useState("");
   const [status, setStatus] = useState<{ kind: "idle" | "loading" | "ok" | "err"; text: string }>({
     kind: "idle",
@@ -46,8 +48,9 @@ export default function Redeem() {
   }
 
   return (
+    <Localize locale={locale}>
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[520px] px-4 pb-24 pt-16">
         <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Redeem · 兑换码</p>
         <h1 className="font-serif text-[clamp(28px,4vw,42px)] font-bold leading-[1.1] tracking-[-1px] text-[var(--p-fg)]">
@@ -93,7 +96,8 @@ export default function Redeem() {
           </p>
         </div>
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
+    </Localize>
   );
 }

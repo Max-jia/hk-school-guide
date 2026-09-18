@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useLang, s2t } from "@/lib/zh";
+import { L, type Locale } from "@/lib/i18n";
 
 // 付费墙（照搬正式站无后端模型：Stripe Payment Link + localStorage 解锁）
 // - 未解锁：显示解锁卡（HK$99 全解锁 / HK$9.9 单份），付费章节隐藏
@@ -10,15 +10,16 @@ export default function Paywall({
   slug,
   allAccessUrl,
   singleUrl,
+  locale = "tc",
 }: {
   slug: string;
   allAccessUrl: string;
   singleUrl: string;
+  locale?: Locale;
 }) {
   const [unlocked, setUnlocked] = useState(false);
   const [pending, setPending] = useState(false); // SSR 首帧前的占位态
-  const [lang] = useLang();
-  const z = (s: string) => (lang === "tc" ? s2t(s) : s); // 繁体模式文案跟着转
+  const z = (s: string) => L(s, locale); // 文案跟着 URL 的语言走
 
   useEffect(() => {
     // 旧站逻辑：保存当前报告到 localStorage（unlock 页读取）

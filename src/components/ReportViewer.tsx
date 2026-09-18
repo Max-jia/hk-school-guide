@@ -1,13 +1,12 @@
 "use client";
 
-import { useEffect } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Paywall from "@/components/Paywall";
-import { useLang, s2t } from "@/lib/zh";
+import { L, LOCALE_META, localeHref, otherLocale, type Locale } from "@/lib/i18n";
 
-// 报告页渲染 + 简繁切换
-// 点「繁」:整份报告(标题/评级/正文/付费章节)即时转成香港繁体,选择记在浏览器
+// 报告页渲染。语言由 URL 决定(/reports/** = 繁體,/cn/reports/** = 简体),
+// 不再用浏览器端 toggle——那样 Google 抓不到简体版本。
 export default function ReportViewer({
   slug,
   hero,
@@ -17,6 +16,7 @@ export default function ReportViewer({
   allAccessUrl,
   singleUrl,
   related = [],
+  locale = "tc",
 }: {
   slug: string;
   hero: string;
@@ -26,34 +26,25 @@ export default function ReportViewer({
   allAccessUrl: string;
   singleUrl: string;
   related?: { slug: string; title: string }[];
+  locale?: Locale;
 }) {
-  const [lang, toggle] = useLang();
-  const z = (s: string) => (lang === "tc" ? s2t(s) : s);
+  const lang = locale;
+  const z = (s: string) => L(s, locale);
+  const switchUrl = localeHref(`/reports/${slug}`, otherLocale(locale));
 
   // hero 里藏着老站的「繁」链接(指向不存在的 report-xxx-tc.html,点了就 404)
-  // 渲染时把它原地变成切简繁的按钮:去掉跳转,点击由下面的事件委托接管
+  // 渲染时把它换成指向另一语言版本的真正链接(可被搜索引擎抓取)
   const heroHtml = z(hero).replace(
     /<a href="\.\/report-[^"]*\.html"[^>]*>([^<]*)<\/a>/g,
-    () => `<a data-zh-toggle="1">${lang === "tc" ? "簡" : "繁"}</a>`
+    () =>
+      `<a href="${switchUrl}" hreflang="${LOCALE_META[otherLocale(locale)].hreflang}">${
+        LOCALE_META[otherLocale(locale)].label
+      }</a>`
   );
-
-  // 事件委托:点击 hero 里的简繁切换按钮 → 切换语言,不跳转
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      const el = (e.target as HTMLElement).closest("[data-zh-toggle]");
-      if (el) {
-        e.preventDefault();
-        toggle();
-      }
-    };
-    document.addEventListener("click", handler);
-    return () => document.removeEventListener("click", handler);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       {/* hero 色带全宽(样式见 globals.css .report-hero 区) */}
       <div className="report-article" dangerouslySetInnerHTML={{ __html: heroHtml }} />
       {/* 正文(免费章节 HTML 原样渲染) */}
@@ -63,7 +54,7 @@ export default function ReportViewer({
         {!free && (
           <>
             {/* 付费墙:未解锁显示解锁卡,解锁后显示付费章节(样式/逻辑见 components/Paywall.tsx) */}
-            <Paywall slug={slug} allAccessUrl={allAccessUrl} singleUrl={singleUrl} />
+            <Paywall slug={slug} allAccessUrl={allAccessUrl} singleUrl={singleUrl} locale={locale} />
             <div
               id="premium-content"
               style={{ display: "none" }}
@@ -75,23 +66,23 @@ export default function ReportViewer({
         {related.length > 0 && (
           <section className="mt-14 border-t border-black/15 pt-7 dark:border-white/15">
             <h2 className="font-serif text-xl font-bold text-[var(--p-gray-900)] dark:text-[var(--p-gray-100)]">
-              相关报告
+              {L("相关报告", locale)}
             </h2>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {related.map((r) => (
                 <a
                   key={r.slug}
-                  href={`/reports/${r.slug}`}
+                  href={localeHref(`/reports/${r.slug}`, locale)}
                   className="block rounded-xl border border-black/10 bg-[var(--p-bg)] p-4 text-sm font-medium leading-snug text-[var(--p-gray-800)] no-underline transition-colors hover:border-black/25 hover:bg-black/[0.02] dark:border-white/10 dark:bg-white/[0.04] dark:text-[var(--p-gray-200)] dark:hover:bg-white/[0.07]"
                 >
-                  {r.title}
+                  {L(r.title, locale)}
                 </a>
               ))}
             </div>
           </section>
         )}
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
   );
 }

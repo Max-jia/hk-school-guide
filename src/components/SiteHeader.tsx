@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { L, LOCALE_META, localeHref, otherLocale, type Locale } from "@/lib/i18n";
 
 const NAV: { label: string; href: string; rot: string }[] = [
   { label: "深度报告", href: "/reports", rot: "-rotate-2" },
@@ -21,27 +23,42 @@ const MENU: { label: string; sub: string; href: string; rot: string }[] = [
   { label: "热文", sub: "40 篇择校攻略", href: "/blog", rot: "-rotate-1" },
 ];
 
-export default function SiteHeader() {
+export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname() || "/";
+
+  // 语言切换:去掉当前路径上的 /cn 前缀,再套到另一种语言。
+  // 用真正的 <a> 而不是纯前端 toggle,Google 才抓得到简体版本。
+  const basePath = pathname.replace(/^\/cn(?=\/|$)/, "") || "/";
+  const target = otherLocale(locale);
+  const switchHref = localeHref(basePath, target);
 
   return (
     <header className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-3 px-4 pb-4 pt-8 font-sans">
       <a
-        href="/"
+        href={localeHref("/", locale)}
         className="inline-block -rotate-3 text-2xl font-bold tracking-tight text-[var(--p-fg)] no-underline transition-transform duration-100 hover:-rotate-1 hover:scale-105 md:text-3xl lg:text-4xl"
       >
-        港学荟
+        {L("港学荟", locale)}
       </a>
       <nav className="flex flex-wrap items-center gap-2 md:gap-3">
         {NAV.map((n) => (
           <a
-            key={n.label}
-            href={n.href}
+            key={n.href}
+            href={localeHref(n.href, locale)}
             className={`rounded-[8px] border-2 border-[var(--p-fg)] bg-[var(--p-bg)] px-3 py-1.5 text-xs font-bold text-[var(--p-fg)] no-underline shadow-[2px_3px_0_rgba(0,0,0,0.15)] transition-transform duration-100 ${n.rot} hover:rotate-0 hover:scale-105 md:text-sm`}
           >
-            {n.label}
+            {L(n.label, locale)}
           </a>
         ))}
+        <a
+          href={switchHref}
+          hrefLang={LOCALE_META[target].hreflang}
+          aria-label={`${L("切换到", locale)}${LOCALE_META[target].label}`}
+          className="rounded-[8px] border-2 border-dashed border-[var(--p-fg)] bg-transparent px-2.5 py-1.5 text-xs font-bold text-[var(--p-fg)] no-underline transition-transform duration-100 hover:scale-105 md:text-sm"
+        >
+          {LOCALE_META[target].label}
+        </a>
         <button
           aria-label="open menu"
           onClick={() => setOpen(true)}
@@ -66,15 +83,15 @@ export default function SiteHeader() {
             <nav className="flex flex-col gap-6 px-6 pt-20">
               {MENU.map((m) => (
                 <a
-                  key={m.label}
-                  href={m.href}
+                  key={m.href}
+                  href={localeHref(m.href, locale)}
                   onClick={() => setOpen(false)}
                   className={`group w-fit rounded-[10px] border-2 border-[#111] bg-white px-6 py-3 no-underline shadow-[3px_4px_0_rgba(0,0,0,0.35)] transition-transform duration-100 ${m.rot} hover:translate-x-1 hover:rotate-0`}
                 >
                   <span className="block font-serif text-xl font-bold leading-tight text-black md:text-2xl">
-                    {m.label}
+                    {L(m.label, locale)}
                   </span>
-                  <span className="mt-1 block text-xs text-[#666]">{m.sub}</span>
+                  <span className="mt-1 block text-xs text-[#666]">{L(m.sub, locale)}</span>
                 </a>
               ))}
             </nav>

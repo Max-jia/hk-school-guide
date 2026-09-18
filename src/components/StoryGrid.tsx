@@ -1,5 +1,7 @@
 
 import blogMeta from "@/content/blog-meta.json";
+import Localize from "@/components/Localize";
+import { L, localeHref, type Locale } from "@/lib/i18n";
 
 type Story = {
   id: string;
@@ -151,13 +153,16 @@ function SectionHeader({
   title,
   href,
   linkLabel,
+  locale = "tc",
 }: {
   index: string;
   title: string;
   href?: string;
   linkLabel?: string;
+  locale?: Locale;
 }) {
   return (
+    <Localize locale={locale}>
     <div className="mb-2 flex items-baseline justify-between border-b-2 border-[var(--p-gray-200)] px-4 pb-4">
       <h2 className="m-0 font-mono text-base font-bold uppercase tracking-wide text-[var(--p-fg)] md:text-xl">
         <span className="mr-3 text-[var(--p-secondary)]">{index}</span>
@@ -172,11 +177,13 @@ function SectionHeader({
         </a>
       )}
     </div>
+    </Localize>
   );
 }
 
-function StoryCard({ s, showPrice }: { s: Story; showPrice?: boolean }) {
+function StoryCard({ s, showPrice, locale = "tc" }: { s: Story; showPrice?: boolean; locale?: Locale }) {
   return (
+    <Localize locale={locale}>
     <article className="story" style={{ "--story-bg": s.bg } as React.CSSProperties}>
       <div className="mb-2 flex items-center justify-between font-mono transition-transform duration-100 hover:-translate-y-1">
         <p className="rounded-full border border-[var(--p-fg)] p-1 px-2 text-sm uppercase">
@@ -205,7 +212,7 @@ function StoryCard({ s, showPrice }: { s: Story; showPrice?: boolean }) {
         <div className="relative aspect-square overflow-hidden bg-[var(--story-bg)]">
           <img
             src={s.img}
-            alt={s.title}
+            alt={L(s.title, locale)}
             loading="lazy"
             className="absolute bottom-0 left-1/2 aspect-[6/7] w-[calc(100%-var(--padding)*2)] -translate-x-1/2 object-cover transition-transform duration-100 hover:scale-105"
           />
@@ -218,35 +225,59 @@ function StoryCard({ s, showPrice }: { s: Story; showPrice?: boolean }) {
         </div>
       </a>
     </article>
+    </Localize>
   );
 }
 
-function CardList({ stories, showPrice }: { stories: Story[]; showPrice?: boolean }) {
+function CardList({
+  stories,
+  showPrice,
+  locale = "tc",
+}: {
+  stories: Story[];
+  showPrice?: boolean;
+  locale?: Locale;
+}) {
   return (
+    <Localize locale={locale}>
     <ul className="m-0 flex flex-wrap p-0">
       {stories.map((s) => (
         <li
           key={s.id}
           className="w-full list-none px-4 py-8 [--padding:clamp(16px,12vw,48px)] md:w-1/2 md:[--padding:clamp(16px,6vw,48px)] lg:w-1/3 lg:[--padding:clamp(24px,4vw,56px)]"
         >
-          <StoryCard s={s} showPrice={showPrice} />
+          <StoryCard s={s} showPrice={showPrice} locale={locale} />
         </li>
       ))}
     </ul>
+    </Localize>
   );
 }
 
-export default function StoryGrid() {
+export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
   return (
+    <Localize locale={locale}>
     <div className="relative">
       <section className="mt-8">
-        <SectionHeader index="01" title="精选报告" href="/reports" linkLabel="查看全部 126 份" />
-        <CardList stories={REPORTS} showPrice />
+        <SectionHeader
+          index="01"
+          title="精选报告"
+          href={localeHref("/reports", locale)}
+          linkLabel="查看全部 126 份"
+          locale={locale}
+        />
+        <CardList stories={REPORTS} showPrice locale={locale} />
       </section>
 
       <section className="mt-8 bg-[var(--p-band-blog)] py-6 md:py-10">
-        <SectionHeader index="02" title="热文阅读" href="/blog" linkLabel="查看全部 40 篇" />
-        <CardList stories={BLOGS} />
+        <SectionHeader
+          index="02"
+          title="热文阅读"
+          href={localeHref("/blog", locale)}
+          linkLabel="查看全部 40 篇"
+          locale={locale}
+        />
+        <CardList stories={BLOGS} locale={locale} />
         {/* 原 promo 黑条降级：热文区底部一行小字（避免首屏双黑块竞争） */}
         <p className="mt-2 px-4 pb-8 text-center text-sm text-[var(--p-secondary)]">
           2026-27 学年自行分配学位申请即将开始 ·{" "}
@@ -259,5 +290,6 @@ export default function StoryGrid() {
         </p>
       </section>
     </div>
+    </Localize>
   );
 }

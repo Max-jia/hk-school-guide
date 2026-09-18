@@ -1,5 +1,8 @@
 "use client";
 
+import Localize from "@/components/Localize";
+import { type Locale } from "@/lib/i18n";
+
 import { useEffect, useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -15,7 +18,7 @@ const INPUT_KEY = "p1sim_input";
 
 const STATUS_LABEL: Record<string, string> = { pass: "通过", warn: "需注意", fail: "错误" };
 
-export default function P1SimReport() {
+export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
   const [input, setInput] = useState<SimInput | null>(null);
   const [unlocked, setUnlocked] = useState(false);
   const [buying, setBuying] = useState(false);
@@ -84,8 +87,9 @@ export default function P1SimReport() {
     report?.grade === "A" ? "#0F766E" : report?.grade === "B" ? "#B45309" : "#C2410C";
 
   return (
+    <Localize locale={locale}>
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[860px] px-4 pb-24">
         <div className="py-8 print:hidden">
           <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Pro 模拟器 · 体检报告</p>
@@ -280,7 +284,8 @@ export default function P1SimReport() {
           </div>
         )}
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
+    </Localize>
   );
 }

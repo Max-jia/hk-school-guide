@@ -1,5 +1,8 @@
 "use client";
 
+import Localize from "@/components/Localize";
+import { type Locale } from "@/lib/i18n";
+
 import { useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -45,7 +48,7 @@ function reportOf(name: string): string | undefined {
   return PS_CODE[name];
 }
 
-export default function P1SchoolNet() {
+export default function P1SchoolNet({ locale = "tc" }: { locale?: Locale }) {
   const [net, setNet] = useState(P1.nets[0].net);
   const [q, setQ] = useState("");
 
@@ -59,8 +62,9 @@ export default function P1SchoolNet() {
   }, [current, q]);
 
   return (
+    <Localize locale={locale}>
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[960px] px-4 pb-24">
         <div className="py-8">
           <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Tools · 校网数据库</p>
@@ -206,7 +210,8 @@ export default function P1SchoolNet() {
           </p>
         </div>
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
+    </Localize>
   );
 }

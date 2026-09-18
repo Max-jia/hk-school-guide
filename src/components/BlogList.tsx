@@ -4,9 +4,11 @@ import { useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import blogMeta from "@/content/blog-meta.json";
+import { L, localeHref, type Locale } from "@/lib/i18n";
 
 const POSTS = (blogMeta as any[]) as {
   cat: string; slug: string; date: string; tag: string; cover: string; title: string; tease: string;
+  scTitle?: string; scTease?: string;
 }[];
 
 const CATS: Record<string, string> = {
@@ -23,7 +25,7 @@ const GROUPS: [string, string][] = [
   ["guide", "升学实战"],
 ];
 
-export default function BlogList() {
+export default function BlogList({ locale = "tc" }: { locale?: Locale }) {
   const [cat, setCat] = useState("all");
   const [q, setQ] = useState("");
 
@@ -32,27 +34,32 @@ export default function BlogList() {
     return POSTS.filter((p) => {
       if (cat !== "all" && p.cat !== cat) return false;
       if (!q.trim()) return true;
-      const hay = (p.title + p.tease).toLowerCase();
+      // 输入简体或繁体都能命中:两个方向都试
+      const hay = [p.title, p.tease, p.scTitle, p.scTease, L(p.title, "tc"), L(p.tease, "tc")]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
       return chars.every((c) => hay.includes(c));
     });
   }, [cat, q]);
 
   return (
     <main className="w-full">
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[1280px] px-4 pb-24">
         <div className="py-8">
-          <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Blog · 热文</p>
+          <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Blog · {L("热文", locale)}</p>
           <h1 className="font-serif text-[clamp(36px,6vw,56px)] font-bold leading-[1.05] tracking-[-1px] text-[var(--p-fg)]">
-            择校攻略与制度解读
+            {L("择校攻略与制度解读", locale)}
           </h1>
           <p className="mt-2 max-w-[560px] text-[var(--p-secondary)]">
-            校网排名、计分制、叩门攻略、热搜学校研究。每周更新，直接可读。
+            {L("校网排名、计分制、叩门攻略、热搜学校研究。每周更新，直接可读。", locale)}
           </p>
           <p className="mt-4 max-w-[760px] text-sm leading-relaxed text-[var(--p-secondary)]">
-            港学荟的热文与攻略基于香港教育局公开资料、学校官方信息与家长口碑交叉整理，
-            覆盖小一派位计分、校网分析、幼稚园资助、名校面试与暴雨停课等实际升学问题。
-            每篇标注数据来源与时效，评级与制度解读供择校参考，不构成入学建议。
+            {L(
+              "港学荟的热文与攻略基于香港教育局公开资料、学校官方信息与家长口碑交叉整理，覆盖小一派位计分、校网分析、幼稚园资助、名校面试与暴雨停课等实际升学问题。每篇标注数据来源与时效，评级与制度解读供择校参考，不构成入学建议。",
+              locale
+            )}
           </p>
         </div>
 
@@ -63,7 +70,7 @@ export default function BlogList() {
               onClick={() => setCat(k)}
               className={`transition-opacity ${cat === k ? "font-bold opacity-100" : "opacity-33 hover:opacity-60"}`}
             >
-              {label}
+              {L(label, locale)}
             </button>
           ))}
           <input
@@ -75,7 +82,9 @@ export default function BlogList() {
           />
         </div>
 
-        {list.length === 0 && <p className="py-12 text-center text-[var(--p-secondary)]">没有匹配的文章</p>}
+        {list.length === 0 && (
+          <p className="py-12 text-center text-[var(--p-secondary)]">{L("没有匹配的文章", locale)}</p>
+        )}
         <ul className="m-0 p-0">
           {GROUPS.map(([key, label]) => {
             const items = list.filter((p) => p.cat === key);
@@ -83,7 +92,7 @@ export default function BlogList() {
             return (
               <li key={key} className="list-none px-2 py-6">
                 <div className="mb-1 flex items-baseline gap-2 font-mono text-sm uppercase text-[var(--p-secondary)]">
-                  <h2 className="m-0">{label}</h2>
+                  <h2 className="m-0">{L(label, locale)}</h2>
                   <span>({items.length})</span>
                   <div className="h-px flex-1 bg-[rgba(48,48,48,.15)]" />
                 </div>
@@ -91,7 +100,7 @@ export default function BlogList() {
                   {items.map((p, i) => (
                     <li key={p.slug} className="list-none">
                       <a
-                        href={`/blog/${p.slug}`}
+                        href={localeHref(`/blog/${p.slug}`, locale)}
                         className="group flex items-baseline gap-4 border-b border-[rgba(48,48,48,.12)] py-3 no-underline"
                       >
                         <span className="w-[3.2em] shrink-0 rounded-full border border-[var(--p-fg)] p-1 text-center font-mono text-sm uppercase text-[var(--p-fg)]">
@@ -99,10 +108,10 @@ export default function BlogList() {
                         </span>
                         <span className="min-w-0 flex-1">
                           <span className="block font-serif text-lg font-bold leading-snug tracking-[-.3px] text-[var(--p-fg)] transition-transform duration-100 group-hover:-translate-y-0.5">
-                            {p.title}
+                            {locale === "sc" && p.scTitle ? p.scTitle : L(p.title, locale)}
                           </span>
                           <span className="mt-1 block truncate text-sm text-[var(--p-secondary)]">
-                            {p.tease}
+                            {locale === "sc" && p.scTease ? p.scTease : L(p.tease, locale)}
                           </span>
                         </span>
                         <span className="shrink-0 font-mono text-xs uppercase text-[var(--p-secondary)]">
@@ -117,7 +126,7 @@ export default function BlogList() {
           })}
         </ul>
       </div>
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </main>
   );
 }
