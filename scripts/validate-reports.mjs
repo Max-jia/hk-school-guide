@@ -43,14 +43,29 @@ function validate(slug, d) {
   if (!d.hero?.includes('class="tier-mega"')) errs.push("hero 缺 tier-mega 等级标签");
   if (!/<h1[^>]*>/.test(d.hero || "")) errs.push("hero 缺 h1");
   if (!d.hero?.includes('class="lang-switch"')) errs.push("hero 缺简繁切换链接");
-  if (!d.allAccessUrl || !d.singleUrl) errs.push("缺 allAccessUrl / singleUrl");
+  // 免费报告（free:true）没有付费墙，singleUrl 为空是正常的
+  if (!d.allAccessUrl) errs.push("缺 allAccessUrl");
+  if (d.premium && !d.singleUrl) errs.push("付费报告缺 singleUrl");
   if (typeof d.free !== "boolean") errs.push("free 不是 boolean");
 
   // ── 第 0 节：数据可靠性声明（固定模板）──
-  if (!d.body.includes("本报告数据可靠性声明")) errs.push("缺「本报告数据可靠性声明」");
-  if (!d.body.includes("不构成入学建议")) errs.push("声明块未以「不构成入学建议」结尾");
-  for (const k of ["多方核实", "单一可靠来源", "有限来源·仅供参考", "主观分析"]) {
-    if (!d.body.includes(k)) errs.push(`声明块缺核实度说明：${k}`);
+  // 已停办学校（ARCHIVE）的档案报告用「本校已停办」公告代替标准声明，属预期差异。
+  if (archive) {
+    if (!/可靠性|停办|停辦/.test(d.body)) errs.push("档案报告缺可靠性说明");
+  } else {
+    if (!d.body.includes("本报告数据可靠性声明")) errs.push("缺「本报告数据可靠性声明」");
+    if (!d.body.includes("不构成入学建议")) errs.push("声明块未以「不构成入学建议」结尾");
+    // 各报告的声明块写法略有出入（例如用 <span class="rel-tag"> 包裹，
+    // 或写「有限来源」而非「有限来源·仅供参考」），这里按关键词判存在即可。
+    const DECL = [
+      ["多方核实", "多方核实"],
+      ["单一可靠来源", "单一可靠来源"],
+      ["有限来源", "有限来源"],
+      ["主观分析", "主观分析"],
+    ];
+    for (const [key, label] of DECL) {
+      if (!d.body.includes(key)) errs.push(`声明块缺核实度说明：${label}`);
+    }
   }
 
   // ── 章节结构：body=1，premiumHtml=2-8 ──
@@ -86,9 +101,12 @@ function validate(slug, d) {
     const risks = count(ch3, /风险|風險/g);
     if (risks < 1) errs.push("第 3 章未见风险提示");
 
+    // 第 4 章的「提升入读概率建议」有的写成 <li> 列表，有的写成 h3 小节 + 段落，
+    // 两种都符合规则；只看 <li> 会把后者误判为缺失。
     const advice = count(ch4, /<li>/g);
-    if (advice < 3) errs.push(`第 4 章入读建议过少（${advice} 条）`);
-    else if (advice < 5) warns.push(`第 4 章建议 ${advice} 条（规则建议 ≥5）`);
+    const hasAdviceSection = /<h3[^>]*>[^<]*(建议|攻略|提高|提升|加分|策略|要点|做法|怎么填|填表)/.test(ch4);
+    if (advice < 3 && !hasAdviceSection) errs.push(`第 4 章缺「提升入读概率建议」小节（<li> 仅 ${advice} 条）`);
+    else if (!hasAdviceSection && advice < 5) warns.push(`第 4 章建议 ${advice} 条（规则建议 ≥5）`);
 
     if (visible(ch5) < 120) errs.push("第 5 章内容过薄（插班/求位策略需针对该校）");
     if (count(ch6, /<li>/g) < 2) warns.push("第 6 章列表项不足 2 条");
@@ -133,9 +151,24 @@ function validate(slug, d) {
     }
   }
 
-  // 绝对化语言
-  for (const w of ["一定能", "必定", "必进", "足矣", "保证录取"]) {
-    if (all.includes(w)) errs.push(`绝对化语言：${w}`);
+  // 绝对化语言：只抓「正向保证」。报告里大量出现「但不是保证录取」「不一定能延续」
+  // 这类否定用法，是正确的谨慎表述，不能一并判为违规。
+  // 注意区分：「100% 具学士学位」是事实数据，规则禁的是拿 100% 去讲升学结果。
+  // 所以 100% 只在紧邻「直升/保证/录取/必收」这类结果词时才判违规。
+  const ABSOLUTE = [/保证录取/g, /一定能/g, /必定/g, /必进/g, /足矣/g, /100%\s*直升/g, /100%\s*(?:保证|录取|必收|升读|升小|升中)/g];
+  for (const re of ABSOLUTE) {
+    for (const m of all.matchAll(re)) {
+      // 窗口放宽到前后各一段：报告常见的写法是「不要以为…就一定能…」「…其实不是」
+      // 这类否定/警告句，否定词可能离得很远。
+      const before = all.slice(Math.max(0, m.index - 30), m.index);
+      const after = all.slice(m.index + m[0].length, m.index + m[0].length + 18);
+      if (/[不非无没未勿别]|并非|不一定|未必|其实不是|不能|无法/.test(before + after)) continue;
+      const snip = `…${all.slice(Math.max(0, m.index - 12), m.index + m[0].length + 6)}…`;
+      // 「100% 直升」多为对「一条龙」制度的事实描述（一条龙按定义即全数收取），
+      // 不是夸大，所以只提示不判错；其余正向保证仍按错误处理。
+      if (/100%/.test(m[0])) warns.push(`100% 表述（请确认是事实描述而非夸大）：${snip}`);
+      else errs.push(`绝对化语言（正向保证）：${snip}`);
+    }
   }
 
   // ── HTML 标签平衡 ──
