@@ -99,10 +99,23 @@ function validate(slug, d) {
   // ── 来源标注体系 ──
   // ✅ 是唯一全站保留的核实标记（127/127），必须出现
   if (!all.includes("✅")) errs.push("全篇缺少 ✅ 多方核实标注");
-  // 🟡🔴💬 已被「系统 emoji 全清」移除，只在少数旧报告残留，不作为要求
-  for (const mark of ["🟡", "🔴", "💬"]) {
-    if (all.includes(mark)) warns.push(`仍在使用已被清理的 ${mark} 标记`);
-  }
+
+  // 全站 emoji 经过一轮「系统 emoji 全清」。语料库盘点后允许的集合如下，
+  // 其余（💡🔴💬🟡📎📌 等）都算残留。新写报告很容易顺手加上，逐个 review 不现实，
+  // 所以在这里自动拦住。
+  const ALLOWED_EMOJI = new Set([
+    "✅", // 多方核实
+    "⚠", // 风险 / 提醒（常带 U+FE0F）
+    "→", "↓", // 排版箭头
+    "★", "☆", // 评级星
+    "✔", "✘", "❌", // 适合 / 不适合
+    "☐", // 清单空格
+  ]);
+  const found = new Set(
+    all.match(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u2190-\u2193]/gu) || []
+  );
+  const stray = [...found].filter((e) => !ALLOWED_EMOJI.has(e));
+  if (stray.length) errs.push(`出现已全站清理的 emoji：${stray.join(" ")}`);
 
   // ── 禁止项 ──
   const banned = [
