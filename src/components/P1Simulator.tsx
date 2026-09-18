@@ -417,7 +417,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           <p className="mt-3 text-sm">
             阶段一还没想好？<a className="underline" href="/tools/p1-discretionary">先去「自行分配投表决策台」定这唯一一票 →</a>
           </p>
-          <DataVersionBadge />
+          <DataVersionBadge locale={locale} />
         </div>
 
         {/* 第一步：校网与计分 */}
@@ -502,6 +502,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   value={s.name}
                   onChange={(v) => setRow(partA, setPartA, i, { name: v })}
                   placeholder={`甲部第 ${i + 1} 志愿（全港任选，可搜索或下拉）`}
+                  locale={locale}
                 />
                 {genderBadge(s.name, allSchoolOpts)}
                 <select
@@ -569,6 +570,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   value={s.name}
                   onChange={(v) => setRow(partB, setPartB, i, { name: v })}
                   placeholder={`乙部第 ${i + 1} 志愿（可搜索或下拉）`}
+                  locale={locale}
                 />
                 {genderBadge(s.name, netSchoolOpts)}
                 {(quotaMap.get(s.name.trim()) ?? 0) > 0 && (quotaMap.get(s.name.trim()) ?? 0) <= 30 && (
@@ -775,9 +777,9 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           </ul>
         </section>
 
-        <SchoolFitCard options={allSchoolOpts} score={calcScore(rel, org)} kidGender={kidGender} unlocked={unlocked} buying={buying} buy={buy} />
+        <SchoolFitCard options={allSchoolOpts} score={calcScore(rel, org)} kidGender={kidGender} unlocked={unlocked} buying={buying} buy={buy} locale={locale} />
 
-        <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} />
+        <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} locale={locale} />
 
         {/* 方案存档（Pro）：多套顺序 A/B 试错 */}
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">

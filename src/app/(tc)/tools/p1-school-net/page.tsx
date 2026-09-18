@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tools/p1-school-net", languages: languageAlternates("/tools/p1-school-net") },
   openGraph: {
     type: "website",
-    siteName: "港学荟",
+    siteName: L("港学荟", "tc"),
     title: L("小一校网数据库：36 个校网 × 官立资助小学名单", "tc"),
     description: L("输入校网即可查看网内全部参加派位小学，数据来自教育局 2027/28 官方名册。", "tc"),
     url: "/tools/p1-school-net",

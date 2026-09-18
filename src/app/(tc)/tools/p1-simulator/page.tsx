@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tools/p1-simulator", languages: languageAlternates("/tools/p1-simulator") },
   openGraph: {
     type: "website",
-    siteName: "港学荟",
+    siteName: L("港学荟", "tc"),
     title: L("小一志愿结构模拟器 · 填表前推演", "tc"),
     description: L("30 个志愿怎么排、有没有保底、有没有填了也后悔的空洞——一页报告说清楚。", "tc"),
     url: "/tools/p1-simulator",

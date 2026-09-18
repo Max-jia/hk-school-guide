@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    siteName: "港学荟",
+    siteName: L("港学荟", "tc"),
     title: L("自行分配投表决策台 · 这一票投给谁", "tc"),
     description: L("计分防算错＋甲类必录取预检＋候选校对比＋投表决策报告。失败自动进统派，录取即锁定——这票投给谁要想清楚。", "tc"),
     url: "/tools/p1-discretionary",

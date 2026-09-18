@@ -6,6 +6,8 @@ import schoolsJson from "@/content/schools.json";
 import p1NetsJson from "@/content/p1-nets.json";
 import reportMeta from "@/content/report-meta.json";
 import { toPng } from "html-to-image";
+import Localize from "@/components/Localize";
+import { L, type Locale } from "@/lib/i18n";
 import { relativeBand } from "@/lib/sim-engine";
 
 type CompareSchool = {
@@ -58,11 +60,12 @@ function typeLabel(f: string): string {
 }
 
 export default function SchoolCompare({
-  unlocked, buying, buy,
+  unlocked, buying, buy, locale = "tc",
 }: {
   unlocked: boolean;
   buying: boolean;
   buy: () => void;
+  locale?: Locale;
 }) {
   const [a, setA] = useState("");
   const [b, setB] = useState("");
@@ -227,6 +230,7 @@ export default function SchoolCompare({
   }, [schoolA, schoolB]);
 
   return (
+    <Localize locale={locale}>
     <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
       <div className="flex items-center gap-2">
         <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">两校对比</h2>
@@ -239,9 +243,9 @@ export default function SchoolCompare({
       </p>
 
       <div className="mt-4 grid gap-3 md:grid-cols-[1fr_auto_1fr]">
-        <SchoolCombobox options={options} value={a} onChange={(v) => { setA(v); setAnalysed(false); }} placeholder="选择第一所学校…" />
+        <SchoolCombobox options={options} value={a} onChange={(v) => { setA(v); setAnalysed(false); }} placeholder="选择第一所学校…" locale={locale} />
         <div className="hidden items-center justify-center font-mono text-xs text-[var(--p-secondary)] md:flex">VS</div>
-        <SchoolCombobox options={options} value={b} onChange={(v) => { setB(v); setAnalysed(false); }} placeholder="选择第二所学校…" />
+        <SchoolCombobox options={options} value={b} onChange={(v) => { setB(v); setAnalysed(false); }} placeholder="选择第二所学校…" locale={locale} />
       </div>
 
       <div className="mt-4 flex flex-wrap gap-3">
@@ -395,5 +399,6 @@ export default function SchoolCompare({
         </div>
       )}
     </section>
+    </Localize>
   );
 }

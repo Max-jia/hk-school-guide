@@ -204,6 +204,7 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
                         value={c.name}
                         onChange={(v) => setCandidate(i, { name: v })}
                         placeholder="选择一所官津小学…"
+                        locale={locale}
                       />
                     </div>
                     {i > 0 && (

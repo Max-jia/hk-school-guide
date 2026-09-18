@@ -3,9 +3,11 @@
 import { useState } from "react";
 import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
 import { assessSchoolFit } from "@/lib/sim-engine";
+import Localize from "@/components/Localize";
+import { L, type Locale } from "@/lib/i18n";
 
 export default function SchoolFitCard({
-  options, score, kidGender, unlocked, buying, buy,
+  options, score, kidGender, unlocked, buying, buy, locale = "tc",
 }: {
   options: SchoolOpt[];
   score: number;
@@ -13,6 +15,7 @@ export default function SchoolFitCard({
   unlocked: boolean;
   buying: boolean;
   buy: () => void;
+  locale?: Locale;
 }) {
   const [picked, setPicked] = useState("");
   const [count, setCount] = useState(0);
@@ -51,6 +54,7 @@ export default function SchoolFitCard({
   const strat = school && !catA ? strategy(score) : null;
 
   return (
+    <Localize locale={locale}>
     <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
       <div className="flex items-center gap-2">
         <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">底牌卡 · 我这点分能进吗</h2>
@@ -65,7 +69,7 @@ export default function SchoolFitCard({
 
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <div className="min-w-0 flex-1">
-          <SchoolCombobox options={options} value={picked} onChange={(v) => { setPicked(v); setAnalysed(false); }} placeholder="选择一所官津学校…" />
+          <SchoolCombobox options={options} value={picked} onChange={(v) => { setPicked(v); setAnalysed(false); }} placeholder="选择一所官津学校…" locale={locale} />
         </div>
         <button
           onClick={analyse}
@@ -165,5 +169,6 @@ export default function SchoolFitCard({
         </div>
       )}
     </section>
+    </Localize>
   );
 }

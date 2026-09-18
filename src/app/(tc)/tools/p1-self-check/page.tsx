@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tools/p1-self-check", languages: languageAlternates("/tools/p1-self-check") },
   openGraph: {
     type: "website",
-    siteName: "港学荟",
+    siteName: L("港学荟", "tc"),
     title: L("小一派位自查：计分计算器＋交表清单 | 港学荟", "tc"),
     description:
       L("交表前先做派位体检：算出乙类计分、过一遍5条自查清单，生成可分享的结果卡。", "tc"),

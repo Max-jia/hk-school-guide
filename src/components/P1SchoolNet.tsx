@@ -79,7 +79,7 @@ export default function P1SchoolNet({ locale = "tc" }: { locale?: Locale }) {
             ⚠️ 名册只收录 2027/28 学年开办小一班级的官立及资助学校；直资/私立/英基及特殊学校不在此列。
             统一派位阶段部分学校亦供其他校网选择（暂定统一派位学额），此处为自行分配阶段所属校网。
           </p>
-          <DataVersionBadge />
+          <DataVersionBadge locale={locale} />
         </div>
 
         {/* 校网选择 */}

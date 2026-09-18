@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Localize from "@/components/Localize";
+import { L, type Locale } from "@/lib/i18n";
 
 export type SchoolOpt = {
   name: string;
@@ -20,11 +22,13 @@ export default function SchoolCombobox({
   value,
   onChange,
   placeholder,
+  locale = "tc",
 }: {
   options: SchoolOpt[];
   value: string;
   onChange: (v: string) => void;
   placeholder?: string;
+  locale?: Locale;
 }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -61,6 +65,7 @@ export default function SchoolCombobox({
   }, [options, query]);
 
   return (
+    <Localize locale={locale}>
     <div ref={rootRef} className="relative flex min-w-0 flex-1">
       <input
         value={value}
@@ -73,7 +78,7 @@ export default function SchoolCombobox({
           if (value) setQuery(value);
           setOpen(true);
         }}
-        placeholder={placeholder || "搜索学校…"}
+        placeholder={L(placeholder || "搜索学校…", locale)}
         className="w-full min-w-0 flex-1 rounded-l-[6px] border border-[var(--p-gray-300)] border-r-0 bg-[var(--p-bg)] px-3 py-2 text-sm text-[var(--p-fg)] outline-none"
       />
       <button
@@ -83,7 +88,7 @@ export default function SchoolCombobox({
           setOpen((v) => !v);
         }}
         className="w-10 shrink-0 rounded-r-[6px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] text-sm text-[var(--p-secondary)] hover:bg-[var(--p-gray-300)]"
-        aria-label="展开学校下拉"
+        aria-label={L("展开学校下拉", locale)}
       >
         ▾
       </button>
@@ -115,6 +120,6 @@ export default function SchoolCombobox({
         </div>
       )}
     </div>
+    </Localize>
   );
 }
-
