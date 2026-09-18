@@ -115,7 +115,7 @@ export default function Paywall({
             >
               HK$99 <span className="text-base font-normal opacity-80">{z("一键解锁全部报告")}</span>
             </button>
-            <p className="m-0 mt-1 text-xs opacity-70">{z("126 份单买共约 HK$1,247")}</p>
+            <p className="m-0 mt-1 text-xs opacity-70">{z("132 份单买共约 HK$1,247")}</p>
           </div>
 
           <div className="mt-4 flex flex-wrap justify-center gap-3">

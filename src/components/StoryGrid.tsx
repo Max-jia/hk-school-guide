@@ -263,7 +263,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
           index="01"
           title="精选报告"
           href={localeHref("/reports", locale)}
-          linkLabel="查看全部 126 份"
+          linkLabel="查看全部 132 份"
           locale={locale}
         />
         <CardList stories={REPORTS} showPrice locale={locale} />

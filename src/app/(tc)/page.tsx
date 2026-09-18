@@ -45,7 +45,7 @@ export default function Home({ locale = "tc" }: { locale?: Locale }) {
               直接查这所学校的深度报告，收生数据、学费、面试一次讲透。
             </p>
             <span className="mt-6 inline-block font-mono text-sm font-bold text-[var(--p-gray-900)]">
-              浏览全部 126 份报告 →
+              浏览全部 132 份报告 →
             </span>
           </a>
           <a
@@ -80,7 +80,7 @@ export default function Home({ locale = "tc" }: { locale?: Locale }) {
             数据经多源交叉核实。评级与匹配结果仅供参考，不构成入学建议，各校实际收生以校方公布为准。
           </p>
           <p className="mt-2">
-            当前站内已整理 669 所小学、962 所幼稚园数据，沉淀 126 份深度择校报告与 25 所学校面试真题；
+            当前站内已整理 669 所小学、962 所幼稚园数据，沉淀 132 份深度择校报告与 25 所学校面试真题；
             报告按小学四因子、幼稚园五维竞争力两套评分体系输出，每份均标注数据来源与核实程度，
             方便家长从「全港名单」逐层筛选到「适合自家的那几所」。
           </p>
