@@ -92,14 +92,15 @@ const AREA_TC = {
 // 每份报告卡片里的三条黑条(第一二条为标识信息,第三条为卖点)与大字。
 // 新写报告时在这里加一行即可,其余全部自动。
 const CARD = {
-  canossahk: { big: "嘉", tagline: "Canossa School Hong Kong · 14 校網", bars: ["B 級 · 東區", "資助 · 男女校 · 免費", "聯繫嘉諾撒書院 · 午息後課程特色"] },
-  sfcs: { big: "方", tagline: "St. Francis' Canossian School", bars: ["B 級 · 灣仔區 12 校網", "資助 · 女校 · 直屬", "直屬嘉諾撒聖方濟各書院"] },
-  pkps: { big: "培", tagline: "Pui Kiu Primary School · 16 校網", bars: ["B 級 · 東區 16 校網", "資助 · 男女校 · 免費", "中英數三科獲行政長官卓越教學獎"] },
-  sjacps: { big: "瑟", tagline: "St. Joseph's Anglo-Chinese Primary School", bars: ["B 級 · 觀塘區", "私立 · 男校 · $46,000／年", "直屬聖若瑟英文中學"] },
-  stgps: { big: "沙", tagline: "Sha Tin Government Primary School", bars: ["B 級 · 沙田區 88 校網", "官立 · 男女校 · 免費", "聯繫沙田官立中學 · 梁文燕紀念中學"] },
-  stts: { big: "崇", tagline: "Shatin Tsung Tsin School", bars: ["B 級 · 沙田區 91 校網", "資助 · 男女校 · 免費", "聯繫馬鞍山崇真中學 · 生命教育主線"] },
-  tsbcps: { big: "慈", tagline: "Tsz Wan Shan St. Bonaventure Catholic PS", bars: ["B 級 · 黃大仙區 45 校網", "資助 · 男女校 · 免費", "聯繫聖文德書院 · 開放課堂參觀"] },
-  twgps: { big: "荃", tagline: "Tsuen Wan Government Primary School", bars: ["B 級 · 荃灣區 62 校網", "官立 · 男女校 · 免費", "聯繫荃灣官立中學 · 校際體育突出"] },
+  canossahk: { no: 77, big: "嘉", tagline: "Canossa School Hong Kong · 14 校網", bars: ["B 級 · 東區", "資助 · 男女校 · 免費", "聯繫嘉諾撒書院 · 午息後課程特色"] },
+  tsbcps: { no: 78, big: "慈", tagline: "Tsz Wan Shan St. Bonaventure Catholic PS", bars: ["B 級 · 黃大仙區 45 校網", "資助 · 男女校 · 免費", "聯繫聖文德書院 · 開放課堂參觀"] },
+  stts: { no: 79, big: "崇", tagline: "Shatin Tsung Tsin School", bars: ["B 級 · 沙田區 91 校網", "資助 · 男女校 · 免費", "聯繫馬鞍山崇真中學 · 生命教育主線"] },
+  twgps: { no: 80, big: "荃", tagline: "Tsuen Wan Government Primary School", bars: ["B 級 · 荃灣區 62 校網", "官立 · 男女校 · 免費", "聯繫荃灣官立中學 · 校際體育突出"] },
+  stgps: { no: 81, big: "沙", tagline: "Sha Tin Government Primary School", bars: ["B 級 · 沙田區 88 校網", "官立 · 男女校 · 免費", "聯繫沙田官立中學 · 梁文燕紀念中學"] },
+  sfcs: { no: 82, big: "方", tagline: "St. Francis' Canossian School", bars: ["B 級 · 灣仔區 12 校網", "資助 · 女校 · 直屬", "直屬嘉諾撒聖方濟各書院"] },
+  sjacps: { no: 83, big: "瑟", tagline: "St. Joseph's Anglo-Chinese Primary School", bars: ["B 級 · 觀塘區", "私立 · 男校 · $46,000／年", "直屬聖若瑟英文中學"] },
+  pkps: { no: 84, big: "培", tagline: "Pui Kiu Primary School · 16 校網", bars: ["B 級 · 東區 16 校網", "資助 · 男女校 · 免費", "中英數三科獲行政長官卓越教學獎"] },
+  cneclmc: { no: 85, big: "呂", tagline: "CNEC Lui Ming Choi Primary School", bars: ["B 級 · 葵青區 66 校網", "資助 · 男女校 · 免費", "青衣長發邨 · 無聯繫中學 · 戶外設施豐富"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -161,12 +162,13 @@ for (const r of all) {
   const bg = palette[made % palette.length];
   const areaTc = AREA_TC[r.d] || r.d;
   const tagline = clip(cfg.tagline || areaTc, 30);
+  const no = cfg.no || nextNo;
   fs.writeFileSync(
     out,
     coverSvg({
       bg,
       tierLabel: `${r.t} · 小學`,
-      no: `NO.${String(nextNo).padStart(3, "0")} — ${r.c.toUpperCase()}`,
+      no: `NO.${String(no).padStart(3, "0")} — ${r.c.toUpperCase()}`,
       big: cfg.big,
       name: r.n,
       tagline,
