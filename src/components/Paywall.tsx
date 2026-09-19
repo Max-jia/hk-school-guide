@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { L, type Locale } from "@/lib/i18n";
+import { REPORT_COUNT } from "@/lib/report-count";
 
 // 付费墙（照搬正式站无后端模型：Stripe Payment Link + localStorage 解锁）
 // - 未解锁：显示解锁卡（HK$99 全解锁 / HK$9.9 单份），付费章节隐藏
@@ -115,7 +116,7 @@ export default function Paywall({
             >
               HK$99 <span className="text-base font-normal opacity-80">{z("一键解锁全部报告")}</span>
             </button>
-            <p className="m-0 mt-1 text-xs opacity-70">{z("132 份单买共约 HK$1,247")}</p>
+            <p className="m-0 mt-1 text-xs opacity-70">{z(`${REPORT_COUNT} 份单买共约 HK$1,247`)}</p>
           </div>
 
           <div className="mt-4 flex flex-wrap justify-center gap-3">

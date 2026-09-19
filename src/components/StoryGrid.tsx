@@ -2,6 +2,7 @@
 import blogMeta from "@/content/blog-meta.json";
 import Localize from "@/components/Localize";
 import { L, localeHref, type Locale } from "@/lib/i18n";
+import { REPORT_COUNT } from "@/lib/report-count";
 
 type Story = {
   id: string;
@@ -263,7 +264,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
           index="01"
           title="精选报告"
           href={localeHref("/reports", locale)}
-          linkLabel="查看全部 132 份"
+          linkLabel={`查看全部 ${REPORT_COUNT} 份`}
           locale={locale}
         />
         <CardList stories={REPORTS} showPrice locale={locale} />

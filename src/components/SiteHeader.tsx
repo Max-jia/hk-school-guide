@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { L, LOCALE_META, localeHref, otherLocale, type Locale } from "@/lib/i18n";
+import { REPORT_COUNT } from "@/lib/report-count";
 
 const NAV: { label: string; href: string; rot: string }[] = [
   { label: "深度报告", href: "/reports", rot: "-rotate-2" },
@@ -15,7 +16,7 @@ const NAV: { label: string; href: string; rot: string }[] = [
 
 const MENU: { label: string; sub: string; href: string; rot: string }[] = [
   { label: "首页", sub: "12 个精选故事", href: "/", rot: "-rotate-2" },
-  { label: "深度报告", sub: "132 所学校 · 8 章讲透", href: "/reports", rot: "rotate-1" },
+  { label: "深度报告", sub: `${REPORT_COUNT} 所学校 · 8 章讲透`, href: "/reports", rot: "rotate-1" },
   { label: "分区盘点", sub: "18 区学校逐区看", href: "/districts", rot: "rotate-2" },
   { label: "择校工具", sub: "输入条件 · 排出结果", href: "/tools", rot: "-rotate-1" },
   { label: "学校对比", sub: "2-3 所并排看", href: "/compare", rot: "rotate-2" },
