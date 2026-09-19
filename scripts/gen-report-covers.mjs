@@ -106,6 +106,10 @@ const CARD = {
   ngwah: { no: 88, big: "慎", tagline: "Ng Wah Catholic Primary School", bars: ["B 級 · 黃大仙區 43 校網", "資助 · 男女校 · 免費", "直屬天主教伍華中學 · 最多 85% 學額"] },
   plkshsn: { no: 89, big: "愛", tagline: "Po Leung Kuk Stanley Ho Sau Nan PS", bars: ["B 級 · 九龍城區 34 校網", "資助 · 男女校 · 免費", "聯繫保良局第一張永慶中學 · 無宗教分"] },
   sylgps: { no: 90, big: "樂", tagline: "South Yuen Long Government Primary", bars: ["B 級 · 元朗區 73 校網", "官立 · 男女校 · 免費", "聯繫三所中學 · 1904 年創校"] },
+  skhykkgps: { no: 91, big: "編", tagline: "S.K.H. Yautong Kei Hin Primary School", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "油塘道 · 36 班 · 8,000 ㎡ · 無聯繫中學"] },
+  skhlsks: { no: 92, big: "兆", tagline: "S.K.H. Lee Shiu Keung Primary School", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "藍田平田邨 · 四高課堂 · 無聯繫中學"] },
+  sts: { no: 93, big: "公", tagline: "St. Antonius Primary School", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "油塘 · 1959 創校 · 10 年+ 年資教師 80%"] },
+  ltmps: { no: 94, big: "循", tagline: "Lam Tin Methodist Primary School", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "藍田平田邨 · 體驗式學習 · STEAM 獎項"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
