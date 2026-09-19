@@ -104,6 +104,8 @@ const CARD = {
   cblmc: { no: 86, big: "宣", tagline: "Conservative Baptist Lui Ming Choi PS", bars: ["B 級 · 觀塘區 46 校網", "資助 · 男女校 · 免費", "九龍灣彩霞道 · 無聯繫中學 · 兩科卓越教學獎"] },
   skhlmcmps: { no: 87, big: "役", tagline: "S.K.H. Lui Ming Choi Memorial PS", bars: ["B 級 · 中西區 11 校網", "資助 · 男女校 · 免費", "堅尼地城 · 1960 創校 · 無聯繫中學"] },
   ngwah: { no: 88, big: "慎", tagline: "Ng Wah Catholic Primary School", bars: ["B 級 · 黃大仙區 43 校網", "資助 · 男女校 · 免費", "直屬天主教伍華中學 · 最多 85% 學額"] },
+  plkshsn: { no: 89, big: "愛", tagline: "Po Leung Kuk Stanley Ho Sau Nan PS", bars: ["B 級 · 九龍城區 34 校網", "資助 · 男女校 · 免費", "聯繫保良局第一張永慶中學 · 無宗教分"] },
+  sylgps: { no: 90, big: "樂", tagline: "South Yuen Long Government Primary", bars: ["B 級 · 元朗區 73 校網", "官立 · 男女校 · 免費", "聯繫三所中學 · 1904 年創校"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
