@@ -110,6 +110,10 @@ const CARD = {
   skhlsks: { no: 92, big: "兆", tagline: "S.K.H. Lee Shiu Keung Primary School", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "藍田平田邨 · 四高課堂 · 無聯繫中學"] },
   sts: { no: 93, big: "公", tagline: "St. Antonius Primary School", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "油塘 · 1959 創校 · 10 年+ 年資教師 80%"] },
   ltmps: { no: 94, big: "循", tagline: "Lam Tin Methodist Primary School", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "藍田平田邨 · 體驗式學習 · STEAM 獎項"] },
+  skhttlsks: { no: 95, big: "德", tagline: "S.K.H. Tak Tin Lee Shiu Keung PS", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "11,254 ㎡ 全批最大 · 球場群"] },
+  tkocps: { no: 96, big: "澳", tagline: "Tseung Kwan O Catholic Primary School", bars: ["B 級 · 西貢區 95 校網", "資助 · 男女校 · 免費", "將軍澳唐賢街 · 無聯繫中學"] },
+  skhsas: { no: 97, big: "安", tagline: "S.K.H. St. Andrew's Primary School", bars: ["B 級 · 深水埗區 40 校網", "資助 · 男女校 · 免費", "7 個球場 + 全天候跑道 · 自行分配 90 名額"] },
+  skhkfp: { no: 98, big: "福", tagline: "S.K.H. Kei Fook Primary School", bars: ["B 級 · 深水埗區 40 校網", "資助 · 男女校 · 免費", "3 間英語教學室 · 三年級起設精英班"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
