@@ -118,6 +118,10 @@ const CARD = {
   tswcs: { no: 100, big: "慈", tagline: "Tsz Wan Shan Catholic Primary School", bars: ["B 級 · 黃大仙區 45 校網", "資助 · 男女校 · 免費", "校舍 10,000 ㎡ · 輔導室 4 間 · 無聯繫中學"] },
   ycmc: { no: 101, big: "夢", tagline: "S.K.H. Yuen Chen Maun Chen Primary", bars: ["B 級 · 大埔區 84 校網", "資助 · 男女校 · 免費", "1984 創校 · 可選廣教中或普教中"] },
   ycmcj: { no: 102, big: "禧", tagline: "S.K.H. Yuen Chen Maun Chen Jubilee PS", bars: ["B 級 · 大埔區 84 校網", "資助 · 男女校 · 免費", "活動教學 · 領袖訓練 · 不設精英班"] },
+  hkbaptist: { no: 103, big: "誠", tagline: "HK Baptist Convention Primary School", bars: ["B 級 · 荃灣區 62 校網", "資助 · 男女校 · 免費", "小三起 BYOD · 六年級數學五班六組"] },
+  wflst: { no: 104, big: "泳", tagline: "W F Joseph Lee Primary School", bars: ["B 級 · 元朗區·天水圍", "直資 · 男女校 · $19,300／年", "英語與普通話授課 · 冷暖水泳池"] },
+  plkflpy: { no: 105, big: "創", tagline: "PLK Fung Lee Pui Yiu Primary School", bars: ["B 級 · 屯門區 71 校網", "資助 · 男女校 · 免費", "聯繫兩所中學 · 機械人賽香港區冠軍"] },
+  fkgs: { no: 106, big: "崇", tagline: "Fuk Wing Street Government Primary School", bars: ["B 級 · 深水埗區 40 校網", "官立 · 男女校 · 免費 · 1958 創校", "聯繫四所官立中學 · 無宗教分"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
