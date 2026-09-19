@@ -114,6 +114,10 @@ const CARD = {
   tkocps: { no: 96, big: "澳", tagline: "Tseung Kwan O Catholic Primary School", bars: ["B 級 · 西貢區 95 校網", "資助 · 男女校 · 免費", "將軍澳唐賢街 · 無聯繫中學"] },
   skhsas: { no: 97, big: "安", tagline: "S.K.H. St. Andrew's Primary School", bars: ["B 級 · 深水埗區 40 校網", "資助 · 男女校 · 免費", "7 個球場 + 全天候跑道 · 自行分配 90 名額"] },
   skhkfp: { no: 98, big: "福", tagline: "S.K.H. Kei Fook Primary School", bars: ["B 級 · 深水埗區 40 校網", "資助 · 男女校 · 免費", "3 間英語教學室 · 三年級起設精英班"] },
+  kcskps: { no: 99, big: "堅", tagline: "Christian & Missionary Alliance Sun Kei PS", bars: ["B 級 · 觀塘區 48 校網", "資助 · 男女校 · 免費", "秀茂坪 · 資優班普教中 · 小組活動室 5 個"] },
+  tswcs: { no: 100, big: "慈", tagline: "Tsz Wan Shan Catholic Primary School", bars: ["B 級 · 黃大仙區 45 校網", "資助 · 男女校 · 免費", "校舍 10,000 ㎡ · 輔導室 4 間 · 無聯繫中學"] },
+  ycmc: { no: 101, big: "夢", tagline: "S.K.H. Yuen Chen Maun Chen Primary", bars: ["B 級 · 大埔區 84 校網", "資助 · 男女校 · 免費", "1984 創校 · 可選廣教中或普教中"] },
+  ycmcj: { no: 102, big: "禧", tagline: "S.K.H. Yuen Chen Maun Chen Jubilee PS", bars: ["B 級 · 大埔區 84 校網", "資助 · 男女校 · 免費", "活動教學 · 領袖訓練 · 不設精英班"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
