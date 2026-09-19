@@ -103,6 +103,7 @@ const CARD = {
   cneclmc: { no: 85, big: "呂", tagline: "CNEC Lui Ming Choi Primary School", bars: ["B 級 · 葵青區 66 校網", "資助 · 男女校 · 免費", "青衣長發邨 · 無聯繫中學 · 戶外設施豐富"] },
   cblmc: { no: 86, big: "宣", tagline: "Conservative Baptist Lui Ming Choi PS", bars: ["B 級 · 觀塘區 46 校網", "資助 · 男女校 · 免費", "九龍灣彩霞道 · 無聯繫中學 · 兩科卓越教學獎"] },
   skhlmcmps: { no: 87, big: "役", tagline: "S.K.H. Lui Ming Choi Memorial PS", bars: ["B 級 · 中西區 11 校網", "資助 · 男女校 · 免費", "堅尼地城 · 1960 創校 · 無聯繫中學"] },
+  ngwah: { no: 88, big: "慎", tagline: "Ng Wah Catholic Primary School", bars: ["B 級 · 黃大仙區 43 校網", "資助 · 男女校 · 免費", "直屬天主教伍華中學 · 最多 85% 學額"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
