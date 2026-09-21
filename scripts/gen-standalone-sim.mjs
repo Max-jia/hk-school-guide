@@ -26,7 +26,7 @@ const data = {
         district: ext.district_zh || "",
         fees: ext.fees || "",
         tier: ext.tier || "",
-        teacherRatio: ext.teacher_ratio || "",
+        classTeacherRatio: ext.class_teacher_ratio || "",
         schoolBus: ext.school_bus || "",
         p12027: ext.p1_2027 === undefined ? null : ext.p1_2027,
       };
@@ -38,7 +38,7 @@ const data = {
       name: s.name_display || s.name_zh,
       simp: toSimp(s.name_display || s.name_zh),
       tier: s.tier || "",
-      teacherRatio: s.teacher_ratio || "",
+      classTeacherRatio: s.class_teacher_ratio || "",
       schoolBus: s.school_bus || "",
       p12027: s.p1_2027 === undefined ? null : s.p1_2027,
       typeLabel: typeLabelOf(s.finance_type),

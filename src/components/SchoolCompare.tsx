@@ -25,7 +25,7 @@ type CompareSchool = {
   quota: number | null;
   inRoster: boolean;
   tier?: string;
-  teacherRatio?: string;
+  classTeacherRatio?: string;
   schoolBus?: string;
   p12027?: boolean;
 };
@@ -45,7 +45,7 @@ const P1 = p1NetsJson as {
 const SCHOOLS = schoolsJson as {
   name_zh: string; name_display?: string; simp?: string; district_zh?: string; finance_type?: string;
   gender?: string; religion_zh?: string; sessions?: string[]; through_train?: string;
-  fees?: string; teaching_language?: string; tier?: string; teacher_ratio?: string;
+  fees?: string; teaching_language?: string; tier?: string; class_teacher_ratio?: string;
   school_bus?: string; p1_2027?: boolean;
 }[];
 
@@ -95,7 +95,7 @@ export default function SchoolCompare({
           quota: sc.quota,
           inRoster: true,
           tier: ext?.tier,
-          teacherRatio: ext?.teacher_ratio,
+          classTeacherRatio: ext?.class_teacher_ratio,
           schoolBus: ext?.school_bus,
           p12027: ext?.p1_2027,
         });
@@ -118,7 +118,7 @@ export default function SchoolCompare({
         quota: null,
         inRoster: false,
         tier: s.tier,
-        teacherRatio: s.teacher_ratio,
+        classTeacherRatio: s.class_teacher_ratio,
         schoolBus: s.school_bus,
         p12027: s.p1_2027,
       });
@@ -298,7 +298,7 @@ export default function SchoolCompare({
                 {row("教学语言", schoolA.language || "—", schoolB.language || "—", (schoolA.language || "") !== (schoolB.language || ""))}
                 {row("课程体系", schoolA.typeLabel === "国际" ? "国际课程（非本地）" : "本地课程（DSE 体系）", schoolB.typeLabel === "国际" ? "国际课程（非本地）" : "本地课程（DSE 体系）", false)}
                 {row("班制", schoolA.sessions.join("/") || "—", schoolB.sessions.join("/") || "—", schoolA.sessions.join("/") !== schoolB.sessions.join("/"))}
-                {row("师生比", schoolA.teacherRatio || "—", schoolB.teacherRatio || "—", (schoolA.teacherRatio || "") !== (schoolB.teacherRatio || ""))}
+                {row("班师比", schoolA.classTeacherRatio || "—", schoolB.classTeacherRatio || "—", (schoolA.classTeacherRatio || "") !== (schoolB.classTeacherRatio || ""))}
                 {row("校车", schoolA.schoolBus || "—", schoolB.schoolBus || "—", (schoolA.schoolBus || "") !== (schoolB.schoolBus || ""))}
                 {row("性别", schoolA.gender || "男女校", schoolB.gender || "男女校", schoolA.gender !== schoolB.gender)}
                 {row("宗教", schoolA.religion || "—", schoolB.religion || "—", (schoolA.religion || "") !== (schoolB.religion || ""))}

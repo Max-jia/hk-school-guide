@@ -48,6 +48,9 @@ function SchoolRow({ s, isKg, locale = "tc" }: { s: any; isKg: boolean; locale?:
   const tier = tierLabel(s.tier);
   const cfg = TIER_CFG[tier] || { c: "#9CA3AF", b: tier };
   const code = reportCode(s.name_zh, s.name_display, isKg);
+  // 小学那栏是「班师比」（教师总人数 ÷ 班级数）；幼稚园那栏是《幼稚园概览》的「师生比例」。
+  // 两个指标不是一回事，字段也分开存，避免再被当成同一个东西。
+  const ratio = isKg ? s.teacher_ratio : s.class_teacher_ratio;
   return (
     <Localize locale={locale}>
     <tr className="border-t border-black/10 dark:border-white/10">
@@ -68,7 +71,7 @@ function SchoolRow({ s, isKg, locale = "tc" }: { s: any; isKg: boolean; locale?:
         </span>
       </td>
       <td className="py-3 pr-3 font-mono text-xs text-[var(--p-secondary)]">{s.fees || "—"}</td>
-      <td className="py-3 pr-3 font-mono text-xs text-[var(--p-secondary)]">{s.teacher_ratio || "—"}</td>
+      <td className="py-3 pr-3 font-mono text-xs text-[var(--p-secondary)]">{ratio || "—"}</td>
       <td className="py-3">
         {code ? (
           <a
@@ -140,7 +143,7 @@ export default async function DistrictPage({
                 <th className="py-2 pr-3">学校</th>
                 <th className="py-2 pr-3">评级</th>
                 <th className="py-2 pr-3">学费</th>
-                <th className="py-2 pr-3">师生比</th>
+                <th className="py-2 pr-3">班师比</th>
                 <th className="py-2">报告</th>
               </tr>
             </thead>

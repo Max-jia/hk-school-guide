@@ -77,7 +77,7 @@ export default function Home({ locale = "tc" }: { locale?: Locale }) {
         <div className="border-t border-black/10 py-6 text-sm leading-relaxed text-[var(--p-secondary)] dark:border-white/10">
           <p>
             港学荟把香港教育局公开资料做成看得懂的内容：学校深度报告、择校工具、面试题库与热文攻略。
-            报告按四因子评级（锚点、共识、竞争、世袭）拆解校网、学费、师生比与升中通路，
+            报告按四因子评级（锚点、共识、竞争、世袭）拆解校网、学费、班师比与升中通路，
             数据经多源交叉核实。评级与匹配结果仅供参考，不构成入学建议，各校实际收生以校方公布为准。
           </p>
           <p className="mt-2">

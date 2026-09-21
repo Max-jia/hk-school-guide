@@ -26,7 +26,8 @@ type School = {
   religion_zh?: string | null;
   fees?: string;
   through_train?: string;
-  teacher_ratio?: string;
+  // 小学用「班师比」（教师总人数 ÷ 班级数），不是师生比；字段名分开以免再次混淆
+  class_teacher_ratio?: string;
   teaching_language?: string;
   school_bus?: string;
   features?: string;
@@ -256,11 +257,11 @@ export default function ToolsPage({ locale = "tc" }: { locale?: Locale }) {
             输入校网、预算、孩子性格等条件，引擎按「实力 45% + 适配 55%」全港排名。数据来自教育局公开资料。
           </p>
           <p className="mt-4 max-w-[760px] text-sm leading-relaxed text-[var(--p-secondary)]">
-            工具数据来自教育局学校概览与公开资料，支持按校网、类型、性别、师生比、学费等条件筛选，
+            工具数据来自教育局学校概览与公开资料，支持按校网、类型、性别、班师比（小学）／师生比（幼稚园）、学费等条件筛选，
             匹配结果同时给出适合理由与对应深度报告。筛选结果仅供参考，最终选校请以学校官方资讯为准。
           </p>
           <p className="mt-4 max-w-[760px] text-sm leading-relaxed text-[var(--p-secondary)]">
-            匹配引擎把「学校实力」与「家庭适配」分开计算：实力看评级、师生比、升学通路等客观指标，
+            匹配引擎把「学校实力」与「家庭适配」分开计算：实力看评级、班师比、升学通路等客观指标，
             适配看校网距离、预算、语言环境、宗教与班制偏好。结果页会列出每条命中的理由，并直接链接到
             对应学校的深度报告，方便你从「筛出名单」快速进入「逐校深读」。
           </p>
@@ -519,8 +520,8 @@ export default function ToolsPage({ locale = "tc" }: { locale?: Locale }) {
                             {s.through_train && (
                               <span className="rounded-full border border-[var(--p-gray-300)] px-2 py-0.5">{s.through_train}</span>
                             )}
-                            {s.teacher_ratio && (
-                              <span className="rounded-full border border-[var(--p-gray-300)] px-2 py-0.5">师生比 {s.teacher_ratio}</span>
+                            {s.class_teacher_ratio && (
+                              <span className="rounded-full border border-[var(--p-gray-300)] px-2 py-0.5">班师比 {s.class_teacher_ratio}</span>
                             )}
                             {s.teaching_language && (
                               <span className="rounded-full border border-[var(--p-gray-300)] px-2 py-0.5">{s.teaching_language}</span>

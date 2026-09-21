@@ -61,7 +61,9 @@ function loadRows(): SchoolRow[] {
       gender: s.gender,
       religion: s.religion_zh,
       fees: s.fees,
-      ratio: s.teacher_ratio,
+      // 字段名保持中性的 ratio，不随指标改名（避免破坏外部调用方）。
+      // 口径：小学 = 班师比（教师总人数 ÷ 班级数）；幼稚园 = 师生比（KGP 上午时段比例）。
+      ratio: s.class_teacher_ratio,
       language: s.teaching_language,
       sessions: s.sessions || [],
       tier: tierOf(s.tier),

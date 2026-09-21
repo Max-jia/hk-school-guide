@@ -115,7 +115,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
         { label: "性别", get: (x) => (x as any).gender || "—" },
         { label: "宗教", get: (x) => (x as any).religion_zh || "—" },
         { label: "学费", get: (x) => (x as any).fees || "—" },
-        { label: "师生比", get: (x) => (x as any).teacher_ratio || "—" },
+        { label: "班师比", get: (x) => (x as any).class_teacher_ratio || "—" },
         { label: "教学语言", get: (x) => (x as any).teaching_language || "—" },
         { label: "一条龙/直属", get: (x) => (x as any).through_train || "—" },
         { label: "校车", get: (x) => (x as any).school_bus === "無" ? "无" : (x as any).school_bus || "—" },
@@ -137,7 +137,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
             2-3 所学校并排对比
           </h1>
           <p className="mt-2 max-w-[640px] text-[var(--p-secondary)]">
-            选 2-3 所小学或幼稚园，学费、师生比、评级、校网、升小通路同屏对比。
+            选 2-3 所小学或幼稚园，学费、班师比（小学）／师生比（幼稚园）、评级、校网、升小通路同屏对比。
           </p>
         </div>
 
