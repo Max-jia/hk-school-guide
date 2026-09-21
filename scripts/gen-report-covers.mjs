@@ -132,6 +132,10 @@ const CARD = {
   twghscws: { no: 114, big: "星", tagline: "TWGHS Tsoi Wing Sing Primary School", bars: ["B 級 · 沙田區 91 校網", "資助 · 男女校 · 免費", "2023 年新校舍 · 跑道與攀石牆"] },
   lkps: { no: 115, big: "光", tagline: "Emmanuel Primary School", bars: ["B 級 · 荃灣區 62 校網", "資助 · 男女校 · 免費", "全校 6 班每級 1 班 · 一萬平方尺園圃"] },
   cccwhcsw: { no: 116, big: "協", tagline: "CCC Heep Woh Primary School (Cheung Sha Wan)", bars: ["B 級 · 深水埗區 40 校網", "資助 · 男女校 · 免費", "1911 創校 · 航天教育與迪士尼 STEM 教材"] },
+  mosllps: { no: 117, big: "森", tagline: "Ma On Shan Ling Liang Primary School", bars: ["B 級 · 沙田區 89 校網", "資助 · 男女校 · 免費", "森林課程 · 2 個禮堂 2 個操場"] },
+  cmask: { no: 118, big: "宣", tagline: "CMA Sun Kei Primary School", bars: ["B 級 · 西貢區 95 校網", "資助 · 男女校 · 免費", "不設精英班 · 2 禮堂 2 操場 2 圖書館"] },
+  skhmfps: { no: 119, big: "風", tagline: "S.K.H. Holy Spirit Primary School", bars: ["B 級 · 沙田區 91 校網", "資助 · 男女校 · 免費", "校舍 1,200 ㎡ · 碩博教師 45%"] },
+  lchhds: { no: 120, big: "芬", tagline: "Lions Clubs International Ho Tak Sum PS", bars: ["B 級 · 元朗區 72 校網", "資助 · 男女校 · 免費", "芬蘭式教育森林課程 · 一年級 0 測 0 考"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
