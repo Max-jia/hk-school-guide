@@ -128,6 +128,10 @@ const CARD = {
   plkcy: { no: 110, big: "溢", tagline: "PLK Chan Yat Primary School", bars: ["B 級 · 葵青區 66 校網", "資助 · 男女校 · 免費", "青衣長康邨 · 師訓 100%"] },
   skhsc: { no: 111, big: "匠", tagline: "S.K.H. Holy Carpenter Primary School", bars: ["B 級 · 九龍城區 34 校網", "資助 · 男女校 · 免費", "校舍 1,791 ㎡ · 不設校車"] },
   ttskg: { no: 112, big: "真", tagline: "Tsung Tsin Primary School & Kindergarten", bars: ["B 級 · 深水埗區 · 私立", "男女校 · 英文部 $66,000／年", "1897 創校 · 8 層新翼大樓"] },
+  hkcwcyw: { no: 113, big: "丘", tagline: "HK Chinese Women's Club Hioe Tjo Yoeng PS", bars: ["B 級 · 東區 16 校網", "資助 · 男女校 · 免費", "84% 教師年資十年以上 · 2 個禮堂"] },
+  twghscws: { no: 114, big: "星", tagline: "TWGHS Tsoi Wing Sing Primary School", bars: ["B 級 · 沙田區 91 校網", "資助 · 男女校 · 免費", "2023 年新校舍 · 跑道與攀石牆"] },
+  lkps: { no: 115, big: "光", tagline: "Emmanuel Primary School", bars: ["B 級 · 荃灣區 62 校網", "資助 · 男女校 · 免費", "全校 6 班每級 1 班 · 一萬平方尺園圃"] },
+  cccwhcsw: { no: 116, big: "協", tagline: "CCC Heep Woh Primary School (Cheung Sha Wan)", bars: ["B 級 · 深水埗區 40 校網", "資助 · 男女校 · 免費", "1911 創校 · 航天教育與迪士尼 STEM 教材"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
