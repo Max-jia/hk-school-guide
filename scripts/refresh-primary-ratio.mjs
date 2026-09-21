@@ -97,6 +97,14 @@ for (const r of body) {
   psp.set(key, tch / cls);
 }
 
+// 不列班师比的学校：概览那一行的「教师总人数」涵盖中小学部，但「班级数」只有小学部，
+// 两者相除会得出失真的比例（例如 138 位教师 ÷ 18 班 = 1:7.7，小学不可能有这个配置）。
+// 这类学校宁可不给数字，也不要给一个会误导家长的数。
+const EXCLUDE = new Set([
+  "基督教香港信義會宏信書院",
+  "香港華人基督教聯會真道書院",
+]);
+
 const schools = JSON.parse(fs.readFileSync(SCHOOLS, "utf8"));
 let added = 0;
 let changed = 0;
@@ -108,6 +116,17 @@ const clearedNames = [];
 for (const s of schools) {
   const prev = s.teacher_ratio ?? null;
   delete s.teacher_ratio;
+
+  if (EXCLUDE.has(s.name_zh)) {
+    s.class_teacher_ratio = null;
+    if (prev) {
+      cleared++;
+      clearedNames.push(s.name_zh);
+    } else {
+      none++;
+    }
+    continue;
+  }
 
   const ratio = psp.get(norm(s.name_zh)) ?? psp.get(norm(s.name_display));
   if (ratio === undefined) {

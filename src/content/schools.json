@@ -12069,7 +12069,7 @@
   "tier": "B",
   "p1_2027": false,
   "simp": "基督教香港信义会宏信书院",
-  "class_teacher_ratio": "1:7.7"
+  "class_teacher_ratio": null
  },
  {
   "school_no": 569895000123,
@@ -12333,7 +12333,7 @@
   "tier": "A",
   "p1_2027": false,
   "simp": "香港华人基督教联会真道书院",
-  "class_teacher_ratio": "1:5.3"
+  "class_teacher_ratio": null
  },
  {
   "school_no": 569909000123,
