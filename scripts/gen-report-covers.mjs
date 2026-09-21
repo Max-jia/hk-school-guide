@@ -122,6 +122,12 @@ const CARD = {
   wflst: { no: 104, big: "泳", tagline: "W F Joseph Lee Primary School", bars: ["B 級 · 元朗區·天水圍", "直資 · 男女校 · $19,300／年", "英語與普通話授課 · 冷暖水泳池"] },
   plkflpy: { no: 105, big: "創", tagline: "PLK Fung Lee Pui Yiu Primary School", bars: ["B 級 · 屯門區 71 校網", "資助 · 男女校 · 免費", "聯繫兩所中學 · 機械人賽香港區冠軍"] },
   fkgs: { no: 106, big: "崇", tagline: "Fuk Wing Street Government Primary School", bars: ["B 級 · 深水埗區 40 校網", "官立 · 男女校 · 免費 · 1958 創校", "聯繫四所官立中學 · 無宗教分"] },
+  cypy: { no: 107, big: "潮", tagline: "Chiu Yang Por Yen Primary School", bars: ["B 級 · 元朗區 72 校網", "資助 · 男女校 · 免費", "天水圍天華路 · 6,041 ㎡ · 無聯繫中學"] },
+  edujcps: { no: 108, big: "教", tagline: "EdUHK Jockey Club Primary School", bars: ["B 級 · 大埔區 84 校網", "資助 · 男女校 · 免費", "香港教育大學附屬 · 碩博教師 47%"] },
+  honwah: { no: 109, big: "漢", tagline: "Hon Wah College (Primary Section)", bars: ["B 級 · 東區 · 直資", "男女校 · 全年 $17,640", "一條龍直升漢華中學 · 1945 創校"] },
+  plkcy: { no: 110, big: "溢", tagline: "PLK Chan Yat Primary School", bars: ["B 級 · 葵青區 66 校網", "資助 · 男女校 · 免費", "青衣長康邨 · 師訓 100%"] },
+  skhsc: { no: 111, big: "匠", tagline: "S.K.H. Holy Carpenter Primary School", bars: ["B 級 · 九龍城區 34 校網", "資助 · 男女校 · 免費", "校舍 1,791 ㎡ · 不設校車"] },
+  ttskg: { no: 112, big: "真", tagline: "Tsung Tsin Primary School & Kindergarten", bars: ["B 級 · 深水埗區 · 私立", "男女校 · 英文部 $66,000／年", "1897 創校 · 8 層新翼大樓"] },
 };
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
