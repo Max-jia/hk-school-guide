@@ -1,6 +1,17 @@
 [
   {
     "cat": "trends",
+    "slug": "gt-primary-guide",
+    "date": "9月23日",
+    "tag": "熱搜小學",
+    "cover": "/covers/blog_gt-primary-guide.svg",
+    "title": "優才小學好唔好？2026/27學費、校舍、課程與一條龍升學路線",
+    "tease": "Google Trends 香港區 9月6–13日快照：「優才小學」上升 150%、「優才小學學費」上升 110%。2026/27 小一學費、旺角／將軍澳校舍、DSE／IB 與申請方式一次說清。",
+    "scTitle": "优才小学怎么样？2026/27学费、校舍、课程和一条龙升学路线",
+    "scTease": "Google Trends 香港区 9月6–13日快照：「优才小学」上升 150%、「优才小学学费」上升 110%。2026/27 小一学费、旺角／将军澳校舍、DSE／IB 与申请方式一次说清。"
+  },
+  {
+    "cat": "trends",
     "slug": "skh-same-name-schools",
     "date": "9月19日",
     "tag": "熱搜小學",
