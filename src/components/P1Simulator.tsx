@@ -404,7 +404,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           <p className="mt-3 rounded-[8px] border-l-4 border-[var(--p-hl-yellow-border)] bg-[var(--p-hl-yellow-bg)] px-4 py-3 text-sm text-[var(--p-fg)]">
             ⚠️ 我们不预测录取概率（随机编号不可模拟）。这个模拟器只回答一个问题：<strong>你这张表，有没有结构性错误。</strong>
           </p>
-          <div className="mt-3 grid gap-2 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-4 text-sm sm:grid-cols-2">
+          <div className="mt-3 grid gap-2 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-4 text-sm sm:grid-cols-2">
             <div>
               <p className="font-mono text-xs font-bold uppercase text-[#B45309]">阶段一 · 自行分配（看计分）</p>
               <p className="mt-1 text-[var(--p-secondary)]">底牌卡＋甲类预检用这里。只有 1 次机会：失败自动进统一派位（无损失）、录取须注册（退出统派）——填的一定是「录取了也不后悔」的学校。</p>
@@ -421,7 +421,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
         </div>
 
         {/* 第一步：校网与计分 */}
-        <section className="rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">① 基本信息</h2>
             <span className="rounded-full bg-[#FEF3E2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#B45309]">阶段一 · 自行分配用</span>
@@ -489,7 +489,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
         </section>
 
         {/* 甲部 */}
-        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 甲部志愿（不受校网限制，最多 3 个）</h2>
             <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
@@ -523,7 +523,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
         </section>
 
         {/* 乙部 */}
-        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-3">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">③ 乙部志愿（所属校网，最多 30 个）</h2>
             <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
@@ -616,7 +616,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   if (!info) return null;
                   const genderBad = kidGender !== "不限" && ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"));
                   return (
-                    <div key={i2} className="rounded-[8px] border border-[var(--p-gray-300)] bg-[var(--p-white)] px-3 py-2 text-sm">
+                    <div key={i2} className="rounded-[8px] border border-[var(--p-gray-300)] bg-[var(--p-card)] px-3 py-2 text-sm">
                       <p className="font-bold text-[var(--p-fg)]">
                         {info.name}
                         {genderBad && <span className="ml-2 rounded bg-[#FDEBE7] px-1.5 py-0.5 text-xs font-bold text-[#C2410C]">性别不符</span>}
@@ -782,7 +782,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
         <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} locale={locale} />
 
         {/* 方案存档（Pro）：多套顺序 A/B 试错 */}
-        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">方案存档 · A/B 试错</h2>
             {!unlocked && (
@@ -894,7 +894,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
         </section>
 
         {/* 付费墙 */}
-        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-4">
             <div className="min-w-0 flex-1">
           <h2 className="font-serif text-xl font-bold text-[var(--p-fg)]">完整体检报告（Pro）</h2>
@@ -937,7 +937,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           </p>
         </section>
 
-        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
+        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
           <p className="font-bold text-[var(--p-fg)]">📎 检查依据</p>
           <p className="mt-2">
             结构检查规则基于本站《香港小一入学2027/28完整攻略》的志愿金字塔方法论（冲刺/匹配/保底），

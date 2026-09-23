@@ -2,7 +2,16 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+/*
+ * 注意：这里原本写的是 @custom-variant dark (&:is(.dark *))，
+ * 意思是 Tailwind 的 dark: 工具类只有在某个祖先带 .dark class 时才生效。
+ * 但全站没有任何一行代码加过 .dark（没有主题切换器、没有 next-themes），
+ * 所以 33 个 dark: 样式全部是死代码，而 --p-* token 却按
+ * prefers-color-scheme 切换 —— 结果暗色模式下背景变深、文字变浅，
+ * 但 dark: 那层覆盖从不生效。
+ * 现在删掉这个自定义变体，让 dark: 回到 Tailwind 预设的
+ * @media (prefers-color-scheme: dark)，与 token 的切换机制对齐。
+ */
 
 @theme inline {
   --color-background: var(--background);
@@ -221,6 +230,10 @@
   --p-bg: var(--p-white);
   --p-fg: var(--p-gray-900);
   --p-secondary: var(--p-gray-600);
+  /* 卡片底色。亮色=白；暗色模式会换成深灰（见下方 media query）。
+     以前卡片直接写 bg-[var(--p-white)]，而 --p-white 永远不跟着切换，
+     暗色下就变成「浅灰字 on 白卡」——实测对比度只有 1.16:1。 */
+  --p-card: var(--p-white);
   --p-radius: 3px;
   /* 文章强调块配色（亮/暗档各一套，正文内联样式引用） */
   --p-hl-bg: #CCFBF1;
@@ -237,6 +250,7 @@
     --p-bg: var(--p-gray-1000);
     --p-fg: var(--p-gray-100);
     --p-secondary: var(--p-gray-400);
+    --p-card: var(--p-gray-900);
     --p-band-tools: rgba(185, 166, 238, 0.12);
     --p-band-blog: rgba(255, 255, 255, 0.05);
     /* 强调块暗色档（深底浅字，替代亮色硬块） */

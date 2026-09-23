@@ -18,9 +18,16 @@ function sign(payload: string): string {
   return createHmac("sha256", SECRET).update(payload).digest("base64url");
 }
 
-export function createLicense(report: string, mode: "single" | "all"): string {
+/** 預設有效期一年；分享解鎖用較短的 TTL，避免轉手流通 */
+export const DEFAULT_LICENSE_TTL_MS = 365 * 24 * 60 * 60 * 1000;
+
+export function createLicense(
+  report: string,
+  mode: "single" | "all",
+  ttlMs: number = DEFAULT_LICENSE_TTL_MS
+): string {
   const payload = b64url(
-    JSON.stringify({ report, mode, exp: Date.now() + 365 * 24 * 60 * 60 * 1000 })
+    JSON.stringify({ report, mode, exp: Date.now() + ttlMs })
   );
   return `${payload}.${sign(payload)}`;
 }

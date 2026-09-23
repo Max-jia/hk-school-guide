@@ -126,7 +126,7 @@ export default function P1SelfCheck({ locale = "tc" }: { locale?: Locale }) {
           </p>
         </div>
 
-        <section className="rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">① 乙类计分计算器</h2>
           <p className="mt-1 text-sm text-[var(--p-secondary)]">
             依据教育局 2027/28《计分办法准则》——「关系项」和「办学团体项」各只能选一项。
@@ -180,7 +180,7 @@ export default function P1SelfCheck({ locale = "tc" }: { locale?: Locale }) {
           </div>
         </section>
 
-        <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 交表前 5 条自查清单</h2>
           <p className="mt-1 text-sm text-[var(--p-secondary)]">一条条点过去，完成进度实时更新。</p>
           <div className="mt-4 grid gap-2">
@@ -352,7 +352,7 @@ export default function P1SelfCheck({ locale = "tc" }: { locale?: Locale }) {
           </div>
         </section>
 
-        <div className="mt-10 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
+        <div className="mt-10 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
           <p className="font-bold text-[var(--p-fg)]">📎 数据来源与说明</p>
           <p className="mt-2">
             计分表依据：教育局《申请二○二七年九月小一入学》资料单张之《计分办法准则》（2026年8月出版），

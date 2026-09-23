@@ -61,7 +61,7 @@ export default function Redeem({ locale = "tc" }: { locale?: Locale }) {
           输入后自动解锁 Pro 模拟器的完整体检报告。
         </p>
 
-        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <input
             value={code}
             onChange={(e) => setCode(e.target.value)}
@@ -88,7 +88,7 @@ export default function Redeem({ locale = "tc" }: { locale?: Locale }) {
           )}
         </div>
 
-        <div className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
+        <div className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
           <p className="font-bold text-[var(--p-fg)]">没有兑换码？</p>
           <p className="mt-1">
             可以<a className="underline" href="/tools/p1-simulator">在模拟器页直接支付解锁（Stripe）</a>。

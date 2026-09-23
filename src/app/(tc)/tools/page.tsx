@@ -269,7 +269,7 @@ export default function ToolsPage({ locale = "tc" }: { locale?: Locale }) {
 
         <a
           href="/tools/p1-discretionary"
-          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-white)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-card)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
         >
           <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">NEW</span>
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">自行分配投表决策台 · 阶段一</span>
@@ -285,7 +285,7 @@ export default function ToolsPage({ locale = "tc" }: { locale?: Locale }) {
         </a>
         <a
           href="/tools/p1-self-check"
-          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-white)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-card)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
         >
           <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">工具</span>
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一派位 · 交表前自查工具</span>
@@ -293,7 +293,7 @@ export default function ToolsPage({ locale = "tc" }: { locale?: Locale }) {
         </a>
         <a
           href="/tools/p1-school-net"
-          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-white)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
+          className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-card)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-gray-300)]"
         >
           <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">数据</span>
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">小一校网数据库 · 36 网 × 433 所官津小学</span>

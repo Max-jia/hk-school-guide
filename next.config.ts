@@ -48,6 +48,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [...skhylRedirects, ...legacyRedirects];
   },
+  // 这两个 API 在运行时用 fs 读 src/content/ 下的数据文件。
+  // Next 的产物追踪（@vercel/nft）对动态拼接的路径不保证能追到，
+  // 不显式 include 的话，线上 serverless 函数里会缺文件、接口 500。
+  outputFileTracingIncludes: {
+    "/api/report-content": ["./src/content/reports/**"],
+    "/api/schools": [
+      "./src/content/schools.json",
+      "./src/content/kindergartens.json",
+      "./src/content/report-meta.json",
+    ],
+  },
 };
 
 export default nextConfig;

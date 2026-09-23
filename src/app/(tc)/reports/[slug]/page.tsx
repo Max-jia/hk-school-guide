@@ -167,6 +167,10 @@ export default async function ReportPage({
   // 在服务端就把正文转好再传给 ReportViewer(client component):
   // 否则 RSC flight payload 里带的会是未转换的简体原文,AI 抓取器读到的是错的字形。
   // 转换是幂等的,ReportViewer 里再转一次不会出问题。
+  //
+  // 注意:付费章节(premiumHtml)刻意不在这里传下去。它是付费商品,改成解锁后
+  // 向 /api/report-content 验签换取(见 components/PremiumContent.tsx)。
+  // 免费章节(hero + body,约第 0-1 章)仍然照旧进静态 HTML,给搜索引擎与 AI 读。
   const relatedLocalized = related.map((r) => ({ ...r, title: L(r.title, locale) }));
 
   return (
@@ -176,7 +180,6 @@ export default async function ReportPage({
         slug={slug}
         hero={L(d.hero, locale)}
         body={L(d.body, locale)}
-        premiumHtml={L(d.premiumHtml, locale)}
         free={d.free}
         allAccessUrl={d.allAccessUrl}
         singleUrl={d.singleUrl}

@@ -55,7 +55,7 @@ export default function SchoolFitCard({
 
   return (
     <Localize locale={locale}>
-    <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+    <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
       <div className="flex items-center gap-2">
         <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">底牌卡 · 我这点分能进吗</h2>
         <span className="rounded-full bg-[#FEF3E2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#B45309]">阶段一 · 自行分配</span>

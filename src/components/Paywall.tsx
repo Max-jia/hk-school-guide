@@ -1,47 +1,48 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { L, type Locale } from "@/lib/i18n";
 import { REPORT_COUNT } from "@/lib/report-count";
 
-// 付费墙（照搬正式站无后端模型：Stripe Payment Link + localStorage 解锁）
-// - 未解锁：显示解锁卡（HK$99 全解锁 / HK$9.9 单份），付费章节隐藏
-// - 已解锁：显示全部内容 + 分享按钮（token 链接）
+// 付费墙解锁卡
+// - 未解锁：显示解锁卡（HK$99 全解锁 / HK$9.9 单份）
+// - 已解锁：不再显示解锁卡，只留分享按钮（token 链接）
+// 正文的显隐由父层 ReportViewer + PremiumContent 负责，本组件只管这张卡。
+//
+// 2026-09 审计修正：
+//   1. 解锁状态由父层 ReportViewer 判定（只认签名 license），这里不再自己读
+//      localStorage 的 "true" 标记——那是个一改就通的白嫖入口。
+//   2. 付费正文不再由本组件用 display:none 控制显隐，改为 ReportViewer 按
+//      license 向 /api/report-content 换取。
 export default function Paywall({
   slug,
   allAccessUrl,
   singleUrl,
+  unlocked,
   locale = "tc",
 }: {
   slug: string;
   allAccessUrl: string;
   singleUrl: string;
+  unlocked: boolean;
   locale?: Locale;
 }) {
-  const [unlocked, setUnlocked] = useState(false);
-  const [pending, setPending] = useState(false); // SSR 首帧前的占位态
   const z = (s: string) => L(s, locale); // 文案跟着 URL 的语言走
 
-  useEffect(() => {
-    // 旧站逻辑：保存当前报告到 localStorage（unlock 页读取）
-    localStorage.setItem("pending_report", slug);
-    const ok =
-      localStorage.getItem("purchased_" + slug) === "true" ||
-      localStorage.getItem("all_access") === "true";
-    setUnlocked(ok);
-    setPending(true);
-  }, [slug]);
-
-  useEffect(() => {
-    if (!pending) return;
-    // 解锁后显示付费章节（照搬正式站 body.purchased → CSS 显示）
-    const el = document.getElementById("premium-content");
-    if (el) el.style.display = unlocked ? "block" : "none";
-  }, [unlocked, pending]);
+  // 旧站逻辑：保存当前报告到 localStorage（unlock 页读取）
+  // 放在事件里而不是 render 期间，避免每次渲染都写一次
+  function rememberPending() {
+    try {
+      localStorage.setItem("pending_report", slug);
+    } catch {
+      /* 无痕模式等场景忽略 */
+    }
+  }
 
   /* 购买：向本站 API 要一个带支付凭证回跳的 Checkout 链接（防白嫖核心）
      本站 API 用 Stripe 密钥创建会话，价格服务端定死 */
   async function buy(mode: "all" | "single") {
+    rememberPending();
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
@@ -86,8 +87,6 @@ export default function Paywall({
     }
   }
 
-  if (!pending) return null; // SSR 首帧不渲染（防闪烁：内容默认隐藏，解锁卡先不显示）
-
   return (
     <div className="mt-8">
       <div className="text-center">
@@ -116,7 +115,10 @@ export default function Paywall({
             >
               HK$99 <span className="text-base font-normal opacity-80">{z("一键解锁全部报告")}</span>
             </button>
-            <p className="m-0 mt-1 text-xs opacity-70">{z(`${REPORT_COUNT} 份单买共约 HK$1,247`)}</p>
+            {/* 锚定价由单份价 × 报告数算出，不写死——报告数一直在长，写死必然过期 */}
+            <p className="m-0 mt-1 text-xs opacity-70">
+              {z(`${REPORT_COUNT} 份单买共约 HK$${(REPORT_COUNT * 9.9).toFixed(0)}`)}
+            </p>
           </div>
 
           <div className="mt-4 flex flex-wrap justify-center gap-3">

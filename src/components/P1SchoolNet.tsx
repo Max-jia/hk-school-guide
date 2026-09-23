@@ -100,7 +100,7 @@ export default function P1SchoolNet({ locale = "tc" }: { locale?: Locale }) {
           ))}
         </div>
 
-        <div className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <div className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-3">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">
               {net} 校网
@@ -172,7 +172,7 @@ export default function P1SchoolNet({ locale = "tc" }: { locale?: Locale }) {
           )}
         </div>
 
-        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">直资小学速查（自行申请 · 不参与派位）</h2>
           <p className="mt-2 text-sm text-[var(--p-secondary)]">
             以下直资小学（含聖保羅書院小學、拔萃男書院、保良局陳守仁等）不在小一统筹办法内，
@@ -194,7 +194,7 @@ export default function P1SchoolNet({ locale = "tc" }: { locale?: Locale }) {
           </p>
         </div>
 
-        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
+        <div className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6 text-sm leading-relaxed text-[var(--p-secondary)]">
           <p className="font-bold text-[var(--p-fg)]">📎 数据来源与核对方式</p>
           <p className="mt-2">
             名单依据教育局《2027年度小一入学 · 自行分配学位阶段各小一学校网小学名册》（2026年8月编制）：

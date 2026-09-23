@@ -110,5 +110,8 @@ export function reportJsonLd(d: ReportData, locale: Locale) {
     publisher: { "@type": "Organization", name: L("港学荟", locale) },
     mainEntityOfPage: `${SITE_URL}${localeHref(`/reports/${d.slug}`, locale)}`,
     image: `${SITE_URL}${reportOgImage(d.slug)}`,
+    // 付费报告要如实声明「不是全文免费」——这是 schema.org 对付费墙页面的标准信号。
+    // 免费章节（第 0-1 章）仍然公开，所以用 isAccessibleForFree:false 而非整页 noindex。
+    isAccessibleForFree: Boolean(d.free),
   };
 }

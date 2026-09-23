@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Paywall from "@/components/Paywall";
+import PremiumContent from "@/components/PremiumContent";
 import { L, LOCALE_META, localeHref, otherLocale, type Locale } from "@/lib/i18n";
+import { readStoredLicense } from "@/lib/unlock-client";
 
 // 报告页渲染。语言由 URL 决定(/reports/** = 繁體,/cn/reports/** = 简体),
 // 不再用浏览器端 toggle——那样 Google 抓不到简体版本。
@@ -11,7 +14,6 @@ export default function ReportViewer({
   slug,
   hero,
   body,
-  premiumHtml,
   free,
   allAccessUrl,
   singleUrl,
@@ -21,7 +23,6 @@ export default function ReportViewer({
   slug: string;
   hero: string;
   body: string;
-  premiumHtml: string;
   free: boolean;
   allAccessUrl: string;
   singleUrl: string;
@@ -31,6 +32,17 @@ export default function ReportViewer({
   const lang = locale;
   const z = (s: string) => L(s, locale);
   const switchUrl = localeHref(`/reports/${slug}`, otherLocale(locale));
+
+  // 解锁状态：只认 localStorage 里的签名 license（见 lib/unlock-client.ts）。
+  // 付费正文本身不在本页 HTML 里，要向 /api/report-content 验签换取——
+  // 所以就算有人手动改 localStorage，也拿不到内容。
+  const [license, setLicense] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
+
+  useEffect(() => {
+    setLicense(readStoredLicense(slug));
+    setPending(true);
+  }, [slug]);
 
   // hero 里藏着老站的「繁」链接(指向不存在的 report-xxx-tc.html,点了就 404)
   // 渲染时把它换成指向另一语言版本的真正链接(可被搜索引擎抓取)
@@ -54,12 +66,16 @@ export default function ReportViewer({
         {!free && (
           <>
             {/* 付费墙:未解锁显示解锁卡,解锁后显示付费章节(样式/逻辑见 components/Paywall.tsx) */}
-            <Paywall slug={slug} allAccessUrl={allAccessUrl} singleUrl={singleUrl} locale={locale} />
-            <div
-              id="premium-content"
-              style={{ display: "none" }}
-              dangerouslySetInnerHTML={{ __html: z(premiumHtml) }}
-            />
+            {pending && (
+              <Paywall
+                slug={slug}
+                allAccessUrl={allAccessUrl}
+                singleUrl={singleUrl}
+                unlocked={license !== null}
+                locale={locale}
+              />
+            )}
+            {license && <PremiumContent slug={slug} license={license} locale={locale} />}
           </>
         )}
 

@@ -33,6 +33,22 @@ type CompareSchool = {
 const META = reportMeta as any;
 const TIER_CFG = (META.TIER_CFG || {}) as Record<string, { c: string; b: string }>;
 
+// 學校名 → 深度報告代碼。
+// 2026-09 審計：兩校對比原本只給下載圖，沒有下一站。
+// report-meta 的 n 對應 schools.json 的 name_zh，但畫面上顯示的是 name_display
+// （可能帶「（深水埗）」這類尾巴），所以兩種寫法都要能查到。
+const PS_CODE: Record<string, string> = {};
+(META.PS_REPORTS as { n: string; c: string }[]).forEach((r) => (PS_CODE[r.n] = r.c));
+const CODE_BY_DISPLAY: Record<string, string> = {};
+for (const s of schoolsJson as { name_zh?: string; name_display?: string }[]) {
+  const code = s.name_zh ? PS_CODE[s.name_zh] : undefined;
+  if (code && s.name_display) CODE_BY_DISPLAY[s.name_display] = code;
+}
+function reportOf(name: string | undefined): string | undefined {
+  if (!name) return undefined;
+  return PS_CODE[name] || CODE_BY_DISPLAY[name];
+}
+
 const P1 = p1NetsJson as {
   nets: {
     net: string;
@@ -231,7 +247,7 @@ export default function SchoolCompare({
 
   return (
     <Localize locale={locale}>
-    <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+    <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
       <div className="flex items-center gap-2">
         <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">两校对比</h2>
         {!unlocked && (
@@ -327,6 +343,34 @@ export default function SchoolCompare({
             </div>
           )}
         </div>
+      )}
+
+      {/* 對比完 → 下一站：兩校的深度報告（審計修正：原本這裡是死胡同） */}
+      {analysed && canCompare && schoolA && schoolB && (
+        (() => {
+          const links = [schoolA, schoolB]
+            .map((s) => ({ name: s.name, code: reportOf(s.name) }))
+            .filter((x): x is { name: string; code: string } => Boolean(x.code));
+          if (links.length === 0) return null;
+          return (
+            <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-4">
+              <p className="font-serif text-base font-bold text-[var(--p-fg)]">
+                这两所学校的深度报告（每份 8 章，可免费试读第 1 章）
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {links.map((l) => (
+                  <a
+                    key={l.code}
+                    href={`/reports/${l.code}`}
+                    className="rounded-full border border-[var(--p-hl-border)] px-3 py-1 font-mono text-xs text-[var(--p-hl-border)] no-underline"
+                  >
+                    {l.name} →
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        })()
       )}
 
       {/* 小红书 3:4 导出卡（离屏渲染，仅导出用） */}

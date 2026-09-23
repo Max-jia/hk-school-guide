@@ -32,6 +32,8 @@ export default function UnlockPage({ locale = "tc" }: { locale?: Locale }) {
         .then((j) => {
           if (j.ok && j.slug) {
             localStorage.setItem("purchased_" + j.slug, "true");
+            // 分享核销也要存 license：付费正文接口只认签名凭证
+            if (j.license) localStorage.setItem("license_" + j.slug, j.license);
             setStatus("分享解锁成功 · 已解锁「" + j.slug + "」· 正在打开…");
             setTimeout(() => {
               window.location.href = "/reports/" + j.slug + "?t=" + Date.now();

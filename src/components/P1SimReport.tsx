@@ -12,9 +12,20 @@ import { runSimCheck, type SimInput } from "@/lib/sim-engine";
 import { buildContingency } from "@/lib/sim-engine";
 import { DATA_LABEL, DATA_VERSION, DATA_UPDATED_AT } from "@/lib/data-version";
 import p1NetsJson from "@/content/p1-nets.json";
+import reportMeta from "@/content/report-meta.json";
 
 const LOCK_KEY = "purchased_p1-sim";
 const INPUT_KEY = "p1sim_input";
+
+// 學校名 → 深度報告代碼。
+// 2026-09 審計：志願模擬器跑完只給一份下載檔，零條連結導向報告——
+// 這是全站最高意圖卻斷在終點的一段。這裡把名單接回報告。
+const META = reportMeta as { PS_REPORTS: { n: string; c: string }[] };
+const PS_CODE: Record<string, string> = {};
+META.PS_REPORTS.forEach((r) => (PS_CODE[r.n] = r.c));
+function reportOf(name: string): string | undefined {
+  return PS_CODE[String(name || "").trim()];
+}
 
 const STATUS_LABEL: Record<string, string> = { pass: "通过", warn: "需注意", fail: "错误" };
 
@@ -53,6 +64,22 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
     return runSimCheck({ ...input, netSchoolCount: netCount });
   }, [input, P1]);
   const contingency = useMemo(() => (report ? buildContingency(report.knockList) : null), [report]);
+
+  // 志願表裡「已經有深度報告」的學校（去重、保持填表順序）
+  const reportLinks = useMemo(() => {
+    if (!input) return [] as { name: string; code: string }[];
+    const names = [...input.partA.map((s) => s.name.trim()), ...input.partB.map((s) => s.name.trim())];
+    const seen = new Set<string>();
+    const out: { name: string; code: string }[] = [];
+    for (const n of names) {
+      const code = reportOf(n);
+      if (code && !seen.has(code)) {
+        seen.add(code);
+        out.push({ name: n, code });
+      }
+    }
+    return out;
+  }, [input]);
 
   function buy() {
     setBuying(true);
@@ -121,7 +148,7 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
         </div>
 
         {!unlocked ? (
-          <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-8 text-center">
+          <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-8 text-center">
             <p className="text-4xl">🔒</p>
             <h2 className="mt-3 font-serif text-2xl font-bold text-[var(--p-fg)]">这份报告还没解锁</h2>
             <p className="mx-auto mt-2 max-w-[420px] text-sm text-[var(--p-secondary)]">
@@ -143,7 +170,7 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
             </p>
           </section>
         ) : !report || !input ? (
-          <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-8 text-center">
+          <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-8 text-center">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">还没有模拟数据</h2>
             <p className="mt-2 text-sm text-[var(--p-secondary)]">先回模拟器填好志愿表，再生成报告。</p>
             <a
@@ -180,9 +207,17 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
                     <p className="font-mono text-xs font-bold text-[#57534E]">甲部（全港任选 · 最多 3）</p>
                     <ol className="m-0 mt-1 list-none space-y-1 p-0 text-sm">
                       {input.partA.map((s, i) => (
-                        <li key={i} className="flex gap-2">
+                        <li key={i} className="flex flex-wrap items-baseline gap-x-2">
                           <span className="w-5 shrink-0 font-mono text-xs text-[#8A8378]">甲{i + 1}</span>
                           <span className="text-[#1C1C1C]">{s.name.trim() || "（空）"}</span>
+                          {reportOf(s.name) && (
+                            <a
+                              href={`/reports/${reportOf(s.name)}`}
+                              className="font-mono text-xs text-[#0F766E] underline underline-offset-2"
+                            >
+                              深度報告 →
+                            </a>
+                          )}
                         </li>
                       ))}
                     </ol>
@@ -191,16 +226,48 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
                     <p className="font-mono text-xs font-bold text-[#57534E]">乙部（校网内 · 按顺序填）</p>
                     <ol className="m-0 mt-1 list-none space-y-1 p-0 text-sm">
                       {input.partB.filter((s) => s.name.trim()).map((s, i) => (
-                        <li key={i} className="flex gap-2">
+                        <li key={i} className="flex flex-wrap items-baseline gap-x-2">
                           <span className="w-5 shrink-0 font-mono text-xs text-[#8A8378]">乙{i + 1}</span>
                           <span className="text-[#1C1C1C]">{s.name}</span>
                           <span className="text-[#8A8378]">（{s.tier === "sprint" ? "冲刺" : s.tier === "match" ? "匹配" : "保底"}）</span>
+                          {reportOf(s.name) && (
+                            <a
+                              href={`/reports/${reportOf(s.name)}`}
+                              className="font-mono text-xs text-[#0F766E] underline underline-offset-2"
+                            >
+                              深度報告 →
+                            </a>
+                          )}
                         </li>
                       ))}
                     </ol>
                   </div>
                 </div>
               </div>
+
+              {/* 志願表 → 深度報告（審計修正：模擬器結果原本是轉化死胡同） */}
+              {reportLinks.length > 0 && (
+                <div className="mt-5 rounded-[10px] bg-[#E7F6F2] p-4">
+                  <p className="font-serif text-base font-bold text-[#1C1C1C]">
+                    你的志願表裡有 {reportLinks.length} 間學校已有深度報告
+                  </p>
+                  <p className="mt-1 text-sm text-[#57534E]">
+                    每份 8 章：四因子評級、教學解讀、升中通路、入讀攻略、叩門信、同類對比。
+                    免費試讀第 1 章。
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {reportLinks.map((r) => (
+                      <a
+                        key={r.code}
+                        href={`/reports/${r.code}`}
+                        className="rounded-full border border-[#0F766E] bg-white px-3 py-1 font-mono text-xs text-[#0F766E] no-underline"
+                      >
+                        {r.name} →
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* 风险等级 */}
               <div className="mt-5 flex items-center gap-5 rounded-[10px] px-6 py-5" style={{ backgroundColor: gradeColor + "14", borderLeft: `6px solid ${gradeColor}` }}>

@@ -135,7 +135,7 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
         </div>
 
         {/* ① 计分组合 */}
-        <section className="rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">① 计分组合 · 自动算分</h2>
             <span className="rounded-full bg-[#FEF3E2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#B45309]">免费</span>
@@ -173,14 +173,14 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
         </section>
 
         {/* 同分抽签说明 */}
-        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <h2 className="font-serif text-xl font-bold text-[var(--p-fg)]">同分抽签 · 先看懂再投表</h2>
           <p className="mt-2 text-sm leading-relaxed text-[var(--p-fg)]">{SAME_SCORE_NOTE}</p>
           <p className="mt-2 text-xs text-[var(--p-secondary)]">来源：教育局《小一入学统筹办法要点》；同分抽签操作以教育局/学校公布为准。</p>
         </section>
 
         {/* ② 候选校清单 */}
-        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 候选校清单 · 这票投给谁</h2>
             {!unlocked && <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO · 免费 1 所</span>}
@@ -302,7 +302,7 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
         </section>
 
         {/* ③ 投表决策报告 */}
-        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-white)] p-6">
+        <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">③ 投表决策报告</h2>
             {!unlocked && <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>}
