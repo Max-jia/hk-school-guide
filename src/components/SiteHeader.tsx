@@ -35,19 +35,19 @@ export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
   const switchHref = localeHref(basePath, target);
 
   return (
-    <header className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-3 px-4 pb-4 pt-8 font-sans">
+    <header className="mx-auto flex max-w-[1280px] flex-nowrap items-center justify-between gap-2 px-4 py-3 font-sans md:flex-wrap md:gap-3 md:pb-4 md:pt-8">
       <a
         href={localeHref("/", locale)}
         className="inline-block -rotate-3 text-2xl font-bold tracking-tight text-[var(--p-fg)] no-underline transition-transform duration-100 hover:-rotate-1 hover:scale-105 md:text-3xl lg:text-4xl"
       >
         {L("港学荟", locale)}
       </a>
-      <nav className="flex flex-wrap items-center gap-2 md:gap-3">
+      <nav className="flex items-center gap-2 md:flex-wrap md:gap-3">
         {NAV.map((n) => (
           <a
             key={n.href}
             href={localeHref(n.href, locale)}
-            className={`rounded-[8px] border-2 border-[var(--p-fg)] bg-[var(--p-bg)] px-3 py-1.5 text-xs font-bold text-[var(--p-fg)] no-underline shadow-[2px_3px_0_rgba(0,0,0,0.15)] transition-transform duration-100 ${n.rot} hover:rotate-0 hover:scale-105 md:text-sm`}
+            className={`hidden rounded-[8px] border-2 border-[var(--p-fg)] bg-[var(--p-bg)] px-3 py-1.5 text-xs font-bold text-[var(--p-fg)] no-underline shadow-[2px_3px_0_rgba(0,0,0,0.15)] transition-transform duration-100 md:inline-flex ${n.rot} hover:rotate-0 hover:scale-105 md:text-sm`}
           >
             {L(n.label, locale)}
           </a>
@@ -56,16 +56,18 @@ export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
           href={switchHref}
           hrefLang={LOCALE_META[target].hreflang}
           aria-label={`${L("切换到", locale)}${LOCALE_META[target].label}`}
-          className="rounded-[8px] border-2 border-dashed border-[var(--p-fg)] bg-transparent px-2.5 py-1.5 text-xs font-bold text-[var(--p-fg)] no-underline transition-transform duration-100 hover:scale-105 md:text-sm"
+          className="whitespace-nowrap rounded-[8px] border-2 border-dashed border-[var(--p-fg)] bg-transparent px-2.5 py-1.5 text-xs font-bold text-[var(--p-fg)] no-underline transition-transform duration-100 hover:scale-105 md:text-sm"
         >
           {LOCALE_META[target].label}
         </a>
         <button
-          aria-label="open menu"
+          aria-label={L("開啟導覽選單", locale)}
+          aria-expanded={open}
+          aria-controls="site-nav-menu"
           onClick={() => setOpen(true)}
-          className="transition-transform duration-100 hover:rotate-6 hover:scale-110"
+          className="flex min-h-11 min-w-11 items-center justify-center transition-transform duration-100 hover:rotate-6 hover:scale-110"
         >
-          <img src="/stickers/more@2x.png" alt="menu" className="w-[102px] max-w-none" />
+          <img src="/stickers/more@2x.png" alt="" className="w-14 max-w-none md:w-[102px]" />
         </button>
       </nav>
 
@@ -73,7 +75,7 @@ export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
         <>
           {/* 隐形遮罩:点面板外空白关闭(原站无遮罩,这里视觉不可见,只保功能) */}
           <div className="fixed inset-0 z-[1000]" onClick={() => setOpen(false)} />
-          <div className="fixed right-0 top-0 z-[1001] h-full w-[85vw] max-w-[360px] bg-[#262626]">
+          <div id="site-nav-menu" className="fixed right-0 top-0 z-[1001] h-full w-[85vw] max-w-[360px] bg-[#262626]">
             <button
               aria-label="close menu"
               onClick={() => setOpen(false)}
