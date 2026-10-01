@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { L, type Locale } from "@/lib/i18n";
+import { enhanceReportHtml, usesEditorialReportLayout } from "@/lib/report-html";
 
 // 付费章节（第 2-8 章）。
 //
@@ -9,8 +10,7 @@ import { L, type Locale } from "@/lib/i18n";
 // 任何人「查看原始码」就能免费拿到；解锁判断也只读 localStorage 的 "true"。
 // 现在改成向 /api/report-content 取——服务端会验 HMAC 签名 license，伪造不了。
 //
-// 渲染位置刻意跟旧版一模一样（同一个 wrapper 内的兄弟节点、同一个 id），
-// 这样视觉与既有 CSS 完全不变，只是内容来源从「HTML 内嵌」换成「验签后下发」。
+// 付费正文始终在服务端验签后下发。新版式只在授权后的渲染层增强内容。
 
 type State = "loading" | "ready" | "denied" | "error";
 
@@ -28,6 +28,8 @@ export default function PremiumContent({
 
   useEffect(() => {
     if (!license) {
+      // Defensive client state only; the API independently rejects missing/invalid licenses.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setState("denied");
       return;
     }
@@ -65,7 +67,7 @@ export default function PremiumContent({
     );
   }
 
-  // 没有凭证（正常情况：付费墙会盖在上面）；或凭证无效/过期
+  // No credential means the parent should leave the paywall in place.
   if (state === "denied") return null;
 
   if (state === "error") {
@@ -85,5 +87,7 @@ export default function PremiumContent({
     );
   }
 
-  return <div id="premium-content" dangerouslySetInnerHTML={{ __html: L(html, locale) }} />;
+  const localizedHtml = L(html, locale);
+  const renderedHtml = usesEditorialReportLayout(slug) ? enhanceReportHtml(localizedHtml, locale, true) : localizedHtml;
+  return <div id="premium-content" dangerouslySetInnerHTML={{ __html: renderedHtml }} />;
 }

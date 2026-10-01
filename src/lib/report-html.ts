@@ -1,0 +1,584 @@
+import { L, type Locale } from "@/lib/i18n";
+
+/** Every report JSON, including the archived direct route, is admitted after content-parity checks. */
+export const EDITORIAL_REPORT_SLUGS = [
+  "alliance",
+  "aogps",
+  "aps",
+  "aspcps",
+  "braemar-hill",
+  "brgps",
+  "canaan",
+  "canaan-cd",
+  "canaan-klt",
+  "canossahk",
+  "cblmc",
+  "ccc",
+  "cccwhcsw",
+  "cckg",
+  "cmask",
+  "cneclmc",
+  "cps",
+  "cpskg",
+  "creative",
+  "cypy",
+  "dbs",
+  "dgjs",
+  "edujcps",
+  "evangel",
+  "fkgs",
+  "fssas",
+  "ghps",
+  "goodhealth",
+  "gt",
+  "hacs",
+  "hfc",
+  "hfcklt",
+  "hkbaptist",
+  "hkcwcyw",
+  "hkups",
+  "honwah",
+  "hrgp",
+  "hrgps",
+  "hy",
+  "hyps",
+  "icqm",
+  "ihm",
+  "jrgps",
+  "kau",
+  "kcps",
+  "kcskps",
+  "keenmind",
+  "kentville",
+  "kiangsu",
+  "krs",
+  "ktbwcs",
+  "ktgps",
+  "ktl",
+  "kts",
+  "ky",
+  "la",
+  "lchhds",
+  "lh",
+  "lh-hp",
+  "lh-sf",
+  "lht",
+  "lkps",
+  "llc",
+  "lmc",
+  "logos",
+  "lsps",
+  "ltmps",
+  "ly",
+  "mc",
+  "mcs",
+  "mingwai",
+  "mosllps",
+  "mps",
+  "mtc",
+  "mtcps",
+  "munsang",
+  "munsangps",
+  "ngwah",
+  "olps",
+  "pb",
+  "pc",
+  "pcps",
+  "pkcps",
+  "pkps",
+  "plkcastar",
+  "plkcy",
+  "plkflpy",
+  "plklht",
+  "plkshsn",
+  "pt",
+  "puikei",
+  "py2",
+  "rc",
+  "rcps",
+  "scps",
+  "sfa",
+  "sfcs",
+  "shck",
+  "shckps",
+  "sjacps",
+  "sjps",
+  "skh",
+  "skhcf",
+  "skhhs",
+  "skhke",
+  "skhkfp",
+  "skhlmc",
+  "skhlmcmps",
+  "skhlsks",
+  "skhmfps",
+  "skhsas",
+  "skhsc",
+  "skhsm",
+  "skhttlsks",
+  "skhykkgps",
+  "skhyl",
+  "skhyl2",
+  "sls",
+  "smcs",
+  "smm",
+  "snicholas",
+  "soka",
+  "spc",
+  "spccps",
+  "spcps",
+  "spcs",
+  "spk",
+  "sppcs",
+  "sppcs2",
+  "srl",
+  "sscps",
+  "ssgc",
+  "ssgps",
+  "stcat",
+  "stgps",
+  "sts",
+  "stts",
+  "sylgps",
+  "think",
+  "tkocps",
+  "tlps",
+  "tmrgps",
+  "topkids-yl",
+  "tpom",
+  "tsbcps",
+  "tsl",
+  "tswcs",
+  "tt",
+  "ttskg",
+  "tutor",
+  "tutor-klt",
+  "twghscws",
+  "twgps",
+  "veo-bcy",
+  "veo-cwb",
+  "veo-hmt",
+  "veo-op",
+  "victoria",
+  "wflst",
+  "wkf",
+  "wyps",
+  "ycis",
+  "ycis-kt",
+  "ycmc",
+  "ycmcj",
+  "ycps",
+  "ylaps",
+  "york",
+  "york-klt",
+  "york-montessori-yl",
+  "ywps",
+] as const;
+
+export function usesEditorialReportLayout(slug: string): boolean {
+  return (EDITORIAL_REPORT_SLUGS as readonly string[]).includes(slug);
+}
+
+function findMatchingTagEnd(html: string, start: number, tagName: "div" | "table" | "section"): number {
+  const tags = new RegExp(`<\\/?${tagName}\\b[^>]*>`, "gi");
+  tags.lastIndex = start;
+  let depth = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = tags.exec(html))) {
+    if (match[0].startsWith("</")) depth -= 1;
+    else if (!match[0].endsWith("/>")) depth += 1;
+    if (depth === 0) return tags.lastIndex;
+  }
+
+  return -1;
+}
+
+function compactReliabilityNotice(html: string, locale: Locale): string {
+  const callouts = /<div\b(?=[^>]*\bclass=(['"])[^'"]*\bcallout\b[^'"]*\bwarn\b[^'"]*\1)[^>]*>/gi;
+  let opening: RegExpExecArray | null;
+
+  while ((opening = callouts.exec(html))) {
+    const end = findMatchingTagEnd(html, opening.index, "div");
+    if (end < 0) continue;
+
+    const contentStart = opening.index + opening[0].length;
+    const contentEnd = end - "</div>".length;
+    const inner = html.slice(contentStart, contentEnd);
+    const heading = inner.match(/^\s*<strong>([^<]*)<\/strong>\s*<br\s*\/?>/i);
+    if (!heading || !/(?:數據|数据|資料|资料)可靠性(?:聲明|声明)/.test(heading[1])) continue;
+
+    const details = inner.slice(heading[0].length);
+    const compacted = `<details class="callout warn report-data-reliability"><summary><strong>${heading[1]}</strong><span>${L("展開查看資料來源與核實標準", locale)}</span></summary><div class="report-data-reliability__content">${details}</div></details>`;
+    return `${html.slice(0, opening.index)}${compacted}${html.slice(end)}`;
+  }
+
+  return html;
+}
+
+type TableRow = ("th" | "td")[];
+
+function getDirectTableRows(contents: string): TableRow[] {
+  const tags = /<\/?(table|tr|th|td)\b[^>]*>/gi;
+  const rows: TableRow[] = [];
+  let tableDepth = 0;
+  let currentRow: TableRow | null = null;
+  let match: RegExpExecArray | null;
+
+  while ((match = tags.exec(contents))) {
+    const tagName = match[1].toLowerCase();
+    const isClosing = match[0].startsWith("</");
+    if (tagName === "table") {
+      tableDepth += isClosing ? -1 : 1;
+      continue;
+    }
+    if (tableDepth > 0) continue;
+
+    if (tagName === "tr") {
+      if (isClosing && currentRow) {
+        rows.push(currentRow);
+        currentRow = null;
+      } else if (!isClosing) {
+        currentRow = [];
+      }
+    } else if (!isClosing && currentRow) {
+      currentRow.push(tagName as "th" | "td");
+    }
+  }
+
+  return rows;
+}
+
+function enhanceTables(html: string, locale: Locale, editorial = false): string {
+  const opening = /<table\b([^>]*)>/i.exec(html);
+  if (!opening) return html;
+
+  const start = opening.index;
+  const end = findMatchingTagEnd(html, start, "table");
+  if (end < 0) return html;
+
+  const openingEnd = start + opening[0].length;
+  const contentsEnd = end - "</table>".length;
+  const contents = html.slice(openingEnd, contentsEnd);
+  const enhancedContents = enhanceTables(contents, locale, editorial);
+  const attributes = opening[1];
+  const classMatch = attributes.match(/\bclass=(['"])(.*?)\1/i);
+  let table = `<table${attributes}>${enhancedContents}</table>`;
+
+  if (classMatch && classMatch[2].split(/\s+/).includes("dt")) {
+    const rows = getDirectTableRows(contents);
+    const isKeyValue = rows.length > 0 && rows.every((row) => row.length === 2 && row[0] === "th" && row[1] === "td");
+    const markerClasses = editorial
+      ? isKeyValue ? "key-value" : ""
+      : rows.length >= 2 && isKeyValue ? "report-summary-table" : "report-scroll-table";
+    const nextAttributes = markerClasses
+      ? attributes.replace(classMatch[0], `class=${classMatch[1]}${classMatch[2]} ${markerClasses}${classMatch[1]}`)
+      : attributes;
+    table = `<table${nextAttributes}>${enhancedContents}</table>`;
+
+    if (editorial) {
+      const wrapperClass = isKeyValue ? "is-key-value" : "is-wide";
+      const scrollHint = isKeyValue ? "" : `<p class="scroll-note">${L("左右滑動查看更多欄位", locale)}</p>`;
+      const scrollLabel = L("可左右滑動查看其他欄位的表格", locale);
+      table = `<div class="table-scroll ${wrapperClass} report-table-scroll"><div class="report-table-scroll__viewport" role="region" tabindex="0" aria-label="${scrollLabel}">${table}</div>${scrollHint}</div>`;
+    } else if (!isKeyValue && rows.length >= 2) {
+      const scrollHint = L("左右滑動查看更多欄位", locale);
+      const scrollLabel = L("可左右滑動查看其他欄位的表格", locale);
+      table = `<div class="report-table-scroll"><p class="report-table-scroll__hint" aria-hidden="true">${scrollHint}</p><div class="report-table-scroll__viewport" role="region" tabindex="0" aria-label="${scrollLabel}">${table}</div></div>`;
+    }
+  }
+
+  return `${html.slice(0, start)}${table}${enhanceTables(html.slice(end), locale, editorial)}`;
+}
+
+function cleanText(html: string): string {
+  return html
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function escapeHtml(text: string): string {
+  const entities: Record<string, string> = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  };
+  return text.replace(/[&<>"']/g, (character) => entities[character] ?? character);
+}
+
+function renderEditorialTopics(html: string): string {
+  const headings = [...html.matchAll(/<h3\b[^>]*>[\s\S]*?<\/h3>/gi)];
+  if (headings.length === 0) return html;
+
+  let result = html.slice(0, headings[0].index);
+  for (let index = 0; index < headings.length; index += 1) {
+    const heading = headings[index];
+    const headingStart = heading.index ?? 0;
+    const headingEnd = headingStart + heading[0].length;
+    const bodyEnd = headings[index + 1]?.index ?? html.length;
+    result += `<div class="topic-block"><div class="topic-heading">${heading[0]}</div><div class="topic-body">${html.slice(headingEnd, bodyEnd)}</div></div>`;
+  }
+  return result;
+}
+
+function renderEditorialChapter(section: string, index: number): string {
+  const opening = section.match(/^<section\b([^>]*)>/i);
+  const heading = section.match(/<h2\b[^>]*>[\s\S]*?<\/h2>/i);
+  if (!opening || !heading) return section;
+
+  const originalAttributes = opening[1];
+  const originalClass = originalAttributes.match(/\bclass=(['"])(.*?)\1/i);
+  const classNames = originalClass?.[2].split(/\s+/).filter(Boolean) ?? [];
+  if (!classNames.includes("editorial-chapter")) classNames.push("editorial-chapter");
+  const originalId = originalAttributes.match(/\bid=(['"])(.*?)\1/i)?.[2];
+  const number = heading[0].match(/<[^>]*class=(['"])[^'"]*\bnum\b[^'"]*\1[^>]*>\s*(\d+)/i)?.[2];
+  const id = originalId || `chapter-${number || index + 1}`;
+  let attributes = originalAttributes;
+  if (originalClass) {
+    attributes = attributes.replace(originalClass[0], `class=${originalClass[1]}${classNames.join(" ")}${originalClass[1]}`);
+  } else {
+    attributes += ` class="${classNames.join(" ")}"`;
+  }
+  if (/\bid=(['"])[^'"]*\1/i.test(attributes)) {
+    attributes = attributes.replace(/\bid=(['"])[^'"]*\1/i, `id="${id}"`);
+  } else {
+    attributes += ` id="${id}"`;
+  }
+
+  const railHeading = heading[0];
+  const content = section.slice(opening[0].length, section.lastIndexOf("</section>"));
+  const withoutHeading = content.replace(heading[0], "");
+  const body = renderEditorialTopics(withoutHeading);
+  return `<section${attributes}><aside class="chapter-rail">${railHeading}</aside><div class="chapter-main">${body}</div></section>`;
+}
+
+function renderEditorialChapters(html: string): string {
+  const sectionOpen = /<section\b(?=[^>]*\bclass=(['"])[^'"]*\bchapter\b[^'"]*\1)[^>]*>/gi;
+  const chapters: { start: number; end: number; html: string }[] = [];
+  let match: RegExpExecArray | null;
+
+  while ((match = sectionOpen.exec(html))) {
+    const end = findMatchingTagEnd(html, match.index, "section");
+    if (end < 0) continue;
+    chapters.push({ start: match.index, end, html: html.slice(match.index, end) });
+    sectionOpen.lastIndex = end;
+  }
+
+  let output = "";
+  let cursor = 0;
+  chapters.forEach((chapter, index) => {
+    output += html.slice(cursor, chapter.start);
+    output += renderEditorialChapter(chapter.html, index);
+    cursor = chapter.end;
+  });
+  output += html.slice(cursor);
+  return output;
+}
+
+function getReportFacts(body: string): { label: string; value: string }[] {
+  const tables = [...body.matchAll(/<table\b([^>]*)>/gi)];
+  let rows: RegExpMatchArray[] = [];
+
+  for (const opening of tables) {
+    if (!/\bclass=(['"])[^'"]*\bdt\b[^'"]*\1/i.test(opening[1])) continue;
+    const start = opening.index ?? 0;
+    const end = findMatchingTagEnd(body, start, "table");
+    if (end < 0) continue;
+    const contents = body.slice(start + opening[0].length, end - "</table>".length);
+    const directRows = getDirectTableRows(contents);
+
+    // A summary table has exactly one label/value pair per row. Comparison
+    // tables can contain more <tr><th><td> matches by accident because their
+    // rows have several cells, so they must never drive the hero fact ribbon.
+    const isSummaryTable =
+      directRows.length >= 3 &&
+      directRows.every((row) => row.length === 2 && row[0] === "th" && row[1] === "td");
+    if (!isSummaryTable) continue;
+
+    const keyValueRows = [...contents.matchAll(/<tr\b[^>]*>\s*<th\b[^>]*>([\s\S]*?)<\/th>\s*<td\b[^>]*>([\s\S]*?)<\/td>\s*<\/tr>/gi)];
+    if (keyValueRows.length > rows.length) rows = keyValueRows;
+  }
+  if (rows.length === 0) return [];
+
+  const wanted = [
+    /地區|地区|校網|校网|地址|校址/,
+    /類型|类型|性別|性别|辦學類別|办学类别/,
+    /學費|学费|收費|收费/,
+    /創校年份|创校年份|創立年份|创立年份|成立年份/,
+  ];
+  const selected = wanted.flatMap((pattern) => {
+    const row = rows.find((item) => pattern.test(cleanText(item[1])));
+    return row ? [row] : [];
+  });
+
+  // Keep the hero ribbon school-specific: the rating and full name already
+  // appear elsewhere in the hero, so prefer distinct facts from the source table.
+  const fallbackPriorities = [
+    /學段|学段/,
+    /師生比|师生比|班師比|班师比/,
+    /升中|聯繫|联系|一條龍|一条龙|附屬中學|附属中学|關聯中學|关联中学|關聯小學|关联小学|直属中学|直屬中學/,
+    /教學語言|教学语言|授課語言|授课语言/,
+    /班級結構|班级结构|校舍\s*\/\s*班級|校舍\s*\/\s*班级/,
+    /PN\s*班|幼兒班|幼儿班/,
+    /雙軌制|双轨制/,
+    /師資|师资|教職員|教职员|教師人數|教师人数/,
+    /分校|校區網絡|校区网络|品牌規模|品牌规模/,
+    /校舍設施|校舍设施|校舍面積|校舍面积|學校設施|学校设施|校舍地址|校舍/,
+    /學生規模|学生规模|學額|学额/,
+  ];
+  for (const pattern of fallbackPriorities) {
+    if (selected.length >= 4) break;
+    const row = rows.find((item) => pattern.test(cleanText(item[1])) && !selected.includes(item));
+    if (row) selected.push(row);
+  }
+
+  return selected.map((row) => ({ label: cleanText(row[1]), value: row[2] }));
+}
+
+function getEditorialFactValue(fact: { label: string; value: string }): string {
+  const plainValue = cleanText(fact.value).replace(/\s*(?:✅|✔️)\s*[\s\S]*$/, "").trim();
+  const segments = plainValue.split(/\s*[·•]\s*/).filter(Boolean);
+  const firstSegment = segments[0] ?? plainValue;
+
+  if (/地區|地区|校網|校网|創校年份|创校年份|創立年份|创立年份|成立年份|學段|学段/.test(fact.label)) {
+    return firstSegment;
+  }
+  if (/學費|学费|收費|收费/.test(fact.label)) {
+    return firstSegment.replace(/[（(][^）)]*[）)]/g, "").trim();
+  }
+  if (/類型|类型|性別|性别|辦學類別|办学类别/.test(fact.label)) {
+    return segments.slice(0, 3).join(" · ");
+  }
+  return plainValue;
+}
+
+function getSchoolNetwork(facts: { label: string; value: string }[]): { fact: { label: string; value: string }; number: string; caption: string } | null {
+  const fact = facts.find(({ label, value }) => /校網|校网/.test(label) && /\d+\s*(?:校網|校网)/.test(cleanText(value)));
+  if (!fact) return null;
+
+  const value = cleanText(fact.value);
+  const number = value.match(/(\d+)\s*(?:校網|校网)/)?.[1];
+  if (!number) return null;
+
+  const caption = value
+    .split(/\s*[·•]\s*/)
+    .filter((part) => !new RegExp(`${number}\\s*(?:校網|校网)`).test(part))
+    .map((part) => part.replace(/\s*✅.*$/, "").trim())
+    .filter(Boolean)
+    .slice(0, 2)
+    .join(" · ");
+
+  return { fact, number, caption };
+}
+
+export function buildEditorialHeroHtml(hero: string, body: string, locale: Locale, free: boolean): string {
+  const tier = hero.match(/<div\b[^>]*class=(['"])[^'"]*\btier-mega\b[^'"]*\1[^>]*>([\s\S]*?)<\/div>/i)?.[2] ?? "";
+  const originalTitle = hero.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? "";
+  const title = cleanText(originalTitle)
+    .replace(/\s*深度择校报告\s*$/i, "")
+    .replace(/\s*深度擇校報告\s*$/i, "")
+    .trim();
+  const subtitle = hero.match(/<p\b[^>]*class=(['"])[^'"]*\bsub\b[^'"]*\1[^>]*>([\s\S]*?)<\/p>/i)?.[2] ?? "";
+  const [englishName, ...details] = cleanText(subtitle).split(/\s*·\s*/);
+  const tierGrade = cleanText(tier).match(/S|A\+?|B|C/i)?.[0] ?? "—";
+  const facts = getReportFacts(body);
+  const schoolNetwork = getSchoolNetwork(facts);
+  const freeBadge = free ? `<span class="hero-free-badge">${L("本报告完全免费", locale)}</span>` : "";
+  const titleMarkup = escapeHtml(title).replace(
+    /^(.*?)(官立小學|官立小学)$/,
+    (_match, prefix: string, suffix: string) => `${prefix}<br>${suffix}`
+  );
+  const ribbonFacts = schoolNetwork
+    ? [
+        { label: L("評級", locale), value: `<strong>${escapeHtml(tierGrade)} ${L("級", locale)}</strong>` },
+        ...facts.filter((fact) => fact !== schoolNetwork.fact).slice(0, 3),
+      ]
+    : facts;
+  const factMarkup = ribbonFacts.map((fact) => {
+    const fullValue = cleanText(fact.value);
+    const summaryValue = getEditorialFactValue(fact);
+    return `<div class="fact"><span class="fact-label">${escapeHtml(fact.label)}</span><span class="fact-value" aria-label="${escapeHtml(`${fact.label}：${fullValue}`)}">${escapeHtml(summaryValue)}</span></div>`;
+  }).join("");
+  const factsRibbon = factMarkup ? `<div class="fact-ribbon fact-ribbon--${ribbonFacts.length}">${factMarkup}</div>` : "";
+  const indexLabel = schoolNetwork ? L("所屬校網", locale) : L("報告評級", locale);
+  const indexNumber = schoolNetwork ? schoolNetwork.number : tierGrade;
+  const indexCaption = schoolNetwork?.caption
+    ? `<span class="hero-index-caption">${escapeHtml(schoolNetwork.caption)}</span>`
+    : "";
+
+  return `<section class="shell hero"><div class="hero-grid"><div><div class="hero-kicker">${tier}${freeBadge}</div><h1 id="school-title">${titleMarkup}</h1><div class="english-name">${escapeHtml(englishName ?? "")}</div>${details.length ? `<p class="dek">${escapeHtml(details.join(" · "))}</p>` : ""}</div><aside class="hero-index" aria-label="${escapeHtml(indexLabel)}"><span class="hero-index-label">${escapeHtml(indexLabel)}</span><span class="hero-index-number">${escapeHtml(indexNumber)}</span>${indexCaption}</aside></div>${factsRibbon}</section>`;
+}
+
+export function reportChapterItems(html: string): { id: string; title: string }[] {
+  const items: { id: string; title: string }[] = [];
+  const chapterRegex = /<section\b[^>]*\bid=(['"])(chapter-\d+)\1[^>]*>[\s\S]*?<aside\b[^>]*class=(['"])[^'"]*\bchapter-rail\b[^'"]*\3[^>]*>([\s\S]*?)<\/aside>/gi;
+  let match: RegExpExecArray | null;
+  while ((match = chapterRegex.exec(html))) {
+    const heading = match[4].match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i)?.[1] ?? "";
+    const withoutBadges = heading
+      .replace(/<[^>]*class=(['"])[^'"]*\bnum\b[^'"]*\1[^>]*>[\s\S]*?<\/[^>]+>/i, "")
+      .replace(/<[^>]*class=(['"])[^'"]*\bcal-badge\b[^'"]*\1[^>]*>[\s\S]*?<\/[^>]+>/i, "");
+    const title = cleanText(withoutBadges).replace(/^\d+\s*/, "");
+    if (title) items.push({ id: match[2], title });
+  }
+  return items;
+}
+
+function simplifyRadarCharts(html: string): string {
+  return html.replace(
+    /<svg\b([^>]*\bclass=(['"])[^'"]*\bradar-svg\b[^'"]*\2[^>]*)>([\s\S]*?)<\/svg>/gi,
+    (match: string, attributes: string, _quote: string, contents: string) => {
+      const labels = [...contents.matchAll(/<text\b[^>]*>([\s\S]*?)<\/text>/gi)]
+        .map((text) => cleanText(text[1]))
+        .filter(Boolean);
+      if (labels.length === 0) return match;
+
+      // Keep the five axis labels on the chart, but keep them inside the SVG
+      // canvas so they cannot spill into the adjacent legend on narrow screens.
+      const chartWithLabels = contents.replace(
+        /<text\b([^>]*)>([\s\S]*?)<\/text>/gi,
+        (_textMatch: string, textAttributes: string, text: string) => {
+          const label = cleanText(text);
+          if (!label) return "";
+          const characters = [...label];
+          const compactLabel = characters.length > 4 ? `${characters.slice(0, 4).join("")}…` : label;
+          const xMatch = textAttributes.match(/\bx=(['"])(-?[\d.]+)\1/i);
+          const anchor = textAttributes.match(/\btext-anchor=(['"])([^'"]+)\1/i)?.[2] ?? "start";
+          let adjustedAttributes = textAttributes;
+          if (xMatch) {
+            const x = Number(xMatch[2]);
+            const nextX =
+              anchor === "start" && x > 210 ? 210 :
+              anchor === "end" && x < 66 ? 66 :
+              x;
+            if (nextX !== x) {
+              adjustedAttributes = textAttributes.replace(xMatch[0], `x=${xMatch[1]}${nextX}${xMatch[1]}`);
+            }
+          }
+          return `<text${adjustedAttributes}>${escapeHtml(compactLabel)}</text>`;
+        }
+      );
+      const accessibleAttributes = attributes.includes("aria-label")
+        ? attributes
+        : `${attributes} aria-label="${escapeHtml(labels.join("、"))}"`;
+      return `<svg${accessibleAttributes}>${chartWithLabels}</svg>`;
+    }
+  );
+}
+
+/** Presentation-only enhancements shared by free content and authorized premium content. */
+export function enhanceReportHtml(html: string, locale: Locale, editorial = false): string {
+  const simplifiedRadar = simplifyRadarCharts(html);
+  const compacted = compactReliabilityNotice(simplifiedRadar, locale);
+  const tables = enhanceTables(compacted, locale, editorial);
+  return editorial ? renderEditorialChapters(tables) : tables;
+}
