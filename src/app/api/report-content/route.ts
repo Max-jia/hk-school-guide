@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, reason: "bad-slug" }, { status: 400 });
   }
 
-  // 服务端验签：客户端伪造不了（HMAC 密钥只在服务端）
+  // Server-side HMAC verification is required to release paid report content.
   const license = body.license ? verifyLicense(String(body.license), slug) : null;
   if (!license) {
     return NextResponse.json({ ok: false, reason: "no-license" }, { status: 403 });
@@ -60,5 +60,8 @@ export async function POST(req: NextRequest) {
   }
 
   // 回传的是简体源文；客户端按当前语言（繁/简）转换后再渲染
-  return NextResponse.json({ ok: true, slug, html: data.premiumHtml });
+  return NextResponse.json(
+    { ok: true, slug, html: data.premiumHtml },
+    { headers: { "Cache-Control": "private, no-store" } }
+  );
 }
