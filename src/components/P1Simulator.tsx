@@ -69,6 +69,7 @@ type SavedPlan = {
 
 const PLANS_KEY = "p1sim_plans";
 const PLAN_SLOTS = ["方案 A", "方案 B", "方案 C"];
+const ALL_NETS = "全部校网";
 
 export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   const [net, setNet] = useState(INIT_NET);
@@ -83,6 +84,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   const [dragIdx, setDragIdx] = useState<number | null>(null);
   const [plans, setPlans] = useState<SavedPlan[]>([]);
   const [planTip, setPlanTip] = useState("");
+  const [partANetFilter, setPartANetFilter] = useState(ALL_NETS);
 
   const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const out: SchoolOpt[] = [];
@@ -94,6 +96,19 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     const n = P1.nets.find((x) => x.net === net);
     return n ? n.schools.map((sc) => toOpt(sc, n.net, n.area_short)) : [];
   }, [net]);
+
+  // 甲部仍然是全港任选；这里的校网只是候选筛选器，不把甲部错误限制为所属校网。
+  // 性别筛选沿用基本信息中的孩子性别，避免甲乙两部出现相互矛盾的条件。
+  const partASchoolOpts = useMemo<SchoolOpt[]>(() => {
+    return allSchoolOpts.filter((o) => {
+      if (partANetFilter !== ALL_NETS && o.net !== partANetFilter) return false;
+      if (kidGender === "不限") return true;
+      return !(
+        (o.gender === "男校" && kidGender === "女") ||
+        (o.gender === "女校" && kidGender === "男")
+      );
+    });
+  }, [allSchoolOpts, kidGender, partANetFilter]);
 
   function toOpt(sc: (typeof P1.nets)[number]["schools"][number], net: string, area_short: string): SchoolOpt {
     return { name: sc.name, simp: sc.simp, quota: sc.quota, net, area_short, gender: sc.gender, sessions: sc.sessions, through_train: sc.through_train, language: sc.language, religion: sc.religion };
@@ -164,6 +179,19 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     }
     return names;
   }, [partA, filledB, allSchoolOpts, kidGender]);
+
+  const partAGenderMismatchNames = useMemo(() => {
+    const names: string[] = [];
+    for (const s of partA) {
+      const info = allSchoolOpts.find((o) => o.name === s.name.trim());
+      const mismatch = info?.gender && kidGender !== "不限" && (
+        (info.gender === "男校" && kidGender === "女") ||
+        (info.gender === "女校" && kidGender === "男")
+      );
+      if (mismatch && !names.includes(s.name.trim())) names.push(s.name.trim());
+    }
+    return names;
+  }, [partA, allSchoolOpts, kidGender]);
 
   const partAOutOfRoster = useMemo(() => {
     const hit = partA.find((x) => x.name.trim() && !allSchoolOpts.some((o) => o.name === x.name.trim()));
@@ -500,11 +528,34 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 甲部志愿（不受校网限制，最多 3 个）</h2>
             <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
           </div>
+          <div className="mt-3 rounded-[8px] bg-[var(--p-bg)] px-3 py-3 text-sm text-[var(--p-secondary)]">
+            <p>
+              甲部仍可填全港学校；以下条件只用于收窄候选，不改变甲部不受校网限制的规则。
+            </p>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <label className="flex items-center gap-2">
+                <span className="shrink-0 font-mono text-xs font-bold uppercase">候选校网</span>
+                <select
+                  value={partANetFilter}
+                  onChange={(e) => setPartANetFilter(e.target.value)}
+                  className={tierCls + " w-52"}
+                >
+                  <option value={ALL_NETS}>{ALL_NETS}（甲部全港任选）</option>
+                  {P1.nets.map((n) => (
+                    <option key={n.net} value={n.net}>{n.net} 网（{n.area_short}）</option>
+                  ))}
+                </select>
+              </label>
+              <span className="rounded-full bg-[#E7F6F2] px-2 py-1 text-xs font-bold text-[#0F766E]">
+                性别筛选：{kidGender === "不限" ? "不限" : `${kidGender}孩可接受学校`}
+              </span>
+            </div>
+          </div>
           <div className="mt-4 grid gap-2">
             {partA.map((s, i) => (
               <div key={i} className="flex gap-2">
                 <SchoolCombobox
-                  options={allSchoolOpts}
+                  options={partASchoolOpts}
                   value={s.name}
                   onChange={(v) => setRow(partA, setPartA, i, { name: v })}
                   placeholder={`甲部第 ${i + 1} 志愿（全港任选，可搜索或下拉）`}
@@ -524,6 +575,11 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           {partAOutOfRoster && (
             <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
               ⚠️ 「{partAOutOfRoster}」不在官津名册内（可能是直资/私立/国际学校）——不参加统一派位，甲部填了也不会被派位，请走自行申请，或改填官津学校。
+            </p>
+          )}
+          {partAGenderMismatchNames.length > 0 && (
+            <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
+              ⚠️ 甲部有性别不符的学校：{partAGenderMismatchNames.join("、")}。当前性别筛选已将这类学校排除在候选下拉之外，请替换志愿。
             </p>
           )}
         </section>
