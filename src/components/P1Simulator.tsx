@@ -65,6 +65,8 @@ type SavedPlan = {
   kidGender: string;
   partANetFilter?: string;
   partAGenderFilter?: string;
+  partBNetFilter?: string;
+  partBGenderFilter?: string;
   partA: SimSchool[];
   partB: SimSchool[];
 };
@@ -88,6 +90,8 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   const [plans, setPlans] = useState<SavedPlan[]>([]);
   const [planTip, setPlanTip] = useState("");
   const [partANetFilter, setPartANetFilter] = useState(ALL_NETS);
+  const [partBNetFilter, setPartBNetFilter] = useState(INIT_NET);
+  const [partBGenderFilter, setPartBGenderFilter] = useState("不限");
 
   const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const out: SchoolOpt[] = [];
@@ -95,10 +99,10 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     return out;
   }, []);
 
-  const netSchoolOpts = useMemo<SchoolOpt[]>(() => {
-    const n = P1.nets.find((x) => x.net === net);
+  const partBSchoolOpts = useMemo<SchoolOpt[]>(() => {
+    const n = P1.nets.find((x) => x.net === partBNetFilter);
     return n ? n.schools.map((sc) => toOpt(sc, n.net, n.area_short)) : [];
-  }, [net]);
+  }, [partBNetFilter]);
 
   // 甲部仍然是全港任选；这里的校网和性别都是甲部自己的候选筛选器，
   // 不读取基本信息的孩子性别，也不把甲部错误限制为所属校网。
@@ -118,17 +122,17 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   }
 
   const quotaMap = useMemo(() => {
-    const n = P1.nets.find((x) => x.net === net);
+    const n = P1.nets.find((x) => x.net === partBNetFilter);
     const m = new Map<string, number>();
     if (n) for (const sc of n.schools) m.set(sc.name, sc.quota ?? 0);
     return m;
-  }, [net]);
+  }, [partBNetFilter]);
 
   // 乙部可填上限 = 本网官津学校数（官方 30 只是表格上限）
   const targetB = useMemo(() => {
-    const n = P1.nets.find((x) => x.net === net);
+    const n = P1.nets.find((x) => x.net === partBNetFilter);
     return n ? Math.min(30, n.schools.length) : 30;
-  }, [net]);
+  }, [partBNetFilter]);
 
   useEffect(() => {
     setUnlocked(localStorage.getItem("purchased_p1-sim") === "true");
@@ -136,7 +140,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
       const raw = localStorage.getItem("p1sim_input");
       if (raw) {
         const d = JSON.parse(raw) as {
-          net?: string; rel?: string; org?: string; kidGender?: string; partANetFilter?: string; partAGenderFilter?: string; partA?: SimSchool[]; partB?: SimSchool[];
+          net?: string; rel?: string; org?: string; kidGender?: string; partANetFilter?: string; partAGenderFilter?: string; partBNetFilter?: string; partBGenderFilter?: string; partA?: SimSchool[]; partB?: SimSchool[];
         };
         if (d.net && P1.nets.some((n) => n.net === d.net)) setNet(d.net);
         if (typeof d.rel === "string") setRel(d.rel);
@@ -144,6 +148,10 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
         if (typeof d.kidGender === "string") setKidGender(d.kidGender);
         if (typeof d.partANetFilter === "string") setPartANetFilter(d.partANetFilter);
         if (typeof d.partAGenderFilter === "string") setPartAGenderFilter(d.partAGenderFilter);
+        if (typeof d.partBNetFilter === "string" && P1.nets.some((n) => n.net === d.partBNetFilter)) setPartBNetFilter(d.partBNetFilter);
+        else if (d.net && P1.nets.some((n) => n.net === d.net)) setPartBNetFilter(d.net);
+        if (typeof d.partBGenderFilter === "string") setPartBGenderFilter(d.partBGenderFilter);
+        else if (typeof d.kidGender === "string") setPartBGenderFilter(d.kidGender);
         if (d.partA) setPartA(d.partA);
         if (d.partB) setPartB(d.partB);
       }
@@ -175,14 +183,14 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
       const info = allSchoolOpts.find((o) => o.name === s.name.trim());
       if (
         info?.gender &&
-        kidGender !== "不限" &&
-        ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"))
+        partBGenderFilter !== "不限" &&
+        ((info.gender === "男校" && partBGenderFilter === "女") || (info.gender === "女校" && partBGenderFilter === "男"))
       ) {
         if (!names.includes(s.name.trim())) names.push(s.name.trim());
       }
     }
     return names;
-  }, [filledB, allSchoolOpts, kidGender]);
+  }, [filledB, allSchoolOpts, partBGenderFilter]);
 
   const partAGenderMismatchNames = useMemo(() => {
     const names: string[] = [];
@@ -205,9 +213,9 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   const partBOutOfRoster = useMemo(() => {
     // 乙部只能填当前所属校网；切换校网后保留的旧草稿不能继续参加
     // 滑档线/排序推导，否则未知学额会被当成普通档，结果会误导用户。
-    const hit = filledB.find((x) => !netSchoolOpts.some((o) => o.name === x.name.trim()));
+    const hit = filledB.find((x) => !partBSchoolOpts.some((o) => o.name === x.name.trim()));
     return hit ? hit.name.trim() : null;
-  }, [filledB, netSchoolOpts]);
+  }, [filledB, partBSchoolOpts]);
 
   const slide = useMemo(
     () => computeSlideLine(filledB, (n) => quotaMap.get(n) ?? null),
@@ -227,7 +235,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     if (genderMismatchNames.length) {
       tips.push({
         kind: "danger",
-        text: `性别不符：${genderMismatchNames.join("、")} 为${kidGender === "女" ? "男校" : "女校"}，${kidGender === "女" ? "女孩" : "男孩"}不会获派，请移除或改填男女校。`,
+        text: `乙部性别不符：${genderMismatchNames.join("、")} 不符合乙部候选性别筛选，请移除或改填男女校。`,
       });
     }
     if (partAGenderMismatchNames.length) {
@@ -244,19 +252,19 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
 
     if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，建议解锁完整报告再核对一遍。" });
     return tips.slice(0, 3);
-  }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB, genderMismatchNames, kidGender, partAGenderMismatchNames, partA, filledB]);
+  }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB, genderMismatchNames, partAGenderMismatchNames, partA, filledB]);
 
   // 输入变化自动写入本机草稿：填校网/学校/计分条件都会实时保存，报告页才能读到
   function persist() {
     try {
-      localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, kidGender, partANetFilter, partAGenderFilter, score: calcScore(rel, org), netSchoolCount: targetB, partA, partB }));
+      localStorage.setItem("p1sim_input", JSON.stringify({ net, rel, org, kidGender, partANetFilter, partAGenderFilter, partBNetFilter, partBGenderFilter, score: calcScore(rel, org), netSchoolCount: targetB, partA, partB }));
     } catch { /* ignore */ }
   }
 
   useEffect(() => {
     persist();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [net, rel, org, kidGender, partANetFilter, partAGenderFilter, partA, partB, targetB]);
+  }, [net, rel, org, kidGender, partANetFilter, partAGenderFilter, partBNetFilter, partBGenderFilter, partA, partB, targetB]);
 
   function save() {
     persist();
@@ -302,10 +310,11 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   }
 
   function planMetrics(plan: SavedPlan) {
-    const n = P1.nets.find((x) => x.net === plan.net);
+    const bNet = plan.partBNetFilter || plan.net;
+    const n = P1.nets.find((x) => x.net === bNet);
     const netCount = n ? Math.min(30, n.schools.length) : 30;
     const rep = runSimCheck({
-      net: plan.net,
+      net: bNet,
       score: calcScore(plan.rel, plan.org),
       partA: plan.partA,
       partB: plan.partB,
@@ -313,7 +322,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     });
     const slide = computeSlideLine(
       plan.partB.filter((s) => s.name.trim()),
-      (nm) => quotaOfAny(plan.net, nm)
+      (nm) => quotaOfAny(bNet, nm)
     );
     return { rep, slide };
   }
@@ -335,6 +344,8 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
       kidGender,
       partANetFilter,
       partAGenderFilter,
+      partBNetFilter,
+      partBGenderFilter,
       partA,
       partB,
     };
@@ -354,6 +365,8 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     setKidGender(p.kidGender);
     setPartANetFilter(p.partANetFilter || ALL_NETS);
     setPartAGenderFilter(p.partAGenderFilter || "不限");
+    setPartBNetFilter(p.partBNetFilter || p.net);
+    setPartBGenderFilter(p.partBGenderFilter || p.kidGender || "不限");
     setPartA(p.partA);
     setPartB(p.partB);
     setPlanTip(`已载入「${p.name}」，可继续调整`);
@@ -369,8 +382,8 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   function genderBadSchool(o: SchoolOpt) {
     return (
       o?.gender &&
-      kidGender !== "不限" &&
-      ((o.gender === "男校" && kidGender === "女") || (o.gender === "女校" && kidGender === "男"))
+      partBGenderFilter !== "不限" &&
+      ((o.gender === "男校" && partBGenderFilter === "女") || (o.gender === "女校" && partBGenderFilter === "男"))
     );
   }
 
@@ -381,7 +394,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
       const b = relativeBand(o.name, o.quota ?? null);
       return b === "充裕" ? 0 : b === "普通" ? 1 : 2;
     };
-    const candidates = netSchoolOpts
+    const candidates = partBSchoolOpts
       .filter((o) => !filled.has(o.name) && !genderBadSchool(o))
       .sort((a, b) => rank(a) - rank(b) || (b.quota ?? 0) - (a.quota ?? 0));
     const need = Math.max(0, targetB - filled.size);
@@ -484,7 +497,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
               </select>
             </label>
             <label className="block">
-              <span className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">孩子性别（用于排除男/女校）</span>
+              <span className="mb-1.5 block font-mono text-xs uppercase text-[var(--p-secondary)]">孩子性别（阶段一底牌卡用）</span>
               <select value={kidGender} onChange={(e) => setKidGender(e.target.value)} className={inputCls}>
                 {["不限", "男", "女"].map((g) => (
                   <option key={g} value={g}>{g === "不限" ? "不限（先不筛选）" : `${g}孩`}</option>
@@ -617,6 +630,38 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
             <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
             <span className="font-mono text-xs uppercase text-[var(--p-secondary)]">已填 {bCount}/{targetB}（本网共 {targetB} 所）</span>
           </div>
+          <div className="mt-3 rounded-[8px] bg-[var(--p-bg)] px-3 py-3 text-sm text-[var(--p-secondary)]">
+            <p>乙部校网及性别为独立筛选，不读取上方基本信息；乙部实际派位仍以这里选定的所属校网为准。</p>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <label className="flex items-center gap-2">
+                <span className="shrink-0 font-mono text-xs font-bold uppercase">乙部校网</span>
+                <select
+                  value={partBNetFilter}
+                  onChange={(e) => setPartBNetFilter(e.target.value)}
+                  className={tierCls + " w-52"}
+                >
+                  {P1.nets.map((n) => (
+                    <option key={n.net} value={n.net}>{n.net} 网（{n.area_short}）</option>
+                  ))}
+                </select>
+              </label>
+              <label className="flex items-center gap-2">
+                <span className="shrink-0 font-mono text-xs font-bold uppercase">乙部性别</span>
+                <select
+                  value={partBGenderFilter}
+                  onChange={(e) => setPartBGenderFilter(e.target.value)}
+                  className={tierCls + " w-32"}
+                >
+                  <option value="不限">不限（不筛选）</option>
+                  <option value="男">男孩（男校＋男女校）</option>
+                  <option value="女">女孩（女校＋男女校）</option>
+                </select>
+              </label>
+              <span className="rounded-full bg-[#E7F6F2] px-2 py-1 text-xs font-bold text-[#0F766E]">
+                乙部独立筛选：{partBGenderFilter === "不限" ? "不限" : `${partBGenderFilter}孩可接受${partBGenderFilter === "男" ? "男校＋男女校" : "女校＋男女校"}`}
+              </span>
+            </div>
+          </div>
           <div className="mt-2 rounded-[8px] bg-[var(--p-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
             <b className="text-[var(--p-fg)]">冲刺 / 匹配 / 保底 是什么意思？</b><br />
             统派像「抢椅子」：电脑按你填的顺序，从乙一开始一所一所试——这所学额还够吗、你的随机编号排得上吗？排不上就试下一所，直到有一所把你收下。所以每所志愿都要按你的偏好放：
@@ -654,13 +699,19 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   ↑
                 </button>
                 <SchoolCombobox
-                  options={netSchoolOpts}
+                  options={partBSchoolOpts.filter((o) => {
+                    if (partBGenderFilter === "不限") return true;
+                    return !(
+                      (o.gender === "男校" && partBGenderFilter === "女") ||
+                      (o.gender === "女校" && partBGenderFilter === "男")
+                    );
+                  })}
                   value={s.name}
                   onChange={(v) => setRow(partB, setPartB, i, { name: v })}
                   placeholder={`乙部第 ${i + 1} 志愿（可搜索或下拉）`}
                   locale={locale}
                 />
-                {genderBadge(s.name, netSchoolOpts)}
+                {genderBadge(s.name, partBSchoolOpts, partBGenderFilter)}
                 {(quotaMap.get(s.name.trim()) ?? 0) > 0 && (quotaMap.get(s.name.trim()) ?? 0) <= 30 && (
                   <span className="shrink-0 self-center rounded bg-[var(--p-hl-yellow-bg)] px-2 py-1 font-mono text-xs text-[var(--p-fg)]">
                     学额{quotaMap.get(s.name.trim())}
@@ -700,9 +751,9 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
               </div>
               <div className="mt-3 grid gap-2">
                 {filledB.slice(0, unlocked ? filledB.length : 1).map((s2, i2) => {
-                  const info = netSchoolOpts.find((o) => o.name === s2.name.trim());
+                  const info = partBSchoolOpts.find((o) => o.name === s2.name.trim());
                   if (!info) return null;
-                  const genderBad = kidGender !== "不限" && ((info.gender === "男校" && kidGender === "女") || (info.gender === "女校" && kidGender === "男"));
+                  const genderBad = partBGenderFilter !== "不限" && ((info.gender === "男校" && partBGenderFilter === "女") || (info.gender === "女校" && partBGenderFilter === "男"));
                   return (
                     <div key={i2} className="rounded-[8px] border border-[var(--p-gray-300)] bg-[var(--p-card)] px-3 py-2 text-sm">
                       <p className="font-bold text-[var(--p-fg)]">
