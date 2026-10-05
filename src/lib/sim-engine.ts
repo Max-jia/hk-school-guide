@@ -445,6 +445,27 @@ export type OrderAdvice = {
   note: string;
 };
 
+/**
+ * Apply an order suggestion to a rendered volunteer list.
+ *
+ * The engine compares only filled rows, while the UI renders a fixed number
+ * of rows. Keeping this boundary explicit prevents the UI from accidentally
+ * applying a stale/partial suggestion and makes the invariant testable:
+ * every filled school is kept exactly once and empty rows remain at the end.
+ */
+export function applySuggestedOrder(current: SimSchool[], suggested: SimSchool[]): SimSchool[] {
+  const filledCount = current.filter((s) => s.name.trim()).length;
+  const reordered = suggested
+    .filter((s) => s.name.trim())
+    .slice(0, filledCount)
+    .map((s) => ({ ...s }));
+  const blankCount = Math.max(0, current.length - reordered.length);
+  return [
+    ...reordered,
+    ...Array.from({ length: blankCount }, () => ({ name: "", tier: "match" as SimTier })),
+  ];
+}
+
 // 乙部顺序建议：规则写死（乙一够得着 / 乙二守得住 / 保底在安全窗口）
 export function suggestOrder(
   partB: SimSchool[],

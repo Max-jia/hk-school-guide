@@ -12,7 +12,7 @@ import SchoolCompare from "@/components/SchoolCompare";
 import SchoolFitCard from "@/components/SchoolFitCard";
 import DataVersionBadge from "@/components/DataVersionBadge";
 import type { SimSchool, SimTier } from "@/lib/sim-engine";
-import { computeSlideLine, suggestOrder, runSimCheck, relativeBand } from "@/lib/sim-engine";
+import { applySuggestedOrder, computeSlideLine, suggestOrder, runSimCheck, relativeBand } from "@/lib/sim-engine";
 import { RENEW_NOTE } from "@/lib/data-version";
 
 const P1 = p1NetsJson as {
@@ -361,10 +361,14 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
 
   // 按建议顺序一键重排（只重排已填学校，空位保留在末尾）
   function applyAdvice() {
-    const sug: SimSchool[] = advice.suggested.map((s) => ({ ...s }));
-    const len = partB.length;
-    while (sug.length < len) sug.push({ name: "", tier: "match" });
-    setPartB(sug);
+    // Recompute from the setter's current value. This avoids applying a
+    // suggestion captured before the last keystroke/drag and keeps the slide
+    // line and the displayed order based on the same snapshot.
+    setPartB((current) => {
+      const currentFilled = current.filter((s) => s.name.trim());
+      const currentAdvice = suggestOrder(currentFilled, (n) => quotaMap.get(n) ?? null);
+      return applySuggestedOrder(current, currentAdvice.suggested);
+    });
   }
 
   function genderBadge(name: string, options: SchoolOpt[]) {
@@ -544,7 +548,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           <div className="mt-3 grid gap-2">
             {partB.map((s, i) => (
               <div
-                key={i}
+                key={`${i}-${s.name}`}
                 draggable
                 onDragStart={() => setDragIdx(i)}
                 onDragOver={(e) => e.preventDefault()}
