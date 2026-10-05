@@ -392,29 +392,11 @@ export function computeSlideLine(
         : `你只填了 1 所（${only.name}，学额 ${only.quota ?? "?"}）——谈不上滑档：这所不中，你不会有第二个落点（不会自动滑到别处）。补上 2-3 所保底校，滑档线才有意义。`,
     };
   }
-  // 滑档线：第一个「充裕」（且非热门校），且其后没有「稀缺/热门」的位置
-  let slideLineIndex: number | null = null;
-  for (let i = 0; i < positions.length; i++) {
-    if (positions[i].band === "充裕") {
-      let restSafe = true;
-      for (let j = i + 1; j < positions.length; j++) {
-        if (positions[j].band === "稀缺") { restSafe = false; break; }
-      }
-      if (restSafe) { slideLineIndex = i + 1; break; }
-    }
-  }
-  // 没有充裕则找第一个「普通」且其后无稀缺的位置
-  if (slideLineIndex === null) {
-    for (let i = 0; i < positions.length; i++) {
-      if (positions[i].band === "普通") {
-        let restSafe = true;
-        for (let j = i + 1; j < positions.length; j++) {
-          if (positions[j].band === "稀缺") { restSafe = false; break; }
-        }
-        if (restSafe) { slideLineIndex = i + 1; break; }
-      }
-    }
-  }
+  // 滑档线：第一所非稀缺位。
+  // 后面的志愿是更低优先级的备选，不应反向否定前面已经出现的相对安全位；
+  // 旧逻辑要求“线后不能再有稀缺位”，重排后很容易把滑档线错误判成 null。
+  const firstNonScarce = positions.findIndex((p) => p.band !== "稀缺");
+  const slideLineIndex: number | null = firstNonScarce >= 0 ? firstNonScarce + 1 : null;
   // 最坏落点：假设滑档线前的抽签区（稀缺/热门）全部落空，
   // 电脑一路试下来会停在滑档线所在的相对安全位；若没有滑档线则无安全落点。
   let worstFall: SlideResult["worstFall"] = null;

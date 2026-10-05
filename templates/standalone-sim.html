@@ -378,11 +378,11 @@ function computeSlideLine(){
       ? "你只填了 1 所（"+only.name+(isHot(only.name)&&(only.quota||0)>25?"，学额 "+only.quota+" 但属传统热门校）":"，学额仅 "+(only.quota||"?")+"）")+"——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。"
       : "你只填了 1 所（"+only.name+"，学额 "+(only.quota||"?")+"）——谈不上滑档：这所不中，你不会有第二个落点（不会自动滑到别处）。补上 2-3 所保底校，滑档线才有意义。"};
   }
-  var line=null;
-  for(var i=0;i<pos.length;i++){
-    if(pos[i].band==="充裕"){ var ok=true; for(var j=i+1;j<pos.length;j++){ if(pos[j].band==="稀缺"){ok=false;break;} } if(ok){line=i+1;break;} }
-  }
-  if(line===null){ for(var i2=0;i2<pos.length;i2++){ if(pos[i2].band==="普通"){ var ok2=true; for(var j2=i2+1;j2<pos.length;j2++){ if(pos[j2].band==="稀缺"){ok2=false;break;} } if(ok2){line=i2+1;break;} } } }
+  // 滑档线：第一所非稀缺位。后面的志愿是更低优先级的备选，
+  // 不应反向否定前面已经出现的相对安全位。
+  var firstNonScarce=-1;
+  for(var i=0;i<pos.length;i++){ if(pos[i].band!=="稀缺"){firstNonScarce=i;break;} }
+  var line=firstNonScarce>=0?firstNonScarce+1:null;
   var worst = line!==null ? {index:line,name:pos[line-1].name} : {index:pos.length+1,name:"（无安全落点）"};
   var scarce=pos.filter(function(p){return p.band==="稀缺";}).length;
   var note = line!==null ? "按当前顺序，第 "+line+" 位起相对安全（这条线之前是热门抽签区）；假设抽签区全落空，你会停在滑档线第 "+worst.index+" 位「"+worst.name+"」。" : "本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。";
