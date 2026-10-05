@@ -171,9 +171,11 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   }, [partA, allSchoolOpts]);
 
   const partBOutOfRoster = useMemo(() => {
-    const hit = filledB.find((x) => !allSchoolOpts.some((o) => o.name === x.name.trim()));
+    // 乙部只能填当前所属校网；切换校网后保留的旧草稿不能继续参加
+    // 滑档线/排序推导，否则未知学额会被当成普通档，结果会误导用户。
+    const hit = filledB.find((x) => !netSchoolOpts.some((o) => o.name === x.name.trim()));
     return hit ? hit.name.trim() : null;
-  }, [filledB, allSchoolOpts]);
+  }, [filledB, netSchoolOpts]);
 
   const slide = useMemo(
     () => computeSlideLine(filledB, (n) => quotaMap.get(n) ?? null),
@@ -728,7 +730,8 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
               )}
               <button
                 onClick={applyAdvice}
-                disabled={advice.differences.length === 0}
+                disabled={advice.differences.length === 0 || Boolean(partBOutOfRoster)}
+                title={partBOutOfRoster ? "请先替换不属于当前校网的乙部学校" : undefined}
                 className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-40"
               >
                 按建议顺序一键重排
