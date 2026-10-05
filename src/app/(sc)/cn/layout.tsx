@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "../../globals.css";
 import { L, LOCALE_META, languageAlternates } from "@/lib/i18n";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 // 简体版本根 layout(/cn 前缀)。
 // route group (sc) 不参与 URL,所以这一棵对应 /cn/**。
@@ -47,6 +48,7 @@ export default function ScRootLayout({
   return (
     <html lang={LOCALE_META.sc.htmlLang} className="h-full antialiased">
       <body className="min-h-full flex flex-col">
+        <GoogleAnalytics />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7649257223930816"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "../globals.css";
 import { L, LOCALE_META, languageAlternates } from "@/lib/i18n";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 // 主版本(繁體)根 layout。簡體版本在 (sc)/cn/layout.tsx,兩個 route group
 // 各有自己的 <html lang>,這樣 SSR 出來的語言宣告才和各版內容一致。
@@ -47,6 +48,7 @@ export default function TcRootLayout({
   return (
     <html lang={LOCALE_META.tc.htmlLang} className="h-full antialiased">
       <body className="min-h-full flex flex-col">
+        <GoogleAnalytics />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7649257223930816"
