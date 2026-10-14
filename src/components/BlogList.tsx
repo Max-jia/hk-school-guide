@@ -75,7 +75,8 @@ export default function BlogList({ locale = "tc" }: { locale?: Locale }) {
           ))}
           <input
             type="text"
-            placeholder="Search…"
+            placeholder={L("搜索热文…", locale)}
+            aria-label={L("搜索热文", locale)}
             value={q}
             onChange={(e) => setQ(e.target.value)}
             className="ml-auto rounded-[6px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-2 text-sm normal-case text-[var(--p-fg)] shadow-[0_2px_1px_rgba(0,0,0,.3)] outline-none"

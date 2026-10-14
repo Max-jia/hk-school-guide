@@ -1,12 +1,13 @@
 "use client";
 
 import Localize from "@/components/Localize";
-import { type Locale } from "@/lib/i18n";
+import { L, type Locale } from "@/lib/i18n";
 
 import { useMemo, useRef, useState } from "react";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import ShortlistButton from "@/components/ShortlistButton";
 import schoolsJson from "@/content/schools.json";
 import kgsJson from "@/content/kindergartens.json";
 import reportMeta from "@/content/report-meta.json";
@@ -54,7 +55,11 @@ function scoreColor(score: number): string {
 export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
   const [tab, setTab] = useState<"ps" | "kg">("ps");
   const [q, setQ] = useState("");
-  const [selected, setSelected] = useState<Item[]>([]);
+  const [selectedByTab, setSelectedByTab] = useState<Record<"ps" | "kg", Item[]>>({ ps: [], kg: [] });
+  const selected = selectedByTab[tab];
+  const setSelectedForTab = (update: (current: Item[]) => Item[]) => {
+    setSelectedByTab((current) => ({ ...current, [tab]: update(current[tab]) }));
+  };
   const boxRef = useRef<HTMLDivElement>(null);
 
   const pool: Item[] = tab === "ps" ? (schoolsJson as unknown as Item[]) : (kgsJson as unknown as Item[]);
@@ -63,21 +68,25 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
     const chars = q.trim().toLowerCase().split("");
     if (!q.trim()) return [];
     return pool
-      .filter((x) => {
-        const hay = ((x as any).name_display || (x as any).name_zh || "").toLowerCase();
-        return chars.every((c) => hay.includes(c));
+      .filter((item) => {
+        const source = item as { name_display?: string; name_zh?: string; simp?: string };
+        const names = [source.name_display, source.name_zh, source.simp]
+          .filter((name): name is string => Boolean(name));
+        const searchableNames = names.flatMap((name) => [name, L(name, "tc"), L(name, "sc")])
+          .map((name) => name.toLowerCase());
+        return searchableNames.some((name) => chars.every((char) => name.includes(char)));
       })
-      .filter((x) => !selected.includes(x))
+      .filter((item) => !selected.includes(item))
       .slice(0, 8);
   }, [q, pool, selected]);
 
   function add(x: Item) {
     if (selected.length >= 3) return;
-    setSelected((p) => [...p, x]);
+    setSelectedForTab((p) => [...p, x]);
     setQ("");
   }
   function remove(x: Item) {
-    setSelected((p) => p.filter((y) => y !== x));
+    setSelectedForTab((p) => p.filter((y) => y !== x));
   }
   function addQuick(name: string) {
     const hit = pool.find((x) => (x as any).name_zh === name || (x as any).name_display === name);
@@ -145,7 +154,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
           {(["ps", "kg"] as const).map((t) => (
             <button
               key={t}
-              onClick={() => { setTab(t); setQ(""); setSelected([]); }}
+              onClick={() => { setTab(t); setQ(""); }}
               className={`rounded-[6px] border border-[var(--p-fg)] px-4 py-1.5 ${
                 tab === t ? "bg-[var(--p-fg)] text-[var(--p-bg)]" : "text-[var(--p-fg)]"
               }`}
@@ -154,6 +163,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
             </button>
           ))}
         </div>
+        <p className="-mt-3 mb-5 text-xs text-[var(--p-secondary)]">切换幼稚园／小学时会分别保留已选学校，切回即可继续对比。</p>
 
         {/* 搜索 */}
         <div className="relative">
@@ -161,6 +171,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder={selected.length >= 3 ? "最多选 3 所（先移除再换）" : "输入学校名称搜索…"}
+            aria-label={L("搜索学校名称", locale)}
             disabled={selected.length >= 3}
             className="w-full rounded-[8px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-3 text-sm text-[var(--p-fg)] shadow-[0_2px_1px_rgba(0,0,0,.3)] outline-none"
           />
@@ -288,6 +299,12 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
                             查看完整报告 →
                           </a>
                         )}
+                        <ShortlistButton
+                          name={(x as any).name_display || (x as any).name_zh}
+                          kind={isKg ? "kindergarten" : "primary"}
+                          href={code ? `/reports/${code}` : undefined}
+                          locale={locale}
+                        />
                       </div>
                     </div>
                   );

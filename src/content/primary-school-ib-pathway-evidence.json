@@ -1,0 +1,760 @@
+{
+  "metadata": {
+    "checked": "2026-10-12",
+    "source": "Official primary-school transition pages and official secondary-school IB programme pages",
+    "note": "Records school-documented primary-to-secondary links and same-school progression clues supported by official secondary IB route evidence. Same-school continuity is not an unconditional admission or IBDP guarantee."
+  },
+  "schools": [
+    {
+      "schoolNo": 214558000123,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "德国瑞士国际学校",
+      "label": "同校 EIS 才銜接 IGCSE／IBDP；GIS 為 DIA，並非 IB 路線",
+      "note": "德瑞國際學校設 English International Stream（EIS）及 German International Stream（GIS）。IB 路線只適用於 EIS：小學採英格蘭國家課程框架，中學 EIS 先銜接 IGCSE，再提供 IBDP；GIS 的高中出口則為 German International Abitur（DIA），不可混為 IB。這兩個小學名錄校號只能確認校名及校址資料，不能據此推定學生已選 EIS、獲同校升中名額，或保證日後入讀 IBDP；這不是無條件升中安排，也不代表小學開辦 IB PYP。校方公開資料未按這兩個校號分列學流及內部升中安排，請向校方按校區、學流和入學 cohort 核實。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "German Swiss International School · English International Stream — Primary",
+      "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/english-international-stream/primary",
+      "relatedSources": [
+        {
+          "sourceLabel": "German Swiss International School · English International Stream — Secondary（IGCSE 至 IBDP）",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/english-international-stream/secondary"
+        },
+        {
+          "sourceLabel": "German Swiss International School · English International Stream — IB",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/english-international-stream/secondary/IB"
+        },
+        {
+          "sourceLabel": "German Swiss International School · German International Stream — DIA",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/german-international-stream/secondary/DIA"
+        },
+        {
+          "sourceLabel": "German Swiss International School · Admissions（EIS／GIS 收生及評核）",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/admissions/how-to-apply?section=assessment"
+        }
+      ]
+    },
+    {
+      "schoolNo": 214558000221,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "德国瑞士国际学校",
+      "label": "同校 EIS 才銜接 IGCSE／IBDP；GIS 為 DIA，並非 IB 路線",
+      "note": "德瑞國際學校設 English International Stream（EIS）及 German International Stream（GIS）。IB 路線只適用於 EIS：小學採英格蘭國家課程框架，中學 EIS 先銜接 IGCSE，再提供 IBDP；GIS 的高中出口則為 German International Abitur（DIA），不可混為 IB。這兩個小學名錄校號只能確認校名及校址資料，不能據此推定學生已選 EIS、獲同校升中名額，或保證日後入讀 IBDP；這不是無條件升中安排，也不代表小學開辦 IB PYP。校方公開資料未按這兩個校號分列學流及內部升中安排，請向校方按校區、學流和入學 cohort 核實。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "German Swiss International School · English International Stream — Primary",
+      "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/english-international-stream/primary",
+      "relatedSources": [
+        {
+          "sourceLabel": "German Swiss International School · English International Stream — Secondary（IGCSE 至 IBDP）",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/english-international-stream/secondary"
+        },
+        {
+          "sourceLabel": "German Swiss International School · English International Stream — IB",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/english-international-stream/secondary/IB"
+        },
+        {
+          "sourceLabel": "German Swiss International School · German International Stream — DIA",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/academics/german-international-stream/secondary/DIA"
+        },
+        {
+          "sourceLabel": "German Swiss International School · Admissions（EIS／GIS 收生及評核）",
+          "sourceUrl": "https://www.gsis.edu.hk/english-stream/admissions/how-to-apply?section=assessment"
+        }
+      ]
+    },
+    {
+      "schoolNo": 214949000523,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "香港法国国际学校",
+      "label": "同校 Chai Wan 英语国际部仅至Y2→须转校区（IBDP；非 PYP）",
+      "note": "此線只適用 FIS International Stream；French Stream循法國國家課程至 Baccalauréat Français，不是IB路線。校方目前列Chai Wan International Stream為Nursery–Y2，升至較高小學年級須轉往其他校區，再經Jardine’s Lookout／Blue Pool Road銜接IGCSE與IBDP。這是多次跨校區的同校網絡線索，不代表無條件升級／升中保證，也不等於保證日後修讀或獲頒 IBDP；轉校區的年級安排、評核、空位和語言流別須按cohort向校方確認。小學課程未列IB PYP，不據此標註PYP。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Education Bureau International Schools Directory · English Stream, Chai Wan Campus",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/96.html",
+      "relatedSources": [
+        {
+          "sourceLabel": "French International School · Chai Wan Early Years & Early Primary (International Stream Nursery–Y2)",
+          "sourceUrl": "https://www.fis.edu.hk/campuses/chai-wan"
+        },
+        {
+          "sourceLabel": "French International School · Campus progression (Jardine’s Lookout Y2–Y7; Blue Pool Road Y8–Y13)",
+          "sourceUrl": "https://www.fis.edu.hk/campuses"
+        },
+        {
+          "sourceLabel": "French International School · International Stream (IEYC/IPC/IMYC/IGCSE/IBDP)",
+          "sourceUrl": "https://www.fis.edu.hk/international-stream"
+        },
+        {
+          "sourceLabel": "French International School · French Stream (French curriculum and Baccalauréat boundary)",
+          "sourceUrl": "https://www.fis.edu.hk/french-stream"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · English Stream, Blue Pool Road Campus (IB secondary candidate)",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/97.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 214949000723,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "香港法国国际学校",
+      "label": "同校 Tseung Kwan O 英语国际部 Nursery–Y6→IGCSE／IBDP（跨校区；非 PYP）",
+      "note": "此線只適用 FIS English-taught International Stream，不適用循法國課程至 Baccalauréat Français 的 French Stream。校方校區頁列Tseung Kwan O International Stream為Nursery–Y6，之後Y3–Y7位於Jardine’s Lookout、Y7–Y13位於Blue Pool Road；學校另有IGCSE及IBDP。這是跨校區同校課程規劃線索，不代表無條件升中保證，也不等於保證日後修讀或獲頒 IBDP；內部轉校、名額、評核與語言流別均須按cohort向招生處確認。小學課程未列IB PYP，不據此標註PYP。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Education Bureau International Schools Directory · English Stream, Tseung Kwan O Campus",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/62.html",
+      "relatedSources": [
+        {
+          "sourceLabel": "French International School · Tseung Kwan O Campus (International Stream Nursery–Y6)",
+          "sourceUrl": "https://www.fis.edu.hk/campuses/tseung-kwan-o"
+        },
+        {
+          "sourceLabel": "French International School · Campus progression (Jardine’s Lookout Y2–Y7; Blue Pool Road Y8–Y13)",
+          "sourceUrl": "https://www.fis.edu.hk/campuses"
+        },
+        {
+          "sourceLabel": "French International School · International Stream (IEYC/IPC/IMYC/IGCSE/IBDP)",
+          "sourceUrl": "https://www.fis.edu.hk/international-stream"
+        },
+        {
+          "sourceLabel": "French International School · French Stream (French curriculum and Baccalauréat boundary)",
+          "sourceUrl": "https://www.fis.edu.hk/french-stream"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · English Stream, Blue Pool Road Campus (IB secondary candidate)",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/97.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 215589000123,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "漢基國際學校",
+      "label": "同校中學段開辦 IB MYP／DP；小學為雙語探究課程，非 PYP",
+      "note": "漢基國際學校官方小學頁將小學課程描述為中英雙語、探究及整合式教學，沒有把它稱為 IB PYP；中學官方課程頁列出 Year 7–9 修讀 IB MYP、Year 10 必須赴杭州參與全年 CIS Hangzhou、Year 11 修讀校本銜接課程、Year 12–13 修讀 IBDP。這是一條校內小學到中學 IB 路線的規劃線索，不代表無條件升中保證，也不等於保證日後修讀 IBDP。中學部亦公開接受 Year 7 外部申請並提供新學額，但公開資料未單獨說明現有小學學生的內部升中資格或安排；家長須向校方確認當屆規則，並評估 Year 10 杭州寄宿學年的適合度與家庭安排。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Chinese International School · Primary Programme（雙語探究式小學課程）",
+      "sourceUrl": "https://www.cis.edu.hk/academics/primary/primary-programme",
+      "relatedSources": [
+        {
+          "sourceLabel": "Chinese International School · Secondary Programme（MYP、杭州、校本銜接與 IBDP）",
+          "sourceUrl": "https://www.cis.edu.hk/academics/secondary/overview"
+        },
+        {
+          "sourceLabel": "Chinese International School · Year 7–13 Applicants（外部 Year 7 收生及課程年級）",
+          "sourceUrl": "https://www.cis.edu.hk/admissions/admissions-process/secondary"
+        }
+      ]
+    },
+    {
+      "schoolNo": 216003000223,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "Singapore International School (Hong Kong)",
+      "label": "同校新加坡课程→IGCSE→两年制 IBDP（小学未列 PYP）",
+      "note": "EDB及校方资料列SISHK提供由小学到高中预科的同校课程，Primary采用新加坡课程，Secondary 3–4衔接Cambridge IGCSE，之后提供两年制IB Diploma Programme；校方称多数本校小学学生继续升读中学与IBDP。此为同校衔接线索，不代表無條件升中保證，也不等於保證日後修讀或獲頒 IBDP。校方仍接受Secondary 1–3及IBDP Year 1独立申请并进行评估，内部升中及IBDP名额／条件须按入学cohort向校方确认；小学课程未列IB PYP，不据此标注PYP。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Education Bureau International Schools Directory · SISHK Nam Long Shan Road Campus",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/105.html",
+      "relatedSources": [
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · SISHK Police School Road Campus",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/35.html"
+        },
+        {
+          "sourceLabel": "Singapore International School (Hong Kong) · Primary curriculum",
+          "sourceUrl": "https://www.singapore.edu.hk/primary-2/"
+        },
+        {
+          "sourceLabel": "Singapore International School (Hong Kong) · Secondary curriculum and IGCSE-to-IB progression",
+          "sourceUrl": "https://www.singapore.edu.hk/secondary-2/"
+        },
+        {
+          "sourceLabel": "Singapore International School (Hong Kong) · IB Diploma",
+          "sourceUrl": "https://www.singapore.edu.hk/ib-diploma-2/"
+        },
+        {
+          "sourceLabel": "Singapore International School (Hong Kong) · Secondary admissions and current entry conditions",
+          "sourceUrl": "https://www.singapore.edu.hk/secondary-admissions/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 216011000523,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "香港加拿大国际学校",
+      "label": "同校 IB 路線：PYP（小學至 Grade 5）→ MYP（Grade 6–10）→ DP（Grade 11–12）",
+      "note": "CDNIS官方資料列有小學PYP、中學MYP及高中DP連續課程。校方資料列OSSD學分涵蓋Grade 9–12：Grades 9–10修讀MYP並累積Ontario Secondary School Diploma（OSSD）學分，Grades 11–12修讀DP並累積OSSD學分；OSSD是額外安省文憑，不是DSE或A-Level。EDB與校方不同頁面的PYP最低年級標示有差異，申請年級應直接確認。同校課程連續不代表無條件升中保證或保證獲派指定課程，也不等於保證日後修讀或獲頒完整IBDP；入學仍按當屆空缺、評估及招生規則處理。",
+      "priority": 0,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "CDNIS · IB Programme",
+      "sourceUrl": "https://www.cdnis.edu.hk/en/our-programmes/ib-programmes/",
+      "relatedSources": [
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Canadian International School of Hong Kong",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/61.html"
+        },
+        {
+          "sourceLabel": "CDNIS · Lower School",
+          "sourceUrl": "https://www.cdnis.edu.hk/en/our-programmes/lower-school/"
+        },
+        {
+          "sourceLabel": "CDNIS · Upper School",
+          "sourceUrl": "https://www.cdnis.edu.hk/en/our-programmes/upper-school/"
+        },
+        {
+          "sourceLabel": "CDNIS Admissions Information Guide · 2027/2028 (published 2026-08-01)",
+          "sourceUrl": "https://www.cdnis.edu.hk/upload/page/15/self/CDNIS_Admissions_eng.pdf"
+        }
+      ]
+    },
+    {
+      "schoolNo": 216186000323,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "Carmel School Hong Kong · Elsa High School",
+      "label": "同校系 IB 課程：PYP（Nursery–Grade 5）→ MYP（Grade 6–10）→ DP（Grade 11–12）",
+      "note": "Carmel官方IB頁列出同一校系由小學PYP至Elsa High School中學部MYP及DP的課程段，為有意走IB的家庭提供同校系路線參考。小學與Elsa High School為不同校區；校方對高年級入學設評估，Grade 11申請另有前置課程要求。公開資料未證實小學畢業生自動升中，故不代表無條件升中保證；DP課程亦不等於保證日後修讀或獲頒完整 IBDP，須確認當屆收生及課程要求。",
+      "priority": 0,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Carmel School Hong Kong · The IB Curriculum",
+      "sourceUrl": "https://www.carmel.edu.hk/academics/ib",
+      "relatedSources": [
+        {
+          "sourceLabel": "Carmel School · High School Academic Profile 2025–26",
+          "sourceUrl": "https://resources.finalsite.net/images/v1770886196/elsa/mtcpw4rv13nutllwlltj/CarmelSchoolAcademicProfile2025-26Feb26.pdf"
+        },
+        {
+          "sourceLabel": "Carmel School · Contact / Elsa High School Campus",
+          "sourceUrl": "https://www.carmel.edu.hk/contact"
+        },
+        {
+          "sourceLabel": "Carmel School · Admissions",
+          "sourceUrl": "https://www.carmel.edu.hk/admissions"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Carmel School (Borrett Road Campus)",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/55.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 216275000623,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "Australian International School Hong Kong",
+      "label": "同校 Prep–Year 10 澳洲／NESA课程→Year 11–12 可选 IBDP（小学未列 PYP）",
+      "note": "AISHK校方列小学Prep–Year 6采用ACARA澳洲课程、中学Year 7–10采用NESA课程；高中Year 11–12可选择IB Diploma Programme或NSW HSC。官方小學資料未列 IB PYP，不據此標註 PYP。此推薦表示同校有後續 IB 課程可供規劃，不代表無條件升中保證，也不等於保證日後修讀或獲頒 IBDP；學校未在公開資料中列明小學內部升中資格、IBDP 入讀門檻、名額或個別學生適配條件，須按入學 cohort 向校方核實。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Australian International School Hong Kong · Primary School",
+      "sourceUrl": "https://www.aishk.edu.hk/learning/primary-school",
+      "relatedSources": [
+        {
+          "sourceLabel": "Australian International School Hong Kong · Secondary School（Year 7–10 NESA）",
+          "sourceUrl": "https://www.aishk.edu.hk/learning/secondary-school"
+        },
+        {
+          "sourceLabel": "Australian International School Hong Kong · Senior Years（Year 11–12 IBDP／NSW HSC）",
+          "sourceUrl": "https://www.aishk.edu.hk/learning/senior-years"
+        },
+        {
+          "sourceLabel": "Australian International School Hong Kong · Admissions",
+          "sourceUrl": "https://www.aishk.edu.hk/admissions"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Australian International School Hong Kong",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/60.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 230979000123,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "International College Hong Kong · Secondary",
+      "label": "同校系伙伴校優先 PYP → IBDP 銜接：ICHK Hong Lok Yuen Primary → ICHK Secondary（Year 12–13）",
+      "note": "EDB名錄列明ICHK Hong Lok Yuen為認證IB PYP小學，並稱其學生可優先申請伙伴中學International College Hong Kong；兩校為不同校區。中學由Year 7開辦，Year 10–11為IGCSE／BTEC，Year 12–13提供IBDP。優先考慮不等於保證中學學位，也不構成無條件升中保證：校方仍要求有空位、符合入學要求和英語能力，並由校長作最終決定；Year 12–13開辦IBDP不等於保證日後修讀或獲頒完整 IBDP。",
+      "priority": 1,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Education Bureau International Schools Directory · ICHK Hong Lok Yuen Primary Section",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/19.html",
+      "relatedSources": [
+        {
+          "sourceLabel": "ICHK · Admissions Info (capacity and partner-school priority)",
+          "sourceUrl": "https://www.ichk.edu.hk/join/admissions-info"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · International College Hong Kong (New Territories)",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/18.html"
+        },
+        {
+          "sourceLabel": "ICHK · Years 12–13 IBDP Curriculum Brochure 2025–27",
+          "sourceUrl": "https://www.ichk.edu.hk/assets/resources/years-12-13-brochure-2025-27.pdf"
+        },
+        {
+          "sourceLabel": "ICHK · Academic Results",
+          "sourceUrl": "https://www.ichk.edu.hk/academic"
+        }
+      ]
+    },
+    {
+      "schoolNo": 325147000223,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "Yew Chung International School - Secondary",
+      "label": "耀中小學雙語課程→同校／同教育網絡 IGCSE→IBDP（小學未列 PYP）",
+      "note": "教育局列耀中小學以英格蘭國家課程為基礎、英語及普通話為授課語言；耀中教育基金會描述香港YCIS為由幼兒教育至中學的through-train，EDB中學條目則列IGCSE及Year 12–13 IBDP。這是同教育網絡課程路線線索，不代表無條件升中保證，也不等於保證日後修讀或獲頒IBDP。EDB只列「內部網絡轉校」為入學優先類別，並非自動升中規則；校方未公開本校小六升中名額、內部評核及Year 12 IBDP門檻，須按入學cohort向招生處確認。小學課程未列IB PYP，不將之標作PYP。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Education Bureau International Schools Directory · YCIS Primary",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/107.html",
+      "relatedSources": [
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · YCIS Secondary curriculum and fees",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/94.html"
+        },
+        {
+          "sourceLabel": "Yew Chung International School · Secondary IBDP (Years 12–13)",
+          "sourceUrl": "https://www.ycis-hk.com/en/academics/secondary/ib-programme-years-12-13"
+        },
+        {
+          "sourceLabel": "Yew Chung International School · Admissions Overview",
+          "sourceUrl": "https://www.ycis-hk.com/en/admissions/overview"
+        },
+        {
+          "sourceLabel": "Yew Chung Education Foundation · YCIS Hong Kong through-train description",
+          "sourceUrl": "https://www.ycef.com/sister-school/ycis-hk/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 510777000123,
+      "route": "ib",
+      "linkedSchoolName": "拔萃男書院",
+      "label": "一條龍（合資格小六可銜接）；G10 IB 銜接課程須評核",
+      "note": "拔萃男書院附屬小學校方稱作為 through-train school，向符合資格的 Grade Six 男生提供升讀中學部的銜接；中學 G7 收生由校方辦理、不參與 SSPA。小學公開頁未列明「符合資格」的具體門檻，也未說明內部升中資格是否與一般 G7 甄選流程相同；家長須向校方核實當屆安排，不可解讀為所有學生無條件保證升中。中學 IB 部另設 G10 Bridging Year Programme（BYP），官方明示內部及外部申請人均須參加入學評核；G11–12 才是兩年制 IBDP。因此此資料表示小學至中學部有條件銜接、且中學有 IB 路線，不代表小學開辦 PYP、升中即自動進入 BYP，或保證獲取 IBDP 學位。每屆資格及收生安排以校方最新公布為準。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "拔萃男書院附屬小學 · 小一入學資訊（through-train 說明）",
+      "sourceUrl": "https://www.dbspd.edu.hk/g1-admission",
+      "relatedSources": [
+        {
+          "sourceLabel": "拔萃男書院 · G7 中一校本收生及 SSPA 安排",
+          "sourceUrl": "https://www.dbs.edu.hk/index.php?m=latestnews&s=admission"
+        },
+        {
+          "sourceLabel": "DBSIB · G10 Bridging Year Programme 入學要求及評核",
+          "sourceUrl": "https://www.ib.dbs.edu.hk/admission-g10"
+        },
+        {
+          "sourceLabel": "DBSIB · G10 Bridging Year Programme 課程定位",
+          "sourceUrl": "https://www.ib.dbs.edu.hk/g10"
+        },
+        {
+          "sourceLabel": "DBSIB · G11–12 IBDP 課程年級",
+          "sourceUrl": "https://www.ib.dbs.edu.hk/g11-12"
+        }
+      ]
+    },
+    {
+      "schoolNo": 513822000123,
+      "route": "ib",
+      "relationshipType": "linked",
+      "linkedSchoolName": "滬江維多利亞學校",
+      "label": "《小學概覽 2026》列為「聯繫中學」；VSA 校內設 IB 課程",
+      "note": "CHSC《小學概覽 2026》把「滬江維多利亞學校」列為滬江小學的「聯繫中學」。這只確認名錄中的聯繫關係；未找到校方公布的優先升中、保留學位或自動升讀安排，因此不代表優先取錄或無條件升中保證。VSA 官方 IB 課程頁列有 PYP、MYP、DP，但這是 VSA 本身的課程資料，不能據此推定滬江小學開辦 PYP，亦未證明滬江小學畢業生享有 VSA 內部銜接名額。若以 IB 為目標，應把此視作需向兩校核實的低確定度銜接線索；即使獲 VSA 中學取錄，也不等於保證日後修讀 IBDP。",
+      "priority": 6,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "CHSC《小學概覽 2026》· 聯繫中學欄",
+      "sourceUrl": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=38",
+      "relatedSources": [
+        {
+          "sourceLabel": "滬江維多利亞學校 · IB Continuum",
+          "sourceUrl": "https://www.vsa.edu.hk/learning/ib-continuum"
+        }
+      ]
+    },
+    {
+      "schoolNo": 514187000323,
+      "route": "ib",
+      "linkedSchoolName": "聖保羅男女中學",
+      "label": "一條龍升中有學業及品德門檻；IBDP須中三後另行申請",
+      "note": "附屬小學官方簡介稱小六學生毋須參加甄選考試，但須達到一定學業及品德水平才可升讀聖保羅男女中學；這不是無條件升中保證。中學同時提供 HKDSE 與 IBDP；校方的 IBDP F4 預備年供有意於 F5–F6 修讀 IBDP 的學生申請，須完成 F3 或同等學歷並具良好學術潛力。因此這是小學至中學的有條件銜接及高中 IB 選項，不代表小學開辦 PYP，也不代表自動升中後必然入讀 IBDP。當屆要求與安排請以校方最新公布為準。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "聖保羅男女中學附屬小學 · 簡介（一條龍升中條件）",
+      "sourceUrl": "https://www.spccps.edu.hk/tc/subject/introduction",
+      "relatedSources": [
+        {
+          "sourceLabel": "聖保羅男女中學 · IBDP 課程介紹（與 HKDSE 並行）",
+          "sourceUrl": "https://www.spcc.edu.hk/academic/curriculum/ibdp"
+        },
+        {
+          "sourceLabel": "聖保羅男女中學 · IBDP 及 F4 預備年收生要求",
+          "sourceUrl": "https://www.spcc.edu.hk/english/admissions/ib_diploma_programme"
+        }
+      ]
+    },
+    {
+      "schoolNo": 517372000123,
+      "route": "ib",
+      "linkedSchoolName": "聖士提反書院",
+      "label": "附屬小學畢業生符合校方學業要求可獲中一優先取錄；書院開辦 IBDP",
+      "note": "聖士提反書院附屬小學稱本身為書院的 feeder school，並表示符合學業要求的畢業生可獲中一優先取錄。這是有條件的優先安排，不應簡化為無條件保證；家長須向校方核實當屆的學業門檻和申請安排。書院另於中五至中六開辦 IBDP；獲中一取錄不等於保證日後選讀或入讀 IBDP。",
+      "priority": 1,
+      "checkedOn": "2026-10-11",
+      "sourceLabel": "St Stephen’s College Preparatory School · Language Curriculum and Feeder School",
+      "sourceUrl": "https://www.sscps.edu.hk/curriculum/language",
+      "relatedSources": [
+        {
+          "sourceLabel": "St Stephen’s College · IB Diploma Programme (S5–S6)",
+          "sourceUrl": "https://www.ssc.edu.hk/en/site/view?name=IBIntroduction"
+        }
+      ]
+    },
+    {
+      "schoolNo": 539155000323,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "香港學堂",
+      "label": "同校 IB 路線：PYP（Early Years–Grade 5）→ MYP（Grade 6–10）→ DP（Grade 11–12）",
+      "note": "HKA官方資料列同校提供PYP（Early Years–Grade 5）、MYP（Grade 6–10）及DP（Grade 11–12）。Grade 11–12可按科目選IB DP level或High School level courses；校方另列所有畢業生獲HKA Diploma及Global Citizen Diploma（GCD），並稱超過九成修讀完整IB Diploma或IB課程（兩者合計，不能解讀為超過九成取得完整IBDP）。同校課程連續不代表無條件升中保證，也不等於保證每名學生修讀或獲頒完整IBDP；名額、選科及畢業資格須按當屆校方規則確認。",
+      "priority": 0,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Hong Kong Academy · IB Curriculum",
+      "sourceUrl": "https://hkacademy.edu.hk/ib-curriculum/",
+      "relatedSources": [
+        {
+          "sourceLabel": "Hong Kong Academy · IB World School Directory",
+          "sourceUrl": "https://www.ibo.org/en/school/2218/"
+        },
+        {
+          "sourceLabel": "Hong Kong Academy · Secondary School",
+          "sourceUrl": "https://hkacademy.edu.hk/secondary-school/"
+        },
+        {
+          "sourceLabel": "Hong Kong Academy · Pathways to Graduation",
+          "sourceUrl": "https://hkacademy.edu.hk/pathways-to-graduation/"
+        },
+        {
+          "sourceLabel": "Hong Kong Academy · Admissions",
+          "sourceUrl": "https://hkacademy.edu.hk/admissions/"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Hong Kong Academy",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/15.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 543292000223,
+      "route": "ib",
+      "linkedSchoolName": "優才（楊殷有娣）書院",
+      "label": "小學至中學一條龍校系；中學部提供 IBDP 路線",
+      "note": "校方《2026–27簡介》稱 G.T. College 為男女校 through-train school，並列出中學階段 IBDP／HKDSE 雙軌。這支持小學與中學屬同一校系、且中學有 IB 選項的規劃線索；目前核實資料未證明小學部採用 IB PYP。簡介未列明內部升中資格或安排，也未說明學生進入中學後修讀 IBDP 的年級、條件或名額，因此不能解讀為無條件升中保證或自動入讀 IBDP；家長須向校方確認當屆安排。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "G.T. College · 2026–27 簡介（男女校 through-train 及中學雙軌課程）",
+      "sourceUrl": "https://www.gtcollege.edu.hk/wp-content/uploads/2025/10/2026-27-GT-College-School-Prospectus-CHIENG%E9%9B%99%E8%AA%9E-V4.7.4.pdf",
+      "relatedSources": [
+        {
+          "sourceLabel": "G.T. College · International Baccalaureate Diploma Programme",
+          "sourceUrl": "https://www.gtcollege.edu.hk/international-baccalaureate/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 543292000323,
+      "route": "ib",
+      "linkedSchoolName": "優才（楊殷有娣）書院",
+      "label": "小學至中學一條龍校系；中學部提供 IBDP 路線",
+      "note": "校方《2026–27簡介》稱 G.T. College 為男女校 through-train school，並列出中學階段 IBDP／HKDSE 雙軌。這支持小學與中學屬同一校系、且中學有 IB 選項的規劃線索；目前核實資料未證明小學部採用 IB PYP。簡介未列明內部升中資格或安排，也未說明學生進入中學後修讀 IBDP 的年級、條件或名額，因此不能解讀為無條件升中保證或自動入讀 IBDP；家長須向校方確認當屆安排。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "G.T. College · 2026–27 簡介（男女校 through-train 及中學雙軌課程）",
+      "sourceUrl": "https://www.gtcollege.edu.hk/wp-content/uploads/2025/10/2026-27-GT-College-School-Prospectus-CHIENG%E9%9B%99%E8%AA%9E-V4.7.4.pdf",
+      "relatedSources": [
+        {
+          "sourceLabel": "G.T. College · International Baccalaureate Diploma Programme",
+          "sourceUrl": "https://www.gtcollege.edu.hk/international-baccalaureate/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 543314000223,
+      "route": "ib",
+      "linkedSchoolName": "香港華人基督教聯會真道書院",
+      "label": "校方自述直資一條龍；中學階段提供 IBDP 選項",
+      "note": "真道書院官方資料稱學校採十一年一條龍課程，並提供 HKDSE 與 IBDP；校方課程架構把 MS3、MS4 分列為 DSE 與 IB 路線，並說明 IBDP 為兩年制課程。這支持「可在同一校系繼續，並於高中階段選擇 IB 路線」的規劃線索；此處一條龍按校方課程資料表述，不延伸推定為教育局指定派位保障。這些資料不是無條件保證升中或保證修讀 IBDP；也不代表小學開辦 IB PYP。公開課程資料未列明內部升中資格及選擇 IBDP 路線的門檻，需按學生 cohort 向校方確認當屆安排。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "真道書院 · IB 課程簡介（一條龍及中學課程路線）",
+      "sourceUrl": "https://www.logosacademy.edu.hk/tc/ib-curriculum",
+      "relatedSources": [
+        {
+          "sourceLabel": "真道書院 · English IB Curriculum（兩年制 IBDP 說明）",
+          "sourceUrl": "https://www.logosacademy.edu.hk/en/ib-curriculum"
+        },
+        {
+          "sourceLabel": "真道書院 · School-based Curriculum Plan（MS3／MS4 DSE 與 IB 路線）",
+          "sourceUrl": "https://www.logosacademy.edu.hk/en/school-based-curriculum-plan"
+        },
+        {
+          "sourceLabel": "真道書院 · Annual School Plan 2025–2026（十一年一條龍課程）",
+          "sourceUrl": "https://www.logosacademy.edu.hk/sites/default/files/web/type/reports/2025/Logos%20Academy%20Annual%20School%20Plan%202025-2026.pdf"
+        }
+      ]
+    },
+    {
+      "schoolNo": 553190000323,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "弘立書院",
+      "label": "同校小學以雙語沉浸式課程為 IB 作準備；中學部開辦 MYP／DP（小學非 PYP）",
+      "note": "弘立校方將小學課程描述為中英文雙語沉浸式，並稱其為學生後續修讀 IB programmes 作準備；IB 官方名錄列有其中學階段的 MYP、DP，但沒有將小學列為 PYP。這可作同校小學至中學 IB 課程的規劃線索，因此不應把小學課程稱為 IB PYP，也不代表無條件升中保證，且不等於保證日後修讀 IBDP。目前核對的校方公開資料未單獨列明本校小學畢業生的內部銜接資格、評核或當屆安排，亦未列明 DP 選科門檻；請按學生 cohort 直接向校方確認。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "The ISF Academy · Admissions Policy 2027–28（小学课程及 IB 准备）",
+      "sourceUrl": "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/",
+      "relatedSources": [
+        {
+          "sourceLabel": "IB World Schools Directory · The ISF Academy（MYP／DP）",
+          "sourceUrl": "https://www.ibo.org/en/school/002876/"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · The ISF Academy",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/92.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 560138000223,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "滬江維多利亞學校",
+      "label": "同校 IB 課程：PYP（Year 1–5）→ MYP（Year 6–10）→ DP（Year 11–12）",
+      "note": "VSA官方列明同一所through-train IB World School提供PYP（Year 1–5）、MYP（Year 6–10）及DP（Year 11–12）；小學階段完成後可見同校中學IB課程路線。VSA按年級接受申請並設入學評估；其招生政策列不少於70%學位預留予香港永久居民。公開資料未證實Year 5學生自動升讀Year 6，故不標示為保證內部升學，亦不代表無條件升中保證。DP課程供應不等於保證日後修讀或獲頒完整 IBDP；學生須符合當屆選科與課程要求。",
+      "priority": 0,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Victoria Shanghai Academy · IB Continuum",
+      "sourceUrl": "https://www.vsa.edu.hk/learning/ib-continuum",
+      "relatedSources": [
+        {
+          "sourceLabel": "VSA · Primary School (PYP Year 1–5)",
+          "sourceUrl": "https://www.vsa.edu.hk/learning/primary-school"
+        },
+        {
+          "sourceLabel": "VSA · Secondary School (MYP / DP)",
+          "sourceUrl": "https://www.vsa.edu.hk/learning/secondary-school"
+        },
+        {
+          "sourceLabel": "VSA · Admissions Policy and Procedures",
+          "sourceUrl": "https://www.vsa.edu.hk/admissions/how-to-apply"
+        },
+        {
+          "sourceLabel": "VSA · Application Key Dates 2027/28",
+          "sourceUrl": "https://www.vsa.edu.hk/admissions/how-to-apply/key-dates"
+        },
+        {
+          "sourceLabel": "VSA · School Fees 2026/27",
+          "sourceUrl": "https://www.vsa.edu.hk/admissions/school-fees"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · VSA",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/93.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 567485000123,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "英基啟新書院",
+      "label": "同校完整 IB 路線：PYP（Year 1–6）→ MYP（Year 7–11）→ DP／CP（Year 12–13）；ESF列明Year 6升Year 7同校學位保證",
+      "note": "RCHK同一校址提供PYP（Year 1–6）、MYP（Year 7–11）及DP／CP（Year 12–13）。ESF現行內部轉校頁明確列出RCHK Year 6學生可保證升讀其Year 7中學階段；此保證範圍是對應Year 7學位，不代表無條件選讀某個高中課程。Year 12–13的IBDP、IBCP及IB Courses是不同高中課程選項；Year 7學位保證不等於保證日後修讀或獲頒完整IBDP，也不保證修讀IBCP或特定科目。",
+      "priority": 0,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Renaissance College · Curriculum Overview and ESF transitions policy",
+      "sourceUrl": "https://rchk.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview",
+      "relatedSources": [
+        {
+          "sourceLabel": "ESF · Transitions and Transfers (Year 6-to-7 guarantee)",
+          "sourceUrl": "https://www.esf.edu.hk/internal-transfer/"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Renaissance College",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/91.html"
+        },
+        {
+          "sourceLabel": "Renaissance College · IB World School Overview",
+          "sourceUrl": "https://rchk.esf.edu.hk/en/"
+        },
+        {
+          "sourceLabel": "Renaissance College · IBDP Prospectus 2026–28",
+          "sourceUrl": "https://rchk.esf.edu.hk/upload/files/1/file/68ccee6abfc48.pdf"
+        }
+      ]
+    },
+    {
+      "schoolNo": 569747000223,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "愉景湾国际学校",
+      "label": "同校完整 IB PYP（Y1–6）→MYP（Y7–11）→DP／CP（Y12–13）",
+      "note": "Discovery College為Year 1–13 IB World Through-School；校方列小學PYP、中學MYP、高中DP／CP，並有IB授權資料。這是最直接的同校IB課程連續性線索，但不代表無條件升中保證，也不等於保證日後修讀完整IBDP；校方列Year 12–13可選個別Diploma Courses，DP／CP選擇、科目及入讀條件須按cohort核實。招生經ESF中央程序並受評估、名額及香港永久居民比例要求約束。",
+      "priority": 0,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "IB World Schools Directory · Discovery College",
+      "sourceUrl": "https://www.ibo.org/en/school/3544/",
+      "relatedSources": [
+        {
+          "sourceLabel": "Discovery College · PYP Years 1–6",
+          "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/PYP/"
+        },
+        {
+          "sourceLabel": "Discovery College · MYP Years 7–11",
+          "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/MYP/"
+        },
+        {
+          "sourceLabel": "Discovery College · DP / CP Years 12–13",
+          "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/DP_CP/"
+        },
+        {
+          "sourceLabel": "Discovery College · Admissions",
+          "sourceUrl": "https://discovery.esf.edu.hk/en/admissions/"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Discovery College profile",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/87.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 579530000123,
+      "route": "ib",
+      "linkedSchoolName": "基督教香港信义会宏信书院",
+      "label": "校方自述直資一條龍；小學整合課程含 PYP，中學提供 DSE／IBDP 雙出口",
+      "note": "宏信校方自述為直資一條龍 IB World School，並公開列出 HKDSE 與 IBDP 兩類高中出口；小學 Year 1–6 課程把香港課程與 IB PYP 整合，並非純 PYP。這是同校課程銜接的規劃線索，不代表無條件升中保證，也不等於保證日後修讀 IBDP。學校另設 Year 7 入學申請渠道；目前公開頁未清楚列明本校小六升中資格、過渡門檻及每名學生選讀 IBDP 的安排，家長應按入學 cohort 向校方確認。",
+      "priority": 3,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "ELCHK Lutheran Academy · LA Curriculum（小學課程整合 PYP）",
+      "sourceUrl": "https://www.luac.edu.hk/la-curriculum/#PrimarySchool",
+      "relatedSources": [
+        {
+          "sourceLabel": "ELCHK Lutheran Academy · School Profile（PYP／MYP／DP 授權及一條龍自述）",
+          "sourceUrl": "https://www.luac.edu.hk/school-profile/"
+        },
+        {
+          "sourceLabel": "ELCHK Lutheran Academy · Prospectus（一條龍及 IBDP／HKDSE 雙出口）",
+          "sourceUrl": "https://www.luac.edu.hk/prospectus/"
+        },
+        {
+          "sourceLabel": "ELCHK Lutheran Academy · Year 7 Admissions（中學入學申請渠道）",
+          "sourceUrl": "https://www.luac.edu.hk/admissions/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 598356000223,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "Nord Anglia International School Hong Kong",
+      "label": "同校英格蘭課程→IGCSE；高中可選 IBDP／A-Level（小學非 PYP）",
+      "note": "NAIS 小學官方資料列 Years 1–6，採 English National Curriculum；沒有據此把小學標為 IB PYP。校方中學課程銜接 IGCSE，Years 12–13 另有 IBDP 與 A-Level 選項（另列 BTEC）；此 IB 推薦只表示同校後續課程可供規劃，不代表無條件升中保證，也不等於保證日後修讀 IBDP。現有公開資料未確認小學升讀中學的內部資格、校區安排，或 Year 12 各路線的評核、科目和名額；家庭應按入學 cohort 向校方核實。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Nord Anglia International School Hong Kong · Primary（Years 1–6）",
+      "sourceUrl": "https://www.nordangliaeducation.com/nais-hong-kong/academic-excellence/primary",
+      "relatedSources": [
+        {
+          "sourceLabel": "Nord Anglia International School Hong Kong · Secondary（IGCSE）",
+          "sourceUrl": "https://www.nordangliaeducation.com/nais-hong-kong/academic-excellence/secondary"
+        },
+        {
+          "sourceLabel": "Nord Anglia International School Hong Kong · IB Diploma Programme",
+          "sourceUrl": "https://www.nordangliaeducation.com/nais-hong-kong/academic-excellence/ib-diploma-programme"
+        },
+        {
+          "sourceLabel": "Nord Anglia International School Hong Kong · A-Level",
+          "sourceUrl": "https://www.nordangliaeducation.com/nais-hong-kong/academic-excellence/a-levels"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Kwun Tong Campus",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/31.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 605638000123,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "香港斯坦福美国学校",
+      "label": "校方自述 K–12 一條龍；高中可選完整 IBDP 或個別 IB 課程",
+      "note": "校方招生資料稱 Stamford 是 through-train school；學生入讀後可繼續就讀至畢業，無須重新申請。這是校方所述的校內延續安排，適用年級、校區銜接和當屆條款仍須直接向校方確認。小學 Pre-primary 至 Grade 5 採用美式標準課程，並融入 IB Learner Profile 與探究式學習；本次核對到的小學課程頁沒有把小學稱為 PYP，因此不將其標作 IB PYP。高中 Grade 9–12 設於西九龍校區，學生可選完整 IBDP 或個別 IB 課程；所有畢業生亦獲 Stamford American High School Diploma，個別 IB 課程不等於完整 IBDP。故這是跨校區、同一校系的 IB 規劃線索；校方所述一條龍不應延伸解讀為無條件入學保證，也不保證獲准修讀完整 IBDP。公開資料未列明完整 IBDP 選讀門檻、名額及跨校區具體安排，申請前須按學生 cohort 向校方確認。",
+      "priority": 4,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Stamford American School Hong Kong · Online Application（through-train 校內延續說明）",
+      "sourceUrl": "https://www.sais.edu.hk/admissions/online-application/",
+      "relatedSources": [
+        {
+          "sourceLabel": "Stamford American School Hong Kong · Elementary School（Pre-primary–Grade 5；美式課程及 IB Learner Profile）",
+          "sourceUrl": "https://www.sais.edu.hk/lp-elementary/"
+        },
+        {
+          "sourceLabel": "Stamford American School Hong Kong · High School Curriculum（Grade 9–12；完整 IBDP／個別 IB 課程）",
+          "sourceUrl": "https://www.sais.edu.hk/lp-secondary/"
+        },
+        {
+          "sourceLabel": "Stamford American School Hong Kong · Graduation Pathways（畢業文憑選項）",
+          "sourceUrl": "https://www.sais.edu.hk/curriculum/graduation-pathways/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 606766000123,
+      "route": "ib",
+      "relationshipType": "same-school",
+      "linkedSchoolName": "香港墨爾文國際學校",
+      "label": "同校 IB 課程：PYP（Prep 1–6）→ MYP（Year 7–11）→ DP（Year 12–13）",
+      "note": "Malvern官方IB課程頁及2026/27年齡指引列明同校提供Prep 1–6的PYP、Year 7–11的MYP及Year 12–13的DP，可作為同校IB課程路線參考。各年級實際收生須依當屆申請、空缺及評估安排確認；公開資料未證實小學畢業生自動升入中學，故不代表無條件升中保證；開辦DP亦不等於保證日後修讀或獲頒完整 IBDP，須按當屆選科及課程要求確認。",
+      "priority": 0,
+      "checkedOn": "2026-10-12",
+      "sourceLabel": "Malvern College Hong Kong · IB Overview",
+      "sourceUrl": "https://malverncollege.org.hk/ib-overview/",
+      "relatedSources": [
+        {
+          "sourceLabel": "Malvern College Hong Kong · Prep / PYP",
+          "sourceUrl": "https://malverncollege.org.hk/prep/"
+        },
+        {
+          "sourceLabel": "Malvern College Hong Kong · Senior / MYP",
+          "sourceUrl": "https://malverncollege.org.hk/senior/"
+        },
+        {
+          "sourceLabel": "Malvern College Hong Kong · Sixth Form / IBDP",
+          "sourceUrl": "https://malverncollege.org.hk/sixth-form/"
+        },
+        {
+          "sourceLabel": "Malvern College Hong Kong · Age Guidelines 2026–27",
+          "sourceUrl": "https://malverncollege.org.hk/admissions-process/age-guidelines/"
+        },
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · Malvern College Hong Kong",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/30.html"
+        }
+      ]
+    }
+  ]
+}

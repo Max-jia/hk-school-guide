@@ -9,7 +9,7 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hkschool.guide"),
   title: {
-    default: L("港学荟 · 香港择校的数据工作室", "sc"),
+    default: L("港学荟 · 香港教育规划第一站", "sc"),
     template: `%s | ${L("港学荟", "sc")}`,
   },
   description: L(
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: L("港学荟", "sc"),
-    title: L("港学荟 · 香港择校的数据工作室", "sc"),
+    title: L("港学荟 · 香港教育规划第一站", "sc"),
     description: L(
       "把教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
       "sc"
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: L("港学荟 · 香港择校的数据工作室", "sc"),
+    title: L("港学荟 · 香港教育规划第一站", "sc"),
     description: L(
       "把教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
       "sc"

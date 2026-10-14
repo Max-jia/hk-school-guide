@@ -261,7 +261,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
     <div className="relative">
       <section className="mt-8">
         <SectionHeader
-          index="01"
+          index="05"
           title="精选报告"
           href={localeHref("/reports", locale)}
           linkLabel={`查看全部 ${REPORT_COUNT} 份`}
@@ -272,7 +272,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
 
       <section className="mt-8 bg-[var(--p-band-blog)] py-6 md:py-10">
         <SectionHeader
-          index="02"
+          index="06"
           title="热文阅读"
           href={localeHref("/blog", locale)}
           linkLabel="查看全部 40 篇"

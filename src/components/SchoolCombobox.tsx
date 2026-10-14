@@ -17,17 +17,25 @@ export type SchoolOpt = {
   religion?: string;
 };
 
+function searchVariants(value: string): string[] {
+  const raw = value.trim().toLowerCase();
+  if (!raw) return [];
+  return [...new Set([raw, L(raw, "tc").toLowerCase(), L(raw, "sc").toLowerCase()])];
+}
+
 export default function SchoolCombobox({
   options,
   value,
   onChange,
   placeholder,
+  ariaLabel,
   locale = "tc",
 }: {
   options: SchoolOpt[];
   value: string;
   onChange: (v: string) => void;
   placeholder?: string;
+  ariaLabel?: string;
   locale?: Locale;
 }) {
   const [open, setOpen] = useState(false);
@@ -43,18 +51,12 @@ export default function SchoolCombobox({
   }, []);
 
   const groups = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const queries = searchVariants(query);
     const map = new Map<string, SchoolOpt[]>();
     for (const o of options) {
-      if (
-        q &&
-        !(
-          o.name.toLowerCase().includes(q) ||
-          (o.simp || o.name).toLowerCase().includes(q) ||
-          (o.net || "").toLowerCase().includes(q) ||
-          (o.area_short || "").toLowerCase().includes(q)
-        )
-      ) {
+      const searchable = [o.name, o.simp || "", o.net || "", o.area_short || ""]
+        .map((value) => value.toLowerCase());
+      if (queries.length && !queries.some((q) => searchable.some((value) => value.includes(q)))) {
         continue;
       }
       const g = o.net || "全部";
@@ -79,6 +81,7 @@ export default function SchoolCombobox({
           setOpen(true);
         }}
         placeholder={L(placeholder || "搜索学校…", locale)}
+        aria-label={L(ariaLabel || placeholder || "搜索学校…", locale)}
         className="w-full min-w-0 flex-1 rounded-l-[6px] border border-[var(--p-gray-300)] border-r-0 bg-[var(--p-bg)] px-3 py-2 text-sm text-[var(--p-fg)] outline-none"
       />
       <button

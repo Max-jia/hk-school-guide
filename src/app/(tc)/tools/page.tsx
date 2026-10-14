@@ -279,9 +279,8 @@ export default function ToolsPage({ locale = "tc" }: { locale?: Locale }) {
           href="/tools/p1-simulator"
           className="mb-6 flex flex-wrap items-center gap-3 rounded-[10px] border-2 border-[var(--p-fg)] bg-[var(--p-hl-yellow-bg)] px-5 py-4 no-underline transition-colors hover:bg-[var(--p-hl-yellow-border)]"
         >
-          <span className="rounded-full bg-[var(--p-fg)] px-2.5 py-1 font-mono text-xs font-bold text-[var(--p-bg)]">PRO</span>
           <span className="font-serif text-lg font-bold text-[var(--p-fg)]">统一派位选校表决策台 · 阶段二（模拟器）</span>
-          <span className="text-sm text-[var(--p-secondary)]">甲部＋乙部志愿结构体检＋滑档线＋三套预案＋体检报告 HK$68 →</span>
+          <span className="text-sm text-[var(--p-secondary)]">甲部＋乙部志愿结构体检＋滑档线＋三套预案＋完整体检报告 →</span>
         </a>
         <a
           href="/tools/p1-self-check"

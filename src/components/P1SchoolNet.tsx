@@ -1,7 +1,7 @@
 "use client";
 
 import Localize from "@/components/Localize";
-import { type Locale } from "@/lib/i18n";
+import { L, type Locale } from "@/lib/i18n";
 
 import { useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
@@ -111,7 +111,8 @@ export default function P1SchoolNet({ locale = "tc" }: { locale?: Locale }) {
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="搜索学校名…"
+              placeholder={L("搜索学校名…", locale)}
+              aria-label={L("搜索当前校网内的小学", locale)}
               className="ml-auto w-full rounded-[6px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] px-3 py-2 text-sm text-[var(--p-fg)] outline-none sm:w-56"
             />
           </div>

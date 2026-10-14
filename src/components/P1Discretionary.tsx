@@ -3,7 +3,7 @@
 import Localize from "@/components/Localize";
 import { type Locale } from "@/lib/i18n";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
@@ -22,7 +22,6 @@ const P1 = p1NetsJson as {
 };
 
 const MAX_CANDIDATES = 5;
-const LOCK_KEY = "purchased_p1-sim";
 
 type Candidate = { name: string; sib: boolean; parent: boolean };
 
@@ -31,14 +30,7 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
   const [org, setOrg] = useState("");
   const [candidates, setCandidates] = useState<Candidate[]>([{ name: "", sib: false, parent: false }]);
   const [target, setTarget] = useState("");
-  const [unlocked, setUnlocked] = useState(false);
-  const [buying, setBuying] = useState(false);
-  const [tip, setTip] = useState("");
   const reportRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setUnlocked(localStorage.getItem(LOCK_KEY) === "true");
-  }, []);
 
   const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const out: SchoolOpt[] = [];
@@ -50,9 +42,7 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
   const position = dpScorePosition(score);
   const tips = useMemo(() => dpScoreTips(rel, org).tips, [rel, org]);
 
-  const filledCount = candidates.filter((c) => c.name.trim()).length;
   const canAdd = candidates.length < MAX_CANDIDATES;
-  const addLocked = !unlocked && filledCount >= 1;
 
   function setCandidate(i: number, patch: Partial<Candidate>) {
     setCandidates((cs) => cs.map((c, j) => (j === i ? { ...c, ...patch } : c)));
@@ -60,11 +50,6 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
 
   function addCandidate() {
     if (!canAdd) return;
-    if (addLocked) {
-      setTip("解锁 Pro 后最多可对比 5 所候选校");
-      setTimeout(() => setTip(""), 2000);
-      return;
-    }
     setCandidates((cs) => [...cs, { name: "", sib: false, parent: false }]);
   }
 
@@ -73,21 +58,6 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
     if (target === candidates[i].name) setTarget("");
   }
 
-  function buy() {
-    setBuying(true);
-    fetch("/api/checkout", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ product: "sim" }),
-    })
-      .then((r) => r.json())
-      .then((j) => {
-        if (j.url) window.location.href = j.url;
-        else alert("下单失败：" + (j.error || "请稍后重试"));
-      })
-      .catch(() => alert("网络错误，请稍后重试"))
-      .finally(() => setBuying(false));
-  }
 
   const report = useMemo(() => {
     const hit = candidates.find((c) => c.name.trim() === target);
@@ -183,7 +153,6 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 候选校清单 · 这票投给谁</h2>
-            {!unlocked && <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO · 免费 1 所</span>}
           </div>
           <p className="mt-1 text-sm text-[var(--p-secondary)]">
             把心仪的官津小学加进来，逐校看甲类预检、相对位置与投表策略；最后挑 1 所生成投表决策报告。
@@ -193,7 +162,6 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
               const school = allSchoolOpts.find((o) => o.name === c.name.trim());
               const outOfRoster = c.name.trim() && !school;
               const ass = school ? assessCandidate(c.name.trim(), school.quota ?? null, score, c.sib, c.parent) : null;
-              const lockedRow = !unlocked && i >= 1;
               return (
                 <div key={i} className="rounded-[10px] border border-[var(--p-gray-300)] p-4">
                   <div className="flex flex-wrap items-center gap-2">
@@ -213,18 +181,6 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
                       </button>
                     )}
                   </div>
-                  {lockedRow && (
-                    <div className="relative mt-3">
-                      <div className="rounded-[8px] border border-dashed border-[var(--p-gray-300)] bg-[var(--p-bg)] px-4 py-5 text-center text-sm text-[var(--p-secondary)]">
-                        解锁 Pro 后可添加至 5 所候选校
-                      </div>
-                      <div className="absolute inset-0 flex items-center justify-center rounded-[8px] bg-[rgba(255,255,255,.82)]">
-                        <button onClick={buy} disabled={buying} className="rounded-[8px] bg-[var(--p-fg)] px-5 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50">
-                          {buying ? "正在前往支付…" : "解锁候选校清单 · HK$68"}
-                        </button>
-                      </div>
-                    </div>
-                  )}
                   {outOfRoster && (
                     <p className="mt-3 rounded-[8px] bg-[#FDEBE7] px-4 py-3 text-sm font-bold text-[#C2410C]">
                       「{c.name.trim()}」不在官津名册内（可能是直资/私立/国际）——不走自行分配，请走自行申请。
@@ -254,14 +210,12 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
                       <p className="mt-1 text-sm text-[var(--p-fg)]">
                         你符合「{ass.catAReasons.join(" ／ ")}」条件——只要申请必获录取，不看计分。录取后须注册，注册＝退出统一派位。
                       </p>
-                      {unlocked && (
-                        <button
-                          onClick={() => setTarget(school.name)}
-                          className="mt-3 rounded-[8px] border border-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-fg)]"
-                        >
-                          {target === school.name ? "✓ 已设为目标" : "设为本票目标 → 生成决策报告"}
-                        </button>
-                      )}
+                      <button
+                        onClick={() => setTarget(school.name)}
+                        className="mt-3 rounded-[8px] border border-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-fg)]"
+                      >
+                        {target === school.name ? "✓ 已设为目标" : "设为本票目标 → 生成决策报告"}
+                      </button>
                     </div>
                   )}
                   {ass && !ass.catA && school && (
@@ -277,14 +231,12 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
                           <p className="mt-1 text-sm text-[var(--p-fg)]">{ass.strategy.text}</p>
                         </div>
                       )}
-                      {unlocked && (
-                        <button
-                          onClick={() => setTarget(school.name)}
-                          className="rounded-[8px] border border-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-fg)]"
-                        >
-                          {target === school.name ? "✓ 已设为目标" : "设为本票目标 → 生成决策报告"}
-                        </button>
-                      )}
+                      <button
+                        onClick={() => setTarget(school.name)}
+                        className="rounded-[8px] border border-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-fg)]"
+                      >
+                        {target === school.name ? "✓ 已设为目标" : "设为本票目标 → 生成决策报告"}
+                      </button>
                     </div>
                   )}
                 </div>
@@ -297,7 +249,6 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
                 ＋ 添加候选校（{candidates.length}/{MAX_CANDIDATES}）
               </button>
             )}
-            {tip && <span className="text-sm text-[#B45309]">{tip}</span>}
           </div>
         </section>
 
@@ -305,17 +256,8 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">③ 投表决策报告</h2>
-            {!unlocked && <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>}
           </div>
-          {!unlocked ? (
-            <div className="mt-4 rounded-[10px] bg-[#FEF3E2] px-5 py-4 text-[#B45309]">
-              <p className="font-bold">解锁 Pro 后：选定 1 所目标校，生成一页投表决策报告</p>
-              <p className="mt-1 text-sm">计分组合核对 ＋ 甲类预检 ＋ 相对位置 ＋ 冲稳结论 ＋ 录取后时间线 ＋ 1-1-1/叩门衔接，可打印可存图。</p>
-              <button onClick={buy} disabled={buying} className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-5 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50">
-                {buying ? "正在前往支付…" : "解锁投表决策报告 · HK$68"}
-              </button>
-            </div>
-          ) : !report ? (
+          {!report ? (
             <p className="mt-4 rounded-[8px] bg-[var(--p-bg)] px-4 py-3 text-sm text-[var(--p-secondary)]">
               先在候选校清单里点「设为本票目标」，报告会自动生成在这里。
             </p>

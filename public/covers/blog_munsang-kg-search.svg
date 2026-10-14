@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#243b53"/>
+  <circle cx="1040" cy="90" r="240" fill="#3f6b8d" opacity=".42"/>
+  <circle cx="1130" cy="550" r="300" fill="#e7b65b" opacity=".18"/>
+  <text x="80" y="130" fill="#f5d58b" font-family="Arial, sans-serif" font-size="30" font-weight="700">TRENDING KINDERGARTEN</text>
+  <text x="80" y="300" fill="#ffffff" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="74" font-weight="700">民生幼稚園</text>
+  <text x="80" y="390" fill="#f5d58b" font-family="Arial, sans-serif" font-size="62" font-weight="700">+70%</text>
+  <text x="80" y="480" fill="#dbe7ef" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="34">半龍、學費與入讀壓力</text>
+  <text x="80" y="560" fill="#9fb3c8" font-family="Arial, sans-serif" font-size="22">Google Trends · 2026.10.07</text>
+</svg>

@@ -2,6 +2,7 @@
 
 import { useMemo, useRef, useState, type ReactNode } from "react";
 import SchoolCombobox from "@/components/SchoolCombobox";
+import ShortlistButton from "@/components/ShortlistButton";
 import schoolsJson from "@/content/schools.json";
 import p1NetsJson from "@/content/p1-nets.json";
 import reportMeta from "@/content/report-meta.json";
@@ -76,16 +77,12 @@ function typeLabel(f: string): string {
 }
 
 export default function SchoolCompare({
-  unlocked, buying, buy, locale = "tc",
+  locale = "tc",
 }: {
-  unlocked: boolean;
-  buying: boolean;
-  buy: () => void;
   locale?: Locale;
 }) {
   const [a, setA] = useState("");
   const [b, setB] = useState("");
-  const [count, setCount] = useState(0);
   const [analysed, setAnalysed] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   const xhsRef = useRef<HTMLDivElement>(null);
@@ -98,7 +95,7 @@ export default function SchoolCompare({
         const ext = SCHOOL_MAP.get(sc.name);
         map.set(sc.name, {
           name: sc.name,
-          simp: sc.simp || sc.name,
+          simp: sc.simp || L(sc.name, "sc"),
           typeLabel: typeLabel(sc.finance),
           net: n.net,
           district: ext?.district_zh || "",
@@ -121,7 +118,7 @@ export default function SchoolCompare({
       if (map.has(s.name_zh)) continue;
       map.set(s.name_zh, {
         name: s.name_display || s.name_zh,
-        simp: s.simp || s.name_display || s.name_zh,
+          simp: s.simp || L(s.name_display || s.name_zh, "sc"),
         typeLabel: typeLabel(s.finance_type || ""),
         net: "",
         district: s.district_zh || "",
@@ -145,12 +142,9 @@ export default function SchoolCompare({
   const schoolA = options.find((o) => o.name === a);
   const schoolB = options.find((o) => o.name === b);
   const canCompare = Boolean(schoolA && schoolB && a !== b);
-  const locked = !unlocked && count >= 1;
-
   function doCompare() {
-    if (!canCompare || locked) return;
+    if (!canCompare) return;
     setAnalysed(true);
-    if (!unlocked) setCount((c) => c + 1);
   }
 
   async function download() {
@@ -250,12 +244,9 @@ export default function SchoolCompare({
     <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
       <div className="flex items-center gap-2">
         <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">两校对比</h2>
-        {!unlocked && (
-          <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>
-        )}
       </div>
       <p className="mt-1 text-sm text-[var(--p-secondary)]">
-        选两所学校并排对比：入学通道 / 本站评级 / 升中通路 / 入学难度 / 收费 / 语言班制。差异自动标 ●，顶部给出「这组对比最该看什么」。免费对比 1 次，解锁后不限次并可导出对比图。
+        选两所学校并排对比：入学通道 / 本站评级 / 升中通路 / 入学难度 / 收费 / 语言班制。差异自动标 ●，顶部给出「这组对比最该看什么」。可重复对比并导出对比图。
       </p>
 
       <div className="mt-4 grid gap-3 md:grid-cols-[1fr_auto_1fr]">
@@ -267,12 +258,12 @@ export default function SchoolCompare({
       <div className="mt-4 flex flex-wrap gap-3">
         <button
           onClick={doCompare}
-          disabled={!canCompare || locked}
+          disabled={!canCompare}
           className="rounded-[8px] bg-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-bg)] disabled:opacity-40"
         >
-          {locked ? "已用免费次数 · 解锁后继续" : "开始对比"}
+          开始对比
         </button>
-        {unlocked && canCompare && analysed && (
+        {canCompare && analysed && (
           <>
             <button onClick={download} className="rounded-[8px] border border-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-fg)]">
               下载对比图
@@ -327,21 +318,6 @@ export default function SchoolCompare({
               ● = 两校在该维度存在差异，重点核对。评级为本站量化口碑（非录取依据）；课程体系为按学校类型推断，请以校方为准。
             </p>
           </div>
-          {locked && (
-            <div className="absolute inset-0 flex items-center justify-center rounded-[12px] bg-[rgba(255,255,255,.82)]">
-              <div className="rounded-[10px] bg-[#FEF3E2] px-6 py-4 text-center text-[#B45309]">
-                <p className="font-bold">🔒 对比次数已用完</p>
-                <p className="mt-1 text-sm">解锁后可无限对比并导出对比图</p>
-                <button
-                  onClick={buy}
-                  disabled={buying}
-                  className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-5 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
-                >
-                  {buying ? "正在前往支付…" : "解锁完整对比 · HK$68"}
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       )}
 
@@ -355,17 +331,19 @@ export default function SchoolCompare({
           return (
             <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-4">
               <p className="font-serif text-base font-bold text-[var(--p-fg)]">
-                这两所学校的深度报告（每份 8 章，可免费试读第 1 章）
+                这两所学校的完整深度报告（每份 8 章，全文公开）
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {links.map((l) => (
-                  <a
-                    key={l.code}
-                    href={`/reports/${l.code}`}
-                    className="rounded-full border border-[var(--p-hl-border)] px-3 py-1 font-mono text-xs text-[var(--p-hl-border)] no-underline"
-                  >
-                    {l.name} →
-                  </a>
+                  <div key={l.code} className="flex flex-wrap items-center gap-2">
+                    <a
+                      href={`/reports/${l.code}`}
+                      className="rounded-full border border-[var(--p-hl-border)] px-3 py-1 font-mono text-xs text-[var(--p-hl-border)] no-underline"
+                    >
+                      {l.name} →
+                    </a>
+                    <ShortlistButton name={l.name} kind="primary" href={`/reports/${l.code}`} locale={locale} />
+                  </div>
                 ))}
               </div>
             </div>

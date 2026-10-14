@@ -1,16 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-import { verifyLicense } from "@/lib/license";
 
-// 付费章节正文接口（付费墙的「真闸门」）
+// 报告全文接口（保留给旧客户端兼容；当前报告页直接服务端渲染全文）
 //
-// 背景：2026-09 审计发现，付费章节原本用 <div style="display:none"> 直接输出在
-// 静态 HTML 里，解锁判断只读 localStorage 的 "true" 字符串——等于浏览器控制台打
-// 一行就能看完全站 169 份报告。现在改成：付费正文不进 HTML，只有带着服务端签名
-// license 来换才给。
-//
-// 免费章节（第 0-1 章）仍然留在静态 HTML 里，给搜索引擎和 AI 抓取器读。
+// 当前不再需要 license；服务端仍校验 slug 和文件路径，避免任意文件读取。
 export const dynamic = "force-dynamic";
 
 const ROOT = process.cwd();
@@ -37,12 +31,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, reason: "bad-slug" }, { status: 400 });
   }
 
-  // Server-side HMAC verification is required to release paid report content.
-  const license = body.license ? verifyLicense(String(body.license), slug) : null;
-  if (!license) {
-    return NextResponse.json({ ok: false, reason: "no-license" }, { status: 403 });
-  }
-
   const file = path.join(REPORTS_DIR, `${slug}.json`);
   if (!fs.existsSync(file)) {
     return NextResponse.json({ ok: false, reason: "not-found" }, { status: 404 });
@@ -55,8 +43,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, reason: "read-error" }, { status: 500 });
   }
 
-  if (data.free || !data.premiumHtml) {
-    return NextResponse.json({ ok: false, reason: "not-premium" }, { status: 400 });
+  if (!data.premiumHtml) {
+    return NextResponse.json({ ok: false, reason: "not-found" }, { status: 404 });
   }
 
   // 回传的是简体源文；客户端按当前语言（繁/简）转换后再渲染

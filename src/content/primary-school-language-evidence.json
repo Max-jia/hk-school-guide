@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "checked": "2026-10-12",
+    "source": "Education Bureau International Schools Directory and official school language/curriculum pages",
+    "note": "This overlay records primary medium(s) of instruction, not every language taught as a subject. Grade- or programme-specific exceptions are noted per school. Unknown or subject-only languages are not inferred as media of instruction. It may also cover a primary school surfaced through a same-school or linked secondary IB route even when that primary stage is not PYP; the school-specific note must preserve that distinction. 語言欄只記錄已核實的主要授課語言；宏信及 HKCA 的學科語言安排依各校課程頁限定描述。連接同校中學 IB 路線但小學不開辦 PYP 的學校，亦會明確標示課程階段。"
+  },
+  "schools": [
+    {
+      "schoolNo": 170348000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Beacon Hill School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/40.html"
+    },
+    {
+      "schoolNo": 170747000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Bradbury School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/41.html"
+    },
+    {
+      "schoolNo": 170860000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Peak School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/49.html"
+    },
+    {
+      "schoolNo": 170879000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Kennedy School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/46.html"
+    },
+    {
+      "schoolNo": 170887000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Glenealy School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/43.html"
+    },
+    {
+      "schoolNo": 170895000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Quarry Bay School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/50.html"
+    },
+    {
+      "schoolNo": 170909000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Kowloon Junior School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/48.html"
+    },
+    {
+      "schoolNo": 171034000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Clearwater Bay School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/42.html"
+    },
+    {
+      "schoolNo": 190543000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Shatin Junior School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/52.html"
+    },
+    {
+      "schoolNo": 215589000123,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "小學中英雙語課程（英語及普通話）",
+      "sourceLabel": "Chinese International School · Primary Learning",
+      "sourceUrl": "https://www.cis.edu.hk/academics/overview",
+      "checkedOn": "2026-10-11",
+      "note": "漢基小學採用校本雙語課程；校方資料描述英語與普通話語言學習。小學階段不是 IB PYP；同校 IB 線索只涉及中學階段的 MYP／DP，且 Year 10–11 為校本課程，不應把它描述成小學 PYP 或全程連續 IB。雙語標籤不代表每科均按相同比例授課。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Chinese International School · Secondary Programme Overview",
+          "sourceUrl": "https://www.cis.edu.hk/academics/secondary/overview"
+        }
+      ]
+    },
+    {
+      "schoolNo": 216011000523,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "英文及普通話授課（雙語課程按年級推展）",
+      "sourceLabel": "Education Bureau International Schools Directory · Canadian International School of Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/61.html",
+      "note": "EDB學校資料列明小學授課語言為英文及普通話，並指截至2026/27學年雙語課程已涵蓋Nursery至Grade 3、目標於2028/29學年擴至Grade 5；CDNIS Lower School網頁目前則寫Nursery至Grade 1。因兩個官方頁面的年級範圍不一致，本頁按EDB授課語言欄列作雙語線索，但家長應直接向校方確認申請年級的實際課程。",
+      "relatedSources": [
+        {
+          "sourceLabel": "CDNIS · Lower School bilingual programme",
+          "sourceUrl": "https://www.cdnis.edu.hk/academics/lower-school"
+        },
+        {
+          "sourceLabel": "CDNIS · Admissions Information Guide (2026)",
+          "sourceUrl": "https://www.cdnis.edu.hk/upload/page/15/self/CDNIS_Admissions_eng.pdf"
+        }
+      ]
+    },
+    {
+      "schoolNo": 216186000323,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Carmel School (Borrett Road Campus)",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/55.html",
+      "note": "EDB名錄所列英文授課資料對應小學Borrett Road校區；此記錄只描述小學，不據此推斷中學非語言科目的授課語言。",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "schoolNo": 230979000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言（普通話另作語言課程）",
+      "sourceLabel": "Education Bureau International Schools Directory · ICHK Hong Lok Yuen",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/19.html",
+      "note": "EDB名錄列英文為ICHK Hong Lok Yuen小學部的主要授課語言；此記錄只描述小學，不據此推斷伙伴中學授課語言。",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "schoolNo": 325279000123,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "中、英文均有授課；中文為主要學習語言",
+      "sourceLabel": "Creative Primary School · Language Education",
+      "sourceUrl": "https://www.creativeprisch.edu.hk/%E8%AA%9E%E6%96%87%E6%95%99%E5%AD%B8?lang=en",
+      "note": "學校資料列明教學語言為中、英文；校方另說明中文是主要學習語言，英文亦用於英文課、Bible Studies及部分高年級探究課程。因此可匹配中英授課，但不等同全級、各科採用等比例雙語沉浸模式。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Creative Primary School · Chinese Teaching",
+          "sourceUrl": "https://www.creativeprisch.edu.hk/%E8%AA%9E%E6%96%87%E6%95%99%E5%AD%B8?lang=en"
+        }
+      ]
+    },
+    {
+      "schoolNo": 517372000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英語用於英文、科學、健康教育及數學",
+      "sourceLabel": "St Stephen’s College Preparatory School · English and Putonghua Curriculum",
+      "sourceUrl": "https://www.sscps.edu.hk/curriculum/language",
+      "checkedOn": "2026-10-11",
+      "note": "校方課程頁列明英語用於英文、科學、健康教育及數學；中文和常識等另有普通話教學安排。語言篩選只標記已核實的英文授課，不把個別中文科或常識科的普通話教學擴大為全校中英雙語。此小學沒有列入本資料的 PYP 名單；其 IB 路線線索來自附屬中學，並非小學 PYP。",
+      "relatedSources": [
+        {
+          "sourceLabel": "St Stephen’s College Preparatory School · Chinese Curriculum",
+          "sourceUrl": "https://www.sscps.edu.hk/curriculum/chinese"
+        }
+      ]
+    },
+    {
+      "schoolNo": 522775000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文授課（日本國際學校 International Section 國際部）",
+      "sourceLabel": "Education Bureau International Schools Directory · Japanese International School (English)",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/20.html",
+      "note": "本记录仅对应 International Section；学校另设 Japanese Section，教学课程不同。申请前请确认所选学部及该学部的授课语言。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Japanese International School · School Sections",
+          "sourceUrl": "https://www.jis.edu.hk/About-HKJS-JIS/"
+        }
+      ],
+      "checkedOn": "2026-10-11"
+    },
+    {
+      "schoolNo": 539155000323,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "主要授課語言：英語（小學）",
+      "sourceLabel": "Education Bureau International Schools Directory · Hong Kong Academy",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/15.html",
+      "note": "HKA小學網頁確認英語為授課語言，普通話為附加語言。這項資料僅限小學，不能推定中學各科授課語言；中學授課媒介在本資料中保持未分類。",
+      "checkedOn": "2026-10-12",
+      "relatedSources": [
+        {
+          "sourceLabel": "Hong Kong Academy · Primary School",
+          "sourceUrl": "https://hkacademy.edu.hk/primary-school/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 541915000123,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "英文及普通話雙語授課",
+      "sourceLabel": "Education Bureau International Schools Directory · Kingston International School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/24.html"
+    },
+    {
+      "schoolNo": 560138000223,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "英文及普通話雙語授課",
+      "sourceLabel": "Education Bureau International Schools Directory · Victoria Shanghai Academy",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/93.html",
+      "note": "EDB列小學授課語言為英文及普通話。此項只描述小學；VSA官網另說Secondary School課程以英語授課並配合中文課程，已在中學篩選維度獨立記錄，不能把兩個學段的語言資料混為一項。",
+      "checkedOn": "2026-10-12",
+      "relatedSources": [
+        {
+          "sourceLabel": "Victoria Shanghai Academy · School Overview (Primary bilingual and Secondary English-medium scope)",
+          "sourceUrl": "https://www.vsa.edu.hk/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 567485000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Renaissance College",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/91.html",
+      "note": "EDB目錄列小學授課語言為英語。此資料只用於小學候選篩選，不推定中學各科授課媒介；RCHK官方資料另稱Year 1–13為英語授課。",
+      "checkedOn": "2026-10-12",
+      "relatedSources": [
+        {
+          "sourceLabel": "Renaissance College · School Overview (English-medium Year 1–13)",
+          "sourceUrl": "https://rchk.esf.edu.hk/en/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 569747000223,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "Year 1–13各科以英語為主要授課媒介",
+      "sourceLabel": "Education Bureau International Schools Directory · Discovery College",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/87.html",
+      "note": "校方明確列Year 1至Year 13全部科目的主要授課媒介為英語。學生另修中文，按能力及校方安排選Chinese Language Acquisition或Chinese Language and Literature；中文課不代表其他科目以中文授課。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Discovery College · Language (English medium across Y1–Y13)",
+          "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/language/"
+        }
+      ],
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "schoolNo": 579530000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要教學語言；中文科以普通話教學",
+      "sourceLabel": "ELCHK Lutheran Academy · Glocalized Curriculum",
+      "sourceUrl": "https://www.luac.edu.hk/la-curriculum/#PrimarySchool",
+      "note": "只將校方明確稱為主要教學語言的英文列入授課語言篩選；普通話中文科是科目教學安排，不據此把學校標為中英雙語授課。"
+    },
+    {
+      "schoolNo": 600814000123,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "校方列明中英雙語課程",
+      "sourceLabel": "Discovery Montessori Academy · IB Montessori Elementary",
+      "sourceUrl": "https://www.montessori-ami.edu.hk/en/content.php?wid=46",
+      "note": "小學課程頁列明 Language (Bilingual: English & Chinese)；該頁未明確說明小學中文課所用的中文變體，因此只列中英語言線索，不標示普通話或粵語。"
+    },
+    {
+      "schoolNo": 606766000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言",
+      "sourceLabel": "Education Bureau International Schools Directory · Malvern College Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/30.html",
+      "note": "教育局名錄列明小學授課語言為英文；此記錄只描述小學階段，未據此推斷中學各科授課語言。",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "schoolNo": 607290000123,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "英文為主要授課語言；中文科教授普通話（繁體字）",
+      "sourceLabel": "HKCA Po Leung Kuk School · Our Curriculum",
+      "sourceUrl": "https://www.plkis.edu.hk/our-curriculum/",
+      "note": "只將校方明確稱為主要授課語言的英文列入授課語言篩選；普通話中文科是科目教學安排，不據此把學校標為中英雙語授課。"
+    },
+    {
+      "schoolNo": 629685000123,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "中英雙語學習環境（英語及普通話）",
+      "sourceLabel": "YK Pao School Hong Kong · Bilingual Learning Environment",
+      "sourceUrl": "https://ykpaoschool.hk/sc/",
+      "checkedOn": "2026-10-11",
+      "note": "校方小學資料描述英語及中文學習，並介紹英語及普通話雙語環境；教育局目錄把英文列為主要授課語言、中文列為其他語言。此標籤只作中英語言環境篩選，不代表每科均以兩種語言等比例授課，也不代表所有年級已納入 IB PYP；請按申請年級向校方確認。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · YK Pao School Hong Kong",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/110.html"
+        }
+      ]
+    },
+    {
+      "schoolNo": 553190000323,
+      "mediums": [
+        "chinese",
+        "english"
+      ],
+      "displayLabel": "小學課程校方描述為中英文雙語沉浸式（不推定各科比例）",
+      "sourceLabel": "The ISF Academy · Admissions Policy 2027–28（Primary Program）",
+      "sourceUrl": "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/",
+      "checkedOn": "2026-10-12",
+      "note": "校方將小學課程描述為雙語沉浸式，並稱其為後續 IB programmes 作準備；此處只確認中文與英文兩種語言，不推定各科語言比例或每個年級的安排。"
+    },
+    {
+      "schoolNo": 598356000223,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "教育局目录列英语为小学主要授课语言",
+      "sourceLabel": "Education Bureau International Schools Directory · Nord Anglia International School Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/31.html",
+      "checkedOn": "2026-10-12",
+      "note": "教育局目录列英语为小学主要授课语言，并把中文、法文、西班牙文列作其他语言；其他语言科目不据此标成授课媒介。该目录条目对应Kwun Tong校区，具体校区及入学年度请再向学校确认。"
+    },
+    {
+      "schoolNo": 216275000623,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "教育局目录列英语为小学主要授课语言",
+      "sourceLabel": "Education Bureau International Schools Directory · Australian International School Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/60.html",
+      "checkedOn": "2026-10-12",
+      "note": "教育局目录列英语为小学主要授课语言。此行只覆盖小学授课语言，不据此推定中学各科授课语言；该校小学课程按校方资料采用ACARA澳洲课程，未据此标成IB PYP。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Australian International School Hong Kong · Primary School（Prep–Year 6, ACARA）",
+          "sourceUrl": "https://www.aishk.edu.hk/learning/primary-school"
+        }
+      ]
+    },
+    {
+      "schoolNo": 325147000223,
+      "mediums": [
+        "english",
+        "chinese"
+      ],
+      "displayLabel": "教育局目录列英语及普通话为小学授课语言",
+      "sourceLabel": "Education Bureau International Schools Directory · Yew Chung International School Primary",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/107.html",
+      "checkedOn": "2026-10-12",
+      "note": "EDB小学条目列英语为主要授课语言、普通话为其他授课语言，因此映射至英语和中文两个筛选项；这里的「中文」指普通话，不代表粤语授课，也不据此推定中学科目语言或两种语言的课时比例。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Yew Chung International School · Primary curriculum",
+          "sourceUrl": "https://www.ycis-hk.com/en/academics/primary/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 216003000223,
+      "mediums": [
+        "english",
+        "chinese"
+      ],
+      "displayLabel": "教育局目录列英语及普通话为小学授课语言",
+      "sourceLabel": "Education Bureau International Schools Directory · SISHK Nam Long Shan Road Campus",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/105.html",
+      "checkedOn": "2026-10-12",
+      "note": "EDB小学条目列英语及普通话为授课语言；映射至英语和中文两个筛选项，其中「中文」指普通话。校方另说明英语为大部分科目与活动的授课语言；此小学记录不代表每一科均采用两种语言，也不推定中学各科比例。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Singapore International School (Hong Kong) · Languages",
+          "sourceUrl": "https://www.singapore.edu.hk/bilingualism/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 214949000723,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "Tseung Kwan O 英语国际部以英语授课（仅该课程流）",
+      "sourceLabel": "Education Bureau International Schools Directory · FIS English Stream, Tseung Kwan O Campus",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/62.html",
+      "checkedOn": "2026-10-12",
+      "note": "本行仅覆盖International Stream；EDB及校方资料确认Tseung Kwan O International Stream的授课媒介为英语。FIS另有French Stream，该路线不在现有中／英语筛选模型内；本行不可视为整个校区所有课程流均以英语授课。",
+      "relatedSources": [
+        {
+          "sourceLabel": "French International School · Tseung Kwan O Campus and stream choices",
+          "sourceUrl": "https://www.fis.edu.hk/campuses/tseung-kwan-o"
+        }
+      ]
+    },
+    {
+      "schoolNo": 214949000523,
+      "mediums": [
+        "english"
+      ],
+      "displayLabel": "Chai Wan 英语国际部以英语授课（仅该课程流）",
+      "sourceLabel": "Education Bureau International Schools Directory · FIS English Stream, Chai Wan Campus",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/96.html",
+      "checkedOn": "2026-10-12",
+      "note": "本行仅覆盖International Stream；EDB及校方资料确认Chai Wan International Stream的授课媒介为英语；该校区也开设French Stream，法国课程不是本筛选模型中的英语授课路线。此行仅覆盖International Stream，不代表全校区所有课程流。",
+      "relatedSources": [
+        {
+          "sourceLabel": "French International School · Chai Wan Campus and stream choices",
+          "sourceUrl": "https://www.fis.edu.hk/campuses/chai-wan"
+        }
+      ]
+    }
+  ]
+}

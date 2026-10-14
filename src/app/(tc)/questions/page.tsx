@@ -1,7 +1,7 @@
 "use client";
 
 import Localize from "@/components/Localize";
-import { type Locale } from "@/lib/i18n";
+import { L, type Locale } from "@/lib/i18n";
 
 import { useEffect, useMemo, useState } from "react";
 import { MessageCircle, ThumbsUp, Star, Share2, Check } from "lucide-react";
@@ -246,11 +246,13 @@ export default function QuestionsPage({ locale = "tc" }: { locale?: Locale }) {
               value={qaSchool}
               onChange={(e) => setQaSchool(e.target.value)}
               placeholder="学校（可选）"
+              aria-label={L("学校（可选）", locale)}
               className="rounded-[6px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-2 text-sm text-[var(--p-fg)] outline-none"
             />
             <select
               value={qaCategory}
               onChange={(e) => setQaCategory(e.target.value)}
+              aria-label={L("问题类别", locale)}
               className="rounded-[6px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-2 text-sm text-[var(--p-fg)] outline-none"
             >
               <option>面试</option>
@@ -264,6 +266,7 @@ export default function QuestionsPage({ locale = "tc" }: { locale?: Locale }) {
                 value={qaText}
                 onChange={(e) => setQaText(e.target.value)}
                 placeholder="例如：协恩 K1 面试家长要陪同吗？"
+                aria-label={L("输入你遇到的问题", locale)}
                 className="min-w-0 flex-1 rounded-[6px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-2 text-sm text-[var(--p-fg)] outline-none"
                 onKeyDown={(e) => e.key === "Enter" && submitQa()}
               />
@@ -386,6 +389,7 @@ export default function QuestionsPage({ locale = "tc" }: { locale?: Locale }) {
                           onChange={(e) => setReplyText(e.target.value)}
                           onKeyDown={(e) => e.key === "Enter" && submitReply(x.id)}
                           placeholder="写下你的回答…"
+                          aria-label={L(`回答问题：${x.question}`, locale)}
                           className="min-w-0 flex-1 rounded-[6px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-2 text-sm text-[var(--p-fg)] outline-none"
                         />
                         <button
@@ -419,7 +423,7 @@ export default function QuestionsPage({ locale = "tc" }: { locale?: Locale }) {
             </button>
           ))}
           <input
-            type="text" placeholder="Search…" value={q} onChange={(e) => setQ(e.target.value)}
+            type="text" placeholder="Search…" aria-label={L("搜索家长问题", locale)} value={q} onChange={(e) => setQ(e.target.value)}
             className="ml-auto rounded-[6px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-2 text-sm normal-case text-[var(--p-fg)] shadow-[0_2px_1px_rgba(0,0,0,.3)] outline-none"
           />
         </div>

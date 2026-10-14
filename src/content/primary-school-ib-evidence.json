@@ -1,0 +1,751 @@
+{
+  "metadata": {
+    "checked": "2026-10-12",
+    "source": "Official IB World School profiles, primary curriculum pages, school admissions pages, and EDB sources",
+    "note": "PYP 只确认小学阶段课程信号，且部分课程只适用于学校的特定学部。已获授权的 PYP 与校方计划／申请中的 PYP 分开标示；候选或计划状态不等于 IB World School 已获该项目授权。衔接资料须区分一般伙伴／优先渠道与明确列出的学位保障，并按适用 cohort 和年度招生政策复核；任何升中安排都不等于可自选特定中学或保证日后入读 IBDP。未能从当前官方页面确认的年级范围会明确标为待核，不以推测补齐。名单口径限于 schools.json 可映射的小学候选目录；未列入该目录的独立课程学校须另作补充核对，不可据此推断香港没有其他 PYP 小学。"
+  },
+  "schools": [
+    {
+      "schoolNo": 170348000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Beacon Hill School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/40.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 170747000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Bradbury School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/41.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 170860000123,
+      "sourceLabel": "IB World Schools Directory · Peak School",
+      "sourceUrl": "https://www.ibo.org/en/school/3691/",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 170879000123,
+      "sourceLabel": "IB World Schools Directory · Kennedy School",
+      "sourceUrl": "https://www.ibo.org/en/school/4189/",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 170887000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Glenealy School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/43.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 170895000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Quarry Bay School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/50.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 170909000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Kowloon Junior School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/48.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 171034000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Clearwater Bay School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/42.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 190543000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Shatin Junior School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/52.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "英基小学 PYP；ESF 公布小学毕业生升中有学位保障",
+        "priority": 1,
+        "note": "ESF 当前招生资料说明英基小学学生升中有英基中学学位保障，并使用 Year 7 central application；申请可列最多 4 所学校，但官网说明按学位可用情况处理，不把学位保障表述为保证获派任一指定志愿学校。该安排也不保证日后进入 IBDP；具体 cohort 和派位流程以当年公布为准。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary & Secondary Admissions Overview",
+            "sourceUrl": "https://join-us.esf.edu.hk/admissions-primary-secondary/"
+          },
+          {
+            "sourceLabel": "ESF · Year 7 Central Application",
+            "sourceUrl": "https://join-us.esf.edu.hk/primary-secondary-online-application/"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Year 1–6（ESF Primary curriculum）。",
+        "note": "ESF 官方小学课程资料把 Primary 阶段列为 Year 1–6。小学 PYP 覆盖范围与升中学位安排是两件事；后者仍按学生所属 cohort 和当年 admissions process 核对。",
+        "sources": [
+          {
+            "sourceLabel": "ESF · Primary Schools and Kindergarten (March 2024)",
+            "sourceUrl": "https://www.esf.edu.hk/wp-content/uploads/2024/03/ESF-Primary-Schools-and-Kindergarten-_March24.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 216011000523,
+      "sourceLabel": "IB World Schools Directory · Canadian International School of Hong Kong",
+      "sourceUrl": "https://www.ibo.org/en/school/2872/",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Nursery／Early Years 1–Grade 5；MYP：Grade 6–10；DP：Grade 11–12；Grade 9–12 同时修读 OSSD。",
+        "note": "CDNIS 两个校方页面分别以 Nursery 和 Early Years 1 描述 PYP 低年级入口；Lower School 页面列明 Nursery–Grade 5 为 PYP。双语课程目前为 Nursery–Grade 1，并计划逐年扩展至 Grade 5（2028/29），不要把双语年级范围和 PYP 授权范围混为一谈。",
+        "sources": [
+          {
+            "sourceLabel": "CDNIS · Programme Overview",
+            "sourceUrl": "https://www.cdnis.edu.hk/academics/programme-overview"
+          },
+          {
+            "sourceLabel": "CDNIS · Lower School (Nursery–Grade 5)",
+            "sourceUrl": "https://www.cdnis.edu.hk/academics/lower-school"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 216186000323,
+      "sourceLabel": "Carmel School Hong Kong · The IB Curriculum (PYP/MYP/DP)",
+      "sourceUrl": "https://www.carmel.edu.hk/academics/ib",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Nursery–Grade 5；MYP：Grade 6–10；DP：Grade 11–12。",
+        "note": "Carmel 官方 2025–26 学术概况与 IB 课程页列出上述年级段。年级覆盖表示学校开办相应课程，不代表插班可直接进入对应年级或自动获得高中课程资格。",
+        "sources": [
+          {
+            "sourceLabel": "Carmel School · The IB Curriculum",
+            "sourceUrl": "https://www.carmel.edu.hk/academics/ib"
+          },
+          {
+            "sourceLabel": "Carmel School · Academic Profile 2025–26",
+            "sourceUrl": "https://resources.finalsite.net/images/v1770886196/elsa/mtcpw4rv13nutllwlltj/CarmelSchoolAcademicProfile2025-26Feb26.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 230979000123,
+      "sourceLabel": "Education Bureau International Schools Directory · ICHK Hong Lok Yuen Primary",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/19.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "IB PYP；EDB 列明 ICHK Secondary 优先学位",
+        "priority": 1,
+        "note": "EDB 校档列明 ICHK Hong Lok Yuen 学生可获 ICHK Secondary 优先学位；ICHK 当前招生资料另说明学位须视乎班级空缺及入学要求，最终由校长决定，因此应视为优先渠道而非无条件录取。ICHK 开办 Years 12–13 IBDP，但升读中学不代表日后获录取。",
+        "sources": [
+          {
+            "sourceLabel": "Education Bureau International Schools Directory · ICHK Secondary",
+            "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/18.html"
+          },
+          {
+            "sourceLabel": "ICHK Secondary · Admissions Info",
+            "sourceUrl": "https://www.ichk.edu.hk/join/admissions-info"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：Hong Lok Yuen Primary 至 Year 6；低年级入口／学年编班需按最新招生资料再确认。",
+        "note": "可查到的 ICHK Early Years Guide（2017）列出 Nursery 至 Year 6；因文件较旧，页面保留来源年份，不把入口年级当作当前政策，申请前请学校复核。",
+        "sources": [
+          {
+            "sourceLabel": "ICHK Hong Lok Yuen · Early Years Guide (2017)",
+            "sourceUrl": "https://www.ichk.edu.hk/wp-content/uploads/2017/03/Early-Years-Guide.pdf"
+          },
+          {
+            "sourceLabel": "Education Bureau International Schools Directory · ICHK Hong Lok Yuen Primary",
+            "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/19.html"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 325279000123,
+      "sourceLabel": "Creative Primary School · IB PYP",
+      "sourceUrl": "https://www.creativeprisch.edu.hk/post/creative-primary-school-and-creative-primary-school-s-kindergarten-celebrate-40th-anniversary-with-s",
+      "programmes": [
+        "PYP"
+      ],
+      "gradeScope": {
+        "label": "PYP：小学阶段；校方资料至少确认 P6 有 PYP Exhibition，完整逐级范围未公开列明。",
+        "note": "不据此推断每个年级都采用完全相同的 PYP 安排；具体年级实施范围请向 Creative Primary 核实。",
+        "sources": [
+          {
+            "sourceLabel": "Creative Primary School · IB PYP Curriculum",
+            "sourceUrl": "https://www.creativeprisch.edu.hk/ib%E8%AA%B2%E7%A8%8B"
+          },
+          {
+            "sourceLabel": "Creative Primary School · P6 PYP Exhibition",
+            "sourceUrl": "https://www.creativeprisch.edu.hk/p6-pyp-exhibition"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 522775000123,
+      "sourceLabel": "Japanese International School · IB PYP",
+      "sourceUrl": "https://es.jis.edu.hk/ib-pyp",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "IB PYP 及 ICHK 衔接伙伴关系仅针对 JIS International Section",
+        "priority": 1,
+        "note": "JIS 现有 Japanese Section 与 International Section 两个学部；IB PYP 和 ICHK 衔接证据针对 International Section。ICHK 当前招生资料说明录取仍视乎班级空缺、入学要求及校长决定，因此不能表述为无条件自动录取；且不代表小学毕业生日后必然进入 Years 12–13 IBDP。",
+        "sources": [
+          {
+            "sourceLabel": "JIS · School Sections",
+            "sourceUrl": "https://www.jis.edu.hk/About-HKJS-JIS/"
+          },
+          {
+            "sourceLabel": "ICHK · Partnerships",
+            "sourceUrl": "https://www.ichk.edu.hk/about/partnerships"
+          },
+          {
+            "sourceLabel": "ICHK Secondary · Admissions Info",
+            "sourceUrl": "https://www.ichk.edu.hk/join/admissions-info"
+          },
+          {
+            "sourceLabel": "Education Bureau · ICHK Secondary",
+            "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/18.html"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：只适用 Japanese International School 的 International Section；EDB 英文校档列明 Age 3–11。",
+        "note": "JIS 现有 Japanese Section 与 International Section 两个学部；IB PYP 和 ICHK 衔接证据针对 International Section，不可直接套用到 Japanese Section。ICHK 伙伴录取仍受当年名额、入学要求和校长决定约束。",
+        "sources": [
+          {
+            "sourceLabel": "Japanese International School · IB PYP (International Section)",
+            "sourceUrl": "https://es.jis.edu.hk/ib-pyp"
+          },
+          {
+            "sourceLabel": "Japanese International School · School Sections",
+            "sourceUrl": "https://www.jis.edu.hk/About-HKJS-JIS/"
+          },
+          {
+            "sourceLabel": "Education Bureau · Japanese International School (English)",
+            "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/20.html"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 539155000323,
+      "sourceLabel": "IB World Schools Directory · Hong Kong Academy",
+      "sourceUrl": "https://www.ibo.org/en/school/2218/",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Early Years–Grade 5；MYP：Grade 6–10；DP：Grade 11–12。",
+        "note": "HKA 的 Grade 11–12 可选择 IB DP level 或 High School level courses；不是每名学生都自动修读完整 IBDP。这里显示课程供应范围，不代表自动升班或获选任何课程组合。",
+        "sources": [
+          {
+            "sourceLabel": "Hong Kong Academy · IB Programmes",
+            "sourceUrl": "https://hkacademy.edu.hk/ib-curriculum/"
+          },
+          {
+            "sourceLabel": "Hong Kong Academy · Pathways to Graduation",
+            "sourceUrl": "https://hkacademy.edu.hk/pathways-to-graduation/"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 541915000123,
+      "sourceLabel": "Education Bureau International Schools Directory · Kingston International School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/24.html",
+      "programmes": [
+        "PYP"
+      ],
+      "progression": {
+        "label": "IB PYP；Kingston 公布 ICHK 中学「保证学位」衔接（须核对现行条款）",
+        "priority": 1,
+        "note": "Kingston 校方以 Guaranteed Secondary Placement 描述毕业生衔接 ICHK Secondary 的安排；ICHK 当前招生资料则说明录取仍须视乎班级空缺、入学要求及校长决定。家长应按入学年度向两校确认保证安排的具体资格、申请及确认条款；这不代表保证进入 ICHK Years 12–13 IBDP。",
+        "sources": [
+          {
+            "sourceLabel": "Kingston International School · Our Secondary School",
+            "sourceUrl": "https://www.kingston.edu.hk/learning-at-kingston/our-secondary-school"
+          },
+          {
+            "sourceLabel": "ICHK Secondary · Admissions Info",
+            "sourceUrl": "https://www.ichk.edu.hk/join/admissions-info"
+          },
+          {
+            "sourceLabel": "Education Bureau International Schools Directory · ICHK Secondary",
+            "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/18.html"
+          }
+        ],
+        "checkedOn": "2026-10-11"
+      },
+      "gradeScope": {
+        "label": "PYP：1–11 岁；Primary 年级为 Year 1–6，另设更低年龄的 Early Years。",
+        "note": "Kingston 将 IB PYP 年龄范围列为 1–11 岁，学校另有 Early Years 与 Primary 阶段。1–11 岁不是 Year 1–11；入读年级应按生日和当年分班规则核实。",
+        "sources": [
+          {
+            "sourceLabel": "Kingston International School · PYP / Primary",
+            "sourceUrl": "https://www.kingston.edu.hk/"
+          },
+          {
+            "sourceLabel": "Education Bureau International Schools Directory · Kingston International School",
+            "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/24.html"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 560138000223,
+      "sourceLabel": "IB World Schools Directory · Victoria Shanghai Academy",
+      "sourceUrl": "https://www.ibo.org/en/school/2634/",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Year 1–5；MYP：Year 6–10；DP：Year 11–12。",
+        "note": "VSA 官方页面列明 PYP Year 1–5、MYP Year 6–10 和 DP Year 11–12。课程开办范围不等于学生自动升班或保证获得完整 IBDP 课程资格，需核对入学及高中选课要求。",
+        "sources": [
+          {
+            "sourceLabel": "VSA · Primary School (PYP)",
+            "sourceUrl": "https://www.vsa.edu.hk/learning/primary-school"
+          },
+          {
+            "sourceLabel": "VSA · Secondary School (MYP / DP)",
+            "sourceUrl": "https://www.vsa.edu.hk/learning/secondary-school"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 567485000123,
+      "sourceLabel": "Renaissance College · Curriculum Overview",
+      "sourceUrl": "https://rchk.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP",
+        "CP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Year 1–6；MYP：Year 7–11；DP／CP：Year 12–13。",
+        "note": "RCHK 同校还开办 IB Career-related Programme（CP）。DP／CP 都是在 Year 12–13 提供的不同课程选择；不代表学生自动升班或保证获派某一高中课程，需按当年招生和课程资格核对。",
+        "sources": [
+          {
+            "sourceLabel": "Renaissance College · Curriculum Overview",
+            "sourceUrl": "https://rchk.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 569747000223,
+      "sourceLabel": "IB World Schools Directory · Discovery College",
+      "sourceUrl": "https://www.ibo.org/en/school/3544/",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP",
+        "CP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Year 1–6；MYP：Year 7–11；DP／CP：Year 12–13。",
+        "note": "Discovery College 在 Year 12–13 同时提供 DP 和 CP；DP 既可修完整文凭，也可选 individual Diploma Courses。这里表示课程可选范围，不是保证每名学生均获完整 IBDP／CP 资格。",
+        "sources": [
+          {
+            "sourceLabel": "Discovery College · PYP",
+            "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/PYP/"
+          },
+          {
+            "sourceLabel": "Discovery College · MYP",
+            "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/MYP/"
+          },
+          {
+            "sourceLabel": "Discovery College · DP / CP",
+            "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/DP_CP/"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 579530000123,
+      "sourceLabel": "ELCHK Lutheran Academy · School Profile (PYP／MYP／DP 授权及一条龙自述)",
+      "sourceUrl": "https://www.luac.edu.hk/school-profile/",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Year 1–6；校方另列同校 MYP 与 DP 授权，但此资料未确认逐级年级安排。",
+        "note": "宏信校方把小学课程描述为香港课程与 PYP 的整合（「Glocalized Curriculum」），并自述为直资一条龙 IB 学校，提供 IBDP 与 HKDSE 双出口。Year 7 招生页设有入学申请渠道，但公开资料未列明小六升中资格、过渡门槛或每名学生的 IBDP 选读安排。因此应理解为同校具 IB 课程衔接及高中选项；不代表自动升中，也不代表保证入读 IBDP。小学课程不能描述为纯 PYP。实际安排须向校方核实。",
+        "sources": [
+          {
+            "sourceLabel": "ELCHK Lutheran Academy · Primary School Programme (Year 1–6)",
+            "sourceUrl": "https://www.luac.edu.hk/la-curriculum/#PrimarySchool"
+          },
+          {
+            "sourceLabel": "ELCHK Lutheran Academy · School Profile (PYP／MYP／DP 授权)",
+            "sourceUrl": "https://www.luac.edu.hk/school-profile/"
+          },
+          {
+            "sourceLabel": "ELCHK Lutheran Academy · Year 7 Admissions",
+            "sourceUrl": "https://www.luac.edu.hk/admissions/"
+          }
+        ]
+      },
+      "relatedSources": [
+        {
+          "sourceLabel": "ELCHK Lutheran Academy · LA Curriculum (小学 PYP、课程整合及双出口)",
+          "sourceUrl": "https://www.luac.edu.hk/la-curriculum/"
+        },
+        {
+          "sourceLabel": "ELCHK Lutheran Academy · Prospectus (直资一条龙 IB 学校及 IBDP／HKDSE 双出口自述)",
+          "sourceUrl": "https://www.luac.edu.hk/prospectus/"
+        },
+        {
+          "sourceLabel": "ELCHK Lutheran Academy · Year 7 Admissions (中学入学申请渠道)",
+          "sourceUrl": "https://www.luac.edu.hk/admissions/"
+        }
+      ]
+    },
+    {
+      "schoolNo": 600814000123,
+      "displayName": "Discovery Montessori Academy",
+      "sourceLabel": "Discovery Montessori Academy · IB Montessori Elementary (6–12Y)",
+      "sourceUrl": "https://www.montessori-ami.edu.hk/en/content.php?wid=46",
+      "programmes": [
+        "PYP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Lower Primary 6–9 岁、Upper Primary 9–12 岁；校方未在课程页列出本校正式年级编号。",
+        "note": "校方把小学课程描述为 IB PYP 与 International Montessori Curriculum 的结合；6–9、9–12 是年龄组别，不可自行换算为 Year／Grade。现有官方页面确认的是 PYP 小学阶段，未据此推断同校有 MYP／DP 或保证日后入读 IBDP。",
+        "sources": [
+          {
+            "sourceLabel": "Discovery Montessori Academy · IB Montessori Elementary (6–12Y)",
+            "sourceUrl": "https://www.montessori-ami.edu.hk/en/content.php?wid=46"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 606766000123,
+      "sourceLabel": "Malvern College Hong Kong · IB Overview (PYP/MYP/DP)",
+      "sourceUrl": "https://malverncollege.org.hk/ib-overview/",
+      "programmes": [
+        "PYP",
+        "MYP",
+        "DP"
+      ],
+      "gradeScope": {
+        "label": "PYP：Prep 1–6（相当于 Year 1–6）；MYP：Senior 阶段 Year 7–11；DP：Sixth Form Year 12–13。",
+        "note": "Malvern 的 Prep 1–6、Senior 和 Sixth Form 年级对应依据校方 2026/27 Age Guidelines；Senior（11–16 岁）为 MYP，Sixth Form 为 IBDP。插班年级按学年、生日及校方评估决定；同校开办不等于自动升班或保证进入 IBDP。",
+        "sources": [
+          {
+            "sourceLabel": "Malvern College Hong Kong · Prep / PYP",
+            "sourceUrl": "https://malverncollege.org.hk/prep/"
+          },
+          {
+            "sourceLabel": "Malvern College Hong Kong · Senior / MYP",
+            "sourceUrl": "https://malverncollege.org.hk/senior/"
+          },
+          {
+            "sourceLabel": "Malvern College Hong Kong · Sixth Form / IBDP",
+            "sourceUrl": "https://malverncollege.org.hk/sixth-form/"
+          },
+          {
+            "sourceLabel": "Malvern College Hong Kong · Age Guidelines 2026–27",
+            "sourceUrl": "https://malverncollege.org.hk/admissions-process/age-guidelines/"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 607290000123,
+      "sourceLabel": "HKCA Po Leung Kuk School · The Primary Years Programme",
+      "sourceUrl": "https://www.plkis.edu.hk/our-primary-school-programme/",
+      "programmes": [
+        "PYP"
+      ],
+      "relatedSources": [
+        {
+          "sourceLabel": "HKCA Po Leung Kuk School · Our Curriculum",
+          "sourceUrl": "https://www.plkis.edu.hk/our-curriculum/"
+        }
+      ],
+      "gradeScope": {
+        "label": "PYP：校方以 3–12 岁说明 PYP 框架适用年龄；该课程页没有逐级列出本校年级编号。",
+        "note": "3–12 岁是 IB-PYP 框架的年龄范围，不应误读为 HKCA 的招生年龄、年级保证或每个年级都开放学位；具体入学年级以学校当年招生资料为准。",
+        "sources": [
+          {
+            "sourceLabel": "HKCA Po Leung Kuk School · The Primary Years Programme",
+            "sourceUrl": "https://www.plkis.edu.hk/our-primary-school-programme/"
+          }
+        ]
+      }
+    },
+    {
+      "schoolNo": 629685000123,
+      "sourceLabel": "YK Pao School Hong Kong · IB programme status and application",
+      "sourceUrl": "https://ykpaoschool.hk/sc/",
+      "programmes": [
+        "PYP"
+      ],
+      "programmeStatus": "planned",
+      "priority": 99,
+      "note": "校方網站把 IB PYP／MYP 描述為申請及計劃中的課程，須待 IB 批准；招生冊稱學校為 IB 候選學校，但校方網頁對候選資格的表述仍是申請階段。教育局國際學校名錄則列出 IB PYP。因官方來源對授權狀態的表述不一致，本頁只列作「計劃／待核」的 IB 路線線索，排在已獲授權的 PYP 學校之後；不可視為已獲 PYP 授權或保證入讀。",
+      "relatedSources": [
+        {
+          "sourceLabel": "Education Bureau International Schools Directory · YK Pao School Hong Kong",
+          "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/110.html"
+        },
+        {
+          "sourceLabel": "YK Pao School Hong Kong · School Brochure (July 2026)",
+          "sourceUrl": "https://ykpaoschool.hk/wp-content/uploads/2026/10/20260707_HKPAO_Brochure_Jul2026_BI_v4_EN.pdf"
+        }
+      ]
+    }
+  ]
+}

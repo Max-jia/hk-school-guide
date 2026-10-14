@@ -13,6 +13,7 @@ import {
   type ReportData,
 } from "@/lib/reports";
 import { L, type Locale } from "@/lib/i18n";
+import { buildReportCommuteInfo } from "@/lib/report-commute";
 
 type RelatedReport = { slug: string; title: string };
 
@@ -43,10 +44,15 @@ function reportTier(d: ReportData): string {
 }
 
 function reportCategory(d: ReportData): string {
-  const t = d.title;
+  const t = `${d.title || ""} ${d.hero || ""}`;
   if (t.includes("幼稚园") || t.includes("幼稚園")) return "kg";
   if (t.includes("小学") || t.includes("小學")) return "primary";
   return "";
+}
+
+function reportSchoolName(d: ReportData): string {
+  const title = d.title || (d.hero || "").match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || d.slug;
+  return title.replace(/<[^>]+>/g, "").replace(/\s*(深度择校报告|深度擇校報告)$/, "").trim();
 }
 
 let relatedCache: Map<string, RelatedReport[]> | null = null;
@@ -163,14 +169,15 @@ export default async function ReportPage({
 
   const related = findRelated(slug);
   const jsonLd = reportJsonLd(d, locale);
+  const schoolName = L(reportSchoolName(d), locale);
+  const shortlistKind = reportCategory(d) === "kg" ? "kindergarten" : "primary";
+  const commuteInfo = buildReportCommuteInfo(schoolName, d.body, shortlistKind, locale);
 
   // 在服务端就把正文转好再传给 ReportViewer(client component):
   // 否则 RSC flight payload 里带的会是未转换的简体原文,AI 抓取器读到的是错的字形。
   // 转换是幂等的,ReportViewer 里再转一次不会出问题。
   //
-  // 注意:付费章节(premiumHtml)刻意不在这里传下去。它是付费商品,改成解锁后
-  // 向 /api/report-content 验签换取(见 components/PremiumContent.tsx)。
-  // 免费章节(hero + body,约第 0-1 章)仍然照旧进静态 HTML,给搜索引擎与 AI 读。
+  // 报告全文（body + premiumHtml）都在服务端传给展示层，所有章节公开可读。
   const relatedLocalized = related.map((r) => ({ ...r, title: L(r.title, locale) }));
 
   return (
@@ -180,11 +187,12 @@ export default async function ReportPage({
         slug={slug}
         hero={L(d.hero, locale)}
         body={L(d.body, locale)}
-        free={d.free}
-        allAccessUrl={d.allAccessUrl}
-        singleUrl={d.singleUrl}
+        premiumHtml={L(d.premiumHtml, locale)}
         related={relatedLocalized}
         locale={locale}
+        schoolName={schoolName}
+        shortlistKind={shortlistKind}
+        commuteInfo={commuteInfo}
       />
     </>
   );

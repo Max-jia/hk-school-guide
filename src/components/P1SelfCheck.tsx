@@ -1,7 +1,7 @@
 "use client";
 
 import Localize from "@/components/Localize";
-import { type Locale } from "@/lib/i18n";
+import { L, type Locale } from "@/lib/i18n";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
@@ -241,6 +241,7 @@ export default function P1SelfCheck({ locale = "tc" }: { locale?: Locale }) {
           </p>
           <input
             readOnly
+            aria-label={L("自查结果分享链接", locale)}
             value={shareUrl}
             onFocus={(e) => e.currentTarget.select()}
             className="mt-1 w-full rounded-[6px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] px-3 py-2 font-mono text-xs text-[var(--p-secondary)] outline-none"

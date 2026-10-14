@@ -7,35 +7,30 @@ import Localize from "@/components/Localize";
 import { L, type Locale } from "@/lib/i18n";
 
 export default function SchoolFitCard({
-  options, score, kidGender, unlocked, buying, buy, locale = "tc",
+  options, score, kidGender, locale = "tc",
 }: {
   options: SchoolOpt[];
   score: number;
   kidGender: string;
-  unlocked: boolean;
-  buying: boolean;
-  buy: () => void;
   locale?: Locale;
 }) {
   const [picked, setPicked] = useState("");
-  const [count, setCount] = useState(0);
   const [analysed, setAnalysed] = useState(false);
   const [sibAtSchool, setSibAtSchool] = useState(false);
   const [parentAtSchool, setParentAtSchool] = useState(false);
-  const locked = !unlocked && count >= 1;
 
   const school = options.find((o) => o.name === picked);
-  const outOfRoster = picked.trim() && !school;
-  const genderBad =
+  const outOfRoster = Boolean(picked.trim() && !school);
+  const genderBad = Boolean(
     school?.gender &&
     kidGender !== "不限" &&
-    ((school.gender === "男校" && kidGender === "女") || (school.gender === "女校" && kidGender === "男"));
+    ((school.gender === "男校" && kidGender === "女") || (school.gender === "女校" && kidGender === "男"))
+  );
   const catA = Boolean(school) && (sibAtSchool || parentAtSchool);
 
   function analyse() {
-    if (!picked.trim() || outOfRoster || locked) return;
+    if (!picked.trim() || outOfRoster) return;
     setAnalysed(true);
-    if (!unlocked) setCount((c) => c + 1);
   }
 
   const fit = school ? assessSchoolFit(score, school.quota ?? null, school.name) : null;
@@ -59,12 +54,9 @@ export default function SchoolFitCard({
       <div className="flex items-center gap-2">
         <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">底牌卡 · 我这点分能进吗</h2>
         <span className="rounded-full bg-[#FEF3E2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#B45309]">阶段一 · 自行分配</span>
-        {!unlocked && (
-          <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>
-        )}
       </div>
       <p className="mt-1 text-sm text-[var(--p-secondary)]">
-        选一所官津学校，结合你的计分（{score} 分）和该校学额，给出相对竞争位置。免费 1 次，解锁后不限次。
+        选一所官津学校，结合你的计分（{score} 分）和该校学额，给出相对竞争位置。
       </p>
 
       <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -73,10 +65,10 @@ export default function SchoolFitCard({
         </div>
         <button
           onClick={analyse}
-          disabled={!picked.trim() || outOfRoster || locked}
+          disabled={!picked.trim() || outOfRoster}
           className="rounded-[8px] bg-[var(--p-fg)] px-5 py-2.5 text-sm font-bold text-[var(--p-bg)] disabled:opacity-40"
         >
-          {locked ? "已用免费次数 · 解锁后继续" : "分析"}
+          分析
         </button>
       </div>
 
@@ -150,20 +142,6 @@ export default function SchoolFitCard({
               <p className="mt-1.5 text-xs leading-relaxed text-[var(--p-secondary)]">
                 规则底线：只能申请 1 间（多交作废）· 失败自动参加统一派位（无损失）· 录取须注册（退出统派）· 没中仍可在统派把同一校放第一志愿（双保险）。
               </p>
-            </div>
-          )}
-          {locked && (
-            <div className="absolute inset-0 flex items-center justify-center rounded-[12px] bg-[rgba(255,255,255,.82)]">
-              <div className="rounded-[10px] bg-[#FEF3E2] px-6 py-4 text-center text-[#B45309]">
-                <p className="font-bold">🔒 免费次数已用完</p>
-                <button
-                  onClick={buy}
-                  disabled={buying}
-                  className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-5 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
-                >
-                  {buying ? "正在前往支付…" : "解锁 · HK$68"}
-                </button>
-              </div>
             </div>
           )}
         </div>

@@ -1,19 +1,21 @@
 "use client";
 
 import Localize from "@/components/Localize";
-import { type Locale } from "@/lib/i18n";
+import { L, type Locale } from "@/lib/i18n";
 
 import { useEffect, useMemo, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import p1NetsJson from "@/content/p1-nets.json";
+import { getNetAllocationHistory, getSystemAllocationHistory, P1_ALLOCATION_HISTORY } from "@/lib/p1-allocation-history";
 import SchoolCombobox, { type SchoolOpt } from "@/components/SchoolCombobox";
 import SchoolCompare from "@/components/SchoolCompare";
 import SchoolFitCard from "@/components/SchoolFitCard";
 import DataVersionBadge from "@/components/DataVersionBadge";
-import type { SimSchool, SimTier } from "@/lib/sim-engine";
+import type { CapacityBand, SimSchool, SimTier } from "@/lib/sim-engine";
 import { applySuggestedOrder, computeSlideLine, suggestOrder, runSimCheck, relativeBand } from "@/lib/sim-engine";
 import { RENEW_NOTE } from "@/lib/data-version";
+import { readShortlist, SHORTLIST_CHANGE_EVENT, type ShortlistEntry } from "@/lib/shortlist";
 
 const P1 = p1NetsJson as {
   nets: {
@@ -83,15 +85,28 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   const [partAGenderFilter, setPartAGenderFilter] = useState("不限");
   const [partA, setPartA] = useState<SimSchool[]>(EMPTY_A);
   const [partB, setPartB] = useState<SimSchool[]>(EMPTY_B);
-  const [unlocked, setUnlocked] = useState(false);
-  const [buying, setBuying] = useState(false);
+  // 全站工具目前开放完整功能；保留这个布尔值是为了兼容旧草稿结构。
+  const unlocked = true;
   const [savedTip, setSavedTip] = useState(false);
+  const [fillTip, setFillTip] = useState("");
   const [dragIdx, setDragIdx] = useState<number | null>(null);
   const [plans, setPlans] = useState<SavedPlan[]>([]);
   const [planTip, setPlanTip] = useState("");
   const [partANetFilter, setPartANetFilter] = useState(ALL_NETS);
   const [partBNetFilter, setPartBNetFilter] = useState(INIT_NET);
   const [partBGenderFilter, setPartBGenderFilter] = useState("不限");
+  const [shortlist, setShortlist] = useState<ShortlistEntry[]>([]);
+
+  useEffect(() => {
+    const syncShortlist = () => setShortlist(readShortlist());
+    syncShortlist();
+    window.addEventListener(SHORTLIST_CHANGE_EVENT, syncShortlist);
+    window.addEventListener("storage", syncShortlist);
+    return () => {
+      window.removeEventListener(SHORTLIST_CHANGE_EVENT, syncShortlist);
+      window.removeEventListener("storage", syncShortlist);
+    };
+  }, []);
 
   const allSchoolOpts = useMemo<SchoolOpt[]>(() => {
     const out: SchoolOpt[] = [];
@@ -117,6 +132,18 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     });
   }, [allSchoolOpts, partAGenderFilter, partANetFilter]);
 
+  const shortlistedPrimary = useMemo(() => {
+    function sameSchool(entry: ShortlistEntry, option: SchoolOpt): boolean {
+      const entryNames = [entry.name, L(entry.name, "tc"), L(entry.name, "sc")].map((value) => value.trim());
+      return entryNames.includes(option.name) || entryNames.includes(option.simp || "");
+    }
+
+    return shortlist
+      .filter((entry) => entry.kind === "primary")
+      .map((entry) => ({ entry, option: allSchoolOpts.find((option) => sameSchool(entry, option)) }))
+      .filter((item, index, items) => items.findIndex((candidate) => candidate.entry.id === item.entry.id) === index);
+  }, [allSchoolOpts, shortlist]);
+
   function toOpt(sc: (typeof P1.nets)[number]["schools"][number], net: string, area_short: string): SchoolOpt {
     return { name: sc.name, simp: sc.simp, quota: sc.quota, net, area_short, gender: sc.gender, sessions: sc.sessions, through_train: sc.through_train, language: sc.language, religion: sc.religion };
   }
@@ -135,7 +162,6 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   }, [partBNetFilter]);
 
   useEffect(() => {
-    setUnlocked(localStorage.getItem("purchased_p1-sim") === "true");
     try {
       const raw = localStorage.getItem("p1sim_input");
       if (raw) {
@@ -163,9 +189,15 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     }, []);
 
   const filledB = partB.filter((s) => s.name.trim());
-  const bCount = filledB.length;
-  const safeCount = filledB.filter((s) => s.tier === "safe").length;
-  const sprintCount = filledB.filter((s) => s.tier === "sprint").length;
+  const currentRosterOption = (name: string) => {
+    const value = name.trim();
+    return partBSchoolOpts.find((o) => o.name === value || o.simp === value);
+  };
+  // 旧草稿会在切换校网后保留并显示警告，但不能占用当前校网的补齐名额。
+  const currentRosterFilledB = filledB.filter((s) => currentRosterOption(s.name));
+  const bCount = currentRosterFilledB.length;
+  const safeCount = currentRosterFilledB.filter((s) => s.tier === "safe").length;
+  const sprintCount = currentRosterFilledB.filter((s) => s.tier === "sprint").length;
   const dupNames = useMemo(() => {
     const seen = new Set<string>(); const dup = new Set<string>();
     for (const s of filledB) {
@@ -213,14 +245,23 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
   const partBOutOfRoster = useMemo(() => {
     // 乙部只能填当前所属校网；切换校网后保留的旧草稿不能继续参加
     // 滑档线/排序推导，否则未知学额会被当成普通档，结果会误导用户。
-    const hit = filledB.find((x) => !partBSchoolOpts.some((o) => o.name === x.name.trim()));
+    const hit = filledB.find((x) => {
+      const value = x.name.trim();
+      return !partBSchoolOpts.some((o) => o.name === value || o.simp === value);
+    });
     return hit ? hit.name.trim() : null;
   }, [filledB, partBSchoolOpts]);
 
-  const slide = useMemo(
-    () => computeSlideLine(filledB, (n) => quotaMap.get(n) ?? null),
-    [filledB, quotaMap]
+  const slide = useMemo(() => {
+    const selectedNet = P1.nets.find((entry) => entry.net === partBNetFilter);
+    const peerQuotas = selectedNet?.schools.map((school) => school.quota ?? 0) ?? [];
+    return computeSlideLine(filledB, (name) => quotaMap.get(name) ?? null, peerQuotas);
+  }, [filledB, partBNetFilter, quotaMap]);
+  const netAllocationHistory = useMemo(
+    () => getNetAllocationHistory(partBNetFilter),
+    [partBNetFilter]
   );
+  const systemAllocationHistory = getSystemAllocationHistory();
   const advice = useMemo(
     () => suggestOrder(filledB, (n) => quotaMap.get(n) ?? null),
     [filledB, quotaMap]
@@ -250,7 +291,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     const b1 = filledB[0]?.name.trim() || "";
     if (a1 && b1 && a1 !== b1) tips.push({ kind: "info", text: "甲一与乙一不是同一所（1-1-1 未对齐），若目标校在网内建议统一。" });
 
-    if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，建议解锁完整报告再核对一遍。" });
+    if (tips.length === 0) tips.push({ kind: "ok", text: "结构看起来没有明显硬伤，可以继续检查完整报告。" });
     return tips.slice(0, 3);
   }, [safeCount, bCount, dupNames, rel, org, sprintCount, targetB, genderMismatchNames, partAGenderMismatchNames, partA, filledB]);
 
@@ -286,23 +327,6 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     setter(list.map((r, j) => (j === i ? { ...r, ...patch } : r)));
   }
 
-  function buy() {
-    save();
-    setBuying(true);
-    fetch("/api/checkout", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ product: "sim" }),
-    })
-      .then((r) => r.json())
-      .then((j) => {
-        if (j.url) window.location.href = j.url;
-        else alert("下单失败：" + (j.error || "请稍后重试"));
-      })
-      .catch(() => alert("网络错误，请稍后重试"))
-      .finally(() => setBuying(false));
-  }
-
   function quotaOfAny(netName: string, schoolName: string): number | null {
     const n = P1.nets.find((x) => x.net === netName);
     const sc = n?.schools.find((s) => s.name === schoolName.trim());
@@ -322,7 +346,8 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     });
     const slide = computeSlideLine(
       plan.partB.filter((s) => s.name.trim()),
-      (nm) => quotaOfAny(bNet, nm)
+      (nm) => quotaOfAny(bNet, nm),
+      n?.schools.map((school) => school.quota ?? 0) ?? []
     );
     return { rep, slide };
   }
@@ -387,9 +412,57 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
     );
   }
 
-  // 一键补齐：把网内未填、性别符合的学校按「竞争度」从充裕到稀缺排入剩余志愿
+  function showFillTip(message: string) {
+    setFillTip(message);
+    setTimeout(() => setFillTip(""), 2500);
+  }
+
+  function importShortlistToPartA(option: SchoolOpt) {
+    if (!partASchoolOpts.some((candidate) => candidate.name === option.name)) {
+      showFillTip("这所候选学校不符合当前甲部校网或性别筛选，请先调整筛选条件。");
+      return;
+    }
+    if (partA.some((school) => school.name === option.name || school.name === option.simp)) {
+      showFillTip(`「${option.name}」已经在甲部志愿中。`);
+      return;
+    }
+    const emptyIndex = partA.findIndex((school) => !school.name.trim());
+    if (emptyIndex < 0) {
+      showFillTip("甲部 3 个志愿已经填满，请先清空一个位置。");
+      return;
+    }
+    setRow(partA, setPartA, emptyIndex, { name: option.name, tier: "match" });
+    showFillTip(`已把「${option.name}」加入甲部第 ${emptyIndex + 1} 志愿。`);
+  }
+
+  function importShortlistToPartB(option: SchoolOpt) {
+    const allowed = partBSchoolOpts.some((candidate) => candidate.name === option.name) && !genderBadSchool(option);
+    if (!allowed) {
+      showFillTip(`「${option.name}」不符合当前乙部校网 ${partBNetFilter} 或性别筛选，请先调整筛选条件。`);
+      return;
+    }
+    if (filledB.some((school) => school.name === option.name || school.name === option.simp)) {
+      showFillTip(`「${option.name}」已经在乙部志愿中。`);
+      return;
+    }
+    const emptyIndex = partB.findIndex((school) => !school.name.trim());
+    if (emptyIndex < 0) {
+      showFillTip("当前乙部没有空位，请先清空一个位置再导入候选学校。");
+      return;
+    }
+    setRow(partB, setPartB, emptyIndex, { name: option.name, tier: "match" });
+    showFillTip(`已把「${option.name}」加入乙部第 ${emptyIndex + 1} 志愿。`);
+  }
+
+  // 一键补齐：只按当前校网的有效学校计算空位，再把性别符合的学校按
+  // 「竞争度」从充裕到稀缺排入剩余志愿。切换校网后旧草稿仍保留，但不能
+  // 被误算成当前校网已填，否则按钮会提前消失或只补入一部分学校。
   function fillMissing() {
-    const filled = new Set(filledB.map((s) => s.name.trim()));
+    const currentFilledRows = filledB
+      .map((s) => ({ row: s, option: currentRosterOption(s.name) }))
+      .filter((entry): entry is { row: SimSchool; option: SchoolOpt } => Boolean(entry.option));
+    const outOfRosterRows = filledB.filter((s) => !currentRosterOption(s.name));
+    const filled = new Set(currentFilledRows.map(({ option }) => option.name));
     const rank = (o: SchoolOpt) => {
       const b = relativeBand(o.name, o.quota ?? null);
       return b === "充裕" ? 0 : b === "普通" ? 1 : 2;
@@ -403,17 +476,29 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
       name: o.name,
       tier: (relativeBand(o.name, o.quota ?? null) === "充裕" ? "safe" : "match") as SimTier,
     }));
-    if (picks.length === 0) {
-      setSavedTip(true);
-      setTimeout(() => setSavedTip(false), 1500);
+    if (need === 0) {
+      showFillTip(`当前已填满 ${partBNetFilter} 网的 ${targetB} 所有效学校。`);
       return;
     }
-    // 保留已填顺序，剩余空位补入候选
-    const filledArr = filledB.map((s) => ({ ...s }));
-    const blanks = Array.from({ length: Math.max(0, targetB - filledArr.length - picks.length) }, () => ({ name: "", tier: "match" as SimTier }));
-    setPartB([...filledArr, ...picks, ...blanks]);
-    setSavedTip(true);
-    setTimeout(() => setSavedTip(false), 1500);
+
+    // 保留当前校网已有顺序；简体别名统一回存为名册中的繁体名称。
+    const filledArr = currentFilledRows.map(({ row, option }) => ({ ...row, name: option.name }));
+    const blanks = Array.from(
+      { length: Math.max(0, targetB - filledArr.length - picks.length) },
+      () => ({ name: "", tier: "match" as SimTier })
+    );
+    // 不删除切换校网后留下的旧草稿，放到末尾继续显示警告；当前校网学校会先被真正补齐。
+    setPartB([...filledArr, ...picks, ...blanks, ...outOfRosterRows]);
+
+    if (picks.length < need) {
+      showFillTip(
+        `已补入 ${picks.length} 所；${partBNetFilter} 网在当前「${partBGenderFilter}」筛选下只有 ${filled.size + picks.length}/${targetB} 所可选。切换为“不限”可列出本网全部学校。`
+      );
+    } else if (outOfRosterRows.length > 0) {
+      showFillTip(`已补齐 ${partBNetFilter} 网有效学校；另保留 ${outOfRosterRows.length} 个旧校网草稿，请替换或删除。`);
+    } else {
+      showFillTip(`已补齐 ${targetB} 所 ${partBNetFilter} 网学校。`);
+    }
   }
 
   // 按建议顺序一键重排（只重排已填学校，空位保留在末尾）
@@ -455,12 +540,12 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
       <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[880px] px-4 pb-24">
         <div className="py-8">
-          <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Tools · Pro 模拟器</p>
+          <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Tools · 志愿结构模拟器</p>
           <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-bold leading-[1.08] tracking-[-1px] text-[var(--p-fg)]">
             交表前，先模拟一遍整张志愿表
           </h1>
           <p className="mt-2 max-w-[620px] text-[var(--p-secondary)]">
-            把甲部＋乙部志愿填进来，免费看结构快照；解锁 Pro 体检报告——风险等级、逐项检查、修改建议、叩门预案，一页 PDF 带走。
+            把甲部＋乙部志愿填进来，查看完整结构体检、风险等级、修改建议与叩门预案，一页 PDF 带走。
           </p>
           <p className="mt-3 rounded-[8px] border-l-4 border-[var(--p-hl-yellow-border)] bg-[var(--p-hl-yellow-bg)] px-4 py-3 text-sm text-[var(--p-fg)]">
             ⚠️ 我们不预测录取概率（随机编号不可模拟）。这个模拟器只回答一个问题：<strong>你这张表，有没有结构性错误。</strong>
@@ -472,7 +557,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
             </div>
             <div>
               <p className="font-mono text-xs font-bold uppercase text-[#0F766E]">阶段二 · 统一派位（随机编号，不看计分）</p>
-              <p className="mt-1 text-[var(--p-secondary)]">甲部＋乙部志愿表、滑档线、顺序建议都是这里：10 分和 35 分完全平等，只看志愿顺序和随机编号。</p>
+              <p className="mt-1 text-[var(--p-secondary)]">甲部＋乙部志愿表、派位历史参考和顺序建议都在这里：10 分和 35 分完全平等，统一派位仍按真实志愿顺序及随机编号处理。</p>
             </div>
           </div>
           <p className="mt-3 text-sm">
@@ -549,6 +634,62 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           </div>
         </section>
 
+        {/* 阶段一工具：先确定自行分配的目标校，再进入统一派位填表 */}
+        <SchoolFitCard options={allSchoolOpts} score={calcScore(rel, org)} kidGender={kidGender} locale={locale} />
+
+        <SchoolCompare locale={locale} />
+
+        {shortlistedPrimary.length > 0 && (
+          <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
+            <div className="flex flex-wrap items-center gap-2">
+              <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">我的候选 · 导入志愿</h2>
+              <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">本机清单</span>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--p-secondary)]">
+              报告页或学校对比页收藏的小学会显示在这里。导入只会填入当前空位，不会自动改变其他志愿顺序；甲部、乙部仍分别遵守自己的校网和性别筛选。
+            </p>
+            <div className="mt-4 grid gap-2">
+              {shortlistedPrimary.map(({ entry, option }) => {
+                const aAllowed = Boolean(option && partASchoolOpts.some((candidate) => candidate.name === option.name));
+                const bAllowed = Boolean(option && partBSchoolOpts.some((candidate) => candidate.name === option.name) && !genderBadSchool(option));
+                return (
+                  <div key={entry.id} className="flex flex-wrap items-center gap-2 rounded-[8px] border border-[var(--p-gray-300)] px-3 py-2">
+                    <span className="min-w-0 flex-1 text-sm font-bold text-[var(--p-fg)]">{entry.name}</span>
+                    {option ? (
+                      <>
+                        <span className="font-mono text-[10px] text-[var(--p-secondary)]">{option.net} 网 · {option.gender || "男女校"}</span>
+                        <button
+                          type="button"
+                          onClick={() => importShortlistToPartA(option)}
+                          disabled={!aAllowed}
+                          className="rounded-[6px] border border-[var(--p-fg)] px-2.5 py-1 text-xs font-bold text-[var(--p-fg)] disabled:cursor-not-allowed disabled:opacity-35"
+                          title={!aAllowed ? "不符合当前甲部筛选" : undefined}
+                        >
+                          加入甲部
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => importShortlistToPartB(option)}
+                          disabled={!bAllowed}
+                          className="rounded-[6px] border border-[var(--p-hl-border)] px-2.5 py-1 text-xs font-bold text-[var(--p-hl-border)] disabled:cursor-not-allowed disabled:opacity-35"
+                          title={!bAllowed ? `不属于当前乙部校网 ${partBNetFilter} 或性别不符` : undefined}
+                        >
+                          加入乙部
+                        </button>
+                      </>
+                    ) : (
+                      <span className="text-xs text-[#C2410C]">不在当前小一官津名册</span>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+            <p className="mt-3 text-xs text-[var(--p-secondary)]">
+              乙部按钮只允许导入当前选择校网内、且符合当前性别筛选的学校；如按钮变灰，请先调整对应筛选。
+            </p>
+          </section>
+        )}
+
         {/* 甲部 */}
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-2">
@@ -598,6 +739,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   value={s.name}
                   onChange={(v) => setRow(partA, setPartA, i, { name: v })}
                   placeholder={`甲部第 ${i + 1} 志愿（全港任选，可搜索或下拉）`}
+                  ariaLabel={L(`甲部第 ${i + 1} 志愿学校`, locale)}
                   locale={locale}
                 />
                 {genderBadge(s.name, allSchoolOpts, partAGenderFilter)}
@@ -605,6 +747,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   value={s.tier}
                   onChange={(e) => setRow(partA, setPartA, i, { tier: e.target.value as SimTier })}
                   className={tierCls + " w-24"}
+                  aria-label={L(`甲部第 ${i + 1} 志愿风险类别`, locale)}
                 >
                   {TIERS.map((t) => <option key={t.v} value={t.v}>{t.label}</option>)}
                 </select>
@@ -672,12 +815,15 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
             <b className="text-[#B45309]">注意：乙部不看计分——10 分和 35 分在这里完全平等，只按志愿顺序＋随机编号派位；你的计分只影响阶段一（自行分配）。</b>
           </div>
           <p className="mt-2 text-xs text-[var(--p-secondary)]">
-            💡 可拖拽或点 ↑↓ 调整顺序，滑档线和顺序建议会实时重算
+            💡 可拖拽或点 ↑↓ 调整顺序；名额规模参考和顺序建议会实时更新
           </p>
           <div className="mt-3 grid gap-2">
             {partB.map((s, i) => (
+              // Keep the row mounted while its controlled input value changes.
+              // Including s.name here remounted the combobox after every keystroke,
+              // which dropped focus and forced users to click before deleting again.
               <div
-                key={`${i}-${s.name}`}
+                key={i}
                 draggable
                 onDragStart={() => setDragIdx(i)}
                 onDragOver={(e) => e.preventDefault()}
@@ -709,6 +855,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   value={s.name}
                   onChange={(v) => setRow(partB, setPartB, i, { name: v })}
                   placeholder={`乙部第 ${i + 1} 志愿（可搜索或下拉）`}
+                  ariaLabel={L(`乙部第 ${i + 1} 志愿学校`, locale)}
                   locale={locale}
                 />
                 {genderBadge(s.name, partBSchoolOpts, partBGenderFilter)}
@@ -721,6 +868,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   value={s.tier}
                   onChange={(e) => setRow(partB, setPartB, i, { tier: e.target.value as SimTier })}
                   className={tierCls + " w-20"}
+                  aria-label={L(`乙部第 ${i + 1} 志愿风险类别`, locale)}
                 >
                   {TIERS.map((t) => <option key={t.v} value={t.v}>{t.label}</option>)}
                 </select>
@@ -740,14 +888,11 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
               ⚠️ 「{partBOutOfRoster}」不在官津名册内（可能是直资/私立/国际或他网学校）——不参加本网统一派位，乙部填了也不会被派位，请走自行申请，或改填本网官津学校。
             </p>
           )}
-          {/* 网内学校体检（Pro）：逐校标签 */}
+          {/* 网内学校体检：逐校标签 */}
           {filledB.length > 0 && (
             <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
               <div className="flex items-center gap-2">
                 <p className="font-serif text-lg font-bold text-[var(--p-fg)]">网内学校体检</p>
-                {!unlocked && (
-                  <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>
-                )}
               </div>
               <div className="mt-3 grid gap-2">
                 {filledB.slice(0, unlocked ? filledB.length : 1).map((s2, i2) => {
@@ -772,68 +917,141 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                   );
                 })}
               </div>
-              {!unlocked && (
-                <div className="mt-3 rounded-[8px] bg-[#FEF3E2] px-3 py-2 text-sm text-[#B45309]">
-                  <p className="font-bold">🔒 逐校体检是 Pro 功能</p>
-                  <p className="mt-1">
-                    解锁后可查看全部志愿学校的性别 / 宗教 / 班制 / 升中通路 / 学额标签，自动标出「填了也白填」的学校。
-                  </p>
-                  <button
-                    onClick={buy}
-                    disabled={buying}
-                    className="mt-2 rounded-[8px] bg-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
-                  >
-                    {buying ? "正在前往支付…" : "解锁完整逐校体检 · HK$68"}
-                  </button>
-                </div>
-              )}
             </div>
           )}
 
-          {/* 决策工作台：滑档线 + 顺序建议（实时联动） */}
+          {/* 派位数据参考：不以名额大小或未核验热度推导个人安全线 */}
           {slide.positions.length > 0 && (
             <div className="mt-4 rounded-[10px] border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-4">
               <div className="flex flex-wrap items-center gap-2">
-                <p className="font-serif text-lg font-bold text-[var(--p-fg)]">滑档线（实时）</p>
-                <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">阶段二 · 统一派位</span>
+                <p className="font-serif text-lg font-bold text-[var(--p-fg)]">统一派位需求参考</p>
+                <span className="rounded-full bg-[#E7F6F2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0F766E]">校网 {partBNetFilter}</span>
+                <span className="rounded-full bg-[#FEF3E2] px-2 py-0.5 font-mono text-[10px] font-bold text-[#9A5B00]">校级热度：未核实</span>
               </div>
               <div className="mt-2 rounded-[8px] bg-[var(--p-hl-yellow-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
-                <b className="text-[var(--p-fg)]">什么是滑档线？</b><br />
-                派位像「大风吹」：电脑按你的志愿顺序一位一位看，前面没中就看下一位。
-                <b>「滑档」</b>= 前面的志愿都没中，落到后面。
-                <b>滑档线</b>= 从第几位开始相对安全——这所学校学额较多、竞争相对没那么激烈（热门名校除外），你大概率会停在这条线附近；线之前是「抽签区」。
-                <b>最坏落点</b>= 假设抽签区的热门校全落空，你会停在哪一所。
-                注意：学额多 ≠ 容易进——喇沙这类神校就算 90 个名额也挤破头，已按抽签区处理；滑档线是竞争度推导，不是录取概率。
+                <b className="text-[var(--p-fg)]">为什么不显示「滑档线」？</b><br />
+                本次核验的教育局 2024、2025 年度报告只提供<strong>校网层面的获派结果</strong>，没有逐校申请人数、逐校志愿排名人数或申请/名额比。名额多不等于竞争低；把名额单独当成安全信号会误导，所以暂不推断安全线和最坏落点。
               </div>
-              <p className="mt-1 text-sm text-[var(--p-fg)]">{slide.note}</p>
-              <div className="mt-3 flex items-end gap-1">
-                {slide.positions.map((p, i) => (
-                  <div key={i} className="flex-1 text-center">
-                    <div
-                      className="flex h-7 items-center justify-center rounded font-mono text-[11px]"
-                      style={{
-                        background: p.band === "稀缺" ? "#B91C1C" : p.band === "普通" ? "#B45309" : "#0F766E",
-                        color: "#FFFFFF",
-                        border: slide.slideLineIndex === i + 1 ? "2px solid #1C1C1C" : "1px solid var(--p-gray-300)",
-                      }}
-                      title={p.name}
-                    >
-                      {i + 1}
+              <p className="mt-2 text-sm text-[var(--p-fg)]">{slide.note}</p>
+              <div className="mt-3 flex items-end gap-1" aria-label="乙部志愿名额相对规模">
+                {slide.positions.map((position, i) => {
+                  const colors: Record<CapacityBand, string> = {
+                    相对偏小: "#64748B",
+                    网内常见: "#2563EB",
+                    相对偏大: "#0F766E",
+                    资料不足: "#94A3B8",
+                  };
+                  return (
+                    <div key={`${position.name}-${i}`} className="flex-1 text-center">
+                      <div
+                        className="flex h-7 items-center justify-center rounded font-mono text-[11px] text-white"
+                        style={{ background: colors[position.capacityBand] }}
+                        title={`${i + 1}. ${position.name}；2027/28 名册自行分配学位 ${position.quota ?? "未列"}；${position.capacityBand}；校级统一派位需求未知`}
+                        aria-label={`${i + 1}：${position.name}，自行分配学位 ${position.quota ?? "未列"}，${position.capacityBand}，校级需求未知`}
+                      >
+                        {i + 1}
+                      </div>
                     </div>
-                    {slide.slideLineIndex === i + 1 && (
-                      <div className="font-mono text-[10px] text-[var(--p-fg)]">▲滑档线</div>
-                    )}
-                  </div>
-                ))}
+                  );
+                })}
               </div>
               <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold">
-                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#B91C1C" }}>学额稀缺</span>
-                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#B45309" }}>普通</span>
-                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#0F766E" }}>充裕</span>
-                <span className="font-normal text-[var(--p-secondary)]">相对竞争烈度，非录取概率</span>
+                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#64748B" }}>名额相对偏小</span>
+                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#2563EB" }}>网内常见</span>
+                <span className="rounded px-2 py-0.5 text-white" style={{ background: "#0F766E" }}>名额相对偏大</span>
+                <span className="font-normal text-[var(--p-secondary)]">只比较本校网 2027/28 名册中的自行分配学位数，不代表统一派位名额或竞争热度</span>
               </div>
-              <p className="mt-1 text-[11px] text-[var(--p-secondary)]">
-                ⓘ 滑档线与顺序建议为本站方法论（基于学额相对竞争度推导），非教育局规则；录取仍以随机编号为准。
+
+              <div className="mt-4 border-t border-[var(--p-gray-300)] pt-3">
+                <h3 className="text-sm font-bold text-[var(--p-fg)]">本校网历年获派人数（按派位阶段及志愿）</h3>
+                <p className="mt-1 text-xs text-[var(--p-secondary)]">
+                  统计居住在校网 {partBNetFilter} 的申请儿童最终获派的人数。这里数的是<strong>获派结果</strong>，不是申请总人数、学校热门度或个人成功率。
+                </p>
+                {netAllocationHistory.length > 0 ? (
+                  <div className="mt-2 overflow-x-auto">
+                    <table className="min-w-[920px] border-collapse text-xs">
+                      <thead>
+                        <tr className="border-b border-[var(--p-gray-300)] text-left text-[var(--p-secondary)]">
+                          <th rowSpan={2} className="py-2 pr-3 align-bottom">年度</th>
+                          <th rowSpan={2} className="px-3 py-2 align-bottom">自行分配阶段<br />获派人数</th>
+                          <th colSpan={1} className="px-3 py-2 text-center">甲部（全港选校）</th>
+                          <th colSpan={3} className="px-3 py-2 text-center">乙部（本校网选校）</th>
+                          <th rowSpan={2} className="px-3 py-2 align-bottom">统一派位<br />获派小计</th>
+                          <th rowSpan={2} className="py-2 pl-3 align-bottom">两阶段获派合计</th>
+                        </tr>
+                        <tr className="border-b border-[var(--p-gray-300)] text-left text-[var(--p-secondary)]">
+                          <th className="px-3 py-2">第 1–3 志愿</th>
+                          <th className="px-3 py-2">第 1–3 志愿</th>
+                          <th className="px-3 py-2">第 4–10 志愿</th>
+                          <th className="px-3 py-2">第 11 志愿及以后</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {netAllocationHistory.map((row) => (
+                          <tr key={row.year} className="border-b border-[var(--p-gray-300)] text-[var(--p-fg)]">
+                            <td className="py-2 pr-3 font-mono">{row.year}</td>
+                            <td className="px-3 py-2">{row.discretionarySubtotal.toLocaleString("zh-HK")}</td>
+                            <td className="px-3 py-2">{row.unrestrictedTop3.toLocaleString("zh-HK")}</td>
+                            <td className="px-3 py-2">{row.homeNetTop3.toLocaleString("zh-HK")}</td>
+                            <td className="px-3 py-2">{row.homeNet4to10.toLocaleString("zh-HK")}</td>
+                            <td className="px-3 py-2">{row.homeNetBeyond10.toLocaleString("zh-HK")}</td>
+                            <td className="px-3 py-2">{row.centralSubtotal.toLocaleString("zh-HK")}</td>
+                            <td className="py-2 pl-3 font-semibold">{row.totalAllocated.toLocaleString("zh-HK")}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    <div className="mt-2 space-y-1 text-[11px] text-[var(--p-secondary)]">
+                      <p><strong>怎么算：</strong>“统一派位获派小计”＝甲部第 1–3 志愿＋乙部三个志愿区间；“两阶段获派合计”＝自行分配阶段获派人数＋统一派位获派小计。</p>
+                      {netAllocationHistory.length > 0 && (() => {
+                        const latest = netAllocationHistory[netAllocationHistory.length - 1];
+                        return <p>例如 {latest.year} 年校网 {partBNetFilter}：自行分配 {latest.discretionarySubtotal.toLocaleString("zh-HK")} 人＋统一派位 {latest.centralSubtotal.toLocaleString("zh-HK")} 人＝合计 {latest.totalAllocated.toLocaleString("zh-HK")} 人。</p>;
+                      })()}
+                      <p>校网表按居住校网统计；下方全港年度表范围不同，不能把两者视为同一分母。</p>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="mt-2 text-xs text-[var(--p-secondary)]">所选校网暂无已录入的逐网年度结果。</p>
+                )}
+              </div>
+
+              <details className="mt-4 border-t border-[var(--p-gray-300)] pt-3">
+                <summary className="cursor-pointer text-sm font-bold text-[var(--p-fg)]">查看 2015–2025 全港学位分配年度总数</summary>
+                <p className="mt-1 text-xs text-[var(--p-secondary)]">全港自行分配及统一派位获分配学位的年度总数，不是报名人数或竞争热度。</p>
+                <div className="mt-2 overflow-x-auto">
+                  <table className="min-w-[420px] border-collapse text-xs">
+                    <thead>
+                      <tr className="border-b border-[var(--p-gray-300)] text-left text-[var(--p-secondary)]">
+                        <th className="py-2 pr-4">年度</th><th className="py-2 pr-4">自行分配</th><th className="py-2 pr-4">统一派位</th><th className="py-2">总数</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {systemAllocationHistory.map((row) => (
+                        <tr key={row.year} className="border-b border-[var(--p-gray-300)] text-[var(--p-fg)]">
+                          <td className="py-1.5 pr-4 font-mono">{row.year}</td>
+                          <td className="py-1.5 pr-4">{row.discretionaryAllocated.toLocaleString("zh-HK")}</td>
+                          <td className="py-1.5 pr-4">{row.centralAllocated.toLocaleString("zh-HK")}</td>
+                          <td className="py-1.5">{row.totalAllocated.toLocaleString("zh-HK")}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+
+              <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-[var(--p-secondary)]">
+                {P1_ALLOCATION_HISTORY.meta.sources.map((source) => (
+                  <a key={source.year} href={source.url} target="_blank" rel="noreferrer" className="underline underline-offset-2">
+                    教育局 {source.year} 年度报告（{source.table}）
+                  </a>
+                ))}
+                <a href={P1_ALLOCATION_HISTORY.meta.rosterSource.url} target="_blank" rel="noreferrer" className="underline underline-offset-2">
+                  教育局 {P1_ALLOCATION_HISTORY.meta.rosterSource.title}（名额参考）
+                </a>
+                <span>数据核验至 {P1_ALLOCATION_HISTORY.meta.last_verified}</span>
+              </div>
+              <p className="mt-2 text-[11px] text-[var(--p-secondary)]">
+                ⓘ 校级需求/热度尚无可用的核实记录；即使名额较大，也不标作保底。校网统计只能作为历史背景，不能替代学校层面的申请数据或录取概率。
               </p>
             </div>
           )}
@@ -882,16 +1100,21 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                 ＋ 添加志愿（{partB.length}/{targetB}）
               </button>
             )}
-            {filledB.length < targetB && (
+            {bCount < targetB && (
               <button
                 onClick={fillMissing}
                 className="rounded-[8px] border border-dashed border-[var(--p-hl-border)] px-4 py-2 text-sm font-bold text-[var(--p-hl-border)] hover:bg-[var(--p-hl-bg)]"
-                title="把网内未填、性别符合的学校按学额充裕度自动补入"
+                title="把当前校网尚未填写、且符合乙部性别筛选的学校自动补入"
               >
-                一键补齐剩余 {targetB - filledB.length} 所（按学额充裕度）
+                一键补齐剩余 {targetB - bCount} 所（按学额充裕度）
               </button>
             )}
           </div>
+          {fillTip && (
+            <p className="mt-3 rounded-[8px] bg-[var(--p-hl-yellow-bg)] px-3 py-2 text-xs font-bold text-[var(--p-fg)]">
+              {fillTip}
+            </p>
+          )}
           {partB.length >= targetB && (
             <p className="mt-3 text-xs text-[var(--p-secondary)]">本网共 {targetB} 所官津学校，已全部列出。</p>
           )}
@@ -917,24 +1140,16 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
           </ul>
         </section>
 
-        <SchoolFitCard options={allSchoolOpts} score={calcScore(rel, org)} kidGender={kidGender} unlocked={unlocked} buying={buying} buy={buy} locale={locale} />
-
-        <SchoolCompare unlocked={unlocked} buying={buying} buy={buy} locale={locale} />
-
-        {/* 方案存档（Pro）：多套顺序 A/B 试错 */}
+        {/* 方案存档：多套顺序 A/B 试错 */}
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex items-center gap-2">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">方案存档 · A/B 试错</h2>
-            {!unlocked && (
-              <span className="rounded-full bg-[var(--p-fg)] px-2 py-0.5 font-mono text-[10px] font-bold text-[var(--p-bg)]">PRO</span>
-            )}
           </div>
           <p className="mt-1 text-sm text-[var(--p-secondary)]">
-            最多存 3 套志愿方案（不同校网/顺序/保底配置），并排对比每套的保底位置、滑档线和结构等级——调表前先看差异，不再凭感觉改。
+            最多存 3 套志愿方案（不同校网/顺序/保底配置），并排对比志愿结构和校级需求数据状态；不把未经核实的热度当成录取判断。
           </p>
 
-          {unlocked && (
-            <div className="mt-4">
+          <div className="mt-4">
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   onClick={savePlan}
@@ -947,7 +1162,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
 
               {plans.length === 0 && (
                 <p className="mt-4 rounded-[8px] bg-[var(--p-bg)] px-4 py-3 text-sm text-[var(--p-secondary)]">
-                  还没有保存的方案。先调好一套顺序（比如「全热门」），存为方案 A；再改成「保底前移」，存为方案 B，对比两套的滑档线差异。
+                  还没有保存的方案。分别保存不同志愿顺序或校网方案，可对比志愿结构；系统不会虚构校级热度或安全线。
                 </p>
               )}
 
@@ -961,8 +1176,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                         <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">乙部</th>
                         <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">保底</th>
                         <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">冲刺</th>
-                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">滑档线</th>
-                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">最坏落点</th>
+                        <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">需求数据</th>
                         <th className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">等级</th>
                         <th className="py-2 font-mono text-xs text-[var(--p-secondary)]">操作</th>
                       </tr>
@@ -979,10 +1193,7 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                             <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">{rep.safe}</td>
                             <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">{rep.sprint}</td>
                             <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">
-                              {slide.slideLineIndex ? `第 ${slide.slideLineIndex} 位` : "—"}
-                            </td>
-                            <td className="py-2 pr-3 font-mono text-xs text-[var(--p-secondary)]">
-                              {slide.worstFall ? `${slide.worstFall.index} · ${slide.worstFall.name}` : "—"}
+                              {slide.positions.length > 0 ? "校级未知" : "暂无志愿"}
                             </td>
                             <td className="py-2 pr-3">
                               <span className="rounded px-2 py-0.5 font-mono text-xs font-bold" style={{ color: gColor, background: gColor + "14" }}>
@@ -1010,40 +1221,18 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                 方案只保存在你自己的浏览器（localStorage），换设备或清缓存会丢失；等级为「结构等级」，非录取概率。
               </p>
             </div>
-          )}
-
-          {!unlocked && (
-            <div className="relative mt-4">
-              <div className="rounded-[10px] border border-dashed border-[var(--p-gray-300)] bg-[var(--p-bg)] px-4 py-6 text-center text-sm text-[var(--p-secondary)]">
-                解锁后可保存 3 套方案并排对比（保底位置 / 滑档线 / 结构等级）
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center rounded-[10px] bg-[rgba(255,255,255,.82)]">
-                <div className="rounded-[10px] bg-[#FEF3E2] px-6 py-4 text-center text-[#B45309]">
-                  <p className="font-bold">方案存档是 Pro 功能</p>
-                  <button
-                    onClick={buy}
-                    disabled={buying}
-                    className="mt-3 rounded-[8px] bg-[var(--p-fg)] px-5 py-2 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
-                  >
-                    {buying ? "正在前往支付…" : "解锁方案存档 · HK$68"}
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
         </section>
 
-        {/* 付费墙 */}
+        {/* 完整体检报告 */}
         <section className="mt-6 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-6">
           <div className="flex flex-wrap items-center gap-4">
             <div className="min-w-0 flex-1">
-          <h2 className="font-serif text-xl font-bold text-[var(--p-fg)]">完整体检报告（Pro）</h2>
+          <h2 className="font-serif text-xl font-bold text-[var(--p-fg)]">完整体检报告</h2>
           <p className="mt-1 text-sm text-[var(--p-secondary)]">
                 风险等级（A/B/C）＋ 逐项结构检查明细 ＋ 修改建议 ＋ 三套预案（叩门 72h／直资私立后手／注册时限），可保存为一页 PDF。
               </p>
               <p className="mt-2 font-mono text-sm">
-                <span className="text-2xl font-bold text-[var(--p-fg)]">HK$68</span>
-                <span className="text-[var(--p-secondary)]"> / 一份，支付后永久可看</span>
+                <span className="text-[var(--p-secondary)]">完整功能现已开放，可直接查看和保存。</span>
               </p>
             </div>
             {unlocked ? (
@@ -1051,17 +1240,9 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
                 href="/tools/p1-simulator/report"
                 className="rounded-[8px] bg-[var(--p-fg)] px-6 py-3 text-sm font-bold text-[var(--p-bg)] no-underline"
               >
-                已解锁 → 查看我的报告
+                查看我的报告 →
               </a>
-            ) : (
-              <button
-                onClick={buy}
-                disabled={buying}
-                className="rounded-[8px] bg-[var(--p-fg)] px-6 py-3 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
-              >
-                {buying ? "正在前往支付…" : "解锁完整体检报告 HK$68"}
-              </button>
-            )}
+            ) : null}
           </div>
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <button onClick={save} className="rounded-[8px] border border-[var(--p-gray-300)] px-4 py-2 text-sm text-[var(--p-secondary)]">
@@ -1069,9 +1250,6 @@ export default function P1Simulator({ locale = "tc" }: { locale?: Locale }) {
             </button>
             <span className="text-xs text-[var(--p-secondary)]">输入只保存在你自己的浏览器，不上传服务器。</span>
           </div>
-          <p className="mt-4 text-sm text-[var(--p-secondary)]">
-            已有兑换码？<a className="underline" href="/redeem">去兑换 →</a>
-          </p>
           <p className="mt-2 rounded-[8px] bg-[var(--p-bg)] px-3 py-2 text-xs leading-relaxed text-[var(--p-secondary)]">
             {RENEW_NOTE}
           </p>

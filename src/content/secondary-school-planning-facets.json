@@ -1,0 +1,1673 @@
+{
+  "sourceEdition": "2025/2026",
+  "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+  "unmatchedNote": "国际学校路线样本未纳入 CHSC《中学概览 2025/2026》本地学校名录，故不会臆填其地区、男女校或授课科目资料；选用对应条件时，资料不足的学校会从精准匹配中排除并单独提示。",
+  "schools": [
+    {
+      "id": "spcc",
+      "district": "中西区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "cis",
+      "district": "东区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "汉基中学部课程介绍说明主要教学语言为英语，普通话为必修语言科；因此只将英语列为非语言科授课媒介，不把学校双语定位误标成中英双语授课",
+      "sourceLabel": "教育局国际学校名录 · Chinese International School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/6.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "kellett",
+      "district": "观塘区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "教育局国际学校名录 · Kellett School (Kowloon Bay Campus)",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/56.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "diocesan-girls-school",
+      "district": "油尖旺区",
+      "gender": "Girls",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hkbu-affiliated-school-wong-kam-fai",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "tsung-tsin-christian-academy",
+      "district": "深水埗区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "elchk-lutheran-academy",
+      "district": "元朗区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "creative-secondary-school",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "delia-memorial-glee-path",
+      "district": "深水埗区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "logos-academy",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "dbs",
+      "district": "九龙城区",
+      "gender": "Boys",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "plk-ngan-po-ling",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "st-stephens-college",
+      "district": "香港南区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "kiangsu-chekiang-college",
+      "district": "香港东区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "gt-ellen-yeung",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "heep-yunn",
+      "district": "九龙城区",
+      "gender": "Girls",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "st-pauls-college",
+      "district": "中西区",
+      "gender": "Boys",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "st-pauls-convent-school",
+      "district": "湾仔区",
+      "gender": "Girls",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "mu-kuang",
+      "district": "观塘区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hkfyg-lee-shau-kee",
+      "district": "元朗区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "tai-po-sam-yuk",
+      "district": "大埔区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ymca-christian-college",
+      "district": "离岛区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hkuga-college",
+      "district": "香港南区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "uccke",
+      "district": "观塘区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "stewards-pooi-kei",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "caritas-wu-cheng-chung",
+      "district": "离岛区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "delia-hip-wo",
+      "district": "观塘区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "man-kwan-pak-kau",
+      "district": "元朗区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ying-wa",
+      "district": "深水埗区",
+      "gender": "Boys",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "la-salle-college",
+      "district": "九龙城区",
+      "gender": "Boys",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "queens-college",
+      "district": "湾仔区",
+      "gender": "Boys",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "maryknoll-convent-secondary",
+      "district": "九龙城区",
+      "gender": "Girls",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "wah-yan-kowloon",
+      "district": "油尖旺区",
+      "gender": "Boys",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "munsang-college",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "pui-ching-middle-school",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "lam-tai-fai-college",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "law-ting-pong-secondary-school",
+      "district": "大埔区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "po-leung-kuk-c-w-chu-college-7ad453",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "poh-80th-anniversary-tang-ying-hei-college-519a15",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hkma-david-li-kwok-po-college-b8c712",
+      "district": "油尖旺区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "s-k-h-lui-ming-choi-secondary-school-8a862d",
+      "district": "香港南区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "choi-hung-estate-catholic-secondary-school-17cebd",
+      "district": "黄大仙区",
+      "gender": "Boys",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "fanling-kau-yan-college-79471e",
+      "district": "北区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "cma-choi-cheung-kok-secondary-school-c30b0e",
+      "district": "屯门区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ylpmsaa-tang-siu-tong-secondary-school-a32286",
+      "district": "元朗区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "concordia-lutheran-school-north-point-c38a0c",
+      "district": "湾仔区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ad-fd-pohl-leung-sing-tak-college-47cd9c",
+      "district": "荃湾区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "fung-kai-no-1-secondary-school-b55d1f",
+      "district": "北区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ko-lui-secondary-school-3a2fb9",
+      "district": "观塘区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "cheung-sha-wan-catholic-secondary-school-4d0ee0",
+      "district": "深水埗区",
+      "gender": "Boys",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "twghs-yow-kam-yuen-college-8f9bbb",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ho-lap-college-sponsored-by-the-sik-sik-yuen-f0e34e",
+      "district": "黄大仙区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "carmel-alison-lam-foundation-secondary-school-ae3839",
+      "district": "葵青区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "buddhist-tai-kwong-chi-hong-college-1759eb",
+      "district": "大埔区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "caritas-fanling-chan-chun-ha-secondary-school-bc2128",
+      "district": "北区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "catholic-ming-yuen-secondary-school-c32562",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "our-lady-of-the-rosary-college-1b71ba",
+      "district": "深水埗区",
+      "gender": "Girls",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "kgv-esf",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "教育局国际学校名录列明 KGV 授课语言为英语；中文作为语言科目不计为中文授课",
+      "sourceLabel": "教育局国际学校名录 · King George V School",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/47.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "cdnis",
+      "district": "南区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Education Bureau International Schools Directory · Canadian International School of Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/61.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "hong-kong-academy",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Education Bureau International Schools Directory · Hong Kong Academy",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/15.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "victoria-shanghai-academy",
+      "district": "南区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "VSA校方说明中学课程以英语授课，并另设中文课程；未将中文语言课标作非语言科目中文授课",
+      "sourceLabel": "Victoria Shanghai Academy · School Overview and EDB International Schools Directory",
+      "sourceUrl": "https://www.vsa.edu.hk/",
+      "status": "school-profile"
+    },
+    {
+      "id": "discovery-college",
+      "district": "离岛区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "校方说明Year 1–13全部科目以英语为主要授课媒介；中文按语言科处理",
+      "sourceLabel": "Discovery College · Language; EDB International Schools Directory",
+      "sourceUrl": "https://discovery.esf.edu.hk/en/outstanding_education/language/",
+      "status": "school-profile"
+    },
+    {
+      "id": "ecf-saint-too-canaan",
+      "district": "观塘区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "island-school-esf",
+      "district": "中西区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "Island School校方自述为英语授课的国际教育机构；中文按语言科处理，不据此标记中文媒介",
+      "sourceLabel": "Island School · About Us; Education Bureau International Schools Directory",
+      "sourceUrl": "https://island.esf.edu.hk/en/about_us/",
+      "status": "school-profile"
+    },
+    {
+      "id": "shatin-college-esf",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "Sha Tin College 2026 Language Guidelines明确英语为主要教学语言，中文和其他语言科不据此标记为中文媒介",
+      "sourceLabel": "Sha Tin College Language Guidelines 2026; Education Bureau International Schools Directory",
+      "sourceUrl": "https://shatincollege.esf.edu.hk/parent/upload/page/59/self/69ba47e835a4b.pdf",
+      "status": "school-profile"
+    },
+    {
+      "id": "south-island-school-esf",
+      "district": "南区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "南岛中学官方学校简介说明课程以英语授课；中文语言科不据此标记为中文媒介",
+      "sourceLabel": "South Island School Profile 2024–2025; Education Bureau International Schools Directory",
+      "sourceUrl": "https://sis.esf.edu.hk/upload/page/120/self/67a42871b6bef.pdf",
+      "status": "school-profile"
+    },
+    {
+      "id": "west-island-school-esf",
+      "district": "南区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "West Island School 2025–26官方简介标明English medium institution；语言科不据此标记为中文媒介",
+      "sourceLabel": "West Island School Profile 2025–2026; Education Bureau International Schools Directory",
+      "sourceUrl": "https://wis.esf.edu.hk/upload/files/1/file/68d5ea415fac8.pdf",
+      "status": "school-profile"
+    },
+    {
+      "id": "renaissance-college-esf",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "RCHK校方说明本校为Year 1–13英语授课学校；中文语言科不据此标记为中文授课",
+      "sourceLabel": "Education Bureau International Schools Directory · Renaissance College; RCHK official school profile",
+      "sourceUrl": "https://rchk.esf.edu.hk/en/",
+      "status": "school-profile"
+    },
+    {
+      "id": "harrow-international-school-hong-kong",
+      "district": "屯门区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "教育局国际学校名录 · Harrow International School Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/14.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "german-swiss-international-school",
+      "district": "中西区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "仅对应中西区Peak校区的English International Stream（IB路线）；校方说明EIS英语授课，GIS德语授课且位于另一校区，不纳入此IB候选语言标签",
+      "sourceLabel": "GSIS · Admissions — English International Stream; EDB English Stream (Peak Campus)",
+      "sourceUrl": "https://www.gsis.edu.hk/english-stream/admissions/",
+      "status": "school-profile"
+    },
+    {
+      "id": "french-international-school-hong-kong",
+      "district": "湾仔区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "仅对应Blue Pool Road English International Stream；French Stream不纳入此授课语言标签",
+      "sourceLabel": "Education Bureau International Schools Directory · FIS English Stream, Blue Pool Road Campus",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/97.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "stamford-american-school-hong-kong",
+      "district": "油尖旺区",
+      "gender": null,
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "Stamford 2025–26 High School Profile列英语为主要授课语言；仅适用于Grade 9–12 West Kowloon高中候选；中学校区学生性别属性未找到直接来源，保持未分类",
+      "sourceLabel": "Stamford American School Hong Kong · High School Profile 2025–26; Home Affairs Department · Yau Tsim Mong District",
+      "sourceUrl": "https://www.sais.edu.hk/wp-content/uploads/sites/19/2022/05/2025-26_SASHK_HS_School-Profile-1.pdf",
+      "status": "school-profile"
+    },
+    {
+      "id": "fung-kai-liu-man-shek-tong-secondary-school-f68aa8",
+      "district": "北区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "buddhist-kok-kwong-secondary-school-17b6e9",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "buddhist-sum-heung-lam-memorial-college-b59218",
+      "district": "屯门区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "《中学概览》2025/2026按非语言科目列出中文授课；校方2026/27升中体验页另明确说明中一及中二数理英文组以英语教授数学和科学。英语只代表指定年级及分组课程，不代表全校统一教学语言，学生分组须向校方确认。",
+      "sourceLabel": "中学概览 2025/2026 + 佛教沈香林纪念中学 · 升中体验26-27",
+      "sourceUrl": "https://www.bsc.edu.hk/升中體驗/",
+      "status": "annual",
+      "teachingMediumOverride": true
+    },
+    {
+      "id": "sir-ellis-kadoorie-secondary-school-west-kowloon-a9934d",
+      "district": "油尖旺区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "homantin-government-secondary-school-2be594",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "kwai-chung-methodist-college-c15ad4",
+      "district": "葵青区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "rhenish-church-pang-hok-ko-memorial-college-0636eb",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "the-methodist-lee-wai-lee-college-b9d2ff",
+      "district": "葵青区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "lai-chack-middle-school-636417",
+      "district": "油尖旺区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "lingnan-dr-chung-wing-kwong-memorial-secondary-s-69ca1f",
+      "district": "葵青区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "gertrude-simon-lutheran-college-ab606f",
+      "district": "元朗区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "sha-tin-government-secondary-school-f69662",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "shatin-tsung-tsin-secondary-school-f924e7",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "kiangsu-chekiang-college-shatin-0e2243",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ccc-ming-kei-college-004520",
+      "district": "油尖旺区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ccc-heep-woh-college-374e13",
+      "district": "黄大仙区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "fortress-hill-methodist-secondary-school-c5e9ce",
+      "district": "香港东区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "yan-chai-hospital-wong-wha-san-secondary-school-d009e4",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "st-peter-s-secondary-school-d621d3",
+      "district": "香港南区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hhckla-buddhist-ma-kam-chan-memorial-english-sec-9b01eb",
+      "district": "北区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "caritas-tuen-mun-marden-foundation-secondary-sch-e6f1d3",
+      "district": "屯门区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "caritas-yuen-long-chan-chun-ha-secondary-school-6a0e23",
+      "district": "元朗区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "yan-chai-hospital-tung-chi-ying-memorial-seconda-f593ec",
+      "district": "沙田区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ho-ngai-college-sponsored-by-sik-sik-yuen-1bc3b3",
+      "district": "屯门区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 按非语言科目授课语言列出的课程",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "isf-academy",
+      "district": "南区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Education Bureau International Schools Directory · The ISF Academy",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/92.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "nord-anglia-international-school-hong-kong",
+      "district": null,
+      "districtScopes": [
+        {
+          "district": "观塘区",
+          "ageRange": "10–16岁",
+          "routes": []
+        },
+        {
+          "district": "九龙城区",
+          "ageRange": "16–18岁",
+          "routes": [
+            "ib",
+            "a-level"
+          ]
+        }
+      ],
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Education Bureau International Schools Directory · Nord Anglia International School Hong Kong (Kwun Tong Campus)",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/31.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "australian-international-school-hong-kong",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Education Bureau International Schools Directory · Australian International School Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/60.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "yew-chung-international-school-secondary",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Education Bureau International Schools Directory · Yew Chung International School - Secondary",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/94.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "singapore-international-school-hong-kong",
+      "district": "南区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "校方说明英语是大部分学科与活动的授课语言；中文在此按语言科目处理",
+      "sourceLabel": "Singapore International School (Hong Kong) · Bilingualism",
+      "sourceUrl": "https://www.singapore.edu.hk/bilingualism/",
+      "status": "school-profile"
+    },
+    {
+      "id": "malvern-college-hong-kong",
+      "district": "大埔区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Education Bureau International Schools Directory · Malvern College Hong Kong",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/30.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "carmel-school-hong-kong-elsa-high-school",
+      "district": "东区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": null,
+      "teachingMediumEvidence": null,
+      "sourceLabel": "Carmel School · Elsa High School Campus Address and EDB International Schools Directory",
+      "sourceUrl": "https://www.carmel.edu.hk/contact",
+      "status": "school-profile"
+    },
+    {
+      "id": "international-college-hong-kong",
+      "district": "北区",
+      "gender": "Co-ed",
+      "schoolType": "international",
+      "teachingMedium": {
+        "chinese": false,
+        "english": true
+      },
+      "teachingMediumEvidence": "ICHK Admissions Info明确说明英语是授课语言；此处只标中学教学媒介，不把语言科当作中文授课科目",
+      "sourceLabel": "Education Bureau International Schools Directory · ICHK (New Territories) and ICHK Admissions Info",
+      "sourceUrl": "https://internationalschools.edb.gov.hk/en/schools/18.html",
+      "status": "school-profile"
+    },
+    {
+      "id": "cognitio-college-kowloon-a7de4b",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "中学概览 2025/2026 初中及高中非语言科目授课语言表分别列有中文及英语科目",
+      "sourceLabel": "中学概览 2025/2026 · CHSC",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "notre-dame-college-d9881a",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/2026学校语言政策说明中四或以上可按能力及英语水平选择以英语修读核心及选修科；英语为有条件的组别／科目，不代表全校英语授课。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "献主会圣母院书院及CHSC《中学概览》2025/26 · 授课语言说明",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hong-kong-taoist-association-the-yuen-yuen-insti-1f45d7",
+      "district": "大埔区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26逐科表显示中英授课课程；校方政策称部分班别有英语延展学习，且S2-S4可按成绩（尤其英语）及意愿申请主要以英语授课的班别。英语机会具年级、班别和成绩条件，并非全校英语授课。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "CHSC《中学概览》2025/26 · 科目语言及校方授课语言政策",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "yuen-long-merchants-association-secondary-school-4af84f",
+      "district": "元朗区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26列学校以英语为主要授课语言，同时中文、中文历史、普通话、公民与社会发展及服务学习／价值教育等指定科目用中文；筛选为双语不等于所有科目双语。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "元朗商会中学及CHSC《中学概览》2025/26 · 授课语言政策",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "aberdeen-technical-school-585ddd",
+      "district": "香港南区",
+      "gender": "Boys",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26称学校基本以中文授课，同时初中有英语丰富学习环境，高中部分科目可为英语基础较好的学生以英语授课；英语媒介具年级和学生条件，不是全校英语授课。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "CHSC《中学概览》2025/26 · 授课语言政策",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hkicc-lee-shau-kee-school-of-creativity-a90511",
+      "district": "九龙城区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC《中学概览》2025/26记学校主要用粤语授课，英语、普通话作辅助语言；高中科目表亦列英语科及以英语授课的数学。双语标签指课程媒介证据并存，不等于全科双语。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "HKICC Lee Shau Kee School of Creativity及CHSC《中学概览》2025/26 · 授课语言",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "cognitio-college-hk-e4a509",
+      "district": "香港东区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "CHSC 2025/26非语言课程授课语言表列中文科目，英语仅列英语语言；英语中心、英语任务及英语科支援不算英语授课媒介。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "文理书院（香港）及CHSC《中学概览》2025/26 · 科目授课语言",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "hong-kong-red-swastika-society-tai-po-secondary--e73d07",
+      "district": "大埔区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "CHSC 2025/26注明S1-S6实施母语授课，非语言科目表也以中文授课为主；英文科是语言科，不构成英语授课媒介。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "CHSC《中学概览》2025/26 · 授课语言政策",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ccc-kung-lee-college-d9f6ea",
+      "district": "湾仔区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26按科目列出中英授课课程；S4新基础课程主要用英语，S5-S6 HKDSE及2026/27过渡年级安排不同，教学语言须按年级和课程核实。双语标签表示中英媒介科目并存，不代表每科双语。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "中华基督教会公理书院及CHSC《中学概览》2025/26 · 科目与授课语言",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "ccc-tam-lee-lai-fun-memorial-secondary-school-323740",
+      "district": "屯门区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": false
+      },
+      "teachingMediumEvidence": "CHSC 2025/26说明实施母语教学；非语言科目以中文媒介为主，英语列为英语语言科。英语科、NET、英语周和英语活动不作为英语媒介教学证据。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "中华基督教会谭李丽芬纪念中学及CHSC《中学概览》2025/26 · 授课语言政策",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "belilios-public-school-bce4e2",
+      "district": "香港东区",
+      "gender": "Girls",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26逐科授课语言表同时列中文及英语媒介，且英语栏有多门学科；候选池标记中英媒介均有，不表示所有科目可任选语言。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "庇理罗士女子中学及CHSC《中学概览》2025/26 · 授课语言",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "good-hope-school-a3c112",
+      "district": "黄大仙区",
+      "gender": "Girls",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26列明除中文学习领域及中国历史相关课程外以英语授课，并列出中英媒介的科目。双语表示两种授课媒介的课程并存，不表示每一科均可任选中英授课。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "德望学校及CHSC《中学概览》2025/26 · 授课语言政策",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "queen-elizabeth-school-0c151c",
+      "district": "油尖旺区",
+      "gender": "Co-ed",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26语言政策列以英语为授课语言，并在非语言科目表列有中文媒介科目。双语仅表示不同课程存在两种授课媒介，不代表每科均可任选语言。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "伊利沙伯中学及CHSC《中学概览》2025/26 · 授课语言",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "king-s-college-9aa4eb",
+      "district": "中西区",
+      "gender": "Boys",
+      "schoolType": "public-funded",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26指出大部分科目以英语授课，同时逐科列出中文及英语媒介的非语言科目。双语表示媒介课程并存，不表示每科可任选语言。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "英皇书院及CHSC《中学概览》2025/26 · 授课语言",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    },
+    {
+      "id": "plk-laws-foundation-college-8f3ac0",
+      "district": "西贡区",
+      "gender": "Co-ed",
+      "schoolType": "dss",
+      "teachingMedium": {
+        "chinese": true,
+        "english": true
+      },
+      "teachingMediumEvidence": "CHSC 2025/26逐科资料列高中中文及英语媒介课程，校方语言政策说明学术及文化科目以英语为主、指定中文科目除外；双语只表示媒介课程并存，不代表每科可任选语言。",
+      "teachingMediumOverride": true,
+      "sourceLabel": "保良局罗氏基金中学及CHSC《中学概览》2025/26 · 授课语言",
+      "sourceUrl": "https://www.chsc.hk/datagovhk/ssp_2025_2026_sc.csv",
+      "status": "annual"
+    }
+  ]
+}

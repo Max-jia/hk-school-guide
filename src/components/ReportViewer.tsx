@@ -3,10 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import Paywall from "@/components/Paywall";
-import PremiumContent from "@/components/PremiumContent";
+import ShortlistButton from "@/components/ShortlistButton";
+import ReportVerificationPanel from "@/components/ReportVerificationPanel";
+import ReportActionTimeline from "@/components/ReportActionTimeline";
+import ReportParentQuestions from "@/components/ReportParentQuestions";
+import ReportCommutePanel from "@/components/ReportCommutePanel";
+import type { ReportCommuteInfo } from "@/lib/report-commute";
 import { L, localeHref, type Locale } from "@/lib/i18n";
-import { readStoredLicense } from "@/lib/unlock-client";
 import { buildEditorialHeroHtml, enhanceReportHtml, reportChapterItems, usesEditorialReportLayout } from "@/lib/report-html";
 import { useReportTableOverflow } from "@/hooks/useReportTableOverflow";
 
@@ -16,48 +19,35 @@ export default function ReportViewer({
   slug,
   hero,
   body,
-  free,
-  allAccessUrl,
-  singleUrl,
+  premiumHtml,
   related = [],
   locale = "tc",
+  schoolName,
+  shortlistKind,
+  commuteInfo,
 }: {
   slug: string;
   hero: string;
   body: string;
-  free: boolean;
-  allAccessUrl: string;
-  singleUrl: string;
+  premiumHtml: string;
   related?: { slug: string; title: string }[];
   locale?: Locale;
+  schoolName: string;
+  shortlistKind: "primary" | "kindergarten";
+  commuteInfo: ReportCommuteInfo;
 }) {
   const z = (s: string) => L(s, locale);
   const editorialReport = usesEditorialReportLayout(slug);
   const reportBodyRef = useRef<HTMLDivElement>(null);
   const localizedBody = z(body);
-  const renderedBody = editorialReport
-    ? enhanceReportHtml(localizedBody, locale, true)
-    : localizedBody;
+  const localizedPremiumHtml = z(premiumHtml);
+  const completeBody = `${localizedBody}\n${localizedPremiumHtml}`;
+  const renderedBody = editorialReport ? enhanceReportHtml(completeBody, locale, true) : completeBody;
   const [chapterItems, setChapterItems] = useState(() => editorialReport ? reportChapterItems(renderedBody) : []);
-
-  // 解锁状态：只认 localStorage 里的签名 license（见 lib/unlock-client.ts）。
-  // 付费正文本身不在本页 HTML 里，要向 /api/report-content 验签换取——
-  // 所以就算有人手动改 localStorage，也拿不到内容。
-  const [license, setLicense] = useState<string | null>(null);
-  const [pending, setPending] = useState(false);
-
-  useEffect(() => {
-    // Read the browser-only signed license after hydration to keep server/client markup aligned.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setLicense(readStoredLicense(slug));
-    setPending(true);
-  }, [slug]);
 
   useReportTableOverflow(reportBodyRef);
 
-  // Only chapters present in the rendered DOM appear in the index. Premium
-  // chapter headings therefore become visible in the TOC only after the
-  // signed-content endpoint has authorized and returned their HTML.
+  // Only chapters present in the rendered DOM appear in the index.
   useEffect(() => {
     if (!editorialReport) return;
     const root = reportBodyRef.current;
@@ -88,15 +78,27 @@ export default function ReportViewer({
   }, [editorialReport]);
 
   const heroHtml = editorialReport
-    ? buildEditorialHeroHtml(hero, localizedBody, locale, free)
+    ? buildEditorialHeroHtml(hero, localizedBody, locale, true)
     : z(hero);
 
   return (
     <main className={`w-full${editorialReport ? " report-page--editorial" : ""}`} data-report-slug={slug}>
       <SiteHeader locale={locale} />
-      {/* Editorial report rendering changes presentation only; premium content authorization stays separate. */}
+      {/* 所有报告章节均公开展示；付费标记只保留在历史数据中，不再作为访问限制。 */}
       <div className="report-article" dangerouslySetInnerHTML={{ __html: heroHtml }} />
       <div className={`report-page__content mx-auto max-w-[960px] px-4 pb-24${editorialReport ? " report-editorial__content" : ""}`}>
+        <div className="mb-5">
+          <ShortlistButton
+            name={schoolName}
+            kind={shortlistKind}
+            href={`/reports/${slug}`}
+            locale={locale}
+          />
+        </div>
+        <ReportVerificationPanel body={localizedBody} kind={shortlistKind} locale={locale} />
+        <ReportActionTimeline body={localizedBody} locale={locale} />
+        <ReportParentQuestions schoolName={schoolName} locale={locale} />
+        <ReportCommutePanel info={commuteInfo} locale={locale} />
         <div className={editorialReport ? "report-layout" : undefined}>
           {editorialReport && (
             <nav
@@ -119,24 +121,6 @@ export default function ReportViewer({
 
           <article ref={reportBodyRef} className={editorialReport ? "report-document report-content" : "report-document"}>
             <div className="report-body" dangerouslySetInnerHTML={{ __html: renderedBody }} />
-
-            {!free && (
-              <div className={`report-page__access${editorialReport ? " report-editorial__access" : ""}`}>
-                {/* Premium HTML remains server-authorized; the client only receives it after license verification. */}
-                {pending && (
-                  <div className="report-editorial__paywall">
-                    <Paywall
-                      slug={slug}
-                      allAccessUrl={allAccessUrl}
-                      singleUrl={singleUrl}
-                      unlocked={license !== null}
-                      locale={locale}
-                    />
-                  </div>
-                )}
-                {license && <PremiumContent slug={slug} license={license} locale={locale} />}
-              </div>
-            )}
           </article>
         </div>
 

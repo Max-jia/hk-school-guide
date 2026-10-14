@@ -351,74 +351,77 @@ export function relativeBand(name: string, quota: number | null | undefined): Ri
   return quotaBand(quota);
 }
 
+export type CapacityBand = "相对偏小" | "网内常见" | "相对偏大" | "资料不足";
+
 export type SlidePosition = {
   name: string;
-  band: RiskBand;
+  capacityBand: CapacityBand;
   quota: number | null;
+  demandStatus: "暂无校级核实数据";
 };
 
 export type SlideResult = {
   positions: SlidePosition[];
-  slideLineIndex: number | null; // 1-based：从这一位起相对安全
-  worstFall: { index: number; name: string } | null; // 最坏落点（第一个非稀缺）
+  slideLineIndex: null;
+  worstFall: null;
   note: string;
 };
 
-// 滑档模拟：按当前顺序，用学额稀缺度标风险，推导滑档线与最坏落点
-// 明确：这是顺序推导 + 相对竞争烈度，不是录取概率预测
+function capacityBandWithinNet(quota: number | null, peerQuotas: number[]): CapacityBand {
+  const distribution = peerQuotas.filter((value) => Number.isFinite(value) && value > 0).sort((a, b) => a - b);
+  if (quota === null || !Number.isFinite(quota) || quota <= 0 || distribution.length === 0) return "资料不足";
+
+  const below = distribution.filter((value) => value < quota).length;
+  const tied = distribution.filter((value) => value === quota).length;
+  const percentile = (below + tied / 2) / distribution.length;
+  if (percentile < 1 / 3) return "相对偏小";
+  if (percentile >= 2 / 3) return "相对偏大";
+  return "网内常见";
+}
+
+/**
+ * 不再以单一学额或未核实的热门校名单推算「安全线」。
+ * 这里只显示自行分配名额在同网学校中的相对规模；没有逐校申请/志愿需求证据时，
+ * 统一派位需求状态保持未知，安全线及最坏落点均不作推断。
+ */
 export function computeSlideLine(
   partB: { name: string }[],
-  quotaOf: (name: string) => number | null
+  quotaOf: (name: string) => number | null,
+  networkQuotas: number[] = []
 ): SlideResult {
   const positions: SlidePosition[] = partB
-    .filter((s) => s.name.trim())
-    .map((s) => {
-      const q = quotaOf(s.name.trim());
-      return { name: s.name.trim(), band: relativeBand(s.name.trim(), q), quota: q };
+    .filter((school) => school.name.trim())
+    .map((school) => {
+      const name = school.name.trim();
+      const rawQuota = quotaOf(name);
+      const quota = rawQuota !== null && rawQuota > 0 ? rawQuota : null;
+      return {
+        name,
+        quota,
+        capacityBand: capacityBandWithinNet(quota, networkQuotas),
+        demandStatus: "暂无校级核实数据",
+      };
     });
+
   if (positions.length === 0) {
-    return { positions: [], slideLineIndex: null, worstFall: null, note: "乙部还没有填写志愿。" };
-  }
-  // 只填 1 所：谈不上「滑档」，也不会有第二个落点——不画线，直接说明
-  if (positions.length === 1) {
-    const only = positions[0];
-    const scarce = only.band === "稀缺";
     return {
       positions,
       slideLineIndex: null,
       worstFall: null,
-      note: scarce
-        ? `你只填了 1 所（${only.name}${isHotSchool(only.name) && (only.quota ?? 0) > 25 ? `，学额 ${only.quota} 但属传统热门校` : `，学额仅 ${only.quota ?? "?"}`}）——谈不上滑档：这所不中，你就没有第二个落点。先补满网内可接受学校，滑档线才有意义。`
-        : `你只填了 1 所（${only.name}，学额 ${only.quota ?? "?"}）——谈不上滑档：这所不中，你不会有第二个落点（不会自动滑到别处）。补上 2-3 所保底校，滑档线才有意义。`,
+      note: "乙部还没有填写志愿。",
     };
   }
-  // 滑档线：第一所非稀缺位。
-  // 后面的志愿是更低优先级的备选，不应反向否定前面已经出现的相对安全位；
-  // 旧逻辑要求“线后不能再有稀缺位”，重排后很容易把滑档线错误判成 null。
-  const firstNonScarce = positions.findIndex((p) => p.band !== "稀缺");
-  const slideLineIndex: number | null = firstNonScarce >= 0 ? firstNonScarce + 1 : null;
-  // 最坏落点：假设滑档线前的抽签区（稀缺/热门）全部落空，
-  // 电脑一路试下来会停在滑档线所在的相对安全位；若没有滑档线则无安全落点。
-  let worstFall: SlideResult["worstFall"] = null;
-  if (slideLineIndex !== null) {
-    worstFall = { index: slideLineIndex, name: positions[slideLineIndex - 1].name };
-  } else {
-    worstFall = { index: positions.length + 1, name: "（无安全落点）" };
-  }
-  let note: string;
-  const scarceCount = positions.filter((p) => p.band === "稀缺").length;
-  if (slideLineIndex !== null) {
-    note = `按当前顺序，第 ${slideLineIndex} 位起相对安全（这条线之前是热门抽签区）；假设抽签区全落空，你会停在滑档线第 ${worstFall.index} 位「${worstFall.name}」。`;
-  } else {
-    note = `本网学额普遍偏紧，没有明确的相对安全位；建议把保底校尽量前移，并提前准备叩门。`;
-  }
-  if (scarceCount > 0) {
-    note += ` 抽签区里有 ${scarceCount} 所竞争激烈的学校（学额稀缺或传统热门校，如喇沙），命中依赖抽签。`;
-  }
-  if (positions.length <= 2) {
-    note += ` 目前只有 ${positions.length} 个志愿，结构很薄——滑档线仅供参考，请先补满志愿再看。`;
-  }
-  return { positions, slideLineIndex, worstFall, note };
+
+  const note = positions.length === 1
+    ? "目前只有 1 个乙部志愿；而且缺少逐校统一派位申请/志愿数据，无法核实需求强弱，因此不计算安全线或最坏落点。"
+    : "本次核验的 2024、2025 年度报告只提供校网层面的派位结果，没有逐校申请人数或家长志愿热度。学校名额多不等于竞争低；需求未知时不标安全线，也不推断最坏落点。下面仅对照各校自行分配名额在本校网的相对规模。";
+
+  return {
+    positions,
+    slideLineIndex: null,
+    worstFall: null,
+    note,
+  };
 }
 
 export type OrderAdvice = {

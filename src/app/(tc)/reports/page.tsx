@@ -6,7 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
 import reportMeta from "@/content/report-meta.json";
 import { matchesZh } from "@/lib/zh";
-import { localeHref, type Locale } from "@/lib/i18n";
+import { L, localeHref, type Locale } from "@/lib/i18n";
 
 const META = reportMeta as any;
 const TIER_CFG = META.TIER_CFG as Record<string, { c: string; b: string }>;
@@ -15,11 +15,13 @@ type Rep = { n: string; t: string; d: string; h: string; c: string; premium?: bo
 const ALL: Rep[] = [...META.PS_REPORTS, ...META.KG_REPORTS];
 
 const TIERS = ["全部", "S", "A+", "A", "B", "暂无评级"];
+const PAGE_SIZE = 24;
 
 export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
   const [tab, setTab] = useState<"ps" | "kg">("ps");
   const [tier, setTier] = useState("全部");
   const [q, setQ] = useState("");
+  const [page, setPage] = useState(1);
 
   const list = useMemo(() => {
     const src = tab === "ps" ? META.PS_REPORTS : META.KG_REPORTS;
@@ -29,6 +31,9 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
       return matchesZh(q, hay); // 简繁体都能搜
     });
   }, [tab, tier, q]);
+  const pageCount = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+  const currentPage = Math.min(page, pageCount);
+  const visibleList = list.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   return (
     <Localize locale={locale}>
@@ -62,7 +67,7 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
             {(["ps", "kg"] as const).map((t) => (
               <button
                 key={t}
-                onClick={() => setTab(t)}
+                onClick={() => { setTab(t); setPage(1); }}
                 className={`rounded-[6px] border border-[var(--p-fg)] px-3 py-1 ${
                   tab === t ? "bg-[var(--p-fg)] text-[var(--p-bg)]" : ""
                 }`}
@@ -74,7 +79,7 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
           {TIERS.map((t) => (
             <button
               key={t}
-              onClick={() => setTier(t)}
+              onClick={() => { setTier(t); setPage(1); }}
               className={`transition-opacity ${tier === t ? "font-bold opacity-100" : "opacity-33 hover:opacity-60"}`}
             >
               {t}
@@ -83,16 +88,50 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
           <input
             type="text"
             placeholder="Search…"
+            aria-label={L("搜索学校报告", locale)}
             value={q}
-            onChange={(e) => setQ(e.target.value)}
+            onChange={(e) => { setQ(e.target.value); setPage(1); }}
             className="ml-auto rounded-[6px] border border-[rgba(48,48,48,.4)] bg-[var(--p-bg)] p-2 text-sm normal-case text-[var(--p-fg)] shadow-[0_2px_1px_rgba(0,0,0,.3)] outline-none"
           />
         </div>
 
-        {/* 卡片网格（Pudding 封面卡：彩色方块 + tier 徽章） */}
+        <nav aria-label={L("报告列表分页", locale)} className="mb-2 flex flex-wrap items-center justify-between gap-3 border-y border-[var(--p-gray-300)] py-3">
+          <p className="m-0 text-xs text-[var(--p-secondary)]">
+            {list.length === 0
+              ? L("没有匹配的报告", locale)
+              : L(`显示第 ${(currentPage - 1) * PAGE_SIZE + 1}–${Math.min(currentPage * PAGE_SIZE, list.length)} 份，共 ${list.length} 份`, locale)}
+          </p>
+          {pageCount > 1 && (
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setPage((current) => Math.max(1, current - 1))}
+                disabled={currentPage === 1}
+                aria-label={L("上一页报告", locale)}
+                className="min-h-10 border border-[var(--p-gray-300)] px-3 text-xs font-bold text-[var(--p-fg)] hover:border-[var(--p-fg)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--p-fg)] disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                {L("上一页", locale)}
+              </button>
+              <span aria-live="polite" className="min-w-16 text-center font-mono text-xs text-[var(--p-secondary)]">
+                {L(`第 ${currentPage} / ${pageCount} 页`, locale)}
+              </span>
+              <button
+                type="button"
+                onClick={() => setPage((current) => Math.min(pageCount, current + 1))}
+                disabled={currentPage === pageCount}
+                aria-label={L("下一页报告", locale)}
+                className="min-h-10 border border-[var(--p-gray-300)] px-3 text-xs font-bold text-[var(--p-fg)] hover:border-[var(--p-fg)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--p-fg)] disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                {L("下一页", locale)}
+              </button>
+            </div>
+          )}
+        </nav>
+
+        {/* 卡片网格：按页分批展示，筛选／搜索后回到第一批 */}
         {list.length === 0 && <p className="py-12 text-center text-[var(--p-secondary)]">没有匹配的报告</p>}
         <ul className="m-0 flex flex-wrap p-0">
-          {list.map((r: Rep) => {
+          {visibleList.map((r: Rep) => {
             const cfg = TIER_CFG[r.t] || TIER_CFG["暂无评级"];
             const idx = ALL.findIndex((x) => x.c === r.c);
             return (
@@ -117,7 +156,7 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
                         className="absolute bottom-0 left-1/2 aspect-[6/7] w-[calc(100%-32px)] -translate-x-1/2 object-cover transition-transform duration-100 hover:scale-105"
                       />
                       <span className="absolute left-2 top-2 rounded-full bg-[var(--p-fg)] px-2 py-1 font-mono text-xs uppercase text-[var(--p-bg)]">
-                        {r.premium ? "付费 HK$9.9" : "免费试看"}
+                        全文公开
                       </span>
                     </div>
                     <div className="mt-3 font-sans">

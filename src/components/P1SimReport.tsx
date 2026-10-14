@@ -14,7 +14,6 @@ import { DATA_LABEL, DATA_VERSION, DATA_UPDATED_AT } from "@/lib/data-version";
 import p1NetsJson from "@/content/p1-nets.json";
 import reportMeta from "@/content/report-meta.json";
 
-const LOCK_KEY = "purchased_p1-sim";
 const INPUT_KEY = "p1sim_input";
 
 // 學校名 → 深度報告代碼。
@@ -31,8 +30,6 @@ const STATUS_LABEL: Record<string, string> = { pass: "通过", warn: "需注意"
 
 export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
   const [input, setInput] = useState<SimInput | null>(null);
-  const [unlocked, setUnlocked] = useState(false);
-  const [buying, setBuying] = useState(false);
   const [img, setImg] = useState<{ dataUrl: string; name: string } | null>(null);
 
   useEffect(() => {
@@ -51,9 +48,7 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
     return () => window.removeEventListener("focus", reload);
   }, []);
 
-  useEffect(() => {
-    setUnlocked(localStorage.getItem(LOCK_KEY) === "true");
-  }, []);
+  const unlocked = true;
 
   const P1 = p1NetsJson as { nets: { net: string; schools: { name: string }[] }[] };
 
@@ -81,21 +76,6 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
     return out;
   }, [input]);
 
-  function buy() {
-    setBuying(true);
-    fetch("/api/checkout", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ product: "sim" }),
-    })
-      .then((r) => r.json())
-      .then((j) => {
-        if (j.url) window.location.href = j.url;
-        else alert("下单失败：" + (j.error || "请稍后重试"));
-      })
-      .catch(() => alert("网络错误，请稍后重试"))
-      .finally(() => setBuying(false));
-  }
 
   async function downloadPng() {
     const node = document.getElementById("sim-report-page");
@@ -119,7 +99,7 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
       <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[860px] px-4 pb-24">
         <div className="py-8 print:hidden">
-          <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">Pro 模拟器 · 体检报告</p>
+      <p className="font-mono text-sm uppercase text-[var(--p-secondary)]">志愿模拟器 · 体检报告</p>
           <h1 className="font-serif text-[clamp(28px,4vw,44px)] font-bold leading-[1.08] tracking-[-1px] text-[var(--p-fg)]">
             你的志愿结构体检报告
           </h1>
@@ -147,29 +127,7 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
           )}
         </div>
 
-        {!unlocked ? (
-          <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-8 text-center">
-            <p className="text-4xl">🔒</p>
-            <h2 className="mt-3 font-serif text-2xl font-bold text-[var(--p-fg)]">这份报告还没解锁</h2>
-            <p className="mx-auto mt-2 max-w-[420px] text-sm text-[var(--p-secondary)]">
-              完整体检报告包含风险等级（A/B/C）、逐项结构检查明细、修改建议和三套预案（叩门 72h／直资私立后手／注册时限），
-              可保存为一页 PDF。
-            </p>
-            <button
-              onClick={buy}
-              disabled={buying}
-              className="mt-6 rounded-[8px] bg-[var(--p-fg)] px-8 py-3 text-sm font-bold text-[var(--p-bg)] disabled:opacity-50"
-            >
-              {buying ? "正在前往支付…" : "解锁报告 · HK$68"}
-            </button>
-            <p className="mt-3 text-xs text-[var(--p-secondary)]">
-              支付后自动回跳并解锁，永久可看。
-            </p>
-            <p className="mt-4 text-sm text-[var(--p-secondary)]">
-              有兑换码？<a className="underline" href="/redeem">去兑换 →</a>
-            </p>
-          </section>
-        ) : !report || !input ? (
+        {!report || !input ? (
           <section className="mt-8 rounded-[12px] border border-[var(--p-gray-300)] bg-[var(--p-card)] p-8 text-center">
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">还没有模拟数据</h2>
             <p className="mt-2 text-sm text-[var(--p-secondary)]">先回模拟器填好志愿表，再生成报告。</p>
@@ -187,7 +145,7 @@ export default function P1SimReport({ locale = "tc" }: { locale?: Locale }) {
               {/* 头部 */}
               <div className="flex items-baseline justify-between border-b-2 border-[#1C1C1C] pb-3">
                 <span className="font-serif text-xl font-bold text-[#1C1C1C]">港学荟 · 志愿结构体检报告</span>
-                <span className="font-mono text-xs text-[#57534E]">Pro 模拟器 · 数据 {DATA_LABEL}</span>
+                <span className="font-mono text-xs text-[#57534E]">志愿模拟器 · 数据 {DATA_LABEL}</span>
               </div>
 
               {/* 输入摘要 */}
