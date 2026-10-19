@@ -12,16 +12,41 @@ import { L, type Locale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/seo";
 
 function webJsonLd(locale: Locale) {
+  const organizationId = `${SITE_URL}/#organization`;
   return {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: L("港学荟", locale),
-    alternateName: L("香港升学择校平台", locale),
-    url: SITE_URL,
-    description: L(
-      "把香港教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
-      locale
-    ),
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": organizationId,
+        name: L("港学荟", locale),
+        alternateName: L("港學薈", locale),
+        url: SITE_URL,
+        description: L(
+          "整理香港学校资料、升学路线和择校工具，供家长核对公开信息和规划下一步。",
+          locale
+        ),
+        knowsAbout: [
+          L("香港幼稚园、小学与中学资料", locale),
+          "DSE",
+          "IB",
+          "A-Level",
+          L("小一入学与校网", locale),
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        name: L("港学荟", locale),
+        alternateName: L("香港升学择校平台", locale),
+        url: SITE_URL,
+        description: L(
+          "把香港教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
+          locale
+        ),
+        publisher: { "@id": organizationId },
+      },
+    ],
   };
 }
 
@@ -29,7 +54,6 @@ export default function Home({ locale = "tc" }: { locale?: Locale }) {
   return (
     <Localize locale={locale}>
     <main className="w-full">
-      <h1 className="sr-only">港学荟 · 香港择校数据与学校报告</h1>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webJsonLd(locale)) }} />
       {/* header（原站：tagline + wordmark 旋转 + 贴纸按钮 + menu 面板） */}
       <SiteHeader locale={locale} />

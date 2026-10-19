@@ -19,6 +19,9 @@ export type BlogMetaEntry = {
   tease: string;
   /** 简体版专用标题:内地家长搜的是「香港小学…」，与繁体标题不是同一批词 */
   scTitle?: string;
+  /** 人工编辑的搜索标题；避免自动截断文章标题。 */
+  seoTitle?: string;
+  scSeoTitle?: string;
   /** 简体版专用摘要 */
   scTease?: string;
 };
@@ -50,9 +53,11 @@ export function getBlogMeta(slug: string): BlogMetaEntry | undefined {
   return BLOG_META.find((m) => m.slug === slug);
 }
 
-/** 该文章在指定语言下的标题(已做繁简归一 + 截短) */
+/** 该文章在指定语言下的完整搜索标题。 */
 export function blogTitle(post: BlogPost, locale: Locale): string {
   const meta = getBlogMeta(post.slug);
+  if (locale === "sc" && meta?.scSeoTitle) return trimTitle(meta.scSeoTitle);
+  if (locale === "tc" && meta?.seoTitle) return trimTitle(meta.seoTitle);
   if (locale === "sc" && meta?.scTitle) return trimTitle(meta.scTitle);
   return trimTitle(L(post.title, locale));
 }
@@ -95,29 +100,27 @@ export function blogPostMetadata(slug: string, locale: Locale): Metadata {
 export function blogPostJsonLd(post: BlogPost, locale: Locale) {
   const meta = getBlogMeta(post.slug);
   const iso = meta ? toISODate(meta.date) : "";
+  const pageUrl = `${SITE_URL}${localeHref(`/blog/${post.slug}`, locale)}`;
+  const organizationId = `${SITE_URL}/#organization`;
+  const websiteId = `${SITE_URL}/#website`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: blogTitle(post, locale),
     description: blogDescription(post, locale),
     datePublished: iso || undefined,
-    dateModified: iso || undefined,
-    author: { "@type": "Organization", name: L("港学荟", locale) },
-    publisher: { "@type": "Organization", name: L("港学荟", locale) },
-    mainEntityOfPage: `${SITE_URL}${localeHref(`/blog/${post.slug}`, locale)}`,
+    author: { "@id": organizationId },
+    publisher: { "@id": organizationId },
+    mainEntityOfPage: pageUrl,
     image: `${SITE_URL}/covers/og/${post.slug}.png`,
-  };
-}
-
-export function blogFaqJsonLd(post: BlogPost, locale: Locale) {
-  if (!post.faq?.length) return null;
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: post.faq.map((f) => ({
-      "@type": "Question",
-      name: L(f.question, locale),
-      acceptedAnswer: { "@type": "Answer", text: L(f.answer, locale) },
-    })),
+    isPartOf: { "@id": websiteId },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: L("首頁", locale), item: `${SITE_URL}${localeHref("/", locale)}` },
+        { "@type": "ListItem", position: 2, name: L("熱文", locale), item: `${SITE_URL}${localeHref("/blog", locale)}` },
+        { "@type": "ListItem", position: 3, name: blogTitle(post, locale), item: pageUrl },
+      ],
+    },
   };
 }

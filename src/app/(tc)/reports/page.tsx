@@ -61,6 +61,18 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
           </p>
         </div>
 
+        <nav aria-label={L("近期幼稚园报告", locale)} className="mb-6 border-l-4 border-[#0F766E] bg-[#F2FBF8] px-4 py-3 text-sm">
+          <span className="mr-3 font-bold text-[#0F766E]">{L("近期幼稚园报告", locale)}</span>
+          <span className="inline-flex flex-wrap gap-x-4 gap-y-1">
+            <a href={localeHref("/reports/st-hilarys-kg", locale)} className="font-medium text-[var(--p-fg)] underline underline-offset-2">
+              {L("德萃幼稚園（馬鞍山及紅磡）", locale)}
+            </a>
+            <a href={localeHref("/reports/plk-tam-au-yeung-siu-fong", locale)} className="font-medium text-[var(--p-fg)] underline underline-offset-2">
+              {L("保良局譚歐陽少芳紀念幼稚園", locale)}
+            </a>
+          </span>
+        </nav>
+
         {/* tab + 筛选 + 搜索 */}
         <div className="mb-6 flex flex-wrap items-center gap-4 font-mono text-sm uppercase">
           <div className="flex gap-2">

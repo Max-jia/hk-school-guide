@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/cn/tools/p1-simulator/report",
     languages: languageAlternates("/tools/p1-simulator/report"),
   },
+  robots: { index: false, follow: false },
 };
 
 export default function Page() {

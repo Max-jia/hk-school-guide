@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/unlock"],
+        disallow: ["/api/"],
       },
     ],
     sitemap: "https://hkschool.guide/sitemap.xml",

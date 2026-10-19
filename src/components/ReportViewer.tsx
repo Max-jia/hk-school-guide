@@ -167,16 +167,12 @@ export default function ReportViewer({
             {pdfBusy ? z("正在生成 PDF…") : z("下载为 PDF")}
           </button>
         </div>
-        {!layoutSample && supplementaryTools}
-        <section
-          className="mb-8 border border-[var(--p-gray-300)] bg-[var(--p-gray-50)] p-4 sm:p-5"
-          aria-labelledby="report-evidence-legend"
-        >
-          <h2 id="report-evidence-legend" className="text-sm font-bold text-[var(--p-fg)]">
-            {L("先看懂報告標示", locale)}
-          </h2>
+        <details className="mb-6 border border-[var(--p-gray-300)] bg-[var(--p-gray-50)] px-4 py-3 sm:px-5">
+          <summary className="cursor-pointer text-sm font-bold text-[var(--p-fg)]">
+            {L("資料與評價標示說明", locale)}
+          </summary>
           <p className="mt-2 text-xs leading-6 text-[var(--p-secondary)]">
-            {L("報告會把可核對資料、平台分析、公開分享和仍待核實的內容分開；標示說明資料性質，不代表錄取機會。", locale)}
+            {L("報告把可核對資料、平台分析、公開分享和待核內容分開；標示只說明資料性質，不代表錄取機會。", locale)}
           </p>
           <div className="mt-3 flex flex-wrap gap-2 text-xs">
             {[
@@ -195,7 +191,7 @@ export default function ReportViewer({
               </span>
             ))}
           </div>
-        </section>
+        </details>
         <div className={editorialReport ? "report-layout" : undefined}>
           {editorialReport && (
             <nav
@@ -222,7 +218,7 @@ export default function ReportViewer({
         </div>
 
         <ReportSourcePanel sources={sourceReferences} locale={locale} />
-        {layoutSample && supplementaryTools}
+        {supplementaryTools}
 
         {related.length > 0 && (
           <section className={`mt-14 border-t border-black/15 pt-7 dark:border-white/15${editorialReport ? " report-editorial__related" : ""}`}>

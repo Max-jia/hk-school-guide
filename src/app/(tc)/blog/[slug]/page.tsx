@@ -8,7 +8,6 @@ import {
   getBlogPost,
   blogPostMetadata,
   blogPostJsonLd,
-  blogFaqJsonLd,
 } from "@/lib/blog";
 
 export function generateStaticParams() {
@@ -43,15 +42,11 @@ export default async function BlogPostPage({
     );
   }
   const jsonLd = blogPostJsonLd(post, locale);
-  const faqJsonLd = blogFaqJsonLd(post, locale);
 
   return (
     <Localize locale={locale}>
       <main className="w-full">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        {faqJsonLd ? (
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-        ) : null}
         <SiteHeader locale={locale} />
         <div className="mx-auto max-w-[880px] px-4 pb-24">
           <p className="pt-8 font-mono text-sm uppercase text-[var(--p-secondary)]">

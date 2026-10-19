@@ -1,11 +1,13 @@
-import type { Metadata } from "next";
 import TcPage from "@/app/(tc)/shortlist/page";
-import { L, languageAlternates } from "@/lib/i18n";
+import { createPageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
-  title: L("我的候选学校：收藏、比较与择校清单", "sc"),
-  alternates: { canonical: "/cn/shortlist", languages: languageAlternates("/shortlist") },
-};
+export const metadata = createPageMetadata({
+  title: "我的候选学校清单",
+  description: "查看本设备保存的候选学校，并整理比较清单。收藏内容保存在当前浏览器，不会同步到其他设备。",
+  path: "/shortlist",
+  locale: "sc",
+  indexable: false,
+});
 
 export default function Page() {
   return <TcPage locale="sc" />;

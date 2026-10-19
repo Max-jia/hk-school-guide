@@ -1,4 +1,4 @@
-// SEO 辅助函数:日期转 ISO、标题截短、正文提取描述
+// SEO 辅助函数:日期转 ISO、标题整理、正文提取描述
 
 export const SITE_URL = "https://hkschool.guide";
 
@@ -9,11 +9,10 @@ export function toISODate(d: string): string {
   return `2026-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}`;
 }
 
-// 标题截短:取「——」前的主题部分,再限 28 字(Google 中文标题约 30 字截断)
+// 不在 HTML <title> 中硬截字；搜索结果的展示长度由搜索引擎决定。
+// 需要缩短的标题应在文章元数据中逐篇编辑，避免输出半句和字面省略号。
 export function trimTitle(title: string): string {
-  let t = title.split("——")[0].trim();
-  if (t.length > 28) t = t.slice(0, 27) + "…";
-  return t;
+  return title.replace(/\s+/g, " ").trim();
 }
 
 // 正文 → 描述:去 h1/日期行/HTML/emoji,取前 ~150 字,在句号处断
