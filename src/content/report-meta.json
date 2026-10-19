@@ -1377,6 +1377,54 @@
    "h": "TOPKIDS国际课程·Deborah体系·全英语",
    "c": "topkids-yl",
    "premium": true
+  },
+  {
+   "n": "嘉德麗中英文幼稚園",
+   "t": "B",
+   "d": "沙田区",
+   "h": "半日英普各约 50 分钟·经典诵读·私立助学金",
+   "c": "catiline",
+   "premium": false
+  },
+  {
+   "n": "九龍城浸信會幼稚園",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "免费半日·游戏与英语·2025 教育局课堂评核",
+   "c": "kowloon-city-baptist-kg",
+   "premium": false
+  },
+  {
+   "n": "基督教香港崇真會安基幼兒學校",
+   "t": "B",
+   "d": "九龙城区",
+   "h": "黄埔全日照顾·家庭支援·延时名额须核",
+   "c": "on-kei-nursery",
+   "premium": false
+  },
+  {
+   "n": "保良局譚歐陽少芳紀念幼稚園（紅磡）",
+   "t": "A",
+   "d": "九龙城区",
+   "h": "黄埔免费半日·升小资料公开·校内多感官空间",
+   "c": "plk-tam-au-yeung-siu-fong",
+   "premium": false
+  },
+  {
+   "n": "德萃幼稚園（馬鞍山及紅磡）",
+   "t": "B",
+   "d": "沙田区及九龙城区",
+   "h": "两校舍私立·K3 一周小学衔接·收费口径待核",
+   "c": "st-hilarys-kg",
+   "premium": false
+  },
+  {
+   "n": "德信幼稚園",
+   "t": "B",
+   "d": "油尖旺区",
+   "h": "尖沙咀免费半日·STEM 与烹饪·天主教品格",
+   "c": "tak-sun-kg",
+   "premium": false
   }
  ],
  "TIER_CFG": {
