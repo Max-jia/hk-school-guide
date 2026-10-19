@@ -31,14 +31,14 @@ function tableValue(html: string, labels: RegExp): string | null {
 export function buildReportCommuteInfo(
   schoolName: string,
   body: string,
-  kind: "primary" | "kindergarten",
+  kind: "primary" | "kindergarten" | "secondary",
   locale: Locale
 ): ReportCommuteInfo {
   const localizedName = L(schoolName, locale);
   const target = normalize(L(schoolName, "sc"));
   const districtFromBody = tableValue(body, /地区|地區/);
   const district = districtFromBody?.split(/[·•]/)[0]?.trim() || null;
-  const pool = kind === "kindergarten" ? kindergartens : schools;
+  const pool = kind === "kindergarten" ? kindergartens : kind === "primary" ? schools : [];
   const match = pool.find((item) => {
     const names = [item.name_zh, item.name_display, "simp" in item ? item.simp : undefined]
       .filter((value): value is string => Boolean(value))

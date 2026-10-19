@@ -10,7 +10,7 @@ export default function ReportVerificationPanel({
   locale = "tc",
 }: {
   body: string;
-  kind: "primary" | "kindergarten";
+  kind: "primary" | "kindergarten" | "secondary";
   locale?: Locale;
 }) {
   // 只接收公开 body；付费 premiumHtml 不会传入这里。
@@ -20,10 +20,15 @@ export default function ReportVerificationPanel({
         label: "教育局学校概览（PSP）＋2027/28 小一学校网名册（官津学校适用）",
         href: "https://www.chsc.hk/psp2026/",
       }
-    : {
-        label: "教育局幼稚园概览（KGP）＋校方公开资料",
-        href: "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html",
-      };
+    : kind === "secondary"
+      ? {
+          label: "中学概览（SSP）＋学校官方课程、招生及收费资料",
+          href: "https://www.chsc.hk/ssp2025/",
+        }
+      : {
+          label: "教育局幼稚园概览（KGP）＋校方公开资料",
+          href: "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html",
+        };
   const status = summary.hasLayeredDisclaimer
     ? L("正文有分层核实说明", locale)
     : L("正文未找到统一核实分层", locale);
@@ -63,7 +68,7 @@ export default function ReportVerificationPanel({
             <div className="mt-1 font-bold">
               {summary.freshness || L("当前章节未统一标注", locale)}
             </div>
-            <div className="mt-1 text-[11px] font-normal text-[var(--p-secondary)]">
+            <div className="mt-1 text-xs font-normal text-[var(--p-secondary)]">
               {L("本站数据核对", locale)}：{DATA_UPDATED_AT}
             </div>
           </div>

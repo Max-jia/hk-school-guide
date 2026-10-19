@@ -11,6 +11,7 @@ export const EDITORIAL_REPORT_SLUGS = [
   "canaan",
   "canaan-cd",
   "canaan-klt",
+  "catiline",
   "canossahk",
   "cblmc",
   "ccc",
@@ -26,6 +27,7 @@ export const EDITORIAL_REPORT_SLUGS = [
   "dgjs",
   "edujcps",
   "evangel",
+  "esf-kindergarten",
   "fkgs",
   "fssas",
   "ghps",
@@ -35,6 +37,7 @@ export const EDITORIAL_REPORT_SLUGS = [
   "hfc",
   "hfcklt",
   "hkbaptist",
+  "hksdgps",
   "hkcwcyw",
   "hkups",
   "honwah",
@@ -49,6 +52,7 @@ export const EDITORIAL_REPORT_SLUGS = [
   "kcps",
   "kcskps",
   "keenmind",
+  "kowloon-city-baptist-kg",
   "kentville",
   "kiangsu",
   "krs",
@@ -63,6 +67,7 @@ export const EDITORIAL_REPORT_SLUGS = [
   "lh-hp",
   "lh-sf",
   "lht",
+  "luaaps",
   "lkps",
   "llc",
   "lmc",
@@ -80,6 +85,9 @@ export const EDITORIAL_REPORT_SLUGS = [
   "munsang",
   "munsangps",
   "ngwah",
+  "on-kei-nursery",
+  "our-ladys-kindergarten",
+  "sacred-heart-canossian-kindergarten",
   "olps",
   "pb",
   "pc",
@@ -91,6 +99,7 @@ export const EDITORIAL_REPORT_SLUGS = [
   "plkflpy",
   "plklht",
   "plkshsn",
+  "plk-tam-au-yeung-siu-fong",
   "pt",
   "puikei",
   "py2",
@@ -126,6 +135,9 @@ export const EDITORIAL_REPORT_SLUGS = [
   "soka",
   "spc",
   "spccps",
+  "spcc-secondary",
+  "dbs-secondary",
+  "dgs-secondary",
   "spcps",
   "spcs",
   "spk",
@@ -136,10 +148,13 @@ export const EDITORIAL_REPORT_SLUGS = [
   "ssgc",
   "ssgps",
   "stcat",
+  "st-hilarys-kg",
+  "st-stephens-church-kg",
   "stgps",
   "sts",
   "stts",
   "sylgps",
+  "tak-sun-kg",
   "think",
   "tkocps",
   "tlps",
@@ -169,10 +184,14 @@ export const EDITORIAL_REPORT_SLUGS = [
   "ycmcj",
   "ycps",
   "ylaps",
+  "yau-yat-chuen-school-kg",
+  "yuen-yuen-kindergarten",
   "york",
   "york-klt",
   "york-montessori-yl",
   "ywps",
+  "hk-true-light-caine-kg",
+  "kowloon-true-light-kg",
 ] as const;
 
 export function usesEditorialReportLayout(slug: string): boolean {
@@ -267,6 +286,7 @@ function enhanceTables(html: string, locale: Locale, editorial = false): string 
 
   if (classMatch && classMatch[2].split(/\s+/).includes("dt")) {
     const rows = getDirectTableRows(contents);
+    const columnCount = Math.max(0, ...rows.map((row) => row.length));
     const isKeyValue = rows.length > 0 && rows.every((row) => row.length === 2 && row[0] === "th" && row[1] === "td");
     const markerClasses = editorial
       ? isKeyValue ? "key-value" : ""
@@ -277,18 +297,23 @@ function enhanceTables(html: string, locale: Locale, editorial = false): string 
     table = `<table${nextAttributes}>${enhancedContents}</table>`;
 
     if (editorial) {
-      const wrapperClass = isKeyValue ? "is-key-value" : "is-wide";
-      const scrollHint = isKeyValue ? "" : `<p class="scroll-note">${L("左右滑動查看更多欄位", locale)}</p>`;
+      const wrapperClass = isKeyValue ? "is-key-value" : `is-wide${columnCount >= 5 ? ` report-columns-${columnCount}` : ""}`;
+      const scrollHint = isKeyValue ? "" : `<p class="scroll-note">${L("表格內容較寬，請在表格內向左或向右拖動查看其他欄位。", locale)}</p>`;
       const scrollLabel = L("可左右滑動查看其他欄位的表格", locale);
       table = `<div class="table-scroll ${wrapperClass} report-table-scroll"><div class="report-table-scroll__viewport" role="region" tabindex="0" aria-label="${scrollLabel}">${table}</div>${scrollHint}</div>`;
     } else if (!isKeyValue && rows.length >= 2) {
-      const scrollHint = L("左右滑動查看更多欄位", locale);
+      const scrollHint = L("表格內容較寬，請在表格內向左或向右拖動查看其他欄位。", locale);
       const scrollLabel = L("可左右滑動查看其他欄位的表格", locale);
       table = `<div class="report-table-scroll"><p class="report-table-scroll__hint" aria-hidden="true">${scrollHint}</p><div class="report-table-scroll__viewport" role="region" tabindex="0" aria-label="${scrollLabel}">${table}</div></div>`;
     }
   }
 
   return `${html.slice(0, start)}${table}${enhanceTables(html.slice(end), locale, editorial)}`;
+}
+
+/** Add accessible horizontal scrolling to wide report tables without changing report copy. */
+export function enhanceReportTables(html: string, locale: Locale, editorial = false): string {
+  return enhanceTables(html, locale, editorial);
 }
 
 function cleanText(html: string): string {
@@ -489,7 +514,9 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
     .trim();
   const subtitle = hero.match(/<p\b[^>]*class=(['"])[^'"]*\bsub\b[^'"]*\1[^>]*>([\s\S]*?)<\/p>/i)?.[2] ?? "";
   const [englishName, ...details] = cleanText(subtitle).split(/\s*·\s*/);
-  const tierGrade = cleanText(tier).match(/S|A\+?|B|C/i)?.[0] ?? "—";
+  const isUnrated = /暂缓评级|暂不评级|未作评级|未评级|暂无评级|暫緩評級|暫不評級|未作評級|未評級|暫無評級/i.test(cleanText(tier));
+  const tierGrade = isUnrated ? null : cleanText(tier).match(/S|A\+?|B|C/i)?.[0] ?? "—";
+  const isSecondaryReport = /中学|中學/.test(`${title} ${cleanText(tier)}`);
   const facts = getReportFacts(body);
   const schoolNetwork = getSchoolNetwork(facts);
   const freeBadge = free ? `<span class="hero-free-badge">${L("本报告完全免费", locale)}</span>` : "";
@@ -498,24 +525,28 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
     (_match, prefix: string, suffix: string) => `${prefix}<br>${suffix}`
   );
   const ribbonFacts = schoolNetwork
-    ? [
-        { label: L("評級", locale), value: `<strong>${escapeHtml(tierGrade)} ${L("級", locale)}</strong>` },
-        ...facts.filter((fact) => fact !== schoolNetwork.fact).slice(0, 3),
-      ]
-    : facts;
+    ? facts.filter((fact) => fact !== schoolNetwork.fact).slice(0, 4)
+    : isSecondaryReport
+      ? facts.slice(0, 4)
+      : facts;
   const factMarkup = ribbonFacts.map((fact) => {
     const fullValue = cleanText(fact.value);
     const summaryValue = getEditorialFactValue(fact);
     return `<div class="fact"><span class="fact-label">${escapeHtml(fact.label)}</span><span class="fact-value" aria-label="${escapeHtml(`${fact.label}：${fullValue}`)}">${escapeHtml(summaryValue)}</span></div>`;
   }).join("");
-  const factsRibbon = factMarkup ? `<div class="fact-ribbon fact-ribbon--${ribbonFacts.length}">${factMarkup}</div>` : "";
-  const indexLabel = schoolNetwork ? L("所屬校網", locale) : L("報告評級", locale);
-  const indexNumber = schoolNetwork ? schoolNetwork.number : tierGrade;
+  const secondaryFactClass = isSecondaryReport ? " fact-ribbon--secondary" : "";
+  const factsRibbon = factMarkup ? `<div class="fact-ribbon fact-ribbon--${ribbonFacts.length}${secondaryFactClass}">${factMarkup}</div>` : "";
+  const indexLabel = schoolNetwork ? L("所屬校網", locale) : L(isUnrated ? "暂缓评级" : "報告評級", locale);
+  const indexNumber = schoolNetwork
+    ? schoolNetwork.number
+    : isUnrated
+      ? L("暂缓", locale)
+      : tierGrade ?? "—";
   const indexCaption = schoolNetwork?.caption
-    ? `<span class="hero-index-caption">${escapeHtml(schoolNetwork.caption)}</span>`
-    : "";
+      ? `<span class="hero-index-caption">${escapeHtml(schoolNetwork.caption)}</span>`
+      : "";
 
-  return `<section class="shell hero"><div class="hero-grid"><div><div class="hero-kicker">${tier}${freeBadge}</div><h1 id="school-title">${titleMarkup}</h1><div class="english-name">${escapeHtml(englishName ?? "")}</div>${details.length ? `<p class="dek">${escapeHtml(details.join(" · "))}</p>` : ""}</div><aside class="hero-index" aria-label="${escapeHtml(indexLabel)}"><span class="hero-index-label">${escapeHtml(indexLabel)}</span><span class="hero-index-number">${escapeHtml(indexNumber)}</span>${indexCaption}</aside></div>${factsRibbon}</section>`;
+  return `<section class="shell hero"><div class="hero-grid${isSecondaryReport ? " hero-grid--secondary" : ""}"><div><div class="hero-kicker">${tier}${freeBadge}</div><h1 id="school-title">${titleMarkup}</h1><div class="english-name">${escapeHtml(englishName ?? "")}</div>${details.length ? `<p class="dek">${escapeHtml(details.join(" · "))}</p>` : ""}</div>${isSecondaryReport ? "" : `<aside class="hero-index${isUnrated ? " hero-index--unrated" : ""}" aria-label="${escapeHtml(indexLabel)}"><span class="hero-index-label">${escapeHtml(indexLabel)}</span><span class="hero-index-number">${escapeHtml(indexNumber)}</span>${indexCaption}</aside>`}</div>${factsRibbon}</section>`;
 }
 
 export function reportChapterItems(html: string): { id: string; title: string }[] {
@@ -526,8 +557,12 @@ export function reportChapterItems(html: string): { id: string; title: string }[
     const heading = match[4].match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i)?.[1] ?? "";
     const withoutBadges = heading
       .replace(/<[^>]*class=(['"])[^'"]*\bnum\b[^'"]*\1[^>]*>[\s\S]*?<\/[^>]+>/i, "")
-      .replace(/<[^>]*class=(['"])[^'"]*\bcal-badge\b[^'"]*\1[^>]*>[\s\S]*?<\/[^>]+>/i, "");
-    const title = cleanText(withoutBadges).replace(/^\d+\s*/, "");
+      .replace(/<[^>]*class=(['"])[^'"]*\bcal-badge\b[^'"]*\1[^>]*>[\s\S]*?<\/[^>]+>/i, "")
+      .replace(/<[^>]*class=(['"])[^'"]*\bexpert-tag\b[^'"]*\1[^>]*>[\s\S]*?<\/[^>]+>/i, "");
+    // 章节号统一写在 <span class="num"> 里（全站 1935 个标题皆如此），
+    // 因此不能再按「标题开头的数字」剥编号——否则像「2027/28 K1 报名」这类
+    // 以年份开头的标题会被截成「/28 K1 报名」。
+    const title = cleanText(withoutBadges);
     if (title) items.push({ id: match[2], title });
   }
   return items;
@@ -575,10 +610,44 @@ function simplifyRadarCharts(html: string): string {
   );
 }
 
+function annotateEvidenceMarkers(html: string, locale: Locale): string {
+  const sourceLabel = escapeHtml(L("來源說明", locale));
+  const communityLabel = escapeHtml(L("公開分享", locale));
+  const pendingLabel = escapeHtml(L("待核", locale));
+  let result = html.replace(
+    /<p\b([^>]*\bsource-note\b[^>]*)>(\s*)/gi,
+    (_match, attributes: string, whitespace: string) =>
+      `<p${attributes}>${whitespace}<span class="report-evidence-label report-evidence-label--source" aria-label="${sourceLabel}">${sourceLabel}</span> `
+  );
+
+  result = result.replace(
+    /<span\b([^>]*class=(['"])[^'"]*\b(?:expert-tag|cal-badge)\b[^'"]*\2[^>]*)>/gi,
+    (_match, attributes: string) => {
+      if (/\bdata-evidence-kind=/.test(attributes)) return `<span${attributes}>`;
+      return `<span${attributes} data-evidence-kind="analysis" aria-label="${escapeHtml(L("平台分析", locale))}">`;
+    }
+  );
+
+  result = result.replace(
+    /(?<![\p{L}])家長分享(?![\p{L}])/gu,
+    `<span class="report-evidence-label report-evidence-label--community" aria-label="${communityLabel}">${communityLabel}</span>`
+  );
+  result = result.replace(
+    /(?<![\p{L}])家长分享(?![\p{L}])/gu,
+    `<span class="report-evidence-label report-evidence-label--community" aria-label="${communityLabel}">${communityLabel}</span>`
+  );
+  result = result.replace(
+    /(?<![\p{L}])待核(?![\p{L}])/gu,
+    `<span class="report-evidence-label report-evidence-label--pending" aria-label="${pendingLabel}">${pendingLabel}</span>`
+  );
+  return result;
+}
+
 /** Presentation-only enhancements shared by free content and authorized premium content. */
 export function enhanceReportHtml(html: string, locale: Locale, editorial = false): string {
   const simplifiedRadar = simplifyRadarCharts(html);
   const compacted = compactReliabilityNotice(simplifiedRadar, locale);
-  const tables = enhanceTables(compacted, locale, editorial);
-  return editorial ? renderEditorialChapters(tables) : tables;
+  const tables = enhanceReportTables(compacted, locale, editorial);
+  const chapters = editorial ? renderEditorialChapters(tables) : tables;
+  return annotateEvidenceMarkers(chapters, locale);
 }

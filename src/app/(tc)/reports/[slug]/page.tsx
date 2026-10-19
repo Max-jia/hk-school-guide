@@ -14,6 +14,7 @@ import {
 } from "@/lib/reports";
 import { L, type Locale } from "@/lib/i18n";
 import { buildReportCommuteInfo } from "@/lib/report-commute";
+import { getReportSourceReferences } from "@/lib/report-sources";
 
 type RelatedReport = { slug: string; title: string };
 
@@ -47,6 +48,7 @@ function reportCategory(d: ReportData): string {
   const t = `${d.title || ""} ${d.hero || ""}`;
   if (t.includes("幼稚园") || t.includes("幼稚園")) return "kg";
   if (t.includes("小学") || t.includes("小學")) return "primary";
+  if (t.includes("中学") || t.includes("中學")) return "secondary";
   return "";
 }
 
@@ -168,9 +170,11 @@ export default async function ReportPage({
   }
 
   const related = findRelated(slug);
-  const jsonLd = reportJsonLd(d, locale);
+  const sourceReferences = getReportSourceReferences(slug);
+  const jsonLd = reportJsonLd(d, locale, sourceReferences);
   const schoolName = L(reportSchoolName(d), locale);
-  const shortlistKind = reportCategory(d) === "kg" ? "kindergarten" : "primary";
+  const category = reportCategory(d);
+  const shortlistKind = category === "kg" ? "kindergarten" : category === "secondary" ? "secondary" : "primary";
   const commuteInfo = buildReportCommuteInfo(schoolName, d.body, shortlistKind, locale);
 
   // 在服务端就把正文转好再传给 ReportViewer(client component):
@@ -193,6 +197,7 @@ export default async function ReportPage({
         schoolName={schoolName}
         shortlistKind={shortlistKind}
         commuteInfo={commuteInfo}
+        sourceReferences={sourceReferences}
       />
     </>
   );

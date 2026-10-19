@@ -47,7 +47,7 @@ export default function ShortlistButton({
       onClick={toggle}
       aria-pressed={saved}
       title={L(saved ? "从我的候选移除" : "加入我的候选", locale)}
-      className={`inline-flex items-center gap-1 rounded-[6px] border px-3 py-1 font-mono text-xs font-bold transition-colors ${
+      className={`inline-flex min-h-11 items-center gap-1 rounded-[6px] border px-3 py-2 font-mono text-xs font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--p-fg)] ${
         saved
           ? "border-[#0F766E] bg-[#E7F6F2] text-[#0F766E]"
           : "border-[var(--p-fg)] text-[var(--p-fg)] hover:bg-[var(--p-fg)] hover:text-[var(--p-bg)]"
