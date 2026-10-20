@@ -21,7 +21,10 @@
 - 教育局 [财政委员会答复](https://www.edb.gov.hk/attachment/en/about-edb/press/legco/replies-to-fc/EDB-2-e1.pdf)明确指出把学生或中学称为 Band 1／2／3 容易误解。报告头的 Band 1C–1B 标为坊间参考，并在正文呈现 [大考](https://dse.bigexam.hk/zh-hk/ssp/school/382)、[SchoolBanding](https://www.schoolbanding.com/s/stewards-pooi-kei-college)、[HKET TOPSchool](https://topschool.hket.com/secondary-school/370) 与 [SchoolDays](https://www.schooldays.com.hk/secondary/afd7ac4a) 的分歧；未把四站视为独立投票。
 - 教育王国 [2014 在读家庭交流](https://m.edu-kingdom.com/post.php?fid=715&page=98&tid=2379568)有压力大和功课较少两种相反个案；[2018 升中讨论](https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3713251)只作补充。均无身份核验、年代较早；报告没有编造当前好评率或满意度 Top 5。
 - 2026 IAL／GCE 成绩在校方索引可见，但对应的当届正文未能复核；不采用第三方转述数字。2027/28 正式收费、学额和升学去向分母也仍待校方资料。
+- 考评局的[学士课程核心要求](https://www.hkeaa.edu.hk/tc/hkdse/faq/q2/)和[学校统计定义](https://www.hkeaa.edu.hk/DocLibrary/HKDSE/exam_report/Examination_Statistics/2026_6SCH0123-DSE2025-CLASS-6A-SSR.pdf)支持将「332A+2」拆成中文、英文第 3 级，数学和一门选修科第 2 级，公民科达标；[专上教育资讯平台](https://www.cspe.edu.hk/sc/sssdp/faqs/sub-degree-programmes/)确认副学位基本门槛为包括中文、英文在内五科第 2 级。两项达标比例均非取录率。
 
 ## 编辑和页面验收
 
 八章标题已缩短；每章有学校专属判断及家庭动作。费用和 Band 等关键事实在段落旁有原始链接。第八章删除十二条与前七章重复的问答，保留四条会影响选择的问题。按 `humanizer-zh` 检查并改掉公式化对比、宣传词和过度整齐的句子；保留事实与审慎语气。本地 `/cn/reports/stewards-pooi-kei-secondary` 已在窄屏浏览器检查头部四项事实、第一章、在读体验分栏、费用表及专家结论；章节边界清楚，长表可横向滚动。TypeScript 类型检查通过，JSON 可解析。生产站未改动。
+
+2026-10-20 补充验收：第 4 章已在数字旁拆解「332A+2」「22222」，并写明 A 是公民科达标、成绩达标并非实际录取。第 1、3、5 章也补了 DSE／IAL、选修科、国际课程、特殊教育需要及调整后家庭收入等首次出现的解释；录取通知改用中文。窄屏本地预览已检查第 4 章：门槛说明与来源链接独立成块，和下方成绩表分隔清楚。`validate-reports.mjs stewards-pooi-kei-secondary` 无错误或提醒，`npm run typecheck` 通过。验证脚本原先只识别「入学」而漏掉「中一入读」标题，已补上同义标题识别。生产站未改动。

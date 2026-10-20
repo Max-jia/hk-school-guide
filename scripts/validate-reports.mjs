@@ -86,13 +86,13 @@ function validate(slug, d) {
     );
     const curriculumChapter = curriculumMeta ? chapterByNumber(curriculumMeta.n) : chapterByNumber(2);
     const admissionsMeta = chapterMeta.find((c) =>
-      /20\d{2}[^<]*(招生|申请|申請|录取|錄取|入学|入學|升中|收生|路径|路徑)/.test(c.title)
+      /20\d{2}[^<]*(招生|申请|申請|录取|錄取|入学|入學|入读|入讀|升中|收生|路径|路徑)/.test(c.title)
     ) || chapterMeta.find((c) =>
-      /(招生|申请|申請|录取|錄取)/.test(c.title)
+      /(招生|申请|申請|录取|錄取|入读|入讀)/.test(c.title)
       && !/(FAQ|常见问题|常見問題|申请清单|申請清單|行动清单|行動清單)/.test(c.title)
     )
-      || chapterMeta.find((c) => /升中[^<]*(申请|申請|路径|路徑|收生)|七年级入学|七年級入學|中一入学|中一入學|入学攻略|入學攻略|评估准备|評估準備/.test(c.title))
-      || chapterMeta.find((c) => /(入学|入學|评估|評估)/.test(c.title) && !/(年级定位|年級定位|学校定位|學校定位)/.test(c.title));
+      || chapterMeta.find((c) => /升中[^<]*(申请|申請|路径|路徑|收生)|七年级入学|七年級入學|中一入学|中一入學|中一入读|中一入讀|入学攻略|入學攻略|评估准备|評估準備/.test(c.title))
+      || chapterMeta.find((c) => /(入学|入學|入读|入讀|评估|評估)/.test(c.title) && !/(年级定位|年級定位|学校定位|學校定位)/.test(c.title));
     const admissionsChapter = admissionsMeta ? chapterByNumber(admissionsMeta.n) : chapterByNumber(4);
     const supportMeta = chapterMeta.find((c) => /(支援|支持|服务|服務|体验|體驗)/.test(c.title));
     const supportChapter = supportMeta ? chapterByNumber(supportMeta.n) : "";
