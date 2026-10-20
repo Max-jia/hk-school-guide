@@ -503,6 +503,7 @@ function getEditorialFactValue(fact: { label: string; value: string }): string {
 function getSecondaryHeroFacts(slug: string, hero: string, locale: Locale): { label: string; value: string }[] {
   const report = SECONDARY_REPORT_META.get(slug);
   if (!report) return [];
+  const bandConsensus = (report as { bandConsensus?: string }).bandConsensus;
 
   const subtitle = hero.match(/<p\b[^>]*class=(['"])[^'"]*\bsub\b[^'"]*\1[^>]*>([\s\S]*?)<\/p>/i)?.[2] ?? "";
   const coursePattern = /HKDSE|IBDP?|MYP|IAL|A-Level|GCSE|HSC|DIA|Baccalaur[eé]at|BTEC/i;
@@ -514,6 +515,7 @@ function getSecondaryHeroFacts(slug: string, hero: string, locale: Locale): { la
     { label: L("地區", locale), value: L(report.d, locale) },
     { label: L("辦學類型", locale), value: L(report.h.split(/\s*·\s*/)[0], locale) },
     ...(course ? [{ label: L("課程路線", locale), value: L(course, locale) }] : []),
+    ...(bandConsensus ? [{ label: L("坊间学术定位", locale), value: L(bandConsensus, locale) }] : []),
   ];
 }
 
@@ -552,7 +554,7 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
   const schoolNetwork = getSchoolNetwork(facts);
   const freeBadge = free ? `<span class="hero-free-badge">${L("本报告完全免费", locale)}</span>` : "";
   const secondaryRatingStatus = isSecondaryReport
-    ? `<span class="hero-rating-status" aria-label="${escapeHtml(L("中学评级状态：暂不评级；统一评级方法仍在研究与校准中，这不代表学校质量结论", locale))}">${escapeHtml(L("评级状态：暂不评级", locale))}</span>`
+    ? `<span class="hero-rating-status" aria-label="${escapeHtml(L("平台综合评级暂缓；坊间学术定位另行标示，不代表教育局评级或学校质量结论", locale))}">${escapeHtml(L("平台评级：暂缓", locale))}</span>`
     : "";
   const titleMarkup = escapeHtml(title).replace(
     /^(.*?)(官立小學|官立小学)$/,
