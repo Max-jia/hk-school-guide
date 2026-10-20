@@ -5,6 +5,7 @@ import blogMeta from "@/content/blog-meta.json";
 import districts from "@/content/districts.json";
 import { SITE_URL } from "@/lib/seo";
 import { LOCALES, localeHref, languageAlternates } from "@/lib/i18n";
+import { BLOG_CLUSTERS } from "@/lib/blog-clusters";
 
 const REPORTS_DIR = path.join(process.cwd(), "src/content/reports");
 const DISTRICTS = districts as { slug: string }[];
@@ -53,6 +54,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
+  const blogClusters = BLOG_CLUSTERS.map((cluster) => ({
+    url: `${SITE_URL}/blog/topics/${cluster.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
 
   const base: MetadataRoute.Sitemap = [
     {
@@ -126,6 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     ...posts,
+    ...blogClusters,
     ...reportSitemap(),
   ];
   return withLocales(base);

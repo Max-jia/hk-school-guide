@@ -13,31 +13,28 @@ type Story = {
   href: string;
   bg: string;
   filter: string;
-  free?: boolean;
 };
 
 const STORIES: Story[] = [
   {
     id: "#S-01",
-    month: "免费试读",
+    month: "全文开放",
     title: "寶山幼兒園",
     tease: "40 校网名幼，联系学位与收生数据全公开，全文免费读。",
     img: "/shots/2025_04_birthday-effect.jpg",
     href: "/reports/braemar-hill",
     bg: "var(--p-bg-green)",
     filter: "报告",
-    free: true,
   },
   {
     id: "#S-02",
-    month: "免费试读",
+    month: "全文开放",
     title: "拔萃女小學",
     tease: "女拔小，直资一条龙，DSE 女校标杆，全文免费读。",
     img: "/shots/2025_03_language.jpg",
     href: "/reports/dgjs",
     bg: "var(--p-bg-blue)",
     filter: "报告",
-    free: true,
   },
   {
     id: "#S-03",
@@ -145,8 +142,9 @@ const REPORTS = STORIES.filter((s) => s.filter === "报告");
 const BLOGS = STORIES.filter((s) => s.filter === "热文");
 
 // 热文卡右上角日期从 blog-meta 自动读，不再手写月份
+type BlogMetaDate = { slug: string; date: string };
 const dateMap: Record<string, string> = Object.fromEntries(
-  (blogMeta as any[]).map((m) => ["/blog/" + m.slug, m.date]),
+  (blogMeta as BlogMetaDate[]).map((m) => ["/blog/" + m.slug, m.date]),
 );
 
 function SectionHeader({
@@ -182,7 +180,7 @@ function SectionHeader({
   );
 }
 
-function StoryCard({ s, showPrice, locale = "tc" }: { s: Story; showPrice?: boolean; locale?: Locale }) {
+function StoryCard({ s, locale = "tc" }: { s: Story; locale?: Locale }) {
   return (
     <Localize locale={locale}>
     <article className="story" style={{ "--story-bg": s.bg } as React.CSSProperties}>
@@ -190,24 +188,20 @@ function StoryCard({ s, showPrice, locale = "tc" }: { s: Story; showPrice?: bool
         <p className="rounded-full border border-[var(--p-fg)] p-1 px-2 text-sm uppercase">
           {s.filter} {s.id}
         </p>
-        {s.free ? (
+        {s.filter === "报告" ? (
           <p className="rounded-full bg-[var(--p-green)] p-1 px-3 text-sm font-bold text-[var(--p-gray-900)]">
-            免费试读
+            全文开放
           </p>
         ) : s.filter === "工具" ? (
           <p className="rounded-full bg-[var(--p-green)] p-1 px-3 text-sm font-bold text-[var(--p-gray-900)]">
             开始使用 →
-          </p>
-        ) : showPrice ? (
-          <p className="rounded-full bg-[var(--p-fg)] p-1 px-3 text-sm font-bold text-[var(--p-bg)]">
-            HK$9.9
           </p>
         ) : (
           <p className="text-sm uppercase">{dateMap[s.href] ?? s.month}</p>
         )}
       </div>
       <a
-        href={s.href}
+        href={localeHref(s.href, locale)}
         className="block cursor-pointer no-underline"
       >
         <div className="relative aspect-square overflow-hidden bg-[var(--story-bg)]">
@@ -232,11 +226,9 @@ function StoryCard({ s, showPrice, locale = "tc" }: { s: Story; showPrice?: bool
 
 function CardList({
   stories,
-  showPrice,
   locale = "tc",
 }: {
   stories: Story[];
-  showPrice?: boolean;
   locale?: Locale;
 }) {
   return (
@@ -247,7 +239,7 @@ function CardList({
           key={s.id}
           className="w-full list-none px-4 py-8 [--padding:clamp(16px,12vw,48px)] md:w-1/2 md:[--padding:clamp(16px,6vw,48px)] lg:w-1/3 lg:[--padding:clamp(24px,4vw,56px)]"
         >
-          <StoryCard s={s} showPrice={showPrice} locale={locale} />
+          <StoryCard s={s} locale={locale} />
         </li>
       ))}
     </ul>
@@ -267,7 +259,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
           linkLabel={`查看全部 ${REPORT_COUNT} 份`}
           locale={locale}
         />
-        <CardList stories={REPORTS} showPrice locale={locale} />
+        <CardList stories={REPORTS} locale={locale} />
       </section>
 
       <section className="mt-8 bg-[var(--p-band-blog)] py-6 md:py-10">
@@ -275,7 +267,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
           index="06"
           title="热文阅读"
           href={localeHref("/blog", locale)}
-          linkLabel="查看全部 40 篇"
+          linkLabel={`查看全部 ${blogMeta.length} 篇`}
           locale={locale}
         />
         <CardList stories={BLOGS} locale={locale} />
@@ -283,7 +275,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
         <p className="mt-2 px-4 pb-8 text-center text-sm text-[var(--p-secondary)]">
           2026-27 学年自行分配学位申请即将开始 ·{" "}
           <a
-            href="/blog/p1-scoring-guide"
+            href={localeHref("/blog/p1-scoring-guide", locale)}
             className="inline-block py-2 -my-2 font-mono text-sm font-bold text-[var(--p-fg)] no-underline hover:underline"
           >
             计分制逐项拆解 →

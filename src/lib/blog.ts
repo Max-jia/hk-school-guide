@@ -24,6 +24,9 @@ export type BlogMetaEntry = {
   scSeoTitle?: string;
   /** 简体版专用摘要 */
   scTease?: string;
+  /** ISO dates are editorial records; never infer a modification date from publication. */
+  updatedAt?: string;
+  verifiedAt?: string;
 };
 
 export type BlogPost = {
@@ -51,6 +54,21 @@ export function getBlogPost(slug: string): BlogPost | null {
 
 export function getBlogMeta(slug: string): BlogMetaEntry | undefined {
   return BLOG_META.find((m) => m.slug === slug);
+}
+
+export function blogPublishedAt(meta: BlogMetaEntry | undefined): string {
+  return meta ? toISODate(meta.date) : "";
+}
+
+/** Older bodies contain their own title/date row; the page shell renders these consistently. */
+export function blogBodyContent(body: string, locale: Locale): string {
+  const content = body
+    .replace(/^\s*<h1\b[^>]*>[\s\S]*?<\/h1>\s*/i, "")
+    .replace(/^\s*<p\b[^>]*class=["'][^"']*\bblog-meta\b[^"']*["'][^>]*>[\s\S]*?<\/p>\s*/i, "")
+    .trim();
+  return locale === "sc"
+    ? content.replace(/href="\/(blog|reports|tools)(?=[\/"])/g, 'href="/cn/$1')
+    : content;
 }
 
 /** 该文章在指定语言下的完整搜索标题。 */
@@ -90,7 +108,8 @@ export function blogPostMetadata(slug: string, locale: Locale): Metadata {
       title,
       description,
       url,
-      publishedTime: meta ? toISODate(meta.date) || undefined : undefined,
+      publishedTime: blogPublishedAt(meta) || undefined,
+      modifiedTime: meta?.updatedAt,
       images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: { card: "summary_large_image", title, description, images: [ogImage] },
@@ -99,7 +118,7 @@ export function blogPostMetadata(slug: string, locale: Locale): Metadata {
 
 export function blogPostJsonLd(post: BlogPost, locale: Locale) {
   const meta = getBlogMeta(post.slug);
-  const iso = meta ? toISODate(meta.date) : "";
+  const iso = blogPublishedAt(meta);
   const pageUrl = `${SITE_URL}${localeHref(`/blog/${post.slug}`, locale)}`;
   const organizationId = `${SITE_URL}/#organization`;
   const websiteId = `${SITE_URL}/#website`;
@@ -109,6 +128,7 @@ export function blogPostJsonLd(post: BlogPost, locale: Locale) {
     headline: blogTitle(post, locale),
     description: blogDescription(post, locale),
     datePublished: iso || undefined,
+    dateModified: meta?.updatedAt,
     author: { "@id": organizationId },
     publisher: { "@id": organizationId },
     mainEntityOfPage: pageUrl,

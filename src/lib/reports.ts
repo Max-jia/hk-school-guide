@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
+import reportMeta from "@/content/report-meta.json";
 import { SITE_URL } from "./seo";
 import { L, localeHref, languageAlternates, type Locale } from "./i18n";
 import type { ReportSourceReference } from "./report-sources";
@@ -11,6 +12,9 @@ export const CONTENT_DIR = path.join(process.cwd(), "src/content/reports");
 
 // skhyl 已合并到 skhyl2
 export const EXCLUDED_SLUGS = new Set(["skhyl"]);
+
+const PRIMARY_REPORT_SLUGS = new Set(reportMeta.PS_REPORTS.map((report) => report.c));
+const KINDERGARTEN_REPORT_SLUGS = new Set(reportMeta.KG_REPORTS.map((report) => report.c));
 
 export type ReportData = {
   slug: string;
@@ -54,32 +58,61 @@ function reportName(d: ReportData): string {
   return toPlainText(heading).replace(/\s*深度(?:[择擇]校)?[报報]告$/, "").trim() || d.slug;
 }
 
+function isKindergartenReport(d: ReportData): boolean {
+  if (PRIMARY_REPORT_SLUGS.has(d.slug)) return false;
+  if (KINDERGARTEN_REPORT_SLUGS.has(d.slug)) return true;
+  return /幼稚[园園]/.test(`${d.title} ${d.hero}`);
+}
+
 /** 搜索摘要使用报告类型和用户关心的主题生成，避免从免责声明或表格表头硬截文字。 */
 export function makeReportDescription(d: ReportData, locale: Locale): string {
+  if (d.slug === "spk") {
+    return L("聖保祿幼稚園位于香港湾仔区铜锣湾，通讯地址为礼顿道140B号（园方同时列明礼顿道第1018号地段地下至2楼）。报告整理地区、收费、课程和入学资料。", locale);
+  }
+  if (d.slug === "spcs") {
+    return L("查看聖保祿學校（小學部）的課程、教學語言、學費和小一收生資料，並了解小學部與中學部的升學銜接及選校時要核對的重點。", locale);
+  }
+  if (d.slug === "mcs") {
+    return L("整理瑪利諾修院學校（小學部）的課程、小一收生、教學語言、學費及直屬中學安排，附家庭適配分析與申請前核對事項。", locale);
+  }
+  if (d.slug === "dgjs") {
+    return L("了解拔萃女小學的課程特點、英語教學、小一收生與拔萃女書院升學安排，並參考家庭適配分析及申請前關注事項。", locale);
+  }
+  if (d.slug === "hkups") {
+    return L("了解港大同學會小學的中英文教學、小一收生與港大同學會書院升學路徑，並參考家庭適配分析及申請前核對重點。", locale);
+  }
   const base = reportName(d);
-  const isKindergarten = /幼稚[园園]/.test(`${d.title} ${d.hero}`);
+  const isKindergarten = isKindergartenReport(d);
   const isSecondary = d.slug.endsWith("-secondary");
   const focus = isKindergarten
-    ? "学校定位、课程、学费与收生或面试安排"
+    ? "授课语言、课程、学费、K1入学与升小去向"
     : isSecondary
-      ? "课程路线、学费、招生与公开升学资料"
-      : "学校定位、学费、小一入学与升中去向";
+      ? "课程与教学语言、学费、收生安排和公开升学资料"
+      : "授课语言、课程特点、学费、小一入学与升中通路";
   const scope = isSecondary ? `${base}（中学部）深度择校报告` : `${base}深度择校报告`;
-  const description = `${scope}，整理${focus}。报告列明资料来源；招生和学费安排以学校最新公布为准。`;
+  const description = isKindergarten
+    ? `${scope}，整理${focus}，附家庭适配与申请前核对重点。招生和收费以学校当届公布为准。`
+    : isSecondary
+      ? `${scope}，整理${focus}，附家庭适配与报名核对重点。收费和申请条件以学校当届公布为准。`
+      : `${scope}，整理${focus}，附家庭适配与申请核对重点。招生和收费以学校当届公布为准。`;
   return L(description, locale).trim();
 }
 
 /** 标题突出学校名和家长常查主题，避免标题堆叠长标签或暗示未核实的评级。 */
 export function reportTitle(d: ReportData, locale: Locale): string {
+  if (d.slug === "spk") return L("聖保祿幼稚園 SPK｜湾仔铜锣湾地址、学费与入学｜港学荟", locale);
+  if (d.slug === "spcs") return L("聖保祿學校（小學部）｜小一入學、課程與升中銜接｜港學薈", locale);
+  if (d.slug === "mcs") return L("瑪利諾修院學校（小學部）｜小一入學、課程與升中｜港學薈", locale);
+  if (d.slug === "dgjs") return L("拔萃女小學｜課程、小一入學與升中銜接｜港學薈", locale);
+  if (d.slug === "hkups") return L("港大同學會小學｜課程、小一入學與升學路徑｜港學薈", locale);
   const base = reportName(d);
-  const isKg = /幼稚[园園]/.test(d.title || "") || /幼稚[园園]/.test(d.hero || "");
+  const isKg = isKindergartenReport(d);
   const isSecondary = d.slug.endsWith("-secondary");
-  const isUnrated = /暂缓评级|暂不评级|未作评级|未评级|暂无评级|暫緩評級|暫不評級|未作評級|未評級|暫無評級/i.test(d.hero);
   const focus = isKg
-    ? isUnrated
-      ? "课程、学费与面试"
-      : "评级、学费与面试"
-    : isSecondary ? "课程、招生与升学" : isUnrated ? "入学、课程与升学" : "评级、学费与升学";
+    ? "课程、学费与K1入读"
+    : isSecondary
+      ? "课程、收生与升学路径"
+      : "课程、小一入学与升中路径";
   const scope = isSecondary ? `${base}（中学部）` : base;
   return L(`${scope}｜${focus}｜港学荟`, locale);
 }

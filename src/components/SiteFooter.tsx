@@ -1,10 +1,12 @@
 import { L, localeHref, type Locale } from "@/lib/i18n";
+import blogMeta from "@/content/blog-meta.json";
 
 const ABOUT_LINKS: { label: string; href: string }[] = [
   { label: "全部报告", href: "/reports" },
   { label: "择校工具", href: "/tools" },
   { label: "面试题库", href: "/questions" },
   { label: "热文", href: "/blog" },
+  { label: "资料来源与评估方法", href: "/about/data-methodology" },
   { label: "40 校网排名", href: "/blog/net40-ranking" },
 ];
 
@@ -27,7 +29,7 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
           <p className="mx-auto max-w-[900px] text-xl font-bold text-[var(--p-fg)] md:text-[28px]">
             {L("香港择校，先看数据。", locale)}
             <br />
-            {L("每一份报告都来自教育局公开资料，评级仅供决策参考。", locale)}
+            {L("学校资料列明公开来源与年份；平台评级只作选校参考。", locale)}
           </p>
         </div>
         <div className="flex flex-col items-stretch justify-between gap-12 md:flex-row">
@@ -48,7 +50,7 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
                   href={localeHref("/blog", locale)}
                   className="inline-block py-2 -my-2 font-bold text-[var(--p-fg)] no-underline underline decoration-2 underline-offset-4"
                 >
-                  {L("看全部 40 篇热文", locale)}
+                  {L(`看全部 ${(blogMeta as unknown[]).length} 篇热文`, locale)}
                 </a>
                 <span className="arrow inline-block h-[18px] w-[18px] translate-x-[-4px] translate-y-[4px]">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -91,7 +93,7 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
                 <span className="text-[var(--p-secondary)]">
                   {L("输入校网、预算、孩子性格", locale)}
                   <br />
-                  {L("669 所小学 + 962 所幼稚园", locale)}
+                  {L("669 所小学 + 949 所幼稚园", locale)}
                 </span>
               </p>
             </section>

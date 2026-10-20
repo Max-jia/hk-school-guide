@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F5F3EC"/>
+  <circle cx="1030" cy="128" r="220" fill="#E6E9DF"/>
+  <circle cx="1100" cy="538" r="170" fill="#F0DDC9"/>
+  <rect x="755" y="105" width="330" height="410" rx="18" fill="#FFFDF8" stroke="#C9D2C5" stroke-width="3"/>
+  <path d="M806 180H1036M806 232H1036M806 284H1036M806 336H1036M806 388H1036" stroke="#D7DCD2" stroke-width="3"/>
+  <rect x="806" y="163" width="24" height="24" rx="5" fill="#426B55"/><path d="m812 175 7 7 14-16" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="806" y="215" width="24" height="24" rx="5" fill="#426B55"/><path d="m812 227 7 7 14-16" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="806" y="267" width="24" height="24" rx="5" fill="#426B55"/>
+  <rect x="806" y="319" width="24" height="24" rx="5" fill="#426B55"/>
+  <rect x="806" y="371" width="24" height="24" rx="5" fill="#426B55"/>
+  <text x="88" y="160" fill="#426B55" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5">HK KINDERGARTEN ADMISSIONS</text>
+  <text x="88" y="255" fill="#202A24" font-family="Arial, sans-serif" font-size="58" font-weight="700">2027/28 K1</text>
+  <text x="88" y="330" fill="#202A24" font-family="Arial, sans-serif" font-size="46" font-weight="700">招生信息公开度核查</text>
+  <text x="88" y="400" fill="#5D6B61" font-family="Arial, sans-serif" font-size="27">5所学校 · 官方资料逐项对照 · 研究截点 2026.10.20</text>
+  <rect x="88" y="458" width="176" height="52" rx="26" fill="#426B55"/>
+  <text x="176" y="492" fill="#FFFDF8" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700">原创研究资料</text>
+</svg>

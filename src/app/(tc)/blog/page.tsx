@@ -3,9 +3,9 @@ import BlogList from "@/components/BlogList";
 import { L, languageAlternates } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: L("香港择校热文与攻略合集：校网排名、计分制、叩门信", "tc"),
+  title: L("香港小学与幼稚园择校文章｜入学、学费、选校比较", "tc"),
   description: L(
-    "香港幼稚园及小学择校攻略合集：校网排名、计分制、叩门信、热搜学校研究与制度解读。每周更新，直接可读。",
+    "按小学、幼稚园与家长问题找文章：入学申请、学费资助、学校观察和选校比较。每篇注明发布时间，有实质更新时单独标记。",
     "tc"
   ),
   alternates: { canonical: "/blog", languages: languageAlternates("/blog") },
