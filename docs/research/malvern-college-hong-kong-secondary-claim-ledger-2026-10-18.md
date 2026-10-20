@@ -79,3 +79,41 @@
 ## 2026-10-18 Admissions 与 IBDP Results 页面复核
 
 Admissions Process 现行页仍列 2026/27、2027/28、2028/29 三学年开放申请，Prep 1 最多提前两年；该页仍列待 EDB 批准的 2026/27 MYP／DP 拟定年费 HK$238,840。IBDP Results 文字仍列 2025 届 45／44／43 分人数、超过三分之一达 40+、超过 150 份大学 offer；动态卡片的 0 值占位与正文冲突，继续排除。Apply Now 与费用页本轮抓取超时，未据此推断变更。
+
+## 2026-10-20 独立复核：第 47 所校名、最新公开数据与八章写作底稿
+
+首批 50 所目标名单第 47 所为**香港墨爾文國際學校 Malvern College Hong Kong**，报告 slug 是 `malvern-college-hong-kong-secondary`，非其他校名。香港校区走 PYP→MYP→IBDP，不开办 A-Level；英国母校成绩不得混入香港校区。国际学校不适用本地 Band 1A／1B 学校标签。以下为研究账本，并非报告正文验收。
+
+### 本轮新核来源（网页读取日 2026-10-20）
+
+| 代号 | 可引用 URL | 可用事实与局限 |
+|---|---|---|
+| **EDB26** | [教育局国际学校名录](https://internationalschools.edb.gov.hk/en/schools/30.html) | 大埔白石角科进路 3 号、国际男女校、2018 开校、IB 三学段；列全校 1,100–1,200 学额、平均班额 14–25，均非当届中一空位。EDB 页费用 HK$198,860–226,210 显然低于校方 2026/27 最新表，不能代替当届报价。 |
+| **ADM26** | [Admissions Process](https://malverncollege.org.hk/admissions-process/)、[Apply Now](https://malverncollege.org.hk/apply-now/)、[FAQ](https://malverncollege.org.hk/faqs/) | 现开放 2026/27、2027/28、2028/29 申请，滚动评估；页面“最多提前两年”在 Admissions Process 具体写 Prep 1，Apply Now 问答写一般申请，两页范围不同。须向学校核中学部提前申请上限。 |
+| **DP26** | [IBDP Curriculum](https://malverncollege.org.hk/sixth-form/ibdp-curriculum/)、[FAQ](https://malverncollege.org.hk/faqs/) | DP 页面本轮可读，列六组、TOK／EE／CAS；其科目目录与 FAQ 不完全一致（数学与艺术，见下）。目录不保证某届／某层级开班。 |
+| **RES25A/B** | [新成绩总页](https://malverncollege.org.hk/academic-performance/)、[旧版 2025 届专页](https://www.malverncollege.org.hk/ibdq-exam-results/) | 均为校方；新页“毕业生逾 150 份 offer”未限定届别，旧页明确 2025 届“逾 70 份 offer”。不能把 150 写为 2025 单届。两页均未列 2025 DP 完整考生人数、40+ 精确分子或最终入读人数。 |
+| **FEE26** | [2026/27 Fees and Charges](https://malverncollege.org.hk/fees-and-charges/)、[招生流程收费段](https://malverncollege.org.hk/admissions-process/) | 学费表／FAQ 为 HK$236,840，招生流程仍 HK$238,840 且写待 EDB 批准，差 HK$2,000；年度资本征费 HK$42,000、申请费 HK$1,800。付款前要校方出具获批正式收费表。 |
+| **REV26** | [The Good Schools Guide 2026-03 独立评测](https://www.goodschoolsguide.co.uk/international/review/malvern-college-hong-kong) | 公开节录含家长反馈：礼仪／家长社群、个案支援、CCA 项目曾缩减；完整采访在付费墙后，不能扩写不存在的细节。页面收费范围仍为旧数据。 |
+| **EK25/GEO25** | [教育王国 2025 讨论第 2 页](https://www.edu-kingdom.com/forum.php?extra=&mod=viewthread&page=2&tid=3883889)、[第 3 页](https://www.edu-kingdom.com/forum.php?extra=page%3D1&mod=viewthread&page=3&tid=3883889)、[GeoExpat 2025-05-23](https://geoexpat.com/forum/71/thread369248-4.html) | 匿名样本可保留不同意见与日期。EK 有自称在读家长谈孩子喜欢学校、跨年级 House Tutor、学生主导活动；另有参观者忧高中课室。GEO 有自称前家长批评教师、中文与成绩透明度；其 2022 补帖明确孩子当时读的是小学，不能算中学部亲历。均不得推成全校共识。 |
+| **CMP26** | [HKA 2026/27 费用](https://hkacademy.edu.hk/school-fees/)、[HKA 毕业路径](https://hkacademy.edu.hk/pathways-to-graduation/)、[CDNIS 2026/27 费用](https://www.cdnis.edu.hk/en/admissions/tuition-fees/)、[CDNIS OSSD/IB 双文凭](https://www.cdnis.edu.hk/en/our-programmes/ossd/)、[VSA 2026/27 费用](https://www.vsa.edu.hk/admissions/school-fees) | 三所比较校有同年官方路线与收费，可用作第 7 章；资本费、一次性费用、各校年龄编级要同口径列。 |
+
+### 八章事实／决策写作建议
+
+| 章 | 可落笔事实及来源 | 家庭判断、风险与可执行动作 |
+|---|---|---|
+| **1 定位与竞争力** | 2018 年开校，IB PYP→MYP→DP，FY1–3／Remove／Hundred 为 UK Year 7–11，大埔白石角；EDB 列全校学额 1,100–1,200，非中学名额（EDB26、ADM26）。 | 定位应是“新界东、英国校风、完整 IB 路线”，不能借英国母校 A-Level 战绩为香港校区背书；对从西区／九龙通勤的家庭，应先试实际接送时间。 |
+| **2 中一入读** | 2026/27–2028/29 开放申请，申请费 HK$1,800 不退；英语面谈、年龄适配任务／可能线上评估、成绩审核，合资格且有学位才发 offer。CNR／INR、在读兄弟姊妹、Malvern Pre-School 入读至少一学年、校友子女、集团校转入等为优先*评估*类别（ADM26）。 | 按“核英国学年对应年级→问目标年级空位→备两学年成绩及翻译→提交→评估”的顺序写；中学提前两年规则两页范围不一致，向招生处确认。优先评估不等于取录。 |
+| **3 教学与路线** | 校方 FAQ：除外语课外，以英语授课；称中文每天上课，普通话与简体字；海外转入者可按个案改学其他语言。DP 为六门科目加知识论 TOK、专题论文 EE、创造／运动／服务 CAS。学生须自备电脑；Prep Forest-Beach School 目前只覆盖 Prep 1–3，不能写成中学必修活动（FAQ、DP26）。 | 对希望两文发展而能接受普通话简体字、IB 多科兼修的家庭有价值；中学中文是否各年级每日、各班分流标准与中文层级仍需实际课表。DP 网页只列 Maths AI、艺术列音乐／视觉艺术，FAQ 另列 Maths AA 及 Theatre；2027/28 实际开科和 HL／SL 席位必须索取书面选科表。 |
+| **4 升学出口** | 校方最新量化公开仍是 **2025 届**：1 人 45／45、2 人 44、3 人 43；“超过三分之一 40+”，未列考生总数与精确 40+ 人数。旧 2025 专页列 28% 双语文凭、逾 70% 在 TOK/EE 核心获至少 2 附加分、2025 届逾 70 份大学 offer；新总页另称毕业生逾 150 份 offer，却未限定哪一届（RES25A/B）。 | 截至 2026-10-20，本轮官网结果页及 2026 新闻检索未找到可核的 **2026 届学校结果表**；不能把 2025 写成当届，也不能拼不同届或将 offer 份数当录取人数／最终注册。家长若重视考小或大学成绩，要向学校索 2026 DP 全届考生数、均分、40+ 分子／分母、完整文凭率、最终注册院校及各院校人数。 |
+| **5 费用与投入** | 校方 2026/27 MYP/DP 学费表及 FAQ：HK$236,840；招生流程：拟定 HK$238,840，差额 HK$2,000。无 CNR/INR 情况下资本征费 HK$42,000／年，不退；申请费 HK$1,800。按较低公开学费作条件式第一年总额 HK$280,640，按较高值 HK$282,640，均未计校车、校服、午餐、自备电脑、外部 CCA、旅行及 IBDP 考试费（FEE26）。 | 预算应展示两种官网报价与年度涨幅风险，不能把任何一个写成最终获批价；读六年只能做固定费率情景，先拿 2027/28 正式收费表。资本征费是年度反复支出，非一次性入学费；签 offer 前核 INR/CNR 成本与资格。 |
+| **6 在读体验** | GSG 2026-03 摘要称家长欣赏礼仪、家长社群与个案支援，亦说 CCA 曾精简；EK 2025 有自称家长说儿子喜欢同学、参加跨年级 House Tutor 与学生主导活动，另有参观者担心高中空间；GEO 2025 自称前家长质疑教学及成绩透明度（REV26、EK25/GEO25）。 | 正反意见须分开，逐条写平台／日期／自报身份。不能把独立评测采访、转述帖子、前小学家长与现中学家长都合成“一致口碑”。访校问作业反馈、老师流动、DP 选科开班人数、空间配置、CCA 真正可参加名额及校车路线。 |
+| **7 同类比较** | HKA 2026/27 G6–8 年费 HK$252,600 + 无债券者资本费 HK$32,000；首名孩子一次性入学费 HK$25,000、申请费 HK$3,000，HKA 多数毕业生走 IB DP，但有自家高中及 Global Citizens Diploma 路径。CDNIS G6–8 学费 HK$223,100 + 资本费 HK$43,000（网站标待教育局批准），MYP/DP 与安省 OSSD 并行。VSA MYP Y6 年费 HK$212,300、Y7 HK$215,500，另有无债券者一次性可退资本征费，费用页正文未列金额（CMP26）。 | 同口径比的是大致年龄段：Malvern FY1/UK Y7≈HKA G6/CDNIS G6≈VSA Y6（各校年龄指引另核），不能仅按“Year 7”直接横比。HKA 适合需要多种毕业资格者；CDNIS 适合 IB+OSSD；VSA 适合想兼顾中文与 IB 的家庭。VSA 总成本不能只看较低学费；各校校车及通勤也影响选择。 |
+| **8 专家结论** | IB 课程与英语门槛、当届申请程序和费用存在官方证据；2026 届结果与最终大学入读仍缺完整公开数据，收费页面内冲突未消，匿名体验分歧（ADM26、RES25A/B、FEE26、REV26、EK25/GEO25）。 | 条件式结论：认同 IB 广度、孩子英文足够、愿意持续支付年度资本费且住址使白石角通勤可承受者，可进入实地访校与候补流程；若成绩透明度、中文路径或总预算是硬门槛，在拿到学校书面回复前保留 HKA/CDNIS/VSA 等备选。 |
+
+### 禁止写成“已核实”的五处易错点
+
+1. **2026 届公考。** 目前可读官方成绩页仅列 2025 届，不准把英国母校、2024 的两年平均或第三方推算当成香港校区 2026 年均分。
+2. **大学 offer 数。** 旧专页明确 2025 届逾 70 份；新总页“毕业生逾 150 份”未注明届别，两者不必然冲突，却不能合写成“2025 届逾 150 份”，更不能称最终入读。
+3. **费用。** HK$236,840（费用页和 FAQ）与 HK$238,840（招生流程）是同校官网可见冲突，均称待批准；教育局国际学校名录旧费用范围不能解决该差异。
+4. **课程目录。** DP 课程页与 FAQ 在 Maths AA／AI、Theatre 等项目不一致，可能是更新时点差异；未经当届选科表不能写“任意组合皆开”。
+5. **口碑。** 把匿名“老师没爱心”等指控写成事实、把幼稚园接待经验写成中学在读口碑，或者凭少量好评造 Top 5，都不符合证据边界。
