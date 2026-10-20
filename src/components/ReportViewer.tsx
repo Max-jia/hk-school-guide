@@ -88,7 +88,7 @@ export default function ReportViewer({
   }, [editorialReport]);
 
   const heroHtml = editorialReport
-    ? buildEditorialHeroHtml(hero, localizedBody, locale, true)
+    ? buildEditorialHeroHtml(hero, localizedBody, locale, true, slug)
     : z(hero);
 
   async function handleDownloadPdf() {

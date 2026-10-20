@@ -1,4 +1,5 @@
 import { L, type Locale } from "@/lib/i18n";
+import reportMeta from "@/content/report-meta.json";
 
 /** Every report JSON, including the archived direct route, is admitted after content-parity checks. */
 export const EDITORIAL_REPORT_SLUGS = [
@@ -197,8 +198,11 @@ export const EDITORIAL_REPORT_SLUGS = [
   "kowloon-true-light-kg",
 ] as const;
 
+const SECONDARY_REPORT_SLUGS = new Set(reportMeta.SS_REPORTS.map((report) => report.c));
+const SECONDARY_REPORT_META = new Map(reportMeta.SS_REPORTS.map((report) => [report.c, report]));
+
 export function usesEditorialReportLayout(slug: string): boolean {
-  return (EDITORIAL_REPORT_SLUGS as readonly string[]).includes(slug);
+  return (EDITORIAL_REPORT_SLUGS as readonly string[]).includes(slug) || SECONDARY_REPORT_SLUGS.has(slug);
 }
 
 function findMatchingTagEnd(html: string, start: number, tagName: "div" | "table" | "section"): number {
@@ -283,8 +287,15 @@ function enhanceTables(html: string, locale: Locale, editorial = false): string 
   const contentsEnd = end - "</table>".length;
   const contents = html.slice(openingEnd, contentsEnd);
   const enhancedContents = enhanceTables(contents, locale, editorial);
-  const attributes = opening[1];
-  const classMatch = attributes.match(/\bclass=(['"])(.*?)\1/i);
+  let attributes = opening[1];
+  let classMatch = attributes.match(/\bclass=(['"])(.*?)\1/i);
+  if (editorial && !classMatch) {
+    attributes += ' class="dt"';
+    classMatch = attributes.match(/\bclass=(['"])(.*?)\1/i);
+  } else if (editorial && classMatch && !classMatch[2].split(/\s+/).includes("dt")) {
+    attributes = attributes.replace(classMatch[0], `class=${classMatch[1]}${classMatch[2]} dt${classMatch[1]}`);
+    classMatch = attributes.match(/\bclass=(['"])(.*?)\1/i);
+  }
   let table = `<table${attributes}>${enhancedContents}</table>`;
 
   if (classMatch && classMatch[2].split(/\s+/).includes("dt")) {
@@ -489,6 +500,23 @@ function getEditorialFactValue(fact: { label: string; value: string }): string {
   return plainValue;
 }
 
+function getSecondaryHeroFacts(slug: string, hero: string, locale: Locale): { label: string; value: string }[] {
+  const report = SECONDARY_REPORT_META.get(slug);
+  if (!report) return [];
+
+  const subtitle = hero.match(/<p\b[^>]*class=(['"])[^'"]*\bsub\b[^'"]*\1[^>]*>([\s\S]*?)<\/p>/i)?.[2] ?? "";
+  const coursePattern = /HKDSE|IBDP?|MYP|IAL|A-Level|GCSE|HSC|DIA|Baccalaur[eé]at|BTEC/i;
+  const courseParts = report.h.split(/\s*·\s*/).filter((part) => coursePattern.test(part));
+  const fallbackParts = cleanText(subtitle).split(/\s*·\s*/).filter((part) => coursePattern.test(part));
+  const course = (courseParts.length ? courseParts : fallbackParts).slice(0, 2).join(" · ");
+
+  return [
+    { label: L("地區", locale), value: L(report.d, locale) },
+    { label: L("辦學類型", locale), value: L(report.h.split(/\s*·\s*/)[0], locale) },
+    ...(course ? [{ label: L("課程路線", locale), value: L(course, locale) }] : []),
+  ];
+}
+
 function getSchoolNetwork(facts: { label: string; value: string }[]): { fact: { label: string; value: string }; number: string; caption: string } | null {
   const fact = facts.find(({ label, value }) => /校網|校网/.test(label) && /\d+\s*(?:校網|校网)/.test(cleanText(value)));
   if (!fact) return null;
@@ -508,7 +536,7 @@ function getSchoolNetwork(facts: { label: string; value: string }[]): { fact: { 
   return { fact, number, caption };
 }
 
-export function buildEditorialHeroHtml(hero: string, body: string, locale: Locale, free: boolean): string {
+export function buildEditorialHeroHtml(hero: string, body: string, locale: Locale, free: boolean, slug = ""): string {
   const tier = hero.match(/<div\b[^>]*class=(['"])[^'"]*\btier-mega\b[^'"]*\1[^>]*>([\s\S]*?)<\/div>/i)?.[2] ?? "";
   const originalTitle = hero.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? "";
   const title = cleanText(originalTitle)
@@ -520,7 +548,7 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
   const isUnrated = /暂缓评级|暂不评级|未作评级|未评级|暂无评级|暫緩評級|暫不評級|未作評級|未評級|暫無評級/i.test(cleanText(tier));
   const tierGrade = isUnrated ? null : cleanText(tier).match(/S|A\+?|B|C/i)?.[0] ?? "—";
   const isSecondaryReport = /中学|中學/.test(`${title} ${cleanText(tier)}`);
-  const facts = getReportFacts(body);
+  const facts = isSecondaryReport ? getSecondaryHeroFacts(slug, hero, locale) : getReportFacts(body);
   const schoolNetwork = getSchoolNetwork(facts);
   const freeBadge = free ? `<span class="hero-free-badge">${L("本报告完全免费", locale)}</span>` : "";
   const secondaryRatingStatus = isSecondaryReport
