@@ -67,3 +67,13 @@
 ## 2026-10-20 名單第 50 校招生、課程及成績續核
 
 本輪直接重開 AISHK [Admissions](https://www.aishk.edu.hk/admissions)、[Admissions Information](https://support.aishk.edu.hk/portal/en/kb/articles/admissions-information)、[Secondary School](https://www.aishk.edu.hk/learning/secondary-school)、[Senior Years](https://www.aishk.edu.hk/learning/senior-years)、[Results and Pathways](https://www.aishk.edu.hk/learning/results-and-pathways)、[Class of 2025 校方新聞](https://dhanara.aishk.edu.hk/post/congratulations-to-the-class-of-2025)及[Teaching and Learning](https://www.aishk.edu.hk/learning/teaching-and-learning)。2026 日曆年費用、全年收件和兩個入學建議期、Year 11/12 限制、NESA 八大學習領域、HSC／IBDP 路線及 2025 結果口徑仍與報告一致。結果頁也保留 2025 屆為最新量化結果；2026 各路線考生分母及 HSC entries 總數仍未公布。2027 ACER ISA 計劃、LEC/EAL 支援頁述及的服務不能當個別學額或服務頻率承諾。另見 Secondary School 頁標示 45%「至少一科 Band 6」但未見屆別／分母標籤；報告未將此未定年指標混入 Class of 2025 數據，維持不引用，無需改報告。
+
+## 2026-10-20 重写版内容与页面验收
+
+- 报告正文现按八章呈现定位、入读、教学路线、升学出口、费用、在读体验、同类比较及总结；每章各有一张决策表。专家判断先说明事实，再转为家庭价值、代价及下一步。技术术语在首次出现处解释：ATAR 是相对排名而非考试分数；HSC Band 5／6 是澳洲单科成绩等级；IB 单科 7 已标注为最高等级及 1–7 评分。学校不适用本地 Band 1A／1B，正文没有替它套用本地评级。
+- 升学结果保留 2025 年份和统计单位：HSC 56% 是考试成绩项、ATAR 比例是学生；IB 数据单列。各路线人数与精确分母未公开，报告明确不把比例推算为人数或个人录取机会。费用以 2026 日历年静态估算六年学费 HK$1,283,800／HK$1,372,800，再分列六年资本征费 HK$150,000；不把 2026 费率冒充 2027–32 报价，订金也未重复当成本。
+- 家庭口碑审计保留来源和证据边界：独立访校摘要部分经验属小学、评论网站为零条、Reddit 为匿名教师雇佣讨论；没有现届中学家长的充足样本，因此不编好评／差评 Top 5 或匿名家庭故事。
+- 处理重复信息时保留必要交叉提示：第 1 章用于区分香港本地学校 Band 与澳洲 HSC Band；第 4 章解释该届分母；费用章节给预算算式；总结章节只保留决策结论与行动，没有重抄整张数据表。已修正首屏资料带把校址误作“办学类型”的映射；现在显示“九龙塘非牟利男女国际校”。
+- 定向报告验证：`node scripts/validate-reports.mjs --report australian-international-school-hong-kong-secondary` 为 1 份、0 错误、0 提醒。AISHK 19 项来源在繁简构建页的可见来源区与 JSON-LD 引用相符；不把全站来源登记数量描述成逐项重开核实。
+- `npm run build -- --webpack` 成功，生成 656 个静态页面；`git diff --check` 通过。窄屏浏览器视口 override 设为 390 px（该浏览器报告 `innerWidth` 为 433 px）：文档宽 416 px，没有页面级横向溢出；八个表格各在 385 px 宽的独立 `overflow:auto` 区域中横向滚动，表格宽约 620 px。桌面视口检查亦无页面级横向溢出；8 章、8 表、19 项外部来源链接均可见，浏览器 console error 为零。
+- 本轮本地审阅预览为 `http://127.0.0.1:3101/cn/reports/australian-international-school-hong-kong-secondary`。验收范围为该报告和对应来源；没有部署。
