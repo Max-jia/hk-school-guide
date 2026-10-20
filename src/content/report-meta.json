@@ -1826,9 +1826,10 @@
    "n": "Kellett School",
    "t": "暂无评级",
    "d": "观塘区",
-   "h": "国际男女校·i/GCSE／A-Level·2026 成绩分母冲突与 2026/27 费用已核",
+   "h": "九龙湾国际男女校·GCSE 至 A-Level·2026 考试分母与 2026/27 费用分开看",
    "c": "kellett-school-secondary",
-   "premium": false
+   "premium": false,
+   "bandConsensus": "国际学校不适用本地中学 Band 定位"
   },
   {
    "n": "香港墨爾文國際學校",

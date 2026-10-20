@@ -4515,6 +4515,12 @@ dbs: [
     { label: "校方：奖学金计划（页面未标适用学年）", url: "https://plklfc.edu.hk/en/scholarship-scheme", scope: "核中一新生按小六排名的减免档位、适用小学班数及四次考试加权排名说明；2027/28 适用性和续领条件须校方确认。", sourceType: "school-official", checkedOn: "2026-10-18" },
   ],
 "kellett-school-secondary": [
+    { label: "校方：2025 年招生政策", url: "https://www.kellettschool.com/userfiles/kellettv2mvc/Document/Admissions/ADMISSIONS%20Policy%20-%2020250911.pdf", scope: "核中学评估步骤、申请材料、年龄与优先因素；申请日期条款内部不一致，须校方解释。", sourceType: "school-official", academicYear: "2025-09-11 版本", checkedOn: "2026-10-20" },
+    { label: "校方：中学语言课程", url: "https://www.kellettschool.com/senior-school/curriculum/languages", scope: "核中一至中三普通话安排、中文作为第二语言及外语分路；逐周课时和转班条件未列。", sourceType: "school-official", checkedOn: "2026-10-20" },
+    { label: "The Good Schools Guide：2026 启历中学评测", url: "https://www.goodschoolsguide.co.uk/international/review/kellett-senior-school", scope: "仅取公开可读的编辑到访和家长转述；考试比例与校方详表不一，成绩数字不采用媒体口径。", sourceType: "independent-inspection", academicYear: "2026-09 更新", checkedOn: "2026-10-20" },
+    { label: "WhichSchoolAdvisor：少量家长评论", url: "https://whichschooladvisor.com/hong-kong/school-review/kellett-school-kowloon-bay/parent-opinion-survey-results", scope: "页面仅 7 条评论，年份及分项不可充分核实，不当现届整体满意度。", sourceType: "parent-discussion", checkedOn: "2026-10-20" },
+    { label: "教育王国：2021 年启历与 VSA 讨论", url: "https://www.edu-kingdom.com/forum.php?action=printable&mod=viewthread&tid=3856934", scope: "匿名旧讨论多涉及小学部，不外推中学部体验。", sourceType: "parent-discussion", checkedOn: "2026-10-20" },
+    { label: "VSA：2026/27 学费", url: "https://www.vsa.edu.hk/admissions/school-fees", scope: "第 7 章同年国际文凭路线比较：Year 7 学费及另设资本安排；不据学费单项比较总成本。", sourceType: "school-official", academicYear: "2026/27 学年", checkedOn: "2026-10-20" },
     { label: "哈罗香港：2026/27 学费", url: "https://www.harrowhongkong.hk/his/admissions/fees/", scope: "第 7 章国际学校对照：Y6–11、Y12–13 学费，Capital Levy 及可选寄宿另费；不当 2027/28 报价。", sourceType: "school-official", academicYear: "2026/27 学年", checkedOn: "2026-10-17" },
     { label: "哈罗香港：2027/28 申请时间", url: "https://www.harrowhongkong.hk/his/admissions/application-timeline/", scope: "第 7 章 Plan B 核当届常规申请期限及迟交资格；不假定可获空位。", sourceType: "school-official", academicYear: "2027/28 入学", checkedOn: "2026-10-17" },
     { label: "德瑞国际学校：英语中学课程", url: "https://www.gsis.edu.hk/en/academics/english-international-stream/secondary/", scope: "第 7 章国际学校对照：英语部 Y7–9、IGCSE、Y12–13 IBDP；与启历和哈罗 A-Level 路线分开。", sourceType: "school-official", checkedOn: "2026-10-17" },
