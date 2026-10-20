@@ -711,7 +711,7 @@ dbs: [
       scope: "2026-10-19 重核申請表提供期 2026-10-17 至 11-17、11 月 17 日收件截止、2026/27 費率、學費分期、面試語言和 2027 年 3 月底至 4 月初預計結果；兩場 2026-10-17 粵語講座已舉行，公告稱錄影會於活動後上載，但本次頁面未提供錄影直鏈，不視為已可觀看。",
       sourceType: "school-official",
       academicYear: "2027/28 入學；2026/27 參考年費",
-      checkedOn: "2026-10-19",
+      checkedOn: "2026-10-20",
     },
     {
       label: "聖保羅男女中學：2026/27 學費與助學",
@@ -772,7 +772,7 @@ dbs: [
       scope: "第七章直資學校比較；核對 DS4 中一外部申請、2027/28 申請期及直資一貫制背景。",
       sourceType: "school-official",
       academicYear: "2027/28 招生",
-      checkedOn: "2026-10-19",
+      checkedOn: "2026-10-20",
     },
     {
       label: "香港華人基督教聯會真道書院：通達階段課程",
@@ -787,7 +787,7 @@ dbs: [
       scope: "核對 2027/28 中一表格申領/遞交期、學業/活動/面試比重、甄選形式、結果日、校方不參與 SSPA 的安排及 need-blind 入學說明。",
       sourceType: "school-official",
       academicYear: "2027/28 入學",
-      checkedOn: "2026-10-19",
+      checkedOn: "2026-10-20",
     },
     {
       label: "拔萃男書院：2027/28 G7 申請表及指南",
@@ -896,6 +896,30 @@ dbs: [
       sourceType: "school-profile",
       academicYear: "2025/26 學年",
       checkedOn: "2026-10-16",
+    },
+    {
+      label: "HK Tutor Link：拔萃男書院 Banding 估算",
+      url: "https://hktutorlink.hk/secondary-schools/en/diocesan-boys-school-6ecbdc0",
+      scope: "非官方估算页将 DBS 标为 2023 年 Band 1B，并展示历史估算区间；方法及原始学校数据的独立性未完全说明，只用于呈现坊间 Band 1 范围的参考，不代表教育局或学生实际派位组别。",
+      sourceType: "third-party-estimate",
+      academicYear: "Banding 估算截至 2023 年；页面于 2026-10-20 查阅",
+      checkedOn: "2026-10-20",
+    },
+    {
+      label: "StarSchools：拔萃男書院 Band 参考及课程资料",
+      url: "https://starschools.hk/en/schools/diocesan-boys-school/secondary",
+      scope: "该站以一颗星表示参考 Band，并注明教育局不公布学校 Banding；星级没有细分 1A/1B，数据为网站整理且不可视为官方评级或独立审计。只用于交代坊间 Band 1 范围定位，不用于平台评级。",
+      sourceType: "third-party-estimate",
+      academicYear: "2026 年页面；2026-10-20 查阅",
+      checkedOn: "2026-10-20",
+    },
+    {
+      label: "教育王國：拔萃男書院（DBS）家長交流區",
+      url: "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2370697&extra=page%3D1&page=9",
+      scope: "2013 年单一匿名/化名家庭讨论 IB 与 DSE 选择及课外活动时间投入；年代久远、身份和代表性未核实，仅作历史家长体验线索，不概括现况或整体口碑。",
+      sourceType: "parent-discussion",
+      academicYear: "2013 年讨论；2026-10-20 查阅",
+      checkedOn: "2026-10-20",
     },
   ],
 "la-salle-secondary": [
