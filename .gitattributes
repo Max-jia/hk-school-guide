@@ -7,3 +7,6 @@
 # Batch files must always use CRLF
 *.bat text eol=crlf
 *.cmd text eol=crlf
+
+# Preserve the published CSV byte-for-byte (its source uses CRLF).
+public/research/hk-kg-k1-admission-disclosure-audit-2027-28.csv -text
