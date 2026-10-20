@@ -6,6 +6,7 @@ const SOURCE_TYPE_LABELS: Record<ReportSourceReference["sourceType"], string> = 
   "school-official": "學校官方網站",
   government: "政府官方資料",
   "operator-official": "交通營辦商官方資料",
+  "exam-authority": "考試機構官方資料",
   "independent-inspection": "獨立檢查報告",
   "third-party-estimate": "第三方參考估算",
   "parent-discussion": "匿名家長討論",

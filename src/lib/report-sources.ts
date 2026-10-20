@@ -2,7 +2,7 @@ export type ReportSourceReference = {
   label: string;
   url: string;
   scope: string;
-  sourceType: "school-profile" | "school-official" | "government" | "operator-official" | "independent-inspection" | "third-party-estimate" | "parent-discussion" | "media-report";
+  sourceType: "school-profile" | "school-official" | "government" | "operator-official" | "exam-authority" | "independent-inspection" | "third-party-estimate" | "parent-discussion" | "media-report";
   academicYear?: string;
   checkedOn: string;
 };
@@ -4359,6 +4359,9 @@ dbs: [
     { label: "校方：Year 6–11 奖学金", url: "https://www.vsa.edu.hk/admissions/scholarship-opportunities", scope: "核 Year 6–11 外部申请、四分之一/半额/全额一年学费、通常 5 月底截止及 6 月底通知，并核中英数笔试和面试；页面无适用学年，非 2027/28 保证。", sourceType: "school-official", checkedOn: "2026-10-18" },
     { label: "校方：中学新生 2026/27 MacBook 要求", url: "https://mlearning.vsa.edu.hk/new-sec-students", scope: "核 Year 6 及以上须拥有并使用 MacBook、2026/27 新生设备方案；设备选择和下一届流程另核。", sourceType: "school-official", academicYear: "2026/27", checkedOn: "2026-10-18" },
     { label: "校方：学生服务与大学辅导", url: "https://www.vsa.edu.hk/student-life/student-services", scope: "核学习、语言、心理和大学申请支持；实际个案安排另核。", sourceType: "school-official", checkedOn: "2026-10-19" },
+    { label: "教育王国：自称曾就读家庭谈 Year 8／9 转学", url: "https://m.edu-kingdom.com/post.php?fid=368&page=13&tid=3883007", scope: "2024-11-17 匿名用户自称孩子曾读 VSA，讨论过去的 Year 8／9 转学；比例与身份未核，不能当作现届流失率。", sourceType: "parent-discussion", checkedOn: "2026-10-20" },
+    { label: "教育王国：2024 年家长讨论", url: "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3883178", scope: "2024-11-19 起的小一选校讨论，涉及中文程度、课程及费用；仅作问题线索，不代表中学在读口碑。", sourceType: "parent-discussion", checkedOn: "2026-10-20" },
+    { label: "国际文凭组织：DP 颁发标准", url: "https://www.ibo.org/about-the-ib/what-it-means-to-be-an-ib-student/recognizing-student-achievement/about-assessment/dp-passing-criteria/", scope: "核满分 45、最低 24 分仍须满足其他科目及核心要求；用于解释 VSA 成绩口径，不推算完整文凭人数。", sourceType: "exam-authority", checkedOn: "2026-10-20" },
     { label: "教育局：私立独立学校名录", url: "https://internationalschools.edb.gov.hk/en/schools/pis.html", scope: "第 7 章同制度比较：核 VSA、弘立与英基启新均为私立独立学校；不据此推算逐级空位。", sourceType: "government", checkedOn: "2026-10-18" },
     { label: "弘立书院：2027/28 申请公告", url: "https://academy.isf.edu.hk/index.php/news/applications-for-the-2027-28-academic-year/", scope: "第 7 章核 Grade 6–11 申请截止 2026-11-22；空位与录取结果另核。", sourceType: "school-official", academicYear: "2027/28 入学", checkedOn: "2026-10-18" },
     { label: "弘立书院：2026/27 学费", url: "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/", scope: "第 7 章核 Grade 6–10 和 Grade 11–12 年费；资本安排另计。", sourceType: "school-official", academicYear: "2026/27 学年", checkedOn: "2026-10-18" },

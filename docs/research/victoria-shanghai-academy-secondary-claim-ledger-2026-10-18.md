@@ -121,3 +121,11 @@
 ## 2026-10-19 固定验收复核
 
 重开校方 2027/28 Key Dates、How to Apply、2026 IB Results、2026/27 School Fees、Secondary School、Bilingualism、University Placements 与 Student Services 页面。报告补入明确的申请行动步骤、招生风险和课程资料边界；实际学额、截止日、评估权重、逐年课程容量及个别支援时数仍按公开资料边界列作向校方确认项。IB 45 分人数与表格比例分母未明；大学 offer 数据不替代最终注册统计。来源登记中相关官方页面日期更新为 2026-10-19。
+
+## 2026-10-20 专家稿复核补充
+
+- **V24 国际文凭组织 DP 颁发标准**：<https://www.ibo.org/about-the-ib/what-it-means-to-be-an-ib-student/recognizing-student-achievement/about-assessment/dp-passing-criteria/>。满分 45；总分达到 24 仍须满足科目、TOK／EE／CAS 等条件。VSA 成绩表“24 分或以上 100%”不能直接变成完整文凭通过率。
+- **V25 教育王国历史在读经历**：<https://m.edu-kingdom.com/post.php?fid=368&page=13&tid=3883007>。2024-11-17 用户 `poonseelai` 自称孩子曾在 VSA 就读，称其所观察的 Year 8 升 Year 9 转学较多。用户身份、就读届别与所述比例无法独立核实；只作为询问转学节点的线索，不作现届全校流失率。
+- **V26 教育王国选校讨论**：<https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3883178>。2024-11-19 起的讨论主要为小学申请与课程印象，出现中文课程、IB、费用和难入等议题；不是当前中学在读家长的代表性调查。
+- **费用算术**：仅按 V10 的 2026/27 各年级年费静态相加，Year 6–12 七学年为 HK$1,620,600；Year 7–12 六学年为 HK$1,408,300。未包含以后调价、一次性发展金、校车、设备、活动、餐食和考试费，不属于 2027/28 起实际报价。
+- **专家判断边界**：VSA 为 IB 私立独立学校，坊间 Band 1A／1B 学校标签不适用；公开 2026 IB 高分段可支持“学术高分群体强”的判断，但完整文凭人数、学生留校同届追踪、大学最终注册去向仍不足以给出精确综合等级。报告的家庭适配结论为分析意见，不代表学校或教育局评级。
