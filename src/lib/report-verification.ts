@@ -42,10 +42,16 @@ export function summarizeReportVerification(html: string): ReportVerificationSum
   }
 
   const plain = stripMarkup(html);
+  const hasReportEvidenceLayers = [
+    ["已核对事实", "已核對事實"],
+    ["年度资料", "年度資料"],
+    ["平台分析"],
+    ["待核实事项", "待核實事項"],
+  ].every((labels) => labels.some((label) => plain.includes(label)));
   return {
     sourceNotes,
     freshness: findFreshness(plain),
-    hasLayeredDisclaimer: /多方核实|多方核實|單一可靠來源|单一可靠来源|有限来源|有限來源/.test(plain),
+    hasLayeredDisclaimer: hasReportEvidenceLayers || /多方核实|多方核實|單一可靠來源|单一可靠来源|有限来源|有限來源/.test(plain),
     hasOfficialSourceMarker: /教育局|校方官网|校方官網|政府公开数据|政府公開數據|CHSC|EDB/.test(plain),
   };
 }

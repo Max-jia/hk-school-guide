@@ -81,3 +81,6 @@ temp/
 
 # PDF 生成环境
 .venv-pdf/
+
+# Local dependency symlink used for release verification
+/node_modules

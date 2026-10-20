@@ -477,6 +477,8 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
   .report-body table.report-summary-table td { width: 62%; min-width: 0; overflow-wrap: anywhere; vertical-align: top; }
   .report-table-scroll__viewport { max-width: 100%; }
   .report-body .report-table-scroll table.report-scroll-table { width: max-content; min-width: 100%; table-layout: auto; }
+  .report-body .report-table-scroll table.report-scroll-table.report-readable-table { min-width: 680px; }
+  .report-body .report-table-scroll table.report-scroll-table.report-wide-table { min-width: 980px; }
   .report-body .report-table-scroll table.report-scroll-table th,
   .report-body .report-table-scroll table.report-scroll-table td {
     min-width: 160px; max-width: none; white-space: normal; overflow-wrap: anywhere; vertical-align: top;
@@ -513,7 +515,9 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
 .report-contact-cta__qr { display: block; width: 112px; height: 112px; flex: 0 0 112px; border: 4px solid #fff; background: #fff; object-fit: contain; }
 .report-pdf-capture { pointer-events: none; }
 @media (max-width: 700px) {
-  .report-contact-cta { align-items: flex-start; flex-direction: column; gap: 16px; padding: 18px; }
+  .report-contact-cta { align-items: stretch; flex-direction: column; gap: 16px; padding: 18px; }
+  .report-contact-cta__copy { width: 100%; min-width: 0; }
+  .report-contact-cta h2 { overflow-wrap: anywhere; }
   .report-contact-cta__channels { width: 100%; justify-content: center; gap: clamp(16px, 8vw, 42px); }
   .report-contact-cta__qr { width: clamp(92px, 28vw, 124px); height: clamp(92px, 28vw, 124px); flex-basis: auto; }
 }
@@ -585,6 +589,17 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
   border: 1px solid color-mix(in srgb, var(--editorial-teal) 28%, transparent);
   background: color-mix(in srgb, var(--editorial-teal-pale) 52%, var(--editorial-paper));
   color: var(--editorial-teal);
+  font: 700 12px/1.35 var(--p-sans);
+  letter-spacing: .02em;
+}
+.report-page--editorial .hero-rating-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
+  padding: 3px 8px;
+  border: 1px solid #b7a878;
+  background: #f5f0df;
+  color: #665735;
   font: 700 12px/1.35 var(--p-sans);
   letter-spacing: .02em;
 }
@@ -1408,6 +1423,131 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
   display: inline-block;
   margin-right: 4px;
   color: var(--editorial-teal);
+}
+
+/* SPCC report layout pilot: preserve full evidence while separating comparison tasks. */
+.report-page--spcc-layout-sample .spcc-metric-cards,
+.report-page--spcc-layout-sample .spcc-school-compare-cards {
+  display: grid;
+  gap: 16px;
+  margin: 18px 0 24px;
+}
+.report-page--spcc-layout-sample .spcc-metric-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.report-page--spcc-layout-sample .spcc-metric-card,
+.report-page--spcc-layout-sample .spcc-school-card,
+.report-page--spcc-layout-sample .spcc-evidence-card,
+.report-page--spcc-layout-sample .spcc-application-group {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--editorial-line);
+  background: color-mix(in srgb, var(--editorial-paper) 94%, var(--editorial-teal-pale));
+}
+.report-page--spcc-layout-sample .spcc-metric-card h4,
+.report-page--spcc-layout-sample .spcc-school-card h4,
+.report-page--spcc-layout-sample .spcc-evidence-card h4,
+.report-page--spcc-layout-sample .spcc-application-group h4 {
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--editorial-teal);
+  color: var(--editorial-ink);
+  font-family: var(--p-serif);
+  font-size: 18px;
+  line-height: 1.45;
+}
+.report-page--spcc-layout-sample .spcc-metric-card dl,
+.report-page--spcc-layout-sample .spcc-school-card dl {
+  margin: 0;
+}
+.report-page--spcc-layout-sample .spcc-metric-card dl > div,
+.report-page--spcc-layout-sample .spcc-school-card dl > div {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.36fr) minmax(0, 1fr);
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--editorial-line);
+}
+.report-page--spcc-layout-sample .spcc-metric-card dl > div:last-child,
+.report-page--spcc-layout-sample .spcc-school-card dl > div:last-child {
+  border-bottom: 0;
+}
+.report-page--spcc-layout-sample .spcc-metric-card dt,
+.report-page--spcc-layout-sample .spcc-school-card dt {
+  color: var(--editorial-muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.report-page--spcc-layout-sample .spcc-metric-card dd,
+.report-page--spcc-layout-sample .spcc-school-card dd {
+  min-width: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.report-page--spcc-layout-sample .spcc-metric-card p,
+.report-page--spcc-layout-sample .spcc-evidence-card > div,
+.report-page--spcc-layout-sample .spcc-application-group li {
+  font-size: 14px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.report-page--spcc-layout-sample .spcc-metric-card p {
+  margin: 12px 0 0;
+}
+.report-page--spcc-layout-sample .spcc-metric-card p strong,
+.report-page--spcc-layout-sample .spcc-evidence-card > div > strong {
+  color: var(--editorial-teal);
+}
+.report-page--spcc-layout-sample .spcc-school-compare-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.report-page--spcc-layout-sample .spcc-evidence-cards,
+.report-page--spcc-layout-sample .spcc-application-groups {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0 24px;
+}
+.report-page--spcc-layout-sample .spcc-evidence-card > div + div {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--editorial-line);
+}
+.report-page--spcc-layout-sample .spcc-evidence-card > div > strong {
+  display: block;
+  margin-bottom: 4px;
+}
+.report-page--spcc-layout-sample .spcc-application-group ul {
+  margin: 0;
+  padding-left: 22px;
+}
+.report-page--spcc-layout-sample .spcc-application-group li + li {
+  margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+  .report-page--spcc-layout-sample .spcc-metric-cards,
+  .report-page--spcc-layout-sample .spcc-school-compare-cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .report-page--spcc-layout-sample .spcc-metric-card,
+  .report-page--spcc-layout-sample .spcc-school-card,
+  .report-page--spcc-layout-sample .spcc-evidence-card,
+  .report-page--spcc-layout-sample .spcc-application-group {
+    padding: 15px;
+  }
+  .report-page--spcc-layout-sample .spcc-metric-card dl > div,
+  .report-page--spcc-layout-sample .spcc-school-card dl > div {
+    grid-template-columns: minmax(92px, 0.32fr) minmax(0, 1fr);
+    gap: 10px;
+  }
+  .report-page--spcc-layout-sample .spcc-metric-card dd,
+  .report-page--spcc-layout-sample .spcc-school-card dd {
+    font-size: 15px;
+  }
 }
 @media (max-width: 680px) {
   .report-page--layout-sample .chapter-main {

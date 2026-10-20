@@ -44,6 +44,7 @@ export default function ReportViewer({
 }) {
   const z = (s: string) => L(s, locale);
   const editorialReport = usesEditorialReportLayout(slug);
+  const spccLayoutSample = slug === "spcc-secondary";
   const reportBodyRef = useRef<HTMLDivElement>(null);
   const localizedBody = z(body);
   const localizedPremiumHtml = z(premiumHtml);
@@ -121,7 +122,7 @@ export default function ReportViewer({
   );
 
   return (
-    <main className={`w-full report-document-page${editorialReport ? " report-page--editorial" : ""}${layoutSample ? " report-page--layout-sample" : ""}`} data-report-slug={slug}>
+    <main className={`w-full report-document-page${editorialReport ? " report-page--editorial" : ""}${layoutSample ? " report-page--layout-sample" : ""}${spccLayoutSample ? " report-page--spcc-layout-sample" : ""}`} data-report-slug={slug}>
       <SiteHeader locale={locale} />
       {/* 所有报告章节均公开展示；付费标记只保留在历史数据中，不再作为访问限制。 */}
       <div className="report-article" dangerouslySetInnerHTML={{ __html: heroHtml }} />

@@ -67,6 +67,13 @@ const HK_PHRASE_FIX: [RegExp, string][] = [
 function normalizeHk(s: string): string {
   let out = s.replace(HK_GLYPH_RE, (c) => HK_GLYPH_FIX[c] ?? c);
   for (const [re, to] of HK_PHRASE_FIX) out = out.replace(re, to);
+  // OpenCC interprets the proper name in 般咸道 as the food word 咸 and
+  // converts it to 鹹. Preserve the official Hong Kong street-name spelling.
+  out = out.replace(/般鹹道/g, "般咸道");
+  // Long HTML fragments can turn these common phrases into food or archaic glyphs.
+  out = out.replace(/麵談/g, "面談").replace(/麵試/g, "面試").replace(/蔘與/g, "參與").replace(/結閤/g, "結合").replace(/箇/g, "個");
+  // Keep the official street name and common education terms intact.
+  out = out.replace(/欣盛裏/g, "欣盛里").replace(/學生髮展/g, "學生發展").replace(/名單隻證明/g, "名單只證明").replace(/安排鬚/g, "安排須");
   return out;
 }
 
@@ -85,7 +92,7 @@ export function L<T extends string | undefined | null>(text: T, locale: Locale):
   if (hit !== undefined) return hit as T;
   let out: string;
   try {
-    out = locale === "tc" ? normalizeHk(_toTrad(text)) : _toSimp(text);
+    out = locale === "tc" ? normalizeHk(_toTrad(text)) : _toSimp(text).replace(/梁𨱇琚/g, "梁銶琚");
   } catch {
     out = text;
   }

@@ -8,27 +8,28 @@ import reportMeta from "@/content/report-meta.json";
 import { matchesZh } from "@/lib/zh";
 import { L, localeHref, type Locale } from "@/lib/i18n";
 
-const META = reportMeta as any;
+const META = reportMeta;
 const TIER_CFG = META.TIER_CFG as Record<string, { c: string; b: string }>;
 
 type Rep = { n: string; t: string; d: string; h: string; c: string; premium?: boolean };
-const ALL: Rep[] = [...META.PS_REPORTS, ...META.KG_REPORTS];
+const ALL: Rep[] = [...META.PS_REPORTS, ...META.KG_REPORTS, ...META.SS_REPORTS];
 
 const TIERS = ["全部", "S", "A+", "A", "B", "暂无评级"];
 const PAGE_SIZE = 24;
 
 export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
-  const [tab, setTab] = useState<"ps" | "kg">("ps");
+  const [tab, setTab] = useState<"ps" | "kg" | "ss">("ps");
   const [tier, setTier] = useState("全部");
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
 
   const list = useMemo(() => {
-    const src = tab === "ps" ? META.PS_REPORTS : META.KG_REPORTS;
+    const src = tab === "ps" ? META.PS_REPORTS : tab === "kg" ? META.KG_REPORTS : META.SS_REPORTS;
     return src.filter((r: Rep) => {
       if (tier !== "全部" && (r.t || "暂无评级") !== tier) return false;
       const hay = (r.n + r.d + r.h).toLowerCase();
-      return matchesZh(q, hay); // 简繁体都能搜
+      const query = q.trim().toLowerCase();
+      return /^[a-z0-9-]+$/.test(query) ? hay.includes(query) : matchesZh(q, hay);
     });
   }, [tab, tier, q]);
   const pageCount = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
@@ -46,20 +47,28 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
             全港 {ALL.length} 份深度择校报告
           </h1>
           <p className="mt-2 max-w-[560px] text-[var(--p-secondary)]">
-            每份报告 8 章讲透一所学校：四因子评级、升学通路、入读攻略。数据来自教育局公开资料。
+            每份报告按学校阶段拆解定位、课程与升学、申请、费用及家庭核对事项，并标明资料来源与适用学年。
           </p>
           <p className="mt-4 max-w-[760px] text-sm leading-relaxed text-[var(--p-secondary)]">
-            报告覆盖全港小学与幼稚园，按四因子评级（锚点、共识、竞争、世袭）与校网、学费、班师比（小学）／师生比（幼稚园）、
-            升中通路逐项拆解，并附家长口碑与同类对比。评级基于公开数据建模，属于参考工具，
-            不构成任何入学建议；各校实际收生以校方公布为准。
+            {tab === "ss"
+              ? "中学报告聚焦课程路线、公开招生安排、学费及校方公布的升学结果；不设学校排名或个人录取概率。申请与收费信息均按学年核对，最终以校方当届公告为准。"
+              : "小学及幼稚园报告会按办学、学费、课程、收生与升学等项目整理公开资料；平台评级仅供比较参考，不构成入学建议。各校实际收生以校方公布为准。"}
           </p>
           <p className="mt-4 max-w-[760px] text-sm leading-relaxed text-[var(--p-secondary)]">
-            评级数据来源包括教育局学校概览（KGP/PSP）、收费证明书、校方官网、媒体报道与家长社群口碑，
-            每项事实均标注核实程度。报告按「定位与核心竞争力、教学深度、升学通路、入读攻略、插班求位、
-            在读家庭画像、同类对比、专家总结」8 章组织，既回答「这所学校好不好」，也回答
-            「它适合谁、怎么考、有没有风险」。点开任一份报告可查看完整评分卡与数据来源。
+            {tab === "ss"
+              ? "中学报告以学校官网的课程、招生与收费资料为主，并区分年度数据、学校公布结果、平台分析和暂未公开的信息。点开报告可查看各章节引用来源与核对日期。"
+              : "报告来源包括教育局学校概览、校方官网及其他公开资料，并尽量注明核实程度。点开报告可查看评分说明、具体分析与资料来源。"}
           </p>
         </div>
+
+        {META.SS_REPORTS.length > 0 && (
+          <aside className="mb-6 flex flex-wrap items-center gap-2 border-l-4 border-[#0F766E] bg-[#F2FBF8] px-4 py-3 text-sm" aria-label={L("中学深度报告", locale)}>
+            <span className="font-bold text-[#0F766E]">{L("中学深度报告", locale)}</span>
+            <a href={localeHref(`/reports/${META.SS_REPORTS[0].c}`, locale)} className="font-bold text-[var(--p-fg)] underline underline-offset-2">
+              {L(META.SS_REPORTS[0].n, locale)} · {L("查看报告样本", locale)} →
+            </a>
+          </aside>
+        )}
 
         <nav aria-label={L("近期幼稚园报告", locale)} className="mb-6 border-l-4 border-[#0F766E] bg-[#F2FBF8] px-4 py-3 text-sm">
           <span className="mr-3 font-bold text-[#0F766E]">{L("近期幼稚园报告", locale)}</span>
@@ -76,19 +85,19 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
         {/* tab + 筛选 + 搜索 */}
         <div className="mb-6 flex flex-wrap items-center gap-4 font-mono text-sm uppercase">
           <div className="flex gap-2">
-            {(["ps", "kg"] as const).map((t) => (
+            {(["ps", "kg", "ss"] as const).map((t) => (
               <button
                 key={t}
-                onClick={() => { setTab(t); setPage(1); }}
+                onClick={() => { setTab(t); setTier("全部"); setPage(1); }}
                 className={`rounded-[6px] border border-[var(--p-fg)] px-3 py-1 ${
                   tab === t ? "bg-[var(--p-fg)] text-[var(--p-bg)]" : ""
                 }`}
               >
-                {t === "ps" ? "小学" : "幼稚园"}
+                {t === "ps" ? "小学" : t === "kg" ? "幼稚园" : "中学"}
               </button>
             ))}
           </div>
-          {TIERS.map((t) => (
+          {tab !== "ss" && TIERS.map((t) => (
             <button
               key={t}
               onClick={() => { setTier(t); setPage(1); }}
@@ -153,21 +162,36 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
                     <p className="w-[4em] rounded-full border border-[var(--p-fg)] p-1 text-center text-sm uppercase">
                       {String(idx + 1).padStart(2, "0")}
                     </p>
-                    <p className="text-sm uppercase">{cfg.b}</p>
+                    <p className="text-sm uppercase">{tab === "ss" ? L("中学报告", locale) : cfg.b}</p>
                   </div>
                   <a href={localeHref(`/reports/${r.c}`, locale)} className="block cursor-pointer no-underline">
                     <div
                       className="relative aspect-square overflow-hidden"
                       style={{ background: cfg.c }}
                     >
-                      <img
-                        src={`/covers/${r.c}.svg`}
-                        alt={r.n}
-                        loading="lazy"
-                        onError={(e) => ((e.target as HTMLImageElement).style.display = "none")}
-                        className="absolute bottom-0 left-1/2 aspect-[6/7] w-[calc(100%-32px)] -translate-x-1/2 object-cover transition-transform duration-100 hover:scale-105"
-                      />
-                      <span className="absolute left-2 top-2 rounded-full bg-[var(--p-fg)] px-2 py-1 font-mono text-xs uppercase text-[var(--p-bg)]">
+                      {tab === "ss" ? (
+                        <div className="absolute inset-0 flex flex-col justify-between overflow-hidden bg-[#234B4B] p-5 text-[#F4EFE3] sm:p-6">
+                          <span className="font-mono text-[10px] font-bold tracking-[.16em] sm:text-xs">SCHOOL REPORT · SECONDARY</span>
+                          <div className="min-h-0">
+                            <span className="mb-3 block h-1 w-12 bg-[#D9B36C]" aria-hidden="true" />
+                            <span className="line-clamp-5 break-words font-serif text-[clamp(20px,2.4vw,32px)] font-bold leading-tight tracking-tight">
+                              {L(r.n, locale)}
+                            </span>
+                          </div>
+                          <span className="border-t border-[#D9B36C] pt-3 font-mono text-[10px] font-bold tracking-wide sm:text-xs">
+                            {L("课程 · 招生 · 学费 · 升学", locale)}
+                          </span>
+                        </div>
+                      ) : (
+                        <img
+                          src={`/covers/${r.c}.svg`}
+                          alt={r.n}
+                          loading="lazy"
+                          onError={(e) => ((e.target as HTMLImageElement).style.display = "none")}
+                          className="absolute bottom-0 left-1/2 aspect-[6/7] w-[calc(100%-32px)] -translate-x-1/2 object-cover transition-transform duration-100 hover:scale-105"
+                        />
+                      )}
+                      <span className={`absolute top-2 rounded-full bg-[var(--p-fg)] px-2 py-1 font-mono text-xs uppercase text-[var(--p-bg)] ${tab === "ss" ? "right-2" : "left-2"}`}>
                         全文公开
                       </span>
                     </div>

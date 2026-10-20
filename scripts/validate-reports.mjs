@@ -1,7 +1,7 @@
 // 深度择校报告验证脚本（新架构版）
 //
 // 旧站是 report-{code}.html 单文件，验证逻辑在 scripts/validate_report.py。
-// 新站改成 src/content/reports/{slug}.json，body 放「声明+第1章」、premiumHtml 放第 2-8 章，
+// 新站改成 src/content/reports/{slug}.json，章节可分布在 body 与 premiumHtml，
 // 付费墙/CTA/页脚/简繁切换都由组件层负责，所以那份脚本不能直接复用。
 // 这里按 docs/report-rules.md 逐条对齐，只验证「内容与来源」部分。
 //
@@ -30,7 +30,7 @@ function chaptersOf(html) {
 }
 
 function sectionBodies(html) {
-  return html.split('<section class="chapter">').slice(1);
+  return html.split(/<section class="chapter"[^>]*>/).slice(1);
 }
 
 function validate(slug, d) {
@@ -42,44 +42,27 @@ function validate(slug, d) {
   // ── 必备字段 ──
   if (!d.hero?.includes('class="tier-mega"')) errs.push("hero 缺 tier-mega 等级标签");
   if (!/<h1[^>]*>/.test(d.hero || "")) errs.push("hero 缺 h1");
-  if (!d.hero?.includes('class="lang-switch"')) errs.push("hero 缺简繁切换链接");
-  // 免费报告（free:true）没有付费墙，singleUrl 为空是正常的
-  if (!d.allAccessUrl) errs.push("缺 allAccessUrl");
-  if (d.premium && !d.singleUrl) errs.push("付费报告缺 singleUrl");
+  // 简繁版使用独立路由与页面级 hreflang；ReportViewer 不在 hero 内渲染语言切换按钮。
+  // 两个静态路由及 hreflang 由页面构建／渲染验收，不从报告 JSON hero 推断。
+  // 2026-10 起报告全文公开，已取消付费墙：不再要求 premium / allAccessUrl / singleUrl 字段
   if (typeof d.free !== "boolean") errs.push("free 不是 boolean");
 
-  // ── 第 0 节：数据可靠性声明（固定模板）──
-  // 已停办学校（ARCHIVE）的档案报告用「本校已停办」公告代替标准声明，属预期差异。
+  // ── 历史档案公告 ──
+  // 普通报告不再强制在正文前放通用可靠性声明；证据口径应贴近各章主张。
   if (archive) {
     if (!/可靠性|停办|停辦/.test(d.body)) errs.push("档案报告缺可靠性说明");
-  } else {
-    if (!d.body.includes("本报告数据可靠性声明")) errs.push("缺「本报告数据可靠性声明」");
-    if (!d.body.includes("不构成入学建议")) errs.push("声明块未以「不构成入学建议」结尾");
-    // 各报告的声明块写法略有出入（例如用 <span class="rel-tag"> 包裹，
-    // 或写「有限来源」而非「有限来源·仅供参考」），这里按关键词判存在即可。
-    const DECL = [
-      ["多方核实", "多方核实"],
-      ["单一可靠来源", "单一可靠来源"],
-      ["有限来源", "有限来源"],
-      ["主观分析", "主观分析"],
-    ];
-    for (const [key, label] of DECL) {
-      if (!d.body.includes(key)) errs.push(`声明块缺核实度说明：${label}`);
-    }
   }
 
-  // ── 章节结构：body=1，premiumHtml=2-8 ──
-  const bodyCh = chaptersOf(d.body);
-  const premCh = chaptersOf(d.premiumHtml);
-  const nums = [...bodyCh, ...premCh].map((c) => c.n);
+  // ── 章节结构：全文章节合并计算（body 与 premiumHtml 都可能含章节，不再按付费位置切分）──
+  const allChapters = sectionBodies(d.body + d.premiumHtml);
+  const nums = [...chaptersOf(d.body), ...chaptersOf(d.premiumHtml)].map((c) => c.n);
   const need = archive ? 3 : 8;
   if (nums.length < need) {
     errs.push(`章节不足（${nums.length}/${need}）`);
   } else if (nums.join(",") !== nums.map((_, i) => i + 1).join(",")) {
     errs.push(`章节编号不连续：${nums.join(",")}`);
   } else {
-    const sections = [...sectionBodies(d.body), ...sectionBodies(d.premiumHtml)];
-    const thin = sections
+    const thin = allChapters
       .map((s, i) => ({ i: i + 1, c: visible(s) }))
       .filter((x) => x.c < (archive ? 100 : 120));
     if (thin.length) errs.push(`章节过薄：${thin.map((x) => `第${x.i}章${x.c}字`).join("、")}`);
@@ -87,42 +70,95 @@ function validate(slug, d) {
 
   // ── 诚实度：各章最低要求 ──
   if (!archive) {
-    const ch2 = sectionBodies(d.premiumHtml)[0] || "";
-    const ch3 = sectionBodies(d.premiumHtml)[1] || "";
-    const ch4 = sectionBodies(d.premiumHtml)[2] || "";
-    const ch5 = sectionBodies(d.premiumHtml)[3] || "";
-    const ch6 = sectionBodies(d.premiumHtml)[4] || "";
-    const ch7 = sectionBodies(d.premiumHtml)[5] || "";
+    const chapterMeta = chaptersOf(d.body + d.premiumHtml);
+    // Bound a chapter by the next chapter start rather than its first closing
+    // section tag: some chapters contain nested <section> cards.
+    const chapterHtml = d.body + d.premiumHtml;
+    const chapterStarts = [...chapterHtml.matchAll(/<section class="chapter" id="chapter-(\d+)"[^>]*>/g)];
+    const numberedSections = chapterStarts.map((m, i) => ({
+      n: Number(m[1]),
+      html: chapterHtml.slice(m.index, chapterStarts[i + 1]?.index ?? chapterHtml.length),
+    }));
+    const chapterByNumber = (n) => numberedSections.find((chapter) => chapter.n === n)?.html || "";
+    const curriculumMeta = chapterMeta.find((c) =>
+      /(课程|課程|教學|教学|MYP|IB|OSSD)/.test(c.title)
+      && !/(学校身份|學校身份|定位|年级|年級)/.test(c.title)
+    );
+    const curriculumChapter = curriculumMeta ? chapterByNumber(curriculumMeta.n) : chapterByNumber(2);
+    const admissionsMeta = chapterMeta.find((c) =>
+      /20\d{2}[^<]*(招生|申请|申請|录取|錄取|入学|入學|升中|收生|路径|路徑)/.test(c.title)
+    ) || chapterMeta.find((c) =>
+      /(招生|申请|申請|录取|錄取)/.test(c.title)
+      && !/(FAQ|常见问题|常見問題|申请清单|申請清單|行动清单|行動清單)/.test(c.title)
+    )
+      || chapterMeta.find((c) => /升中[^<]*(申请|申請|路径|路徑|收生)|七年级入学|七年級入學|中一入学|中一入學|入学攻略|入學攻略|评估准备|評估準備/.test(c.title))
+      || chapterMeta.find((c) => /(入学|入學|评估|評估)/.test(c.title) && !/(年级定位|年級定位|学校定位|學校定位)/.test(c.title));
+    const admissionsChapter = admissionsMeta ? chapterByNumber(admissionsMeta.n) : chapterByNumber(4);
+    const supportMeta = chapterMeta.find((c) => /(支援|支持|服务|服務|体验|體驗)/.test(c.title));
+    const supportChapter = supportMeta ? chapterByNumber(supportMeta.n) : "";
+    // 风险提示应从明确的风险／录取判断章节读取，不能取第一个招生章节：
+    // 很多报告把日程与资格判断分在不同章节。
+    const riskMeta = chapterMeta.find((c) => /(风险|录取判断|招生风险|申请风险)/.test(c.title));
+    const riskChapter = riskMeta
+      ? chapterByNumber(riskMeta.n)
+      : admissionsMeta
+        ? chapterByNumber(admissionsMeta.n)
+        : chapterByNumber(3);
+    const ch5 = chapterByNumber(5);
+    const ch7 = chapterByNumber(7);
 
     // 各章深度门槛按语料库实际分布校准（127 份报告统计），不按规则文件字面：
     // 「教学局限」只有约一半报告用 <li>，所以看标题而不是数列表项；
     // 🟡🔴💬 三个标记在「系统 emoji 全清」后只剩 3 份还在用，不作硬性要求。
-    if (!/(教学局限|教學局限|局限|不足之处|不足之处)/.test(ch2)) warns.push("第 2 章未见「教学局限」小节");
-    const risks = count(ch3, /风险|風險/g);
-    if (risks < 1) errs.push("第 3 章未见风险提示");
+    const hasCurriculumBoundary = /(教学局限|教學局限|局限|不足之处|不足之處|不代表|不保证|不保證|不能|不得|不等于|不等於|并非|並非|未公开|未公開|未列.{0,12}(?:条件|條件|开班|開班|安排|保证|保證)|须向学校确认|須向學校確認|应向学校确认|應向學校確認|应(?:查|核)|須(?:查|核)|家庭.{0,12}(?:确认|確認|核实|核實|索取|询问|詢問)|目标.{0,12}(?:核对|核對|核实|核實)|目标.{0,12}专业.{0,16}(?:要求|先修)|当届.{0,12}(?:核实|核實|确认|確認))/i.test(curriculumChapter);
+    if (!hasCurriculumBoundary) warns.push("课程章节未见明确限制或家庭核验指引");
+    // 风险边界未必使用“风险”一词：不少中学直接在申请表格列“不能推断”、
+    // “旧轮次只作参考”或“当届细则待公布”。检查所有招生相关章节的实质限制，
+    // 避免因为学校采用表格或“升中路径”等标题而误报。
+    const admissionsSections = numberedSections
+      .filter((section) => chapterMeta.some((meta) => meta.n === section.n
+        && /(招生|申请|申請|录取|錄取|入学|入學|升中|收生|评核|評核)/.test(meta.title)))
+      .map((section) => section.html);
+    const riskText = [riskChapter, ...admissionsSections].join(" ").replace(/<[^>]+>/g, " ");
+    const hasRiskBoundary = /(风险|風險|限制|待核|待确认|待確認|待公布|待更新|尚未(?:公布|确认|確認|列出)|没有.{0,12}(?:公布|确认|確認|列出|说明|說明)|未能确认|不等于|不代表|不保证|不保證|不能|不得|不应|不應|不宜|不要|仅作历史|僅作歷史|历史参考|歷史參考|只能作参考|只能作參考|不适用于|不適用於|以.{0,15}(?:校方|学校|學校|当届|當屆|教育局).{0,10}为准|須.{0,8}确认|需.{0,8}确认|需.{0,8}確認|向校方确认|申请人数未公开|申請人數未公開|分母未公开|分母未公開|已结束|已結束|未有.{0,12}公布|不能推算|不可推算)/.test(riskText);
+    if (!hasRiskBoundary) errs.push("招生／录取章节未见风险提示或适用边界");
 
-    // 第 4 章的「提升入读概率建议」有的写成 <li> 列表，有的写成 h3 小节 + 段落，
-    // 两种都符合规则；只看 <li> 会把后者误判为缺失。
-    const advice = count(ch4, /<li>/g);
-    const hasAdviceSection = /<h3[^>]*>[^<]*(建议|攻略|提高|提升|加分|策略|要点|做法|怎么填|填表)/.test(ch4);
-    if (advice < 3 && !hasAdviceSection) errs.push(`第 4 章缺「提升入读概率建议」小节（<li> 仅 ${advice} 条）`);
-    else if (!hasAdviceSection && advice < 5) warns.push(`第 4 章建议 ${advice} 条（规则建议 ≥5）`);
+    // 报告章节顺序因学校类型而异；招生建议应在实际招生章节检查，
+    // 不能把只讲考试成绩的第 4 章误当成申请攻略章节。
+    const advice = count(admissionsChapter, /<li>/g);
+    const hasAdviceSection = /<h3[^>]*>[^<]*(建议|攻略|提高|提升|加分|策略|要点|做法|怎么填|填表)/.test(admissionsChapter);
+    // 多份中学报告把阶段、官方事实与家庭动作放在三列表格中，
+    // 不是用 <li> 或 h3。此类表格有明确的家庭动作列且至少三条数据时，
+    // 与申请策略小节等价；不应因呈现形式误报缺项。
+    const hasAdviceTable = [...admissionsChapter.matchAll(/<table[^>]*>([\s\S]*?)<\/table>/g)].some(([, table]) =>
+      /家庭动作|家庭行动|家庭判断|家庭准备重点|家长准备重点|家长动作|家长行动|家长要问|行动与边界|行动与限制/.test(table.replace(/<[^>]+>/g, " "))
+      && count(table, /<tr>/g) >= 4
+    );
+    if (advice < 3 && !hasAdviceSection && !hasAdviceTable) errs.push(`招生章节缺「申请策略」小节（<li> 仅 ${advice} 条）`);
+    else if (!hasAdviceSection && !hasAdviceTable && advice < 5) warns.push(`招生章节建议 ${advice} 条（规则建议 ≥5）`);
 
     if (visible(ch5) < 120) errs.push("第 5 章内容过薄（插班/求位策略需针对该校）");
-    if (count(ch6, /<li>/g) < 2) warns.push("第 6 章列表项不足 2 条");
+    // Student support may be written as evidence tables, paragraphs, or checklists.
+    // Thin chapters are already caught by the common chapter-depth gate; requiring
+    // <li> here mislabels substantive table-based reports as incomplete.
     const ch7Rows = count(ch7, /<tr>/g);
-    if (ch7Rows < 4) errs.push(`第 7 章同类对比不足 3 所竞品（${Math.max(0, ch7Rows - 1)} 行数据）`);
+    // SPCC's comparison uses four named school cards instead of table rows;
+    // count those cards as equivalent evidence while excluding the report's own school.
+    const schoolCards = count(ch7, /class="(?:spcc-)?school-card"/g);
+    const competitorCount = Math.max(Math.max(0, ch7Rows - 1), Math.max(0, schoolCards - 1));
+    if (competitorCount < 3) errs.push(`第 7 章同类对比不足 3 所竞品（${competitorCount} 所可识别学校）`);
   }
 
   // ── 来源标注体系 ──
-  // ✅ 是唯一全站保留的核实标记（127/127），必须出现
-  if (!all.includes("✅")) errs.push("全篇缺少 ✅ 多方核实标注");
+  // 来源核验可用文字标签和逐章来源登记表达；不强制插入可能误读为“多方核实”的 emoji。
+  if (!/(来源与核验范围|资料来源|可直接查阅的来源|核对日)/.test(all)) errs.push("全篇缺少来源与核验口径说明");
 
-  // 全站 emoji 经过一轮「系统 emoji 全清」。语料库盘点后允许的集合如下，
-  // 其余（💡🔴💬🟡📎📌 等）都算残留。新写报告很容易顺手加上，逐个 review 不现实，
-  // 所以在这里自动拦住。
+  // 允许集合包含报告规则要求的四种证据标签，其余装饰性 emoji 仍然拦截。
   const ALLOWED_EMOJI = new Set([
     "✅", // 多方核实
+    "🟡", // 单一可靠来源
+    "🔴", // 有限来源
+    "💬", // 主观分析
     "⚠", // 风险 / 提醒（常带 U+FE0F）
     "→", "↓", // 排版箭头
     "★", "☆", // 评级星

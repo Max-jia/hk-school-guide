@@ -1452,5 +1452,407 @@
    "c": "#6D6D6D",
    "b": "暂无评级"
   }
- }
+ },
+ "SS_REPORTS": [
+  {
+   "n": "圣保罗男女中学（SPCC）",
+   "t": "暂无评级",
+   "d": "香港中西区",
+   "h": "直资男女校·HKDSE 与 IBDP·多届公开考试结果及招生资料已核对",
+   "c": "spcc-secondary",
+   "premium": false
+  },
+  {
+   "n": "拔萃男书院",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "直资男校·F1–F6·HKDSE 与 IBDP 双路线·2026/27 学费及 2027/28 中一申请已核对",
+   "c": "dbs-secondary",
+   "premium": false
+  },
+  {
+   "n": "拔萃女书院",
+   "t": "暂无评级",
+   "d": "油尖旺区",
+   "h": "直资女校·F1–F6·HKDSE 与 GCE A-Level 双路线·招生、学费及公开成绩边界已核对",
+   "c": "dgs-secondary",
+   "premium": false
+  },
+  {
+   "n": "喇沙书院",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "资助男校·SSPA·HKDSE·2027/28 资讯日已公布，正式申请规则待更新",
+   "c": "la-salle-secondary",
+   "premium": false
+  },
+  {
+   "n": "皇仁书院",
+   "t": "暂无评级",
+   "d": "湾仔区",
+   "h": "官立男校·SSPA·HKDSE·2026/27课程与上一轮招生规则已核对",
+   "c": "queens-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "协恩中学",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "直资女校·不参加SSPA·2027/28中一申请开放至10月22日·HKDSE与IAL",
+   "c": "heep-yunn-secondary",
+   "premium": false
+  },
+  {
+   "n": "港大同学会书院",
+   "t": "暂无评级",
+   "d": "南区",
+   "h": "直资男女校·HKDSE与Pearson Edexcel IAL·2027/28中一80个公开学额·2026届结果已核对",
+   "c": "hkuga-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "汉基国际学校",
+   "t": "暂无评级",
+   "d": "东区",
+   "h": "国际男女校·Y7–9 IB MYP·Y10 杭州驻校·Y12–13 IBDP·招生与费用口径已核对",
+   "c": "cis-secondary",
+   "premium": false
+  },
+  {
+   "n": "哈罗香港国际学校",
+   "t": "暂无评级",
+   "d": "屯门区",
+   "h": "国际男女校·英国课程·Y6–Y8 Prep、Y9–Y11 GCSE、Y12–Y13 A-Level·日校及每周寄宿",
+   "c": "harrow-secondary",
+   "premium": false
+  },
+  {
+   "n": "圣士提反书院",
+   "t": "暂无评级",
+   "d": "南区",
+   "h": "直资男女校·不参加SSPA·HKDSE与IBDP双路线·周寄宿·2027/28中一申请至11月30日",
+   "c": "st-stephens-secondary",
+   "premium": false
+  },
+  {
+   "n": "英皇书院",
+   "t": "暂无评级",
+   "d": "中西区",
+   "h": "官立男校·参加SSPA·HKDSE路线·免费教育·2027/28校本DP细则待公布",
+   "c": "kings-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "华仁书院（九龙）",
+   "t": "暂无评级",
+   "d": "油尖旺区",
+   "h": "资助天主教男校·耶稣会主办·参加SSPA·HKDSE路线·2027/28中一申请日期已公布",
+   "c": "wah-yan-college-kowloon-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港培正中學",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "资助基督教男女校·直属小学衔接·2027/28 DP 资格与权重及 2025 届 DSE 口径已核对",
+   "c": "pui-ching-middle-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "瑪利諾修院學校（中學部）",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "资助天主教女校·英语授课·参加SSPA·2027/28中一细则待11月公布·2022–2025 DSE汇总已核对",
+   "c": "maryknoll-convent-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "德望學校",
+   "t": "暂无评级",
+   "d": "黄大仙区",
+   "h": "直资天主教女校·不参加SSPA·2027/28中一申请至11月13日中午·HKDSE",
+   "c": "good-hope-secondary",
+   "premium": false
+  },
+  {
+   "n": "圣保罗书院",
+   "t": "暂无评级",
+   "d": "中西区",
+   "h": "直资基督教男校·HKDSE与IAL·2027/28招生说明会11月举行，正式申请细则待公布",
+   "c": "st-pauls-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "英华书院",
+   "t": "暂无评级",
+   "d": "深水埗区",
+   "h": "直资基督教男校·HKDSE与IAL·2027/28中一申请11月14至28日·学费HK$27,000",
+   "c": "ying-wa-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港华人基督教联会真道书院",
+   "t": "暂无评级",
+   "d": "西贡区",
+   "h": "直资男女校·11年贯通学制·HKDSE与IBDP·2027/28 DS4申请至11月12日上午9时",
+   "c": "logos-academy-secondary",
+   "premium": false
+  },
+  {
+   "n": "保良局颜宝铃书院",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "直资男女校·HKDSE与IBDP·2027/28中一申请11月16日至12月24日·2026/27双路线收费已核对",
+   "c": "plk-ngan-po-ling-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "德瑞国际学校（GSIS）",
+   "t": "暂无评级",
+   "d": "中西区／南区",
+   "h": "国际学校·德语学部DIA与英语学部IGCSE／IBDP·2027/28招生状态及2026考试结果已核对",
+   "c": "gsis-secondary",
+   "premium": false
+  },
+  {
+   "n": "民生书院",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "资助男女校·SSPA·HKDSE·2027年DP统一申请期与2026逐科成绩已核对",
+   "c": "munsang-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "伊利沙伯中学",
+   "t": "暂无评级",
+   "d": "油尖旺区",
+   "h": "官立男女校·SSPA·HKDSE·2027年DP统一日期及2026考试分母已核对",
+   "c": "queen-elizabeth-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "庇理罗士女子中学",
+   "t": "暂无评级",
+   "d": "香港东区",
+   "h": "官立女校·SSPA·HKDSE·2027年DP统一日期及2025届年报已核对",
+   "c": "belilios-public-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "沙田官立中学",
+   "t": "暂无评级",
+   "d": "沙田区",
+   "h": "官立男女校·SSPA·HKDSE·2027统一日期与2025年报边界已核对",
+   "c": "sha-tin-government-secondary-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "粉岭救恩书院",
+   "t": "暂无评级",
+   "d": "北区",
+   "h": "资助男女校·SSPA·HKDSE·2027统一日期及2025年报口径已核对",
+   "c": "fanling-kau-yan-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港浸会大学附属学校王锦辉中小学（中学部）",
+   "t": "暂无评级",
+   "d": "沙田区",
+   "h": "直资男女校·一条龙·HKDSE／GCE A-Level·2027/28招生已公布",
+   "c": "hkbuas-wong-kam-fai-secondary",
+   "premium": false
+  },
+  {
+   "n": "启思中学",
+   "t": "暂无评级",
+   "d": "西贡区",
+   "h": "直资男女校·初中 MYP 框架·HKDSE／IBDP·2027/28 中一招生已开放",
+   "c": "creative-secondary-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港管理专业协会李国宝中学",
+   "t": "暂无评级",
+   "d": "油尖旺区",
+   "h": "直资男女校·英语教学·HKDSE／IAL·2027/28 第一阶段日程已公布",
+   "c": "hkma-david-li-kwok-po-secondary",
+   "premium": false
+  },
+  {
+   "n": "弘立书院",
+   "t": "暂无评级",
+   "d": "香港南区",
+   "h": "私立独立男女校·IB MYP／DP·2027/28 招生及资助日程已公布",
+   "c": "isf-academy-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港加拿大国际学校",
+   "t": "暂无评级",
+   "d": "香港南区",
+   "h": "非牟利国际男女校·IB MYP／DP + OSSD·2027/28 申请已开放",
+   "c": "cdnis-secondary",
+   "premium": false
+  },
+  {
+   "n": "沙田崇真中学",
+   "t": "暂无评级",
+   "d": "新界沙田区",
+   "h": "基督教资助男女校·SSPA／HKDSE·2027 校本细则待公布",
+   "c": "shatin-tsung-tsin-secondary",
+   "premium": false
+  },
+  {
+   "n": "屯门天主教中学",
+   "t": "暂无评级",
+   "d": "新界屯门区",
+   "h": "天主教资助男女校·SSPA／HKDSE·2026 DSE 部分科目成绩已公布",
+   "c": "tuen-mun-catholic-secondary",
+   "premium": false
+  },
+  {
+   "n": "元朗商会中学",
+   "t": "暂无评级",
+   "d": "新界元朗区",
+   "h": "资助男女校·SSPA／HKDSE·2026 DSE 科目成绩已公布",
+   "c": "yuen-long-merchants-association-secondary",
+   "premium": false
+  },
+  {
+   "n": "圣伯多禄中学",
+   "t": "暂无评级",
+   "d": "香港南区",
+   "h": "天主教资助男女校·SSPA／HKDSE·2025 年报升学口径已核",
+   "c": "st-peters-secondary",
+   "premium": false
+  },
+  {
+   "n": "迦密爱礼信中学",
+   "t": "暂无评级",
+   "d": "葵青区",
+   "h": "基督教资助男女校·SSPA／HKDSE·2025/26 课程及费用已核",
+   "c": "carmel-alison-lam-foundation-secondary",
+   "premium": false
+  },
+  {
+   "n": "圣保禄学校",
+   "t": "暂无评级",
+   "d": "湾仔区",
+   "h": "天主教直资女校·DSE／IGCSE／GCE／IAL·2027/28 招生已核",
+   "c": "st-pauls-convent-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港青年协会李兆基书院",
+   "t": "暂无评级",
+   "d": "元朗区",
+   "h": "直资男女校·DSE／Pearson Edexcel IAL·2027/28 申请日程已核",
+   "c": "hkfyg-lee-shau-kee-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港神托会培基书院",
+   "t": "暂无评级",
+   "d": "沙田区",
+   "h": "基督教直资男女校·HKDSE／IAL·2027/28 申请期已核",
+   "c": "stewards-pooi-kei-secondary",
+   "premium": false
+  },
+  {
+   "n": "沪江维多利亚学校",
+   "t": "暂无评级",
+   "d": "南区",
+   "h": "私立独立男女校·IB MYP／DP·2027/28 Year 6–11 申请待开放",
+   "c": "victoria-shanghai-academy-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港法国国际学校",
+   "t": "暂无评级",
+   "d": "湾仔区／中西区／西贡区",
+   "h": "国际男女校·国际部 iGCSE／IBDP 与法语部 DNB／Bac·2026 成绩及 2026/27 收费已核对",
+   "c": "french-international-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港仔工业学校",
+   "t": "暂无评级",
+   "d": "南区",
+   "h": "资助男校·HKDSE 与 2X 选修·寄宿计划·2027 派位日期及 2025/26 费用已核",
+   "c": "aberdeen-technical-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "顺德联谊总会梁銶琚中学",
+   "t": "暂无评级",
+   "d": "屯门区",
+   "h": "资助男女校·HKDSE·2026 DSE 分母及 2025 联招去向已核",
+   "c": "stfa-leung-kau-kui-secondary",
+   "premium": false
+  },
+  {
+   "n": "圣士提反堂中学",
+   "t": "暂无评级",
+   "d": "中西区",
+   "h": "资助男女校·HKDSE·2025 年报结果口径与 2027 招生文件冲突已核",
+   "c": "st-stephens-church-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "中华基督教会铭基书院",
+   "t": "暂无评级",
+   "d": "油尖旺区",
+   "h": "资助男女校·英语为主要教学语言·2025 DSE 112 人应考及 2025/26 收费已核",
+   "c": "ccc-ming-kei-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "保良局罗氏基金中学",
+   "t": "暂无评级",
+   "d": "西贡区",
+   "h": "直资男女校·HKDSE·2027/28 中一申请与 2026 DSE 单科口径已核",
+   "c": "plk-laws-foundation-college-secondary",
+   "premium": false
+  },
+  {
+   "n": "Kellett School",
+   "t": "暂无评级",
+   "d": "观塘区",
+   "h": "国际男女校·i/GCSE／A-Level·2026 成绩分母冲突与 2026/27 费用已核",
+   "c": "kellett-school-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港墨爾文國際學校",
+   "t": "暂无评级",
+   "d": "大埔区",
+   "h": "国际男女校·MYP／IBDP·2026/27 两处学费差异与 2025 IB 分母边界已核",
+   "c": "malvern-college-hong-kong-secondary",
+   "premium": false
+  },
+  {
+   "n": "英皇佐治五世學校 KGV",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "英基国际男女校·MYP／GCSE／IBDP／IBCP／BTEC·2026 分路线结果已核",
+   "c": "kgv-esf-secondary",
+   "premium": false
+  },
+  {
+   "n": "英基港島中學",
+   "t": "暂无评级",
+   "d": "中西区",
+   "h": "英基国际男女校·MYP／IGCSE／IBDP／IBCP·2026 成绩及去向图片分母已核",
+   "c": "island-school-esf-secondary",
+   "premium": false
+  },
+  {
+   "n": "香港澳洲國際學校 AISHK",
+   "t": "暂无评级",
+   "d": "九龙城区",
+   "h": "国际男女校·NSW／HSC／IBDP·2025 双路线成绩口径与 2026 收费已核",
+   "c": "australian-international-school-hong-kong-secondary",
+   "premium": false
+  }
+ ]
 }

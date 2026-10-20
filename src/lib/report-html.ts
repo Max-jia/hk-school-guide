@@ -138,6 +138,9 @@ export const EDITORIAL_REPORT_SLUGS = [
   "spcc-secondary",
   "dbs-secondary",
   "dgs-secondary",
+  "gsis-secondary",
+  "harrow-secondary",
+  "st-stephens-secondary",
   "spcps",
   "spcs",
   "spk",
@@ -520,6 +523,9 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
   const facts = getReportFacts(body);
   const schoolNetwork = getSchoolNetwork(facts);
   const freeBadge = free ? `<span class="hero-free-badge">${L("本报告完全免费", locale)}</span>` : "";
+  const secondaryRatingStatus = isSecondaryReport
+    ? `<span class="hero-rating-status" aria-label="${escapeHtml(L("中学评级状态：暂不评级；统一评级方法仍在研究与校准中，这不代表学校质量结论", locale))}">${escapeHtml(L("评级状态：暂不评级", locale))}</span>`
+    : "";
   const titleMarkup = escapeHtml(title).replace(
     /^(.*?)(官立小學|官立小学)$/,
     (_match, prefix: string, suffix: string) => `${prefix}<br>${suffix}`
@@ -546,7 +552,7 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
       ? `<span class="hero-index-caption">${escapeHtml(schoolNetwork.caption)}</span>`
       : "";
 
-  return `<section class="shell hero"><div class="hero-grid${isSecondaryReport ? " hero-grid--secondary" : ""}"><div><div class="hero-kicker">${tier}${freeBadge}</div><h1 id="school-title">${titleMarkup}</h1><div class="english-name">${escapeHtml(englishName ?? "")}</div>${details.length ? `<p class="dek">${escapeHtml(details.join(" · "))}</p>` : ""}</div>${isSecondaryReport ? "" : `<aside class="hero-index${isUnrated ? " hero-index--unrated" : ""}" aria-label="${escapeHtml(indexLabel)}"><span class="hero-index-label">${escapeHtml(indexLabel)}</span><span class="hero-index-number">${escapeHtml(indexNumber)}</span>${indexCaption}</aside>`}</div>${factsRibbon}</section>`;
+  return `<section class="shell hero"><div class="hero-grid${isSecondaryReport ? " hero-grid--secondary" : ""}"><div><div class="hero-kicker">${tier}${secondaryRatingStatus}${freeBadge}</div><h1 id="school-title">${titleMarkup}</h1><div class="english-name">${escapeHtml(englishName ?? "")}</div>${details.length ? `<p class="dek">${escapeHtml(details.join(" · "))}</p>` : ""}</div>${isSecondaryReport ? "" : `<aside class="hero-index${isUnrated ? " hero-index--unrated" : ""}" aria-label="${escapeHtml(indexLabel)}"><span class="hero-index-label">${escapeHtml(indexLabel)}</span><span class="hero-index-number">${escapeHtml(indexNumber)}</span>${indexCaption}</aside>`}</div>${factsRibbon}</section>`;
 }
 
 export function reportChapterItems(html: string): { id: string; title: string }[] {
