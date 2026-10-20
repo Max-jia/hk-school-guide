@@ -109,3 +109,29 @@
 ## 2026-10-18 返校指南交叉核对
 
 校方 2026/27 Back to School 指南补充 BPR 中学 08:30–up to 17:30（校门 08:00）、JL Year 7 08:30–15:30（校门 08:00）及 TKO 中学 08:00–16:00（校门 07:45）。指南的 school hours 不当作逐日课堂表。Secondary checklist 还区分 FS 需自备课本、文具、储物柜挂锁与 IS 由学校提供书本文具；PE 制服、校车、餐食均需家长安排。价格未列，报告保留为年度准备提示。
+
+## 2026-10-20 专家稿复核补充
+
+本轮使用 Exa 搜索及全文读取、Firecrawl 搜索与实时抓取，复核校方招生、课程、成绩、收费及独立家长／学生体验。以下是在原 68 条账目以外可直接指导改稿的证据；网页会更新，发布前应再核当届收费与招生公告。
+
+| 编号 | 新发现／核验 | 来源 | 写作边界与家庭行动 |
+| --- | --- | --- | --- |
+| F69 | 国际部的英语授课 IMYC→iGCSE→IBDP，与法语部法国课程→DNB→Baccalauréat／BFI 是两种不同教学语言与出口。校方 IBDP 页说学生选六科、至少三科 HL，Y11 选两年 DP 科目；英语文学为必修语言组，另一语言可为法语或普通话等。 | [校方 IBDP 页](https://www.fis.edu.hk/ibdp)、[校方法语部页](https://www.fis.edu.hk/french-stream)、[教育局蓝塘道英语部条目](https://internationalschools.edb.gov.hk/en/schools/97.html) | 不把两部的成绩或大学出口混算；孩子须先定语言主线、现有课程衔接与目标大学先修科，才比较这所学校。法语部是否接受个别孩子转入及具体语言要求须招生处确认。 |
+| F70 | 校方现接受 2026/27、2027/28、2028/29 申请。国际部 Y7–Y12 年历写通常 11–12 月评估、Y1–Y12 1–3 月视空位发录取；法语部非 AEFE／法国公校申请者需评估，CP–Terminale 通常 10 月至翌年 3 月视空位发录取。年历无指定学年。 | [校方线上申请](https://www.fis.edu.hk/student-application)、[招生年历](https://www.fis.edu.hk/admission-calendar) | 年历月份是一般流程，不等于 2027/28 固定日期、面试通过率或有空位。先按出生年份确认目标年级和学部，询问当届评估语言、考试内容、校区及空位。 |
+| F71 | 校方 2026 成绩页目前仍以四张图片列 IB、iGCSE、Bac、DNB 成绩，并另有明确写为 2025 的大学 offer 图片；可见正文列法国、英国、加拿大、美国、香港大学示例，没有 2026 届分学部最终入读人数表。 | [校方考试及升学页](https://www.fis.edu.hk/results-university)（2026-10-20 实时抓取页面及图片地址）；2026 成绩数值见本账本 #26–36 的 2026-10-18 逐图核验 | 继续保留 IB 98%／均分 34.5／两名 45 分、Bac 100% 等校方图表数字，并明确各考试应考人次或科目报考项分母未公布。2025 offers、跨届大学名单不能写成 2026 录取率或最终入读率。2025 校外评论如提到不同成绩，只能说明不同届别，不能当 2026 校方成绩的交叉验证。 |
+| F72 | IBO 官方说明完整 IB 文凭总分最高 45，须至少 24 分且满足六科及 TOK、EE、CAS 和学科最低要求；单看总分或学校均分不足以断言每个学生获完整文凭。 | [IBO：DP passing criteria](https://www.ibo.org/about-the-ib/what-it-means-to-be-an-ib-student/recognizing-student-achievement/about-assessment/dp-passing-criteria/) | 正文第一次提到 IBDP、HL／SL、EE／TOK／CAS、45 分时解释：DP 是两年制大学预科，HL／SL 是高阶／标准课程，EE 是专题论文、TOK 是知识论、CAS 是创意活动服务；“45 分满分”不等于某大学录取。 |
+| F73 | 法国教育部规定 2026 届 DNB 改为 20 分制，及格平均 10 分；DNB 是初中结束文凭，不能算高中毕业。Bac 的 mention bien 为平均 14 至不足 16 分，très bien 为 16 至不足 18 分；18 分以上可获“评审祝贺”。 | [法国教育部：DNB](https://www.education.gouv.fr/le-diplome-national-du-brevet-10613)、[法国教育部：普通 Bac](https://www.education.gouv.fr/reussir-au-lycee/le-baccalaureat-general-10457) | 在报告首次出现 DNB、Bac、mention bien／très bien 时用中文短释；2026 DNB 口径不能套用 2025 旧 800 分制。学校图片百分比仍未列分母，不由门槛反推人数。 |
+| F74 | 官方 2026/27 收费仍列“须教育局批准”。IS Y7–Y11 毛额每年 HK$208,302、Y12–Y13 HK$224,298；FS 6ème–3ème 一般组毛额 HK$162,478、2nde–Terminale 一般组 HK$196,519，LCE／SIA／BFI 组另价。FS LCE／SIA 净额单元格印为“HK$,175,553”。 | [校方收费及债券](https://www.fis.edu.hk/school-fees)（2026-10-20 复核） | 若要给长期预算，按 2026/27 **毛额**静态假设，IS Y7–Y13 共七学年约 HK$1,490,106、FS 6ème–Terminale 一般组共七学年约 HK$1,239,469；两者均不含未来加价、报名／评估／考试／车餐／活动、可退债券资金占用，不是正式六年报价。若从 IS Y8–Y13 才入读，六学年静态毛额约 HK$1,281,804。不可把 HK$25,000 抵学费订金再加一次，亦不可引用 FS 笔误净额。 |
+| F75 | 校方列每学部申请费 HK$2,200、评估费 HK$1,000；确认学位须 HK$25,000 不可退订金但抵首学期学费，每人须持或购一份私人 HK$120,000／公司 HK$250,000 债券，并有 HK$5,000 不退管理费。学校同一家庭第三名学生学费减 10%、第四名起减 15%。 | [校方收费及债券](https://www.fis.edu.hk/school-fees) | 现金占用与最终成本分开。债券网页概览称可赎回，但赎回时间及细则须看契约；学费折扣是否与其他资助并用须书面确认。 |
+| F76 | 学校列法语部法国政府津贴、国际部 IB 学术奖学金、三份赞助公司债券、两部均可申请 Fond des Amis。 | [校方奖学与援助](https://www.fis.edu.hk/scholarship-financial-support) | 项目存在，不等于普遍获批、每年金额固定或一定覆盖债券；正文用“可查询／可申请”，别先从预算扣减。 |
+| F77 | 教育局资料明确学校在主流环境提供 SEN 支援容量有限；校方称设健康、心理、辅导及大学升学指导，但支援页详述的 Pôle Inclusif 主要针对法语部小学。 | [教育局蓝塘道英语部条目](https://internationalschools.edb.gov.hk/en/schools/97.html)、[校方学生支援页](https://www.fis.edu.hk/student-support-care) | 不能把小学法语部专项支援写成两个中学部通用服务；有具体学习或情绪需要者，应提交现有报告，请对应学部书面说明可用资源、频次及转介安排。 |
+| F78 | 2025-11-03 自称在读家长称社区与教师支持孩子，但每学年初校车、餐食、活动与制服安排繁忙；2025-07-19 另一自称家长批蓝塘道拥挤、体育空间及行政；2026-09-01 自称学生称教师友善而中学设施与活动体验欠佳。2025-07-23 自称家长称将军澳校区较好、蓝塘道设施较旧。 | [2025-11-03 家长帖](https://www.international-schools-database.com/in/hong-kong/french-international-school-of-hong-kong/reviews/3exHbd)、[2025-07-19 等评论集合](https://www.international-schools-database.com/in/hong-kong/french-international-school-of-hong-kong/reviews)、[2026-09-01 学生帖](https://www.international-schools-database.com/in/hong-kong/french-international-school-of-hong-kong/reviews/3sLu44)、[2025-07-23 家长帖](https://www.international-schools-database.com/in/hong-kong/french-international-school-of-hong-kong/reviews/p2dLWo) | 该网站明确标评论“Reviews aren't verified”；评论者身份、学部和在校时间未独立核实。只能写“某年自称家长／学生反映”，不把设施、行政、师资指控或平台均分写成全校共识。旧 K1／小学评论尤其不得冒充中学日常。对应家庭行动是申请时实际参观目标校区并向中学部问时间表与餐食／体育／活动安排。 |
+| F79 | 2026 年 4 月独立学校指南称 2025 IB 通过率 94%、平均 34，Bac 100%；与学校 2026 IB 98%、34.5 属不同毕业届、且原始考生分母均未在可见材料中清晰列示。 | [The Good Schools Guide：FIS review](https://www.goodschoolsguide.co.uk/international/review/french-international-school)、[校方 2026 结果](https://www.fis.edu.hk/results-university) | 如写“连续年份”，可说明方向，但不得仅凭这两张不同口径的二手／官方资料推算统计显著改善或个体录取优势。该指南的学费区间低于当前 2026/27 校方收费，费用须优先用当年校方表。 |
+
+### 改稿优先级
+
+1. 第一章直接判断 FIS 的竞争力来自双课程流、语言与升学出口选择；香港教育局不发布国际学校 Band 1A／1B 名单，报告宜写「Band 不适用，平台评级暂缓」，不要强套本地派位等级。四校区是选择空间，也是日常通勤和中途校区变化的代价。
+2. 第二章按家长实际顺序写：先定 IS／FS，再核出生年份和目标校区、材料与申请池、评估与候补、录取后的订金／债券。不能把无年份年历写成 2027/28 确切日期。
+3. 第三、四章分开解释两种教学语言和课程；2026 成绩按考试、学部独立列，IB 满分与 Bac 优等不等于大学录取。大学去向只保留明确属于 2025 的 offer 与跨届例子，指出毕业生分母和 2026 最终入读表缺失。
+4. 第五章预算把七学年静态学费、一次性不可退费用、可赎回债券资金占用和车餐活动分开；估算清楚写 2026/27 原价不变的假设及其不现实之处，不将 2026/27 价格冒充 2027/28 合约。
+5. 第六章把校方实际支援和匿名体验分成两类来源；引入有日期的正反中学相关评论，保留“未核身份／个别校区／小样本”边界。不要复制 41 条评分或把泛小学好评当中学口碑。

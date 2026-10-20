@@ -4388,6 +4388,13 @@ dbs: [
     { label: "加拿大国际学校：Upper School", url: "https://www.cdnis.edu.hk/en/our-programmes/upper-school/", scope: "第 7 章核 Grade 6–12、IB 与 OSSD 路径及 Grade 9–11 转学分审核。", sourceType: "school-official", checkedOn: "2026-10-17" },
     { label: "加拿大国际学校：2026/27 学费", url: "https://www.cdnis.edu.hk/en/admissions/tuition-fees/", scope: "第 7 章核 Grade 6–12 学费与不持债券时资本征费；资本征费注明待教育局批准。", sourceType: "school-official", academicYear: "2026/27 学年", checkedOn: "2026-10-17" },
     { label: "加拿大国际学校：2027/28 关键日期", url: "https://www.cdnis.edu.hk/en/admissions/key-dates/", scope: "第 7 章核 Grade 6–11 申请截止 2026-12-31；不证成逐级空位或取录。", sourceType: "school-official", academicYear: "2027/28 入学", checkedOn: "2026-10-17" },
+    { label: "校方：法语部课程", url: "https://www.fis.edu.hk/french-stream", scope: "核法语部按法国国家课程走 DNB、Baccalauréat 及国际路线；不将国际部 IB 成绩套入法语部。", sourceType: "school-official", checkedOn: "2026-10-20" },
+    { label: "国际文凭组织：完整 DP 文凭颁发标准", url: "https://www.ibo.org/about-the-ib/what-it-means-to-be-an-ib-student/recognizing-student-achievement/about-assessment/dp-passing-criteria/", scope: "核 IB 满分 45、至少 24 分及核心和学科条件；不据校方均分推算完整文凭人数。", sourceType: "exam-authority", checkedOn: "2026-10-20" },
+    { label: "法国教育部：DNB 初中毕业考试", url: "https://www.education.gouv.fr/le-diplome-national-du-brevet-10613", scope: "核 2026 起 DNB 为 20 分制及初中结束文凭性质；非高中毕业率。", sourceType: "government", checkedOn: "2026-10-20" },
+    { label: "法国教育部：Bac 与优等等级", url: "https://www.education.gouv.fr/reussir-au-lycee/le-baccalaureat-general-10457", scope: "核 mention bien 与 mention très bien 分数范围；考试等级不等于大学录取。", sourceType: "government", checkedOn: "2026-10-20" },
+    { label: "匿名家长评论：开学安排与支持", url: "https://www.international-schools-database.com/in/hong-kong/french-international-school-of-hong-kong/reviews/3exHbd", scope: "2025-11-03 自称家长的个别体验；平台注明评论未验证，不能作为全校共识。", sourceType: "parent-discussion", checkedOn: "2026-10-20" },
+    { label: "匿名评论集合：校区设施与行政", url: "https://www.international-schools-database.com/in/hong-kong/french-international-school-of-hong-kong/reviews", scope: "2025 年评论中的设施及行政感受仅作访校问题线索，身份与学部未核。", sourceType: "parent-discussion", checkedOn: "2026-10-20" },
+    { label: "匿名学生评论：教师与设施", url: "https://www.international-schools-database.com/in/hong-kong/french-international-school-of-hong-kong/reviews/3sLu44", scope: "2026-09-01 自称学生的个别体验；身份与在校情况未独立核实。", sourceType: "parent-discussion", checkedOn: "2026-10-20" },
   ],
 "aberdeen-technical-school-secondary": [
     { label: "CHSC：香港仔工业学校 2025/26 概览", url: "https://www.chsc.hk/ssp2025/sch_detail.php?lang_id=2&sch_id=394", scope: "学校提供并核实的身份、课程、上一轮甄选比重、宿舍及费用快照；2026/27 科目为拟开设，非 2027/28 保证。学校 DSE 分母及最终去向未列。", sourceType: "school-profile", academicYear: "2025/26；拟开 2026/27", checkedOn: "2026-10-17" },

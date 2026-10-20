@@ -9,7 +9,7 @@ const SOURCE_TYPE_LABELS: Record<ReportSourceReference["sourceType"], string> = 
   "exam-authority": "考試機構官方資料",
   "independent-inspection": "獨立檢查報告",
   "third-party-estimate": "第三方參考估算",
-  "parent-discussion": "匿名家長討論",
+  "parent-discussion": "匿名公開評論",
   "media-report": "媒體報道／專題",
 };
 
