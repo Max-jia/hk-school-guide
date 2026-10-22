@@ -416,10 +416,18 @@ alliance: [
     {
       label: "幼稚園及幼稚園暨幼兒中心概覽 2025/26：寶山幼兒園",
       url: "https://kgp2025.azurewebsites.net/edb/schoolinfo.php?lang=tc&schid=6667",
-      scope: "核對學校名稱、2024 年 9 月教職員及師生比例資料，以及 2025/26 學年學費；這些欄位各有資料日期，不應視為現屆全部資料。",
+      scope: "核對學校名稱、2025/26 學年學費及 2024 年 9 月在讀人數：PN 84 人，K1 上午班及下午班各 79 人。這些是該時點學生人數，不是每年招生名額；校方未公開 PN/K1 每屆招生配額。",
       sourceType: "school-profile",
-      academicYear: "2025/26 學年；人員資料截至 2024 年 9 月",
-      checkedOn: "2026-10-15",
+      academicYear: "2025/26 學年；在讀人數截至 2024 年 9 月",
+      checkedOn: "2026-10-22",
+    },
+    {
+      label: "寶山幼兒園：入學申請",
+      url: "https://braemarhillnurseryschool.com/tc/admissions.html",
+      scope: "核對校方列出的 PN 及 K1–K3 上午／下午班申請方式；頁面說明以書信索取初步入學申請表，未公布每屆招生名額或固定申請日期。",
+      sourceType: "school-official",
+      academicYear: "校方招生頁；查閱 2026-10-22",
+      checkedOn: "2026-10-22",
     },
     {
       label: "教育局收費證明書：寶山幼兒園",
