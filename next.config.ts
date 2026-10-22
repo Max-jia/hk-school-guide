@@ -45,6 +45,7 @@ const legacyRedirects = [
 ];
 
 const nextConfig: NextConfig = {
+  serverExternalPackages: ["@sparticuz/chromium", "puppeteer-core"],
   // Let local development pages use either hostname; otherwise Next dev assets
   // are rejected as cross-origin when opened via 127.0.0.1.
   allowedDevOrigins: ["127.0.0.1", "localhost"],
@@ -56,6 +57,10 @@ const nextConfig: NextConfig = {
   // 不显式 include 的话，线上 serverless 函数里会缺文件、接口 500。
   outputFileTracingIncludes: {
     "/api/report-content": ["./src/content/reports/**"],
+    "/api/reports/*/pdf": [
+      "./node_modules/@sparticuz/chromium/bin/**",
+      "./src/content/reports/**",
+    ],
     "/api/schools": [
       "./src/content/schools.json",
       "./src/content/kindergartens.json",

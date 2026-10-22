@@ -95,7 +95,7 @@ export default function ReportViewer({
     if (pdfBusy) return;
     setPdfBusy(true);
     try {
-      await downloadReportPdf(slug, schoolName);
+      await downloadReportPdf(slug, schoolName, locale);
     } catch (error) {
       const errorDetails = error instanceof Event
         ? {
