@@ -96,7 +96,22 @@ export default function ReportViewer({
     setPdfBusy(true);
     try {
       await downloadReportPdf(slug, schoolName);
-    } catch {
+    } catch (error) {
+      const errorDetails = error instanceof Event
+        ? {
+            type: error.type,
+            target: error.target instanceof HTMLImageElement
+              ? {
+                  src: error.target.currentSrc.slice(0, 96),
+                  width: error.target.width,
+                  height: error.target.height,
+                }
+              : String(error.target),
+          }
+        : error instanceof Error
+          ? { name: error.name, message: error.message }
+          : String(error);
+      console.error("Report PDF export failed", errorDetails);
       window.alert(z("PDF 生成失败，请刷新页面后重试。"));
     } finally {
       setPdfBusy(false);

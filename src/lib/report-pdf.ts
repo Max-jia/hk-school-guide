@@ -91,12 +91,28 @@ export async function downloadReportPdf(slug: string, schoolName: string): Promi
       blocks.push(tocWrapper);
     }
 
-    const bodyClone = body.cloneNode(true) as HTMLElement;
-    bodyClone.querySelectorAll<HTMLDetailsElement>("details").forEach((details) => {
-      details.open = true;
+    const bodyChildren = Array.from(body.children).filter((child) =>
+      child.getBoundingClientRect().height > 0,
+    );
+    const chapterNodes = bodyChildren.filter((child) =>
+      child.matches(".editorial-chapter, .chapter"),
+    );
+    const bodyParts = chapterNodes.length > 0
+      ? bodyChildren.map((child) => {
+          const bodyPart = document.createElement("div");
+          bodyPart.className = body.className;
+          bodyPart.appendChild(child.cloneNode(true));
+          return bodyPart;
+        })
+      : [body.cloneNode(true) as HTMLElement];
+
+    bodyParts.forEach((bodyPart) => {
+      bodyPart.querySelectorAll<HTMLDetailsElement>("details").forEach((details) => {
+        details.open = true;
+      });
+      captureRoot.appendChild(bodyPart);
+      blocks.push(bodyPart);
     });
-    captureRoot.appendChild(bodyClone);
-    blocks.push(bodyClone);
 
     const sourceTitle = report.querySelector<HTMLElement>("#report-source-title");
     const sourcePanel = sourceTitle?.closest<HTMLElement>("section");
@@ -112,6 +128,9 @@ export async function downloadReportPdf(slug: string, schoolName: string): Promi
     let capturedBlock = false;
 
     for (const block of blocks) {
+      const bounds = block.getBoundingClientRect();
+      if (bounds.width <= 0 || bounds.height <= 0) continue;
+
       const canvas = await toCanvas(block, {
         backgroundColor: "#ffffff",
         pixelRatio: 1.25,
