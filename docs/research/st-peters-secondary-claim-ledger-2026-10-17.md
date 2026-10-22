@@ -76,3 +76,13 @@
 |---|---|---|---|
 | 41 | 2024/25 學生支援組為 5 名第三層支援學生制定個別學習計劃；約 80 名學生獲校內測考調適，4 名中六學生的 DSE 考試調適申請獲批；第 6 章 | [年報附錄二《學生支援組年終檢討》](https://www2.stpeter.edu.hk/files/sch_report_2425_a02_32D563A5.pdf)第 1、4 頁 | 已直接下載並核對原 PDF。屬校方自述的歷史實施人數；未列全校 SEN 人數、個案時數或 2027/28 服務容量。 |
 | 42 | 2024/25 生涯規劃組協助中六學生開立 JUPAS／EAPP 帳戶、安排大學參觀；6 名學生參與 ERB 實習計劃相關安排，當時取錄結果待公布；第 6 章 | [年報附錄三《生涯規劃組全年檢討》](https://www2.stpeter.edu.hk/files/sch_report_2425_a03_E4471D79.pdf)第 3、5 頁 | 已直接下載並核對原 PDF。不能改寫成 6 人完成實習，也未給活動覆蓋率或畢業生最終大學註冊人數。 |
+
+## 2026-10-21 動態復核增補
+
+| # | 關鍵斷言及報告位置 | 來源與年度 | 核對狀態及限制 |
+|---|---|---|---|
+| 43 | 校方最新消息索引仍列 2026/27 中一候補及中二至中四插班舊輪次；所查欄目未見 2027/28 中一校本招生文件；第 2 章 | [校方最新消息索引](https://stpeter.edu.hk/en/news.php?cid=1)，2026-10-21 查閱 | 只描述所查欄目現況；不推斷校方確認尚未發布。 |
+| 44 | 第三方平台 Banding 估算存在年份及等級差異；第 1 章 | [HK Tutor Link](https://hktutorlink.hk/secondary-schools/en/st-peter-s-secondary-school-d6d3726)（2025 約 2C–2B）、[SchoolDays](https://www.schooldays.com.hk/secondary/%E8%81%96%E4%BC%AF%E5%A4%9A%E7%A5%BF%E4%B8%AD%E5%AD%B8)（概括 Band 3）、[MySchool](https://www.myschool.hk/secondary-school/St.-Peter%27s-Secondary-School)（2022 3A） | 均非教育局學校評級；估算年份及方法不同，報告不把它們寫成共識，也不等同學生個人派位組別。 |
+| 45 | 派位組別按經調整的校內成績劃分；只參照校內名次及往屆同校表現不能精准預測個別學生組別；第 1 章 | 教育局 [2024/2026 派位組別機制 FAQ](https://www.edb.gov.hk/attachment/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2026_Sept_CA_SC.pdf)；現行 2025/2027 一般安排見[教育局 FAQ](https://www.edb.gov.hk/attachment/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_SC.pdf) | 詳細組別解釋來源對應 2024/2026 機制文件；2025/2027 文件用於新屆一般安排，不互相錯標。 |
+| 46 | 2021 年家長升中討論把聖伯多祿列為跨區志願，回帖呈現個人估算；第 6 章 | [教育王國 2021 年跨區選校討論](https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3853736) | 匿名舊帖；不是在讀家庭口碑、現行校風證據或錄取機會估算。 |
+| 47 | 2025-10-13 媒體報道涉及一封自稱教師群體的來信、校方否認離職潮及教育局要求書面交代／提醒溝通；第 6、8 章 | [am730](https://www.am730.com.hk/article/608090)、[星島頭條](https://www.stheadline.com/edu-news/3507824/%E8%81%96%E4%BC%AF%E5%A4%9A%E7%A5%BF%E4%B8%AD%E5%AD%B8%E6%95%99%E5%B8%AB%E6%8D%AE%E5%A0%B1%E函%E6%95%99%E8%82%B2%E5%B1%80%E5%86%80%E6%8F%9B%E6%A0%A1%E9%95%B7-%E6%8C%874%E5%B9%B4%E9%80%BE30%E4%BA%BA%E9%9B%A2%E8%81%B7-%E5%BD%B1%E9%9F%BF%E6%95%99%E5%AD%B8%E8%B3%AA%E7%B4%A0) | 只按報道逐方歸屬；本次查閱的公開報道和校方頁面未見後續調查結論。不連結其他敏感事件、不推論因果、校風或教學質量。 |

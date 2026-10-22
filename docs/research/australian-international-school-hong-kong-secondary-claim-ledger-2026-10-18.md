@@ -115,3 +115,8 @@
 - 招生页面目前仍允许 Reception–Year 10 全年申请；2027 Term 1 建议日已过、Term 3 建议日为 2027-02-01；学校仍按目标年级席位及个案评估。2027 日历年正式收费尚未公布。
 - 复核[Good Schools Guide 2026 公开评论](https://www.goodschoolsguide.co.uk/international/review/australian-international-school-hong-kong)、[AISHK 评论页](https://www.international-schools-database.com/in/hong-kong/australian-international-school-hong-kong/reviews)与[匿名教师讨论](https://www.reddit.com/r/Internationalteachers/comments/1dtd0sf/australian_international_school_hong_kong/)：访校摘要和教师帖子均不作为现届中学家长整体意见；评论页当时为零条，不从零评论推断满意度。
 - HSC／IB 六年预算重新按 2026 年费率计算：纯学费分别 HK$1,283,800／HK$1,372,800；各加六年资本征费后约 HK$1,433,800／HK$1,522,800。仅为当前价静态情境，不能作 2027–32 报价。
+
+
+## 2026-10-22 续核
+
+本轮重开校方招生及收费、招生说明、Secondary School、Senior Years、Results and Pathways、Class of 2025 校方新闻和 Teaching and Learning 页面。2026 费用、申请期与路线限制、最新成绩届别、ACER ISA 2027 安排均未发现报告与现行原页冲突；次级课程页另列一项没有届别标签的 Band 6 比例，未并入 2025 成绩表。未公开的路线分母和最终注册数据继续留作限制。

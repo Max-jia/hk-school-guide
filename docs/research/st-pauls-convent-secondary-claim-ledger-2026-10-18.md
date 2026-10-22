@@ -70,3 +70,6 @@
 
 
 | SPC-51 | 2027/28 中一申请须知说明，学费减免申请表须在学生入读后从校方网页下载及申请；入学前的自评平台标为 2026/27。 | 2027/28 中一申请者；减免正式申请时点 | [校方 2027/28 中一申请注意事项 PDF](https://spcs.edu.hk/w/wp-content/uploads/2026/10/2027-28_Notes_on_Application_Chinese.pdf)，第 1 页 | 2026-10-18 直接核对 PDF 第 1 页。不能把自我评估当成正式申请或获批；新年度档位、材料算法和截止日仍待公布。 |
+
+| SPC-52 | 公开第三方估值多数把学校列为 Band 1；提供细分的估值来源多标 Band 1A。 | Big Exam 2025、HK Tutor Link 2025、Schoolbanding 2026 | [教育局关于不公开Band排名的说明](https://www.info.gov.hk/gia/general/201206/06/P201206060276.htm)；[Big Exam](https://dse.bigexam.hk/en/ssp/school/273)；[HK Tutor Link](https://hktutorlink.hk/secondary-schools/en/st-paul-s-convent-school-22cf514)；[Schoolbanding](https://schoolbanding.com/rankings/2026) | 仅属非官方估值；各站算法和完整原始分母未公开。学校提供多条考试路线，DSE表现不能代表全体课程；不可解释为官方质量评级、录取难度或个人入学机会。 |
+| SPC-53 | 可查到的教育王国公开讨论涉及 SPCS 中一讲座／申请准备、部分小学升中去向转贴及DSE成绩比较口径。 | 2018、2025 匿名论坛讨论 | [SPCS 中一讲座](https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3711671)；[2025 中一派位结果讨论](https://www.edu-kingdom.com/forum.php?mod=viewthread&page=12&tid=3885016)；[2025 DSE 成绩讨论](https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3885382) | 帖子身份无法独立核实；派位转贴不是学校评价，排名讨论不是成绩核证。未找到足以代表近期在读日常的公开样本，不能归纳正负面Top 5或整体口碑共识。 |

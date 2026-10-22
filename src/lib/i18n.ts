@@ -50,8 +50,9 @@ const HK_GLYPH_FIX: Record<string, string> = {
   "悦": "悅",
   "兑": "兌",
   "麪": "麵",
+  "閲": "閱",
 };
-const HK_GLYPH_RE = /[説税脱悦兑麪]/g;
+const HK_GLYPH_RE = /[説税脱悦兑麪閲]/g;
 
 // 另有两类 s2hk 处理不了的情况:
 //   1. 户 / 钟 完全不转换(户→戶、分钟→分鐘)
@@ -72,8 +73,15 @@ function normalizeHk(s: string): string {
   out = out.replace(/般鹹道/g, "般咸道");
   // Long HTML fragments can turn these common phrases into food or archaic glyphs.
   out = out.replace(/麵談/g, "面談").replace(/麵試/g, "面試").replace(/蔘與/g, "參與").replace(/結閤/g, "結合").replace(/箇/g, "個");
-  // Keep the official street name and common education terms intact.
-  out = out.replace(/欣盛裏/g, "欣盛里").replace(/學生髮展/g, "學生發展").replace(/名單隻證明/g, "名單只證明").replace(/安排鬚/g, "安排須");
+  // Keep common Hong Kong education terms intact across the server/client re-conversion boundary.
+  out = out
+    .replace(/欣盛裏/g, "欣盛里")
+    .replace(/學生髮展/g, "學生發展")
+    .replace(/名單隻證明/g, "名單只證明")
+    .replace(/這隻說明/g, "這只說明")
+    .replace(/教學侷限/g, "教學局限")
+    .replace(/機製麵見/g, "機制面見")
+    .replace(/安排鬚/g, "安排須");
   return out;
 }
 

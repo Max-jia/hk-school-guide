@@ -5,6 +5,6 @@ import reportMeta from "@/content/report-meta.json";
 //
 // 背景：这个数字在 2026-09 之前是写死的「126」，新增报告后前后修过两次；
 // 只要还写死就一定会再次过期。所以这里统一取单一来源。
-const META = reportMeta as { PS_REPORTS: unknown[]; KG_REPORTS: unknown[] };
+const META = reportMeta as { PS_REPORTS: unknown[]; KG_REPORTS: unknown[]; SS_REPORTS: unknown[] };
 
-export const REPORT_COUNT = META.PS_REPORTS.length + META.KG_REPORTS.length;
+export const REPORT_COUNT = META.PS_REPORTS.length + META.KG_REPORTS.length + META.SS_REPORTS.length;

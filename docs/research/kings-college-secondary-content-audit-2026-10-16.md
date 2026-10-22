@@ -109,3 +109,8 @@
 
 ### 2026-10-20 官方页面复核
 直接打开英皇书院现行招生页及其链接的《S.1 Admission Schedule》。招生页仍列 2026/27 中一候补及 2026/27 轮次文件；时间表写 2026/27 申请和面试日程，没有出现 2027/28 规则。报告将下一轮 DP 细则标为未公布，当前仍准确；不可把时间表的 2026 年日期套到 2027/28。另直接打开校方 2026/27 课程页，课程年级、四班及科目与报告相符。
+
+
+## 2026-10-21｜校方招生、課程與年度資料入口復核
+
+直接重開英皇書院[招生入口](https://www.kings.edu.hk/en/admission)、其連結的[2026/27 中一自行分配學位時間表](https://www.kings.edu.hk/sites/default/files/download/Application%20Schedule.pdf)、[2026/27 課程頁](https://www.kings.edu.hk/en/school-curriculum-2025-26)、[School Reports & Plans](https://www.kings.edu.hk/en/school-reports-plans)及教育局[2027/28 SSPA 時程](https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/)。校方招生頁仍列 2026 年 9 月入讀中一的放榜後候補、2026/27 插班申請和上一輪 DP 時程，沒有 2027/28 校本 DP 名額、權重或面試安排；舊屆候補條件仍只作歷史參考。課程頁仍標 2026/27，S1–S6 每級四班、S3 綜合科學、S6 報考 HKDSE。報告索引仍列 2024/25 年報和 2025/26 其他語文試行計劃評估報告入口，未見較新年報索引。教育局當前列 2027/28 DP 申請期 2027-01-04 至 01-18、正取通知 2027-03-31、派位結果 2027-07-06、註冊 07-08 至 07-09，並預告 e-Platform 於 2026 年 11 月中起可註冊。以上與報告既有年度與未知邊界相符，未發現需作實質改寫的事實差異；已將資料核對日期更新至 2026-10-21。

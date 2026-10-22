@@ -63,3 +63,12 @@
 | 37 | 第 7、8 章／协恩作为 DGS 2027/28 申请结束后的备选：网申至 2026-10-22；纸本申请、证明文件与考试费须于 2026-10-24 中午前亲身提交 | [协恩 2027/28 中一招生页](https://www.hys.edu.hk/en/admission/form1admissions/) | 2027/28 入学；2026-10-19 重访 | 已核实（当届仍开放窗口） | 两个截止时间及提交方式不同，不能误读为网申完成即完成整份申请；不保证余位、面试或取录。 |
 
 | 38 | 2026 年 DSE：149 考生、22 科、944 科目应考人次；A-Level：39 考生、152 科目应考人次；DSE 及 A-Level 汇总成绩、逐科比例和 DSE 本地大学取录项与报告一致；招生页仍标 2027/28 申请已结束，费率为当前学年且下一年可能调整 | [DGS 公考成绩页](https://www.dgs.edu.hk/achievements/results-of-public-examinations)、[DGS 大学取录页](https://www.dgs.edu.hk/achievements)、[2027/28 中一招生页](https://www.dgs.edu.hk/admissions/s1-application)、[2026/27 资助页](https://www.dgs.edu.hk/admissions/information-on-fee-remission) | 2026 届结果、2027/28 招生状态及 2026/27 资助；2026-10-19 重开原页 | 校方公开的 DSE 比率分母为科目应考人次；A-Level 逐科等级比例按科目成绩；大学表列取录项并含 JUPAS、SALSA、SNDAS 等渠道 | 已核实（页面当前值与报告一致） | 不将科目比例写成学生比例，不将取录项写成不同学生或注册数；第二阶段 11-03 补件日期与 11 月上旬通知顺序不清，继续以校方确认作为必要步骤。 |
+
+## 2026-10-21 编辑复核新增断言
+
+| ID | 报告位置／断言 | 来源 | 适用年份 | 状态及限制 |
+|---|---|---|---|---|
+| 39 | 第 2 章：2027/28 截止后仅成功提交申请者可按指定封面邮寄补件；网上更新关闭，不属于新逾期申请入口 | [DGS Admission Portal](https://admission.dgs.edu.hk/) | 2027/28；公告 2026-10-04 | 已核实；如校方再发公告须更新 |
+| 40 | 第 1 章：第三方 2025/26 Band 1A 估算属于网站算法／编辑判断；EDB 派位 Band 1/2/3 是学生组别 | [大考 DGS 估算](https://dse.bigexam.hk/zh-cn/ssp/school/3)、[SchoolBanding 2026 榜单](https://schoolbanding.com/rankings/2026)、[教育局 SSPA FAQ](https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2026_Apr_CA_TC.pdf) | 2025 DSE 估算及 2026 榜单 | 已核来源文字；两项第三方估算基于有重叠的 DSE 指标，不视为独立交叉验证或本平台评级 |
+| 41 | 第 4 章：本地取录摘要包含 JUPAS、SALSA、SNDAS；缩写全称分别为大学联合招生办法、学生运动员学习支援及入学计划、学校推荐直接录取计划 | [DGS 2026 Achievements](https://www.dgs.edu.hk/achievements)、[CityU SALSA](https://www.cityu.edu.hk/en/sds/physical-education-wellness-and-sports/student-athletes-admission/salsa)、[EDB SNDAS](https://www.edb.gov.hk/tc/edu-system/postsecondary/policy-doc/SNDAS/) | 2026 届取录及现行计划名称 | 已核实；学校未公布逐计划去重后的学生人数 |
+| 42 | 第 6 章：2012 年匿名帖讨论 DGS 面试、功课压力和个体作息差异 | [教育王国 DGS 2nd in 讨论](https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2370111) | 2012 历史讨论 | 页面可见；身份及是否实际在读无法独立核实，不能代表现时家庭口碑 |

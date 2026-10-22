@@ -37,7 +37,7 @@
 
 ## 本地检查
 
-本报告为首批名单第 48 所。此前 `npm run build -- --webpack` 曾通过，生成 623 个静态页面；此前 `npm run audit:report-sources` 曾通过，覆盖 69 份报告／138 个简繁页面，当时可见来源链接与 JSON-LD 引用一致。官方结果与去向图片此前已在浏览器逐项核读；上述检查发生于本次第 7 章补写之前，不能作为新内容的验收。本次仅做 JSON 结构、章节／表格／FAQ、来源登记及 `git diff --check` 定向自检；新增分数行未做视觉验收或线上部署。
+本报告为冻结名单第 49 所。此前 `npm run build -- --webpack` 曾通过，生成 623 个静态页面；此前 `npm run audit:report-sources` 曾通过，覆盖 69 份报告／138 个简繁页面，当时可见来源链接与 JSON-LD 引用一致。官方结果与去向图片此前已在浏览器逐项核读；上述检查发生于本次第 7 章补写之前，不能作为新内容的验收。本次仅做 JSON 结构、章节／表格／FAQ、来源登记及 `git diff --check` 定向自检；新增分数行未做视觉验收或线上部署。
 
 
 ## 2026-10-18 官方来源复核
@@ -58,3 +58,10 @@
 ## 2026-10-20 名單第 49 校課程與結果頁續核
 
 直接重開[Island School 課程頁](https://island.esf.edu.hk/en/outstanding_education/curriculum/)、[Educational Outcomes](https://island.esf.edu.hk/en/outstanding_education/student_success/)及[大学去向页](https://island.esf.edu.hk/en/outstanding_education/university_destinations/)：课程页仍列 Y7–9 MYP、Y10–11 IGCSE／Upper MYP、Y12–13 DP 或 CP；结果页明确标 2025–2026 IBDP/IBCP 与 2024–2025 GCSE/IGCSE，年份边界与报告一致。本轮确认结果图和去向页入口，但未重新目视重读图片内所有比例；数字继续以 10 月 19 日逐图记录为依据，并保留考试人数、毕业人数和最终注册口径缺失。未发现当前页面文字与报告已核断言冲突。
+
+
+## 2026-10-22 最终复核与本地验收
+
+- 重新核对英基招生规则、2026/27 费用页及 Island School 课程、结果、去向页面；浏览器直接目视复核 2026 DP／CP 与大学目的地图。报告保持阶段课程、考试成绩项、路线和大学目的地分别统计；常规申请窗口、关联小学安排、收费年度与待披露分母均有明确边界。
+- 内容审计：8 章、8 张决策表、16 条 FAQ；独立评论样本有限且有年份、身份边界，没有将学校精选证言或旧个案写成家长共识。各专业与结果术语在首次使用处解释，升学判断注明数据不能支持个人录取概率。
+- 本地完整验收：定向验证器 1/1、0 错误／提醒；来源审计 77 份报告／154 个简繁页通过；TypeScript 通过；Webpack 构建 656 静态页；`git diff --check` 通过。浏览器简繁桌面第 6 章排版目视检查；390×844 视口设定下实际 innerWidth/Height 为 433×938px，简繁文档宽 416/417px，8/8 表格在自身约 385px 容器内横向滚动。未部署。

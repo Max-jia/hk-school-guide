@@ -34,7 +34,7 @@ KGV、[港岛中学](https://internationalschools.edb.gov.hk/en/schools/44.html)
 
 ## 本地检查
 
-本报告为冻结名单第 47 所。2026-10-19 收口检查：`node scripts/validate-reports.mjs kgv-esf-secondary` 通过（0 错误、0 提醒）；`npm run build -- --webpack` 生成 657 个静态页面且 TypeScript 通过；`npm run audit:report-sources` 通过（81 份报告／162 个简繁页面，页面来源链接与 JSON-LD 引用一致）；`git diff --check` 通过。简繁生产页均在 390×844 CSS px 实测，document/body 宽 373px，8/8 表格滚至末列，无整页横向溢出；浏览器控制台错误 0。检查为本地生产构建和浏览器实测，不代表线上部署。
+本报告为冻结名单第 48 所。2026-10-19 收口检查：`node scripts/validate-reports.mjs kgv-esf-secondary` 通过（0 错误、0 提醒）；`npm run build -- --webpack` 生成 657 个静态页面且 TypeScript 通过；`npm run audit:report-sources` 通过（81 份报告／162 个简繁页面，页面来源链接与 JSON-LD 引用一致）；`git diff --check` 通过。简繁生产页均在 390×844 CSS px 实测，document/body 宽 373px，8/8 表格滚至末列，无整页横向溢出；浏览器控制台错误 0。检查为本地生产构建和浏览器实测，不代表线上部署。
 
 
 ## 2026-10-18 官方来源复核
@@ -55,3 +55,12 @@ KGV、[港岛中学](https://internationalschools.edb.gov.hk/en/schools/44.html)
 ## 2026-10-20 名單第 48 校英基申請與成績入口續核
 
 直接重開[英基 2027/28 Year 7 中央招生頁](https://join-us.esf.edu.hk/admissions-primary-secondary/)，其正文列 2026-09-01 至 09-30 申請、對應 2016 年出生、遲交按類別與收件日列候補；同一頁頂端仍顯示舊 2025/26 banner，报告已以当届正文为准并保留旧 banner 提示。另重开[KGV Student Success](https://kgv.esf.edu.hk/en/outstanding_education/student_success/)：目录有 2026 BTEC 与 IBDP 结果链接；先前已确认名为 2026 的 BTEC 链接误指 May 2024 PDF，本轮仍未把它当 2026 结果。成绩 PDF 数字未于本轮重新提取；保留 10 月 19 日核读及分母边界，不称全表重核。
+
+
+## 2026-10-22 最终复核与本地验收
+
+- 重新打开英基招生流程、收费页、KGV Student Success 结果目录及 2026 IBDP 初步结果 PDF。英基招生流程仍列 2027/28 Year 7 对应 2016 年出生、9 月 1–30 日中央申请、逾期候补和席位出现后才邀请面试／评估；本次招生专页超时，未据此更新它的核查日期。费用页当前仍只列 2026/27：Year 7–11 HK$188,300、Year 12–13 HK$174,200。KGV 2026 IBDP PDF 明确 214 名完整 DP 考生、212 人获文凭、36.7 均分、7 人满分，分数段及 IBCP 结果仍按路线与分母边界解释。Student Success 目录仍同时把 BTEC Results 2026 与 BTEC Results 2024 指向同一链接，因此不将链接标题当作 2026 成绩证据。
+- 更新报告资料截至日期和相应来源核对日期；没有把未重开的评论、GCSE 页面、课程页标成今日核验。未发现需要改写现有数据口径的官方更新。
+- 定向验证器：`node scripts/validate-reports.mjs kgv-esf-secondary` 通过（1 份、0 错误、0 提醒）。
+- 来源审计：`node scripts/audit-report-sources.mjs` 通过（77 份报告、154 个简繁页面，来源链接与 JSON-LD 对齐）。
+- 本地页面：简体与繁体报告均显示 8 个编号章节和来源区，桌面章节表格均可见；未部署。

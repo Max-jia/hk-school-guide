@@ -1,6 +1,6 @@
 # 香港青年协会李兆基书院：逐项事实与来源账本
 
-**核对日：** 2026-10-19
+**核对日：** 2026-10-21
 **对象：** `src/content/reports/hkfyg-lee-shau-kee-secondary.json`<br>
 **方法：** 优先采用校方当届招生资料、收费与课程页面、学校年报；中学概览只作对应学年的背景资料。账本记录公开证据边界，不把缺项推算成事实。
 
@@ -9,7 +9,7 @@
 - **S1** 校方 2027/28 中一招生时间表：<https://www.hlc.edu.hk/pre-s1-admission>
 - **S2** 校方 2027/28 中一申请内容 PDF：<https://www.hlc.edu.hk/sites/default/files/sites/default/files/%E4%B8%AD%E4%B8%80%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B%E5%85%A7%E5%AE%B9.pdf>
 - **S3** 校方 2026 中一简介会 PDF：<https://www.hlc.edu.hk/sites/default/files/sites/default/files/%E7%B0%A1%E4%BB%8B%E6%9C%83%E5%85%A7%E5%AE%B9.pdf>
-- **S4** 校方收费网页（金额表头仍显示 2025-2026）：<https://www.hlc.edu.hk/tuition-fees>
+- **S4** 校方 2026/27 收费网页（2026-10-21 复核）：<https://www.hlc.edu.hk/tuition-fees>
 - **S5** 校方课程总览：<https://www.hlc.edu.hk/curriculum-overview>
 - **S6** 校方班级结构与语言政策：<https://www.hlc.edu.hk/class-structure-and-language-policy>
 - **S7** 校方 2024/25 年报：<https://www.hlc.edu.hk/sites/default/files/download/HLC%20Annual%20School%20Report%202024-25.pdf>
@@ -23,6 +23,18 @@
 - **S15** 培基书院 2025/26 中学概览：<https://www.chsc.hk/ssp2025/sch_detail.php?lang_id=2&sch_id=382>
 - **S16** 培基书院非本地课程：<https://www.spkc.edu.hk/non-local-curriculum/>
 - **S17** 教育局李兆基书院收费证明书（注明 2026-09-01 生效）：<https://applications.edb.gov.hk/schoolsearch/schoolfee/568287.pdf>
+
+
+- **S18** 校方 2025/26 中四至中六课程简介 PDF：<https://hlc.edu.hk/sites/default/files/20251003_Introduction%20of%20S4-6%20Curriculum.pdf>
+- **S19** 教育局立法会答复（Band 公开原则）：<https://www.edb.gov.hk/attachment/en/about-edb/press/legco/replies-to-fc/18-19-EDB-2-e1.pdf>
+- **S20** Big Exam 李兆基书院 Band 估值：<https://dse.bigexam.hk/en/ssp/school/380>
+- **S21** HK Tutor Link 李兆基书院 Band 估值：<https://hktutorlink.hk/secondary-schools/en/hkfyg-lee-shau-kee-college-56a9997>
+- **S22** Schoolbanding 李兆基书院 Band 估值：<https://www.schoolbanding.com/s/hkfyg-lee-shau-kee-college>
+- **S23** SchoolDays 李兆基书院 Band 估值：<https://www.schooldays.com.hk/secondary/香港青年協會李兆基書院>
+- **S24** MySchool.hk 李兆基书院学校概览：<https://www.myschool.hk/secondary-school/HKFYG-Lee-Shau-Kee-College>
+- **S25** 教育王国李兆基书院课堂及家长讨论：<https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3878910>
+- **S26** 教育王国 2026/27 中一候补讨论：<https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3886444>
+- **S27** 星岛头条上一届中一简介会报道：<https://www.stheadline.com/edu-insights/3520567/李兆基書院中一簡介會-逾1600家長取經-校長所有申請人獲安排面試>
 
 ## 逐项主张
 
@@ -107,3 +119,19 @@
 5. 2024/25 年报所载计划设施在核对日的实际完成状态。
 
 2026-10-18 再开 S1 日程、简介会 PDF、2026/27 学费及 Fee Remission PDF：日期、申请状态、场次、费用与 AFI 标准均未见变化；报告记录的实体简介会登记时窗、线上无需登记以及减免每年重申均与原文相符。Fee Remission 指引 6.3–6.4 另明确适用的收入期间为申请日前 12 个月、2026/27 合资格医疗费用上限 HK$24,250。检查公开考试结果和校务报告索引，未见新增 2026 DSE/IAL 完整成绩或分母资料；仍不以证书领取通知替代成绩表。
+
+
+## 2026-10-21：收费、IAL 门槛、Band 与家长讨论增量复核
+
+| # | 报告主张 | 证据／判定 | 状态与边界 |
+|---|---|---|---|
+| 70 | 校方 2026/27 收费页现标 Tuition Fees (2026-2027)，教育局证明确认金额自 2026-09-01 生效 | S4、S17 | 已核；旧版“校方收费页标题仍为 2025-2026”结论已由本次复核纠正。2027/28 价格未公布。 |
+| 71 | 校方 2025/26 课程简介列 IAL 申请门槛：中三英文、数学、科学各至少 50%；超额按总平均 40%、数学与科学 60%筛选 | S18 | 已核 PDF 第 9 页；仅陈述该份年度说明，2027/28 是否沿用待问校方。达到门槛不等于获准入轨。 |
+| 72 | 教育局不公布学生或学校 Band 排名；第三方估值多见 1C、亦有 1B，另有平台只标 Band 1 | S19–S24 | 可表述为“坊间 Band 1 参考，细分有 1B/1C 分歧”；平台方法和资料独立性不明，不视作独立共识投票，也不作学校官方评级或取录概率。直资学校不参加统一派位，估值不能等同申请者生源分组。 |
+| 73 | 匿名家长讨论出现活动/讨论课、较少抄写、分组、数学难度等个别正反经历 | S25 | 2023–2024 单一论坛串；身份未核，含未读满一个学期的家长自述、二手经历和互相质疑意见。只转成访校问题，不外推成当前常态、教师流动结论或满意度排名。 |
+| 74 | 2026-02 讨论串有少量申请者自述获候补通知 | S26 | 不推算候补范围、申请分母、录取概率及最终注册比例。 |
+| 75 | 上一届简介会报道中的现场参与、名额与筛选说明不是 2027/28 入学数据 | S27 | 仅作为历史招生热度与背景；1600 现场家长、线上观看人数及约 150 学额不能转换为申请人数、竞争比或现届录取率。 |
+
+### 持续缺项更新
+
+IAL 当届申请与超额筛选条件已有 2025/26 官方说明，故发布前待核项由“是否存在门槛信息”改为“2027/28 是否沿用、当年开班及跨年级转轨规则”。其他未公布的本届学额、费用、考试分母与去向继续保留。公开家长口碑样本仍然太少，报告不再凑 Top 5，而用带证据边界的个案摘要。

@@ -81,3 +81,18 @@
 | 40 | 舊屆紙本申請列 DP 表、小五及小六上學期成績、出生日期與香港永久居民身分證明、適用獎項／證書及兩個貼郵票回郵信封；符合平台條件的家長可按校方要求合併指定文件為 PDF 上傳；第 2 章 | [H 校方英文原頁](https://ylmass.edu.hk/web/en/s1-admission)，2026 年 9 月入學 | 已直接核對原頁。校方說收集資料僅用於中一招生，整個程序完成後銷毀，但沒有給具體日期；2027/28 文件、郵資及私隱安排須重新查核。 |
 
 英文版 H 原頁第 108–148 行可直接核對先前只從搜尋索引看到的 50 席、初篩及最終權重、兩輪英語與粵語面談、申請文件和個人資料聲明。中文版仍回傳 403，不影響上述英文原頁作為校方直接證據；兩頁均屬 2026 年入學舊輪次。
+
+## 2026-10-21 动态核实增补
+
+| # | 关键断言及报告位置 | 来源与年度 | 核对状态及限制 |
+|---|---|---|---|
+| 41 | 多个第三方平台把元朗商会中学估算为 Band 1C；第 1、8 章 | [SchoolBanding](https://www.schoolbanding.com/s/yuen-long-merchants-association-secondary-school)、[Big Exam](https://dse.bigexam.hk/en/ssp/school/425)、HK Tutor Link，2024–2026 | 第三方估算的标签收敛，不是教育局评级或学生个人派位组别；报告明确为非官方参考，不推录取概率。 |
+| 42 | 2025/26 外评名单列出该校，教育局刊载校长外评后记；第 6、8 章 | [教育局外评名单](https://www.edb.gov.hk/attachment/tc/sch-admin/sch-quality-assurance/reports/esr-report/2025_esr_report.html)、[校长后记](https://www.edb.gov.hk/tc/sch-admin/sch-quality-assurance/relevant_article_press_release/20260915_article.html)，2025/26 | 后记为校长对交流重点的转述；不等同完整外评报告或教育局评级。已核校方计划／报告索引未见全文，不据此断言全文不存在。 |
+| 43 | 2026 年单一校园事件报道并列家长指称、校方回应及教育局跟进；第 6、8 章 | [星岛头条](https://www.stheadline.com/edu-news/3566070/%E8%A2%AB%E6%8C%87%E5%86%B7%E8%99%95%E7%90%86%E5%AD%B8%E7%94%9F%E9%81%AD%E6%AC%BA%E5%87%8C-%E5%85%83%E6%9C%97%E5%95%86%E6%9C%83%E4%B8%AD%E5%AD%B8%E6%8C%89%E8%AD%A6%E6%96%B9%E5%BB%BA%E8%AD%B0%E6%9A%AB%E5%81%9C%E6%A0%A1%E5%85%A7%E8%AA%BF%E6%9F%A5)，2026-04 | 单一媒体资料，不裁定责任、调查结论或全校情况；未找到公开后续结论，报告只建议家长向校方核实当前可公开状态与保护流程。 |
+| 44 | 教育王国有一条 2023 年匿名讨论，含负面担忧及一则开放日正面印象；第 6 章 | [教育王国讨论串](https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3878074)，2023 | 身份和现况未核实；为单一旧主题，不构成口碑共识，不能支持好评／差评 Top 5。 |
+| 45 | 2026 DSE 全科 5+ 24.5%、2+ 97.6%；第 1、4、8 章 | [校方 2026 HKDSE 公告](https://www.ylmass.edu.hk/web/tc/activity/outstanding-massians-hkdse-2026)，2026 | 复核原值无变化；校方未列跨科总报考人次及逐科人数，不推为学生达标比例。 |
+| 46 | 2027/28 新届中一细则尚未在已核招生入口出现；第 2、8 章 | [校方主页](https://www.ylmass.edu.hk/web/tc)及 [2026/27 英文招生原页](https://ylmass.edu.hk/web/en/s1-admission)，核对日 2026-10-21 | 只陈述所查入口和当前可读文件；2026/27 旧轮次学额、评分和面谈不得外推至 2027/28。 |
+
+## 2026-10-21 页面结构验收
+
+第 6 章曾出现三条三格数据行，但表头为两格；已把证据限制与家庭行动合并回第二格，并将表格设为手机可横向阅读的宽表。最终表头与全部九行均为两格。验收证据见 [`yuen-long-merchants-association-secondary-content-audit-2026-10-17.md`](yuen-long-merchants-association-secondary-content-audit-2026-10-17.md)。

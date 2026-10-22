@@ -63,3 +63,10 @@
 - 校车、考试、课本、午餐、住宿营、活动及资本权益相关个人账单。
 
 本轮完成官方网页、教育局简介、独立检查 PDF 与报告文字的定向复核；未运行构建，也未做新增内容的浏览器目视验收。
+
+## 2026-10-21 动态资料补核
+
+- 直接重开校方 [Application Timeline](https://www.harrowhongkong.hk/his/admissions/application-timeline/)、[Fees](https://www.harrowhongkong.hk/his/admissions/fees/)、[Public Exam Results](https://www.harrowhongkong.hk/his/theschool/examination-results/) 与 [Boarding](https://www.harrowhongkong.hk/his/pastoral-boarding/boarding/) 页面。2027/28 常规申请截止日 2026-10-10 已过；2026/27 中学学费及寄宿费用与原报告一致；2026 GCSE/A-Level 比例仍未见分母，A-Level 表格与正文仍分别列出 77%/76% A*–A、38%/35% A*，没有找到校方解释；Fees 页周日 19:00 与 Boarding 页 20:00 的寄宿返校时间冲突仍存在。
+- 新增教育王国 [Harrow International HK 家长讨论](https://m.edu-kingdom.com/post.php?closed=0&fid=43&page=1&tid=3886154)（2025-11 至 2026-01）。匿名发言者自述低年级与高年级个人体验；身份和年级无法独立核实，不能代表整体或现届。把相关内容作为家庭访校时可追问的线索，不归纳成口碑共识。
+- Agent Reach 的公开社交检索因本机 DNS 失败而没有返回结果；因此不把“没有更多社交评论”当作研究结论。当前社会口碑证据仍有限。
+- 更新报告第 1、6、7 章日期注记，避免将本轮网页复核日期与教育局目录、2025 BSO 检查及较早比较学校资料的统计时点混为一谈。

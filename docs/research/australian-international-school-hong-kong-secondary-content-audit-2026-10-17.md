@@ -77,3 +77,10 @@
 - 定向报告验证：`node scripts/validate-reports.mjs --report australian-international-school-hong-kong-secondary` 为 1 份、0 错误、0 提醒。AISHK 19 项来源在繁简构建页的可见来源区与 JSON-LD 引用相符；不把全站来源登记数量描述成逐项重开核实。
 - `npm run build -- --webpack` 成功，生成 656 个静态页面；`git diff --check` 通过。窄屏浏览器视口 override 设为 390 px（该浏览器报告 `innerWidth` 为 433 px）：文档宽 416 px，没有页面级横向溢出；八个表格各在 385 px 宽的独立 `overflow:auto` 区域中横向滚动，表格宽约 620 px。桌面视口检查亦无页面级横向溢出；8 章、8 表、19 项外部来源链接均可见，浏览器 console error 为零。
 - 本轮本地审阅预览为 `http://127.0.0.1:3101/cn/reports/australian-international-school-hong-kong-secondary`。验收范围为该报告和对应来源；没有部署。
+
+
+## 2026-10-22 最终复核与本地验收
+
+- 重新核对招生与 2026 学费、Admissions Information、Year 7–10 与高中课程、Class of 2025 成绩、校方新闻和 Teaching and Learning 页面。2026 日历年收费与资本征费、申请全年收件与 Year 11/12 限制、HSC／IBDP 两条路线、ACER ISA 2027 阶段测评和教学支援资料均与报告一致；校方最新量化成绩仍标为 Class of 2025。Secondary School 页面另出现“45% 至少一科 Band 6”但无届别标签，报告未将它混入 2025 届数据。
+- 统计口径复核维持：HSC Band 5/6 是成绩项比例，ATAR 比例是学生口径，IB 数字为另一组考生；各路线人数、精确分母和最终大学注册人数未公开。没有把校方学生故事或零条评论推作整体家长口碑。
+- 报告定向验证 1/1、0 错误／提醒；全局来源审计 77 份／154 个简繁页面通过；TypeScript 通过；Webpack 构建 656 静态页；`git diff --check` 通过。简繁桌面与窄视口 DOM 验收：8 章、8 张表及来源区正常，文档无页面级横向溢出，表格在内部横滚。未部署。

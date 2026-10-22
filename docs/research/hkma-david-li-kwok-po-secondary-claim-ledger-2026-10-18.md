@@ -75,3 +75,14 @@
 - 本轮只做内容与来源证据核验；未运行构建、测试或浏览器复验。
 - 2026-10-18 再次重开 H1、H2、H3、H4、H6：招生日期与申请链接待公布状态、2026/27 六级学费及 AFI 门槛、2026 DSE 百分比均未见变化。校方当前考试结果索引仅列 2026 HKDSE；没有找到 2026 IAL 成绩公告，不将其写成已公布结果。
 - 2026-10-18 重开校方学校文件索引并直接核读《Annual School Plan 2025/26》第 2–6 页；新增 DLKP-43，明确计划目标、70% 校本问卷目标和结果/个别服务边界。
+
+## 2026-10-21 supplemental verification
+
+| ID | Report position / claim | Source and scope | Boundary |
+|---|---|---|---|
+| DLKP-44 | 校方课程页明确除中文、第二语言中文、中国历史及供非华语学生修读的中国历史外，其余科目以英语授课；中四至中六公民与社会发展可选中文或英语，所选语言用于公开考试 | H2 reopened 2026-10-21 | 逐科当届课表及个别学生课程组合仍应向校方核实；课堂授课语言不等于非正式校园交往语言 |
+| DLKP-45 | 校方当前插班页列明 2026/27 学年不招收插班生 | [校方插班招生安排](https://www.hkmadavidli.edu.hk/admission/admission_to_other_forms/) checked 2026-10-21 | 仅适用 2026/27，不能推断 2027/28 是否开放 |
+| DLKP-46 | 2025、2024 与 2016 年网上家长讨论提供英语／中文适配、人员稳定和活动体验等个案线索 | [2025 教育王国讨论](https://www.edu-kingdom.com/forum.php?extra=page%3D1&mod=viewthread&page=11&tid=3885016)、[2024 教育王国讨论](https://www.edu-kingdom.com/forum.php?extra=page%3D1&mod=viewthread&page=2&tid=3881723)、[2016 Baby Kingdom 个案](https://www.baby-kingdom.com/forum.php?mod=viewthread&tid=18281291) | 匿名/自述样本少，留言存在不同意见；身份、岗位数量与原因未核实，不能作为官方规则、现况或整体口碑结论 |
+
+- 2026-10-21 通过校方招生、课程、费用、成绩、年报、学费减免与年度计划页面复核；当届招生日期、2026/27 学费、AFI 与 2026 DSE 数值未见改变。招生入口仍未公布；2026 DSE 分母、2027/28 学费、IAL 分路线结果仍未公开。
+- 口碑平台查找覆盖教育王国、Baby Kingdom、Schoolbanding、Facebook、Threads 与小红书搜索尝试。小红书搜索因本地 CLI 缓存权限错误失败，未尝试改权限；Facebook/Threads 未找到可核验的具体评论。正文仅采用三条有日期的讨论作访校提问线索，不凑好评/差评榜单。

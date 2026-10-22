@@ -53,3 +53,16 @@
 
 | 35 | 第 4、8 章及 Plan B：2026/27 放榜後中一候補由 2026-07-07 起至額滿；無空缺可暫停。小五全年及小六上學期中英數至少 A−、小四至小六操行至少 B+；可曾獲其他校位或非本校網；親身申請及中英數筆試/中英文面試 | [英皇書院放榜後中一候補指引](https://www.kings.edu.hk/sites/default/files/download/Guidance%20Notes%20on%20Application.pdf)，2026/27 入學輪次；2026-10-19 重核校方招生入口 | 已核中文版第 1 頁及英文版第 2 頁；這是放榜後有空缺時的歷史補位程序，不是常規 DP 或 2027/28 保證；校方可在額滿時暫停，落選者不獲通知。 |
 | 36 | 第 6 章：2026-03 跨區選校討論串共 19 條評論；其中一位留言者自述其子當時就讀英皇中二、經自行分配入讀並提及同學來自多區 | [中學排名論壇原討論串](https://schoolbanding.com/forum/post/237)，2026-03 | 只證明該自述出現在討論串；留言者身份、學生情況與陳述未獨立核實。不能代表全校家長意見、學生地域分布或取錄機率；僅作訪校問題線索。 |
+
+
+## 2026-10-20 补充核验
+
+| # | 关键断言及报告位置 | 来源与年度 | 核对状态与限制 |
+|---|---|---|---|
+| 37 | 第 1、8 章：英皇书院坊间参考定位为 Band 1；细分 Band 1A 有两家第三方 2025 估算，另有平台只列宽档 Band 1 | [Big Exam 校页](https://dse.bigexam.hk/en/ssp/school/419)、[香港导师联会校页](https://hktutorlink.hk/secondary-schools/king-s-college-004eb4c)、[StarSchools 校页](https://starschools.hk/en/schools/kings-college)，2026-10-20 直接检索/读取 | 已核各页原文。Big Exam 标示 2025 Band 1A（High accuracy）；香港导师联会列 2025 Band 1A；StarSchools 只列 indicative Band 1。平台间方法与公开 DSE 底层数据的独立性未充分核实，不把估值当作多次独立测量或官方评级。 |
+| 38 | Band 1/1A 为家长常用的学校学术定位，不等于教育局发给学校的官方等级；学生派位组别与学校估值须区分 | [教育局立法会答复](https://www.edb.gov.hk/attachment/en/about-edb/press/legco/replies-to-fc/EDB-2-e1.pdf)，并对照 [Big Exam Banding 方法说明](https://dse.bigexam.hk/en/ssp/bandRank) 与 StarSchools 校页，2026-10-20 | 官方答复与平台自述说明派位组别面向学生、学校 Band 是坊间/第三方估算。已在第 1、8 章解释，不能用来推算个人派位组别或入读机率。 |
+| 39 | 第 6 章：2022 年英皇与圣保罗书院比较讨论反映家长会比较男校选择、DSE/IAL、费用及公开成绩，并有留言建议读学校报告、参加开放日 | [教育王国讨论串](https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3867165&page=2)，2022-05 至 2022-11 的留言；2026-10-20 检索复核 | 已核到原讨论及具体留言。内容为匿名家长讨论且年份较早、意见不一，不代表目前口碑；报告仅将问题转成当届选科、活动、路线和开放日核查事项。 |
+| 40 | 第 6 章：2026 年 3 月跨区选校讨论有 19 条留言，其中一名留言者自述其子读英皇中二及跨区同学情况 | [中学排名论坛讨论串](https://schoolbanding.com/forum/post/237)，2026-03；2026-10-19 已核 | 只确认留言存在；身份及说法无法独立核实，不能推导学生地域分布、家长共识或入学概率。与第 39 项合并用于访校问题，不用于总体评价。 |
+
+
+| 41 | 第 2、4、8 章：英皇招生入口仍列 2026/27 中一候補與上一輪 DP 文件；2027/28 校本 DP 細則未見公布；2026/27 課程頁列 S1–S6 每級四班、S3 綜合科學及 S6 報考 HKDSE；教育局 2027/28 DP 申請期為 2027-01-04 至 01-18 | [英皇招生入口](https://www.kings.edu.hk/en/admission)、[校方 2026/27 DP 時程](https://www.kings.edu.hk/sites/default/files/download/Application%20Schedule.pdf)、[校方 2026/27 課程頁](https://www.kings.edu.hk/en/school-curriculum-2025-26)、[校方報告索引](https://www.kings.edu.hk/en/school-reports-plans)、[教育局 SSPA 時程](https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/)，2026-10-21 重開核對 | 校方頁仍未公布 2027/28 校本名額、評核及面試；2026/27 課程與候補資料僅限原標示年度。教育局共同時程不是英皇校本錄取規則；不以舊屆 43 個 DP 名額或權重推算新屆。年報索引仍最新列 2024/25，未找到更新報告。 |

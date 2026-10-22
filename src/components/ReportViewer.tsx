@@ -129,25 +129,25 @@ export default function ReportViewer({
         <div className={`report-page__content mx-auto max-w-[960px] px-4 pb-24${editorialReport ? " report-editorial__content" : ""}`}>
         <section className="report-contact-cta" aria-label={z("微信及 WhatsApp 咨询")}>
           <div className="report-contact-cta__copy">
-            <p className="report-contact-cta__eyebrow">港学荟 · 家长择校支持</p>
-            <h2>如有深度择校及插班申请需求，扫码咨询！</h2>
+            <p className="report-contact-cta__eyebrow">{z("港学荟 · 家长择校支持")}</p>
+            <h2>{z("如有深度择校及插班申请需求，扫码咨询！")}</h2>
           </div>
           <div className="report-contact-cta__channels">
             <div className="report-contact-cta__channel">
               <Image
                 src="/brand/wechat-qr.jpg"
-                alt="微信二维码：扫码添加为朋友"
+                alt={z("微信二维码：扫码添加为朋友")}
                 width={630}
                 height={630}
                 unoptimized
                 className="report-contact-cta__qr"
               />
-              <span>微信</span>
+              <span>{z("微信")}</span>
             </div>
             <div className="report-contact-cta__channel">
               <Image
                 src="/brand/whatsapp-qr.jpg"
-                alt="WhatsApp 联系二维码"
+                alt={z("WhatsApp 联系二维码")}
                 width={515}
                 height={515}
                 unoptimized

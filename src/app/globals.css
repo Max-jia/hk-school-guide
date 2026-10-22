@@ -1151,6 +1151,10 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
   .report-page--editorial .chapter-rail h2 {
     font-size: 27px;
   }
+  .report-page--editorial .chapter-rail .cal-badge {
+    display: table;
+    margin-top: 10px;
+  }
   .report-page--editorial .chapter-rail .num {
     display: inline-flex;
     margin: 0 10px 0 0;

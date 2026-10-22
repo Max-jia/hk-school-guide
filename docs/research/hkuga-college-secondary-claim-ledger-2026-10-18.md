@@ -68,3 +68,11 @@
 重开校方 [2027/28 中一申请指引](https://www.hkugac.edu.hk/engage/as-a-student/application-guidelines) 与 [FAQ](https://www.hkugac.edu.hk/engage/as-a-student/faq)：申请期、HK$75 申请费、2027-01-30 首轮面试、4 月底前通知、198 个总学额／80 个公开名额、40%／15%／40%／5% 评核比重及签署放弃官津学位承诺的条件均与账本一致。申请系统仍未开放，正式承诺书及系统内材料清单待开放后复核；这次只确认网页文本，未完成桌面或手机视觉验收。
 | 48 | 校方公布 2027/28 中一招生信息日于 2026-12-05 08:30–12:30 举行；第 4、8 章 | [HKUGA College Admission Seminars](https://www.hkugac.edu.hk/engage/as-a-student/admission-seminars)；[2027/28 S1 Admission Seminars](https://www.hkugac.edu.hk/explore/our-updates/what-s-on/2027-2028-s1-admission-seminars) | 校方当前招生信息日页；核对日 2026-10-18 | 信息日有学习展示、校园导赏和三场招生讲座；讲座登记与免登记活动须区分，详见第 49 项。 |
 | 49 | 三场招生讲座须于 2026-11-02 至 11-16 16:00 登记，门票电脑随机分配，11-23 电邮通知；每名学生最多一位家长陪同。学习展示 08:30–12:30、校园导赏 08:30–12:00 均无需预先登记；第 4、8 章 | [HKUGA College Admission Seminars](https://www.hkugac.edu.hk/engage/as-a-student/admission-seminars) | 校方 2027/28 招生信息日细则；活动 2026-12-05；核对日 2026-10-18 | 讲座三场分别为 08:45–09:30、10:00–10:45、11:15–12:00。登记随机分配而非先到先得；尚未开放登记，不能推断余位或入场资格。 |
+
+## 2026-10-20：专家表达、Banding 与家庭体验补充
+
+- Big Exam 2026 页面估为 Band 1B–1A；SchoolBanding 2026 列为 Band 1A。教育局没有官方学校 Band 评级；两站算法及底层资料是否独立没有充分公开，故正文写“Band 1 范围，细分约 1A–1B，未形成一致的细分共识”，不将网页数量当作独立交叉验证。
+- 新读校方《Annual School Report 2024–25》及《School Development Plan 2021–2024》。旧计划把高年级高期望、学生压力及情绪稳定列为风险；较新年报称压力干预后若干校内指标改善，但仍点出女生情绪需要和自律关注。报告未提供完整调查分母，正文按校方自评呈现，不称为独立调查或已完全解决。
+- 复核教育王国港同升中讨论串（2023-11）：一位自称外校入读家长谈及孩子觉得英数要求高、课程较深，之后称压力不算大且喜欢校园生活。身份未核；只作一个匿名个案和访校问题线索，不总结整体口碑，也不凑 Top 5。
+- 第 3 章把 332A、公民与社会发展科“达标”、科次、IAL 科目比例、JUPAS offer 与 UGC 资助学士课程逐项解释；保留 2025/2026 两届DSE变化，同时注明分母缺失及不能断言趋势。第 1、6、8 章改为条件式家庭匹配、校方身心健康自评和具体行动建议。
+- 本轮为内容编辑和来源补充；验证、渲染及浏览器验收结果见 `hkuga-college-secondary-editorial-acceptance-2026-10-20.md`。

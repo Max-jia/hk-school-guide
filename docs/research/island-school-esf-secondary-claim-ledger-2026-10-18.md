@@ -1,6 +1,6 @@
 # 英基港岛中学：逐项断言证据账本
 
-核对日：2026-10-18（动态复核续记至 2026-10-19）。对应 `src/content/reports/island-school-esf-secondary.json`。账本记录可复核的报告主张、官方来源与统计边界；结果图像由校方于 2026-10-17 直接发布，本轮重核官方入口页并读取 2026-07-08 校方新闻新增的 DP 高分人数；未把图表统计扩写为个人录取或升学概率。
+核对日：2026-10-18（动态复核续记至 2026-10-22）。对应 `src/content/reports/island-school-esf-secondary.json`。账本记录可复核的报告主张、官方来源与统计边界；结果图像由校方于 2026-10-17 直接发布，本轮重核官方入口页并读取 2026-07-08 校方新闻新增的 DP 高分人数；未把图表统计扩写为个人录取或升学概率。
 
 ## 来源索引
 
@@ -173,3 +173,10 @@
 - 2026 DP／CP、2025 IGCSE 和 2026 目的地仍按校方原图及此前人工核读记录；没有新的分母，不反算人数、录取率或最终注册率。学校 Band 1A／1B 标签不适用。
 - 独立体验只保留[2023 年匿名前家长的中文经历](https://www.reddit.com/r/HongKong/comments/1603kpk/if_your_second_language_english_are_you_still/)和[2022 年《英文虎报》新校舍首日交通报道](https://www.thestandard.com.hk/news/article/44931/ESF-school-under-fire-for-new-campus-snags)，两者均不能代表 2026 现届家长共识。此前记录的家校会通讯链接本轮未能稳定重开，故不用于最终正文。
 - 比较校课程按[西岛中学](https://wis.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview/years-12-13/)、[南岛中学](https://sis.esf.edu.hk/en/outstanding_education/curriculum/academic_pathway/)及[啓新书院](https://rchk.esf.edu.hk/en/outstanding_education/curriculum/curriculum_overview)校方现行页面，费用按英基同一学年表；不把同体系学校的录取机会视为一样。
+
+
+## 2026-10-22 官方页面与原图复核
+
+- 重新打开英基招生规则、费用页，以及港岛中学现行课程、2025–2026 IBDP／IBCP 成绩页和 2026 大学去向页。招生规则仍写明 2027/28 Y7 对应 2016 年出生，9 月 1–30 日为中央申请期，逾期按收件日期列候补，有空位才邀请评估；费用页仍仅显示 2026/27 收费。校方结果页标明 IBDP／IBCP 为 2025–2026 结果、IGCSE 为 2024–2025。
+- 在浏览器重新目视核对 2026 成绩图：DP 100%通过、最高 45、均分 36.6、40+ 28%、35+ 68%、30+ 93%、6 人获双语文凭；CP 100%通过、76%获 Distinction 或以上。图中仍无 DP／CP 考生总数，故维持分母限制。另目视打开 2026 去向图，继续保留地区比例与分类，不将目的地百分比解释为录取率。
+- 本轮未找到官方页面公开 2027/28 具体外部年级席位、路线人数或各目的地最终入读分母；不作推算。
