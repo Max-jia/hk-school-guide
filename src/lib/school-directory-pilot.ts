@@ -1,3 +1,4 @@
+import { classifyKindergarten } from "./kindergarten-classification";
 import type { Locale } from "@/lib/i18n";
 import reportMeta from "@/content/report-meta.json";
 import allRegisteredSchoolDirectory from "@/content/all-registered-school-directory.json";
@@ -140,6 +141,9 @@ export type PilotSchool = {
   establishedYear?: string;
   sponsoringBody?: string;
   schoolType: string;
+  schoolCategories?: string[];
+  curriculumType?: string;
+  classificationSources?: SchoolSource[];
   gender?: string;
   religion?: string;
   schoolNet?: string;
@@ -5234,6 +5238,7 @@ const uniqueDirectoryRecords = [...directoryRecords.reduce((records, school) => 
 }, new Map<string, PilotSchool>()).values()];
 export const DIRECTORY_SCHOOLS: PilotSchool[] = uniqueDirectoryRecords.map((school) => ({
   ...school,
+  ...classifyKindergarten(school),
   reportSlug: school.reportSlug && publishedReports.has(school.reportSlug) ? school.reportSlug : undefined,
   relatedReportSlugs: school.relatedReportSlugs?.filter((slug) => publishedReports.has(slug)),
 }));

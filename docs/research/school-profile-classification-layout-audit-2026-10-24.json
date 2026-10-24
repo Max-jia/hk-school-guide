@@ -1,0 +1,183 @@
+{
+  "total": 958,
+  "officialClassified": 912,
+  "counts": {
+    "私立": 174,
+    "非牟利": 761,
+    "國際／非本地課程": 145,
+    "類別待核實": 23
+  },
+  "samples": [
+    {
+      "slug": "st-catherines-international-kindergarten",
+      "type": "私立獨立",
+      "curriculum": "本地",
+      "categories": [
+        "私立"
+      ]
+    },
+    {
+      "slug": "st-james-settlement-belcher-kindergarten-564354",
+      "type": "非牟利",
+      "curriculum": "本地",
+      "categories": [
+        "非牟利"
+      ]
+    },
+    {
+      "slug": "international-college-hong-kong-hong-lok-yuen-kindergarten-section-230944",
+      "type": "非牟利",
+      "curriculum": "非本地",
+      "categories": [
+        "非牟利",
+        "國際／非本地課程"
+      ]
+    }
+  ],
+  "unconfirmed": [
+    {
+      "id": "630640",
+      "name": "香港民生幼稚園(鰂魚涌)"
+    },
+    {
+      "id": "231398",
+      "name": "耀榮中英文幼稚園"
+    },
+    {
+      "id": "524204",
+      "name": "香海正覺蓮社佛教林黃明慧幼稚園"
+    },
+    {
+      "id": "156728",
+      "name": "天后中英文幼稚園（二校）"
+    },
+    {
+      "id": "539554",
+      "name": "香港浸信會聯會寶田幼稚園"
+    },
+    {
+      "id": "156426",
+      "name": "崇基幼稚園"
+    },
+    {
+      "id": "528811",
+      "name": "真理浸信會恩典幼稚園"
+    },
+    {
+      "id": "157295",
+      "name": "中華基督教會沙田堂博康幼稚園"
+    },
+    {
+      "id": "519448",
+      "name": "青衣商會石蔭幼稚園"
+    },
+    {
+      "id": "578126",
+      "name": "柴灣浸信會學前教育中心呂明才幼稚園(小西灣)"
+    },
+    {
+      "id": "156515",
+      "name": "天后中英文幼稚園"
+    },
+    {
+      "id": "311650",
+      "name": "香港路德會觀塘幼稚園"
+    },
+    {
+      "id": "158070",
+      "name": "青衣商會幼稚園"
+    },
+    {
+      "id": "550035",
+      "name": "香港幼稚園協會幼兒學校"
+    },
+    {
+      "id": "535583",
+      "name": "浸信會華恩幼稚園"
+    },
+    {
+      "id": "158828",
+      "name": "大埔商會幼稚園"
+    },
+    {
+      "id": "322580",
+      "name": "鑽石山浸信會美欣幼稚園"
+    },
+    {
+      "id": "600350",
+      "name": "英基國際幼稚園(東涌)"
+    },
+    {
+      "id": "517712",
+      "name": "雅各中英文幼稚園（深水埗校）"
+    },
+    {
+      "id": "215929",
+      "name": "卓基英文學校暨幼稚園"
+    },
+    {
+      "id": "565687",
+      "name": "美雅幼兒園"
+    },
+    {
+      "id": "564761",
+      "name": "宏福幼稚園"
+    },
+    {
+      "id": "566020",
+      "name": "明愛啓幼幼兒學校"
+    }
+  ],
+  "sourcePageChecks": [
+    {
+      "campus": "2151200001",
+      "學校類別": "私立獨立",
+      "課程類別": "本地"
+    },
+    {
+      "campus": "2309440001",
+      "學校類別": "非牟利",
+      "課程類別": "非本地"
+    },
+    {
+      "campus": "5643540001",
+      "學校類別": "非牟利",
+      "課程類別": "本地"
+    },
+    {
+      "campus": "1516960001",
+      "學校類別": "私立獨立",
+      "課程類別": "非本地"
+    },
+    {
+      "campus": "3258640001",
+      "學校類別": "非牟利",
+      "課程類別": "本地及非本地"
+    }
+  ],
+  "sources": {
+    "kg-type-list-local.html": "e71095b0333f42c717a8137fc41ac00795af18f15ec0a8cd742fd1ea38ad5134",
+    "kg-type-list-non-local.html": "320f8e783b9f259fb19911ee76b99fc3f61b543c7989595943222aa6bcf6ca8c",
+    "kg-type-list-pi.html": "28a0ce90508aea9e04e5614837f708316d89d1f124b3b45bcb237a6dfb1d6a25",
+    "kg-type-list-npm.html": "f9e02bb4c86821b019446e22cd92027edf342e9b2f23ea44045b084aa7923da3",
+    "kg-type-list-mixed.html": "81625d93b3e9e4c5d8ddea1b96b9a7cf34a1abd3bdeacb48dac8ae7e4a2309fc"
+  },
+  "checks": {
+    "typecheck": "pass",
+    "scopeEslint": "pass",
+    "desktopMobileLocalePageChecks": 14,
+    "horizontalOverflow": false,
+    "filterInternational": 145,
+    "filterPrivate": 174,
+    "loadMore": [
+      50,
+      100
+    ],
+    "searchWithPrivateFilter": "国际英文: 1"
+  },
+  "published": false,
+  "productionBaselineDeployment": "dpl_4QKCmRHN8EFxYoz6qzT36qyHhdeN",
+  "productionBaselineCommit": "5b8c6fcc56802228f15d6fa1b662b4b0cbb433a2",
+  "protectedContentDiff": "none",
+  "publicationStatus": "release-prepared"
+}

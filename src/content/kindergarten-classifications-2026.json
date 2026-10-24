@@ -1,0 +1,3748 @@
+{
+  "checkedAt": "2026-10-24",
+  "academicYear": "2026/27",
+  "sources": {
+    "非牟利": "https://kgp2026.kindergartenprofile.com/?school-category=non-profit-making",
+    "私立獨立": "https://kgp2026.kindergartenprofile.com/?school-category=private-independent",
+    "本地": "https://kgp2026.kindergartenprofile.com/?curriculum-type=L",
+    "非本地": "https://kgp2026.kindergartenprofile.com/?curriculum-type=NL",
+    "本地及非本地": "https://kgp2026.kindergartenprofile.com/?curriculum-type=Both"
+  },
+  "campuses": {
+    "1314400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1314660001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1316360003": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1320470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1321520001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1327300001": {
+      "nature": "非牟利",
+      "curriculum": "本地及非本地"
+    },
+    "1328700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1328960001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1330190001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1332800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1335820001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1337440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1337790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1337870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1338500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1381770001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1388350003": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1508430001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1508600002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1508600003": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1510090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1511570001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1512030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1514240001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1515640001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1516290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1519470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1522690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1524980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1525790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1529780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1530360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1530870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1534510001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1539070001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1539310001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1546010001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1552330002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1555600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1556240001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1557050001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1557050002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1561910001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1562050001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1562300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1562720001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1564930001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1566980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1567440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1567520001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1567790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1567950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1568410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1569300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1569490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1569730001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1569810001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1570310001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1570660001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1570740001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1570900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1572360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1572520001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1572790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1573090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1573760001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1573840001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1574060001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1574490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1574730001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1574900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1575030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1575110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1575970001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1576270001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1576270002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1576430001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1576780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1577320001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1577910001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1578130001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1578560001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1578640001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1580540001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1580620001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1581190001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1581600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1582080001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1582320002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1582400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1582590001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1583130001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1583210001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1583640001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1583800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1584100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1584290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1584530001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1584610001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1584700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1584880001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1584960001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585340001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585770001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585850001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1585930001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1586230002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1586400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1586580001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1586740001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1587040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1587200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1587390001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1587470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1587710003": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1587800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1588360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1588520001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1588600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1588870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1588950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1589090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1589760001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1589840001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1590000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1590180001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1590260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1590340001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1590420001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1590500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1590930001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1591310001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1591400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1591580001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1591660001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1591900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1592040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1592120001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1592200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1592390001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1592550001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2100210001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2101960001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2136320002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2142480001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2145580002": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2146120001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2149490005": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2149490007": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2152440002": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2155200001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2155380001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2155890001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2156780002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2157240001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2157400001": {
+      "nature": "非牟利",
+      "curriculum": "本地及非本地"
+    },
+    "2157400091": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2158300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2158480001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2158720001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2158990001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2160030002": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2160110005": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2160110006": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2160380001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2160540001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2160700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2161350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2161860002": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2162080002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2162160001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2162590001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2162750006": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2309440001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2309870001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2310100002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2311340001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2311850001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2312400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2313470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2313630001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2313710001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "2315330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2315840001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2315920001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2316900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "2318860002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3119100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3121340002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3124790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3136370001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3146840001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3154350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3159070001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3165040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3166600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3174030002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3195110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3195620001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3197750001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3198130001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3205440002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3211920001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3222700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3230550001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3230800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3232500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3232680001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3233570001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3234970001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3236830001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3238530002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3238960001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3239260001": {
+      "nature": "非牟利",
+      "curriculum": "本地及非本地"
+    },
+    "3239690002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3240780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3240940001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3241590001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3242300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3242300002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3242480001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3242640004": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3244260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3244770001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3246470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3246800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3247360001": {
+      "nature": "非牟利",
+      "curriculum": "本地及非本地"
+    },
+    "3247360091": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "3247790001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "3247870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3247950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3248090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3248330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3248500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3248840002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3249220001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3249300002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3249570002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3250900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3251470006": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "3251630001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3251800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3251980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3252360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3252440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3252520001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3253170001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3253680001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3254140002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3254570001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3255110002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3255460001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3255700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3255890001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3255970001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3256000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3256190001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3256350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3256430001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3256510001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "3256780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3256940001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3257080001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3257160001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3257320001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3257670002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3257750001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3257830001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "3257910001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3258210001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3258300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3258560001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3258640001": {
+      "nature": "非牟利",
+      "curriculum": "本地及非本地"
+    },
+    "3258640091": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "3258800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3258990001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3259290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3259370001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3259530001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3259700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3259880001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3259960001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3260030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "3260110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5107260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5122730002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5133500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5134230001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5146590001": {
+      "nature": "非牟利",
+      "curriculum": "本地及非本地"
+    },
+    "5146590091": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5163090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5163760001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5163840002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5166270001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5169100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5169290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5171270001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5175180001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5180770001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5182470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5190900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5191030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5194990001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5196340001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5198120001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5200710001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5201440002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5226780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5229100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5230890001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5231780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5233640001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5234290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5234450002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5235260002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5238950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5239330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5240260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5240340002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5241230001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5243280001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5243600002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5244410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5257310001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5257580001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5260100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5266650001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5278820001": {
+      "nature": "非牟利"
+    },
+    "5281530001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5281610001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5283660001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5286090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5286250001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5303790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5304170001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5307350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5318980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5319100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5321690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5325330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5325410001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5325500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5328000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5328350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5333510001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5338580001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5341530001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5342260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5347900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5360240001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5360400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5364150001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5364820001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5367090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5367680003": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5369110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5370980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5373490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5375780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5375940001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5379500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5381320001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5391040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5391550003": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5391630002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5398720001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5404980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5405600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5405790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5408110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5412220001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5412300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5413890001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5414270001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5421990001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5422960001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5423260002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5425470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5425980002": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5426010001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5426870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5427680001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5428300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5430040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5430120001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5433900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5434890001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5436160001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5438610001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5439180001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5441670001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5453330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5460380001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5461270001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5470690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5482780002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5484300003": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5484300004": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5484300006": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5484300007": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5487230001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5491690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5492400001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5493040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5493550001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5506630001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5508920001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5527390002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5527470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5542510001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5543830001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5549010001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5555760001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5561220001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5562200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5562460001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5583460003": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5593850001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5597680001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5599620001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5600900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5607400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5628660001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5628740001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5628900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5629040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5629390001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5629470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5629550001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5629630001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5630640001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5630720001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5630800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5630990001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631020001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631450001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631530001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631610001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5631880001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5632260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5632340001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5632690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5632770001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5632850001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5632930001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5633070001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5633230001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5633310001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5633400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5633740001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5633820001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5633900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634120001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634390001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634550001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634630001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634710001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5634980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5635100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5635360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5635440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5635520001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5635600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5635790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5635950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5636090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5636170001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5636250001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5636330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5636410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5636760001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5636920001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637140001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637220001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637570001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637730001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637810001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5637900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638380001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638460001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638540001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638620001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638890001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5638970001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639190001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639270001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639430001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639510001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5639940001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640010001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640280001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5640950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5641090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5641250001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5641330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5641410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5641500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5641760001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5641840001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5642220001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5642300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5642490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5642570001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5642650001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5642730001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5642810001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643380003": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643460001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643540001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643890001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5643970001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5644000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5644350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5644430001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5644510001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5644780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5644860001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5645080001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5645160001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5645240001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5645590001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5645670001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5645750001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5645830001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5646300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5646560001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5646640001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5646800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5647020001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5647100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5647290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5647450001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5647530002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5647700001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5648000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5648180001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5648260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5648340001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5648420001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5648500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5648690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5648930001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5649070001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5649230001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5649310001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5649820001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5650080001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5650160001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5650240001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5650590001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5650670001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5650910001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5651300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652020001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652370001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652530001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652610001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652880001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5652960001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5653000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5653180001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5653260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5653690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5653770001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5653930001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5654070001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5654150001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5654230001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5654310001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5654400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5654580001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5654740001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5655040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5655200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5655630001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5655710001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5656280001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5656440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5656790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5656950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657170001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657250001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657330001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657680001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5657840001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658060001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658140001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658570001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658650001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658730001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5658900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659460001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659540001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659620001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659700001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659890001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5659970001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5660040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5660120001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5660390001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5660470001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5660710001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5660800001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5661010001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5661100001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5661280001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5661520001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5661600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5661790001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5661870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5662500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5662920001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663060001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663140001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663220001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663730001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663810001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5663900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5664030001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5664110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5664200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5665350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5665600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5665780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5665860001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5666750001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5666830001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5666910001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5667050001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5667800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5669260001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5669500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5669690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5670510001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5671400001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5673450001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5678920002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5681040001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5695690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5697120001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5708850001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5739730001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5750110001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5754100001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5754290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5755180001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5756400001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5756660001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5767430001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5779870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5785090001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5791490001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5825300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5871410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5881300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5891440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5906140001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5908000001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "5920800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5936800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5941300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5951440001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5953650001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5958370001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5959690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5961160001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5967870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5972950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5973840001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5973840002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5986230001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5997000001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "5999990001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6003770001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6006010002": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6008900001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6014970001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6018610001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6042590001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6055300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6056200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6056620001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6057350001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6071500002": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6072900001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6078860001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6084750001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6091370001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6096410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6102910001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6105340001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6107710001": {
+      "nature": "非牟利",
+      "curriculum": "本地及非本地"
+    },
+    "6107710091": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6110930001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6116460001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6125610001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6129360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6131690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6135090001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6135170001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6141060001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6141140001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6149200001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6150800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6153150001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6156410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6160010001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6162810001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6178490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6185270001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6185940001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6197870001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6198410001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6201490001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6213660001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6219860001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6222650001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6228690001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6234740001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6235800001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6235980001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6241950001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6248290001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6271780001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6275420001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6275500001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6278360001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6290300001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "6291620001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6295290001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6299100001": {
+      "nature": "非牟利",
+      "curriculum": "非本地"
+    },
+    "6301600001": {
+      "nature": "非牟利",
+      "curriculum": "本地"
+    },
+    "1516960001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "1577160001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2124660004": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2148680001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2151200001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2151200002": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2156940001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "2157670001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "2159370001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "2161780001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "2161940001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2162670001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "2312660001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2315170001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "2316140001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "2316570001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "3210870001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "3228220002": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "3249650001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "3254810001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "3258480001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5198630003": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5198710002": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5229530001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5239840002": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5261000001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5301310001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5301310002": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5323550001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5333600002": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5342000001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5358180002": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5358180003": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5360670001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5375270001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5377130001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5421640001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5425040001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5447440001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5455890001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5594150001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5612070001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5649580001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5651130001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5651990001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5651990002": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5654660001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5659380002": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5662410001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5662840001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5667480001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5669000001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5669340001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5669420001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5669770001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5670270001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5671080001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5671160001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5673290001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5698280001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5714900001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5727640001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5747080001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5757550001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5758520001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5780530001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5781930001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5784790001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5786300001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5811190001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5817390002": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5818360003": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5818520001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5824170001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5833400001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5834210001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5837740001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5845170001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5846060001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5866250001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5875240001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5880320001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5900290001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5904010001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5906730001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5908600001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5917770001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5931330001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5936300001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5937700002": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5937880001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5947250001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5955430001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5970310001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "5975380002": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5977160001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "5980540001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5980890001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5991820001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "5992630001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6003340002": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "6008140001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6012500001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6014030001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6017210001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6019850001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6020000001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6022560001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6023290001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6036430001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6037240001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6038640002": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6042910001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6043720001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6044450001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6044700001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6045850001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6050260001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6054410001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "6057940001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6069790001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6072150001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6072230001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6075920002": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "6077030001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6083190001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6092850001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6095280001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6096250001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6097490001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6099190001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6106230001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6114840001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6121890001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6123910001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6127820001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6130370001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6130880001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6136650001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6136810001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6139160001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "6149040001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6151700001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6152500001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6153660001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6156330001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6162900001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6163110001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "6164430001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6169900001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "6174740001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6177410001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6180390001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6198500001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6214800001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6220600001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6223890001": {
+      "nature": "私立獨立",
+      "curriculum": "本地及非本地"
+    },
+    "6226990001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6229820001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6249180001": {
+      "nature": "私立獨立",
+      "curriculum": "本地"
+    },
+    "6272750001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    },
+    "6297580001": {
+      "nature": "私立獨立",
+      "curriculum": "非本地"
+    }
+  }
+}

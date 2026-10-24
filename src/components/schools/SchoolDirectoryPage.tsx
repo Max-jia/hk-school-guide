@@ -9,8 +9,8 @@ import SchoolDirectorySearch from "@/components/schools/SchoolDirectorySearch";
 export default function SchoolDirectoryPage({ stage, locale = "tc" }: { stage: SchoolStage; locale?: Locale }) {
   const config = SCHOOL_STAGES[stage];
   const schools = schoolsForStage(stage, locale);
-  const searchSchools = schools.map(({ stage: schoolStage, slug, name, nameEn, district, districts, schoolType, gender, address, schoolNet, tuition, reportSlug, relatedReportSlugs }) => ({
-    stage: schoolStage, slug, name, nameEn, district, districts, schoolType, gender, address, schoolNet, tuition, reportSlug, relatedReportSlugs,
+  const searchSchools = schools.map(({ stage: schoolStage, slug, name, nameEn, district, districts, schoolType, schoolCategories, gender, address, schoolNet, tuition, reportSlug, relatedReportSlugs }) => ({
+    stage: schoolStage, slug, name, nameEn, district, districts, schoolType, schoolCategories, gender, address, schoolNet, tuition, reportSlug, relatedReportSlugs,
   }));
   return (
     <Localize locale={locale}>
@@ -22,10 +22,10 @@ export default function SchoolDirectoryPage({ stage, locale = "tc" }: { stage: S
             <span className="px-2">/</span><a className="no-underline hover:underline" href={localeHref(`/schools/${stage}`, locale)}>{L(config.label, locale)}</a>
             <span className="px-2">/</span>{L("學校名錄", locale)}
           </nav>
-          <header className="py-8 sm:py-10">
+          <header className="py-6 sm:py-8">
             <p className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--p-secondary)]">{L(config.label, locale)} · {L("學校名錄", locale)}</p>
-            <h1 className="mt-2 font-serif text-4xl font-bold leading-tight text-[var(--p-fg)] sm:text-5xl">{L("香港", locale)}{L(config.label, locale)}{L("學校名錄", locale)}</h1>
-            <p className="mt-3 max-w-3xl text-base leading-relaxed text-[var(--p-secondary)]">{L("按校名或地區尋找學校。簡明資料頁與深度報告分開呈現：前者回答學校基本資料，後者分析課程、入學和升學取捨。", locale)}</p>
+            <h1 className="mt-2 font-serif text-3xl font-bold leading-tight text-[var(--p-fg)] sm:text-4xl">{L("香港", locale)}{L(config.label, locale)}{L("學校名錄", locale)}</h1>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-[var(--p-secondary)]">{L("按校名、地區及類型篩選。先查簡明資料中的課程、收費與來源，再閱讀深度報告。", locale)}</p>
             <div className="mt-5 flex flex-wrap gap-2 text-xs text-[var(--p-secondary)]">
               <span className="rounded-full border border-black/15 px-3 py-1.5 dark:border-white/15">{L("教育局学校编号", locale)}：{schools.length} {L("所学校", locale)}</span>
               <span className="rounded-full border border-black/15 px-3 py-1.5 dark:border-white/15">{L("含已有深度報告的學校", locale)}</span>
