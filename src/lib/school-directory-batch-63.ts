@@ -1,0 +1,148 @@
+import type { PilotSchool } from "./school-directory-pilot";
+import { reviewedKindergartenProfile as profile } from "./school-directory-reviewed-kindergarten";
+
+const kgp = (id: string) => `https://kgp2026.kindergartenprofile.com/school/?schid=${id}`;
+const pnGrades = "PN／2至3歲服務及K1至K3；開設班別按當屆安排";
+
+export const KINDERGARTEN_BATCH_63: PilotSchool[] = [
+  profile({
+    schoolNumber: "619850", locationId: "0001", website: "https://www.victoria.edu.hk/", telephone: "21866222", schoolType: "私立獨立幼稚園", principal: "胡翠珊", establishedYear: "2022", gradeSpan: pnGrades,
+    language: "校方列粵語、普通話及英語探究活動；海之戀逐級課時比例未公開",
+    ratio: "上午1:5.0；下午1:4.4", ratioIncludesPn: true, teacherCount: 29, classroomCount: 7, spaces: "室內及戶外遊戲場地、圖書館、多元開放學習區。",
+    pn: "2025年9月提供2至3歲服務，收錄77名兒童，當時半日全年127,919元；全日費用格為「-」。這是當時服務資料，並非2026/27或下一屆PN費率及招生名額。",
+    feeSummary: "K1半日117,370元／11期；K2為106,390元／10期；K3為109,360元／10期",
+    fees: "上午及下午班：K1全年117,370元、11期；K2全年106,390元、10期；K3全年109,360元、10期。沒有參加教育計劃；全日各格為「-」。PN、校服及其他雜費另核對。",
+    sourceNote: "本頁只對應荃灣海之戀校號619850，2022是本校概覽所列創校年份，不是維多利亞機構創辦年份。集團其他校舍的課時、學費或升小結果不直接套用；既有深度報告為維多利亞相關內容，應留意其校舍範圍。",
+    sources: [{ label: "維多利亞：海之戀校舍聯絡", scope: "逐校舍列海之戀商場地址及21866222電話，與本校概覽交叉核對。", url: "https://www.victoria.edu.hk/contact-us/" }],
+    features: { title: "課程特色｜三語探究與自主學習", featured: true, details: [
+      { label: "以跨學科主題連結語言與實物探索", value: "海之戀校方在2026/27概覽中表示，以國際文憑小學項目PYP的探究主題結合兩文三語，並融入創客學習元素，讓孩子操作材料、討論和實踐。這裏的PYP是課程框架名稱，不代表幼稚園已提供小學學位；家長可觀察孩子如何在三種語言中參與同一主題。", period: "2026/27概覽校方申報", sourceUrl: kgp("6198500001") },
+      { label: "學習歷程檔案配合兒童自評", value: "校方申報透過持續觀察、活動作品和發展評估表記錄進展，並讓孩子自評和反思；家長亦可參與伴讀、義工及學習展覽。這類安排要求家校持續交流，家庭宜先確認回饋方式、活動時段及可投入的時間。", period: "2026/27概覽校方申報", sourceUrl: kgp("6198500001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "325783", locationId: "0001", website: "https://www.kendall.edu.hk/", telephone: "25655892", principal: "梁詠芝", gradeSpan: pnGrades,
+    language: "最新概覽未列課程語言安排；須按啟蒙創新港島東現校名及班別確認",
+    ratio: "上午1:4.0；下午未列", ratioIncludesPn: true, teacherCount: 2, spaces: "概覽未提供課室及遊戲場地資料，需向鰂魚涌校舍核對。",
+    pn: "2025年9月提供2至3歲服務，收錄6名兒童，半日全年53,900元；全日費用格為「-」。收錄人數不是下一屆名額，PN當屆費率須另查。",
+    feeSummary: "K1至K3半日全年74,800元／11期；PN另計",
+    fees: "K1至K3上午及下午班均列全年74,800元、11期；全日各格為「-」。本校雖為非牟利類別，但沒有參加2026/27幼稚園教育計劃，不能按免費幼稚園預算。",
+    sourceNote: "教育局最新校名為啟蒙創新幼稚園（港島東），概覽註明舊名漢廸國際幼稚園（港島東），仍連至Kendall網站。網站的集團課程介紹與新校名下的安排未能逐項配對，因此只列為有待校方確認的背景，沒有把西九龍校舍、舊品牌或舊年份課程當作本校現況。",
+    sources: [{ label: "概覽所列Kendall網站：品牌課程背景", scope: "網站介紹Creative Curriculum與遊戲學習，但現校名、校舍及實施範圍須再次確認；不採其他校舍的評語或升小個案。", url: "https://www.kendall.edu.hk/" }],
+    features: { title: "課程資料｜改名後的安排須確認", featured: true, details: [
+      { label: "現校名與舊品牌資料分開閱讀", value: "2026/27概覽的本校課程規劃、教學模式及使命均列沒有資料；所連的Kendall網站則介紹結合遊戲、學習準備和中華價值的Creative Curriculum。由於網站品牌與教育局現校名不同，不能據此認定新校名下仍完整沿用同一課程；這是參觀前需要校方直接說明的重點。", period: "2026/27概覽；所列網站背景資料", sourceUrl: kgp("3257830001") },
+      { label: "先核對現行班制、語言及回饋方式", value: "目前可確認的是鰂魚涌栢蕙苑校址及教育局列出的收費和統計。若考慮入讀，應向本校索取現行課表、使用語言、評估樣本及招生公告，再比較是否符合孩子需要；上午的歷史師生比亦不能用來推算現時班額或收生機會。", sourceUrl: kgp("3257830001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "624195", locationId: "0001", website: "https://ibelkg.edu.hk/", telephone: "23977868", principal: "張蔚媛", establishedYear: "2023", gradeSpan: pnGrades,
+    language: "校方申報粵語、英語及普通話共融學習；逐級時間比例未公開",
+    ratio: "上午1:6.4；下午1:4.8", ratioIncludesPn: true, teacherCount: 8, classroomCount: 3, spaces: "室內遊戲場地、活動室；概覽列沒有戶外遊戲場地。",
+    pn: "2025年9月提供2至3歲服務，收錄48名兒童，半日全年17,600元；全日費用格為「-」。這並非當屆核准PN名額或2026/27費率。",
+    feeSummary: "概覽各年級／時段學費均列「申請審核中」，須查當屆核准文件",
+    fees: "2026/27概覽的K1至K3上午、下午及全日班均列「申請審核中」，不代填0元或舊學年金額。概覽列參加幼稚園教育計劃，但這本身不能替代當屆核准收費；報名前應向校方索取收費證明。",
+    sourceNote: "本頁對應廣東道188號港景滙商場119至121號舖。對非華語家庭的支援按校方申報呈現；共融目標不等於已驗證的語言學習成效。",
+    sources: [{ label: "IBEL幼稚園：學校介紹及活動", scope: "2023創校、生命教育宗旨及社區體驗活動；活動例子不是全校成效統計。", url: "https://ibelkg.edu.hk/" }],
+    features: { title: "課程特色｜多元文化與生活探索", featured: true, details: [
+      { label: "讓不同文化背景的孩子共同學習", value: "校方在概覽中以共融、多元文化及粵英普三語為方向，並列翻譯、家長義工、中文學習環境和非華語支援。官網亦以生命教育為宗旨。對非華語家庭，值得具體了解中文如何分組、如何與家長溝通，以及支援是否適用於申請班級。", period: "2026/27概覽及校方介紹", sourceUrl: kgp("6241950001") },
+      { label: "把探究帶進真實社區", value: "校方2026年2月活動記錄包括到尖沙咀郵政局寄信及消防員介紹工作，與概覽的主動探索、社會情感和實踐方向相呼應。這些是可辨識的校方活動例子，家長仍需了解當屆外出安排、照顧比例和活動後如何整理學習。", period: "校方2026年2月活動記錄", sourceUrl: "https://ibelkg.edu.hk/" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "523984", locationId: "0002", website: "https://greenfield.edu.hk/tc/index.php", telephone: "22742238", schoolType: "私立獨立幼稚園", principal: "鄔雪霖", establishedYear: "1999", gradeSpan: pnGrades,
+    language: "校方網站索引列英語、普通話及粵語教師分工；坑口逐級安排另核對",
+    ratio: "上午1:9.9；下午1:5.7", ratioIncludesPn: true, teacherCount: 15, spaces: "概覽未列註冊課室及特別場地數目，參觀時以南豐廣場校舍確認。",
+    pn: "2025年9月提供2至3歲服務，收錄39名兒童；當時半日全年74,400元、全日102,000元。PN費率的年份與2026/27 K1至K3學費分開，不當作招生額。",
+    feeSummary: "K1至K3半日全年72,000元／12期；全日102,000元／12期",
+    fees: "2026/27概覽列K1至K3上午、下午班全年72,000元、12期；全日班全年102,000元、12期。沒有參加教育計劃，PN與膳食等費用另核對。",
+    sourceNote: "現校名綠韻國際幼稚園（將軍澳），舊名綠茵英文（國際）幼稚園（將軍澳）；只採南豐廣場校址0002，不混入日出康城分校。校方網站本次即時連線未成功，語言及理念僅據其公開索引保留為校方自述，當屆課表須重新確認。",
+    sources: [{ label: "綠韻：三語方向及坑口聯絡（公開索引）", scope: "校方頁面公開索引列三語教師分工、南豐廣場及電話；本次網站即時連線不穩，不據此確認當屆課時。", url: "https://greenfield.edu.hk/tc/index.php" }],
+    features: { title: "課程資料｜三語安排與校舍範圍", featured: true, details: [
+      { label: "語言教師分工有自述，課時仍需核對", value: "校方網站的公開索引介紹英語及中文教師團隊：英語由母語教師帶領，普通話教師以普通話進行活動，本地教師以粵語授課。這說明三語環境的設計方向，未說明坑口各班每天的比例；本次即時連線未成功，應以校方現行課表確認。", period: "校方頁面公開索引；未標課程學年", sourceUrl: "https://greenfield.edu.hk/tc/index.php" },
+      { label: "把坑口與日出康城的安排分開比較", value: "校方網站同時介紹坑口及日出康城兩校舍。本頁2026/27學費、2025年9月人員和PN資料均來自南豐廣場校址0002；品牌共用不能說明兩校的語言、作息及接送安排完全相同。家庭可先確定申請校舍，再索取相應日程和用品清單。", sourceUrl: kgp("5239840002") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "627836", locationId: "0001", website: "https://fdkg.edu.hk/", telephone: "23374341", principal: "劉安妮", establishedYear: "1988",
+    ratio: "上午及下午均為「-」，未列數值", classroomCount: 6, spaces: "室內及戶外遊戲場地、音樂室、輔導室。",
+    language: "校方申報英語拼音及普通話專業導師活動；主課語言與課時另核對",
+    pn: "2025年9月概覽列沒有提供2至3歲服務、收錄0人。安秀苑當屆供應須直接向校方確認，不能把機構其他幼兒園服務套用。",
+    feeSummary: "全日全年11,748元／12期；半日費用與開班資訊須確認",
+    fees: "概覽K1至K3上午及下午費用格列免費、全日全年11,748元及12期；同頁註冊費欄卻列「沒有開辦半日班」。兩欄口徑不一致，不能據免費格認定可申請半日班，須以校方當屆招生及核准文件確認。",
+    sourceNote: "本頁是安秀苑安傑閣校址、校號627836；1988為概覽列出的學校歷史年份，不是新校舍啟用年份。概覽沒有本校2025年9月師資總數及師生比，未從舊址或其他五邑幼兒園補入。",
+    sources: [{ label: "五邑安秀苑：學校介紹與聯絡", scope: "安傑閣地址、23374341電話及兒童為本、守護兒童政策方向。", url: "https://fdkg.edu.hk/" }],
+    features: { title: "課程特色｜合作、繪本與社區探索", featured: true, details: [
+      { label: "以計劃、進行及回顧組織探索", value: "校方概覽以主題、小組合作、自由遊戲、方案和繪本作課程形式，並把計劃、進行及回顧用在校外探索。家長可留意孩子是否有提出問題、與同伴分工和回顧發現的機會，並了解新校舍如何運用鄰近社區。", period: "2026/27概覽校方申報", sourceUrl: kgp("6278360001") },
+      { label: "兒童為本同時包含照顧與安全安排", value: "校方官網介紹兒童為本、尊重兒童及守護兒童政策；概覽另列駐校社工、到校學前康復和新生適應活動。家庭可在參觀時詢問接送、情緒安撫、轉介及家校溝通如何運作，服務名稱本身不代表每位孩子均有相同頻率。", sourceUrl: "https://fdkg.edu.hk/" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "566012", locationId: "0001", website: "https://faogtcn.edu.hk/", telephone: "24863456", principal: "吳華敏", establishedYear: "2002", gradeSpan: pnGrades,
+    language: "校方列外籍英語及普通話老師專科專教；主課語言及逐級課時未列",
+    ratio: "上午1:9.0；下午1:9.0", ratioIncludesPn: true, teacherCount: 12, spaces: "室內遊戲場地、音樂室、輔導室、英語教室；沒有戶外遊戲場地。",
+    pn: "2025年9月提供2至3歲服務，收錄13人；全日全年50,628元，半日費用格為「-」。當時列參加幼兒中心資助計劃及提供延長時間服務；下一屆PN費率、資格及名額須另確認。",
+    feeSummary: "K1至K3全日全年11,532元／12期；PN另計",
+    fees: "K1至K3全日班扣減資助後全年11,532元、12期；上午及下午格均為「-」。PN、膳食、延長時間及用品等費用須分開計算。",
+    sourceNote: "本頁對應天澤邨澤辰樓B、C翼地下。上午與下午師生比是全日服務不同時段的統計，不代表設有兩個半日班，也不是每班人數。",
+    sources: [{ label: "天澤幼兒園：課程特色", scope: "宗教品格、奧福音樂、自由遊戲、外籍英語及普通話專科老師、持續評估等校方說明。", url: "https://faogtcn.edu.hk/special-features-of-curriculum-tc/" }],
+    features: { title: "課程特色｜品格、自由遊戲與語言", featured: true, details: [
+      { label: "把關愛、音樂和遊戲放進日常", value: "校方以基督教品格為基礎，官網具體介紹奧福正向音樂、自由遊戲和區角活動；孩子透過律動、樂器、操作和同伴互動累積經驗。家庭可觀察宗教與規則教育如何在遊戲中進行，並確認每天自主活動的時間和選擇。", sourceUrl: "https://faogtcn.edu.hk/special-features-of-curriculum-tc/" },
+      { label: "英普以遊戲專科進行，成長檔案持續記錄", value: "校方列外籍英語和普通話老師專科專教，以故事、兒歌、話劇及小食製作帶動聽說，並有校本教材及點讀支援。另設個人成長檔案和定期匯報。這能說明教學方式，未能推定全日以英語或普通話為主；應詢問孩子申請年級的實際課時。", sourceUrl: "https://faogtcn.edu.hk/special-features-of-curriculum-tc/" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "566403", locationId: "0001", website: "https://www.fykdc.edu.hk/", telephone: "24166805", principal: "李嘉雯", establishedYear: "1982", gradeSpan: pnGrades,
+    language: "校方列全語文及非華語中文支援；粵語／普通話／英語課時未公開",
+    ratio: "上午1:6.9；下午1:6.9", ratioIncludesPn: true, teacherCount: 7, classroomCount: 3, spaces: "室內遊戲場地、音樂室、體能室及多用途室；沒有戶外遊戲場地。",
+    pn: "2025年9月提供2至3歲服務，收錄5人；半日全年28,164元、全日33,816元，列參加幼兒中心資助計劃及提供暫託、延長時間服務。費率只對應當時幼兒服務，不直接當作下一屆費用。",
+    feeSummary: "概覽列上午及全日免費；下午費用格為「-」，實際供應另確認",
+    fees: "2026/27概覽K1至K3上午及全日格列扣減資助後免費，下午為「-」。2025年9月在讀統計只有全日班，不能由核准費用表推定上午班現時可報；PN、膳食及雜費另核對。",
+    sourceNote: "本頁為石圍角邨石翠樓校址。校方網站本次存取被安全服務阻擋，沒有繞過；理念、課程及支援依本校最新教育局概覽所收錄的校方資料，而非其他中華基督教會學校。",
+    sources: [],
+    features: { title: "課程特色｜故事、方案與親子閱讀", featured: true, details: [
+      { label: "故事引入主題，每學期另做方案活動", value: "校方在概覽中列出故事主題、全語文、戶外參觀及每學期方案活動，並用動靜交替的安排連結生活經驗。全語文指把閱讀和文字放進有意義的情境，並不等於全英語授課；家長可了解孩子怎樣選題、搜集資料及表達發現。", period: "2026/27概覽校方申報", sourceUrl: kgp("5664030001") },
+      { label: "把家長觀察與孩子作品一起納入評估", value: "校方列學生自評、家長觀察、主題評估及兒童發展報告，並建立作品歷程檔案；親子閱讀和品格計劃亦需要家校合作。家庭宜確認平日閱讀的投入、回饋頻率及社工跟進方法，這些比單看活動數量更能反映是否配合家庭日程。", period: "2026/27概覽校方申報", sourceUrl: kgp("5664030001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "613088", locationId: "0001", website: "https://loupichoun.com/", telephone: "28134277", schoolType: "私立獨立幼稚園", principal: "朱莉", establishedYear: "2019", gradeSpan: pnGrades,
+    language: "校方列法語、英語及普通話三語、法國課程；校舍及年級比例另核對",
+    ratio: "上午1:14.3；下午1:9.3", ratioIncludesPn: true, teacherCount: 4, classroomCount: 5, spaces: "室內遊戲場地及美術室；概覽列沒有戶外場地和音樂室。",
+    pn: "2025年9月提供2至3歲服務，收錄20人，半日全年79,500元；全日費用格為「-」。與K1至K3全年費用及下一屆名額分開。",
+    feeSummary: "K1至K3半日全年82,500元／10期；全日135,000元／10期",
+    fees: "2026/27概覽K1至K3上午及下午班全年82,500元、10期；全日全年135,000元、10期。沒有參加教育計劃，PN及其他校舍課程不可套用這組費率。",
+    sourceNote: "本頁校號613088只對應將軍澳藍塘傲唐賢街29號1A、1B及2A舖。官網亦列赤柱及Capri校舍，其中Capri標示教育局申請中；未把那些地址當作本校已註冊校舍，也未把集團29年以上歷史取代本校2019創校年份。",
+    sources: [{ label: "Lou Pichoun：課程與校舍介紹", scope: "法語、英語及普通話、法國課程、藝術與探索方向；ALTO地址可與教育局交叉核對。", url: "https://loupichoun.com/" }],
+    features: { title: "課程特色｜法國課程與三語藝術", featured: true, details: [
+      { label: "以探索和藝術組織法國課程", value: "校方把幼稚園課程定位為法國課程，結合法語、英語及普通話，並以藝術、探索及照顧環境作特色。這條路徑與本地粵語為主的幼稚園安排不同；家庭應先確認希望銜接的教育體系，再了解中文讀寫及三語日程，而不能僅按「三語」比較。", sourceUrl: "https://loupichoun.com/" },
+      { label: "認證及後續學段須按校舍逐項核實", value: "官網介紹集團的法國教育認證及不同課程，但本頁只採教育局校號613088的學前資料。若家長重視法國體系銜接，應索取適用於藍塘傲幼稚園年級的課程與認證範圍，以及後續升學安排；不能把集團宣傳中的其他學段直接當成本校提供。", sourceUrl: "https://loupichoun.com/" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "623598", locationId: "0001", website: "https://nsty.ywca.org.hk/tc/index.html", telephone: "24957678", principal: "鄒嘉儀", establishedYear: "2024", gradeSpan: pnGrades,
+    language: "校方列英語及普通話老師以遊戲教學；主課語言和每週時間另核對",
+    ratio: "上午1:9.3；下午1:9.3", ratioIncludesPn: true, teacherCount: 8, classroomCount: 4, spaces: "室內遊戲場地、音樂室及小組學習室；沒有戶外遊戲場地。",
+    pn: "2025年9月提供2至3歲服務，收錄19人，當時全日全年41,136元，半日費用格為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。下一屆費率、資格及空缺需另確認。",
+    feeSummary: "K1至K3全日全年15,024元／12期；PN另計",
+    fees: "K1至K3全日班扣減資助後全年15,024元、12期；上午及下午班格為「-」。PN、膳食及延長時間等服務應按當屆清單另外計算。",
+    sourceNote: "本頁按校號623598及長青邨青荷樓平台一樓現址核對。2024為本校號概覽所列創校年份，沒有以機構歷史年份替代；官網辦公時間不改寫成每位幼兒的上課時間。",
+    sources: [{ label: "青衣幼兒學校：學校介紹與聯絡", scope: "現校址、電話、主題與方案方向、支援服務及2027/28收生入口。", url: "https://nsty.ywca.org.hk/tc/index.html" }],
+    features: { title: "課程特色｜自主活動與親子閱讀", featured: true, details: [
+      { label: "每天自選活動經歷規劃、實踐和回饋", value: "校方概覽列主題與方案教學，鼓勵多感官探索，並每天設自選活動時間，讓幼兒規劃、實踐和回饋。家長可在參觀時觀察教師如何提問、孩子有多少選擇，以及全日照顧中的活動與休息節奏。", period: "2026/27概覽校方申報", sourceUrl: kgp("6235980001") },
+      { label: "閱讀配合英普遊戲，支援連到家庭", value: "校方申報推行「愛+閱讀」，英語及普通話老師透過遊戲建立語言基礎；另有駐校社工、到校支援和家長資源。對需要全日照顧的家庭，宜同時確認接送及延長時間的費用、語言安排和家長回饋方式，而不只比較表面學費。", period: "2026/27概覽及官網服務介紹", sourceUrl: kgp("6235980001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "622060", locationId: "0001", website: "https://www.anchorsacademy.edu.hk/", telephone: "38605605", schoolType: "私立獨立幼稚園", principal: "WADHWANI, JASMINA PREM", establishedYear: "2023", gradeSpan: pnGrades,
+    language: "校方現行問答列英語／普通話雙語班及法語接觸；逐級課時另核對",
+    ratio: "上午1:6.8；下午1:1.6", ratioIncludesPn: true, teacherCount: 18, classroomCount: 16, spaces: "室內及戶外遊戲場地、音樂室、視覺藝術室、電腦室及創新科技教學中心。",
+    pn: "2025年9月提供2至3歲服務，收錄20人，半日全年107,000元，全日費用格為「-」。這是當時服務資料，PN當屆學費及名額另確認。",
+    feeSummary: "K1至K3半日107,000元／10期；只有K2、K3全日列154,000元／10期",
+    fees: "2026/27概覽K1至K3上午及下午班全年107,000元、10期；K2、K3全日全年154,000元、10期，K1全日格為「-」。沒有參加教育計劃；校方另提醒基本建設費、書本及校服等，不能以學費當作全部成本。",
+    sourceNote: "只對應錦田北高埔徑1號教學大樓2樓幼稚園，不混入安基司其他分校或同址小學及中學。舊申請表曾列英普及英粵兩軌，現行問答只列英普及法語；語言採現行說明，仍須按當屆班別確認。",
+    sources: [{ label: "安基司：幼稚園課程、語言及班制問答", scope: "EYFS、英普及法語、PN至K3探索、K1半日與K2/K3全日、雜費及校車等校方自述。", url: "https://anchorsacademy.edu.hk/tc/content.php?wid=213" }],
+    features: { title: "課程特色｜英國框架與實作探索", featured: true, details: [
+      { label: "EYFS以遊戲連結語言和探索", value: "校方問答列英國早期基礎階段EYFS課程，以主題和遊戲組織學習；從PN起加入STEAM，即科學、科技、工程、藝術和數學的實作探索。家長可了解創新實驗室和操作牆在不同年級的使用方法與頻率，設施清單本身不能說明學習成效。", sourceUrl: "https://anchorsacademy.edu.hk/tc/content.php?wid=213" },
+      { label: "班制與後續小學路徑要連同成本閱讀", value: "校方說明K1只設半日，K2、K3可選半日或全日；現行問答亦稱本校幼稚園畢業生保證升讀同校小學。這是校方對路徑的公開說明，家庭仍應索取當屆書面政策及小學費用，確認是否有註冊或其他條件，再計算六年以上的通勤和教育預算。", sourceUrl: "https://anchorsacademy.edu.hk/tc/content.php?wid=213" },
+    ] },
+  }),
+];

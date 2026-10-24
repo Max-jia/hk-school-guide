@@ -1,0 +1,158 @@
+import type { PilotSchool } from "./school-directory-pilot";
+import { reviewedKindergartenProfile as profile } from "./school-directory-reviewed-kindergarten";
+
+const kgp = (id: string) => `https://kgp2026.kindergartenprofile.com/school/?schid=${id}`;
+const grades = "PN／2至3歲服務及K1至K3；班別供應及名額按當屆安排";
+
+export const KINDERGARTEN_BATCH_67: PilotSchool[] = [
+  profile({
+    schoolNumber: "621480", locationId: "0001", website: "https://www.york.edu.hk/tc/index.html", telephone: "23372388", schoolType: "私立獨立幼稚園", principal: "蘇綺華", gradeSpan: grades,
+    language: "本校概覽未列逐級教學語言，不能由國際名稱推定英語比例；須向Wetland校舍確認",
+    ratio: "上午1:7.5；下午1:4.9", ratioIncludesPn: true, teacherCount: 18, spaces: "概覽未列註冊課室及遊戲／特別場地資料，需向Wetland校舍確認。",
+    pn: "2025年9月提供2至3歲服務，收錄35人，半日全年62,400元；全日為「-」。PN當屆費率及招生名額另核對。",
+    feeSummary: "半日全年57,600至79,200元；全日87,600至127,200元，均12期",
+    fees: "2026/27概覽K1至K3上午及下午列全年57,600至79,200元、12期；全日87,600至127,200元、12期。沒有參加教育計劃；保留原區間，不推定各價格對應課程，需索取本校當屆核准收費與班別說明。",
+    sourceNote: "本頁只對應濕地公園路1號Wetland Seasons Bay商場的校號621480，不借用九龍塘或其他York校舍的歷史、師資及費率。概覽創校年份未列，不以品牌創辦年補填。",
+    sources: [{ label: "York：機構理念入口", scope: "全人、藝術、科學及語言方向的品牌自述；Wetland校舍實施細節須另確認。", url: "https://www.york.edu.hk/tc/index.html" }],
+    features: { title: "課程資料｜藝術科學與語言方向", featured: true, details: [
+      { label: "品牌理念與本校課表分開看", value: "York官網以全人發展、藝術、科學及語言為教育方向，強調在關懷環境發展個別潛能；Wetland最新概覽未提供詳細課程文本。家長可向本校索取一週課表和活動樣本，確認品牌方向如何落在這個校舍，而不直接套用其他York園所。", sourceUrl: "https://www.york.edu.hk/tc/index.html" },
+      { label: "先問清費用區間對應的班別", value: "本校概覽的半日與全日收費都列區間，沒有在課程欄解釋差別。家庭應先確定語言、時長及教材是否不同，再計算全年支出；不能把最低價當作所有班別的費用，也不應以最高價反推課程質素。", sourceUrl: kgp("6214800001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "566322", locationId: "0001", website: "https://www.ntwjwacfns.edu.hk/", telephone: "24338184", principal: "張麗珍", establishedYear: "1991", gradeSpan: grades,
+    language: "校方申報普通話專教及外籍英語老師；主課語音及逐級時數另確認",
+    ratio: "上午1:8.6；下午1:8.6", ratioIncludesPn: true, teacherCount: 8, classroomCount: 4, spaces: "有戶外遊戲場地；概覽列沒有室內遊戲場地、音樂室及其他特別室。",
+    pn: "2025年9月提供2至3歲服務，收錄19人，全日全年49,584元，半日為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。當屆費率及服務資格另確認。",
+    feeSummary: "K1至K3全日全年12,168元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年12,168元、12期；上午及下午為「-」。PN、膳食、暫託及延長時間等須按當屆清單另計。",
+    sourceNote: "本頁為長發邨社區中心5樓、校號566322，不混入新界婦孺福利會其他園所。官網本次擷取405受限，課程、語言及支援依本校最新教育局概覽自述。",
+    sources: [],
+    features: { title: "課程特色｜故事探究與家庭合作", featured: true, details: [
+      { label: "故事帶動搜集、實驗和分享", value: "校方概覽以故事作媒介，結合綜合教學與專題研習，透過搜集資料、討論、實驗和遊戲，培養主動學習；英語及普通話另安排專教老師。家庭可觀察孩子是否有提出問題和匯報發現的機會，並核對實際語言時間。", period: "2026/27概覽校方申報", sourceUrl: kgp("5663220001") },
+      { label: "家庭資料也納入學習歷程", value: "校方列持續觀察、作品及家長提供資料，整理成學習檔案並每學期提供發展報告；另有社工、融合及過渡支援。對全日照顧家庭，宜了解家長需要回饋甚麼、出現適應困難時如何跟進，以及接送和延長服務如何配合工作。", period: "2026/27概覽校方申報", sourceUrl: kgp("5663220001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "624829", locationId: "0001", website: "https://zenithkindergarten.edu.hk/siu-hong-campus/", telephone: "26689010", principal: "謝綺媚", establishedYear: "2024", gradeSpan: "K1至K3；概覽另列2至3歲服務，當屆PN供應須確認",
+    language: "機構列兩文三語及雙語方向；兆康主課語音及逐級時間另確認",
+    ratio: "上午1:3.3；下午1:1.3", ratioIncludesPn: false, teacherCount: 3, classroomCount: 4, spaces: "概覽未提供遊戲場地、音樂及其他特別室資料，按Novo Walk校舍導賞核對。",
+    pn: "2025年9月列有2至3歲服務及半日全年81,600元、全日115,200元，但收錄人數為0。這不代表現時可報或沒有名額，下一屆供應、費率及登記範圍須直接向兆康校舍確認。",
+    feeSummary: "K1至K3半日全年81,600元／12期；全日105,600元／12期",
+    fees: "2026/27 K1至K3上午及下午全年81,600元、12期；全日各級105,600元、12期。非牟利類別但未參加教育計劃，不按免費幼稚園預算；PN及雜費分開。",
+    sourceNote: "本頁為Novo Walk地下29號舖、校號624829，與英藝沙田及其他分校分開。校方contact頁列兆康26689010及Novo Walk位置；共用網站亦有小學內容，沒有套用到本校幼稚園。",
+    sources: [
+      { label: "英藝兆康：校舍入口", scope: "兆康幼稚園資訊入口，共用網站的其他學段不套用。", url: "https://zenithkindergarten.edu.hk/siu-hong-campus/" },
+      { label: "英藝：分校聯絡", scope: "Novo Walk29號舖及26689010，與本校概覽配對。", url: "https://zenithkindergarten.edu.hk/contact/" },
+      { label: "英藝：課程理念", scope: "機構共用的三語、藝術及探索方向；兆康實施細節另確認。", url: "https://zenithkindergarten.edu.hk/education-1/" },
+    ],
+    features: { title: "課程資料｜新校舍與三語方向", featured: true, details: [
+      { label: "主題與藝術方向須看分校例子", value: "機構課程頁重視兒童為本、語言表達、探索及藝術，透過計劃、實踐和分享培養合作與解難。兆康概覽未列詳細課程文本，家長可請本校提供近期單元、作品和一週日程，確認新校舍的實際安排。", sourceUrl: "https://zenithkindergarten.edu.hk/education-1/" },
+      { label: "小規模歷史統計不等於現行班額", value: "概覽2025年9月人員及比率反映當時狀態，PN收錄亦列0人。家長應直接核對當屆各級班數、教師配置及語言組別，不用舊比率推算錄取難度，也不把機構其他分校的活動頻率當成兆康保證。", sourceUrl: kgp("6248290001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "620149", locationId: "0001", website: "https://www.lamtyw.edu.hk/", telephone: "23862826", principal: "翁艷蘭", establishedYear: "2024", gradeSpan: grades,
+    language: "本校概覽未列粵語／普通話／英語逐級安排，需向麗翠苑校舍確認",
+    ratio: "上午1:7.8；下午1:7.8", ratioIncludesPn: true, teacherCount: 10, classroomCount: 6, spaces: "室內遊戲場地、兒童活動室；沒有戶外遊戲場地及音樂室。",
+    pn: "2025年9月提供2至3歲服務，收錄14人，全日全年44,292元，半日為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。當屆費率和資格另確認。",
+    feeSummary: "K1至K3全日全年11,748元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年11,748元、12期；上午及下午均為「-」。PN、膳食、暫託及延長時間等另核對。",
+    sourceNote: "本頁按校號620149及麗翠商場KG01現址識別。官網聯絡地址電話一致，但頁首仍顯示張運發紀念幼兒中心名稱；身分及課程以教育局本校記錄為準，不把不同名稱頁面當作身分變更證明。",
+    sources: [{ label: "校方所列網站：麗翠苑聯絡（名稱須確認）", scope: "麗翠商場KG01及23862826可核對；頁首名稱與概覽不同，課程事實改引用本校概覽。", url: "https://www.lamtyw.edu.hk/" }],
+    features: { title: "課程特色｜生活體驗與創意思考", featured: true, details: [
+      { label: "參觀體驗後再做延伸活動", value: "本校概覽以創意思維和多元智能為方向，透過活動、設計及全方位學習，把參觀與體驗接到課堂延伸。家庭可詢問孩子怎樣選題、記錄和整理發現，以及不同年齡如何調節操作，避免只看外出活動數量。", period: "2026/27概覽校方申報", sourceUrl: kgp("6201490001") },
+      { label: "循序適應與個別支援並行", value: "校方列循序漸進的新生適應、K3小學參觀和模擬活動，並有兼收服務及新來港兒童個別輔導。家長宜確認轉介資格、學習支援的實際安排及家校回饋，服務名稱不代表所有兒童同時獲相同訓練。", period: "2026/27概覽校方申報", sourceUrl: kgp("6201490001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "324779", locationId: "0001", website: "https://www.cbvictoria.edu.hk/", telephone: "25789998", principal: "李美珠", establishedYear: "1965", gradeSpan: "PN及K1至K3；2027/28 K1不作常規對外招生，見校方公告",
+    language: "校方列雙語／三語PYP環境；粵語、普通話及英語各班時數另確認",
+    ratio: "上午1:6.2；下午1:6.2", ratioIncludesPn: true, teacherCount: 34, classroomCount: 8, spaces: "室內及戶外遊戲場地、音樂室及圖書館。",
+    pn: "2025年9月提供2至3歲服務，收錄176人，半日全年99,847元；全日為「-」。PN當屆費率與下一屆招生名額另確認；校方2027/28收生公告另見本頁。",
+    feeSummary: "半日K1全年96,480元、K2 88,360元、K3 90,710元，均10期",
+    fees: "2026/27概覽K1至K3上午及下午分別全年96,480元、88,360元及90,710元，均10期；全日各格為「-」。沒有參加教育計劃；PN及雜費另計。",
+    sourceNote: "本頁是興發街32至36號、獨立校號324779，以cbvictoria.edu.hk資料為準，不套用海之戀及VEO其他校舍。2027/28招生按本校2026年9月14日公告；PN直升K1與對外招生須分開看。",
+    sources: [
+      { label: "銅鑼灣維多利亞：PYP與探究", scope: "本校IB小學項目課程PYP自述及VSA優先機會；不是小學錄取保證。", url: "https://www.cbvictoria.edu.hk/en/ib/" },
+      { label: "銅鑼灣維多利亞：閱讀寫作課程", scope: "現行Mossflower讀寫計劃、日常選書及工作坊，未沿用舊名稱作現況。", url: "https://www.cbvictoria.edu.hk/en/RWP/" },
+      { label: "銅鑼灣維多利亞：2027/28收生提示", scope: "首頁2026-09-14公告：PN接受申請，K1不作常規對外收生，初步登記待空缺聯絡；2026-10-24即時瀏覽確認。", url: "https://www.cbvictoria.edu.hk/" },
+      { label: "銅鑼灣維多利亞：聯絡", scope: "興發街到訪地址及25789998電話。", url: "https://www.cbvictoria.edu.hk/en/contact-us/" },
+    ],
+    features: { title: "課程特色｜探究與自主讀寫", featured: true, details: [
+      { label: "PYP從問題出發，讀寫保留選擇", value: "校方以國際文憑小學項目PYP作探究框架，教師引導孩子提問、搜集和整理資料；現行讀寫頁列Mossflower閱讀寫作計劃，讓孩子選擇閱讀及創作內容，配合朗讀、共讀、拼音及寫作工作坊。家長可觀察孩子的選擇空間與教師回饋，不把計劃名稱直接當作能力保證。", sourceUrl: "https://www.cbvictoria.edu.hk/en/RWP/" },
+      { label: "優先機會與小學學位保證分開", value: "本校IB頁提到畢業生申請VSA有優先機會，但沒有在該段承諾全部錄取。若家庭希望延續IB路線，應索取當屆小學申請、評核及費用，再比較預算和備選路徑；幼稚園採PYP並不等於已獲小學學位。", sourceUrl: "https://www.cbvictoria.edu.hk/en/ib/" },
+      { label: "2027/28先分清PN申請與K1登記", value: "校方2026年9月14日公告表示，因PN學生升K1及外部學額有限，2027/28不接受K1常規招生；有意者可提交初步登記，校方有空缺時才聯絡。PN則接受申請。初步登記不是面試或錄取承諾，應按孩子年齡選正確入口。", period: "2027/28學年公告；2026-10-24瀏覽核對", sourceUrl: "https://www.cbvictoria.edu.hk/" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "623474", locationId: "0001", website: "https://www.kindergarten.edu.hk/?lang=zh", telephone: "24322223", principal: "梁佩英", establishedYear: "2024", gradeSpan: grades,
+    language: "本校申報一老師一語言，粵語、普通話及英語教師分組；時數比例未列",
+    ratio: "上午1:7.3；下午1:5.7", ratioIncludesPn: true, teacherCount: 11, classroomCount: 6, spaces: "室內遊戲場地、小組學習室及多功能室；沒有戶外場地和音樂室。",
+    pn: "2025年9月提供2至3歲服務，收錄16人，半日全年52,416元、全日90,000元。PN不套用K1免費或全日費率，當屆收費及名額另確認。",
+    feeSummary: "K1至K3半日免費；全日全年18,381元／11期",
+    fees: "2026/27 K1至K3上午及下午扣減資助後免費；全日全年18,381元、11期。PN、膳食和用品等另核對，與宏福花園校舍不同。",
+    sourceNote: "本頁為青富苑A座、校號623474，與宏福花園另一校舍分開。官網確認青富位置，課程採本校概覽，未把機構蒙特梭利理念推成整校完整蒙特梭利課程。",
+    sources: [{ label: "宏福：理念及青富校舍", scope: "尊重個別發展、跨文化、生活探索與青富苑校址；本校收費及人員採青富概覽。", url: "https://www.kindergarten.edu.hk/?lang=zh" }],
+    features: { title: "課程特色｜一師一語與正向探索", featured: true, details: [
+      { label: "用教師語言分工支持日常溝通", value: "青富校方概覽列一老師一語言，由粵、英、普教師分組，孩子在建構、圖書及探索角中使用三語；課程結合香港指引及安大略省課程元素。家長可詢問每個班別的教師配置及語言時間，不把三語理解成等量輸入。", period: "2026/27概覽校方申報", sourceUrl: kgp("6234740001") },
+      { label: "家長從學習目標與日誌理解進展", value: "校方列正向教育、預先分享學習目標、主題小書、日誌及學習檔案，另有家長參與主題生日會和文化活動。家庭可了解這些活動需要的時間與準備，並看教師如何回饋孩子的自理、合作及情緒成長。", period: "2026/27概覽校方申報", sourceUrl: kgp("6234740001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "564001", locationId: "0001", website: "https://kindergarten.pokoi.org.hk/YWY/tc/index.php", telephone: "23333279", principal: "楊伊琪", establishedYear: "2002", gradeSpan: grades,
+    language: "概覽未列粵語／普通話／英語逐級時間安排，須向本校確認",
+    ratio: "上午1:9.1；下午1:9.1", ratioIncludesPn: true, teacherCount: 12, spaces: "室內遊戲場地、音樂室及小組教學室；沒有戶外場地。",
+    pn: "2025年9月提供2至3歲服務，收錄27人，全日全年51,996元，半日為「-」；列參加幼兒中心資助計劃，未列暫託或延長服務。當屆費率及空缺另確認。",
+    feeSummary: "K1至K3全日全年12,048元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年12,048元、12期；上午及下午為「-」。PN、膳食及用品費另核對。",
+    sourceNote: "本頁為紅磡海逸豪園23座地下、校號564001，改用本校YWY專頁，地址電話與概覽吻合。博愛其他園所的師資、語言或收生資料不直接套用。",
+    sources: [{ label: "博愛任永賢夫人：學校介紹與聯絡", scope: "博文愛德方向、海逸豪園現址及23333279；課程細節依本校概覽。", url: "https://kindergarten.pokoi.org.hk/YWY/tc/index.php" }],
+    features: { title: "課程特色｜正向遊戲與合作", featured: true, details: [
+      { label: "操作、音樂和環境體驗配合主題", value: "本校概覽列正向教育、合作學習、蒙特梭利教具、奧福音樂及環境教育，透過戶外實地體驗支持探索。這些是課程使用的元素，不能因此推定整校採完整蒙特梭利模式；家長可看一個單元如何組合活動和回饋。", period: "2026/27概覽校方申報", sourceUrl: kgp("5640010001") },
+      { label: "從持續觀察了解孩子的自主和適應", value: "校方列持續觀察、新生及小一適應、社區協作和學前康復支援。家庭可詢問教師如何討論情緒、自理和同伴合作，以及需要支援時的聯絡方法；服務名稱不等於每位孩子均接受同樣次數的訓練。", period: "2026/27概覽校方申報", sourceUrl: kgp("5640010001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "565954", locationId: "0001", website: "https://ktns.caritas.org.hk/", telephone: "28168008", principal: "廖曉燕", establishedYear: "1964", gradeSpan: grades,
+    language: "校方申報英語共讀及語音遊戲；粵語／普通話／英語逐級時間另確認",
+    ratio: "上午1:8.7；下午1:8.7", ratioIncludesPn: true, teacherCount: 6, classroomCount: 7, spaces: "室內遊戲場地、音樂室及多用途輔導室；沒有戶外場地。",
+    pn: "2025年9月提供2至3歲服務，收錄17人，全日全年42,804元，半日為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。當屆費率與資格另確認。",
+    feeSummary: "K1至K3全日全年18,612元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年18,612元、12期；上午及下午為「-」。PN、膳食、暫託、延長及用品費分開核對。",
+    sourceNote: "本頁是蒲菲路27號明愛服務中心校號565954，與其他明愛幼兒學校分開。官網可讀聯絡，但部分自動擷取中文編碼錯亂；課程以本校概覽清晰原文為準，沒有轉貼亂碼內容。",
+    sources: [{ label: "明愛堅尼地城：校方入口", scope: "28168008及本校課程／入學入口；本次部分中文擷取亂碼，主要內容改採本校概覽。", url: "https://ktns.caritas.org.hk/" }],
+    features: { title: "課程特色｜故事創作與關懷品格", featured: true, details: [
+      { label: "改編故事、創作兒歌及英語共讀", value: "校方概覽結合全語言和綜合課程，讓幼兒改編故事、創作兒歌，透過英語共讀與語音遊戲練習表達，再配合專題和生活體驗。家長可看孩子作品如何從口語延伸到文字，並確認不同年級的課時及閱讀投入。", period: "2026/27概覽校方申報", sourceUrl: kgp("5659540001") },
+      { label: "品德、混齡活動及個別面談連結家庭", value: "校方列關懷活動、混合年齡活動、新生及小學適應，全年建立個人檔案並與家長面談。這能幫助家庭了解日常相處和發展需要；若孩子需要情緒或特殊學習支援，應另問評估、跟進及轉介方式。", period: "2026/27概覽校方申報", sourceUrl: kgp("5659540001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "215937", locationId: "0001", website: "https://www.pips.edu.hk/hk/index.asp", telephone: "28126023", schoolType: "私立獨立幼稚園", principal: "羅雪儀", establishedYear: "1989", gradeSpan: "幼兒及K1至K3課程；2歲以下、PN與幼稚園班按年齡另確認",
+    language: "本校官網列英語及普通話雙語、每班兩位教師；逐級時間另確認",
+    ratio: "上午1:7.4；下午1:2.1", ratioIncludesPn: true, teacherCount: 10, classroomCount: 10, spaces: "室內及戶外遊戲場地、音樂室、圖書館、烹飪室、花園及探索區。",
+    pn: "2025年9月提供2至3歲及2歲以下幼兒服務；2至3歲收錄21人、半日全年112,200元，全日為「-」。2歲以下費率及服務模式未在本欄列出，當屆各年齡課程須另核對。",
+    feeSummary: "K1至K3半日全年115,500元／11期；幼兒服務另計",
+    fees: "2026/27 K1至K3上午及下午全年115,500元、11期；全日各格為「-」。沒有參加教育計劃，2歲以下、PN、活動和接送等費用分開核對。",
+    sourceNote: "本頁為陽明山莊18座、校號215937，不套用栢基康城或九龍校舍費率。官網一般1:9與概覽分時段歷史比率口徑不同，不當作矛盾合算或固定班額；本頁採概覽有日期數值。",
+    sources: [{ label: "栢基陽明山莊：本校課程與聯絡", scope: "1989、本校IB-PYP自述、英普雙語、兩位教師、設施及28126023電話；不作錄取保障。", url: "https://www.pips.edu.hk/hk/index.asp" }],
+    features: { title: "課程特色｜英普探究與學習歷程", featured: true, details: [
+      { label: "PYP跨學科探究連結身邊議題", value: "本校官網和概覽介紹國際文憑小學項目PYP探究課程，結合語言、知識和實作，並列英普雙語、每班兩位教師。PYP在此是幼兒課程框架，並不代表小學學位已獲安排；家長可看孩子如何提問、記錄與反思。", sourceUrl: "https://www.pips.edu.hk/hk/index.asp" },
+      { label: "學生主導會談與多種觀察評估", value: "本校概覽列進展及總結評估、學習檔案、學生主導家長會及報告卡，另有親子活動和網上溝通。家庭可索取一份記錄，了解孩子怎樣呈現自己所學，以及語言、社交和情緒如何回饋，再比較通勤與全年成本。", period: "2026/27概覽校方申報", sourceUrl: kgp("2159370001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "596787", locationId: "0001", website: "https://www.lingliang.org.hk/", telephone: "35202238", principal: "丁敏儀", establishedYear: "2015", gradeSpan: grades,
+    language: "本校申報外籍老師以生活化教材教英語；粵語／普通話主課及時間另確認",
+    ratio: "上午1:8.6；下午1:5.6", ratioIncludesPn: true, teacherCount: 14, classroomCount: 5, spaces: "室內遊戲場地、音樂室、視藝室、圖書室、小組活動區、積木區及攀爬區；沒有戶外場地。",
+    pn: "2025年9月提供2至3歲服務，收錄152人，半日全年46,380元；全日為「-」。這不是下屆名額，PN當屆費率及班別另確認。",
+    feeSummary: "K1至K3上午及下午免費；全日未列學費",
+    fees: "2026/27 K1至K3上午及下午扣減資助後免費；全日各格為「-」。PN及膳食、用品、接送費另核對，不能沿用靈糧其他校舍的全日費率。",
+    sourceNote: "本頁只對應荔枝角道873號西九龍薈6至8號舖秀德校號596787，詳細課程和數字依本校概覽；機構官網只作共用理念入口，不套用馬鞍山或其他校舍數據。",
+    sources: [{ label: "香港靈糧堂：機構理念入口", scope: "靈育、高廣度、方案和遊戲的共用方向；秀德安排以本校概覽為準。", url: "https://www.lingliang.org.hk/" }],
+    features: { title: "課程特色｜高廣度與自主遊戲", featured: true, details: [
+      { label: "計劃、進行、分享連結專題探索", value: "秀德校方概覽以靈育、主題、高廣度及方案結合遊戲，讓孩子在學習區計劃、進行和分享，從主題延伸問題；亦列自主遊戲和藝術活動。家長可觀察教師如何保留孩子選擇，以及生活問題如何變成持續探究。", period: "2026/27概覽校方申報", sourceUrl: kgp("5967870001") },
+      { label: "閱讀、自由書寫與生活化英語並行", value: "本校列中英文閱讀、自由書寫、外籍老師生活化教材及奧福音樂，以持續觀察和作品整理記錄進展。家庭可確認書寫安排是否配合孩子成熟度、英語活動的實際時間，以及學習檔案如何讓家長看見興趣與能力的變化。", period: "2026/27概覽校方申報", sourceUrl: kgp("5967870001") },
+    ] },
+  }),
+];

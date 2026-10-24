@@ -6,6 +6,7 @@ import districts from "@/content/districts.json";
 import { SITE_URL } from "@/lib/seo";
 import { LOCALES, localeHref, languageAlternates } from "@/lib/i18n";
 import { BLOG_CLUSTERS } from "@/lib/blog-clusters";
+import { DIRECTORY_SCHOOLS, SCHOOL_STAGES } from "@/lib/school-directory-pilot";
 
 const REPORTS_DIR = path.join(process.cwd(), "src/content/reports");
 const DISTRICTS = districts as { slug: string }[];
@@ -116,10 +117,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    {
+      url: `${SITE_URL}/schools`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     ...DISTRICTS.map((d) => ({
       url: `${SITE_URL}/districts/${d.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })),
+    ...Object.keys(SCHOOL_STAGES).flatMap((stage) => ([
+      {
+        url: `${SITE_URL}/schools/${stage}`,
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${SITE_URL}/schools/${stage}/directory`,
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      },
+    ])),
+    ...DIRECTORY_SCHOOLS.map((school) => ({
+      url: `${SITE_URL}/schools/${school.stage}/${school.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
     })),
     {
       url: `${SITE_URL}/planning`,

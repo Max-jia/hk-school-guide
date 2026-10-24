@@ -71,6 +71,7 @@ function normalizeHk(s: string): string {
   // OpenCC interprets the proper name in 般咸道 as the food word 咸 and
   // converts it to 鹹. Preserve the official Hong Kong street-name spelling.
   out = out.replace(/般鹹道/g, "般咸道");
+  out = out.replace(/馬坑湧道/g, "馬坑涌道").replace(/範翠霞/g, "范翠霞").replace(/東湧/g, "東涌");
   // Long HTML fragments can turn these common phrases into food or archaic glyphs.
   out = out.replace(/麵談/g, "面談").replace(/麵試/g, "面試").replace(/蔘與/g, "參與").replace(/結閤/g, "結合").replace(/箇/g, "個");
   // Keep common Hong Kong education terms intact across the server/client re-conversion boundary.

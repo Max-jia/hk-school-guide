@@ -1,0 +1,156 @@
+import type { PilotSchool } from "./school-directory-pilot";
+import { reviewedKindergartenProfile as profile } from "./school-directory-reviewed-kindergarten";
+
+const kgp = (id: string) => `https://kgp2026.kindergartenprofile.com/school/?schid=${id}`;
+const grades = "PN／2至3歲服務及K1至K3；當屆班別及名額另確認";
+
+export const KINDERGARTEN_BATCH_66: PilotSchool[] = [
+  profile({
+    schoolNumber: "609285", locationId: "0001", website: "https://guidepost.hk/locations/chai-wan", telephone: "28668260", schoolType: "私立獨立幼稚園", principal: "莊素芬", establishedYear: "2020", gradeSpan: grades,
+    language: "本校概覽列英語及普通話雙語蒙特梭利；逐級課時另確認",
+    ratio: "上午1:4.8；下午1:0.3", ratioIncludesPn: true, teacherCount: 4, classroomCount: 4, spaces: "室內及戶外遊戲場地、音樂室；其他特別室列沒有。",
+    pn: "2025年9月提供2至3歲服務，收錄8人，半日全年96,800元；全日費用格為「-」。官網另列Family Club提供的陪同及過渡活動，不能當作本校號提供2歲以下幼兒服務；當屆PN費率及學額另確認。",
+    feeSummary: "K1至K3上午全年100,100元／11期；下午88,000元／11期",
+    fees: "2026/27概覽K1至K3上午全年100,100元、11期；下午88,000元、11期；全日各格為「-」。沒有參加教育計劃，PN和Family Club等服務費分開查。",
+    sourceNote: "本頁是小西灣道9號富欣花園校址，不是樂沛兒柴灣或其他Guidepost校舍。官網稱3間課室，概覽註冊4間，口徑分開保留；下午1:0.3不代表個別孩子固定配多位教師。",
+    sources: [{ label: "Guidepost柴灣：校舍及服務組別", scope: "富欣花園地址、28668260電話、Toddler及Children’s House；另列Family Club活動，不與註冊幼兒服務混合。", url: "https://guidepost.hk/locations/chai-wan" }],
+    features: { title: "課程特色｜自主操作與英普環境", featured: true, details: [
+      { label: "導師按觀察引導個別工作", value: "本校概覽列蒙特梭利工作循環，讓孩子選擇和規劃操作，教師按觀察調整引導，兒童之家亦有混齡互助。家長可了解每天能持續操作多久，以及孩子遇到困難時如何得到協助；混齡名稱本身不能說明每班年齡分布。", period: "2026/27概覽校方申報", sourceUrl: kgp("6092850001") },
+      { label: "先分清幼稚園與親子活動的提供者", value: "柴灣官網把2至3歲Toddler、3至6歲Children’s House，以及由Family Club提供的親子或過渡活動分開。對家庭而言，陪同要求、時間和費用可能不同，應按孩子年齡確認實際服務，並詢問英普教學及網上學習回饋的日常安排。", sourceUrl: "https://guidepost.hk/locations/chai-wan" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "599182", locationId: "0001", website: "https://chatsworthinternational.hk/", telephone: "25603322", schoolType: "私立獨立幼稚園", principal: "鄭玉萍", establishedYear: "2015", gradeSpan: grades,
+    language: "官網列英語、Mandarin及Chinese三語方向；Chinese所指語音及逐級課時須確認",
+    ratio: "上午1:12.0；下午1:4.7", ratioIncludesPn: true, teacherCount: 5, classroomCount: 9, spaces: "室內及戶外遊戲場地、圖書室、美藝工作室、禮堂及音樂室。",
+    pn: "2025年9月提供2至3歲服務，收錄20人，半日全年65,780元；全日格為「-」。當屆PN費率及名額須另確認。",
+    feeSummary: "K1至K3半日全年69,080元／11期；全日118,800元／11期",
+    fees: "2026/27概覽K1至K3上午及下午全年69,080元、11期；全日各級118,800元、11期。沒有參加教育計劃，PN與其他活動費用另核對。",
+    sourceNote: "本頁校號599182為界限街校舍，現校方網站電話25603322與概覽吻合；網站以166號地下作到訪地址，教育局列示更完整註冊樓層，本頁保留登記地址而不自行縮減。官網1:8明列為playgroup比例，沒有用來取代幼稚園歷史師生比。",
+    sources: [{ label: "卓薈界限街：教學方向與到訪聯絡", scope: "兒童為本、三語、遊戲探索及166號聯絡；playgroup比例不作K1至K3班額。", url: "https://chatsworthinternational.hk/" }],
+    features: { title: "課程特色｜遊戲探索與表達", featured: true, details: [
+      { label: "校方強調探索、建構和創作", value: "現官網以兒童為本、遊戲探索、專題和創意表達作課程方向，並列PN至K3階段。概覽未提供詳細課程文本，家庭可索取現行單元、作品和課表，了解這些方向如何落到每天的學習，不能只按品牌的國際背景判斷。", sourceUrl: "https://chatsworthinternational.hk/" },
+      { label: "三語標示需要問清語音及班別", value: "官網寫英語、Mandarin和Chinese，沒有在該段清楚說明第三項的授課語音或時間。若家庭特別重視粵語或普通話，應確認本班教師分工及語言環境；網頁另列的playgroup 1:8亦不是幼稚園各班的現行配置。", sourceUrl: "https://chatsworthinternational.hk/" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "593788", locationId: "0001", website: "https://www.maplebear.hk/", telephone: "27176336", schoolType: "私立獨立幼稚園", principal: "龍靜兒", establishedYear: "2013", gradeSpan: grades,
+    language: "機構列英語與中文沉浸；油塘中文語音及逐級時數另確認",
+    ratio: "上午1:7.0；下午未列", ratioIncludesPn: true, teacherCount: 2, classroomCount: 6, spaces: "室內遊戲場地；戶外、音樂及其他特別室沒有資料。",
+    pn: "2025年9月提供2至3歲服務，收錄5人，半日全年80,850元，全日為「-」。PN與K1至K3剛好有相同數字也仍屬不同年度／服務欄，當屆費率另確認。",
+    feeSummary: "K1至K3半日全年80,850元／11期；全日未列學費",
+    fees: "2026/27概覽K1至K3上午及下午全年80,850元、11期；全日各格為「-」。本校為私立獨立且未參加教育計劃，不採第三方網站寫成非牟利免費計劃的說法。",
+    sourceNote: "本頁為油塘草園街8號嘉賢居校號593788，官網油塘地址及27176336電話一致。機構其他將軍澳、康城校舍或加拿大整體教育表現不當成本校成果；創校年份按本校概覽2013保留。",
+    sources: [
+      { label: "楓葉小熊：機構課程方向", scope: "英中沉浸、遊戲及全人發展的校方自述；國家教育表現和全球規模不代表油塘學生結果。", url: "https://www.maplebear.hk/" },
+      { label: "楓葉小熊：油塘校舍聯絡", scope: "嘉賢居地址、27176336電話及各校舍區分。", url: "https://www.maplebear.hk/contact" },
+    ],
+    features: { title: "課程特色｜雙語沉浸與遊戲", featured: true, details: [
+      { label: "以英語及中文互動連結生活學習", value: "機構官網把加拿大及香港雙語教育結合，主張在英語和中文對話、指導中學習，並透過遊戲支持身體、認知、情緒及社交發展。油塘概覽未詳列課程，家庭應向分校確認中文語音、教師分工及一週活動，而不把機構介紹當作相同比例的語言課表。", sourceUrl: "https://www.maplebear.hk/" },
+      { label: "按油塘班制比較照顧需要", value: "本校概覽列半日費率及室內場地，官網亦清楚列油塘校址。若家庭需要全日照顧，應先查本校當屆是否有其他核准服務、接送和延伸活動，再計總成本；不能沿用同品牌其他分校的供應和費率。", sourceUrl: kgp("5937880001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "564958", locationId: "0001", website: "https://guidepost.hk/locations/happyvalley-hawthornroad", telephone: "25750042", schoolType: "私立獨立幼稚園", principal: "莊素芬", establishedYear: "2023", gradeSpan: grades,
+    language: "本校概覽列英語及普通話雙語蒙特梭利；時段課表另確認",
+    ratio: "上午1:5.1；下午1:0.6", ratioIncludesPn: true, teacherCount: 7, classroomCount: 5, spaces: "室內及戶外遊戲場地；其他特別室列沒有，音樂室沒有資料。",
+    pn: "2025年9月提供2至3歲服務，收錄18人，半日全年159,840元；全日為「-」。PN當屆費率、時長與名額另確認。",
+    feeSummary: "K1至K3上午全年133,200至175,200元；下午117,720元，均12期",
+    fees: "2026/27概覽K1至K3上午格列全年133,200至175,200元、12期；下午117,720元、12期；全日各格為「-」。保留原區間，不取平均，也不推定上限對應全日；具體課程及時長須查核准證明和當屆課表。",
+    sourceNote: "本頁是荷塘道2號地下校號564958，並非Guidepost跑馬地其他地址。官網地址電話吻合；概覽上午學費區間沒有在頁內拆分原因，不能自行按語言或長短時段分配。",
+    sources: [{ label: "Guidepost荷塘道：校舍及年齡課程", scope: "荷塘道2號、25750042電話、戶外空間、Toddler及Children’s House。", url: "https://guidepost.hk/locations/happyvalley-hawthornroad" }],
+    features: { title: "課程特色｜混齡自主與英普探索", featured: true, details: [
+      { label: "在混齡環境規劃和修正工作", value: "本校概覽列蒙特梭利個人化操作和工作循環，孩子自主選擇目標，在混齡兒童之家練習互助與照顧環境，教師透過觀察引導。家長可在參觀時了解不同年齡的任務、教師介入方式及英普對話如何自然發生。", period: "2026/27概覽校方申報", sourceUrl: kgp("5649580001") },
+      { label: "戶外空間和課程時長應一起問", value: "荷塘道官網介紹獨立戶外遊戲空間和2至3歲、3至6歲組別。對家庭而言，值得查清戶外使用頻率、入學適應和每天接送時間，再對照學費區間；有戶外場地或蒙特梭利名稱都不能代替實際日程。", sourceUrl: "https://guidepost.hk/locations/happyvalley-hawthornroad" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "612391", locationId: "0001", website: "https://www.learninghabitat.org/en/campus/tseung-kwan-o/papillons-lp-campus", telephone: "23633005", schoolType: "私立獨立幼稚園", principal: "朱家寶", establishedYear: "2010", gradeSpan: grades,
+    language: "K1至K3設粵英或普英雙語班；PN為粵英，粵英班另有普通話課",
+    ratio: "上午1:8.1；下午1:8.1", ratioIncludesPn: true, teacherCount: 32, classroomCount: 9, spaces: "室內遊戲場地、音樂室、圖書館及閱讀閣；沒有戶外遊戲場地。",
+    pn: "2025年9月概覽列2至3歲半日全年90,000元、收錄112人，全日為「-」。這是當時幼兒服務欄，不是下一屆名額；2026/27校方現行PN月費另見本頁課程補充。",
+    feeSummary: "K1至K3粵英全年90,000元、普英93,600元，均12期",
+    fees: "概覽K1至K3上午及下午列全年90,000至93,600元、12期；全日為「-」。校方2026/27費用表進一步按粵英與普英列月費，見課程補充的來源；學費不包括全部校服及教材雜費。",
+    sourceNote: "本頁為唐俊街21號翩滙坊12、15及16號舖、海翩康城校號612391，校舍電話地址與官網吻合。官網提供各校當屆費用表，沒有拿舊概覽PN費率取代2026/27現價；亦未把校舍開放時間當上課時間。",
+    sources: [
+      { label: "海翩康城：本校地址與聯絡", scope: "翩滙坊店號、23633005及校舍資訊。", url: "https://www.learninghabitat.org/en/campus/tseung-kwan-o/papillons-lp-campus" },
+      { label: "學之園：雙語組別及日程", scope: "粵英PN至K3、普英K1至K3、雙教師帶班、普通話補充課及半日時段。", url: "https://www.learninghabitat.org/en/admission/programmes" },
+      { label: "學之園：2026/27收費表", scope: "按校舍及語言組別列12期月費，以及分開的校服和每學期雜費。", url: "https://www.learninghabitat.org/en/admission/fees" },
+    ],
+    features: { title: "課程特色｜語言組別與家庭預算", featured: true, details: [
+      { label: "粵英與普英的差別落在中文語音", value: "校方課程頁列粵英班適用PN至K3，由英語和粵語教師共同帶班，另有普通話補充課；普英班適用K1至K3，由英語和普通話教師共同帶班，加入普通話拼音。家庭可按孩子現有中文及未來教育路線選組別，不能把兩組統稱為相同的三語課表。", sourceUrl: "https://www.learninghabitat.org/en/admission/programmes" },
+      { label: "當屆費率可與概覽區間逐項對上", value: "校方2026/27海翩康城費用表列12期：K1至K3粵英每月7,500元（全年90,000元）、普英每月7,800元（全年93,600元）；PN每月7,800元（全年93,600元）。另列PN每學期雜費2,200元、K1至K3為2,500元及校服費，學費不是全部年度支出。", period: "2026/27校方費用表；全年數為月費乘12期", sourceUrl: "https://www.learninghabitat.org/en/admission/fees" },
+      { label: "主題操作與持續評估配合家校合作", value: "本校概覽列主題及設計活動、戶外參觀、自製校本教材及英語拼音，主題完結後有持續評估及期終報告。家長宜看實際課本、作品和回饋樣本，理解課堂探究與家庭閱讀之間的投入，而非只比較語言名稱。", period: "2026/27概覽校方申報", sourceUrl: kgp("6123910001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "594725", locationId: "0001", website: "https://guidepost.hk/locations/mid-levels", telephone: "25491211", schoolType: "私立獨立幼稚園", principal: "莊素芬", establishedYear: "2024", gradeSpan: grades,
+    language: "本校概覽列英語及普通話雙語蒙特梭利；逐級時間另確認",
+    ratio: "上午1:9.8；下午1:0.3", ratioIncludesPn: true, teacherCount: 11, classroomCount: 15, spaces: "室內及戶外遊戲場地、音樂室；其他特別室列沒有。",
+    pn: "2025年9月提供2至3歲服務，收錄37人，半日全年86,400元；全日為「-」。PN當屆費率與名額另核對，不能沿用其他Guidepost校舍。",
+    feeSummary: "K1至K3上午全年146,400元／12期；下午134,400元／12期",
+    fees: "2026/27概覽K1至K3上午全年146,400元、12期；下午134,400元、12期；全日各格為「-」。沒有參加教育計劃，PN和延伸活動費另核對。",
+    sourceNote: "本頁為堅道安峰大廈校號594725。官網到訪範圍列1至3樓，教育局本校註冊地址列1至2樓，保留登記範圍，不自行擴大為3樓；對街Family Club亦非同一登記空間。2024是本校概覽年份，不套用前身機構歷史。",
+    sources: [{ label: "Guidepost半山：到訪位置及課程組別", scope: "堅道地址、25491211及Toddler／Children’s House；官網到訪樓層與本校註冊範圍分開。", url: "https://guidepost.hk/locations/mid-levels" }],
+    features: { title: "課程特色｜英普自主學習與家校回饋", featured: true, details: [
+      { label: "教師觀察引導，孩子選擇操作", value: "半山本校概覽以蒙特梭利個人化課程、工作循環和混齡兒童之家為模式，配合英普環境。家長可觀察孩子如何選擇、重複和完成工作，並請教師說明怎樣辨別孩子需要新的挑戰或更多支援。", period: "2026/27概覽校方申報", sourceUrl: kgp("5947250001") },
+      { label: "網上回饋與家長會要看具體內容", value: "校方申報透過網上平台分享學習，每年兩次報告及家長會，另有親子和社群活動。家庭宜先看一份個人進度記錄，了解語言、社交和情緒如何回饋；若考慮對街Family Club活動，需另外確認提供者、照顧與收費。", period: "2026/27概覽校方申報", sourceUrl: kgp("5947250001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "564125", locationId: "0001", website: "https://zckns.tungwahcsd.org/tc/page/home-page", telephone: "24480031", principal: "陳麗娟", establishedYear: "2001", gradeSpan: grades,
+    language: "校方列中英文故事及幼稚園班每週外籍英語活動；主課語音及普通話安排另確認",
+    ratio: "上午1:8.0；下午1:8.0", ratioIncludesPn: true, teacherCount: 9, classroomCount: 4, spaces: "室內遊戲場地、音樂室；沒有戶外場地或其他特別室。",
+    pn: "2025年9月提供2至3歲服務，收錄18人，全日全年38,232元，半日為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。當屆費率、資格及空缺另確認。",
+    feeSummary: "K1至K3全日全年14,580元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年14,580元、12期；上午及下午為「-」。膳食、PN、暫託及延長服務收費另查。",
+    sourceNote: "本頁為天悅邨服務設施大樓1樓，名稱雖有九龍崇德社，實際校址在天水圍；未因名稱改動分區。校方網頁活動室數與概覽註冊課室為不同空間口徑，不當作相同班額。",
+    sources: [{ label: "九龍崇德社幼兒園：課程及服務", scope: "故事全語文、方案、情緒與肌能、每週外籍英語及長全日服務自述。", url: "https://zckns.tungwahcsd.org/tc/page/home-page" }],
+    features: { title: "課程特色｜故事、身體與情緒", featured: true, details: [
+      { label: "故事聯繫生活，身體探索也入課程", value: "校方介紹全語文、兒童方案、感知肌能及「敢動」身體活動，用中英文故事、操作、訪問和分享引發探索。全語文是把聽說讀寫放進完整情境，不是全英授課。家長可觀察活動是否讓孩子自行嘗試和表達。", sourceUrl: "https://zckns.tungwahcsd.org/tc/page/home-page" },
+      { label: "全日生活重視安全感與情緒回應", value: "校方列穩定日程、情緒教育、兼收及專業支援；幼稚園班另有每週外籍英語故事和遊戲。對需要照顧的家庭，應核對午睡、接送、延長時間和語言活動的實際安排，支援項目不等於每名孩子均有相同服務頻率。", sourceUrl: "https://zckns.tungwahcsd.org/tc/page/home-page" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "564141", locationId: "0001", website: "https://lcphkns.tungwahcsd.org/en/homepage", telephone: "24270128", principal: "盧詩雅", establishedYear: "1978", gradeSpan: grades,
+    language: "校方列全語文及語文增潤；英語／普通話／粵語課時未公開",
+    ratio: "上午1:6.2；下午1:6.2", ratioIncludesPn: true, teacherCount: 5, classroomCount: 6, spaces: "室內遊戲場地、音樂室及大肌肉活動室；沒有戶外場地。",
+    pn: "2025年9月提供2至3歲服務，收錄6人，全日全年46,068元，半日為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。當屆費率及服務資格另確認。",
+    feeSummary: "K1至K3全日全年10,944元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年10,944元、12期；上午及下午為「-」。PN、膳食、延長時間等另核對。",
+    sourceNote: "本頁為葵盛西邨10座地下校號564141，官網24270128地址相符。學校名稱中的香港鑪峯獅子會是命名背景，不代表校址位於山頂；各治療及轉介服務按需要提供。",
+    sources: [{ label: "香港鑪峯獅子會幼兒園：課程及服務", scope: "葵盛西邨地址電話，全語文、自由遊戲、情緒、方案、語文增潤及支援入口。", url: "https://lcphkns.tungwahcsd.org/en/homepage" }],
+    features: { title: "課程特色｜主動遊戲與生活能力", featured: true, details: [
+      { label: "把創意、合作和解難放進方案", value: "本校概覽以故事、方案和全語文設計課程，將創意、溝通、合作、品格、解難及公民意識列為能力方向。家長可看孩子如何在小組中討論和選擇，並詢問教師如何按不同能力調整材料；這些方向不能直接當成已驗證成果。", period: "2026/27概覽校方申報", sourceUrl: kgp("5641410001") },
+      { label: "觀察評估配合全日家庭支援", value: "校方列觀察及檔案分析，並有社工、特殊幼兒導師和治療團隊按需要支援；官網亦列暫託及延長服務。家庭宜了解提出需要後的評估、輪候和家長合作方式，再連同日程與費用比較。", period: "2026/27概覽校方申報", sourceUrl: kgp("5641410001") },
+    ] },
+  }),
+  profile({
+    schoolNumber: "563595", locationId: "0001", website: "https://tkpns.tungwahcsd.org/tc/page/home", telephone: "24667454", principal: "蘇麗雯", establishedYear: "1986", gradeSpan: grades,
+    language: "官網列外籍英語及普通話老師遊戲增潤；主課語音及時數另確認",
+    ratio: "上午1:5.8；下午1:5.8", ratioIncludesPn: true, teacherCount: 5, classroomCount: 7, spaces: "室內遊戲場地、音樂室；沒有戶外場地或其他特別室。",
+    pn: "2025年9月提供2至3歲服務，收錄5人，全日全年43,392元，半日為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。當屆費率、資格及空缺另核對。",
+    feeSummary: "K1至K3全日全年15,972元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年15,972元、12期；上午及下午為「-」。PN、膳食、暫託和延長時間不套用本組費率。",
+    sourceNote: "本頁為蝴蝶邨蝶翎樓2樓，官網電話地址一致。概覽創校1986、官網歷程另有1985開園標示，保留來源差別而不任選新年份；1995命名及2005註冊為其他歷史事件。",
+    sources: [{ label: "田家炳幼兒園：課程、服務與歷史", scope: "故事、情緒、生活訓練、敢動、美感、英普增潤及蝴蝶邨聯絡；歷史時間線與概覽分開。", url: "https://tkpns.tungwahcsd.org/tc/page/home" }],
+    features: { title: "課程特色｜生活自理與藝術身體探索", featured: true, details: [
+      { label: "蒙特梭利理念用在日常生活訓練", value: "校方介紹在日常流程加入生活訓練，讓孩子照顧自己、他人和環境，並透過教具建立次序及手眼協調；故事與方案活動則連結觀察、假設和分享。這是本校採用的元素，不能因此把整所學校直接等同完整蒙特梭利課程。", sourceUrl: "https://tkpns.tungwahcsd.org/tc/page/home" },
+      { label: "身體、美感和英普活動各有安排", value: "校方列「敢動」身體教育、美感探索、情緒教育及英普故事遊戲；官網對部分活動寫每週安排，但未標適用學年。家庭可向本校確認當屆頻率、年級及家課投入，再了解孩子如何參與和獲得回饋。", sourceUrl: "https://tkpns.tungwahcsd.org/tc/page/home" },
+    ] },
+  }),
+  profile({
+    schoolNumber: "563579", locationId: "0001", website: "https://lwpsns.tungwahcsd.org/", telephone: "27129383", principal: "馮秀蘭", establishedYear: "1978", gradeSpan: grades,
+    language: "校方列中英文故事全語文活動；粵語／普通話／英語逐級時數另確認",
+    ratio: "上午1:6.0；下午1:6.0", ratioIncludesPn: true, teacherCount: 7, classroomCount: 6, spaces: "室內遊戲場地、音樂室；沒有戶外場地或其他特別室。",
+    pn: "2025年9月提供2至3歲服務，收錄6人，全日全年40,548元，半日為「-」；列參加幼兒中心資助計劃及提供暫託、延長時間服務。當屆費率和服務條件另確認。",
+    feeSummary: "K1至K3全日全年13,980元／12期；PN另計",
+    fees: "2026/27 K1至K3全日扣減資助後全年13,980元、12期；上午及下午為「-」。PN、膳食、暫託及延長時間等費用另查當屆清單。",
+    sourceNote: "本頁是愛民邨保民樓425至434室地下，官網27129383與地址相符。原/tc/home擷取逾時後由根目錄取得本校完整資料；未借用其他東華園的英普教師頻率。",
+    sources: [{ label: "羅黃碧珊幼兒園：課程與支援", scope: "全語文、方案、情緒親職、生活訓練、敢動及愛民邨地址電話；活動保留各學年範圍。", url: "https://lwpsns.tungwahcsd.org/" }],
+    features: { title: "課程特色｜情緒教育與生活訓練", featured: true, details: [
+      { label: "親職與情緒教育連到日常關係", value: "本校官網列情緒教育、親職課程和駐校社工，目的是讓家長理解孩子需要並建立親密關係；課程以中英文故事、主題和方案支持表達。家庭可了解親職活動的時間及參與方式，以及教師如何與家長討論孩子適應和同伴相處。", sourceUrl: "https://lwpsns.tungwahcsd.org/" },
+      { label: "感官、身體和自理融入全日生活", value: "校方列感知肌能家課、生活技能訓練及K2、K3「敢動」身體教育，讓幼兒操作、照顧環境並與同伴合作。這些安排需連同午睡、接送及家庭練習負擔一起看，亦應詢問當屆活動和支援頻率。", sourceUrl: "https://lwpsns.tungwahcsd.org/" },
+    ] },
+  }),
+];
