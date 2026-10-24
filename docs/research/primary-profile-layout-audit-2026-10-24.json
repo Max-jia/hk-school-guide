@@ -1,0 +1,50 @@
+{
+  "primaryProfiles": 648,
+  "categoryCounts": {
+    "資助": 421,
+    "特殊學校": 60,
+    "直資": 21,
+    "英基": 10,
+    "官立": 32,
+    "國際": 32,
+    "私立": 72
+  },
+  "originalFactsAndSources": "unchanged",
+  "reportsAndBlog": "unchanged",
+  "unresolved": 0,
+  "status": "local-ready-for-review",
+  "published": false,
+  "reference": "已确认的幼稚园紧凑名录与分组资料页",
+  "categorySource": "https://data.gov.hk/tc-data/dataset/hk-edb-schinfo-school-location-and-information",
+  "categoryMethod": "仅将现有有来源的学校类别映射为筛选标签，保留学校类别原文及所有资料来源。",
+  "checks": {
+    "typecheck": "pass",
+    "scopeEslint": "pass",
+    "diffWhitespace": "pass",
+    "primaryBrowserChecks": 36,
+    "locales": [
+      "tc",
+      "sc"
+    ],
+    "cssViewportWidths": [
+      390,
+      1280
+    ],
+    "overflowFailures": 0,
+    "allSevenCategoryFilters": "pass",
+    "districtAndNameFilter": "南区官立: 1",
+    "loadMore": [
+      50,
+      100
+    ],
+    "regressionPages": [
+      "kindergarten directory",
+      "kindergarten profile",
+      "secondary directory"
+    ]
+  },
+  "localPreviews": [
+    "http://127.0.0.1:3320/cn/schools/primary/directory",
+    "http://127.0.0.1:3320/cn/schools/primary/hkcwcyw"
+  ]
+}

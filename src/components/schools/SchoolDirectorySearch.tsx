@@ -9,7 +9,11 @@ export default function SchoolDirectorySearch({ schools, locale = "tc" }: { scho
   const [query, setQuery] = useState("");
   const [district, setDistrict] = useState("");
   const [category, setCategory] = useState("");
-  const categories = useMemo(() => [...new Set(schools.flatMap((school) => school.schoolCategories || [school.schoolType]))].sort(), [schools]);
+  const categories = useMemo(() => {
+    const values = [...new Set(schools.flatMap((school) => school.schoolCategories || [school.schoolType]))];
+    const primaryOrder = ["資助", "官立", "直資", "私立", "國際", "英基", "按位津貼", "特殊學校", "類別待核實"];
+    return schools[0]?.stage !== "kindergarten" ? values.sort((a, b) => primaryOrder.indexOf(a) - primaryOrder.indexOf(b)) : values.sort();
+  }, [schools]);
   const [visibleCount, setVisibleCount] = useState(50);
   const districts = useMemo(() => [...new Set(schools.flatMap((school) => school.districts?.length ? school.districts : [school.district]))].sort(), [schools]);
   const filtered = useMemo(() => {
@@ -51,6 +55,7 @@ export default function SchoolDirectorySearch({ schools, locale = "tc" }: { scho
         </label>
       </form>
       {schools[0]?.stage === "kindergarten" && <p className="mt-2 text-xs leading-relaxed text-[var(--p-secondary)]">{L("辦學類別與課程分開標示：國際／非本地課程可同時屬非牟利或私立。類別按概覽及已核實資料列示，不以校名判斷。", locale)}</p>}
+      {schools[0]?.stage !== "kindergarten" && <p className="mt-2 text-xs leading-relaxed text-[var(--p-secondary)]">{L("類型按教育局名錄及已核實類別整理；英基、國際及特殊學校分開列示。完整辦學類別及資料年份可在學校資料頁查閱。", locale)}</p>}
       <p className="mt-4 text-sm text-[var(--p-secondary)]" aria-live="polite">
         {L("搜尋結果", locale)}：{filtered.length} / {schools.length} {L("所學校", locale)}
       </p>

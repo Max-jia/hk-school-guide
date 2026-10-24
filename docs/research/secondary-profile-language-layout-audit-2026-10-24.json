@@ -1,0 +1,57 @@
+{
+  "secondaryProfiles": 587,
+  "categoryCounts": {
+    "資助": 357,
+    "特殊學校": 62,
+    "按位津貼": 2,
+    "直資": 57,
+    "英基": 6,
+    "官立": 30,
+    "國際": 26,
+    "私立": 47
+  },
+  "officialChineseRows": 441,
+  "languageChanges": 434,
+  "detailChanges": 2215,
+  "addressChanges": 4,
+  "englishOnlyFields": 0,
+  "englishProseFields": 0,
+  "identityRoutesAndSources": "preserved",
+  "sourceUrlProtection": "pass",
+  "termDefinitions": "pass",
+  "status": "local-ready-for-review",
+  "published": false,
+  "edition": "2025/26",
+  "officialSource": "https://www.chsc.hk/datagovhk/ssp_2025_2026_tc.csv",
+  "sourceSha256": "a3785a78a98e1b12ebcd890728442bb22f5aaa71d07135711c6c18b511119fa0",
+  "checkedAt": "2026-10-24",
+  "method": "按同年度官方中文CSV唯一校名及地区配对到教育局学校编号，仅替换英文正文，保留原有中文内容与来源。",
+  "checks": {
+    "typecheck": "pass",
+    "scopeEslint": "pass",
+    "sourceAndIdentityAudit": "pass",
+    "browserChecks": 44,
+    "locales": [
+      "tc",
+      "sc"
+    ],
+    "cssViewportWidths": [
+      390,
+      1280
+    ],
+    "horizontalOverflowFailures": 0,
+    "eightCategoryFilters": "pass",
+    "loadMore": [
+      50,
+      100
+    ],
+    "nameSearch": "皇仁:1",
+    "duplicatePolicyDisplay": "exact repeated language policy displayed once; source link retained beside the basic language field",
+    "sourceDisclosure": "pass",
+    "primaryAndKindergartenRegression": "pass"
+  },
+  "localPreviews": [
+    "http://127.0.0.1:3320/cn/schools/secondary/directory",
+    "http://127.0.0.1:3320/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225"
+  ]
+}

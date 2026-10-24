@@ -1,3 +1,5 @@
+import { prepareSecondaryProfile } from "./secondary-profile";
+import { classifyPrimary } from "./primary-classification";
 import { classifyKindergarten } from "./kindergarten-classification";
 import type { Locale } from "@/lib/i18n";
 import reportMeta from "@/content/report-meta.json";
@@ -149,6 +151,7 @@ export type PilotSchool = {
   schoolNet?: string;
   tuition?: string;
   language?: string;
+  languageSourceUrl?: string;
   gradeSpan: string;
   website: string;
   dataYear: string;
@@ -5239,6 +5242,8 @@ const uniqueDirectoryRecords = [...directoryRecords.reduce((records, school) => 
 export const DIRECTORY_SCHOOLS: PilotSchool[] = uniqueDirectoryRecords.map((school) => ({
   ...school,
   ...classifyKindergarten(school),
+  ...classifyPrimary(school),
+  ...prepareSecondaryProfile(school),
   reportSlug: school.reportSlug && publishedReports.has(school.reportSlug) ? school.reportSlug : undefined,
   relatedReportSlugs: school.relatedReportSlugs?.filter((slug) => publishedReports.has(slug)),
 }));

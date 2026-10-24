@@ -9,8 +9,8 @@ import SchoolDirectorySearch from "@/components/schools/SchoolDirectorySearch";
 export default function SchoolDirectoryPage({ stage, locale = "tc" }: { stage: SchoolStage; locale?: Locale }) {
   const config = SCHOOL_STAGES[stage];
   const schools = schoolsForStage(stage, locale);
-  const searchSchools = schools.map(({ stage: schoolStage, slug, name, nameEn, district, districts, schoolType, schoolCategories, gender, address, schoolNet, tuition, reportSlug, relatedReportSlugs }) => ({
-    stage: schoolStage, slug, name, nameEn, district, districts, schoolType, schoolCategories, gender, address, schoolNet, tuition, reportSlug, relatedReportSlugs,
+  const searchSchools = schools.map(({ stage: schoolStage, slug, name, nameEn, district, districts, schoolType, schoolCategories, gender, address, schoolNet, language, tuition, reportSlug, relatedReportSlugs }) => ({
+    stage: schoolStage, slug, name, nameEn, district, districts, schoolType, schoolCategories, gender, address, schoolNet, language: schoolStage !== "kindergarten" ? language : undefined, tuition, reportSlug, relatedReportSlugs,
   }));
   return (
     <Localize locale={locale}>

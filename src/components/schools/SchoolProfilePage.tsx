@@ -7,12 +7,13 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
 
-function labelFor(key: string, locale: Locale) {
+function labelFor(key: string, locale: Locale, stage: SchoolStage) {
   const labels: Record<string, string> = {
     nameEn: "英文校名", curriculumType: "課程類別", schoolType: "辦學類別", gradeSpan: "開設級別", district: "地區", address: "地址", telephone: "電話", registrationStatus: "教育局登記狀態",
     schoolNumber: "教育局學校編號", principal: "校長", establishedYear: "創校年份", sponsoringBody: "辦學團體",
     gender: "學生性別", religion: "宗教", schoolNet: "小一校網", tuition: "學費/費用", language: "教學語言",
   };
+  if (stage !== "kindergarten") { labels.schoolNumber = "學校編號"; labels.registrationStatus = "登記狀態"; }
   return L(labels[key] || key, locale);
 }
 
@@ -38,8 +39,18 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
   if (!school) return null;
   const path = `/schools/${stage}/${slug}`;
   const reportSlugs = school.relatedReportSlugs?.length ? [...new Set(school.relatedReportSlugs)] : school.reportSlug ? [school.reportSlug] : [];
+  const detailLabel = stage !== "kindergarten" ? "教學與學校特色" : "課程與學校特色";
+  const sectionPriority = (section: NonNullable<typeof school.detailSections>[number]) => {
+    if (section.featured || (stage !== "kindergarten" && /理念|課程特色|教學特色|辦學方向|學習特色/.test(section.title))) return 0;
+    if (stage !== "kindergarten" && /登記校址|聯絡與授課/.test(section.title)) return 2;
+    return 1;
+  };
+  const orderedSections = [...(school.detailSections || [])].map((section) => ({
+    ...section,
+    details: section.details.filter((detail) => !(stage === "secondary" && school.languageSourceUrl && detail.label === "語言政策" && detail.value === school.language)),
+  })).filter((section) => section.details.length).sort((a, b) => sectionPriority(a) - sectionPriority(b));
   const factGroups = [
-    { title: "課程與費用", entries: [["schoolType", school.schoolType], ["curriculumType", school.curriculumType], ["gradeSpan", school.gradeSpan], ["language", school.language], ["tuition", school.tuition], ["schoolNet", school.schoolNet]] },
+    { title: stage === "secondary" ? "課程、語言與費用" : stage === "primary" ? "入學與學習安排" : "課程與費用", entries: [["schoolType", school.schoolType], ["schoolNet", school.schoolNet], ["curriculumType", school.curriculumType], ["gradeSpan", school.gradeSpan], ["language", school.language], ["tuition", stage === "primary" ? school.tuition?.replace(/^"|"$/g, "") : school.tuition]] },
     { title: "校址與聯絡", entries: [["district", school.district], ["address", school.address], ["telephone", school.telephone]] },
     { title: "學校背景", entries: [["principal", school.principal], ["establishedYear", school.establishedYear], ["sponsoringBody", school.sponsoringBody], ["gender", school.gender], ["religion", school.religion], ["schoolNumber", school.schoolNumber], ["registrationStatus", school.registrationStatus]] },
   ].map((group) => ({ ...group, entries: group.entries.filter((entry): entry is [string, string] => Boolean(entry[1])) })).filter((group) => group.entries.length);
@@ -88,7 +99,7 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
 
           <nav aria-label={L("本頁內容", locale)} className="mt-4 flex flex-wrap gap-x-5 border-b border-black/10 text-sm font-semibold dark:border-white/10">
             <a className="inline-flex min-h-11 items-center no-underline hover:underline" href="#profile-facts-title">{L("基本資料", locale)}</a>
-            {school.detailSections?.length ? <a className="inline-flex min-h-11 items-center no-underline hover:underline" href="#profile-details-title">{L("課程與學校特色", locale)}</a> : null}
+            {school.detailSections?.length ? <a className="inline-flex min-h-11 items-center no-underline hover:underline" href="#profile-details-title">{L(detailLabel, locale)}</a> : null}
             <a className="inline-flex min-h-11 items-center no-underline hover:underline" href="#profile-sources-title">{L("來源與資料說明", locale)}</a>
           </nav>
 
@@ -101,9 +112,10 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
               {factGroups.map((group, index) => <article key={group.title} className={`min-w-0 rounded-xl border border-black/10 bg-white p-4 dark:border-white/10 dark:bg-[var(--p-bg)] sm:p-5 ${index === 0 ? "lg:col-span-2" : ""}`}>
                 <h3 className="mb-2 text-base font-bold text-[var(--p-fg)]">{L(group.title, locale)}</h3>
                 <dl className={`grid gap-x-8 ${index === 0 ? "md:grid-cols-2" : ""}`}>
-                  {group.entries.map(([key, value]) => <div key={key} className={`grid min-w-0 grid-cols-[88px_minmax(0,1fr)] gap-3 border-t border-black/8 py-2.5 dark:border-white/10 ${key === "tuition" ? "md:col-span-2" : ""}`}>
-                    <dt className="text-sm text-[var(--p-secondary)]">{labelFor(key, locale)}</dt>
-                    <dd className="m-0 break-words text-sm leading-relaxed text-[var(--p-fg)]">{L(value, locale)}
+                  {group.entries.map(([key, value]) => <div key={key} className={`grid min-w-0 grid-cols-[88px_minmax(0,1fr)] gap-3 border-t border-black/8 py-2.5 dark:border-white/10 ${key === "tuition" || (stage === "secondary" && key === "language") ? "md:col-span-2" : ""}`}>
+                    <dt className="text-sm text-[var(--p-secondary)]">{labelFor(key, locale, stage)}</dt>
+                    <dd className="m-0 whitespace-pre-line break-words text-sm leading-relaxed text-[var(--p-fg)]">{L(value, locale)}
+                      {key === "language" && school.languageSourceUrl && <a href={school.languageSourceUrl} target="_blank" rel="noreferrer" className="ml-2 whitespace-nowrap text-xs text-[var(--p-secondary)] underline underline-offset-2">{L("來源", locale)} ↗</a>}
                       {(key === "schoolType" || key === "curriculumType") && !!school.classificationSources?.length && <a href="#profile-sources-title" className="ml-2 whitespace-nowrap text-xs text-[var(--p-secondary)] underline underline-offset-2">{L("來源", locale)}</a>}
                     </dd>
                   </div>)}
@@ -112,14 +124,14 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
             </div>
           </section>
 
-          {school.detailSections && <section className="mt-10" aria-labelledby="profile-details-title">
+          {orderedSections.length > 0 && <section className="mt-10" aria-labelledby="profile-details-title">
             <div className="border-b border-black/10 pb-3 dark:border-white/10">
               <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[var(--p-secondary)]">02 / {L("深入了解", locale)}</p>
-              <h2 id="profile-details-title" className="mt-1 font-serif text-2xl font-bold text-[var(--p-fg)]">{L("課程與學校特色", locale)}</h2>
+              <h2 id="profile-details-title" className="mt-1 font-serif text-2xl font-bold text-[var(--p-fg)]">{L(detailLabel, locale)}</h2>
               <p className="mb-0 mt-2 text-sm text-[var(--p-secondary)]">{L("先看課程與教學安排，再核對師資、班制及收費。校方理念屬學校自述。", locale)}</p>
             </div>
             <div className="mt-4 grid gap-4">
-              {[...school.detailSections].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))).map((section) => (
+              {orderedSections.map((section) => (
                 <article key={section.title} className="min-w-0 overflow-hidden rounded-xl border border-black/10 bg-white dark:border-white/10 dark:bg-[var(--p-bg)]">
                   <h3 className="border-b border-black/10 bg-[#f1f5f2] px-4 py-3 text-base font-bold leading-relaxed text-[var(--p-fg)] dark:border-white/10 dark:bg-white/5 sm:px-5">{L(section.title, locale)}</h3>
                   {section.note && <p className="mx-4 mb-0 mt-3 rounded-lg bg-[#fff6df] px-3 py-2 text-xs leading-relaxed text-[#604b1e] dark:bg-white/10 dark:text-[var(--p-secondary)]">{L(section.note, locale)}</p>}
@@ -127,7 +139,7 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
                     {section.details.map((detail) => (
                       <div key={detail.label} className="grid min-w-0 gap-1 py-3.5 md:grid-cols-[180px_minmax(0,1fr)] md:gap-5">
                         <dt className="text-sm font-bold text-[var(--p-fg)]">{L(detail.label, locale)}</dt>
-                        <dd className="m-0 min-w-0 break-words text-sm leading-7 text-[var(--p-fg)]">
+                        <dd className="m-0 min-w-0 whitespace-pre-line break-words text-sm leading-7 text-[var(--p-fg)]">
                           {L(detail.value, locale)}
                           <span className="mt-1 block text-xs leading-relaxed text-[var(--p-secondary)]">
                             {detail.period && <span>{L(detail.period, locale)} · </span>}
