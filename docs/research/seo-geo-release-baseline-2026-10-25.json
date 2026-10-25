@@ -1,0 +1,18 @@
+{
+  "deployment": "dpl_98wSWe4ECQeFpf9LidnAwbELpZtu",
+  "baselineCommit": "6007a7d19342805a724eef44990047a222d3a08e",
+  "archiveFiles": 1394,
+  "comparedTrackedFiles": 1390,
+  "mismatchedTrackedFiles": [
+    "docs/research/secondary-school-reports-first-50-claim-matrix-2026-10-20.csv"
+  ],
+  "productionFilesNotInGit": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "next-env.d.ts",
+    "tsconfig.tsbuildinfo"
+  ],
+  "mismatchAssessment": "Only CRLF/LF normalization in previously dirty research CSV; no semantic or runtime source difference. CSV excluded from this commit.",
+  "untrackedAssessment": "AGENTS.md / CLAUDE.md instructions and generated next-env / tsbuildinfo; not production runtime content.",
+  "runtimeSourceBaselineVerified": true
+}

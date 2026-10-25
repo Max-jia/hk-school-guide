@@ -1,38 +1,21 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import { L, localeHref, type Locale } from "@/lib/i18n";
-import { SITE_URL } from "@/lib/seo";
+import { ORGANIZATION_ID, breadcrumbJsonLd, jsonLdGraph, serializeJsonLd, webPageJsonLd } from "@/lib/structured-data";
 
 function methodologyJsonLd(locale: Locale) {
-  const pageUrl = `${SITE_URL}${localeHref("/about/data-methodology", locale)}`;
-  const organizationId = `${SITE_URL}/#organization`;
-  return {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    name: L("資料來源與評估方法", locale),
-    description: L(
-      "港學薈學校資料、來源標示、評估分析及使用限制說明。",
-      locale
-    ),
-    url: pageUrl,
-    isPartOf: { "@id": `${SITE_URL}/#website` },
-    about: { "@id": organizationId },
-    publisher: { "@id": organizationId },
-    breadcrumb: {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: L("首頁", locale), item: `${SITE_URL}${localeHref("/", locale)}` },
-        { "@type": "ListItem", position: 2, name: L("資料來源與評估方法", locale), item: pageUrl },
-      ],
-    },
-  };
+  const path = "/about/data-methodology";
+  return jsonLdGraph(locale, [
+    { ...webPageJsonLd({ path, title: "資料來源與評估方法", description: "港學薈學校資料、來源標示、評估分析及使用限制說明。", locale, type: "AboutPage" }), about: { "@id": ORGANIZATION_ID } },
+    breadcrumbJsonLd(path, [{ name: "首頁", path: "/" }, { name: "資料來源與評估方法", path }], locale),
+  ]);
 }
 
 const sections = [
   {
     title: "資料從哪裡來",
     paragraphs: [
-      "學校基本資料主要整理自香港教育局學校概覽（小學 PSP、幼稚園 KGP）及各校公開資料。不同欄位的資料年份可能不同；報告會在相關內容附近列出來源或年份，請以該校最新公布為準。",
+      "學校名錄涵蓋幼稚園、小學與中學，身份及校址主要按教育局「學校位置及資料」及學校登記資料整理；課程、學費、師資和校方理念再參考幼稚園概覽（KGP）、小學概覽（PSP）、中學概覽（SSP）及各校公開資料。概覽中的教學理念是學校自述，不等於獨立成效評估。不同欄位的資料年份可能不同，請以各頁標示的來源及校方當屆公布為準。",
       "報告亦可能引用校方網站、公開媒體報道及家長公開討論。家長分享只反映個別經驗，不代表學校政策或所有家庭的共同經歷。",
     ],
   },
@@ -93,13 +76,25 @@ const sections = [
   {
     title: "資料時效與引用",
     paragraphs: [
-      "公開學校資料會更新。網站學校資料快照標示日期為 2026 年 9 月 4 日；個別報告或文章可能採用不同年度的資料。查看數字時，請一併留意該頁標出的來源和年份。",
-      "引用本網站內容時，請連同原頁及其來源說明一起引用；如涉及收生、學費或課程安排，請再查閱教育局或學校當年的正式公布。",
+      "不同資料集有各自的日期，不能把全站視為同一天的快照。三學段名錄的學校位置資料截至 2026 年 9 月 30 日（教育局於 10 月 5 日更新）；非政府學校登記狀態按 2026 年 10 月 23 日的每日資料配對。政府學校不在這份非政府學校登記檔內，不能因未能配對而判定未註冊。",
+      "課程與收費保留概覽的適用學年；中學中文資料可配對的部分來自《中學概覽 2025/26》，其他學段及個別校方資料的年份請看欄位旁的來源。概覽內的在讀人數、容額和班數是不同指標，不能直接當作當屆招生學額。",
+      "公開 JSON 檔為 2026 年 9 月 4 日的舊版工具資料快照，內含 126 份報告元資料，不代表目前網站全部學校或報告庫。查閱現有學校請從三學段名錄進入；深度分析以各份報告的來源和核對日期為準。",
+      "引用本網站內容時，請連同學校名稱、學段、適用學年、原頁連結及其來源說明一起引用；如涉及收生、學費或課程安排，請再查閱教育局或學校當年的正式公布。",
     ],
   },
 ];
 
 const officialSources = [
+  {
+    label: "教育局：學校位置及資料",
+    href: "https://data.gov.hk/en-data/dataset/hk-edb-schinfo-school-location-and-information",
+    note: "三學段學校身份、辦學類別及校址的基礎名錄；同一學校與不同校址分別識別。",
+  },
+  {
+    label: "教育局：學校登記資料",
+    href: "https://applications.edb.gov.hk/datagovhk/data/SchoolBasicInfo.xml",
+    note: "非政府學校的登記狀態、聯絡及授課資料。政府學校不在這份登記檔內。",
+  },
   {
     label: "教育局：小學概覽（PSP）",
     href: "https://www.edb.gov.hk/psp_sc/",
@@ -109,6 +104,11 @@ const officialSources = [
     label: "教育局：幼稚園教育概覽",
     href: "https://www.edb.gov.hk/en/edu-system/preprimary-kindergarten/overview/index.html",
     note: "幼稚園教育制度、公開資料及相關安排的官方入口。",
+  },
+  {
+    label: "家校會：《中學概覽 2025/26》中文開放資料",
+    href: "https://www.chsc.hk/datagovhk/ssp_2025_2026_tc.csv",
+    note: "可唯一配對的本地中學課程、語言政策、校訓及教學安排；內容由學校提供。",
   },
   {
     label: "教育局：小學教育",
@@ -124,7 +124,7 @@ export default function MethodologyPage({ locale = "tc" }: { locale?: Locale }) 
     <main className="w-full">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
       <SiteHeader locale={locale} />
       <article className="mx-auto max-w-[1000px] px-4 pb-24 pt-8">
@@ -165,9 +165,9 @@ export default function MethodologyPage({ locale = "tc" }: { locale?: Locale }) 
             href="/data/school-data.json"
             className="rounded-xl border border-[var(--p-gray-300)] bg-[var(--p-bg)] p-5 text-[var(--p-fg)] no-underline transition-transform hover:-translate-y-0.5"
           >
-            <span className="font-serif text-xl font-bold">{L("查看結構化學校資料", locale)}</span>
+            <span className="font-serif text-xl font-bold">{L("查看舊版工具資料快照", locale)}</span>
             <span className="mt-2 block text-sm text-[var(--p-secondary)]">
-              {L("開啟公開的學校資料 JSON 快照。", locale)}
+              {L("2026-09-04 舊版 JSON，含 126 份報告元資料；不代表目前完整名錄。", locale)}
             </span>
           </a>
         </div>

@@ -5,15 +5,23 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
 import SchoolPreviewCard from "@/components/schools/SchoolPreviewCard";
+import { collectionSchema } from "@/lib/collection-schema";
+import { serializeJsonLd } from "@/lib/structured-data";
 
 export default function SchoolStageHub({ stage, locale = "tc" }: { stage: SchoolStage; locale?: Locale }) {
   const content = SCHOOL_STAGES[stage];
   const schools = schoolsForStage(stage, locale);
   const previewSchools = schools.filter((school) => school.relatedReportSlugs?.length).slice(0, 6);
+  const path = `/schools/${stage}`;
+  const schema = collectionSchema({ path, title: `${content.label}選校指南`, description: content.description, locale,
+    breadcrumbs: [{ name: "首頁", path: "/" }, { name: "學校資料", path: "/schools" }, { name: content.label, path }],
+    items: previewSchools.map((school) => ({ name: school.name, path: `/schools/${stage}/${school.slug}` })),
+  });
 
   return (
     <Localize locale={locale}>
       <main className="w-full">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
         <SiteHeader locale={locale} />
         <div className="mx-auto max-w-[1180px] px-4 pb-24">
           <nav aria-label={L("麵包屑", locale)} className="pt-6 text-sm text-[var(--p-secondary)]">

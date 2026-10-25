@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/lib/i18n";
-import { L, languageAlternates, localeHref } from "@/lib/i18n";
+import { L, localeHref } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/seo";
 import { getPilotSchool, SCHOOL_STAGES, type SchoolStage } from "@/lib/school-directory-pilot";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
+import { createPageMetadata } from "@/lib/page-metadata";
+import { schoolProfileSummary } from "@/lib/school-profile-summary";
+import { breadcrumbJsonLd, jsonLdGraph, serializeJsonLd, webPageJsonLd } from "@/lib/structured-data";
 
 function labelFor(key: string, locale: Locale, stage: SchoolStage) {
   const labels: Record<string, string> = {
@@ -20,24 +23,17 @@ function labelFor(key: string, locale: Locale, stage: SchoolStage) {
 export function schoolProfileMetadata(stage: string, slug: string, locale: Locale): Metadata {
   const school = getPilotSchool(stage, slug);
   if (!school) return { title: L("找不到學校資料", locale), robots: { index: false, follow: false } };
-  const title = L(`${school.name}｜${SCHOOL_STAGES[school.stage].label}資料`, locale);
-  const hasSchoolFeatures = school.detailSections?.some((section) => /理念|課程特色|教學特色/.test(section.title));
-  const description = L(hasSchoolFeatures
-    ? `${school.name}的基本資料、校方公開的辦學理念與課程特色，以及可追溯的官方資料來源。`
-    : `${school.name}的基本資料：地區、校址、辦學類別、學段和可追溯的官方資料來源。`, locale);
+  const title = `${school.name}｜${school.district}・${SCHOOL_STAGES[school.stage].label}資料`;
+  const description = schoolProfileSummary(school);
   const path = `/schools/${stage}/${slug}`;
-  return {
-    title,
-    description,
-    alternates: { canonical: localeHref(path, locale), languages: languageAlternates(path) },
-    openGraph: { type: "article", title, description, url: `${SITE_URL}${localeHref(path, locale)}` },
-  };
+  return createPageMetadata({ title, description, path, locale });
 }
 
 export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stage: SchoolStage; slug: string; locale?: Locale }) {
   const school = getPilotSchool(stage, slug);
   if (!school) return null;
   const path = `/schools/${stage}/${slug}`;
+  const summary = schoolProfileSummary(school);
   const reportSlugs = school.relatedReportSlugs?.length ? [...new Set(school.relatedReportSlugs)] : school.reportSlug ? [school.reportSlug] : [];
   const detailLabel = stage !== "kindergarten" ? "教學與學校特色" : "課程與學校特色";
   const sectionPriority = (section: NonNullable<typeof school.detailSections>[number]) => {
@@ -54,13 +50,18 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
     { title: "校址與聯絡", entries: [["district", school.district], ["address", school.address], ["telephone", school.telephone]] },
     { title: "學校背景", entries: [["principal", school.principal], ["establishedYear", school.establishedYear], ["sponsoringBody", school.sponsoringBody], ["gender", school.gender], ["religion", school.religion], ["schoolNumber", school.schoolNumber], ["registrationStatus", school.registrationStatus]] },
   ].map((group) => ({ ...group, entries: group.entries.filter((entry): entry is [string, string] => Boolean(entry[1])) })).filter((group) => group.entries.length);
-  const profileSchema = {
-    "@context": "https://schema.org",
+  const schoolEntityId = `${SITE_URL}${path}#school`;
+  // Registry keys carry the six-digit EDB ID; visible notes may also contain a
+  // separate campus code or an older registration number. Do not conflate them.
+  const edbNumber = school.registryKey?.match(/\/(\d{6})$/)?.[1]
+    || school.schoolNumber?.match(/^(\d{6})(?:\b|$)/)?.[1];
+  const schoolEntity = {
     "@type": "School",
+    "@id": schoolEntityId,
     name: L(school.name, locale),
     alternateName: school.nameEn,
-    url: `${SITE_URL}${localeHref(path, locale)}`,
-    sameAs: school.website ? [school.website] : undefined,
+    url: school.website || `${SITE_URL}${path}`,
+    identifier: edbNumber ? { "@type": "PropertyValue", propertyID: "香港教育局學校編號", value: edbNumber } : undefined,
     telephone: school.telephone,
     address: school.address && (school.registryLocations || 1) === 1 ? {
       "@type": "PostalAddress",
@@ -69,11 +70,16 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
       addressCountry: "HK",
     } : undefined,
   };
+  const profileSchema = jsonLdGraph(locale, [
+    schoolEntity,
+    { ...webPageJsonLd({ path, title: school.name, description: summary, locale, mainEntity: { "@id": schoolEntityId } }), citation: [...new Set(school.sources.map((source) => source.url))] },
+    breadcrumbJsonLd(path, [{ name: "首頁", path: "/" }, { name: SCHOOL_STAGES[stage].label, path: `/schools/${stage}` }, { name: "學校名錄", path: `/schools/${stage}/directory` }, { name: school.name, path }], locale),
+  ]);
 
   return (
     <Localize locale={locale}>
       <main className="w-full">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profileSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(profileSchema) }} />
         <SiteHeader locale={locale} />
         <div className="mx-auto max-w-[1060px] px-4 pb-24">
           <nav aria-label={L("麵包屑", locale)} className="pt-6 text-sm text-[var(--p-secondary)]">
@@ -90,7 +96,7 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
             </div>
             <h1 className="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight text-[var(--p-fg)] sm:text-4xl">{L(school.name, locale)}</h1>
             {school.nameEn && <p className="mt-2 text-sm text-[var(--p-secondary)]">{school.nameEn}</p>}
-            <p className="mt-5 max-w-3xl text-base leading-relaxed text-[var(--p-fg)]">{L("課程、費用與學校特色按公開來源整理，數字保留適用年度。", locale)}</p>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-[var(--p-fg)]">{L(summary, locale)}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               {school.website && <a href={school.website} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center rounded-lg bg-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-bg)] no-underline">{L("學校官方網站", locale)} <span aria-hidden="true" className="ml-2">↗</span></a>}
               {reportSlugs.map((reportSlug, index) => <a key={reportSlug} href={localeHref(`/reports/${reportSlug}`, locale)} className="inline-flex min-h-11 items-center rounded-lg border border-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-fg)] no-underline hover:bg-black/5 dark:hover:bg-white/10">{L(reportSlugs.length > 1 ? `閱讀深度報告 ${index + 1}` : "閱讀深度報告", locale)} →</a>)}

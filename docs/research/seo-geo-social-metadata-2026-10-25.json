@@ -1,0 +1,146 @@
+[
+  {
+    "path": "/schools",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/blog",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/reports",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/schools/primary",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/schools/kindergarten",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/schools/secondary",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/blog/topics/kindergarten-admission",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/blog/topics/kindergarten-selection",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/blog/topics/primary-admission",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/blog/topics/primary-school-profiles",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/blog/topics/primary-school-net",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/blog/topics/kindergarten-fees-support",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/schools",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/blog",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/reports",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/schools/primary",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/schools/kindergarten",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/schools/secondary",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/blog/topics/kindergarten-admission",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/blog/topics/kindergarten-selection",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/blog/topics/primary-admission",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/blog/topics/primary-school-profiles",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/blog/topics/primary-school-net",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  },
+  {
+    "path": "/cn/blog/topics/kindergarten-fees-support",
+    "ownOpenGraphUrl": true,
+    "ownSocialTitle": true,
+    "twitter": true
+  }
+]

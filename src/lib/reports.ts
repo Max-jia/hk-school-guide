@@ -3,8 +3,9 @@ import path from "path";
 import type { Metadata } from "next";
 import reportMeta from "@/content/report-meta.json";
 import { SITE_URL } from "./seo";
-import { L, localeHref, languageAlternates, type Locale } from "./i18n";
+import { L, LOCALE_META, localeHref, languageAlternates, type Locale } from "./i18n";
 import type { ReportSourceReference } from "./report-sources";
+import { ORGANIZATION_ID, WEBSITE_ID, breadcrumbJsonLd, jsonLdGraph, webPageJsonLd } from "./structured-data";
 
 // 深度报告(reports)的数据访问与元数据。繁简两棵路由共用。
 
@@ -25,7 +26,13 @@ export type ReportData = {
   free: boolean;
   allAccessUrl: string;
   singleUrl: string;
+  /** Actual editorial revision date, never a build or source-link check date. */
+  updatedAt?: string;
 };
+
+export function reportRevisionDate(d: Pick<ReportData, "updatedAt">): string | undefined {
+  return d.updatedAt && /^\d{4}-\d{2}-\d{2}$/.test(d.updatedAt) ? d.updatedAt : undefined;
+}
 
 export function listReportSlugs(): string[] {
   return fs
@@ -146,6 +153,7 @@ export function reportMetadata(slug: string, locale: Locale): Metadata {
     alternates: { canonical: url, languages: languageAlternates(`/reports/${slug}`) },
     openGraph: {
       type: "article",
+      modifiedTime: reportRevisionDate(d),
       siteName: L("港学荟", locale),
       title,
       description,
@@ -156,36 +164,39 @@ export function reportMetadata(slug: string, locale: Locale): Metadata {
   };
 }
 
-export function reportJsonLd(d: ReportData, locale: Locale, sourceReferences: ReportSourceReference[] = []) {
+export function reportJsonLd(d: ReportData, locale: Locale, sourceReferences: ReportSourceReference[] = [], schoolProfiles: { name: string; href: string }[] = []) {
   const citations = reportSourceNotes(d, locale);
   const pageUrl = `${SITE_URL}${localeHref(`/reports/${d.slug}`, locale)}`;
-  const organizationId = `${SITE_URL}/#organization`;
-  const websiteId = `${SITE_URL}/#website`;
+  const path = `/reports/${d.slug}`;
+  const articleId = `${pageUrl}#article`;
+  const title = reportTitle(d, locale);
+  const description = makeReportDescription(d, locale);
   const schoolName = (d.title || d.slug).replace(/\s*(深度择校报告|深度擇校報告)$/, "").trim();
-  return {
-    "@context": "https://schema.org",
+  return jsonLdGraph(locale, [{
     "@type": "Article",
-    headline: reportTitle(d, locale),
-    description: makeReportDescription(d, locale),
-    author: { "@id": organizationId },
-    publisher: { "@id": organizationId },
-    mainEntityOfPage: pageUrl,
+    "@id": articleId,
+    headline: title,
+    description,
+    dateModified: reportRevisionDate(d),
+    author: { "@id": ORGANIZATION_ID },
+    publisher: { "@id": ORGANIZATION_ID },
+    mainEntityOfPage: { "@id": `${pageUrl}#webpage` },
     image: `${SITE_URL}${reportOgImage(d.slug)}`,
     citation: [
       ...sourceReferences.map((source) => source.url),
       ...citations,
       ...(citations.length === 0 && sourceReferences.length === 0 ? [`${SITE_URL}${localeHref("/about/data-methodology", locale)}`] : []),
     ].filter((citation, index, all) => all.indexOf(citation) === index),
-    isPartOf: { "@id": websiteId },
-    breadcrumb: {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: L("首頁", locale), item: `${SITE_URL}${localeHref("/", locale)}` },
-        { "@type": "ListItem", position: 2, name: L("學校報告", locale), item: `${SITE_URL}${localeHref("/reports", locale)}` },
-        { "@type": "ListItem", position: 3, name: L(schoolName, locale), item: pageUrl },
-      ],
-    },
+    inLanguage: LOCALE_META[locale].htmlLang,
+    // Only explicit, stage-checked catalogue mappings supplied by the route.
+    about: schoolProfiles.length ? schoolProfiles.map((school) => ({ "@type": "School", "@id": `${SITE_URL}${school.href}#school`, name: L(school.name, locale) })) : undefined,
+    isPartOf: { "@id": WEBSITE_ID },
     // 现阶段报告全文公开展示，不再向搜索引擎声明存在付费墙。
     isAccessibleForFree: true,
-  };
+  }, webPageJsonLd({ path, title, description, locale, mainEntity: { "@id": articleId } }),
+  breadcrumbJsonLd(path, [
+    { name: "首頁", path: "/" },
+    { name: "學校報告", path: "/reports" },
+    { name: schoolName, path },
+  ], locale)]);
 }

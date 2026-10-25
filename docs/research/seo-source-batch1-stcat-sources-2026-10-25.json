@@ -1,0 +1,97 @@
+[
+  {
+    "label": "教育局登记：国际英文幼稚园215120",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=2&scrn=215120000111",
+    "scope": "核对九龙塘学校身份、两校址及私立类型；红磡586625不并入同一学校编号。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "2026/27幼稚园概览：罗福道",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2151200001",
+    "scope": "核课程、持续观察、升小支援及2025年9月师生比1:7.4；整体比例不等于班额；收费与教育局证书交叉。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27；人员统计2025年9月"
+  },
+  {
+    "label": "2026/27幼稚园概览：雅息士道",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2151200002",
+    "scope": "核课程、持续观察、升小支援及2025年9月师生比1:7.9；整体比例不等于班额；收费与教育局证书交叉。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27；人员统计2025年9月"
+  },
+  {
+    "label": "教育局：九龙塘2026/27收费证",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+    "scope": "2026-09-01生效；K1 7294×11=80234，K2下午及K3上午7931×11=87241。Nursery在本证为K1，非PN。三年254716为费率不变的静态估算。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "校方：2027/28 K1招生须知",
+    "url": "https://admission.ekinder.com.hk/stcikg/",
+    "scope": "核报名8月28日至9月8日、40元、生日范围、11月2/3日两部分面见、英/粤面见及英普另加普通话、11月26日结果。只用本校明确须知，不把共用表单隐藏字段当招生政策。面见通知日中英文有差异，未择一发布。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2027/28；2026年申请"
+  },
+  {
+    "label": "2026/27概览：红磡海滨南岸586625",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5866250001",
+    "scope": "PN幼儿服务栏为2025年9月，年费90244仅该旧快照；在读382不是可申请学额，不与九龙塘合算。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27概览；PN统计2025年9月"
+  },
+  {
+    "label": "教育局：红磡幼稚园级别收费证",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/586625.pdf",
+    "scope": "2026-08-01生效64328列K1/K2/K3，不列PN，不能拿这笔费用当PN新报价。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "教育王国：2014/15升小讲座的2016讨论",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3236355",
+    "scope": "家长转述旧讲座，讨论名小offer与重复录取；小学整体学额不是St. Cat毕业分母。仅说明历史路线，不作当前前三或录取率。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2016年讨论；2014/15历史届"
+  },
+  {
+    "label": "教育局：基督堂2026/27收费证",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/210196.pdf",
+    "scope": "用于同类对比；2026-09-01生效，K2/K3上午7650×10=76500。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "基督堂：年级与2027年申请",
+    "url": "https://www.cckg.edu.hk/application-for-admission",
+    "scope": "核只有K2/K3、不设K1；用于转校代价比较，不把取录等同升两拔保证。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2027/28申请"
+  },
+  {
+    "label": "学之园：2026/27分校费用",
+    "url": "https://www.learninghabitat.org/en/admission/fees",
+    "scope": "凯帆薈K1–K3英粤7500×12=90000、英普7800×12=93600；杂费另计。不是所有分校一致价格。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "VEO：2026/27分校学费",
+    "url": "https://www.victoria.edu.hk/tution/",
+    "scope": "同类比较按K1半日111221–143495、11期；不将PN、K2/K3或独立铜锣湾学校混作集团同价。",
+    "sourceType": "school-official",
+    "academicYear": "2026/27",
+    "checkedOn": "2026-10-25"
+  }
+]

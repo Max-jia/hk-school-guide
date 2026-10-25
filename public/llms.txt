@@ -1,41 +1,52 @@
-# 港学荟
+# 港学荟 · hkschool.guide
 
-> 把香港教育局公开数据做成看得懂的视觉内容：学校深度报告、择校工具、面试题库、热文与趋势。
+> 香港幼稚园、小学与中学资料、学校深度报告、升学攻略及择校工具。学校资料按来源与适用年份整理；评级、比较和家庭适配建议为平台分析，非教育局官方评级或录取承诺。
 
-## 核心页面
+本文件是内容导航，更新于 2026-10-25。它不代替网页、网站地图或各字段的来源说明。繁体中文使用根路径，简体中文在相同路径前加 /cn；引用时保留所读版本的网址。
 
-- 首页: https://hkschool.guide/
-- 深度报告列表: https://hkschool.guide/reports
-- 热文与攻略: https://hkschool.guide/blog
-- 择校工具: https://hkschool.guide/tools
-- 面试题库: https://hkschool.guide/questions
-- 站点地图: https://hkschool.guide/sitemap.xml
+## 三学段学校资料
 
-## 内容说明
+- [学校资料总入口](https://hkschool.guide/schools)：按学段进入选校指南与学校名录。
+- [幼稚园选校指南](https://hkschool.guide/schools/kindergarten)：课程、费用、申请攻略与学校报告。
+- [幼稚园名录](https://hkschool.guide/schools/kindergarten/directory)：按校名、地区和办学类别寻找简明资料页。
+- [小学选校指南](https://hkschool.guide/schools/primary)：校网、入学安排与学校比较。
+- [小学名录](https://hkschool.guide/schools/primary/directory)：学校类型、语言、校址、费用与来源。
+- [中学选校指南](https://hkschool.guide/schools/secondary)：课程、升中路径与学校报告。
+- [中学名录](https://hkschool.guide/schools/secondary/directory)：本地及国际中学的办学类别、教学安排和官方资料。
 
-- 学校报告覆盖香港小学、幼稚园，含评级、学费、校网、升中通路、面试与家长口碑。
-- 热文覆盖校网排名、小一派位计分、幼稚园资助、面试攻略、暴雨停课等香港升学话题。
+简明资料页使用 /schools/{学段}/{学校标识}，展示公开事实、适用年度与原始来源；/reports/{报告标识} 提供课程、升学、入学、家庭体验和同类选择的深度分析。两者用途不同，不能把简明资料当成一份完整评价。
 
-## 数据资产（可引用）
+## 报告、攻略与制度主题
 
-- 小学评级报告：https://hkschool.guide/reports
-- 幼稚园评级报告：https://hkschool.guide/reports
-- 全港小学与幼稚园数据库：教育局学校概览（KGP/PSP 2025）整理
-- 评级体系：小学四因子（锚点/共识/竞争/世袭）· 幼稚园五维竞争力评分
-- 全量结构化数据（JSON，含 669 所小学 / 949 所幼稚园 / 126 份报告元数据）：https://hkschool.guide/data/school-data.json
-- 开放数据 API（按类型/地区/校网/评级筛选，支持分页）：https://hkschool.guide/api/schools?type=primary
-- 择校匹配工具：https://hkschool.guide/tools
-- 家长问答社区：https://hkschool.guide/questions
+- [全部学校深度报告](https://hkschool.guide/reports)：幼稚园、小学和中学报告；已发布报告全文可读。
+- [热文与攻略](https://hkschool.guide/blog)：学校解读与香港升学制度文章。
+- [幼稚园申请专题](https://hkschool.guide/blog/topics/kindergarten-admission)：PN、K1 申请和面试准备。
+- [幼稚园选校专题](https://hkschool.guide/blog/topics/kindergarten-selection)：课程、语言与家庭适配。
+- [幼稚园费用与资助](https://hkschool.guide/blog/topics/kindergarten-fees-support)：学费、免费计划与减免。
+- [小一入学专题](https://hkschool.guide/blog/topics/primary-admission)：自行分配、统一派位和校本申请。
+- [小学校网专题](https://hkschool.guide/blog/topics/primary-school-net)：校网、派位与家庭选择。
+- [小学选校专题](https://hkschool.guide/blog/topics/primary-school-profiles)：课程、升中路线与学校比较。
 
-## 常见事实性问答锚点
+## 可直接查阅的制度与工具
 
-- 红雨小学使唔使返学：答案在 https://hkschool.guide/blog/rainstorm-class-guide
-- 幼稚园资助与减免：https://hkschool.guide/blog/kg-subsidy-guide
-- 小一自行派位计分：https://hkschool.guide/blog/p1-scoring-guide
-- 一条龙/直属/联系区别：https://hkschool.guide/blog/through-train-guide
-- 小一入学 2027/28 全流程（自行分配＋统一派位＋计分表）：https://hkschool.guide/blog/hk-p1-admission-guide-2027
-- 小学校网竞争比 DIY 分析：https://hkschool.guide/blog/hk-school-net-diy-analysis
-- 择校中介避坑（红旗话术＋尽调流程）：https://hkschool.guide/blog/hk-school-agency-red-flags
-- 小一校网数据库（36 网 × 433 所官津小学，官方名册）：https://hkschool.guide/tools/p1-school-net
-- 小一派位交表自查工具（计分器＋清单＋结果卡）：https://hkschool.guide/tools/p1-self-check
-- 小一志愿结构模拟器（填表推演＋Pro 体检报告）：https://hkschool.guide/tools/p1-simulator
+- [红雨、黑雨停课安排](https://hkschool.guide/blog/rainstorm-class-guide)
+- [幼稚园资助与减免](https://hkschool.guide/blog/kg-subsidy-guide)
+- [小一自行分配计分](https://hkschool.guide/blog/p1-scoring-guide)
+- [一条龙、直属与联系学校的区别](https://hkschool.guide/blog/through-train-guide)
+- [小一入学 2027/28 流程](https://hkschool.guide/blog/hk-p1-admission-guide-2027)
+- [小学校网竞争数据分析方法](https://hkschool.guide/blog/hk-school-net-diy-analysis)
+- [择校中介尽调与风险](https://hkschool.guide/blog/hk-school-agency-red-flags)
+- [择校工具](https://hkschool.guide/tools)
+- [小一校网查询](https://hkschool.guide/tools/p1-school-net)
+- [小一交表自查](https://hkschool.guide/tools/p1-self-check)
+- [小一志愿结构模拟器](https://hkschool.guide/tools/p1-simulator)
+
+## 来源、日期与引用范围
+
+- [资料来源与评估方法](https://hkschool.guide/about/data-methodology)：来源类型、主观判断、核对日期及更正方法。
+- [网站地图](https://hkschool.guide/sitemap.xml)：现有公开页面及繁简语言对应关系。
+- 三学段名录以教育局学校编号识别学校，校址编号另列；学校位置资料截至 2026-09-30，非政府学校登记资料按 2026-10-23 快照配对。
+- 课程、学费、师资和招生各自保留适用学年，不同页面或字段不共享同一个资料日期。在读人数、注册容额、班数与当届招生学额不能混用。
+- 口碑和匿名家长分享只代表个别体验；引用升学比例时须保留学年、分母和统计口径。中学 Banding 及平台评级并非官方全港排名。
+- [旧版工具数据 JSON](https://hkschool.guide/data/school-data.json)：2026-09-04 历史快照，内含 126 份报告元资料，不含目前完整中学名录，也不代表目前报告总数。查现有学校与报告请使用上述名录和报告页面。
+- 引用学校事实时保留学校全名、学段、适用学年、原页网址及官方来源；当届学费、申请日期与录取规则以教育局及校方最新公告为准。

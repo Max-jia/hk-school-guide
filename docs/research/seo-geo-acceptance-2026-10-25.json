@@ -1,0 +1,174 @@
+{
+  "status": "local first implementation accepted, not deployed",
+  "baselineCommit": "6007a7d19342805a724eef44990047a222d3a08e",
+  "build": {
+    "command": "npm run build -- --webpack",
+    "pass": true,
+    "staticPages": 5146
+  },
+  "typecheck": "passed in full build",
+  "scopedESLint": {
+    "files": 37,
+    "errors": 0,
+    "existingWarnings": 16
+  },
+  "builtHTML": {
+    "sitemapUrls": 5122,
+    "missingBaselineUrls": [],
+    "profileHtmlChecked": 4386,
+    "catalogueCoverage": {
+      "/cn/schools/kindergarten": 958,
+      "/cn/schools/primary": 648,
+      "/cn/schools/secondary": 587,
+      "/schools/kindergarten": 958,
+      "/schools/primary": 648,
+      "/schools/secondary": 587
+    },
+    "reportsInHtmlIndex": 228,
+    "errors": []
+  },
+  "browser": {
+    "checks": [
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/schools/kindergarten/directory/page/20",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/schools/primary/directory/page/13",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/schools/secondary/directory/page/2",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/reports/spk",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/reports/st-hilarys-kg",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/blog/topics/kindergarten-admission",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/about/data-methodology",
+        "width": 1600
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/schools/kindergarten/directory/page/20",
+        "width": 390
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/schools/primary/directory/page/13",
+        "width": 390
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/schools/secondary/directory/page/2",
+        "width": 390
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+        "width": 390
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/reports/spk",
+        "width": 390
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/reports/st-hilarys-kg",
+        "width": 390
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/blog/topics/kindergarten-admission",
+        "width": 390
+      },
+      {
+        "error": false,
+        "h1": 1,
+        "overflow": false,
+        "path": "/cn/about/data-methodology",
+        "width": 390
+      }
+    ],
+    "interactive": {
+      "page2Search": "官立 + 皇仁 = 1 / 587",
+      "loadMore": "51–100 → 51–150; 100 cards",
+      "reportIndexLinks": 228,
+      "spkProfiles": [
+        "/cn/schools/kindergarten/spk"
+      ]
+    },
+    "status": "passed"
+  },
+  "schemaGraphs": {
+    "checked": 564,
+    "failures": 0
+  },
+  "socialMetadata": {
+    "checked": 24,
+    "failures": 0
+  },
+  "protectedContentAndAPIAndPdfSourceUnchanged": true,
+  "performance": {
+    "fieldCWV": "not measured",
+    "PageSpeedAPI": "HTTP429"
+  },
+  "outstanding": [
+    "147 old report source trails require research",
+    "secondary guide topic group requires source research",
+    "fresh GSC indexation and performance followup",
+    "real AI citation baseline"
+  ]
+}

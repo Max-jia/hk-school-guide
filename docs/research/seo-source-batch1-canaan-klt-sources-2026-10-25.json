@@ -1,0 +1,88 @@
+[
+  {
+    "label": "教育局：迦南九龙塘收费证明书",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/531910.pdf",
+    "scope": "学校531910、金巴伦道9/11号；2026-09-01起K1–K3 AM/PM扣资助后$544×10=$5,440，纠正免费。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026-09-01生效"
+  },
+  {
+    "label": "教育局：迦南九龙塘概览2026/27",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5319100001",
+    "scope": "核校区5319100001、非牟利、1999创办、PN及全日服务；2025年9月教师41、学位34、幼教证41、比例9.3/9.4、容额784；收费5440与教育局收费证一致。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27；人力与容额2025年9月"
+  },
+  {
+    "label": "教育局：迦南九龙塘质素评核PDF",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/quality-assurance-framework/qr/qr-report/Cannan_KlnTong.pdf",
+    "scope": "2025-01实地评核：故事游戏、户外/生活常规、教师协作及提问/活动设计改善；不支持67%高年资、教小一、英语课时等旧断言。",
+    "sourceType": "independent-inspection",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2025-01-13/14/15/17评核"
+  },
+  {
+    "label": "迦南品牌：幼稚园课程",
+    "url": "https://www.cannan.edu.hk/kindergarten",
+    "scope": "故事/全语言/高广度计划工作回顾、母语英语教师拼读、普通话教师；品牌级说明不证明九龙塘具体课时与固定人手。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "迦南品牌：招生与插班",
+    "url": "https://www.cannan.edu.hk/admission",
+    "scope": "现行导航列2027/28新生、2026/27插班及PN升K1；收费正文仍标2020/21不可当当前。第二轮图片日期本次未读，不声称已核实具体截止日或面试题。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2027/28新生；2026/27插班；正文旧收费为2020/21"
+  },
+  {
+    "label": "迦南品牌：分校目录",
+    "url": "https://www.cannan.edu.hk/campuses/",
+    "scope": "品牌说明12校区、其中8有PN；不能据此推断其他校区PN可自动转九龙塘K1。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "教育局：小一选校表格须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_Choice_Form_TC.pdf",
+    "scope": "统一派位乙部按居住地址所属校网；只用于解释制度，不以旧年表格列本届招生日期。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年度小一入学"
+  },
+  {
+    "label": "比较校：香港創價概览2026/27",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=3258560001",
+    "scope": "2026/27扣资助后2167=197×11；人本游戏；2025年9月师生比1:7.2。与校方招生页收费核对，校方概括1:8为不同口径。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27；师生比2025年9月"
+  },
+  {
+    "label": "比较校：香港培道小学幼稚园概览",
+    "url": "https://kgp2025.azurewebsites.net/edb/schoolinfo.php?schid=6051",
+    "scope": "2025/26半日免费、故事游戏、专职英/普通话教师；不能证明全体100%直升小学。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2025/26"
+  },
+  {
+    "label": "比较校：金巴倫英文幼稚園概览",
+    "url": "https://kgp2025.azurewebsites.net/edb/schoolinfo.php?schid=6093",
+    "scope": "2025/26半日$69,300/11期、蒙氏与主题课程、语言教师；不混作2026/27报价，亦不支持原稿PN断言。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2025/26"
+  },
+  {
+    "label": "比较校：香港創價官方招生与费用",
+    "url": "https://soka.edu.hk/admission",
+    "scope": "2026/27扣资助后197×11=2167，与概览一致；校方另列概括师生比1:8，不与概览的时段比混算。",
+    "sourceType": "school-official",
+    "academicYear": "2026/27费用；2027/28招生",
+    "checkedOn": "2026-10-25"
+  }
+]

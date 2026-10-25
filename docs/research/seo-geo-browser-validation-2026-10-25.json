@@ -1,0 +1,125 @@
+{
+  "checks": [
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/schools/kindergarten/directory/page/20",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/schools/primary/directory/page/13",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/schools/secondary/directory/page/2",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/reports/spk",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/reports/st-hilarys-kg",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/blog/topics/kindergarten-admission",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/about/data-methodology",
+      "width": 1600
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/schools/kindergarten/directory/page/20",
+      "width": 390
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/schools/primary/directory/page/13",
+      "width": 390
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/schools/secondary/directory/page/2",
+      "width": 390
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "width": 390
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/reports/spk",
+      "width": 390
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/reports/st-hilarys-kg",
+      "width": 390
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/blog/topics/kindergarten-admission",
+      "width": 390
+    },
+    {
+      "error": false,
+      "h1": 1,
+      "overflow": false,
+      "path": "/cn/about/data-methodology",
+      "width": 390
+    }
+  ],
+  "interactive": {
+    "page2Search": "官立 + 皇仁 = 1 / 587",
+    "loadMore": "51–100 → 51–150; 100 cards",
+    "reportIndexLinks": 228,
+    "spkProfiles": [
+      "/cn/schools/kindergarten/spk"
+    ]
+  },
+  "status": "passed"
+}

@@ -2,6 +2,8 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { clusterArticles, clusterCoreArticle, type BlogCluster } from "@/lib/blog-clusters";
 import { L, localeHref, type Locale } from "@/lib/i18n";
+import { collectionSchema } from "@/lib/collection-schema";
+import { serializeJsonLd } from "@/lib/structured-data";
 
 function titleFor(entry: { title: string; scTitle?: string }, locale: Locale): string {
   return locale === "sc" && entry.scTitle ? entry.scTitle : L(entry.title, locale);
@@ -10,8 +12,14 @@ function titleFor(entry: { title: string; scTitle?: string }, locale: Locale): s
 export default function BlogClusterPage({ cluster, locale }: { cluster: BlogCluster; locale: Locale }) {
   const core = clusterCoreArticle(cluster);
   const articles = clusterArticles(cluster).filter((entry) => entry.slug !== cluster.coreSlug);
+  const path = `/blog/topics/${cluster.slug}`;
+  const schema = collectionSchema({ path, title: cluster.title, description: cluster.description, locale,
+    breadcrumbs: [{ name: "首頁", path: "/" }, { name: "擇校文章", path: "/blog" }, { name: cluster.title, path }],
+    items: [...(core ? [core] : []), ...articles].map((entry) => ({ name: titleFor(entry, locale), path: `/blog/${entry.slug}` })),
+  });
   return (
     <main className="w-full">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
       <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[960px] px-4 pb-24">
         <p className="pt-8 font-mono text-sm uppercase text-[var(--p-secondary)]">

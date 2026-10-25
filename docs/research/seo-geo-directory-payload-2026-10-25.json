@@ -1,0 +1,23 @@
+[
+  {
+    "stage": "kindergarten",
+    "beforeBytes": 723174,
+    "builtAfterBytes": 752325,
+    "changePercent": 4.0,
+    "notCWV": true
+  },
+  {
+    "stage": "primary",
+    "beforeBytes": 500505,
+    "builtAfterBytes": 525931,
+    "changePercent": 5.1,
+    "notCWV": true
+  },
+  {
+    "stage": "secondary",
+    "beforeBytes": 729669,
+    "builtAfterBytes": 681248,
+    "changePercent": -6.6,
+    "notCWV": true
+  }
+]

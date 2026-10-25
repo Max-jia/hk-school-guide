@@ -7,6 +7,9 @@ import { SITE_URL } from "@/lib/seo";
 import { LOCALES, localeHref, languageAlternates } from "@/lib/i18n";
 import { BLOG_CLUSTERS } from "@/lib/blog-clusters";
 import { DIRECTORY_SCHOOLS, SCHOOL_STAGES } from "@/lib/school-directory-pilot";
+import { directoryStaticPages } from "@/lib/school-directory-pages";
+import { directoryPagePath } from "@/lib/school-directory-pagination";
+import { loadReport, reportRevisionDate } from "@/lib/reports";
 
 const REPORTS_DIR = path.join(process.cwd(), "src/content/reports");
 const DISTRICTS = districts as { slug: string }[];
@@ -18,8 +21,10 @@ function reportSitemap(): MetadataRoute.Sitemap {
     .filter((f) => f !== "skhyl.json")
     .map((f) => {
       const slug = f.replace(/\.json$/, "");
+      const report = loadReport(slug);
       return {
         url: `${SITE_URL}/reports/${slug}`,
+        lastModified: report ? reportRevisionDate(report) : undefined,
         changeFrequency: "monthly" as const,
         priority: 0.8,
       };
@@ -50,8 +55,10 @@ function withLocales(entries: MetadataRoute.Sitemap): MetadataRoute.Sitemap {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = (blogMeta as { slug: string }[]).map((p) => ({
+  const posts = (blogMeta as { slug: string; updatedAt?: string }[]).map((p) => ({
       url: `${SITE_URL}/blog/${p.slug}`,
+      // Only actual editorial modification records; never replace with build time.
+      lastModified: p.updatedAt && /^\d{4}-\d{2}-\d{2}$/.test(p.updatedAt) ? p.updatedAt : undefined,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
@@ -143,6 +150,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/schools/${school.stage}/${school.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.65,
+    })),
+    ...directoryStaticPages().filter(({ page }) => Number(page) > 1).map(({ stage, page }) => ({
+      url: `${SITE_URL}${directoryPagePath(stage, Number(page))}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
     })),
     {
       url: `${SITE_URL}/planning`,

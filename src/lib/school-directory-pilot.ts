@@ -1,3 +1,4 @@
+import { applyReviewedProfileFacts } from "./reviewed-profile-facts";
 import { prepareSecondaryProfile } from "./secondary-profile";
 import { classifyPrimary } from "./primary-classification";
 import { classifyKindergarten } from "./kindergarten-classification";
@@ -274,10 +275,6 @@ const SSP_DGS = "https://www.chsc.hk/ssp2025/sch_detail.php?lang_id=2&sch_id=3";
 const DGS_ADMISSIONS = "https://www.dgs.edu.hk/school-profile/82-dgs/admissions";
 const KGP_STCAT_NORFOLK = "https://kgp2026.kindergartenprofile.com/school/?schid=2151200001";
 const KGP_STCAT_ESSEX = "https://kgp2026.kindergartenprofile.com/school/?schid=2151200002";
-const STCAT_PHILOSOPHY = "https://www.stcatherines.edu.hk/?lang=zh&page_id=102";
-const STCAT_CURRICULUM = "https://www.stcatherines.edu.hk/?lang=zh&page_id=243";
-const STCAT_KOWLOON_TONG = "https://www.stcatherines.edu.hk/?lang=zh&page_id=287";
-const STCAT_HUNG_HOM = "https://www.stcatherines.edu.hk/?lang=zh&page_id=282";
 const PSP_SKHHPS = "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=311";
 const SKHHPS_PHILOSOPHY = "https://www.skhhsps.edu.hk/zh_tw/site/view?name=%E8%BE%A6%E5%AD%B8%E7%90%86%E5%BF%B5";
 const SKHHPS_OVERVIEW_2025 = "https://www.skhhsps.edu.hk/uploads/files/%E8%81%96%E5%85%AC%E6%9C%83%E4%B8%BB%E9%A2%A8%E5%B0%8F%E5%AD%B8%20%E7%B0%A1%E4%BB%8Bv6-2%282%29.pdf";
@@ -1140,40 +1137,44 @@ export const PILOT_SCHOOLS: PilotSchool[] = [
     name: "國際英文幼稚園",
     nameEn: "St. Catherine's International Kindergarten & Nursery",
     district: "九龍城區",
-    address: "九龍塘羅福道及雅息士道校舍；另有紅磡幼兒預備班校舍",
+    address: "九龍塘羅福道4及6號、雅息士道1號",
     telephone: "+852 2337 7344",
     schoolNumber: "215120",
-    schoolType: "私立幼稚園暨幼兒園",
+    schoolType: "私立幼稚園",
+    tuition: "2026/27：K1 HK$80,234；K2、K3 HK$87,241，均分11期；其他費用另計",
     gender: "男女校",
     establishedYear: "1970",
     language: "校方表示九龍塘校舍以粵語、英語及普通話建立語言基礎；各語言教時未見公開",
-    gradeSpan: "紅磡校舍設 PN；九龍塘校舍設 K1–K3，上午／下午安排因級別而異",
+    gradeSpan: "九龍塘校址0001、0002設K1–K3；紅磡PN屬另一登記學校586625",
     website: "https://www.stcatherines.edu.hk/",
-    dataYear: "教育局位置資料截至 2026-09-30；《幼稚園概覽》2026/27；校方收費頁列 2025/26 金額",
-    sourceNote: "教育局資料把國際英文幼稚園登記為同一學校編號下的多個校址。校方資料把 2–3 歲 PN 設於紅磡校舍，K1–K3 設於九龍塘兩個校舍；不同校舍的地址、課程與收費不可互相代替。頁面列出的學費為校方公布的 2025/26 學年數字，未當作 2026/27 現行收費。教學理念、課程做法和師資安排均屬校方自述，不代表獨立成效評估。",
+    dataYear: "《幼稚園概覽》2026/27；人員統計2025年9月；教育局收費證2026-09-01生效；招生2027/28",
+    sourceNote: "本頁只指學校編號215120下的九龍塘兩校址。紅磡海濱南岸另有586625登記，其PN幼兒服務、學費和學生數字不併入本校。2026/27九龍塘費用已用教育局收費證與概覽核對；師生比例為2025年9月整體統計，不是每班人數。課程為校方申報，未公開各語種每日分鐘。",
     reportSlug: "stcat",
+    replaceDirectoryDetails: true,
+    omitDirectoryDetailTitles: ["幼稚園概覽｜校址 0001", "幼稚園概覽｜校址 0002"],
     sources: [
       { label: "教育局《學校位置及資料》", scope: "學校編號、校址編號、各校址地址、授課時段、電話及官網；資料截至 2026-09-30。", url: "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.csv" },
       { label: "教育局《學校基本註冊資料》", scope: "學校編號 215120 及不同校址的登記狀態；每日更新資料不包括官立學校。", url: "https://applications.edb.gov.hk/datagovhk/data/SchoolBasicInfo.xml" },
       { label: "《幼稚園概覽 2026/27》：羅福道校址", scope: "校址 0001 的班制、語言、師生比例及學校概覽欄位。", url: KGP_STCAT_NORFOLK },
       { label: "《幼稚園概覽 2026/27》：雅息士道校址", scope: "校址 0002 的班制及校址資料；各校舍資料分開理解。", url: KGP_STCAT_ESSEX },
-      { label: "國際英文幼稚園：九龍塘校舍課程與語言", scope: "校方自述的課程目標、三語環境、共同授課及閱讀／拼音安排。", url: STCAT_CURRICULUM },
-      { label: "國際英文幼稚園：九龍塘校舍班制與收費", scope: "K1–K3 上午／下午班安排及校方公布的 2025/26 學費；不能當作 2026/27 收費。", url: STCAT_KOWLOON_TONG },
-      { label: "國際英文幼稚園：紅磡校舍", scope: "PN 校舍、2026/27 申請狀態、時段及校方公布的 2025/26 學費。", url: STCAT_HUNG_HOM },
-      { label: "國際英文幼稚園：辦學理念", scope: "校方對兒童為本、全人發展及家校溝通的自述。", url: STCAT_PHILOSOPHY },
+      { label: "教育局：九龍塘2026/27收費證", scope: "K1及K2/K3每期及全年費用，2026-09-01生效；Nursery在此證指K1而非PN。", url: "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf" },
+      { label: "校方：2027/28 K1招生須知", scope: "班型、出生日期、申請與面見流程；不把共用表單模板的其他入口當作現行招生。", url: "https://admission.ekinder.com.hk/stcikg/" },
+      { label: "2026/27概覽：紅磡586625幼兒服務", scope: "僅用於區分PN服務及2025年9月費用快照，不作當屆PN新報價。", url: "https://kgp2026.kindergartenprofile.com/school/?schid=5866250001" },
     ],
     detailSections: [
-      { title: "辦學理念與課程特色", featured: true, note: "以下是校方公開的辦學方向與課程做法；這些目標不等於每名學生都取得相同學習成果。", details: [
-        { label: "兒童為本與全人發展", value: "校方以兒童為本，稱課程會按幼兒身心發展、能力、需要與興趣設計，並兼顧德、智、體、群、美。對家長而言，參觀時可直接看孩子是否有遊戲、探索和表達的空間；理念文字本身不能證明各班每日如何落實。", sourceUrl: STCAT_PHILOSOPHY },
-        { label: "中英語文與普通話", value: "九龍塘校舍課程頁列出粵語、英語及普通話的語言目標，並稱每班由中文／普通話教師與英語母語教師共同授課；校方沒有在該頁列各語言的每週教時比例。", sourceUrl: STCAT_CURRICULUM },
-        { label: "六個學習範疇", value: "校方把課程整理為體能與健康、中英語文、幼兒數學、大自然與生活、個人與群體、藝術與創意六個範疇，並以主題和遊戲活動組織學習。這反映課程架構，不是對幼兒能力或升小結果的承諾。", sourceUrl: STCAT_CURRICULUM },
-        { label: "校舍空間", value: "校方稱九龍塘羅福道及雅息士道校舍均設幼稚園級別，並介紹戶外活動空間及種植體驗；家長可按實際就讀校址確認每日可使用的設施。", sourceUrl: STCAT_KOWLOON_TONG },
+      { title: "辦學理念與課程特色", featured: true, note: "概覽為校方申報課程方向，不是獨立成效評估。", details: [
+        { label: "校本主題與故事學習", value: "以本地中、英、普校本課程為基礎，用主題、故事及多元活動組織學習，兼顧幼兒語言、個人及群體等發展。", sourceUrl: KGP_STCAT_NORFOLK },
+        { label: "評估與升小準備", value: "持續觀察幼兒表現，建立個人學習檔案；列有模擬小一生活、參觀小學、家長講座及舊生家長分享，並不提供特定小學保留學位。", sourceUrl: KGP_STCAT_NORFOLK },
+        { label: "英粵與英普班型", value: "2027/28招生須知列英粵、英普班型；英普申請另有普通話面見。各語種每日課時未公開，不能由班名推算英語佔一半。", period: "2027/28招生", sourceUrl: "https://admission.ekinder.com.hk/stcikg/" },
       ] },
-      { title: "級別、語言與費用", note: "PN 與 K1 是不同年齡級別；以下費用是 2025/26 學年校方公布值。", details: [
-        { label: "PN 與 K1–K3 校舍", value: "校方把 2–3 歲 PN 設於紅磡校舍；九龍塘校舍服務 3–6 歲幼兒，開辦 K1–K3。不要把紅磡 PN 校舍當作九龍塘 K1–K3 的同一地址。", period: "校方 2026/27 招生頁；資料查核 2026-10-23", sourceUrl: STCAT_HUNG_HOM },
-        { label: "九龍塘上課時段", value: "校方公布 K1 可選上午或下午；K2 為下午班，K3 為上午班。報名時宜先確認當屆是否有相同時段及可選校舍。", period: "校方頁面列 2026/27 班制", sourceUrl: STCAT_KOWLOON_TONG },
-        { label: "九龍塘學費", value: "2025/26 學年：K1 每年 HK$76,780；K2、K3 每年 HK$83,490，分 11 期繳交。", period: "2025/26；不是 2026/27 現行報價", sourceUrl: STCAT_KOWLOON_TONG },
-        { label: "紅磡 PN 學費", value: "2025/26 學年每年 HK$90,244，分 11 期繳交。", period: "2025/26；不是 2026/27 現行報價", sourceUrl: STCAT_HUNG_HOM },
+      { title: "校舍、人員與支援", details: [
+        { label: "兩校址師生比例", value: "羅福道上午／下午均1:7.4；雅息士道上午／下午均1:7.9。這是校址整體比例，不是每班只有七八名幼兒。", period: "2025年9月", sourceUrl: KGP_STCAT_NORFOLK },
+        { label: "教師及適應支援", value: "羅福道申報98名校長及教學人員，雅息士道37名；概覽列新生適應、個別輔導及到校學前綜合服務，實際支援按兒童需要另向學校確認。", period: "2025年9月人員統計", sourceUrl: KGP_STCAT_ESSEX },
+      ] },
+      { title: "級別、時段與費用", details: [
+        { label: "九龍塘K1–K3", value: "教育局215120收費證列K1上午及下午，K2下午、K3上午。證上的Nursery指K1幼兒班，不是2–3歲PN。", period: "2026/27", sourceUrl: "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf" },
+        { label: "核准學費", value: "K1每年HK$80,234（HK$7,294×11）；K2、K3每年HK$87,241（HK$7,931×11）。用品、校車等支出另計。", period: "2026/27；2026-09-01生效", sourceUrl: "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf" },
+        { label: "紅磡PN須分開核對", value: "海濱南岸幼兒服務屬另一學校編號586625；概覽PN年費HK$90,244屬2025年9月資料，不作當屆新報價，也不併入九龍塘學額。", period: "PN統計2025年9月", sourceUrl: "https://kgp2026.kindergartenprofile.com/school/?schid=5866250001" },
       ] },
     ],
   },
@@ -5239,13 +5240,19 @@ const uniqueDirectoryRecords = [...directoryRecords.reduce((records, school) => 
   if (!records.has(key)) records.set(key, school);
   return records;
 }, new Map<string, PilotSchool>()).values()];
-export const DIRECTORY_SCHOOLS: PilotSchool[] = uniqueDirectoryRecords.map((school) => ({
+function validProfileReport(school: PilotSchool, slug: string): boolean {
+  // SPK (214612) and St Paul's Day Nursery (563188) are separate schools.
+  // The SPK report's reviewed source note explicitly excludes the nursery.
+  return publishedReports.has(slug) && !(school.stage === "kindergarten" && school.schoolNumber === "563188" && slug === "spk");
+}
+
+export const DIRECTORY_SCHOOLS: PilotSchool[] = uniqueDirectoryRecords.map(applyReviewedProfileFacts).map((school) => ({
   ...school,
   ...classifyKindergarten(school),
   ...classifyPrimary(school),
   ...prepareSecondaryProfile(school),
-  reportSlug: school.reportSlug && publishedReports.has(school.reportSlug) ? school.reportSlug : undefined,
-  relatedReportSlugs: school.relatedReportSlugs?.filter((slug) => publishedReports.has(slug)),
+  reportSlug: school.reportSlug && validProfileReport(school, school.reportSlug) ? school.reportSlug : undefined,
+  relatedReportSlugs: school.relatedReportSlugs?.filter((slug) => validProfileReport(school, slug)),
 }));
 
 export function getPilotSchool(stage: string, slug: string): PilotSchool | undefined {

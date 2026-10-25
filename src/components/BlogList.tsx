@@ -12,6 +12,8 @@ import {
 } from "@/lib/blog-taxonomy";
 import type { BlogMetaEntry } from "@/lib/blog";
 import BlogClusterCards from "@/components/BlogClusterCards";
+import { collectionSchema } from "@/lib/collection-schema";
+import { serializeJsonLd } from "@/lib/structured-data";
 
 const POSTS = blogMeta as BlogMetaEntry[];
 const FEATURED = ["stcat-interview", "kg-subsidy-guide", "good-hope-primary-guide"];
@@ -102,9 +104,14 @@ export default function BlogList({ locale = "tc" }: { locale?: Locale }) {
 
   const featured = FEATURED.map((slug) => POSTS.find((post) => post.slug === slug)).filter((post): post is BlogMetaEntry => Boolean(post));
   const hasFilter = stage !== "all" || topic !== "all" || query.trim().length > 0;
+  const schema = collectionSchema({ path: "/blog", title: "擇校文章與入學指南", locale,
+    breadcrumbs: [{ name: "首頁", path: "/" }, { name: "擇校文章", path: "/blog" }],
+    items: list.map((post) => ({ name: displayTitle(post, locale), path: `/blog/${post.slug}` })),
+  });
 
   return (
     <main className="w-full">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
       <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[1280px] px-4 pb-24">
         <header className="max-w-[800px] py-8 md:py-12">

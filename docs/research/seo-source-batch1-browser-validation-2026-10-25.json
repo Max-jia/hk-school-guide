@@ -1,0 +1,2590 @@
+{
+  "checkedOn": "2026-10-25",
+  "initialPass": {
+    "status": "pass",
+    "states": [
+      {
+        "boxes": [
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7720.34765625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7720.34765625
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 15,
+        "sourceWidth": 1220,
+        "tableWrappers": 6,
+        "width": 1422,
+        "slug": "stcat",
+        "locale": "sc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7720.34765625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7720.34765625
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 15,
+        "sourceWidth": 1220,
+        "tableWrappers": 6,
+        "width": 1422,
+        "slug": "stcat",
+        "locale": "tc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 453.0555725097656,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 3290.269287109375
+          },
+          {
+            "h": 453.0555725097656,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 3290.269287109375
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 10567.708984375
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 10567.708984375
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 20,
+        "sourceWidth": 1220,
+        "tableWrappers": 7,
+        "width": 1422,
+        "slug": "rcps",
+        "locale": "sc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 453.0555725097656,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 3290.269287109375
+          },
+          {
+            "h": 453.0555725097656,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 3290.269287109375
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 10567.708984375
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 10567.708984375
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 20,
+        "sourceWidth": 1220,
+        "tableWrappers": 7,
+        "width": 1422,
+        "slug": "rcps",
+        "locale": "tc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 340.060791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 3155.156494140625
+          },
+          {
+            "h": 340.060791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 3155.156494140625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9253.9150390625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9253.9150390625
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 22,
+        "sourceWidth": 1220,
+        "tableWrappers": 7,
+        "width": 1422,
+        "slug": "tlps",
+        "locale": "sc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 340.060791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 3155.156494140625
+          },
+          {
+            "h": 340.060791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 3155.156494140625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9253.9150390625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9253.9150390625
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 22,
+        "sourceWidth": 1220,
+        "tableWrappers": 7,
+        "width": 1422,
+        "slug": "tlps",
+        "locale": "tc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 213.0729217529297,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 3342.08349609375
+          },
+          {
+            "h": 213.0729217529297,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 3342.08349609375
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9538.00390625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9538.00390625
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 29,
+        "sourceWidth": 1220,
+        "tableWrappers": 9,
+        "width": 1422,
+        "slug": "victoria",
+        "locale": "sc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 213.0729217529297,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 3342.08349609375
+          },
+          {
+            "h": 213.0729217529297,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 3342.08349609375
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9538.00390625
+          },
+          {
+            "h": 497.560791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9538.00390625
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 29,
+        "sourceWidth": 1220,
+        "tableWrappers": 9,
+        "width": 1422,
+        "slug": "victoria",
+        "locale": "tc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 186.0764007568359,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 2640.920166015625
+          },
+          {
+            "h": 186.0764007568359,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 2640.920166015625
+          },
+          {
+            "h": 445.060791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7563.59423828125
+          },
+          {
+            "h": 445.060791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7563.59423828125
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 14,
+        "sourceWidth": 1220,
+        "tableWrappers": 7,
+        "width": 1422,
+        "slug": "canaan-klt",
+        "locale": "sc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 186.0764007568359,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 2640.920166015625
+          },
+          {
+            "h": 186.0764007568359,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 2640.920166015625
+          },
+          {
+            "h": 445.060791015625,
+            "w": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7563.59423828125
+          },
+          {
+            "h": 445.060791015625,
+            "w": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7563.59423828125
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "modified": "2026-10-25",
+        "overflow": false,
+        "retiredNotice": false,
+        "sourceLinks": 14,
+        "sourceWidth": 1220,
+        "tableWrappers": 7,
+        "width": 1422,
+        "slug": "canaan-klt",
+        "locale": "tc",
+        "viewport": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11168.177734375
+          },
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11681.6845703125
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/stcat?review=sources-20261025",
+        "lang": "zh-Hans-CN",
+        "overflow": false,
+        "sourceLinks": 15,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "stcat",
+        "locale": "sc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11168.177734375
+          },
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11681.6845703125
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/stcat?review=sources-20261025",
+        "lang": "zh-Hant-HK",
+        "overflow": false,
+        "sourceLinks": 15,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "stcat",
+        "locale": "tc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 522.0052490234375,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16209.150390625
+          },
+          {
+            "h": 570.998291015625,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16747.154296875
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/rcps?review=sources-20261025",
+        "lang": "zh-Hans-CN",
+        "overflow": false,
+        "sourceLinks": 20,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "rcps",
+        "locale": "sc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 522.0052490234375,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16209.150390625
+          },
+          {
+            "h": 570.998291015625,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16747.154296875
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/rcps?review=sources-20261025",
+        "lang": "zh-Hant-HK",
+        "overflow": false,
+        "sourceLinks": 20,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "rcps",
+        "locale": "tc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 14560.19140625
+          },
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15073.6982421875
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/tlps?review=sources-20261025",
+        "lang": "zh-Hans-CN",
+        "overflow": false,
+        "sourceLinks": 22,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "tlps",
+        "locale": "sc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 14560.19140625
+          },
+          {
+            "h": 497.5086975097656,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15073.6982421875
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/tlps?review=sources-20261025",
+        "lang": "zh-Hant-HK",
+        "overflow": false,
+        "sourceLinks": 22,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "tlps",
+        "locale": "tc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 522.0052490234375,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15593.39453125
+          },
+          {
+            "h": 546.5017700195312,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16131.3984375
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/victoria?review=sources-20261025",
+        "lang": "zh-Hans-CN",
+        "overflow": false,
+        "sourceLinks": 29,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "victoria",
+        "locale": "sc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 522.0052490234375,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15593.39453125
+          },
+          {
+            "h": 546.5017700195312,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16131.3984375
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/victoria?review=sources-20261025",
+        "lang": "zh-Hant-HK",
+        "overflow": false,
+        "sourceLinks": 29,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 800,
+            "tabindex": "0"
+          },
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "victoria",
+        "locale": "tc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 473.0121765136719,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11945.8076171875
+          },
+          {
+            "h": 473.0121765136719,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 12434.818359375
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/canaan-klt?review=sources-20261025",
+        "lang": "zh-Hans-CN",
+        "overflow": false,
+        "sourceLinks": 14,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "canaan-klt",
+        "locale": "sc",
+        "viewport": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "h": 473.0121765136719,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11945.8076171875
+          },
+          {
+            "h": 473.0121765136719,
+            "w": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 12434.818359375
+          }
+        ],
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/canaan-klt?review=sources-20261025",
+        "lang": "zh-Hant-HK",
+        "overflow": false,
+        "sourceLinks": 14,
+        "wideTables": [
+          {
+            "overflow": "auto",
+            "parent": 341,
+            "scroll": 620,
+            "tabindex": "0"
+          }
+        ],
+        "width": 390,
+        "slug": "canaan-klt",
+        "locale": "tc",
+        "viewport": "mobile"
+      }
+    ],
+    "count": 20,
+    "scope": "Before final two chapter-1 source-note relocations and final prose cleanup"
+  },
+  "finalRecheck": {
+    "status": "pass",
+    "userAuthorization": "2026-10-25 explicit read-only approval for http://127.0.0.1:3330",
+    "states": [
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7720.34765625
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7720.34765625
+          }
+        ],
+        "chapter1Links": 8,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 15,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/stcat?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 15,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "stcat",
+        "locale": "sc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7720.34765625
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7720.34765625
+          }
+        ],
+        "chapter1Links": 8,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 15,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/stcat?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 15,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "stcat",
+        "locale": "tc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 10615.599609375
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 10615.599609375
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 20,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/rcps?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 20,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "rcps",
+        "locale": "sc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 10615.599609375
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 10615.599609375
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 20,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/rcps?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 20,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "rcps",
+        "locale": "tc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9301.0595703125
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9301.0595703125
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 22,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/tlps?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 22,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "tlps",
+        "locale": "sc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9301.0595703125
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9301.0595703125
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 22,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/tlps?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 22,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "tlps",
+        "locale": "tc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9538.00390625
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9538.00390625
+          }
+        ],
+        "chapter1Links": 13,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 29,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/victoria?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 29,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "victoria",
+        "locale": "sc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.560791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 9538.00390625
+          },
+          {
+            "height": 497.560791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 9538.00390625
+          }
+        ],
+        "chapter1Links": 13,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 29,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/victoria?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 29,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "victoria",
+        "locale": "tc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 445.060791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7563.59423828125
+          },
+          {
+            "height": 445.060791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7563.59423828125
+          }
+        ],
+        "chapter1Links": 6,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 14,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/canaan-klt?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 14,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "canaan-klt",
+        "locale": "sc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 445.060791015625,
+            "width": 439.80035400390625,
+            "x": 417.170166015625,
+            "y": 7563.59423828125
+          },
+          {
+            "height": 445.060791015625,
+            "width": 439.8090515136719,
+            "x": 872.9688110351562,
+            "y": 7563.59423828125
+          }
+        ],
+        "chapter1Links": 6,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 14,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/canaan-klt?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 14,
+        "tables": [
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          },
+          {
+            "container": 896,
+            "overflow": "auto",
+            "width": 896
+          }
+        ],
+        "width": 1422,
+        "slug": "canaan-klt",
+        "locale": "tc",
+        "device": "desktop"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11168.177734375
+          },
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11681.6845703125
+          }
+        ],
+        "chapter1Links": 8,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 15,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/stcat?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 15,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          }
+        ],
+        "width": 390,
+        "slug": "stcat",
+        "locale": "sc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11168.177734375
+          },
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11681.6845703125
+          }
+        ],
+        "chapter1Links": 8,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 15,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/stcat?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 15,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          }
+        ],
+        "width": 390,
+        "slug": "stcat",
+        "locale": "tc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 522.0052490234375,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16258.8544921875
+          },
+          {
+            "height": 570.998291015625,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16796.859375
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 20,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/rcps?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 20,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          }
+        ],
+        "width": 390,
+        "slug": "rcps",
+        "locale": "sc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 522.0052490234375,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16258.8544921875
+          },
+          {
+            "height": 570.998291015625,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16796.859375
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 20,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/rcps?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 20,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          }
+        ],
+        "width": 390,
+        "slug": "rcps",
+        "locale": "tc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 14609.193359375
+          },
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15122.7001953125
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 22,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/tlps?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 22,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          }
+        ],
+        "width": 390,
+        "slug": "tlps",
+        "locale": "sc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 14609.193359375
+          },
+          {
+            "height": 497.5086975097656,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15122.7001953125
+          }
+        ],
+        "chapter1Links": 3,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 22,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/tlps?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 22,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          }
+        ],
+        "width": 390,
+        "slug": "tlps",
+        "locale": "tc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 522.0052490234375,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15593.39453125
+          },
+          {
+            "height": 546.5017700195312,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16131.3984375
+          }
+        ],
+        "chapter1Links": 13,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 29,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/victoria?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 29,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          }
+        ],
+        "width": 390,
+        "slug": "victoria",
+        "locale": "sc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 522.0052490234375,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 15593.39453125
+          },
+          {
+            "height": 546.5017700195312,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 16131.3984375
+          }
+        ],
+        "chapter1Links": 13,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 29,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/victoria?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 29,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 800
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          }
+        ],
+        "width": 390,
+        "slug": "victoria",
+        "locale": "tc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 473.0121765136719,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11920.6083984375
+          },
+          {
+            "height": 473.0121765136719,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 12409.6181640625
+          }
+        ],
+        "chapter1Links": 6,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 14,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/cn/reports/canaan-klt?review=release-20261025",
+        "lang": "zh-Hans-CN",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 14,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          }
+        ],
+        "width": 390,
+        "slug": "canaan-klt",
+        "locale": "sc",
+        "device": "mobile"
+      },
+      {
+        "boxes": [
+          {
+            "height": 473.0121765136719,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 11920.6083984375
+          },
+          {
+            "height": 473.0121765136719,
+            "width": 341.3281555175781,
+            "x": 15.99826431274414,
+            "y": 12409.6181640625
+          }
+        ],
+        "chapter1Links": 6,
+        "chapters": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4",
+          "chapter-5",
+          "chapter-6",
+          "chapter-7",
+          "chapter-8"
+        ],
+        "citations": 14,
+        "h1": 1,
+        "href": "http://127.0.0.1:3330/reports/canaan-klt?review=release-20261025",
+        "lang": "zh-Hant-HK",
+        "modified": "2026-10-25",
+        "overflow": false,
+        "sources": 14,
+        "tables": [
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 620
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          },
+          {
+            "container": 341,
+            "overflow": "auto",
+            "width": 341
+          }
+        ],
+        "width": 390,
+        "slug": "canaan-klt",
+        "locale": "tc",
+        "device": "mobile"
+      }
+    ],
+    "count": 20
+  },
+  "screenshotsDirectory": "seo-source-batch1-browser-2026-10-25"
+}

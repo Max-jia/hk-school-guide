@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import SchoolDirectoryPage from "@/components/schools/SchoolDirectoryPage";
-import { languageAlternates } from "@/lib/i18n";
+import SchoolDirectoryPage, { schoolDirectoryMetadata } from "@/components/schools/SchoolDirectoryPage";
 import { SCHOOL_STAGES, type SchoolStage } from "@/lib/school-directory-pilot";
 
 function isStage(stage: string): stage is SchoolStage {
@@ -15,13 +14,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ stage: string }> }): Promise<Metadata> {
   const { stage } = await params;
   if (!isStage(stage)) return { title: "找不到學校名錄", robots: { index: false, follow: false } };
-  const label = SCHOOL_STAGES[stage].label;
-  const path = `/schools/${stage}/directory`;
-  return {
-    title: `香港${label}學校名錄｜按校名與地區搜尋`,
-    description: `搜尋香港${label}學校的基本資料、地區與官方來源。深度報告另列，方便先找學校，再比較課程、入學和升學安排。`,
-    alternates: { canonical: path, languages: languageAlternates(path) },
-  };
+  return schoolDirectoryMetadata(stage, "tc");
 }
 
 export default async function Page({ params }: { params: Promise<{ stage: string }> }) {

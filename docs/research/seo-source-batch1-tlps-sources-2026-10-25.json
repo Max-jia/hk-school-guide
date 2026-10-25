@@ -1,0 +1,141 @@
+[
+  {
+    "label": "香港真光小学：PSP2026",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=420",
+    "scope": "深读身份、收费、22班、2025/26教师43人、两测两考、小一首学期进展评估、30,000平方米及联系女中；校方填报非独立质量评鉴。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27；教师统计为2025/26"
+  },
+  {
+    "label": "教育局：香港真光登记",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=2&scrn=132047000123",
+    "scope": "核对大坑道50号、EDB编号132047、私立全日男女校；区别九龙真光。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "教育局：香港真光收费证明",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/132047.pdf",
+    "scope": "2026-09-01生效小学每期$6,500×10=$65,000；同一文件幼稚园收费不混入小学。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "香港真光小学：中文科",
+    "url": "https://www.tlhkps.edu.hk/primary/tc/content.php?wid=38",
+    "scope": "深读普教中、阅读、诗歌、写作及衔接；不能写成粤语教中文，未量化逐级课时。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "香港真光小学：英文科",
+    "url": "https://www.tlhkps.edu.hk/primary/tc/content.php?wid=23",
+    "scope": "深读第二语言课程、读物、语法练习、讨论及表演；不支持英语弱于某校或当前NET频率比较。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "香港真光小学：电脑科",
+    "url": "https://www.tlhkps.edu.hk/primary/tc/content.php?wid=28",
+    "scope": "深读Scratch、micro:bit、3D打印、智能家居等STREAM内容；旧报告电脑科小四才开始和STEAM弱不成立为当前客观事实。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "香港真光小学：学习支援",
+    "url": "https://www.tlhkps.edu.hk/primary/tc/content.php?wid=21",
+    "scope": "深读分层、辅导、朋辈、专业机构协作；没有个人服务频率或成效分母，不能作强弱保证。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "香港真光小学：2024/25升中结果",
+    "url": "https://www.tlhkps.edu.hk/primary/tc/content.php?wid=107",
+    "scope": "校方列87%升Band 1英文中学、男生83%女生87%、约75%升真中、92%首志愿；未列完整毕业和分组分母、逐校人数及分途径数据。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2024/25毕业届"
+  },
+  {
+    "label": "香港真光小学：2025年7月派位记录",
+    "url": "https://www.tlhkps.edu.hk/primary/tc/album_details.php?id=303&page=1",
+    "scope": "2025-07-09日期佐证结果学年；与结果页同一校方来源，不能算独立交叉验证。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2024/25毕业届；2025-07-09"
+  },
+  {
+    "label": "教育局：2026中学学位分配办法常见问题",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2026_Sept_General_TC.pdf",
+    "scope": "深读直属85%与联系25%的分母、Band 1/2、乙部首选及跨网条件；比例为扣除重读和自行分配后的中学余下学额，不是小学毕业生直升率。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2024/2026派位周期；2026年9月入读中一"
+  },
+  {
+    "label": "香港真光中學：2026公开试与升学",
+    "url": "https://www.tlmshk.edu.hk/academic/public-exam-results-university-offer/",
+    "scope": "深读2026年96.5%达332A及两科选修2级以上，官方解释332A；这是门槛达标，不是大学入读率。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026 HKDSE"
+  },
+  {
+    "label": "香港真光小学：2027/28小一公告",
+    "url": "https://www.tlhkps.edu.hk/tc/content.php?wid=17",
+    "scope": "深读内校6/17–30、外校7/7–8/31；10/21与10/16个人面试，11/13与11/16结果；约160–180学额、$80、能力要求、官津学位限制；2027年6–7月后续视需要。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2027/28招生"
+  },
+  {
+    "label": "香港真光小学：2026/27插班公告",
+    "url": "https://www.tlhkps.edu.hk/tc/content.php?wid=18",
+    "scope": "深读小二至小五，2026-06-05截止、6/20三科笔试、7月面试及结果、$80、两学期成绩；截至10/25正常周期已结束。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "嘉諾撒聖家學校：PSP2026对照",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=85",
+    "scope": "逐校深读性别、类别、学费、中学关系和正式评估；聖家及聖保祿天主教为直属；培道联系，2026/27学费$65,000。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "聖保祿天主教小學：PSP2026对照",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=412",
+    "scope": "逐校深读性别、类别、学费、中学关系和正式评估；聖家及聖保祿天主教为直属；培道联系，2026/27学费$65,000。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "香港培道小學：PSP2026对照",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=92",
+    "scope": "逐校深读性别、类别、学费、中学关系和正式评估；聖家及聖保祿天主教为直属；培道联系，2026/27学费$65,000。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "香港培道中學：SSP2025/2026",
+    "url": "https://www.chsc.hk/ssp2025/sch_detail.php?lang_id=2&sch_id=378",
+    "scope": "核对培道联系中学为资助女校；不能推荐小学男生利用这条女中路径。",
+    "sourceType": "school-profile",
+    "academicYear": "2025/26；含2026/27拟开科目",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "教育局：2026中一自行学位九龙城手册",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/DPHB-KL3_KC-2026.pdf",
+    "scope": "独立政府手册核对香港培道中學编号235、女校身份，纠正旧稿男生可直升的错误。",
+    "sourceType": "government",
+    "academicYear": "2026年9月中一",
+    "checkedOn": "2026-10-25"
+  }
+]

@@ -15,6 +15,8 @@ import {
 import { L, type Locale } from "@/lib/i18n";
 import { buildReportCommuteInfo } from "@/lib/report-commute";
 import { getReportSourceReferences } from "@/lib/report-sources";
+import { reportSchoolProfiles } from "@/lib/report-school-profiles";
+import { serializeJsonLd } from "@/lib/structured-data";
 
 type RelatedReport = { slug: string; title: string };
 
@@ -171,7 +173,8 @@ export default async function ReportPage({
 
   const related = findRelated(slug);
   const sourceReferences = getReportSourceReferences(slug);
-  const jsonLd = reportJsonLd(d, locale, sourceReferences);
+  const schoolProfiles = reportSchoolProfiles(slug);
+  const jsonLd = reportJsonLd(d, locale, sourceReferences, schoolProfiles);
   const schoolName = L(reportSchoolName(d), locale);
   const category = reportCategory(d);
   const shortlistKind = category === "kg" ? "kindergarten" : category === "secondary" ? "secondary" : "primary";
@@ -186,7 +189,7 @@ export default async function ReportPage({
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
       <ReportViewer
         slug={slug}
         hero={L(d.hero, locale)}
@@ -198,6 +201,7 @@ export default async function ReportPage({
         shortlistKind={shortlistKind}
         commuteInfo={commuteInfo}
         sourceReferences={sourceReferences}
+        schoolProfiles={schoolProfiles}
       />
     </>
   );

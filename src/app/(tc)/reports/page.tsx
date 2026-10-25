@@ -7,6 +7,8 @@ import Localize from "@/components/Localize";
 import reportMeta from "@/content/report-meta.json";
 import { matchesZh } from "@/lib/zh";
 import { L, localeHref, type Locale } from "@/lib/i18n";
+import { collectionSchema } from "@/lib/collection-schema";
+import { serializeJsonLd } from "@/lib/structured-data";
 
 const META = reportMeta;
 const TIER_CFG = META.TIER_CFG as Record<string, { c: string; b: string }>;
@@ -35,10 +37,14 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
   const pageCount = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
   const currentPage = Math.min(page, pageCount);
   const visibleList = list.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const schema = collectionSchema({ path: "/reports", title: `全港 ${ALL.length} 份深度擇校報告`, locale,
+    breadcrumbs: [{ name: "首頁", path: "/" }, { name: "深度報告", path: "/reports" }],
+  });
 
   return (
     <Localize locale={locale}>
     <main className="w-full">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
       <SiteHeader locale={locale} />
       <div className="mx-auto max-w-[1280px] px-4 pb-24">
         <div className="py-8">
@@ -207,6 +213,17 @@ export default function ReportsPage({ locale = "tc" }: { locale?: Locale }) {
             );
           })}
         </ul>
+        <details className="mt-10 rounded-xl border border-[var(--p-gray-300)] p-4 sm:p-5">
+          <summary className="cursor-pointer text-base font-bold text-[var(--p-fg)]">{L(`按學段查看完整報告索引（${ALL.length} 份）`, locale)}</summary>
+          <div className="mt-5 grid gap-6 md:grid-cols-3">
+            {([{ label: "幼稚園", reports: META.KG_REPORTS }, { label: "小學", reports: META.PS_REPORTS }, { label: "中學", reports: META.SS_REPORTS }]).map((group) => <section key={group.label}>
+              <h2 className="mb-2 font-serif text-lg font-bold text-[var(--p-fg)]">{L(group.label, locale)} · {group.reports.length}</h2>
+              <ul className="m-0 list-none space-y-1 p-0">
+                {group.reports.map((report) => <li key={report.c}><a href={localeHref(`/reports/${report.c}`, locale)} className="inline-flex min-h-11 items-center text-sm text-[var(--p-fg)] underline underline-offset-4">{L(report.n, locale)}</a></li>)}
+              </ul>
+            </section>)}
+          </div>
+        </details>
       </div>
       <SiteFooter locale={locale} />
     </main>

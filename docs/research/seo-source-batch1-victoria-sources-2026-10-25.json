@@ -1,0 +1,199 @@
+[
+  {
+    "label": "VEO：现行校区目录",
+    "url": "https://www.victoria.edu.hk/campuses/",
+    "scope": "目录列八校区；用于机构范围、地区及与铜锣湾独立网站区分，不代表每校区只有一项注册。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行网页"
+  },
+  {
+    "label": "VEO：2026/27年度学费",
+    "url": "https://www.victoria.edu.hk/tution/",
+    "scope": "逐校区逐年级半日费用；PN/K1为11期、K2/K3为10期。三年相加只能作为同年费率静态情景。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "VEO：2026/27班制与活动时间",
+    "url": "https://www.victoria.edu.hk/programme-class-schedule/?tab=Nursery_Kindergarten",
+    "scope": "核对三语/英普双语、可收PN年龄、各年级上午下午及K3下午延长时间；年度班表优先于无年度的校区简介。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "VEO：2027/28申请程序",
+    "url": "https://www.victoria.edu.hk/application-procedure/",
+    "scope": "统一最多六志愿、申请年龄、费用、PN同校区升K1、两轮面见、兄姊第二轮豁免及滚动插班；非录取保证。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2027/28；兼列2026/27滚动收生"
+  },
+  {
+    "label": "VEO：招生关键日期",
+    "url": "https://www.victoria.edu.hk/key-dates/",
+    "scope": "交叉核对K1/PN申请、两轮面见与公布日期；与申请页同属机构，属于内部一致性核对，非独立招生审计。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "VEO：学生升班路线",
+    "url": "https://www.victoria.edu.hk/student-roadmap/",
+    "scope": "明确现读PN自动升同校区K1，不把它推成跨校转班或VSA保证。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "现行升班说明"
+  },
+  {
+    "label": "VEO：K1–K3 IB PYP课程",
+    "url": "https://www.victoria.edu.hk/nursery-kindergarten/ib-primary-years-programme-k1-k3/",
+    "scope": "K1–K3跨主题探究课程；不把课程框架视为学生成效、排名或PN认证。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "VEO：语言与读写课程",
+    "url": "https://www.victoria.edu.hk/nursery-kindergarten/language-literacy-programme/",
+    "scope": "校方的生活化听说读写目标；没有逐语言课时比例，不据此编造50%/25%/25%。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "VEO：创客学习",
+    "url": "https://www.victoria.edu.hk/nursery-kindergarten/maker-centered-learning/",
+    "scope": "校方说明创客与STEAM及研究合作；作为课程设计说明，不转化为个体成效承诺。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25"
+  },
+  {
+    "label": "VEO：四届毕业生小学录取结果",
+    "url": "https://www.victoria.edu.hk/school-placement/",
+    "scope": "2022/23–2025/26：VSA692、蘇浙76、聖士提反附小69等获offer人数；截至2026-09-04。缺毕业分母和逐校区分母，不算录取率；多校offer不能累加成毕业人数。",
+    "sourceType": "operator-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2022/23–2025/26四届；数据截至2026-09-04"
+  },
+  {
+    "label": "VSA：现行招生政策",
+    "url": "https://www.vsa.edu.hk/admissions/how-to-apply",
+    "scope": "一年级优先考虑维多利亚学生/债券持有人、评估、同等能力下优先类别、K3新生仅空缺时获接纳。70%指香港永久居民保留学位，不是幼园升读率。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行；页面另列2028/29一年级活动"
+  },
+  {
+    "label": "铜锣湾维多利亚：独立初步申请登记",
+    "url": "https://www.cbvictoria.edu.hk/en/k1k2k3_application/",
+    "scope": "独立K1–K3初步登记及2026/27 PN，不把旧媒体“不收K1”当现行绝对规定。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "现行；兼列2026/27"
+  },
+  {
+    "label": "铜锣湾维多利亚：2026/27收费PDF",
+    "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/35/Tuition%2026-27_Eng.pdf",
+    "scope": "独立学校半日自动转账K1$96,480；不能套用VEO各校区。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "铜锣湾维多利亚：小学去向明细",
+    "url": "https://www.cbvictoria.edu.hk/en/school_placement/",
+    "scope": "表列122毕业生、VSA60/聖士提反附小12/蔡繼有4，属该校去向人数，不外推VEO。年度由配套官方图标题标识。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2024/25（配套官方图片标题）"
+  },
+  {
+    "label": "铜锣湾维多利亚：2024/25去向图",
+    "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/22/Piechart_Primary%20School%20Placement%20for%20Upper%20Class%20%28K3%29%20Graduates%20%28AY%202024-2025%29.jpg",
+    "scope": "同页官方配图资源名标明AY2024–2025，结合明细表说明届别；49.2%/9.8%/3.3%为60/122、12/122、4/122四舍五入。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2024/25"
+  },
+  {
+    "label": "IB组织：维多利亚何文田学校记录",
+    "url": "https://ibo.org/en/school/002865/",
+    "scope": "独立核对IB授权日为2010-05-13，修正旧稿2021；不把授权等同教学排名。",
+    "sourceType": "exam-authority",
+    "checkedOn": "2026-10-25",
+    "academicYear": "授权日2010-05-13"
+  },
+  {
+    "label": "IB组织：维多利亚海之恋学校记录",
+    "url": "https://www.ibo.org/en/school/063055",
+    "scope": "独立核对海之恋地址及IB授权日2024-12-20。",
+    "sourceType": "exam-authority",
+    "checkedOn": "2026-10-25",
+    "academicYear": "授权日2024-12-20"
+  },
+  {
+    "label": "VEO校区原页：宝翠园",
+    "url": "https://www.victoria.edu.hk/campus/belcher-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  },
+  {
+    "label": "VEO校区原页：君汇港",
+    "url": "https://www.victoria.edu.hk/campus/harbour-green-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  },
+  {
+    "label": "VEO校区原页：海峰园",
+    "url": "https://www.victoria.edu.hk/campus/harbour-heights-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  },
+  {
+    "label": "VEO校区原页：何文田",
+    "url": "https://www.victoria.edu.hk/campus/homantin-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  },
+  {
+    "label": "VEO校区原页：下康",
+    "url": "https://www.victoria.edu.hk/campus/lower-kornhill-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  },
+  {
+    "label": "VEO校区原页：中康",
+    "url": "https://www.victoria.edu.hk/campus/middle-kornhill-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  },
+  {
+    "label": "VEO校区原页：海之恋",
+    "url": "https://www.victoria.edu.hk/campus/ocean-pride-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  },
+  {
+    "label": "VEO校区原页：海怡",
+    "url": "https://www.victoria.edu.hk/campus/south-horizons-campus/",
+    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-25",
+    "academicYear": "2026年现行校区简介"
+  }
+]

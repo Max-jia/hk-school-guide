@@ -15,6 +15,7 @@ import {
 } from "@/lib/blog";
 import { blogStage, blogTopic, BLOG_STAGE_LABELS, BLOG_TOPIC_LABELS } from "@/lib/blog-taxonomy";
 import { blogClustersForArticle, clusterArticles, clusterCoreArticle } from "@/lib/blog-clusters";
+import { serializeJsonLd } from "@/lib/structured-data";
 
 function readableDate(iso: string): string {
   const [year, month, day] = iso.split("-");
@@ -77,7 +78,7 @@ export default async function BlogPostPage({
   return (
     <Localize locale={locale}>
       <main className="w-full">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
         <SiteHeader locale={locale} />
         <div className="mx-auto max-w-[880px] px-4 pb-24">
           <p className="pt-8 font-mono text-sm uppercase text-[var(--p-secondary)]">

@@ -1,0 +1,536 @@
+{
+  "productionDeployment": "dpl_98wSWe4ECQeFpf9LidnAwbELpZtu",
+  "productionCommit": "6007a7d19342805a724eef44990047a222d3a08e",
+  "capturedAtUTC": "2026-10-25T01:03:37Z",
+  "sitemap": {
+    "urls": 5038,
+    "duplicates": 0,
+    "languageEntriesMissing": 0,
+    "schoolCounts": {
+      "kindergarten": 958,
+      "primary": 648,
+      "secondary": 587
+    }
+  },
+  "pageCount": 44,
+  "validSitePages": 43,
+  "negativeControls": [
+    "/blog/topics/kindergarten-admissions"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "港學薈 · 香港教育規劃第一站",
+      "canonical": [
+        "https://hkschool.guide"
+      ],
+      "schemaTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "bytes": 122366
+    },
+    {
+      "path": "/cn",
+      "status": 200,
+      "title": "港学荟 · 香港教育规划第一站",
+      "canonical": [
+        "https://hkschool.guide/cn"
+      ],
+      "schemaTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "bytes": 123217
+    },
+    {
+      "path": "/schools",
+      "status": 200,
+      "title": "香港學校資料與選校指南｜幼稚園、小學、中學 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools"
+      ],
+      "schemaTypes": [],
+      "bytes": 44113
+    },
+    {
+      "path": "/cn/schools",
+      "status": 200,
+      "title": "香港学校资料与选校指南｜幼儿园、小学、中学 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/schools"
+      ],
+      "schemaTypes": [],
+      "bytes": 44769
+    },
+    {
+      "path": "/schools/kindergarten",
+      "status": 200,
+      "title": "香港幼稚園選校指南｜學校名錄、入學攻略與深度報告 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/kindergarten"
+      ],
+      "schemaTypes": [],
+      "bytes": 79785
+    },
+    {
+      "path": "/cn/schools/kindergarten",
+      "status": 200,
+      "title": "香港幼稚园选校指南｜学校名录、入学攻略与深度报告 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/schools/kindergarten"
+      ],
+      "schemaTypes": [],
+      "bytes": 80586
+    },
+    {
+      "path": "/schools/kindergarten/directory",
+      "status": 200,
+      "title": "香港幼稚園學校名錄｜按校名與地區搜尋 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/kindergarten/directory"
+      ],
+      "schemaTypes": [],
+      "bytes": 723174
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory",
+      "status": 200,
+      "title": "香港幼稚园学校名录｜按校名与地区搜索 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/schools/kindergarten/directory"
+      ],
+      "schemaTypes": [],
+      "bytes": 723789
+    },
+    {
+      "path": "/schools/kindergarten/chan-s-creative-kindergarten-624918",
+      "status": 200,
+      "title": "啟基幼稚園｜幼稚園資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/kindergarten/chan-s-creative-kindergarten-624918"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 90545
+    },
+    {
+      "path": "/schools/kindergarten/invictus-kindergarten-615366",
+      "status": 200,
+      "title": "INVICTUS KINDERGARTEN｜幼稚園資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/kindergarten/invictus-kindergarten-615366"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 89296
+    },
+    {
+      "path": "/schools/kindergarten/tivoli-kindergarten-branch-583405",
+      "status": 200,
+      "title": "宏福幼稚園（分校）｜幼稚園資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/kindergarten/tivoli-kindergarten-branch-583405"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 66161
+    },
+    {
+      "path": "/schools/primary",
+      "status": 200,
+      "title": "香港小學選校指南｜學校名錄、入學攻略與深度報告 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/primary"
+      ],
+      "schemaTypes": [],
+      "bytes": 83425
+    },
+    {
+      "path": "/cn/schools/primary",
+      "status": 200,
+      "title": "香港小学选校指南｜学校名录、入学攻略与深度报告 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/schools/primary"
+      ],
+      "schemaTypes": [],
+      "bytes": 84249
+    },
+    {
+      "path": "/schools/primary/directory",
+      "status": 200,
+      "title": "香港小學學校名錄｜按校名與地區搜尋 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/primary/directory"
+      ],
+      "schemaTypes": [],
+      "bytes": 500505
+    },
+    {
+      "path": "/cn/schools/primary/directory",
+      "status": 200,
+      "title": "香港小学学校名录｜按校名与地区搜索 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/schools/primary/directory"
+      ],
+      "schemaTypes": [],
+      "bytes": 501449
+    },
+    {
+      "path": "/schools/primary/carmel-leung-sing-tak-school-511366",
+      "status": 200,
+      "title": "迦密梁省德學校｜小學資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/primary/carmel-leung-sing-tak-school-511366"
+      ],
+      "schemaTypes": [
+        "School"
+      ],
+      "bytes": 74769
+    },
+    {
+      "path": "/schools/primary/carmel-alison-lam-primary-school-115215",
+      "status": 200,
+      "title": "迦密愛禮信小學｜小學資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/primary/carmel-alison-lam-primary-school-115215"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 75491
+    },
+    {
+      "path": "/schools/primary/fr-cucchiara-memorial-school-sham-shui-po",
+      "status": 200,
+      "title": "郭怡雅神父紀念學校（深水埗）｜小學資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/primary/fr-cucchiara-memorial-school-sham-shui-po"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 96075
+    },
+    {
+      "path": "/schools/secondary",
+      "status": 200,
+      "title": "香港中學選校指南｜學校名錄、入學攻略與深度報告 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/secondary"
+      ],
+      "schemaTypes": [],
+      "bytes": 93035
+    },
+    {
+      "path": "/cn/schools/secondary",
+      "status": 200,
+      "title": "香港中学选校指南｜学校名录、入学攻略与深度报告 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/schools/secondary"
+      ],
+      "schemaTypes": [],
+      "bytes": 93817
+    },
+    {
+      "path": "/schools/secondary/directory",
+      "status": 200,
+      "title": "香港中學學校名錄｜按校名與地區搜尋 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/secondary/directory"
+      ],
+      "schemaTypes": [],
+      "bytes": 729669
+    },
+    {
+      "path": "/cn/schools/secondary/directory",
+      "status": 200,
+      "title": "香港中学学校名录｜按校名与地区搜索 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/schools/secondary/directory"
+      ],
+      "schemaTypes": [],
+      "bytes": 730594
+    },
+    {
+      "path": "/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "status": 200,
+      "title": "中華傳道會李賢堯紀念中學｜中學資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 79762
+    },
+    {
+      "path": "/schools/secondary/yuen-long-public-middle-school-alumni-association-tang-siu-tong-secondary-school-529761",
+      "status": 200,
+      "title": "元朗公立中學校友會鄧兆棠中學｜中學資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/secondary/yuen-long-public-middle-school-alumni-association-tang-siu-tong-secondary-school-529761"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 78799
+    },
+    {
+      "path": "/schools/secondary/hkct-adult-education-centre-ho-tung-secondary-school-557528",
+      "status": 200,
+      "title": "港專成人教育中心（何東中學）｜中學資料 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/schools/secondary/hkct-adult-education-centre-ho-tung-secondary-school-557528"
+      ],
+      "schemaTypes": [
+        "PostalAddress",
+        "School"
+      ],
+      "bytes": 63931
+    },
+    {
+      "path": "/reports",
+      "status": 200,
+      "title": "全港 228 份小學、幼稚園及中學深度擇校報告 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/reports"
+      ],
+      "schemaTypes": [],
+      "bytes": 59124
+    },
+    {
+      "path": "/cn/reports",
+      "status": 200,
+      "title": "全港 228 份小学、幼稚园及中学深度择校报告 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/reports"
+      ],
+      "schemaTypes": [],
+      "bytes": 59482
+    },
+    {
+      "path": "/reports/rcps",
+      "status": 200,
+      "title": "高主教書院小學部｜課程、小一入學與升中路徑｜港學薈",
+      "canonical": [
+        "https://hkschool.guide/reports/rcps"
+      ],
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 163624
+    },
+    {
+      "path": "/cn/reports/stcat",
+      "status": 200,
+      "title": "国际英文幼稚园｜课程、学费与K1入读｜港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/reports/stcat"
+      ],
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 100260
+    },
+    {
+      "path": "/reports/ying-wa-college-secondary",
+      "status": 200,
+      "title": "英華書院（中學部）｜課程、收生與升學路徑｜港學薈",
+      "canonical": [
+        "https://hkschool.guide/reports/ying-wa-college-secondary"
+      ],
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 152930
+    },
+    {
+      "path": "/cn/reports/australian-international-school-hong-kong-secondary",
+      "status": 200,
+      "title": "香港澳洲国际学校 AISHK（中学部）｜课程、收生与升学路径｜港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/reports/australian-international-school-hong-kong-secondary"
+      ],
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 125282
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "title": "香港小學與幼稚園擇校文章｜入學、學費、選校比較 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/blog"
+      ],
+      "schemaTypes": [],
+      "bytes": 94862
+    },
+    {
+      "path": "/cn/blog",
+      "status": 200,
+      "title": "香港小学与幼儿园择校文章｜入学、学费、选校比较 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/blog"
+      ],
+      "schemaTypes": [],
+      "bytes": 95235
+    },
+    {
+      "path": "/blog/hk-kg-k1-transparency-audit-2027-28",
+      "status": 200,
+      "title": "2027/28香港幼稚園K1招生信息公開度核查：5所學校逐項對照 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/blog/hk-kg-k1-transparency-audit-2027-28"
+      ],
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 68191
+    },
+    {
+      "path": "/blog/through-train-guide",
+      "status": 200,
+      "title": "一條龍/直屬/聯繫：三個詞搞錯，可能毀了你孩子的升中路 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/blog/through-train-guide"
+      ],
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 59156
+    },
+    {
+      "path": "/cn/blog/hk-p1-admission-guide-2027",
+      "status": 200,
+      "title": "香港小一派位2027/28：申请时间、结果日期与计分方法 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/blog/hk-p1-admission-guide-2027"
+      ],
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 78826
+    },
+    {
+      "path": "/blog/topics/kindergarten-admissions",
+      "status": 404,
+      "title": "港學薈 · 香港教育規劃第一站",
+      "canonical": [
+        "https://hkschool.guide"
+      ],
+      "schemaTypes": [],
+      "bytes": 12489,
+      "scope": "invalid-path negative control; not a broken site link"
+    },
+    {
+      "path": "/about/data-methodology",
+      "status": 200,
+      "title": "學校資料來源與評估方法 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/about/data-methodology"
+      ],
+      "schemaTypes": [
+        "AboutPage",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 71609
+    },
+    {
+      "path": "/cn/about/data-methodology",
+      "status": 200,
+      "title": "学校资料来源与评估方法 | 港学荟",
+      "canonical": [
+        "https://hkschool.guide/cn/about/data-methodology"
+      ],
+      "schemaTypes": [
+        "AboutPage",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "bytes": 72266
+    },
+    {
+      "path": "/planning",
+      "status": 200,
+      "title": "香港升學規劃：先看 DSE、IB、A-Level 方向，再選學校 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/planning"
+      ],
+      "schemaTypes": [],
+      "bytes": 81240
+    },
+    {
+      "path": "/compare",
+      "status": 200,
+      "title": "香港學校對比：評級、學費與升學資料並排比較 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/compare"
+      ],
+      "schemaTypes": [],
+      "bytes": 28386
+    },
+    {
+      "path": "/tools/p1-school-net",
+      "status": 200,
+      "title": "小一校網數據庫：36 個校網 × 官立資助小學名單 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/tools/p1-school-net"
+      ],
+      "schemaTypes": [],
+      "bytes": 76162
+    },
+    {
+      "path": "/shortlist",
+      "status": 200,
+      "title": "我的候選學校清單 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/shortlist"
+      ],
+      "schemaTypes": [],
+      "bytes": 26563
+    },
+    {
+      "path": "/unlock",
+      "status": 200,
+      "title": "報告與工具使用說明 | 港學薈",
+      "canonical": [
+        "https://hkschool.guide/unlock"
+      ],
+      "schemaTypes": [],
+      "bytes": 34186
+    }
+  ],
+  "limits": [
+    "43 valid public pages plus 1 invalid path negative control, not full site crawl",
+    "Does not prove Google indexation, field CWV or AI citations",
+    "Old GSC window ends 2026-10-17, before current school directory release"
+  ]
+}

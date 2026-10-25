@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SchoolStageHub from "@/components/schools/SchoolStageHub";
-import { L, languageAlternates } from "@/lib/i18n";
+import { L } from "@/lib/i18n";
+import { createPageMetadata } from "@/lib/page-metadata";
 import { SCHOOL_STAGES, type SchoolStage } from "@/lib/school-directory-pilot";
 
 function isStage(stage: string): stage is SchoolStage {
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stage: st
   const title = `香港${config.label}選校指南｜學校名錄、入學攻略與深度報告`;
   const description = `按${config.label}階段瀏覽香港學校基本資料、選校攻略與深度報告。地址、辦學類別和年度資料附官方來源，方便家長逐項核對。`;
   const path = `/schools/${stage}`;
-  return { title, description, alternates: { canonical: path, languages: languageAlternates(path) } };
+  return createPageMetadata({ title, description, path, locale: "tc" });
 }
 
 export default async function Page({ params }: { params: Promise<{ stage: string }> }) {

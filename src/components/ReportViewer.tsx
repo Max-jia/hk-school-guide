@@ -12,6 +12,7 @@ import ReportCommutePanel from "@/components/ReportCommutePanel";
 import ReportSourcePanel from "@/components/ReportSourcePanel";
 import type { ReportCommuteInfo } from "@/lib/report-commute";
 import type { ReportSourceReference } from "@/lib/report-sources";
+import type { ReportSchoolProfileLink } from "@/lib/report-school-profiles";
 import { L, localeHref, type Locale } from "@/lib/i18n";
 import { buildEditorialHeroHtml, enhanceReportHtml, enhanceReportTables, reportChapterItems, usesEditorialReportLayout } from "@/lib/report-html";
 import { useReportTableOverflow } from "@/hooks/useReportTableOverflow";
@@ -30,6 +31,7 @@ export default function ReportViewer({
   shortlistKind,
   commuteInfo,
   sourceReferences = [],
+  schoolProfiles = [],
 }: {
   slug: string;
   hero: string;
@@ -41,6 +43,7 @@ export default function ReportViewer({
   shortlistKind: "primary" | "kindergarten" | "secondary";
   commuteInfo: ReportCommuteInfo;
   sourceReferences?: ReportSourceReference[];
+  schoolProfiles?: ReportSchoolProfileLink[];
 }) {
   const z = (s: string) => L(s, locale);
   const editorialReport = usesEditorialReportLayout(slug);
@@ -119,6 +122,15 @@ export default function ReportViewer({
   }
 
   const layoutSample = slug === "our-ladys-kindergarten";
+  const profileLinks = (
+    <ul className="m-0 mt-1 flex list-none flex-wrap gap-x-5 gap-y-1 p-0">
+      {schoolProfiles.map((profile) => <li key={profile.href}>
+        <a href={localeHref(profile.href, locale)} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[var(--p-fg)] underline underline-offset-4">
+          {z(profile.name)}<span className="text-xs font-normal text-[var(--p-secondary)]">{z(profile.district)} →</span>
+        </a>
+      </li>)}
+    </ul>
+  );
   const supplementaryTools = (
     <div className="report-screen-only report-supplementary-tools">
       <div className="mb-5">
@@ -183,6 +195,13 @@ export default function ReportViewer({
             {pdfBusy ? z("正在生成 PDF…") : z("下载为 PDF")}
           </button>
         </div>
+        {schoolProfiles.length > 0 && <nav className="report-screen-only mb-5 rounded-lg border border-[var(--p-gray-300)] px-4 py-3" aria-label={z("學校簡明資料")}>
+          <p className="m-0 text-xs text-[var(--p-secondary)]">{z("學校簡明資料 · 核對基本資料與官方來源")}</p>
+          {schoolProfiles.length === 1 ? profileLinks : <details className="mt-1">
+            <summary className="min-h-11 cursor-pointer py-3 text-sm font-semibold text-[var(--p-fg)]">{z(`查看 ${schoolProfiles.length} 所對應學校`)}</summary>
+            {profileLinks}
+          </details>}
+        </nav>}
         <details className="mb-6 border border-[var(--p-gray-300)] bg-[var(--p-gray-50)] px-4 py-3 sm:px-5">
           <summary className="cursor-pointer text-sm font-bold text-[var(--p-fg)]">
             {L("資料與評價標示說明", locale)}

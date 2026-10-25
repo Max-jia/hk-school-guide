@@ -3,7 +3,8 @@ import path from "path";
 import type { Metadata } from "next";
 import blogMeta from "@/content/blog-meta.json";
 import { SITE_URL, toISODate, trimTitle, makeDescription } from "./seo";
-import { L, localeHref, languageAlternates, type Locale } from "./i18n";
+import { L, LOCALE_META, localeHref, languageAlternates, type Locale } from "./i18n";
+import { ORGANIZATION_ID, WEBSITE_ID, breadcrumbJsonLd, jsonLdGraph, webPageJsonLd } from "./structured-data";
 
 // 热文(blog)的数据访问与元数据。繁简两棵路由共用,避免两套逻辑漂移。
 
@@ -120,27 +121,27 @@ export function blogPostJsonLd(post: BlogPost, locale: Locale) {
   const meta = getBlogMeta(post.slug);
   const iso = blogPublishedAt(meta);
   const pageUrl = `${SITE_URL}${localeHref(`/blog/${post.slug}`, locale)}`;
-  const organizationId = `${SITE_URL}/#organization`;
-  const websiteId = `${SITE_URL}/#website`;
-  return {
-    "@context": "https://schema.org",
+  const path = `/blog/${post.slug}`;
+  const articleId = `${pageUrl}#article`;
+  const title = blogTitle(post, locale);
+  const description = blogDescription(post, locale);
+  return jsonLdGraph(locale, [{
     "@type": "Article",
-    headline: blogTitle(post, locale),
-    description: blogDescription(post, locale),
+    "@id": articleId,
+    headline: title,
+    description,
     datePublished: iso || undefined,
     dateModified: meta?.updatedAt,
-    author: { "@id": organizationId },
-    publisher: { "@id": organizationId },
-    mainEntityOfPage: pageUrl,
+    author: { "@id": ORGANIZATION_ID },
+    publisher: { "@id": ORGANIZATION_ID },
+    mainEntityOfPage: { "@id": `${pageUrl}#webpage` },
     image: `${SITE_URL}/covers/og/${post.slug}.png`,
-    isPartOf: { "@id": websiteId },
-    breadcrumb: {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: L("首頁", locale), item: `${SITE_URL}${localeHref("/", locale)}` },
-        { "@type": "ListItem", position: 2, name: L("熱文", locale), item: `${SITE_URL}${localeHref("/blog", locale)}` },
-        { "@type": "ListItem", position: 3, name: blogTitle(post, locale), item: pageUrl },
-      ],
-    },
-  };
+    inLanguage: LOCALE_META[locale].htmlLang,
+    isPartOf: { "@id": WEBSITE_ID },
+  }, webPageJsonLd({ path, title, description, locale, mainEntity: { "@id": articleId } }),
+  breadcrumbJsonLd(path, [
+    { name: "首頁", path: "/" },
+    { name: "熱文", path: "/blog" },
+    { name: title, path },
+  ], locale)]);
 }

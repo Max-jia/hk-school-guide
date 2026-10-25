@@ -1,0 +1,3184 @@
+{
+  "counts": {
+    "kindergarten": {
+      "reports": 57,
+      "mapped": 57,
+      "unmapped": 0,
+      "profileLinks": 86
+    },
+    "primary": {
+      "reports": 121,
+      "mapped": 121,
+      "unmapped": 0,
+      "profileLinks": 121
+    },
+    "secondary": {
+      "reports": 50,
+      "mapped": 50,
+      "unmapped": 0,
+      "profileLinks": 50
+    }
+  },
+  "errors": [],
+  "unmapped": [],
+  "multiProfileReports": [
+    {
+      "report": "victoria",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "銅鑼灣維多利亞國際幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/veo-cwb"
+        },
+        {
+          "name": "維多利亞(海之戀)國際幼稚園",
+          "district": "荃灣區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria"
+        },
+        {
+          "name": "銅鑼灣維多利亞幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-79"
+        },
+        {
+          "name": "康怡維多利亞幼稚園",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-28"
+        },
+        {
+          "name": "維多利亞（君匯港）幼稚園",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-08"
+        },
+        {
+          "name": "維多利亞幼稚園",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-81"
+        },
+        {
+          "name": "維多利亞（海怡）國際幼稚園",
+          "district": "南區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-94"
+        },
+        {
+          "name": "維多利亞(寶翠園)幼稚園",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/veo-bcy"
+        }
+      ]
+    },
+    {
+      "report": "lh",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "學之園幼稚園(海翩康城)",
+          "district": "西貢區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-hp"
+        },
+        {
+          "name": "學之園幼稚園（昇御海逸）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh"
+        },
+        {
+          "name": "學之園幼稚園（迎海）",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-91"
+        },
+        {
+          "name": "學之園幼稚園(星匯居)",
+          "district": "深水埗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-50"
+        },
+        {
+          "name": "學之園幼稚園(君豪峰)",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-81"
+        },
+        {
+          "name": "學之園幼稚園",
+          "district": "葵青區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-00"
+        },
+        {
+          "name": "學之園幼稚園（凱帆薈）",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-sf"
+        },
+        {
+          "name": "學之園幼稚園(奧運)",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-74"
+        }
+      ]
+    },
+    {
+      "report": "canaan",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "迦南幼稚園(景峰花園)",
+          "district": "屯門區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-41"
+        },
+        {
+          "name": "迦南幼稚園(九龍塘)",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-klt"
+        },
+        {
+          "name": "迦南幼稚園(中環堅道)",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-cd"
+        },
+        {
+          "name": "迦南幼稚園(將軍澳)",
+          "district": "西貢區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-87"
+        },
+        {
+          "name": "迦南幼稚園(小西灣)",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-96"
+        },
+        {
+          "name": "迦南幼稚園(麗港城)",
+          "district": "觀塘區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-54"
+        },
+        {
+          "name": "迦南幼稚園(富榮花園)",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-98"
+        },
+        {
+          "name": "迦南幼稚園(海濱花園)",
+          "district": "荃灣區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-10"
+        },
+        {
+          "name": "迦南幼稚園(窩打老道)",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-30"
+        }
+      ]
+    },
+    {
+      "report": "goodhealth",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "康傑中英文幼稚園(馬鞍山)",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth"
+        },
+        {
+          "name": "康傑中英文幼稚園(青衣南)",
+          "district": "葵青區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth-19"
+        },
+        {
+          "name": "康傑中英文幼稚園(青衣)",
+          "district": "葵青區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth-14"
+        },
+        {
+          "name": "康傑幼稚園〈馬鞍山〉",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth-13"
+        }
+      ]
+    },
+    {
+      "report": "tutor",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "多多寶馬山國際幼稚園",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor"
+        },
+        {
+          "name": "多多國際幼稚園（形點）",
+          "district": "元朗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor-94"
+        },
+        {
+          "name": "多多國際幼稚園（半山）",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor-33"
+        },
+        {
+          "name": "多多國際幼稚園（九龍塘）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor-klt"
+        }
+      ]
+    },
+    {
+      "report": "st-hilarys-kg",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "德萃幼稚園(馬鞍山)",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/st-hilarys-kg"
+        },
+        {
+          "name": "德萃幼稚園（紅磡）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/st-hilarys-kg-45"
+        }
+      ]
+    }
+  ],
+  "all": [
+    {
+      "report": "braemar-hill",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "寶山幼兒園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/braemar-hill-nursery-school"
+        }
+      ]
+    },
+    {
+      "report": "cckg",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "基督堂幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/christ-church-kindergarten"
+        }
+      ]
+    },
+    {
+      "report": "stcat",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "國際英文幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/st-catherines-international-kindergarten"
+        }
+      ]
+    },
+    {
+      "report": "soka",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "香港創價幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/soka"
+        }
+      ]
+    },
+    {
+      "report": "spk",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "聖保祿幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/spk"
+        }
+      ]
+    },
+    {
+      "report": "hy",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "協恩中學附屬幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/hy"
+        }
+      ]
+    },
+    {
+      "report": "munsang",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "民生書院幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/munsang"
+        }
+      ]
+    },
+    {
+      "report": "alliance",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "宣道幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/alliance"
+        }
+      ]
+    },
+    {
+      "report": "smm",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "天主教聖瑪加利大幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/smm"
+        }
+      ]
+    },
+    {
+      "report": "pc",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "香港培正小學（幼稚園）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/pc"
+        }
+      ]
+    },
+    {
+      "report": "skh",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "聖公會幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/skh"
+        }
+      ]
+    },
+    {
+      "report": "kentville",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "根德園幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/kentville"
+        }
+      ]
+    },
+    {
+      "report": "ssgc",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "聖士提反女子中學附屬幼稚園",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/ssgc"
+        }
+      ]
+    },
+    {
+      "report": "veo-cwb",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "銅鑼灣維多利亞國際幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/veo-cwb"
+        }
+      ]
+    },
+    {
+      "report": "veo-hmt",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "維多利亞（何文田）國際幼兒園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/veo-hmt-00"
+        }
+      ]
+    },
+    {
+      "report": "veo-bcy",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "維多利亞(寶翠園)幼稚園",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/veo-bcy"
+        }
+      ]
+    },
+    {
+      "report": "lh-hp",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "學之園幼稚園(海翩康城)",
+          "district": "西貢區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-hp"
+        }
+      ]
+    },
+    {
+      "report": "lh-sf",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "學之園幼稚園（凱帆薈）",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-sf"
+        }
+      ]
+    },
+    {
+      "report": "ycis-kt",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "耀中國際幼稚園（根德道）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/ycis-kt"
+        }
+      ]
+    },
+    {
+      "report": "keenmind",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "劍鳴幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/keenmind"
+        }
+      ]
+    },
+    {
+      "report": "kiangsu",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "蘇浙小學校",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/kiangsu"
+        }
+      ]
+    },
+    {
+      "report": "ky",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "救恩學校（幼稚園部）",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/ky"
+        }
+      ]
+    },
+    {
+      "report": "llc",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "香港靈糧堂幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/llc"
+        }
+      ]
+    },
+    {
+      "report": "ly",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "綠楊幼稚園",
+          "district": "荃灣區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/ly"
+        }
+      ]
+    },
+    {
+      "report": "pb",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "寶血幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/pb"
+        }
+      ]
+    },
+    {
+      "report": "rc",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "高主教書院幼稚園部",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/rc"
+        }
+      ]
+    },
+    {
+      "report": "snicholas",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "金巴倫英文幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/snicholas"
+        }
+      ]
+    },
+    {
+      "report": "tt",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "崇真小學暨幼稚園",
+          "district": "深水埗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tt"
+        }
+      ]
+    },
+    {
+      "report": "york",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "約克國際幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/york"
+        }
+      ]
+    },
+    {
+      "report": "york-klt",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "約克英文小學暨幼稚園(九龍塘)",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/york-klt"
+        }
+      ]
+    },
+    {
+      "report": "pt",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "香港培道小學幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/pt"
+        }
+      ]
+    },
+    {
+      "report": "ihm",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "聖母無玷聖心幼稚園",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/ihm"
+        }
+      ]
+    },
+    {
+      "report": "krs",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "九龍禮賢學校",
+          "district": "深水埗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/krs"
+        }
+      ]
+    },
+    {
+      "report": "spc",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "聖保羅堂幼稚園",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/spc"
+        }
+      ]
+    },
+    {
+      "report": "ccc",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "基督教中心幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/ccc"
+        }
+      ]
+    },
+    {
+      "report": "canaan-klt",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "迦南幼稚園(九龍塘)",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-klt"
+        }
+      ]
+    },
+    {
+      "report": "canaan-cd",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "迦南幼稚園(中環堅道)",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-cd"
+        }
+      ]
+    },
+    {
+      "report": "cpskg",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "啓思小學附屬幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/cpskg"
+        }
+      ]
+    },
+    {
+      "report": "tutor-klt",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "多多國際幼稚園（九龍塘）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor-klt"
+        }
+      ]
+    },
+    {
+      "report": "victoria",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "銅鑼灣維多利亞國際幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/veo-cwb"
+        },
+        {
+          "name": "維多利亞(海之戀)國際幼稚園",
+          "district": "荃灣區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria"
+        },
+        {
+          "name": "銅鑼灣維多利亞幼稚園",
+          "district": "灣仔區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-79"
+        },
+        {
+          "name": "康怡維多利亞幼稚園",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-28"
+        },
+        {
+          "name": "維多利亞（君匯港）幼稚園",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-08"
+        },
+        {
+          "name": "維多利亞幼稚園",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-81"
+        },
+        {
+          "name": "維多利亞（海怡）國際幼稚園",
+          "district": "南區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria-94"
+        },
+        {
+          "name": "維多利亞(寶翠園)幼稚園",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/veo-bcy"
+        }
+      ]
+    },
+    {
+      "report": "lh",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "學之園幼稚園(海翩康城)",
+          "district": "西貢區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-hp"
+        },
+        {
+          "name": "學之園幼稚園（昇御海逸）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh"
+        },
+        {
+          "name": "學之園幼稚園（迎海）",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-91"
+        },
+        {
+          "name": "學之園幼稚園(星匯居)",
+          "district": "深水埗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-50"
+        },
+        {
+          "name": "學之園幼稚園(君豪峰)",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-81"
+        },
+        {
+          "name": "學之園幼稚園",
+          "district": "葵青區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-00"
+        },
+        {
+          "name": "學之園幼稚園（凱帆薈）",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-sf"
+        },
+        {
+          "name": "學之園幼稚園(奧運)",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/lh-74"
+        }
+      ]
+    },
+    {
+      "report": "ycis",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "耀中國際幼稚園(將軍澳)",
+          "district": "西貢區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/ycis"
+        }
+      ]
+    },
+    {
+      "report": "canaan",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "迦南幼稚園(景峰花園)",
+          "district": "屯門區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-41"
+        },
+        {
+          "name": "迦南幼稚園(九龍塘)",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-klt"
+        },
+        {
+          "name": "迦南幼稚園(中環堅道)",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-cd"
+        },
+        {
+          "name": "迦南幼稚園(將軍澳)",
+          "district": "西貢區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-87"
+        },
+        {
+          "name": "迦南幼稚園(小西灣)",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-96"
+        },
+        {
+          "name": "迦南幼稚園(麗港城)",
+          "district": "觀塘區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-54"
+        },
+        {
+          "name": "迦南幼稚園(富榮花園)",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-98"
+        },
+        {
+          "name": "迦南幼稚園(海濱花園)",
+          "district": "荃灣區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-10"
+        },
+        {
+          "name": "迦南幼稚園(窩打老道)",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/canaan-30"
+        }
+      ]
+    },
+    {
+      "report": "creative",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "啓思幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/creative"
+        }
+      ]
+    },
+    {
+      "report": "goodhealth",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "康傑中英文幼稚園(馬鞍山)",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth"
+        },
+        {
+          "name": "康傑中英文幼稚園(青衣南)",
+          "district": "葵青區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth-19"
+        },
+        {
+          "name": "康傑中英文幼稚園(青衣)",
+          "district": "葵青區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth-14"
+        },
+        {
+          "name": "康傑幼稚園〈馬鞍山〉",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/goodhealth-13"
+        }
+      ]
+    },
+    {
+      "report": "mingwai",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "明慧國際幼稚園",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/mingwai"
+        }
+      ]
+    },
+    {
+      "report": "think",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "朗思國際幼稚園",
+          "district": "觀塘區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/think"
+        }
+      ]
+    },
+    {
+      "report": "tutor",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "多多寶馬山國際幼稚園",
+          "district": "東區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor"
+        },
+        {
+          "name": "多多國際幼稚園（形點）",
+          "district": "元朗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor-94"
+        },
+        {
+          "name": "多多國際幼稚園（半山）",
+          "district": "中西區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor-33"
+        },
+        {
+          "name": "多多國際幼稚園（九龍塘）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tutor-klt"
+        }
+      ]
+    },
+    {
+      "report": "veo-op",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "維多利亞(海之戀)國際幼稚園",
+          "district": "荃灣區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/victoria"
+        }
+      ]
+    },
+    {
+      "report": "york-montessori-yl",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "YORK MONTESSORI INTERNATIONAL PRE-SCHOOL (YUEN LONG)",
+          "district": "元朗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/york-montessori-yl"
+        }
+      ]
+    },
+    {
+      "report": "topkids-yl",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "德怡國際幼稚園(元朗)",
+          "district": "元朗區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/topkids-yl"
+        }
+      ]
+    },
+    {
+      "report": "catiline",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "嘉德麗中英文幼稚園",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/catiline"
+        }
+      ]
+    },
+    {
+      "report": "kowloon-city-baptist-kg",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "九龍城浸信會幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/kowloon-city-baptist-kg"
+        }
+      ]
+    },
+    {
+      "report": "on-kei-nursery",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "基督教香港崇真會安基幼兒學校",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/on-kei-nursery"
+        }
+      ]
+    },
+    {
+      "report": "plk-tam-au-yeung-siu-fong",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "保良局譚歐陽少芳紀念幼稚園",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/plk-tam-au-yeung-siu-fong"
+        }
+      ]
+    },
+    {
+      "report": "st-hilarys-kg",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "德萃幼稚園(馬鞍山)",
+          "district": "沙田區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/st-hilarys-kg"
+        },
+        {
+          "name": "德萃幼稚園（紅磡）",
+          "district": "九龍城區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/st-hilarys-kg-45"
+        }
+      ]
+    },
+    {
+      "report": "tak-sun-kg",
+      "stage": "kindergarten",
+      "links": [
+        {
+          "name": "德信幼稚園",
+          "district": "油尖旺區",
+          "stage": "kindergarten",
+          "href": "/schools/kindergarten/tak-sun-kg"
+        }
+      ]
+    },
+    {
+      "report": "mosllps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "馬鞍山靈糧小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/ma-on-shan-ling-liang-primary-school"
+        }
+      ]
+    },
+    {
+      "report": "cmask",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "基督教宣道會宣基小學",
+          "district": "西貢區",
+          "stage": "primary",
+          "href": "/schools/primary/christian-missionary-alliance-sun-kei-primary-school"
+        }
+      ]
+    },
+    {
+      "report": "skhmfps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會主風小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/skh-holy-spirit-primary-school"
+        }
+      ]
+    },
+    {
+      "report": "lchhds",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "獅子會何德心小學",
+          "district": "元朗區",
+          "stage": "primary",
+          "href": "/schools/primary/lchhds"
+        }
+      ]
+    },
+    {
+      "report": "hkcwcyw",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港中國婦女會丘佐榮學校",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/hkcwcyw"
+        }
+      ]
+    },
+    {
+      "report": "twghscws",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "東華三院蔡榮星小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/twghscws"
+        }
+      ]
+    },
+    {
+      "report": "lkps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "靈光小學",
+          "district": "荃灣區",
+          "stage": "primary",
+          "href": "/schools/primary/lkps"
+        }
+      ]
+    },
+    {
+      "report": "cccwhcsw",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "中華基督教會協和小學(長沙灣)",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/cccwhcsw"
+        }
+      ]
+    },
+    {
+      "report": "cypy",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "潮陽百欣小學",
+          "district": "元朗區",
+          "stage": "primary",
+          "href": "/schools/primary/cypy"
+        }
+      ]
+    },
+    {
+      "report": "edujcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港教育大學賽馬會小學",
+          "district": "大埔區",
+          "stage": "primary",
+          "href": "/schools/primary/edujcps"
+        }
+      ]
+    },
+    {
+      "report": "honwah",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "漢華中學",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/honwah"
+        }
+      ]
+    },
+    {
+      "report": "plkcy",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "保良局陳溢小學",
+          "district": "葵青區",
+          "stage": "primary",
+          "href": "/schools/primary/plkcy"
+        }
+      ]
+    },
+    {
+      "report": "skhsc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會聖匠小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/skhsc"
+        }
+      ]
+    },
+    {
+      "report": "ttskg",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "崇真小學暨幼稚園",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/ttskg"
+        }
+      ]
+    },
+    {
+      "report": "hkbaptist",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港浸信會聯會小學",
+          "district": "荃灣區",
+          "stage": "primary",
+          "href": "/schools/primary/hkbaptist"
+        }
+      ]
+    },
+    {
+      "report": "wflst",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "和富慈善基金李宗德小學",
+          "district": "元朗區",
+          "stage": "primary",
+          "href": "/schools/primary/wflst"
+        }
+      ]
+    },
+    {
+      "report": "plkflpy",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "保良局西區婦女福利會馮李佩瑤小學",
+          "district": "屯門區",
+          "stage": "primary",
+          "href": "/schools/primary/plkflpy"
+        }
+      ]
+    },
+    {
+      "report": "fkgs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "福榮街官立小學",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/fkgs"
+        }
+      ]
+    },
+    {
+      "report": "kcskps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "基督教聖約教會堅樂小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/kcskps"
+        }
+      ]
+    },
+    {
+      "report": "tswcs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "慈雲山天主教小學",
+          "district": "黃大仙區",
+          "stage": "primary",
+          "href": "/schools/primary/tswcs"
+        }
+      ]
+    },
+    {
+      "report": "ycmc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會阮鄭夢芹小學",
+          "district": "大埔區",
+          "stage": "primary",
+          "href": "/schools/primary/ycmc"
+        }
+      ]
+    },
+    {
+      "report": "ycmcj",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會阮鄭夢芹銀禧小學",
+          "district": "大埔區",
+          "stage": "primary",
+          "href": "/schools/primary/ycmcj"
+        }
+      ]
+    },
+    {
+      "report": "skhttlsks",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會德田李兆強小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/skhttlsks"
+        }
+      ]
+    },
+    {
+      "report": "tkocps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "將軍澳天主教小學",
+          "district": "西貢區",
+          "stage": "primary",
+          "href": "/schools/primary/tkocps"
+        }
+      ]
+    },
+    {
+      "report": "skhsas",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會聖安德烈小學",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/skhsas"
+        }
+      ]
+    },
+    {
+      "report": "skhkfp",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會基福小學",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/skhkfp"
+        }
+      ]
+    },
+    {
+      "report": "sts",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖安當小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/sts"
+        }
+      ]
+    },
+    {
+      "report": "ltmps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "藍田循道衛理小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/ltmps"
+        }
+      ]
+    },
+    {
+      "report": "skhykkgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會油塘基顯小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/skhykkgps"
+        }
+      ]
+    },
+    {
+      "report": "skhlsks",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會李兆強小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/skhlsks"
+        }
+      ]
+    },
+    {
+      "report": "plkshsn",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "保良局何壽南小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/plkshsn"
+        }
+      ]
+    },
+    {
+      "report": "sylgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "南元朗官立小學",
+          "district": "元朗區",
+          "stage": "primary",
+          "href": "/schools/primary/sylgps"
+        }
+      ]
+    },
+    {
+      "report": "ngwah",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "天主教伍華小學",
+          "district": "黃大仙區",
+          "stage": "primary",
+          "href": "/schools/primary/ngwah"
+        }
+      ]
+    },
+    {
+      "report": "skhlmcmps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會呂明才紀念小學",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/skhlmcmps"
+        }
+      ]
+    },
+    {
+      "report": "cblmc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "浸信宣道會呂明才小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/cblmc"
+        }
+      ]
+    },
+    {
+      "report": "cneclmc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "中華傳道會呂明才小學",
+          "district": "葵青區",
+          "stage": "primary",
+          "href": "/schools/primary/cneclmc"
+        }
+      ]
+    },
+    {
+      "report": "canossahk",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港嘉諾撒學校",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/canossahk"
+        }
+      ]
+    },
+    {
+      "report": "tsbcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "慈雲山聖文德天主教小學",
+          "district": "黃大仙區",
+          "stage": "primary",
+          "href": "/schools/primary/tsbcps"
+        }
+      ]
+    },
+    {
+      "report": "stts",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "沙田崇真學校",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/stts"
+        }
+      ]
+    },
+    {
+      "report": "twgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "荃灣官立小學",
+          "district": "荃灣區",
+          "stage": "primary",
+          "href": "/schools/primary/twgps"
+        }
+      ]
+    },
+    {
+      "report": "stgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "沙田官立小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/stgps"
+        }
+      ]
+    },
+    {
+      "report": "sfcs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "嘉諾撒聖方濟各學校",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/sfcs"
+        }
+      ]
+    },
+    {
+      "report": "sjacps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖若瑟英文小學",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/sjacps"
+        }
+      ]
+    },
+    {
+      "report": "pkps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "培僑小學",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/pkps"
+        }
+      ]
+    },
+    {
+      "report": "dgjs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "拔萃女小學",
+          "district": "油尖旺區",
+          "stage": "primary",
+          "href": "/schools/primary/dgjs"
+        }
+      ]
+    },
+    {
+      "report": "dbs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "拔萃小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/dbs"
+        }
+      ]
+    },
+    {
+      "report": "spccps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖保羅男女中學附屬小學",
+          "district": "南區",
+          "stage": "primary",
+          "href": "/schools/primary/spccps"
+        }
+      ]
+    },
+    {
+      "report": "ywps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "英華小學",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/ywps"
+        }
+      ]
+    },
+    {
+      "report": "hkups",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "港大同學會小學",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/hkups"
+        }
+      ]
+    },
+    {
+      "report": "pcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港培正小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/pcps"
+        }
+      ]
+    },
+    {
+      "report": "mcs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "瑪利諾修院學校(小學部)",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/mcs"
+        }
+      ]
+    },
+    {
+      "report": "lsps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "喇沙小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/lsps"
+        }
+      ]
+    },
+    {
+      "report": "spcs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖保祿學校（小學部）",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/spcs"
+        }
+      ]
+    },
+    {
+      "report": "hyps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "協恩中學附屬小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/hyps"
+        }
+      ]
+    },
+    {
+      "report": "ghps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "德望小學暨幼稚園",
+          "district": "黃大仙區",
+          "stage": "primary",
+          "href": "/schools/primary/ghps"
+        }
+      ]
+    },
+    {
+      "report": "hacs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "天神嘉諾撒學校",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/hacs"
+        }
+      ]
+    },
+    {
+      "report": "spcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖保羅書院小學",
+          "district": "南區",
+          "stage": "primary",
+          "href": "/schools/primary/spcps"
+        }
+      ]
+    },
+    {
+      "report": "shckps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "嘉諾撒聖心學校私立部",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/shckps"
+        }
+      ]
+    },
+    {
+      "report": "ssgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖士提反女子中學附屬小學",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/ssgps"
+        }
+      ]
+    },
+    {
+      "report": "mps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "瑪利曼小學",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/mps"
+        }
+      ]
+    },
+    {
+      "report": "sjps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖若瑟小學",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/sjps"
+        }
+      ]
+    },
+    {
+      "report": "smcs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "嘉諾撒聖瑪利學校",
+          "district": "油尖旺區",
+          "stage": "primary",
+          "href": "/schools/primary/smcs"
+        }
+      ]
+    },
+    {
+      "report": "pkcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "培僑書院",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/pkcps"
+        }
+      ]
+    },
+    {
+      "report": "logos",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港華人基督教聯會真道書院",
+          "district": "西貢區",
+          "stage": "primary",
+          "href": "/schools/primary/logos"
+        }
+      ]
+    },
+    {
+      "report": "shck",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "嘉諾撒聖心學校",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/shck"
+        }
+      ]
+    },
+    {
+      "report": "tsl",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "保良局陳守仁小學",
+          "district": "油尖旺區",
+          "stage": "primary",
+          "href": "/schools/primary/tsl"
+        }
+      ]
+    },
+    {
+      "report": "evangel",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "播道書院",
+          "district": "西貢區",
+          "stage": "primary",
+          "href": "/schools/primary/evangel"
+        }
+      ]
+    },
+    {
+      "report": "gt",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "優才(楊殷有娣)書院",
+          "district": "多區（油尖旺區、西貢區）",
+          "stage": "primary",
+          "href": "/schools/primary/gt"
+        }
+      ]
+    },
+    {
+      "report": "munsangps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "民生書院小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/munsangps"
+        }
+      ]
+    },
+    {
+      "report": "aps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "九龍塘宣道小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/aps"
+        }
+      ]
+    },
+    {
+      "report": "sfa",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖方濟各英文小學",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/sfa"
+        }
+      ]
+    },
+    {
+      "report": "skhlmc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "浸信會沙田圍呂明才小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/skhlmc"
+        }
+      ]
+    },
+    {
+      "report": "fssas",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "福建中學附屬學校",
+          "district": "觀塘區",
+          "stage": "primary",
+          "href": "/schools/primary/fssas"
+        }
+      ]
+    },
+    {
+      "report": "scps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖嘉勒小學",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/scps"
+        }
+      ]
+    },
+    {
+      "report": "sscps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖士提反書院附屬小學",
+          "district": "南區",
+          "stage": "primary",
+          "href": "/schools/primary/sscps"
+        }
+      ]
+    },
+    {
+      "report": "rcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "高主教書院小學部",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/rcps"
+        }
+      ]
+    },
+    {
+      "report": "aogps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "愛秩序灣官立小學",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/aogps"
+        }
+      ]
+    },
+    {
+      "report": "brgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "般咸道官立小學",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/brgps"
+        }
+      ]
+    },
+    {
+      "report": "hfc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "嘉諾撒聖家學校",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/hfc"
+        }
+      ]
+    },
+    {
+      "report": "hfcklt",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "嘉諾撒聖家學校(九龍塘)",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/hfcklt"
+        }
+      ]
+    },
+    {
+      "report": "hrgp",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "軒尼詩道官立小學",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/hrgp"
+        }
+      ]
+    },
+    {
+      "report": "hrgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "軒尼詩道官立小學(銅鑼灣)",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/hrgps"
+        }
+      ]
+    },
+    {
+      "report": "icqm",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "國際基督教優質音樂中學暨小學",
+          "district": "黃大仙區",
+          "stage": "primary",
+          "href": "/schools/primary/icqm"
+        }
+      ]
+    },
+    {
+      "report": "kcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "蘇浙小學校",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/kcps"
+        }
+      ]
+    },
+    {
+      "report": "ktgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "九龍塘官立小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/ktgps"
+        }
+      ]
+    },
+    {
+      "report": "ktl",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "九龍真光中學（小學部）",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/ktl"
+        }
+      ]
+    },
+    {
+      "report": "la",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "基督教香港信義會宏信書院",
+          "district": "元朗區",
+          "stage": "primary",
+          "href": "/schools/primary/la"
+        }
+      ]
+    },
+    {
+      "report": "lht",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "靈糧堂秀德小學",
+          "district": "離島區",
+          "stage": "primary",
+          "href": "/schools/primary/lht"
+        }
+      ]
+    },
+    {
+      "report": "lmc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "浸信會呂明才小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/lmc"
+        }
+      ]
+    },
+    {
+      "report": "mtc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "馬頭涌官立小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/mtc"
+        }
+      ]
+    },
+    {
+      "report": "mtcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "馬頭涌官立小學(紅磡灣)",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/mtcps"
+        }
+      ]
+    },
+    {
+      "report": "plkcastar",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "保良局建造商會學校",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/plkcastar"
+        }
+      ]
+    },
+    {
+      "report": "plklht",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "保良局陸慶濤小學",
+          "district": "西貢區",
+          "stage": "primary",
+          "href": "/schools/primary/plklht"
+        }
+      ]
+    },
+    {
+      "report": "py2",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港培道小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/py2"
+        }
+      ]
+    },
+    {
+      "report": "skhcf",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "港九街坊婦女會孫方中小學",
+          "district": "大埔區",
+          "stage": "primary",
+          "href": "/schools/primary/skhcf"
+        }
+      ]
+    },
+    {
+      "report": "skhhs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖三一堂小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/skhhs"
+        }
+      ]
+    },
+    {
+      "report": "skhke",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會基恩小學",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/skhke"
+        }
+      ]
+    },
+    {
+      "report": "skhsm",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會聖彼得小學",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/skhsm"
+        }
+      ]
+    },
+    {
+      "report": "skhyl2",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會仁立紀念小學",
+          "district": "葵青區",
+          "stage": "primary",
+          "href": "/schools/primary/skhyl2"
+        }
+      ]
+    },
+    {
+      "report": "sppcs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖保祿天主教小學",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/sppcs"
+        }
+      ]
+    },
+    {
+      "report": "sppcs2",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "滬江小學",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/sppcs2"
+        }
+      ]
+    },
+    {
+      "report": "tlps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港真光中學附屬小學暨幼稚園",
+          "district": "灣仔區",
+          "stage": "primary",
+          "href": "/schools/primary/tlps"
+        }
+      ]
+    },
+    {
+      "report": "wyps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "番禺會所華仁小學",
+          "district": "東區",
+          "stage": "primary",
+          "href": "/schools/primary/wyps"
+        }
+      ]
+    },
+    {
+      "report": "ylaps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖公會仁立小學",
+          "district": "葵青區",
+          "stage": "primary",
+          "href": "/schools/primary/ylaps"
+        }
+      ]
+    },
+    {
+      "report": "srl",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖羅撒學校",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/srl"
+        }
+      ]
+    },
+    {
+      "report": "ktbwcs",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "九龍塘天主教華德學校",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/ktbwcs"
+        }
+      ]
+    },
+    {
+      "report": "kau",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "救恩學校",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/kau"
+        }
+      ]
+    },
+    {
+      "report": "sls",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖類斯中學(小學部)",
+          "district": "中西區",
+          "stage": "primary",
+          "href": "/schools/primary/sls"
+        }
+      ]
+    },
+    {
+      "report": "kts",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "九龍塘學校",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/kts"
+        }
+      ]
+    },
+    {
+      "report": "mc",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "循道學校",
+          "district": "油尖旺區",
+          "stage": "primary",
+          "href": "/schools/primary/mc"
+        }
+      ]
+    },
+    {
+      "report": "ycps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "油蔴地天主教小學(海泓道)",
+          "district": "油尖旺區",
+          "stage": "primary",
+          "href": "/schools/primary/ycps"
+        }
+      ]
+    },
+    {
+      "report": "tpom",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "大埔舊墟公立學校",
+          "district": "大埔區",
+          "stage": "primary",
+          "href": "/schools/primary/tpom"
+        }
+      ]
+    },
+    {
+      "report": "tmrgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "塘尾道官立小學",
+          "district": "油尖旺區",
+          "stage": "primary",
+          "href": "/schools/primary/tmrgps"
+        }
+      ]
+    },
+    {
+      "report": "olps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖母小學",
+          "district": "黃大仙區",
+          "stage": "primary",
+          "href": "/schools/primary/olps"
+        }
+      ]
+    },
+    {
+      "report": "jrgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "佐敦道官立小學",
+          "district": "油尖旺區",
+          "stage": "primary",
+          "href": "/schools/primary/jrgps"
+        }
+      ]
+    },
+    {
+      "report": "aspcps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "聖伯多祿天主教小學",
+          "district": "南區",
+          "stage": "primary",
+          "href": "/schools/primary/aspcps"
+        }
+      ]
+    },
+    {
+      "report": "puikei",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "培基小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/stewards-pooi-kei-primary-school"
+        }
+      ]
+    },
+    {
+      "report": "wkf",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港浸會大學附屬學校王錦輝中小學",
+          "district": "沙田區",
+          "stage": "primary",
+          "href": "/schools/primary/wkf"
+        }
+      ]
+    },
+    {
+      "report": "cps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "啓思小學",
+          "district": "九龍城區",
+          "stage": "primary",
+          "href": "/schools/primary/cps"
+        }
+      ]
+    },
+    {
+      "report": "luaaps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "嶺南大學香港同學會小學",
+          "district": "深水埗區",
+          "stage": "primary",
+          "href": "/schools/primary/luaaps"
+        }
+      ]
+    },
+    {
+      "report": "hksdgps",
+      "stage": "primary",
+      "links": [
+        {
+          "name": "香港南區官立小學",
+          "district": "南區",
+          "stage": "primary",
+          "href": "/schools/primary/hksdgps"
+        }
+      ]
+    },
+    {
+      "report": "spcc-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "聖保羅男女中學",
+          "district": "中西區",
+          "stage": "secondary",
+          "href": "/schools/secondary/st-pauls-co-educational-college"
+        }
+      ]
+    },
+    {
+      "report": "dbs-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "拔萃男書院",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/diocesan-boys-school"
+        }
+      ]
+    },
+    {
+      "report": "dgs-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "拔萃女書院",
+          "district": "油尖旺區",
+          "stage": "secondary",
+          "href": "/schools/secondary/diocesan-girls-school"
+        }
+      ]
+    },
+    {
+      "report": "la-salle-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "喇沙書院",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/la-salle-college"
+        }
+      ]
+    },
+    {
+      "report": "queens-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "皇仁書院",
+          "district": "灣仔區",
+          "stage": "secondary",
+          "href": "/schools/secondary/queens-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "heep-yunn-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "協恩中學",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/heep-yunn-secondary"
+        }
+      ]
+    },
+    {
+      "report": "hkuga-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "港大同學會書院",
+          "district": "南區",
+          "stage": "secondary",
+          "href": "/schools/secondary/hkuga-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "cis-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "漢基國際學校",
+          "district": "東區",
+          "stage": "secondary",
+          "href": "/schools/secondary/cis-secondary"
+        }
+      ]
+    },
+    {
+      "report": "harrow-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "哈羅香港國際學校",
+          "district": "屯門區",
+          "stage": "secondary",
+          "href": "/schools/secondary/harrow-secondary"
+        }
+      ]
+    },
+    {
+      "report": "st-stephens-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "聖士提反書院",
+          "district": "南區",
+          "stage": "secondary",
+          "href": "/schools/secondary/st-stephens-secondary"
+        }
+      ]
+    },
+    {
+      "report": "kings-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "英皇書院",
+          "district": "中西區",
+          "stage": "secondary",
+          "href": "/schools/secondary/kings-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "wah-yan-college-kowloon-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "華仁書院(九龍)",
+          "district": "油尖旺區",
+          "stage": "secondary",
+          "href": "/schools/secondary/wah-yan-college-kowloon-secondary"
+        }
+      ]
+    },
+    {
+      "report": "pui-ching-middle-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港培正中學",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/pui-ching-middle-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "maryknoll-convent-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "瑪利諾修院學校（中學部）",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/maryknoll-convent-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "good-hope-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "德望學校",
+          "district": "黃大仙區",
+          "stage": "secondary",
+          "href": "/schools/secondary/good-hope-secondary"
+        }
+      ]
+    },
+    {
+      "report": "st-pauls-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "聖保羅書院",
+          "district": "中西區",
+          "stage": "secondary",
+          "href": "/schools/secondary/st-pauls-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "ying-wa-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "英華書院",
+          "district": "深水埗區",
+          "stage": "secondary",
+          "href": "/schools/secondary/ying-wa-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "logos-academy-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港華人基督教聯會真道書院",
+          "district": "西貢區",
+          "stage": "secondary",
+          "href": "/schools/secondary/logos-academy-secondary"
+        }
+      ]
+    },
+    {
+      "report": "plk-ngan-po-ling-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "保良局顏寶鈴書院",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/plk-ngan-po-ling-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "gsis-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "德瑞國際學校",
+          "district": "中西區",
+          "stage": "secondary",
+          "href": "/schools/secondary/gsis-secondary"
+        }
+      ]
+    },
+    {
+      "report": "munsang-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "民生書院",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/munsang-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "queen-elizabeth-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "伊利沙伯中學",
+          "district": "油尖旺區",
+          "stage": "secondary",
+          "href": "/schools/secondary/queen-elizabeth-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "belilios-public-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "庇理羅士女子中學",
+          "district": "東區",
+          "stage": "secondary",
+          "href": "/schools/secondary/belilios-public-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "sha-tin-government-secondary-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "沙田官立中學",
+          "district": "沙田區",
+          "stage": "secondary",
+          "href": "/schools/secondary/sha-tin-government-secondary-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "fanling-kau-yan-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "粉嶺救恩書院",
+          "district": "北區",
+          "stage": "secondary",
+          "href": "/schools/secondary/fanling-kau-yan-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "hkbuas-wong-kam-fai-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港浸會大學附屬學校王錦輝中小學",
+          "district": "沙田區",
+          "stage": "secondary",
+          "href": "/schools/secondary/hkbuas-wong-kam-fai-secondary"
+        }
+      ]
+    },
+    {
+      "report": "creative-secondary-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "啓思中學",
+          "district": "西貢區",
+          "stage": "secondary",
+          "href": "/schools/secondary/creative-secondary-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "hkma-david-li-kwok-po-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港管理專業協會李國寶中學",
+          "district": "油尖旺區",
+          "stage": "secondary",
+          "href": "/schools/secondary/hkma-david-li-kwok-po-secondary"
+        }
+      ]
+    },
+    {
+      "report": "isf-academy-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "弘立書院",
+          "district": "南區",
+          "stage": "secondary",
+          "href": "/schools/secondary/isf-academy-secondary"
+        }
+      ]
+    },
+    {
+      "report": "cdnis-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港加拿大國際學校",
+          "district": "南區",
+          "stage": "secondary",
+          "href": "/schools/secondary/cdnis-secondary"
+        }
+      ]
+    },
+    {
+      "report": "shatin-tsung-tsin-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "沙田崇真中學",
+          "district": "沙田區",
+          "stage": "secondary",
+          "href": "/schools/secondary/shatin-tsung-tsin-secondary"
+        }
+      ]
+    },
+    {
+      "report": "tuen-mun-catholic-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "屯門天主教中學",
+          "district": "屯門區",
+          "stage": "secondary",
+          "href": "/schools/secondary/tuen-mun-catholic-secondary"
+        }
+      ]
+    },
+    {
+      "report": "yuen-long-merchants-association-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "元朗商會中學",
+          "district": "元朗區",
+          "stage": "secondary",
+          "href": "/schools/secondary/yuen-long-merchants-association-secondary"
+        }
+      ]
+    },
+    {
+      "report": "st-peters-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "聖伯多祿中學",
+          "district": "南區",
+          "stage": "secondary",
+          "href": "/schools/secondary/st-peters-secondary"
+        }
+      ]
+    },
+    {
+      "report": "carmel-alison-lam-foundation-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "迦密愛禮信中學",
+          "district": "葵青區",
+          "stage": "secondary",
+          "href": "/schools/secondary/carmel-alison-lam-foundation-secondary"
+        }
+      ]
+    },
+    {
+      "report": "st-pauls-convent-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "聖保祿學校",
+          "district": "灣仔區",
+          "stage": "secondary",
+          "href": "/schools/secondary/st-pauls-convent-secondary"
+        }
+      ]
+    },
+    {
+      "report": "hkfyg-lee-shau-kee-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港青年協會李兆基書院",
+          "district": "元朗區",
+          "stage": "secondary",
+          "href": "/schools/secondary/hkfyg-lee-shau-kee-secondary"
+        }
+      ]
+    },
+    {
+      "report": "stewards-pooi-kei-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港神託會培基書院",
+          "district": "沙田區",
+          "stage": "secondary",
+          "href": "/schools/secondary/stewards-pooi-kei-secondary"
+        }
+      ]
+    },
+    {
+      "report": "victoria-shanghai-academy-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "滬江維多利亞學校",
+          "district": "南區",
+          "stage": "secondary",
+          "href": "/schools/secondary/victoria-shanghai-academy-secondary"
+        }
+      ]
+    },
+    {
+      "report": "french-international-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "LYC'EE FRANCAIS INTERNATIONAL (FRENCH INTERNATIONAL SCHOOL)",
+          "district": "多區（灣仔區、西貢區）",
+          "stage": "secondary",
+          "href": "/schools/secondary/french-international-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "aberdeen-technical-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港仔工業學校",
+          "district": "南區",
+          "stage": "secondary",
+          "href": "/schools/secondary/aberdeen-technical-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "stfa-leung-kau-kui-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "順德聯誼總會梁銶琚中學",
+          "district": "屯門區",
+          "stage": "secondary",
+          "href": "/schools/secondary/stfa-leung-kau-kui-secondary"
+        }
+      ]
+    },
+    {
+      "report": "st-stephens-church-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "聖士提反堂中學",
+          "district": "中西區",
+          "stage": "secondary",
+          "href": "/schools/secondary/st-stephens-church-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "ccc-ming-kei-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "中華基督教會銘基書院",
+          "district": "油尖旺區",
+          "stage": "secondary",
+          "href": "/schools/secondary/ccc-ming-kei-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "plk-laws-foundation-college-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "保良局羅氏基金中學",
+          "district": "西貢區",
+          "stage": "secondary",
+          "href": "/schools/secondary/plk-laws-foundation-college-secondary"
+        }
+      ]
+    },
+    {
+      "report": "kellett-school-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "KELLETT SCHOOL",
+          "district": "觀塘區",
+          "stage": "secondary",
+          "href": "/schools/secondary/kellett-school-secondary"
+        }
+      ]
+    },
+    {
+      "report": "malvern-college-hong-kong-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港墨爾文國際學校",
+          "district": "大埔區",
+          "stage": "secondary",
+          "href": "/schools/secondary/malvern-college-hong-kong-secondary"
+        }
+      ]
+    },
+    {
+      "report": "kgv-esf-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "KING GEORGE V SCHOOL",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/kgv-esf-secondary"
+        }
+      ]
+    },
+    {
+      "report": "island-school-esf-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "ISLAND SCHOOL",
+          "district": "中西區",
+          "stage": "secondary",
+          "href": "/schools/secondary/island-school-esf-secondary"
+        }
+      ]
+    },
+    {
+      "report": "australian-international-school-hong-kong-secondary",
+      "stage": "secondary",
+      "links": [
+        {
+          "name": "香港澳洲國際學校",
+          "district": "九龍城區",
+          "stage": "secondary",
+          "href": "/schools/secondary/australian-international-school-hong-kong-secondary"
+        }
+      ]
+    }
+  ]
+}

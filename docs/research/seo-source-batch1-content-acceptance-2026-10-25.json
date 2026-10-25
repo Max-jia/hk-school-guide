@@ -1,0 +1,126 @@
+{
+  "checkedOn": "2026-10-25",
+  "scope": "first five reports, local only",
+  "reports": [
+    {
+      "slug": "stcat",
+      "sourceRecords": 15,
+      "chapterCharacterCounts": [
+        1085,
+        923,
+        710,
+        772,
+        721,
+        929,
+        631,
+        501
+      ],
+      "originalLinksInEveryChapter": true,
+      "duplicateParagraphs": 0,
+      "localesVerified": [
+        "sc",
+        "tc"
+      ],
+      "revisionDate": "2026-10-25"
+    },
+    {
+      "slug": "rcps",
+      "sourceRecords": 20,
+      "chapterCharacterCounts": [
+        1900,
+        1396,
+        1178,
+        1336,
+        1131,
+        971,
+        964,
+        1059
+      ],
+      "originalLinksInEveryChapter": true,
+      "duplicateParagraphs": 0,
+      "localesVerified": [
+        "sc",
+        "tc"
+      ],
+      "revisionDate": "2026-10-25"
+    },
+    {
+      "slug": "tlps",
+      "sourceRecords": 22,
+      "chapterCharacterCounts": [
+        1802,
+        1215,
+        1084,
+        1024,
+        1004,
+        889,
+        928,
+        769
+      ],
+      "originalLinksInEveryChapter": true,
+      "duplicateParagraphs": 0,
+      "localesVerified": [
+        "sc",
+        "tc"
+      ],
+      "revisionDate": "2026-10-25"
+    },
+    {
+      "slug": "victoria",
+      "sourceRecords": 29,
+      "chapterCharacterCounts": [
+        1769,
+        1305,
+        1378,
+        1038,
+        837,
+        981,
+        738,
+        892
+      ],
+      "originalLinksInEveryChapter": true,
+      "duplicateParagraphs": 0,
+      "localesVerified": [
+        "sc",
+        "tc"
+      ],
+      "revisionDate": "2026-10-25"
+    },
+    {
+      "slug": "canaan-klt",
+      "sourceRecords": 14,
+      "chapterCharacterCounts": [
+        1089,
+        841,
+        760,
+        895,
+        728,
+        850,
+        904,
+        707
+      ],
+      "originalLinksInEveryChapter": true,
+      "duplicateParagraphs": 0,
+      "localesVerified": [
+        "sc",
+        "tc"
+      ],
+      "revisionDate": "2026-10-25"
+    }
+  ],
+  "sourceRecords": 100,
+  "uniqueSourceUrls": 98,
+  "factualReview": "Original official documents and dated parent threads read. Pages from the same school are not independent outcome confirmation.",
+  "humanizerZh": "Direct consultant language, family costs and actions reviewed. Unsupported anonymous quotations replaced with dated indirect experiences.",
+  "dedupe": "No duplicate long prose paragraphs. Semantic overlaps reviewed; fee anchors retained in facts, comparisons and budget summaries.",
+  "deployStatus": "not deployed",
+  "unresolvedEvidence": [
+    "St Cat current complete primary destinations and language timetable",
+    "Canaan KLT 2024-2026 independent in-school reviews",
+    "Readable independent Facebook parent threads in this pass"
+  ],
+  "checks": "pass",
+  "contentAndBuiltChecks": "pass",
+  "finalDeliveryStatus": "all local acceptance gates passed",
+  "finalBrowserRecheck": "pass: 20 final-build states after explicit local read-only authorization"
+}

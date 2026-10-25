@@ -4,13 +4,20 @@ import { SCHOOL_STAGES, type SchoolStage } from "@/lib/school-directory-pilot";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
+import { collectionSchema } from "@/lib/collection-schema";
+import { serializeJsonLd } from "@/lib/structured-data";
 
 const STAGE_ORDER: SchoolStage[] = ["kindergarten", "primary", "secondary"];
 
 export default function SchoolStagesLanding({ locale = "tc" }: { locale?: Locale }) {
+  const schema = collectionSchema({ path: "/schools", title: "香港學校資料與選校指南", locale,
+    breadcrumbs: [{ name: "首頁", path: "/" }, { name: "學校資料", path: "/schools" }],
+    items: STAGE_ORDER.map((stage) => ({ name: SCHOOL_STAGES[stage].label, path: `/schools/${stage}` })),
+  });
   return (
     <Localize locale={locale}>
       <main className="w-full">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
         <SiteHeader locale={locale} />
         <div className="mx-auto max-w-[1180px] px-4 pb-24">
           <header className="py-10 sm:py-14">
