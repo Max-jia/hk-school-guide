@@ -1,0 +1,46 @@
+{
+  "releasedAtUtc": "2026-10-25T15:52:57.620080+00:00",
+  "status": "production verified",
+  "domain": "https://hkschool.guide",
+  "deploymentId": "dpl_GpWQzLL43u4v8R1JeKW5MVPTz8cV",
+  "deploymentUrl": "https://hk-school-guide-fct2ltdpj-max-jia-s-projects.vercel.app",
+  "releaseCommit": "3f7dfe3abc8c7e74b421b5f2961285c8104f707f",
+  "gitHubBranch": "codex/school-profiles-navigation-20261024",
+  "baselineCommit": "6007a7d19342805a724eef44990047a222d3a08e",
+  "baselineDeployment": "dpl_98wSWe4ECQeFpf9LidnAwbELpZtu",
+  "strategy": "git archive of pushed commit, staged production build, authenticated content checks, baseline alias recheck, promote same build",
+  "stagedVerification": {
+    "scope": "staged",
+    "sitemapBefore": 5038,
+    "sitemapAfter": 5122,
+    "missing": [],
+    "added": 84,
+    "reports": 228,
+    "blogs": 54,
+    "profilePagesPerLanguage": 2193,
+    "checks": "pass",
+    "errors": []
+  },
+  "liveVerification": {
+    "scope": "live",
+    "sitemapBefore": 5038,
+    "sitemapAfter": 5122,
+    "missing": [],
+    "added": 84,
+    "reports": 228,
+    "blogs": 54,
+    "profilePagesPerLanguage": 2193,
+    "checks": "pass",
+    "errors": []
+  },
+  "runtimeErrors": {
+    "window": "5m",
+    "result": "No runtime errors found in selected project window; not a long-term monitoring guarantee"
+  },
+  "browser": {
+    "live": "stcat: 8 chapters,15 source records,current fees,no viewport overflow",
+    "localFinalStates": 20,
+    "localFinalErrors": 0
+  },
+  "rollbackDeployment": "dpl_98wSWe4ECQeFpf9LidnAwbELpZtu"
+}

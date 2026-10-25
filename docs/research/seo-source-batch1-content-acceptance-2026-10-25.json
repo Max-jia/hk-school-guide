@@ -113,7 +113,7 @@
   "factualReview": "Original official documents and dated parent threads read. Pages from the same school are not independent outcome confirmation.",
   "humanizerZh": "Direct consultant language, family costs and actions reviewed. Unsupported anonymous quotations replaced with dated indirect experiences.",
   "dedupe": "No duplicate long prose paragraphs. Semantic overlaps reviewed; fee anchors retained in facts, comparisons and budget summaries.",
-  "deployStatus": "not deployed",
+  "deployStatus": "production verified",
   "unresolvedEvidence": [
     "St Cat current complete primary destinations and language timetable",
     "Canaan KLT 2024-2026 independent in-school reviews",
@@ -122,5 +122,6 @@
   "checks": "pass",
   "contentAndBuiltChecks": "pass",
   "finalDeliveryStatus": "all local acceptance gates passed",
-  "finalBrowserRecheck": "pass: 20 final-build states after explicit local read-only authorization"
+  "finalBrowserRecheck": "pass: 20 final-build states after explicit local read-only authorization",
+  "releaseRecord": "seo-geo-production-release-2026-10-25.json"
 }
