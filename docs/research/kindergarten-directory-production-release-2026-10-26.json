@@ -1,0 +1,32 @@
+{
+  "releasedAtUtc": "2026-10-26T07:27:14.608913+00:00",
+  "status": "production verified",
+  "domain": "https://hkschool.guide",
+  "projectId": "prj_S4Tg974vvoehK6X2cKKbOEejojfU",
+  "deploymentId": "dpl_2xMT2pMkaAmQX1GGJxR3WfWSmDaJ",
+  "releaseCommit": "3dc86df2c3ad44e211c5f49cc2e58d277836e4d9",
+  "baselineDeployment": "dpl_GpWQzLL43u4v8R1JeKW5MVPTz8cV",
+  "baselineCommit": "3f7dfe3abc8c7e74b421b5f2961285c8104f707f",
+  "strategy": "clean Git archive; staged production build; scoped acceptance; promote same build",
+  "stagedVerification": {
+    "mode": "staged",
+    "pages": 19,
+    "sitemapUrls": 5122,
+    "reports": 228,
+    "errors": []
+  },
+  "liveVerification": {
+    "mode": "live",
+    "pages": 19,
+    "sitemapUrls": 5122,
+    "reports": 228,
+    "errors": []
+  },
+  "coverage": {
+    "kindergartens": 958,
+    "sessionSummaries": 950,
+    "explicitAnnualFeeSchoolRecords": 893,
+    "reportInventory": 228
+  },
+  "dataLimit": "Unverified language and fee fields remain marked as such; does not imply current vacancy or all campuses share fee."
+}
