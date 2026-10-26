@@ -1,0 +1,46 @@
+{
+  "status": "production verified",
+  "releasedAtUtc": "2026-10-26T12:45:48.344154+00:00",
+  "releaseCommit": "fcf05fbf34d676b0954e3c7eaeb124fa22699e98",
+  "branch": "codex/primary-secondary-directory-20261026",
+  "deploymentId": "dpl_FEnPXXmrtqqyaGpUwJoVyWrPKREA",
+  "deploymentUrl": "https://hk-school-guide-910wbos08-max-jia-s-projects.vercel.app",
+  "baseline": {
+    "deployment": "dpl_7WMdzLtSe98FMHDaXbPBgqfb5aap",
+    "verifiedSourceCommit": "49f64ec203786da5ac6afda0d68389885f02842a",
+    "sourceComparison": {
+      "matchedRuntimeFiles": 1163,
+      "changedRuntimeFiles": 0
+    },
+    "sitemapUrls": 5126,
+    "reports": 230,
+    "blogs": 54,
+    "profilePages": {
+      "kindergarten": 958,
+      "primary": 648,
+      "secondary": 587
+    }
+  },
+  "scope": "Primary and secondary directories adopt compact kindergarten table and mobile card layout, filters, sourced details, comparison and shortlist; no report content edits.",
+  "checks": {
+    "eslint": "pass",
+    "typecheck": "pass",
+    "productionBuild": "pass, 5150 static pages",
+    "staged": {
+      "mode": "staged",
+      "pages": 21,
+      "sitemapUrls": 5126,
+      "missingPaths": 0,
+      "errors": []
+    },
+    "live": {
+      "mode": "live",
+      "pages": 21,
+      "sitemapUrls": 5126,
+      "missingPaths": 0,
+      "errors": []
+    },
+    "browser": "Primary traditional and simplified pages rendered; secondary comparison and mobile layout verified; final production primary screenshot reviewed."
+  },
+  "rollbackDeployment": "dpl_7WMdzLtSe98FMHDaXbPBgqfb5aap"
+}
