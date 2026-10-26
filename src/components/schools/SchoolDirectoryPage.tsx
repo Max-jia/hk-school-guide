@@ -50,7 +50,7 @@ export default function SchoolDirectoryPage({ stage, locale = "tc", page = 1 }: 
     website: school.website,
     reportSlugs: [...new Set([school.reportSlug, ...(school.relatedReportSlugs || [])].filter((slug): slug is string => Boolean(slug)))],
     sources: (school.sources || []).slice(0, 5).map(({ label, scope, url }) => ({ label, scope, url })),
-  }));
+  })).sort((a, b) => a.name.localeCompare(b.name, locale === "sc" ? "zh-Hans" : "zh-Hant"));
   const path = directoryPagePath(stage, page);
   const itemListId = `${SITE_URL}${localeHref(path, locale)}#schools`;
   const schema = jsonLdGraph(locale, [
