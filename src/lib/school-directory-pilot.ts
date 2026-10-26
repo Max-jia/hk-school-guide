@@ -5235,6 +5235,10 @@ for (const sample of PILOT_SCHOOLS) {
 
 // A profile can precede its deep report release; only link reports in the published catalogue.
 const publishedReports = new Set([...reportMeta.PS_REPORTS, ...reportMeta.KG_REPORTS, ...reportMeta.SS_REPORTS].map((report) => report.c));
+const reviewedKindergartenReportByNumber = new Map([
+  ["564249", "yot-chan-cheng-yuk-yee-kg"],
+  ["325198", "salvation-army-chan-kwan-tung-kg"],
+]);
 // Keep the same first match used by getPilotSchool, with one catalogue/sitemap entry per URL.
 const uniqueDirectoryRecords = [...directoryRecords.reduce((records, school) => {
   const key = `${school.stage}/${school.slug}`;
@@ -5253,7 +5257,12 @@ export const DIRECTORY_SCHOOLS: PilotSchool[] = uniqueDirectoryRecords.map(apply
   ...classifyPrimary(school),
   ...prepareSecondaryProfile(school),
   reportSlug: school.reportSlug && validProfileReport(school, school.reportSlug) ? school.reportSlug : undefined,
-  relatedReportSlugs: school.relatedReportSlugs?.filter((slug) => validProfileReport(school, slug)),
+  relatedReportSlugs: [...new Set([
+    ...(school.relatedReportSlugs || []),
+    ...(school.stage === "kindergarten" && school.schoolNumber && reviewedKindergartenReportByNumber.has(school.schoolNumber)
+      ? [reviewedKindergartenReportByNumber.get(school.schoolNumber)!]
+      : []),
+  ])].filter((slug) => validProfileReport(school, slug)),
 })).map(applyKindergartenReviewedFields);
 
 export function getPilotSchool(stage: string, slug: string): PilotSchool | undefined {

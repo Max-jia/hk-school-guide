@@ -4,6 +4,7 @@ import { L, localeHref, type Locale } from "@/lib/i18n";
 const SOURCE_TYPE_LABELS: Record<ReportSourceReference["sourceType"], string> = {
   "school-profile": "學校概覽",
   "school-official": "學校官方網站",
+  "school-attributed-social": "學校署名社交帖 · 歸屬待核",
   government: "政府官方資料",
   "university-official": "大學官方資料",
   "operator-official": "交通營辦商官方資料",

@@ -1420,10 +1420,26 @@
     },
     {
       "n": "德信幼稚園",
+      "t": "A",
+      "d": "油尖旺区",
+      "h": "尖沙咀免费半日·STEM与烹饪·男生升德小约六成",
+      "c": "tak-sun-kg",
+      "premium": false
+    },
+    {
+      "n": "救世軍陳昆棟幼稚園",
       "t": "B",
       "d": "油尖旺区",
-      "h": "尖沙咀免费半日·STEM 与烹饪·天主教品格",
-      "c": "tak-sun-kg",
+      "h": "油麻地免费半日·专题研习·需核语言与课业整改",
+      "c": "salvation-army-chan-kwan-tung-kg",
+      "premium": false
+    },
+    {
+      "n": "仁愛堂陳鄭玉而幼稚園",
+      "t": "A",
+      "d": "油尖旺区",
+      "h": "尖沙咀全日·3C游戏探究·2025/26升小去向公开",
+      "c": "yot-chan-cheng-yuk-yee-kg",
       "premium": false
     }
   ],

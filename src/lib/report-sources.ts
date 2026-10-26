@@ -2,7 +2,7 @@ export type ReportSourceReference = {
   label: string;
   url: string;
   scope: string;
-  sourceType: "school-profile" | "school-official" | "government" | "operator-official" | "exam-authority" | "independent-inspection" | "third-party-estimate" | "parent-discussion" | "media-report" | "university-official";
+  sourceType: "school-profile" | "school-official" | "school-attributed-social" | "government" | "operator-official" | "exam-authority" | "independent-inspection" | "third-party-estimate" | "parent-discussion" | "media-report" | "university-official";
   academicYear?: string;
   checkedOn: string;
 };
@@ -6207,16 +6207,320 @@ dbs: [
     { label: "2026 小學概覽：協恩中學附屬小學", url: "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=99", scope: "資助女校；校方 2025/26 圖無逐校人數。", sourceType: "school-profile", academicYear: "2026 小學概覽", checkedOn: "2026-10-18" },
   ],
 "tak-sun-kg": [
-    { label: "教育局：2026/27 油尖旺區 K1-K3 學位空缺", url: "https://www.edb.gov.hk/attachment/en/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/Vacancy%20Info_Districts/TC/Yau%20Tsim%20and%20Mong%20Kok_K1-K3%20Vacancy.pdf", scope: "區表實際截至 2026-09-08，本校 K1 為 Y；不能套用總覽的 10 月日期或推斷 2027/28 結果。", sourceType: "government", academicYear: "2026/27；截至 2026-09-08", checkedOn: "2026-10-17" },
-    { label: "2026/27 官方概览：德信", url: "https://kgp2026.kindergartenprofile.com/school/?schid=1335820001", scope: "半日免费、师资、时段比例与用品收费。", sourceType: "school-profile", academicYear: "2026/27", checkedOn: "2026-10-17" },
-    { label: "校方：2027/28 收生", url: "https://taksunkg.edu.hk/?page_id=3280", scope: "9 月至 10 月报名、11 月面见、适龄及费用；逾期须问候补。", sourceType: "school-official", academicYear: "2027/28", checkedOn: "2026-10-17" },
-    { label: "教育局：德信幼稚園質素評核", url: "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/quality-assurance-framework/qr/qr-report/TakSun.pdf", scope: "2022 年探索活動、區角及 K3 課業整改建議，屬當時觀察。", sourceType: "independent-inspection", academicYear: "2022 評核", checkedOn: "2026-10-17" },
-    { label: "校方：课程与男生升读德信学校", url: "https://taksunkg.edu.hk/?page_id=40", scope: "核对主题教学、中文／英语／德育安排及约 60% 毕业男生升读德信学校的校方说法；网页未列统计年度、男生分母或保证录取条款。", sourceType: "school-official", checkedOn: "2026-10-17" },
-    { label: "德信幼稚園官方網站：2026/27 歷史收生安排", url: "https://taksunkg.edu.hk/?page_id=3230", scope: "上一輪招生日程；2027/28 以新收生頁為準。", sourceType: "school-official", academicYear: "2026/27 歷史資料", checkedOn: "2026-10-17" },
-    { label: "教育局學校搜尋：德信幼稚園", url: "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=2&scrn=133582000111", scope: "核校名、校址、辦學及登記資料。", sourceType: "school-profile", checkedOn: "2026-10-17" },
-    { label: "Baby Kingdom：德信幼稚園討論串", url: "https://m.edu-kingdom.com/post.php?fid=&page=1&tid=227705", scope: "2004 年家長討論，僅為歷史個案，不代表現況或整體口碑。", sourceType: "parent-discussion", checkedOn: "2026-10-17" },
-    { label: "2026 小學概覽：德信學校", url: "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=515", scope: "2026 小學概覽列資助男校、31 校網及聯繫中學德信中學；並非直私考小結果或自動直升。", sourceType: "school-profile", academicYear: "2026 小學概覽", checkedOn: "2026-10-18" },
-  ],
+  {
+    "label": "教育局2026/27幼稚园概览：德信",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=1335820001",
+    "scope": "核校址、半日班免费、2025年9月师生比和在读人数；K1在读45不是新生学额。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27；人数2025年9月"
+  },
+  {
+    "label": "教育局收费证：德信",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/133582.pdf",
+    "scope": "2026年9月生效，上午与下午K1-K3扣资助后免费；用品另计。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "校方2027/28 K1收生网页",
+    "url": "https://taksunkg.edu.hk/?page_id=3280",
+    "scope": "官网正文的网申截止为10月15日；与下载须知10月16日不一致，报告保留差异。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "校方2027/28网上申请须知",
+    "url": "https://taksunkg.edu.hk/?wpdmdl=3302",
+    "scope": "网申细节、面见、优先因素、邮件结果及注册；下载文件写10月16日截止。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "校方2027/28亲临申请须知",
+    "url": "https://taksunkg.edu.hk/?wpdmdl=3300",
+    "scope": "纸本截至10月15日，面见、邮递结果、注册费与退学安排。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "校方2026/27 K2-K3插班须知",
+    "url": "https://taksunkg.edu.hk/?wpdmdl=3224",
+    "scope": "历史插班材料、40元及临时注册信要求；实时报读空位须向校方问。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "校方课程与升小介绍",
+    "url": "https://taksunkg.edu.hk/?page_id=40",
+    "scope": "主题、英语及普通话活动；约60%毕业男生升德信学校未列学年与人数。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "label": "教育局德信幼稚园质素评核",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/quality-assurance-framework/qr/qr-report/TakSun.pdf",
+    "scope": "2022年探究观察及K3课业、美艺选择的改善要求；非当前整改完成证明。",
+    "sourceType": "independent-inspection",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2022"
+  },
+  {
+    "label": "教育局2026/27 K1-K3空缺CSV",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/K1-K3_vacancy_information_tc_202627.csv",
+    "scope": "截至2026年10月13日德信K1-K3均有空缺；不推下一轮取录率。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27；截至2026-10-13"
+  },
+  {
+    "label": "教育局2027/28电子注册及转校安排",
+    "url": "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/2728_admission_arrangements.html",
+    "scope": "与德信校方PDF的纸本退证文字交叉核对；当届转校须到原校扫描电子注册证二维码取消注册。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "2026小学概览：德信学校",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=515",
+    "scope": "资助男校、31校网；与德信中学为联系中学，不构成幼稚园直升小学。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026"
+  },
+  {
+    "label": "am730校长采访",
+    "url": "https://www.am730.com.hk/article/607971",
+    "scope": "2025年校长自述科探、K3计划书及面见观察，非独立成效统计。",
+    "sourceType": "media-report",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2025-10-13"
+  },
+  {
+    "label": "教育王国：德信家长历史讨论",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2964791",
+    "scope": "2014/15两位自述在读或毕业家长谈德育、英语及作业；不能代表现届。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2014–2015"
+  },
+  {
+    "label": "教育王国：幼小升读讨论",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3604500",
+    "scope": "2018历史讨论提醒同址不等于自动直升；录取规则仍按现行官方文件。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2018"
+  },
+  {
+    "label": "小红书：德信面试个案",
+    "url": "https://www.xiaohongshu.com/explore/636541c5000000000900662b",
+    "scope": "2022年单一申请经历，不作为2027/28固定题库。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2022"
+  },
+  {
+    "label": "小红书：德信与仁爱堂择校提问",
+    "url": "https://www.xiaohongshu.com/explore/690b1c310000000004012b1e",
+    "scope": "2025年申请家长的半日/全日取舍；语言频次未经校方核实，评论未能取得原文。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2025"
+  }
+],
+"yot-chan-cheng-yuk-yee-kg": [
+  {
+    "label": "教育局2026/27幼稚园概览：仁爱堂陈郑玉而",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5642490001",
+    "scope": "核全日班年费29808元、2025年9月K1在读27与师资；旧在读数不是新生名额。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27；人数2025年9月"
+  },
+  {
+    "label": "教育局学校搜寻：564249",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=2&scrn=564249000113",
+    "scope": "校号、地址及全日班身份；登记分类“私立”与概览非牟利属不同口径。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "label": "教育局2024质素评核",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/quality-assurance-framework/qr/qr-report/YOT_ChanChengYukYee.pdf",
+    "scope": "2024年11月探究、表达、教师支持，以及K3课业、午睡和评价准则改善要求。",
+    "sourceType": "independent-inspection",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2024"
+  },
+  {
+    "label": "教育大学校长访谈",
+    "url": "https://www.lib.eduhk.hk/lver/interviews/yotccyy/",
+    "scope": "2022年校长解释生命教育、亲子活动及3C理念；属校方解释而非效果实验。",
+    "sourceType": "university-official",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2022"
+  },
+  {
+    "label": "校方署名账号：2025/26升小图",
+    "url": "https://www.xiaohongshu.com/explore/6aa0f5db000000001401f3d1",
+    "scope": "同名账号发布，官网未能确认账号归属。原图列入读比例，前三以官津为主；无毕业人数分母，直私比例不能换算人数。",
+    "sourceType": "school-attributed-social",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2025/26；发布2026-09-09"
+  },
+  {
+    "label": "校方署名账号：2024/25升小图",
+    "url": "https://www.xiaohongshu.com/explore/688052cc000000002203ccd5",
+    "scope": "前届去向作历史对照；“心仪”无定义，不当作直私成功率。",
+    "sourceType": "school-attributed-social",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2024/25"
+  },
+  {
+    "label": "教育局2026/27 K1-K3空缺CSV",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/K1-K3_vacancy_information_tc_202627.csv",
+    "scope": "截至2026年10月13日K1/K2/K3为有/无/有；非实时学额及下一轮报录率。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27；截至2026-10-13"
+  },
+  {
+    "label": "教育局2027/28 K1注册证提示",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/202728%20K1%20Admission%20Arrangements/Points%20to%20note_RC_TC_27_28_clean.pdf",
+    "scope": "通用结果和注册流程，非本校面见日期或优先规则。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "教育王国：2024自述在读家长",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3879051",
+    "scope": "单一现任家长的课程和教师观察；身份未独立核验，不当满意度样本。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2024"
+  },
+  {
+    "label": "教育王国：2017在读及毕业家庭讨论",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3530301",
+    "scope": "历史家庭体验与个别升小经历；不用于推断2026年课程或整届直私成果。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2017"
+  },
+  {
+    "label": "教育王国：2022 N班申请者投诉",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3866894",
+    "scope": "单一个案涉及申请沟通，无校方回应及独立裁定；不能概括学校对特殊需要幼儿的政策。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2022"
+  },
+  {
+    "label": "小红书：2026开放日访客",
+    "url": "https://www.xiaohongshu.com/explore/6a67480a0000000010026f66",
+    "scope": "访客对校园和活动的短时观察，不等于长期在读体验。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026"
+  },
+  {
+    "label": "小红书：两校选择提问",
+    "url": "https://www.xiaohongshu.com/explore/690b1c310000000004012b1e",
+    "scope": "申请阶段家庭比较半日德信与全日仁爱堂，非两校课堂成效对照。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2025"
+  }
+],
+"salvation-army-chan-kwan-tung-kg": [
+  {
+    "label": "教育局2026/27幼稚园概览：陈昆栋",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=3251980001",
+    "scope": "核免费半日、2025年9月K1在读49及师资；238是课室总容额，不是每年招生额。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27；人数2025年9月"
+  },
+  {
+    "label": "教育局2026质素评核",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/quality-assurance-framework/qr/qr-report/SA_ChanKwanTung.pdf",
+    "scope": "2026年2月课堂和支援观察；亦要求调节过深课业、增加孩子主导性及中文交流。",
+    "sourceType": "independent-inspection",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026-02"
+  },
+  {
+    "label": "教育局收费证：陈昆栋",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325198.pdf",
+    "scope": "2020年生效的免费收费证；2026/27当前金额以当届概览交叉核。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2020生效；2026/27复核"
+  },
+  {
+    "label": "概览链接的校方入学申请表",
+    "url": "https://kgp2026.kindergartenprofile.com/wp-content/uploads/2026/04/ApplicationForm_CKTKG-4.pdf",
+    "scope": "K1-K3、上下午及出生证明等材料与30元申请费；表本身未写2027/28面见日期。",
+    "sourceType": "school-official",
+    "checkedOn": "2026-10-26"
+  },
+  {
+    "label": "教育局2026/27油尖旺K1-K3空缺",
+    "url": "https://www.edb.gov.hk/attachment/en/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/Vacancy%20Info_Districts/TC/Yau%20Tsim%20and%20Mong%20Kok_K1-K3%20Vacancy.pdf",
+    "scope": "直接原件截至2026年10月13日K1-K3均有空缺；旧搜索摘要不适用。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27；截至2026-10-13"
+  },
+  {
+    "label": "教育局2027/28收生指引",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/202728%20K1%20Admission%20Arrangements/202728_Admission%20Guidelines_TC.pdf",
+    "scope": "通用最低年龄、面见起始和注册证规则；不当成本校面试时间。",
+    "sourceType": "government",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "教育王国：陈昆栋与同楼园比较",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2366756",
+    "scope": "2012–2013旧讨论只反映半日/全日照顾取舍，非现届在读教学口碑。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2012–2013"
+  },
+  {
+    "label": "2014个人导览及面试记录",
+    "url": "http://amyandkit1226.blogspot.com/2014/10/blog-post_20.html",
+    "scope": "同一申请家庭的历史参观经历；不是本校在读体验或现届面试题。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2014"
+  },
+  {
+    "label": "亲子王国：九龙区择校提问",
+    "url": "https://www.baby-kingdom.com/forum.php?mod=viewthread&tid=23515871",
+    "scope": "2021年申请阶段比较，没有可用的近期在读教学评价。",
+    "sourceType": "parent-discussion",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2021"
+  },
+  {
+    "label": "同楼卜凯赛琳幼稚园2026/27概览",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5665350001",
+    "scope": "对照全日与PN服务；同楼二层不同校号，收费不与本校混算。",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-10-26",
+    "academicYear": "2026/27"
+  }
+],
 
 };
 
