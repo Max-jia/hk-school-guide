@@ -1,0 +1,72 @@
+{
+  "status": "production verified",
+  "releasedAtUtc": "2026-10-26T15:10:07.322918+00:00",
+  "domain": "https://hkschool.guide",
+  "project": "hk-school-guide",
+  "releaseCommit": "1a4f6e4d6ea8d9c96beda1fc13bb1338fb2c0fd2",
+  "branch": "codex/kindergarten-directory-guides-20261026",
+  "deploymentId": "dpl_Fx9tQER6CrojJpnmD3nCkHkt2xdd",
+  "deploymentUrl": "https://hk-school-guide-lz0bnw9kc-max-jia-s-projects.vercel.app",
+  "baseline": {
+    "deploymentId": "dpl_FEnPXXmrtqqyaGpUwJoVyWrPKREA",
+    "sourceCommit": "fcf05fbf34d676b0954e3c7eaeb124fa22699e98",
+    "sitemapUrls": 5126,
+    "reports": 230,
+    "blogs": 54,
+    "profilePages": 2193
+  },
+  "runtimeChanges": [
+    "src/components/schools/KindergartenDirectory.module.css",
+    "src/components/schools/KindergartenDirectory.tsx",
+    "src/components/schools/SchoolDirectoryGuides.module.css",
+    "src/components/schools/SchoolDirectoryGuides.tsx",
+    "src/components/schools/SchoolDirectoryPage.tsx"
+  ],
+  "checks": {
+    "eslint": "pass",
+    "typecheck": "pass",
+    "productionBuild": "pass; 5150 static pages",
+    "staged": {
+      "mode": "staged",
+      "pages": 44,
+      "sitemapUrls": 5126,
+      "missingPaths": 0,
+      "errors": []
+    },
+    "live": {
+      "mode": "live",
+      "pages": 44,
+      "sitemapUrls": 5126,
+      "missingPaths": 0,
+      "errors": []
+    },
+    "inventory": {
+      "reports": 230,
+      "blogs": 54,
+      "profilePages": 2193
+    },
+    "browser": {
+      "desktop": {
+        "viewportWidth": 1425,
+        "pageWidth": 1425,
+        "heroBackground": "rgb(255, 212, 137)",
+        "heroText": "rgb(38, 38, 38)",
+        "visibleGuideLinks": 10
+      },
+      "mobile": {
+        "viewportWidth": 375,
+        "pageWidth": 375,
+        "guideExpansion": "pass",
+        "schoolSearch": "宝山 returns one matching school; search cleared after acceptance"
+      }
+    },
+    "runtimeLogs": "No error/fatal logs matched this deployment in the 5 minute window; not a long-term monitoring guarantee.",
+    "drains": 0,
+    "transportNote": "One staged request had an HTTP2 framing error; that request was retried over HTTP1.1, then all 44 saved responses passed validation."
+  },
+  "screenshots": [
+    "live-desktop.png",
+    "live-mobile.png"
+  ],
+  "rollbackDeployment": "dpl_FEnPXXmrtqqyaGpUwJoVyWrPKREA"
+}
