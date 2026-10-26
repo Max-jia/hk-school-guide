@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { L, LOCALE_META, localeHref, otherLocale, type Locale } from "@/lib/i18n";
 import { REPORT_COUNT } from "@/lib/report-count";
+import { useDirectoryQuery } from "@/lib/use-directory-query";
 
 const NAV: { label: string; href: string; rot: string }[] = [
   { label: "开始规划", href: "/planning", rot: "rotate-1" },
@@ -35,7 +36,7 @@ const MENU: { label: string; sub: string; href: string; rot: string }[] = [
   { label: "热文", sub: "按主题查找择校攻略", href: "/blog", rot: "-rotate-1" },
 ];
 
-export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
+export default function SiteHeader({ locale = "tc", compact = false }: { locale?: Locale; compact?: boolean }) {
   const [open, setOpen] = useState(false);
   const menuTriggerRef = useRef<HTMLButtonElement>(null);
   const menuPanelRef = useRef<HTMLDivElement>(null);
@@ -45,7 +46,8 @@ export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
   // 用真正的 <a> 而不是纯前端 toggle,Google 才抓得到简体版本。
   const basePath = pathname.replace(/^\/cn(?=\/|$)/, "") || "/";
   const target = otherLocale(locale);
-  const switchHref = localeHref(basePath, target);
+  const directoryQuery = useDirectoryQuery();
+  const switchHref = localeHref(basePath, target) + (basePath.startsWith("/schools/kindergarten/directory") ? directoryQuery : "");
 
   useEffect(() => {
     if (!open) return;
@@ -117,7 +119,7 @@ export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
   }, [open]);
 
   return (
-    <header className="mx-auto w-full max-w-[1280px] px-4 py-3 font-sans md:pb-4 md:pt-8">
+    <header className={`mx-auto w-full max-w-[1280px] px-4 py-3 font-sans ${compact ? "md:pb-2 md:pt-4" : "md:pb-4 md:pt-8"}`}>
       <div className="flex items-center justify-between gap-2 md:gap-3">
         <a
           href={localeHref("/", locale)}
@@ -160,7 +162,7 @@ export default function SiteHeader({ locale = "tc" }: { locale?: Locale }) {
           </button>
         </nav>
       </div>
-      <nav aria-label={L("按學段瀏覽學校", locale)} className="mt-4 flex gap-2 overflow-x-auto border-y border-black/10 py-2 dark:border-white/10">
+      <nav aria-label={L("按學段瀏覽學校", locale)} className={`${compact ? "mt-2 py-1" : "mt-4 py-2"} flex gap-2 overflow-x-auto border-y border-black/10 dark:border-white/10`}>
         {STAGE_NAV.map((item) => (
           <a key={item.href} href={localeHref(item.href, locale)} className="inline-flex min-h-10 shrink-0 items-center rounded-full bg-[#eaf1ec] px-4 py-2 text-sm font-bold text-[#214b3c] no-underline transition-colors hover:bg-[#dce9df] dark:bg-white/10 dark:text-white dark:hover:bg-white/15">
             {L(item.label, locale)}

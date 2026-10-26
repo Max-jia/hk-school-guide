@@ -1,0 +1,30 @@
+{
+  "schools": 958,
+  "registryCampuses": 989,
+  "sessionSchoolSummary": 950,
+  "sessionCampusScoped": 3,
+  "closedHistorical": 5,
+  "feeNumericAtSchoolSummary": 893,
+  "feeStates": {
+    "numeric": 889,
+    "scope-specific": 17,
+    "closed": 5,
+    "unresolved": 39,
+    "program-specific": 1,
+    "pending": 7
+  },
+  "languageStates": {
+    "unresolved": 428,
+    "language-learning": 437,
+    "campus-scoped": 7,
+    "stated-aim": 56,
+    "explicit-medium": 9,
+    "explicit-arrangement": 9,
+    "closed": 5,
+    "school-level-medium": 1,
+    "explicit-streams": 1,
+    "chinese-unspecified": 2,
+    "explicit-coteaching": 2,
+    "explicit-daily-language-class": 1
+  }
+}

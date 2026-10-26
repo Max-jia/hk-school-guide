@@ -1,4 +1,5 @@
 import { applyReviewedProfileFacts } from "./reviewed-profile-facts";
+import { applyKindergartenReviewedFields } from "./kindergarten-reviewed-fields";
 import { prepareSecondaryProfile } from "./secondary-profile";
 import { classifyPrimary } from "./primary-classification";
 import { classifyKindergarten } from "./kindergarten-classification";
@@ -5253,7 +5254,7 @@ export const DIRECTORY_SCHOOLS: PilotSchool[] = uniqueDirectoryRecords.map(apply
   ...prepareSecondaryProfile(school),
   reportSlug: school.reportSlug && validProfileReport(school, school.reportSlug) ? school.reportSlug : undefined,
   relatedReportSlugs: school.relatedReportSlugs?.filter((slug) => validProfileReport(school, slug)),
-}));
+})).map(applyKindergartenReviewedFields);
 
 export function getPilotSchool(stage: string, slug: string): PilotSchool | undefined {
   return DIRECTORY_SCHOOLS.find((school) => school.stage === stage && school.slug === slug);

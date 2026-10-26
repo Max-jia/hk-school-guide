@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-26",
+  "checks": [
+    "958 unique schools, other stages retained",
+    "Canaan KLT annual fee is 5440, not free",
+    "Stcat Kowloon Tong does not inherit Hung Hom PN",
+    "Full-day fee does not make MOS a full-day session",
+    "Two period ratios do not turn a full-day nursery into half-day sessions",
+    "Dated PN observations retain observation date",
+    "Source-explicit negative PN is dated, not an inference from school names",
+    "Multicampus filters only use arrangements shared by every campus",
+    "Unrelated school source and ratios/fee alone cannot define PN/sessions",
+    "Language activities and future primary-medium advice are not a kindergarten medium",
+    "New Quarry Bay fee belongs to 630640, not a sibling campus",
+    "All new facts carry dated sources and profile/directory agree",
+    "Fee ranges preserve their different instalment counts",
+    "Blank cells do not shift Stcat grade fees",
+    "New fee certificates replace pending overview amounts only in their scope",
+    "Calendar-year and preparatory fees are not recast as HK K1-K3",
+    "Unverified or pending fees are not converted to free",
+    "Same family of filters composes with district union and other intersections",
+    "Shared URLs preserve repeated district values and page",
+    "Name sorting stable across locales"
+  ],
+  "passed": 20,
+  "schools": 958,
+  "fieldPresence": {
+    "sessions": 950,
+    "pnYes": 479,
+    "pnNo": 414,
+    "language": 18
+  },
+  "limitation": "These counts describe source-scoped extracted records, not a new independent verification of all schools or current vacancies."
+}

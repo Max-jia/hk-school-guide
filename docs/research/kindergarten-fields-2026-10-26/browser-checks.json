@@ -1,0 +1,90 @@
+[
+  {
+    "hasAnnualFees": true,
+    "page": "/cn/schools/kindergarten/directory?report=1&review=verified-fields-20261026",
+    "scrollWidth": 1423,
+    "tableVisible": true,
+    "width": 1440
+  },
+  {
+    "rows": [
+      "\t\n启思幼稚园\n九龙城区\n\t非牟利\n非本地课程\n\t上午／下午／全日\n教育局登记・2026-10-26读取\n\t有记录\n2025年9月\n\t英语授课\n校方网页・2026-10-26核对\n\t$71,700–$90,800／年\n2026/27学年\n\t\n资料\n报告\n展开",
+      "",
+      "\t\n苏浙小学校\n东区\n\t非牟利\n非本地课程\n\t上午／下午／全日\n教育局登记・2026-10-26读取\n\t有记录\n2025年9月\n\t普通话／英语授课\n2026/27概览・校方申报\n\t$52,800–$69,500／年\n2026/27学年\n\t\n资料\n报告\n展开",
+      ""
+    ],
+    "scrollWidth": 1423,
+    "test": "english-filter",
+    "url": "http://127.0.0.1:3330/cn/schools/kindergarten/directory?language=%E8%8B%B1%E8%AA%9E&report=1",
+    "width": 1440
+  },
+  {
+    "lang": "zh-Hant-HK",
+    "scrollWidth": 1423,
+    "test": "traditional-query-preserved",
+    "url": "http://127.0.0.1:3330/schools/kindergarten/directory?language=%E8%8B%B1%E8%AA%9E&report=1",
+    "width": 1440
+  },
+  {
+    "filteredTwo": true,
+    "scrollWidth": 1423,
+    "test": "traditional-query-stable",
+    "url": "http://127.0.0.1:3330/schools/kindergarten/directory?language=%E8%8B%B1%E8%AA%9E&report=1",
+    "width": 1440
+  },
+  {
+    "hasBilingual": true,
+    "hasFee": true,
+    "hasInstalments": true,
+    "scrollWidth": 359,
+    "test": "mobile375-data",
+    "width": 375
+  },
+  {
+    "fee": true,
+    "language": true,
+    "scrollWidth": 359,
+    "source": true,
+    "test": "profile-mobile375-consistency",
+    "url": "http://127.0.0.1:3330/cn/schools/kindergarten/st-hilarys-kg-45",
+    "width": 375
+  },
+  {
+    "campuses": true,
+    "fee": true,
+    "pnBoundary": true,
+    "scrollWidth": 751,
+    "test": "stcat-profile-tc768",
+    "width": 768
+  },
+  {
+    "constellation": true,
+    "fuller": true,
+    "scrollWidth": 751,
+    "test": "anchors-campus-fees-tc768",
+    "url": "http://127.0.0.1:3330/schools/kindergarten/anchors-international-nursery-565199",
+    "width": 768
+  },
+  {
+    "retained": true,
+    "scrollWidth": 633,
+    "test": "final-operating-conflict-retained",
+    "width": 650
+  },
+  {
+    "fee": true,
+    "oldFeeLabels": 0,
+    "scrollWidth": 633,
+    "source": true,
+    "test": "final-stcat-fee-dedupe",
+    "width": 650
+  },
+  {
+    "fees": true,
+    "language": true,
+    "query": "?q=%E5%BE%B7%E8%90%83",
+    "scrollWidth": 633,
+    "test": "final-preview-data",
+    "width": 650
+  }
+]

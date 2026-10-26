@@ -1,0 +1,810 @@
+[
+  {
+    "number": "215678",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215678.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "90ad7e32babff671a62a4ef9c986766c8050bd438d5236a9f171834609b8103b",
+    "effectiveDates": [
+      "01.08.2026"
+    ]
+  },
+  {
+    "number": "524204",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/524204.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "226aa4e80ea7fde351f87963d623175cc3420b5c34a0077040b515152ee10837",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "158070",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/158070.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "6214ed6f7c3e6349679563343ca4e40d2f39de134b578ddfd7e543145da41389",
+    "effectiveDates": [
+      "01.09.2018",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "215848",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215848.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "93749da62137fc2b148b713efe696fe87b34abe023503827a1822f568f392ef5",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "132730",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/132730.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "fa772e61a4f1a40dd3099553a1b6a1f2f577147ab226a5d4945d489797ffde0d",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "563366",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/563366.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "61e8ab40dfd1349561fecd567f6efc853f30671f18249e5722cd3273937d2239",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "576743",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/576743.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "3296093395d9afdb92d09c84ddb5aafa91abdca0383fdfbe4403718daab3df5a",
+    "effectiveDates": [
+      "01.09.2021",
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "215929",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215929.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "549501167e745adc13bc4a319be18b1ea4c401b8d79426a64b2f70d8466decb9",
+    "effectiveDates": [
+      "01.09.2023"
+    ]
+  },
+  {
+    "number": "550035",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/550035.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "c464a10f5eeb55ce68a8425fda386f2ebaefd056987faa53292c9f5ae2a846cc",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "566020",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566020.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "7aa721b642558d2832abb4c27b1f64596936fdaf3115b429f69da28a8a420f9a",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "214612",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/214612.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "1ec869a973a01b0709e083bbc9809d7a1deac996e0a1721d27736e9e6b054f4e",
+    "effectiveDates": [
+      "01.09.2021"
+    ]
+  },
+  {
+    "number": "158259",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/158259.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "2e53182490de9b68b569e164865785b0ba030f3925c00d8953cbac72cc92cfbe",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2023",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "598275",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/598275.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "4fa24b3c132f6a57004e203ecd77f5b103f322a55782a466d9fea49cc201ff26",
+    "effectiveDates": [
+      "01.09.2022"
+    ]
+  },
+  {
+    "number": "565105",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565105.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "dc80bce4111e25594a154466726d2366e97235319750e7cc6d251238978b8ecf",
+    "effectiveDates": [
+      "01.08.2025"
+    ]
+  },
+  {
+    "number": "523178",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/523178.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "1b8712c715c9fe9d771810bb544a12d9867577546cf4f43973ce65a0fa30690d",
+    "effectiveDates": [
+      "02.04.2026",
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "215120",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "b0fb65c2b83964171ffb29d3d99b50e36512bdbb1eaacecc5ade835f0e43134e",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "156728",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156728.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "5864693df9b053dbb4f2a67490222c2a7685b725cb9d02c319975cc4dcac9ab7",
+    "effectiveDates": [
+      "01.09.2023",
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "566187",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566187.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "124d5af6cd5d8c8ea0bad507ea4ded94d01f79d74c5387d48f5bf6b070eaa3f0",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "520071",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/520071.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "8da3f7ed6ff67a44eb1dce3e78c581f106d137a552460317399a9e94e690e11e",
+    "effectiveDates": [
+      "01.09.2021",
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "155624",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/155624.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "d22c053c7a06749646d1ce7378cc714edd99d6fab694b57c9c74f82ea592431c",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "156515",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156515.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "608d3e44900a3c9f81c858161d7fbeeada992f1019f65484fbbbec1a743e59a2",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "619850",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/619850.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "f801d8292baedf4f12461eb03bbcb49a3abc232e93a490d9de1b5e5467434738",
+    "effectiveDates": [
+      "01.08.2026"
+    ]
+  },
+  {
+    "number": "323250",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/323250.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "d744b477587b795d0a407ff2ecb5321ce66d40680cca114cd15f8480362bfd62",
+    "effectiveDates": [
+      "01.09.2021"
+    ]
+  },
+  {
+    "number": "566225",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566225.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "a2537a8db6c904bf1b5cce1c309521fdd1ac9f472636d9d5f29ff9ca0b7d1743",
+    "effectiveDates": [
+      "01.08.2016"
+    ]
+  },
+  {
+    "number": "157597",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/157597.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "da122d13976a294cd4c783df7e4da84b4c385e4c6a7aaf7fba1068d3638b3f77",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "215244",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215244.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "eeb42a5578818eeb21155e0ceb96282dac9d8fdc72be902afd0e2dfd52c185bf",
+    "effectiveDates": [
+      "20.09.2022"
+    ]
+  },
+  {
+    "number": "531910",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/531910.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "22f1cf28f2252ffff38a962e6b611182e9ecae29e76cb377a8b6a02d634d0329",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "577987",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/577987.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "2c99c7fcf6e3b2f7668939e85ad546926c2df5c43a2682a9b0022024505cd4eb",
+    "effectiveDates": [
+      "01.09.2022",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "624195",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/624195.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "260b13e0c8a4d48f074888164aa8c1c98bf25b1a06f368f28964965c200ed4bc",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "608319",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/608319.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "7bb447a787f9a5fed0dcbd9ad674af925575e84265d7ba534a5f497e8f8e6806",
+    "effectiveDates": [
+      "01.09.2021",
+      "05.10.2026"
+    ]
+  },
+  {
+    "number": "325040",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325040.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "9f59783c76b7859d449e4af08b32afd68aa8e65eef57b84082a0ef801266bcdb",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "564290",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/564290.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "a5dd6db8691cf82e0c7179158d63028adc0a3298d40a2e2c61037a3acd576da0",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "566136",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566136.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "5903d074837549a504a60d8a00dcc8ea63fe78efbf87f95e251f9a6a050a1934",
+    "effectiveDates": [
+      "01.08.2015"
+    ]
+  },
+  {
+    "number": "616290",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/616290.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "70d25a29a14e754d69711b0fc0f088afaaba5726616a9bfeb892839abf14d2c7",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "157732",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/157732.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "df6656f316ad06bc50834c11f7766b35a94ea46efde747731037d3c6bdea21cb",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "537225",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/537225.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "7d95a4f6497da0e718e9cd6b6b7d10a9d39bc9b5ea7fbe392e45721f72bb01b4",
+    "effectiveDates": [
+      "01.08.2023"
+    ]
+  },
+  {
+    "number": "157295",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/157295.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "2c7ec4220b32d32174b0e917ec92a1bb72a0cbe5c90d05dea30d6b77c8c3305b",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.08.2025"
+    ]
+  },
+  {
+    "number": "325686",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325686.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "876e711d43c6b5cbe5b1e09a610e36f22695e7c472fdd33595bdb67ca5bcdb74",
+    "effectiveDates": [
+      "01.09.2020",
+      "02.09.2024"
+    ]
+  },
+  {
+    "number": "322300",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/322300.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "7ea4ba4fe5f94b832e0c8d38205d4f979b8c04e3b03718c685eed644d94c5d3d",
+    "effectiveDates": [
+      "01.09.2019"
+    ]
+  },
+  {
+    "number": "565199",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565199.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "f08cd1da4eb912db081cda77fd1c1e74a28fe8c5b56abddfb2288b2d5bc805af",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "604445",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/604445.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "29b5efa5944a2c4e01cee9db89cda4bc93b52938111e168112211c41dd050ebf",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "216275",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216275.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "81e45b602a8cfc4f22cb3b94b01d7df33f0db45865fb049dbfd87c983e8196be",
+    "effectiveDates": [
+      "01.01.2026"
+    ]
+  },
+  {
+    "number": "311650",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/311650.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "4cad7f622895826620a07f943f1055c84c35e694b2389a9a96b770ef80e25b19",
+    "effectiveDates": [
+      "01.09.2018",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "578126",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/578126.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "e033f638cf3c38bcdc2c2e84e89a009fd84b674d7ca762bf0d45fa018bf60402",
+    "effectiveDates": [
+      "01.09.2022",
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "158003",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/158003.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "7f3d393e4384841932054f39600fb895dda0d31151cee790262a87146d987669",
+    "effectiveDates": [
+      "01.09.2020"
+    ]
+  },
+  {
+    "number": "535583",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/535583.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "9b1bfde240112b2a9d248fa86945de967d9cd60c15e7fffa2890c00211318799",
+    "effectiveDates": [
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "539554",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/539554.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "1095f4316e61160d682d7b85985ba53b73c1e1548824e80446a6ee1a2131d3d1",
+    "effectiveDates": [
+      "01.09.2022",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "541613",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/541613.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "9227dbf072553ef258d4e7e7ba72b07125fd724b3fed7764678acc583dcdf431",
+    "effectiveDates": [
+      "01.08.2023",
+      "01.09.2023"
+    ]
+  },
+  {
+    "number": "600350",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/600350.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "b61e1ebe1356b629576bccc76410ec974bfabfa87052a135aa92000e69bec3cf",
+    "effectiveDates": [
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "320897",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/320897.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "63f3ece188186e4f65265a7fa0526f5ec79d5917c96a1510cee981b09940aa3e",
+    "effectiveDates": [
+      "01.09.2022",
+      "01.09.2023"
+    ]
+  },
+  {
+    "number": "630640",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/630640.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "d5ebb2c7d4ad86670c9b08d552af1cc443da7789ac101e9bb294fe295716dda4",
+    "effectiveDates": [
+      "17.09.2026"
+    ]
+  },
+  {
+    "number": "543357",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/543357.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "0549e9a2e8f96f5e3c179b2b385e67aa8a6ad5a720647ac4a5b10c750c1105b8",
+    "effectiveDates": [
+      "01.09.2024",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "517712",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/517712.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "06fd6591ec0a75785ba4ab6a9224a53b5065da81fd90b7bbe89dd95b2f6f2295",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2023"
+    ]
+  },
+  {
+    "number": "156426",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156426.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "47f195e6bbc892f2f9368c67c3daf8f9a28b49e378112bea883a5b3f43071833",
+    "effectiveDates": [
+      "01.08.2020",
+      "01.08.2024"
+    ]
+  },
+  {
+    "number": "519448",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/519448.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "fadccddaf7b58d36ca56c71fb781f86e7ba762c1e8d3bdf90dbb262164fed3c6",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "581836",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/581836.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "6dc4d7b896c34126bfbf0118af0c0ca415a4152fbbd74e14bc1af458dcc7b06f",
+    "effectiveDates": [
+      "01.08.2026"
+    ]
+  },
+  {
+    "number": "567035",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/567035.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "9d3c1178f7a6d8469741fdb4e809bafba0d6e6f5722cfdb4fe0e1cde4cfdb42b",
+    "effectiveDates": [
+      "01.08.2022"
+    ]
+  },
+  {
+    "number": "607223",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/607223.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "fd1bcf0c6f73f5d2ed83c706e8415bb013727b0af3b9d13b42fdd568dec5ce3d",
+    "effectiveDates": [
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "564648",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/564648.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "d431ff7ae5be345904d5ff191502601241feb3ee009d6e36da2f81b13de50373",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "565032",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565032.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "451a5db5fbea20783a8f10fe335bba1bec08d5280d977ca95296d30ef5e4d250",
+    "effectiveDates": [
+      "01.08.2024"
+    ]
+  },
+  {
+    "number": "215406",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215406.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "76a1e7afabaa83661b93e14ac8d5dafde4cf2639b591aa32d2b1a93facff3564",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "583405",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/583405.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "97df7a579adc60b7459a130c3781f0d2ad81ee730e02782ddc1e6de82c1bb332",
+    "effectiveDates": [
+      "01.08.2019"
+    ]
+  },
+  {
+    "number": "538132",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/538132.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "d799ed61e9c8bfa714cb2c58c0fea51eaa252da339f71b2e307bbc4b14c907c1",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "158828",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/158828.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "ae239b1ef7f724e88027674a2c471cb4708cb4bdab68d10eac4b8377e9cbcf3e",
+    "effectiveDates": [
+      "01.09.2020"
+    ]
+  },
+  {
+    "number": "527211",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/527211.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "cb78924df72b556343d629013cdc4103c6285c0eb350a48deaf9002e0afc9b22",
+    "effectiveDates": [
+      "01.08.2025"
+    ]
+  },
+  {
+    "number": "563692",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/563692.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "f71ad2d40d16e2b6fb7f6e4eb50b2aa6f03a51e54560ca0dc6d70826ab243789",
+    "effectiveDates": [
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "156019",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156019.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "f009a6b0e86d03d5287125ef6a5178f876b1eae01b20375cdf70cb99bd559627",
+    "effectiveDates": [
+      "01.09.2021"
+    ]
+  },
+  {
+    "number": "601497",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/601497.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "233ddc2fdac7dc61d75948953ca2f75d8decff3de2c76e75bafe9caf6eec0e9c",
+    "effectiveDates": [
+      "01.09.2020",
+      "06.03.2026"
+    ]
+  },
+  {
+    "number": "550892",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/550892.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "a1557a55598590c787e884be449264090328ec0140512966f0a164310673e8da",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "215830",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215830.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "06c267c100d898ba24d678cf84a33a7ddc2c62ba323b0089cbcf74756414f749",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "231398",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/231398.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "ffbc69da7cf13e6e3c2a759d47179f903f5f2f0f2d00c3537af936604c8f5723",
+    "effectiveDates": [
+      "01.09.2023",
+      "01.09.2024"
+    ]
+  },
+  {
+    "number": "155705",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/155705.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "ec2920f1b35855f0c06ffa6a490b48c1e7b46eb31cc45c8dea8ce5155bacdbb3",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "131636",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/131636.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "b4ba4220218c2e4c6db1447a3d48d74b3170898f54899b51d716829c515951d9",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "564761",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/564761.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "2d1dce0a5b6854bc940ea5ca9c288fc3ada5f35c979e4f346014478ea0cddf6b",
+    "effectiveDates": [
+      "01.09.2023"
+    ]
+  },
+  {
+    "number": "562890",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/562890.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "c4fd2714a08f0914937e6aecadb9a834c758d93baadec7e6ba291d3df3989491",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "231088",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/231088.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "e57e5ee2e3c25308bf65dd1d0fb640ac591c226c0952b2bfd10aa8c09365a2fc",
+    "effectiveDates": [
+      "15.08.2023"
+    ]
+  },
+  {
+    "number": "527882",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/527882.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "899edad3ecd94149676f541e3406fb7f55baa510f10f243e703b0c7fe7b83fe6",
+    "effectiveDates": [
+      "01.08.2026"
+    ]
+  },
+  {
+    "number": "214949",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/214949.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "720971cb62078a0fd1d9877a86abea8b050c04ddbe4323bb0fb95d5b346a0aa7",
+    "effectiveDates": [
+      "01.09.2017",
+      "01.09.2018",
+      "01.08.2019",
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "528811",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/528811.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "134e8614c1db89f87b54a258f085450c637c58d49f5a39fcbb1211c8f8384b30",
+    "effectiveDates": [
+      "01.09.2023"
+    ]
+  },
+  {
+    "number": "581852",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/581852.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "b0bb50e84e4fd5597b38e013decbdebce637ae913eb4e1cf1086ac510b21b4f2",
+    "effectiveDates": [
+      "01.08.2013",
+      "01.11.2020"
+    ]
+  },
+  {
+    "number": "320544",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/320544.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "2c3ba3d24b65848db5aa5dd742df83c04301c97228471098d3c011aa496ca5b5",
+    "effectiveDates": [
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "322580",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/322580.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "313c110dbc3f902573662673050ee14edc380988db88eb2ffeae7b149f929588",
+    "effectiveDates": [
+      "01.09.2018",
+      "01.09.2021",
+      "01.09.2025"
+    ]
+  },
+  {
+    "number": "216208",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216208.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "d6137a07966b23c40b2b3c56f67cddee137f1621bee6aa2dc72973192cf77ee7",
+    "effectiveDates": [
+      "01.09.2026",
+      "01.08.2026"
+    ]
+  },
+  {
+    "number": "323853",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/323853.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "eb765536b3f3a056afbaabe13a85efbc303caa77d51069034b731c6ebf1a98f5",
+    "effectiveDates": [
+      "01.09.2023"
+    ]
+  },
+  {
+    "number": "325775",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325775.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "da5d96b38ec5d751ffa04f1793ddafa08bd02d45e2cb094ccf2ff1b7c3d66d56",
+    "effectiveDates": [
+      "01.09.2020",
+      "01.09.2026"
+    ]
+  },
+  {
+    "number": "565687",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565687.pdf",
+    "checkedAt": "2026-10-26",
+    "sha256": "2c31f3cd583b6b1c4c66f56c785d482947e3f0b29b10aa1b017fa58da6205246",
+    "effectiveDates": [
+      "01.09.2025"
+    ]
+  }
+]

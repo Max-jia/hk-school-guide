@@ -107,12 +107,16 @@ export default function ShortlistPage({ locale = "tc" }: { locale?: Locale }) {
                   <div className="mt-4 flex flex-wrap gap-2">
                     {entry.href && (
                       <a href={localeHref(entry.href, locale)} className="rounded-[6px] border border-[var(--p-fg)] px-3 py-1 font-mono text-xs text-[var(--p-fg)] no-underline">
-                        {L("查看报告", locale)}
+                        {L(entry.href.startsWith("/schools/") ? "查看学校资料" : "查看报告", locale)}
                       </a>
                     )}
                     {entry.kind === "secondary" ? (
                       <a href={localeHref("/planning?stage=secondary&route=dse", locale)} className="rounded-[6px] border border-[var(--p-gray-300)] px-3 py-1 font-mono text-xs text-[var(--p-fg)] no-underline">
                         {L("回到升学规划", locale)}
+                      </a>
+                    ) : entry.kind === "kindergarten" ? (
+                      <a href={localeHref("/schools/kindergarten/directory", locale)} className="rounded-[6px] border border-[var(--p-gray-300)] px-3 py-1 font-mono text-xs text-[var(--p-fg)] no-underline">
+                        {L("回名录比较", locale)}
                       </a>
                     ) : (
                       <a href={localeHref("/compare", locale)} className="rounded-[6px] border border-[var(--p-gray-300)] px-3 py-1 font-mono text-xs text-[var(--p-fg)] no-underline">

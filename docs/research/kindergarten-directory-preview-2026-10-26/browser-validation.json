@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-26",
+  "functionalChecks": [
+    {
+      "check": "刷新及简繁切换保留多地区与PN条件",
+      "pass": true,
+      "result": "迦南"
+    },
+    {
+      "check": "进入资料页再返回保留条件",
+      "pass": true
+    },
+    {
+      "check": "零结果提供清除条件操作",
+      "pass": true
+    },
+    {
+      "check": "手机筛选草稿只在应用后写入网址",
+      "pass": true
+    },
+    {
+      "check": "关闭手机筛选不会应用未确认草稿",
+      "pass": true
+    },
+    {
+      "check": "候选保存刷新可读，幼稚园返回名录而非小学比较器",
+      "pass": true
+    },
+    {
+      "check": "两校比较按日期保留未知值和原始来源",
+      "pass": true
+    }
+  ],
+  "productionBuildChecks": [
+    {
+      "check": "正式构建：表头排序切换",
+      "pass": true
+    },
+    {
+      "check": "显示栏目可隐藏PN列",
+      "pass": true
+    },
+    {
+      "check": "只选一所时比较按钮禁用",
+      "pass": true
+    },
+    {
+      "check": "最多选择四所并保留已选操作",
+      "pass": true
+    },
+    {
+      "check": "手机四校比较可滚动，Escape关闭",
+      "pass": true
+    },
+    {
+      "check": "原生第二页与筛选后第二页正确，翻页后滚回结果",
+      "pass": true
+    },
+    {
+      "check": "正式构建刷新保持筛选结果页码",
+      "pass": true
+    }
+  ],
+  "responsiveChecks": [
+    {
+      "locale": "sc",
+      "targetCssWidth": 375,
+      "clientWidth": 359,
+      "firstName": "九龙城浸信会幼稚园",
+      "h1s": 1,
+      "scrollWidth": 359,
+      "tableTop": 0,
+      "tableVisible": false,
+      "width": 375,
+      "pass": true
+    },
+    {
+      "locale": "sc",
+      "targetCssWidth": 390,
+      "clientWidth": 373,
+      "firstName": "九龙城浸信会幼稚园",
+      "h1s": 1,
+      "scrollWidth": 373,
+      "tableTop": 0,
+      "tableVisible": false,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "locale": "sc",
+      "targetCssWidth": 768,
+      "clientWidth": 751,
+      "firstName": "九龙城浸信会幼稚园",
+      "h1s": 1,
+      "scrollWidth": 751,
+      "tableTop": 573,
+      "tableVisible": true,
+      "width": 768,
+      "pass": true
+    },
+    {
+      "locale": "sc",
+      "targetCssWidth": 1280,
+      "clientWidth": 1263,
+      "firstName": "九龙城浸信会幼稚园",
+      "h1s": 1,
+      "scrollWidth": 1263,
+      "tableTop": 581,
+      "tableVisible": true,
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "locale": "sc",
+      "targetCssWidth": 1440,
+      "clientWidth": 1423,
+      "firstName": "九龙城浸信会幼稚园",
+      "h1s": 1,
+      "scrollWidth": 1423,
+      "tableTop": 581,
+      "tableVisible": true,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "locale": "tc",
+      "targetCssWidth": 375,
+      "clientWidth": 359,
+      "firstName": "九龍城浸信會幼稚園",
+      "h1s": 1,
+      "scrollWidth": 359,
+      "tableTop": 0,
+      "tableVisible": false,
+      "width": 375,
+      "pass": true
+    },
+    {
+      "locale": "tc",
+      "targetCssWidth": 390,
+      "clientWidth": 373,
+      "firstName": "九龍城浸信會幼稚園",
+      "h1s": 1,
+      "scrollWidth": 373,
+      "tableTop": 0,
+      "tableVisible": false,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "locale": "tc",
+      "targetCssWidth": 768,
+      "clientWidth": 751,
+      "firstName": "九龍城浸信會幼稚園",
+      "h1s": 1,
+      "scrollWidth": 751,
+      "tableTop": 573,
+      "tableVisible": true,
+      "width": 768,
+      "pass": true
+    },
+    {
+      "locale": "tc",
+      "targetCssWidth": 1280,
+      "clientWidth": 1263,
+      "firstName": "九龍城浸信會幼稚園",
+      "h1s": 1,
+      "scrollWidth": 1263,
+      "tableTop": 581,
+      "tableVisible": true,
+      "width": 1280,
+      "pass": true
+    },
+    {
+      "locale": "tc",
+      "targetCssWidth": 1440,
+      "clientWidth": 1423,
+      "firstName": "九龍城浸信會幼稚園",
+      "h1s": 1,
+      "scrollWidth": 1423,
+      "tableTop": 581,
+      "tableVisible": true,
+      "width": 1440,
+      "pass": true
+    }
+  ],
+  "note": "Viewport sizes compensated for existing browser zoom; observed CSS widths recorded. Test candidate entries removed; original empty shortlist restored. Final screenshots captured on next start production build."
+}

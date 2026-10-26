@@ -1,0 +1,1004 @@
+{
+  "630640": {
+    "fee": {
+      "text": "K1–K3 $63,600–$100,440／年",
+      "detail": "鰂魚涌英皇道901–907號校址：2026-09-17生效的教育局收費證列K1、K2及K3上午班每年$65,400（每期$5,450）、下午班$63,600（每期$5,300）、全日班$100,440（每期$8,370），均12期。不可套用官網2025/26北角舊校舍或西環校舍的費率；雜費另核對。",
+      "period": "2026-09-17生效・2026/27",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/630640.pdf",
+      "annualAmounts": [
+        63600,
+        65400,
+        100440
+      ],
+      "basis": "教育局核准收費"
+    }
+  },
+  "215406": {
+    "fee": {
+      "text": "Reception $218,200／年",
+      "detail": "教育局215406收費證列Reception全年$218,200，分3期：第一期$87,280，第二、三期各$65,460。證書列華樂徑及九龍灣校址；此處只引Reception，未把Year 1以上或其他年齡的費率混作幼稚園學費。建校費、債券及其他費用另按校方文件核對。",
+      "period": "2026-09-01生效・Reception",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215406.pdf",
+      "annualAmounts": [
+        218200
+      ],
+      "basis": "教育局核准收費"
+    }
+  },
+  "531910": {
+    "fee": {
+      "text": "半日班 $5,440／年",
+      "detail": "九龍塘金巴倫道9及11號校址：K1–K3上午及下午扣減政府資助後全年$5,440，10期，每期$544。書本、校服、茶點和交通另計；不套用其他迦南分校。",
+      "period": "2026/27・2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/531910.pdf",
+      "annualAmounts": [
+        5440
+      ],
+      "basis": "教育局核准收費"
+    }
+  },
+  "215120": {
+    "fee": {
+      "text": "K1 $80,234／年",
+      "detail": "九龍塘校號215120：K1每年$80,234，11期、每期$7,294；K2及K3每年$87,241，11期、每期$7,931。證書列K1上午及下午、K2下午、K3上午；Nursery在此指K1而非PN，紅磡586625的PN費率不併入。用品、校車等另計。",
+      "period": "2026/27・2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+      "annualAmounts": [
+        80234,
+        87241
+      ],
+      "basis": "教育局核准收費"
+    },
+    "language": {
+      "text": "英粵班／英普班",
+      "values": [
+        "英粵／英普班"
+      ],
+      "detail": "九龍塘K1的2027/28招生須知列英粵及英普班，不由班名推算每日英語比例；紅磡PN屬另一登記學校。",
+      "period": "2027/28招生",
+      "sourceUrl": "https://admission.ekinder.com.hk/stcikg/",
+      "mode": "explicit-streams"
+    }
+  },
+  "619850": {
+    "fee": {
+      "text": "K1 $117,370／年",
+      "detail": "海之戀校號619850：2026/27 K1上午／下午全年$117,370，11期、每期$10,670；K2全年$106,390，10期、每期$10,639；K3全年$109,360，10期、每期$10,936。這是K1–K3學費，不是PN費率；雜費另計。",
+      "period": "2026/27・2026-08-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/619850.pdf",
+      "annualAmounts": [
+        106390,
+        109360,
+        117370
+      ],
+      "basis": "教育局核准收費"
+    }
+  },
+  "157473": {
+    "language": {
+      "text": "粵／英／普分時段授課",
+      "values": [
+        "粵語",
+        "英語",
+        "普通話"
+      ],
+      "detail": "校方在2026/27概覽明示各班分時段以粵語、英語及普通話進行主題教學。這是分時段的三語安排，未公布各語言每天分鐘，不表示三者平均分配。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=1574730001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "159131": {
+    "language": {
+      "text": "粵／英／普分時段授課",
+      "values": [
+        "粵語",
+        "英語",
+        "普通話"
+      ],
+      "detail": "概覽列三語浸入式綜合課程：英語課由英語教師授課；中文時段分粵語及普通話課堂，普通話課由普通話教師教授。各語種每天課時未公開，不據此判定三語平均。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=1591310001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "231690": {
+    "language": {
+      "text": "粵語、英語為主",
+      "values": [
+        "粵語",
+        "英語"
+      ],
+      "detail": "概覽課程說明明示採用廣東話及英語為主要教學語言，另以普通話及英語故事配合；兩種主要語言的課時比例未公開。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=2316900001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "321087": {
+    "language": {
+      "text": "英普／英粵班",
+      "values": [
+        "英粵／英普班"
+      ],
+      "detail": "校方在2026/27概覽明示「授課語言以英普或英粵為主」，另有日語課程。報名前須確認所選班型；不由班型推算各語種課時比例。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=3210870001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "567329": {
+    "language": {
+      "text": "英普／英粵班",
+      "values": [
+        "英粵／英普班"
+      ],
+      "detail": "校方在2026/27概覽明示「授課語言以英普或英粵為主」，另有日語課程。報名前須確認所選班型；不由班型推算各語種課時比例。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=5673290001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "541222": {
+    "language": {
+      "text": "粵語、英語協作教學",
+      "values": [
+        "粵語",
+        "英語"
+      ],
+      "detail": "概覽明示以廣東話及英語作為教學語言，由中、英老師合作進行沉浸式雙語教學；3至5歲級別另有普通話專科課。未公開各語種每天課時。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=5412220001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "567027": {
+    "language": {
+      "text": "國際課程全英語",
+      "values": [
+        "英語"
+      ],
+      "detail": "概覽課程說明列全英語國際課程，中文則以普通話／粵語及小組形式教授。此標籤指該國際課程的語言安排，不代表沒有中文學習。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=5670270001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "605530": {
+    "language": {
+      "text": "設英粵雙語半日班",
+      "values": [
+        "粵語",
+        "英語"
+      ],
+      "detail": "概覽明示設有英粵雙語半日班；這是特定班型，未公開全校各年級各語種的每天分鐘，報名前須選定相應班別。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=6055300001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "155624": {
+    "language": {
+      "text": "中英協作；每日各≥1.5小時",
+      "values": [],
+      "detail": "校方在2026/27概覽明示設中、英文班主任，共同協作教學；學生每天分別接受不少於1.5小時的中文（粵語或普通話）及英語學習活動，另列普通話音樂及主題課。中文用粵語還是普通話仍須按所報班別確認；這是校方申報課時，不推算成語言百分比。",
+      "period": "2026/27概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=1556240001",
+      "mode": "explicit-arrangement",
+      "evidenceReviewed": true
+    }
+  },
+  "576743": {
+    "campusFees": {
+      "5767430001": {
+        "text": "全日 $17,000／年",
+        "detail": "只適用大圍美田邨美滿樓校址：2026-09-01生效的全日K1–K3學費全年$17,000，10期、每期$1,700；膳食另$3,000／年。半日免費一段生效於2021-09-01，與新全日費率的日期分開；不套用朗天苑新校址。",
+        "period": "全日2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/576743.pdf",
+        "annualAmounts": [
+          17000
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "131636": {
+    "campusFees": {
+      "1316360002": {
+        "text": "$100,000／年",
+        "detail": "只適用教育局收費證列明的東院道7號校址：K1–K3上午及下午全年$100,000，10期、每期$10,000。證書另列中環鐵崗，不因此推及登記中的其他校址。",
+        "period": "2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/131636.pdf",
+        "annualAmounts": [
+          100000
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "215678": {
+    "campusFees": {
+      "2156780002": {
+        "text": "按資助資格及課程收費",
+        "detail": "馬坑涌道祥雲大廈校址：扣政府資助後K1–K3上午、下午及全日學費免費；全日膳食另$9,012／年（$751×12）。同證另列未扣政府資助的指定課程：半日全年$27,012、全日K3 $43,236，均12期。須先確認孩子資助資格及所報課程，不能把免費或未扣資助價套用所有家庭。",
+        "period": "2026-08-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215678.pdf",
+        "annualAmounts": [
+          0,
+          27012,
+          43236
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "325775": {
+    "campusFees": {
+      "3257750001": {
+        "text": "全日資助後 $11,000／年",
+        "detail": "下鄉道91號1樓及89號地下A舖校址：全日K1–K3扣資助後全年$11,000，11期、每期$1,000，膳食另$5,357／年；此段2026-09-01生效。證書另有未扣政府資助K3全日$74,470及較早半日費率，須按資助資格與班別核對，不混作一個價目。",
+        "period": "全日2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325775.pdf",
+        "annualAmounts": [
+          11000,
+          74470
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      },
+      "3257750002": {
+        "text": "全日資助後 $11,000／年",
+        "detail": "下鄉道91號1樓及89號地下A舖校址：全日K1–K3扣資助後全年$11,000，11期、每期$1,000，膳食另$5,357／年；此段2026-09-01生效。證書另有未扣政府資助K3全日$74,470及較早半日費率，須按資助資格與班別核對，不混作一個價目。",
+        "period": "全日2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325775.pdf",
+        "annualAmounts": [
+          11000,
+          74470
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "527882": {
+    "fee": {
+      "text": "幼兒課程 $99,000–$149,800／年",
+      "detail": "窩打老道131號校址：3歲Early Childhood I半日全年$99,000（$24,750×4），4歲Early Childhood II全日$149,800（$37,450×4）；5歲Grade 1 Junior全年亦$149,800。保留校方級別名稱，不直接等同本地K1–K3；其他費用另查。",
+      "period": "2026-08-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/527882.pdf",
+      "annualAmounts": [
+        99000,
+        149800
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    }
+  },
+  "215848": {
+    "campusFees": {
+      "2158480001": {
+        "text": "全日資助後 $5,291／年",
+        "detail": "鰂魚涌康山道1號校址：2026-09-01生效的全日K1–K3扣資助後全年$5,291，11期、每期$481；膳食另$7,216／年。半日免費一段在證書標2020-09-01生效；不可混為所有班別均在2026重新核准。錦柏苑校址另核。",
+        "period": "全日2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215848.pdf",
+        "annualAmounts": [
+          5291
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "215830": {
+    "campusFees": {
+      "2158300002": {
+        "text": "資助後 $0–$23,190／年",
+        "detail": "東涌翔東邨翔輝樓校址：半日K1–K3扣資助後免費；全日全年$23,190，10期、每期$2,319，膳食另$10,540／年。證書此段2026-09-01生效，不套用舊杏花邨校址。",
+        "period": "2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215830.pdf",
+        "annualAmounts": [
+          0,
+          23190
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "523178": {
+    "fee": {
+      "text": "資助後 $0–$11,700／年",
+      "detail": "只適用油塘欣榮街131號高宏苑校址：半日K1–K3扣資助後免費（證書2026-04-02生效）；全日全年$11,700，10期、每期$1,170（2026-09-01生效），膳食另$2,860／年。兩段核准日期分開理解。",
+      "period": "半日2026-04-02／全日2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/523178.pdf",
+      "annualAmounts": [
+        0,
+        11700
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    }
+  },
+  "320544": {
+    "campusFees": {
+      "3205440002": {
+        "text": "資助後 $0–$11,363／年",
+        "detail": "只適用上水寶石湖邨KG01室：半日K1–K3扣資助後免費；全日全年$11,363，11期、每期$1,033，膳食另$4,697／年。同證另列未扣政府資助的全日K1全年$72,094，應按資格確認；不推及舊中環校址。",
+        "period": "2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/320544.pdf",
+        "annualAmounts": [
+          0,
+          11363,
+          72094
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "155705": {
+    "fee": {
+      "text": "$3,700／年",
+      "detail": "收費證列梅窩南便圍3號及鄉事會路72–74號校址；所列上午K1、K2及下午K1、K3扣政府資助後全年$3,700，10期、每期$370。未列的班別不能由此推算同價或開班。",
+      "period": "2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/155705.pdf",
+      "annualAmounts": [
+        3700
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    }
+  },
+  "216208": {
+    "campusFees": {
+      "2162080001": {
+        "text": "資助後 $0–$16,995／年",
+        "detail": "美孚校址收費證的幼稚園段落（2026-08-01生效）：K1–K3半日扣資助後免費；全日全年$16,995，11期、每期$1,545；膳食另$8,910／年。證書前段小學每年$40,000不適用幼稚園。",
+        "period": "幼稚園段2026-08-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216208.pdf",
+        "annualAmounts": [
+          0,
+          16995
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      },
+      "2162080002": {
+        "text": "資助後 $0–$16,995／年",
+        "detail": "美孚校址收費證的幼稚園段落（2026-08-01生效）：K1–K3半日扣資助後免費；全日全年$16,995，11期、每期$1,545；膳食另$8,910／年。證書前段小學每年$40,000不適用幼稚園。",
+        "period": "幼稚園段2026-08-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216208.pdf",
+        "annualAmounts": [
+          0,
+          16995
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "216275": {
+    "fee": {
+      "text": "Reception $156,200／年",
+      "detail": "羅福道3A校址：Reception全日全年$156,200（$15,620×10）；Preparatory全日$182,500（$18,250×10）。這是2026-01-01生效的自然年收費，不標作2026/27或2027年度報價；不混入Primary及Secondary年級學費。",
+      "period": "2026年度・2026-01-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216275.pdf",
+      "annualAmounts": [
+        156200,
+        182500
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    }
+  },
+  "581836": {
+    "campusFees": {
+      "5818360002": {
+        "text": "$79,200–$109,780／年",
+        "detail": "只適用將軍澳翠嶺路48號翠嶺峰校址：K1–K3上午／下午全年$79,200（$7,200×11），全日$109,780（$9,980×11），全日膳食另$5,489／年；其他登記校址另核。",
+        "period": "2026-08-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/581836.pdf",
+        "annualAmounts": [
+          79200,
+          109780
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "624195": {
+    "fee": {
+      "text": "資助後 $0／年",
+      "detail": "廣東道188號校址：2026-09-01生效收費證列扣政府資助後K1–K3上午及下午免費，11期。同證另列未扣政府資助的上午及下午K1全年$43,450（$3,950×11）。須先核對資助資格；概覽仍列申請審核中，不再據此把當屆核准費率全部留空。",
+      "period": "2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/624195.pdf",
+      "annualAmounts": [
+        0,
+        43450
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    }
+  },
+  "616290": {
+    "fee": {
+      "text": "半日 $76,780／年",
+      "detail": "馬鞍山雅濤居校址：K1–K3上午及下午全年$76,780，11期、每期$6,980。教育局收費證2026-09-01生效，已較概覽的「申請審核中」具體；校服、書本等另計。",
+      "period": "2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/616290.pdf",
+      "annualAmounts": [
+        76780
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    },
+    "language": {
+      "text": "中英教師協作；粵／普按班別",
+      "values": [],
+      "detail": "德萃幼稚園官方中文網站列紅磡及馬鞍山兩校舍，明示每班由外籍英語教師與普通話或廣東話教師一起任教。這是雙語協作教學安排，中文用普通話還是廣東話須按所報班別確認；未公開各語種每天課時，不由教師人數推算英語比例。",
+      "period": "校方網頁・2026-10-26核對",
+      "sourceUrl": "https://kindergarten.sthilarys.edu.hk/?lang=zh",
+      "mode": "explicit-coteaching",
+      "evidenceReviewed": true
+    }
+  },
+  "604445": {
+    "fee": {
+      "text": "半日 $76,780／年",
+      "detail": "紅磡寶其利街城中匯校址：K1–K3上午及下午全年$76,780，11期、每期$6,980。教育局收費證2026-09-01生效，已較概覽的「申請審核中」具體；校服、書本等另計。",
+      "period": "2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/604445.pdf",
+      "annualAmounts": [
+        76780
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    },
+    "language": {
+      "text": "中英教師協作；粵／普按班別",
+      "values": [],
+      "detail": "德萃幼稚園官方中文網站列紅磡及馬鞍山兩校舍，明示每班由外籍英語教師與普通話或廣東話教師一起任教。這是雙語協作教學安排，中文用普通話還是廣東話須按所報班別確認；未公開各語種每天課時，不由教師人數推算英語比例。",
+      "period": "校方網頁・2026-10-26核對",
+      "sourceUrl": "https://kindergarten.sthilarys.edu.hk/?lang=zh",
+      "mode": "explicit-coteaching",
+      "evidenceReviewed": true
+    }
+  },
+  "538132": {
+    "fee": {
+      "text": "全日資助後 $10,100／年",
+      "detail": "黃大仙上邨倡善樓校址：2026-09-01生效全日K1–K3扣資助後全年$10,100，10期、每期$1,010，膳食另$3,240／年。半日免費段在證書標2020-09-01生效，未把其寫成2026新核准；半日當屆安排須另核。",
+      "period": "全日2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/538132.pdf",
+      "annualAmounts": [
+        10100
+      ],
+      "basis": "教育局收費證按各段生效日期",
+      "status": "numeric",
+      "evidenceReviewed": true
+    }
+  },
+  "565199": {
+    "campusFees": {
+      "5651990001": {
+        "text": "$73,700–$105,600／年",
+        "detail": "富萊花園校址：K1–K3上午／下午全年$73,700（$6,700×11），全日全年$105,600（$9,600×11）；全日膳食另$6,424／年。不與滌濤山全日費率混用。",
+        "period": "2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565199.pdf",
+        "annualAmounts": [
+          73700,
+          105600
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      },
+      "5651990002": {
+        "text": "$73,700–$106,700／年",
+        "detail": "滌濤山校址：K1–K3上午／下午全年$73,700（$6,700×11），全日全年$106,700（$9,700×11）；全日膳食另$6,424／年。不與富萊花園全日費率混用。",
+        "period": "2026-09-01生效",
+        "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565199.pdf",
+        "annualAmounts": [
+          73700,
+          106700
+        ],
+        "basis": "教育局收費證按各段生效日期",
+        "status": "numeric",
+        "evidenceReviewed": true
+      }
+    }
+  },
+  "214949": {
+    "fee": {
+      "text": "低／高班按課程收費",
+      "detail": "教育局收費證2026-09-01生效段列：全日低班及高班，法文部雙語課程全年$150,653、英文部全年$156,729，均3期；膳食另列。此處只引證書明列年級，不推算K1費率或每個校舍均開辦兩種課程，報名前須按校址及課程核對。",
+      "period": "低／高班2026-09-01生效",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/214949.pdf",
+      "annualAmounts": [],
+      "basis": "課程及年級限定",
+      "status": "program-specific",
+      "evidenceReviewed": true
+    }
+  },
+  "524204": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/524204.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "156728": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2023、01.09.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156728.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "539554": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2022、01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/539554.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "156426": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2020、01.08.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156426.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "528811": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2023；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/528811.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "157295": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2020、01.08.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/157295.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "519448": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2020、01.09.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/519448.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "156019": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2021；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156019.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "578126": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2022、01.09.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/578126.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "156515": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/156515.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "311650": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2018、01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/311650.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "158070": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2018、01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/158070.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "550035": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2020、01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/550035.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "535583": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/535583.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "158828": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2020；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/158828.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "322580": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2018、01.09.2021、01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/322580.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "600350": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/600350.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "517712": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2020、01.09.2023；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/517712.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "325040": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325040.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "565687": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565687.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "564648": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/564648.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "564761": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2023；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/564761.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "566020": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566020.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "158003": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2020；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/158003.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "231088": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為15.08.2023；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/231088.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "320897": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2022、01.09.2023；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/320897.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "325686": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2020、02.09.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325686.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "537225": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2023；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/537225.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "543357": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2024、01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/543357.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "598275": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2022；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/598275.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "563366": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/563366.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "564290": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.09.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/564290.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "565032": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2024；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565032.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "565105": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2025；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565105.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "566063": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "暫未取得能與此校址配對的2026/27完整核准費表。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/datagovhk/data/SchoolBasicInfo.xml",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "566136": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2015；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566136.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "566225": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2016；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566225.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "567035": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2022；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/567035.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "583405": {
+    "fee": {
+      "text": "當屆學費待核實",
+      "detail": "可取得的教育局收費證分段生效日期為01.08.2019；未將該日期改標為2026/27報價。報名前應向校方索取當屆、所報班別及資助資格適用的書面收費；未以其他分校或舊數字代填。",
+      "period": "2026-10-26核對・當屆未確認",
+      "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/583405.pdf",
+      "annualAmounts": [],
+      "status": "unresolved"
+    }
+  },
+  "573973": {
+    "language": {
+      "text": "英語、普通話學習；每日普通話課",
+      "values": [],
+      "detail": "本校址2026/27英文概覽把英語及普通話列為語言學習範疇，並明示所有班級每天由母語普通話教師教授普通話。來源未交代兩種語言各佔多少課時，不能由每日普通話課推定全校以普通話授課。",
+      "period": "2026/27英文概覽・校方申報",
+      "sourceUrl": "https://kgp2026.kindergartenprofile.com/en/school/?schid=5739730001",
+      "mode": "explicit-daily-language-class",
+      "evidenceReviewed": true
+    }
+  },
+  "215244": {
+    "language": {
+      "text": "校本課程列英語授課",
+      "values": [],
+      "detail": "九龍浸信會幼稚園官方課程頁明示教學語言為英語。網站是校本課程說明，未分列各登記校址的班級及每日課時；不同校址的實際開班仍須另核，未把學校層面政策當作每個校址均已開班的證據。",
+      "period": "校方課程頁・2026-10-26核對",
+      "sourceUrl": "https://www.kbck.edu.hk/curriculum/",
+      "mode": "school-level-medium",
+      "evidenceReviewed": true
+    }
+  },
+  "564770": {
+    "language": {
+      "text": "英語授課",
+      "values": [
+        "英語"
+      ],
+      "detail": "校方幼稚園課程頁明示英語為主要教學語言；由兩名合資格註冊教師帶領。這不代表英語以外的語言活動不存在，來源未公開各語種每日分鐘。",
+      "sourceUrl": "https://leapfrog.edu.hk/kindergarten",
+      "period": "校方網頁・2026-10-26核對",
+      "mode": "explicit-medium",
+      "evidenceReviewed": true
+    }
+  },
+  "564567": {
+    "language": {
+      "text": "粵語授課",
+      "values": [
+        "粵語"
+      ],
+      "detail": "校方英文課程頁明示課堂主要使用廣東話；不把英文網頁或英文校名理解為英語授課。其他語言的課時須另核。",
+      "sourceUrl": "https://mtwns.elchk.org.hk/en/curriculum/",
+      "period": "校方網頁・2026-10-26核對",
+      "mode": "explicit-medium",
+      "evidenceReviewed": true
+    }
+  },
+  "581119": {
+    "language": {
+      "text": "英語為主；粵普輔助",
+      "values": [
+        "英語"
+      ],
+      "detail": "校方網站明示主要授課語言為英語，並以廣東話及普通話輔助。未公開各語言每天的課時，不推算百分比。",
+      "sourceUrl": "https://icms.edu.hk/",
+      "period": "校方網頁・2026-10-26核對",
+      "mode": "explicit-medium",
+      "evidenceReviewed": true
+    }
+  }
+}

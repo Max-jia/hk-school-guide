@@ -43,7 +43,8 @@ def main():
         check(len([x for x in p.links if x.get('hreflang')]) == 3, path, 'three language alternates required')
         check(not p.schema_errors, path, 'JSON-LD parse error')
         check('noindex' not in (p.meta.get('robots') or ''), path, 'unexpected noindex')
-        graphs = [node for schema in p.schemas for node in schema.get('@graph', [])]
+        # A valid ItemList may be a standalone JSON-LD node or part of @graph.
+        graphs = [node for schema in p.schemas for node in schema.get('@graph', [schema])]
         types = {node.get('@type') for node in graphs}
         check({'Organization', 'WebSite', 'BreadcrumbList'}.issubset(types), path, 'missing shared graph nodes')
         stage = path.split('/schools/', 1)[1].split('/')[0]
