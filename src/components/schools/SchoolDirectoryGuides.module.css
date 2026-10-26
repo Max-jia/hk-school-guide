@@ -1,0 +1,59 @@
+.page { width: 100%; background: color-mix(in srgb, var(--p-fg) 2%, var(--p-bg)); }
+.hero { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin: 14px 0 24px; padding: 27px 32px; border-radius: 12px; background: var(--p-bg-yellow); color: var(--p-gray-900); }
+.kicker { margin: 0 0 10px; font-size: 12px; font-weight: 550; letter-spacing: .06em; color: #53504b; }
+.hero h1 { margin: 0; font-family: var(--p-serif); font-size: clamp(30px, 3.1vw, 42px); font-weight: 700; line-height: 1.2; letter-spacing: -.025em; }
+.heroDescription { margin: 12px 0 0; font-size: 14px; line-height: 1.7; color: #4f493f; }
+.coverage { display: flex; align-items: center; gap: 14px; flex: none; border-left: 1px solid #26262630; padding-left: 32px; }
+.coverage strong { font-size: 54px; font-weight: 650; line-height: 1.1; letter-spacing: -.045em; font-variant-numeric: tabular-nums; color: var(--p-gray-900); }
+.coverage > span { font-size: 15px; font-weight: 600; line-height: 1.6; }
+.coverage small { display: block; margin-top: 5px; font-size: 12px; font-weight: 400; color: #53504b; }
+.layout { display: grid; gap: 18px; align-items: start; }
+.main { min-width: 0; }
+.guides { --guide-line: color-mix(in srgb, var(--p-fg) 13%, var(--p-bg)); --guide-accent: var(--p-fg); min-width: 0; color: var(--p-fg); }
+.desktopGuides { display: none; }
+.heading { margin: -18px -18px 0; padding: 22px 18px; background: var(--p-bg-yellow); color: var(--p-gray-900); border-radius: 9px 9px 0 0; }
+.heading h2 { margin: 0; font-size: 20px; line-height: 1.45; font-weight: 700; }
+.heading p { margin: 7px 0 0; color: #53504b; font-size: 12px; line-height: 1.7; }
+.group { margin-top: 21px; }
+.group h3 { display: flex; align-items: center; gap: 9px; margin: 0 0 6px; color: var(--guide-accent); font-size: 14px; line-height: 1.6; font-weight: 700; }
+.groupNumber { display: inline-flex; flex: none; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 5px; background: color-mix(in srgb, var(--p-fg) 8%, var(--p-bg)); font-size: 11px; font-variant-numeric: tabular-nums; font-weight: 700; }
+.group ul { margin: 0; padding: 0; list-style: none; }
+.group li + li { border-top: 1px solid var(--guide-line); }
+.group a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 11px 0; min-height: 44px; color: var(--p-fg); text-decoration: none; font-size: 14px; line-height: 1.65; }
+.group a:hover { color: var(--guide-accent); text-decoration: underline; text-underline-offset: 4px; }
+.group small { display: block; margin-top: 2px; color: var(--p-secondary); font-size: 11px; line-height: 1.6; }
+.arrow { flex: none; color: var(--p-secondary); font-size: 13px; }
+.reportLink { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 22px; padding: 13px 12px; border: 1px solid var(--p-fg); border-radius: 6px; background: var(--p-fg); color: var(--p-bg); text-decoration: none; font-size: 13px; font-weight: 650; line-height: 1.6; }
+.reportLink:hover { background: color-mix(in srgb, var(--p-fg) 85%, var(--p-bg)); }
+.guides a:focus-visible, .compact summary:focus-visible { outline: 2px solid var(--p-fg); outline-offset: 4px; }
+.compact { border: 1px solid var(--guide-line); border-left: 3px solid var(--p-fg); border-radius: 8px; background: var(--p-bg); }
+.compact summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 16px; cursor: pointer; list-style: none; font-size: 15px; font-weight: 650; line-height: 1.6; }
+.compact summary::-webkit-details-marker { display: none; }
+.compact summary small { display: block; color: var(--p-secondary); font-size: 12px; font-weight: 400; }
+.chevron { font-size: 22px; line-height: 1; }
+.compact[open] .chevron { transform: rotate(180deg); }
+.compactContent { padding: 0 16px 16px; border-top: 1px solid var(--guide-line); }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .compact summary small { display: inline; margin-left: 16px; }
+  .compactContent nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+  .compactContent .reportLink { width: fit-content; gap: 24px; }
+}
+
+@media (min-width: 1440px) {
+  .container { max-width: 1460px; }
+  .layout { grid-template-columns: minmax(0, 1fr) 272px; gap: 26px; }
+  .desktopGuides { display: block; padding: 18px; border: 1px solid var(--guide-line); border-radius: 10px; background: var(--p-bg); }
+  .compactGuides { display: none; }
+}
+
+@media (max-width: 767px) {
+  .hero { display: block; margin-top: 12px; margin-bottom: 16px; padding: 20px; }
+  .kicker { margin-bottom: 9px; font-size: 11px; }
+  .hero h1 { font-size: 29px; }
+  .heroDescription { margin-top: 9px; font-size: 13px; }
+  .coverage { margin-top: 15px; padding: 12px 0 0; border-left: 0; border-top: 1px solid #26262630; gap: 10px; }
+  .coverage strong { font-size: 29px; }
+  .coverage > span { font-size: 13px; font-weight: 500; }
+  .coverage small { display: none; }
+}

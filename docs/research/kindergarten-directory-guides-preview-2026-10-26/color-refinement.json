@@ -1,0 +1,23 @@
+{
+  "status": "local preview, not deployed",
+  "request": "Match the existing website palette.",
+  "palette": {
+    "headingBackground": "var(--p-bg-yellow), #ffd489",
+    "text": "var(--p-gray-900), #262626 on apricot; var(--p-fg) elsewhere",
+    "actions": "Existing foreground/background inverse colors",
+    "tableHeader": "Neutral gray mixed from existing foreground and background tokens"
+  },
+  "reference": "Existing home story cards and BlogList filters use --p-bg-yellow and charcoal controls.",
+  "scope": "Kindergarten-specific CSS colors, including selected filters, focus states and comparison buttons; spacing and content preserved.",
+  "browser": {
+    "desktopCssWidth": 1583,
+    "mobileCssWidth": 390,
+    "pageOverflow": false,
+    "computedHeroBackground": "rgb(255, 212, 137)",
+    "computedHeroText": "rgb(38, 38, 38)"
+  },
+  "screenshots": [
+    "ui-apricot-desktop.png",
+    "ui-apricot-mobile.png"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "status": "local UI prototype reviewed, not deployed",
+  "skill": "frontend-design",
+  "audience": "Parents narrowing a kindergarten shortlist using district, care schedule, language and cost.",
+  "designSystem": {
+    "direction": "Editorial school directory with clear search and comparison hierarchy.",
+    "typography": "Existing site serif for the page title, existing sans for controls and data; source dates visually subordinate.",
+    "color": "Forest green for title, controls and table headers; warm gold for report links; soft neutral page and white content panels.",
+    "layout": "Compact title and total, framed search panel, distinct results heading, dense table, numbered guide groups; mobile school cards preserve dates and sources."
+  },
+  "changes": [
+    "Kindergarten-only page styling and hero",
+    "Search/filter panel and prominent filter action",
+    "Results count hierarchy and contrasting table header",
+    "School and report link differentiation",
+    "Numbered guide groups and stronger sidebar header",
+    "Mobile cards with separated facts and source dates"
+  ],
+  "checks": {
+    "eslint": "pass",
+    "typecheck": "pass",
+    "gitDiffCheck": "pass",
+    "httpAndLinkChecks": {
+      "pages": 24,
+      "curatedLinks": 9,
+      "errors": []
+    },
+    "browser": [
+      {
+        "cssWidth": 1583,
+        "pageWidth": 1583,
+        "tableWidth": 1112,
+        "tableWrapper": 1130,
+        "result": "Sidebar and table fit without page overflow."
+      },
+      {
+        "cssWidth": 1366,
+        "pageWidth": 1366,
+        "result": "Compact guide shown; full-width school list retained."
+      },
+      {
+        "cssWidth": 390,
+        "pageWidth": 390,
+        "result": "Mobile layout, filter dialog, cards and data inspected; no overflowing fact labels found."
+      }
+    ],
+    "interactions": [
+      "District filter selected Wan Chai: 30 matching schools.",
+      "Combined district and school-name search for Braemar Hill: 1 matching school.",
+      "Expanded school details show original sources and dates."
+    ],
+    "notRun": [
+      "Full production build",
+      "Dark-mode browser inspection",
+      "Core Web Vitals measurement"
+    ]
+  },
+  "screenshots": [
+    "ui-desktop.png",
+    "ui-mobile.png"
+  ],
+  "previousScreenshots": [
+    "desktop.png",
+    "mobile-expanded.png"
+  ]
+}

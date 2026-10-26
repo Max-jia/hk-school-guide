@@ -1,0 +1,171 @@
+{
+  "status": "local prototype verified; awaiting layout review; not deployed",
+  "productionBaseline": "fcf05fbf34d676b0954e3c7eaeb124fa22699e98",
+  "scope": "Kindergarten directory only: existing articles and topic pages, grouped sidebar on wide screens, native expandable guide above search on smaller screens.",
+  "links": {
+    "pages": 24,
+    "links": 9,
+    "errors": [],
+    "rows": [
+      {
+        "path": "/cn/schools/kindergarten/directory",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/schools/kindergarten/directory/page/2",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/topics/kindergarten-selection",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/kg-english-guide",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/n-class-guide",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/topics/kindergarten-admission",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/kg-subsidy-guide",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/topics/kindergarten-fees-support",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/blog/topics/primary-admission",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/schools/kindergarten/directory",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/schools/kindergarten/directory/page/2",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/topics/kindergarten-selection",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/kg-english-guide",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/n-class-guide",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/hk-kg-k1-application-roadmap-2027-28",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/hk-kg-interview-prep-guide-2027-28",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/topics/kindergarten-admission",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/kg-subsidy-guide",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/topics/kindergarten-fees-support",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/blog/topics/primary-admission",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/schools/primary/directory",
+        "status": 200,
+        "errors": []
+      },
+      {
+        "path": "/cn/schools/secondary/directory",
+        "status": 200,
+        "errors": []
+      }
+    ]
+  },
+  "staticChecks": {
+    "eslint": "pass",
+    "typecheck": "pass",
+    "diffCheck": "pass",
+    "fullProductionBuild": "not run for this local prototype"
+  },
+  "browserChecks": [
+    {
+      "cssWidth": 1583,
+      "pageWidth": 1583,
+      "sidebarWidth": 272,
+      "tableWidth": 1112,
+      "tableViewport": 1130,
+      "locale": "sc and tc",
+      "result": "right sidebar visible; table fits; no page overflow"
+    },
+    {
+      "cssWidth": 1366,
+      "pageWidth": 1366,
+      "locale": "tc",
+      "result": "collapsed entry expands into three guide columns; no page overflow"
+    },
+    {
+      "cssWidth": 390,
+      "pageWidth": 390,
+      "locale": "tc",
+      "result": "native details expands and collapses; all nine links readable; no page overflow"
+    }
+  ],
+  "interactionChecks": {
+    "reportFilter": "clicked link opens ?report=1 and displays 80 matching schools",
+    "headingAndKeyboardOrder": "compact guide precedes search in DOM and visual order",
+    "localeLinks": "traditional and simplified destinations verified in server-rendered HTML"
+  },
+  "screenshots": [
+    "desktop.png",
+    "mobile-expanded.png"
+  ],
+  "visualRegression": "first prototype screenshots, no prior baseline for regression comparison"
+}

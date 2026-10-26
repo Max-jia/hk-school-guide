@@ -43,7 +43,8 @@ function MoreFilters({ filters, onChange, locale }: { filters: KindergartenFilte
 
 function Fact({ fact, locale }: { fact: DirectoryFact; locale: Locale }) {
   const period = fact.period?.includes("2025年9月") ? "2025年9月" : fact.period?.replace(/^教育局幼稚園概覽/, "");
-  return <>{L(fact.text, locale)}{period && <span className={styles.muted}>{L(period, locale)}</span>}</>;
+  const datedSource = period?.match(/^(.*?)[・·](\d{4}-\d{2}-\d{2}.*)$/);
+  return <><span className={styles.factValue}>{L(fact.text, locale)}</span>{period && <span className={styles.muted}>{datedSource ? <>{L(datedSource[1], locale)} · <span className={styles.sourceDate}>{L(datedSource[2], locale)}</span></> : L(period, locale)}</span>}</>;
 }
 
 function RowDetails({ row, locale }: { row: KindergartenRow; locale: Locale }) {
@@ -83,7 +84,7 @@ export default function KindergartenDirectory({ schools, locale, initialPage = 1
   const toggle = (slug: string) => { setSavedMessage(""); setSelected((value) => value.includes(slug) ? value.filter((s) => s !== slug) : value.length < 4 ? [...value, slug] : value); };
   const expand = (slug: string) => setExpanded((value) => value.includes(slug) ? value.filter((s) => s !== slug) : [...value, slug]);
   const choice = (row: KindergartenRow) => <label className={styles.choice}><input type="checkbox" aria-label={L(`選擇${row.name}`, locale)} checked={selected.includes(row.slug)} disabled={!selected.includes(row.slug) && selected.length === 4} onChange={() => toggle(row.slug)} /></label>;
-  const reports = (row: KindergartenRow, compact = false) => (compact ? row.reports.slice(0, 1) : row.reports).map((slug, index) => <a href={localeHref(`/reports/${slug}`, locale)} key={slug}>{L(compact ? "報告" : row.reports.length > 1 ? `報告 ${index + 1}` : "深度報告", locale)}</a>);
+  const reports = (row: KindergartenRow, compact = false) => (compact ? row.reports.slice(0, 1) : row.reports).map((slug, index) => <a className={styles.reportBadge} href={localeHref(`/reports/${slug}`, locale)} key={slug}>{L(compact ? "深度報告" : row.reports.length > 1 ? `報告 ${index + 1}` : "深度報告", locale)}</a>);
   const chips: { key: string; text: string; remove: () => void }[] = [
     ...filters.districts.map((d) => ({ key: d, text: d, remove: () => setFilters({ districts: filters.districts.filter((v) => v !== d) }) })),
     ...(["q", "nature", "session", "pn", "language", "curriculum"] as const).filter((key) => filters[key]).map((key) => ({ key, text: `${labels[key]}：${key === "pn" ? pnLabels[filters[key]] || filters[key] : filters[key] === "unknown" ? "待確認" : filters[key]}`, remove: () => setFilters({ [key]: "" }) })),
@@ -101,15 +102,18 @@ export default function KindergartenDirectory({ schools, locale, initialPage = 1
   const schema = { "@context": "https://schema.org", "@type": "ItemList", "@id": `${SITE_URL}${localeHref(directoryPagePath("kindergarten", initialPage), locale)}#schools`, numberOfItems: visible.length, itemListElement: visible.map((row, i) => ({ "@type": "ListItem", position: start + i + 1, name: L(row.name, locale), url: `${SITE_URL}${localeHref(profilePath(row), locale)}` })) };
   const pagination = (page: number) => isDefault ? localeHref(directoryPagePath("kindergarten", page), locale) : `${localeHref(directoryPagePath("kindergarten", initialPage), locale)}${kgQuery({ ...filters, page }, initialPage)}`;
 
-  return <div className={styles.directory}>
+  return <div className={`${styles.directory} ${styles.kindergarten}`}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
+    <section className={styles.searchPanel} aria-labelledby="kg-search-title">
+    <div className={styles.searchHeading}><h2 id="kg-search-title">{L("按條件找學校", locale)}</h2><span>{L("先選地區，再收窄選擇", locale)}</span></div>
     <label className={styles.search}><Search size={20} aria-hidden="true" /><span className="sr-only">{L("搜尋幼稚園名稱或地區", locale)}</span><input type="search" value={filters.q} onChange={(e) => setFilters({ q: e.target.value })} placeholder={L("搜尋校名、英文名、社區或地址", locale)} /></label>
     <div className={styles.filters}><MainFilters filters={filters} onChange={setFilters} districts={districts} locale={locale} /><button type="button" className={styles.button} onClick={() => setAdvanced(!advanced)} aria-expanded={advanced} aria-controls="kg-more-filters"><SlidersHorizontal size={16} aria-hidden="true" />{L("更多篩選", locale)}</button></div>
     {advanced && <div className={`${styles.advanced} ${styles.desktop}`} id="kg-more-filters"><MoreFilters filters={filters} onChange={setFilters} locale={locale} /></div>}
     <div className={styles.mobileTools}><button className={styles.button} onClick={() => { setDraft(filters); filterDialog.current?.showModal(); }}><SlidersHorizontal size={16} aria-hidden="true" />{L(`篩選${activeCount ? `（${activeCount}）` : ""}`, locale)}</button></div>
     {chips.length > 0 && <div className={styles.chips}>{chips.map((chip) => <button key={chip.key} className={styles.chip} onClick={chip.remove} aria-label={L(`移除${chip.text}`, locale)}>{L(chip.text, locale)}<X size={14} aria-hidden="true" /></button>)}<button className={styles.textButton} onClick={reset}>{L("清除全部", locale)}</button></div>}
     <details className={styles.dataNote}><summary>{L("資料日期與收費說明", locale)}<ChevronDown size={14} aria-hidden="true" /></summary><p className={styles.note}>{L("PN部分為2025年9月記錄，不代表當屆學位；語言標示不代表課時比例。學費不含雜費，資助須符合資格；展開可看日期與來源。", locale)}</p></details>
-    <div className={styles.toolbar} ref={resultToolbar}><p aria-live="polite">{L(`符合 ${filtered.length} 所`, locale)}<span className={styles.muted}>{L(filtered.length ? `顯示 ${start + 1}–${start + visible.length} 所，共 ${pageCount} 頁` : "請調整條件，或查看資料待確認的學校", locale)}</span></p><div className={styles.tools}>
+    </section>
+    <div className={styles.toolbar} ref={resultToolbar}><div className={styles.resultSummary}><h2>{L("學校名單", locale)}</h2><p aria-live="polite"><span className={styles.resultCount}>{filtered.length}</span> {L("所符合條件", locale)}<span className={styles.muted}>{L(filtered.length ? `顯示 ${start + 1}–${start + visible.length} 所，共 ${pageCount} 頁` : "請調整條件，或查看資料待確認的學校", locale)}</span></p></div><div className={styles.tools}>
       <label><span className="sr-only">{L("排序", locale)}</span><select value={filters.sort} onChange={(e) => setFilters({ sort: e.target.value })}><option value="name">{L("校名順序", locale)}</option><option value="name-desc">{L("校名倒序", locale)}</option><option value="district">{L("按地區排列", locale)}</option></select></label>
       <details className={styles.columns}><summary>{L("顯示欄目", locale)}<ChevronDown size={14} aria-hidden="true" /></summary><div className={styles.columnPanel}>{(["pn", "language", "fee"] as const).map((key) => <label key={key} className={styles.check}><input type="checkbox" checked={columns[key]} onChange={(e) => setColumns({ ...columns, [key]: e.target.checked })} />{L({ pn: "PN", language: "教學語言", fee: "學費" }[key], locale)}</label>)}</div></details>
     </div></div>

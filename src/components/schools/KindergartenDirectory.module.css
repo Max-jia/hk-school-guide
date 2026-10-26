@@ -87,6 +87,45 @@
 .compare th, .compare td { border-bottom: 1px solid var(--line); padding: 14px 12px; text-align: left; vertical-align: top; min-width: 175px; }
 .compare th:first-child { min-width: 105px; position: sticky; left: 0; background: var(--p-bg); }
 .compare a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Kindergarten visual hierarchy is scoped so other school stages keep their approved layout. */
+.kindergarten :is(button, a, input, select, summary):focus-visible { outline-color: var(--p-fg); }
+.kindergarten input[type="checkbox"] { accent-color: var(--p-fg); }
+.kindergarten .primary { background: var(--p-fg); color: var(--p-bg); border-color: var(--p-fg); }
+.kindergarten .primary:hover { background: color-mix(in srgb, var(--p-fg) 85%, var(--p-bg)); }
+.kindergarten .chip { background: color-mix(in srgb, var(--p-bg-yellow) 25%, var(--p-bg)); color: var(--p-fg); border-color: var(--line); }
+.kindergarten .table tbody tr:hover:not(:has(.detailCell)) td { background: color-mix(in srgb, var(--p-bg-yellow) 16%, var(--p-bg)); }
+.searchPanel { padding: 20px 22px 12px; border: 1px solid var(--line); border-top: 3px solid var(--p-fg); border-radius: 10px; background: var(--p-bg); box-shadow: 0 2px 6px #00000005; }
+.searchHeading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 5px 16px; margin-bottom: 15px; }
+.searchHeading h2 { margin: 0; font-size: 18px; font-weight: 700; }
+.searchHeading > span { font-size: 12px; color: var(--p-secondary); }
+.kindergarten .search { border-color: color-mix(in srgb, var(--p-fg) 35%, var(--p-bg)); background: var(--p-bg); color: var(--p-fg); }
+.kindergarten .search input { height: 50px; color: var(--p-fg); }
+.kindergarten .search:focus-within { outline: 2px solid var(--p-fg); outline-offset: 2px; }
+.kindergarten .filters > .button, .kindergarten .mobileTools > .button { background: var(--p-fg); border-color: var(--p-fg); color: var(--p-bg); }
+.kindergarten .filters > .button:hover, .kindergarten .mobileTools > .button:hover { background: color-mix(in srgb, var(--p-fg) 85%, var(--p-bg)); }
+.kindergarten .toolbar { margin-top: 25px; }
+.resultSummary { display: flex; align-items: center; gap: 18px; }
+.resultSummary h2 { margin: 0; padding-right: 18px; border-right: 1px solid var(--line); font-size: 21px; font-weight: 700; }
+.resultSummary p { font-size: 13px; line-height: 1.5; color: var(--p-secondary); }
+.resultCount { color: var(--p-fg); font-size: 19px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.kindergarten .resultSummary .muted { margin-top: 2px; font-size: 12px; }
+.kindergarten .tableWrap { background: var(--p-bg); border-color: var(--line); }
+.kindergarten .table th { background: color-mix(in srgb, var(--p-fg) 8%, var(--p-bg)); color: var(--p-fg); border-color: color-mix(in srgb, var(--p-fg) 25%, var(--p-bg)); }
+.kindergarten .table td { padding-top: 14px; padding-bottom: 14px; }
+.kindergarten .schoolName { color: var(--p-fg); }
+.kindergarten .table .muted { font-size: 12px; line-height: 1.65; }
+.kindergarten .table .nature { padding: 2px 6px; border-radius: 4px; background: color-mix(in srgb, var(--p-fg) 7%, var(--p-bg)); color: var(--p-fg); font-size: 12px; font-weight: 550; }
+.factValue { font-weight: 500; }
+.sourceDate { white-space: nowrap; }
+.kindergarten .links { align-items: center; gap: 2px 8px; }
+.kindergarten .links a:first-child { color: var(--p-fg); font-weight: 600; }
+.kindergarten .links a.reportBadge, .kindergarten .mobileLinks a.reportBadge { min-height: 28px; padding: 3px 7px; border: 1px solid color-mix(in srgb, var(--p-bg-yellow) 45%, var(--p-fg)); border-radius: 4px; color: var(--p-gray-900); background: var(--p-bg-yellow); font-size: 11px; font-weight: 650; text-decoration: none; }
+.kindergarten .links a.reportBadge:hover, .kindergarten .mobileLinks a.reportBadge:hover { background: color-mix(in srgb, var(--p-bg-yellow) 85%, var(--p-gray-900)); }
+.kindergarten .links button { color: var(--p-secondary); font-size: 12px; text-decoration: none; }
+.kindergarten .page { background: var(--p-bg); }
+.kindergarten .page[aria-current="page"] { background: var(--p-fg); color: var(--p-bg); }
+
 @media (max-width: 767px) {
   .stageDirectory .filters { grid-template-columns: 1fr; }
   .desktop, .filters, .columns { display: none; }
@@ -115,4 +154,33 @@
   .selection .button { padding: 8px 12px; }
   .dialog { padding: 20px; width: calc(100vw - 20px); max-height: calc(100dvh - 24px); }
   .dialogFooter { bottom: -20px; }
+  .searchPanel { padding: 15px 14px 8px; }
+  .searchHeading { margin-bottom: 12px; }
+  .searchHeading h2 { font-size: 16px; }
+  .searchHeading > span { font-size: 11px; }
+  .kindergarten .search { padding: 0 11px; gap: 8px; }
+  .kindergarten .search input { height: 46px; font-size: 16px; }
+  .kindergarten .dataNote { margin-top: 5px; font-size: 12px; }
+  .kindergarten .resultSummary { gap: 12px; }
+  .kindergarten .resultSummary h2 { padding-right: 12px; font-size: 19px; }
+  .kindergarten .resultSummary p { font-size: 11px; }
+  .kindergarten .resultSummary .muted { font-size: 11px; }
+  .kindergarten .resultCount { font-size: 17px; }
+  .kindergarten .tools select { max-width: 105px; padding: 6px; font-size: 12px; }
+  .kindergarten .mobileList { border-top: 0; display: grid; gap: 11px; }
+  .kindergarten .mobileRow { padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--p-bg); }
+  .kindergarten .mobileRow:has(input:checked) { border-color: var(--p-fg); box-shadow: 0 0 0 1px var(--p-fg); }
+  .kindergarten .mobileTitle .schoolName { font-size: 17px; }
+  .kindergarten .mobileTitle .muted { font-size: 12px; }
+  .kindergarten .mobileFacts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; padding-top: 12px; border-top: 1px solid var(--line); margin-top: 12px; }
+  .kindergarten .mobileFacts > div { display: block; }
+  .kindergarten .mobileFacts > div:nth-child(n + 3) { display: grid; grid-column: 1 / -1; grid-template-columns: 60px minmax(0, 1fr); gap: 8px; }
+  .kindergarten .mobileFacts dt { font-size: 12px; line-height: 1.7; }
+  .kindergarten .mobileFacts dd { margin-top: 3px; font-size: 14px; }
+  .kindergarten .mobileFacts > div:nth-child(n + 3) dd { margin-top: 0; }
+  .kindergarten .mobileFacts .muted { display: block; margin: 2px 0 0; font-size: 12px; }
+  .kindergarten .mobileLinks { gap: 8px 12px; padding-top: 8px; }
+  .kindergarten .mobileLinks a:first-child { border: 1px solid var(--line); border-radius: 5px; padding: 6px 10px; background: color-mix(in srgb, var(--p-fg) 5%, var(--p-bg)); color: inherit; font-weight: 600; text-decoration: none; }
+  .kindergarten .mobileLinks a.reportBadge { min-height: 44px; font-size: 12px; padding: 6px 10px; }
+  .kindergarten .mobileLinks button { color: var(--p-secondary); font-size: 12px; text-decoration: none; }
 }

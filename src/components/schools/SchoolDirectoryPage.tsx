@@ -7,6 +7,8 @@ import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
 import KindergartenDirectory from "@/components/schools/KindergartenDirectory";
 import SchoolStageDirectory, { type SchoolStageDirectoryRow } from "@/components/schools/SchoolStageDirectory";
+import SchoolDirectoryGuides from "@/components/schools/SchoolDirectoryGuides";
+import guideStyles from "@/components/schools/SchoolDirectoryGuides.module.css";
 import { kindergartenDirectoryRows } from "@/lib/kindergarten-directory-data";
 import { createPageMetadata } from "@/lib/page-metadata";
 import { DIRECTORY_PAGE_SIZE, directoryPagePath } from "@/lib/school-directory-pagination";
@@ -62,23 +64,36 @@ export default function SchoolDirectoryPage({ stage, locale = "tc", page = 1 }: 
   ]);
   return (
     <Localize locale={locale}>
-      <main className="w-full">
+      <main className={stage === "kindergarten" ? guideStyles.page : "w-full"}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
         <SiteHeader locale={locale} compact />
-        <div className="mx-auto max-w-[1180px] px-4 pb-24">
+        <div className={`mx-auto max-w-[1180px] px-4 pb-24 ${stage === "kindergarten" ? guideStyles.container : ""}`}>
           <nav aria-label={L("麵包屑", locale)} className="hidden pt-2 text-sm text-[var(--p-secondary)] sm:block">
             <a className="no-underline hover:underline" href={localeHref("/", locale)}>{L("首頁", locale)}</a>
             <span className="px-2">/</span><a className="no-underline hover:underline" href={localeHref(`/schools/${stage}`, locale)}>{L(config.label, locale)}</a>
             <span className="px-2">/</span>{L("學校名錄", locale)}
           </nav>
-          <header className="py-3">
-            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1"><h1 className="font-serif text-3xl font-bold leading-tight text-[var(--p-fg)]">{L(stage === "kindergarten" ? "香港幼稚園名錄" : `香港${config.label}學校名錄`, locale)}</h1><span className="text-sm text-[var(--p-secondary)]">{L(`${schools.length} 所學校`, locale)}</span></div>
+          {stage === "kindergarten" ? <header className={guideStyles.hero}>
+            <div>
+              <p className={guideStyles.kicker}>{L("從家庭需要出發，找到合適的學校", locale)}</p>
+              <h1>{L("香港幼稚園名錄", locale)}</h1>
+              <p className={guideStyles.heroDescription}>{L("先看照顧安排，再比較語言環境與學費。", locale)}{page > 1 && ` · ${L(`第 ${page} 頁`, locale)}`}</p>
+            </div>
+            <div className={guideStyles.coverage}><strong>{schools.length}</strong><span>{L("所幼稚園", locale)}<small>{L("學校資料與來源，一起查閱", locale)}</small></span></div>
+          </header> : <header className="py-3">
+            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1"><h1 className="font-serif text-3xl font-bold leading-tight text-[var(--p-fg)]">{L(`香港${config.label}學校名錄`, locale)}</h1><span className="text-sm text-[var(--p-secondary)]">{L(`${schools.length} 所學校`, locale)}</span></div>
             {page > 1 && <p className="mt-2 text-sm font-bold text-[var(--p-secondary)]">{L(`第 ${page} 頁`, locale)}</p>}
-            <p className="mt-2 max-w-3xl text-base leading-relaxed text-[var(--p-secondary)]">{L(stage === "kindergarten" ? "比較時段、語言與學費，選出候選學校。" : stage === "primary" ? "按校名、地區、辦學類別、性別與校網篩選。展開可核對公開資料及來源；有深度報告的學校也可直接查看。" : "按校名、地區、辦學類別與性別篩選，並查看授課語言。展開可核對公開資料及來源；有深度報告的學校也可直接查看。", locale)}</p>
-          </header>
-          <h2 className="sr-only">{L("搜尋及瀏覽學校", locale)}</h2>
-          {stage === "kindergarten" ? <KindergartenDirectory schools={kindergartenDirectoryRows(schools)} locale={locale} initialPage={page} /> : <SchoolStageDirectory schools={directorySchools} stage={stage} locale={locale} initialPage={page} />}
-          {config.guides.length > 0 && <section className="mt-8 border-t border-black/10 pt-6 dark:border-white/10" aria-labelledby={`${stage}-guides-title`}>
+            <p className="mt-2 max-w-3xl text-base leading-relaxed text-[var(--p-secondary)]">{L(stage === "primary" ? "按校名、地區、辦學類別、性別與校網篩選。展開可核對公開資料及來源；有深度報告的學校也可直接查看。" : "按校名、地區、辦學類別與性別篩選，並查看授課語言。展開可核對公開資料及來源；有深度報告的學校也可直接查看。", locale)}</p>
+          </header>}
+          <div className={stage === "kindergarten" ? guideStyles.layout : undefined}>
+            {stage === "kindergarten" && <SchoolDirectoryGuides locale={locale} compact />}
+            <div className={guideStyles.main}>
+              <h2 className="sr-only">{L("搜尋及瀏覽學校", locale)}</h2>
+              {stage === "kindergarten" ? <KindergartenDirectory schools={kindergartenDirectoryRows(schools)} locale={locale} initialPage={page} /> : <SchoolStageDirectory schools={directorySchools} stage={stage} locale={locale} initialPage={page} />}
+            </div>
+            {stage === "kindergarten" && <SchoolDirectoryGuides locale={locale} />}
+          </div>
+          {stage !== "kindergarten" && config.guides.length > 0 && <section className="mt-8 border-t border-black/10 pt-6 dark:border-white/10" aria-labelledby={`${stage}-guides-title`}>
             <h2 id={`${stage}-guides-title`} className="text-xl font-bold">{L("下一步怎樣選", locale)}</h2>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">{config.guides.map((guide) => <a className="rounded-lg border border-black/10 p-4 text-inherit no-underline hover:bg-black/5 dark:border-white/10" href={localeHref(guide.href, locale)} key={guide.href}><strong>{L(guide.label, locale)} →</strong><p className="mt-2 text-sm leading-relaxed text-[var(--p-secondary)]">{L(guide.description, locale)}</p></a>)}</div>
           </section>}
