@@ -1,4 +1,5 @@
 .directory { --line: color-mix(in srgb, var(--p-fg) 14%, transparent); --soft: color-mix(in srgb, var(--p-fg) 3%, var(--p-bg)); color: var(--p-fg); padding-bottom: 2rem; }
+.stageDirectory .filters { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; }
 .directory button, .directory input, .directory select, .dialog button, .dialog input, .dialog select { font: inherit; }
 .directory button, .directory summary, .dialog button { cursor: pointer; }
 .directory button:focus-visible, .directory a:focus-visible, .directory input:focus-visible, .directory select:focus-visible, .directory summary:focus-visible, .dialog :focus-visible { outline: 2px solid #387357; outline-offset: 3px; }
@@ -42,6 +43,7 @@
 .table th:nth-child(2), .table td:nth-child(2) { position: sticky; left: 0; z-index: 2; }
 .table th:nth-child(2) { z-index: 12; }
 .table .detailCell { padding: 18px 22px; position: static; }
+.table td.detailCell { background: var(--p-bg); }
 .table tbody tr:hover:not(:has(.detailCell)) td { background: color-mix(in srgb, #659077 9%, var(--p-bg)); }
 .schoolName { display: block; font-weight: 650; font-size: 16px; line-height: 1.55; color: inherit; text-decoration: none; }
 .schoolName:hover { text-decoration: underline; text-underline-offset: 4px; }
@@ -55,6 +57,9 @@
 .detailGrid h3 { font-size: 14px; font-weight: 650; margin: 0 0 5px; }
 .detailGrid p { font-size: 14px; margin: 0; line-height: 1.8; white-space: pre-line; }
 .detailGrid a { font-size: 14px; color: inherit; text-underline-offset: 3px; }
+.sourceList { display: grid; gap: 9px; padding-left: 20px; margin: 8px 0 0; font-size: 14px; line-height: 1.6; }
+.sourceList span { display: block; color: var(--p-secondary); }
+.compactFact { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; overflow-wrap: anywhere; }
 .wide { grid-column: 1 / -1; }
 .empty { padding: 42px 20px; border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
 .pagination { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 20px; }
@@ -83,6 +88,7 @@
 .compare th:first-child { min-width: 105px; position: sticky; left: 0; background: var(--p-bg); }
 .compare a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 767px) {
+  .stageDirectory .filters { grid-template-columns: 1fr; }
   .desktop, .filters, .columns { display: none; }
   .mobile { display: block; }
   .mobileTools { display: flex; gap: 10px; margin-top: 12px; }
