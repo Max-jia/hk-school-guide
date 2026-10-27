@@ -1,0 +1,545 @@
+{
+  "checked": 24,
+  "errors": [
+    "K03: no reading navigation",
+    "K03: missing structured FAQ",
+    "K05: missing article target /blog/kg-waitlist-transfer-guide",
+    "P03: no reading navigation",
+    "P04: no reading navigation",
+    "P10: no reading navigation",
+    "S02: missing article target /blog/secondary-results-guide",
+    "S03: missing structured FAQ",
+    "S04: missing article target /blog/secondary-transfer-guide",
+    "S06: missing article target /blog/secondary-transfer-guide",
+    "S07: missing article target /blog/secondary-curriculum-pathways-guide",
+    "S07: missing article target /blog/secondary-new-arrival-guide"
+  ],
+  "warnings": [],
+  "crossArticleRepeatedParagraphs": [],
+  "articles": [
+    {
+      "id": "K01",
+      "slug": "kg-school-types-guide",
+      "cjkCharacters": 2016,
+      "sections": 8,
+      "tables": 2,
+      "sourceUrls": [
+        "https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM25208C.pdf",
+        "https://kgp2025.azurewebsites.net/edb/generalinfo.php",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/overview/index.html"
+      ],
+      "internalLinks": [
+        "/blog/kg-subsidy-guide",
+        "/blog/kg-school-hours-care-guide",
+        "/schools/kindergarten/directory",
+        "/blog/kg-english-guide"
+      ],
+      "errors": []
+    },
+    {
+      "id": "K02",
+      "slug": "kg-school-hours-care-guide",
+      "cjkCharacters": 2003,
+      "sections": 8,
+      "tables": 2,
+      "sourceUrls": [
+        "https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM25208C.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/202728%20K1%20Admission%20Arrangements/202728_Admission%20Guidelines_TC.pdf",
+        "https://www.swd.gov.hk/sc/pubsvc/family/cat_childcareservice/daychildcares/cccs/"
+      ],
+      "internalLinks": [
+        "/blog/kg-subsidy-guide",
+        "/schools/kindergarten/directory",
+        "/blog/n-class-guide",
+        "/blog/kg-open-day-guide-2026"
+      ],
+      "errors": []
+    },
+    {
+      "id": "K03",
+      "slug": "n-class-guide",
+      "cjkCharacters": 2878,
+      "sections": 8,
+      "tables": 5,
+      "sourceUrls": [
+        "https://kindergarten.sthilarys.edu.hk/?lang=zh&page_id=330",
+        "https://kmccc.sjs.org.hk/admission",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/2728_admission_arrangements.html",
+        "https://www.fhs.gov.hk/tc_chi/health_info/child/13037.html",
+        "https://www.swd.gov.hk/tc/pubsvc/family/cat_childcareservice/daychildcares/cccs/index.html",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/assessment.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/details.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/eligibility.php"
+      ],
+      "internalLinks": [
+        "/blog/hk-kg-k1-application-roadmap-2027-28",
+        "/schools/kindergarten/directory"
+      ],
+      "errors": [
+        "no reading navigation",
+        "missing structured FAQ"
+      ]
+    },
+    {
+      "id": "K04",
+      "slug": "kg-english-guide",
+      "cjkCharacters": 2092,
+      "sections": 8,
+      "tables": 2,
+      "sourceUrls": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/561207.pdf",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=5642490001",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/quality-assurance-framework/dos-donts-for-kindergartens/index.html",
+        "https://www.learninghabitat.org/en/admission/fees",
+        "https://www.victoria.edu.hk/zh-hk/faq/"
+      ],
+      "internalLinks": [
+        "/blog/kg-school-types-guide",
+        "/schools/kindergarten/directory",
+        "/blog/kg-open-day-guide-2026",
+        "/blog/hk-kg-interview-prep-guide-2027-28"
+      ],
+      "errors": []
+    },
+    {
+      "id": "K05",
+      "slug": "hk-kg-k1-application-roadmap-2027-28",
+      "cjkCharacters": 1957,
+      "sections": 8,
+      "tables": 1,
+      "sourceUrls": [
+        "https://www.edb.gov.hk/attachment/en/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/202728%20K1%20Admission%20Arrangements/2728_RC%20FAQ_EN.pdf",
+        "https://www.edb.gov.hk/attachment/en/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/202728%20K1%20Admission%20Arrangements/EDBCM80_2026_EN.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/202728%20K1%20Admission%20Arrangements/202728_Admission%20Guidelines_TC.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/2728_admission_arrangements.html"
+      ],
+      "internalLinks": [
+        "/blog/hk-kg-interview-prep-guide-2027-28",
+        "/blog/kg-waitlist-transfer-guide",
+        "/schools/kindergarten/directory",
+        "/blog/kg-subsidy-guide"
+      ],
+      "errors": [
+        "missing article target /blog/kg-waitlist-transfer-guide"
+      ]
+    },
+    {
+      "id": "K06",
+      "slug": "hk-kg-interview-prep-guide-2027-28",
+      "cjkCharacters": 2044,
+      "sections": 8,
+      "tables": 1,
+      "sourceUrls": [
+        "https://kindergarten.munsang.edu.hk/index.php?lang=zh&pid=np-80",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/202728%20K1%20Admission%20Arrangements/202728_Admission%20Guidelines_TC.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/NCS_Support_2728.html",
+        "https://www.victoria.edu.hk/zh-hk/application-procedure/",
+        "https://yycskg.edu.hk/admissions/admission-process/"
+      ],
+      "internalLinks": [
+        "/blog/hk-kg-k1-application-roadmap-2027-28",
+        "/schools/kindergarten/directory"
+      ],
+      "errors": []
+    },
+    {
+      "id": "K07",
+      "slug": "kg-subsidy-guide",
+      "cjkCharacters": 2400,
+      "sections": 9,
+      "tables": 2,
+      "sourceUrls": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/561207.pdf",
+        "https://kgp2025.azurewebsites.net/edb/generalinfo.php",
+        "https://www.learninghabitat.org/en/admission/fees",
+        "https://www.wfsfaa.gov.hk/en/sfo/preprimary/kcfr/deadlines.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/amount.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/assessment.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/details.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/eligibility.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/faq.php",
+        "https://www.wfsfaa.gov.hk/tc/sfo/preprimary/kcfr/notification.php"
+      ],
+      "internalLinks": [
+        "/schools/kindergarten/directory",
+        "/blog/kg-school-hours-care-guide",
+        "/blog/n-class-guide"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P01",
+      "slug": "school-types-guide",
+      "cjkCharacters": 2330,
+      "sections": 7,
+      "tables": 3,
+      "sourceUrls": [
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/applicable-to-primary-secondary/direct-subsidy-scheme/info-sch.html",
+        "https://www.hkengage.gov.hk/zh-HK/essentials/living/publicly-funded-schools",
+        "https://www.hkugaps.edu.hk/tc/about-us/admissions/faq"
+      ],
+      "internalLinks": [
+        "/blog/through-train-guide",
+        "/schools/primary/directory",
+        "/blog/p1-offer-registration-guide",
+        "/reports/hkups",
+        "/reports/dgjs"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P02",
+      "slug": "hk-p1-admission-guide-2027",
+      "cjkCharacters": 2406,
+      "sections": 8,
+      "tables": 3,
+      "sourceUrls": [
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/POApptPARENTS.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html"
+      ],
+      "internalLinks": [
+        "/blog/p1-scoring-guide",
+        "/blog/hk-school-net-diy-analysis",
+        "/blog/knocking-letter-guide",
+        "/blog/p1-offer-registration-guide",
+        "/schools/primary/directory",
+        "/tools/p1-school-net"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P03",
+      "slug": "p1-scoring-guide",
+      "cjkCharacters": 2449,
+      "sections": 9,
+      "tables": 3,
+      "sourceUrls": [
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/POApptPARENTS.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html"
+      ],
+      "internalLinks": [
+        "/blog/hk-p1-admission-guide-2027",
+        "/blog/hk-school-net-diy-analysis",
+        "/schools/primary/directory",
+        "/reports"
+      ],
+      "errors": [
+        "no reading navigation"
+      ]
+    },
+    {
+      "id": "P04",
+      "slug": "hk-school-net-diy-analysis",
+      "cjkCharacters": 2763,
+      "sections": 9,
+      "tables": 3,
+      "sourceUrls": [
+        "https://www.chsc.hk/primary",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/POApptPARENTS.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/NET80.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/index.html"
+      ],
+      "internalLinks": [
+        "/blog/hk-p1-admission-guide-2027",
+        "/schools/primary/directory",
+        "/blog/p1-scoring-guide",
+        "/blog/through-train-guide"
+      ],
+      "errors": [
+        "no reading navigation"
+      ]
+    },
+    {
+      "id": "P05",
+      "slug": "p1-offer-registration-guide",
+      "cjkCharacters": 2401,
+      "sections": 7,
+      "tables": 3,
+      "sourceUrls": [
+        "https://www.dgjs.edu.hk/?page_id=14231",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/POApptPARENTS.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/applicable-to-primary-secondary/direct-subsidy-scheme/info-sch.html",
+        "https://www.plkctslps.edu.hk/tc/content.php?wid=87"
+      ],
+      "internalLinks": [
+        "/blog/school-types-guide",
+        "/blog/primary-school-learning-guide",
+        "/schools/primary/directory"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P06",
+      "slug": "primary-interview-guide",
+      "cjkCharacters": 2615,
+      "sections": 7,
+      "tables": 3,
+      "sourceUrls": [
+        "https://www.dgjs.edu.hk/?page_id=14231",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+        "https://www.hkugaps.edu.hk/tc/f/page/455/6587/sy_p1_admission_interview.pdf",
+        "https://www.plkctslps.edu.hk/tc/content.php?wid=87",
+        "https://www.reddit.com/r/HongKong/comments/1wr7spp/parents_how_is_your_primary_school_application/"
+      ],
+      "internalLinks": [
+        "/blog/p1-offer-registration-guide",
+        "/reports/hkups",
+        "/reports/dgjs",
+        "/reports/tsl",
+        "/schools/primary/directory"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P07",
+      "slug": "knocking-letter-guide",
+      "cjkCharacters": 2418,
+      "sections": 7,
+      "tables": 2,
+      "sourceUrls": [
+        "https://www.cswcps.edu.hk/sites/default/files/files/2627xiao_yi_hou_bu_sheng_shen_qing_xu_zhi_v3.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+        "https://www.lsps.edu.hk/Files/popup/e2544a28416a4e828cb23bdc4b99b3f3_2627%E5%B0%8F%E4%B8%80%E5%80%99%E8%A3%9C%E7%94%9F_%E4%B8%8A%E7%B6%B2_20260528.pdf?v=202606012358"
+      ],
+      "internalLinks": [
+        "/blog/p1-offer-registration-guide",
+        "/blog/primary-transfer-guide",
+        "/schools/primary/directory",
+        "/blog/hk-p1-admission-guide-2027"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P08",
+      "slug": "primary-transfer-guide",
+      "cjkCharacters": 2621,
+      "sections": 7,
+      "tables": 3,
+      "sourceUrls": [
+        "https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM24228C.pdf",
+        "https://www.edb.gov.hk/tc/student-parents/newly-arrived-children/placement/index.html",
+        "https://www.hkugaps.edu.hk/tc/about-us/admissions/p2-p5-admission",
+        "https://www.plkctslps.edu.hk/tc/content.php?wid=89",
+        "https://www.sthilarys.edu.hk/admissions/"
+      ],
+      "internalLinks": [
+        "/schools/primary/directory",
+        "/blog/knocking-letter-guide",
+        "/blog/primary-school-learning-guide"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P09",
+      "slug": "primary-school-learning-guide",
+      "cjkCharacters": 2840,
+      "sections": 8,
+      "tables": 3,
+      "sourceUrls": [
+        "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC24017S.pdf",
+        "https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM24228C.pdf",
+        "https://sense.edb.gov.hk/sc/professional-support/special-educational-needs-coordinator.html",
+        "https://www.edb.gov.hk/attachment/tc/curriculum-development/major-level-of-edu/primary/curriculum-documents/Primary_Education_Curriculum_Guide/PECGA%26A_FAQ_TC.pdf",
+        "https://www.hksdgps.edu.hk/CustomPage/paragraphGroup.aspx?nnnid=69&pageId=89&webPageId=56",
+        "https://www.hkugaps.edu.hk/tc/about-us/admissions/faq"
+      ],
+      "internalLinks": [
+        "/schools/primary/directory",
+        "/reports/hkups",
+        "/reports/hksdgps",
+        "/blog/p1-offer-registration-guide",
+        "/blog/primary-transfer-guide"
+      ],
+      "errors": []
+    },
+    {
+      "id": "P10",
+      "slug": "through-train-guide",
+      "cjkCharacters": 2809,
+      "sections": 10,
+      "tables": 3,
+      "sourceUrls": [
+        "https://www.chsc.hk/primary",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/applicable-to-primary-secondary/through-train/introduction.html",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/applicable-to-primary-secondary/through-train/sch-list.html"
+      ],
+      "internalLinks": [
+        "/schools/primary/directory",
+        "/schools/secondary/directory",
+        "/reports"
+      ],
+      "errors": [
+        "no reading navigation"
+      ]
+    },
+    {
+      "id": "S01",
+      "slug": "secondary-admission-guide",
+      "cjkCharacters": 2040,
+      "sections": 8,
+      "tables": 2,
+      "sourceUrls": [
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/SSPA_2027_leaflet_TC.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/index.html"
+      ],
+      "internalLinks": [
+        "/blog/secondary-discretionary-guide",
+        "/blog/secondary-central-allocation-guide",
+        "/blog/secondary-dss-offer-guide",
+        "/schools/secondary/directory",
+        "/reports/stewards-pooi-kei-secondary"
+      ],
+      "errors": []
+    },
+    {
+      "id": "S02",
+      "slug": "secondary-banding-guide",
+      "cjkCharacters": 1968,
+      "sections": 8,
+      "tables": 1,
+      "sourceUrls": [
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/PPT_SSPA2027_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/SSPA_2027_leaflet_TC.pdf"
+      ],
+      "internalLinks": [
+        "/blog/secondary-language-guide",
+        "/blog/secondary-results-guide",
+        "/reports/la-salle-secondary",
+        "/reports/heep-yunn-secondary",
+        "/schools/secondary/directory",
+        "/blog/secondary-discretionary-guide",
+        "/blog/secondary-central-allocation-guide"
+      ],
+      "errors": [
+        "missing article target /blog/secondary-results-guide"
+      ]
+    },
+    {
+      "id": "S03",
+      "slug": "secondary-dss-offer-guide",
+      "cjkCharacters": 4294,
+      "sections": 9,
+      "tables": 4,
+      "sourceUrls": [
+        "https://www.dgs.edu.hk/admissions/s1-application-chi",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/Guide_4_DP%20Notification_CH.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/NDSS_List_SSPA2027.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/PPT_SSPA2027_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/SSPA_2027_leaflet_TC.pdf",
+        "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3886639",
+        "https://www.spkc.edu.hk/s1-admission-notes-for-applicants/",
+        "https://www.ttca.edu.hk/s1-admissions"
+      ],
+      "internalLinks": [
+        "/reports/dgs-secondary",
+        "/reports/stewards-pooi-kei-secondary",
+        "/blog/through-train-guide",
+        "/schools/secondary/directory",
+        "/schools/secondary/directory?report=1"
+      ],
+      "errors": [
+        "missing structured FAQ"
+      ]
+    },
+    {
+      "id": "S04",
+      "slug": "secondary-language-guide",
+      "cjkCharacters": 1875,
+      "sections": 8,
+      "tables": 2,
+      "sourceUrls": [
+        "https://www.dgs.edu.hk/admissions/s1-application-chi",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/applicable-to-secondary/moi/Letter_MOI%20Plan_202728_Letter_CHI.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/applicable-to-secondary/moi/support-and-resources-for-moi-policy/FAQ_RP_TC_April_2026.pdf",
+        "https://www.ttca.edu.hk/s1-admissions"
+      ],
+      "internalLinks": [
+        "/schools/secondary/directory",
+        "/blog/secondary-school-cost-guide",
+        "/blog/secondary-banding-guide",
+        "/blog/secondary-transfer-guide"
+      ],
+      "errors": [
+        "missing article target /blog/secondary-transfer-guide"
+      ]
+    },
+    {
+      "id": "S05",
+      "slug": "secondary-discretionary-guide",
+      "cjkCharacters": 2217,
+      "sections": 9,
+      "tables": 1,
+      "sourceUrls": [
+        "https://www.dbs.edu.hk/index.php?m=latestnews&s=admission",
+        "https://www.dgs.edu.hk/admissions/s1-application-chi",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/PPT_SSPA2027_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/SSPA_2027_leaflet_TC.pdf",
+        "https://www.lasalle.edu.hk/admissions/admission-to-form-1/",
+        "https://www.npl.edu.hk/en/site/view?name=F.1+Admission",
+        "https://www.sjc.edu.hk/admission/",
+        "https://www.spkc.edu.hk/s1-admission-notes-for-applicants/",
+        "https://www.ttca.edu.hk/s1-admissions"
+      ],
+      "internalLinks": [
+        "/schools/secondary/directory",
+        "/blog/secondary-dss-offer-guide",
+        "/blog/secondary-central-allocation-guide"
+      ],
+      "errors": []
+    },
+    {
+      "id": "S06",
+      "slug": "secondary-central-allocation-guide",
+      "cjkCharacters": 1962,
+      "sections": 9,
+      "tables": 1,
+      "sourceUrls": [
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/PPT_SSPA2027_TC.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/SSPA_2027_leaflet_TC.pdf"
+      ],
+      "internalLinks": [
+        "/blog/secondary-dss-offer-guide",
+        "/blog/through-train-guide",
+        "/blog/secondary-transfer-guide",
+        "/schools/secondary/directory"
+      ],
+      "errors": [
+        "missing article target /blog/secondary-transfer-guide"
+      ]
+    },
+    {
+      "id": "S07",
+      "slug": "secondary-school-cost-guide",
+      "cjkCharacters": 2175,
+      "sections": 8,
+      "tables": 3,
+      "sourceUrls": [
+        "https://join-us.esf.edu.hk/school-fees/",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/applicable-to-primary-secondary/direct-subsidy-scheme/info-sch.html",
+        "https://www.npl.edu.hk/en/site/view?name=F.1+Admission",
+        "https://www.npl.edu.hk/en/site/view?name=Scheme",
+        "https://www.ttca.edu.hk/s1-admissions"
+      ],
+      "internalLinks": [
+        "/blog/secondary-curriculum-pathways-guide",
+        "/schools/secondary/directory",
+        "/blog/secondary-dss-offer-guide",
+        "/blog/secondary-new-arrival-guide"
+      ],
+      "errors": [
+        "missing article target /blog/secondary-curriculum-pathways-guide",
+        "missing article target /blog/secondary-new-arrival-guide"
+      ]
+    }
+  ]
+}

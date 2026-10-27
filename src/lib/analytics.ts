@@ -18,6 +18,14 @@ export type PlanningAnalyticsEvent =
 type AnalyticsParams = Record<string, string | number | boolean | undefined>;
 
 export function trackPlanningEvent(event: PlanningAnalyticsEvent, params: AnalyticsParams = {}): void {
+  trackEvent(event, params);
+}
+
+export function trackBlogRelatedEvent(event: "blog_related_view" | "blog_related_click", params: AnalyticsParams = {}): void {
+  trackEvent(event, params);
+}
+
+function trackEvent(event: string, params: AnalyticsParams): void {
   if (typeof window === "undefined") return;
 
   const cleanParams = Object.fromEntries(Object.entries(params).filter(([, value]) => value !== undefined));

@@ -1,0 +1,81 @@
+{
+  "source": "/Users/maxjia/hkschool.guide/GSC_查询×页面_2026-09-20_至_2026-10-17_-_查询×页面.csv",
+  "period": "2026-09-20 to 2026-10-17",
+  "scope": "Exported query-page rows only; not whole-site totals or market search volumes; buckets may overlap",
+  "rows": 470,
+  "impressions": 1427,
+  "clicks": 18,
+  "buckets": {
+    "费用": {
+      "queryPageRows": 40,
+      "impressions": 456,
+      "clicks": 3,
+      "examples": [
+        "德望小學學費",
+        "德望小學 學費",
+        "德望學費",
+        "德望小學學費2026",
+        "lh學費"
+      ]
+    },
+    "校网": {
+      "queryPageRows": 27,
+      "impressions": 109,
+      "clicks": 2,
+      "examples": [
+        "12 校網",
+        "40 校網",
+        "96校網",
+        "41 校網",
+        "62 校網"
+      ]
+    },
+    "Banding": {
+      "queryPageRows": 32,
+      "impressions": 53,
+      "clicks": 0,
+      "examples": [
+        "男拔banding",
+        "拔萃男書院 banding",
+        "男拔 banding",
+        "mcs banding",
+        "播道書院band幾"
+      ]
+    },
+    "插班叩门": {
+      "queryPageRows": 4,
+      "impressions": 24,
+      "clicks": 0,
+      "examples": [
+        "\"屯門天主教中學\" 插班 2026 2027",
+        "\"天主教郭得胜中学\" 插班 2026 2027",
+        "\"东华三院黄笏南中学\" 插班 2026 2027",
+        "聖士提反女子中學附屬小學叩門"
+      ]
+    },
+    "升学结果与路线": {
+      "queryPageRows": 26,
+      "impressions": 78,
+      "clicks": 1,
+      "examples": [
+        "港同 ib",
+        "基督教中心幼稚園升小",
+        "培道幼稚園升小數據",
+        "保良局建造商會學校升中",
+        "國際英文幼稚園升小成績"
+      ]
+    },
+    "面试申请派位": {
+      "queryPageRows": 9,
+      "impressions": 22,
+      "clicks": 1,
+      "examples": [
+        "德望小學面試2026",
+        "小一統一派位攻略",
+        "小一派位",
+        "女拔萃小學面試2026",
+        "小一統一派位"
+      ]
+    }
+  }
+}

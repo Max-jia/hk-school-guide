@@ -1,9 +1,12 @@
-export type BlogStage = "kg" | "primary" | "both";
+import { coreGuideForArticle } from "./core-guides";
+
+export type BlogStage = "kg" | "primary" | "secondary" | "both";
 export type BlogTopic = "admissions" | "fees" | "schools" | "comparison" | "practical";
 
 // Editorial classification is explicit so a school name or a translated title
 // cannot silently put an article in the wrong parent-facing filter.
 const STAGES: Record<string, BlogStage> = {
+  "secondary-dss-offer-guide": "secondary",
   "true-light-primary-search": "primary",
   "munsang-kg-search": "kg",
   "soka-kg-search": "kg",
@@ -61,6 +64,7 @@ const STAGES: Record<string, BlogStage> = {
 };
 
 const TOPICS: Partial<Record<string, BlogTopic>> = {
+  "secondary-dss-offer-guide": "admissions",
   "hk-p1-admission-guide-2027": "admissions",
   "p1-scoring-guide": "admissions",
   "knocking-letter-guide": "admissions",
@@ -96,16 +100,18 @@ const TOPICS: Partial<Record<string, BlogTopic>> = {
 };
 
 export function blogStage(slug: string): BlogStage {
-  return STAGES[slug] ?? "both";
+  const guide = coreGuideForArticle(slug);
+  return guide ? (guide.stage === "kindergarten" ? "kg" : guide.stage) : STAGES[slug] ?? "both";
 }
 
 export function blogTopic(slug: string): BlogTopic {
-  return TOPICS[slug] ?? "schools";
+  return coreGuideForArticle(slug)?.topic ?? TOPICS[slug] ?? "schools";
 }
 
 export const BLOG_STAGE_LABELS: Record<BlogStage, string> = {
   kg: "幼稚园",
   primary: "小学",
+  secondary: "中学",
   both: "综合",
 };
 

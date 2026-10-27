@@ -1,0 +1,174 @@
+[
+  {
+    "client": 1006,
+    "expanded": false,
+    "headings": [
+      "繼續閱讀與選校",
+      "01繼續瞭解升中",
+      "02文中學校報告",
+      "03開始選校",
+      "繼續閱讀",
+      "01繼續瞭解升中",
+      "02文中學校報告",
+      "03開始選校"
+    ],
+    "links": [
+      {
+        "href": "/blog/through-train-guide",
+        "text": "一條龍、直屬與聯繫升中銜接的條件與外報後果→"
+      },
+      {
+        "href": "/blog/topics/secondary-admission",
+        "text": "升中申請與直資取捨專題按眼前的問題繼續閱讀→"
+      },
+      {
+        "href": "/reports/dgs-secondary",
+        "text": "拔萃女書院課程、收生與家庭適配→"
+      },
+      {
+        "href": "/reports/stewards-pooi-kei-secondary",
+        "text": "香港神託會培基書院教學、升學與入讀取捨→"
+      },
+      {
+        "href": "/schools/secondary/directory",
+        "text": "查看中學名錄→"
+      },
+      {
+        "href": "/planning?stage=secondary",
+        "text": "制定升中規劃→"
+      }
+    ],
+    "scroll": 1006,
+    "url": "http://127.0.0.1:3338/blog/secondary-dss-offer-guide?review=sidebar-pilot-20261027",
+    "width": 1023
+  },
+  {
+    "client": 373,
+    "desktopDisplay": "none",
+    "expanded": true,
+    "scroll": 373,
+    "url": "http://127.0.0.1:3338/blog/secondary-dss-offer-guide?review=sidebar-pilot-20261027",
+    "visibleLinkWidths": [
+      306.0069580078125,
+      306.0069580078125,
+      306.0069580078125,
+      306.0069580078125,
+      306.0069580078125,
+      306.0069580078125
+    ],
+    "width": 390
+  },
+  {
+    "client": 373,
+    "expanded": false,
+    "links": [
+      {
+        "href": "/cn/blog/through-train-guide",
+        "text": "一条龙、直属与联系升中衔接的条件与外报后果→"
+      },
+      {
+        "href": "/cn/blog/topics/secondary-admission",
+        "text": "升中申请与直资取舍专题按眼前的问题继续阅读→"
+      },
+      {
+        "href": "/cn/reports/dgs-secondary",
+        "text": "拔萃女书院课程、收生与家庭适配→"
+      },
+      {
+        "href": "/cn/reports/stewards-pooi-kei-secondary",
+        "text": "香港神托会培基书院教学、升学与入读取舍→"
+      },
+      {
+        "href": "/cn/schools/secondary/directory",
+        "text": "查看中学名录→"
+      },
+      {
+        "href": "/cn/planning?stage=secondary",
+        "text": "制定升中规划→"
+      }
+    ],
+    "scroll": 373,
+    "url": "http://127.0.0.1:3338/cn/blog/secondary-dss-offer-guide?review=sidebar-pilot-20261027",
+    "width": 390
+  },
+  {
+    "articleWidth": 856.0069580078125,
+    "aside": {
+      "height": 683.01220703125,
+      "position": "sticky",
+      "width": 280,
+      "x": 1006.779541015625,
+      "y": 23.99305725097656
+    },
+    "client": 1405,
+    "links": [
+      {
+        "href": "/cn/blog/through-train-guide",
+        "text": "一条龙、直属与联系升中衔接的条件与外报后果→"
+      },
+      {
+        "href": "/cn/blog/topics/secondary-admission",
+        "text": "升中申请与直资取舍专题按眼前的问题继续阅读→"
+      },
+      {
+        "href": "/cn/reports/dgs-secondary",
+        "text": "拔萃女书院课程、收生与家庭适配→"
+      },
+      {
+        "href": "/cn/reports/stewards-pooi-kei-secondary",
+        "text": "香港神托会培基书院教学、升学与入读取舍→"
+      },
+      {
+        "href": "/cn/schools/secondary/directory",
+        "text": "查看中学名录→"
+      },
+      {
+        "href": "/cn/planning?stage=secondary",
+        "text": "制定升中规划→"
+      }
+    ],
+    "scroll": 1405,
+    "url": "http://127.0.0.1:3338/cn/blog/secondary-dss-offer-guide?review=sidebar-pilot-20261027#choice",
+    "width": 1422
+  },
+  {
+    "articleWidth": 856.0069580078125,
+    "aside": {
+      "height": 683.01220703125,
+      "position": "sticky",
+      "width": 280,
+      "x": 1006.779541015625,
+      "y": 23.99305725097656
+    },
+    "client": 1405,
+    "links": [
+      {
+        "href": "/blog/through-train-guide",
+        "text": "一條龍、直屬與聯繫升中銜接的條件與外報後果→"
+      },
+      {
+        "href": "/blog/topics/secondary-admission",
+        "text": "升中申請與直資取捨專題按眼前的問題繼續閱讀→"
+      },
+      {
+        "href": "/reports/dgs-secondary",
+        "text": "拔萃女書院課程、收生與家庭適配→"
+      },
+      {
+        "href": "/reports/stewards-pooi-kei-secondary",
+        "text": "香港神託會培基書院教學、升學與入讀取捨→"
+      },
+      {
+        "href": "/schools/secondary/directory",
+        "text": "查看中學名錄→"
+      },
+      {
+        "href": "/planning?stage=secondary",
+        "text": "制定升中規劃→"
+      }
+    ],
+    "scroll": 1405,
+    "url": "http://127.0.0.1:3338/blog/secondary-dss-offer-guide?review=sidebar-pilot-20261027#choice",
+    "width": 1422
+  }
+]

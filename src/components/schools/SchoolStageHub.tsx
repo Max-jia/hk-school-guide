@@ -4,6 +4,8 @@ import { SCHOOL_STAGES, schoolsForStage, type SchoolStage } from "@/lib/school-d
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
+import CoreGuideIndex from "./CoreGuideIndex";
+import { coreGuidesForStage } from "@/lib/core-guides";
 import SchoolPreviewCard from "@/components/schools/SchoolPreviewCard";
 import { collectionSchema } from "@/lib/collection-schema";
 import { serializeJsonLd } from "@/lib/structured-data";
@@ -13,6 +15,9 @@ export default function SchoolStageHub({ stage, locale = "tc" }: { stage: School
   const schools = schoolsForStage(stage, locale);
   const previewSchools = schools.filter((school) => school.relatedReportSlugs?.length).slice(0, 6);
   const path = `/schools/${stage}`;
+  const featuredIds = { kindergarten: ["K01", "K02", "K05"], primary: ["P01", "P02", "P04"], secondary: ["S01", "S02", "S09"] }[stage];
+  const readyGuides = coreGuidesForStage(stage).filter((guide) => featuredIds.includes(guide.id));
+  const featuredGuides = readyGuides.length === 3 ? readyGuides.map((guide) => ({ href: `/blog/${guide.slug}`, label: guide.label, description: guide.question })) : content.guides;
   const schema = collectionSchema({ path, title: `${content.label}選校指南`, description: content.description, locale,
     breadcrumbs: [{ name: "首頁", path: "/" }, { name: "學校資料", path: "/schools" }, { name: content.label, path }],
     items: previewSchools.map((school) => ({ name: school.name, path: `/schools/${stage}/${school.slug}` })),
@@ -51,10 +56,10 @@ export default function SchoolStageHub({ stage, locale = "tc" }: { stage: School
                 <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-[var(--p-secondary)]">01 / {L("先看方法", locale)}</p>
                 <h2 id="guide-list-title" className="mt-2 font-serif text-2xl font-bold text-[var(--p-fg)] sm:text-3xl">{L("這個階段，家長通常先要弄清楚的事", locale)}</h2>
               </div>
-              <a href={localeHref("/blog", locale)} className="min-h-11 rounded-lg border border-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-fg)] no-underline hover:bg-black/5 dark:hover:bg-white/10">{L("全部攻略", locale)} →</a>
+              <a href="#guides" className="min-h-11 rounded-lg border border-[var(--p-fg)] px-4 py-2 text-sm font-bold text-[var(--p-fg)] no-underline hover:bg-black/5 dark:hover:bg-white/10">{L("全部攻略", locale)} →</a>
             </div>
             <ul className="mt-5 grid list-none gap-4 p-0 md:grid-cols-3">
-              {content.guides.map((guide, index) => (
+              {featuredGuides.map((guide, index) => (
                 <li key={guide.href}>
                   <a href={localeHref(guide.href, locale)} className="group flex h-full min-h-40 flex-col rounded-2xl border border-black/10 bg-white p-5 no-underline transition hover:-translate-y-1 hover:shadow-md dark:border-white/10 dark:bg-[var(--p-bg)]">
                     <span className="font-mono text-xs font-bold text-[var(--p-secondary)]">0{index + 1} · {L("擇校攻略", locale)}</span>
@@ -66,6 +71,8 @@ export default function SchoolStageHub({ stage, locale = "tc" }: { stage: School
               ))}
             </ul>
           </section>
+
+          <CoreGuideIndex stage={stage} locale={locale} />
 
           <section className="mt-14" aria-labelledby="sample-directory-title">
             <div className="flex flex-wrap items-end justify-between gap-4 border-b border-black/10 pb-4 dark:border-white/10">

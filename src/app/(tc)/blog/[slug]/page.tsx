@@ -16,6 +16,10 @@ import {
 import { blogStage, blogTopic, BLOG_STAGE_LABELS, BLOG_TOPIC_LABELS } from "@/lib/blog-taxonomy";
 import { blogClustersForArticle, clusterArticles, clusterCoreArticle } from "@/lib/blog-clusters";
 import { serializeJsonLd } from "@/lib/structured-data";
+import { blogRelatedLinks } from "@/lib/blog-related-links";
+import BlogRelatedLinks from "@/components/blog/BlogRelatedLinks";
+import BlogRelatedLinksAnalytics from "@/components/blog/BlogRelatedLinksAnalytics";
+import relatedStyles from "@/components/blog/BlogRelatedLinks.module.css";
 
 function readableDate(iso: string): string {
   const [year, month, day] = iso.split("-");
@@ -58,6 +62,7 @@ export default async function BlogPostPage({
   const publishedAt = blogPublishedAt(meta);
   const stage = blogStage(slug);
   const topic = blogTopic(slug);
+  const sidebarGroups = blogRelatedLinks(slug);
   const hasBodyRelatedLinks = /(?:相关阅读|延伸阅读|相关文章)<\/strong>/.test(post.body);
   const clusters = blogClustersForArticle(slug);
   const cluster = clusters[0];
@@ -80,7 +85,7 @@ export default async function BlogPostPage({
       <main className="w-full">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
         <SiteHeader locale={locale} />
-        <div className="mx-auto max-w-[880px] px-4 pb-24">
+        <div className={sidebarGroups ? relatedStyles.container : "mx-auto max-w-[880px] px-4 pb-24"}>
           <p className="pt-8 font-mono text-sm uppercase text-[var(--p-secondary)]">
             <a
               href={localeHref("/blog", locale)}
@@ -90,52 +95,59 @@ export default async function BlogPostPage({
             </a>{" "}
             · 阅读
           </p>
-          {clusters.length > 0 && (
-            <p className="mb-0 rounded-lg bg-[var(--p-bg-yellow)] px-4 py-3 text-sm leading-relaxed text-[var(--p-fg)]">
-              <strong>{L("相关专题：", locale)}</strong>
-              {clusters.map((item, index) => (
-                <span key={item.slug}>
-                  {index > 0 && " · "}
-                  <a href={localeHref(`/blog/topics/${item.slug}`, locale)} className="font-bold text-[var(--p-fg)] underline underline-offset-4">{L(item.title, locale)}</a>
-                </span>
-              ))}
-            </p>
-          )}
-          <article className="blog-article">
-            <header className="border-b border-[var(--p-gray-300)] pb-6">
-              <p className="mb-3 font-mono text-sm text-[var(--p-secondary)]">
-                {L(BLOG_STAGE_LABELS[stage], locale)} · {L(BLOG_TOPIC_LABELS[topic], locale)}
-              </p>
-              <h1>{L(post.title, locale)}</h1>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-[var(--p-secondary)]">
-                <span>{L("编辑：港学荟", locale)}</span>
-                {publishedAt && <span>{L("发布", locale)} <time dateTime={publishedAt}>{readableDate(publishedAt)}</time></span>}
-                {meta?.updatedAt && <span>{L("更新", locale)} <time dateTime={meta.updatedAt}>{readableDate(meta.updatedAt)}</time></span>}
-                {meta?.verifiedAt && <span>{L("资料核对", locale)} <time dateTime={meta.verifiedAt}>{readableDate(meta.verifiedAt)}</time></span>}
-              </div>
-              {!meta?.verifiedAt && (
-                <p className="mb-0 mt-3 text-sm text-[var(--p-secondary)]">
-                  {L("本文尚未标记本轮资料核对日期。学费和招生安排请以学校及教育局当届公告为准。", locale)}
+          <div className={sidebarGroups ? relatedStyles.layout : undefined}>
+            <div className={sidebarGroups ? relatedStyles.articleColumn : undefined}>
+              {clusters.length > 0 && (
+                <p className="mb-0 rounded-lg bg-[var(--p-bg-yellow)] px-4 py-3 text-sm leading-relaxed text-[var(--p-fg)]">
+                  <strong>{L("相关专题：", locale)}</strong>
+                  {clusters.map((item, index) => (
+                    <span key={item.slug}>
+                      {index > 0 && " · "}
+                      <a href={localeHref(`/blog/topics/${item.slug}`, locale)} className="font-bold text-[var(--p-fg)] underline underline-offset-4">{L(item.title, locale)}</a>
+                    </span>
+                  ))}
                 </p>
               )}
-            </header>
-            <div className="pt-6" dangerouslySetInnerHTML={{ __html: blogBodyContent(L(post.body, locale), locale) }} />
-            {!hasBodyRelatedLinks && <section className="mt-14 border-t border-[var(--p-gray-300)] pt-7" aria-labelledby="blog-related-heading">
-              <h2 id="blog-related-heading" className="!mt-0 !border-0 !pt-0">{L("继续阅读", locale)}</h2>
-              <ul className="grid gap-3 !pl-0 md:grid-cols-3">
-                {related.map((item) => (
-                  <li key={item.slug} className="!m-0 list-none rounded-lg border border-[var(--p-gray-300)] p-4">
-                    <a href={localeHref(`/blog/${item.slug}`, locale)} className="block font-semibold no-underline hover:underline">
-                      {locale === "sc" && item.scTitle ? item.scTitle : L(item.title, locale)}
-                    </a>
-                    <span className="mt-2 block text-xs text-[var(--p-secondary)]">
-                      {L(BLOG_STAGE_LABELS[blogStage(item.slug)], locale)} · {L(BLOG_TOPIC_LABELS[blogTopic(item.slug)], locale)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </section>}
-          </article>
+              <article className="blog-article">
+                <header className="border-b border-[var(--p-gray-300)] pb-6">
+                  <p className="mb-3 font-mono text-sm text-[var(--p-secondary)]">
+                    {L(BLOG_STAGE_LABELS[stage], locale)} · {L(BLOG_TOPIC_LABELS[topic], locale)}
+                  </p>
+                  <h1>{L(post.title, locale)}</h1>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-[var(--p-secondary)]">
+                    <span>{L("编辑：港学荟", locale)}</span>
+                    {publishedAt && <span>{L("发布", locale)} <time dateTime={publishedAt}>{readableDate(publishedAt)}</time></span>}
+                    {meta?.updatedAt && <span>{L("更新", locale)} <time dateTime={meta.updatedAt}>{readableDate(meta.updatedAt)}</time></span>}
+                    {meta?.verifiedAt && <span>{L("资料核对", locale)} <time dateTime={meta.verifiedAt}>{readableDate(meta.verifiedAt)}</time></span>}
+                  </div>
+                  {!meta?.verifiedAt && (
+                    <p className="mb-0 mt-3 text-sm text-[var(--p-secondary)]">
+                      {L("本文尚未标记本轮资料核对日期。学费和招生安排请以学校及教育局当届公告为准。", locale)}
+                    </p>
+                  )}
+                </header>
+                {sidebarGroups && <BlogRelatedLinks slug={slug} locale={locale} config={sidebarGroups} compact />}
+                <div className="pt-6" dangerouslySetInnerHTML={{ __html: blogBodyContent(L(post.body, locale), locale) }} />
+                {!hasBodyRelatedLinks && <section className="mt-14 border-t border-[var(--p-gray-300)] pt-7" aria-labelledby="blog-related-heading">
+                  <h2 id="blog-related-heading" className="!mt-0 !border-0 !pt-0">{L("继续阅读", locale)}</h2>
+                  <ul className="grid gap-3 !pl-0 md:grid-cols-3">
+                    {related.map((item) => (
+                      <li key={item.slug} className="!m-0 list-none rounded-lg border border-[var(--p-gray-300)] p-4">
+                        <a href={localeHref(`/blog/${item.slug}`, locale)} className="block font-semibold no-underline hover:underline">
+                          {locale === "sc" && item.scTitle ? item.scTitle : L(item.title, locale)}
+                        </a>
+                        <span className="mt-2 block text-xs text-[var(--p-secondary)]">
+                          {L(BLOG_STAGE_LABELS[blogStage(item.slug)], locale)} · {L(BLOG_TOPIC_LABELS[blogTopic(item.slug)], locale)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>}
+              </article>
+            </div>
+            {sidebarGroups && <BlogRelatedLinks slug={slug} locale={locale} config={sidebarGroups} />}
+          </div>
+          {sidebarGroups && <BlogRelatedLinksAnalytics slug={slug} />}
         </div>
         <SiteFooter locale={locale} />
       </main>

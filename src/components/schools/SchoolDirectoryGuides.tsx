@@ -1,5 +1,6 @@
 import { L, localeHref, type Locale } from "@/lib/i18n";
 import type { SchoolStage } from "@/lib/school-directory-pilot";
+import { coreGuidesForStage } from "@/lib/core-guides";
 import styles from "./SchoolDirectoryGuides.module.css";
 
 type GuideLink = { label: string; href: string; year?: string };
@@ -7,81 +8,55 @@ type GuideGroup = { title: string; links: GuideLink[] };
 
 // Curated links to existing articles and topic pages; keep labels tied to each destination's scope.
 const KINDERGARTEN_GUIDES: GuideGroup[] = [
-  {
-    title: "先看怎樣選",
-    links: [
-      { label: "幼稚園比較與升小銜接", href: "/blog/topics/kindergarten-selection" },
-      { label: "英語教學與語言環境怎樣看", href: "/blog/kg-english-guide" },
-      { label: "N 班需要讀嗎？", href: "/blog/n-class-guide" },
-    ],
-  },
-  {
-    title: "準備申請",
-    links: [
-      { label: "K1 報名、註冊與候補流程", href: "/blog/hk-kg-k1-application-roadmap-2027-28", year: "2027/28" },
-      { label: "面試前，孩子與家長怎樣準備", href: "/blog/hk-kg-interview-prep-guide-2027-28" },
-      { label: "K1 申請與面試專題", href: "/blog/topics/kindergarten-admission" },
-    ],
-  },
-  {
-    title: "費用與升小準備",
-    links: [
-      { label: "學費減免與就學開支津貼", href: "/blog/kg-subsidy-guide", year: "2026/27" },
-      { label: "幼稚園學費與資助預算專題", href: "/blog/topics/kindergarten-fees-support" },
-      { label: "先了解小一派位與入學路線", href: "/blog/topics/primary-admission" },
-    ],
-  },
+  { title: "先看怎样选", links: [
+    { label: "私立、非牟利与国际怎样分", href: "/blog/kg-school-types-guide" },
+    { label: "半日、全日与照顾安排", href: "/blog/kg-school-hours-care-guide" },
+    { label: "N班要读吗", href: "/blog/n-class-guide" },
+  ] },
+  { title: "申请与后备", links: [
+    { label: "K1报名、注册与候补", href: "/blog/hk-kg-k1-application-roadmap-2027-28", year: "2027/28" },
+    { label: "K1面试与家庭准备", href: "/blog/hk-kg-interview-prep-guide-2027-28" },
+    { label: "没有offer、转校与停办后备", href: "/blog/kg-waitlist-transfer-guide" },
+  ] },
+  { title: "语言、费用与升小", links: [
+    { label: "粤语、普通话与英语怎样看", href: "/blog/kg-english-guide" },
+    { label: "实际花费、资助与家庭预算", href: "/blog/kg-subsidy-guide" },
+    { label: "升小成绩与考小成果怎样读", href: "/blog/kg-primary-outcomes-guide" },
+  ] },
 ];
-
 const PRIMARY_GUIDES: GuideGroup[] = [
-  {
-    title: "先看怎樣選",
-    links: [
-      { label: "校網與地區選校專題", href: "/blog/topics/primary-school-net" },
-      { label: "官津、直資與私立怎樣分", href: "/blog/school-types-guide" },
-      { label: "小學專題與學校比較", href: "/blog/topics/primary-school-profiles" },
-    ],
-  },
-  {
-    title: "準備小一申請",
-    links: [
-      { label: "小一申請與派位流程", href: "/blog/hk-p1-admission-guide-2027", year: "2027/28" },
-      { label: "自行分配學位怎樣計分", href: "/blog/p1-scoring-guide" },
-      { label: "叩門、求位信與後備準備", href: "/blog/knocking-letter-guide" },
-    ],
-  },
-  {
-    title: "校網與升中銜接",
-    links: [
-      { label: "41 校網與 12 校網怎樣比較", href: "/blog/school-net-41-vs-12" },
-      { label: "小學概覽的資料怎樣讀", href: "/blog/psp-2026-guide" },
-      { label: "一條龍、直屬與聯繫的分別", href: "/blog/through-train-guide" },
-    ],
-  },
+  { title: "先看怎样选", links: [
+    { label: "官津、直资与私立取舍", href: "/blog/school-types-guide" },
+    { label: "校网、地址与当届学额", href: "/blog/hk-school-net-diy-analysis" },
+    { label: "语言、功课与测考节奏", href: "/blog/primary-school-learning-guide" },
+  ] },
+  { title: "准备小一申请", links: [
+    { label: "小一申请与派位流程", href: "/blog/hk-p1-admission-guide-2027", year: "2027/28" },
+    { label: "自行分配怎样计分", href: "/blog/p1-scoring-guide" },
+    { label: "多个offer、注册与派位资格", href: "/blog/p1-offer-registration-guide" },
+  ] },
+  { title: "面试、后备与升中", links: [
+    { label: "直资、私立小一面试准备", href: "/blog/primary-interview-guide" },
+    { label: "叩门、求位信与候补", href: "/blog/knocking-letter-guide" },
+    { label: "一条龙、直属与联系", href: "/blog/through-train-guide" },
+  ] },
 ];
-
 const SECONDARY_GUIDES: GuideGroup[] = [
-  {
-    title: "先看怎樣選",
-    links: [
-      { label: "中學選校入口與資料", href: "/schools/secondary" },
-      { label: "一條龍、直屬與聯繫的分別", href: "/blog/through-train-guide" },
-    ],
-  },
-  {
-    title: "升中資料與準備",
-    links: [
-      { label: "中一派位與升學官方資料入口", href: "/planning?stage=secondary#planning-evidence-title" },
-      { label: "按地區、課程與學費找候選學校", href: "/planning?stage=secondary#planning-secondary-samples-title" },
-    ],
-  },
-  {
-    title: "比較課程路線",
-    links: [
-      { label: "DSE、IB 與 A-Level 比較", href: "/planning?stage=secondary#planning-route-matrix-title" },
-      { label: "各校課程與申請核對清單", href: "/planning?stage=secondary#planning-school-route-title" },
-    ],
-  },
+  { title: "先看怎样选", links: [
+    { label: "孩子组别与学校Banding", href: "/blog/secondary-banding-guide" },
+    { label: "英中、中中与逐科教学语言", href: "/blog/secondary-language-guide" },
+    { label: "DSE成绩与升学比例怎样读", href: "/blog/secondary-results-guide" },
+  ] },
+  { title: "准备升中申请", links: [
+    { label: "升中申请全流程", href: "/blog/secondary-admission-guide", year: "2027/28" },
+    { label: "中一自行两校与面试", href: "/blog/secondary-discretionary-guide" },
+    { label: "直资offer与官津派位取舍", href: "/blog/secondary-dss-offer-guide" },
+  ] },
+  { title: "课程、成本与派位", links: [
+    { label: "DSE、IB与A-Level取舍", href: "/blog/secondary-curriculum-pathways-guide" },
+    { label: "六年费用、奖学金与减免", href: "/blog/secondary-school-cost-guide" },
+    { label: "统一派位甲乙部与志愿", href: "/blog/secondary-central-allocation-guide" },
+  ] },
 ];
 
 const GUIDES: Record<SchoolStage, { label: string; summary: string; description: string; groups: GuideGroup[] }> = {
@@ -92,11 +67,12 @@ const GUIDES: Record<SchoolStage, { label: string; summary: string; description:
 
 function GuideLinks({ locale, stage }: { locale: Locale; stage: SchoolStage }) {
   const config = GUIDES[stage];
+  const ready = new Set(coreGuidesForStage(stage).map((guide) => `/blog/${guide.slug}`));
   return <>
     <nav aria-label={L(`${config.label}擇校攻略`, locale)}>
       {config.groups.map((group, index) => <section className={styles.group} key={group.title}>
         <h3><span className={styles.groupNumber} aria-hidden="true">0{index + 1}</span>{L(group.title, locale)}</h3>
-        <ul>{group.links.map((link) => <li key={link.href}>
+        <ul>{group.links.filter((link) => ready.has(link.href)).map((link) => <li key={link.href}>
           <a href={localeHref(link.href, locale)}>
             <span>{L(link.label, locale)}{link.year && <small>{link.year} {L("學年", locale)}</small>}</span>
             <span className={styles.arrow} aria-hidden="true">↗</span>
@@ -104,6 +80,9 @@ function GuideLinks({ locale, stage }: { locale: Locale; stage: SchoolStage }) {
         </li>)}</ul>
       </section>)}
     </nav>
+    <a className={styles.reportLink} href={localeHref(`/schools/${stage}#guides`, locale)}>
+      {L(`查看全部${coreGuidesForStage(stage).length}篇核心指南`, locale)} <span aria-hidden="true">→</span>
+    </a>
     <a className={styles.reportLink} href={localeHref(`/schools/${stage}/directory?report=1`, locale)}>
       {L(`查看有深度報告的${config.label}`, locale)} <span aria-hidden="true">→</span>
     </a>

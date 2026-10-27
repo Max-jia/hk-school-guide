@@ -1,0 +1,984 @@
+[
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/n-class-guide",
+    "client": 373,
+    "h1": [
+      "N班要读吗：照顾需要、孩子适应与实际支出"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/cn/schools/kindergarten/directory",
+      "/cn/blog/kg-subsidy-guide",
+      "/cn/blog/lh-kg",
+      "/cn/blog/wellcome-kg"
+    ],
+    "scroll": 373,
+    "sourceDate": "幼稚园 · 学费资助\n\nN班要读吗：照顾需要、孩子适应与实际支出\n编辑：港学荟\n发布 2026年8月22日\n更新 2026年10月27日\n资料核对 2026年10月27日",
+    "tableCount": 5,
+    "tables": [
+      {
+        "client": 340,
+        "label": "N班报名前的班级核对表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "不同家庭是否报读N班的选择表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "N班与幼儿中心资助区别",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "N班家庭全年预算工作表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "2027/28学年PN招生年龄安排实例",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/n-class-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/p1-scoring-guide",
+    "client": 373,
+    "h1": [
+      "小一自行分配怎么计分：哪些分可以加、哪些不能"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/blog/hk-school-net-diy-analysis",
+      "/cn/schools/primary/directory",
+      "/cn/reports",
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/blog/school-types-guide",
+      "/cn/blog/knocking-letter-guide"
+    ],
+    "scroll": 373,
+    "sourceDate": "小学 · 入学申请\n\n小一自行分配怎么计分：哪些分可以加、哪些不能\n编辑：港学荟\n发布 2026年8月17日\n更新 2026年10月27日\n资料核对 2026年10月27日",
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 340,
+        "label": "自行分配必收与计分类别",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "2027年度小一自行分配计分表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "小一计分假设例子",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/p1-scoring-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/through-train-guide",
+    "client": 373,
+    "h1": [
+      "一条龙、直属与联系：升中保障到底到哪一步"
+    ],
+    "h2Count": 11,
+    "internalLinks": [
+      "/cn/schools/primary/directory",
+      "/cn/schools/secondary/directory",
+      "/cn/reports",
+      "/cn/blog/secondary-dss-offer-guide"
+    ],
+    "scroll": 373,
+    "sourceDate": "小学 · 选校比较\n\n一条龙、直属与联系：升中保障到底到哪一步\n编辑：港学荟\n发布 2026年7月13日\n更新 2026年10月27日\n资料核对 2026年10月27日",
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 340,
+        "label": "一条龙直属及联系制度比较",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "升中保留学位分母假设例子",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "升中关系的家庭取舍",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/through-train-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/hk-school-net-diy-analysis",
+    "client": 373,
+    "h1": [
+      "小学校网怎么查：核对地址、名单与当届学额"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/schools/primary/directory",
+      "/cn/blog/p1-scoring-guide",
+      "/cn/blog/through-train-guide",
+      "/cn/blog/school-net-41-vs-12",
+      "/cn/blog/net40-ranking"
+    ],
+    "scroll": 373,
+    "sourceDate": "小学 · 实用指南\n\n小学校网怎么查：核对地址、名单与当届学额\n编辑：港学荟\n发布 2026年9月7日\n更新 2026年10月27日\n资料核对 2026年10月27日",
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 340,
+        "label": "小一校网与不同阶段的关系",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "学校资料文件的用途",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "可复制的小学校网候选表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/hk-school-net-diy-analysis",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/secondary-dss-offer-guide",
+    "client": 373,
+    "h1": [
+      "直资中学offer与官津派位：签字前怎样取舍"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/cn/reports/dgs-secondary",
+      "/cn/reports/stewards-pooi-kei-secondary",
+      "/cn/blog/through-train-guide",
+      "/cn/schools/secondary/directory",
+      "/cn/schools/secondary/directory?report=1"
+    ],
+    "scroll": 373,
+    "sourceDate": "中学 · 入学申请\n\n直资中学offer与官津派位：签字前怎样取舍\n编辑：港学荟\n发布 2026年10月27日\n资料核对 2026年10月27日",
+    "tableCount": 4,
+    "tables": [
+      {
+        "client": 340,
+        "label": "三类学校与中一派位的关系",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "2027年度升中直资与派位时间表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "直资与官津的家庭选择矩阵",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "三所非参加派位直资学校的2027/28公开安排",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/secondary-dss-offer-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/n-class-guide",
+    "client": 373,
+    "h1": [
+      "N班要讀嗎：照顧需要、孩子適應與實際支出"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/schools/kindergarten/directory",
+      "/blog/kg-subsidy-guide",
+      "/blog/lh-kg",
+      "/blog/wellcome-kg"
+    ],
+    "scroll": 373,
+    "sourceDate": "幼稚園 · 學費資助\n\nN班要讀嗎：照顧需要、孩子適應與實際支出\n編輯：港學薈\n發佈 2026年8月22日\n更新 2026年10月27日\n資料核對 2026年10月27日",
+    "tableCount": 5,
+    "tables": [
+      {
+        "client": 340,
+        "label": "N班報名前的班級核對表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "不同家庭是否報讀N班的選擇表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "N班與幼兒中心資助區別",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "N班家庭全年預算工作表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "2027/28學年PN招生年齡安排實例",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/n-class-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/p1-scoring-guide",
+    "client": 373,
+    "h1": [
+      "小一自行分配怎麼計分：哪些分可以加、哪些不能"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/blog/hk-p1-admission-guide-2027",
+      "/blog/hk-school-net-diy-analysis",
+      "/schools/primary/directory",
+      "/reports",
+      "/blog/hk-p1-admission-guide-2027",
+      "/blog/school-types-guide",
+      "/blog/knocking-letter-guide"
+    ],
+    "scroll": 373,
+    "sourceDate": "小學 · 入學申請\n\n小一自行分配怎麼計分：哪些分可以加、哪些不能\n編輯：港學薈\n發佈 2026年8月17日\n更新 2026年10月27日\n資料核對 2026年10月27日",
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 340,
+        "label": "自行分配必收與計分類別",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "2027年度小一自行分配計分表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "小一計分假設例子",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/p1-scoring-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/through-train-guide",
+    "client": 373,
+    "h1": [
+      "一條龍、直屬與聯繫：升中保障到底到哪一步"
+    ],
+    "h2Count": 11,
+    "internalLinks": [
+      "/schools/primary/directory",
+      "/schools/secondary/directory",
+      "/reports",
+      "/blog/secondary-dss-offer-guide"
+    ],
+    "scroll": 373,
+    "sourceDate": "小學 · 選校比較\n\n一條龍、直屬與聯繫：升中保障到底到哪一步\n編輯：港學薈\n發佈 2026年7月13日\n更新 2026年10月27日\n資料核對 2026年10月27日",
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 340,
+        "label": "一條龍直屬及聯繫制度比較",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "升中保留學位分母假設例子",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "升中關係的家庭取捨",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/through-train-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/hk-school-net-diy-analysis",
+    "client": 373,
+    "h1": [
+      "小學校網怎麼查：核對地址、名單與當屆學額"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/blog/hk-p1-admission-guide-2027",
+      "/schools/primary/directory",
+      "/blog/p1-scoring-guide",
+      "/blog/through-train-guide",
+      "/blog/school-net-41-vs-12",
+      "/blog/net40-ranking"
+    ],
+    "scroll": 373,
+    "sourceDate": "小學 · 實用指南\n\n小學校網怎麼查：核對地址、名單與當屆學額\n編輯：港學薈\n發佈 2026年9月7日\n更新 2026年10月27日\n資料核對 2026年10月27日",
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 340,
+        "label": "小一校網與不同階段的關係",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "學校資料文件的用途",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "可複製的小學校網候選表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/hk-school-net-diy-analysis",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/secondary-dss-offer-guide",
+    "client": 373,
+    "h1": [
+      "直資中學offer與官津派位：簽字前怎樣取捨"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/reports/dgs-secondary",
+      "/reports/stewards-pooi-kei-secondary",
+      "/blog/through-train-guide",
+      "/schools/secondary/directory",
+      "/schools/secondary/directory?report=1"
+    ],
+    "scroll": 373,
+    "sourceDate": "中學 · 入學申請\n\n直資中學offer與官津派位：簽字前怎樣取捨\n編輯：港學薈\n發佈 2026年10月27日\n資料核對 2026年10月27日",
+    "tableCount": 4,
+    "tables": [
+      {
+        "client": 340,
+        "label": "三類學校與中一派位的關係",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "2027年度升中直資與派位時間表",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "直資與官津的家庭選擇矩陣",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      },
+      {
+        "client": 340,
+        "label": "三所非參加派位直資學校的2027/28公開安排",
+        "scroll": 660,
+        "tabindex": "0",
+        "tableWidth": 660
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/secondary-dss-offer-guide",
+    "width": 390,
+    "breakpoint": "mobile"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/n-class-guide",
+    "client": 1423,
+    "h1": [
+      "N班要读吗：照顾需要、孩子适应与实际支出"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/cn/schools/kindergarten/directory",
+      "/cn/blog/kg-subsidy-guide",
+      "/cn/blog/lh-kg",
+      "/cn/blog/wellcome-kg"
+    ],
+    "scroll": 1423,
+    "tableCount": 5,
+    "tables": [
+      {
+        "client": 847,
+        "label": "N班报名前的班级核对表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "不同家庭是否报读N班的选择表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "N班与幼儿中心资助区别",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "N班家庭全年预算工作表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "2027/28学年PN招生年龄安排实例",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/n-class-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/p1-scoring-guide",
+    "client": 1423,
+    "h1": [
+      "小一自行分配怎么计分：哪些分可以加、哪些不能"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/blog/hk-school-net-diy-analysis",
+      "/cn/schools/primary/directory",
+      "/cn/reports",
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/blog/school-types-guide",
+      "/cn/blog/knocking-letter-guide"
+    ],
+    "scroll": 1423,
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 847,
+        "label": "自行分配必收与计分类别",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "2027年度小一自行分配计分表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "小一计分假设例子",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/p1-scoring-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/through-train-guide",
+    "client": 1423,
+    "h1": [
+      "一条龙、直属与联系：升中保障到底到哪一步"
+    ],
+    "h2Count": 11,
+    "internalLinks": [
+      "/cn/schools/primary/directory",
+      "/cn/schools/secondary/directory",
+      "/cn/reports",
+      "/cn/blog/secondary-dss-offer-guide"
+    ],
+    "scroll": 1423,
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 847,
+        "label": "一条龙直属及联系制度比较",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "升中保留学位分母假设例子",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "升中关系的家庭取舍",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/through-train-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/hk-school-net-diy-analysis",
+    "client": 1423,
+    "h1": [
+      "小学校网怎么查：核对地址、名单与当届学额"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/schools/primary/directory",
+      "/cn/blog/p1-scoring-guide",
+      "/cn/blog/through-train-guide",
+      "/cn/blog/school-net-41-vs-12",
+      "/cn/blog/net40-ranking"
+    ],
+    "scroll": 1423,
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 847,
+        "label": "小一校网与不同阶段的关系",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "学校资料文件的用途",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "可复制的小学校网候选表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/hk-school-net-diy-analysis",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/cn/blog/secondary-dss-offer-guide",
+    "client": 1423,
+    "h1": [
+      "直资中学offer与官津派位：签字前怎样取舍"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/cn/reports/dgs-secondary",
+      "/cn/reports/stewards-pooi-kei-secondary",
+      "/cn/blog/through-train-guide",
+      "/cn/schools/secondary/directory",
+      "/cn/schools/secondary/directory?report=1"
+    ],
+    "scroll": 1423,
+    "tableCount": 4,
+    "tables": [
+      {
+        "client": 847,
+        "label": "三类学校与中一派位的关系",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "2027年度升中直资与派位时间表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "直资与官津的家庭选择矩阵",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "三所非参加派位直资学校的2027/28公开安排",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/cn/blog/secondary-dss-offer-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/n-class-guide",
+    "client": 1423,
+    "h1": [
+      "N班要讀嗎：照顧需要、孩子適應與實際支出"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/schools/kindergarten/directory",
+      "/blog/kg-subsidy-guide",
+      "/blog/lh-kg",
+      "/blog/wellcome-kg"
+    ],
+    "scroll": 1423,
+    "tableCount": 5,
+    "tables": [
+      {
+        "client": 847,
+        "label": "N班報名前的班級核對表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "不同家庭是否報讀N班的選擇表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "N班與幼兒中心資助區別",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "N班家庭全年預算工作表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "2027/28學年PN招生年齡安排實例",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/n-class-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/p1-scoring-guide",
+    "client": 1423,
+    "h1": [
+      "小一自行分配怎麼計分：哪些分可以加、哪些不能"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/blog/hk-p1-admission-guide-2027",
+      "/blog/hk-school-net-diy-analysis",
+      "/schools/primary/directory",
+      "/reports",
+      "/blog/hk-p1-admission-guide-2027",
+      "/blog/school-types-guide",
+      "/blog/knocking-letter-guide"
+    ],
+    "scroll": 1423,
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 847,
+        "label": "自行分配必收與計分類別",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "2027年度小一自行分配計分表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "小一計分假設例子",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/p1-scoring-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/through-train-guide",
+    "client": 1423,
+    "h1": [
+      "一條龍、直屬與聯繫：升中保障到底到哪一步"
+    ],
+    "h2Count": 11,
+    "internalLinks": [
+      "/schools/primary/directory",
+      "/schools/secondary/directory",
+      "/reports",
+      "/blog/secondary-dss-offer-guide"
+    ],
+    "scroll": 1423,
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 847,
+        "label": "一條龍直屬及聯繫制度比較",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "升中保留學位分母假設例子",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "升中關係的家庭取捨",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/through-train-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/hk-school-net-diy-analysis",
+    "client": 1423,
+    "h1": [
+      "小學校網怎麼查：核對地址、名單與當屆學額"
+    ],
+    "h2Count": 10,
+    "internalLinks": [
+      "/blog/hk-p1-admission-guide-2027",
+      "/schools/primary/directory",
+      "/blog/p1-scoring-guide",
+      "/blog/through-train-guide",
+      "/blog/school-net-41-vs-12",
+      "/blog/net40-ranking"
+    ],
+    "scroll": 1423,
+    "tableCount": 3,
+    "tables": [
+      {
+        "client": 847,
+        "label": "小一校網與不同階段的關係",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "學校資料文件的用途",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "可複製的小學校網候選表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/hk-school-net-diy-analysis",
+    "width": 1440,
+    "breakpoint": "desktop"
+  },
+  {
+    "brokenAnchors": [],
+    "canonical": "https://hkschool.guide/blog/secondary-dss-offer-guide",
+    "client": 1423,
+    "h1": [
+      "直資中學offer與官津派位：簽字前怎樣取捨"
+    ],
+    "h2Count": 9,
+    "internalLinks": [
+      "/reports/dgs-secondary",
+      "/reports/stewards-pooi-kei-secondary",
+      "/blog/through-train-guide",
+      "/schools/secondary/directory",
+      "/schools/secondary/directory?report=1"
+    ],
+    "scroll": 1423,
+    "tableCount": 4,
+    "tables": [
+      {
+        "client": 847,
+        "label": "三類學校與中一派位的關係",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "2027年度升中直資與派位時間表",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "直資與官津的家庭選擇矩陣",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      },
+      {
+        "client": 847,
+        "label": "三所非參加派位直資學校的2027/28公開安排",
+        "scroll": 847,
+        "tabindex": "0",
+        "tableWidth": 847
+      }
+    ],
+    "url": "http://127.0.0.1:3337/blog/secondary-dss-offer-guide",
+    "width": 1440,
+    "breakpoint": "desktop"
+  }
+]

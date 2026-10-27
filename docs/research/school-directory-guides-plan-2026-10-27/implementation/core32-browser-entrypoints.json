@@ -1,0 +1,886 @@
+[
+  {
+    "mode": "desktop",
+    "stage": "kindergarten",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "幼稚园选校指南"
+    ],
+    "hubLinks": [
+      "/cn/blog/kg-school-types-guide",
+      "/cn/blog/kg-school-hours-care-guide",
+      "/cn/blog/n-class-guide",
+      "/cn/blog/kg-english-guide",
+      "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+      "/cn/blog/kg-waitlist-transfer-guide",
+      "/cn/blog/kg-open-day-guide-2026",
+      "/cn/blog/kg-subsidy-guide",
+      "/cn/blog/kg-primary-outcomes-guide"
+    ],
+    "overflow": false,
+    "url": "/cn/schools/kindergarten",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "kindergarten",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "none",
+        "label": "幼稚园择校指南",
+        "links": [
+          "/cn/blog/kg-school-types-guide",
+          "/cn/blog/kg-school-hours-care-guide",
+          "/cn/blog/n-class-guide",
+          "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+          "/cn/blog/kg-waitlist-transfer-guide",
+          "/cn/blog/kg-english-guide",
+          "/cn/blog/kg-subsidy-guide",
+          "/cn/blog/kg-primary-outcomes-guide",
+          "/cn/schools/kindergarten#guides",
+          "/cn/schools/kindergarten/directory?report=1"
+        ],
+        "open": false
+      },
+      {
+        "display": "block",
+        "label": "幼稚园择校指南",
+        "links": [
+          "/cn/blog/kg-school-types-guide",
+          "/cn/blog/kg-school-hours-care-guide",
+          "/cn/blog/n-class-guide",
+          "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+          "/cn/blog/kg-waitlist-transfer-guide",
+          "/cn/blog/kg-english-guide",
+          "/cn/blog/kg-subsidy-guide",
+          "/cn/blog/kg-primary-outcomes-guide",
+          "/cn/schools/kindergarten#guides",
+          "/cn/schools/kindergarten/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港幼稚园名录"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/cn/schools/kindergarten/directory",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "kindergarten",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "幼稚園選校指南"
+    ],
+    "hubLinks": [
+      "/blog/kg-school-types-guide",
+      "/blog/kg-school-hours-care-guide",
+      "/blog/n-class-guide",
+      "/blog/kg-english-guide",
+      "/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/blog/hk-kg-interview-prep-guide-2027-28",
+      "/blog/kg-waitlist-transfer-guide",
+      "/blog/kg-open-day-guide-2026",
+      "/blog/kg-subsidy-guide",
+      "/blog/kg-primary-outcomes-guide"
+    ],
+    "overflow": false,
+    "url": "/schools/kindergarten",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "kindergarten",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "none",
+        "label": "幼稚園擇校指南",
+        "links": [
+          "/blog/kg-school-types-guide",
+          "/blog/kg-school-hours-care-guide",
+          "/blog/n-class-guide",
+          "/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/blog/hk-kg-interview-prep-guide-2027-28",
+          "/blog/kg-waitlist-transfer-guide",
+          "/blog/kg-english-guide",
+          "/blog/kg-subsidy-guide",
+          "/blog/kg-primary-outcomes-guide",
+          "/schools/kindergarten#guides",
+          "/schools/kindergarten/directory?report=1"
+        ],
+        "open": false
+      },
+      {
+        "display": "block",
+        "label": "幼稚園擇校指南",
+        "links": [
+          "/blog/kg-school-types-guide",
+          "/blog/kg-school-hours-care-guide",
+          "/blog/n-class-guide",
+          "/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/blog/hk-kg-interview-prep-guide-2027-28",
+          "/blog/kg-waitlist-transfer-guide",
+          "/blog/kg-english-guide",
+          "/blog/kg-subsidy-guide",
+          "/blog/kg-primary-outcomes-guide",
+          "/schools/kindergarten#guides",
+          "/schools/kindergarten/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港幼稚園名錄"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/schools/kindergarten/directory",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "primary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "小学选校指南"
+    ],
+    "hubLinks": [
+      "/cn/blog/school-types-guide",
+      "/cn/blog/hk-school-net-diy-analysis",
+      "/cn/blog/primary-school-learning-guide",
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/blog/p1-scoring-guide",
+      "/cn/blog/p1-offer-registration-guide",
+      "/cn/blog/primary-interview-guide",
+      "/cn/blog/knocking-letter-guide",
+      "/cn/blog/primary-transfer-guide",
+      "/cn/blog/through-train-guide"
+    ],
+    "overflow": false,
+    "url": "/cn/schools/primary",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "primary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "none",
+        "label": "小学择校指南",
+        "links": [
+          "/cn/blog/school-types-guide",
+          "/cn/blog/hk-school-net-diy-analysis",
+          "/cn/blog/primary-school-learning-guide",
+          "/cn/blog/hk-p1-admission-guide-2027",
+          "/cn/blog/p1-scoring-guide",
+          "/cn/blog/p1-offer-registration-guide",
+          "/cn/blog/primary-interview-guide",
+          "/cn/blog/knocking-letter-guide",
+          "/cn/blog/through-train-guide",
+          "/cn/schools/primary#guides",
+          "/cn/schools/primary/directory?report=1"
+        ],
+        "open": false
+      },
+      {
+        "display": "block",
+        "label": "小学择校指南",
+        "links": [
+          "/cn/blog/school-types-guide",
+          "/cn/blog/hk-school-net-diy-analysis",
+          "/cn/blog/primary-school-learning-guide",
+          "/cn/blog/hk-p1-admission-guide-2027",
+          "/cn/blog/p1-scoring-guide",
+          "/cn/blog/p1-offer-registration-guide",
+          "/cn/blog/primary-interview-guide",
+          "/cn/blog/knocking-letter-guide",
+          "/cn/blog/through-train-guide",
+          "/cn/schools/primary#guides",
+          "/cn/schools/primary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港小学名录"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/cn/schools/primary/directory",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "primary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "小學選校指南"
+    ],
+    "hubLinks": [
+      "/blog/school-types-guide",
+      "/blog/hk-school-net-diy-analysis",
+      "/blog/primary-school-learning-guide",
+      "/blog/hk-p1-admission-guide-2027",
+      "/blog/p1-scoring-guide",
+      "/blog/p1-offer-registration-guide",
+      "/blog/primary-interview-guide",
+      "/blog/knocking-letter-guide",
+      "/blog/primary-transfer-guide",
+      "/blog/through-train-guide"
+    ],
+    "overflow": false,
+    "url": "/schools/primary",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "primary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "none",
+        "label": "小學擇校指南",
+        "links": [
+          "/blog/school-types-guide",
+          "/blog/hk-school-net-diy-analysis",
+          "/blog/primary-school-learning-guide",
+          "/blog/hk-p1-admission-guide-2027",
+          "/blog/p1-scoring-guide",
+          "/blog/p1-offer-registration-guide",
+          "/blog/primary-interview-guide",
+          "/blog/knocking-letter-guide",
+          "/blog/through-train-guide",
+          "/schools/primary#guides",
+          "/schools/primary/directory?report=1"
+        ],
+        "open": false
+      },
+      {
+        "display": "block",
+        "label": "小學擇校指南",
+        "links": [
+          "/blog/school-types-guide",
+          "/blog/hk-school-net-diy-analysis",
+          "/blog/primary-school-learning-guide",
+          "/blog/hk-p1-admission-guide-2027",
+          "/blog/p1-scoring-guide",
+          "/blog/p1-offer-registration-guide",
+          "/blog/primary-interview-guide",
+          "/blog/knocking-letter-guide",
+          "/blog/through-train-guide",
+          "/schools/primary#guides",
+          "/schools/primary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港小學名錄"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/schools/primary/directory",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "secondary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "中学选校指南"
+    ],
+    "hubLinks": [
+      "/cn/blog/secondary-admission-guide",
+      "/cn/blog/secondary-dss-offer-guide",
+      "/cn/blog/secondary-discretionary-guide",
+      "/cn/blog/secondary-central-allocation-guide",
+      "/cn/blog/secondary-transfer-guide",
+      "/cn/blog/secondary-banding-guide",
+      "/cn/blog/secondary-language-guide",
+      "/cn/blog/secondary-school-cost-guide",
+      "/cn/blog/secondary-new-arrival-guide",
+      "/cn/blog/secondary-results-guide",
+      "/cn/blog/secondary-curriculum-pathways-guide",
+      "/cn/blog/secondary-subject-choice-guide"
+    ],
+    "overflow": false,
+    "url": "/cn/schools/secondary",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "secondary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "none",
+        "label": "中学择校指南",
+        "links": [
+          "/cn/blog/secondary-banding-guide",
+          "/cn/blog/secondary-language-guide",
+          "/cn/blog/secondary-results-guide",
+          "/cn/blog/secondary-admission-guide",
+          "/cn/blog/secondary-discretionary-guide",
+          "/cn/blog/secondary-dss-offer-guide",
+          "/cn/blog/secondary-curriculum-pathways-guide",
+          "/cn/blog/secondary-school-cost-guide",
+          "/cn/blog/secondary-central-allocation-guide",
+          "/cn/schools/secondary#guides",
+          "/cn/schools/secondary/directory?report=1"
+        ],
+        "open": false
+      },
+      {
+        "display": "block",
+        "label": "中学择校指南",
+        "links": [
+          "/cn/blog/secondary-banding-guide",
+          "/cn/blog/secondary-language-guide",
+          "/cn/blog/secondary-results-guide",
+          "/cn/blog/secondary-admission-guide",
+          "/cn/blog/secondary-discretionary-guide",
+          "/cn/blog/secondary-dss-offer-guide",
+          "/cn/blog/secondary-curriculum-pathways-guide",
+          "/cn/blog/secondary-school-cost-guide",
+          "/cn/blog/secondary-central-allocation-guide",
+          "/cn/schools/secondary#guides",
+          "/cn/schools/secondary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港中学名录"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/cn/schools/secondary/directory",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "secondary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "中學選校指南"
+    ],
+    "hubLinks": [
+      "/blog/secondary-admission-guide",
+      "/blog/secondary-dss-offer-guide",
+      "/blog/secondary-discretionary-guide",
+      "/blog/secondary-central-allocation-guide",
+      "/blog/secondary-transfer-guide",
+      "/blog/secondary-banding-guide",
+      "/blog/secondary-language-guide",
+      "/blog/secondary-school-cost-guide",
+      "/blog/secondary-new-arrival-guide",
+      "/blog/secondary-results-guide",
+      "/blog/secondary-curriculum-pathways-guide",
+      "/blog/secondary-subject-choice-guide"
+    ],
+    "overflow": false,
+    "url": "/schools/secondary",
+    "width": 1440
+  },
+  {
+    "mode": "desktop",
+    "stage": "secondary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "none",
+        "label": "中學擇校指南",
+        "links": [
+          "/blog/secondary-banding-guide",
+          "/blog/secondary-language-guide",
+          "/blog/secondary-results-guide",
+          "/blog/secondary-admission-guide",
+          "/blog/secondary-discretionary-guide",
+          "/blog/secondary-dss-offer-guide",
+          "/blog/secondary-curriculum-pathways-guide",
+          "/blog/secondary-school-cost-guide",
+          "/blog/secondary-central-allocation-guide",
+          "/schools/secondary#guides",
+          "/schools/secondary/directory?report=1"
+        ],
+        "open": false
+      },
+      {
+        "display": "block",
+        "label": "中學擇校指南",
+        "links": [
+          "/blog/secondary-banding-guide",
+          "/blog/secondary-language-guide",
+          "/blog/secondary-results-guide",
+          "/blog/secondary-admission-guide",
+          "/blog/secondary-discretionary-guide",
+          "/blog/secondary-dss-offer-guide",
+          "/blog/secondary-curriculum-pathways-guide",
+          "/blog/secondary-school-cost-guide",
+          "/blog/secondary-central-allocation-guide",
+          "/schools/secondary#guides",
+          "/schools/secondary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港中學名錄"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/schools/secondary/directory",
+    "width": 1440
+  },
+  {
+    "mode": "mobile",
+    "stage": "kindergarten",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "幼稚园选校指南"
+    ],
+    "hubLinks": [
+      "/cn/blog/kg-school-types-guide",
+      "/cn/blog/kg-school-hours-care-guide",
+      "/cn/blog/n-class-guide",
+      "/cn/blog/kg-english-guide",
+      "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+      "/cn/blog/kg-waitlist-transfer-guide",
+      "/cn/blog/kg-open-day-guide-2026",
+      "/cn/blog/kg-subsidy-guide",
+      "/cn/blog/kg-primary-outcomes-guide"
+    ],
+    "overflow": false,
+    "url": "/cn/schools/kindergarten",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "kindergarten",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "block",
+        "label": "幼稚园择校指南",
+        "links": [
+          "/cn/blog/kg-school-types-guide",
+          "/cn/blog/kg-school-hours-care-guide",
+          "/cn/blog/n-class-guide",
+          "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+          "/cn/blog/kg-waitlist-transfer-guide",
+          "/cn/blog/kg-english-guide",
+          "/cn/blog/kg-subsidy-guide",
+          "/cn/blog/kg-primary-outcomes-guide",
+          "/cn/schools/kindergarten#guides",
+          "/cn/schools/kindergarten/directory?report=1"
+        ],
+        "open": true
+      },
+      {
+        "display": "none",
+        "label": "幼稚园择校指南",
+        "links": [
+          "/cn/blog/kg-school-types-guide",
+          "/cn/blog/kg-school-hours-care-guide",
+          "/cn/blog/n-class-guide",
+          "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+          "/cn/blog/kg-waitlist-transfer-guide",
+          "/cn/blog/kg-english-guide",
+          "/cn/blog/kg-subsidy-guide",
+          "/cn/blog/kg-primary-outcomes-guide",
+          "/cn/schools/kindergarten#guides",
+          "/cn/schools/kindergarten/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港幼稚园名录"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/cn/schools/kindergarten/directory",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "kindergarten",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "幼稚園選校指南"
+    ],
+    "hubLinks": [
+      "/blog/kg-school-types-guide",
+      "/blog/kg-school-hours-care-guide",
+      "/blog/n-class-guide",
+      "/blog/kg-english-guide",
+      "/blog/hk-kg-k1-application-roadmap-2027-28",
+      "/blog/hk-kg-interview-prep-guide-2027-28",
+      "/blog/kg-waitlist-transfer-guide",
+      "/blog/kg-open-day-guide-2026",
+      "/blog/kg-subsidy-guide",
+      "/blog/kg-primary-outcomes-guide"
+    ],
+    "overflow": false,
+    "url": "/schools/kindergarten",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "kindergarten",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "block",
+        "label": "幼稚園擇校指南",
+        "links": [
+          "/blog/kg-school-types-guide",
+          "/blog/kg-school-hours-care-guide",
+          "/blog/n-class-guide",
+          "/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/blog/hk-kg-interview-prep-guide-2027-28",
+          "/blog/kg-waitlist-transfer-guide",
+          "/blog/kg-english-guide",
+          "/blog/kg-subsidy-guide",
+          "/blog/kg-primary-outcomes-guide",
+          "/schools/kindergarten#guides",
+          "/schools/kindergarten/directory?report=1"
+        ],
+        "open": true
+      },
+      {
+        "display": "none",
+        "label": "幼稚園擇校指南",
+        "links": [
+          "/blog/kg-school-types-guide",
+          "/blog/kg-school-hours-care-guide",
+          "/blog/n-class-guide",
+          "/blog/hk-kg-k1-application-roadmap-2027-28",
+          "/blog/hk-kg-interview-prep-guide-2027-28",
+          "/blog/kg-waitlist-transfer-guide",
+          "/blog/kg-english-guide",
+          "/blog/kg-subsidy-guide",
+          "/blog/kg-primary-outcomes-guide",
+          "/schools/kindergarten#guides",
+          "/schools/kindergarten/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港幼稚園名錄"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/schools/kindergarten/directory",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "primary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "小学选校指南"
+    ],
+    "hubLinks": [
+      "/cn/blog/school-types-guide",
+      "/cn/blog/hk-school-net-diy-analysis",
+      "/cn/blog/primary-school-learning-guide",
+      "/cn/blog/hk-p1-admission-guide-2027",
+      "/cn/blog/p1-scoring-guide",
+      "/cn/blog/p1-offer-registration-guide",
+      "/cn/blog/primary-interview-guide",
+      "/cn/blog/knocking-letter-guide",
+      "/cn/blog/primary-transfer-guide",
+      "/cn/blog/through-train-guide"
+    ],
+    "overflow": false,
+    "url": "/cn/schools/primary",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "primary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "block",
+        "label": "小学择校指南",
+        "links": [
+          "/cn/blog/school-types-guide",
+          "/cn/blog/hk-school-net-diy-analysis",
+          "/cn/blog/primary-school-learning-guide",
+          "/cn/blog/hk-p1-admission-guide-2027",
+          "/cn/blog/p1-scoring-guide",
+          "/cn/blog/p1-offer-registration-guide",
+          "/cn/blog/primary-interview-guide",
+          "/cn/blog/knocking-letter-guide",
+          "/cn/blog/through-train-guide",
+          "/cn/schools/primary#guides",
+          "/cn/schools/primary/directory?report=1"
+        ],
+        "open": true
+      },
+      {
+        "display": "none",
+        "label": "小学择校指南",
+        "links": [
+          "/cn/blog/school-types-guide",
+          "/cn/blog/hk-school-net-diy-analysis",
+          "/cn/blog/primary-school-learning-guide",
+          "/cn/blog/hk-p1-admission-guide-2027",
+          "/cn/blog/p1-scoring-guide",
+          "/cn/blog/p1-offer-registration-guide",
+          "/cn/blog/primary-interview-guide",
+          "/cn/blog/knocking-letter-guide",
+          "/cn/blog/through-train-guide",
+          "/cn/schools/primary#guides",
+          "/cn/schools/primary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港小学名录"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/cn/schools/primary/directory",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "primary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "小學選校指南"
+    ],
+    "hubLinks": [
+      "/blog/school-types-guide",
+      "/blog/hk-school-net-diy-analysis",
+      "/blog/primary-school-learning-guide",
+      "/blog/hk-p1-admission-guide-2027",
+      "/blog/p1-scoring-guide",
+      "/blog/p1-offer-registration-guide",
+      "/blog/primary-interview-guide",
+      "/blog/knocking-letter-guide",
+      "/blog/primary-transfer-guide",
+      "/blog/through-train-guide"
+    ],
+    "overflow": false,
+    "url": "/schools/primary",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "primary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "block",
+        "label": "小學擇校指南",
+        "links": [
+          "/blog/school-types-guide",
+          "/blog/hk-school-net-diy-analysis",
+          "/blog/primary-school-learning-guide",
+          "/blog/hk-p1-admission-guide-2027",
+          "/blog/p1-scoring-guide",
+          "/blog/p1-offer-registration-guide",
+          "/blog/primary-interview-guide",
+          "/blog/knocking-letter-guide",
+          "/blog/through-train-guide",
+          "/schools/primary#guides",
+          "/schools/primary/directory?report=1"
+        ],
+        "open": true
+      },
+      {
+        "display": "none",
+        "label": "小學擇校指南",
+        "links": [
+          "/blog/school-types-guide",
+          "/blog/hk-school-net-diy-analysis",
+          "/blog/primary-school-learning-guide",
+          "/blog/hk-p1-admission-guide-2027",
+          "/blog/p1-scoring-guide",
+          "/blog/p1-offer-registration-guide",
+          "/blog/primary-interview-guide",
+          "/blog/knocking-letter-guide",
+          "/blog/through-train-guide",
+          "/schools/primary#guides",
+          "/schools/primary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港小學名錄"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/schools/primary/directory",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "secondary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "中学选校指南"
+    ],
+    "hubLinks": [
+      "/cn/blog/secondary-admission-guide",
+      "/cn/blog/secondary-dss-offer-guide",
+      "/cn/blog/secondary-discretionary-guide",
+      "/cn/blog/secondary-central-allocation-guide",
+      "/cn/blog/secondary-transfer-guide",
+      "/cn/blog/secondary-banding-guide",
+      "/cn/blog/secondary-language-guide",
+      "/cn/blog/secondary-school-cost-guide",
+      "/cn/blog/secondary-new-arrival-guide",
+      "/cn/blog/secondary-results-guide",
+      "/cn/blog/secondary-curriculum-pathways-guide",
+      "/cn/blog/secondary-subject-choice-guide"
+    ],
+    "overflow": false,
+    "url": "/cn/schools/secondary",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "secondary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "block",
+        "label": "中学择校指南",
+        "links": [
+          "/cn/blog/secondary-banding-guide",
+          "/cn/blog/secondary-language-guide",
+          "/cn/blog/secondary-results-guide",
+          "/cn/blog/secondary-admission-guide",
+          "/cn/blog/secondary-discretionary-guide",
+          "/cn/blog/secondary-dss-offer-guide",
+          "/cn/blog/secondary-curriculum-pathways-guide",
+          "/cn/blog/secondary-school-cost-guide",
+          "/cn/blog/secondary-central-allocation-guide",
+          "/cn/schools/secondary#guides",
+          "/cn/schools/secondary/directory?report=1"
+        ],
+        "open": true
+      },
+      {
+        "display": "none",
+        "label": "中学择校指南",
+        "links": [
+          "/cn/blog/secondary-banding-guide",
+          "/cn/blog/secondary-language-guide",
+          "/cn/blog/secondary-results-guide",
+          "/cn/blog/secondary-admission-guide",
+          "/cn/blog/secondary-discretionary-guide",
+          "/cn/blog/secondary-dss-offer-guide",
+          "/cn/blog/secondary-curriculum-pathways-guide",
+          "/cn/blog/secondary-school-cost-guide",
+          "/cn/blog/secondary-central-allocation-guide",
+          "/cn/schools/secondary#guides",
+          "/cn/schools/secondary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港中学名录"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/cn/schools/secondary/directory",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "secondary",
+    "dir": false,
+    "guidePanels": [],
+    "h1": [
+      "中學選校指南"
+    ],
+    "hubLinks": [
+      "/blog/secondary-admission-guide",
+      "/blog/secondary-dss-offer-guide",
+      "/blog/secondary-discretionary-guide",
+      "/blog/secondary-central-allocation-guide",
+      "/blog/secondary-transfer-guide",
+      "/blog/secondary-banding-guide",
+      "/blog/secondary-language-guide",
+      "/blog/secondary-school-cost-guide",
+      "/blog/secondary-new-arrival-guide",
+      "/blog/secondary-results-guide",
+      "/blog/secondary-curriculum-pathways-guide",
+      "/blog/secondary-subject-choice-guide"
+    ],
+    "overflow": false,
+    "url": "/schools/secondary",
+    "width": 390
+  },
+  {
+    "mode": "mobile",
+    "stage": "secondary",
+    "dir": true,
+    "guidePanels": [
+      {
+        "display": "block",
+        "label": "中學擇校指南",
+        "links": [
+          "/blog/secondary-banding-guide",
+          "/blog/secondary-language-guide",
+          "/blog/secondary-results-guide",
+          "/blog/secondary-admission-guide",
+          "/blog/secondary-discretionary-guide",
+          "/blog/secondary-dss-offer-guide",
+          "/blog/secondary-curriculum-pathways-guide",
+          "/blog/secondary-school-cost-guide",
+          "/blog/secondary-central-allocation-guide",
+          "/schools/secondary#guides",
+          "/schools/secondary/directory?report=1"
+        ],
+        "open": true
+      },
+      {
+        "display": "none",
+        "label": "中學擇校指南",
+        "links": [
+          "/blog/secondary-banding-guide",
+          "/blog/secondary-language-guide",
+          "/blog/secondary-results-guide",
+          "/blog/secondary-admission-guide",
+          "/blog/secondary-discretionary-guide",
+          "/blog/secondary-dss-offer-guide",
+          "/blog/secondary-curriculum-pathways-guide",
+          "/blog/secondary-school-cost-guide",
+          "/blog/secondary-central-allocation-guide",
+          "/schools/secondary#guides",
+          "/schools/secondary/directory?report=1"
+        ]
+      }
+    ],
+    "h1": [
+      "香港中學名錄"
+    ],
+    "hubLinks": [],
+    "overflow": false,
+    "url": "/schools/secondary/directory",
+    "width": 390
+  }
+]

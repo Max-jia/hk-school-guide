@@ -1,5 +1,5 @@
 // 阶段一 · 自行分配「投表决策台」引擎（纯函数）
-// 只做「可核实的规则核对 + 相对竞争位置 + 策略推导」，不预测录取概率
+// 核对计分与申请步骤；缺少当届申请者分数分布时，不判断个人胜算。
 import { assessSchoolFit, type FitResult } from "@/lib/sim-engine";
 
 export const DP_REL_OPTS: { v: string; label: string; pts: number }[] = [
@@ -37,22 +37,19 @@ export function dpScoreTips(rel: string, org: string): { ok: boolean; tips: stri
 }
 
 export function dpScorePosition(score: number): { label: string; tone: "good" | "mid" | "warn" } {
-  if (score >= 30) return { label: "强势组合 · 可锁定心仪校", tone: "good" };
-  if (score === 25) return { label: "有竞争力 · 热门校同分抽签", tone: "good" };
-  if (score === 20) return { label: "最常见组合 · 热门校基本靠抽签", tone: "mid" };
-  return { label: "底牌偏弱 · 重心放统一派位乙部", tone: "warn" };
+  return { label: `${score} 分 · 须结合该校当届申请情况`, tone: "mid" };
 }
 
-// 投表策略：基于官方规则推导（失败自动进统派=无损失；录取须注册=锁定），非官方建议
 export function dpStrategy(score: number): { title: string; text: string; tone: "good" | "mid" | "warn" } {
-  if (score >= 30) return { title: "强势组合 · 可锁定心仪校", text: "自行分配直接填你最想去的那间：中了就注册，等于提前上岸；不中自动进统派，没损失。", tone: "good" };
-  if (score === 25) return { title: "有竞争力 · 放心冲", text: "热门校同分靠抽签，但失败无损失——自行分配就该冲最想进的，别保守。", tone: "good" };
-  if (score === 20) return { title: "最常见组合 · 冲一下不亏", text: "热门校基本靠抽签，中了是惊喜，不中自动进统派继续抽。填最想去的，别浪费这次免费机会。", tone: "mid" };
-  return { title: "底牌偏弱 · 重心放统派", text: "自行分配陪跑为主，别抱期待；把精力放在统一派位乙部结构和叩门预案上。", tone: "warn" };
+  return {
+    title: `${score} 分怎样选校`,
+    text: "先选获录取后愿意入读、通勤及教学安排都能接受的学校，再核对证明文件。分数用于同校计分申请者之间的排序；缺少当届分数分布和实际计分学额，不能判断是否够分或是否需要抽签。未获自行学位仍须按时办理统一派位选校。",
+    tone: "mid",
+  };
 }
 
 export const SAME_SCORE_NOTE =
-  "同分抽签：同一分数申请者超额时须抽签决定（以教育局/学校公布为准）。所以「XX 分=稳进」不成立——25 分旧生在热门校也可能要抽签；反之 20 分也不等于没机会，抽签人人平等。";
+  "计分申请先按分数高低分配；在剩余学额不足以取录某一同分组的全部申请者时，才以随机方式决定该同分组的取录名单。不同分数并非同池抽签。单凭20分或25分，不能判断是否轮到该分数组，也不能判断个人录取机会。";
 
 export type CandidateAssessment = {
   name: string;
@@ -119,8 +116,8 @@ export function buildDiscretionaryReport(
     timeline: [
       { when: "交表（2026-09-17~25）", action: "电子平台 9/17-25 递交；直接交回申请学校 9/21-25。只可交 1 间，多交全部作废。" },
       { when: "放榜（2026-11-23）", action: "学校公布结果；可于上午 10 时起经小一入学电子平台查阅。" },
-      { when: "注册（2026-11-25~26）", action: ass.catA ? "甲类必录取——获录取后须在指定日期注册，注册＝退出统一派位。" : "若获录取，须在指定日期注册；逾期视为放弃。注册＝退出统一派位。" },
-      { when: "未获录取", action: "自动参加统一派位（无须另行申请）；统派仍可把该校放第一志愿（双保险）。" },
+      { when: "注册（2026-11-25~26）", action: ass.catA ? "甲类必录取——获录取后须在指定日期注册，获派自行学位者不再获统派另一学位。" : "若获录取，须在指定日期注册；逾期视为放弃。获派自行学位者不再获统派另一学位。" },
+      { when: "未获录取", action: "仍符合统筹资格且未因接受直资小学学位退出统筹时，继续办理统一派位选校；统派仍可把该校放第一志愿（须按当届选校表及校网规则填写）。" },
     ],
   };
 }

@@ -94,10 +94,10 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
             自行分配这一票，投给谁？
           </h1>
           <p className="mt-2 max-w-[640px] text-[var(--p-secondary)]">
-            自行分配只能申请 1 间官津小学（不限校网）：失败自动进统一派位（无损失），录取须注册（退出统派）。所以这一票，填的一定是「录取了也不后悔」的学校。
+            自行分配只能申请 1 间官津小学（不限校网）：未获自行学位可继续办理统一派位；获派自行学位者不再获统派另一学位。先选获录取后愿意入读的学校，再核对证明文件。
           </p>
           <p className="mt-3 rounded-[8px] border-l-4 border-[var(--p-hl-yellow-border)] bg-[var(--p-hl-yellow-bg)] px-4 py-3 text-sm text-[var(--p-fg)]">
-            本工具只做「可核实的规则核对＋相对竞争位置＋投表策略」，不预测录取概率——同分一律抽签。
+            本工具核对计分及申请步骤。缺少当届申请者分数分布时，不判断胜算；只有同分组超额时才需随机取录。
           </p>
           <p className="mt-3 text-sm">
             定了这一票之后？<a className="underline" href="/tools/p1-simulator">去「统一派位选校表决策台」排甲部＋乙部志愿 →</a>
@@ -155,7 +155,7 @@ export default function P1Discretionary({ locale = "tc" }: { locale?: Locale }) 
             <h2 className="font-serif text-2xl font-bold text-[var(--p-fg)]">② 候选校清单 · 这票投给谁</h2>
           </div>
           <p className="mt-1 text-sm text-[var(--p-secondary)]">
-            把心仪的官津小学加进来，逐校看甲类预检、相对位置与投表策略；最后挑 1 所生成投表决策报告。
+            把心仪的官津小学加进来，逐校看必收类别预检、已知学额与文件核对建议；最后挑 1 所生成投表决策报告。
           </p>
           <div className="mt-4 grid gap-4">
             {candidates.map((c, i) => {

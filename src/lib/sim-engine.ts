@@ -527,38 +527,17 @@ export type FitResult = {
   tone: FitTone;
 };
 
-// 输入：乙类计分（10-35）+ 该校自行分配学额（名册 quota）+ 校名（用于热门校修正）
-// 输出：相对竞争位置结论（基于计分组合段位 × 学额稀缺度，不是录取概率）
+// 学额供应和个人分数不足以推算申请者排名；保留输入事实，不制造胜算。
 export function assessSchoolFit(score: number, quota: number | null, name?: string): FitResult {
-  const q = quota ?? 50;
-  const hot = name ? isHotSchool(name) : false;
-  const scarce = q <= 25 || hot;
-  const roomy = q > 50 && !hot;
-
-  if (score >= 30) {
-    if (roomy) return { label: "优势明显", advice: `计分 ${score} 分＋学额充裕（${q}），在这所学校处于有利位置；同分仍要抽签。`, tone: "good" };
-    if (scarce) return { label: "组合强但竞争烈度高", advice: hot && q > 25 ? `计分 ${score} 分＋传统热门校（学额 ${q} 仍挤破头），竞争烈度高，仍要抽签。` : `计分 ${score} 分但学额仅 ${q}，竞争烈度高，仍要抽签。`, tone: "mid" };
-    return { label: "组合强", advice: `计分 ${score} 分，处于该校申请者前列组合；同分抽签。`, tone: "good" };
-  }
-  if (score === 25) {
-    if (roomy) return { label: "可冲", advice: `计分 ${score} 分＋学额充裕（${q}），值得放前；同分抽签。`, tone: "good" };
-    if (scarce) return { label: "拼运气", advice: hot && q > 25 ? `计分 ${score} 分＋传统热门校（学额 ${q} 仍挤破头），同分靠抽签。` : `计分 ${score} 分但学额仅 ${q}，热门校同分靠抽签。`, tone: "mid" };
-    return { label: "有机会", advice: `计分 ${score} 分（校友/强关系组合），热门校竞争仍大。`, tone: "mid" };
-  }
-  if (score === 20) {
-    if (roomy) return { label: "有机会", advice: `计分 ${score} 分（最常见组合）但学额充裕（${q}），可以一试。`, tone: "mid" };
-    if (scarce) return { label: "基本靠抽签", advice: hot && q > 25 ? `计分 ${score} 分（最常见组合）＋传统热门校（学额 ${q} 仍挤破头）——基本靠抽签。` : `计分 ${score} 分＋学额仅 ${q}——最常见组合撞上最紧张学额，热门校基本靠抽签。`, tone: "warn" };
-    return { label: "看运气", advice: `计分 ${score} 分是自行分配最常见组合，热门校同分抽签。`, tone: "warn" };
-  }
-  if (score === 15) {
-    if (roomy) return { label: "有机会", advice: `计分 ${score} 分（常见低分组合）但学额充裕（${q}），可以一试；同分仍要抽签。`, tone: "mid" };
-    if (scarce) return { label: "偏弱", advice: hot && q > 25 ? `计分 ${score} 分＋传统热门校（学额 ${q} 仍挤破头），自行分配不占优——重心放统一派位乙部。` : `计分 ${score} 分＋学额仅 ${q}，自行分配不占优——重心放统一派位乙部。`, tone: "warn" };
-    return { label: "看运气", advice: `计分 ${score} 分（常见低分组合）＋学额一般（${q}），自行分配看运气，重点准备乙部。`, tone: "warn" };
-  }
-  // score <= 10：仅适龄分，同样按学额/热门度区分
-  if (roomy) return { label: "可一试", advice: `计分 ${score} 分（仅适龄）但学额充裕（${q}），低分也有机会；同分抽签。`, tone: "mid" };
-  if (scarce) return { label: "仅适龄分 · 陪跑", advice: hot && q > 25 ? `计分 ${score} 分只有适龄基础分，且该校是传统热门校（学额 ${q} 仍挤破头）——自行分配基本陪跑，全力准备乙部＋叩门。` : `计分 ${score} 分只有适龄基础分，且该校学额仅 ${q}——自行分配基本陪跑，全力准备乙部＋叩门。`, tone: "warn" };
-  return { label: "看运气", advice: `计分 ${score} 分只有适龄基础分，学额一般（${q}）可一试，别抱太大期望；重心放乙部。`, tone: "warn" };
+  const school = name ? `「${name}」` : "该校";
+  const supply = quota !== null && Number.isFinite(quota) && quota > 0
+    ? `名册列出自行分配学额 ${quota} 个；须再核对当届版本及必收类别对计分学额的影响。`
+    : "名册未提供可用的自行分配学额。";
+  return {
+    label: "需求资料不足 · 不判断胜算",
+    advice: `当前计分 ${score} 分。${school}${supply}缺少当届申请人数及分数分布，不能由学额大小或学校热度判断是否够分、是否需要抽签。`,
+    tone: "mid",
+  };
 }
 
 

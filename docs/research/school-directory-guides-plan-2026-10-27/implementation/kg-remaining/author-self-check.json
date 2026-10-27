@@ -1,0 +1,86 @@
+{
+  "articles": [
+    {
+      "id": "K01",
+      "slug": "kg-school-types-guide",
+      "hanChars": 2016,
+      "tables": 2,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K02",
+      "slug": "kg-school-hours-care-guide",
+      "hanChars": 2003,
+      "tables": 2,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K04",
+      "slug": "kg-english-guide",
+      "hanChars": 2092,
+      "tables": 2,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K05",
+      "slug": "hk-kg-k1-application-roadmap-2027-28",
+      "hanChars": 1957,
+      "tables": 1,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K06",
+      "slug": "hk-kg-interview-prep-guide-2027-28",
+      "hanChars": 2044,
+      "tables": 1,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K07",
+      "slug": "kg-subsidy-guide",
+      "hanChars": 2400,
+      "tables": 2,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K08",
+      "slug": "kg-waitlist-transfer-guide",
+      "hanChars": 1985,
+      "tables": 1,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K09",
+      "slug": "kg-primary-outcomes-guide",
+      "hanChars": 2325,
+      "tables": 2,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    },
+    {
+      "id": "K10",
+      "slug": "kg-open-day-guide-2026",
+      "hanChars": 2151,
+      "tables": 2,
+      "FAQ": 3,
+      "validAnchors": true,
+      "premium": false
+    }
+  ],
+  "exactDuplicateLongParagraphs": []
+}

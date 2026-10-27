@@ -438,15 +438,31 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
 .blog-article table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; table-layout: auto; }
 .blog-article .blog-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 20px 0; }
 .blog-article .blog-table-wrap table { margin: 0; }
+.blog-article .guide-table { border: 1px solid var(--p-gray-300); border-radius: 8px; }
+.blog-article .guide-table table { table-layout: fixed; width: 100%; }
+.blog-article .guide-table th { white-space: normal; }
+.blog-article .guide-table td, .blog-article .guide-table th { overflow-wrap: anywhere; }
+.blog-article .guide-table:focus-visible { outline: 2px solid var(--p-fg); outline-offset: 3px; }
+.blog-article .guide-contents { margin: 24px 0; padding: 18px 22px; background: var(--p-bg-yellow); border-radius: 8px; }
+.blog-article .guide-contents ol { margin: 8px 0 0; padding-left: 1.4em; }
+.blog-article .guide-sources { font-size: 14px; color: var(--p-secondary); }
+.blog-article .guide-sources li { margin: 10px 0; }
+.blog-article .guide-step { padding: 14px 18px; border-left: 3px solid var(--p-gray-300); margin: 16px 0; }
+.blog-article .guide-step h3 { margin-top: 0; }
+.blog-article .guide-step p:last-child { margin-bottom: 0; }
+.blog-article .guide-table-hint { display: none; }
 .blog-article table td, .blog-article table th { padding: 10px 14px; border-bottom: 1px solid var(--p-gray-300); text-align: left; vertical-align: top; line-height: 1.6; }
 .blog-article table th { font-weight: 600; color: var(--p-secondary); font-size: 12px; background: var(--p-bg-yellow); width: auto; white-space: nowrap; }
 @media (max-width: 640px) {
   .blog-article .blog-table-wrap table { width: max-content; min-width: 100%; }
+  .blog-article .guide-table table { width: 660px; table-layout: fixed; }
+  .blog-article .guide-table-hint { display: block; font-size: 12px; margin: 20px 0 -12px; color: var(--p-secondary); }
 }
 .blog-article .highlight { background: var(--p-hl-bg); border-left: 4px solid var(--p-hl-border); padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
 .blog-article .warn { background: #fff7ed; border-left: 4px solid #f97316; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
 .blog-article ul { margin: 0 0 1.2em; padding-left: 1.5em; }
 .blog-article li { margin: 6px 0; }
+.blog-article ol { margin: 0 0 1.2em; padding-left: 1.6em; list-style: decimal; }
 .blog-article a { color: #0F766E; text-decoration: underline; text-underline-offset: 2px; }
 
 /* 响应式 */

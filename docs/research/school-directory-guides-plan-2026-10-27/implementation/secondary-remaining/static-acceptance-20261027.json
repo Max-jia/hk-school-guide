@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-27",
+  "scope": "11 secondary core guides, S03 untouched",
+  "status": "PASS",
+  "records": [
+    {
+      "id": "S01",
+      "slug": "secondary-admission-guide",
+      "chars": 2400,
+      "tables": 2,
+      "h2": 8,
+      "faq": 2,
+      "anchorLinks": 11,
+      "internalLinks": 5,
+      "errors": []
+    },
+    {
+      "id": "S02",
+      "slug": "secondary-banding-guide",
+      "chars": 2310,
+      "tables": 1,
+      "h2": 8,
+      "faq": 2,
+      "anchorLinks": 12,
+      "internalLinks": 7,
+      "errors": []
+    },
+    {
+      "id": "S04",
+      "slug": "secondary-language-guide",
+      "chars": 2247,
+      "tables": 2,
+      "h2": 8,
+      "faq": 2,
+      "anchorLinks": 11,
+      "internalLinks": 4,
+      "errors": []
+    },
+    {
+      "id": "S05",
+      "slug": "secondary-discretionary-guide",
+      "chars": 2751,
+      "tables": 1,
+      "h2": 9,
+      "faq": 2,
+      "anchorLinks": 17,
+      "internalLinks": 3,
+      "errors": []
+    },
+    {
+      "id": "S06",
+      "slug": "secondary-central-allocation-guide",
+      "chars": 2330,
+      "tables": 1,
+      "h2": 9,
+      "faq": 2,
+      "anchorLinks": 13,
+      "internalLinks": 4,
+      "errors": []
+    },
+    {
+      "id": "S07",
+      "slug": "secondary-school-cost-guide",
+      "chars": 2703,
+      "tables": 3,
+      "h2": 8,
+      "faq": 2,
+      "anchorLinks": 13,
+      "internalLinks": 4,
+      "errors": []
+    },
+    {
+      "id": "S08",
+      "slug": "secondary-results-guide",
+      "chars": 2655,
+      "tables": 3,
+      "h2": 7,
+      "faq": 3,
+      "anchorLinks": 10,
+      "internalLinks": 3,
+      "errors": []
+    },
+    {
+      "id": "S09",
+      "slug": "secondary-curriculum-pathways-guide",
+      "chars": 2803,
+      "tables": 2,
+      "h2": 7,
+      "faq": 3,
+      "anchorLinks": 15,
+      "internalLinks": 5,
+      "errors": []
+    },
+    {
+      "id": "S10",
+      "slug": "secondary-transfer-guide",
+      "chars": 2626,
+      "tables": 2,
+      "h2": 7,
+      "faq": 3,
+      "anchorLinks": 10,
+      "internalLinks": 3,
+      "errors": []
+    },
+    {
+      "id": "S11",
+      "slug": "secondary-subject-choice-guide",
+      "chars": 2721,
+      "tables": 2,
+      "h2": 7,
+      "faq": 3,
+      "anchorLinks": 11,
+      "internalLinks": 2,
+      "errors": []
+    },
+    {
+      "id": "S12",
+      "slug": "secondary-new-arrival-guide",
+      "chars": 3494,
+      "tables": 2,
+      "h2": 9,
+      "faq": 4,
+      "anchorLinks": 17,
+      "internalLinks": 3,
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "Not browser verification",
+    "Parent independently performs SC/TC desktop/mobile rendering",
+    "Live page rendering and metadata integration are not implied by this static check"
+  ]
+}

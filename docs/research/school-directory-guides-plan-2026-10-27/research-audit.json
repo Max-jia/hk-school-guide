@@ -1,0 +1,46 @@
+{
+  "scope": "Research proposal only; no website content/code edits or deployment",
+  "date": "2026-10-27",
+  "catalogChecks": {
+    "topics": 32,
+    "new": 20,
+    "upgradedOrRewritten": 12,
+    "firstBatch": 12,
+    "newSlugsUnique": true,
+    "existingSlugsRetained": true
+  },
+  "siteSnapshot": {
+    "blogArticles": 54,
+    "blogStageCounts": {
+      "kg": 24,
+      "primary": 27,
+      "both": 3,
+      "secondary": 0
+    },
+    "topicHubs": 6,
+    "reports": 230,
+    "schoolProfiles": 2193
+  },
+  "evidenceLimits": [
+    "No representative family survey",
+    "Three EK public threads read through available research channel; no usable Facebook comment corpus",
+    "Historical GSC query-page rows are a subset, not site totals or market volume",
+    "Full article-specific source collection remains a required writing gate"
+  ],
+  "historicalGscPeriod": [
+    "2026-09-20",
+    "2026-10-17"
+  ],
+  "historicalGscFullChart": {
+    "clicks": 280,
+    "impressions": 7996
+  },
+  "officialPdfFingerprints": {
+    "poa-2027.pdf": "90f6e8c1c486c34882ff5dc0fa460c628775c5a16cba80d56e93ad73244a7393",
+    "sspa-2026-faq.pdf": "12925126e35ffb679042c5da44731365c423af61c1d6b59dc4426bdfc007193d"
+  },
+  "independentReview": {
+    "primaryRulesAndTopicBoundaries": "passed; no blocking issue",
+    "kindergartenFundingAndEvidenceCoverage": "passed; no blocking issue"
+  }
+}

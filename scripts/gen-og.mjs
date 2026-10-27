@@ -1,12 +1,17 @@
 // 生成横版 OG 分享图(1200×630 PNG):读 blog-meta.json + 封面 SVG 的配色/字符,套横版模板
 // 用 qlmanage(系统 QuickLook)渲染 SVG→PNG——sharp 的 librsvg 不渲染文字
-// 用法:node scripts/gen-og.mjs
+// 用法:node scripts/gen-og.mjs [--only slug1,slug2]
 import fs from "fs";
 import path from "path";
 import { execFileSync } from "child_process";
 
 const ROOT = process.cwd();
 const META = JSON.parse(fs.readFileSync(path.join(ROOT, "src/content/blog-meta.json"), "utf8"));
+const onlyArg = process.argv.indexOf("--only");
+const only = onlyArg >= 0 ? new Set((process.argv[onlyArg + 1] ?? "").split(",").filter(Boolean)) : null;
+if (only && (only.size === 0 || [...only].some((slug) => !META.some((post) => post.slug === slug)))) {
+  throw new Error("--only requires known blog slugs separated by commas");
+}
 const TMP = "/tmp/og-svgs";
 const OUT = path.join(ROOT, "public/covers/og");
 fs.rmSync(TMP, { recursive: true, force: true });
@@ -80,6 +85,7 @@ async function main() {
   const newest = META.length; // meta[0] 最新,编号 = 总数 - 下标
   for (let i = 0; i < META.length; i++) {
     const p = META[i];
+    if (only && !only.has(p.slug)) continue;
     const coverSvg = fs.readFileSync(path.join(ROOT, "public", p.cover.replace(/^\//, "")), "utf8");
     const bgMatch = coverSvg.match(/<rect width="600" height="700" fill="([^"]+)"/);
     const charMatch = coverSvg.match(/font-size="290"[^>]*>([^<]+)</);
@@ -92,6 +98,10 @@ async function main() {
     const svgPath = path.join(TMP, `${p.slug}.svg`);
     fs.writeFileSync(svgPath, svg);
     render(svgPath, path.join(OUT, `${p.slug}.png`));
+  }
+  if (only) {
+    console.log(`OK: ${only.size} 篇文章图`);
+    return;
   }
   const homeSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <rect width="1200" height="630" fill="#1C1C1C"/>

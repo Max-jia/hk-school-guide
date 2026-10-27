@@ -68,7 +68,7 @@ export function blogBodyContent(body: string, locale: Locale): string {
     .replace(/^\s*<p\b[^>]*class=["'][^"']*\bblog-meta\b[^"']*["'][^>]*>[\s\S]*?<\/p>\s*/i, "")
     .trim();
   return locale === "sc"
-    ? content.replace(/href="\/(blog|reports|tools)(?=[\/"])/g, 'href="/cn/$1')
+    ? content.replace(/href="\/(blog|reports|tools|schools|planning|shortlist)(?=[\/"?#])/g, 'href="/cn/$1')
     : content;
 }
 
