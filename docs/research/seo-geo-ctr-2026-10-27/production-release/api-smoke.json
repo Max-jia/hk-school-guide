@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "path": "/api/schools?type=kindergarten&limit=1",
+      "status": 200,
+      "mime": "application/json",
+      "bytes": 405,
+      "seconds": 1.03
+    },
+    {
+      "path": "/api/reports/stcat/pdf?locale=sc",
+      "status": 200,
+      "mime": "application/pdf",
+      "bytes": 2705098,
+      "seconds": 12.18,
+      "pdfHeaderValid": true,
+      "attachment": true
+    }
+  ],
+  "errors": []
+}

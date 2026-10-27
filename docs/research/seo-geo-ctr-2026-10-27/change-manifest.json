@@ -1,5 +1,5 @@
 {
-  "status": "production release authorized; local implementation accepted; staging and promotion pending",
+  "status": "committed, pushed and production verified",
   "productionBaseline": {
     "commit": "e689884d012690f575a0aeb9c09a58fbc32fb9f7",
     "deploymentId": "dpl_9NtZv8DJxvzbVTRQjBciPraPYdvf",
@@ -31,5 +31,12 @@
     "robots and training bot policy"
   ],
   "effectStatus": "No post-release CTR, Google actual snippet adoption, AI citation rate or AI referral uplift has been measured.",
-  "followup": "Before any future production release, re-read the current production alias and compare its exact source against this candidate; the recorded baseline can become stale."
+  "followup": "Before any future production release, re-read the current production alias and compare its exact source against this candidate; the recorded baseline can become stale.",
+  "productionRelease": {
+    "commit": "26cf50067144c18369c21b07dea0d4d83fe57f4e",
+    "deploymentId": "dpl_7qjFYPkEbRTPLHGqRPcLRUF3p4r2",
+    "url": "https://hkschool.guide",
+    "releasedAtUtc": "2026-10-27T13:58:20.179000+00:00",
+    "verifiedAtUtc": "2026-10-27T14:00:31.075977+00:00"
+  }
 }

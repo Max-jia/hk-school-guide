@@ -1,0 +1,391 @@
+{
+  "domain": "https://hkschool.guide",
+  "cases": 32,
+  "errors": [],
+  "rows": [
+    {
+      "canonical": "https://hkschool.guide/cn/schools/kindergarten/tak-sun-kg",
+      "description": "德信幼稚园位于油尖旺区，属非牟利。课程类别：本地。登记班制：上午／下午（2026-10-26读取）。全年学费：$0／年（2026/27学年・扣资助后；按年级及班别）。",
+      "h1": [
+        "德信幼稚园"
+      ],
+      "path": "/cn/schools/kindergarten/tak-sun-kg",
+      "scrollWidth": 1425,
+      "summaryVisible": true,
+      "title": "德信幼稚园｜油尖旺区・幼稚园资料 | 港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/kindergarten/tak-sun-kg",
+      "description": "德信幼稚園位於油尖旺區，屬非牟利。課程類別：本地。登記班制：上午／下午（2026-10-26讀取）。全年學費：$0／年（2026/27學年・扣資助後；按年級及班別）。",
+      "h1": [
+        "德信幼稚園"
+      ],
+      "path": "/schools/kindergarten/tak-sun-kg",
+      "scrollWidth": 1425,
+      "summaryVisible": true,
+      "title": "德信幼稚園｜油尖旺區・幼稚園資料 | 港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/schools/primary/rcps",
+      "description": "高主教书院小学部位于湾仔区，属私立小学。男女校。登记班制：全日（2026-10-23）。",
+      "h1": [
+        "高主教书院小学部"
+      ],
+      "path": "/cn/schools/primary/rcps",
+      "scrollWidth": 1425,
+      "summaryVisible": true,
+      "title": "高主教书院小学部｜湾仔区・小学资料 | 港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/primary/rcps",
+      "description": "高主教書院小學部位於灣仔區，屬私立小學。男女校。登記班制：全日（2026-10-23）。",
+      "h1": [
+        "高主教書院小學部"
+      ],
+      "path": "/schools/primary/rcps",
+      "scrollWidth": 1425,
+      "summaryVisible": true,
+      "title": "高主教書院小學部｜灣仔區・小學資料 | 港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "description": "中华传道会李贤尧纪念中学位于葵青区，属资助中学。男女校。登记班制：全日（2026-10-23）。附校方教学语言政策，按科目及年级核对。",
+      "h1": [
+        "中华传道会李贤尧纪念中学"
+      ],
+      "path": "/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "scrollWidth": 1425,
+      "summaryVisible": true,
+      "title": "中华传道会李贤尧纪念中学｜葵青区・中学资料 | 港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "description": "中華傳道會李賢堯紀念中學位於葵青區，屬資助中學。男女校。登記班制：全日（2026-10-23）。附校方教學語言政策，按科目及年級核對。",
+      "h1": [
+        "中華傳道會李賢堯紀念中學"
+      ],
+      "path": "/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "scrollWidth": 1425,
+      "summaryVisible": true,
+      "title": "中華傳道會李賢堯紀念中學｜葵青區・中學資料 | 港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/reports/cckg",
+      "description": "基督堂幼稚园 CCKG深度择校报告：只设K2、K3，不设K1。解读英语教学、K2申请准备、升小去向与家庭适配；学校历史结果不等于个别孩子的录取机会。",
+      "h1": [
+        "基督堂幼稚园"
+      ],
+      "path": "/cn/reports/cckg",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "基督堂幼稚园 CCKG深度报告｜K2申请、英语教学与升小｜港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/reports/cckg",
+      "description": "基督堂幼稚園 CCKG深度擇校報告：只設K2、K3，不設K1。解讀英語教學、K2申請準備、升小去向與家庭適配；學校歷史結果不等於個別孩子的錄取機會。",
+      "h1": [
+        "基督堂幼稚園"
+      ],
+      "path": "/reports/cckg",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "基督堂幼稚園 CCKG深度報告｜K2申請、英語教學與升小｜港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/blog/secondary-dss-offer-guide",
+      "description": "收到香港直资中学录取后，签承诺书会影响什么？按2027/28教育局安排，分清4月8日与校本时限，比较课程、成本及后备方案。",
+      "h1": [
+        "直资中学offer与官津派位：签字前怎样取舍"
+      ],
+      "path": "/cn/blog/secondary-dss-offer-guide",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "直资中学offer与官津派位｜2027/28承诺书、取回文件与选择 | 港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/blog/secondary-dss-offer-guide",
+      "description": "按2027/28升中安排，分清直資接受學位、家長承諾書、4月8日取回文件與官津正取的關係；附三校當屆實例、家庭取捨表及簽字前清單。",
+      "h1": [
+        "直資中學offer與官津派位：簽字前怎樣取捨"
+      ],
+      "path": "/blog/secondary-dss-offer-guide",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "直資中學offer與官津派位｜2027/28承諾書、取回文件與選擇 | 港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/blog/ling-liang-kg-search-2026",
+      "description": "用2026年9月搜索记录辨识同系校名，再按具体校区核对班制、费用、语言和接送；八个旧办学点的整理不代表最新分校总数。",
+      "h1": [
+        "灵粮堂系幼稚园校区怎样分：2026年9月搜寻纪录"
+      ],
+      "path": "/cn/blog/ling-liang-kg-search-2026",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "灵粮堂系幼稚园校区怎样分：2026年9月搜索记录 | 港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/blog/ling-liang-kg-search-2026",
+      "description": "用2026年9月搜尋紀錄辨識同系校名，再按具體校區核對班制、費用、語言和接送；八個舊辦學點的整理不代表最新分校總數。",
+      "h1": [
+        "靈糧堂系幼稚園校區怎樣分：2026年9月搜尋紀錄"
+      ],
+      "path": "/blog/ling-liang-kg-search-2026",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "靈糧堂系幼稚園校區怎樣分：2026年9月搜尋紀錄 | 港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/schools/kindergarten/directory",
+      "description": "搜寻香港幼稚园的地区、办学类别、课程与官方来源。简明资料页供核对学校事实；已有深度报告的学校另提供课程、入学与家庭适配分析。",
+      "h1": [
+        "香港幼稚园名录"
+      ],
+      "path": "/cn/schools/kindergarten/directory",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "香港幼稚园学校名录｜地区、办学类别与课程资料 | 港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/kindergarten/directory",
+      "description": "搜尋香港幼稚園的地區、辦學類別、課程與官方來源。簡明資料頁供核對學校事實；已有深度報告的學校另提供課程、入學與家庭適配分析。",
+      "h1": [
+        "香港幼稚園名錄"
+      ],
+      "path": "/schools/kindergarten/directory",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "香港幼稚園學校名錄｜地區、辦學類別與課程資料 | 港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/blog/p1-scoring-guide",
+      "description": "按教育局2027年度计分表核对必收与计分两类、5择1和2择1规则，附可复算例子、证明文件与同分超额安排；最高35分不等于录取承诺。",
+      "h1": [
+        "小一自行分配怎么计分：哪些分可以加、哪些不能"
+      ],
+      "path": "/cn/blog/p1-scoring-guide",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "小一自行分配怎么计分：哪些分可以加、哪些不能 | 港学荟",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/blog/p1-scoring-guide",
+      "description": "按教育局2027年度計分表核對必收與計分兩類、5擇1和2擇1規則，附可復算例子、證明文件與同分超額安排；最高35分不等於錄取承諾。",
+      "h1": [
+        "小一自行分配怎麼計分：哪些分可以加、哪些不能"
+      ],
+      "path": "/blog/p1-scoring-guide",
+      "scrollWidth": 1425,
+      "summaryVisible": false,
+      "title": "小一自行分配怎麼計分：哪些分可以加、哪些不能 | 港學薈",
+      "w": 1440
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/schools/kindergarten/tak-sun-kg",
+      "description": "德信幼稚园位于油尖旺区，属非牟利。课程类别：本地。登记班制：上午／下午（2026-10-26读取）。全年学费：$0／年（2026/27学年・扣资助后；按年级及班别）。",
+      "h1": [
+        "德信幼稚园"
+      ],
+      "path": "/cn/schools/kindergarten/tak-sun-kg",
+      "scrollWidth": 375,
+      "summaryVisible": true,
+      "title": "德信幼稚园｜油尖旺区・幼稚园资料 | 港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/kindergarten/tak-sun-kg",
+      "description": "德信幼稚園位於油尖旺區，屬非牟利。課程類別：本地。登記班制：上午／下午（2026-10-26讀取）。全年學費：$0／年（2026/27學年・扣資助後；按年級及班別）。",
+      "h1": [
+        "德信幼稚園"
+      ],
+      "path": "/schools/kindergarten/tak-sun-kg",
+      "scrollWidth": 375,
+      "summaryVisible": true,
+      "title": "德信幼稚園｜油尖旺區・幼稚園資料 | 港學薈",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/schools/primary/rcps",
+      "description": "高主教书院小学部位于湾仔区，属私立小学。男女校。登记班制：全日（2026-10-23）。",
+      "h1": [
+        "高主教书院小学部"
+      ],
+      "path": "/cn/schools/primary/rcps",
+      "scrollWidth": 375,
+      "summaryVisible": true,
+      "title": "高主教书院小学部｜湾仔区・小学资料 | 港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/primary/rcps",
+      "description": "高主教書院小學部位於灣仔區，屬私立小學。男女校。登記班制：全日（2026-10-23）。",
+      "h1": [
+        "高主教書院小學部"
+      ],
+      "path": "/schools/primary/rcps",
+      "scrollWidth": 375,
+      "summaryVisible": true,
+      "title": "高主教書院小學部｜灣仔區・小學資料 | 港學薈",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "description": "中华传道会李贤尧纪念中学位于葵青区，属资助中学。男女校。登记班制：全日（2026-10-23）。附校方教学语言政策，按科目及年级核对。",
+      "h1": [
+        "中华传道会李贤尧纪念中学"
+      ],
+      "path": "/cn/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "scrollWidth": 375,
+      "summaryVisible": true,
+      "title": "中华传道会李贤尧纪念中学｜葵青区・中学资料 | 港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "description": "中華傳道會李賢堯紀念中學位於葵青區，屬資助中學。男女校。登記班制：全日（2026-10-23）。附校方教學語言政策，按科目及年級核對。",
+      "h1": [
+        "中華傳道會李賢堯紀念中學"
+      ],
+      "path": "/schools/secondary/cnec-lee-i-yao-memorial-secondary-school-190225",
+      "scrollWidth": 375,
+      "summaryVisible": true,
+      "title": "中華傳道會李賢堯紀念中學｜葵青區・中學資料 | 港學薈",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/reports/cckg",
+      "description": "基督堂幼稚园 CCKG深度择校报告：只设K2、K3，不设K1。解读英语教学、K2申请准备、升小去向与家庭适配；学校历史结果不等于个别孩子的录取机会。",
+      "h1": [
+        "基督堂幼稚园"
+      ],
+      "path": "/cn/reports/cckg",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "基督堂幼稚园 CCKG深度报告｜K2申请、英语教学与升小｜港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/reports/cckg",
+      "description": "基督堂幼稚園 CCKG深度擇校報告：只設K2、K3，不設K1。解讀英語教學、K2申請準備、升小去向與家庭適配；學校歷史結果不等於個別孩子的錄取機會。",
+      "h1": [
+        "基督堂幼稚園"
+      ],
+      "path": "/reports/cckg",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "基督堂幼稚園 CCKG深度報告｜K2申請、英語教學與升小｜港學薈",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/blog/secondary-dss-offer-guide",
+      "description": "收到香港直资中学录取后，签承诺书会影响什么？按2027/28教育局安排，分清4月8日与校本时限，比较课程、成本及后备方案。",
+      "h1": [
+        "直资中学offer与官津派位：签字前怎样取舍"
+      ],
+      "path": "/cn/blog/secondary-dss-offer-guide",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "直资中学offer与官津派位｜2027/28承诺书、取回文件与选择 | 港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/blog/secondary-dss-offer-guide",
+      "description": "按2027/28升中安排，分清直資接受學位、家長承諾書、4月8日取回文件與官津正取的關係；附三校當屆實例、家庭取捨表及簽字前清單。",
+      "h1": [
+        "直資中學offer與官津派位：簽字前怎樣取捨"
+      ],
+      "path": "/blog/secondary-dss-offer-guide",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "直資中學offer與官津派位｜2027/28承諾書、取回文件與選擇 | 港學薈",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/blog/ling-liang-kg-search-2026",
+      "description": "用2026年9月搜索记录辨识同系校名，再按具体校区核对班制、费用、语言和接送；八个旧办学点的整理不代表最新分校总数。",
+      "h1": [
+        "灵粮堂系幼稚园校区怎样分：2026年9月搜寻纪录"
+      ],
+      "path": "/cn/blog/ling-liang-kg-search-2026",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "灵粮堂系幼稚园校区怎样分：2026年9月搜索记录 | 港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/blog/ling-liang-kg-search-2026",
+      "description": "用2026年9月搜尋紀錄辨識同系校名，再按具體校區核對班制、費用、語言和接送；八個舊辦學點的整理不代表最新分校總數。",
+      "h1": [
+        "靈糧堂系幼稚園校區怎樣分：2026年9月搜尋紀錄"
+      ],
+      "path": "/blog/ling-liang-kg-search-2026",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "靈糧堂系幼稚園校區怎樣分：2026年9月搜尋紀錄 | 港學薈",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/schools/kindergarten/directory",
+      "description": "搜寻香港幼稚园的地区、办学类别、课程与官方来源。简明资料页供核对学校事实；已有深度报告的学校另提供课程、入学与家庭适配分析。",
+      "h1": [
+        "香港幼稚园名录"
+      ],
+      "path": "/cn/schools/kindergarten/directory",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "香港幼稚园学校名录｜地区、办学类别与课程资料 | 港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/schools/kindergarten/directory",
+      "description": "搜尋香港幼稚園的地區、辦學類別、課程與官方來源。簡明資料頁供核對學校事實；已有深度報告的學校另提供課程、入學與家庭適配分析。",
+      "h1": [
+        "香港幼稚園名錄"
+      ],
+      "path": "/schools/kindergarten/directory",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "香港幼稚園學校名錄｜地區、辦學類別與課程資料 | 港學薈",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/cn/blog/p1-scoring-guide",
+      "description": "按教育局2027年度计分表核对必收与计分两类、5择1和2择1规则，附可复算例子、证明文件与同分超额安排；最高35分不等于录取承诺。",
+      "h1": [
+        "小一自行分配怎么计分：哪些分可以加、哪些不能"
+      ],
+      "path": "/cn/blog/p1-scoring-guide",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "小一自行分配怎么计分：哪些分可以加、哪些不能 | 港学荟",
+      "w": 390
+    },
+    {
+      "canonical": "https://hkschool.guide/blog/p1-scoring-guide",
+      "description": "按教育局2027年度計分表核對必收與計分兩類、5擇1和2擇1規則，附可復算例子、證明文件與同分超額安排；最高35分不等於錄取承諾。",
+      "h1": [
+        "小一自行分配怎麼計分：哪些分可以加、哪些不能"
+      ],
+      "path": "/blog/p1-scoring-guide",
+      "scrollWidth": 375,
+      "summaryVisible": false,
+      "title": "小一自行分配怎麼計分：哪些分可以加、哪些不能 | 港學薈",
+      "w": 390
+    }
+  ]
+}

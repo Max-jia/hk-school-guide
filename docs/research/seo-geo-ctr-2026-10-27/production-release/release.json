@@ -1,0 +1,61 @@
+{
+  "status": "production verified",
+  "releasedAtUtc": "2026-10-27T13:58:20.179000+00:00",
+  "domain": "https://hkschool.guide",
+  "project": "hk-school-guide",
+  "projectId": "prj_S4Tg974vvoehK6X2cKKbOEejojfU",
+  "teamId": "team_5J28m0vO2APAVo8PiQPIQ9u4",
+  "branch": "codex/primary-secondary-directory-guides-20261027",
+  "releaseCommit": "26cf50067144c18369c21b07dea0d4d83fe57f4e",
+  "deploymentId": "dpl_7qjFYPkEbRTPLHGqRPcLRUF3p4r2",
+  "deploymentUrl": "https://hk-school-guide-2573h93dz-max-jia-s-projects.vercel.app",
+  "baseline": {
+    "commit": "e689884d012690f575a0aeb9c09a58fbc32fb9f7",
+    "deploymentId": "dpl_9NtZv8DJxvzbVTRQjBciPraPYdvf",
+    "currentSourceArchiveVerified": true,
+    "runtimeFilesPreserved": 1186,
+    "removed": 0,
+    "intendedChanges": 31,
+    "newBrandFiles": 2,
+    "productionAliasRecheckedBeforePromotion": true
+  },
+  "inventory": {
+    "reports": 230,
+    "schoolProfiles": 2193,
+    "blogs": 74,
+    "coreGuides": 32,
+    "sitemapUrls": 5172,
+    "missingPriorUrls": 0
+  },
+  "checks": {
+    "stagedPaths": 151,
+    "livePaths": 151,
+    "coreArticlePagesComparedPerPhase": 64,
+    "liveBrowserCases": 32,
+    "api": {
+      "schools": 200,
+      "stcatPdf": {
+        "status": 200,
+        "bytes": 2705098,
+        "headerValid": true,
+        "attachment": true
+      }
+    },
+    "errors": [],
+    "runtimeErrorScan": {
+      "window": "2026-10-27T13:55:08.484Z to 2026-10-27T14:00:08.484Z",
+      "levels": [
+        "error",
+        "fatal"
+      ],
+      "result": "No logs found for specified criteria; not a long-term monitoring guarantee."
+    }
+  },
+  "effectStatus": "No post-release CTR or AI citation uplift measured; this record proves release correctness only.",
+  "rollbackDeployment": "dpl_9NtZv8DJxvzbVTRQjBciPraPYdvf",
+  "screenshots": [
+    "profile-live.png",
+    "profile-live-detail.png"
+  ],
+  "verifiedAtUtc": "2026-10-27T14:00:31.075977+00:00"
+}
