@@ -2,7 +2,7 @@
 
 > 香港幼稚园、小学与中学资料、学校深度报告、升学攻略及择校工具。学校资料按来源与适用年份整理；评级、比较和家庭适配建议为平台分析，非教育局官方评级或录取承诺。
 
-本文件是内容导航，更新于 2026-10-25。它不代替网页、网站地图或各字段的来源说明。繁体中文使用根路径，简体中文在相同路径前加 /cn；引用时保留所读版本的网址。
+本文件是内容导航，本次导航更新于 2026-10-27；这不是所有学校资料统一更新的日期。它不代替网页、网站地图或各字段的来源说明。繁体中文使用根路径，简体中文在相同路径前加 /cn；引用时保留所读版本的网址。
 
 ## 三学段学校资料
 
@@ -20,12 +20,20 @@
 
 - [全部学校深度报告](https://hkschool.guide/reports)：幼稚园、小学和中学报告；已发布报告全文可读。
 - [热文与攻略](https://hkschool.guide/blog)：学校解读与香港升学制度文章。
+- [幼稚园10篇核心指南](https://hkschool.guide/schools/kindergarten#guides)：按选择与照顾、申请与后备、费用与升小分组。
+- [小学10篇核心指南](https://hkschool.guide/schools/primary#guides)：按选校与日常、小一申请、转校与升中分组。
+- [中学12篇核心指南](https://hkschool.guide/schools/secondary#guides)：按申请与派位、选校与家庭条件、课程与升学分组。
 - [幼稚园申请专题](https://hkschool.guide/blog/topics/kindergarten-admission)：PN、K1 申请和面试准备。
 - [幼稚园选校专题](https://hkschool.guide/blog/topics/kindergarten-selection)：课程、语言与家庭适配。
 - [幼稚园费用与资助](https://hkschool.guide/blog/topics/kindergarten-fees-support)：学费、免费计划与减免。
 - [小一入学专题](https://hkschool.guide/blog/topics/primary-admission)：自行分配、统一派位和校本申请。
 - [小学校网专题](https://hkschool.guide/blog/topics/primary-school-net)：校网、派位与家庭选择。
 - [小学选校专题](https://hkschool.guide/blog/topics/primary-school-profiles)：课程、升中路线与学校比较。
+- [升中申请专题](https://hkschool.guide/blog/topics/secondary-admission)：自行两校、统一派位、直资录取与插班后备。
+- [中学选校专题](https://hkschool.guide/blog/topics/secondary-selection)：学生组别与学校参考Banding、逐科语言、家庭预算及新来港安排。
+- [中学课程专题](https://hkschool.guide/blog/topics/secondary-curriculum)：DSE成绩口径、IB与A-Level取舍、中三选科及大学课程条件。
+
+以上32篇核心指南按家庭正在作的决定组织；相关专题再连接具体学校资料和深度报告。资料页回答学校身份及公开安排，报告解释家庭选择的价值与代价，指南说明制度、比较方法与下一步行动。引用其中一篇时，应使用该篇实际网址和注明的适用年度，不把专题入口当作所有结论的来源。
 
 ## 可直接查阅的制度与工具
 
@@ -35,6 +43,9 @@
 - [一条龙、直属与联系学校的区别](https://hkschool.guide/blog/through-train-guide)
 - [小一入学 2027/28 流程](https://hkschool.guide/blog/hk-p1-admission-guide-2027)
 - [小学校网竞争数据分析方法](https://hkschool.guide/blog/hk-school-net-diy-analysis)
+- [中一入学2027/28流程](https://hkschool.guide/blog/secondary-admission-guide)
+- [学生组别与学校参考Banding](https://hkschool.guide/blog/secondary-banding-guide)
+- [DSE、IB与A-Level课程取舍](https://hkschool.guide/blog/secondary-curriculum-pathways-guide)
 - [择校中介尽调与风险](https://hkschool.guide/blog/hk-school-agency-red-flags)
 - [择校工具](https://hkschool.guide/tools)
 - [小一校网查询](https://hkschool.guide/tools/p1-school-net)

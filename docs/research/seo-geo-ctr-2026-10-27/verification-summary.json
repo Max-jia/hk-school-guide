@@ -1,0 +1,17 @@
+{
+  "recordedAtUTC": "2026-10-27T13:37:46.390111+00:00",
+  "build": "/private/tmp/hkschool-ctr-final-20261027.bQ7zAr",
+  "checks": [
+    "full-built-validation.json",
+    "catalogue-built-validation.json",
+    "built-sidebar-validation.json",
+    "internal-http-validation.json",
+    "assets-llms-http-validation.json",
+    "browser-validation.json",
+    "blog-metadata-validation.json",
+    "core32-validation.json"
+  ],
+  "errors": [],
+  "qualityScope": "Build, source/HTML consistency, localization, preserved routes and browser templates; not ranking, field CWV or school-fact completeness.",
+  "productionStatus": "Unchanged by this pass"
+}

@@ -7,14 +7,14 @@ const ABOUT_LINKS: { label: string; href: string }[] = [
   { label: "面试题库", href: "/questions" },
   { label: "热文", href: "/blog" },
   { label: "资料来源与评估方法", href: "/about/data-methodology" },
-  { label: "40 校网排名", href: "/blog/net40-ranking" },
+  { label: "40 校网选校参考", href: "/blog/net40-ranking" },
 ];
 
 const FOLLOW_LINKS: { label: string; href: string }[] = [
-  { label: "圣保罗男女", href: "/reports/spcs" },
-  { label: "拔萃男书院", href: "/reports/dbs" },
-  { label: "玛利诺修院", href: "/reports/mcs" },
-  { label: "喇沙书院", href: "/reports/lsps" },
+  { label: "圣保禄学校（小学部）", href: "/reports/spcs" },
+  { label: "拔萃男书院附属小学", href: "/reports/dbs" },
+  { label: "玛利诺修院学校（小学部）", href: "/reports/mcs" },
+  { label: "喇沙小学", href: "/reports/lsps" },
   { label: "40 校网", href: "/blog/net40-ranking" },
   { label: "计分制", href: "/blog/p1-scoring-guide" },
   { label: "叩门信", href: "/blog/knocking-letter-guide" },
@@ -34,7 +34,7 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
         </div>
         <div className="flex flex-col items-stretch justify-between gap-12 md:flex-row">
           {/* CTA 贴纸卡 */}
-          <div className="flex w-full flex-col gap-12 md:w-2/3 md:flex-row md:gap-12">
+          <div data-nosnippet="" className="flex w-full flex-col gap-12 md:w-2/3 md:flex-row md:gap-12">
             <section className="flex w-full flex-col items-center md:w-1/2 md:items-start">
               <div className="img-wrapper">
                 <a href={localeHref("/blog", locale)}>
@@ -62,7 +62,7 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
                 <span className="text-[var(--p-secondary)]">
                   {L("计分制、校网排名、叩门信", locale)}
                   <br />
-                  {L("每周更新，直接可读", locale)}
+                  {L("按问题查阅，直接可读", locale)}
                 </span>
               </p>
             </section>
@@ -93,7 +93,7 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
                 <span className="text-[var(--p-secondary)]">
                   {L("输入校网、预算、孩子性格", locale)}
                   <br />
-                  {L("669 所小学 + 949 所幼稚园", locale)}
+                  {L("按校网、预算与家庭条件筛选", locale)}
                 </span>
               </p>
             </section>

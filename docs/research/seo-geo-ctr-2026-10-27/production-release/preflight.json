@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "productionDeployment": "dpl_9NtZv8DJxvzbVTRQjBciPraPYdvf",
+    "commit": "e689884d012690f575a0aeb9c09a58fbc32fb9f7",
+    "archiveSha256": "35518fb6ffdaf27deeb1a21ca1f7c6f9974890907fc60c7669c8e84917f98dfa",
+    "runtimeFiles": 1186,
+    "missing": [],
+    "different": [],
+    "uncommittedProductionRuntimeFiles": []
+  },
+  "productionRuntimeFilesKept": 1186,
+  "removed": [],
+  "changed": [
+    "public/covers/blog_hot-schools-2026-07.svg",
+    "public/covers/blog_hy-kg-search-2026.svg",
+    "public/covers/blog_ling-liang-kg-search-2026.svg",
+    "public/covers/blog_munsang-kg-search.svg",
+    "public/covers/blog_soka-kg-search.svg",
+    "public/covers/blog_trending-kindergartens-2026.svg",
+    "public/covers/blog_true-light-primary-search.svg",
+    "public/covers/og/hot-schools-2026-07.png",
+    "public/covers/og/hy-kg-search-2026.png",
+    "public/covers/og/ling-liang-kg-search-2026.png",
+    "public/covers/og/munsang-kg-search.png",
+    "public/covers/og/soka-kg-search.png",
+    "public/covers/og/trending-kindergartens-2026.png",
+    "public/covers/og/true-light-primary-search.png",
+    "public/llms.txt",
+    "src/app/favicon.ico",
+    "src/components/ReportViewer.tsx",
+    "src/components/SiteFooter.tsx",
+    "src/content/blog-meta.json",
+    "src/content/blog/hot-schools-2026-07.json",
+    "src/content/blog/hy-kg-search-2026.json",
+    "src/content/blog/ling-liang-kg-search-2026.json",
+    "src/content/blog/munsang-kg-search.json",
+    "src/content/blog/soka-kg-search.json",
+    "src/content/blog/trending-kindergartens-2026.json",
+    "src/content/blog/true-light-primary-search.json",
+    "src/lib/blog.ts",
+    "src/lib/report-sources.ts",
+    "src/lib/reports.ts",
+    "src/lib/school-profile-summary.ts",
+    "src/lib/structured-data.ts"
+  ],
+  "added": [
+    "public/brand/site-mark.png",
+    "src/app/apple-icon.png"
+  ],
+  "acceptedBuildMismatches": [],
+  "reportBodiesChanged": false,
+  "productionDomainRecheckRequiredBeforePromotion": true
+}

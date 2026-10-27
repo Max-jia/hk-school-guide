@@ -1,0 +1,293 @@
+{
+  "window": {
+    "from": "2026-09-20",
+    "to": "2026-10-17",
+    "scope": "Historical pre-upgrade export; not evidence of current version performance"
+  },
+  "site": {
+    "clicks": 280,
+    "impressions": 7996,
+    "ctr": 0.035018,
+    "rows": 28
+  },
+  "pages": {
+    "report": {
+      "clicks": 199,
+      "impressions": 5382,
+      "ctr": 0.036975,
+      "rows": 193
+    },
+    "blog": {
+      "clicks": 73,
+      "impressions": 2351,
+      "ctr": 0.031051,
+      "rows": 68
+    },
+    "school-profile": {
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "rows": 0
+    },
+    "other": {
+      "clicks": 8,
+      "impressions": 467,
+      "ctr": 0.017131,
+      "rows": 45
+    }
+  },
+  "pagePositionBuckets": {
+    "1–3": {
+      "clicks": 1,
+      "impressions": 10,
+      "ctr": 0.1,
+      "rows": 7
+    },
+    "3–10": {
+      "clicks": 126,
+      "impressions": 4662,
+      "ctr": 0.027027,
+      "rows": 169
+    },
+    "10–20": {
+      "clicks": 130,
+      "impressions": 2910,
+      "ctr": 0.044674,
+      "rows": 98
+    },
+    "20+": {
+      "clicks": 23,
+      "impressions": 618,
+      "ctr": 0.037217,
+      "rows": 32
+    }
+  },
+  "devices": [
+    {
+      "Device": "Mobile",
+      "Clicks": "184",
+      "Impressions": "5081",
+      "CTR": "3.62%",
+      "Position": "9.55"
+    },
+    {
+      "Device": "Desktop",
+      "Clicks": "93",
+      "Impressions": "2804",
+      "CTR": "3.32%",
+      "Position": "14.4"
+    },
+    {
+      "Device": "Tablet",
+      "Clicks": "3",
+      "Impressions": "111",
+      "CTR": "2.7%",
+      "Position": "12.07"
+    }
+  ],
+  "joint": {
+    "clicks": 18,
+    "impressions": 1427,
+    "ctr": 0.012614,
+    "rows": 470
+  },
+  "jointIntentThemes": {
+    "升学成果": {
+      "clicks": 2,
+      "impressions": 57,
+      "ctr": 0.035088,
+      "rows": 23
+    },
+    "地区与校网": {
+      "clicks": 2,
+      "impressions": 156,
+      "ctr": 0.012821,
+      "rows": 29
+    },
+    "学校名与其他": {
+      "clicks": 9,
+      "impressions": 506,
+      "ctr": 0.017787,
+      "rows": 251
+    },
+    "申请与面试": {
+      "clicks": 0,
+      "impressions": 36,
+      "ctr": 0.0,
+      "rows": 9
+    },
+    "评价与比较": {
+      "clicks": 2,
+      "impressions": 139,
+      "ctr": 0.014388,
+      "rows": 98
+    },
+    "语言与课程": {
+      "clicks": 0,
+      "impressions": 66,
+      "ctr": 0.0,
+      "rows": 16
+    },
+    "费用与资助": {
+      "clicks": 3,
+      "impressions": 467,
+      "ctr": 0.006424,
+      "rows": 44
+    }
+  },
+  "higherPositionPagesToObserve": [
+    {
+      "Top pages": "https://hkschool.guide/blog/good-hope-primary-guide",
+      "Clicks": "5",
+      "Impressions": "646",
+      "CTR": "0.77%",
+      "Position": "8.83"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/spcs",
+      "Clicks": "8",
+      "Impressions": "352",
+      "CTR": "2.27%",
+      "Position": "8.84"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/mcs",
+      "Clicks": "9",
+      "Impressions": "321",
+      "CTR": "2.8%",
+      "Position": "9.32"
+    },
+    {
+      "Top pages": "https://hkschool.guide/blog/kg-subsidy-guide",
+      "Clicks": "6",
+      "Impressions": "259",
+      "CTR": "2.32%",
+      "Position": "9.21"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/hkups",
+      "Clicks": "4",
+      "Impressions": "161",
+      "CTR": "2.48%",
+      "Position": "8.16"
+    },
+    {
+      "Top pages": "https://hkschool.guide/blog/hkuga-primary",
+      "Clicks": "8",
+      "Impressions": "159",
+      "CTR": "5.03%",
+      "Position": "7.66"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/tlps",
+      "Clicks": "5",
+      "Impressions": "141",
+      "CTR": "3.55%",
+      "Position": "9.01"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/spk",
+      "Clicks": "2",
+      "Impressions": "138",
+      "CTR": "1.45%",
+      "Position": "8.83"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/victoria",
+      "Clicks": "9",
+      "Impressions": "134",
+      "CTR": "6.72%",
+      "Position": "8.49"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/dbs",
+      "Clicks": "0",
+      "Impressions": "122",
+      "CTR": "0%",
+      "Position": "8.9"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/spccps",
+      "Clicks": "3",
+      "Impressions": "118",
+      "CTR": "2.54%",
+      "Position": "9.36"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/gt",
+      "Clicks": "2",
+      "Impressions": "104",
+      "CTR": "1.92%",
+      "Position": "8.82"
+    },
+    {
+      "Top pages": "https://hkschool.guide/blog/stcat-interview",
+      "Clicks": "8",
+      "Impressions": "99",
+      "CTR": "8.08%",
+      "Position": "8.31"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/sscps",
+      "Clicks": "3",
+      "Impressions": "85",
+      "CTR": "3.53%",
+      "Position": "9.66"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/ssgps",
+      "Clicks": "4",
+      "Impressions": "78",
+      "CTR": "5.13%",
+      "Position": "8.32"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/pt",
+      "Clicks": "4",
+      "Impressions": "70",
+      "CTR": "5.71%",
+      "Position": "9.21"
+    },
+    {
+      "Top pages": "https://hkschool.guide/cn/blog/lh-kg",
+      "Clicks": "1",
+      "Impressions": "65",
+      "CTR": "1.54%",
+      "Position": "7.2"
+    },
+    {
+      "Top pages": "https://hkschool.guide/",
+      "Clicks": "1",
+      "Impressions": "60",
+      "CTR": "1.67%",
+      "Position": "8.05"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/alliance",
+      "Clicks": "4",
+      "Impressions": "55",
+      "CTR": "7.27%",
+      "Position": "8.55"
+    },
+    {
+      "Top pages": "https://hkschool.guide/reports/veo-op",
+      "Clicks": "2",
+      "Impressions": "52",
+      "CTR": "3.85%",
+      "Position": "8.13"
+    },
+    {
+      "Top pages": "https://hkschool.guide/blog/cheungchau-kg",
+      "Clicks": "3",
+      "Impressions": "51",
+      "CTR": "5.88%",
+      "Position": "8.04"
+    }
+  ],
+  "limitations": [
+    "Page impressions and site impressions use different aggregation; do not replace one with the other.",
+    "Query×page table is a limited visible subset and is not a complete query inventory.",
+    "Average position buckets are diagnostic groups, not exact rank-adjusted causal estimates.",
+    "Latest 32-guide and profile upgrades postdate this window; no uplift measured."
+  ]
+}

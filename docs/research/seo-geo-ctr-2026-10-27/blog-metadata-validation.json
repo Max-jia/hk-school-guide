@@ -1,0 +1,895 @@
+{
+  "articles": 74,
+  "localeCases": 148,
+  "errors": [],
+  "rows": [
+    {
+      "slug": "secondary-results-guide",
+      "locale": "tc",
+      "title": "DSE與升大學成績怎麼看：332A、22222和錄取率",
+      "description": "先讀懂332A、22222，再分清達標、錄取、入讀與科次比例；用同一張核對表判斷學校的升學成績。"
+    },
+    {
+      "slug": "secondary-results-guide",
+      "locale": "sc",
+      "title": "DSE与升大学成绩怎么看：332A、22222和录取率",
+      "description": "先读懂332A、22222，再分清达标、录取、入读与科次比例；用同一张核对表判断学校的升学成绩。"
+    },
+    {
+      "slug": "secondary-curriculum-pathways-guide",
+      "locale": "tc",
+      "title": "DSE、IB與A-Level：課程壓力、中文與轉軌成本",
+      "description": "比較DSE、IB與A-Level的真實學習任務、中文要求和轉軌成本；先核對孩子與大學條件，再選擇課程。"
+    },
+    {
+      "slug": "secondary-curriculum-pathways-guide",
+      "locale": "sc",
+      "title": "DSE、IB与A-Level：课程压力、中文与转轨成本",
+      "description": "比较DSE、IB与A-Level的真实学习任务、中文要求和转轨成本；先核对孩子与大学条件，再选择课程。"
+    },
+    {
+      "slug": "secondary-transfer-guide",
+      "locale": "tc",
+      "title": "中一叩門與中學插班：不同年級怎樣準備",
+      "description": "把中一叩門、初中插班和高中轉校分成三條流程；查真實空缺、語言與選科銜接，先保留可就讀學位。"
+    },
+    {
+      "slug": "secondary-transfer-guide",
+      "locale": "sc",
+      "title": "中一叩门与中学插班：不同年级怎样准备",
+      "description": "把中一叩门、初中插班和高中转校分成三条流程；查真实空缺、语言与选科衔接，先保留可就读学位。"
+    },
+    {
+      "slug": "secondary-subject-choice-guide",
+      "locale": "tc",
+      "title": "中三選科：從學校開科反推大學與職業方向",
+      "description": "把孩子能力、學校科目組合和大學先修要求放在同一張表，分清必須、偏好與加權，並準備可行的第二組合。"
+    },
+    {
+      "slug": "secondary-subject-choice-guide",
+      "locale": "sc",
+      "title": "中三选科：从学校开科反推大学与职业方向",
+      "description": "把孩子能力、学校科目组合和大学先修要求放在同一张表，分清必须、偏好与加权，并准备可行的第二组合。"
+    },
+    {
+      "slug": "secondary-new-arrival-guide",
+      "locale": "tc",
+      "title": "新來港家庭讀中學：申請、插班與升學資格分開看",
+      "description": "把中學入學、學校收費、中小學資助與大學本地資格分開；按2027/28新安排核對居留、語言和證明文件。"
+    },
+    {
+      "slug": "secondary-new-arrival-guide",
+      "locale": "sc",
+      "title": "新来港家庭读中学：申请、插班与升学资格分开看",
+      "description": "把中学入学、学校收费、中小学资助与大学本地资格分开；按2027/28新安排核对居留、语言和证明文件。"
+    },
+    {
+      "slug": "kg-waitlist-transfer-guide",
+      "locale": "tc",
+      "title": "幼稚園候補與轉校：沒有offer或原校停辦怎麼辦",
+      "description": "按K1候補、K2／K3插班和停辦轉校分開行動，先確認新學位，再處理電子取消註冊、費用和照顧銜接。"
+    },
+    {
+      "slug": "kg-waitlist-transfer-guide",
+      "locale": "sc",
+      "title": "幼稚园候补与转校：没有offer或原校停办怎么办",
+      "description": "按K1候补、K2／K3插班和停办转校分开行动，先确认新学位，再处理电子取消注册、费用和照顾衔接。"
+    },
+    {
+      "slug": "kg-primary-outcomes-guide",
+      "locale": "tc",
+      "title": "幼稚園升小成績怎麼看：派位、考獲與入讀分開",
+      "description": "用真實校方圖表分清分母、重複offer及最終入讀，讀懂同屆前三直私去向對家庭目標的參考價值。"
+    },
+    {
+      "slug": "kg-primary-outcomes-guide",
+      "locale": "sc",
+      "title": "幼稚园升小成绩怎么看：派位、考获与入读分开",
+      "description": "用真实校方图表分清分母、重复offer及最终入读，读懂同届前三直私去向对家庭目标的参考价值。"
+    },
+    {
+      "slug": "primary-transfer-guide",
+      "locale": "tc",
+      "title": "小學插班：P2至P6的年級、測試與轉校代價",
+      "description": "先核實年級與實際空缺，再比較課程、測試語言、呈分資料和家庭適應；以官方校本實例拆解插班，不設虛假的統一死線。"
+    },
+    {
+      "slug": "primary-transfer-guide",
+      "locale": "sc",
+      "title": "小学插班：P2至P6的年级、测试与转校代价",
+      "description": "先核实年级与实际空缺，再比较课程、测试语言、呈分资料和家庭适应；以官方校本实例拆解插班，不设虚假的统一死线。"
+    },
+    {
+      "slug": "primary-school-learning-guide",
+      "locale": "tc",
+      "title": "小學日常適不適合：語言、功課、測考與家長投入",
+      "description": "逐科核對語言，用校本政策和家庭時間記錄判斷功課、評估及支援；兩所小學官方例子幫助家長把宣傳變成可比較的日常。"
+    },
+    {
+      "slug": "primary-school-learning-guide",
+      "locale": "sc",
+      "title": "小学日常适不适合：语言、功课、测考与家长投入",
+      "description": "逐科核对语言，用校本政策和家庭时间记录判断功课、评估及支援；两所小学官方例子帮助家长把宣传变成可比较的日常。"
+    },
+    {
+      "slug": "primary-interview-guide",
+      "locale": "tc",
+      "title": "直資和私立小一面試：材料與家庭準備怎麼做",
+      "description": "按三校2027/28公開形式拆解材料、圖書分享與小組互動；區分校規與面經，幫助家庭控制準備成本和選擇負擔。"
+    },
+    {
+      "slug": "primary-interview-guide",
+      "locale": "sc",
+      "title": "直资和私立小一面试：材料与家庭准备怎么做",
+      "description": "按三校2027/28公开形式拆解材料、图书分享与小组互动；区分校规与面经，帮助家庭控制准备成本和选择负担。"
+    },
+    {
+      "slug": "secondary-language-guide",
+      "locale": "tc",
+      "title": "英中還是中中：逐科、分班、分年級看教學語言",
+      "description": "按授課、教材、作答和支援四方面拆解中學教學語言，附逐科表、學校原文實例、八個提問及2027/28版本核對方法。"
+    },
+    {
+      "slug": "secondary-language-guide",
+      "locale": "sc",
+      "title": "英中还是中中：逐科、分班、分年级看教学语言",
+      "description": "按授课、教材、作答和支援四方面拆解中学教学语言，附逐科表、学校原文实例、八个提问及2027/28版本核对方法。"
+    },
+    {
+      "slug": "secondary-discretionary-guide",
+      "locale": "tc",
+      "title": "中一自行怎麼選兩所：收生比重、材料與面試",
+      "description": "用七校公開收生框架說明資格、入圍、面試與材料的區別，分清2027/28當屆及歷史資料，按孩子真實強項選擇自行兩校。"
+    },
+    {
+      "slug": "secondary-discretionary-guide",
+      "locale": "sc",
+      "title": "中一自行怎么选两所：收生比重、材料与面试",
+      "description": "用七校公开收生框架说明资格、入围、面试与材料的区别，分清2027/28当届及历史资料，按孩子真实强项选择自行两校。"
+    },
+    {
+      "slug": "secondary-school-cost-guide",
+      "locale": "tc",
+      "title": "中學六年成本：學費、雜項、獎學金與減免",
+      "description": "分開學費、按金、建設費、交通和資助，核對2026/27學校收費實例，附年度淨支出表、演算例子與六年壓力情境。"
+    },
+    {
+      "slug": "secondary-school-cost-guide",
+      "locale": "sc",
+      "title": "中学六年成本：学费、杂项、奖学金与减免",
+      "description": "分开学费、按金、建设费、交通和资助，核对2026/27学校收费实例，附年度净支出表、演算例子与六年压力情境。"
+    },
+    {
+      "slug": "p1-offer-registration-guide",
+      "locale": "tc",
+      "title": "多個小一offer怎麼選：留位、保證書與派位資格",
+      "description": "直資保證書、私立留位及官津註冊分開看；用書面條款、六年成本和家庭日常比較幾份小一錄取，保留可執行的後備。"
+    },
+    {
+      "slug": "p1-offer-registration-guide",
+      "locale": "sc",
+      "title": "多个小一offer怎么选：留位、保证书与派位资格",
+      "description": "直资保证书、私立留位及官津注册分开看；用书面条款、六年成本和家庭日常比较几份小一录取，保留可执行的后备。"
+    },
+    {
+      "slug": "kg-school-types-guide",
+      "locale": "tc",
+      "title": "幼稚園類型怎麼分：私立、非牟利與國際課程",
+      "description": "先分清辦學性質、課程和資助三個維度，再按升小路線、預算與照顧需要篩選學校。"
+    },
+    {
+      "slug": "kg-school-types-guide",
+      "locale": "sc",
+      "title": "幼稚园类型怎么分：私立、非牟利与国际课程",
+      "description": "先分清办学性质、课程和资助三个维度，再按升小路线、预算与照顾需要筛选学校。"
+    },
+    {
+      "slug": "kg-school-hours-care-guide",
+      "locale": "tc",
+      "title": "半日、全日與長全日：雙職家庭怎樣接好照顧",
+      "description": "用放學、下班、通勤與學校假期排出一週照顧表，分清全日教學、長全日服務、延托和暫托。"
+    },
+    {
+      "slug": "kg-school-hours-care-guide",
+      "locale": "sc",
+      "title": "半日、全日与长全日：双职家庭怎样接好照顾",
+      "description": "用放学、下班、通勤与学校假期排出一周照顾表，分清全日教学、长全日服务、延托和暂托。"
+    },
+    {
+      "slug": "secondary-admission-guide",
+      "locale": "tc",
+      "title": "2027/28升中總指南：自行、直資與統一派位",
+      "description": "按2027/28升中安排，拆開自行、非參派直資及統一派位兩條線，附關鍵節點、文件後果、家庭取捨和後備行動。"
+    },
+    {
+      "slug": "secondary-admission-guide",
+      "locale": "sc",
+      "title": "2027/28升中总指南：自行、直资与统一派位",
+      "description": "按2027/28升中安排，拆开自行、非参派直资及统一派位两条线，附关键节点、文件后果、家庭取舍和后备行动。"
+    },
+    {
+      "slug": "secondary-banding-guide",
+      "locale": "tc",
+      "title": "中學Banding怎麼看：孩子組別與學校1A、1B的區別",
+      "description": "分清學生全港／校網組別、學校1A/1B參考定位、教學語言與DSE表現；用邊界情境和六個問題建立可承受誤差的選校名單。"
+    },
+    {
+      "slug": "secondary-banding-guide",
+      "locale": "sc",
+      "title": "中学Banding怎么看：孩子组别与学校1A、1B的区别",
+      "description": "分清学生全港／校网组别、学校1A/1B参考定位、教学语言与DSE表现；用边界情境和六个问题建立可承受误差的选校名单。"
+    },
+    {
+      "slug": "secondary-central-allocation-guide",
+      "locale": "tc",
+      "title": "升中統一派位：甲乙部、校網與志願次序",
+      "description": "按2027升中制度解釋甲乙部、全港與校網組別、隨機編號及直屬聯繫資格，附假設選擇案例與填表核對單。"
+    },
+    {
+      "slug": "secondary-central-allocation-guide",
+      "locale": "sc",
+      "title": "升中统一派位：甲乙部、校网与志愿次序",
+      "description": "按2027升中制度解释甲乙部、全港与校网组别、随机编号及直属联系资格，附假设选择案例与填表核对单。"
+    },
+    {
+      "slug": "secondary-dss-offer-guide",
+      "locale": "tc",
+      "title": "直資中學offer與官津派位｜2027/28承諾書、取回文件與選擇",
+      "description": "按2027/28升中安排，分清直資接受學位、家長承諾書、4月8日取回文件與官津正取的關係；附三校當屆實例、家庭取捨表及簽字前清單。"
+    },
+    {
+      "slug": "secondary-dss-offer-guide",
+      "locale": "sc",
+      "title": "直资中学offer与官津派位｜2027/28承诺书、取回文件与选择",
+      "description": "收到香港直资中学录取后，签承诺书会影响什么？按2027/28教育局安排，分清4月8日与校本时限，比较课程、成本及后备方案。"
+    },
+    {
+      "slug": "true-light-primary-search",
+      "locale": "tc",
+      "title": "真光小學怎樣分：大坑與九龍校名、升中安排核對",
+      "description": "先分清大坑真光與九龍真光，再核對招生、男女性別與升中安排。文中搜尋數字為2026年10月歷史快照，不代表現時申請人數。"
+    },
+    {
+      "slug": "true-light-primary-search",
+      "locale": "sc",
+      "title": "真光小学怎样分：大坑与九龙校名、升中安排核对",
+      "description": "先分清大坑真光与九龙真光，再核对招生、男女性别与升中安排。文中搜索数字为2026年10月历史快照，不代表现时申请人数。"
+    },
+    {
+      "slug": "munsang-kg-search",
+      "locale": "tc",
+      "title": "民生幼稚園升小怎樣看：學費、評估與後備準備",
+      "description": "選民生之前，先問清民小升讀條件、評估安排與未獲學位的後備。保留2026年10月搜尋紀錄，舊學費與比例不作當屆承諾。"
+    },
+    {
+      "slug": "munsang-kg-search",
+      "locale": "sc",
+      "title": "民生幼稚园升小怎样看：学费、评估与后备准备",
+      "description": "选民生之前，先问清民小升读条件、评估安排与未获学位的后备。保留2026年10月搜索记录，旧学费与比例不作当届承诺。"
+    },
+    {
+      "slug": "soka-kg-search",
+      "locale": "tc",
+      "title": "創價幼稚園怎樣選：費用、語言與升小準備",
+      "description": "從全年支出、實際授課語言和升小路線核對創價是否合適；保留2026年10月搜尋快照及現行指南，不把熱度當錄取率。"
+    },
+    {
+      "slug": "soka-kg-search",
+      "locale": "sc",
+      "title": "创价幼稚园怎样选：费用、语言与升小准备",
+      "description": "从全年支出、实际授课语言和升小路线核对创价是否合适；保留2026年10月搜索快照及现行指南，不把热度当录取率。"
+    },
+    {
+      "slug": "gt-primary-guide",
+      "locale": "tc",
+      "title": "優才小學好唔好？2026/27學費、校舍、課程與一條龍升學路線",
+      "description": "Google Trends 香港區 9月6–13日快照：「優才小學」上升 150%、「優才小學學費」上升 110%。2026/27 小一學費、旺角／將軍澳校舍、DSE／IB 與申請方式一次說清。"
+    },
+    {
+      "slug": "gt-primary-guide",
+      "locale": "sc",
+      "title": "优才小学怎么样？2026/27学费、校舍、课程和一条龙升学路线",
+      "description": "Google Trends 香港区 9月6–13日快照：「优才小学」上升 150%、「优才小学学费」上升 110%。2026/27 小一学费、旺角／将军澳校舍、DSE／IB 与申请方式一次说清。"
+    },
+    {
+      "slug": "skh-same-name-schools",
+      "locale": "tc",
+      "title": "聖公會三組「同名小學」：李兆強、基顯、阮鄭夢芹——為什麼每組都有兩所？",
+      "description": "「油塘基顯」+250%、「聖公會李兆強」+250%、「阮鄭夢芹」+130%——這幾條搜尋其實是三組雙胞胎：每組兩所、名字只差幾個字、都由聖公會辦學，而且都源自同一次「上下午校分拆」。六所在官方《小學概覽》的資料一次排開。"
+    },
+    {
+      "slug": "skh-same-name-schools",
+      "locale": "sc",
+      "title": "圣公会三组「同名小学」：李兆强、基显、阮郑梦芹——为什么每组都有两所？",
+      "description": "「油塘基显」+250%、「圣公会李兆强」+250%、「阮郑梦芹」+130%——这几条搜索其实是三组双胞胎：每组两所、名字只差几个字、都由圣公会办学，而且都源自同一次「上下午校分拆」。六所在官方《小学概览》的资料一次排开。"
+    },
+    {
+      "slug": "psp-2026-guide",
+      "locale": "tc",
+      "title": "《小學概覽 2026》使用指南：先看四個欄位，篩掉一半學校（附官方入口）",
+      "description": "「小學概覽 2026」搜尋量 Breakout。它是官方免費資料庫，不是排名——先看地區列表的四個欄位（校網／資助種類／宗教／性別），通常已能篩掉一半學校。附官方入口與六組必看資料。"
+    },
+    {
+      "slug": "psp-2026-guide",
+      "locale": "sc",
+      "title": "《小学概览 2026》使用指南：先看四个栏位，筛掉一半学校（附官方入口）",
+      "description": "「小学概览 2026」搜索量 Breakout。它是官方免费数据库，不是排名——先看地区列表的四个栏位（校网／资助种类／宗教／性别），通常已能筛掉一半学校。附官方入口与六组必看资料。"
+    },
+    {
+      "slug": "lui-ming-choi-5-schools",
+      "locale": "tc",
+      "title": "「呂明才小學」搜尋全港最高——但香港有五所，分屬四個辦學團體｜附官方對照表",
+      "description": "「呂明才小學」是全榜興趣值最高的一條搜尋，但香港有五所呂明才小學、分屬四個辦學團體，只有兩所同屬一個聯會、也只有兩所有聯繫中學。用教育局《小學概覽》官方欄位一次排開。"
+    },
+    {
+      "slug": "lui-ming-choi-5-schools",
+      "locale": "sc",
+      "title": "「吕明才小学」搜索全港最高——但香港有五所，分属四个办学团体｜附官方对照表",
+      "description": "「吕明才小学」是全榜兴趣值最高的一条搜索，但香港有五所吕明才小学、分属四个办学团体，只有两所同属一个联会、也只有两所有联系中学。用教育局《小学概览》官方字段一次排开。"
+    },
+    {
+      "slug": "pooi-to-kg",
+      "locale": "tc",
+      "title": "培道幼稚園全攻略：半日免費券幼、100% 免試直升培道小學——但要留意小學是私立，一年 $51,984",
+      "description": "「培道幼稚園」+150%、「培道小學」+70%——家長在問同一件事：這條路走到底要多少錢？幼稚園半日免費，但直升的培道小學是私立、一年 $51,984。"
+    },
+    {
+      "slug": "pooi-to-kg",
+      "locale": "sc",
+      "title": "香港培道幼稚园全攻略：半日免费学券幼、100% 免试直升培道小学",
+      "description": "「培道幼稚园」+150%、「培道小学」+70%。幼稚园半日免费，但直升的培道小学是私立、一年 $51,984——12 年的账一次算清。"
+    },
+    {
+      "slug": "skh-kg",
+      "locale": "tc",
+      "title": "聖公會幼稚園 SKH 全攻略：學費 $71,830、每級 180 個學額、師生比 1:8——它不是券校，也不是聖保羅男女的附屬幼稚園",
+      "description": "「聖公會幼稚園」連續進熱搜榜。但兩個流傳很廣的說法都不對：它不是券校（校方寫明沒參加幼稚園教育計劃），也與聖保羅男女沒有直升關係。官方數字一次講清。"
+    },
+    {
+      "slug": "skh-kg",
+      "locale": "sc",
+      "title": "香港圣公会幼稚园 SKH 全攻略：学费 $71,830、每级 180 个学额、师生比 1:8",
+      "description": "「圣公会幼稚园」进热搜。两个常见误解要澄清：它不是学券校（校方写明没参加幼稚园教育计划），也跟圣保罗男女没有直升关系。"
+    },
+    {
+      "slug": "lh-kg",
+      "locale": "tc",
+      "title": "學之園LH學費2026/27：8校區粵英與普英收費",
+      "description": "學之園2026/27學年K1至K3半日班，粵英班全年HK$87,600至90,000，普英班HK$91,200至93,600，另有雜項費。逐校區核對收費與最新升小去向。"
+    },
+    {
+      "slug": "lh-kg",
+      "locale": "sc",
+      "title": "香港学之园LH学费2026/27：8校区收费表",
+      "description": "学之园2026/27学年K1至K3半日班，粤英班全年HK$87,600至90,000，普英班HK$91,200至93,600，另有杂项费。按校区核对收费与升小去向。"
+    },
+    {
+      "slug": "spcps-primary",
+      "locale": "tc",
+      "title": "聖保羅書院小學 SPCPS 全攻略：$32,000 年費的直資男校、面試 100 分怎麼算——別和聖保羅男女、聖保羅堂搞混",
+      "description": "「聖保羅書院小學」搜索 +170%、「面試」+90%——第一輪面試資訊 9 月 9 日剛公佈。$32,000/年、中一 210 個學額留 110 個給附屬小學、收生 100 分怎麼算，一次講清。"
+    },
+    {
+      "slug": "spcps-primary",
+      "locale": "sc",
+      "title": "香港圣保罗书院小学 SPCPS 全攻略：学费 $32,000、中一 210 个学额留 110 个给附属小学、面试 100 分怎么算——别和圣保罗男女、圣保罗堂搞混",
+      "description": "「圣保罗书院小学」搜索 +170%、「面试」+90%。$32,000/年的直资男校，中一 210 个学额留 110 个给附属小学，收生 100 分怎么算一次讲清。"
+    },
+    {
+      "slug": "ling-liang-kg-search-2026",
+      "locale": "tc",
+      "title": "靈糧堂系幼稚園校區怎樣分：2026年9月搜尋紀錄",
+      "description": "用2026年9月搜尋紀錄辨識同系校名，再按具體校區核對班制、費用、語言和接送；八個舊辦學點的整理不代表最新分校總數。"
+    },
+    {
+      "slug": "ling-liang-kg-search-2026",
+      "locale": "sc",
+      "title": "灵粮堂系幼稚园校区怎样分：2026年9月搜索记录",
+      "description": "用2026年9月搜索记录辨识同系校名，再按具体校区核对班制、费用、语言和接送；八个旧办学点的整理不代表最新分校总数。"
+    },
+    {
+      "slug": "hk-school-agency-red-flags",
+      "locale": "tc",
+      "title": "香港擇校中介避坑指南：5句紅旗話術+一套DIY盡調流程",
+      "description": "收費30倍價差、低價引流、賣學籍灰色產業。5句聽到就走的紅旗話術＋一套不花錢的DIY擇校盡調流程。"
+    },
+    {
+      "slug": "hk-school-agency-red-flags",
+      "locale": "sc",
+      "title": "香港择校中介避坑指南：5句红旗话术+一套DIY尽调流程",
+      "description": "收费30倍价差、低价引流、卖学籍灰色产业。5句听到就走的红旗话术＋一套不花钱的DIY择校尽调流程。"
+    },
+    {
+      "slug": "hk-school-net-diy-analysis",
+      "locale": "tc",
+      "title": "小學校網怎麼查：核對地址、名單與當屆學額",
+      "description": "按真實住址核對校網及當屆名單，區分自行與統派學額。用通勤及家庭接受程度建立候選表，不把供應數字拼成個人錄取率。"
+    },
+    {
+      "slug": "hk-school-net-diy-analysis",
+      "locale": "sc",
+      "title": "小学校网怎么查：核对地址、名单与当届学额",
+      "description": "按真实住址核对校网及当届名单，区分自行与统派学额。用通勤及家庭接受程度建立候选表，不把供应数字拼成个人录取率。"
+    },
+    {
+      "slug": "kg-open-day-guide-2026",
+      "locale": "tc",
+      "title": "幼稚園開放日：怎樣把宣傳特色問成可比較的事實",
+      "description": "用師幼互動、遊戲、午睡如廁、家校溝通與接送觀察表，看清日常安排及家庭需要承擔的代價。"
+    },
+    {
+      "slug": "kg-open-day-guide-2026",
+      "locale": "sc",
+      "title": "幼稚园开放日：怎样把宣传特色问成可比较的事实",
+      "description": "用师幼互动、游戏、午睡如厕、家校沟通与接送观察表，看清日常安排及家庭需要承担的代价。"
+    },
+    {
+      "slug": "hk-kg-k1-transparency-audit-2027-28",
+      "locale": "tc",
+      "title": "2027/28香港幼稚園K1招生信息公開度核查：5所學校逐項對照",
+      "description": "原創逐校核查：把申請、面見、結果、註冊和家長待確認事項放在同一張表；僅依據當屆官方資料，不推算錄取難度。"
+    },
+    {
+      "slug": "hk-kg-k1-transparency-audit-2027-28",
+      "locale": "sc",
+      "title": "2027/28香港幼稚园K1招生信息公开度核查：5所学校逐项对照",
+      "description": "原创逐校核查：把申请、面见、结果、注册和家长待确认事项放在同一张表；仅依据当届官方资料，不推算录取难度。"
+    },
+    {
+      "slug": "ma-on-shan-kg-2026",
+      "locale": "tc",
+      "title": "馬鞍山幼稚園盤點：7間學校，免費券校到國際路線一次看清",
+      "description": "「馬鞍山幼稚園」搜索27 Breakout。靈糧、崇真美善免費券校，到朗思國際路線，學費師生比一表對比。"
+    },
+    {
+      "slug": "ma-on-shan-kg-2026",
+      "locale": "sc",
+      "title": "马鞍山幼稚园盘点：7间学校，免费券校到国际路线一次看清",
+      "description": "「马鞍山幼稚园」搜索27 Breakout。灵粮、崇真美善免费券校，到朗思国际路线，学费师生比一表对比。"
+    },
+    {
+      "slug": "hy-kg-search-2026",
+      "locale": "tc",
+      "title": "協恩幼稚園怎樣選：升小條件與申請前核對",
+      "description": "把幼稚園、小學及中學的升學安排分開核對，不把校名或舊申請比例當錄取保證；附2026年9月搜尋紀錄與現行指南。"
+    },
+    {
+      "slug": "hy-kg-search-2026",
+      "locale": "sc",
+      "title": "协恩幼稚园怎样选：升小条件与申请前核对",
+      "description": "把幼稚园、小学及中学的升学安排分开核对，不把校名或旧申请比例当录取保证；附2026年9月搜索记录与现行指南。"
+    },
+    {
+      "slug": "hk-p1-admission-guide-2027",
+      "locale": "tc",
+      "title": "2027/28小一申請總指南：自行、統派與校本申請",
+      "description": "按當前狀態安排2027小一申請：分清官津與校本招生、統派甲乙部、註冊和接受直資的後果，列出家庭可執行的後備路徑。"
+    },
+    {
+      "slug": "hk-p1-admission-guide-2027",
+      "locale": "sc",
+      "title": "2027/28小一申请总指南：自行、统派与校本申请",
+      "description": "按当前状态安排2027小一申请：分清官津与校本招生、统派甲乙部、注册和接受直资的后果，列出家庭可执行的后备路径。"
+    },
+    {
+      "slug": "school-net-41-vs-12",
+      "locale": "tc",
+      "title": "41校網與12校網怎麼選：先看地址、學校名單和志願風險",
+      "description": "按教育局校網地圖與當屆名單核對兩網的地址、學校組合和乙部選擇邊界；舊文未能核實的派位百分比已撤下。"
+    },
+    {
+      "slug": "school-net-41-vs-12",
+      "locale": "sc",
+      "title": "香港41校网与12校网怎么选：地址、学校名单和派位风险",
+      "description": "按教育局资料核对两网覆盖范围和学校组合，了解为何名校数量不能直接推算录取机会。"
+    },
+    {
+      "slug": "plk-skh-kg-comparison",
+      "locale": "tc",
+      "title": "保良局 vs 聖公會幼稚園：兩大辦學團體全港 84 間學校怎麼選——牌子差異在哪，一次講清",
+      "description": "保良局 55 間、聖公會 29 間，九成七都參加免費計劃。社福底色 vs 教會背景，課程風格差在哪？還有兩間「例外名校」學費比小學還貴——牌子怎麼選，一次講清。"
+    },
+    {
+      "slug": "plk-skh-kg-comparison",
+      "locale": "sc",
+      "title": "保良局 vs 圣公会幼稚园：两大办学团体全港 84 间学校怎么选——牌子差异在哪，一次讲清",
+      "description": "保良局 55 间、圣公会 29 间，九成七都参加免费计划。社福底色 vs 教会背景，课程风格差在哪？还有两间「例外名校」学费比小学还贵——牌子怎么选，一次讲清。"
+    },
+    {
+      "slug": "n-class-guide",
+      "locale": "tc",
+      "title": "N班要讀嗎：照顧需要、孩子適應與實際支出",
+      "description": "先分清照顧缺口與入學準備，再比較半日、全日、資助資格和全年淨支出；附家庭選擇表、訪校問題及2027/28招生實例。"
+    },
+    {
+      "slug": "n-class-guide",
+      "locale": "sc",
+      "title": "N班要读吗：照顾需要、孩子适应与实际支出",
+      "description": "先分清照顾缺口与入学准备，再比较半日、全日、资助资格和全年净支出；附家庭选择表、访校问题及2027/28招生实例。"
+    },
+    {
+      "slug": "kg-english-guide",
+      "locale": "tc",
+      "title": "粵語、普通話還是英語：幼稚園教學語言怎樣核對",
+      "description": "用課堂、日常溝通、專項課和活動四欄，看清不同校區、班別與年級的真實語言安排。"
+    },
+    {
+      "slug": "kg-english-guide",
+      "locale": "sc",
+      "title": "粤语、普通话还是英语：幼稚园教学语言怎样核对",
+      "description": "用课堂、日常沟通、专项课和活动四栏，看清不同校区、班别与年级的真实语言安排。"
+    },
+    {
+      "slug": "eduhk-jcps-guide",
+      "locale": "tc",
+      "title": "香港教育大學賽馬會小學：免費的資助校，坐擁大學校園——「全港首間大學附屬小學」搜索量 +250%，來頭與真相一次講清",
+      "description": "「香港教育大學賽馬會小學」搜索量 +250%。不是新校——2002 年創校、全港首間建於大學校園的小學、恆温泳池圖書館隨便用。來頭與真相一次講清。"
+    },
+    {
+      "slug": "eduhk-jcps-guide",
+      "locale": "sc",
+      "title": "香港教育大学赛马会小学：免费的资助校，坐拥大学校园——「全港首间大学附属小学」搜索量 +250%，来头与真相一次讲清",
+      "description": "「香港教育大学赛马会小学」搜索量 +250%。不是新校——2002 年创校、全港首间建于大学校园的小学、恒温泳池图书馆随便用。来头与真相一次讲清。"
+    },
+    {
+      "slug": "good-hope-primary-guide",
+      "locale": "tc",
+      "title": "德望小學學費2026/27：HK$56,500–57,500",
+      "description": "德望小學2026/27學費：小一至小三每年HK$56,500，小四至小六HK$57,500。另核對2027/28小一招生時間、教學語言及升中學是否保證直升。"
+    },
+    {
+      "slug": "good-hope-primary-guide",
+      "locale": "sc",
+      "title": "香港德望小学学费2026/27：$56,500–57,500",
+      "description": "德望小学2026/27学费：小一至小三每年HK$56,500，小四至小六HK$57,500。核对2027/28小一招生时间、教学语言及升中去向。"
+    },
+    {
+      "slug": "kg-subsidy-guide",
+      "locale": "tc",
+      "title": "幼稚園實際花費與資助：怎樣算家庭淨支出",
+      "description": "學費、膳食、校車與用品分開算；區分教育計劃、家庭減免及就學開支津貼，核對2026/27金額與2027/28資格。"
+    },
+    {
+      "slug": "kg-subsidy-guide",
+      "locale": "sc",
+      "title": "幼稚园实际花费与资助：怎样算家庭净支出",
+      "description": "学费、膳食、校车与用品分开算；区分教育计划、家庭减免及就学开支津贴，核对2026/27金额与2027/28资格。"
+    },
+    {
+      "slug": "rainstorm-class-guide",
+      "locale": "tc",
+      "title": "紅雨小學、幼稚園和中學要返學嗎？教育局停課時段一表看清",
+      "description": "紅色暴雨警告下，上午班、下午班和全日制學校何時停課？按教育局通告整理時段表，並列出官方來源。實際安排請以教育局及學校最新通知為準。"
+    },
+    {
+      "slug": "rainstorm-class-guide",
+      "locale": "sc",
+      "title": "红雨小学、幼儿园和中学要上学吗？教育局停课时段一表看清",
+      "description": "红色暴雨警告下，上午班、下午班和全日制学校何时停课？按教育局通告整理时段表，并列出官方来源。实际安排请以教育局及学校最新通知为准。"
+    },
+    {
+      "slug": "st-margaret-kg",
+      "locale": "tc",
+      "title": "聖瑪加利大幼稚園：跑馬地 A+ 天主教券校，學費全免——本週家長都在搜什麼？",
+      "description": "「聖瑪加利大幼稚園校服」搜索量 Breakout。免費券校到底值不值得讀？報名、校服、面試一次講清。"
+    },
+    {
+      "slug": "st-margaret-kg",
+      "locale": "sc",
+      "title": "圣玛加利大幼稚园：跑马地 A+ 天主教券校，学费全免——本周家长都在搜什么？",
+      "description": "「圣玛加利大幼稚园校服」搜索量 Breakout。免费券校到底值不值得读？报名、校服、面试一次讲清。"
+    },
+    {
+      "slug": "p1-scoring-guide",
+      "locale": "tc",
+      "title": "小一自行分配怎麼計分：哪些分可以加、哪些不能",
+      "description": "按教育局2027年度計分表核對必收與計分兩類、5擇1和2擇1規則，附可復算例子、證明文件與同分超額安排；最高35分不等於錄取承諾。"
+    },
+    {
+      "slug": "p1-scoring-guide",
+      "locale": "sc",
+      "title": "小一自行分配怎么计分：哪些分可以加、哪些不能",
+      "description": "按教育局2027年度计分表核对必收与计分两类、5择1和2择1规则，附可复算例子、证明文件与同分超额安排；最高35分不等于录取承诺。"
+    },
+    {
+      "slug": "st-margaret-primary",
+      "locale": "tc",
+      "title": "聖瑪加利男女英文中小學：$53,570 一條龍直資、不限校網——和「聖瑪加利大」不是同一間",
+      "description": "「st margaret 小學」搜索量 +300%。全英教學一條龍直資，和跑馬地聖瑪加利大幼稚園是兩間名字很像的學校，一文分清。"
+    },
+    {
+      "slug": "st-margaret-primary",
+      "locale": "sc",
+      "title": "圣玛加利男女英文中小学：$53,570 一条龙直资、不限校网——和「圣玛加利大」不是同一间",
+      "description": "「st margaret 小学」搜索量 +300%。全英教学一条龙直资，和跑马地圣玛加利大幼稚园是两间名字很像的学校，一文分清。"
+    },
+    {
+      "slug": "net40-ranking",
+      "locale": "tc",
+      "title": "40校網小學排名 2026：深水埗 26 間小學完整比較，升中通路才是關鍵",
+      "description": "「40校網小學排名」搜索量 Breakout。26 間學校完整表：官立聯繫網、瑪利諾神父直屬，排名之外的重點是升中通路。"
+    },
+    {
+      "slug": "net40-ranking",
+      "locale": "sc",
+      "title": "40校网小学排名 2026：深水埗 26 间小学完整比较，升中通路才是关键",
+      "description": "「40校网小学排名」搜索量 Breakout。26 间学校完整表：官立联系网、玛利诺神父直属，排名之外的重点是升中通路。"
+    },
+    {
+      "slug": "funful-kg",
+      "locale": "tc",
+      "title": "海濱方方樂趣幼稚園：荃灣私立園，全日/半日學費多少？搜索量暴漲 4,700% 的幼稚園值不值",
+      "description": "「方方樂趣幼稚園」搜索量 +4,700%。半日 $88,272/年、全日 $119,928/年、師生比 1:7.5、有 PN。學費班別一次看清。"
+    },
+    {
+      "slug": "funful-kg",
+      "locale": "sc",
+      "title": "海滨方方乐趣幼稚园：荃湾私立园，全日/半日学费多少？搜索量暴涨 4,700% 的幼稚园值不值",
+      "description": "「方方乐趣幼稚园」搜索量 +4,700%。半日 $88,272/年、全日 $119,928/年、师生比 1:7.5、有 PN。学费班别一次看清。"
+    },
+    {
+      "slug": "wellcome-kg",
+      "locale": "tc",
+      "title": "宏廣國際幼稚園：屯門 Wellcome 英語幼稚園，2026/27 招生已開、半日 $67,392 起",
+      "description": "「宏廣國際幼稚園」搜索量 +2,700%。英語教學、有 PN，附官網招生程序：報名費 $40、面試安排、註冊費。"
+    },
+    {
+      "slug": "wellcome-kg",
+      "locale": "sc",
+      "title": "宏广国际幼稚园：屯门 Wellcome 英语幼稚园，2026/27 招生已开、半日 $67,392 起",
+      "description": "「宏广国际幼稚园」搜索量 +2,700%。英语教学、有 PN，附官网招生程序：报名费 $40、面试安排、注册费。"
+    },
+    {
+      "slug": "zenith-kg",
+      "locale": "tc",
+      "title": "英藝幼稚園五校園對比：將軍澳/沙田/兆康/大埔/賞湖，學費師生比一表看清",
+      "description": "「zenith kindergarten」搜索量 Breakout。5 間分校學費 $74,400-$135,276、師生比 1:2.5 至 1:12.4，全部有 PN。"
+    },
+    {
+      "slug": "zenith-kg",
+      "locale": "sc",
+      "title": "英艺幼稚园五校园对比：将军澳/沙田/兆康/大埔/赏湖，学费师生比一表看清",
+      "description": "「zenith kindergarten」搜索量 Breakout。5 间分校学费 $74,400-$135,276、师生比 1:2.5 至 1:12.4，全部有 PN。"
+    },
+    {
+      "slug": "cheungchau-kg",
+      "locale": "tc",
+      "title": "長洲幼稚園全攻略：5 間學校一次看清——免費券校、全日班、師生比全表",
+      "description": "「長洲幼稚園」搜索量 +800%。島上 5 間幼稚園全表：聖心半日免費、兩間路德會全日約 $3.4 萬、國民學校有 PN。"
+    },
+    {
+      "slug": "cheungchau-kg",
+      "locale": "sc",
+      "title": "长洲幼稚园全攻略：5 间学校一次看清——免费券校、全日班、师生比全表",
+      "description": "「长洲幼稚园」搜索量 +800%。岛上 5 间幼稚园全表：圣心半日免费、两间路德会全日约 $3.4 万、国民学校有 PN。"
+    },
+    {
+      "slug": "hyps-primary",
+      "locale": "tc",
+      "title": "協恩中學附屬小學：34網資助名校，直屬Band 1A協恩中學——2026熱搜背後",
+      "description": "「協恩中學附屬小學」搜索量 Breakout。免費資助女校、直屬協恩中學（1A）、班師比 1:2.2、錨點分 95。"
+    },
+    {
+      "slug": "hyps-primary",
+      "locale": "sc",
+      "title": "香港协恩中学附属小学：34 校网资助名校、直属 Band 1A 协恩中学，为什么内地来港家庭也在搜",
+      "description": "34 校网、资助、免学费，直属 Band 1A 协恩中学。校网怎么算、插班要注意什么，一篇说清。"
+    },
+    {
+      "slug": "dgs-primary",
+      "locale": "tc",
+      "title": "拔萃女小學 DGS：一條龍直升拔萃女書院，$8.6萬年費的私立名校值不值",
+      "description": "「dgs primary school」搜索量 +400%。私立一條龍直升拔萃女書院（1A），不受校網限制，有校車。"
+    },
+    {
+      "slug": "dgs-primary",
+      "locale": "sc",
+      "title": "香港拔萃女小学 DGS：一条龙直升拔萃女书院、$8.6 万年费的私立名校值不值",
+      "description": "DGS 搜索 +400%。私立女校、一条龙直升 Band 1A 拔萃女书院、年费约 $8.6 万——值不值得读，看这篇。"
+    },
+    {
+      "slug": "lht-primary",
+      "locale": "tc",
+      "title": "陸慶濤小學 LHT：將軍澳直資一條龍，$13,000 年費讀出 Band 1B 升中通路",
+      "description": "「lht 小學」搜索量 Breakout。LHT = 陸慶濤，不是嶺南。一條龍直升羅氏基金中學（1B），年費僅 $13,000。"
+    },
+    {
+      "slug": "lht-primary",
+      "locale": "sc",
+      "title": "陆庆涛小学 LHT：将军澳直资一条龙，$13,000 年费读出 Band 1B 升中通路",
+      "description": "「lht 小学」搜索量 Breakout。LHT = 陆庆涛，不是岭南。一条龙直升罗氏基金中学（1B），年费仅 $13,000。"
+    },
+    {
+      "slug": "delia-primary",
+      "locale": "tc",
+      "title": "地利亞英文小學暨幼稚園：深水埗英文私立小學，$34,000/年（附與閩僑分校分別）",
+      "description": "「delia english primary school & kindergarten」搜索量 Breakout。帶幼稚園部那間在深水埗，和葵青閩僑分校是兩間不同 Delia。"
+    },
+    {
+      "slug": "delia-primary",
+      "locale": "sc",
+      "title": "地利亚英文小学暨幼稚园：深水埗英文私立小学，$34,000/年（附与闽侨分校分别）",
+      "description": "「delia english primary school & kindergarten」搜索量 Breakout。带幼稚园部那间在深水埗，和葵青闽侨分校是两间不同 Delia。"
+    },
+    {
+      "slug": "mulberry-kg",
+      "locale": "tc",
+      "title": "懋柏禮國際幼稚園：Mulberry House 雙校園，Montessori 英語教學——和「童樂天」別搞混",
+      "description": "「mulberry house international kindergarten」搜索量 Breakout。南區/大埔雙校園；沙田那間是 Mulberry Tree，不同品牌。"
+    },
+    {
+      "slug": "mulberry-kg",
+      "locale": "sc",
+      "title": "懋柏礼国际幼稚园：Mulberry House 双校园，Montessori 英语教学——和「童乐天」别搞混",
+      "description": "「mulberry house international kindergarten」搜索量 Breakout。南区/大埔双校园；沙田那间是 Mulberry Tree，不同品牌。"
+    },
+    {
+      "slug": "plk-camoes-primary",
+      "locale": "tc",
+      "title": "陳守仁小學：油尖旺A級直資，英文教學+學費親民，中產家長的隱藏寶石",
+      "description": "英文教學+直資學費+不限校網——同時滿足這三條的A級學校全港沒幾所。"
+    },
+    {
+      "slug": "plk-camoes-primary",
+      "locale": "sc",
+      "title": "陈守仁小学：油尖旺A级直资，英文教学+学费亲民，中产家长的隐藏宝石",
+      "description": "英文教学+直资学费+不限校网——同时满足这三条的A级学校全港没几所。"
+    },
+    {
+      "slug": "hkuga-primary",
+      "locale": "tc",
+      "title": "港大同學會小學2026/27：學費、一條龍升中與2027/28小一申請",
+      "description": "核對當屆學費HK$41,630、港大同學會書院的DSE與iAL路徑，以及2027/28小一第二階段面試安排；舊文的IB與錄取率說法已更正。"
+    },
+    {
+      "slug": "hkuga-primary",
+      "locale": "sc",
+      "title": "香港港大同学会小学：2026/27学费、升中与小一申请",
+      "description": "2026/27学费HK$41,630；书院高中提供DSE与iAL路径。另看2027/28小一招生与面试进度。"
+    },
+    {
+      "slug": "st-joseph-primary",
+      "locale": "tc",
+      "title": "聖若瑟小學：灣仔12校網最強男校，為什麼2026年家長都在搜？",
+      "description": "Google Trends Breakout——免費讀Band 1A中學的通道。英文教學+12校網+聯繫聖若瑟書院。"
+    },
+    {
+      "slug": "st-joseph-primary",
+      "locale": "sc",
+      "title": "香港圣若瑟小学：湾仔 12 校网最强男校，2026 年家长都在搜什么",
+      "description": "湾仔 12 校网资助男校。校网派位怎么算、插班与家长口碑一次整理。"
+    },
+    {
+      "slug": "knocking-letter-guide",
+      "locale": "tc",
+      "title": "小一叩門：先保留學位，再準備求位與候補",
+      "description": "按註冊、校本申請、材料、評估和候補五步處理小一求位；辨清111邊界，附可修改的求位信結構與後備安排。"
+    },
+    {
+      "slug": "knocking-letter-guide",
+      "locale": "sc",
+      "title": "小一叩门：先保留学位，再准备求位与候补",
+      "description": "按注册、校本申请、材料、评估和候补五步处理小一求位；辨清111边界，附可修改的求位信结构与后备安排。"
+    },
+    {
+      "slug": "talent-scheme-school-guide",
+      "locale": "tc",
+      "title": "高才通帶娃來港插班，我踩過的5個坑（第3個差點毀了升中）",
+      "description": "高才通、優才、專才來港後孩子怎麼上學？什麼時候插班最好？一文講清從簽證到入學的每一步。"
+    },
+    {
+      "slug": "talent-scheme-school-guide",
+      "locale": "sc",
+      "title": "高才通带娃来港插班，我踩过的5个坑（第3个差点毁了升中）",
+      "description": "高才通、优才、专才来港后孩子怎么上学？什么时候插班最好？一文讲清从签证到入学的每一步。"
+    },
+    {
+      "slug": "trending-kindergartens-2026",
+      "locale": "tc",
+      "title": "七所幼稚園怎樣比較：2026年7月搜尋名單回顧",
+      "description": "靈糧堂、維多利亞、培正、培道、民生、迦南與聖公會：先分校區，再核對語言、費用與升小條件；七月搜尋名單不是排名。"
+    },
+    {
+      "slug": "trending-kindergartens-2026",
+      "locale": "sc",
+      "title": "七所幼稚园怎样比较：2026年7月搜索名单回顾",
+      "description": "灵粮堂、维多利亚、培正、培道、民生、迦南与圣公会：先分校区，再核对语言、费用与升小条件；七月搜索名单不是排名。"
+    },
+    {
+      "slug": "breakout-schools-2026",
+      "locale": "tc",
+      "title": "Google Trends 告訴我們：2026年香港家長正在瘋狂搜索這 8 所小學",
+      "description": "聖伯多祿、培基、陳守仁、聖若瑟…這些學校的搜索量正在Breakout。背後反映了什麼選校趨勢？"
+    },
+    {
+      "slug": "breakout-schools-2026",
+      "locale": "sc",
+      "title": "Google Trends 告诉我们：2026年香港家长正在疯狂搜索这 8 所小学",
+      "description": "圣伯多禄、培基、陈守仁、圣若瑟…这些学校的搜索量正在Breakout。背后反映了什么选校趋势？"
+    },
+    {
+      "slug": "primary-rankings-2026",
+      "locale": "tc",
+      "title": "2026 香港小學排名全解析：哪個排名更值得參考？",
+      "description": "三套排名體系對比：HKPEP教育競爭力、Kidemy升中成績、本平台四因子。排名不是終點，是幫你縮小選擇範圍的工具。"
+    },
+    {
+      "slug": "primary-rankings-2026",
+      "locale": "sc",
+      "title": "2026 香港小学排名全解析：哪个排名更值得参考？",
+      "description": "三套排名体系对比：HKPEP教育竞争力、Kidemy升中成绩、本平台四因子。排名不是终点，是帮你缩小选择范围的工具。"
+    },
+    {
+      "slug": "stcat-interview",
+      "locale": "tc",
+      "title": "St. Catherine 2027/28 K1面試：日期與流程",
+      "description": "按校方2027/28 K1招生通知核對申請、面試和結果日期，拆開官方流程與往年家長經驗，再看粵語、英語及普通話選項怎樣影響準備。"
+    },
+    {
+      "slug": "stcat-interview",
+      "locale": "sc",
+      "title": "St. Catherine 2027/28 K1面试：日期与流程",
+      "description": "按校方2027/28 K1招生通知核对日期和面试形式，区分当届官方安排与往年经验，并给出语言选择和准备建议。"
+    },
+    {
+      "slug": "through-train-guide",
+      "locale": "tc",
+      "title": "一條龍、直屬與聯繫：升中保障到底到哪一步",
+      "description": "看懂直升權利、85%與25%的真實分母、組別及志願條件；分清官津制度與直私校本安排，再比較升中保障和外報代價。"
+    },
+    {
+      "slug": "through-train-guide",
+      "locale": "sc",
+      "title": "一条龙、直属与联系：升中保障到底到哪一步",
+      "description": "看懂直升权利、85%与25%的真实分母、组别及志愿条件；分清官津制度与直私校本安排，再比较升中保障和外报代价。"
+    },
+    {
+      "slug": "school-types-guide",
+      "locale": "tc",
+      "title": "官津、直資與私立小學：家庭怎樣取捨",
+      "description": "從收生、課程、六年成本、語言和升中路徑比較小學；先找家庭可持續的路線，再看學校名氣。"
+    },
+    {
+      "slug": "school-types-guide",
+      "locale": "sc",
+      "title": "官津、直资与私立小学：家庭怎样取舍",
+      "description": "从收生、课程、六年成本、语言和升中路径比较小学；先找家庭可持续的路线，再看学校名气。"
+    },
+    {
+      "slug": "hot-schools-2026-07",
+      "locale": "tc",
+      "title": "蘇浙與王錦輝小學怎樣比較：語言、費用與升中核對",
+      "description": "從2026年夏季搜尋文章出發，比較兩校要核對的語言、全年成本與升中條件；不把小學語言直接等同將來的IB或A-Level出口。"
+    },
+    {
+      "slug": "hot-schools-2026-07",
+      "locale": "sc",
+      "title": "苏浙与王锦辉小学怎样比较：语言、费用与升中核对",
+      "description": "从2026年夏季搜索文章出发，比较两校要核对的语言、全年成本与升中条件；不把小学语言直接等同将来的IB或A-Level出口。"
+    },
+    {
+      "slug": "hk-kg-k1-application-roadmap-2027-28",
+      "locale": "tc",
+      "title": "2027/28 K1報名與註冊：兩條時間線怎樣安排",
+      "description": "分清申請學校和申請電子註冊證，按當屆日期處理面見、錄取、統一註冊、候補與轉校。"
+    },
+    {
+      "slug": "hk-kg-k1-application-roadmap-2027-28",
+      "locale": "sc",
+      "title": "2027/28 K1报名与注册：两条时间线怎样安排",
+      "description": "分清申请学校和申请电子注册证，按当届日期处理面见、录取、统一注册、候补与转校。"
+    },
+    {
+      "slug": "hk-kg-interview-prep-guide-2027-28",
+      "locale": "tc",
+      "title": "K1面試怎樣準備：孩子、家長與語言需要",
+      "description": "按學校當屆公開形式安排生活化準備，區分個別、小組和家長面見，處理慢熱、哭鬧及語言支援。"
+    },
+    {
+      "slug": "hk-kg-interview-prep-guide-2027-28",
+      "locale": "sc",
+      "title": "K1面试怎样准备：孩子、家长与语言需要",
+      "description": "按学校当届公开形式安排生活化准备，区分个别、小组和家长面见，处理慢热、哭闹及语言支援。"
+    }
+  ]
+}

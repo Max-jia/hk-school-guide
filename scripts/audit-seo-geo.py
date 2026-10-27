@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import re
 import time
 import urllib.error
 import urllib.parse
@@ -79,6 +80,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--base', default='https://hkschool.guide')
     parser.add_argument('--output', default='/private/tmp/hkschool-seo-geo-20261025')
+    parser.add_argument('--paths', help='JSON array of representative paths; capped at 50')
+    parser.add_argument('--resume', action='store_true', help='Reuse successful snapshots and retry only failed fetches')
     args = parser.parse_args()
     base, out = args.base.rstrip('/'), Path(args.output)
     out.mkdir(parents=True, exist_ok=True)
@@ -96,15 +99,27 @@ def main():
     paths = ['/', '/cn', '/schools', '/cn/schools']
     for stage in ('kindergarten', 'primary', 'secondary'):
         paths += [f'/schools/{stage}', f'/cn/schools/{stage}', f'/schools/{stage}/directory', f'/cn/schools/{stage}/directory']
-        profiles = [urllib.parse.urlparse(u).path for u in urls if f'/schools/{stage}/' in u and '/cn/' not in u and not u.endswith('/directory')]
+        profiles = [urllib.parse.urlparse(u).path for u in urls
+                    if re.fullmatch(rf'/schools/{stage}/[a-z0-9-]+', urllib.parse.urlparse(u).path)
+                    and not u.endswith('/directory')]
         for index in (0, min(55, len(profiles)-1), len(profiles)-1):
             if profiles: paths.append(profiles[index])
     paths += ['/reports', '/cn/reports', '/reports/rcps', '/cn/reports/stcat', '/reports/ying-wa-college-secondary', '/cn/reports/australian-international-school-hong-kong-secondary', '/blog', '/cn/blog', '/blog/hk-kg-k1-transparency-audit-2027-28', '/blog/through-train-guide', '/cn/blog/hk-p1-admission-guide-2027', '/blog/topics/kindergarten-admission', '/about/data-methodology', '/cn/about/data-methodology', '/planning', '/compare', '/tools/p1-school-net', '/shortlist', '/unlock']
+    if args.paths:
+        paths = json.loads(Path(args.paths).read_text())
+        if not isinstance(paths, list) or not all(isinstance(p, str) and p.startswith('/') and not p.startswith('//') for p in paths):
+            raise SystemExit('--paths must contain same-site absolute paths')
     paths = list(dict.fromkeys(paths))[:50]
+    previous = json.loads((out / 'audit.json').read_text()) if args.resume and (out / 'audit.json').exists() else {}
+    cached = {page['path']: page for page in previous.get('pages', [])
+              if page.get('status') == 200 and (out / page.get('htmlFile', '')).is_file()}
     results = []
     for index, path in enumerate(paths):
         if not rules.can_fetch('*', base + path):
             results.append({'path': path, 'skipped': 'robots'})
+            continue
+        if path in cached:
+            results.append({**cached[path], 'snapshotReusedFromUTC': previous.get('capturedAtUTC')})
             continue
         try:
             status, final_url, headers, raw, elapsed = fetch(base + path)
@@ -119,7 +134,10 @@ def main():
         if index < len(paths)-1: time.sleep(1)
     _, _, _, llms, _ = fetch(base + '/llms.txt')
     (out / 'llms.txt').write_bytes(llms)
-    counts = {stage: len([u for u in urls if f'/cn/schools/{stage}/' in u and not u.endswith('/directory')]) for stage in ('kindergarten', 'primary', 'secondary')}
+    counts = {stage: len([u for u in urls
+                         if re.fullmatch(rf'/cn/schools/{stage}/[a-z0-9-]+', urllib.parse.urlparse(u).path)
+                         and not u.endswith('/directory')])
+              for stage in ('kindergarten', 'primary', 'secondary')}
     report = {'base': base, 'capturedAtUTC': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'sitemap': {'urls': len(urls), 'duplicates': len(urls)-len(set(urls)), 'languageEntriesMissing': sum(not e.findall('{*}link') for e in entries), 'schoolCounts': counts}, 'pages': results}
     (out / 'audit.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({'output': str(out / 'audit.json'), 'pages': len(results), 'sitemap': report['sitemap']}, ensure_ascii=False))

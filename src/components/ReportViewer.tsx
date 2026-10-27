@@ -154,7 +154,7 @@ export default function ReportViewer({
       {/* 所有报告章节均公开展示；付费标记只保留在历史数据中，不再作为访问限制。 */}
       <div className="report-article" dangerouslySetInnerHTML={{ __html: heroHtml }} />
         <div className={`report-page__content mx-auto max-w-[960px] px-4 pb-24${editorialReport ? " report-editorial__content" : ""}`}>
-        <section className="report-contact-cta" aria-label={z("微信及 WhatsApp 咨询")}>
+        <section data-nosnippet="" className="report-contact-cta" aria-label={z("微信及 WhatsApp 咨询")}>
           <div className="report-contact-cta__copy">
             <p className="report-contact-cta__eyebrow">{z("港学荟 · 家长择校支持")}</p>
             <h2>{z("如有深度择校及插班申请需求，扫码咨询！")}</h2>
@@ -184,7 +184,7 @@ export default function ReportViewer({
             </div>
           </div>
         </section>
-        <div className="report-export-actions report-screen-only mb-5 flex flex-wrap items-center justify-between gap-3">
+        <div data-nosnippet="" className="report-export-actions report-screen-only mb-5 flex flex-wrap items-center justify-between gap-3">
           <div className="text-sm text-[var(--p-secondary)]">{z("完整报告可打印或保存为 PDF")}</div>
           <button
             type="button"

@@ -75,16 +75,18 @@ export function blogBodyContent(body: string, locale: Locale): string {
 /** 该文章在指定语言下的完整搜索标题。 */
 export function blogTitle(post: BlogPost, locale: Locale): string {
   const meta = getBlogMeta(post.slug);
-  if (locale === "sc" && meta?.scSeoTitle) return trimTitle(meta.scSeoTitle);
-  if (locale === "tc" && meta?.seoTitle) return trimTitle(meta.seoTitle);
-  if (locale === "sc" && meta?.scTitle) return trimTitle(meta.scTitle);
+  // Editorial overrides may contain mixed scripts too. Normalize them just as
+  // the visible article heading; otherwise a traditional URL can advertise SC.
+  if (locale === "sc" && meta?.scSeoTitle) return trimTitle(L(meta.scSeoTitle, locale));
+  if (locale === "tc" && meta?.seoTitle) return trimTitle(L(meta.seoTitle, locale));
+  if (locale === "sc" && meta?.scTitle) return trimTitle(L(meta.scTitle, locale));
   return trimTitle(L(post.title, locale));
 }
 
 /** 该文章在指定语言下的描述 */
 export function blogDescription(post: BlogPost, locale: Locale): string {
   const meta = getBlogMeta(post.slug);
-  if (locale === "sc" && meta?.scTease) return meta.scTease.replace(/\s+/g, " ").trim().slice(0, 155);
+  if (locale === "sc" && meta?.scTease) return L(meta.scTease, locale).replace(/\s+/g, " ").trim().slice(0, 155);
   const tease = meta?.tease;
   const fromTease = tease ? L(tease, locale).replace(/\s+/g, " ").trim().slice(0, 155) : "";
   return fromTease || L(makeDescription(post.body), locale);

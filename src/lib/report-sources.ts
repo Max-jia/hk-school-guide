@@ -9,6 +9,23 @@ export type ReportSourceReference = {
 
 /** Explicit, reviewed source links for reports. Keep this separate from report copy. */
 const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
+"cckg": [
+  {
+    label: "基督堂：K2、K3入学申请",
+    url: "https://www.cckg.edu.hk/application-for-admission",
+    scope: "校方明确只设K2、K3，不设K1；现页列2027年9月入学安排。此页支持招生级别与相应年度安排，不用于证明升小成绩或录取机会。",
+    sourceType: "school-official",
+    academicYear: "2027/28",
+    checkedOn: "2026-10-27",
+  },
+  {
+    label: "基督堂：教学语言与开办级别",
+    url: "https://www.cckg.edu.hk/medium-of-instruction",
+    scope: "官网列英语教学及每日中文课，并列Lower Kindergarten（KG2）与Upper Kindergarten（KG3）。未用外教人数推课时比例。",
+    sourceType: "school-official",
+    checkedOn: "2026-10-27",
+  },
+],
 "stcat": [
   {
     "label": "教育局登记：国际英文幼稚园215120",

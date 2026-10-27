@@ -1,0 +1,82 @@
+{
+  "articles": 7,
+  "metadataRowsChanged": [
+    "true-light-primary-search",
+    "munsang-kg-search",
+    "soka-kg-search",
+    "ling-liang-kg-search-2026",
+    "hy-kg-search-2026",
+    "trending-kindergartens-2026",
+    "hot-schools-2026-07"
+  ],
+  "errors": [],
+  "records": [
+    {
+      "slug": "true-light-primary-search",
+      "cjkCharacters": 1919,
+      "bodySha256": "fcde6c71f53976c7118eb449dbb809a94894219242146f5e8dd85ab81b33a74d",
+      "publicationDatePreserved": "10月7日",
+      "verifiedAt": null,
+      "internalLinks": 7
+    },
+    {
+      "slug": "munsang-kg-search",
+      "cjkCharacters": 1864,
+      "bodySha256": "a4f277ae8698c57c7cd206f8b90c16fb34a1bff239499a7829af38a8228503bf",
+      "publicationDatePreserved": "10月7日",
+      "verifiedAt": null,
+      "internalLinks": 8
+    },
+    {
+      "slug": "soka-kg-search",
+      "cjkCharacters": 2009,
+      "bodySha256": "f25ab9a011fc9c2198d9d56f19e8ea4983aab11f113e2f3b808ea97f5aba8ba9",
+      "publicationDatePreserved": "10月7日",
+      "verifiedAt": null,
+      "internalLinks": 8
+    },
+    {
+      "slug": "ling-liang-kg-search-2026",
+      "cjkCharacters": 1141,
+      "bodySha256": "4c8e3fd2ac38c50b3a2ddd16f421bcb51ab8b2cdeb35cae0e62f2e179b785f55",
+      "publicationDatePreserved": "9月4日",
+      "verifiedAt": null,
+      "internalLinks": 6
+    },
+    {
+      "slug": "hy-kg-search-2026",
+      "cjkCharacters": 993,
+      "bodySha256": "b54de243b4c52dec43c43755ad80adba2a47b4daba9be9ebca892db5f40a082b",
+      "publicationDatePreserved": "9月4日",
+      "verifiedAt": null,
+      "internalLinks": 5
+    },
+    {
+      "slug": "trending-kindergartens-2026",
+      "cjkCharacters": 1222,
+      "bodySha256": "a41d6effc840bf5f5fb2a65fea70dc380de3d9d56370e4df3424f47f2ab42ab6",
+      "publicationDatePreserved": "7月14日",
+      "verifiedAt": null,
+      "internalLinks": 14
+    },
+    {
+      "slug": "hot-schools-2026-07",
+      "cjkCharacters": 1145,
+      "bodySha256": "d656b6636e2980014ff64fe743a6f0a7bba5cb250c1f6eac94f6fd1c3f6ffe98",
+      "publicationDatePreserved": "6月30日",
+      "verifiedAt": null,
+      "internalLinks": 8
+    }
+  ],
+  "browserStatus": "passed in final root integration: all 7 articles in both locales at desktop 1440 CSS px and mobile 390 CSS px",
+  "coversNeedRefresh": [],
+  "publicNoticeScope": "Historical dates, meaning limits and current official-source instructions only; internal editing steps removed.",
+  "reviewCorrections": [
+    "Removed public internal-maintenance wording",
+    "Removed old Soka voucher-school term and unverified current free-status assertion",
+    "Corrected hot-schools fee sentence",
+    "Updated old warming-trend anchor labels to actual historical comparison titles",
+    "Replaced unsupported high-competition Soka subheading with how to assess admission difficulty"
+  ],
+  "coverStatus": "all 7 SVG list covers and all 7 PNG social covers regenerated and local HTTP 200 verified"
+}

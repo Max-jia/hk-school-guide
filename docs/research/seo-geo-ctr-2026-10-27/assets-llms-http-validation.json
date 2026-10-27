@@ -1,0 +1,348 @@
+{
+  "targets": 57,
+  "errors": [],
+  "rows": [
+    {
+      "path": "/about/data-methodology",
+      "status": 200,
+      "bytes": 80176,
+      "mime": "text/html"
+    },
+    {
+      "path": "/apple-icon.png",
+      "status": 200,
+      "bytes": 5806,
+      "mime": "image/png"
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "bytes": 133044,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/hk-p1-admission-guide-2027",
+      "status": 200,
+      "bytes": 93398,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/hk-school-agency-red-flags",
+      "status": 200,
+      "bytes": 87953,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/hk-school-net-diy-analysis",
+      "status": 200,
+      "bytes": 97137,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/kg-subsidy-guide",
+      "status": 200,
+      "bytes": 94570,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/p1-scoring-guide",
+      "status": 200,
+      "bytes": 96165,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/rainstorm-class-guide",
+      "status": 200,
+      "bytes": 78320,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/secondary-admission-guide",
+      "status": 200,
+      "bytes": 90368,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/secondary-banding-guide",
+      "status": 200,
+      "bytes": 88416,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/secondary-curriculum-pathways-guide",
+      "status": 200,
+      "bytes": 93446,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/through-train-guide",
+      "status": 200,
+      "bytes": 98930,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/kindergarten-admission",
+      "status": 200,
+      "bytes": 54593,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/kindergarten-fees-support",
+      "status": 200,
+      "bytes": 56217,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/kindergarten-selection",
+      "status": 200,
+      "bytes": 65161,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/primary-admission",
+      "status": 200,
+      "bytes": 55769,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/primary-school-net",
+      "status": 200,
+      "bytes": 51945,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/primary-school-profiles",
+      "status": 200,
+      "bytes": 71861,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/secondary-admission",
+      "status": 200,
+      "bytes": 54389,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/secondary-curriculum",
+      "status": 200,
+      "bytes": 52701,
+      "mime": "text/html"
+    },
+    {
+      "path": "/blog/topics/secondary-selection",
+      "status": 200,
+      "bytes": 51300,
+      "mime": "text/html"
+    },
+    {
+      "path": "/brand/site-mark.png",
+      "status": 200,
+      "bytes": 22140,
+      "mime": "image/png"
+    },
+    {
+      "path": "/covers/blog_hot-schools-2026-07.svg",
+      "status": 200,
+      "bytes": 1218,
+      "mime": "image/svg+xml"
+    },
+    {
+      "path": "/covers/blog_hy-kg-search-2026.svg",
+      "status": 200,
+      "bytes": 1089,
+      "mime": "image/svg+xml"
+    },
+    {
+      "path": "/covers/blog_ling-liang-kg-search-2026.svg",
+      "status": 200,
+      "bytes": 1214,
+      "mime": "image/svg+xml"
+    },
+    {
+      "path": "/covers/blog_munsang-kg-search.svg",
+      "status": 200,
+      "bytes": 1215,
+      "mime": "image/svg+xml"
+    },
+    {
+      "path": "/covers/blog_soka-kg-search.svg",
+      "status": 200,
+      "bytes": 1089,
+      "mime": "image/svg+xml"
+    },
+    {
+      "path": "/covers/blog_trending-kindergartens-2026.svg",
+      "status": 200,
+      "bytes": 1211,
+      "mime": "image/svg+xml"
+    },
+    {
+      "path": "/covers/blog_true-light-primary-search.svg",
+      "status": 200,
+      "bytes": 1215,
+      "mime": "image/svg+xml"
+    },
+    {
+      "path": "/covers/og/hot-schools-2026-07.png",
+      "status": 200,
+      "bytes": 72412,
+      "mime": "image/png"
+    },
+    {
+      "path": "/covers/og/hy-kg-search-2026.png",
+      "status": 200,
+      "bytes": 74283,
+      "mime": "image/png"
+    },
+    {
+      "path": "/covers/og/ling-liang-kg-search-2026.png",
+      "status": 200,
+      "bytes": 79507,
+      "mime": "image/png"
+    },
+    {
+      "path": "/covers/og/munsang-kg-search.png",
+      "status": 200,
+      "bytes": 73838,
+      "mime": "image/png"
+    },
+    {
+      "path": "/covers/og/soka-kg-search.png",
+      "status": 200,
+      "bytes": 74854,
+      "mime": "image/png"
+    },
+    {
+      "path": "/covers/og/trending-kindergartens-2026.png",
+      "status": 200,
+      "bytes": 74105,
+      "mime": "image/png"
+    },
+    {
+      "path": "/covers/og/true-light-primary-search.png",
+      "status": 200,
+      "bytes": 71240,
+      "mime": "image/png"
+    },
+    {
+      "path": "/data/school-data.json",
+      "status": 200,
+      "bytes": 627284,
+      "mime": "application/json"
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 200,
+      "bytes": 1562,
+      "mime": "image/x-icon"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "bytes": 6422,
+      "mime": "text/plain"
+    },
+    {
+      "path": "/reports",
+      "status": 200,
+      "bytes": 100183,
+      "mime": "text/html"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 84,
+      "mime": "text/plain"
+    },
+    {
+      "path": "/schools",
+      "status": 200,
+      "bytes": 49319,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/kindergarten",
+      "status": 200,
+      "bytes": 103549,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/kindergarten#guides",
+      "status": 200,
+      "bytes": 103549,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/kindergarten/directory",
+      "status": 200,
+      "bytes": 2429100,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/primary",
+      "status": 200,
+      "bytes": 105672,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/primary#guides",
+      "status": 200,
+      "bytes": 105672,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/primary/directory",
+      "status": 200,
+      "bytes": 1820677,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/secondary",
+      "status": 200,
+      "bytes": 118365,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/secondary#guides",
+      "status": 200,
+      "bytes": 118365,
+      "mime": "text/html"
+    },
+    {
+      "path": "/schools/secondary/directory",
+      "status": 200,
+      "bytes": 1924387,
+      "mime": "text/html"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 3036280,
+      "mime": "application/xml"
+    },
+    {
+      "path": "/tools",
+      "status": 200,
+      "bytes": 34843,
+      "mime": "text/html"
+    },
+    {
+      "path": "/tools/p1-school-net",
+      "status": 200,
+      "bytes": 75711,
+      "mime": "text/html"
+    },
+    {
+      "path": "/tools/p1-self-check",
+      "status": 200,
+      "bytes": 34741,
+      "mime": "text/html"
+    },
+    {
+      "path": "/tools/p1-simulator",
+      "status": 200,
+      "bytes": 70549,
+      "mime": "text/html"
+    }
+  ]
+}

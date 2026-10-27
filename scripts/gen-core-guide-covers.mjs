@@ -5,9 +5,20 @@ const catalog = JSON.parse(fs.readFileSync("src/content/core-guides.json", "utf8
 const meta = JSON.parse(fs.readFileSync("src/content/blog-meta.json", "utf8"));
 const arg = process.argv.indexOf("--ids");
 const ids = arg >= 0 ? new Set(process.argv[arg + 1].split(",")) : null;
+const slugArg = process.argv.indexOf("--slugs");
+const slugs = slugArg >= 0 ? new Set((process.argv[slugArg + 1] ?? "").split(",").filter(Boolean)) : null;
+if (slugs && (ids || !slugs.size || [...slugs].some((slug) => !meta.some((post) => post.slug === slug)))) {
+  throw new Error("Use either --ids or --slugs with registered articles");
+}
+const selected = slugs ? meta.filter((post) => slugs.has(post.slug)).map((post) => ({
+  id: post.slug, slug: post.slug,
+  stage: /幼稚|幼儿|幼兒/.test(post.tag) ? "kindergarten" : "primary",
+  label: post.scTitle || post.title,
+  question: "历史搜索窗口与当届学校资料分开看",
+})) : catalog.filter((guide) => !ids || ids.has(guide.id));
 const esc = (text) => text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 function wrap(text, width) {
-  const tokens = text.match(/[A-Za-z0-9]+(?:[/-][A-Za-z0-9]+)*|./gu) ?? [];
+  const tokens = text.match(/\d{4}年(?:\d{1,2}月(?:\d{1,2}日)?)?|\d{1,2}月(?:\d{1,2}日)?|[A-Za-z0-9]+(?:[/-][A-Za-z0-9]+)*|./gu) ?? [];
   const weight = (token) => [...token].reduce((sum, ch) => sum + (ch.charCodeAt(0) <= 127 ? .55 : 1), 0);
   const rows = []; let line = [], size = 0;
   for (const token of tokens) {
@@ -26,16 +37,16 @@ const themes = { kindergarten: { color: "#526860", label: "幼稚园", mark: "�
 const text = (s, x, y, size, color, weight = 500) => `<text x="${x}" y="${y}" font-family="'Songti SC', 'STHeiti', serif" font-size="${size}" font-weight="${weight}" fill="${color}">${esc(s)}</text>`;
 fs.mkdirSync("public/covers/og", { recursive: true });
 let count = 0;
-for (const guide of catalog.filter((g) => !ids || ids.has(g.id))) {
+for (const guide of selected) {
   const post = meta.find((m) => m.slug === guide.slug);
   if (!post) throw new Error(`Register reviewed article first: ${guide.id}`);
   const theme = themes[guide.stage];
   const lines = wrap(guide.label, 10);
-  const cover = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700"><rect width="600" height="700" fill="${theme.color}"/><rect x="48" y="128" width="504" height="482" rx="8" fill="#FCFAF5"/>${text("港学荟 · 择校指南", 48, 58, 20, "#fff")}${text(theme.label, 78, 192, 21, theme.color, 700)}${lines.map((line, index) => text(line, 78, 290 + index * 60, 41, "#20201F", 700)).join("")}${wrap(guide.question, 17).map((line, index) => text(line, 78, 475 + index * 34, 22, "#57534B")).join("")}${text("规则 · 取舍 · 家庭行动", 48, 660, 20, "#fff")}</svg>`;
+  const cover = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700"><rect width="600" height="700" fill="${theme.color}"/><rect x="48" y="128" width="504" height="482" rx="8" fill="#FCFAF5"/>${text(slugs ? "港学荟 · 学校观察" : "港学荟 · 择校指南", 48, 58, 20, "#fff")}${text(theme.label, 78, 192, 21, theme.color, 700)}${lines.map((line, index) => text(line, 78, 290 + index * 60, 41, "#20201F", 700)).join("")}${wrap(guide.question, 17).map((line, index) => text(line, 78, 475 + index * 34, 22, "#57534B")).join("")}${text(slugs ? "历史窗口 · 择校核对" : "规则 · 取舍 · 家庭行动", 48, 660, 20, "#fff")}</svg>`;
   fs.writeFileSync(`public/covers/blog_${guide.slug}.svg`, cover);
-  const title = wrap(post.title, 17);
-  const desc = wrap(post.tease, 40).slice(0, 2);
-  const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="${theme.color}"/><rect x="48" y="118" width="1104" height="425" rx="8" fill="#FCFAF5"/>${text("港学荟 · " + theme.label + "指南", 64, 70, 25, "#fff")}${text(theme.mark, 930, 490, 235, "#E9E5DC", 700)}${title.slice(0, 3).map((line, index) => text(line, 80, 210 + index * 57, 45, "#20201F", 700)).join("")}${desc.map((line, index) => text(line, 80, 420 + index * 34, 22, "#57534B")).join("")}${text("hkschool.guide · 资料与年度见正文", 64, 592, 21, "#fff")}</svg>`;
+  const title = wrap(slugs ? (post.scTitle || post.title) : post.title, 17);
+  const desc = wrap(slugs ? (post.scTease || post.tease) : post.tease, 40).slice(0, 2);
+  const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="${theme.color}"/><rect x="48" y="118" width="1104" height="425" rx="8" fill="#FCFAF5"/>${text("港学荟 · " + theme.label + (slugs ? "观察" : "指南"), 64, 70, 25, "#fff")}${text(theme.mark, 930, 490, 235, "#E9E5DC", 700)}${title.slice(0, 3).map((line, index) => text(line, 80, 210 + index * 57, 45, "#20201F", 700)).join("")}${desc.map((line, index) => text(line, 80, 420 + index * 34, 22, "#57534B")).join("")}${text("hkschool.guide · 资料与年度见正文", 64, 592, 21, "#fff")}</svg>`;
   await sharp(Buffer.from(og)).png().toFile(`public/covers/og/${guide.slug}.png`);
   count++;
 }

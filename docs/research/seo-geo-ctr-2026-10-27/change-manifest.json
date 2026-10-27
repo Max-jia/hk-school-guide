@@ -1,0 +1,35 @@
+{
+  "status": "production release authorized; local implementation accepted; staging and promotion pending",
+  "productionBaseline": {
+    "commit": "e689884d012690f575a0aeb9c09a58fbc32fb9f7",
+    "deploymentId": "dpl_9NtZv8DJxvzbVTRQjBciPraPYdvf",
+    "url": "https://hkschool.guide"
+  },
+  "build": "/private/tmp/hkschool-ctr-final-20261027.bQ7zAr",
+  "localPreview": "http://127.0.0.1:3342",
+  "inventory": {
+    "sitemap": 5172,
+    "reports": 230,
+    "profiles": 2193,
+    "blogs": 74,
+    "coreGuides": 32
+  },
+  "affectedFamilies": [
+    "all school profile descriptions and visible introductions",
+    "all report search titles and descriptions",
+    "blog metadata locale normalization",
+    "seven historical trend blogs and covers",
+    "shared publishing entities, brand icon and snippet boundaries",
+    "llms navigation"
+  ],
+  "preserved": [
+    "all baseline sitemap URLs",
+    "raw school data",
+    "all report chapter bodies",
+    "32 core guide bodies and editorial metadata",
+    "publication and factual verification dates",
+    "robots and training bot policy"
+  ],
+  "effectStatus": "No post-release CTR, Google actual snippet adoption, AI citation rate or AI referral uplift has been measured.",
+  "followup": "Before any future production release, re-read the current production alias and compare its exact source against this candidate; the recorded baseline can become stale."
+}

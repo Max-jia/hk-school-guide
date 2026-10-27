@@ -1,0 +1,15 @@
+{
+  "sitemapUrls": 5172,
+  "missingBaselineUrls": [],
+  "profileHtmlChecked": 4386,
+  "catalogueCoverage": {
+    "/cn/schools/kindergarten": 958,
+    "/cn/schools/primary": 648,
+    "/cn/schools/secondary": 587,
+    "/schools/kindergarten": 958,
+    "/schools/primary": 648,
+    "/schools/secondary": 587
+  },
+  "reportsInHtmlIndex": 230,
+  "errors": []
+}

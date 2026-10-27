@@ -1,0 +1,30 @@
+{
+  "sourceDisclosure": {
+    "images": [
+      {
+        "loaded": true,
+        "src": "/_next/image?url=%2Fstickers%2Fmore%402x.png&w=3840&q=75"
+      },
+      {
+        "loaded": true,
+        "src": "/stickers/popular@2x.png"
+      },
+      {
+        "loaded": true,
+        "src": "/stickers/your_input@2x.png"
+      }
+    ],
+    "openSources": [
+      {
+        "links": 11,
+        "summary": "查看全部资料来源（11）"
+      }
+    ],
+    "path": "/cn/schools/kindergarten/tak-sun-kg"
+  },
+  "sidebarNavigation": {
+    "h1": "粤语、普通话还是英语：幼稚园教学语言怎样核对",
+    "path": "/cn/blog/kg-english-guide",
+    "title": "粤语、普通话还是英语：幼稚园教学语言怎样核对 | 港学荟"
+  }
+}

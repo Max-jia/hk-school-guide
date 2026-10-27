@@ -1,0 +1,3109 @@
+{
+  "articles": 74,
+  "links": 443,
+  "uniqueTargets": 114,
+  "errors": [],
+  "rows": [
+    {
+      "article": "secondary-results-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "孩子组别与学校Banding",
+      "href": "/blog/secondary-banding-guide"
+    },
+    {
+      "article": "secondary-results-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE、IB与A-Level怎样选",
+      "href": "/blog/secondary-curriculum-pathways-guide"
+    },
+    {
+      "article": "secondary-results-guide",
+      "stage": "secondary",
+      "group": "从成绩读法到选科",
+      "label": "中三选科与大学先修",
+      "href": "/blog/secondary-subject-choice-guide"
+    },
+    {
+      "article": "secondary-results-guide",
+      "stage": "secondary",
+      "group": "从成绩读法到选科",
+      "label": "中学课程与升学专题",
+      "href": "/blog/topics/secondary-curriculum"
+    },
+    {
+      "article": "secondary-results-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-results-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-curriculum-pathways-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE成绩与升学比例读法",
+      "href": "/blog/secondary-results-guide"
+    },
+    {
+      "article": "secondary-curriculum-pathways-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "英中、中中与逐科语言",
+      "href": "/blog/secondary-language-guide"
+    },
+    {
+      "article": "secondary-curriculum-pathways-guide",
+      "stage": "secondary",
+      "group": "选科与家庭预算",
+      "label": "中三选科与大学先修",
+      "href": "/blog/secondary-subject-choice-guide"
+    },
+    {
+      "article": "secondary-curriculum-pathways-guide",
+      "stage": "secondary",
+      "group": "选科与家庭预算",
+      "label": "六年费用、奖学金与减免",
+      "href": "/blog/secondary-school-cost-guide"
+    },
+    {
+      "article": "secondary-curriculum-pathways-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-curriculum-pathways-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-transfer-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "英中、中中与逐科语言",
+      "href": "/blog/secondary-language-guide"
+    },
+    {
+      "article": "secondary-transfer-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE、IB与A-Level怎样选",
+      "href": "/blog/secondary-curriculum-pathways-guide"
+    },
+    {
+      "article": "secondary-transfer-guide",
+      "stage": "secondary",
+      "group": "高中与来港资格核对",
+      "label": "中三选科与大学先修",
+      "href": "/blog/secondary-subject-choice-guide"
+    },
+    {
+      "article": "secondary-transfer-guide",
+      "stage": "secondary",
+      "group": "高中与来港资格核对",
+      "label": "新来港中学入学与资格",
+      "href": "/blog/secondary-new-arrival-guide"
+    },
+    {
+      "article": "secondary-transfer-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-transfer-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "整理候选学校",
+      "href": "/shortlist"
+    },
+    {
+      "article": "secondary-subject-choice-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE、IB与A-Level怎样选",
+      "href": "/blog/secondary-curriculum-pathways-guide"
+    },
+    {
+      "article": "secondary-subject-choice-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE成绩与升学比例读法",
+      "href": "/blog/secondary-results-guide"
+    },
+    {
+      "article": "secondary-subject-choice-guide",
+      "stage": "secondary",
+      "group": "语言与跨校衔接",
+      "label": "英中、中中与逐科语言",
+      "href": "/blog/secondary-language-guide"
+    },
+    {
+      "article": "secondary-subject-choice-guide",
+      "stage": "secondary",
+      "group": "语言与跨校衔接",
+      "label": "中一叩门与中学插班",
+      "href": "/blog/secondary-transfer-guide"
+    },
+    {
+      "article": "secondary-subject-choice-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-subject-choice-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-new-arrival-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "升中申请全流程",
+      "href": "/blog/secondary-admission-guide"
+    },
+    {
+      "article": "secondary-new-arrival-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "中一叩门与中学插班",
+      "href": "/blog/secondary-transfer-guide"
+    },
+    {
+      "article": "secondary-new-arrival-guide",
+      "stage": "secondary",
+      "group": "语言适应与家庭开支",
+      "label": "英中、中中与逐科语言",
+      "href": "/blog/secondary-language-guide"
+    },
+    {
+      "article": "secondary-new-arrival-guide",
+      "stage": "secondary",
+      "group": "语言适应与家庭开支",
+      "label": "六年费用、奖学金与减免",
+      "href": "/blog/secondary-school-cost-guide"
+    },
+    {
+      "article": "secondary-new-arrival-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-new-arrival-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "kg-waitlist-transfer-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "kg-waitlist-transfer-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "半日、全日与照顾安排",
+      "href": "/blog/kg-school-hours-care-guide"
+    },
+    {
+      "article": "kg-waitlist-transfer-guide",
+      "stage": "kindergarten",
+      "group": "重新核对家庭安排",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "kg-waitlist-transfer-guide",
+      "stage": "kindergarten",
+      "group": "重新核对家庭安排",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "kg-waitlist-transfer-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "kg-waitlist-transfer-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "kg-primary-outcomes-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "kg-primary-outcomes-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园类型与免费计划",
+      "href": "/blog/kg-school-types-guide"
+    },
+    {
+      "article": "kg-primary-outcomes-guide",
+      "stage": "kindergarten",
+      "group": "有升小资料的学校实例",
+      "label": "仁愛堂陳鄭玉而幼稚園",
+      "href": "/reports/yot-chan-cheng-yuk-yee-kg"
+    },
+    {
+      "article": "kg-primary-outcomes-guide",
+      "stage": "kindergarten",
+      "group": "有升小资料的学校实例",
+      "label": "德信幼稚園",
+      "href": "/reports/tak-sun-kg"
+    },
+    {
+      "article": "kg-primary-outcomes-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "kg-primary-outcomes-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "primary-transfer-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "语言、功课与测考节奏",
+      "href": "/blog/primary-school-learning-guide"
+    },
+    {
+      "article": "primary-transfer-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "primary-transfer-guide",
+      "stage": "primary",
+      "group": "核对学校与下一阶段",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "primary-transfer-guide",
+      "stage": "primary",
+      "group": "核对学校与下一阶段",
+      "label": "中一叩门与中学插班",
+      "href": "/blog/secondary-transfer-guide"
+    },
+    {
+      "article": "primary-transfer-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "primary-transfer-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "整理候选学校",
+      "href": "/shortlist"
+    },
+    {
+      "article": "primary-school-learning-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "官津、直资与私立怎样选",
+      "href": "/blog/school-types-guide"
+    },
+    {
+      "article": "primary-school-learning-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "直私小一面试怎样准备",
+      "href": "/blog/primary-interview-guide"
+    },
+    {
+      "article": "primary-school-learning-guide",
+      "stage": "primary",
+      "group": "把课程与升中分开核对",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "primary-school-learning-guide",
+      "stage": "primary",
+      "group": "把课程与升中分开核对",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "primary-school-learning-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "primary-school-learning-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "primary-interview-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "primary-interview-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一offer与注册怎样取舍",
+      "href": "/blog/p1-offer-registration-guide"
+    },
+    {
+      "article": "primary-interview-guide",
+      "stage": "primary",
+      "group": "适配与后备安排",
+      "label": "语言、功课与测考节奏",
+      "href": "/blog/primary-school-learning-guide"
+    },
+    {
+      "article": "primary-interview-guide",
+      "stage": "primary",
+      "group": "适配与后备安排",
+      "label": "小一叩门与求位信",
+      "href": "/blog/knocking-letter-guide"
+    },
+    {
+      "article": "primary-interview-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "primary-interview-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "secondary-language-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE、IB与A-Level怎样选",
+      "href": "/blog/secondary-curriculum-pathways-guide"
+    },
+    {
+      "article": "secondary-language-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "孩子组别与学校Banding",
+      "href": "/blog/secondary-banding-guide"
+    },
+    {
+      "article": "secondary-language-guide",
+      "stage": "secondary",
+      "group": "转校与来港家庭",
+      "label": "中一叩门与中学插班",
+      "href": "/blog/secondary-transfer-guide"
+    },
+    {
+      "article": "secondary-language-guide",
+      "stage": "secondary",
+      "group": "转校与来港家庭",
+      "label": "新来港中学入学与资格",
+      "href": "/blog/secondary-new-arrival-guide"
+    },
+    {
+      "article": "secondary-language-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-language-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-discretionary-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "升中申请全流程",
+      "href": "/blog/secondary-admission-guide"
+    },
+    {
+      "article": "secondary-discretionary-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "孩子组别与学校Banding",
+      "href": "/blog/secondary-banding-guide"
+    },
+    {
+      "article": "secondary-discretionary-guide",
+      "stage": "secondary",
+      "group": "两校以外的后备路线",
+      "label": "直资中学offer怎样取舍",
+      "href": "/blog/secondary-dss-offer-guide"
+    },
+    {
+      "article": "secondary-discretionary-guide",
+      "stage": "secondary",
+      "group": "两校以外的后备路线",
+      "label": "统一派位甲乙部与志愿",
+      "href": "/blog/secondary-central-allocation-guide"
+    },
+    {
+      "article": "secondary-discretionary-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-discretionary-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-school-cost-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE、IB与A-Level怎样选",
+      "href": "/blog/secondary-curriculum-pathways-guide"
+    },
+    {
+      "article": "secondary-school-cost-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "直资中学offer怎样取舍",
+      "href": "/blog/secondary-dss-offer-guide"
+    },
+    {
+      "article": "secondary-school-cost-guide",
+      "stage": "secondary",
+      "group": "资格与选校继续阅读",
+      "label": "新来港中学入学与资格",
+      "href": "/blog/secondary-new-arrival-guide"
+    },
+    {
+      "article": "secondary-school-cost-guide",
+      "stage": "secondary",
+      "group": "资格与选校继续阅读",
+      "label": "中学选校与家庭条件专题",
+      "href": "/blog/topics/secondary-selection"
+    },
+    {
+      "article": "secondary-school-cost-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-school-cost-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "p1-offer-registration-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "p1-offer-registration-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "官津、直资与私立怎样选",
+      "href": "/blog/school-types-guide"
+    },
+    {
+      "article": "p1-offer-registration-guide",
+      "stage": "primary",
+      "group": "接受前比较学校日常",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "p1-offer-registration-guide",
+      "stage": "primary",
+      "group": "接受前比较学校日常",
+      "label": "语言、功课与测考节奏",
+      "href": "/blog/primary-school-learning-guide"
+    },
+    {
+      "article": "p1-offer-registration-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "p1-offer-registration-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "kg-school-types-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "半日、全日与照顾安排",
+      "href": "/blog/kg-school-hours-care-guide"
+    },
+    {
+      "article": "kg-school-types-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "kg-school-types-guide",
+      "stage": "kindergarten",
+      "group": "从类型走向实际选择",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "kg-school-types-guide",
+      "stage": "kindergarten",
+      "group": "从类型走向实际选择",
+      "label": "幼稚园升小成绩怎样读",
+      "href": "/blog/kg-primary-outcomes-guide"
+    },
+    {
+      "article": "kg-school-types-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "kg-school-types-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "kg-school-hours-care-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "PN与K1：怎样安排入学",
+      "href": "/blog/n-class-guide"
+    },
+    {
+      "article": "kg-school-hours-care-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "kg-school-hours-care-guide",
+      "stage": "kindergarten",
+      "group": "访校与第一轮筛选",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "kg-school-hours-care-guide",
+      "stage": "kindergarten",
+      "group": "访校与第一轮筛选",
+      "label": "幼稚园类型与免费计划",
+      "href": "/blog/kg-school-types-guide"
+    },
+    {
+      "article": "kg-school-hours-care-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "kg-school-hours-care-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "secondary-admission-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "中一自行两校与面试",
+      "href": "/blog/secondary-discretionary-guide"
+    },
+    {
+      "article": "secondary-admission-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "统一派位甲乙部与志愿",
+      "href": "/blog/secondary-central-allocation-guide"
+    },
+    {
+      "article": "secondary-admission-guide",
+      "stage": "secondary",
+      "group": "申请前先判断与取舍",
+      "label": "直资中学offer怎样取舍",
+      "href": "/blog/secondary-dss-offer-guide"
+    },
+    {
+      "article": "secondary-admission-guide",
+      "stage": "secondary",
+      "group": "申请前先判断与取舍",
+      "label": "孩子组别与学校Banding",
+      "href": "/blog/secondary-banding-guide"
+    },
+    {
+      "article": "secondary-admission-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-admission-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-banding-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "DSE成绩与升学比例读法",
+      "href": "/blog/secondary-results-guide"
+    },
+    {
+      "article": "secondary-banding-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "英中、中中与逐科语言",
+      "href": "/blog/secondary-language-guide"
+    },
+    {
+      "article": "secondary-banding-guide",
+      "stage": "secondary",
+      "group": "从定位落实申请",
+      "label": "中一自行两校与面试",
+      "href": "/blog/secondary-discretionary-guide"
+    },
+    {
+      "article": "secondary-banding-guide",
+      "stage": "secondary",
+      "group": "从定位落实申请",
+      "label": "统一派位甲乙部与志愿",
+      "href": "/blog/secondary-central-allocation-guide"
+    },
+    {
+      "article": "secondary-banding-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-banding-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-central-allocation-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "升中申请全流程",
+      "href": "/blog/secondary-admission-guide"
+    },
+    {
+      "article": "secondary-central-allocation-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "孩子组别与学校Banding",
+      "href": "/blog/secondary-banding-guide"
+    },
+    {
+      "article": "secondary-central-allocation-guide",
+      "stage": "secondary",
+      "group": "关系学额与派位后行动",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "secondary-central-allocation-guide",
+      "stage": "secondary",
+      "group": "关系学额与派位后行动",
+      "label": "中一叩门与中学插班",
+      "href": "/blog/secondary-transfer-guide"
+    },
+    {
+      "article": "secondary-central-allocation-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-central-allocation-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "secondary-dss-offer-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "secondary-dss-offer-guide",
+      "stage": "secondary",
+      "group": "继续了解升中",
+      "label": "升中申请与直资取舍专题",
+      "href": "/blog/topics/secondary-admission"
+    },
+    {
+      "article": "secondary-dss-offer-guide",
+      "stage": "secondary",
+      "group": "文中学校报告",
+      "label": "拔萃女書院",
+      "href": "/reports/dgs-secondary"
+    },
+    {
+      "article": "secondary-dss-offer-guide",
+      "stage": "secondary",
+      "group": "文中学校报告",
+      "label": "香港神託會培基書院",
+      "href": "/reports/stewards-pooi-kei-secondary"
+    },
+    {
+      "article": "secondary-dss-offer-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "secondary-dss-offer-guide",
+      "stage": "secondary",
+      "group": "开始选校",
+      "label": "制定升中规划",
+      "href": "/planning?stage=secondary"
+    },
+    {
+      "article": "true-light-primary-search",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "true-light-primary-search",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "true-light-primary-search",
+      "stage": "primary",
+      "group": "两所真光小学",
+      "label": "香港真光中學附屬小學暨幼稚園",
+      "href": "/reports/tlps"
+    },
+    {
+      "article": "true-light-primary-search",
+      "stage": "primary",
+      "group": "两所真光小学",
+      "label": "九龍真光中學（小學部）",
+      "href": "/reports/ktl"
+    },
+    {
+      "article": "true-light-primary-search",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "true-light-primary-search",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "munsang-kg-search",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "munsang-kg-search",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "munsang-kg-search",
+      "stage": "kindergarten",
+      "group": "民生幼稚园与小学",
+      "label": "民生書院幼稚園",
+      "href": "/reports/munsang"
+    },
+    {
+      "article": "munsang-kg-search",
+      "stage": "kindergarten",
+      "group": "民生幼稚园与小学",
+      "label": "民生書院小學",
+      "href": "/reports/munsangps"
+    },
+    {
+      "article": "munsang-kg-search",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "munsang-kg-search",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "soka-kg-search",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "soka-kg-search",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园面试怎样准备",
+      "href": "/blog/hk-kg-interview-prep-guide-2027-28"
+    },
+    {
+      "article": "soka-kg-search",
+      "stage": "kindergarten",
+      "group": "学校报告与申请专题",
+      "label": "香港創價幼稚園",
+      "href": "/reports/soka"
+    },
+    {
+      "article": "soka-kg-search",
+      "stage": "kindergarten",
+      "group": "学校报告与申请专题",
+      "label": "幼稚园申请与面试专题",
+      "href": "/blog/topics/kindergarten-admission"
+    },
+    {
+      "article": "soka-kg-search",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "soka-kg-search",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "gt-primary-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "gt-primary-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "gt-primary-guide",
+      "stage": "primary",
+      "group": "优才报告与同类比较",
+      "label": "優才(楊殷有娣)書院",
+      "href": "/reports/gt"
+    },
+    {
+      "article": "gt-primary-guide",
+      "stage": "primary",
+      "group": "优才报告与同类比较",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "gt-primary-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "gt-primary-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "skh-same-name-schools",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "五所吕明才小学辨别",
+      "href": "/blog/lui-ming-choi-5-schools"
+    },
+    {
+      "article": "skh-same-name-schools",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "skh-same-name-schools",
+      "stage": "primary",
+      "group": "文中李兆强系小学",
+      "label": "聖公會李兆強小學",
+      "href": "/reports/skhlsks"
+    },
+    {
+      "article": "skh-same-name-schools",
+      "stage": "primary",
+      "group": "文中李兆强系小学",
+      "label": "聖公會德田李兆強小學",
+      "href": "/reports/skhttlsks"
+    },
+    {
+      "article": "skh-same-name-schools",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "skh-same-name-schools",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "psp-2026-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "psp-2026-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "psp-2026-guide",
+      "stage": "primary",
+      "group": "按问题继续阅读",
+      "label": "校网与派位专题",
+      "href": "/blog/topics/primary-school-net"
+    },
+    {
+      "article": "psp-2026-guide",
+      "stage": "primary",
+      "group": "按问题继续阅读",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "psp-2026-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "psp-2026-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查询小一校网",
+      "href": "/tools/p1-school-net"
+    },
+    {
+      "article": "lui-ming-choi-5-schools",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "圣公会同名小学辨别",
+      "href": "/blog/skh-same-name-schools"
+    },
+    {
+      "article": "lui-ming-choi-5-schools",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "lui-ming-choi-5-schools",
+      "stage": "primary",
+      "group": "文中沙田两所吕明才",
+      "label": "浸信會呂明才小學",
+      "href": "/reports/lmc"
+    },
+    {
+      "article": "lui-ming-choi-5-schools",
+      "stage": "primary",
+      "group": "文中沙田两所吕明才",
+      "label": "浸信會沙田圍呂明才小學",
+      "href": "/reports/skhlmc"
+    },
+    {
+      "article": "lui-ming-choi-5-schools",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "lui-ming-choi-5-schools",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "pooi-to-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "pooi-to-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "pooi-to-kg",
+      "stage": "kindergarten",
+      "group": "培道幼稚园与小学",
+      "label": "香港培道小學（幼稚园部）",
+      "href": "/reports/pt"
+    },
+    {
+      "article": "pooi-to-kg",
+      "stage": "kindergarten",
+      "group": "培道幼稚园与小学",
+      "label": "香港培道小學",
+      "href": "/reports/py2"
+    },
+    {
+      "article": "pooi-to-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "pooi-to-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "skh-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园面试怎样准备",
+      "href": "/blog/hk-kg-interview-prep-guide-2027-28"
+    },
+    {
+      "article": "skh-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "保良局与圣公会幼稚园",
+      "href": "/blog/plk-skh-kg-comparison"
+    },
+    {
+      "article": "skh-kg",
+      "stage": "kindergarten",
+      "group": "学校报告与申请专题",
+      "label": "聖公會幼稚園",
+      "href": "/reports/skh"
+    },
+    {
+      "article": "skh-kg",
+      "stage": "kindergarten",
+      "group": "学校报告与申请专题",
+      "label": "幼稚园申请与面试专题",
+      "href": "/blog/topics/kindergarten-admission"
+    },
+    {
+      "article": "skh-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "skh-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "lh-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "lh-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "lh-kg",
+      "stage": "kindergarten",
+      "group": "学之园两校区报告",
+      "label": "學之園幼稚園（凱帆薈）",
+      "href": "/reports/lh-sf"
+    },
+    {
+      "article": "lh-kg",
+      "stage": "kindergarten",
+      "group": "学之园两校区报告",
+      "label": "學之園幼稚園(海翩康城)",
+      "href": "/reports/lh-hp"
+    },
+    {
+      "article": "lh-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "lh-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "spcps-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "spcps-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "spcps-primary",
+      "stage": "primary",
+      "group": "小学与对应中学报告",
+      "label": "聖保羅男女中學附屬小學",
+      "href": "/reports/spccps"
+    },
+    {
+      "article": "spcps-primary",
+      "stage": "primary",
+      "group": "小学与对应中学报告",
+      "label": "圣保罗男女中学（SPCC）",
+      "href": "/reports/spcc-secondary"
+    },
+    {
+      "article": "spcps-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "spcps-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "ling-liang-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "ling-liang-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "ling-liang-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "学校报告与地区比较",
+      "label": "香港靈糧堂幼稚園",
+      "href": "/reports/llc"
+    },
+    {
+      "article": "ling-liang-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "学校报告与地区比较",
+      "label": "马鞍山幼稚园比较",
+      "href": "/blog/ma-on-shan-kg-2026"
+    },
+    {
+      "article": "ling-liang-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "ling-liang-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "hk-school-agency-red-flags",
+      "stage": "all",
+      "group": "继续了解选校",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "hk-school-agency-red-flags",
+      "stage": "all",
+      "group": "继续了解选校",
+      "label": "五所幼稚园招生资料对照",
+      "href": "/blog/hk-kg-k1-transparency-audit-2027-28"
+    },
+    {
+      "article": "hk-school-agency-red-flags",
+      "stage": "all",
+      "group": "自己核对申请流程",
+      "label": "小一申请与叩门专题",
+      "href": "/blog/topics/primary-admission"
+    },
+    {
+      "article": "hk-school-agency-red-flags",
+      "stage": "all",
+      "group": "自己核对申请流程",
+      "label": "幼稚园申请与面试专题",
+      "href": "/blog/topics/kindergarten-admission"
+    },
+    {
+      "article": "hk-school-agency-red-flags",
+      "stage": "all",
+      "group": "开始选校",
+      "label": "按学段查学校",
+      "href": "/schools"
+    },
+    {
+      "article": "hk-school-agency-red-flags",
+      "stage": "all",
+      "group": "开始选校",
+      "label": "制定升学规划",
+      "href": "/planning"
+    },
+    {
+      "article": "hk-school-net-diy-analysis",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "41与12校网怎么比较",
+      "href": "/blog/school-net-41-vs-12"
+    },
+    {
+      "article": "hk-school-net-diy-analysis",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一自行分配计分",
+      "href": "/blog/p1-scoring-guide"
+    },
+    {
+      "article": "hk-school-net-diy-analysis",
+      "stage": "primary",
+      "group": "读懂学校与派位资料",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "hk-school-net-diy-analysis",
+      "stage": "primary",
+      "group": "读懂学校与派位资料",
+      "label": "校网与派位专题",
+      "href": "/blog/topics/primary-school-net"
+    },
+    {
+      "article": "hk-school-net-diy-analysis",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查询小一校网",
+      "href": "/tools/p1-school-net"
+    },
+    {
+      "article": "hk-school-net-diy-analysis",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "试排小一派位志愿",
+      "href": "/tools/p1-simulator"
+    },
+    {
+      "article": "kg-open-day-guide-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "kg-open-day-guide-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "半日、全日与照顾安排",
+      "href": "/blog/kg-school-hours-care-guide"
+    },
+    {
+      "article": "kg-open-day-guide-2026",
+      "stage": "kindergarten",
+      "group": "访校前后继续阅读",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "kg-open-day-guide-2026",
+      "stage": "kindergarten",
+      "group": "访校前后继续阅读",
+      "label": "幼稚园类型与免费计划",
+      "href": "/blog/kg-school-types-guide"
+    },
+    {
+      "article": "kg-open-day-guide-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "kg-open-day-guide-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "hk-kg-k1-transparency-audit-2027-28",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "hk-kg-k1-transparency-audit-2027-28",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园面试怎样准备",
+      "href": "/blog/hk-kg-interview-prep-guide-2027-28"
+    },
+    {
+      "article": "hk-kg-k1-transparency-audit-2027-28",
+      "stage": "kindergarten",
+      "group": "审计涉及学校报告",
+      "label": "民生書院幼稚園",
+      "href": "/reports/munsang"
+    },
+    {
+      "article": "hk-kg-k1-transparency-audit-2027-28",
+      "stage": "kindergarten",
+      "group": "审计涉及学校报告",
+      "label": "香港創價幼稚園",
+      "href": "/reports/soka"
+    },
+    {
+      "article": "hk-kg-k1-transparency-audit-2027-28",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "hk-kg-k1-transparency-audit-2027-28",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "ma-on-shan-kg-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "ma-on-shan-kg-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "ma-on-shan-kg-2026",
+      "stage": "kindergarten",
+      "group": "文中学校与校区资料",
+      "label": "德萃幼稚園（馬鞍山及紅磡）",
+      "href": "/reports/st-hilarys-kg"
+    },
+    {
+      "article": "ma-on-shan-kg-2026",
+      "stage": "kindergarten",
+      "group": "文中学校与校区资料",
+      "label": "朗思国际幼稚园（马鞍山）",
+      "href": "/schools/kindergarten/think-international-kindergarten-ma-on-shan-533360"
+    },
+    {
+      "article": "ma-on-shan-kg-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "ma-on-shan-kg-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "hy-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "hy-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "保良局与圣公会幼稚园",
+      "href": "/blog/plk-skh-kg-comparison"
+    },
+    {
+      "article": "hy-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "幼稚园与小学分别看",
+      "label": "協恩中學附屬幼稚園",
+      "href": "/reports/hy"
+    },
+    {
+      "article": "hy-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "幼稚园与小学分别看",
+      "label": "協恩中學附屬小學",
+      "href": "/reports/hyps"
+    },
+    {
+      "article": "hy-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "hy-kg-search-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "hk-p1-admission-guide-2027",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一自行分配计分",
+      "href": "/blog/p1-scoring-guide"
+    },
+    {
+      "article": "hk-p1-admission-guide-2027",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "hk-p1-admission-guide-2027",
+      "stage": "primary",
+      "group": "申请下一步",
+      "label": "小一offer与注册怎样取舍",
+      "href": "/blog/p1-offer-registration-guide"
+    },
+    {
+      "article": "hk-p1-admission-guide-2027",
+      "stage": "primary",
+      "group": "申请下一步",
+      "label": "小一叩门与求位信",
+      "href": "/blog/knocking-letter-guide"
+    },
+    {
+      "article": "hk-p1-admission-guide-2027",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "核对自行分配计分",
+      "href": "/tools/p1-discretionary"
+    },
+    {
+      "article": "hk-p1-admission-guide-2027",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查询小一校网",
+      "href": "/tools/p1-school-net"
+    },
+    {
+      "article": "school-net-41-vs-12",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "school-net-41-vs-12",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "school-net-41-vs-12",
+      "stage": "primary",
+      "group": "文中两校网学校示例",
+      "label": "喇沙小學",
+      "href": "/reports/lsps"
+    },
+    {
+      "article": "school-net-41-vs-12",
+      "stage": "primary",
+      "group": "文中两校网学校示例",
+      "label": "聖若瑟小學",
+      "href": "/reports/sjps"
+    },
+    {
+      "article": "school-net-41-vs-12",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查询小一校网",
+      "href": "/tools/p1-school-net"
+    },
+    {
+      "article": "school-net-41-vs-12",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "试排小一派位志愿",
+      "href": "/tools/p1-simulator"
+    },
+    {
+      "article": "plk-skh-kg-comparison",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "plk-skh-kg-comparison",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "plk-skh-kg-comparison",
+      "stage": "kindergarten",
+      "group": "两类学校的具体示例",
+      "label": "保良局譚歐陽少芳紀念幼稚園（紅磡）",
+      "href": "/reports/plk-tam-au-yeung-siu-fong"
+    },
+    {
+      "article": "plk-skh-kg-comparison",
+      "stage": "kindergarten",
+      "group": "两类学校的具体示例",
+      "label": "聖公會幼稚園",
+      "href": "/reports/skh"
+    },
+    {
+      "article": "plk-skh-kg-comparison",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "plk-skh-kg-comparison",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "n-class-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "半日、全日与照顾安排",
+      "href": "/blog/kg-school-hours-care-guide"
+    },
+    {
+      "article": "n-class-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "n-class-guide",
+      "stage": "kindergarten",
+      "group": "照顾需要与选校",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "n-class-guide",
+      "stage": "kindergarten",
+      "group": "照顾需要与选校",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "n-class-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "n-class-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "kg-english-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "kg-english-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园升小成绩怎样读",
+      "href": "/blog/kg-primary-outcomes-guide"
+    },
+    {
+      "article": "kg-english-guide",
+      "stage": "kindergarten",
+      "group": "语言环境学校示例",
+      "label": "學之園幼稚園",
+      "href": "/reports/lh"
+    },
+    {
+      "article": "kg-english-guide",
+      "stage": "kindergarten",
+      "group": "语言环境学校示例",
+      "label": "國際英文幼稚園",
+      "href": "/reports/stcat"
+    },
+    {
+      "article": "kg-english-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "kg-english-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "eduhk-jcps-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "eduhk-jcps-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "eduhk-jcps-guide",
+      "stage": "primary",
+      "group": "学校报告与同类比较",
+      "label": "香港教育大學賽馬會小學",
+      "href": "/reports/edujcps"
+    },
+    {
+      "article": "eduhk-jcps-guide",
+      "stage": "primary",
+      "group": "学校报告与同类比较",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "eduhk-jcps-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "eduhk-jcps-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "good-hope-primary-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "good-hope-primary-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "good-hope-primary-guide",
+      "stage": "primary",
+      "group": "德望小学与中学",
+      "label": "德望小學暨幼稚園",
+      "href": "/reports/ghps"
+    },
+    {
+      "article": "good-hope-primary-guide",
+      "stage": "primary",
+      "group": "德望小学与中学",
+      "label": "德望學校",
+      "href": "/reports/good-hope-secondary"
+    },
+    {
+      "article": "good-hope-primary-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "good-hope-primary-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "kg-subsidy-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "半日、全日与照顾安排",
+      "href": "/blog/kg-school-hours-care-guide"
+    },
+    {
+      "article": "kg-subsidy-guide",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "PN与K1：怎样安排入学",
+      "href": "/blog/n-class-guide"
+    },
+    {
+      "article": "kg-subsidy-guide",
+      "stage": "kindergarten",
+      "group": "预算与访校继续阅读",
+      "label": "幼稚园类型与免费计划",
+      "href": "/blog/kg-school-types-guide"
+    },
+    {
+      "article": "kg-subsidy-guide",
+      "stage": "kindergarten",
+      "group": "预算与访校继续阅读",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "kg-subsidy-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "kg-subsidy-guide",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "rainstorm-class-guide",
+      "stage": "all",
+      "group": "查学校联络与班制",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "rainstorm-class-guide",
+      "stage": "all",
+      "group": "查学校联络与班制",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "rainstorm-class-guide",
+      "stage": "all",
+      "group": "查学校联络与班制",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "rainstorm-class-guide",
+      "stage": "all",
+      "group": "整理家庭安排",
+      "label": "整理候选学校",
+      "href": "/shortlist"
+    },
+    {
+      "article": "rainstorm-class-guide",
+      "stage": "all",
+      "group": "整理家庭安排",
+      "label": "制定升学规划",
+      "href": "/planning"
+    },
+    {
+      "article": "st-margaret-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "st-margaret-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "st-margaret-kg",
+      "stage": "kindergarten",
+      "group": "学校报告与语言选择",
+      "label": "天主教聖瑪加利大幼稚園",
+      "href": "/reports/smm"
+    },
+    {
+      "article": "st-margaret-kg",
+      "stage": "kindergarten",
+      "group": "学校报告与语言选择",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "st-margaret-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "st-margaret-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "p1-scoring-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "p1-scoring-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "p1-scoring-guide",
+      "stage": "primary",
+      "group": "计分以外还要看什么",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "p1-scoring-guide",
+      "stage": "primary",
+      "group": "计分以外还要看什么",
+      "label": "小一申请与叩门专题",
+      "href": "/blog/topics/primary-admission"
+    },
+    {
+      "article": "p1-scoring-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "核对自行分配计分",
+      "href": "/tools/p1-discretionary"
+    },
+    {
+      "article": "p1-scoring-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "st-margaret-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "st-margaret-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "st-margaret-primary",
+      "stage": "primary",
+      "group": "该校资料与小学比较",
+      "label": "圣玛加利男女英文中小学",
+      "href": "/schools/primary/st-margaret-s-co-educational-english-secondary-and-primary-school-542105"
+    },
+    {
+      "article": "st-margaret-primary",
+      "stage": "primary",
+      "group": "该校资料与小学比较",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "st-margaret-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "st-margaret-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "net40-ranking",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "net40-ranking",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一自行分配计分",
+      "href": "/blog/p1-scoring-guide"
+    },
+    {
+      "article": "net40-ranking",
+      "stage": "primary",
+      "group": "文中40校网学校示例",
+      "label": "聖公會基福小學",
+      "href": "/reports/skhkfp"
+    },
+    {
+      "article": "net40-ranking",
+      "stage": "primary",
+      "group": "文中40校网学校示例",
+      "label": "中華基督教會協和小學(長沙灣)",
+      "href": "/reports/cccwhcsw"
+    },
+    {
+      "article": "net40-ranking",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查询小一校网",
+      "href": "/tools/p1-school-net"
+    },
+    {
+      "article": "net40-ranking",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "试排小一派位志愿",
+      "href": "/tools/p1-simulator"
+    },
+    {
+      "article": "funful-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "PN与K1：怎样安排入学",
+      "href": "/blog/n-class-guide"
+    },
+    {
+      "article": "funful-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "funful-kg",
+      "stage": "kindergarten",
+      "group": "该校资料与费用规划",
+      "label": "海滨方方乐趣幼稚园",
+      "href": "/schools/kindergarten/riviera-funful-kindergarten-565105"
+    },
+    {
+      "article": "funful-kg",
+      "stage": "kindergarten",
+      "group": "该校资料与费用规划",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "funful-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "funful-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "wellcome-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "wellcome-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "PN与K1：怎样安排入学",
+      "href": "/blog/n-class-guide"
+    },
+    {
+      "article": "wellcome-kg",
+      "stage": "kindergarten",
+      "group": "该校资料与费用规划",
+      "label": "宏广国际幼稚园",
+      "href": "/schools/kindergarten/wellcome-international-kindergarten-590401"
+    },
+    {
+      "article": "wellcome-kg",
+      "stage": "kindergarten",
+      "group": "该校资料与费用规划",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "wellcome-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "wellcome-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "zenith-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "zenith-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "zenith-kg",
+      "stage": "kindergarten",
+      "group": "文中校区分别核对",
+      "label": "英艺幼稚园（沙田）",
+      "href": "/schools/kindergarten/zenith-kindergarten-shatin-593680"
+    },
+    {
+      "article": "zenith-kg",
+      "stage": "kindergarten",
+      "group": "文中校区分别核对",
+      "label": "英艺幼稚园（兆康）",
+      "href": "/schools/kindergarten/zenith-kindergarten-siu-hong-624829"
+    },
+    {
+      "article": "zenith-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "zenith-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "cheungchau-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "PN与K1：怎样安排入学",
+      "href": "/blog/n-class-guide"
+    },
+    {
+      "article": "cheungchau-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "cheungchau-kg",
+      "stage": "kindergarten",
+      "group": "文中长洲学校资料",
+      "label": "长洲圣心幼稚园",
+      "href": "/schools/kindergarten/cheung-chau-sacred-heart-kindergarten-152978"
+    },
+    {
+      "article": "cheungchau-kg",
+      "stage": "kindergarten",
+      "group": "文中长洲学校资料",
+      "label": "中华基督教会长洲堂锦江幼稚园",
+      "href": "/schools/kindergarten/the-church-of-christ-in-china-cheung-chau-church-kam-kong-kindergarten-151424"
+    },
+    {
+      "article": "cheungchau-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "cheungchau-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "hyps-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "hyps-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一自行分配计分",
+      "href": "/blog/p1-scoring-guide"
+    },
+    {
+      "article": "hyps-primary",
+      "stage": "primary",
+      "group": "小学与对应中学报告",
+      "label": "協恩中學附屬小學",
+      "href": "/reports/hyps"
+    },
+    {
+      "article": "hyps-primary",
+      "stage": "primary",
+      "group": "小学与对应中学报告",
+      "label": "协恩中学",
+      "href": "/reports/heep-yunn-secondary"
+    },
+    {
+      "article": "hyps-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "hyps-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "dgs-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "dgs-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一叩门与求位信",
+      "href": "/blog/knocking-letter-guide"
+    },
+    {
+      "article": "dgs-primary",
+      "stage": "primary",
+      "group": "女拔小学与中学",
+      "label": "拔萃女小學",
+      "href": "/reports/dgjs"
+    },
+    {
+      "article": "dgs-primary",
+      "stage": "primary",
+      "group": "女拔小学与中学",
+      "label": "拔萃女書院",
+      "href": "/reports/dgs-secondary"
+    },
+    {
+      "article": "dgs-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "dgs-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "lht-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "lht-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "lht-primary",
+      "stage": "primary",
+      "group": "学校报告与同类比较",
+      "label": "保良局陸慶濤小學",
+      "href": "/reports/plklht"
+    },
+    {
+      "article": "lht-primary",
+      "stage": "primary",
+      "group": "学校报告与同类比较",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "lht-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "lht-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "delia-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "delia-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "delia-primary",
+      "stage": "primary",
+      "group": "该校资料与小学比较",
+      "label": "地利亚英文小学暨幼稚园",
+      "href": "/schools/primary/delia-english-primary-school-and-kindergarten-216208"
+    },
+    {
+      "article": "delia-primary",
+      "stage": "primary",
+      "group": "该校资料与小学比较",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "delia-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "delia-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "mulberry-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "mulberry-kg",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "mulberry-kg",
+      "stage": "kindergarten",
+      "group": "该校资料与费用规划",
+      "label": "懋柏礼国际幼稚园",
+      "href": "/schools/kindergarten/mulberry-house-international-kindergarten-601721"
+    },
+    {
+      "article": "mulberry-kg",
+      "stage": "kindergarten",
+      "group": "该校资料与费用规划",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "mulberry-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "mulberry-kg",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "plk-camoes-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "plk-camoes-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一叩门与求位信",
+      "href": "/blog/knocking-letter-guide"
+    },
+    {
+      "article": "plk-camoes-primary",
+      "stage": "primary",
+      "group": "学校报告与升中安排",
+      "label": "保良局陳守仁小學",
+      "href": "/reports/tsl"
+    },
+    {
+      "article": "plk-camoes-primary",
+      "stage": "primary",
+      "group": "学校报告与升中安排",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "plk-camoes-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "plk-camoes-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "hkuga-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "hkuga-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "hkuga-primary",
+      "stage": "primary",
+      "group": "学校报告与同类比较",
+      "label": "港大同學會小學",
+      "href": "/reports/hkups"
+    },
+    {
+      "article": "hkuga-primary",
+      "stage": "primary",
+      "group": "学校报告与同类比较",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "hkuga-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "hkuga-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "st-joseph-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一自行分配计分",
+      "href": "/blog/p1-scoring-guide"
+    },
+    {
+      "article": "st-joseph-primary",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "41与12校网怎么比较",
+      "href": "/blog/school-net-41-vs-12"
+    },
+    {
+      "article": "st-joseph-primary",
+      "stage": "primary",
+      "group": "小学报告与对应中学资料",
+      "label": "聖若瑟小學",
+      "href": "/reports/sjps"
+    },
+    {
+      "article": "st-joseph-primary",
+      "stage": "primary",
+      "group": "小学报告与对应中学资料",
+      "label": "圣若瑟书院",
+      "href": "/schools/secondary/st-joseph-s-college-510459"
+    },
+    {
+      "article": "st-joseph-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "st-joseph-primary",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "knocking-letter-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "knocking-letter-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "直私小一面试怎样准备",
+      "href": "/blog/primary-interview-guide"
+    },
+    {
+      "article": "knocking-letter-guide",
+      "stage": "primary",
+      "group": "申请与备选学校",
+      "label": "小一offer与注册怎样取舍",
+      "href": "/blog/p1-offer-registration-guide"
+    },
+    {
+      "article": "knocking-letter-guide",
+      "stage": "primary",
+      "group": "申请与备选学校",
+      "label": "小学插班与转校代价",
+      "href": "/blog/primary-transfer-guide"
+    },
+    {
+      "article": "knocking-letter-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "knocking-letter-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "整理候选学校",
+      "href": "/shortlist"
+    },
+    {
+      "article": "talent-scheme-school-guide",
+      "stage": "all",
+      "group": "继续了解选校",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "talent-scheme-school-guide",
+      "stage": "all",
+      "group": "继续了解选校",
+      "label": "小一叩门与求位信",
+      "href": "/blog/knocking-letter-guide"
+    },
+    {
+      "article": "talent-scheme-school-guide",
+      "stage": "all",
+      "group": "小学选择与语言准备",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "talent-scheme-school-guide",
+      "stage": "all",
+      "group": "小学选择与语言准备",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "talent-scheme-school-guide",
+      "stage": "all",
+      "group": "开始选校",
+      "label": "按学段查学校",
+      "href": "/schools"
+    },
+    {
+      "article": "talent-scheme-school-guide",
+      "stage": "all",
+      "group": "开始选校",
+      "label": "制定升学规划",
+      "href": "/planning"
+    },
+    {
+      "article": "trending-kindergartens-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "trending-kindergartens-2026",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园教学语言怎么选",
+      "href": "/blog/kg-english-guide"
+    },
+    {
+      "article": "trending-kindergartens-2026",
+      "stage": "kindergarten",
+      "group": "文中学校报告",
+      "label": "民生書院幼稚園",
+      "href": "/reports/munsang"
+    },
+    {
+      "article": "trending-kindergartens-2026",
+      "stage": "kindergarten",
+      "group": "文中学校报告",
+      "label": "迦南幼稚園(九龍塘)",
+      "href": "/reports/canaan-klt"
+    },
+    {
+      "article": "trending-kindergartens-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "trending-kindergartens-2026",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "breakout-schools-2026",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "breakout-schools-2026",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "breakout-schools-2026",
+      "stage": "primary",
+      "group": "文中学校报告",
+      "label": "港大同學會小學",
+      "href": "/reports/hkups"
+    },
+    {
+      "article": "breakout-schools-2026",
+      "stage": "primary",
+      "group": "文中学校报告",
+      "label": "保良局陳守仁小學",
+      "href": "/reports/tsl"
+    },
+    {
+      "article": "breakout-schools-2026",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "breakout-schools-2026",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "primary-rankings-2026",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "primary-rankings-2026",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "primary-rankings-2026",
+      "stage": "primary",
+      "group": "从排名回到家庭选择",
+      "label": "小学比较与学校专题",
+      "href": "/blog/topics/primary-school-profiles"
+    },
+    {
+      "article": "primary-rankings-2026",
+      "stage": "primary",
+      "group": "从排名回到家庭选择",
+      "label": "小学校网怎么选",
+      "href": "/blog/hk-school-net-diy-analysis"
+    },
+    {
+      "article": "primary-rankings-2026",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "primary-rankings-2026",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "stcat-interview",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园面试怎样准备",
+      "href": "/blog/hk-kg-interview-prep-guide-2027-28"
+    },
+    {
+      "article": "stcat-interview",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "stcat-interview",
+      "stage": "kindergarten",
+      "group": "学校报告与招生资料核查",
+      "label": "國際英文幼稚園",
+      "href": "/reports/stcat"
+    },
+    {
+      "article": "stcat-interview",
+      "stage": "kindergarten",
+      "group": "学校报告与招生资料核查",
+      "label": "五所幼稚园招生资料对照",
+      "href": "/blog/hk-kg-k1-transparency-audit-2027-28"
+    },
+    {
+      "article": "stcat-interview",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "stcat-interview",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "through-train-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "直资中学offer怎样取舍",
+      "href": "/blog/secondary-dss-offer-guide"
+    },
+    {
+      "article": "through-train-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "怎样读懂小学概览",
+      "href": "/blog/psp-2026-guide"
+    },
+    {
+      "article": "through-train-guide",
+      "stage": "primary",
+      "group": "文中衔接学校示例",
+      "label": "聖保羅男女中學附屬小學",
+      "href": "/reports/spccps"
+    },
+    {
+      "article": "through-train-guide",
+      "stage": "primary",
+      "group": "文中衔接学校示例",
+      "label": "圣保罗男女中学（SPCC）",
+      "href": "/reports/spcc-secondary"
+    },
+    {
+      "article": "through-train-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "through-train-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看中学名录",
+      "href": "/schools/secondary/directory"
+    },
+    {
+      "article": "school-types-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "school-types-guide",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一offer与注册怎样取舍",
+      "href": "/blog/p1-offer-registration-guide"
+    },
+    {
+      "article": "school-types-guide",
+      "stage": "primary",
+      "group": "按学校与地区继续比较",
+      "label": "语言、功课与测考节奏",
+      "href": "/blog/primary-school-learning-guide"
+    },
+    {
+      "article": "school-types-guide",
+      "stage": "primary",
+      "group": "按学校与地区继续比较",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "school-types-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "school-types-guide",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "hot-schools-2026-07",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "一条龙、直属与联系",
+      "href": "/blog/through-train-guide"
+    },
+    {
+      "article": "hot-schools-2026-07",
+      "stage": "primary",
+      "group": "继续了解小学",
+      "label": "小一入学流程与时间线",
+      "href": "/blog/hk-p1-admission-guide-2027"
+    },
+    {
+      "article": "hot-schools-2026-07",
+      "stage": "primary",
+      "group": "文中两校报告",
+      "label": "蘇浙小學校",
+      "href": "/reports/kcps"
+    },
+    {
+      "article": "hot-schools-2026-07",
+      "stage": "primary",
+      "group": "文中两校报告",
+      "label": "香港浸會大學附屬學校王錦輝中小學",
+      "href": "/reports/wkf"
+    },
+    {
+      "article": "hot-schools-2026-07",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "查看小学名录",
+      "href": "/schools/primary/directory"
+    },
+    {
+      "article": "hot-schools-2026-07",
+      "stage": "primary",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=primary"
+    },
+    {
+      "article": "hk-kg-k1-application-roadmap-2027-28",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园面试怎样准备",
+      "href": "/blog/hk-kg-interview-prep-guide-2027-28"
+    },
+    {
+      "article": "hk-kg-k1-application-roadmap-2027-28",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "没有offer、转校与停办后备",
+      "href": "/blog/kg-waitlist-transfer-guide"
+    },
+    {
+      "article": "hk-kg-k1-application-roadmap-2027-28",
+      "stage": "kindergarten",
+      "group": "申请前补齐信息",
+      "label": "五所幼稚园招生资料对照",
+      "href": "/blog/hk-kg-k1-transparency-audit-2027-28"
+    },
+    {
+      "article": "hk-kg-k1-application-roadmap-2027-28",
+      "stage": "kindergarten",
+      "group": "申请前补齐信息",
+      "label": "幼稚园学费与资助",
+      "href": "/blog/kg-subsidy-guide"
+    },
+    {
+      "article": "hk-kg-k1-application-roadmap-2027-28",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "hk-kg-k1-application-roadmap-2027-28",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    },
+    {
+      "article": "hk-kg-interview-prep-guide-2027-28",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "K1申请时间与注册安排",
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28"
+    },
+    {
+      "article": "hk-kg-interview-prep-guide-2027-28",
+      "stage": "kindergarten",
+      "group": "继续了解幼稚园",
+      "label": "幼稚园开放日看什么",
+      "href": "/blog/kg-open-day-guide-2026"
+    },
+    {
+      "article": "hk-kg-interview-prep-guide-2027-28",
+      "stage": "kindergarten",
+      "group": "校本面试与申请专题",
+      "label": "国际英文幼稚园面试",
+      "href": "/blog/stcat-interview"
+    },
+    {
+      "article": "hk-kg-interview-prep-guide-2027-28",
+      "stage": "kindergarten",
+      "group": "校本面试与申请专题",
+      "label": "没有offer、转校与停办后备",
+      "href": "/blog/kg-waitlist-transfer-guide"
+    },
+    {
+      "article": "hk-kg-interview-prep-guide-2027-28",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "查看幼稚园名录",
+      "href": "/schools/kindergarten/directory"
+    },
+    {
+      "article": "hk-kg-interview-prep-guide-2027-28",
+      "stage": "kindergarten",
+      "group": "开始选校",
+      "label": "制定选校规划",
+      "href": "/planning?stage=kindergarten"
+    }
+  ]
+}
