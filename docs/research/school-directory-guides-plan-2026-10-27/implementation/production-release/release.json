@@ -1,0 +1,40 @@
+{
+  "status": "production verified",
+  "releasedAtUtc": "2026-10-27T10:05:59.504748+00:00",
+  "domain": "https://hkschool.guide",
+  "project": "hk-school-guide",
+  "branch": "codex/primary-secondary-directory-guides-20261027",
+  "releaseCommit": "e689884d012690f575a0aeb9c09a58fbc32fb9f7",
+  "deploymentId": "dpl_9NtZv8DJxvzbVTRQjBciPraPYdvf",
+  "deploymentUrl": "https://hk-school-guide-2ryroc6b3-max-jia-s-projects.vercel.app",
+  "baseline": {
+    "baselineDeployment": "dpl_7u2soNjpHfCo8Vo6WVJxMGAhGj5c",
+    "baselineCommit": "163e92e2fb543105711a82e6afb97406552dd01a",
+    "archiveRuntimeFiles": 1113,
+    "gitRuntimeFiles": 1113,
+    "different": [],
+    "uncommittedProductionRuntimeFiles": []
+  },
+  "inventory": {
+    "reports": 230,
+    "blogs": 74,
+    "profilePages": 2193,
+    "coreGuides": 32,
+    "sitemapUrls": 5172,
+    "missingPriorUrls": 0
+  },
+  "checks": {
+    "localCoreArticleBrowserCases": 128,
+    "stagedPaths": 116,
+    "productionPaths": 116,
+    "productionGuideBodiesCompared": 64,
+    "productionLinkTargets": 314,
+    "productionBrowserCases": 36,
+    "errors": [],
+    "runtimeErrors": "No error/fatal logs found in the five-minute post-release scan; not a long-term monitoring guarantee."
+  },
+  "rollbackDeployment": "dpl_7u2soNjpHfCo8Vo6WVJxMGAhGj5c",
+  "screenshots": [
+    "guide-desktop.png"
+  ]
+}

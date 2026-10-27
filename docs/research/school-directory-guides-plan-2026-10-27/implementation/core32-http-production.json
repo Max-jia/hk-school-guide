@@ -1,0 +1,1894 @@
+{
+  "base": "https://hkschool.guide",
+  "articles": 74,
+  "coreGuides": 32,
+  "uniqueRoutesChecked": 314,
+  "crossPageAnchorsChecked": 0,
+  "errors": [],
+  "results": {
+    "/blog/breakout-schools-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86760,
+      "h1": 1
+    },
+    "/blog/cheungchau-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82389,
+      "h1": 1
+    },
+    "/blog/delia-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81815,
+      "h1": 1
+    },
+    "/blog/dgs-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80223,
+      "h1": 1
+    },
+    "/blog/eduhk-jcps-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83747,
+      "h1": 1
+    },
+    "/blog/funful-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80094,
+      "h1": 1
+    },
+    "/blog/good-hope-primary-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82944,
+      "h1": 1
+    },
+    "/blog/gt-primary-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 87616,
+      "h1": 1
+    },
+    "/blog/hk-kg-interview-prep-guide-2027-28": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91882,
+      "h1": 1
+    },
+    "/blog/hk-kg-k1-application-roadmap-2027-28": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91746,
+      "h1": 1
+    },
+    "/blog/hk-kg-k1-transparency-audit-2027-28": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95727,
+      "h1": 1
+    },
+    "/blog/hk-p1-admission-guide-2027": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94796,
+      "h1": 1
+    },
+    "/blog/hk-school-agency-red-flags": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89312,
+      "h1": 1
+    },
+    "/blog/hk-school-net-diy-analysis": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 98509,
+      "h1": 1
+    },
+    "/blog/hkuga-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80260,
+      "h1": 1
+    },
+    "/blog/hot-schools-2026-07": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82332,
+      "h1": 1
+    },
+    "/blog/hy-kg-search-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 78036,
+      "h1": 1
+    },
+    "/blog/hyps-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80536,
+      "h1": 1
+    },
+    "/blog/kg-english-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91982,
+      "h1": 1
+    },
+    "/blog/kg-open-day-guide-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94103,
+      "h1": 1
+    },
+    "/blog/kg-primary-outcomes-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95370,
+      "h1": 1
+    },
+    "/blog/kg-school-hours-care-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91541,
+      "h1": 1
+    },
+    "/blog/kg-school-types-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89885,
+      "h1": 1
+    },
+    "/blog/kg-subsidy-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95994,
+      "h1": 1
+    },
+    "/blog/kg-waitlist-transfer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92853,
+      "h1": 1
+    },
+    "/blog/knocking-letter-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 93709,
+      "h1": 1
+    },
+    "/blog/lh-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83189,
+      "h1": 1
+    },
+    "/blog/lht-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 79950,
+      "h1": 1
+    },
+    "/blog/ling-liang-kg-search-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 84152,
+      "h1": 1
+    },
+    "/blog/lui-ming-choi-5-schools": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 93620,
+      "h1": 1
+    },
+    "/blog/ma-on-shan-kg-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81214,
+      "h1": 1
+    },
+    "/blog/mulberry-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81315,
+      "h1": 1
+    },
+    "/blog/munsang-kg-search": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86032,
+      "h1": 1
+    },
+    "/blog/n-class-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 104726,
+      "h1": 1
+    },
+    "/blog/net40-ranking": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 88595,
+      "h1": 1
+    },
+    "/blog/p1-offer-registration-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95955,
+      "h1": 1
+    },
+    "/blog/p1-scoring-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 97563,
+      "h1": 1
+    },
+    "/blog/plk-camoes-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 77707,
+      "h1": 1
+    },
+    "/blog/plk-skh-kg-comparison": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86694,
+      "h1": 1
+    },
+    "/blog/pooi-to-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89528,
+      "h1": 1
+    },
+    "/blog/primary-interview-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 97093,
+      "h1": 1
+    },
+    "/blog/primary-rankings-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89270,
+      "h1": 1
+    },
+    "/blog/primary-school-learning-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 99377,
+      "h1": 1
+    },
+    "/blog/primary-transfer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 96980,
+      "h1": 1
+    },
+    "/blog/psp-2026-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92151,
+      "h1": 1
+    },
+    "/blog/rainstorm-class-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 79456,
+      "h1": 1
+    },
+    "/blog/school-net-41-vs-12": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80481,
+      "h1": 1
+    },
+    "/blog/school-types-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94816,
+      "h1": 1
+    },
+    "/blog/secondary-admission-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91753,
+      "h1": 1
+    },
+    "/blog/secondary-banding-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89814,
+      "h1": 1
+    },
+    "/blog/secondary-central-allocation-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 90640,
+      "h1": 1
+    },
+    "/blog/secondary-curriculum-pathways-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94883,
+      "h1": 1
+    },
+    "/blog/secondary-discretionary-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94566,
+      "h1": 1
+    },
+    "/blog/secondary-dss-offer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 111565,
+      "h1": 1
+    },
+    "/blog/secondary-language-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91271,
+      "h1": 1
+    },
+    "/blog/secondary-new-arrival-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 100907,
+      "h1": 1
+    },
+    "/blog/secondary-results-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94527,
+      "h1": 1
+    },
+    "/blog/secondary-school-cost-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95628,
+      "h1": 1
+    },
+    "/blog/secondary-subject-choice-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94029,
+      "h1": 1
+    },
+    "/blog/secondary-transfer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 93770,
+      "h1": 1
+    },
+    "/blog/skh-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91330,
+      "h1": 1
+    },
+    "/blog/skh-same-name-schools": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 103502,
+      "h1": 1
+    },
+    "/blog/soka-kg-search": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 87434,
+      "h1": 1
+    },
+    "/blog/spcps-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 110033,
+      "h1": 1
+    },
+    "/blog/st-joseph-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 79388,
+      "h1": 1
+    },
+    "/blog/st-margaret-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80640,
+      "h1": 1
+    },
+    "/blog/st-margaret-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86072,
+      "h1": 1
+    },
+    "/blog/stcat-interview": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81419,
+      "h1": 1
+    },
+    "/blog/talent-scheme-school-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83212,
+      "h1": 1
+    },
+    "/blog/through-train-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 100341,
+      "h1": 1
+    },
+    "/blog/topics/kindergarten-admission": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 54117,
+      "h1": 1
+    },
+    "/blog/topics/primary-admission": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 55293,
+      "h1": 1
+    },
+    "/blog/topics/primary-school-net": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 51443,
+      "h1": 1
+    },
+    "/blog/topics/primary-school-profiles": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 71486,
+      "h1": 1
+    },
+    "/blog/topics/secondary-admission": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 53874,
+      "h1": 1
+    },
+    "/blog/topics/secondary-curriculum": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 52186,
+      "h1": 1
+    },
+    "/blog/topics/secondary-selection": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 50798,
+      "h1": 1
+    },
+    "/blog/trending-kindergartens-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89680,
+      "h1": 1
+    },
+    "/blog/true-light-primary-search": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 88419,
+      "h1": 1
+    },
+    "/blog/wellcome-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81930,
+      "h1": 1
+    },
+    "/blog/zenith-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80767,
+      "h1": 1
+    },
+    "/cn/blog/breakout-schools-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 87574,
+      "h1": 1
+    },
+    "/cn/blog/cheungchau-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83177,
+      "h1": 1
+    },
+    "/cn/blog/delia-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82629,
+      "h1": 1
+    },
+    "/cn/blog/dgs-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81202,
+      "h1": 1
+    },
+    "/cn/blog/eduhk-jcps-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 84566,
+      "h1": 1
+    },
+    "/cn/blog/funful-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80895,
+      "h1": 1
+    },
+    "/cn/blog/good-hope-primary-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83645,
+      "h1": 1
+    },
+    "/cn/blog/gt-primary-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 88448,
+      "h1": 1
+    },
+    "/cn/blog/hk-kg-interview-prep-guide-2027-28": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92713,
+      "h1": 1
+    },
+    "/cn/blog/hk-kg-k1-application-roadmap-2027-28": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92596,
+      "h1": 1
+    },
+    "/cn/blog/hk-kg-k1-transparency-audit-2027-28": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 96559,
+      "h1": 1
+    },
+    "/cn/blog/hk-p1-admission-guide-2027": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95658,
+      "h1": 1
+    },
+    "/cn/blog/hk-school-agency-red-flags": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 90137,
+      "h1": 1
+    },
+    "/cn/blog/hk-school-net-diy-analysis": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 99359,
+      "h1": 1
+    },
+    "/cn/blog/hkuga-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80428,
+      "h1": 1
+    },
+    "/cn/blog/hot-schools-2026-07": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83114,
+      "h1": 1
+    },
+    "/cn/blog/hy-kg-search-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 78779,
+      "h1": 1
+    },
+    "/cn/blog/hyps-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81596,
+      "h1": 1
+    },
+    "/cn/blog/kg-english-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92844,
+      "h1": 1
+    },
+    "/cn/blog/kg-open-day-guide-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94926,
+      "h1": 1
+    },
+    "/cn/blog/kg-primary-outcomes-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 96232,
+      "h1": 1
+    },
+    "/cn/blog/kg-school-hours-care-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92364,
+      "h1": 1
+    },
+    "/cn/blog/kg-school-types-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 90722,
+      "h1": 1
+    },
+    "/cn/blog/kg-subsidy-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 96812,
+      "h1": 1
+    },
+    "/cn/blog/kg-waitlist-transfer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 93709,
+      "h1": 1
+    },
+    "/cn/blog/knocking-letter-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94552,
+      "h1": 1
+    },
+    "/cn/blog/lh-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83870,
+      "h1": 1
+    },
+    "/cn/blog/lht-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80738,
+      "h1": 1
+    },
+    "/cn/blog/ling-liang-kg-search-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 84895,
+      "h1": 1
+    },
+    "/cn/blog/lui-ming-choi-5-schools": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94440,
+      "h1": 1
+    },
+    "/cn/blog/ma-on-shan-kg-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82033,
+      "h1": 1
+    },
+    "/cn/blog/mulberry-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82116,
+      "h1": 1
+    },
+    "/cn/blog/munsang-kg-search": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86904,
+      "h1": 1
+    },
+    "/cn/blog/n-class-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 105532,
+      "h1": 1
+    },
+    "/cn/blog/net40-ranking": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89396,
+      "h1": 1
+    },
+    "/cn/blog/p1-offer-registration-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 96792,
+      "h1": 1
+    },
+    "/cn/blog/p1-scoring-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 98406,
+      "h1": 1
+    },
+    "/cn/blog/plk-camoes-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 78508,
+      "h1": 1
+    },
+    "/cn/blog/plk-skh-kg-comparison": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 87513,
+      "h1": 1
+    },
+    "/cn/blog/pooi-to-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89468,
+      "h1": 1
+    },
+    "/cn/blog/primary-interview-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 97903,
+      "h1": 1
+    },
+    "/cn/blog/primary-rankings-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 90058,
+      "h1": 1
+    },
+    "/cn/blog/primary-school-learning-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 100226,
+      "h1": 1
+    },
+    "/cn/blog/primary-transfer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 97797,
+      "h1": 1
+    },
+    "/cn/blog/psp-2026-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92983,
+      "h1": 1
+    },
+    "/cn/blog/rainstorm-class-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80231,
+      "h1": 1
+    },
+    "/cn/blog/school-net-41-vs-12": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81013,
+      "h1": 1
+    },
+    "/cn/blog/school-types-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95684,
+      "h1": 1
+    },
+    "/cn/blog/secondary-admission-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92602,
+      "h1": 1
+    },
+    "/cn/blog/secondary-banding-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 90682,
+      "h1": 1
+    },
+    "/cn/blog/secondary-central-allocation-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91470,
+      "h1": 1
+    },
+    "/cn/blog/secondary-curriculum-pathways-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95726,
+      "h1": 1
+    },
+    "/cn/blog/secondary-discretionary-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95403,
+      "h1": 1
+    },
+    "/cn/blog/secondary-dss-offer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 112276,
+      "h1": 1
+    },
+    "/cn/blog/secondary-language-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92094,
+      "h1": 1
+    },
+    "/cn/blog/secondary-new-arrival-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 101763,
+      "h1": 1
+    },
+    "/cn/blog/secondary-results-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 95390,
+      "h1": 1
+    },
+    "/cn/blog/secondary-school-cost-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 96490,
+      "h1": 1
+    },
+    "/cn/blog/secondary-subject-choice-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94860,
+      "h1": 1
+    },
+    "/cn/blog/secondary-transfer-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 94600,
+      "h1": 1
+    },
+    "/cn/blog/skh-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 90884,
+      "h1": 1
+    },
+    "/cn/blog/skh-same-name-schools": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 104333,
+      "h1": 1
+    },
+    "/cn/blog/soka-kg-search": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 88306,
+      "h1": 1
+    },
+    "/cn/blog/spcps-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 111077,
+      "h1": 1
+    },
+    "/cn/blog/st-joseph-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 80061,
+      "h1": 1
+    },
+    "/cn/blog/st-margaret-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81435,
+      "h1": 1
+    },
+    "/cn/blog/st-margaret-primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86886,
+      "h1": 1
+    },
+    "/cn/blog/stcat-interview": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81938,
+      "h1": 1
+    },
+    "/cn/blog/talent-scheme-school-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 84013,
+      "h1": 1
+    },
+    "/cn/blog/through-train-guide": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 101171,
+      "h1": 1
+    },
+    "/cn/blog/topics/kindergarten-admission": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 54834,
+      "h1": 1
+    },
+    "/cn/blog/topics/primary-admission": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 56106,
+      "h1": 1
+    },
+    "/cn/blog/topics/primary-school-net": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 52147,
+      "h1": 1
+    },
+    "/cn/blog/topics/primary-school-profiles": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 72442,
+      "h1": 1
+    },
+    "/cn/blog/topics/secondary-admission": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 54638,
+      "h1": 1
+    },
+    "/cn/blog/topics/secondary-curriculum": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 52962,
+      "h1": 1
+    },
+    "/cn/blog/topics/secondary-selection": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 51562,
+      "h1": 1
+    },
+    "/cn/blog/trending-kindergartens-2026": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 90481,
+      "h1": 1
+    },
+    "/cn/blog/true-light-primary-search": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 89262,
+      "h1": 1
+    },
+    "/cn/blog/wellcome-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82731,
+      "h1": 1
+    },
+    "/cn/blog/zenith-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81555,
+      "h1": 1
+    },
+    "/cn/planning": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81929,
+      "h1": 1
+    },
+    "/cn/planning?stage=kindergarten": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 923309,
+      "h1": 1
+    },
+    "/cn/planning?stage=primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 800598,
+      "h1": 1
+    },
+    "/cn/planning?stage=secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 140139,
+      "h1": 1
+    },
+    "/cn/reports": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 101213,
+      "h1": 1
+    },
+    "/cn/reports/canaan-klt": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 145629,
+      "h1": 1
+    },
+    "/cn/reports/cccwhcsw": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 237304,
+      "h1": 1
+    },
+    "/cn/reports/dbs-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 189010,
+      "h1": 1
+    },
+    "/cn/reports/dgjs": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 152740,
+      "h1": 1
+    },
+    "/cn/reports/dgs-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 160540,
+      "h1": 1
+    },
+    "/cn/reports/edujcps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 176715,
+      "h1": 1
+    },
+    "/cn/reports/ghps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 151074,
+      "h1": 1
+    },
+    "/cn/reports/good-hope-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 158894,
+      "h1": 1
+    },
+    "/cn/reports/gt": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 182749,
+      "h1": 1
+    },
+    "/cn/reports/heep-yunn-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 167003,
+      "h1": 1
+    },
+    "/cn/reports/hksdgps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 131897,
+      "h1": 1
+    },
+    "/cn/reports/hkups": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 149203,
+      "h1": 1
+    },
+    "/cn/reports/hy": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86018,
+      "h1": 1
+    },
+    "/cn/reports/hyps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 150507,
+      "h1": 1
+    },
+    "/cn/reports/kcps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 158449,
+      "h1": 1
+    },
+    "/cn/reports/ktl": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 168519,
+      "h1": 1
+    },
+    "/cn/reports/la-salle-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 170207,
+      "h1": 1
+    },
+    "/cn/reports/lh": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 170857,
+      "h1": 1
+    },
+    "/cn/reports/lh-hp": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 141058,
+      "h1": 1
+    },
+    "/cn/reports/lh-sf": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 147987,
+      "h1": 1
+    },
+    "/cn/reports/llc": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 87627,
+      "h1": 1
+    },
+    "/cn/reports/lmc": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 168153,
+      "h1": 1
+    },
+    "/cn/reports/lsps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 157238,
+      "h1": 1
+    },
+    "/cn/reports/munsang": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 92200,
+      "h1": 1
+    },
+    "/cn/reports/munsangps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 176188,
+      "h1": 1
+    },
+    "/cn/reports/plk-tam-au-yeung-siu-fong": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 159237,
+      "h1": 1
+    },
+    "/cn/reports/plklht": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 150188,
+      "h1": 1
+    },
+    "/cn/reports/pt": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 127506,
+      "h1": 1
+    },
+    "/cn/reports/py2": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 162220,
+      "h1": 1
+    },
+    "/cn/reports/sjps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 168559,
+      "h1": 1
+    },
+    "/cn/reports/skh": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 93680,
+      "h1": 1
+    },
+    "/cn/reports/skhkfp": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 180021,
+      "h1": 1
+    },
+    "/cn/reports/skhlmc": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 166028,
+      "h1": 1
+    },
+    "/cn/reports/skhlsks": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 173501,
+      "h1": 1
+    },
+    "/cn/reports/skhttlsks": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 180817,
+      "h1": 1
+    },
+    "/cn/reports/smm": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 88321,
+      "h1": 1
+    },
+    "/cn/reports/soka": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 116573,
+      "h1": 1
+    },
+    "/cn/reports/spcc-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 182687,
+      "h1": 1
+    },
+    "/cn/reports/spccps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 151063,
+      "h1": 1
+    },
+    "/cn/reports/st-hilarys-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 149894,
+      "h1": 1
+    },
+    "/cn/reports/stcat": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 140795,
+      "h1": 1
+    },
+    "/cn/reports/stewards-pooi-kei-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 197031,
+      "h1": 1
+    },
+    "/cn/reports/tak-sun-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 156349,
+      "h1": 1
+    },
+    "/cn/reports/tlps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 172983,
+      "h1": 1
+    },
+    "/cn/reports/tsl": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 170836,
+      "h1": 1
+    },
+    "/cn/reports/wkf": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 111517,
+      "h1": 1
+    },
+    "/cn/reports/yot-chan-cheng-yuk-yee-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 155060,
+      "h1": 1
+    },
+    "/cn/schools": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 49573,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 104020,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/cheung-chau-sacred-heart-kindergarten-152978": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 98925,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/directory": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 2446601,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/mulberry-house-international-kindergarten-601721": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 103210,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/riviera-funful-kindergarten-565105": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 85354,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/the-church-of-christ-in-china-cheung-chau-church-kam-kong-kindergarten-151424": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 104195,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/think-international-kindergarten-ma-on-shan-533360": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 104558,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/wellcome-international-kindergarten-590401": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 101853,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/zenith-kindergarten-shatin-593680": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 103634,
+      "h1": 1
+    },
+    "/cn/schools/kindergarten/zenith-kindergarten-siu-hong-624829": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 102831,
+      "h1": 1
+    },
+    "/cn/schools/primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 106187,
+      "h1": 1
+    },
+    "/cn/schools/primary/delia-english-primary-school-and-kindergarten-216208": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 83478,
+      "h1": 1
+    },
+    "/cn/schools/primary/directory": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 1831539,
+      "h1": 1
+    },
+    "/cn/schools/primary/st-margaret-s-co-educational-english-secondary-and-primary-school-542105": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86200,
+      "h1": 1
+    },
+    "/cn/schools/secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 118842,
+      "h1": 1
+    },
+    "/cn/schools/secondary/directory": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 1925516,
+      "h1": 1
+    },
+    "/cn/schools/secondary/directory?report=1": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 1925516,
+      "h1": 1
+    },
+    "/cn/schools/secondary/st-joseph-s-college-510459": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 85461,
+      "h1": 1
+    },
+    "/cn/shortlist": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 26854,
+      "h1": 1
+    },
+    "/cn/tools/p1-discretionary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 33018,
+      "h1": 1
+    },
+    "/cn/tools/p1-school-net": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 77108,
+      "h1": 1
+    },
+    "/cn/tools/p1-simulator": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 72308,
+      "h1": 1
+    },
+    "/planning": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 81240,
+      "h1": 1
+    },
+    "/planning?stage=kindergarten": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 922569,
+      "h1": 1
+    },
+    "/planning?stage=primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 799858,
+      "h1": 1
+    },
+    "/planning?stage=secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 139426,
+      "h1": 1
+    },
+    "/reports": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 100142,
+      "h1": 1
+    },
+    "/reports/canaan-klt": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 144979,
+      "h1": 1
+    },
+    "/reports/cccwhcsw": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 236625,
+      "h1": 1
+    },
+    "/reports/dbs-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 188360,
+      "h1": 1
+    },
+    "/reports/dgjs": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 152064,
+      "h1": 1
+    },
+    "/reports/dgs-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 159890,
+      "h1": 1
+    },
+    "/reports/edujcps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 176036,
+      "h1": 1
+    },
+    "/reports/ghps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 150398,
+      "h1": 1
+    },
+    "/reports/good-hope-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 158218,
+      "h1": 1
+    },
+    "/reports/gt": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 182083,
+      "h1": 1
+    },
+    "/reports/heep-yunn-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 166327,
+      "h1": 1
+    },
+    "/reports/hksdgps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 131218,
+      "h1": 1
+    },
+    "/reports/hkups": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 148524,
+      "h1": 1
+    },
+    "/reports/hy": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 85352,
+      "h1": 1
+    },
+    "/reports/hyps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 149831,
+      "h1": 1
+    },
+    "/reports/kcps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 157766,
+      "h1": 1
+    },
+    "/reports/ktl": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 167840,
+      "h1": 1
+    },
+    "/reports/la-salle-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 169531,
+      "h1": 1
+    },
+    "/reports/lh": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 170170,
+      "h1": 1
+    },
+    "/reports/lh-hp": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 140379,
+      "h1": 1
+    },
+    "/reports/lh-sf": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 147308,
+      "h1": 1
+    },
+    "/reports/llc": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 86948,
+      "h1": 1
+    },
+    "/reports/lmc": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 167474,
+      "h1": 1
+    },
+    "/reports/lsps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 156562,
+      "h1": 1
+    },
+    "/reports/munsang": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 91521,
+      "h1": 1
+    },
+    "/reports/munsangps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 175538,
+      "h1": 1
+    },
+    "/reports/plk-tam-au-yeung-siu-fong": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 158561,
+      "h1": 1
+    },
+    "/reports/plklht": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 149509,
+      "h1": 1
+    },
+    "/reports/pt": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 126840,
+      "h1": 1
+    },
+    "/reports/py2": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 161539,
+      "h1": 1
+    },
+    "/reports/sjps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 167880,
+      "h1": 1
+    },
+    "/reports/skh": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 93001,
+      "h1": 1
+    },
+    "/reports/skhkfp": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 179342,
+      "h1": 1
+    },
+    "/reports/skhlmc": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 165349,
+      "h1": 1
+    },
+    "/reports/skhlsks": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 172822,
+      "h1": 1
+    },
+    "/reports/skhttlsks": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 180164,
+      "h1": 1
+    },
+    "/reports/smm": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 87642,
+      "h1": 1
+    },
+    "/reports/soka": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 115894,
+      "h1": 1
+    },
+    "/reports/spcc-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 182037,
+      "h1": 1
+    },
+    "/reports/spccps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 150387,
+      "h1": 1
+    },
+    "/reports/st-hilarys-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 149241,
+      "h1": 1
+    },
+    "/reports/stcat": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 140116,
+      "h1": 1
+    },
+    "/reports/stewards-pooi-kei-secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 196355,
+      "h1": 1
+    },
+    "/reports/tak-sun-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 155699,
+      "h1": 1
+    },
+    "/reports/tlps": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 172307,
+      "h1": 1
+    },
+    "/reports/tsl": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 170154,
+      "h1": 1
+    },
+    "/reports/wkf": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 110835,
+      "h1": 1
+    },
+    "/reports/yot-chan-cheng-yuk-yee-kg": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 154384,
+      "h1": 1
+    },
+    "/research/hk-kg-k1-admission-disclosure-audit-2027-28.csv": {
+      "status": 200,
+      "mime": "text/csv",
+      "bytes": 4140,
+      "h1": 0
+    },
+    "/schools": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 48860,
+      "h1": 1
+    },
+    "/schools/kindergarten": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 103092,
+      "h1": 1
+    },
+    "/schools/kindergarten/cheung-chau-sacred-heart-kindergarten-152978": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 98200,
+      "h1": 1
+    },
+    "/schools/kindergarten/directory": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 2444967,
+      "h1": 1
+    },
+    "/schools/kindergarten/mulberry-house-international-kindergarten-601721": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 102498,
+      "h1": 1
+    },
+    "/schools/kindergarten/riviera-funful-kindergarten-565105": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 84629,
+      "h1": 1
+    },
+    "/schools/kindergarten/the-church-of-christ-in-china-cheung-chau-church-kam-kong-kindergarten-151424": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 103483,
+      "h1": 1
+    },
+    "/schools/kindergarten/think-international-kindergarten-ma-on-shan-533360": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 103846,
+      "h1": 1
+    },
+    "/schools/kindergarten/wellcome-international-kindergarten-590401": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 101128,
+      "h1": 1
+    },
+    "/schools/kindergarten/zenith-kindergarten-shatin-593680": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 102922,
+      "h1": 1
+    },
+    "/schools/kindergarten/zenith-kindergarten-siu-hong-624829": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 102106,
+      "h1": 1
+    },
+    "/schools/primary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 105202,
+      "h1": 1
+    },
+    "/schools/primary/delia-english-primary-school-and-kindergarten-216208": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 82766,
+      "h1": 1
+    },
+    "/schools/primary/directory": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 1832424,
+      "h1": 1
+    },
+    "/schools/primary/st-margaret-s-co-educational-english-secondary-and-primary-school-542105": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 85488,
+      "h1": 1
+    },
+    "/schools/secondary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 117895,
+      "h1": 1
+    },
+    "/schools/secondary/directory": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 1935112,
+      "h1": 1
+    },
+    "/schools/secondary/directory?report=1": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 1935112,
+      "h1": 1
+    },
+    "/schools/secondary/st-joseph-s-college-510459": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 84749,
+      "h1": 1
+    },
+    "/shortlist": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 26563,
+      "h1": 1
+    },
+    "/sources/kindergarten/yot-chan-cheng-yuk-yee-primary-outcomes-2025-26-parent-provided.png": {
+      "status": 200,
+      "mime": "image/png",
+      "bytes": 1089725,
+      "h1": 0
+    },
+    "/tools/p1-discretionary": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 32156,
+      "h1": 1
+    },
+    "/tools/p1-school-net": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 76162,
+      "h1": 1
+    },
+    "/tools/p1-simulator": {
+      "status": 200,
+      "mime": "text/html",
+      "bytes": 71330,
+      "h1": 1
+    }
+  }
+}

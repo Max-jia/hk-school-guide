@@ -13,7 +13,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K02",
@@ -29,7 +29,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K03",
@@ -45,7 +45,7 @@
     "research": "prior-verified",
     "editorial": "prior-accepted",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K04",
@@ -61,7 +61,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K05",
@@ -77,7 +77,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K06",
@@ -93,7 +93,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K07",
@@ -109,7 +109,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K08",
@@ -125,7 +125,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K09",
@@ -141,7 +141,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "K10",
@@ -157,7 +157,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P01",
@@ -173,7 +173,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P02",
@@ -189,7 +189,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P03",
@@ -205,7 +205,7 @@
     "research": "prior-verified",
     "editorial": "prior-accepted",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P04",
@@ -221,7 +221,7 @@
     "research": "prior-verified",
     "editorial": "prior-accepted",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P05",
@@ -237,7 +237,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P06",
@@ -253,7 +253,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P07",
@@ -269,7 +269,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P08",
@@ -285,7 +285,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P09",
@@ -301,7 +301,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "P10",
@@ -317,7 +317,7 @@
     "research": "prior-verified",
     "editorial": "prior-accepted",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S01",
@@ -333,7 +333,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S02",
@@ -349,7 +349,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S03",
@@ -365,7 +365,7 @@
     "research": "prior-verified",
     "editorial": "prior-accepted",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S04",
@@ -381,7 +381,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S05",
@@ -397,7 +397,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S06",
@@ -413,7 +413,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S07",
@@ -429,7 +429,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S08",
@@ -445,7 +445,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S09",
@@ -461,7 +461,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S10",
@@ -477,7 +477,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S11",
@@ -493,7 +493,7 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   },
   {
     "id": "S12",
@@ -509,6 +509,6 @@
     "research": "verified",
     "editorial": "root-reviewed",
     "render": "passed-sc-tc-desktop-mobile",
-    "status": "全部审读与本地验收完成，未提交或部署"
+    "status": "已提交GitHub并上线，线上复核通过"
   }
 ]
