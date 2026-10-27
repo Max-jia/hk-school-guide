@@ -1,0 +1,1008 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "scope": "Local production build; not deployed",
+  "build": {
+    "compiled": true,
+    "typecheck": true,
+    "staticPages": 5150
+  },
+  "directoryCounts": {
+    "kindergarten": 958,
+    "primary": 648,
+    "secondary": 587
+  },
+  "directoryPagesChecked": 90,
+  "guideDestinationsChecked": 52,
+  "pages": [
+    {
+      "path": "/schools/kindergarten/directory",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/2",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/3",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/4",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/5",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/6",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/7",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/8",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/9",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/10",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/11",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/12",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/13",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/14",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/15",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/16",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/17",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/18",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/19",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/kindergarten/directory/page/20",
+      "rows": 8,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/2",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/3",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/4",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/5",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/6",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/7",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/8",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/9",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/10",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/11",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/12",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/primary/directory/page/13",
+      "rows": 48,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/2",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/3",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/4",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/5",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/6",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/7",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/8",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/9",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/10",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/11",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/schools/secondary/directory/page/12",
+      "rows": 37,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/2",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/3",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/4",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/5",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/6",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/7",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/8",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/9",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/10",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/11",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/12",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/13",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/14",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/15",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/16",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/17",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/18",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/19",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory/page/20",
+      "rows": 8,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/2",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/3",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/4",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/5",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/6",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/7",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/8",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/9",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/10",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/11",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/12",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/primary/directory/page/13",
+      "rows": 48,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/2",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/3",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/4",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/5",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/6",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/7",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/8",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/9",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/10",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/11",
+      "rows": 50,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    },
+    {
+      "path": "/cn/schools/secondary/directory/page/12",
+      "rows": 37,
+      "schemaOrder": "pass",
+      "canonical": "pass",
+      "guides": "pass"
+    }
+  ],
+  "guideLinks": [
+    {
+      "href": "/blog/hk-kg-interview-prep-guide-2027-28",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/hk-kg-k1-application-roadmap-2027-28",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/hk-p1-admission-guide-2027",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/kg-english-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/kg-subsidy-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/knocking-letter-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/n-class-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/p1-scoring-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/psp-2026-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/school-net-41-vs-12",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/school-types-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/through-train-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/topics/kindergarten-admission",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/topics/kindergarten-fees-support",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/topics/kindergarten-selection",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/topics/primary-admission",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/topics/primary-school-net",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/blog/topics/primary-school-profiles",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/hk-kg-interview-prep-guide-2027-28",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/hk-kg-k1-application-roadmap-2027-28",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/hk-p1-admission-guide-2027",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/kg-english-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/kg-subsidy-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/knocking-letter-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/n-class-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/p1-scoring-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/psp-2026-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/school-net-41-vs-12",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/school-types-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/through-train-guide",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/topics/kindergarten-admission",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/topics/kindergarten-fees-support",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/topics/kindergarten-selection",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/topics/primary-admission",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/topics/primary-school-net",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/blog/topics/primary-school-profiles",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/planning?stage=secondary#planning-evidence-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/cn/planning?stage=secondary#planning-route-matrix-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/cn/planning?stage=secondary#planning-school-route-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/cn/planning?stage=secondary#planning-secondary-samples-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/cn/schools/kindergarten/directory?report=1",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/schools/primary/directory?report=1",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/schools/secondary",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/cn/schools/secondary/directory?report=1",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/planning?stage=secondary#planning-evidence-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/planning?stage=secondary#planning-route-matrix-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/planning?stage=secondary#planning-school-route-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/planning?stage=secondary#planning-secondary-samples-title",
+      "status": 200,
+      "mode": "local-production-http",
+      "anchor": "pass"
+    },
+    {
+      "href": "/schools/kindergarten/directory?report=1",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/schools/primary/directory?report=1",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/schools/secondary",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    },
+    {
+      "href": "/schools/secondary/directory?report=1",
+      "status": 200,
+      "mode": "production-build-html",
+      "anchor": null
+    }
+  ],
+  "sourceBase": "0befe72330e2eee766dd4f3b1bb2798eeffa92d8",
+  "lint": "passed: four changed TSX components",
+  "browser": {
+    "environment": "http://127.0.0.1:3336 (local optimized production build)",
+    "primary": [
+      "desktop search 拔萃 = 3",
+      "41 校网 = 10",
+      "two-school comparison opens and closes",
+      "sorting changes first row",
+      "no-results state and reset",
+      "375 CSS px guide expansion and school-net dialog",
+      "769 CSS px tablet guide columns",
+      "simplified and traditional labels"
+    ],
+    "secondary": [
+      "desktop search 拔萃 plus girls filter = 1",
+      "school detail expansion includes original full language and source text",
+      "mobile DSS plus report filter = 18",
+      "mobile guide expansion",
+      "769 CSS px traditional page",
+      "1441 CSS px desktop sidebar",
+      "official-source guide reaches planning-evidence-title"
+    ],
+    "kindergartenRegression": {
+      "count": 958,
+      "hero": "rgb(255, 212, 137)",
+      "guideLinks": 10,
+      "width": 1441,
+      "scrollWidth": 1441
+    },
+    "pageConsoleErrors": 0,
+    "viewports": "375 mobile, 769 tablet, 1441 and 1761 desktop; browser zoom 90%; overrides reset after validation",
+    "overflow": "No document horizontal overflow at observed sizes; wide tables scroll within their container"
+  },
+  "screenshots": [
+    "kindergarten-regression.png",
+    "primary-desktop.png",
+    "primary-mobile-guides.png",
+    "primary-mobile.png",
+    "primary-tablet.png",
+    "secondary-desktop.png",
+    "secondary-mobile-guides.png",
+    "secondary-mobile.png"
+  ],
+  "releaseStatus": "Local preview ready for user review; not committed or deployed"
+}

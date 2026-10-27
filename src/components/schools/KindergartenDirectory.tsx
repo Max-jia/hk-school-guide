@@ -102,7 +102,7 @@ export default function KindergartenDirectory({ schools, locale, initialPage = 1
   const schema = { "@context": "https://schema.org", "@type": "ItemList", "@id": `${SITE_URL}${localeHref(directoryPagePath("kindergarten", initialPage), locale)}#schools`, numberOfItems: visible.length, itemListElement: visible.map((row, i) => ({ "@type": "ListItem", position: start + i + 1, name: L(row.name, locale), url: `${SITE_URL}${localeHref(profilePath(row), locale)}` })) };
   const pagination = (page: number) => isDefault ? localeHref(directoryPagePath("kindergarten", page), locale) : `${localeHref(directoryPagePath("kindergarten", initialPage), locale)}${kgQuery({ ...filters, page }, initialPage)}`;
 
-  return <div className={`${styles.directory} ${styles.kindergarten}`}>
+  return <div className={`${styles.directory} ${styles.brandedDirectory}`}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     <section className={styles.searchPanel} aria-labelledby="kg-search-title">
     <div className={styles.searchHeading}><h2 id="kg-search-title">{L("按條件找學校", locale)}</h2><span>{L("先選地區，再收窄選擇", locale)}</span></div>

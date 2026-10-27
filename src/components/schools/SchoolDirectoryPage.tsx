@@ -26,6 +26,11 @@ export function schoolDirectoryMetadata(stage: SchoolStage, locale: Locale, page
 
 export default function SchoolDirectoryPage({ stage, locale = "tc", page = 1 }: { stage: SchoolStage; locale?: Locale; page?: number }) {
   const config = SCHOOL_STAGES[stage];
+  const directoryDescription = {
+    kindergarten: "先看照顧安排，再比較語言環境與學費。",
+    primary: "先看校網與入學途徑，再比較課程、學費與升中銜接。",
+    secondary: "先看收生途徑與教學語言，再比較課程路線與升學出口。",
+  }[stage];
   const schools = schoolsForStage(stage, stage === "kindergarten" ? "tc" : locale);
   // The directory keeps compact row facts; source-rich school profiles remain the canonical detail view.
   const directorySchools: SchoolStageDirectoryRow[] = schools.map((school) => ({
@@ -64,39 +69,31 @@ export default function SchoolDirectoryPage({ stage, locale = "tc", page = 1 }: 
   ]);
   return (
     <Localize locale={locale}>
-      <main className={stage === "kindergarten" ? guideStyles.page : "w-full"}>
+      <main className={guideStyles.page}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
         <SiteHeader locale={locale} compact />
-        <div className={`mx-auto max-w-[1180px] px-4 pb-24 ${stage === "kindergarten" ? guideStyles.container : ""}`}>
+        <div className={`mx-auto max-w-[1180px] px-4 pb-24 ${guideStyles.container}`}>
           <nav aria-label={L("麵包屑", locale)} className="hidden pt-2 text-sm text-[var(--p-secondary)] sm:block">
             <a className="no-underline hover:underline" href={localeHref("/", locale)}>{L("首頁", locale)}</a>
             <span className="px-2">/</span><a className="no-underline hover:underline" href={localeHref(`/schools/${stage}`, locale)}>{L(config.label, locale)}</a>
             <span className="px-2">/</span>{L("學校名錄", locale)}
           </nav>
-          {stage === "kindergarten" ? <header className={guideStyles.hero}>
+          <header className={guideStyles.hero}>
             <div>
               <p className={guideStyles.kicker}>{L("從家庭需要出發，找到合適的學校", locale)}</p>
-              <h1>{L("香港幼稚園名錄", locale)}</h1>
-              <p className={guideStyles.heroDescription}>{L("先看照顧安排，再比較語言環境與學費。", locale)}{page > 1 && ` · ${L(`第 ${page} 頁`, locale)}`}</p>
+              <h1>{L(`香港${config.label}名錄`, locale)}</h1>
+              <p className={guideStyles.heroDescription}>{L(directoryDescription, locale)}{page > 1 && ` · ${L(`第 ${page} 頁`, locale)}`}</p>
             </div>
-            <div className={guideStyles.coverage}><strong>{schools.length}</strong><span>{L("所幼稚園", locale)}<small>{L("學校資料與來源，一起查閱", locale)}</small></span></div>
-          </header> : <header className="py-3">
-            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1"><h1 className="font-serif text-3xl font-bold leading-tight text-[var(--p-fg)]">{L(`香港${config.label}學校名錄`, locale)}</h1><span className="text-sm text-[var(--p-secondary)]">{L(`${schools.length} 所學校`, locale)}</span></div>
-            {page > 1 && <p className="mt-2 text-sm font-bold text-[var(--p-secondary)]">{L(`第 ${page} 頁`, locale)}</p>}
-            <p className="mt-2 max-w-3xl text-base leading-relaxed text-[var(--p-secondary)]">{L(stage === "primary" ? "按校名、地區、辦學類別、性別與校網篩選。展開可核對公開資料及來源；有深度報告的學校也可直接查看。" : "按校名、地區、辦學類別與性別篩選，並查看授課語言。展開可核對公開資料及來源；有深度報告的學校也可直接查看。", locale)}</p>
-          </header>}
-          <div className={stage === "kindergarten" ? guideStyles.layout : undefined}>
-            {stage === "kindergarten" && <SchoolDirectoryGuides locale={locale} compact />}
+            <div className={guideStyles.coverage}><strong>{schools.length}</strong><span>{L(`所${config.label}`, locale)}<small>{L("學校資料與來源，一起查閱", locale)}</small></span></div>
+          </header>
+          <div className={guideStyles.layout}>
+            <SchoolDirectoryGuides locale={locale} stage={stage} compact />
             <div className={guideStyles.main}>
               <h2 className="sr-only">{L("搜尋及瀏覽學校", locale)}</h2>
               {stage === "kindergarten" ? <KindergartenDirectory schools={kindergartenDirectoryRows(schools)} locale={locale} initialPage={page} /> : <SchoolStageDirectory schools={directorySchools} stage={stage} locale={locale} initialPage={page} />}
             </div>
-            {stage === "kindergarten" && <SchoolDirectoryGuides locale={locale} />}
+            <SchoolDirectoryGuides locale={locale} stage={stage} />
           </div>
-          {stage !== "kindergarten" && config.guides.length > 0 && <section className="mt-8 border-t border-black/10 pt-6 dark:border-white/10" aria-labelledby={`${stage}-guides-title`}>
-            <h2 id={`${stage}-guides-title`} className="text-xl font-bold">{L("下一步怎樣選", locale)}</h2>
-            <div className="mt-4 grid gap-3 sm:grid-cols-3">{config.guides.map((guide) => <a className="rounded-lg border border-black/10 p-4 text-inherit no-underline hover:bg-black/5 dark:border-white/10" href={localeHref(guide.href, locale)} key={guide.href}><strong>{L(guide.label, locale)} →</strong><p className="mt-2 text-sm leading-relaxed text-[var(--p-secondary)]">{L(guide.description, locale)}</p></a>)}</div>
-          </section>}
           <aside className="mt-8 rounded-xl border-l-4 border-[#6d9877] bg-[#eff5f0] p-4 text-sm leading-relaxed text-[var(--p-fg)] dark:bg-white/5">
             <strong>{L("資料口徑", locale)}</strong>：{L("名錄按教育局六位學校編號歸併，涵蓋名錄中的幼稚園、本地及國際小學和中學；同一學校的不同校址按四位校址編號逐項列出。學校位置資料截至 2026-09-30（教育局於 2026-10-05 更新）；非政府學校登記狀態按每日資料於 2026-10-23 核對，政府學校不在該註冊資料檔內，會標明適用情況。收費、課程及招生安排按各自來源年度展示，缺少來源的欄位不作推算。", locale)}
           </aside>
