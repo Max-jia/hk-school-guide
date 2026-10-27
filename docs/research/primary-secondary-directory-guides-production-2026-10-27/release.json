@@ -1,0 +1,82 @@
+{
+  "status": "production verified",
+  "releasedAtUtc": "2026-10-27T05:06:42.969Z",
+  "domain": "https://hkschool.guide",
+  "project": "hk-school-guide",
+  "releaseCommit": "163e92e2fb543105711a82e6afb97406552dd01a",
+  "branch": "codex/primary-secondary-directory-guides-20261027",
+  "deploymentId": "dpl_7u2soNjpHfCo8Vo6WVJxMGAhGj5c",
+  "deploymentUrl": "https://hk-school-guide-boqx2hcrf-max-jia-s-projects.vercel.app",
+  "baseline": {
+    "deploymentId": "dpl_Fx9tQER6CrojJpnmD3nCkHkt2xdd",
+    "sourceCommit": "1a4f6e4d6ea8d9c96beda1fc13bb1338fb2c0fd2",
+    "sitemapUrls": 5126,
+    "reports": 230,
+    "blogs": 54,
+    "profilePages": 2193
+  },
+  "runtimeChanges": [
+    "src/components/schools/KindergartenDirectory.module.css",
+    "src/components/schools/KindergartenDirectory.tsx",
+    "src/components/schools/SchoolDirectoryGuides.tsx",
+    "src/components/schools/SchoolDirectoryPage.tsx",
+    "src/components/schools/SchoolStageDirectory.tsx"
+  ],
+  "checks": {
+    "eslint": "pass",
+    "typecheck": "pass",
+    "productionBuild": "pass; 5150 static pages",
+    "local": {
+      "directoryPages": 90,
+      "guideDestinations": 52,
+      "reference": "../primary-secondary-directory-guides-preview-2026-10-27/validation.json"
+    },
+    "staged": {
+      "pages": 66,
+      "sitemapUrls": 5126,
+      "missingPaths": 0,
+      "errors": []
+    },
+    "live": {
+      "pages": 66,
+      "sitemapUrls": 5126,
+      "missingPaths": 0,
+      "errors": []
+    },
+    "inventory": {
+      "reports": 230,
+      "blogs": 54,
+      "profilePages": 2193
+    },
+    "browser": {
+      "primaryDesktop": {
+        "width": 1585,
+        "scrollWidth": 1585,
+        "visibleGuideLinks": 10,
+        "search": "拔萃 returns 3; search cleared after test"
+      },
+      "secondaryDesktop": {
+        "width": 1585,
+        "scrollWidth": 1585,
+        "visibleGuideLinks": 7
+      },
+      "secondaryMobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "guideArticleLinks": 6,
+        "expansion": "pass; closed after test"
+      },
+      "heroBackground": "rgb(255, 212, 137)",
+      "consoleErrors": 0,
+      "viewportOverridesReset": true
+    },
+    "runtimeLogs": "No error/fatal logs found for this deployment in the five minute window; not a long-term monitoring guarantee.",
+    "drains": 0
+  },
+  "screenshots": [
+    "primary-desktop.png",
+    "secondary-desktop.png",
+    "secondary-mobile.png"
+  ],
+  "rollbackDeployment": "dpl_Fx9tQER6CrojJpnmD3nCkHkt2xdd"
+}
