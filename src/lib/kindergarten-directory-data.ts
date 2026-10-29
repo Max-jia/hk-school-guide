@@ -2,6 +2,10 @@ import type { PilotSchool, SchoolDetail } from "./school-directory-pilot";
 import { L } from "./i18n";
 import type { DirectoryFact, KindergartenRow } from "./kindergarten-directory";
 import { kindergartenReviewedFields } from "./kindergarten-reviewed-fields";
+import schemeEvidence from "@/content/kindergarten-scheme-status-2026-27.json";
+
+type SchemeRecord = { value: "yes" | "no" | "unknown"; text: string; detail: string; period: string; sourceUrl: string };
+const schemeBySchoolNumber = schemeEvidence.statusBySchoolNumber as Record<string, SchemeRecord>;
 
 const unknown = (detail = "公開資料未能確認，請按申請校址向學校查詢。"): DirectoryFact => ({ text: "待確認", detail });
 const displayedFact = (fact: DirectoryFact): DirectoryFact => ({ text: fact.text, detail: fact.detail, period: fact.period, sourceUrl: fact.sourceUrl });
@@ -105,11 +109,53 @@ export function kindergartenDirectoryRows(schools: PilotSchool[]): KindergartenR
     if (reviewed?.language) language = { ...displayedFact(reviewed.language), values: reviewed.language.values || [] };
     if (reviewed?.fee) fee = displayedFact(reviewed.fee);
     if (reviewed?.pn) pn = { ...displayedFact(reviewed.pn), value: reviewed.pn.value };
+
+    // PN data in the 2025-09 profile field is a dated service observation, not
+    // proof of a 2026/27 class. Only a current-year class record can answer yes/no.
+    const pnHistory = reviewed?.pn || pn;
+    const currentYearFact = <T extends DirectoryFact>(fact?: T) => fact && /2026\/?27|2027\/?28/.test(fact.period || "") ? fact : undefined;
+    const currentPnFact = currentYearFact(pnDetail ? { text: "", detail: pnDetail.value, period: pnDetail.period, sourceUrl: pnDetail.sourceUrl } : undefined)
+      || currentYearFact(reviewed?.pn);
+    const currentSessionFact = currentYearFact(reviewed?.sessions) || currentYearFact(session ? { text: "", detail: session.value, period: session.period, sourceUrl: session.sourceUrl } : undefined);
+    const explicitCurrentFact = [currentPnFact, currentSessionFact].find((item) => item && /幼兒班\s*[（(]?PN|PN班|2[至–—-]3歲/.test(item.detail));
+    const hasCurrentPnClass = !!explicitCurrentFact && /(?:幼兒班\s*[（(]?PN|PN班|提供\s*2[至–—-]3歲服務)/.test(explicitCurrentFact.detail) && !/(?:不設|沒有|未有|未開辦|無)\s*(?:幼兒班\s*[（(]?PN|PN班|2[至–—-]3歲)/.test(explicitCurrentFact.detail);
+    const confirmsNoCurrentPn = !!explicitCurrentFact && /(?:不設|沒有|未有|未開辦|無)\s*(?:幼兒班\s*[（(]?PN|PN班|2[至–—-]3歲)/.test(explicitCurrentFact.detail);
+    if (!multiCampus && hasCurrentPnClass && explicitCurrentFact) {
+      pn = { text: "當屆有PN班記錄", value: "yes", detail: `${explicitCurrentFact.detail}。此記錄只確認資料所列學年和校址，不代表仍有空缺。`, period: explicitCurrentFact.period, sourceUrl: explicitCurrentFact.sourceUrl };
+    } else if (!multiCampus && confirmsNoCurrentPn && explicitCurrentFact) {
+      pn = { text: "當屆未開PN班", value: "no", detail: `${explicitCurrentFact.detail}。此結論只適用於資料所列學年和校址。`, period: explicitCurrentFact.period, sourceUrl: explicitCurrentFact.sourceUrl };
+    } else if (/2025年9月/.test(pnHistory.period || "")) {
+      const historicClaim = pnHistory.value === "yes" ? "2025年9月曾列有2至3歲服務" : pnHistory.value === "no" ? "2025年9月未列2至3歲服務" : "2025年9月資料未能確認2至3歲服務";
+      pn = { text: multiCampus ? "按校址確認；當屆待確認" : "當屆待確認", value: "unknown", detail: `${historicClaim}；這是歷史記錄，不能直接確認2026/27學年仍否開設PN班${multiCampus ? "，多校址亦不能互相套用" : ""}，須向該校址查詢當屆班別及招生安排。`, period: pnHistory.period, sourceUrl: pnHistory.sourceUrl };
+    }
+
+    // Make the primary language legible while keeping class streams and broad
+    // bilingual/trilingual aspirations separate from the main teaching medium.
+    const classStreams = language.values.find((value) => /英粵|英普/.test(value));
+    if (classStreams) language = { ...language, text: `按班型分流：${classStreams}` };
+    else if (language.values.length > 1) {
+      const languages = language.values.join("／");
+      const split = /分時段|分班|按班|班型/.test(`${language.text} ${language.detail}`);
+      language = {
+        ...language,
+        text: split ? `按時段／班型分流：${languages}` : `${languages}授課；主次未明`,
+        detail: `${language.detail}公開資料列出多種授課語言，但未能確定哪一種為主，因此不標成單一主導語言。`,
+        values: [],
+      };
+    }
+    else if (language.values.length === 1 && ["粵語", "普通話", "英語"].includes(language.values[0])) language = { ...language, text: `${language.values[0]}為主` };
+    else if (/兩文三語/.test(`${language.text} ${language.detail}`)) language = { ...language, text: "列兩文三語；主導語言未明" };
+    else if (!language.text || language.text === "待確認" || language.text === "按校址查看") language = { ...language, text: "主導授課語言待確認" };
+
+    const schemeRecord = schemeBySchoolNumber[number];
+    const scheme: KindergartenRow["scheme"] = schemeRecord
+      ? { text: schemeRecord.text, value: schemeRecord.value, detail: schemeRecord.detail, period: schemeRecord.period, sourceUrl: schemeRecord.sourceUrl }
+      : { text: "待確認", value: "unknown", detail: "未能按教育局當屆參加名單確認此校號；請按實際校址查核。", period: "2026/27學年", sourceUrl: schemeEvidence.sourcePage };
     const nature = (s.schoolCategories || []).filter((c) => c !== "國際／非本地課程").map((c) => c === "私立" ? "私立獨立" : c);
     const curriculum = s.curriculumType ? [s.curriculumType.includes("非本地") ? "非本地" : "本地", ...(/本地及非本地|^本地；|；本地/.test(s.curriculumType) ? ["本地"] : [])] : [];
     const reports = [...new Set(s.relatedReportSlugs?.length ? s.relatedReportSlugs : s.reportSlug ? [s.reportSlug] : [])];
     return { slug: s.slug, number, name: s.name, nameEn: s.nameEn, district: s.district, districts: s.districts?.length ? s.districts : [s.district], address: s.address,
-      multiCampus, nature: nature.length ? nature : ["類別待核實"], curriculum, sessions, pn, language, fee, reports,
+      multiCampus, nature: nature.length ? nature : ["類別待核實"], curriculum, sessions, pn, scheme, language, fee, reports,
       searchText: L(`${s.name} ${s.nameEn} ${s.address} ${s.district} ${(s.districts || []).join(" ")}`, "sc").toLowerCase().replace(/[\s()（）]/g, ""),
     };
   }).sort((a, b) => a.name.localeCompare(b.name, "zh-Hant") || a.number.localeCompare(b.number));
