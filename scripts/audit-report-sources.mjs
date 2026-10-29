@@ -54,6 +54,19 @@ for (const property of registryNode.properties) {
   registry.set(slug, refs);
 }
 
+const slugsArgIndex = process.argv.indexOf("--slugs");
+const requestedSlugs = slugsArgIndex >= 0
+  ? (process.argv[slugsArgIndex + 1] ?? "").split(",").map((slug) => slug.trim()).filter(Boolean)
+  : null;
+if (requestedSlugs?.length) {
+  for (const slug of requestedSlugs) {
+    if (!registry.has(slug)) fail(`Unknown report slug: ${slug}`);
+  }
+}
+const auditRegistry = requestedSlugs?.length
+  ? new Map(requestedSlugs.map((slug) => [slug, registry.get(slug)]))
+  : registry;
+
 function decodeHtml(value) {
   return value.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#x27;/g, "'");
 }
@@ -62,15 +75,27 @@ function fail(message) {
   throw new Error(message);
 }
 
+// CHSC PSP2026 lists this official host; HTTPS failed on 2026-10-28.
+// Pin only the six public originals actually read, rather than allowing arbitrary HTTP.
+const YANLAAP_OFFICIAL_HTTP_ORIGINALS = new Set([
+  "http://www.yanlaap.edu.hk/it-school/php/webcms/files/upload/tinymce//www/2027_p1%20know_1788485646.pdf",
+  "http://www.yanlaap.edu.hk/it-school/php/webcms/files/upload/tinymce//www/2027_p1_1788485601.pdf",
+  "http://www.yanlaap.edu.hk/it-school/php/webcms/files/upload/tinymce/www/2627_p1%20know_1772672175.pdf",
+  "http://www.yanlaap.edu.hk/it-school/php/webcms/files/upload/tinymce/www/2627_p1%20know_1778729834.pdf",
+  "http://www.yanlaap.edu.hk/it-school/php/webcms/files/upload/tinymce//www/new/allocation/25_26website_1784769890.jpg",
+  "http://www.yanlaap.edu.hk/it-school/php/webcms/public/index.php?lang=zh&mode=published&refid=3275"
+]);
+
 function isAllowedSourceUrl(url, slug) {
   if (/^https:\/\//.test(url ?? "")) return true;
   // This school's official CHSC-listed site serves its 2027/28 originals over HTTP;
   // its HTTPS endpoint currently fails. Keep the exception pinned to this school.
-  return slug === "aberdeen-technical-school-secondary" &&
-    /^http:\/\/www\.ats\.edu\.hk(?:\/|$)/.test(url ?? "");
+  return (slug === "aberdeen-technical-school-secondary" &&
+    /^http:\/\/www\.ats\.edu\.hk(?:\/|$)/.test(url ?? "")) ||
+    (slug === "ylaps" && YANLAAP_OFFICIAL_HTTP_ORIGINALS.has(url));
 }
 
-for (const [slug, refs] of registry) {
+for (const [slug, refs] of auditRegistry) {
   if (refs.length === 0) fail(`${slug}: source list is empty.`);
   const urls = new Set();
   for (const [index, ref] of refs.entries()) {
@@ -105,10 +130,18 @@ for (const [slug, refs] of registry) {
 
     const jsonLdScripts = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)];
     const citations = [];
+    function collectCitations(value) {
+      if (Array.isArray(value)) {
+        for (const item of value) collectCitations(item);
+        return;
+      }
+      if (!value || typeof value !== "object") return;
+      if (Array.isArray(value.citation)) citations.push(...value.citation);
+      for (const child of Object.values(value)) collectCitations(child);
+    }
     for (const [, rawJson] of jsonLdScripts) {
       try {
-        const parsed = JSON.parse(rawJson);
-        if (Array.isArray(parsed.citation)) citations.push(...parsed.citation);
+        collectCitations(JSON.parse(rawJson));
       } catch {
         // The report's other structured-data blocks may have unrelated payloads.
       }
@@ -119,17 +152,25 @@ for (const [slug, refs] of registry) {
   }
 }
 
-for (const [locale, htmlPath] of [
-  ["tc", ".next/server/app/reports/aps.html"],
-  ["sc", ".next/server/app/cn/reports/aps.html"],
-]) {
-  const absolutePath = path.join(rootDir, htmlPath);
-  if (!fs.existsSync(absolutePath)) fail(`${locale}/aps control: built HTML not found.`);
-  if (fs.readFileSync(absolutePath, "utf8").includes('aria-labelledby="report-source-title"')) {
-    fail(`${locale}/aps control: unregistered report unexpectedly has a source panel.`);
+// Derive controls from the current registry: APS now has verified sources and
+// must no longer be treated as an unregistered example.
+const unregisteredSlugs = fs.readdirSync(path.join(rootDir, ".next/server/app/reports"))
+  .filter((file) => file.endsWith(".html"))
+  .map((file) => file.slice(0, -5))
+  .filter((slug) => !registry.has(slug));
+for (const slug of unregisteredSlugs) {
+  for (const [locale, htmlPath] of [
+    ["tc", `.next/server/app/reports/${slug}.html`],
+    ["sc", `.next/server/app/cn/reports/${slug}.html`],
+  ]) {
+    const absolutePath = path.join(rootDir, htmlPath);
+    if (!fs.existsSync(absolutePath)) fail(`${locale}/${slug} control: built HTML not found.`);
+    if (fs.readFileSync(absolutePath, "utf8").includes('aria-labelledby="report-source-title"')) {
+      fail(`${locale}/${slug} control: unregistered report unexpectedly has a source panel.`);
+    }
   }
 }
 
 console.log(
-  `PASS: ${registry.size} reports, ${registry.size * 2} bilingual pages, visible links and JSON-LD citations match; unregistered control unchanged.`
+  `PASS: ${auditRegistry.size} reports, ${auditRegistry.size * 2} bilingual pages, visible links and JSON-LD citations match; ${unregisteredSlugs.length} unregistered controls unchanged.`
 );

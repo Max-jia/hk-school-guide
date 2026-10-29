@@ -74,11 +74,15 @@ function validate(slug, d) {
     // Bound a chapter by the next chapter start rather than its first closing
     // section tag: some chapters contain nested <section> cards.
     const chapterHtml = d.body + d.premiumHtml;
-    const chapterStarts = [...chapterHtml.matchAll(/<section class="chapter" id="chapter-(\d+)"[^>]*>/g)];
-    const numberedSections = chapterStarts.map((m, i) => ({
-      n: Number(m[1]),
-      html: chapterHtml.slice(m.index, chapterStarts[i + 1]?.index ?? chapterHtml.length),
-    }));
+    // The report renderer adds stable chapter IDs when it transforms legacy
+    // numbered sections. Source JSON therefore does not always contain an id
+    // attribute; identify source chapters from their explicit numbered h2.
+    const chapterStarts = [...chapterHtml.matchAll(/<section class="chapter"[^>]*>/g)];
+    const numberedSections = chapterStarts.map((m, i) => {
+      const html = chapterHtml.slice(m.index, chapterStarts[i + 1]?.index ?? chapterHtml.length);
+      const number = html.match(/<span class="num">(\d+)<\/span>/);
+      return number ? { n: Number(number[1]), html } : null;
+    }).filter(Boolean);
     const chapterByNumber = (n) => numberedSections.find((chapter) => chapter.n === n)?.html || "";
     const curriculumMeta = chapterMeta.find((c) =>
       /(课程|課程|教學|教学|MYP|IB|OSSD)/.test(c.title)

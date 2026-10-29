@@ -1,0 +1,93 @@
+{
+  "mergedOn": "2026-10-29",
+  "added": [
+    {
+      "slug": "creative",
+      "label": "教育王國：請問啟思幼稚園係唔係好淺？（2020年九龍塘N班個案，明確非CPSKG）",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3846701",
+      "scope": "已讀2020年10月原帖。起帖rainjam2007明確是九龍塘啟思N班，且不是啟思小學附屬幼稚園；kennyOnO於10月22日談半學年N班教材、自理與禮貌，bobingbokin於10月29日自稱前九龍塘N班家長，認為學術較淺但關顧好、重視自理及群體互動。只保留當年個別PN體驗，作者身份為自述；非九龍塘參與者不混計，原帖未足以獨立確認律倫街6號註冊校址，不推現屆K班課程、全體口碑或升小錄取率。",
+      "sourceType": "parent-discussion",
+      "academicYear": "2020年10月討論；個別N班經驗",
+      "checkedOn": "2026-10-29"
+    },
+    {
+      "slug": "lkps",
+      "label": "教育局：2025/2027中学学位分配常见问题原件",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+      "scope": "已读全文并复用同批政策原件：中一自行最多两所参加派位中学；统一按派位组别、家长志愿与随机编号，乙部中学学校网原则按小学行政区；不是小一网号。非派位直资及一条龙外报后果分别按条款，不能统一当所有私立路线。",
+      "sourceType": "government",
+      "academicYear": "2027年9月中一；2026年9月文件",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "slug": "mosllps",
+      "label": "教育局：2025/2027中学学位分配常见问题原件",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+      "scope": "已读全文并复用同批政策原件：中一自行最多两所参加派位中学；统一按派位组别、家长志愿与随机编号，乙部中学学校网原则按小学行政区；不是小一网号。非派位直资及一条龙外报后果分别按条款，不能统一当所有私立路线。",
+      "sourceType": "government",
+      "academicYear": "2027年9月中一；2026年9月文件",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "slug": "skhke",
+      "label": "教育局《小學概覽2026》：般咸道官立小學（基恩报告比较）",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=21",
+      "scope": "仅用于基恩第7/8章比较；沿用本批已读原件，不冒称2026-10-29重新访谈：核對11校網、校址、官立男女校、中文授課、沒有直屬中學、四所聯繫中學、校舍約3,765平方米、12間課室及2026/27每級兩班；2025/26共28名教師。這些資料不支持把校舍面積推稱為約1,700平方米，也不支持由教職員人數自行換算班師比。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27班級結構；教師資料為2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "slug": "skhke",
+      "label": "家校会《小学概览2026》：圣类斯中学（小学部）（基恩报告比较）",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=18",
+      "scope": "仅用于基恩第7/8章比较；沿用本批已读原件，不冒称2026-10-29重新访谈：私立男校身份、地址、直属关系；2026/27学费57000及13班、课程评估；2025/26教师24含校长及培训年资统计",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27（教师统计2025/26）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "slug": "skhke",
+      "label": "《小學概覽2026》：救恩學校（基恩报告比较）",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=19",
+      "scope": "仅用于基恩第7/8章比较；沿用本批已读原件，不冒称2026-10-29重新访谈：核對私立男女校、基督教、1946年創校、中文（包括普通話）授課、2026/27學費$75,550及2025/26教師46人與資歷。教育局列匯基書院（東九龍）為提名中學；概覽未公布固定預留學額、錄取比例或班師比。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27學費；教師資料為2025/26",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "removed": [
+    {
+      "slug": "cpskg",
+      "label": "教育王國：啓思幼稚園九龍塘校舍家長討論",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3846701",
+      "scope": "單一舊討論串中的家長個人經驗，僅作有限口碑線索；不得推廣為全校共識或當前課程、招生安排。",
+      "sourceType": "parent-discussion",
+      "academicYear": "約2020年討論",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "slug": "creative",
+      "label": "教育王國：啓思幼稚園九龍塘校舍家長討論",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=1702027",
+      "scope": "舊討論串的個別家長觀感，意見不一且非近期樣本；僅作有限口碑線索，不代表全體或當前校舍表現。",
+      "sourceType": "parent-discussion",
+      "academicYear": "約2009年討論",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "scopeUpdated": [
+    {
+      "slug": "skhke",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=14"
+    },
+    {
+      "slug": "ccc",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3883115"
+    },
+    {
+      "slug": "jrgps",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=512"
+    }
+  ]
+}

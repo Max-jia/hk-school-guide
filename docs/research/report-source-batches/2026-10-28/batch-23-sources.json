@@ -1,0 +1,542 @@
+{
+  "pc": [
+    {
+      "label": "教育局《幼稚园概览2026/27》：香港培正小学",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5133500001",
+      "scope": "没有参加2026/27幼稚园教育计划；2026/27年费$53,500（10期）；2025年9月教员41人、上午1:11.2/下午1:10.6。表格文本未完整保留学生人数的年级及班别对齐，不据此重报K1人数。2027/28申请栏须依校方最新公告；报名费列$200待批，不能当作已批收费。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资和比例为2025年9月",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局收费证明书：香港培正小学及幼稚园",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/513350.pdf",
+      "scope": "2026年9月1日起，幼儿班上午/下午、低班下午及高班上午均$53,500（$5,350×10）；小一至小六均$69,500（$6,950×10）。不包含2027/28未来收费承诺。",
+      "sourceType": "government",
+      "academicYear": "2026/27（2026-09-01生效）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正幼稚园：学校资料",
+      "url": "https://www.pcps.edu.hk/kg/tc/school-information",
+      "scope": "私立非牟利半日、中文主要语言、直属小学为香港培正小学、一条龙中学栏为无；全年$53,500十期。当前K1上午5班/下午4班、K2下午9班、K3上午9班。班数不换算学额。",
+      "sourceType": "school-official",
+      "academicYear": "现行页面（未标独立学年）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正幼稚园：2027/28 K1招生公告",
+      "url": "https://www.pcps.edu.hk/kg/tc/2027-2028-%E5%B9%BC%E5%85%92%E7%8F%ADk1%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B",
+      "scope": "2026年7月2日10时至8月5日报名、11月1-7日首轮、11月16日次轮名单、11月亲子面试、12月8日10时放榜及12月8-11日注册；校方列报名费$100并注明以最终批核为准，与概览待批$200须向校方确认。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 K1",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "香港培正中学：2027/28中一入学申请",
+      "url": "https://www.puiching.edu.hk/tc/%E4%B8%AD%E4%B8%80",
+      "scope": "自行分配65个，只接受香港培正小学学生、纸本申请、不需小学推荐信；统一派位依政府机制。页面两个评分表分别用于挑选面试与收生，不合并。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "香港培正中学：2026文凭试放榜",
+      "url": "https://www.puiching.edu.hk/tc/latest_news/2026-%E6%96%87%E6%86%91%E8%A9%A6%E6%94%BE%E6%A6%9C",
+      "scope": "2026年7月15日公告两名顶尖考生：熊铠荞6科5**及数学延伸5**，何卓诺6科5**。未提供整体科次5+率或大学实际入读率，不用个案推全体成果。",
+      "sourceType": "school-official",
+      "academicYear": "2026 HKDSE",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局2014年第7号通告：直属及一条龙安排",
+      "url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC14007S.pdf",
+      "scope": "附录4直属85%保留位分母为扣除留级及自行分配后剩余中一学额，非毕业生升读率；通告说明幼稚园不纳入官津一条龙模式，官津15%外校位规则不可直接移用于培侨直资当届承诺。",
+      "sourceType": "government",
+      "academicYear": "现行机制文件（2014年公布）",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "pcps": [
+    {
+      "label": "教育局《小学概览2026》：香港培正小学",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=79",
+      "scope": "私立全日男女校、中文、6600平方米、直属培中而非一条龙；2026/27学费69500、50班（9/9/8/8/8/8）；2025/26为97名教师及49班；P1及P2-P6全年考试3次、测验0次。教师/班数不能推出双师同时上课、班额或师生比。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资为2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局收费证明书：香港培正小学及幼稚园",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/513350.pdf",
+      "scope": "2026年9月1日起，幼儿班上午/下午、低班下午及高班上午均$53,500（$5,350×10）；小一至小六均$69,500（$6,950×10）。不包含2027/28未来收费承诺。",
+      "sourceType": "government",
+      "academicYear": "2026/27（2026-09-01生效）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正小学：2027/28小一入学申请",
+      "url": "https://www.pcps.edu.hk/tc/2027%E8%87%B32028%E5%B9%B4%E5%BA%A6%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B%EF%BB%BF",
+      "scope": "当前页首轮已结束；9月11日10时查首轮结果、第二轮个人系统通知及一张双面A4档案、11月3日10时结果、11月6日注册。当前原件未保留报名起止日，不补猜旧届日期。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 P1",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正小学：2026/27小二至小五入学申请",
+      "url": "https://www.pcps.edu.hk/tc/2026%E8%87%B32027%E5%B9%B4%E5%BA%A6%E5%B0%8F%E4%BA%8C%E8%87%B3%E5%B0%8F%E4%BA%94%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B",
+      "scope": "少量学位，2026年4月30日截止、5-6月笔试及亲子面试、先甄选后电话通知；申请表/出生证/最近成绩/一页双面A4档案，亲身或电邮。已过期，非未来固定3月31日。未列当届科目或面试语言。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27插班（已结束）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "香港培正中学：2027/28中一入学申请",
+      "url": "https://www.puiching.edu.hk/tc/%E4%B8%AD%E4%B8%80",
+      "scope": "自行分配65个，只接受香港培正小学学生、纸本申请、不需小学推荐信；统一派位依政府机制。页面两个评分表分别用于挑选面试与收生，不合并。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局2014年第7号通告：直属及一条龙安排",
+      "url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC14007S.pdf",
+      "scope": "附录4直属85%保留位分母为扣除留级及自行分配后剩余中一学额，非毕业生升读率；通告说明幼稚园不纳入官津一条龙模式，官津15%外校位规则不可直接移用于培侨直资当届承诺。",
+      "sourceType": "government",
+      "academicYear": "现行机制文件（2014年公布）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正小学：课程理念",
+      "url": "https://www.pcps.edu.hk/tc/subject/curriculum-rationale",
+      "scope": "校本课程螺旋递进、连贯幼小中及当前科目列表；不支持以名校校友证明当前课堂效果。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页面",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正小学：中文科课程简介",
+      "url": "https://www.pcps.edu.hk/tc/subject/chinese-about-curriculum",
+      "scope": "九个学习范畴、普教中及汉语拼音；未列全校园日常语境或分年级课时。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页面",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正小学：英文科课程简介",
+      "url": "https://www.pcps.edu.hk/tc/subject/english-about-curriculum",
+      "scope": "当前Family and Friends为文法基础教材，另有读本及校本任务式材料；纠正旧稿Big Book/不设传统文法书。未提供NET每周接触分钟数，不从家长旧帖换算每人10分钟。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页面",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培正小学：数学科课程简介",
+      "url": "https://www.pcps.edu.hk/tc/subject/maths-about-curriculum",
+      "scope": "五大学习范畴、基本概念逐渐增加深广、高阶思维及不同解难策略。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页面",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "pkcps": [
+    {
+      "label": "教育局《小学概览2026》：培侨书院",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=327",
+      "scope": "直资全日男女校、一条龙、普英主要语言及全级普教中；2025/26教师77人/硕博56%/教龄分布14%、16%、70%；2025/26及2026/27各30班、每级5班；P1及P2-P6年考试2次。概览收费仍30000，已由生效收费证书更新，不能再作为实际收费。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资为2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局收费证明书：培侨书院",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/560553.pdf",
+      "scope": "2026-09-01生效：本地小学31260；非本地小学111803；本地初中34280、高中DSE及IFY43130。完整分期见6页原件；按当前价格不变估小学6年187560、12年419790，不含未来加费或其他费用。",
+      "sourceType": "government",
+      "academicYear": "2026/27（2026-09-01生效）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培侨书院：2026/27学费",
+      "url": "https://www.puikiu.edu.hk/tc/school.php?id=35",
+      "scope": "校方收费表本地P1-6为3126×10、非本地首11183及随后11180×9，与教育局证明书一致；取得永久居民身份后的学费调整须提交证明及按校方生效程序。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培侨书院：2027/28小一入学申请",
+      "url": "https://www.puikiu.edu.hk/tc/news_detail.php?id=234",
+      "scope": "2026年7月24日至9月18日报名，10月2日18时后发面见通知，10月17/18日面见，不改期；截至核对日已过首轮。公告未给后续结果日，不照搬2025短片窗口。此页web403，但Exa取得完整正文并与申请详情页一致。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 P1",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培侨书院：2026/27插班申请状态",
+      "url": "https://www.puikiu.edu.hk/tc/achievements_detail.php?cate=31&cid=75&id=1190&page=1",
+      "scope": "Exa取得官方页显示Register Now (Closed)。仅证明当前关闭，不支持开放年级、每年两轮、考试科目或下一轮截止日期。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27插班",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培侨书院：2026年HKDSE成绩公告",
+      "url": "https://www.puikiu.edu.hk/tc/news_detail.php?id=466",
+      "scope": "128考生；整体科次5+46.9%、4+74.5%、核心科5+42.3%，英48.4%/数53.5%/中25.0%；4人实名推荐获清华北大复旦取录、2人SNDAS港大分别医学及计量金融。无55%三大实际入读率，不能将科次转学生比例或把两名均写医科。",
+      "sourceType": "school-official",
+      "academicYear": "2026 HKDSE",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培侨书院：2027/28小一简介会报道",
+      "url": "https://www.puikiu.edu.hk/tc/news_detail.php?id=468",
+      "scope": "2026年9月12日简介会，校方9月14日报道近4000家长及学生出席；不是4000个申请人，不能据此推录取率。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 P1",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培侨书院：国际组介绍",
+      "url": "https://www.puikiu.edu.hk/tc/school.php?id=137",
+      "scope": "学校国际组2+1路径；IFY达到录取条件者的NCUK成员大学取录保障有条件，不是指定大学/专业或QS前20保证。页面含2017/18创办背景，不将其日期改作2026。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页；含2017/18创办背景",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培侨书院：NCUK IFY课程原件",
+      "url": "https://www.puikiu.edu.hk/tc/school.php?id=143",
+      "scope": "1学年、EAP加3科模块、平时作业30%/考试70%；各大学专业自定入学标准。不能概括为省略预科、比IB/A-Level必然容易、任何目标大学无条件免IELTS。",
+      "sourceType": "school-official",
+      "academicYear": "现行IFY课程页面",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "pkps": [
+    {
+      "label": "家校会《小学概览2026》：培僑小學",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=44",
+      "scope": "核对16校网、资助全日男女校、2000年创校、中文教学；三种中学关系均为“-”；2026/27为29班（小一4班、其余各5班），2025/26为30班；2025/26教师57人（含校长）、师训100%、学士98%、硕博44%；2026/27家教会费30、核准收费200、补学生证40；概览列九项行政长官卓越教学奖。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培僑小學：本校特色",
+      "url": "https://www.pkps.edu.hk/#/enrollment/features",
+      "scope": "已读真实网页：普通话学中文选择、Phonics/Sight Word/PLPR、外籍教师、关怀训辅；网页95.5%学位、27%已获或正修读硕士及七项外评优异未标年份，不能作现届师资及当前外评结论。",
+      "sourceType": "school-official",
+      "academicYear": "现行网页；介绍未标统计年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培僑小學：班级结构",
+      "url": "https://www.pkps.edu.hk/#/enrollment/structure",
+      "scope": "已读真实网页：官网仍称30班、每级5班、近750人，每级2至3普通话班，设班主任课及部分双班主任制；此未标年规模与2026概览29班不同，不作为当前在读快照。",
+      "sourceType": "school-official",
+      "academicYear": "网页未标统计年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培僑小學：入学申请方法",
+      "url": "https://www.pkps.edu.hk/#/enrollment/application",
+      "scope": "已读真实网页：携学生身份证明正副本、最近成绩表副本、照片一张、回邮信封亲临报名。页面未列申请年级、实时空缺、笔试或录取权重，不将清单推断为择优标准。",
+      "sourceType": "school-official",
+      "academicYear": "现行网页未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：16校网自行分配学位名册（8/2026）",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/Net16.pdf",
+      "scope": "核对2027/28培侨自行分配配额63（并非全级总学额）；同表爱秩序湾63、基湾50、慈幼38；名册按暂定开班数计算，实际开班按需要批核。",
+      "sourceType": "government",
+      "academicYear": "2027/28 小一；8/2026名册",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "plkcastar": [
+    {
+      "label": "保良局建造商會學校：2026/27入学政策原件（2026-07-31）",
+      "url": "https://www.plkis.edu.hk/wp-content/uploads/2026/08/2026-2027-HKCA-Po-Leung-Kuk-School-Admission-Policy-Procedures-1.pdf",
+      "scope": "完整读取7页：2026/27幼稚园93200、小学125000、10期，申请费800；获offer一般5至10工作天付不退首月学费；英语能力门槛及可能自费校外ESL；非本地、兄姊、全职员工子女优先而非保证；至少70%外国护照为策略目标，非当前国籍占比；按出生日期/评估编级、持续招生、班满waiting pool。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27；含2027/28年龄指引",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局建造商會學校：收费与额外开支",
+      "url": "https://www.plkis.edu.hk/our-fees-other-costs/",
+      "scope": "核对小学年费125000、幼稚园93200、申请费800；无年度征费及债券，小学另计参观、部分课外活动、车、午餐、文具校服；幼稚园另杂费6000分两期，不把无征费理解为没有额外开支。",
+      "sourceType": "school-official",
+      "academicYear": "现行收费页；与2026/27政策一致",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局建造商會學校：官方FAQ",
+      "url": "https://www.plkis.edu.hk/frequently-asked-questions/",
+      "scope": "核对Early Years/G1首轮通常45分钟，较高年级60至70分钟，G2至G5有读写及数理评估；家长问卷及面试；学校自称采用非本地课程的私立学校、拟申请国际学校地位；PLK转介措辞是working on，不能宣称正式保留学额或保证录取。FAQ亦含2022/23旧段落，未把整页视作2026全面更新。",
+      "sourceType": "school-official",
+      "academicYear": "现行FAQ；页面部分段落属历史",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局建造商會學校：官方课程",
+      "url": "https://www.plkis.edu.hk/our-curriculum/",
+      "scope": "核对英语主教学语言、普通话中文使用繁体字、数学直接教学与探究并行，按需要分层；班主任负责英语、数学、社会研究、科学。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局建造商會學校：学生曾获取录学校名单",
+      "url": "https://www.plkis.edu.hk/",
+      "scope": "首页列GSIS、CKY、West Island、KIS、Sha Tin College、Island School、CIS等曾获录取去向，也混列小学和海外学校；没有届别、分母、逐校人数或实际入读数，不当作完整升中成绩或成功率。",
+      "sourceType": "school-official",
+      "academicYear": "现行主页；名单未标届别",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "plkcy": [
+    {
+      "label": "家校会《小学概览2026》：保良局陳溢小學",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=158",
+      "scope": "核对66校网、资助全日男女、1984创校、三种中学关系均“-”；2026/27为22班（小一2班其余各4），上年24班；2025/26教师48人（含校长），师训/学士100%、硕博38%、SEN83%、十年以上65%；家教会费20、特定用途450、补卡6.90；2操场1礼堂、雨天操场空调及AI设备；小一2次、二至六4次考试，0次全年全科测验，不能等同无日常评估。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局陳溢小學：2027小一及2026/27插班资讯",
+      "url": "https://www.plkcy.edu.hk/學校資訊/入學及升中/入學資訊/",
+      "scope": "完整读取2027小一行事历：6月2至3公布统一派位、6月10至11注册、6月10至16小一备取申请；网页已提供2026/27插班申请表链接。PDF下载读取失败，不宣称核实表内材料、考核或截止。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 小一；2026/27插班",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局陳溢小學：中文科",
+      "url": "https://www.plkcy.edu.hk/學與教/課程特色/中文科/",
+      "scope": "明确小一、小五小六主要粤语，二至四主要普通话；初小分层支援、一年级课后伴读、各级分层工作纸。不能由语言安排推断校方设计理由。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局陳溢小學：上课及评估安排",
+      "url": "https://www.plkcy.edu.hk/學與教/上課及評估安排/",
+      "scope": "核对全日制每周49节、每日一般10节、30分钟，8:10上课，周一至四3:15、周五2:35放学；全年4次评估，一年级下学期2次。网页也保留半日制表，未将其当现行资助学校类别。",
+      "sourceType": "school-official",
+      "academicYear": "现行页面未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "保良局陳溢小學：2025/26升中派位结果原始海报",
+      "url": "https://www.plkcy.edu.hk/wp-content/uploads/2026/10/2526%E5%8D%87%E4%B8%AD%E6%B4%BE%E4%BD%8D%E7%B5%90%E6%9E%9C%E6%94%BE%E7%B6%B2poster-1.jpg",
+      "scope": "浏览器打开763×1080原图人工核看：首志愿85.42%、首三志愿97.92%，列圣保禄、德望、香岛九龙塘、佛教善德、安柱、萧明等；无总毕业人数、统计分母及逐校人数，名单含直资，不作全属统一派位或Band1比例，也不倒算人数。",
+      "sourceType": "school-official",
+      "academicYear": "2025/26 毕业生；2026年10月上传",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：66校网自行分配学位名册（8/2026）",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/Net66.pdf",
+      "scope": "核对陳溢2027/28自行分配配额50，青衣共11所列校；配额依暂定开班数，不把50乘2作为2026/27实际总人数，不混同当年22班或小一2班。",
+      "sourceType": "government",
+      "academicYear": "2027/28 小一；8/2026名册",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "plkflpy": [
+    {
+      "label": "教育局《小學概覽2026》：保良局西區婦女福利會馮李佩瑤小學",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=341",
+      "scope": "完整讀取：71校網、資助男女校、聯繫兩所中學、校監鍾偉棠及校長胡國柱；2025/26教師48人、師訓100%、碩博15%、十年以上年資76%；2026/27全校24班；PTA$40及非標準項目$450；小一零測零考、小二至小六零測三考；初小平均分班、高小按學業成績分班；創科專才及STEAM Maker活動。2025 Robofest世界賽冠軍僅作校方概覽自述，未另讀賽事官方成績表。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教師為2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "馮李佩瑤小學：2026/27下學期小二至小四插班申請表及須知",
+      "url": "https://www.plkflpy.edu.hk/wp-content/uploads/2026/10/26-27二至四年級下學期插班生入學申請表格.pdf",
+      "scope": "完整讀取：限P2–4、2026年11月20日截止；親交或郵寄，所需身份及居港證明、2025/26和2026/27成績等副本；11月27日15:00–17:00中英數筆試、14:45報到；12月7日或前電話通知，未獲通知作落選；曾參加本校插班試而未獲取錄毋須再申請。未公開各級學額及錄取率。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27下學期",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2025/2027年度中學學位分配辦法常見問題",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+      "scope": "完整讀取第2、4、5題：聯繫中學保留扣除自行分配及重讀生學位後餘額25%，一般須屬學校網第一或第二派位組別、乙部首選；超額按組別及隨機編號分配，跨網失保留資格。25%不是本校畢業生升讀率。",
+      "sourceType": "government",
+      "academicYear": "2025/2027升中周期；2027年9月中一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2027年9月小一入學資料單張",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "完整讀取2026年8月版：自行甲乙類及計分互斥規則；校友10分與首名子女5分只擇一，不能累加成25分；2027統一派位電子選校1月18–24日、紙本1月23–24日、6月2–3日郵遞結果及6月10–11日註冊。個別學校學額名冊並非本文件核對範圍。",
+      "sourceType": "government",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "plklht": [
+    {
+      "label": "教育局《小學概覽2026》：保良局陸慶濤小學",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=214",
+      "scope": "完整讀取：直資男女校、1988創校、寶林邨現址約4500平方米、一條龍羅氏基金中學；2025/26教師63人、師訓97%、碩博41%、十年以上年資63%；2026/27核准24班、雙班主任及小班；小一1測1考、小二至小六2測2考；一般35分鐘一節，每日9節，8:00–15:35。概覽學費$13,700與較新校方2026/27學費表$14,260有差，本文採後者。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教師為2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "陸慶濤小學：2026/27各級學費表",
+      "url": "https://www.plklht.edu.hk/upload/2026/09/349f9f854d4b8e29cd797016fe56393d.pdf",
+      "scope": "完整讀取2026年9月校方原件：P1–P6每月$1,426、全年$14,260、10期。與PSP2026有差，採此較新且明列學年的原件；本文件不作未來六年學費保證。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "陸慶濤小學：2027年9月小一入學申請最新消息",
+      "url": "https://www.plklht.edu.hk/article/519",
+      "scope": "完整讀取：網上6月30日11:00至9月30日18:00；親交9月29–30日；首輪10月24或25日、11月13日或前電郵首輪結果；次輪12月5日；2027年1月上旬結果、中旬註冊。頁面一處簡介會日期有27-6-2025筆誤，下方備忘列2026年6月27日；本文不採用該錯誤日期。沒有滾動錄取或早報優先公告。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "陸慶濤小學：2027/28小一申請表及須知",
+      "url": "https://www.plklht.edu.hk/upload/2026/06/b9ed3c2858dc6059d78e0299f78e38be.pdf",
+      "scope": "完整讀取四頁：親交日期9月29–30日、申請費$75、身份文件／成績／活動及語言能力證明（如適用）、首輪日期；2027/28學費$14,260並註明待教育局批核。不能將此表待批標示混作2026/27已發布學費表的狀態。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "陸慶濤小學：2026/27下學期小一至小六插班公告",
+      "url": "https://www.plklht.edu.hk/article/448",
+      "scope": "完整讀取：網上10月27日12:00至11月6日18:00，親交11月5–6日；11月28日9:30–12:30評估、9:15前到校；12月10日階段結果、12月14–15日次輪、12月18–19日註冊。公告正文未列完整試卷考綱、各級空缺或申請分母；未讀附件內容，不把舊中英數題目拆解寫成當屆考綱。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27下學期",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "陸慶濤小學：一條龍政策",
+      "url": "https://www.plklht.edu.hk/article/405",
+      "scope": "完整讀取：校方明列不設呈分試、不參加教育局中學統一派位、100%小六畢業生直升羅氏基金，提供12年銜接課程。100%為校方路徑表述，沒有當屆實際畢業及註冊分母；報告改寫成可選擇直升，不用作實際升讀率。",
+      "sourceType": "school-official",
+      "academicYear": "校方現行政策頁",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "陸慶濤小學：新校舍資訊",
+      "url": "https://www.plklht.edu.hk/article/451",
+      "scope": "完整讀取：安達臣道新址約7000平方米、30課室，STEAM創客、科學探索／實驗室、環境教育、溫室及劇院演奏空間；2025年8月18日開工、預計2028/29落成及遷入，附至2026年8月工地相。屬預期，未啟用，不把規劃設施當作現址設備。",
+      "sourceType": "school-official",
+      "academicYear": "預計2028/29；頁面更新至2026年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "陸慶濤小學：教學語言政策",
+      "url": "https://www.plklht.edu.hk/upload/2023/03/68fbba5c865131bafaf647a881235279.pdf",
+      "scope": "完整讀取官網現行連結的政策原件：P1–6中文普通話；英文、科學、音樂英語；數學粵語配以英語；綜合人文、視藝、體育粵語，STEAM為P3–6粵語。上傳路徑為2023/03，不改標成2026年新文件；與PSP2026全面普教中及科學英語授課欄互相參照。",
+      "sourceType": "school-official",
+      "academicYear": "官網現行文件；上傳2023年3月",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "plkshsn": [
+    {
+      "label": "教育局《小學概覽2026》：保良局何壽南小學",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=447",
+      "scope": "完整讀取：34校網、資助男女校、聯繫保良局第一張永慶中學、校監黎惠蓮及校長陳紫霞；2025/26教師60人、師訓98%、碩博55%、十年以上年資72%；2026/27全校30班、PTA$30及非標準項目$450；P1粵教中，P2–6每級兩班普教中；P4–6按成績及語言班分流，P6原班升級；P1零測兩考、P2–6零測三考。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教師為2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2025/2027年度中學學位分配辦法常見問題",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+      "scope": "完整讀取第2、4、5題：聯繫中學保留扣除自行分配及重讀生學位後餘額25%，一般須屬學校網第一或第二派位組別、乙部首選；超額按組別及隨機編號分配，跨網失保留資格。25%不是本校畢業生升讀率。",
+      "sourceType": "government",
+      "academicYear": "2025/2027升中周期；2027年9月中一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2027年9月小一入學資料單張",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "完整讀取2026年8月版：自行甲乙類及計分互斥規則；校友10分與首名子女5分只擇一，不能累加成25分；2027統一派位電子選校1月18–24日、紙本1月23–24日、6月2–3日郵遞結果及6月10–11日註冊。個別學校學額名冊並非本文件核對範圍。",
+      "sourceType": "government",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "puikei": [
+    {
+      "label": "教育局《小學概覽2026》：培基小學",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=323",
+      "scope": "核對91校網、資助男女校、2025/26教師56人、核准教席48個、10年以上教齡45%、2026/27核准24班及收費。三種中學關係均未列，不能將同辦學團體培基書院套用25%保留制度；中文普通話、數學科學主要用英語，高小另有能力分組。教齡不是本校服務年資或流失率。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；師資2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培基小學：數學科教學語言與支援",
+      "url": "https://www.pooikei.edu.hk/tc/content.php?wid=71",
+      "scope": "校方寫以英語授課；部分小四至小六學生以粵語分組，另設補底和增潤。與中文概覽的主要英語教學互證，但不寫作每名學生全程全英文。",
+      "sourceType": "school-official",
+      "academicYear": "校方現行學科頁",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培基小學：科學科",
+      "url": "https://www.pooikei.edu.hk/tc/content.php?wid=73",
+      "scope": "核對以英語作教學語言及探究式實驗、參觀和專題學習；未據此量化英文課時或超前教學年數。",
+      "sourceType": "school-official",
+      "academicYear": "校方現行學科頁",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培基小學：2024/2026年度中學學位分配結果節錄",
+      "url": "https://www.pooikei.edu.hk/attachment/upload/files/%E6%88%90%E6%9E%9C%E5%88%86%E4%BA%AB/%E5%8D%87%E4%B8%AD%E6%B4%BE%E4%BD%8D/2026_%E7%B6%B2%E9%A0%81%E6%B4%BE%E4%BD%8D%E6%88%90%E7%B8%BE%E5%85%AC%E4%BD%88_%E6%9B%B4%E6%96%B0_1__1791172413.pdf",
+      "scope": "截至2026-07-17；自行分配及首三志願合併口徑96.4%、英語主要授課中學約76.57%；去向前三沙田崇真13、培基書院11、曾肇添7人。標題為節錄，沒有全屆分母，不倒算Band1率或個人錄取率。",
+      "sourceType": "school-official",
+      "academicYear": "2024/2026年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：申請2027年9月小一入學資料單張",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "核對自行必收類別、計分各項不能任意疊加、適齡10分；自行階段不可筆試面試；統一派位乙部以居住地址所屬小一校網為準。核對2027選校及放榜註冊日期。",
+      "sourceType": "government",
+      "academicYear": "2027年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培基小學：2027年度自行分配申請通知",
+      "url": "https://www.pooikei.edu.hk/attachment/news/1788824282x2sXy.pdf",
+      "scope": "標題2027，列2026年9月17至25日電子、21至25日紙本及11月23日放榜；部分內文誤寫2026年度，日期已與教育局2027單張交叉，不照抄年度筆誤。",
+      "sourceType": "school-official",
+      "academicYear": "2027年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培基小學：2026/27小一上學期插班程序",
+      "url": "https://www.pooikei.edu.hk/attachment/news/1788748098kba0l.pdf",
+      "scope": "本輪2026-09-11中午截止；近照、兩年成績及最多4頁活動證明；視學額安排入學試，獲邀後HK$40；9月30日前未獲通知即未安排，不推斷全年空缺。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27上學期；本輪已截止",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培基小學：2026/27小五上學期插班程序",
+      "url": "https://www.pooikei.edu.hk/attachment/news/1788752567CPTfu.pdf",
+      "scope": "小五、2026-09-11中午截止、文件和入學試通知規定。原件另寫8月安排考試，與截止日期時序衝突，報告不自行指定考試日，須按校方個別確認。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27上學期；本輪已截止",
+      "checkedOn": "2026-10-28"
+    }
+  ]
+}

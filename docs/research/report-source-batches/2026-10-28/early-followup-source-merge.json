@@ -1,0 +1,222 @@
+{
+  "mergedOn": "2026-10-29",
+  "schools": [
+    {
+      "slug": "edujcps",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "evangel",
+      "added": 0,
+      "total": 5
+    },
+    {
+      "slug": "fkgs",
+      "added": 1,
+      "total": 5
+    },
+    {
+      "slug": "fssas",
+      "added": 0,
+      "total": 4
+    },
+    {
+      "slug": "goodhealth",
+      "added": 0,
+      "total": 7
+    },
+    {
+      "slug": "hacs",
+      "added": 9,
+      "total": 14
+    },
+    {
+      "slug": "aps",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "aspcps",
+      "added": 5,
+      "total": 9
+    },
+    {
+      "slug": "brgps",
+      "added": 2,
+      "total": 5
+    },
+    {
+      "slug": "lh",
+      "added": 0,
+      "total": 5
+    },
+    {
+      "slug": "veo-op",
+      "added": 3,
+      "total": 11
+    },
+    {
+      "slug": "canaan",
+      "added": 1,
+      "total": 5
+    },
+    {
+      "slug": "canaan-cd",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "cblmc",
+      "added": 4,
+      "total": 7
+    },
+    {
+      "slug": "ccc",
+      "added": 1,
+      "total": 7
+    },
+    {
+      "slug": "cccwhcsw",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "canossahk",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "lh-sf",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "wyps",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "cmask",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "cneclmc",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "cps",
+      "added": 0,
+      "total": 5
+    },
+    {
+      "slug": "sscps",
+      "added": 2,
+      "total": 7
+    },
+    {
+      "slug": "ssgps",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "pt",
+      "added": 1,
+      "total": 8
+    },
+    {
+      "slug": "cpskg",
+      "added": 0,
+      "total": 5
+    },
+    {
+      "slug": "creative",
+      "added": 0,
+      "total": 5
+    },
+    {
+      "slug": "cypy",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "hkcwcyw",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "honwah",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "hrgp",
+      "added": 2,
+      "total": 7
+    },
+    {
+      "slug": "hfc",
+      "added": 2,
+      "total": 5
+    },
+    {
+      "slug": "hfcklt",
+      "added": 2,
+      "total": 5
+    },
+    {
+      "slug": "hrgps",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "hy",
+      "added": 2,
+      "total": 7
+    },
+    {
+      "slug": "icqm",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "hkbaptist",
+      "added": 1,
+      "total": 4
+    },
+    {
+      "slug": "ktbwcs",
+      "added": 2,
+      "total": 5
+    },
+    {
+      "slug": "ktgps",
+      "added": 2,
+      "total": 6
+    },
+    {
+      "slug": "ktl",
+      "added": 1,
+      "total": 5
+    }
+  ],
+  "addedReferences": 65,
+  "secondPass": {
+    "mergedOn": "2026-10-29",
+    "schools": [
+      {
+        "slug": "hfc",
+        "added": 4,
+        "total": 9
+      },
+      {
+        "slug": "hfcklt",
+        "added": 4,
+        "total": 9
+      }
+    ],
+    "addedReferences": 8
+  }
+}

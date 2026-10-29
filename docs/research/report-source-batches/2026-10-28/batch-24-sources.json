@@ -1,0 +1,574 @@
+{
+  "py2": [
+    {
+      "label": "教育局《小学概览2026》：香港培道小学",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=92",
+      "scope": "私立全日男女校、中文/粤教中、创校1888、面积14660平方米、联系培道中学且无直属或一条龙；2026/27年费65000/PTA50、25班（4/4/5/4/4/4）；2025/26教师50及25班，学历和教龄按该年；小一零测零考、P2-P6三考。约30人是校方编制说明，非逐班实收。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资为2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局收费证明书：香港培道小学",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/324477.pdf",
+      "scope": "小一至小六2026-09-01起年费65000，每期6500共10期；同证书幼稚园免费条款的生效日为2020-09-01，不能把幼教资助用于小学。",
+      "sourceType": "government",
+      "academicYear": "小学2026/27（2026-09-01生效）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培道小学：2027/28小一入学申请",
+      "url": "https://www.ptps.edu.hk/blog/news/2027-28%E5%B9%B4%E5%BA%A6%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B/",
+      "scope": "2026-08-01起报名、10-02中午12时截止、10-03上午9时起面试，时间电邮通知不可更改；2021-12-31或前出生、2027-09-01入学。截至核对日已过申请/面试日，未公布当前后补日期。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 P1",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培道小学：网上小一申请指引",
+      "url": "https://www.ptps.edu.hk/blog/2025/09/02/%E9%A6%99%E6%B8%AF%E5%9F%B9%E9%81%93%E5%B0%8F%E5%AD%B8-%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B%E6%8C%87%E5%BC%95/",
+      "scope": "选择年级、电邮验证、证件及居留/入境标签、递交后仍须Visa/Mastercard或FPS缴费才完成报名；约3工作天审批为网上报名程序，不等同正式取录或面试结果。现行页面发布日期2025-09-02，不把日期升级成2026。",
+      "sourceType": "school-official",
+      "academicYear": "现行网上流程（2025-09-02发布）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培道小学：2025/26毕业生升读中学一览",
+      "url": "https://www.ptps.edu.hk/blog/2026/07/07/2025-2026-%E7%95%A2%E6%A5%AD%E7%94%9F%E5%8D%87%E8%AE%80%E4%B8%AD%E5%AD%B8%E4%B8%80%E8%A6%BD/",
+      "scope": "官方表头入读中学/人数，49所中学逐项合计123；培道25、彭学高12、颜宝铃5、协恩2、英华1、华英2、黄笏南3、旅港开平3。合计为表内记录，不另称全届人数；未说明路径或男女分母，不能推联系学额、Band1率或offer率。",
+      "sourceType": "school-official",
+      "academicYear": "2025/26毕业生（2026-07-07公布）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培道小学：中文科课程",
+      "url": "https://www.ptps.edu.hk/blog/2025/09/02/chinese/",
+      "scope": "当前页明确实行粤教中、中华经典及广泛阅读；不将二手语言印象当全校园英语接触时数。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页（2025-09-02发布）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "培道小学：英文科课程",
+      "url": "https://www.ptps.edu.hk/blog/2025/09/02/%E8%8B%B1%E6%96%87%E7%A7%91/",
+      "scope": "小一至小三融入Read Write Inc.，44英语音及拼合拆音；未公布每周NET分钟数或普通话教师当届测试等级。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页（2025-09-02发布）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2025/2027升中一般事项常见问题",
+      "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_EN.pdf",
+      "scope": "直属85%/联系25%的分母均是扣除留级及自行分配后剩余中一学额；一般须校网Band1/2及乙部首志愿，超额依组别及随机编号，跨网会失去保留资格。不是小学毕业生实际入读率，不能保证取录。",
+      "sourceType": "government",
+      "academicYear": "2025/2027派位周期（2027年9月升中）",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "rc": [
+    {
+      "label": "教育局《幼稚园概览2026/27》：高主教书院幼稚园部",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2155380001",
+      "scope": "不参加计划、当届年费40800十期；2025年9月教员26、22持学位及26具幼儿教育证书以上、上午1:10.3/下午1:6.1；校长郑美宝、9课室、北角建华街30号地下至2楼。22/26约84.6%为持学位比例，非89%幼教学士；分时段比例不作班额。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资/比例为2025年9月",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局收费证明书：高主教幼稚园部",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215538.pdf",
+      "scope": "K1-K3上午及下午均40800（4080×10），现行证书生效2023-09-01。与KGP2026/27一致，但不可将旧生效日期改成2026新证书。",
+      "sourceType": "government",
+      "academicYear": "现行收费，2023-09-01生效；KGP2026/27仍同额",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "高主教幼稚园部：教区官方网上收生系统",
+      "url": "https://dki-rckg.catholic.edu.hk/admission",
+      "scope": "2026-10-05 09时至10-16 17时网上申请，40元FPS，文件为证件照/出生及居留证明/针卡/领洗纸及校友或兄姊关系证明（如有）；按申请顺序编面见及电邮通知。页面未列具体面见日、结果日或学额，不补猜。",
+      "sourceType": "school-official",
+      "academicYear": "2026年秋季申请（页面正文未标独立入读学年）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "高主教幼稚园部：2025年旧届K1申请原件",
+      "url": "https://www.rckg.edu.hk/?page_id=3933",
+      "scope": "该页仍列2025-10-06至15申请、11-15/22面见；仅作历史收生准则：面试、在读兄姊优先、就近、天主教及校友，同时明示优先不保证取录。不能作为2026年秋季日程或当前面试日。Exa已成功读取全文。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27 K1（2025年申请的历史页）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "高主教小学部：2024/2026升中获派情况",
+      "url": "https://rcps.raimondi.edu.hk/wordpress/achievement/secondary-school-places-allocation/",
+      "scope": "校方页面正文列79名小六学生获派高主教书院；是获派人数，非最终入读，未另列全届分母，不能换成79%或85%幼小中升读率。图片未读部分不算新增证据。",
+      "sourceType": "school-official",
+      "academicYear": "2024/2026升中周期",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2025/2027升中一般事项常见问题",
+      "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_EN.pdf",
+      "scope": "直属85%/联系25%的分母均是扣除留级及自行分配后剩余中一学额；一般须校网Band1/2及乙部首志愿，超额依组别及随机编号，跨网会失去保留资格。不是小学毕业生实际入读率，不能保证取录。",
+      "sourceType": "government",
+      "academicYear": "2025/2027派位周期（2027年9月升中）",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "scps": [
+    {
+      "label": "教育局《小学概览2026》：圣嘉勒小学",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=23",
+      "scope": "私立全日女校、天主教、般咸道光景台3-6号/2509平方米，直属圣嘉勒女书院；2026/27年费51000/PTA90，2025/26及2026/27各18班；2025/26教师32，培训90%、学士100%、硕博25%、SEN0，教龄41/18/41。除中文视艺体育法语外英语授课；P1-P6两测两考，小一上学期以进展评估替代测考栏为无。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资为2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局收费证明书：圣嘉勒小学",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/210021.pdf",
+      "scope": "小学P1-P6每期5100×10=51000，生效日2023-09-01；同证书幼稚园2026-09-01条款与小学分开，不能把幼教免费或资助前42970用于小学。",
+      "sourceType": "government",
+      "academicYear": "现行小学收费2023-09-01生效；2026/27仍执行",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "圣嘉勒小学：小一、插班及学费减免原件",
+      "url": "https://pri.scps.edu.hk/admission/",
+      "scope": "2027/28小一3班，女孩出生2020-09-01至2021-12-31，2026-09-14至25亲交、不收邮寄/速递、10-03母语面试、11-02邮寄结果；报名100现金，补充最多2页单面A4。插班为全年邮寄，先筛选再试/面见，最多5张双面A4；不保证所有人获邀；结果电话/电邮，下学年需重申请。2026/27年费51000、2027/28可能调整，插班段旧2024收费不重标年份。减免全/半/四分一须审核。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 P1及现行插班；含2024/25旧收费段",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2025/2027升中一般事项常见问题",
+      "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_EN.pdf",
+      "scope": "直属85%/联系25%的分母均是扣除留级及自行分配后剩余中一学额；一般须校网Band1/2及乙部首志愿，超额依组别及随机编号，跨网会失去保留资格。不是小学毕业生实际入读率，不能保证取录。",
+      "sourceType": "government",
+      "academicYear": "2025/2027派位周期（2027年9月升中）",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "sfcs": [
+    {
+      "label": "家校会《小学概览2026》：嘉諾撒聖方濟各學校",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=411",
+      "scope": "核对12校网、资助全日女校、湾仔圣佛兰士街42及44号、校训行仁爱显真理、直属嘉诺撒圣方济各书院；2026/27每级4班共24，家教会100/特定用途450；2025/26教师56含校长、师训学士100%、硕博31%、SEN79%、十年以上67%；7:55上课、周一至四15:30/周五14:30放学，小一2次/二至六3次考试、全科测验0。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教师为2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖方濟各學校：2027/28小一与插班申请",
+      "url": "https://www.sfcs.edu.hk/入學申請",
+      "scope": "读取完整招生正文：2027/28ePOA9/17–25、纸本9/21–25、11/23结果，同分交教育局中央抽签；宗教证明列申请儿童领洗纸。小二至小五插班须家长信、近照、身份证明、适用领洗纸、两年各学期成绩、活动服务证明最多5页双面；先笔试后面试须家长陪同，可校务处或电邮递交，页面未列截止日期。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28小一；插班页未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：12校网自行分配配额名册",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/Net12.pdf",
+      "scope": "核对2027/28圣方济各、圣保禄天主教及玛利曼各50个自行分配配额；不是全级总学额，最终实际开班按需求批核。",
+      "sourceType": "government",
+      "academicYear": "2027/28；8/2026名册",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖方濟各學校：校方首页与课程入口",
+      "url": "https://www.sfcs.edu.hk/",
+      "scope": "读取首页经文若13:34，区分于正式校训；菜单列英语辩论、数学挑战站、IT、体艺及制服团体等16项，学生支援有灵修、训辅、公民教育、活动、学生支援分组。不由活动存在推断每名学生可自由入选。",
+      "sourceType": "school-official",
+      "academicYear": "现行官网未标统一学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2026中学学位分配常见问题",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2026_Sept_General_TC.pdf",
+      "scope": "已读取第2–5题：一般扣除重读生及自行分配后，直属中学保留剩余学额85%，一般资格为学校网第一／第二组别及乙部首选；超额按组别及随机编号，获批跨网失去相关资格。85%不是中一总额、毕业生入读比例或自动直升保证。",
+      "sourceType": "government",
+      "academicYear": "2024/2026周期；2026中一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "shck": [
+    {
+      "label": "家校会《小学概览2026》：嘉諾撒聖心學校（资助部）",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=9",
+      "scope": "核对坚道26号、11校网、资助全日女校、直属圣心书院；2026/27每级5班共30，家教会100/特定用途250，教师统计2025/26为59含校长、师训学士100%、硕博53%、SEN86%、十年以上64%；8:35至15:30，P1两次/P2–6三次考试、全科测验0，不混同34号私立部两测两考。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教师为2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：11校网自行分配配额名册",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/Net11.pdf",
+      "scope": "核对本校2027/28自行分配63、圣士提反女子附小50；不是全级总学额或实际录取人数；不能倒推统一派位余位。",
+      "sourceType": "government",
+      "academicYear": "2027/28；8/2026名册",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖心學校：中文课程特色",
+      "url": "https://www.shcs.edu.hk/it-school/php/webcms/public/index.php3?lang=zh&mode=published&refid=2451",
+      "scope": "本校资助部中文科说明P1–3全班、P4–6部分班主要普通话授课；童书/桥梁书、六年级文言文衔接、五年级小记者及高年级粤语辩论拔尖。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖心學校：英文课程特色",
+      "url": "https://www.shcs.edu.hk/it-school/php/webcms/public/index.php3?lang=zh&mode=published&refid=2466",
+      "scope": "本校资助部P1–6英文课程以阅读为基础、语境词汇语法拼读、定期外籍英语教师课与大小组活动；未宣称英文统一超前一年或无NET。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖心學校：数学课程特色",
+      "url": "https://www.shcs.edu.hk/it-school/php/webcms/public/index.php3?lang=zh&mode=published&refid=2470",
+      "scope": "本校资助部以情境实作探究、解难册、分层课业与电子评估；P1–5 Fun With Maths英语词汇册、P6英文数学中小衔接；没有据此推断统一超前半年。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页未标学年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖心學校：2026/27小一候补原件",
+      "url": "https://www.shcs.edu.hk/it-school/php/webcms/files/upload/tinymce/202627P1_1779410297.pdf",
+      "scope": "全文经Exa读取：2026/6/3–6亲临坚道26号递表，需出生证明、手册、本学年成绩、领洗纸如适用、活动证明、选校表及小一注册证；6/20面试、6/18未获电话作落选。该轮已结束，不能套为2027/28日期。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27候补；2026年6月已结束",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2026中学学位分配常见问题",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2026_Sept_General_TC.pdf",
+      "scope": "已读取第2–5题：一般扣除重读生及自行分配后，直属中学保留剩余学额85%，一般资格为学校网第一／第二组别及乙部首选；超额按组别及随机编号，获批跨网失去相关资格。85%不是中一总额、毕业生入读比例或自动直升保证。",
+      "sourceType": "government",
+      "academicYear": "2024/2026周期；2026中一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "shckps": [
+    {
+      "label": "家校会《小学概览2026》：嘉諾撒聖心學校私立部",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=10",
+      "scope": "核对坚道34号、校网不适用、私立上午女校、直属圣心书院、校训道路真理生命；2026/27为18班(4/3/3/3/3/2)，学费53680十期、家教会120/报名150；2025/26教师31含校长、师训87%、学士100%、硕博29%、SEN13%、十年以上52%；7:40至12:45、每周5.5天，P1–6两测两考。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教师为2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：私立部现行收费证明210315",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/210315.pdf",
+      "scope": "完整两页：P1–P6均A.M.SESSION，每期5368、十期全年53680，2025-09-01生效；2026/27概览同价。证明不应写成2026新批准，亦不混同资助部免费及全日制。",
+      "sourceType": "government",
+      "academicYear": "2025-09-01生效；2026/27概览同价",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖心學校私立部：2027/28小一申请",
+      "url": "https://www.shcsps.edu.hk/CustomPage/paragraphGroup.aspx?nnnid=64&pageId=213&webPageId=53",
+      "scope": "2026/8/1 09:00至9/12 17:00网上申请、近照/身份居留证明/K2下学期成绩、报名150不退，10/3面试不改不补，10/26–31电邮结果；截至10/28处于结果通知期，报名和面试均已结束。未列正式Portfolio权重或宗教计分。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖心學校私立部：2026/27插班申请",
+      "url": "https://www.shcsps.edu.hk/CustomPage/paragraphGroup.aspx?nnnid=75&pageId=214&webPageId=53",
+      "scope": "只招小三和小四、其他年级已满；2026/5/4 09:00至6/4 23:59报名，6/20笔试面试，7月上旬电邮，报名150不退；需近照、身份居留文件、上一学期成绩。该轮已结束，不作实时空缺。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27上学期；2026年6月已结束",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "嘉諾撒聖心學校私立部：2025/26及历年升中派位原表",
+      "url": "https://www.shcsps.edu.hk/CP/pG/39/45/76",
+      "scope": "2025/26总76人：圣心39、英华11、圣士提反10、圣保禄5、港同4、玛利曼2、其余五校各1，合计76；首志愿92.1%、首三100%，39/76约51.3%为报告计算。2024/25为73/44，2023/24为72/38；均属私立部，不得移植资助部，不把首三100%写成Band1比例，名单含直资不能全称统一派位结果。",
+      "sourceType": "school-official",
+      "academicYear": "2025/26；兼列2024/25、2023/24历史数据",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2026中学学位分配常见问题",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2026_Sept_General_TC.pdf",
+      "scope": "已读取第2–5题：一般扣除重读生及自行分配后，直属中学保留剩余学额85%，一般资格为学校网第一／第二组别及乙部首选；超额按组别及随机编号，获批跨网失去相关资格。85%不是中一总额、毕业生入读比例或自动直升保证。",
+      "sourceType": "government",
+      "academicYear": "2024/2026周期；2026中一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "sjacps": [
+    {
+      "label": "教育局《小學概覽2026》：聖若瑟英文小學（觀塘）",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=148",
+      "scope": "完整讀取：觀塘道57號、私立全日男校、天主教香港教區、1958創校、直屬聖若瑟英文中學、教學語言英文；2026/27全校18班每級3班；2025/26教師35人含校長；PTA$30、補發學生證$70；P1–6零次全科測驗及三次全科考試、平均編班；英文／數學／常識／科學／人文英語，中文普通話加粵語輔助；P5–6外語選修、周三及周五多元活動。未以班師比推算課堂人手。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教師為2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：聖若瑟英文小學現行收費證明書（211303）",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/211303.pdf",
+      "scope": "完整讀取兩頁：2026年9月1日起P1–6每期$5,870、10期全年$58,700。另列報名費$200（2024-06-03起）及註冊按金$2,500（2024-09-01起），不把不同生效日期合併寫成新批核費用。六年$352,200只為固定年費的情景，並非不加價承諾。",
+      "sourceType": "government",
+      "academicYear": "2026/27學費；其他費用分列2024生效",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟英文小學：2026升中分配結果",
+      "url": "https://www.sjacps.edu.hk/attachment/upload/files/award/SSPA-result_2026.pdf",
+      "scope": "完整讀取2021–2026圖表，另下載PDF渲染並放大核對2026版：直屬31%、其他官津英文中學37%、直資25%；三類合計93%，未公開總人數及餘下7%分類，不自行補齊、正常化或寫成Band 1比率。2026列其他主要分配聖言11%、觀塘瑪利諾11%、聖若瑟書院10%。圖注85%為中學中一餘額預留，不是小學畢業生升讀比例；圖表分配不等於offer或最終註冊。",
+      "sourceType": "school-official",
+      "academicYear": "2026升中；含2021–2025歷史結果",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟英文小學：2027/28小一申請系統",
+      "url": "https://application.sjacps.edu.hk/",
+      "scope": "完整讀取公開登入前頁面：2027/28小一網申已CLOSED；已參加面試者2026年11月16–28日查申請結果。未登入、不填表；頁面未列申請分母或當前插班空缺。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟英文小學：語境學習政策",
+      "url": "https://www.sjacps.edu.hk/en/content.php?wid=45",
+      "scope": "完整讀取Language-rich Environment正文：政策希望學生課內外自然使用英語與普通話，屬語境目標，不能當作固定授課百分比或每名學生實際能力。",
+      "sourceType": "school-official",
+      "academicYear": "校方現行網頁",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟英文小學：P1–6特別申請舊文件",
+      "url": "https://www.sjacps.edu.hk/attachment/upload/files/admission/SpecialApplication.pdf",
+      "scope": "完整讀取校方現行入口所鏈接舊文件，底部標2025–2026：身份文件、近期成績、最多5張獎狀及天主教領洗文件等。只作歷史材料參考，不證明2026/27現有空缺或受理窗口。",
+      "sourceType": "school-official",
+      "academicYear": "2025/26舊申請文件",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2025/2027年度中學學位分配辦法常見問題",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+      "scope": "完整讀取第2、4、5題：一般扣除自行分配及重讀生學位後，直屬中學保留餘額85%；合資格須屬學校網第一或第二派位組別並在乙部首選，超額按組別與隨機編號分配，跨網失保留資格。85%不是小學畢業生實際升讀率；自行收生面試不等於統一派位保留學額程序。",
+      "sourceType": "government",
+      "academicYear": "2025/2027升中周期；2027年9月中一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2027年9月小一入學資料單張",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "完整讀取2026年8月版：甲乙類及計分互斥，校友與首名子女只擇一、父母在本小學任職為甲類；官津統一派位按真實唯一或主要住址，而非幼稚園地址。私立與官津可並行申請，但私校留位及退款條款須另確認；教育局會把私校取錄而續參加派位的名單交私校參考。",
+      "sourceType": "government",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "sjps": [
+    {
+      "label": "教育局《小學概覽2026》：聖若瑟小學（灣仔）",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=424",
+      "scope": "完整讀取：活道48號、12校網、資助男校、喇沙修士會、1968創校、校訓勤奮向善、直屬聖若瑟書院；2026/27 PTA$160及非標準項目$470、30班；2025/26教師59人含校長／教席56、師訓100%、碩博48%、十年以上65%；P1–6兩測一考、平均能力分班；35分鐘一節、每日9節、7:50–14:50。免學費不是全部開支免費。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；教師為2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟小學：School Profile",
+      "url": "https://sjps.edu.hk/school-profile/",
+      "scope": "完整讀取：資助全日男校、主要教學語言英文、1968創校、30班每級5班、現址活道48號、校監譚敏儀及校長林美琪、直屬聖若瑟書院；不與觀塘私立英文小學混同。",
+      "sourceType": "school-official",
+      "academicYear": "校方現行網頁",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟小學：中文科課程",
+      "url": "https://sjps.edu.hk/2022/08/09/chinese-language/",
+      "scope": "完整讀取校方現行中文科頁：中文以粵語教授、單元教學、低小繪本及先說後寫、高小指定讀本及讀寫結合。據此糾正「全科英文」；URL含2022日期，不改標成2026新文件。",
+      "sourceType": "school-official",
+      "academicYear": "校方現行頁；URL日期2022年",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟小學：2027小一入學申請原件",
+      "url": "https://storage.googleapis.com/sjps-prod-stateless/2026/09/966727dd-p1-poa-2027-school-web.pdf",
+      "scope": "完整讀取四頁：2026年9月21–25日紙本（9:00–11:30及14:00–16:00）、9月17–25日電子，身份／出生與居港文件、兄長在讀及父兄畢業、領洗文件、真實唯一或主要住址證明及授權書。兩種方式起始日不同，申請已截止；沒有規定須提前3–6個月搬家。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟小學：2026/27小一特別收生面試須知",
+      "url": "https://storage.googleapis.com/sjps-prod-stateless/2026/06/a4b01306-notes-on-p1-special-admission-2026-15-june.pdf",
+      "scope": "完整讀取兩頁：只適用已獲電話通知者；2026年6月15日13:15報到、16:00解散、活道48號，學生單獨面試且沒有筆試；限一位家長陪同報到，有近照的幼稚園手冊／學生證及$70現金。該輪已結束，不套作2027/28安排。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27小一特別收生歷史輪次",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟小學：2026/27小二至小五插班筆試須知",
+      "url": "https://storage.googleapis.com/sjps-prod-stateless/2026/06/f00d790b-26-27網頁_插班筆試須知.pdf",
+      "scope": "完整讀取兩頁：只適用校方已通知考生；2026年6月22日12:30報到、15:50解散，中文／英文／英文數學筆試，文具、附相手冊或學生證及$70現金。未列實時空缺、當前全年申請承諾或完整報名材料；不把小二至小五筆試套成小一考核。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27 P2–5歷史輪次",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟書院：2027/28中一自行收生",
+      "url": "https://www.sjc.edu.hk/admission/",
+      "scope": "完整讀取：54個自行學額，2027年1月4–18日申請、2月27日全體申請者獲邀面試；學業及EDB次第25%、活動15%、操行10%、面試50%，毋須校長或教師推薦信；3月31日自行正取通知、7月6日派位結果。本小學學生按小學指示取表；54不是另保證給本小學，不與85%保留機制相加當畢業生人數。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28中一自行",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "聖若瑟小學：校舍重建計劃官方募款頁",
+      "url": "https://sites.google.com/sjps.edu.hk/e-book/home",
+      "scope": "完整讀取校方首頁所連募款頁：可用空間較標準30班校舍少約30%；原目標2025年第二季撥款、第三季動工、2028年第二季完成及2028/29入新校舍，募款目標$5,000萬。屬原計劃，不足證明實際已動工或已遷黄大仙；現行校方及2027文件仍列活道48號，最新遷出及暫遷安排須另核。",
+      "sourceType": "school-official",
+      "academicYear": "原有重建目標時程；非當屆工程進度證據",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2025/2027年度中學學位分配辦法常見問題",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+      "scope": "完整讀取第2、4、5題：一般扣除自行分配及重讀生學位後，直屬中學保留餘額85%；合資格須屬學校網第一或第二派位組別並在乙部首選，超額按組別與隨機編號分配，跨網失保留資格。85%不是小學畢業生實際升讀率；自行收生面試不等於統一派位保留學額程序。",
+      "sourceType": "government",
+      "academicYear": "2025/2027升中周期；2027年9月中一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2027年9月小一入學資料單張",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "完整讀取2026年8月版：甲乙類及計分互斥，校友與首名子女只擇一、父母在本小學任職為甲類；官津統一派位按真實唯一或主要住址，而非幼稚園地址。私立與官津可並行申請，但私校留位及退款條款須另確認；教育局會把私校取錄而續參加派位的名單交私校參考。",
+      "sourceType": "government",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "skh": [
+    {
+      "label": "教育局《幼稚園概覽2026/27》：聖公會幼稚園新址0003",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=1316360003",
+      "scope": "完整讀取並下載原始HTML核對學校131636／校址0003：香港畢拉山金文泰道2號、12註冊課室、非牟利且不參加教育計劃。2025年9月快照校長及教師40人、上午師生比1:6.7及下午1:6.6，非新校舍即時點名。課程列全語文／英語／普通話、螺旋課程、小組及專題、持續觀察；有升小座談、小一適應及參觀、駐校社工、到校學前康復。2027/28申請欄全年接受申請，不推斷K1全年開放或各級有空缺。未列每日語言分鐘數，不採聚合站雙語沉浸比例作官方事實。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；師資及比例為2025年9月快照",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：聖公會幼稚園現行收費證明書（131636）",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/131636.pdf",
+      "scope": "完整讀取兩頁：2026年9月1日起K1–K3上午及下午每期$10,000、10期全年$100,000，堂費欄為「-」。證書仍印中環鐵崗／東院道7號舊地址，地址不能覆蓋新KGP0003新址；費用與地址證據分開用。沒有把舊茶點$300/月、2025/26學費$71,830直接延用為當屆費用；三年$300,000只為不加價情景。",
+      "sourceType": "government",
+      "academicYear": "2026/27；生效2026-09-01，證書地址尚為舊址",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2027年9月小一入學資料單張",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "完整讀取2026年8月版：甲乙類及計分互斥，校友與首名子女只擇一、父母在本小學任職為甲類；官津統一派位按真實唯一或主要住址，而非幼稚園地址。私立與官津可並行申請，但私校留位及退款條款須另確認；教育局會把私校取錄而續參加派位的名單交私校參考。",
+      "sourceType": "government",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "skhcf": [
+    {
+      "label": "教育局《小学概览2026》：港九街坊婦女會孫方中小學",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=379",
+      "scope": "核对84校网、资助全日男女、1987创校、一条龙孙方中书院、2026/27核准24班每级4班；2025/26教师49、核准教席46、硕博47%、10年以上教龄49%；2026/27家教会费50／非标准450。小一2考，二至六3考，全科测验0；小五小六按成绩分班。人数与班数不是课堂师生比。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "孙方中小学：课程特色",
+      "url": "https://www.sfc.edu.hk/zh_tw/site/view?name=%E8%AA%B2%E7%A8%8B%E7%89%B9%E8%89%B2",
+      "scope": "校方列普通话与英语为教学语言，合作学习、高阶思维、各级STREAM／编程及互动黑板与移动装置。未列逐科课时，不能补猜全部数学常识只用粤语或全校全普通话。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "孙方中小学：中文科",
+      "url": "https://www.sfc.edu.hk/zh_tw/site/view?name=%E4%B8%AD%E6%96%87",
+      "scope": "核对中普结合、校本拼音教材、故事书及幼小衔接阅读识字。未量化每名学生语言成果，不使用全港最高或无缝适应的保证。",
+      "sourceType": "school-official",
+      "academicYear": "现行学科页",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "孙方中小学：英文科",
+      "url": "https://www.sfc.edu.hk/zh_tw/site/view?name=%E8%8B%B1%E6%96%87",
+      "scope": "核对低小展示和对话到高小说故事／公开表达／辩论，NET参与Space Town及KEYS2，拼读、阅读与过程写作。未列每日NET时数，不声称每班每天固定外教授课。",
+      "sourceType": "school-official",
+      "academicYear": "现行学科页",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "孙方中小学：2025/26升中志愿概况",
+      "url": "https://www.sfc.edu.hk/zh_tw/site/view?name=%E5%8D%87%E4%B8%AD%E6%B4%BE%E4%BD%8D2025-2026%E5%B9%B4%E5%BA%A6",
+      "scope": "官方原表2023/24首志愿87／第二7／第三4／其他2%；2024/25为91／5／3／1%；2025/26为89／4／4／3%。没有毕业生人数、逐校人数或一条龙升读与派位分项，不将前三项加总约97%写成Band1率。",
+      "sourceType": "school-official",
+      "academicYear": "2023/24至2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "孙方中小学：2027/28小一入学须知",
+      "url": "https://www.sfc.edu.hk/uploads/pages/8/files/27-28_AdmissionInstructions.pdf",
+      "scope": "2026-09-17至25电子、21至25亲交，已结束；核对身份、住址及适用兄姊旧生证明。文件列本校84网，自行申请可跨网。不得将主办团体同名幼稚园推为小学优先权。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "孙方中小学：2027/28小一时间表",
+      "url": "https://www.sfc.edu.hk/site/view?name=2026-2027%E5%B9%B4%E5%BA%A6%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E6%97%A5%E7%A8%8B%E6%99%82%E9%96%93%E8%A1%A8",
+      "scope": "URL保留旧2026-2027文字，但页面标题及日期已更新2027/28；11/23自行结果、11/25–26注册、2027/1/18–24电子选校、6/2–3结果及6/10–11注册，已和教育局单张交叉。以页面正文年度为准，不从URL猜年度。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28（页面标题及正文）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "孙方中小学：插班常设申请程序",
+      "url": "https://www.sfc.edu.hk/zh_tw/site/view?name=%E6%8F%92%E7%8F%AD%E7%94%9F%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B",
+      "scope": "到校／下载表后亲交；出生证明及最近成绩正副本、两张照片、回邮信封和30元行政费；获准考证和日期，考后约两周通知，一般9月初／1月中入学。页面未列本轮年级空缺或固定题型，不能写成每年4–6月全级开放。",
+      "sourceType": "school-official",
+      "academicYear": "常设页，未标具体招生轮次",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：2027年九月小一入学资料单张",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "核对甲类与乙类、适龄、计分项目不可随意叠加，自行不可面试笔试；乙部按儿童住址所属校网。核对本届日程及2027/1/22补交申请截止；不按校网热度猜个人命中率。",
+      "sourceType": "government",
+      "academicYear": "2027年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局：84校网自行分配名册",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/Net84.pdf",
+      "scope": "孙方中学校编号115290、自行分配配额50；不是统一派位余额、实际入读人数或全级实收，不据此计算个人录取率。",
+      "sourceType": "government",
+      "academicYear": "2027年度小一；8/2026名册",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局第7/2014号通告：一条龙模式安排",
+      "url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC14007S.pdf",
+      "scope": "一条龙中一学额应容纳小学选择升读的学生并预留外校学额；与直属／联系剩余学额85%／25%区别。政策关系不等于实际入读率、公开试或大学保证；具体手续及留级按当届学校安排确认。",
+      "sourceType": "government",
+      "academicYear": "现行机制文件（2014公布）",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "中学概览2025/26：孙方中书院",
+      "url": "https://www.chsc.hk/ssp2025/sch_detail.php?lang_id=2&sch_id=113",
+      "scope": "核对资助男女中学、另一大埔滘校址、2025/26已开及2026/27拟开科表的中英语分科；普通话教授多门中文科目、英文教授英文电脑科学等。未提供支持旧文港三大40%／八大80%的全届分母，不作为当前大学去向来源。",
+      "sourceType": "school-profile",
+      "academicYear": "2025/26；2026/27为拟开科表",
+      "checkedOn": "2026-10-28"
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "york": [
+    {
+      "label": "教育局《幼稚园概览2026/27》：约克国际幼稚园51号",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5818520001",
+      "scope": "全文及HTML；581852/0001、51金巴伦、2010、私立独立非本地不参加计划；2025年9月38教学人员18学位及38幼教证书以上、AM1:10.3/PM1:10.8不含2–3、12课室/656容额、AM288/PM302、无PN全日；2026/27费用57596–87996、报名40/注册970。校方课程及自报外部考试未列考试年和参试全届分母；用品/教师年资无数据不作零。",
+      "sourceType": "school-profile",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2026/27；师生及服务2025年9月"
+    },
+    {
+      "label": "教育局学校资料：约克国际幼稚园注册实体",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=2&scrn=581852000111",
+      "scope": "正文；51 Cumberland Road不包括天台、581852/0001、私立男女上午；临时2010-01-29、注册2011-06-30。只核该注册班次，不把独立49号及14号当同校数据。",
+      "sourceType": "government",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局现行收费证书：约克国际幼稚园",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/581852.pdf",
+      "scope": "完整三页；K1–3AM/PM一般5236×11=57596、双语7333×12=87996，2013-08-01；MI6650×12=79800，2020-11-01。课程另列不代表可直接相加或最新选修条件；51不包括天台及2 Essex地下地址，后者现行分班未证。",
+      "sourceType": "government",
+      "checkedOn": "2026-10-28",
+      "academicYear": "现行证书；2013及2020生效"
+    },
+    {
+      "label": "约克官网：校址与不同学校实体",
+      "url": "https://york.edu.hk/en/addresses.html",
+      "scope": "全文重读；51 Cumberland国际幼稚园23361483；49 Cumberland英文小学暨幼稚园、14 Stafford预备班分别列示；品牌另有元朗/将军澳/屯门/湿地，不能沿用仅两或三校舍说法。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "约克官网：招生及出生后申请安排",
+      "url": "https://york.edu.hk/en/admissions.html",
+      "scope": "全文重读；2–6岁秋入学及个别迟入，出生后可线上申请为行政安排，仍须申请及面试，非先到先得/保录；各校报名原件分别链接。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "约克国际及预备班：2027年8月入学须知",
+      "url": "https://york.edu.hk/applicationform/26_SCHOOL_FEES_AND_DEBENTURE_INFO.pdf",
+      "scope": "完整两页；51国际与14 Stafford预备班共同文件，PN不能套51。2027入学N1/L2/U3出生2024/23/22、申请40/材料、获录简介及L2/U3会面、有限候补、暂定班时、学校分配校址及升班可转、30天退学排除7/8月及5月30日条款。虽文件名含fees/debenture，无具体学费或债券数。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2027/28；2027年8月入学"
+    },
+    {
+      "label": "约克官网：面试过程与样题边界",
+      "url": "https://york.edu.hk/applicationform/interview_process.pdf",
+      "scope": "完整一页；样题不保证题数难度，反对操练，学习准备/社交情绪/成长情况并看，不要求答懂所有题，不支持全英固定线或交费保录。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "约克官网：语言教学",
+      "url": "https://york.edu.hk/en/languages.html",
+      "scope": "全文重读；母语英语教师、小组/共读/角色扮演；中文粤语及普通话认写。没有51各课程英语分钟数或全天NET班主任比例。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "约克官网：毕业生升小展示",
+      "url": "https://york.edu.hk/en/grad-satistics.html",
+      "scope": "正文重读；文字over70%毕业生获24所小学之一offer；未列年份、全届数、分校分母，不能当51校本实际入读率。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "约克官网原图：直私与官津比例",
+      "url": "https://york.edu.hk/static/assets/images/graduation-statistics-content-1-en.png",
+      "scope": "实际view_image目读；69%直资/私立、30%官立/资助，余1%未标；示例学校没有各校人数，图无年份、总数或分校，未说明offer/实读。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "约克官网原图：24所小学名单",
+      "url": "https://york.edu.hk/static/assets/images/graduation-statistics-content-2-en.png",
+      "scope": "实际view_image目读；24校名称，无逐校人数、年份或分校，不可编前三/各校录取概率。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育王国：York约克幼稚园四年总结（2020主帖）",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3816822",
+      "scope": "实际读取第一页主帖；islz2020-03-24发、11-25更，自述PN–K3、曾51面试但非四年校址证明；英语/老师/活动正面，家庭比赛功课投入、收费推介个人意见。未读全串，不能把个案升小及未定位ORT9/Starters盾数作全校统计。",
+      "sourceType": "parent-discussion",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2020年历史自述"
+    },
+    {
+      "label": "教育王国：跪求York N真实用家分享（2020）",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3847015",
+      "scope": "实际读取第一页相关回复；gamtrulia入读三周语言进步及行政意见、校区不明；fadgare明确美孚不能套51；朋友转述与“系人都收”无分母。非2026校本满意度或收生率。",
+      "sourceType": "parent-discussion",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2020年10月27日历史回复"
+    },
+    {
+      "label": "教育局：2027小一入学资料单张",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "同一工作流前批已完整读取四页；统一派位乙部按儿童住址校网，读九龙塘幼稚园不赋予41小一校网；自行不限住址网，直资与官津POA的持位规则须分开。",
+      "sourceType": "government",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2027/28小一"
+    }
+  ],
+  "york-klt": [
+    {
+      "label": "家校会幼稚园概览2026/27：约克英文九龙塘",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=3228220002",
+      "scope": "322822/0002、49金巴伦；2025/9教师21、学位14、幼教证21、上午1:12.4／下午1:7.7、容量277、14课室；没有2–3岁服务、无全日；本地及非本地课程；每年1及5月校内评估；K1最低79800，不能拿70200套各级",
+      "sourceType": "school-profile",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2026/27，师资容量为2025年9月"
+    },
+    {
+      "label": "教育局：约克英文九龙塘现行可读收费证",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/322822.pdf",
+      "scope": "web直接读3页：Montessori87996、Bilingual70200、MI79800，12期，课程生效分别2013/14/15/20；共同列10York与49Cumberland，不自动证明旧地址当前招生；非本地描述课程不等非本地学生身份收费",
+      "sourceType": "government",
+      "checkedOn": "2026-10-28",
+      "academicYear": "现行在载证书；各课程批准日期2013至2020"
+    },
+    {
+      "label": "教育局：约克英文49金巴伦注册学校",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=2&scrn=322822000211",
+      "scope": "322822/0002，幼稚园、私立、男女、49金巴伦地下一楼，注册日期1972/1/4；与KGP1979起办年不同口径，不推定现址1972创校",
+      "sourceType": "government",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "校方2027/28英文幼稚园招生及退学原件",
+      "url": "https://york.edu.hk/applicationform/26_SCHOOL_FEES_AND_DEBENTURE_INFO_8-10.pdf",
+      "scope": "已读父端保存的原PDF全文转文：明列49Cumberland；N1出生2024、L2 2023、U3 2022，2027/8入学，AM9:15–12:15／PM13:55–16:55暂定；40报名；L2/U3校长非正式会面、可候补；可分配及升班转校区；退学30日排除7/8月，8月不回须5/30前；正文无债券金额",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2027/28，文件名26不是适用2026/27"
+    },
+    {
+      "label": "校方Interview Process原件",
+      "url": "https://york.edu.hk/applicationform/interview_process.pdf",
+      "scope": "已读父端保存原件全文；样题仅题型不代表数量难度，反对操练补习；全面看准备、社交情绪与家庭情况，不编通过线或来者不拒",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "校方Admissions",
+      "url": "https://york.edu.hk/en/admissions.html",
+      "scope": "已读保存网页全文：2至6岁秋入学、特别迟入、可出生后网上申请；需安排面试，不能推早报必入；不同注册校园分列",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "校方Addresses",
+      "url": "https://york.edu.hk/en/addresses.html",
+      "scope": "已读保存网页全文：49英文、51国际、14Stafford国际／英文预备部，及元朗/TKO/TuenMun/Wetland；不把多实体合成三校或把PN套49",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "校方Languages",
+      "url": "https://york.edu.hk/en/languages.html",
+      "scope": "已读保存网页全文：英语母语老师、小组共读角色扮演，中文含粤语普通话及认写高频字；无英语课时百分比或必获母语级承诺",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "校方Graduation Statistics文字",
+      "url": "https://york.edu.hk/en/grad-satistics.html",
+      "scope": "已读保存网页全文：Over70%毕业生取得所列24校offer，未署年度、人数及分校，不等49单校入读率或top3排名",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "校方升小统计图1",
+      "url": "https://york.edu.hk/static/assets/images/graduation-statistics-content-1-en.png",
+      "scope": "已目读原图：69%直资／私立、30%官津，余1%未标；仅例校无人数、无年份分母，不能与文字70%相加或当个人成功率",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "校方升小统计图2：24校名单",
+      "url": "https://york.edu.hk/static/assets/images/graduation-statistics-content-2-en.png",
+      "scope": "已目读原图：24所学校名称、无逐校人数；不能虚构考入最多前三或给单校概率",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育王国：York四年总结问答第10页",
+      "url": "https://www.edu-kingdom.com/forum.php?extra=page%3D1&mod=viewthread&page=10&tid=3816822",
+      "scope": "2020/5/22 fadgare自称几名子女曾读49、51、10York、Stafford及美孚，分享语言、家长跟进、校车、老师及行政差别；跨校园历史自述，身份未独立认证，不作现届49统计",
+      "sourceType": "parent-discussion",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2020年5月历史讨论"
+    },
+    {
+      "label": "大公报：约克总校长向家长退款",
+      "url": "https://www.tkww.hk/epaper/view/newsDetail/1372953968296202240.html",
+      "scope": "2010/10/1原报道，涉及品牌三幼稚园通告及收费慕道班退款、校方及教区回应；纠正原稿2013日期，仅历史归属，不等当前违法或已经定罪",
+      "sourceType": "media-report",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2010年10月历史报道"
+    },
+    {
+      "label": "东方日报：警调查约克收费慕道班",
+      "url": "https://orientaldaily.on.cc/cnt/news/20101230/00176_037.html",
+      "scope": "2010/12/30报道教育局转介、警方跟进，当时无人被捕；不是2013、也不是最终司法结论",
+      "sourceType": "media-report",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2010年12月历史报道"
+    },
+    {
+      "label": "教育局2027小一入学资料",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "此前已全文读取复用：幼稚园宗教不决定申请人宗教分，兄姊在本小学读及父母本校任职为甲类；旧生10分、首名5分首五项选一；住址校网用于统一派位不是幼稚园地址",
+      "sourceType": "government",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2027/28"
+    }
+  ],
+  "york-montessori-yl": [
+    {
+      "label": "家校會KGP2026/27：約克蒙特梭利元朗完整條目",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=6054410001",
+      "scope": "已讀完整原HTML：605441/0001、元朗錦田潭尾段18峻巒商場地下、2017、私立獨立不參計劃、本地及非本地、蘇綺華／鄭綺玲；2025-09容額215、18教師學位7幼教18、師比1:7.9/1:6.9含PN、K上午56下午78、PN89；有戶外／室內遊戲及音樂室。2026/27 K1為60,000–87,600，K2/3為84,000–87,600（各12期），PN102,000另屬2025-09服務欄；報名40／半日註冊970。",
+      "sourceType": "school-profile",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2026/27（統計2025-09）"
+    },
+    {
+      "label": "教育局現用605441收費證明書（3頁）",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/605441.pdf",
+      "scope": "全文3頁已讀：非本地K1–3上午下午7,000×12=84,000（2017-06-13）；本地NON-KGS K1–3上午下午5,000×12=60,000（2020-07-13）；非本地多元智能7,300×12=87,600（2021-03-08）。生效日期舊不等失效歷史檔；需核實際錄取課程及開班，不能以PN102,000覆蓋K班，亦不代表2027/28新核准價。",
+      "sourceType": "government",
+      "checkedOn": "2026-10-28",
+      "academicYear": "現用費證（各課程生效2017／2020／2021）"
+    },
+    {
+      "label": "約克官網校址與校區清單",
+      "url": "https://york.edu.hk/en/addresses.html",
+      "scope": "復用已保存官方原HTML並讀全文：元朗Pre-school／Playschool同址潭尾18號及2368-9738；九龍塘51國際／49英文／14Stafford預備部，另將軍澳、屯門、濕地等，不是三間分校或元朗唯一新界西約克。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "約克官網英中語言課程",
+      "url": "https://york.edu.hk/en/languages.html",
+      "scope": "已讀保存全文：母語英師、小組／共享閱讀／角色扮演；中文包括粵語與普通話、認讀寫高頻字，另有國際交流及年度戲劇。品牌說明未有元朗各語言課時或蒙氏混齡／連續工作周期／AMI師資認證，不把品牌說明當校本成果保證。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "約克官網當用一般招生頁",
+      "url": "https://york.edu.hk/en/admissions.html",
+      "scope": "已讀保存全文及原HTML連結：2–6歲、每年秋入學與特別遲入、可出生後網上先交申請；元朗獨立Admission Information及Application Form。出生後可報名不等出生入學或早報必入，未列元朗固定截止／面試放榜日／候補優先。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "元朗2027/28招生須知及退學條款",
+      "url": "https://york.edu.hk/applicationform/26_SCHOOL_FEES_AND_DEBENTURE_INFO_YL.pdf",
+      "scope": "完整2頁原PDF文字：N1出生2024、L2 2023、U3 2022，2027-08入學；PN開始須滿2。暫定AM9:10–12:10/PM13:40–16:40、報名40及文件；N1獲錄後家長簡介，L2/U3非正式校長會面，不能推PN或K1無評估。至少30天書面退學，7/8月不計、8月不回須5-30前通知、遲通知按天levy；沒有具體學費／債券金額。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "元朗官網當用入學申請表（4頁）",
+      "url": "https://york.edu.hk/applicationform/application%20form_YORK_YL.pdf",
+      "scope": "完整PDF：前3頁渲染原圖目讀，第4頁聲明讀文字。PN／N1／L2／U3選項、AM/PM第一二志願，**U3註PM Session Only**，校用面試欄；家長學歷職業／語言與York舊生、兄姊、住址等欄。欄位不是錄取加分表，不能從要求職業斷定背景取錄；表未標年度，與2027須知及KGP2025-09上午K3為0並列，目標年班制仍須書面確認。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "約克面試流程與練習題用途原PDF",
+      "url": "https://york.edu.hk/applicationform/interview_process.pdf",
+      "scope": "完整1頁：練習題只示題型、不代表數量難度，反對操練／補習、不需全部答對；看學術準備、社交情緒、家庭情況等全人匹配。不是固定詞彙線／保證低門檻，也不提供元朗當屆集體及個別考核時間表。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "約克官方升小統計文字頁",
+      "url": "https://york.edu.hk/en/grad-satistics.html",
+      "scope": "已讀保存全文：Over70% of York graduates obtained offers from one of following24schools；未標年度、全屆分母及元朗分拆。頁腳Choose campus是導覽，並非按校區篩選統計；offer不等最終入讀、24校不是有錄取人數排名。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "約克官方升小統計圖1",
+      "url": "https://york.edu.hk/static/assets/images/graduation-statistics-content-1-en.png",
+      "scope": "已用view_image目讀原圖：69%DirectSubsidy/Private、30%Aided/Gov；餘下小扇形未標類別／1%文字，不自行命名Other。右側只例校，沒有年度、總人數、校區或各校人數；不與文字Over70%互換、相加或套元朗當屆。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "約克官方升小24所學校名單圖2",
+      "url": "https://york.edu.hk/static/assets/images/graduation-statistics-content-2-en.png",
+      "scope": "已目讀整圖24校名：喇沙、英華、培僑、女拔、陳守仁、聖瑪利、九龍塘官立、男拔、瑪利諾、KTS、宣道等；只有名單，無逐校錄取數、名次／校區／年度。不能編Top3或指定元朗常見入讀學校。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育王國2020元朗York原帖",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3844340",
+      "scope": "已讀2020-09-15主帖及兩回覆原文：PN家長對溝通和教師觀察有疑慮，另一前PN家長說孩子開心、老師關愛及疫情一對一聯繫；是有分歧的歷史個案，未經獨立查證，不作現任人員／2026管理品質事實，不放大成多帖共識或合成訪談。",
+      "sourceType": "parent-discussion",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2020（歷史個案）"
+    },
+    {
+      "label": "教育王國2020 York N班選校原帖（已讀首四樓）",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3848646",
+      "scope": "已讀2020-12-01首四樓：有SK大B班說法，但回覆明言經驗來自九龍塘49號及後轉美孚、不知道其他分校是否相同；因此不能據此核元朗混齡／SK班／PN優先／錄取率。未宣稱讀完第二頁或整個39回覆串。",
+      "sourceType": "parent-discussion",
+      "checkedOn": "2026-10-28",
+      "academicYear": "2020（歷史討論，首四樓）"
+    },
+    {
+      "label": "教育局：2027年9月小一入學資料單張",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "完整讀取2026年8月原件：自行甲類必收與乙類計分、首五項只能擇一、宗教／主辦社團擇一、父母或兄姊舊生10分；統一派位按兒童住址而非幼稚園地址；已核2027申請、結果及註冊日期。",
+      "sourceType": "government",
+      "academicYear": "2027/28小一",
+      "checkedOn": "2026-10-28"
+    }
+  ],
+  "ywps": [
+    {
+      "label": "家校会《小学概览2026》：英华小学",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=276",
+      "scope": "全文；2003复办/直资男校/无POA网/一条龙、2026/27班数费用、2025/26含校长66师资、测考及兴趣分班。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；师资2025/26",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局英华小学收费证明书",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/550477.pdf",
+      "scope": "完整2页，2026-09-01生效，P1–6每期1970、10期全年19700；非旧19000。",
+      "sourceType": "government",
+      "academicYear": "2026/27",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学官方奖助学金",
+      "url": "https://www.yingwaps.edu.hk/tc/content.php?wid=23",
+      "scope": "全文，19700学费与三类助学/活动支持；不能把学费减免等同交通全免。",
+      "sourceType": "school-official",
+      "academicYear": "2026/27",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学历史",
+      "url": "https://www.yingwaps.edu.hk/tc/content.php?wid=77",
+      "scope": "全文，1818书院而非小学现阶段；2003小学复办、2008转直资。",
+      "sourceType": "school-official",
+      "academicYear": "历史",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学中文课程",
+      "url": "https://www.yingwaps.edu.hk/tc/content.php?wid=41",
+      "scope": "全文普教中、校本拼音、初小说话写话/中高阅写文学历史/戏剧电子资源；不把中文科等于全科普通话。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页未列年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学英文课程",
+      "url": "https://www.yingwaps.edu.hk/tc/content.php?wid=43",
+      "scope": "全文，面向男生选书、阅读策略、Language Arts、创作戏剧演说与拔尖，非全日英语比例证明。",
+      "sourceType": "school-official",
+      "academicYear": "现行课程页未列年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学校车路线",
+      "url": "https://www.yingwaps.edu.hk/tc/content.php?wid=73",
+      "scope": "完整路线页未明学年，不从历史帖子推出无港岛服务；具体站点车程及活动后安排另核。",
+      "sourceType": "school-official",
+      "academicYear": "网页未列服务年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学2027/28小一招生官方专页",
+      "url": "https://sites.google.com/yingwa.hk/ywps-2728-p1?usp=sharing",
+      "scope": "由学校招生入口直接链接，全文及原HTML；7/15–19申请、8/22起首轮、10/13起二轮、2027一月底结果。简介会仅一成人不带孩子，FCFS仅会场。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学2027/28招生简报原PDF",
+      "url": "https://drive.google.com/file/d/10HB1Y0lB2cMRINatAaIsiwRc6kxB0iFY/preview",
+      "scope": "嵌于官方专页，公开PDF实际下载并提取；只有一页议程，未含165额/4000人数或题库，不以标题冒充已核。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学学生就学政策原PDF",
+      "url": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view?usp=drive_link",
+      "scope": "官网公开原PDF全文；两轮面试/六类申请类别；全年不定期插班中英各60分数45分；P5第三/P6第一次与第二次呈分四科及格、操行B的分阶段条件。原件常识科名且无年度，不套新分科未经确认。",
+      "sourceType": "school-official",
+      "academicYear": "文件未明适用年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华小学2024/25完整校务报告",
+      "url": "https://drive.google.com/file/d/1AvxyLwe2Si3-ehgaQebH999VRIhcUEqR/view?usp=drive_link",
+      "scope": "学校报告入口公开链接实际下载全文。第1页P6=164；第8页P6=144、116选择英华书院，原件内部差异不算成功率；104教职不等教师。森林自然/健康支持有原件，自评非独立口碑。",
+      "sourceType": "school-official",
+      "academicYear": "2024/25",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "英华书院当届中一收生",
+      "url": "https://www.yingwa.edu.hk/index.php?s=3_48",
+      "scope": "完整读：外校60位、2026/11/14–28申请、2027/1/16面试/3月结果；一般学费27000保持至2027/28。1400简介会座位非申请人数。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育局英华书院现行费证",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/515027.pdf",
+      "scope": "完整2页2026-09-01生效：一般S1–6全年27000、IAL S5/6全年58000，期数分级；搜索旧缓存25300不可替代当前原件。",
+      "sourceType": "government",
+      "academicYear": "2026/27",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "家校会英华书院概览",
+      "url": "https://www.chsc.hk/ssp2025/sch_detail.php?lang_id=1&sch_id=418",
+      "scope": "已读课程栏2026/27：2024/25 S4混合预备、2025/26 S5首IAL；DSE与IAL解释，不做小学自动升任何高中轨保证。",
+      "sourceType": "school-profile",
+      "academicYear": "2025/26概览；2026/27拟开科",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育王国英华课外活动校车历史讨论",
+      "url": "https://www.edu-kingdom.com/forum.php?goto=nextoldset&mod=redirect&tid=2853508",
+      "scope": "搜索抓取到完整2014/9问答：CARMA问活动后校车，PassionC称当时自行接送；普通详情工具读失败，保留真实读取范围，不当2026政策或多个已核在读样本。",
+      "sourceType": "parent-discussion",
+      "academicYear": "2014历史评论",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "教育王国英华小学家长历史讨论第102页",
+      "url": "https://www.edu-kingdom.com/forum.php?archiver=1&mod=viewthread&page=102&tid=52540",
+      "scope": "搜索返回全文有效评论，2005家长分享TKO车程与另一家早起体验；普通抓取失败，不转写当届时刻或20多帖共识。",
+      "sourceType": "parent-discussion",
+      "academicYear": "2005历史评论",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "喇沙小学《小学概览2026》",
+      "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=87",
+      "scope": "工具提取失败后公开curl原HTML全文：41/资助男天主教/直属喇沙非一条龙/中含普通话及英/每级6班；非标准3300+PTA800六年，免学费非零成本。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "圣保罗书院小学2027/28家长须知",
+      "url": "https://www.spc-ps.edu.hk/page.php?id=14&mid=18",
+      "scope": "完整读：直资男校、维多利亚道777；2026/27学费32000/10，招生校本。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28招生；费用2026/27",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "圣保罗书院小学课程",
+      "url": "https://www.spc-ps.edu.hk/page.php?id=69&mid=86",
+      "scope": "完整读：小四起普教中、常识低年20/高年80英语、宗教英语；仍用常识旧科名不直接推新分科当届课时。",
+      "sourceType": "school-official",
+      "academicYear": "课程页未列年度",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "圣方济各英文小学学校资料",
+      "url": "https://www.sfaeps.edu.hk/en/school-information",
+      "scope": "完整读：石硖尾街58/私立全日英文/天主教/中文普教中，不编竞品学费或阶层画像。",
+      "sourceType": "school-official",
+      "academicYear": "现行学校资料",
+      "checkedOn": "2026-10-28"
+    },
+    {
+      "label": "圣方济各英文小学2027/28小一原通知",
+      "url": "https://www.sfaeps.edu.hk/sites/default/files/sites/default/files/information_of_primary_one_application_2027-2028.pdf",
+      "scope": "完整2页；约160额、8/21–9/14、10月面试、11/17结果；人文科学英语/中文普通话/P3–6法日。未套作英华流程。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28",
+      "checkedOn": "2026-10-28"
+    }
+  ]
+}

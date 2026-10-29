@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://127.0.0.1:3348",
+  "method": "Actual CUA in-app browser navigation and read-only DOM inspection; screenshots reviewed for tpom hero/ch7 and think ch7. Desktop only.",
+  "pages": [
+    {
+      "slug": "ssgc",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "ssgc",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "stgps",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "stgps",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "sts",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "sts",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "stts",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "stts",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "sylgps",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "sylgps",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "think",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "think",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "tkocps",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "tkocps",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "tmrgps",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "tmrgps",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "topkids-yl",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "topkids-yl",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "tpom",
+      "language": "cn",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    },
+    {
+      "slug": "tpom",
+      "language": "tc",
+      "chapters": 8,
+      "sourcePanel": true,
+      "documentWidth": 1405,
+      "viewportWidth": 1422
+    }
+  ]
+}
