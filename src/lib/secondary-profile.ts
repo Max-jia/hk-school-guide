@@ -89,7 +89,8 @@ export function prepareSecondaryProfile(school: PilotSchool): Partial<PilotSchoo
     ? row.fields["語言政策"] : school.language;
   const localizedLanguage = language ? chineseText(language) : undefined;
   const detailSections = school.detailSections?.map((section) => ({ ...section, details: section.details.map(translateDetail) }));
-  const languageSourceUrl = detailSections?.flatMap((section) => section.details).find((detail) => detail.label === "語言政策" && detail.value === localizedLanguage)?.sourceUrl;
+  const languageSourceUrl = detailSections?.flatMap((section) => section.details).find((detail) => detail.label === "語言政策" && detail.value === localizedLanguage)?.sourceUrl
+    || (localizedLanguage === school.language ? school.languageSourceUrl : undefined);
   return {
     schoolCategories: [CATEGORIES[school.schoolType] || "類別待核實"],
     classificationSources: source ? [source] : undefined,

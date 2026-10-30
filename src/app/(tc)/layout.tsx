@@ -9,11 +9,11 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 export const metadata: Metadata = {
   metadataBase: new URL("https://hkschool.guide"),
   title: {
-    default: L("港学荟 · 香港教育规划第一站", "tc"),
+    default: L("香港幼稚园、小学、中学资料与择校指南｜港学荟", "tc"),
     template: `%s | ${L("港学荟", "tc")}`,
   },
   description: L(
-    "把教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
+    "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具；招生以校方当届公告为准。",
     "tc"
   ),
   alternates: { canonical: "/", languages: languageAlternates("/") },
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: L("港学荟", "tc"),
-    title: L("港学荟 · 香港教育规划第一站", "tc"),
+    title: L("香港幼稚园、小学、中学资料与择校指南｜港学荟", "tc"),
     description: L(
-      "把教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
+      "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具；招生以校方当届公告为准。",
       "tc"
     ),
     images: [{ url: "/og-home.png", width: 1200, height: 630 }],
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: L("港学荟 · 香港教育规划第一站", "tc"),
+    title: L("香港幼稚园、小学、中学资料与择校指南｜港学荟", "tc"),
     description: L(
-      "把教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
+      "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具；招生以校方当届公告为准。",
       "tc"
     ),
     images: ["/og-home.png"],

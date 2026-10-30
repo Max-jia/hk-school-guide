@@ -23,7 +23,7 @@ function webJsonLd(locale: Locale) {
         alternateName: L("港學薈", locale),
         url: SITE_URL,
         description: L(
-          "整理香港学校资料、升学路线和择校工具，供家长核对公开信息和规划下一步。",
+          "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具。",
           locale
         ),
         knowsAbout: [
@@ -41,7 +41,7 @@ function webJsonLd(locale: Locale) {
         alternateName: L("香港升学择校平台", locale),
         url: SITE_URL,
         description: L(
-          "把香港教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
+          "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具。",
           locale
         ),
         publisher: { "@id": organizationId },

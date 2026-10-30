@@ -7,7 +7,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
 import { createPageMetadata } from "@/lib/page-metadata";
-import { schoolProfileSummary } from "@/lib/school-profile-summary";
+import { registeredPhone, schoolProfileSummary } from "@/lib/school-profile-summary";
 import { breadcrumbJsonLd, jsonLdGraph, serializeJsonLd, webPageJsonLd } from "@/lib/structured-data";
 
 function labelFor(key: string, locale: Locale, stage: SchoolStage) {
@@ -17,13 +17,22 @@ function labelFor(key: string, locale: Locale, stage: SchoolStage) {
     gender: "學生性別", religion: "宗教", schoolNet: "小一校網", tuition: "學費/費用", language: "教學語言",
   };
   if (stage !== "kindergarten") { labels.schoolNumber = "學校編號"; labels.registrationStatus = "登記狀態"; }
+  if (stage === "secondary") labels.language = "語言安排與政策";
   return L(labels[key] || key, locale);
 }
 
 export function schoolProfileMetadata(stage: string, slug: string, locale: Locale): Metadata {
   const school = getPilotSchool(stage, slug);
   if (!school) return { title: L("找不到學校資料", locale), robots: { index: false, follow: false } };
-  const title = `${school.name}｜${school.district}・${SCHOOL_STAGES[school.stage].label}資料`;
+  const net = school.stage === "primary" && (school.registryLocations || 1) === 1
+    ? school.schoolNet?.match(/^(\d{1,2})(?:\s*校[網网])?$/)?.[1]
+    : undefined;
+  // Use only complete, known directory categories; never infer a funding type.
+  const type = /^(?:官立小學|資助小學|資助全日制小學|直接資助計劃小學|私立小學|英基學校協會（小學）|國際學校（小學）|官立中學|資助中學|按位津貼中學|直接資助計劃中學|直資中學|直資全日制中學|私立中學|私立中學（日校 \/ 夜校）|英基學校協會（中學）|國際學校（中學）|資助特殊學校)$/.test(school.schoolType || "") ? school.schoolType : undefined;
+  const focus = net ? `${net}校網・小學資料` : type ? `${type}資料` : `${SCHOOL_STAGES[school.stage].label}資料`;
+  const title = school.stage === "kindergarten"
+    ? `${school.name}｜${school.district}・${SCHOOL_STAGES[school.stage].label}資料`
+    : `${school.name}｜${school.district}・${focus}`;
   const description = schoolProfileSummary(school);
   const path = `/schools/${stage}/${slug}`;
   return createPageMetadata({ title, description, path, locale });
@@ -34,6 +43,8 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
   if (!school) return null;
   const path = `/schools/${stage}/${slug}`;
   const summary = schoolProfileSummary(school);
+  const registryPhone = stage === "kindergarten" ? undefined : registeredPhone(school);
+  const phone = school.telephone || (registryPhone ? `${registryPhone.value}（登記資料截至 ${registryPhone.date}）` : undefined);
   const reportSlugs = school.relatedReportSlugs?.length ? [...new Set(school.relatedReportSlugs)] : school.reportSlug ? [school.reportSlug] : [];
   const detailLabel = stage !== "kindergarten" ? "教學與學校特色" : "課程與學校特色";
   const sectionPriority = (section: NonNullable<typeof school.detailSections>[number]) => {
@@ -47,7 +58,7 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
   })).filter((section) => section.details.length).sort((a, b) => sectionPriority(a) - sectionPriority(b));
   const factGroups = [
     { title: stage === "secondary" ? "課程、語言與費用" : stage === "primary" ? "入學與學習安排" : "課程與費用", entries: [["schoolType", school.schoolType], ["schoolNet", school.schoolNet], ["curriculumType", school.curriculumType], ["gradeSpan", school.gradeSpan], ["language", school.language], ["tuition", stage === "primary" ? school.tuition?.replace(/^"|"$/g, "") : school.tuition]] },
-    { title: "校址與聯絡", entries: [["district", school.district], ["address", school.address], ["telephone", school.telephone]] },
+    { title: "校址與聯絡", entries: [["district", school.district], ["address", school.address], ["telephone", phone]] },
     { title: "學校背景", entries: [["principal", school.principal], ["establishedYear", school.establishedYear], ["sponsoringBody", school.sponsoringBody], ["gender", school.gender], ["religion", school.religion], ["schoolNumber", school.schoolNumber], ["registrationStatus", school.registrationStatus]] },
   ].map((group) => ({ ...group, entries: group.entries.filter((entry): entry is [string, string] => Boolean(entry[1])) })).filter((group) => group.entries.length);
   const schoolEntityId = `${SITE_URL}${path}#school`;
@@ -119,9 +130,10 @@ export default function SchoolProfilePage({ stage, slug, locale = "tc" }: { stag
                 <h3 className="mb-2 text-base font-bold text-[var(--p-fg)]">{L(group.title, locale)}</h3>
                 <dl className={`grid gap-x-8 ${index === 0 ? "md:grid-cols-2" : ""}`}>
                   {group.entries.map(([key, value]) => <div key={key} className={`grid min-w-0 grid-cols-[88px_minmax(0,1fr)] gap-3 border-t border-black/8 py-2.5 dark:border-white/10 ${key === "tuition" || (stage === "secondary" && key === "language") ? "md:col-span-2" : ""}`}>
-                    <dt className="text-sm text-[var(--p-secondary)]">{labelFor(key, locale, stage)}</dt>
+                    <dt className="text-sm text-[var(--p-secondary)]">{key === "curriculumType" && /特殊學校/.test(value) ? L("服務類別", locale) : labelFor(key, locale, stage)}</dt>
                     <dd className="m-0 whitespace-pre-line break-words text-sm leading-relaxed text-[var(--p-fg)]">{L(value, locale)}
                       {key === "language" && school.languageSourceUrl && <a href={school.languageSourceUrl} target="_blank" rel="noreferrer" className="ml-2 whitespace-nowrap text-xs text-[var(--p-secondary)] underline underline-offset-2">{L("來源", locale)} ↗</a>}
+                      {key === "telephone" && !school.telephone && registryPhone && <a href={registryPhone.sourceUrl} target="_blank" rel="noreferrer" className="ml-2 whitespace-nowrap text-xs text-[var(--p-secondary)] underline underline-offset-2">{L("來源", locale)} ↗</a>}
                       {(key === "schoolType" || key === "curriculumType") && !!school.classificationSources?.length && <a href="#profile-sources-title" className="ml-2 whitespace-nowrap text-xs text-[var(--p-secondary)] underline underline-offset-2">{L("來源", locale)}</a>}
                     </dd>
                   </div>)}

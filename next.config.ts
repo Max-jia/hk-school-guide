@@ -24,6 +24,19 @@ const skhylRedirects = [
 ];
 
 const legacyRedirects = [
+  // The registered-school slug was replaced by the reviewed profile; preserve indexed URLs.
+  ...[
+    ["primary/puikei", "primary/stewards-pooi-kei-primary-school"],
+    ["primary/mosllps", "primary/ma-on-shan-ling-liang-primary-school"],
+    ["secondary/po-leung-kuk-lo-kit-sing-1983-college-190489", "secondary/po-leung-kuk-lo-kit-sing-1983-college"],
+    ["secondary/dbs-secondary", "secondary/diocesan-boys-school"],
+    ["secondary/spcc-secondary", "secondary/st-pauls-co-educational-college"],
+    ["kindergarten/the-salvation-army-centaline-charity-fund-kindergarten-576743", "kindergarten/salvation-army-centaline-charity-fund-kindergarten-576743"],
+    ["kindergarten/cckg", "kindergarten/christ-church-kindergarten"],
+    ["kindergarten/stcat", "kindergarten/st-catherines-international-kindergarten"],
+  ].flatMap(([oldPath, newPath]) => ["", "/cn"].map((locale) => ({
+    source: `${locale}/schools/${oldPath}`, destination: `${locale}/schools/${newPath}`, permanent: true,
+  }))),
   { source: "/index.html", destination: "/", permanent: true },
   { source: "/index-tc.html", destination: "/", permanent: true },
   { source: "/reports.html", destination: "/reports", permanent: true },
