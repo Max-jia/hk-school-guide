@@ -80,6 +80,9 @@ function GuideLinks({ locale, stage }: { locale: Locale; stage: SchoolStage }) {
         </li>)}</ul>
       </section>)}
     </nav>
+    {stage === "kindergarten" && <a className={styles.reportLink} href={localeHref("/blog/topics/kindergarten-interviews", locale)}>
+      {L("50所幼稚园面试专题", locale)} <span aria-hidden="true">→</span>
+    </a>}
     <a className={styles.reportLink} href={localeHref(`/schools/${stage}#guides`, locale)}>
       {L(`查看全部${coreGuidesForStage(stage).length}篇核心指南`, locale)} <span aria-hidden="true">→</span>
     </a>

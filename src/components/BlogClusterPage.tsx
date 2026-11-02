@@ -1,3 +1,4 @@
+import KindergartenInterviewIndex from "@/components/KindergartenInterviewIndex";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { clusterArticles, clusterCoreArticle, type BlogCluster } from "@/lib/blog-clusters";
@@ -46,7 +47,9 @@ export default function BlogClusterPage({ cluster, locale }: { cluster: BlogClus
           </section>
         )}
 
-        {articles.length > 0 && (
+        {cluster.slug === "kindergarten-interviews" ? (
+          <KindergartenInterviewIndex items={articles} locale={locale} />
+        ) : articles.length > 0 && (
           <section className="mt-9" aria-labelledby="cluster-supporting-heading">
             <h2 id="cluster-supporting-heading" className="font-serif text-2xl font-bold text-[var(--p-fg)]">{L("按具体问题继续", locale)}</h2>
             <ul className="grid gap-3 p-0 md:grid-cols-2">

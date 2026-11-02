@@ -62,7 +62,15 @@ export default async function BlogPostPage({
   const publishedAt = blogPublishedAt(meta);
   const stage = blogStage(slug);
   const topic = blogTopic(slug);
-  const sidebarGroups = blogRelatedLinks(slug);
+  const baseSidebar = blogRelatedLinks(slug);
+  const interviewSeries = blogClustersForArticle(slug).some((item) => item.slug === "kindergarten-interviews");
+  const sidebarGroups = baseSidebar && interviewSeries ? {
+    ...baseSidebar,
+    groups: [
+      { id: "interview-series", title: "幼稚园面试专题", links: [{ label: "浏览50所幼稚园面试文章", href: "/blog/topics/kindergarten-interviews", description: "按学校查找面见资料" }] },
+      ...baseSidebar.groups,
+    ],
+  } : baseSidebar;
   const hasBodyRelatedLinks = /(?:相关阅读|延伸阅读|相关文章)<\/strong>/.test(post.body);
   const clusters = blogClustersForArticle(slug);
   const cluster = clusters[0];
