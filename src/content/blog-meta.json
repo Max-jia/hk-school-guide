@@ -1442,5 +1442,139 @@
     "scTease": "按学校当届公开形式安排生活化准备，区分个别、小组和家长面见，处理慢热、哭闹及语言支援。",
     "updatedAt": "2026-10-27",
     "verifiedAt": "2026-10-27"
+  },
+  {
+    "cat": "guide",
+    "slug": "primary-net-11-analysis",
+    "date": "11月1日",
+    "tag": "小学指南",
+    "cover": "/covers/blog_primary-net-11-analysis.svg",
+    "title": "11校网深度分析：小一派位、男女选择与升中衔接",
+    "tease": "逐项核对2027自行名册、2025派位结果、男女选择结构及学校升中资料边界。",
+    "updatedAt": "2026-11-03",
+    "scTitle": "11校网深度分析：小一派位、男女选择与升中衔接",
+    "scTease": "核对2027自行名册、2025最新完整派位结果及学校升中样本，说明男女纸面供给、学校资格和申请时程的边界。",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "primary-net-12-analysis",
+    "date": "10月30日",
+    "tag": "小学指南",
+    "cover": "/covers/blog_primary-net-12-analysis.svg",
+    "title": "12校网深度分析：小学学额、男女校与升中路径",
+    "tease": "对照2027自行名额与2026统一派位，量化男女可选供给，并拆清直属制度与实际去向。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "primary-net-31-analysis",
+    "date": "11月1日",
+    "tag": "小学指南",
+    "cover": "/covers/blog_primary-net-31-analysis.svg",
+    "title": "31校网深度分析：十所小学、派位及升中路径",
+    "tease": "按2027自行名册与2025派位报告核对31网十校，拆解学额、性别选择与升中路径。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "primary-net-32-analysis",
+    "date": "11月1日",
+    "tag": "小学指南",
+    "cover": "/covers/blog_primary-net-32-analysis.svg",
+    "title": "32校网深度分析：旺角大角咀小学与升中路径",
+    "tease": "对照2027自行名册、2026统派历史名单与2025住址网派位结果，分析旺角及大角咀家庭的选校边界。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "primary-net-34-analysis",
+    "date": "11月1日",
+    "tag": "小学指南",
+    "cover": "/covers/blog_primary-net-34-analysis.svg",
+    "title": "34校网深度分析：小学学额、男女选择与升中路径",
+    "tease": "核对34网18所小学的自行学额、历史派位与升中衔接，并量化性别供给差异和数据边界。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "primary-net-35-analysis",
+    "date": "11月1日",
+    "tag": "小学指南",
+    "cover": "/covers/blog_primary-net-35-analysis.svg",
+    "title": "35校网深度分析：七所小学、派位及升中路径",
+    "tease": "拆解35网七所小学的名册学额、历史派位、性别供给与升中路径。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "primary-net-43-analysis",
+    "date": "10月30日",
+    "tag": "小学指南",
+    "cover": "/covers/blog_primary-net-43-analysis.svg",
+    "title": "43校网深度分析：黄大仙小学、派位与升中",
+    "tease": "逐校核对八所小学的学额、最新可查升中结果与历史派位，并标明数据口径和缺口。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "kowloon-city-secondary-net-analysis",
+    "date": "10月30日",
+    "tag": "中学指南",
+    "cover": "/covers/blog_kowloon-city-secondary-net-analysis.svg",
+    "title": "九龙城升中校网：学额、男女差异与选校建议",
+    "tease": "用83校历史预计学额，解释开放与直联保留位；分开分析男孩、女孩的可选供给、小学实际去向及家庭选校取舍。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "yau-tsim-mong-secondary-net-analysis",
+    "date": "11月1日",
+    "tag": "中学指南",
+    "cover": "/covers/blog_yau-tsim-mong-secondary-net-analysis.svg",
+    "title": "油尖旺升中校网：2026学额、Band 1参考与男女选择",
+    "tease": "逐校核对 KL1 本区与外区的 2026/27 计划学额，拆解男校、女校与共享位，并用校方升中样本说明数据能回答什么、不能回答什么。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "sham-shui-po-secondary-net-analysis",
+    "date": "11月1日",
+    "tag": "中学指南",
+    "cover": "/covers/blog_sham-shui-po-secondary-net-analysis.svg",
+    "title": "深水埗升中校网：83校学额、Band 1供给与男女差异",
+    "tease": "逐校核对 KL2 本区与跨区 83 所中学的预计开放位和保留位，比较男女可选供给、非官方 Band 1 参考及真实去向数据边界。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "central-western-secondary-net-analysis",
+    "date": "11月2日",
+    "tag": "中学指南",
+    "cover": "/covers/blog_central-western-secondary-net-analysis.svg",
+    "title": "中西区升中校网：学额、男女供给与Banding分歧",
+    "tease": "核对HK1 2026/27逐校计划学额，厘清须选填位、保留位与男女可选供给，并比较非官方Banding分歧及小学去向样本。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "cat": "guide",
+    "slug": "wan-chai-secondary-net-analysis",
+    "date": "10月30日",
+    "tag": "中学指南",
+    "cover": "/covers/blog_wan-chai-secondary-net-analysis.svg",
+    "title": "湾仔升中校网：Band 1 学额、男女选择与小学去向",
+    "tease": "查看50所学校乙部预计学额、男女可选范围和直联条件，理解离岛小学并网与升中去向。",
+    "updatedAt": "2026-11-03",
+    "verifiedAt": "2026-11-03"
   }
 ]
