@@ -6,10 +6,11 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
 import KindergartenDirectory from "@/components/schools/KindergartenDirectory";
-import SchoolStageDirectory, { type SchoolStageDirectoryRow } from "@/components/schools/SchoolStageDirectory";
+import SchoolStageDirectory from "@/components/schools/SchoolStageDirectory";
 import SchoolDirectoryGuides from "@/components/schools/SchoolDirectoryGuides";
 import guideStyles from "@/components/schools/SchoolDirectoryGuides.module.css";
-import { kindergartenDirectoryRows } from "@/lib/kindergarten-directory-data";
+import { stageDirectoryRows, kgDirectoryRows } from "@/lib/school-directory-rows";
+import directoryAssets from "@/content/generated/directory-assets.json";
 import { createPageMetadata } from "@/lib/page-metadata";
 import { DIRECTORY_PAGE_SIZE, directoryPagePath } from "@/lib/school-directory-pagination";
 import { SITE_URL } from "@/lib/seo";
@@ -32,32 +33,9 @@ export default function SchoolDirectoryPage({ stage, locale = "tc", page = 1 }: 
     secondary: "先看收生途徑與教學語言，再比較課程路線與升學出口。",
   }[stage];
   const schools = schoolsForStage(stage, stage === "kindergarten" ? "tc" : locale);
-  // The directory keeps compact row facts; source-rich school profiles remain the canonical detail view.
-  const directorySchools: SchoolStageDirectoryRow[] = schools.map((school) => ({
-    stage: school.stage as Exclude<SchoolStage, "kindergarten">,
-    slug: school.slug,
-    name: school.name,
-    nameEn: school.nameEn,
-    district: school.district,
-    districts: school.districts || [],
-    address: school.address,
-    schoolNumber: school.schoolNumber || "",
-    schoolType: school.schoolType,
-    categories: school.schoolCategories || [school.schoolType],
-    gender: school.gender || "",
-    religion: school.religion || "",
-    schoolNet: school.schoolNet || "",
-    language: school.language || "",
-    tuition: school.tuition || "",
-    gradeSpan: school.gradeSpan,
-    sponsoringBody: school.sponsoringBody || "",
-    dataYear: school.dataYear,
-    reviewedAt: school.reviewedAt || "",
-    sourceNote: school.sourceNote,
-    website: school.website,
-    reportSlugs: [...new Set([school.reportSlug, ...(school.relatedReportSlugs || [])].filter((slug): slug is string => Boolean(slug)))],
-    sources: (school.sources || []).slice(0, 5).map(({ label, scope, url }) => ({ label, scope, url })),
-  })).sort((a, b) => a.name.localeCompare(b.name, locale === "sc" ? "zh-Hans" : "zh-Hant"));
+  const directorySchools = stage === "kindergarten" ? [] : stageDirectoryRows(stage, locale);
+  const asset = directoryAssets[stage === "kindergarten" ? "kindergarten" : `${stage}-${locale}` as const];
+  const offset = (page - 1) * DIRECTORY_PAGE_SIZE;
   const path = directoryPagePath(stage, page);
   const itemListId = `${SITE_URL}${localeHref(path, locale)}#schools`;
   const schema = jsonLdGraph(locale, [
@@ -90,7 +68,7 @@ export default function SchoolDirectoryPage({ stage, locale = "tc", page = 1 }: 
             <SchoolDirectoryGuides locale={locale} stage={stage} compact />
             <div className={guideStyles.main}>
               <h2 className="sr-only">{L("搜尋及瀏覽學校", locale)}</h2>
-              {stage === "kindergarten" ? <KindergartenDirectory schools={kindergartenDirectoryRows(schools)} locale={locale} initialPage={page} /> : <SchoolStageDirectory schools={directorySchools} stage={stage} locale={locale} initialPage={page} />}
+              {stage === "kindergarten" ? <KindergartenDirectory initialSchools={kgDirectoryRows().slice(offset, offset + DIRECTORY_PAGE_SIZE)} asset={asset} locale={locale} initialPage={page} /> : <SchoolStageDirectory initialSchools={directorySchools.slice(offset, offset + DIRECTORY_PAGE_SIZE)} asset={asset} stage={stage} locale={locale} initialPage={page} />}
             </div>
             <SchoolDirectoryGuides locale={locale} stage={stage} />
           </div>

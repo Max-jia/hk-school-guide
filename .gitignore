@@ -84,3 +84,6 @@ temp/
 
 # Local dependency symlink used for release verification
 /node_modules
+
+# Reproducible versioned directory datasets (generated before dev/build)
+/public/directory-data/
