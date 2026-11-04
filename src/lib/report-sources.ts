@@ -5463,6 +5463,9 @@ const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
     }
   ],
   "pc": [
+    {"label":"培正幼稚园：2021年度幼儿班招生通告","url":"https://www.pcps.edu.hk/kg/sites/default/files/202007061755230.pdf","scope":"列幼儿班与小一预计学额比例1:0.85；不是实际升读率或现届保证。","sourceType":"school-official","academicYear":"2021年度幼儿班（历史文件）","checkedOn":"2026-11-04"},
+    {"label":"2016年校长采访存档","url":"https://www.puiching.org/wp-content/uploads/2015/05/2020071500191023.pdf","scope":"2016年报道2017年度幼儿班特定届别的历史承诺和当时统一派位前通知说法，不提供实际入读人数或现届具体通知日期。","sourceType":"media-report","academicYear":"2016年报道；2017年度幼儿班","checkedOn":"2026-11-04"},
+    {"label":"培正幼稚园：主题教学","url":"https://www.pcps.edu.hk/kg/tc/subject/thematic-approach","scope":"校方列生活主题与六个学习范畴；不据此推断各科课时或孩子的学习结果。","sourceType":"school-official","academicYear":"现行网页，未标学年","checkedOn":"2026-11-04"},
     {
       "label": "教育局《幼稚园概览2026/27》：香港培正小学",
       "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5133500001",
@@ -5490,7 +5493,7 @@ const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
     {
       "label": "培正幼稚园：2027/28 K1招生公告",
       "url": "https://www.pcps.edu.hk/kg/tc/2027-2028-%E5%B9%BC%E5%85%92%E7%8F%ADk1%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B",
-      "scope": "2026年7月2日10时至8月5日报名、11月1-7日首轮、11月16日次轮名单、11月亲子面试、12月8日10时放榜及12月8-11日注册；校方列报名费$100并注明以最终批核为准，与概览待批$200须向校方确认。",
+      "scope": "2026年7月2日10时至8月5日报名、较早招生页列11月1-7日首轮，2026-10-28最新面试通知列11月4-7日，个人安排以接见证为准、11月16日次轮名单、11月亲子面试、12月8日10时放榜及12月8-11日注册；校方列报名费$100并注明以最终批核为准，与概览待批$200须向校方确认。",
       "sourceType": "school-official",
       "academicYear": "2027/28 K1",
       "checkedOn": "2026-10-28"
@@ -5514,7 +5517,7 @@ const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
     {
       "label": "教育局2014年第7号通告：直属及一条龙安排",
       "url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC14007S.pdf",
-      "scope": "附录4直属85%保留位分母为扣除留级及自行分配后剩余中一学额，非毕业生升读率；通告说明幼稚园不纳入官津一条龙模式，官津15%外校位规则不可直接移用于培侨直资当届承诺。",
+      "scope": "附录4直属85%保留位分母为扣除留级及自行分配后剩余中一学额，非毕业生升读率；通告说明幼稚园不纳入官津一条龙模式。",
       "sourceType": "government",
       "academicYear": "现行机制文件（2014年公布）",
       "checkedOn": "2026-10-28"
