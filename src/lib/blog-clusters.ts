@@ -3,6 +3,7 @@ import type { BlogMetaEntry } from "@/lib/blog";
 
 export type BlogCluster = {
   slug: string;
+  kind?: "series";
   title: string;
   description: string;
   intent: string;
@@ -12,6 +13,32 @@ export type BlogCluster = {
 
 /** Editorial topic hubs. Keep membership deliberate; broad category labels are not a substitute for a cluster. */
 export const BLOG_CLUSTERS: BlogCluster[] = [
+  {
+    slug: "kg-system",
+    "kind": "series",
+    "title": "香港幼稚园制度与入学：三篇系列",
+    "description": "从班级与资助开始，逐步了解报名、面试、注册和升小衔接。每篇集中回答一个阶段的问题，并列出家长下一步可做的事。",
+    "intent": "希望系统了解香港幼稚园，并结合未来生活地点、课程和预算做准备的内地来港家庭",
+    "coreSlug": "hk-kg-system-1",
+    "articleSlugs": [
+      "hk-kg-system-1",
+      "hk-kg-system-2",
+      "hk-kg-system-3"
+    ]
+  },
+  {
+    slug: "primary-system",
+    "kind": "series",
+    "title": "香港小学制度与入学：三篇系列",
+    "description": "从学校类别与家庭路线开始，逐步了解小一申请、派位、入学适应和升中。每篇集中回答一个阶段的问题，并列出家长下一步可做的事。",
+    "intent": "希望系统了解香港小学，并结合未来生活地点、课程和预算做准备的内地来港家庭",
+    "coreSlug": "hk-primary-system-1",
+    "articleSlugs": [
+      "hk-primary-system-1",
+      "hk-primary-system-2",
+      "hk-primary-system-3"
+    ]
+  },
   {
     slug: "primary-admission",
     title: "小一派位与入学申请",

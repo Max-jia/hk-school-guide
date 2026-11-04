@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BlogSeriesNavigation from "@/components/BlogSeriesNavigation";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Localize from "@/components/Localize";
@@ -73,6 +74,7 @@ export default async function BlogPostPage({
   } : baseSidebar;
   const hasBodyRelatedLinks = /(?:相关阅读|延伸阅读|相关文章)<\/strong>/.test(post.body);
   const clusters = blogClustersForArticle(slug);
+  const series = clusters.find((item) => item.kind === "series");
   const cluster = clusters[0];
   const clusterCore = cluster ? clusterCoreArticle(cluster) : undefined;
   const clusterRelated = cluster ? clusterArticles(cluster)
@@ -105,7 +107,7 @@ export default async function BlogPostPage({
           </p>
           <div className={sidebarGroups ? relatedStyles.layout : undefined}>
             <div className={sidebarGroups ? relatedStyles.articleColumn : undefined}>
-              {clusters.length > 0 && (
+              {clusters.length > 0 && !series && (
                 <p className="mb-0 rounded-lg bg-[var(--p-bg-yellow)] px-4 py-3 text-sm leading-relaxed text-[var(--p-fg)]">
                   <strong>{L("相关专题：", locale)}</strong>
                   {clusters.map((item, index) => (
@@ -134,9 +136,11 @@ export default async function BlogPostPage({
                     </p>
                   )}
                 </header>
+                {series && <BlogSeriesNavigation series={series} slug={slug} locale={locale} position="top" />}
                 {sidebarGroups && <BlogRelatedLinks slug={slug} locale={locale} config={sidebarGroups} compact />}
                 <div className="pt-6" dangerouslySetInnerHTML={{ __html: blogBodyContent(L(post.body, locale), locale) }} />
-                {!hasBodyRelatedLinks && <section className="mt-14 border-t border-[var(--p-gray-300)] pt-7" aria-labelledby="blog-related-heading">
+                {series && <BlogSeriesNavigation series={series} slug={slug} locale={locale} position="bottom" />}
+                {!series && !hasBodyRelatedLinks && <section className="mt-14 border-t border-[var(--p-gray-300)] pt-7" aria-labelledby="blog-related-heading">
                   <h2 id="blog-related-heading" className="!mt-0 !border-0 !pt-0">{L("继续阅读", locale)}</h2>
                   <ul className="grid gap-3 !pl-0 md:grid-cols-3">
                     {related.map((item) => (

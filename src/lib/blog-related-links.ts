@@ -106,6 +106,12 @@ function entry(stage: BlogRelatedConfig["stage"], focus: string, guides: BlogRel
 // One reviewed selection per article; deliberately no same-stage first-N fallback.
 // New articles must be added here and pass scripts/validate-blog-related-links.mjs.
 export const BLOG_RELATED_LINKS: Record<string, BlogRelatedConfig> = {
+  "hk-kg-system-1": entry("kindergarten", "体系与预算", [G.aid, G.english], [topic("kg-system", "幼稚园制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
+  "hk-kg-system-2": entry("kindergarten", "报名与面见", [G.k1, G.interview], [topic("kg-system", "幼稚园制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
+  "hk-kg-system-3": entry("kindergarten", "注册与升小", [G.kWait, G.kResults], [topic("kg-system", "幼稚园制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
+  "hk-primary-system-1": entry("primary", "学校与家庭路线", [G.pTypes, G.sCurriculum], [topic("primary-system", "小学制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
+  "hk-primary-system-2": entry("primary", "申请与录取取舍", [G.p1, G.pOffer], [topic("primary-system", "小学制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
+  "hk-primary-system-3": entry("primary", "适应与升中", [G.pDaily, G.pTransfer], [topic("primary-system", "小学制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
   "learning-habitat-chatham-lv-kg-interview-guide": entry("kindergarten", "学之园昇御海逸 · 面试", [G.interview, G.k1], [report("lh"), G.stcat], "学校报告与其他面试经验"),
   "pui-ching-kg-interview-guide": entry("kindergarten", "培正 · 面试准备", [G.interview, G.k1], [report("pc"), G.stcat], "学校报告与其他面试经验"),
   "good-hope-kg-interview-guide": entry("kindergarten", "德望幼稚园 · 面试", [G.interview, G.k1], [profile("good-hope-primary-school-cum-kindergarten-588130", "德望幼稚园"), G.stcat], "学校资料与其他面试经验"),

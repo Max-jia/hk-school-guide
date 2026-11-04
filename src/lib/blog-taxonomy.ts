@@ -6,6 +6,13 @@ export type BlogTopic = "admissions" | "fees" | "schools" | "comparison" | "prac
 // Editorial classification is explicit so a school name or a translated title
 // cannot silently put an article in the wrong parent-facing filter.
 const STAGES: Record<string, BlogStage> = {
+  "hk-kg-system-1": "kg",
+  "hk-kg-system-2": "kg",
+  "hk-kg-system-3": "kg",
+  "hk-primary-system-1": "primary",
+  "hk-primary-system-2": "primary",
+  "hk-primary-system-3": "primary",
+
   "hk-true-light-tai-hang-kg-interview-guide": "kg",
   "creative-primary-school-kg-interview-guide": "kg",
   "st-pauls-church-kg-interview-guide": "kg",
@@ -123,6 +130,13 @@ const STAGES: Record<string, BlogStage> = {
 };
 
 const TOPICS: Partial<Record<string, BlogTopic>> = {
+  "hk-kg-system-1": "practical",
+  "hk-kg-system-2": "admissions",
+  "hk-kg-system-3": "practical",
+  "hk-primary-system-1": "practical",
+  "hk-primary-system-2": "admissions",
+  "hk-primary-system-3": "practical",
+
   "hk-true-light-tai-hang-kg-interview-guide": "admissions",
   "creative-primary-school-kg-interview-guide": "admissions",
   "st-pauls-church-kg-interview-guide": "admissions",

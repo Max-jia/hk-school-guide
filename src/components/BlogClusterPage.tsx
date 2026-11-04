@@ -13,6 +13,7 @@ function titleFor(entry: { title: string; scTitle?: string }, locale: Locale): s
 export default function BlogClusterPage({ cluster, locale }: { cluster: BlogCluster; locale: Locale }) {
   const core = clusterCoreArticle(cluster);
   const articles = clusterArticles(cluster).filter((entry) => entry.slug !== cluster.coreSlug);
+  const isSeries = cluster.kind === "series";
   const path = `/blog/topics/${cluster.slug}`;
   const schema = collectionSchema({ path, title: cluster.title, description: cluster.description, locale,
     breadcrumbs: [{ name: "首頁", path: "/" }, { name: "擇校文章", path: "/blog" }, { name: cluster.title, path }],
@@ -25,10 +26,10 @@ export default function BlogClusterPage({ cluster, locale }: { cluster: BlogClus
       <div className="mx-auto max-w-[960px] px-4 pb-24">
         <p className="pt-8 font-mono text-sm uppercase text-[var(--p-secondary)]">
           <a href={localeHref("/blog", locale)} className="text-[var(--p-secondary)] no-underline hover:underline">{L("择校文章", locale)}</a>
-          {" · "}{L("专题", locale)}
+          {" · "}{L(isSeries ? "系列目录" : "专题", locale)}
         </p>
         <header className="max-w-[820px] border-b border-[var(--p-gray-300)] pb-7">
-          <p className="mb-2 font-mono text-sm text-[var(--p-secondary)]">{L("择校专题", locale)} · {articles.length + (core ? 1 : 0)} {L("篇文章", locale)}</p>
+          <p className="mb-2 font-mono text-sm text-[var(--p-secondary)]">{L(isSeries ? "系列目录 · 按顺序阅读" : "择校专题", locale)} · {articles.length + (core ? 1 : 0)} {L("篇文章", locale)}</p>
           <h1 className="m-0 font-serif text-[clamp(32px,5vw,48px)] font-bold leading-tight text-[var(--p-fg)]">{L(cluster.title, locale)}</h1>
           <p className="mb-0 mt-4 text-base leading-relaxed text-[var(--p-secondary)] md:text-lg">{L(cluster.description, locale)}</p>
           <p className="mb-0 mt-4 rounded-lg bg-[var(--p-bg-yellow)] p-4 text-sm leading-relaxed text-[var(--p-fg)]">
@@ -36,7 +37,24 @@ export default function BlogClusterPage({ cluster, locale }: { cluster: BlogClus
           </p>
         </header>
 
-        {core && (
+        {isSeries && (
+          <section className="mt-8" aria-labelledby="series-directory-heading">
+            <h2 id="series-directory-heading" className="font-serif text-2xl font-bold">{L("从选校到入学，按三篇阅读", locale)}</h2>
+            <ol className="grid gap-4 p-0">
+              {clusterArticles(cluster).map((entry, index) => (
+                <li key={entry.slug} className="list-none">
+                  <a href={localeHref(`/blog/${entry.slug}`, locale)} className="block rounded-xl border border-[var(--p-gray-300)] p-5 text-[var(--p-fg)] no-underline hover:bg-[var(--p-bg-yellow)] focus-visible:outline-2 focus-visible:outline-offset-2">
+                    <span className="text-sm text-[var(--p-secondary)]">{L("第", locale)} {index + 1} {L("篇", locale)} / {cluster.articleSlugs.length}</span>
+                    <h3 className="mb-0 mt-2 font-serif text-xl font-bold">{titleFor(entry, locale)}</h3>
+                    <p className="mb-0 mt-2 text-sm leading-relaxed text-[var(--p-secondary)]">{L(locale === "sc" && entry.scTease ? entry.scTease : entry.tease, locale)}</p>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
+
+        {!isSeries && core && (
           <section className="mt-8" aria-labelledby="cluster-core-heading">
             <h2 id="cluster-core-heading" className="font-serif text-2xl font-bold text-[var(--p-fg)]">{L("先读核心指南", locale)}</h2>
             <a href={localeHref(`/blog/${core.slug}`, locale)} className="block rounded-xl border-2 border-[var(--p-fg)] p-5 text-[var(--p-fg)] no-underline hover:bg-[var(--p-bg-yellow)]">
@@ -47,7 +65,7 @@ export default function BlogClusterPage({ cluster, locale }: { cluster: BlogClus
           </section>
         )}
 
-        {cluster.slug === "kindergarten-interviews" ? (
+        {!isSeries && (cluster.slug === "kindergarten-interviews" ? (
           <KindergartenInterviewIndex items={articles} locale={locale} />
         ) : articles.length > 0 && (
           <section className="mt-9" aria-labelledby="cluster-supporting-heading">
@@ -61,7 +79,7 @@ export default function BlogClusterPage({ cluster, locale }: { cluster: BlogClus
               ))}
             </ul>
           </section>
-        )}
+        ))}
 
         <p className="mt-10 border-t border-[var(--p-gray-300)] pt-5 text-sm text-[var(--p-secondary)]">
           {L("相关制度、收费和招生安排会按学年更新。涉及申请资格、日期或金额时，请打开文章核对资料日期，并以教育局及学校当届公告为准。", locale)}
