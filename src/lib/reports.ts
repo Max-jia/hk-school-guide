@@ -81,6 +81,9 @@ function reportScope(d: ReportData): string {
 
 /** 搜索摘要使用报告类型和用户关心的主题生成，避免从免责声明或表格表头硬截文字。 */
 export function makeReportDescription(d: ReportData, locale: Locale): string {
+  if (d.slug === "alliance") {
+    return L("宣道幼稚园英粤双语半日班，2026/27年费HK$41,000。校方2025/26届升小分布显示32%入读宣道小学；这是毕业去向占比，非报考录取率。另核对宣幼组面试及2027/28 K1招生。", locale);
+  }
   if (d.slug === "hkbaptist") {
     return L("香港浸信會聯會小學位於荃灣62小一校網。報告整理小班及數學分組、小一收生和升中選校，分清小一校網與中學派位網。", locale);
   }

@@ -8401,34 +8401,92 @@ dgjs: [
   ],
 alliance: [
     {
-      label: "教育局《幼稚园概览2026/27》：宣道幼稚园",
-      url: "https://kgp2026.kindergartenprofile.com/school/?schid=1388350003",
-      scope: "核对注册学校身份、办学类别、2026/27收费及2025年9月在读和师生比例；师生比例不代表每班人数。",
-      sourceType: "school-profile",
-      academicYear: "2026/27；统计时点为2025年9月",
-      checkedOn: "2026-10-29",
+      "label": "教育局2026/27幼稚园概览：宣道幼稚园",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=1388350003",
+      "scope": "核对学校身份、2026/27收费、课程与持续观察评估；师生比例及无2至3岁服务为2025年9月快照，不是班额或永久PN政策。",
+      "sourceType": "school-profile",
+      "academicYear": "2026/27；部分统计截至2025年9月",
+      "checkedOn": "2026-11-04"
     },
     {
-      label: "教育局2026/27收费证明：宣道幼稚园",
-      url: "https://applications.edb.gov.hk/schoolsearch/schoolfee/138835.pdf",
-      scope: "核对半日班年费HK$41,000（HK$4,100×10期）；不用于推断升小学录取结果。",
-      sourceType: "government",
-      academicYear: "2026/27",
-      checkedOn: "2026-10-29",
+      "label": "教育局收费证明书：宣道幼稚园",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/138835.pdf",
+      "scope": "直接打开现行PDF核对2026-09-01生效的K1至K3上午及下午班HK$4,100×10期，全年HK$41,000；不是2027/28报价。",
+      "sourceType": "government",
+      "academicYear": "2026/27",
+      "checkedOn": "2026-11-04"
     },
     {
-      label: "宣道幼稚园校方网页",
-      url: "https://www.ktak.edu.hk/",
-      scope: "核对幼稚园校方资料及招生入口；幼稚园升小学逐届毕业分母、最终注册数和录取率未公开。",
-      sourceType: "school-official",
-      checkedOn: "2026-10-29",
+      "label": "宣道幼稚园：2025/26届毕业生升小分布原图",
+      "url": "https://www.ktak.edu.hk/wp-content/uploads/2026/08/升小-scaled.png",
+      "scope": "人工读校方图片：宣道小学32%、津贴40%、其他私立18%、直资9%、海外1%；另列音乐小学3.2%、喇沙3%及其他去向。没有毕业生总人数、申请及录取人数，不推算申请成功率；同一比例档下学校不当作该组合计。",
+      "sourceType": "school-official",
+      "academicYear": "2025/26毕业届",
+      "checkedOn": "2026-11-04"
     },
     {
-      label: "九龙塘宣道小学校方网页",
-      url: "https://www.apskt.edu.hk/",
-      scope: "仅核对小学身份与地址；小学的中学去向不用于评估幼稚园升小学结果。",
-      sourceType: "school-official",
-      checkedOn: "2026-10-29",
+      "label": "宣道幼稚园：升小派位页",
+      "url": "https://www.ktak.edu.hk/電子相簿/",
+      "scope": "核对校方页面嵌入的2025/26届升小图；纯文字抽取遗漏图片不代表没有升学数据。",
+      "sourceType": "school-official",
+      "academicYear": "2025/26毕业届",
+      "checkedOn": "2026-11-04"
+    },
+    {
+      "label": "宣道幼稚园：2027/28收生简介",
+      "url": "https://www.ktak.edu.hk/收生簡介/",
+      "scope": "逐张读取2026/08招生图片核对出生范围、9月17日至10月6日报名、10月16日前通知、11月19或20日面见、12月4日结果、40元报名费、材料与四类准则；关联员工背景不扩大为所有基督徒。页面英文副标题残留2026/27。插班段落明确仅2026/27，不能自动套用新学年。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28 K1；2026/27 K2/K3插班",
+      "checkedOn": "2026-11-04"
+    },
+    {
+      "label": "宣道幼稚园：英语计划",
+      "url": "https://www.ktak.edu.hk/課程簡介/英語計劃/",
+      "scope": "直接读取双语班图片21.png，确认全校英粤双语；322.png展示phonics、游戏及Show and Tell，不由照片推断每周课时、比例、程度或教师配置。",
+      "sourceType": "school-official",
+      "academicYear": "现行网页；未标学年",
+      "checkedOn": "2026-11-04"
+    },
+    {
+      "label": "宣道幼稚园：课程简介",
+      "url": "https://www.ktak.edu.hk/課程簡介/課程簡介/",
+      "scope": "核对以儿童为本、主题及全人发展方向；不沿用匿名帖的课程浅、每周一堂英文、固定功课量等说法。",
+      "sourceType": "school-official",
+      "academicYear": "现行网页；未标学年",
+      "checkedOn": "2026-11-04"
+    },
+    {
+      "label": "宣道幼稚园：办学团体",
+      "url": "https://www.ktak.edu.hk/學校資料/",
+      "scope": "核对1959年创校、香港九龙塘基督教中华宣道会主办、私立非牟利半日制；不把登记日期当创校日期。",
+      "sourceType": "school-official",
+      "academicYear": "现行网页；未标学年",
+      "checkedOn": "2026-11-04"
+    },
+    {
+      "label": "宣道幼稚园：授课时间",
+      "url": "https://www.ktak.edu.hk/學校資料/學校簡介/",
+      "scope": "读取授课时间图：星期一至五，上午08:45–11:45、下午13:30–16:30。",
+      "sourceType": "school-official",
+      "academicYear": "现行网页；未标学年",
+      "checkedOn": "2026-11-04"
+    },
+    {
+      "label": "九龙塘宣道小学：2027/28小一申请",
+      "url": "https://www.apskt.edu.hk/application.php",
+      "scope": "核对9月1日至15日报名、10月2日宣幼面试、10月23/24日公开组、11月27日两组取录及备取通知、12月4日注册；约168为全级学额，不是宣幼预留名额。单独面试不证明免试直升、保证取录或加分权重。",
+      "sourceType": "school-official",
+      "academicYear": "2027/28",
+      "checkedOn": "2026-11-04"
+    },
+    {
+      "label": "九龙塘宣道小学：办学资料",
+      "url": "https://www.apskt.edu.hk/apskt.php",
+      "scope": "核对与幼稚园同属香港九龙塘基督教中华宣道会及同址；课程衔接和录取优势须另有证据。",
+      "sourceType": "school-official",
+      "academicYear": "现行网页；未标学年",
+      "checkedOn": "2026-11-04"
     },
   ],
 "braemar-hill": [
