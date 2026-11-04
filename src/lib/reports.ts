@@ -96,14 +96,20 @@ export function makeReportDescription(d: ReportData, locale: Locale): string {
   if (d.slug === "spk") {
     return L("聖保祿幼稚園（SPK）位於灣仔區銅鑼灣禮頓道140B號。查看2026/27學費HK$34,050、半日制、K1至K3及不設PN；報告亦說明升讀小學的公開資料與仍須向校方確認的條件。", locale);
   }
+  if (d.slug === "mcs") {
+    return L("瑪利諾修院學校小學部（Maryknoll Convent School Primary Section，MCS）深度報告：整理小一收生、學費、教學語言及直屬中學安排，並說明直屬保留學額的適用條件；保留比例不等於實際升讀率。", locale);
+  }
+  if (d.slug === "plkcastar") {
+    return L("HKCA PLK（保良局建造商會學校）深度報告：核對 IB PYP 課程、英語教學、收生及升學路徑，說明學校沒有直屬中學，並整理適合家庭與需要考慮的課程銜接。", locale);
+  }
+  if (d.slug === "rcps") {
+    return L("高主教書院小學部（RCPS）深度報告：整理學費、課程、小一收生及升中去向，解釋與高主教書院的直屬關係及其適用條件；直屬不等於一條龍或保證升讀。", locale);
+  }
   if (d.slug === "dbs") {
     return L("拔萃男書院附屬小學深度報告：了解小一收生、一條龍升中及非官方Banding參考；2026/27本地生全年學費HK$60,630，以校方公告為準。", locale);
   }
   if (d.slug === "spcs") {
     return L("聖保祿學校（小學部）深度報告：核對2026/27學費 HK$55,000、英文教學、小一收生，以及校方所稱的小學至中學銜接安排；實際升中條件需向校方確認。", locale);
-  }
-  if (d.slug === "mcs") {
-    return L("整理瑪利諾修院學校（小學部）MCS 的課程、小一收生、教學語言、學費及直屬中學安排，附家庭適配分析與申請前核對事項。", locale);
   }
   if (d.slug === "dgjs") {
     return L("拔萃女小學 DGJS 深度報告：2026/27 學費全年 HK$94,000，另看小一申請、英語教學及拔萃女書院升學安排。收費和招生以校方當屆公布為準。", locale);
@@ -212,7 +218,9 @@ export function reportTitle(d: ReportData, locale: Locale): string {
   if (d.slug === "canaan") return L("迦南幼稚園深度报告｜分校比較、升小去向與入學｜港學薈", locale);
   if (d.slug === "spk") return L("SPK在哪一區？聖保祿幼稚園銅鑼灣校址、學費與升小｜港學薈", locale);
   if (d.slug === "spcs") return L("聖保祿學校（小學部）深度报告｜2026/27學費、小一入學與升中｜港學薈", locale);
-  if (d.slug === "mcs") return L("瑪利諾修院學校（小學部）MCS 深度报告｜小一入學與升中｜港學薈", locale);
+  if (d.slug === "mcs") return L("Maryknoll Convent School（MCS）｜瑪利諾修院學校小學部收生與升中｜港學薈", locale);
+  if (d.slug === "plkcastar") return L("HKCA PLK 保良局建造商會學校｜課程、收生與升學｜港學薈", locale);
+  if (d.slug === "rcps") return L("高主教書院小學部 RCPS｜收生、升中去向與學費｜港學薈", locale);
   if (d.slug === "dgjs") return L("拔萃女小學 DGJS 深度报告｜学费、小一入学与升中｜港学荟", locale);
   if (d.slug === "hkups") return L("港大同學會小學深度报告｜學費、小一收生與升中｜港學薈", locale);
   if (d.slug === "spccps") return L("聖保羅男女中學附屬小學深度報告｜小一收生、課程與升中｜港學薈", locale);

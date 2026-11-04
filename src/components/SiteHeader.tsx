@@ -129,7 +129,7 @@ export default function SiteHeader({ locale = "tc", compact = false }: { locale?
             {L("港学荟", locale)}
           </span>
           <span className="mt-1 whitespace-nowrap text-xs font-bold tracking-[0.08em] text-[var(--p-secondary)]">
-            香港教育规划第一站
+            {L("香港学校资料与升学规划", locale)}
           </span>
         </a>
         <nav className="flex items-center gap-2 md:flex-wrap md:gap-3" aria-label={L("主要服務", locale)}>

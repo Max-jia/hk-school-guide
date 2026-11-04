@@ -9,52 +9,23 @@ import FeaturedTools from "@/components/home/FeaturedTools";
 import CoverageTrustNote from "@/components/home/CoverageTrustNote";
 import PlanningAnalytics from "@/components/PlanningAnalytics";
 import { L, type Locale } from "@/lib/i18n";
-import { SITE_URL } from "@/lib/seo";
-
-function webJsonLd(locale: Locale) {
-  const organizationId = `${SITE_URL}/#organization`;
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": organizationId,
-        name: L("港学荟", locale),
-        alternateName: L("港學薈", locale),
-        url: SITE_URL,
-        description: L(
-          "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具。",
-          locale
-        ),
-        knowsAbout: [
-          L("香港幼稚园、小学与中学资料", locale),
-          "DSE",
-          "IB",
-          "A-Level",
-          L("小一入学与校网", locale),
-        ],
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${SITE_URL}/#website`,
-        name: L("港学荟", locale),
-        alternateName: L("香港升学择校平台", locale),
-        url: SITE_URL,
-        description: L(
-          "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具。",
-          locale
-        ),
-        publisher: { "@id": organizationId },
-      },
-    ],
-  };
-}
+import { jsonLdGraph, serializeJsonLd, webPageJsonLd } from "@/lib/structured-data";
 
 export default function Home({ locale = "tc" }: { locale?: Locale }) {
+  const homeDescription = L("按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具。", locale);
+  const homeJsonLd = jsonLdGraph(locale, [
+    webPageJsonLd({
+      path: "/",
+      title: L("香港学校资料与升学规划｜港学荟", locale),
+      description: homeDescription,
+      locale,
+    }),
+  ]);
+
   return (
     <Localize locale={locale}>
     <main className="w-full">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webJsonLd(locale)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(homeJsonLd) }} />
       {/* header（原站：tagline + wordmark 旋转 + 贴纸按钮 + menu 面板） */}
       <SiteHeader locale={locale} />
       <PlanningAnalytics surface="home" />
