@@ -1,0 +1,7 @@
+{
+  "articles": 10,
+  "h2": 50,
+  "local_navigation": "pass",
+  "required_terms_retained": 40,
+  "visual_review": "未完成：浏览器工具拒绝file协议，已改用本地HTML结构检查，未尝试绕过限制。"
+}

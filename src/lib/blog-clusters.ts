@@ -9,10 +9,117 @@ export type BlogCluster = {
   intent: string;
   coreSlug: string;
   articleSlugs: string[];
+  sections?: { title: string; clusterSlug: string; articleSlugs: string[] }[];
 };
 
 /** Editorial topic hubs. Keep membership deliberate; broad category labels are not a substitute for a cluster. */
 export const BLOG_CLUSTERS: BlogCluster[] = [
+{
+  "slug": "k12-terminology",
+  "kind": "series",
+  "title": "香港教育术语与黑话指南",
+  "description": "10篇文章按幼稚园、小学、中学和新来港家庭分类，解释术语含义、对家庭的影响和可采取的行动。可从头连续阅读，也可直接进入所属阶段。",
+  "intent": "初次接触香港教育，或需要查明具体术语及申请条件的家庭",
+  "coreSlug": "hk-kg-terminology-types",
+  "articleSlugs": [
+    "hk-kg-terminology-types",
+    "hk-kg-terminology-admissions",
+    "hk-primary-terminology-system",
+    "hk-primary-terminology-admissions",
+    "hk-primary-terminology-learning",
+    "hk-secondary-terminology-pathways",
+    "hk-secondary-terminology-admissions",
+    "hk-secondary-terminology-subjects",
+    "hk-secondary-terminology-dse",
+    "hk-new-arrival-terminology"
+  ],
+  "sections": [
+    {
+      "title": "幼稚园",
+      "clusterSlug": "k12-terminology-kg",
+      "articleSlugs": [
+        "hk-kg-terminology-types",
+        "hk-kg-terminology-admissions"
+      ]
+    },
+    {
+      "title": "小学",
+      "clusterSlug": "k12-terminology-primary",
+      "articleSlugs": [
+        "hk-primary-terminology-system",
+        "hk-primary-terminology-admissions",
+        "hk-primary-terminology-learning"
+      ]
+    },
+    {
+      "title": "中学",
+      "clusterSlug": "k12-terminology-secondary",
+      "articleSlugs": [
+        "hk-secondary-terminology-pathways",
+        "hk-secondary-terminology-admissions",
+        "hk-secondary-terminology-subjects",
+        "hk-secondary-terminology-dse"
+      ]
+    },
+    {
+      "title": "新来港家庭",
+      "clusterSlug": "k12-terminology-new-arrivals",
+      "articleSlugs": [
+        "hk-new-arrival-terminology"
+      ]
+    }
+  ]
+},
+{
+  "slug": "k12-terminology-kg",
+  "kind": "series",
+  "title": "幼稚园术语与黑话",
+  "description": "从学校分类读到班级、年龄和注册安排，说明这些名称对家长选择有什么影响。",
+  "intent": "需要查阅幼稚园常见术语、判断申请及选校条件的家庭",
+  "coreSlug": "hk-kg-terminology-types",
+  "articleSlugs": [
+    "hk-kg-terminology-types",
+    "hk-kg-terminology-admissions"
+  ]
+},
+{
+  "slug": "k12-terminology-primary",
+  "kind": "series",
+  "title": "小学术语与黑话",
+  "description": "按学校制度、申请录取和日常学习阅读，弄清小一派位与学习评估的区别。",
+  "intent": "需要查阅小学常见术语、判断申请及选校条件的家庭",
+  "coreSlug": "hk-primary-terminology-system",
+  "articleSlugs": [
+    "hk-primary-terminology-system",
+    "hk-primary-terminology-admissions",
+    "hk-primary-terminology-learning"
+  ]
+},
+{
+  "slug": "k12-terminology-secondary",
+  "kind": "series",
+  "title": "中学术语与黑话",
+  "description": "从呈分与升中衔接读到中学申请、高中选科、DSE和大学申请。",
+  "intent": "需要查阅中学常见术语、判断申请及选校条件的家庭",
+  "coreSlug": "hk-secondary-terminology-pathways",
+  "articleSlugs": [
+    "hk-secondary-terminology-pathways",
+    "hk-secondary-terminology-admissions",
+    "hk-secondary-terminology-subjects",
+    "hk-secondary-terminology-dse"
+  ]
+},
+{
+  "slug": "k12-terminology-new-arrivals",
+  "kind": "series",
+  "title": "新来港家庭术语与黑话",
+  "description": "理解插班、年级安排、受养人身份和语言适应，准备当前入学及家庭远期规划。",
+  "intent": "需要查阅新来港家庭常见术语、判断申请及选校条件的家庭",
+  "coreSlug": "hk-new-arrival-terminology",
+  "articleSlugs": [
+    "hk-new-arrival-terminology"
+  ]
+},
   {
     slug: "kg-system",
     "kind": "series",

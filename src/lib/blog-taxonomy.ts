@@ -1,11 +1,22 @@
 import { coreGuideForArticle } from "./core-guides";
 
-export type BlogStage = "kg" | "primary" | "secondary" | "both";
+export type BlogStage = "kg" | "primary" | "secondary" | "both" | "new-arrivals";
 export type BlogTopic = "admissions" | "fees" | "schools" | "comparison" | "practical";
 
 // Editorial classification is explicit so a school name or a translated title
 // cannot silently put an article in the wrong parent-facing filter.
 const STAGES: Record<string, BlogStage> = {
+  "hk-kg-terminology-types": "kg",
+  "hk-kg-terminology-admissions": "kg",
+  "hk-primary-terminology-system": "primary",
+  "hk-primary-terminology-admissions": "primary",
+  "hk-primary-terminology-learning": "primary",
+  "hk-secondary-terminology-pathways": "secondary",
+  "hk-secondary-terminology-admissions": "secondary",
+  "hk-secondary-terminology-subjects": "secondary",
+  "hk-secondary-terminology-dse": "secondary",
+  "hk-new-arrival-terminology": "new-arrivals",
+
   "hk-kg-system-1": "kg",
   "hk-kg-system-2": "kg",
   "hk-kg-system-3": "kg",
@@ -130,6 +141,17 @@ const STAGES: Record<string, BlogStage> = {
 };
 
 const TOPICS: Partial<Record<string, BlogTopic>> = {
+  "hk-kg-terminology-types": "practical",
+  "hk-kg-terminology-admissions": "practical",
+  "hk-primary-terminology-system": "practical",
+  "hk-primary-terminology-admissions": "practical",
+  "hk-primary-terminology-learning": "practical",
+  "hk-secondary-terminology-pathways": "practical",
+  "hk-secondary-terminology-admissions": "practical",
+  "hk-secondary-terminology-subjects": "practical",
+  "hk-secondary-terminology-dse": "practical",
+  "hk-new-arrival-terminology": "practical",
+
   "hk-kg-system-1": "practical",
   "hk-kg-system-2": "admissions",
   "hk-kg-system-3": "practical",
@@ -234,6 +256,7 @@ export const BLOG_STAGE_LABELS: Record<BlogStage, string> = {
   primary: "小学",
   secondary: "中学",
   both: "综合",
+  "new-arrivals": "新来港家庭",
 };
 
 export const BLOG_TOPIC_LABELS: Record<BlogTopic, string> = {

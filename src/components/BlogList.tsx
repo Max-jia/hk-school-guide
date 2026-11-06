@@ -82,7 +82,7 @@ export default function BlogList({ locale = "tc" }: { locale?: Locale }) {
     const search = normalize(query);
     const terms = search.split(" ").filter(Boolean);
     return POSTS.filter((post) => {
-      if (stage !== "all" && blogStage(post.slug) !== stage && blogStage(post.slug) !== "both") return false;
+      if (stage !== "all" && blogStage(post.slug) !== stage && (stage === "new-arrivals" || blogStage(post.slug) !== "both")) return false;
       if (topic !== "all" && blogTopic(post.slug) !== topic) return false;
       if (terms.length === 0) return true;
       const haystack = normalize([
@@ -147,7 +147,7 @@ export default function BlogList({ locale = "tc" }: { locale?: Locale }) {
             <div>
               <p className="mb-2 text-sm font-bold text-[var(--p-fg)]">{L("孩子读哪个阶段？", locale)}</p>
               <div className="flex flex-wrap gap-2">
-                {(["all", "kg", "primary", "secondary", "both"] as const).map((value) => (
+                {(["all", "kg", "primary", "secondary", "new-arrivals", "both"] as const).map((value) => (
                   <button key={value} type="button" aria-pressed={stage === value} onClick={() => setStage(value)}
                     className={"rounded-full border px-3 py-1.5 text-sm " + (stage === value ? "border-[var(--p-fg)] bg-[var(--p-fg)] text-[var(--p-bg)]" : "border-[var(--p-gray-300)] bg-[var(--p-bg)] text-[var(--p-fg)] hover:border-[var(--p-fg)]")}>
                     {L(value === "all" ? "全部" : BLOG_STAGE_LABELS[value], locale)}

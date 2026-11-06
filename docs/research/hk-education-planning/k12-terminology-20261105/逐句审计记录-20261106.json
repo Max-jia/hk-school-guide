@@ -1,0 +1,3249 @@
+[
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 5,
+    "sentence": 1,
+    "original": "“非牟利”“学券园”“国际”“双语”“全日”经常同时出现在一所幼稚园的介绍里。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 5,
+    "sentence": 2,
+    "original": "它们分别回答谁办学、有没有资助、教什么、用什么语言和照顾多久，不能混成一张互相排斥的学校名单。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "教育局将香港幼稚园按办学性质分为**非牟利幼稚园**和**私立独立幼稚园**。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 9,
+    "sentence": 2,
+    "original": "香港幼稚园全属私营，由志愿团体或私人开办；幼稚园不能直接套用小学的“官立、津贴、直资、私立”分类。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 9,
+    "sentence": 3,
+    "original": "[教育局幼稚园概览](https://www.edb.gov.hk/sc/edu-system/preprimary-kindergarten/overview/index.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 11,
+    "sentence": 1,
+    "original": "**非牟利**指机构的营办性质，并非“学费为零”或“政府开办”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 11,
+    "sentence": 2,
+    "original": "教育局对参加幼稚园教育计划学校的非牟利资格另有规定，例如按《税务条例》获豁免缴税的机构或其获认可附属机构。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 11,
+    "sentence": 3,
+    "original": "看见教会、慈善或社福团体名称，仍要核对该校登记及资助资料。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**私立独立**是另一种登记类别，通常靠学费等收入营办；不是小学的“直资”，也不意味着必然采用国际课程、英文教学或拥有更高教学水平。",
+    "findings": [
+      {
+        "type": "定义不足",
+        "reason": "未给出类别名称与对家庭的实际意义。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 13,
+    "sentence": 2,
+    "original": "学校的收费、课程和语言须逐项查看。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "**怎么选：**办学性质可帮助了解治理和资助背景，判断孩子是否适合，则需继续看课程、教师支持、实际费用和家庭安排。",
+    "findings": [
+      {
+        "type": "结构重复",
+        "reason": "反复出现同一种提示句，集中改成文件或比较字段。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "**计划园**是参加现行“幼稚园教育计划”的学校；**非计划园**是没有参加该计划的学校。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 19,
+    "sentence": 2,
+    "original": "参加计划须符合非牟利等要求，但非牟利学校并不全部参加计划。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 21,
+    "sentence": 1,
+    "original": "**券园、学券园、非券园**是家长沿用旧学券制度的说法。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 21,
+    "sentence": 2,
+    "original": "遇到这些词，应转而核对学校当年是否参加现行计划，不能据旧名称判断今天的资格和学费。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "**免费幼稚园**通常是对参加计划且获足额资助的半日课程的简称。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "计划旨在提供基本免费的优质半日教育，但部分学校经批准仍收学费，全日或长全日课程也可能需要缴费。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 23,
+    "sentence": 3,
+    "original": "校服、书本、膳食、校车等另需核实；学校参加计划，也不等于每位申请儿童自动符合资助条件。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 23,
+    "sentence": 4,
+    "original": "[教育局计划实施问答](https://www.edb.gov.hk/attachment/sc/edu-system/preprimary-kindergarten/free-quality-kg-edu/FAQ_KG%20Scheme_20241113_SC.pdf)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 25,
+    "sentence": 1,
+    "original": "**怎么选：**问学校“我们孩子这学年的资助资格、扣资助后学费、其他必付费用和全年总额分别是多少”，比只问“是不是免费”有用。",
+    "findings": [
+      {
+        "type": "结构重复",
+        "reason": "反复出现同一种提示句，集中改成文件或比较字段。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 29,
+    "sentence": 1,
+    "original": "**本地课程**通常按香港幼稚园课程框架设计，学校仍有校本安排；它不表示一定只用粤语，也不表示必然以操练为主。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 29,
+    "sentence": 2,
+    "original": "**非本地课程**指采用不同于本地课程的课程安排，须看学校获准提供的具体课程资料。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 31,
+    "sentence": 1,
+    "original": "**国际幼稚园**是常见描述，不能单凭名称推断课程、教师、语言比例或升学去向。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 31,
+    "sentence": 2,
+    "original": "读“国际”幼稚园也不保证国际小学学位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 33,
+    "sentence": 1,
+    "original": "**IB（International Baccalaureate，国际文凭）**是一组教育项目；幼小阶段可能涉及**PYP（Primary Years Programme，小学项目，覆盖相关幼儿年龄阶段）**，高中阶段的IBDP则是另一项目。",
+    "findings": [
+      {
+        "type": "范围含糊",
+        "reason": "PYP年龄范围应具体写明。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 33,
+    "sentence": 2,
+    "original": "[IB官方PYP及授权说明](https://ibo.org/programmes/primary-years-programme/become-a-pyp-school/)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 33,
+    "sentence": 3,
+    "original": "不能把所有探究学习或双语课程都叫IB；需查学校的项目授权及所涉校区、学段，候选学校身份也不等于已经获授权。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "**蒙特梭利（Montessori）、瑞吉欧（Reggio Emilia）、华德福（Waldorf）**是教育方法或理念标签，不是香港办学资助类别。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "学校如何实践、教师是否受训、课堂是否符合孩子需要，要看具体证据；挂同一名称的学校做法可能不同。",
+    "findings": [
+      {
+        "type": "解释空泛",
+        "reason": "未说明要看什么证据。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 37,
+    "sentence": 1,
+    "original": "**怎么选：**先问未来偏向本地还是其他小学课程，再检查当前课程能否帮助孩子发展语言、自理、社交和学习兴趣；幼儿阶段也可保留转向空间。",
+    "findings": [
+      {
+        "type": "结构重复",
+        "reason": "反复出现同一种提示句，集中改成文件或比较字段。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 41,
+    "sentence": 1,
+    "original": "**中英文幼稚园、英文幼稚园、双语幼稚园**是常见校名或语言描述，名称不直接说明每天用什么语言。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 41,
+    "sentence": 2,
+    "original": "**两文三语**通常指中文、英文书面语，以及粤语、普通话、英语口语；不表示三种语言平均分配时间。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 43,
+    "sentence": 1,
+    "original": "**NET**通常指以英语为母语的英语教师或相关教师称谓；具体资格、聘用安排及课堂角色应向学校查询。",
+    "findings": [
+      {
+        "type": "指令泛化",
+        "reason": "改成教师每周入班时数及职责。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 43,
+    "sentence": 2,
+    "original": "民间说“有NET”，不等于每班每天有外籍教师全程带班，也不能只凭教师国籍判断教学质量。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 45,
+    "sentence": 1,
+    "original": "**怎么选：**索取一周课程表，问清主班、英语及普通话活动各占多少时间，孩子听不懂时如何支持，以及家校沟通可使用什么语言。",
+    "findings": [
+      {
+        "type": "结构重复",
+        "reason": "反复出现同一种提示句，集中改成文件或比较字段。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 49,
+    "sentence": 1,
+    "original": "**AM／上午班、PM／下午班**通常是半日班的不同时段。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 49,
+    "sentence": 2,
+    "original": "AM不是官方更优等级；要结合午睡、校车和照顾安排选择。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 51,
+    "sentence": 1,
+    "original": "**全日班（whole-day）**一般涵盖较长的在校时段，可能包括午膳及午睡，但具体起止、膳食和假期安排由学校说明。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 51,
+    "sentence": 2,
+    "original": "**长全日（long whole-day）**侧重更长时间的教育及照顾服务，不能只凭“全日”二字判断是否覆盖父母工时。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 53,
+    "sentence": 1,
+    "original": "**延长时间服务**是部分机构提供的常规时段外照顾；**暂托**是为临时照顾需要提供的服务。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 53,
+    "sentence": 2,
+    "original": "并非每校都有，名额、适用年龄、收费和申请条件需另外查询。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 53,
+    "sentence": 3,
+    "original": "[社署幼儿中心服务](https://www.swd.gov.hk/tc/pubsvc/family/cat_childcareservice/daychildcares/cccs/index.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 55,
+    "sentence": 1,
+    "original": "**怎么选：**画出每天从出门到接回家的时间，连校车、学校假期及接送缓冲一起计算，再比较费用。",
+    "findings": [
+      {
+        "type": "结构重复",
+        "reason": "反复出现同一种提示句，集中改成文件或比较字段。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 59,
+    "sentence": 1,
+    "original": "**幼稚园**主要提供三至六岁儿童的幼稚园教育；**幼儿中心**提供幼儿照顾服务，具体收托年龄和服务须看登记及机构公告。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 59,
+    "sentence": 2,
+    "original": "**幼稚园暨幼儿中心（KG-cum-CCC）**结合两种服务，相关班级可能涉及不同登记、收费及资助安排。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 61,
+    "sentence": 1,
+    "original": "所以“这所学校有幼儿中心”不等于所有校区都收两岁儿童；也不能以K1的资助规则估算PN费用。",
+    "findings": [
+      {
+        "type": "跨段重复",
+        "reason": "与PN解释重复，保留校区和资助差别。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 61,
+    "sentence": 2,
+    "original": "申请PN先问清校区是否有相应班级、孩子入读时能否达龄，以及是否另需申请K1。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 65,
+    "sentence": 1,
+    "original": "**英基（ESF）**是英基学校协会（English Schools Foundation）的简称，是办学机构名称；英基幼稚园是其学校体系的一部分。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 65,
+    "sentence": 2,
+    "original": "具体课程和升小安排按该校区及学年确认，不能把它当作所有国际幼稚园的统称。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 67,
+    "sentence": 1,
+    "original": "**集团园／连锁园**通常指同一机构经营多个校区；同品牌的课程、教师、收费和升学衔接可能不同，申请时需看具体校区。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 69,
+    "sentence": 1,
+    "original": "**屋邨园／屋村园、地区园**通常是家长对位于屋邨或服务附近社区学校的称呼，不是官方质量等级。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 69,
+    "sentence": 2,
+    "original": "就近接送和稳定的社交环境可以是优势；不能凭位置推断教学差或升学机会少。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 71,
+    "sentence": 1,
+    "original": "**宗教幼稚园**描述办学背景及可能的宗教活动，不直接等于非牟利、免费或保证进入同宗教小学。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 71,
+    "sentence": 2,
+    "original": "**龙校幼稚园**描述民间理解的升学联系，是否直升仍需书面核实。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 71,
+    "sentence": 3,
+    "original": "**神幼、名幼、Happy School、学术型**则是口碑或教学风格标签，详见下一篇。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 75,
+    "sentence": 1,
+    "original": "假设学校资料写着“非牟利、参加计划、本地课程、两文三语、全日、幼稚园暨幼儿中心”，意思是：非牟利描述性质，参加计划描述资助，本地描述课程，两文三语描述语言，全日描述时段，暨幼儿中心描述服务组合。",
+    "findings": [
+      {
+        "type": "有用示例",
+        "reason": "保留为明确的分类演示，不冒充真实学校。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 75,
+    "sentence": 2,
+    "original": "它们可以同时成立；是否有PN、孩子能否获资助、实际学费和能否直升小学，仍需分别核实。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 75,
+    "sentence": 3,
+    "original": "这里是分类示例，不代表某所真实学校。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "00-幼稚园分类与选校.md",
+    "line": 77,
+    "sentence": 1,
+    "original": "下一步，把目标学校按以上六个维度列成表，每校补上全年总费用、通勤、报名时间及小学衔接条件，再作取舍。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 5,
+    "sentence": 1,
+    "original": "香港幼稚园由学校自行招生。",
+    "findings": [
+      {
+        "type": "导语重复",
+        "reason": "后文已有具体程序，可缩短。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 5,
+    "sentence": 2,
+    "original": "家长常听到的“神幼”“龙校”和“大B”不是教育局给学校或孩子的官方等级，理解它们之前，先看孩子报什么班、何时符合年龄、家庭希望小学走哪条路。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "**PG（Playgroup，游戏小组）**一般是幼儿和照顾者一起参加的活动，形式、入读月龄和陪同要求由机构规定；有的从婴儿阶段开班，有的面向较大幼儿。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 9,
+    "sentence": 2,
+    "original": "它不是幼稚园必读课程。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 9,
+    "sentence": 3,
+    "original": "个别机构可能给现有学员申请下一阶段时提供机会，但参加PG不等于获得PN或K1学位，报名前要问清是否有书面优先政策、名额及费用。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 11,
+    "sentence": 1,
+    "original": "**PN（Pre-Nursery）、N班、两岁班**通常指面向约两至三岁幼儿的班级，实际名称和安排因机构而异。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 11,
+    "sentence": 2,
+    "original": "选择时先核对该班的登记类别、入读年龄、上课时间和收费；PN不属于K1至K3幼稚园教育计划的资助范围。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 11,
+    "sentence": 3,
+    "original": "它可以帮助孩子适应群体生活，也可能方便家庭照顾，但不是申请K1的必备条件，更不能保证原校K1录取。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 11,
+    "sentence": 4,
+    "original": "问学校：“读完PN是否需要重新申请K1？",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 11,
+    "sentence": 5,
+    "original": "有多少名额、按什么条件录取？",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 11,
+    "sentence": 6,
+    "original": "”",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**K1、K2、K3**一般对应三至六岁儿童的幼稚园幼儿班、低班、高班，大致相当于内地小、中、大班。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 13,
+    "sentence": 2,
+    "original": "入学须符合最低年龄及校方具体规定。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 13,
+    "sentence": 3,
+    "original": "香港推行的幼稚园教育计划为符合条件的学校及学童提供资助：不少参加计划学校的半日班免费，但个别学校、全日班及其他费用仍可能收费，不能把“15年免费教育”理解为所有幼稚园课程无条件免费。",
+    "findings": [
+      {
+        "type": "跨篇重复",
+        "reason": "资助详解已有独立分类篇，本篇保留入口。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 13,
+    "sentence": 4,
+    "original": "具体看[教育局幼稚园教育计划](https://www.edb.gov.hk/sc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 17,
+    "sentence": 1,
+    "original": "**B是baby的简称。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 17,
+    "sentence": 2,
+    "original": "**香港家长通常按同一自然年出生的孩子比较：年初出生的常称大B，年末出生的常称细B；1—8月、9—12月只是常见口语划分，并非教育局统一标准。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 17,
+    "sentence": 3,
+    "original": "假设一届有2023年2月和11月出生的孩子，面试当日两人相差九个月，语言、专注和自理表现可能不同，但每个孩子发展速度不同，不能断言细B一定不会走路或说话，也不能仅凭月份预测结果。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "**超大B**通常指本可报读某一届，却延后一年入读，与下一届较小的孩子同班；具体称呼因人而异。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 19,
+    "sentence": 2,
+    "original": "例如2023年11月出生的孩子若比同年出生的同学晚一年入K1，家长可能这样称呼。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 19,
+    "sentence": 3,
+    "original": "是否获学校接受，取决于年龄和该校政策；延后亦会改变小学申请时间、费用和同伴相处。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 19,
+    "sentence": 4,
+    "original": "先核对目标K1与小一的年龄条件，观察孩子语言、自理、情绪和群体适应，再与学校讨论，不必只为了“赢面试”而延迟。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "**神幼**是家长对热门幼稚园的俗称，没有官方名单或统一排名。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "被称作“神幼”不代表适合所有孩子，也不能单凭名称判断小学录取率；要求学校提供有年份、毕业人数、实际入读人数及统计口径的资料，区分录取通知和最终入读。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 25,
+    "sentence": 1,
+    "original": "**龙校幼稚园**通常指与小学有同一办学团体或其他联系的幼稚园。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 25,
+    "sentence": 2,
+    "original": "名称相近不等于保证直升；幼稚园升小学也不能直接套用教育局小学升中“一条龙”规则。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 25,
+    "sentence": 3,
+    "original": "要问：是否必须另行申请和面试、有没有保留名额、录取依据、结果何时公布，以及接纳学位后对其他申请的影响。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 27,
+    "sentence": 1,
+    "original": "**Happy School（愉快学习）与学术型**是家长描述教学风格的口语，不是统一标准。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 27,
+    "sentence": 2,
+    "original": "“愉快学习”不必然没有功课，“学术型”也不代表只靠操练。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 27,
+    "sentence": 3,
+    "original": "比较课程表、作业样本、师生互动和学习支持，再结合孩子的睡眠、兴趣、语言与未来小学方向判断；学校标签本身无法证明升小结果。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 31,
+    "sentence": 1,
+    "original": "**Offer**是录取通知；**waiting list**是候补，通常不保证最终有位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 31,
+    "sentence": 2,
+    "original": "**求位信**是家长向学校表达仍有入读意愿；**叩门**常指正式招生或派位结果后主动向学校查询剩余学位，“叩门信”则是相关申请信。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 31,
+    "sentence": 3,
+    "original": "不同学校接收时间和方式不同，部分学校不接收额外材料。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 31,
+    "sentence": 4,
+    "original": "先查官网或致电，按要求简短交代申请资料及真实近况；不要相信一封信能取代规定的程序。",
+    "findings": [
+      {
+        "type": "态度替代动作",
+        "reason": "改为学校不接收时不另投材料。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "**RC（Registration Certificate，幼稚园入学注册证）**是符合规定的儿童入读参加计划幼稚园时使用的注册文件，也涉及资助资格，并非学校的录取通知。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "家长向教育局申请注册文件，同时按学校安排报名；两件事都要做。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 37,
+    "sentence": 1,
+    "original": "**AP（Admission Pass，幼稚园入学许可书）**适用于获发此类文件的儿童，用于有关注册安排；持AP儿童的资助待遇与持注册证儿童不同，不能把两者当作同一种资助证明。",
+    "findings": [
+      {
+        "type": "循环定义",
+        "reason": "未说明AP适用对象和全额学费后果。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 37,
+    "sentence": 2,
+    "original": "具体须按教育局对孩子的资格审核及文件说明处理。",
+    "findings": [
+      {
+        "type": "空泛指引",
+        "reason": "明确孩子资助资格及收费证明书。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 39,
+    "sentence": 1,
+    "original": "**统一注册日期**是相关收生安排规定的注册时段，不是统一招生或政府派学位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 39,
+    "sentence": 2,
+    "original": "学校自行决定录取，家长接到offer后仍须在规定时间办理注册；2027/28学年涉及电子注册文件及二维码，不能照搬旧文“把纸本注册证交给学校保管”的操作。",
+    "findings": [
+      {
+        "type": "编辑口吻",
+        "reason": "改为当年可操作的电子注册步骤。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 39,
+    "sentence": 3,
+    "original": "转校也要按当年程序取消原校注册后再办理新校注册。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 39,
+    "sentence": 4,
+    "original": "[教育局2027/28 K1收生安排](https://www.edb.gov.hk/sc/edu-system/preprimary-kindergarten/kindergarten-k1-admission-arrangements/2728_admission_arrangements.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 41,
+    "sentence": 1,
+    "original": "**报名费**是递交申请时的费用；**注册费／留位费**是获录取后确认学位时的费用，是否抵扣学费、放弃学位是否退回，须看适用规定及学校通知。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 41,
+    "sentence": 2,
+    "original": "不要把留位费视为可无限期保留多个学位的凭证。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 43,
+    "sentence": 1,
+    "original": "**正取／正选**通常指获正式取录；**后补／备取**通常对应候补；**call waiting／call位**是家长对学校联络候补补位的说法，是否按排名、何时通知及答复期限须问学校。",
+    "findings": [
+      {
+        "type": "前后重复",
+        "reason": "候补和正取说明集中到同一处。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 43,
+    "sentence": 2,
+    "original": "**first in／second in**通常指第一轮／第二轮面试，不表示所有学校都设多轮。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 43,
+    "sentence": 3,
+    "original": "收到通知后，记下提交文件及答复截止时间。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 47,
+    "sentence": 1,
+    "original": "列出孩子的出生日期、预计K1学年及每日照顾需要，再比较三至五所学校的年龄、学费、语言、申请时间与小学衔接政策。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "01-幼稚园.md",
+    "line": 47,
+    "sentence": 2,
+    "original": "对于任何“内部直升”，请学校提供当年书面说明。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "**官立学校**由政府开办；**津贴学校**由办学团体经营、政府资助，两者常合称“官津”，一般免学费。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "符合条件的官津小学参加小一入学统筹办法。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 7,
+    "sentence": 3,
+    "original": "**直资（DSS）**学校获得政府资助，同时按规定收取学费，招生和课程有较大自主空间；**私立学校**通常收取学费、自行招生。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 7,
+    "sentence": 4,
+    "original": "不要把直资简单说成“半公半私”：它有独立的资助及监管制度。",
+    "findings": [
+      {
+        "type": "纠错口吻",
+        "reason": "直接解释资助及小一自行招生。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 7,
+    "sentence": 5,
+    "original": "不同阶段、不同学校是否参加派位、接受录取的后果，应按当年安排核对。",
+    "findings": [
+      {
+        "type": "范围混杂",
+        "reason": "本篇只讲小学，明确直资与私立不参加小一统筹。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "**英基（ESF）**全称英基学校协会（English Schools Foundation），是办学机构，不是所有国际学校的统称。",
+    "findings": [
+      {
+        "type": "跨篇重复",
+        "reason": "保留简称和学校查询要求，删重复否定句。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 9,
+    "sentence": 2,
+    "original": "其学校具体课程、年龄分组、学费和申请方式以校方公告为准；不要把“国际”“IB”“英基”当作同义词。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**本地学校／国际学校**主要涉及课程与办学定位，不能与官津、直资、私立直接排成互斥的五类。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 13,
+    "sentence": 2,
+    "original": "看学校采用本地课程还是其他课程，再看登记及资助类别；英文校名或英语授课也不自动使它成为国际学校。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "**男校、女校、男女校／混校（co-educational）**描述招生性别。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 15,
+    "sentence": 2,
+    "original": "选择时也要看课堂、活动和孩子的适应，不能用性别类别直接推断成绩或校风。",
+    "findings": [
+      {
+        "type": "泛化评价",
+        "reason": "保留性别定义，换成学校作息等实际字段。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 15,
+    "sentence": 3,
+    "original": "**全日制小学**描述学校作息，不代表下午后一直提供托管；放学时间、课后活动、功课辅导和假期安排应逐项问。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 17,
+    "sentence": 1,
+    "original": "**一条龙、直属、联系小学**描述小学与中学的关系，详见升中篇。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 17,
+    "sentence": 2,
+    "original": "**名校、地区名校、传统名校、神校**是民间标签，没有统一官方等级；“名气大”不能替代学费、课程、支援及升中资料的核实。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "**学费减免／奖学金**也不同：前者一般按计划及家庭条件减轻费用，后者按学校规定奖励或资助学生。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 19,
+    "sentence": 2,
+    "original": "直资收费不表示低收入家庭没有申请机会，比较学校时应查当年减免政策及申请程序。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "官津小一通常先进行**自行分配学位**：家长只能申请一所，不受居住校网限制。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "兄姊正在该小学就读或父母在该小学工作的儿童，属学校必须取录的一类，常被家长称作“世袭生”或“必收生”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 23,
+    "sentence": 3,
+    "original": "学校原则上预留约小一总学额30%给此类申请人；人数超过预留额时，额外所需学位从统一派位学额扣除，不能理解为“最多只收30%”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 25,
+    "sentence": 1,
+    "original": "其余合资格申请依教育局**计分办法**竞争，至少占总学额20%；同分而学位不足时按规定抽签。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 25,
+    "sentence": 2,
+    "original": "常见项目包括适龄10分、首名出生子女5分、父母或兄姊为该小学毕业生10分，以及符合规定的相同宗教信仰5分。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 25,
+    "sentence": 3,
+    "original": "不同关系项目分组互斥，例如首名出生与校友关系不能简单相加；宗教证明也需符合学校要求。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 25,
+    "sentence": 4,
+    "original": "15分不是人人都有的“底线”，20分也不保证任何结果。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 25,
+    "sentence": 5,
+    "original": "先核对[教育局计分及申请资料](https://www.edb.gov.hk/sc/edu-system/primary-secondary/spa-systems/primary-1-admission/)，再用当年学校数据评估机会。",
+    "findings": [
+      {
+        "type": "指令具体度",
+        "reason": "补齐计分互斥分组或实际文件。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 29,
+    "sentence": 1,
+    "original": "未获自行分配学位的合资格儿童，按规定进入**统一派位**，俗称“大抽奖”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 29,
+    "sentence": 2,
+    "original": "每所学校供统派的学位中，约10%用于**甲部**，可选最多三所任何校网的学校；其余约90%用于**乙部**，按住址所属校网的选校名单选择。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 29,
+    "sentence": 3,
+    "original": "这里的10%和90%是统派学位的比例，不是全校小一总学额的比例。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 29,
+    "sentence": 4,
+    "original": "非华语学童有特别选校安排，以教育局当年说明为准。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 31,
+    "sentence": 1,
+    "original": "**校网**是派位时按住址等条件划分的学校网络，不等于行政区边界，也不等于申请该区任何学校都保证获录。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 31,
+    "sentence": 2,
+    "original": "常听到41网、11网、12网等编号，但住址是否属于某网，须按教育局当年名册核对。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 31,
+    "sentence": 3,
+    "original": "不要为赌某所学校匆忙租房：真实居住、地址证明、跨区通勤和长期住屋成本都要考虑。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "**1-1-1**一般指自行阶段、统一派位甲部第一志愿和乙部第一志愿都选择同一学校；**1-1-0、1-0-0**则是家长用来描述其中某一位置没有填该校的简写，并无统一官方定义，要先问清对方的含义。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "若目标校不在住址所属校网，乙部通常不能选它，所以不一定做得到1-1-1。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 37,
+    "sentence": 1,
+    "original": "1-1-1不是教育局规定的叩门资格。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 37,
+    "sentence": 2,
+    "original": "个别学校可能在校本叩门时询问志愿纪录或列出条件，也有学校没有此要求，具体看当年公告。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 37,
+    "sentence": 3,
+    "original": "为迎合传言而牺牲其他真实志愿，可能减少获得可接受学位的机会；应先按家庭偏好、校网和可接受的备选学校填写。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 41,
+    "sentence": 1,
+    "original": "**默书**是按学校安排默写词句，分中文或英文；**unseen dictation**通常指未预先公布具体篇章的默写。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 41,
+    "sentence": 2,
+    "original": "频率与评分由学校决定，可问范围、练习方法及反馈，不必把默写成绩等同全部语言能力。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 43,
+    "sentence": 1,
+    "original": "**普教中／粤教中**是用普通话／粤语教授中国语文科的简称，不代表所有科目都用同一种语言。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 43,
+    "sentence": 2,
+    "original": "还要问其他学科、课堂讨论、家校沟通及支援分别使用什么语言。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 45,
+    "sentence": 1,
+    "original": "**拔尖补底**指为学有余力学生提供拓展，以及为需要协助的学生提供补充支持；是否分班、是否收费及参加条件由学校决定。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 45,
+    "sentence": 2,
+    "original": "比较支持是否真正适合孩子，而非只看班级名称。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "02-小学与小一派位.md",
+    "line": 49,
+    "sentence": 1,
+    "original": "先确认孩子的申请学年及居住地址，逐项核对计分证明；分别列出自行、统派和自主招生学校，标记报名、签约及可能影响派位的截止日，并准备可接受的备选。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "**呈分**是小学向教育局呈交供中学学位分配使用的校内成绩；家长说的**呈分试**，泛指学校用来评定相关成绩的校内评估，形式和安排由学校订定。",
+    "findings": [
+      {
+        "type": "表达松散",
+        "reason": "直接说明校内评估与呈交成绩。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "现行升中安排采用小五下学期、小六上学期及小六下学期经标准化的校内成绩，并以教育局规定的调整机制处理，作为划分派位组别的依据。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 7,
+    "sentence": 3,
+    "original": "不是简单把三次考试原始分数相加就得到全港排名，也不是只看班级名次。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 7,
+    "sentence": 4,
+    "original": "学校考试时间、科目和权重要向学校核实；教育局公布了由2026/27学年小五下开始实施的部分科目比重优化。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "孩子若在相关阶段插班，应尽早询问新校如何安排学习和评估，以及教育局对其具体派位资料的处理。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 9,
+    "sentence": 2,
+    "original": "一次转校或某一次考试本身不能断言最终派位结果。",
+    "findings": [
+      {
+        "type": "无事实增量",
+        "reason": "删宽泛结论，保留转校应问事项。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 9,
+    "sentence": 3,
+    "original": "[教育局升中家长须知](https://www.edb.gov.hk/attachment/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/NotesForParents_sc_2026.pdf)说明调整机制。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**派位组别（Banding）**是中学学位分配制度下对参加派位学生的分组工具；全港及学校网各有按机制划分的组别，派位时使用哪个，要看自行或统派的具体环节。",
+    "findings": [
+      {
+        "type": "机制不准",
+        "reason": "派位组别用于统派，勿与自行成绩次第名单混同。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 13,
+    "sentence": 2,
+    "original": "它不是教育局公布的一张“中学官方排名表”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "家长说的**Band 1中学、B1头／中／尾**一般是根据收生、成绩或坊间口碑对学校的非官方描述，没有统一界线。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 15,
+    "sentence": 2,
+    "original": "同样被称作B1的学校，语言、课程、竞争压力和学生支持也可能不同。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 15,
+    "sentence": 3,
+    "original": "学校标签不能保证考入大学或某个专业；比较当年课程、学费、交通、学生支援及可核实的升学资料，更有助于判断适配度。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "教育局正式的**“一条龙”**是小学和中学的衔接办学模式；所属小学小六学生可按规定选择直升对应中学。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 19,
+    "sentence": 2,
+    "original": "申请其他中学或参与相关派位可能影响直升权利，必须先查当年办法；不要把所有同名幼稚园、小学和中学都视为正式一条龙。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 19,
+    "sentence": 3,
+    "original": "[教育局一条龙简介](https://www.edb.gov.hk/sc/edu-system/primary-secondary/applicable-to-primary-secondary/through-train/introduction.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 21,
+    "sentence": 1,
+    "original": "**直属／联系**是另一种小学与中学的关系。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 21,
+    "sentence": 2,
+    "original": "在一般统派安排下，中学先扣除重读生和自行分配学位，再分别将**余额的85%／25%**保留给合资格的相关小学学生，不是中一总学额的85%／25%，也不是每个学生保证获录。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 21,
+    "sentence": 3,
+    "original": "一般须符合学校网派位组别及乙部首选等条件；合资格人数超过保留学位时仍需按规则分配。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 21,
+    "sentence": 4,
+    "original": "跨网可能影响保留资格。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 21,
+    "sentence": 5,
+    "original": "[教育局升中问答](https://www.edb.gov.hk/attachment/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2025_Sept_General_SC.pdf)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "询问学校时，分别核实关系性质、学生资格、保留学额的分母，以及申请其他学校后的权利变化。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 27,
+    "sentence": 1,
+    "original": "**EMI**是English as Medium of Instruction，以英语作为教学语言；**CMI**是Chinese as Medium of Instruction，以中文作为教学语言，香港中文课堂可使用粤语或普通话。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 27,
+    "sentence": 2,
+    "original": "实际安排可按科目、级别或班别不同，不能假设“英中除中文、中史外全部以英语教”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 27,
+    "sentence": 3,
+    "original": "要求学校列出各科教学语言及英语支援，再结合孩子听课、表达和学科基础判断。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 31,
+    "sentence": 1,
+    "original": "**DSE／HKDSE**是香港中学文凭考试；**JUPAS**是大学联合招生办法，是符合资格申请人凭指定成绩申请参加院校课程的系统。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 31,
+    "sentence": 2,
+    "original": "考试、课程和报读系统不是同一回事。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 31,
+    "sentence": 3,
+    "original": "是否符合JUPAS本地生及其他申请条件，要按申请年度的官方定义和院校要求核对，不能只看签证名称。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 33,
+    "sentence": 1,
+    "original": "考评局允许中文答卷使用符合规范的简体字，也可同卷使用繁简体；但中文版试卷一般以繁体印制，因此阅读能力仍需准备。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 33,
+    "sentence": 2,
+    "original": "不要说DSE是“全球唯一”允许简体作答的国际考试。",
+    "findings": [
+      {
+        "type": "编辑口吻",
+        "reason": "删对原素材的训诫，保留简体作答规则。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 33,
+    "sentence": 3,
+    "original": "[考评局评核问答](https://www.hkeaa.edu.hk/tc/Candidates/PrivateCandidatesCorner/faq/q2/)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "**IBDP（国际文凭大学预科课程）**和**A-Level**是其他高中课程及考试路径；所谓“双轨学校”是指学校提供不止一种路径，课程是否同时开设、何时选择、名额和额外费用要逐校确认。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "DSE也可用于申请境外院校；IB或A-Level也可申请香港院校。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 35,
+    "sentence": 3,
+    "original": "各大学各专业的资格、科目和身份要求不同，目标不能简单按地域一刀切。",
+    "findings": [
+      {
+        "type": "抽象总结",
+        "reason": "改为院校认可、先修科及身份三个检查项。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 37,
+    "sentence": 1,
+    "original": "**神科**是对医学、牙医、法律或部分商科等热门课程的民间称呼，名单并不固定；入学门槛、修读年期、专业资格和就业条件均不同，不能保证毕业即高薪。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 37,
+    "sentence": 2,
+    "original": "应查具体院校、课程及专业注册要求。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 41,
+    "sentence": 1,
+    "original": "向小学索取相关年度呈分安排，记录孩子各科实际表现；比较中学时分别问教学语言、课程、支援与升学资料。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "03-升中与考试.md",
+    "line": 41,
+    "sentence": 2,
+    "original": "到高中选路径前，再按目标院校和专业的最新要求倒推科目及身份条件。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "**Portfolio**通常指个人档案，可能包括学习经历、作品或活动记录；**CV／简历**则是精简介绍。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "两者不是所有幼稚园、小学或叩门申请的必需品，也没有适用于所有学校的“五页上限”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 7,
+    "sentence": 3,
+    "original": "有的学校不接受额外材料。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 7,
+    "sentence": 4,
+    "original": "先看报名表和公告，只提交要求或允许的内容；如可附材料，用真实、与孩子有关的经历说明即可，不必购买昂贵包装，也不必披露无关的家庭隐私。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 11,
+    "sentence": 1,
+    "original": "**插班**是入读已有学生的年级或班级，通常取决于学校是否有空位及其校本安排；不只限直资或私立，也不一定每年春秋统一考试或一律考中英数。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 11,
+    "sentence": 2,
+    "original": "可直接问学校空位、年龄、资料、考试和报名日期；需要学位协助，可联系教育局区域教育服务处。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**降班**通常指转学或跨制度入学时进入较原年级低的年级；**留级／重读**通常指未升上下一年级而再读原年级。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 13,
+    "sentence": 2,
+    "original": "两者原因和决定程序可能不同，不能假设每位新来港儿童都需要降班，也没有可靠的一刀切“香港英文超前一至两年”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 13,
+    "sentence": 3,
+    "original": "先请学校评估孩子的中文读写、英语听说读写、数学知识、粤语听课及社交适应，再比较同龄与降班的学习、心理、费用和未来升学影响。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 13,
+    "sentence": 4,
+    "original": "最终安排须与学校及相关部门核实。",
+    "findings": [
+      {
+        "type": "泛化重复",
+        "reason": "与前句评估重复，改列可比较的方案。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 17,
+    "sentence": 1,
+    "original": "**受养人身份（dependant）**是获准作为保证人的受养人来港居留的身份。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 17,
+    "sentence": 2,
+    "original": "入境处说明，受养人在港就读无须事先取得入境处处长批准；但是否符合某项幼稚园资助、派位、学生资助或大学本地生资格，各有条件，不能笼统说与永久居民“完全同等”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 17,
+    "sentence": 3,
+    "original": "检查孩子的有效逗留条件、实际居住情况和项目要求，并保留相关证明。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 17,
+    "sentence": 4,
+    "original": "[入境处受养人说明](https://www.immd.gov.hk/hkt/services/visas/residence_as_dependant.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "如果孩子持的是**学生签证**或其他身份，而非受养人身份，适用入境及就学规定可能不同；不确定时向入境处和教育局查询，不要用另一类身份的结论代替。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "先向目标学校问清各科授课语言、教材文字、作业和评估要求，再安排日常练习。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "繁体阅读可以从绘本、路牌和学校教材入手，循序认识常用字；粤语可从理解教师指令和日常交流开始；英语重点放在听懂课堂、阅读和表达。",
+    "findings": [
+      {
+        "type": "动作不具体",
+        "reason": "补学校用书及教师指令练习。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 23,
+    "sentence": 3,
+    "original": "KET／PET或分级阅读只是可选资源，不是报考学校或适应课堂的统一必需条件。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 23,
+    "sentence": 4,
+    "original": "考DSE可以按规定用简体字作答，但试卷阅读、平日课本及校内要求仍需适应。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 27,
+    "sentence": 1,
+    "original": "如果家长关注香港、内地或海外升学，先列目标地区、预算和孩子可能感兴趣的学科，再核对院校是否接受DSE、IB或A-Level，以及身份、科目、语言和专业注册要求。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 27,
+    "sentence": 2,
+    "original": "DSE并不只通向香港；IB和A-Level也不只通向海外。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 27,
+    "sentence": 3,
+    "original": "内地高校相关招生政策和港澳居民身份要求亦应按院校及当年方案逐项核对，不能把“想报清北”直接等同于“只需选DSE”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 29,
+    "sentence": 1,
+    "original": "择校也不要只看名次：在高竞争学校和支援充分的其他学校之间，比较孩子的学习基础、情绪、通勤、学校课程和实际资源。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 29,
+    "sentence": 2,
+    "original": "没有证据能保证“在较低标签学校排名靠前”一定比在另一所学校更容易升大学；学校推荐、公开试成绩和各院校录取规则须分别看。",
+    "findings": [
+      {
+        "type": "冗长否定",
+        "reason": "直接写两种学校方案需比较的支持。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 33,
+    "sentence": 1,
+    "original": "1. 整理孩子的身份证明、居留条件、成绩表和目标入读时间。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 34,
+    "sentence": 1,
+    "original": "2. 联系几所目标学校，核对空位、年级、教学语言、申请资料及费用；同时向教育局了解学位支援。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "04-新来港家庭与长期规划.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "3. 列出目标地区与可能的专业，逐项查课程、学费、考试和申请身份；每年复核，不必在幼儿阶段锁死唯一方向。",
+    "findings": [
+      {
+        "type": "结尾过宽",
+        "reason": "按当前找学位和远期选路径分开动作。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "**POA（Primary One Admission）**是小一入学统筹办法的英文简称；**P1至P6**通常是本地小学一至六年级。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "国际学校可能使用**Year、Grade、Reception、Prep**等名称，分级及出生日期界线随课程和学校不同。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 7,
+    "sentence": 3,
+    "original": "不能只看“1”就认为入读年龄及学习阶段相同；对照孩子出生日期、原校年级和目标学校当年年龄表，再问学校如何评估安置。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 11,
+    "sentence": 1,
+    "original": "**收offer**是接到录取通知，**accept offer**是按规定接受录取，**注册／留位**则涉及确认学位及相关手续。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 11,
+    "sentence": 2,
+    "original": "通知信、保证书、付款和注册可能有不同截止日，不能以“只是交订金”推断没有后果。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**接受直资小学小一学位**会影响透过小一入学统筹办法获派官津学位的权利；已有获派学位也可能被取消。",
+    "findings": [
+      {
+        "type": "后果含糊",
+        "reason": "明确接受直资学位后不能通过统筹获派官津小一学位。"
+      },
+      {
+        "type": "规则弱化",
+        "reason": "已有获派学位会取消，不写不确定的可能。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 13,
+    "sentence": 2,
+    "original": "学校会按规定要求家长确认相关承诺。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 13,
+    "sentence": 3,
+    "original": "因此要区分“申请直资”“收到直资录取”和“接受直资学位”，决定前阅读保证书，并向学校及教育局确认手续。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 13,
+    "sentence": 4,
+    "original": "[教育局小一入学办法及直资收生规定](https://www.edb.gov.hk/sc/edu-system/primary-secondary/spa-systems/primary-1-admission/)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "**私立留位**不能直接套用直资规则：还要看学校的接受学位条件、家长向教育局作出的选择及当年通知。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 15,
+    "sentence": 2,
+    "original": "也不要据此推断“所有私校都能一直留位兼参加派位”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 15,
+    "sentence": 3,
+    "original": "把每校的付款、放弃与退款条款列清楚，签署前询问不明事项。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "**叩门**通常指正式招生或派位结果后，向学校申请剩余或腾出的学位；有无空位、接收时间、材料及面试安排由学校公告。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 19,
+    "sentence": 2,
+    "original": "**插班**通常指转入某个年级的已有班级，也可涉及学年中途入学。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 19,
+    "sentence": 3,
+    "original": "两者不是固定每年某月开放，也不是一律只收中英数笔试成绩。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 19,
+    "sentence": 4,
+    "original": "官津学校同样可有学位查询及转校安排；不要误以为只有直资私立接受插班。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 21,
+    "sentence": 1,
+    "original": "**叩门卷、插班卷、面试班**通常是家长或机构对练习及备考服务的称呼。",
+    "findings": [
+      {
+        "type": "定义混杂",
+        "reason": "前两者是试题或练习称谓，后者为培训课程，分开说明。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 21,
+    "sentence": 2,
+    "original": "所谓“历年真题”要核实来源，学校面试形式亦可改变；购买培训不能保证学位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 21,
+    "sentence": 3,
+    "original": "优先了解学校允许的准备内容、孩子实际基础及语言适应。",
+    "findings": [
+      {
+        "type": "动作空泛",
+        "reason": "明确查学校面试通知和允许携带资料。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "**Portfolio、profile、CV**通常指个人档案、简介或履历。",
+    "findings": [
+      {
+        "type": "跨篇重复",
+        "reason": "保留申请用途，转到来港家庭篇详细解释。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "学校如不收额外材料，就不必另制精装本；如允许，按页数与内容要求提交真实资料。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 23,
+    "sentence": 3,
+    "original": "**推荐信、求位信**只有在学校接受时才有递交意义，不是通用的录取加分凭证。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 27,
+    "sentence": 1,
+    "original": "**随机编号**是统派同等条件下决定处理先后的机制之一，不是家长可以预测、购买或通过简历改善的编号。",
+    "findings": [
+      {
+        "type": "引入无关假设",
+        "reason": "保留随机编号用途，删购买的无依据旁枝。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 27,
+    "sentence": 2,
+    "original": "**首志愿／乙一**通常指有关部分的第一选择；甲一、乙一属于不同部分，别混用。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 29,
+    "sentence": 1,
+    "original": "**进取校、稳妥校、保底校**是家庭制定志愿时的策略标签，并非官方保证。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 29,
+    "sentence": 2,
+    "original": "某校往年较易获派，不代表今年一定有位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 29,
+    "sentence": 3,
+    "original": "排序先按真实偏好和当年可选名单，再评估落空后是否愿意入读后续学校；不要为一所无法接受的“保底校”占用前列选择。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 31,
+    "sentence": 1,
+    "original": "**跨网、搬网、借地址**也须区分：搬家后是否能按新址办理派位，要按当年规则及时申报真实资料；借用不实际居住的地址不等于合法转网。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 31,
+    "sentence": 2,
+    "original": "需要跨境上学或遇特殊情况的家庭，应查相应安排，不能照搬一般本港住址规则。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "做一张申请表，逐校记下学制年级、报名、面试、录取、答复、付款、派位影响及退款条件。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "05-小学申请与录取术语.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "涉及放弃已有学位时，先确认替代学位及手续，再作决定。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "**测考**通常是测验与考试的合称；**持续评估／进展性评估**是学习过程中透过课堂活动、作品、测验等了解进度、提供反馈的安排，具体形式及是否计入学期成绩看学校政策。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "**总评**通常是按校方比例综合所得的成绩，不一定只看期末考试。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "**班名次**是在班内的位置，**级名次**是在同一年级的位置；**操行**是学校对行为、态度等方面的评核，评分标准及用途要看学校说明。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 9,
+    "sentence": 2,
+    "original": "不要以某校某班前十名直接推算另一所学校的级名次或升中组别。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 11,
+    "sentence": 1,
+    "original": "**精英班、能力分班、抽离式教学**通常指按学校安排分组或在部分时段另行教学；分组是否固定、依据哪些表现、能否调整、如何照顾其他学生，须向学校查询。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 11,
+    "sentence": 2,
+    "original": "**小班教学**也不等于一对一辅导，实际班额、课堂组织和支援更值得看。",
+    "findings": [
+      {
+        "type": "判断泛化",
+        "reason": "明确查实际班额、分组和支援时段。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "**TSA（Territory-wide System Assessment，全港性系统评估）**用于了解学生基本能力及学校教学情况。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 15,
+    "sentence": 2,
+    "original": "考评局说明，不提供个人学生成绩报告，也不与中学学位分配挂钩；它不是升中选拔考试，不能把TSA与呈分试混为一谈。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 15,
+    "sentence": 3,
+    "original": "[考评局TSA问答](https://www.bca.hkeaa.edu.hk/web/TSA/en/Faq.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 17,
+    "sentence": 1,
+    "original": "**呈分试**涉及小学向教育局呈交、供升中安排使用的校内评估；评估时段及调整机制见升中篇。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 17,
+    "sentence": 2,
+    "original": "家长最应问的是：哪些评估计入、各科比重、缺考及转校如何处理，以及学校可提供什么学习支援。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "**Pre-S1 HKAT／中一入学前香港学科测验**通常在中一派位后举行，涉及中、英、数，帮助中学了解新生及安排支援，部分学校亦用于编班；它不会倒过来改变该学生已经完成的当届派位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 19,
+    "sentence": 2,
+    "original": "指定年份相关成绩会按机制用作后来届别呈分成绩的调整工具，不能据此理解成孩子须靠它再“考一次升中”。",
+    "findings": [
+      {
+        "type": "机制绕口",
+        "reason": "说明往届工具与本届已完成派位的区别。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 19,
+    "sentence": 3,
+    "original": "[教育局测验资料](https://www.edb.gov.hk/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/Pre-S1-HKAT.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "**常识（General Studies／GS）**是家长在旧课表及部分过渡年级会见到的科目名称。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "本地小学由2025/26学年小一及小四开始逐步推行**小学人文科**与**小学科学科**，按公布安排于2027/28学年覆盖所有小学年级。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 23,
+    "sentence": 3,
+    "original": "看旧文提“常识科”时，要对照孩子年级和资料年份。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 23,
+    "sentence": 4,
+    "original": "[教育局科学科问答](https://www.edb.gov.hk/sc/curriculum-development/kla/science-edu/primary-science-faq/faq.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 25,
+    "sentence": 1,
+    "original": "**STEM**通常指科学、科技、工程、数学相关的跨学科学习；**STEAM**加上艺术元素。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 25,
+    "sentence": 2,
+    "original": "标签不说明上课频率、学习深度或孩子实际参与机会，问学校提供课程样本及是否人人可参加，比只数比赛奖项有用。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 29,
+    "sentence": 1,
+    "original": "**ECA（Extra-curricular Activities）**通常指课外活动；**校队**一般需按学校要求甄选、训练或比赛；**服务生、领袖生、风纪**是不同学校设置的学生服务或职责岗位，名称及申请条件各异。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 29,
+    "sentence": 2,
+    "original": "**一生一艺／一体艺**通常是学校鼓励学生发展艺术或体育的安排，不能推断每项均免费、人人能进校队或对录取自动加分。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 29,
+    "sentence": 3,
+    "original": "问清费用、甄选、练习时间及与功课的冲突。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 33,
+    "sentence": 1,
+    "original": "**SEN（Special Educational Needs）**指特殊教育需要；**SENCO**通常指特殊教育需要统筹主任。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 33,
+    "sentence": 2,
+    "original": "具体需要、评估及支援应与学校和合资格专业人员讨论，不应只凭孩子暂时听不懂粤语就贴标签。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "**NCS（Non-Chinese Speaking，非华语）**用于特定教育支援及行政安排，是否适用须按相关定义判断，不能把“在内地长大、不懂粤语”直接等同非华语。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "询问学校语言适应支援时，应如实说明孩子使用的语言及学习经历。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 39,
+    "sentence": 1,
+    "original": "**升B1率**通常是学校或第三方按其采用的非官方中学类别统计入读去向，不等于教育局公布该小学学生的正式派位组别比例。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 39,
+    "sentence": 2,
+    "original": "先问学校怎样定义B1、统计的是毕业生还是已回覆家庭，以及记录录取还是最终入读。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 41,
+    "sentence": 1,
+    "original": "**首志愿／首三志愿满意率**表示按相关口径获派志愿学校的情况；各家志愿不同，不能由高满意率直接推算名校录取率。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 41,
+    "sentence": 2,
+    "original": "**直升率**则须交代升到哪一所学校、是否需筛选、分母是全体毕业生还是符合资格并申请的学生。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 43,
+    "sentence": 1,
+    "original": "**Offer数量**也不等于人数：同一学生可收到多个录取通知。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 43,
+    "sentence": 2,
+    "original": "比较两校时，要求同一学年、同一分母、同一种结果；缺口较大的数据只能作为参考，不能拿来承诺孩子的升学机会。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 47,
+    "sentence": 1,
+    "original": "向学校索取一份课表、评估说明和最近一届升中去向，分别记录学习安排、支援及统计口径。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "06-小学学习与升学数据术语.md",
+    "line": 47,
+    "sentence": 2,
+    "original": "再问孩子每天是否能跟上、是否有时间休息，而不只比较名次和奖项。",
+    "findings": [
+      {
+        "type": "结尾泛化",
+        "reason": "改成家长可收集的功课时间及遇到的困难。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "**官立中学**由政府开办；**资助／津贴中学**由办学团体经营、获政府资助；家长合称“官津”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "**按位津贴学校**属于另一资助安排，应查看其登记及收生资料，不要把“按位”误解为家长购买学位。",
+    "findings": [
+      {
+        "type": "定义不足",
+        "reason": "按位津贴只作类别识别，不猜测目前学校或补助公式。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 7,
+    "sentence": 3,
+    "original": "**直资中学（DSS）**按直接资助计划营办，可按规定收费，课程及收生具较大自主空间。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 7,
+    "sentence": 4,
+    "original": "**私立中学**自行招生及收费，课程和资格须逐校核实。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "**参加派位直资／非参加派位直资**描述直资学校是否参加中学学位分配办法，直接影响申请路径。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 9,
+    "sentence": 2,
+    "original": "不能把小学“直资不参加小一统筹”的说明原封不动搬到所有中学。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 9,
+    "sentence": 3,
+    "original": "[教育局每年列出相关名单](https://www.edb.gov.hk/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 11,
+    "sentence": 1,
+    "original": "**本地／国际、男校／女校／男女校、宗教学校、寄宿学校**分别描述课程定位、招生性别、办学背景及住宿服务，与资助类别不是同一维度。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 11,
+    "sentence": 2,
+    "original": "看具体课程、收费、住宿条件和支援，不能把某个标签当作成绩保证。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "**S1—S6**通常指中一至中六；**F1／Form 1**也是中一的常见称呼。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 15,
+    "sentence": 2,
+    "original": "本地学制通常中一至中三为初中、中四至中六为高中。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 15,
+    "sentence": 3,
+    "original": "国际课程的Year或Grade须按年龄及课程对照，不宜仅按数字转级。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 15,
+    "sentence": 4,
+    "original": "插班时应请学校评估课程衔接、授课语言及将来考试资格。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "**SSPA**是中学学位分配办法；**DP（Discretionary Places，自行分配学位）**是升中申请阶段。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 19,
+    "sentence": 2,
+    "original": "现行一般安排下，学生可向不多于两所参加派位中学申请，不受学校网限制，按真实偏好填报先后；学校依公布准则甄选，不沿用小一宗教、校友加分表。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 19,
+    "sentence": 3,
+    "original": "特殊收生途径须另外核对。",
+    "findings": [
+      {
+        "type": "指引无对象",
+        "reason": "指向当年教育局申请手册及学校公告。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 21,
+    "sentence": 1,
+    "original": "**自行一／自行二、自一／自二**通常指该阶段第一、第二选择。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 21,
+    "sentence": 2,
+    "original": "**正取通知**表示获列入学校正取名单，需与最终正式派位结果区分；**备取**是候补。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 21,
+    "sentence": 3,
+    "original": "没有收到正取通知，不等于最终一定没有自行学位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 21,
+    "sentence": 4,
+    "original": "两校均列为正取时，会按既定机制及选校次序处理，不能假设到时再任选。",
+    "findings": [
+      {
+        "type": "解释不到位",
+        "reason": "直接写按较前选择处理。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "**CA（Central Allocation，统一派位）**通常在自行之后处理。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "现行安排有甲部最多三所不受校网限制的选择，以及乙部最多三十所所属学校网的选择；具体名单及特殊安排按当年资料。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 23,
+    "sentence": 3,
+    "original": "统派依派位组别、选校意愿及随机编号进行，不是只看分数排一条队。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 23,
+    "sentence": 4,
+    "original": "[教育局升中资料](https://www.edb.gov.hk/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 27,
+    "sentence": 1,
+    "original": "升中学校网一般按学生就读小学所在地区划分；跨网申请另有条件。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 27,
+    "sentence": 2,
+    "original": "它与按居住地址办理的小一校网不同，不能拿小学41网等编号直接推算升中选择。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 29,
+    "sentence": 1,
+    "original": "**全港组别／学校网组别**是在不同范围内划分的派位组别，供统派相应部分使用。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 29,
+    "sentence": 2,
+    "original": "同一学生在两个范围内的组别可能不同。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 29,
+    "sentence": 3,
+    "original": "**B1边缘人**是家长对估计接近组别界线者的俗称，估计有误差；不要把民间推算当作教育局已经确认的结果。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 33,
+    "sentence": 1,
+    "original": "申请非参加派位直资学校，不等于已经接受学位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 33,
+    "sentence": 2,
+    "original": "学校要求家长按规定交回**家长承诺书**及**小六学生资料表**等文件时，可能涉及确认接受学位及放弃其他政府资助中一学位。",
+    "findings": [
+      {
+        "type": "后果含糊",
+        "reason": "区别报名与正式接受，交齐规定文件后的后果明确。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 33,
+    "sentence": 3,
+    "original": "签字前逐项核实；决定转回派位路径也须遵守当年期限，不能仅口头说放弃。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "**叩门／后补收生、插班**则依学校空位及公告处理。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "先完成已获学位所需手续，并确认新校录取及转校程序，再决定放弃；不要只凭候补口头消息取消确定学位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 39,
+    "sentence": 1,
+    "original": "把目标校分成参加派位、非参加派位及其他申请路径，记录收生准则、选校次序、面试、文件、收位后果和截止日。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "07-中学分类与升中申请.md",
+    "line": 39,
+    "sentence": 2,
+    "original": "直资与自行同时有消息时，先读当年教育局说明，再作选择。",
+    "findings": [
+      {
+        "type": "结尾空泛",
+        "reason": "指出收位文件、取消手续与期限。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "**EMI／英中、CMI／中中**分别指以英语、中文作教学语言的常见描述；实际安排可按科目、年级、班别不同。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "**英文班**也可能只涉及某些学科，**英语延展教学活动**则可能是在中文教学科目中加入英语活动，不能直接视作整科英语授课。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 7,
+    "sentence": 3,
+    "original": "教育局有中学校本初中教学语言资料可供核对。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 7,
+    "sentence": 4,
+    "original": "[教育局教学语言安排](https://www.edb.gov.hk/sc/edu-system/primary-secondary/applicable-to-secondary/moi/fine-tuning-the-moi-for-secondary-schools.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "选校时分别问教材、课堂解释、讨论、功课及考试用什么语言；孩子会日常英语，不一定立即能用英语学习物理或历史，应同时看学科语言支援。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**选科**通常是初中升高中时选择选修科；**文组、理组、商组**是常见课程组合称呼，学校未必采用固定分流。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 13,
+    "sentence": 2,
+    "original": "**选修组／科目组合**会受时间表、师资、名额和开班门槛影响，学校列出一门科，不等于每位学生都能选读，也不保证两科可同时修读。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "**转科／退修**指调整或停止修读科目，可能影响学习进度、考试报名及大学要求。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 15,
+    "sentence": 2,
+    "original": "中三前先查目标专业的先修或优先科目，再看孩子兴趣、基础、学校资源和可选组合；不要只按哪科“容易拿星”选择。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 19,
+    "sentence": 1,
+    "original": "**核心科目**包括中国语文、英国语文、数学及公民与社会发展；**4C＋2X／3X**常被用来描述四个核心加两个／三个选修科目的组合，实际简称因学校而异。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 21,
+    "sentence": 1,
+    "original": "**M1／M2**是数学延伸部分的单元一／单元二，不是“数学第一卷／第二卷”，也不等于每位学生都必须修读的数学必修部分。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 21,
+    "sentence": 2,
+    "original": "课程重点、学校开班安排及大学专业如何认可须分别查；计分时不能自行假设它一定等同一整科选修。",
+    "findings": [
+      {
+        "type": "缺少术语内容",
+        "reason": "补M1与M2各自课程重点并附官方来源。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 21,
+    "sentence": 3,
+    "original": "**公社科／CSD**是公民与社会发展的简称，不要继续用旧通识科课程和等级规则解释当届考试。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 21,
+    "sentence": 4,
+    "original": "[教育局高中课程更新说明](https://www.edb.gov.hk/sc/curriculum-development/renewal/opt_ss_curriculum.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 25,
+    "sentence": 1,
+    "original": "**SBA（School-based Assessment，校本评核）**是指定科目公开考试评核的一部分，由学校按规定执行，并涉及考评局的处理机制；它不是日常操行分，也不是所有科目都有相同安排。",
+    "findings": [
+      {
+        "type": "无细节",
+        "reason": "用科目评核大纲、校本评核占比及提交日期替代。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 25,
+    "sentence": 2,
+    "original": "问清任务、占比、提交期限、缺交及重读安排，具体查当年科目大纲。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 27,
+    "sentence": 1,
+    "original": "**Mock／模拟试**是备考评估，不是DSE正式成绩；**predicted grades／预测成绩**是按相关制度和学校安排作出的预计表现，可用于部分升学申请。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 27,
+    "sentence": 2,
+    "original": "预测结果、conditional offer（有条件录取）和最终无条件录取要分清，最终仍须达到院校列明的条件。",
+    "findings": [
+      {
+        "type": "范围过宽",
+        "reason": "有条件录取须满足条件，无条件录取依通知办理。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 31,
+    "sentence": 1,
+    "original": "**OLE（Other Learning Experiences，其他学习经历）**涵盖服务、艺术、体育等相关学习经历；**SLP（Student Learning Profile，学生学习概览）**用于记录学生的学习及活动经历。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 31,
+    "sentence": 2,
+    "original": "两者不是越厚、证书越多就越有利，参与内容与真实成长更值得说明。",
+    "findings": [
+      {
+        "type": "空泛拔高",
+        "reason": "列出活动日期、职责及作品。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 33,
+    "sentence": 1,
+    "original": "**ApL（Applied Learning，应用学习）**是高中选修路径之一，实践与理论并重，涉及职业和专业领域。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 33,
+    "sentence": 2,
+    "original": "开课、评核及院校认可与一般选修科未必相同；选之前核实课程内容、交通时间、费用及目标专业认可，不能简单归为“成绩差才读”。",
+    "findings": [
+      {
+        "type": "纠错腔",
+        "reason": "说明应用学习内容及认可条件。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 33,
+    "sentence": 3,
+    "original": "[教育局应用学习说明](https://www.edb.gov.hk/sc/curriculum-development/cross-kla-studies/applied-learning/index.html)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "08-中学语言与高中选科.md",
+    "line": 37,
+    "sentence": 1,
+    "original": "向学校索取高中科目组合及选科门槛，选出两三类可能的大学专业，逐一对照先修科、语言、计分及可行备选，再确定选科。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 7,
+    "sentence": 1,
+    "original": "DSE甲类科目除公民与社会发展外，以1至5级汇报，在5级中再区分5*、5**；低于1级为不予评级（U）。",
+    "findings": [
+      {
+        "type": "可简化但有用",
+        "reason": "等级事实保留，避免星数当学校评价。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 7,
+    "sentence": 2,
+    "original": "**摘星**通常指获得5*或5**。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 7,
+    "sentence": 3,
+    "original": "公民与社会发展科采用达标／未达标汇报，不能用旧通识科的星级计分理解。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 7,
+    "sentence": 4,
+    "original": "[考评局科目及等级说明](https://www.hkeaa.edu.hk/tc/hkdse/assessment/subject_information/category_a_subjects/yenter)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 9,
+    "sentence": 1,
+    "original": "**状元、超级状元、星星数**是传媒或学校常用说法，比较时要查该报道的定义、计入哪些科目和人数；不能仅凭一位高分学生推算全校教学效果。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 9,
+    "sentence": 2,
+    "original": "DSE采用水平参照评级，也不等于每年考到某个固定原始分数必定得到同一级。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 13,
+    "sentence": 1,
+    "original": "**332A**常用于概括部分大学课程的核心科最低要求：中文3、英文3、数学2、公社科达标；还需满足相关选修科及其他要求，不能当作所有院校所有课程的统一录取线，也不能用它承诺获得学位。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 15,
+    "sentence": 1,
+    "original": "**Best 5／Best 6**通常指按课程规则选取五科／六科计分；是否必须计入英文、是否接纳M1／M2或其他资格，需查课程公式。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 15,
+    "sentence": 2,
+    "original": "**加权分**是特定科目按课程权重计算后的分数；同一学生申请不同专业，计分可能不同。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 17,
+    "sentence": 1,
+    "original": "**最低要求**是申请资格门槛；**收生中位数、下四分位数、往年最低录取分**是不同统计指标，不是下一年的录取保证。",
+    "findings": [
+      {
+        "type": "术语未解释",
+        "reason": "补各指标意义，不编具体学校分数。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 17,
+    "sentence": 2,
+    "original": "比较前先核实年份、课程、计分法和数据对象，不要拿不同加权公式的分数直接横比。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 21,
+    "sentence": 1,
+    "original": "**JUPAS（大学联合招生办法／联招）**是大学申请系统；**JS code**是系统中的课程编号。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 21,
+    "sentence": 2,
+    "original": "**Band A**指申请人的第1至第3个课程选择，Band B至E对应后续选择组别，与小学升中的Band 1／2／3无关。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 23,
+    "sentence": 1,
+    "original": "按JUPAS现行说明，院校在相关阶段获知课程所在选择组别，并不知道同一组内的实际先后；系统配对仍使用申请人的真实志愿次序。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 23,
+    "sentence": 2,
+    "original": "因此不能理解为A1、A2、A3填法完全没有区别。",
+    "findings": [
+      {
+        "type": "机械否定",
+        "reason": "直接说明三志愿按真实偏好排序。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 23,
+    "sentence": 3,
+    "original": "[JUPAS配对及志愿组别说明](https://www.jupas.edu.hk/en/application-procedures/post-hkdse-exam-results-announcement/iteration-process/)。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 25,
+    "sentence": 1,
+    "original": "**放榜改选**指按规定在DSE成绩公布后调整课程选择，时段及可调整范围须看当年日程。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 25,
+    "sentence": 2,
+    "original": "**Main Round／正式遴选、后续补选或补录**是不同申请阶段，收到录取后须按通知缴费及确认，不要只等其他可能性而错过现有录取。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 29,
+    "sentence": 1,
+    "original": "**Non-JUPAS／非联招**泛指联招以外的申请渠道，常涉及不同学历或申请人类别；不是只要想申请就能任选的“较容易通道”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 29,
+    "sentence": 2,
+    "original": "**local／non-local，本地／非本地申请人**是招生分类，须按当年官方及院校定义核实；受养人身份、永久居民身份和某项资助资格也不能混成同一个判断。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 31,
+    "sentence": 1,
+    "original": "**双轨**通常指学校提供DSE及另一高中路径，如IBDP或A-Level。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 31,
+    "sentence": 2,
+    "original": "IB还可能见到**HL／SL（高级／标准级别）**、**EE（拓展论文）**、**TOK（知识论）**、**CAS（创造、活动与服务）**等项目名称；A-Level可能涉及不同考试局及科目安排。",
+    "findings": [
+      {
+        "type": "只翻译未解释",
+        "reason": "补HL/SL、EE、TOK、CAS对应的学习任务。"
+      }
+    ],
+    "status": "需处理"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 31,
+    "sentence": 3,
+    "original": "课程的结构、转轨时间和大学认可要按项目及院校要求核对；不要把转轨当作避开语言要求的捷径。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 35,
+    "sentence": 1,
+    "original": "**八大**通常指八所大学教育资助委员会资助大学，是机构范围的俗称，不能直接等同某一种课程或所有课程均获同等资助。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 35,
+    "sentence": 2,
+    "original": "**八大录取率、JUPAS offer率、本科学位率、资助学位率、大学升学率**可能采用不同分母和结果口径，不可互相替代。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 37,
+    "sentence": 1,
+    "original": "问学校：分母是全体中六生、DSE考生还是申请大学的人？",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 37,
+    "sentence": 2,
+    "original": "算录取通知还是最终入读？",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 37,
+    "sentence": 3,
+    "original": "是否包括海外、自资本科、副学位或重读生？",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 37,
+    "sentence": 4,
+    "original": "**副学士／高级文凭（副学位）**与学士学位属于不同资历及路径，后来能否衔接本科取决于成绩、课程及名额，不能承诺“读完必升大学”。",
+    "findings": [],
+    "status": "保留"
+  },
+  {
+    "file": "09-DSE与大学申请术语.md",
+    "line": 41,
+    "sentence": 1,
+    "original": "确定孩子入大学的年份、申请身份及两三类目标专业，逐项查课程要求、科目权重、学费与备选路径；记录资料日期，放榜前后再按当年规则复核。",
+    "findings": [
+      {
+        "type": "结尾动作不足",
+        "reason": "明确保存课程页、计分表、材料及截止日。"
+      }
+    ],
+    "status": "需处理"
+  }
+]

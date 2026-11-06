@@ -39,12 +39,16 @@ export default function BlogClusterPage({ cluster, locale }: { cluster: BlogClus
 
         {isSeries && (
           <section className="mt-8" aria-labelledby="series-directory-heading">
-            <h2 id="series-directory-heading" className="font-serif text-2xl font-bold">{L("从选校到入学，按三篇阅读", locale)}</h2>
+            <h2 id="series-directory-heading" className="font-serif text-2xl font-bold">{L("按目录阅读", locale)}</h2>
+            {cluster.sections && <nav aria-label={L("分类目录", locale)} className="mb-5 flex flex-wrap gap-3">
+              {cluster.sections.map((section) => <a key={section.clusterSlug} href={localeHref(`/blog/topics/${section.clusterSlug}`, locale)} className="rounded-lg border border-[var(--p-gray-300)] px-4 py-2 text-sm font-semibold">{L(section.title, locale)} · {section.articleSlugs.length} {L("篇", locale)}</a>)}
+            </nav>}
             <ol className="grid gap-4 p-0">
               {clusterArticles(cluster).map((entry, index) => (
                 <li key={entry.slug} className="list-none">
                   <a href={localeHref(`/blog/${entry.slug}`, locale)} className="block rounded-xl border border-[var(--p-gray-300)] p-5 text-[var(--p-fg)] no-underline hover:bg-[var(--p-bg-yellow)] focus-visible:outline-2 focus-visible:outline-offset-2">
                     <span className="text-sm text-[var(--p-secondary)]">{L("第", locale)} {index + 1} {L("篇", locale)} / {cluster.articleSlugs.length}</span>
+                    {cluster.sections && <span className="ml-3 text-sm text-[var(--p-secondary)]">{L(cluster.sections.find((section) => section.articleSlugs.includes(entry.slug))?.title ?? "", locale)}</span>}
                     <h3 className="mb-0 mt-2 font-serif text-xl font-bold">{titleFor(entry, locale)}</h3>
                     <p className="mb-0 mt-2 text-sm leading-relaxed text-[var(--p-secondary)]">{L(locale === "sc" && entry.scTease ? entry.scTease : entry.tease, locale)}</p>
                   </a>
