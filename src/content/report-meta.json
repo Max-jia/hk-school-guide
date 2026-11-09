@@ -971,6 +971,38 @@
   ],
   "KG_REPORTS": [
     {
+      "n": "又一村學校",
+      "t": "暂无评级",
+      "d": "深水埗区",
+      "h": "半日及全日·探索课程与户外活动·升小数据须看统计口径",
+      "c": "yau-yat-chuen-school-kg",
+      "premium": false
+    },
+    {
+      "n": "聖公會聖三一堂曾肇添幼稚園",
+      "t": "暂无评级",
+      "d": "九龙城区",
+      "h": "半日班·语言及探索课程·K1入学与升小资料",
+      "c": "skh-holy-trinity-tsang-shiu-tim-kg",
+      "premium": false
+    },
+    {
+      "n": "明我幼稚園（筲箕灣）",
+      "t": "暂无评级",
+      "d": "东区",
+      "h": "筲箕湾校址与班制·学费·课程及升小资料",
+      "c": "dominic-savio-kindergarten-324230",
+      "premium": false
+    },
+    {
+      "n": "聖三一中心幼稚園暨幼兒園",
+      "t": "暂无评级",
+      "d": "九龙城区",
+      "h": "PN至K3全日班·课程与收费·入读及升小资料",
+      "c": "holy-trinity-centre-kindergarten",
+      "premium": false
+    },
+    {
       "n": "寶山幼兒園",
       "t": "S",
       "d": "湾仔区",
