@@ -5236,6 +5236,9 @@ for (const sample of PILOT_SCHOOLS) {
 // A profile can precede its deep report release; only link reports in the published catalogue.
 const publishedReports = new Set([...reportMeta.PS_REPORTS, ...reportMeta.KG_REPORTS, ...reportMeta.SS_REPORTS].map((report) => report.c));
 const reviewedKindergartenReportByNumber = new Map([
+  ["324230", "dominic-savio-kindergarten-324230"],
+  ["325600", "skh-holy-trinity-tsang-shiu-tim-kg"],
+  ["325180", "holy-trinity-centre-kindergarten"],
   ["564249", "yot-chan-cheng-yuk-yee-kg"],
   ["325198", "salvation-army-chan-kwan-tung-kg"],
 ]);
