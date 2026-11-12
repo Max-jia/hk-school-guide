@@ -3,6 +3,8 @@ import reportMeta from "@/content/report-meta.json";
 
 /** Every report JSON, including the archived direct route, is admitted after content-parity checks. */
 export const EDITORIAL_REPORT_SLUGS = [
+  "st-johannes-college-kg",
+  "st-rose-of-lima-kg",
   "alliance",
   "aogps",
   "aps",

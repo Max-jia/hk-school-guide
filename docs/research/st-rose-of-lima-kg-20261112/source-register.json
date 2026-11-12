@@ -1,0 +1,45 @@
+{
+  "checkedOn": "2026-11-12",
+  "sources": {
+    "kg": "https://kgp2026.kindergartenprofile.com/school/?schid=3124790001",
+    "old": "https://kgp2025.azurewebsites.net/edb/schoolinfo.php?schid=6057",
+    "fee": "https://applications.edb.gov.hk/schoolsearch/schoolfee/312479.pdf",
+    "qr": "https://www.edb.gov.hk/attachment/tc/edu-system/preprimary-kindergarten/quality-assurance-framework/qr/qr-report/StRoseLima.pdf",
+    "primary": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=76",
+    "poa": "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+    "apply": "https://scholarbliss.com/zh/schools/st-rose-of-lima-s-kindergarten-312479",
+    "goal": "https://goal-edu.com/events/c3a17122-da22-4f35-bda9-7e94bfac4197",
+    "bk": "https://www.baby-kingdom.com/forum.php?mod=viewthread&tid=23260746",
+    "ek": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2886719",
+    "compare": "https://www.baby-kingdom.com/forum.php?mod=viewthread&tid=23408200",
+    "web": "https://www.roselima.edu.hk/"
+  },
+  "limits": [
+    "学校官网及旧招生PDF本次405；2027/28细则仅作第三方转述",
+    "2026概览表格抓取列对齐不全，未使用不确定学生人数",
+    "未取得近期逐校升小原表和分母",
+    "社交样本旧且匿名；Facebook仅检索到旧群线索",
+    "不采用媒体综合排名作评级",
+    "2023评核结论仅作历史观察"
+  ],
+  "round2Sources": {
+    "kg": "https://kgp2026.kindergartenprofile.com/school/?schid=3124790001",
+    "ps": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=76",
+    "net": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/school-lists/Net34.pdf",
+    "poa": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+    "wait": "https://www.srols.edu.hk/sites/default/files/download/2026_27%E5%AD%B8%E5%B9%B4%E5%B0%8F%E4%B8%80%E5%80%99%E8%A3%9C%E7%94%9F%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B%E8%A1%A8%E5%8F%8A%E9%A0%88%E7%9F%A5.pdf",
+    "primaryapply": "https://www.srols.edu.hk/sites/default/files/download/2027%E5%B9%B4%E5%BA%A6%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E7%94%B3%E8%AB%8B%E9%A0%88%E7%9F%A5_%E4%B8%8A%E8%BC%89%E7%B6%B2%E9%A0%81.pdf",
+    "case": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2469585",
+    "rumour": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2745871",
+    "faq": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_TC.pdf",
+    "dse": "https://www.hksrl.edu.hk/en/content.php?wid=149"
+  },
+  "round2Conclusions": [
+    "2025年9月K3在读178，非毕业分母；直接检查官方概览HTML行列",
+    "2027小学自行50，非本园专属学额",
+    "候补原表无仅限本园或必获面试承诺；不从表格推隐性加分",
+    "2012匿名单一家长多个offer不能当多名毕业生；候补与拒信不当录取",
+    "2026英文4+70.5及2025英文4+85.1是中学科目成绩，不是幼园考小成果",
+    "未找到近两届逐校人数，未编造Top3或成功率"
+  ]
+}

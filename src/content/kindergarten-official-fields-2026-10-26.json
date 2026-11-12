@@ -94222,29 +94222,33 @@
           },
           "kgpHash": "fda3058a073be82f3656a60084031fee1dbc7bc7989691d28f0fbcb5aad929e2",
           "language": {
-            "text": "英語學習說明",
-            "detail": "校方公開說明：英語學習環境；鼓勵學生動手做,主動探索；小班教學；除日常課堂外，會為學生安排各種切合課程之參觀、研討會、工作坊、教育營、遊覽及學習計劃。上述資料未明確分出主要授課語言；語言主次及每天課時仍須按所報班別向校方確認。",
-            "values": [],
-            "period": "2026/27概覽・校方申報",
-            "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=2124660004",
-            "mode": "language-learning",
+            "text": "英語為主",
+            "detail": "2026-11-12核對校方幼稚園課程頁：英語為主要授課語言；FAQ說明每日中文，另設普通話。中文可選主流或中文第二語言（CSL）；中文課以粵語還是普通話為主及各語言課時未公開。",
+            "values": [
+              "英語"
+            ],
+            "period": "2026/27；2026-11-12官網核對",
+            "sourceUrl": "https://st-johannes.edu.hk/kindergarten/",
+            "mode": "explicit-medium",
             "evidence": [
-              "英語學習環境；鼓勵學生動手做,主動探索；小班教學；除日常課堂外，會為學生安排各種切合課程之參觀、研討會、工作坊、教育營、遊覽及學習計劃"
+              "English as the primary language of instruction",
+              "Mainstream Chinese or Chinese as a Second Language (C.S.L)"
             ]
           },
           "pn": {
-            "text": "有記錄",
+            "text": "有PN班記錄",
             "value": "yes",
-            "detail": "本校址概覽的幼兒服務欄在2025年9月列提供2–3歲服務：有。這是該日期的服務記錄，不等同當屆招生或PN學位。",
-            "period": "2025年9月統計",
-            "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=2124660004"
+            "detail": "2026/27校方招生冊列109號校舍設幼兒班（PN）半日：8:30–11:30或12:30–15:30；當屆實際開班及剩餘學位須確認。2025年9月概覽亦有2至3歲服務記錄，兩個年度分開理解",
+            "period": "2026/27招生冊；2026-11-12核對",
+            "sourceUrl": "https://st-johannes.edu.hk/wp-content/uploads/2026/10/2026%E2%80%932027-St.-Johannes-College-school-brochure-A4.pdf"
           },
           "fee": {
-            "text": "$102,720／年",
-            "detail": "全年學費：上午班：K1 $84,720 (12)、K2 $51,600 (12)、K3 $51,600 (12)（全年；括號內為期數）；下午班：K2 $51,600 (12)、K3 $51,600 (12)（全年；括號內為期數）；全日班K1–K3：$102,720 (12)（全年；括號內為期數）。 書本、校服、膳食及交通等費用須另核對；不把PN的歷史費率併入K1–K3。",
+            "text": "K1半日$84,720；全日$102,720／年",
+            "detail": "校方2026/27表與教育局現行費證：K1上午全年84,720元，K1–K3全日每年102,720元，均12期；全日膳食每年另6,600元。概覽及費證仍列K2/K3半日51,600元，屬2008/2009生效的舊班型條目，現行官網未列其招生，須確認開班；不能當本屆可報讀班型。PN官網72,600元與概覽2025年9月81,400元有差異，另索當屆書面報價。",
             "period": "2026/27學年",
-            "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=2124660004",
+            "sourceUrl": "https://st-johannes.edu.hk/tuition/",
             "annualAmounts": [
+              84720,
               102720
             ],
             "basis": "全年學費",
@@ -94268,7 +94272,10 @@
                 "K3": "$102,720 (12)"
               }
             ],
-            "warnings": [],
+            "warnings": [
+              "K2/K3半日為舊核准班型，須確認當屆開班",
+              "PN官網與歷史概覽費用不同，另核書面報價"
+            ],
             "status": "numeric"
           }
         }
@@ -94283,6 +94290,26 @@
           "label": "校址0004資料",
           "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2124660004",
           "scope": "2026/27概覽・校方申報；只適用此校址及所列班別，不推算招生。"
+        },
+        {
+          "label": "聖若望幼稚園課程",
+          "url": "https://st-johannes.edu.hk/kindergarten/",
+          "scope": "2026-11-12核對英語主導、主流中文與CSL選項。"
+        },
+        {
+          "label": "2026/27校方收費表",
+          "url": "https://st-johannes.edu.hk/tuition/",
+          "scope": "與教育局現行費證核對K1半日及各級全日學費；PN差異另列。"
+        },
+        {
+          "label": "聖若望2026/27招生冊",
+          "url": "https://st-johannes.edu.hk/wp-content/uploads/2026/10/2026%E2%80%932027-St.-Johannes-College-school-brochure-A4.pdf",
+          "scope": "印刷頁18列PN、KG、P1在109號，P2–P6在143號；AIS需另申請審核。"
+        },
+        {
+          "label": "聖若望FAQ",
+          "url": "https://st-johannes.edu.hk/faq/",
+          "scope": "PN及幼稚園完成後免額外入學試衔接下一學部；註冊條件另核。"
         }
       ],
       "sessions": {
@@ -94296,11 +94323,12 @@
         "conflict": false
       },
       "fee": {
-        "text": "$102,720／年",
-        "detail": "全年學費：上午班：K1 $84,720 (12)、K2 $51,600 (12)、K3 $51,600 (12)（全年；括號內為期數）；下午班：K2 $51,600 (12)、K3 $51,600 (12)（全年；括號內為期數）；全日班K1–K3：$102,720 (12)（全年；括號內為期數）。 書本、校服、膳食及交通等費用須另核對；不把PN的歷史費率併入K1–K3。",
+        "text": "K1半日$84,720；全日$102,720／年",
+        "detail": "校方2026/27表與教育局現行費證：K1上午全年84,720元，K1–K3全日每年102,720元，均12期；全日膳食每年另6,600元。概覽及費證仍列K2/K3半日51,600元，屬2008/2009生效的舊班型條目，現行官網未列其招生，須確認開班；不能當本屆可報讀班型。PN官網72,600元與概覽2025年9月81,400元有差異，另索當屆書面報價。",
         "period": "2026/27學年",
-        "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=2124660004",
+        "sourceUrl": "https://st-johannes.edu.hk/tuition/",
         "annualAmounts": [
+          84720,
           102720
         ],
         "basis": "全年學費",
@@ -94324,26 +94352,32 @@
             "K3": "$102,720 (12)"
           }
         ],
-        "warnings": [],
+        "warnings": [
+          "K2/K3半日為舊核准班型，須確認當屆開班",
+          "PN官網與歷史概覽費用不同，另核書面報價"
+        ],
         "status": "numeric"
       },
       "language": {
-        "text": "英語學習說明",
-        "detail": "校方公開說明：英語學習環境；鼓勵學生動手做,主動探索；小班教學；除日常課堂外，會為學生安排各種切合課程之參觀、研討會、工作坊、教育營、遊覽及學習計劃。上述資料未明確分出主要授課語言；語言主次及每天課時仍須按所報班別向校方確認。",
-        "values": [],
-        "period": "2026/27概覽・校方申報",
-        "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=2124660004",
-        "mode": "language-learning",
+        "text": "英語為主",
+        "detail": "2026-11-12核對校方幼稚園課程頁：英語為主要授課語言；FAQ說明每日中文，另設普通話。中文可選主流或中文第二語言（CSL）；中文課以粵語還是普通話為主及各語言課時未公開。",
+        "values": [
+          "英語"
+        ],
+        "period": "2026/27；2026-11-12官網核對",
+        "sourceUrl": "https://st-johannes.edu.hk/kindergarten/",
+        "mode": "explicit-medium",
         "evidence": [
-          "英語學習環境；鼓勵學生動手做,主動探索；小班教學；除日常課堂外，會為學生安排各種切合課程之參觀、研討會、工作坊、教育營、遊覽及學習計劃"
+          "English as the primary language of instruction",
+          "Mainstream Chinese or Chinese as a Second Language (C.S.L)"
         ]
       },
       "pn": {
-        "text": "有記錄",
+        "text": "有PN班記錄",
         "value": "yes",
-        "detail": "本校址概覽的幼兒服務欄在2025年9月列提供2–3歲服務：有。這是該日期的服務記錄，不等同當屆招生或PN學位。",
-        "period": "2025年9月統計",
-        "sourceUrl": "https://kgp2026.kindergartenprofile.com/school/?schid=2124660004"
+        "detail": "2026/27校方招生冊列109號校舍設幼兒班（PN）半日：8:30–11:30或12:30–15:30；當屆實際開班及剩餘學位須確認。2025年9月概覽亦有2至3歲服務記錄，兩個年度分開理解",
+        "period": "2026/27招生冊；2026-11-12核對",
+        "sourceUrl": "https://st-johannes.edu.hk/wp-content/uploads/2026/10/2026%E2%80%932027-St.-Johannes-College-school-brochure-A4.pdf"
       }
     },
     "325546": {

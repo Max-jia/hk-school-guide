@@ -1,0 +1,48 @@
+{
+  "productionDeployment": "dpl_Gffom3VjEJjYxNogVJ7GCi3e1HPJ",
+  "baselineCommit": "03356feb0edd4063a9ef201fe5c8137cac711de9",
+  "sharedFiles": 2149,
+  "changedSharedFiles": [],
+  "productionOnlyFiles": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "next-env.d.ts",
+    "public/directory-data/kindergarten.2e7be38d6149372e.json",
+    "public/directory-data/kindergarten.7a69eb46b04cc643.json",
+    "public/directory-data/primary-sc.99472a55ddeb66f9.json",
+    "public/directory-data/primary-tc.21044bd747d75b5b.json",
+    "public/directory-data/secondary-sc.8ba454c4c12c35d4.json",
+    "public/directory-data/secondary-tc.22e66020ce425389.json",
+    "tsconfig.tsbuildinfo"
+  ],
+  "headOnlyFiles": [
+    ".dockerignore",
+    ".gitignore",
+    "scripts/__pycache__/gen_xhs_pdfs.cpython-314.pyc"
+  ],
+  "productionReportCounts": {
+    "PS_REPORTS": 121,
+    "KG_REPORTS": 66,
+    "TIER_CFG": 6,
+    "SS_REPORTS": 50
+  },
+  "productionReports": 237,
+  "releaseReports": 239,
+  "verifiedAt": "2026-11-12",
+  "preservationCheck": "All 2149 shared source files match HEAD. Production-only files are generated/runtime guide files; HEAD-only files are deployment-ignored support files.",
+  "unchangedExistingCatalogueEntries": 237,
+  "addedReports": [
+    "st-johannes-college-kg",
+    "st-rose-of-lima-kg"
+  ],
+  "allowedSourceChanges": [
+    "src/content/reports/st-rose-of-lima-kg.json",
+    "src/content/reports/st-johannes-college-kg.json",
+    "src/content/report-meta.json",
+    "src/content/generated/directory-assets.json",
+    "src/content/kindergarten-official-fields-2026-10-26.json",
+    "src/lib/report-html.ts",
+    "src/lib/school-directory-batch-86.ts",
+    "src/lib/school-directory-pilot.ts"
+  ]
+}
