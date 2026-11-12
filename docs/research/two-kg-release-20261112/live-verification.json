@@ -1,0 +1,122 @@
+[
+  {
+    "path": "/cn/reports/st-rose-of-lima-kg",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/reports/st-rose-of-lima-kg",
+    "gradeA": true,
+    "scores": true,
+    "chapters": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "radar": true
+  },
+  {
+    "path": "/cn/reports/st-johannes-college-kg",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/reports/st-johannes-college-kg",
+    "gradeA": true,
+    "scores": true,
+    "chapters": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "radar": true
+  },
+  {
+    "path": "/reports/st-rose-of-lima-kg",
+    "status": 200,
+    "url": "https://hkschool.guide/reports/st-rose-of-lima-kg",
+    "gradeA": true,
+    "scores": true,
+    "chapters": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "radar": true
+  },
+  {
+    "path": "/reports/st-johannes-college-kg",
+    "status": 200,
+    "url": "https://hkschool.guide/reports/st-johannes-college-kg",
+    "gradeA": true,
+    "scores": true,
+    "chapters": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "radar": true
+  },
+  {
+    "path": "/cn/schools/kindergarten/st-rose-of-lima-s-kindergarten-312479",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/schools/kindergarten/st-rose-of-lima-s-kindergarten-312479",
+    "reportLink": true
+  },
+  {
+    "path": "/cn/schools/kindergarten/st-johannes-college-212466",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/schools/kindergarten/st-johannes-college-212466",
+    "reportLink": true
+  },
+  {
+    "path": "/cn/schools/kindergarten/directory?report=1",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/schools/kindergarten/directory?report=1",
+    "directoryEntries": [
+      {
+        "number": "212466",
+        "slug": "st-johannes-college-212466",
+        "reports": [
+          "st-johannes-college-kg"
+        ]
+      },
+      {
+        "number": "312479",
+        "slug": "st-rose-of-lima-s-kindergarten-312479",
+        "reports": [
+          "st-rose-of-lima-kg"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/cn/blog",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/blog"
+  },
+  {
+    "path": "/cn/blog/p1-scoring-guide",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/blog/p1-scoring-guide"
+  },
+  {
+    "path": "/cn/reports/australian-international-school-hong-kong-secondary",
+    "status": 200,
+    "url": "https://hkschool.guide/cn/reports/australian-international-school-hong-kong-secondary"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "status": "READY",
+  "verifiedAt": "2026-11-12T13:10:18.137359+00:00",
+  "productionDomain": "https://hkschool.guide",
+  "deploymentId": "dpl_DPqKrP4ru67h8tNq3PEiU98VCwyC",
+  "deploymentUrl": "https://hk-school-guide-4ryyn2fvh-max-jia-s-projects.vercel.app",
+  "sourceCommit": "72a7d40b47ffdf01c0b1f77b6ff5ef59372dfca8",
+  "githubBranch": "codex/four-kindergarten-reports-20261109",
+  "previousProductionDeployment": "dpl_Gffom3VjEJjYxNogVJ7GCi3e1HPJ",
+  "previousProductionCommit": "03356feb",
+  "reportsBefore": 237,
+  "reportsAfter": 239,
+  "existingReportJsonChanged": 0,
+  "existingReportJsonMissing": 0,
+  "kindergartenRowsBefore": 958,
+  "kindergartenRowsAfter": 958,
+  "changedDirectorySchoolNumbers": [
+    "212466",
+    "312479"
+  ],
+  "localProductionBuild": "passed; 5385 static/generated pages",
+  "cloudProductionBuild": "READY; compilation and TypeScript passed",
+  "promotion": "staged production tested before promotion; baseline alias rechecked immediately before switch",
+  "runtimeErrorScan": "No error/fatal log groups returned for this deployment in the 10-minute post-release scan",
+  "browserVerification": "Both live simplified reports loaded in Chrome; A grade and accessible five-axis SVG confirmed. IAB unavailable; used native Chrome fallback.",
+  "verificationFile": "live-verification.json"
+}
