@@ -1,0 +1,110 @@
+{
+  "verifiedAt": "2026-11-14T03:08:31.465373+00:00",
+  "deploymentId": "dpl_9LyK3ybxmRVZWLZSinxrocRdTXif",
+  "sourceCommit": "478a062586dd134d08dfa3817212fda9b692c44c",
+  "pages": [
+    {
+      "path": "/cn/reports/victoria",
+      "status": 200,
+      "bytes": 239461,
+      "title": "维多利亚幼稚园｜八校区、课程及升小去向｜港学荟",
+      "chapters": 8,
+      "hasUpdate": true,
+      "hasNewBudget": true,
+      "hasLatestParent": true
+    },
+    {
+      "path": "/reports/victoria",
+      "status": 200,
+      "bytes": 238758,
+      "title": "維多利亞幼稚園｜八校區、課程及升小去向｜港學薈",
+      "chapters": 8,
+      "hasUpdate": true,
+      "hasNewBudget": true,
+      "hasLatestParent": true
+    },
+    {
+      "path": "/cn/blog/topics/school-net-series",
+      "status": 200,
+      "bytes": 83789,
+      "title": "香港校网逐网分析：小学与升中｜香港择校指南 | 港学荟",
+      "articlePaths": [
+        "/cn/blog/central-western-secondary-net-analysis",
+        "/cn/blog/kowloon-city-secondary-net-analysis",
+        "/cn/blog/primary-net-11-analysis",
+        "/cn/blog/primary-net-12-analysis",
+        "/cn/blog/primary-net-31-analysis",
+        "/cn/blog/primary-net-32-analysis",
+        "/cn/blog/primary-net-34-analysis",
+        "/cn/blog/primary-net-35-analysis",
+        "/cn/blog/primary-net-40-analysis",
+        "/cn/blog/primary-net-41-analysis",
+        "/cn/blog/primary-net-89-analysis",
+        "/cn/blog/primary-net-91-analysis",
+        "/cn/blog/sha-tin-secondary-net-analysis",
+        "/cn/blog/sham-shui-po-secondary-net-analysis",
+        "/cn/blog/wan-chai-secondary-net-analysis",
+        "/cn/blog/yau-tsim-mong-secondary-net-analysis"
+      ]
+    },
+    {
+      "path": "/blog/topics/school-net-series",
+      "status": 200,
+      "bytes": 82888,
+      "title": "香港校網逐網分析：小學與升中｜香港擇校指南 | 港學薈",
+      "articlePaths": [
+        "/blog/central-western-secondary-net-analysis",
+        "/blog/kowloon-city-secondary-net-analysis",
+        "/blog/primary-net-11-analysis",
+        "/blog/primary-net-12-analysis",
+        "/blog/primary-net-31-analysis",
+        "/blog/primary-net-32-analysis",
+        "/blog/primary-net-34-analysis",
+        "/blog/primary-net-35-analysis",
+        "/blog/primary-net-40-analysis",
+        "/blog/primary-net-41-analysis",
+        "/blog/primary-net-89-analysis",
+        "/blog/primary-net-91-analysis",
+        "/blog/sha-tin-secondary-net-analysis",
+        "/blog/sham-shui-po-secondary-net-analysis",
+        "/blog/wan-chai-secondary-net-analysis",
+        "/blog/yau-tsim-mong-secondary-net-analysis"
+      ]
+    },
+    {
+      "path": "/cn/blog/primary-net-41-analysis",
+      "status": 200,
+      "bytes": 146837,
+      "title": "41校网怎么选：官津怎么排，直资和私立怎样同步申请 | 港学荟"
+    },
+    {
+      "path": "/blog/sha-tin-secondary-net-analysis",
+      "status": 200,
+      "bytes": 159027,
+      "title": "沙田升中：共享位佔大多數，不能只憑女校多一間判斷男女競爭 | 港學薈"
+    },
+    {
+      "path": "/cn/reports/st-rose-of-lima-kg",
+      "status": 200,
+      "bytes": 132675,
+      "title": "圣罗撒幼稚园深度报告｜课程、学费与入学选择｜港学荟"
+    },
+    {
+      "path": "/cn/reports/st-johannes-college-kg",
+      "status": 200,
+      "bytes": 144740,
+      "title": "圣若望英文书院（幼稚园部）深度报告｜课程、学费与入学选择｜港学荟"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory",
+      "status": 200,
+      "bytes": 451830,
+      "title": "香港幼稚园学校名录｜地区、办学类别与课程资料 | 港学荟"
+    }
+  ],
+  "sitemapBefore": 5376,
+  "sitemapAfter": 5376,
+  "sitemapMissing": [],
+  "reportAPIExactMatch": true,
+  "reportAPIContentSHA256": "0ef3b232d2a5fe63e7c923144dfbf0edf77fb35c58fa8c2564b2ba25dc90c481"
+}
