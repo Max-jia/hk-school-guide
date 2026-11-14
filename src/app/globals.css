@@ -1592,3 +1592,8 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
     font-size: 16px;
   }
 }
+
+/* School-net tables retain readable columns on small screens. */
+.blog-article .school-net-table { max-width: 100%; }
+.blog-article .school-net-table table { min-width: 760px; width: 100%; table-layout: auto; }
+.blog-article .school-net-table td { overflow-wrap: anywhere; }

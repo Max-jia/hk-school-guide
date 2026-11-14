@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SchoolNetScenario from "@/components/SchoolNetScenario";
+import schoolNetScenarios from "@/content/school-net-scenarios.json";
 import BlogSeriesNavigation from "@/components/BlogSeriesNavigation";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -58,6 +60,7 @@ export default async function BlogPostPage({
       </main>
     );
   }
+  const scenario = Object.entries(schoolNetScenarios).find(([key]) => key === slug)?.[1];
   const jsonLd = blogPostJsonLd(post, locale);
   const meta = getBlogMeta(slug);
   const publishedAt = blogPublishedAt(meta);
@@ -139,6 +142,7 @@ export default async function BlogPostPage({
                 {series && <BlogSeriesNavigation series={series} slug={slug} locale={locale} position="top" />}
                 {sidebarGroups && <BlogRelatedLinks slug={slug} locale={locale} config={sidebarGroups} compact />}
                 <div className="pt-6" dangerouslySetInnerHTML={{ __html: blogBodyContent(L(post.body, locale), locale) }} />
+                {scenario && <SchoolNetScenario config={scenario} locale={locale} />}
                 {series && <BlogSeriesNavigation series={series} slug={slug} locale={locale} position="bottom" />}
                 {!series && !hasBodyRelatedLinks && <section className="mt-14 border-t border-[var(--p-gray-300)] pt-7" aria-labelledby="blog-related-heading">
                   <h2 id="blog-related-heading" className="!mt-0 !border-0 !pt-0">{L("继续阅读", locale)}</h2>

@@ -15,6 +15,96 @@ export type BlogCluster = {
 /** Editorial topic hubs. Keep membership deliberate; broad category labels are not a substitute for a cluster. */
 export const BLOG_CLUSTERS: BlogCluster[] = [
 {
+  "slug": "school-net-series",
+  "kind": "series",
+  "title": "香港校网逐网分析：小学与升中",
+  "description": "已完成10篇小学及6篇升中分析，逐校比较学校性质、衔接、费用与申请，说明历史学额、男女情境和未核事项。",
+  "intent": "按真实住址和孩子需要比较校网的家庭",
+  "coreSlug": "primary-net-11-analysis",
+  "articleSlugs": [
+    "primary-net-11-analysis",
+    "primary-net-12-analysis",
+    "primary-net-31-analysis",
+    "primary-net-32-analysis",
+    "primary-net-34-analysis",
+    "primary-net-35-analysis",
+    "primary-net-40-analysis",
+    "primary-net-41-analysis",
+    "primary-net-89-analysis",
+    "primary-net-91-analysis",
+    "central-western-secondary-net-analysis",
+    "wan-chai-secondary-net-analysis",
+    "yau-tsim-mong-secondary-net-analysis",
+    "sham-shui-po-secondary-net-analysis",
+    "kowloon-city-secondary-net-analysis",
+    "sha-tin-secondary-net-analysis"
+  ],
+  "sections": [
+    {
+      "title": "小学",
+      "clusterSlug": "school-net-primary",
+      "articleSlugs": [
+        "primary-net-11-analysis",
+        "primary-net-12-analysis",
+        "primary-net-31-analysis",
+        "primary-net-32-analysis",
+        "primary-net-34-analysis",
+        "primary-net-35-analysis",
+        "primary-net-40-analysis",
+        "primary-net-41-analysis",
+        "primary-net-89-analysis",
+        "primary-net-91-analysis"
+      ]
+    },
+    {
+      "title": "升中",
+      "clusterSlug": "school-net-secondary",
+      "articleSlugs": [
+        "central-western-secondary-net-analysis",
+        "wan-chai-secondary-net-analysis",
+        "yau-tsim-mong-secondary-net-analysis",
+        "sham-shui-po-secondary-net-analysis",
+        "kowloon-city-secondary-net-analysis",
+        "sha-tin-secondary-net-analysis"
+      ]
+    }
+  ]
+},
+{
+  "slug": "school-net-primary",
+  "title": "香港小学校网逐网分析",
+  "description": "10个校网的官津清单、直资私立选择和升中路径。历史结果与当届申请分别说明。",
+  "intent": "准备2027小一入学及比较住址的家庭",
+  "coreSlug": "primary-net-11-analysis",
+  "articleSlugs": [
+    "primary-net-11-analysis",
+    "primary-net-12-analysis",
+    "primary-net-31-analysis",
+    "primary-net-32-analysis",
+    "primary-net-34-analysis",
+    "primary-net-35-analysis",
+    "primary-net-40-analysis",
+    "primary-net-41-analysis",
+    "primary-net-89-analysis",
+    "primary-net-91-analysis"
+  ]
+},
+{
+  "slug": "school-net-secondary",
+  "title": "香港升中校网逐网分析",
+  "description": "6个升中网的完整历史名册、男女供给及情境计算，另列独立申请学校。",
+  "intent": "比较升中选校组合及直资私立申请的家庭",
+  "coreSlug": "central-western-secondary-net-analysis",
+  "articleSlugs": [
+    "central-western-secondary-net-analysis",
+    "wan-chai-secondary-net-analysis",
+    "yau-tsim-mong-secondary-net-analysis",
+    "sham-shui-po-secondary-net-analysis",
+    "kowloon-city-secondary-net-analysis",
+    "sha-tin-secondary-net-analysis"
+  ]
+},
+{
   "slug": "k12-terminology",
   "kind": "series",
   "title": "香港教育术语与黑话指南",

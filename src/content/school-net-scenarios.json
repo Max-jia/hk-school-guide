@@ -1,0 +1,110 @@
+{
+  "central-western-secondary-net-analysis": {
+    "district": "中西区",
+    "samples": [
+      {
+        "label": "民间主样本",
+        "boys": 91,
+        "girls": 112,
+        "shared": 6
+      },
+      {
+        "label": "两站共同样本",
+        "boys": 64,
+        "girls": 100,
+        "shared": 6
+      }
+    ]
+  },
+  "yau-tsim-mong-secondary-net-analysis": {
+    "district": "油尖旺",
+    "samples": [
+      {
+        "label": "民间主样本",
+        "boys": 160,
+        "girls": 86,
+        "shared": 206
+      },
+      {
+        "label": "两站共同样本",
+        "boys": 160,
+        "girls": 86,
+        "shared": 134
+      }
+    ]
+  },
+  "sham-shui-po-secondary-net-analysis": {
+    "district": "深水埗",
+    "samples": [
+      {
+        "label": "民间主样本",
+        "boys": 63,
+        "girls": 239,
+        "shared": 139
+      },
+      {
+        "label": "两站共同样本",
+        "boys": 63,
+        "girls": 168,
+        "shared": 76
+      }
+    ]
+  },
+  "sha-tin-secondary-net-analysis": {
+    "district": "沙田",
+    "samples": [
+      {
+        "label": "民间主样本",
+        "boys": 0,
+        "girls": 12,
+        "shared": 902
+      },
+      {
+        "label": "两站共同样本",
+        "boys": 0,
+        "girls": 0,
+        "shared": 844
+      }
+    ]
+  },
+  "wan-chai-secondary-net-analysis": {
+    "district": "湾仔",
+    "samples": [
+      {
+        "label": "共同7校样本",
+        "boys": 77,
+        "girls": 80,
+        "shared": 62
+      },
+      {
+        "label": "家庭偏好：不选真光（非评级调整）",
+        "boys": 77,
+        "girls": 30,
+        "shared": 62
+      }
+    ]
+  },
+  "kowloon-city-secondary-net-analysis": {
+    "district": "九龙城",
+    "samples": [
+      {
+        "label": "升学天地主样本13校",
+        "boys": 17,
+        "girls": 129,
+        "shared": 527
+      },
+      {
+        "label": "两站共同10校",
+        "boys": 17,
+        "girls": 78,
+        "shared": 374
+      },
+      {
+        "label": "第二站：共同10校加陈瑞祺",
+        "shared": 374,
+        "boys": 90,
+        "girls": 78
+      }
+    ]
+  }
+}

@@ -106,6 +106,11 @@ function entry(stage: BlogRelatedConfig["stage"], focus: string, guides: BlogRel
 // One reviewed selection per article; deliberately no same-stage first-N fallback.
 // New articles must be added here and pass scripts/validate-blog-related-links.mjs.
 export const BLOG_RELATED_LINKS: Record<string, BlogRelatedConfig> = {
+  "primary-net-40-analysis": entry("primary", "校网分析 · 申请与升学", [guide("sham-shui-po-secondary-net-analysis", "配套学段分析", "核对学校组合与升学条件"), G.through], [G.net, G.psp], "制度与选校", [A.net, A.simulator]),
+  "primary-net-41-analysis": entry("primary", "校网分析 · 申请与升学", [guide("kowloon-city-secondary-net-analysis", "配套学段分析", "核对学校组合与升学条件"), G.through], [G.net, G.psp], "制度与选校", [A.net, A.simulator]),
+  "primary-net-89-analysis": entry("primary", "校网分析 · 申请与升学", [guide("sha-tin-secondary-net-analysis", "配套学段分析", "核对学校组合与升学条件"), G.through], [G.net, G.psp], "制度与选校", [A.net, A.simulator]),
+  "primary-net-91-analysis": entry("primary", "校网分析 · 申请与升学", [guide("sha-tin-secondary-net-analysis", "配套学段分析", "核对学校组合与升学条件"), G.through], [G.net, G.psp], "制度与选校", [A.net, A.simulator]),
+  "sha-tin-secondary-net-analysis": entry("secondary", "校网分析 · 申请与升学", [guide("primary-net-91-analysis", "配套学段分析", "核对学校组合与升学条件"), G.sBand], [G.sOverview, G.sResults], "制度与选校", [A.secondary, A.shortlist]),
   "hk-kg-system-1": entry("kindergarten", "体系与预算", [G.aid, G.english], [topic("kg-system", "幼稚园制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
   "hk-kg-system-2": entry("kindergarten", "报名与面见", [G.k1, G.interview], [topic("kg-system", "幼稚园制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
   "hk-kg-system-3": entry("kindergarten", "注册与升小", [G.kWait, G.kResults], [topic("kg-system", "幼稚园制度三篇系列目录", "按顺序阅读体系、申请与入学衔接")], "本系列目录"),
