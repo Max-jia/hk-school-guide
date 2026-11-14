@@ -7388,233 +7388,316 @@ const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
 ],
 "victoria": [
   {
-    "label": "VEO：现行校区目录",
+    "label": "VEO现行八校区目录",
     "url": "https://www.victoria.edu.hk/campuses/",
-    "scope": "目录列八校区；用于机构范围、地区及与铜锣湾独立网站区分，不代表每校区只有一项注册。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行网页"
+    "scope": "核对VEO八校区，兴发街学校不在此目录内；一个物理校区可有不同注册实体。",
+    "sourceType": "school-official",
+    "academicYear": "现行八校区目录",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "VEO：2026/27年度学费",
+    "label": "VEO 2026/27收费表",
     "url": "https://www.victoria.edu.hk/tution/",
-    "scope": "逐校区逐年级半日费用；PN/K1为11期、K2/K3为10期。三年相加只能作为同年费率静态情景。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026/27"
+    "scope": "八校区逐级半日学费；PN/K1为11期、K2/K3为10期。PN按官网报价；幼稚园三年合计只属同年费率静态情景。",
+    "sourceType": "school-official",
+    "academicYear": "2026/27",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "VEO：2026/27班制与活动时间",
-    "url": "https://www.victoria.edu.hk/programme-class-schedule/?tab=Nursery_Kindergarten",
-    "scope": "核对三语/英普双语、可收PN年龄、各年级上午下午及K3下午延长时间；年度班表优先于无年度的校区简介。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026/27"
+    "label": "VEO当届班表",
+    "url": "https://www.victoria.edu.hk/programme-class-schedule/",
+    "scope": "核对当届实际公开班表与时段；不同于教育局所有核准收费班别，不将核准全日项目写成现正招生。",
+    "sourceType": "school-official",
+    "academicYear": "2026/27",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "VEO：2027/28申请程序",
+    "label": "VEO申请程序",
     "url": "https://www.victoria.edu.hk/application-procedure/",
-    "scope": "统一最多六志愿、申请年龄、费用、PN同校区升K1、两轮面见、兄姊第二轮豁免及滚动插班；非录取保证。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2027/28；兼列2026/27滚动收生"
+    "scope": "K1常规已截止、后续申请2027年1月起处理；PN仍开放。核生日分校差异、六志愿、申请费及第二轮豁免。",
+    "sourceType": "school-official",
+    "academicYear": "2027/28；兼列2026/27滚动申请",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "VEO：招生关键日期",
-    "url": "https://www.victoria.edu.hk/key-dates/",
-    "scope": "交叉核对K1/PN申请、两轮面见与公布日期；与申请页同属机构，属于内部一致性核对，非独立招生审计。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2027/28"
-  },
-  {
-    "label": "VEO：学生升班路线",
+    "label": "VEO年级路线",
     "url": "https://www.victoria.edu.hk/student-roadmap/",
-    "scope": "明确现读PN自动升同校区K1，不把它推成跨校转班或VSA保证。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "现行升班说明"
+    "scope": "现读PN自动升同校区K1、K2家庭学习及K3准备；不推成跨校区、指定班别或小学保证。",
+    "sourceType": "school-official",
+    "academicYear": "现行年级路线",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "VEO：K1–K3 IB PYP课程",
-    "url": "https://www.victoria.edu.hk/nursery-kindergarten/ib-primary-years-programme-k1-k3/",
-    "scope": "K1–K3跨主题探究课程；不把课程框架视为学生成效、排名或PN认证。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25"
-  },
-  {
-    "label": "VEO：语言与读写课程",
-    "url": "https://www.victoria.edu.hk/nursery-kindergarten/language-literacy-programme/",
-    "scope": "校方的生活化听说读写目标；没有逐语言课时比例，不据此编造50%/25%/25%。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25"
-  },
-  {
-    "label": "VEO：创客学习",
-    "url": "https://www.victoria.edu.hk/nursery-kindergarten/maker-centered-learning/",
-    "scope": "校方说明创客与STEAM及研究合作；作为课程设计说明，不转化为个体成效承诺。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25"
-  },
-  {
-    "label": "VEO：四届毕业生小学录取结果",
-    "url": "https://www.victoria.edu.hk/school-placement/",
-    "scope": "2022/23–2025/26：VSA692、蘇浙76、聖士提反附小69等获offer人数；截至2026-09-04。缺毕业分母和逐校区分母，不算录取率；多校offer不能累加成毕业人数。",
-    "sourceType": "operator-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2022/23–2025/26四届；数据截至2026-09-04"
-  },
-  {
-    "label": "VSA：现行招生政策",
+    "label": "VSA招生政策",
     "url": "https://www.vsa.edu.hk/admissions/how-to-apply",
-    "scope": "一年级优先考虑维多利亚学生/债券持有人、评估、同等能力下优先类别、K3新生仅空缺时获接纳。70%指香港永久居民保留学位，不是幼园升读率。",
+    "scope": "Y1优先仍须评估；Y1–2至少一种语言有沟通强项；70%为永久居民学位要求。新转K3待空缺，与逾期规则受理衔接须确认。",
     "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行；页面另列2028/29一年级活动"
+    "academicYear": "现行网页；政策PDF版本08/2025",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "铜锣湾维多利亚：独立初步申请登记",
-    "url": "https://www.cbvictoria.edu.hk/en/k1k2k3_application/",
-    "scope": "独立K1–K3初步登记及2026/27 PN，不把旧媒体“不收K1”当现行绝对规定。",
+    "label": "教育局中康收费证",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/569828.pdf",
+    "scope": "核对中康K1–K3核准收费及K3英普项目；核准收费不证明当届实际开班或空缺。",
+    "sourceType": "government",
+    "academicYear": "2026/27",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VEO PYP",
+    "url": "https://www.victoria.edu.hk/nursery-kindergarten/ib-primary-years-programme-k1-k3/",
+    "scope": "核对PYP适用K1–K3；课程授权不自动覆盖PN或每个新注册实体。",
     "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "现行；兼列2026/27"
+    "academicYear": "现行K1–K3课程说明",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "铜锣湾维多利亚：2026/27收费PDF",
-    "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/35/Tuition%2026-27_Eng.pdf",
-    "scope": "独立学校半日自动转账K1$96,480；不能套用VEO各校区。",
+    "label": "语文读写",
+    "url": "https://www.victoria.edu.hk/nursery-kindergarten/language-literacy-programme/",
+    "scope": "核对生活化听说读写、阅读讨论及分享；未有逐班英语、普通话和粤语课时比例，不填固定百分比。",
     "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026/27"
+    "academicYear": "现行网页",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "铜锣湾维多利亚：小学去向明细",
-    "url": "https://www.cbvictoria.edu.hk/en/school_placement/",
-    "scope": "表列122毕业生、VSA60/聖士提反附小12/蔡繼有4，属该校去向人数，不外推VEO。年度由配套官方图标题标识。",
+    "label": "创客课程",
+    "url": "https://www.victoria.edu.hk/nursery-kindergarten/maker-centered-learning/",
+    "scope": "校方创客及STEAM课程设计；与大学历史案例分开，不能推断全部课堂当前实施及个体成效。",
     "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2024/25（配套官方图片标题）"
+    "academicYear": "现行网页",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "铜锣湾维多利亚：2024/25去向图",
-    "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/22/Piechart_Primary%20School%20Placement%20for%20Upper%20Class%20%28K3%29%20Graduates%20%28AY%202024-2025%29.jpg",
-    "scope": "同页官方配图资源名标明AY2024–2025，结合明细表说明届别；49.2%/9.8%/3.3%为60/122、12/122、4/122四舍五入。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2024/25"
+    "label": "Project Zero 2019课堂案例",
+    "url": "https://pz.harvard.edu/resources/developing-perspective-taking-through-maker-centered-learning-sneak-peek-early-childhood",
+    "scope": "校方创客及STEAM课程设计；与大学历史案例分开，不能推断全部课堂当前实施及个体成效。",
+    "sourceType": "university-official",
+    "academicYear": "2019-11-23；案例2018/19",
+    "checkedOn": "2026-11-14"
   },
   {
-    "label": "IB组织：维多利亚何文田学校记录",
-    "url": "https://ibo.org/en/school/002865/",
-    "scope": "独立核对IB授权日为2010-05-13，修正旧稿2021；不把授权等同教学排名。",
-    "sourceType": "exam-authority",
-    "checkedOn": "2026-10-25",
-    "academicYear": "授权日2010-05-13"
-  },
-  {
-    "label": "IB组织：维多利亚海之恋学校记录",
-    "url": "https://www.ibo.org/en/school/063055",
-    "scope": "独立核对海之恋地址及IB授权日2024-12-20。",
-    "sourceType": "exam-authority",
-    "checkedOn": "2026-10-25",
-    "academicYear": "授权日2024-12-20"
-  },
-  {
-    "label": "VEO校区原页：宝翠园",
-    "url": "https://www.victoria.edu.hk/campus/belcher-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "VEO校区原页：君汇港",
-    "url": "https://www.victoria.edu.hk/campus/harbour-green-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "VEO校区原页：海峰园",
-    "url": "https://www.victoria.edu.hk/campus/harbour-heights-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "VEO校区原页：何文田",
-    "url": "https://www.victoria.edu.hk/campus/homantin-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "VEO校区原页：下康",
-    "url": "https://www.victoria.edu.hk/campus/lower-kornhill-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "VEO校区原页：中康",
-    "url": "https://www.victoria.edu.hk/campus/middle-kornhill-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "VEO校区原页：海之恋",
-    "url": "https://www.victoria.edu.hk/campus/ocean-pride-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "VEO校区原页：海怡",
-    "url": "https://www.victoria.edu.hk/campus/south-horizons-campus/",
-    "scope": "核对该校区位置、PN/K1–K3、语言课程及教学团队；现行年度班别以2026/27班表为准。",
-    "sourceType": "school-official",
-    "checkedOn": "2026-10-25",
-    "academicYear": "2026年现行校区简介"
-  },
-  {
-    "label": "教育王國：維多利亞VEO足夠考本地名小嗎？（2023–2024）",
-    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3878019",
-    "scope": "已读原帖；Adiezz自认VEO家长、pkjanel自述孩子已小二，谈学习模式、语言信心及中文数学衔接；分校未明、身份未独立核实，亲友转述及商业化指控不等于学校事实。",
-    "sourceType": "parent-discussion",
-    "academicYear": "2023–2024年发帖；个人经验",
-    "checkedOn": "2026-10-25"
-  },
-  {
-    "label": "教育王國：升本地小學適應到嗎？何文田专版（2014–2016）",
-    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=2738672",
-    "scope": "已读原帖；2015年自述K3家长谈开心、功课少与本地小学衔接，十校面试是当时进度而非最终失败结果。不能外推所有分校或当前课程。",
-    "sourceType": "parent-discussion",
-    "academicYear": "2014–2016年发帖；何文田历史经验",
-    "checkedOn": "2026-10-25"
-  },
-  {
-    "label": "教育王國：Victoria or寶血（2023）",
-    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3876550",
-    "scope": "已读原帖；准家长按害羞性格、兄姐津校路径和预算取舍，回复者Adiezz与另一讨论同一账号，不能重复算独立用家。",
-    "sourceType": "parent-discussion",
-    "academicYear": "2023年发帖；择校讨论",
-    "checkedOn": "2026-10-25"
-  },
-  {
-    "label": "HK01：幼稚园学费调整报道（2022-09-19）",
-    "url": "https://www.hk01.com/sns/article/816440",
-    "scope": "已读全文；仅供2022/23调费历史背景，分校收费须区分，不作现价、富裕家庭占比、升学成果或口碑共识证据。",
+    "label": "2023年课程专访",
+    "url": "https://www.champimom.com/posts/%E7%B6%AD%E5%A4%9A%E5%88%A9%E4%BA%9E%E6%95%99%E8%82%B2%E6%A9%9F%E6%A7%8BPN%E8%87%B3K3%E5%9F%B9%E9%A4%8A%E8%AE%80%E5%AF%AB%E8%83%BD%E5%8A%9B",
+    "scope": "学校课程说明并附招生提示；PN口语及动作、K1字形音义与拼读、K2/K3读写工作坊和写作题材。非独立效果测试，不代表当前各班统一达标。",
     "sourceType": "media-report",
-    "academicYear": "2022/23收费历史报道",
-    "checkedOn": "2026-10-25"
+    "academicYear": "2023-11-10课程专访",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "君汇港概览",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5747080001",
+    "scope": "按对应学校编号及楼层核对师资、AM/PM比例及明确设施；比例包括2–3岁班，不代表实际班额，亦非集团平均。",
+    "sourceType": "school-profile",
+    "academicYear": "2026/27概览；师资2025年9月",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "海之恋概览",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=6198500001",
+    "scope": "按对应学校编号及楼层核对师资、AM/PM比例及明确设施；比例包括2–3岁班，不代表实际班额，亦非集团平均。",
+    "sourceType": "school-profile",
+    "academicYear": "2026/27概览；师资2025年9月",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "海峰园2楼概览",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5669340001",
+    "scope": "按对应学校编号及楼层核对师资、AM/PM比例及明确设施；比例包括2–3岁班，不代表实际班额，亦非集团平均。",
+    "sourceType": "school-profile",
+    "academicYear": "2026/27概览；师资2025年9月",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "IB何文田",
+    "url": "https://www.ibo.org/school/002865/",
+    "scope": "核对何文田2010-05-13、海之恋2024-12-20的PYP授权；不将授权年份当创校年份或PN认证。",
+    "sourceType": "exam-authority",
+    "academicYear": "IB名录现行记录",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "IB海之恋",
+    "url": "https://www.ibo.org/school/063055/",
+    "scope": "核对何文田2010-05-13、海之恋2024-12-20的PYP授权；不将授权年份当创校年份或PN认证。",
+    "sourceType": "exam-authority",
+    "academicYear": "IB名录现行记录",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VEO四届升小offer",
+    "url": "https://www.victoria.edu.hk/school-placement/",
+    "scope": "四届完成K3学生获各小学offer人数，VSA692/苏浙76/圣士提反附小69；缺总分母、逐校区与最终入读数。",
+    "sourceType": "school-official",
+    "academicYear": "2022/23–2025/26；校方更新2026-09-04",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VSA当前招生日期",
+    "url": "https://www.vsa.edu.hk/admissions/how-to-apply/key-dates",
+    "scope": "2027/28常规Closed；2028/29申请截止2027-02-16，首轮2027年3月、二轮4月、结果5月24–28。",
+    "sourceType": "school-official",
+    "academicYear": "2027/28状态及2028/29 Y1",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VSA年龄条件",
+    "url": "https://www.vsa.edu.hk/admissions/how-to-apply/age-requirements",
+    "scope": "最低为入学年8月5岁8个月；未取得完整出生日期上下界，临界生日由招生处确认。",
+    "sourceType": "school-official",
+    "academicYear": "现行Y1年龄条件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "2028/29致K2家长通告",
+    "url": "https://drive.google.com/file/d/1_E08-yPZQzh9UpovSea7e4VflB1OxNGl/view",
+    "scope": "原始通告致K2家长，核对2026/27 K2至2028/29 Y1及各申请日期。",
+    "sourceType": "school-official",
+    "academicYear": "2026-08-31通告；2028/29 Y1",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VEO升小支援",
+    "url": "https://www.victoria.edu.hk/primary-transition/",
+    "scope": "列路线、申请及portfolio、面试、讲座与活动册等服务范围，未公开逐校区次数或独立成效。",
+    "sourceType": "school-official",
+    "academicYear": "现行K2/K3升小支援",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "兴发街2024/25入读去向",
+    "url": "https://www.cbvictoria.edu.hk/en/school_placement/",
+    "scope": "兴发街独立学校122名毕业生入读去向：VSA60、圣士提反12、蔡继有4；77%私立/直资包含VSA。非报考录取率。",
+    "sourceType": "school-official",
+    "academicYear": "2024/25",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VEO招生日期",
+    "url": "https://www.victoria.edu.hk/key-dates/",
+    "scope": "K1/PN申请、面见与结果日期及K2–K3申请入口；与程序同属校方内部一致性核对。",
+    "sourceType": "school-official",
+    "academicYear": "2027/28 VEO招生",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "2026：IMS与VEO本人比较",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3886382",
+    "scope": "自述读过IMS/VEO用家，谈中文、VSA/通勤、正式沟通及K2/K3任务；校区未明，匿名未核，不能推算补习率。",
+    "sourceType": "parent-discussion",
+    "academicYear": "2026年1月讨论",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "2025：中康AM与灵粮堂PM",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3884900",
+    "scope": "北角十月细B准家长比较中康AM及灵粮堂PM，属申请取舍；另一匿名课程批评无可核作品，不当全品牌事实。",
+    "sourceType": "parent-discussion",
+    "academicYear": "2025年6–7月讨论",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "2023–2024：本地小学衔接",
+    "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3878019",
+    "scope": "自述孩子小二的毕业家庭，既珍惜学习体验又担心中文数学衔接；分校未明，无标准化成绩。",
+    "sourceType": "parent-discussion",
+    "academicYear": "2023–2024年讨论",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VSA 2026/27费用",
+    "url": "https://www.vsa.edu.hk/admissions/school-fees",
+    "scope": "Y1–Y5每年191700，10期；五年静态958500。非债券新生发展金60000另按退款政策；不算强制购买债券。",
+    "sourceType": "school-official",
+    "academicYear": "2026/27",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VSA可退发展金政策",
+    "url": "https://www.vsa.edu.hk/fs/resource-manager/view/ff837c84-1cf1-4125-aba7-6ba10a0137c2",
+    "scope": "可退发展金60000，首学年首学期后退30000，余款按毕业或合规退学退；提前放弃另有扣款，按签署协议。",
+    "sourceType": "school-official",
+    "academicYear": "现行网页所连政策版本2020-01-22",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "VSA Y1发展金协议",
+    "url": "https://www.vsa.edu.hk/fs/resource-manager/view/7d4632fe-c454-4cbd-b28d-4a9cc28acdaa",
+    "scope": "核对接受offer时付款、退款及通知条件；具体年份和条款以家庭正式协议为准。",
+    "sourceType": "school-official",
+    "academicYear": "现行Y1发展金协议",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：宝翠园（542164）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/542164.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：君汇港（574708）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/574708.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：海峰园2楼（566934）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566934.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：海峰园1楼（566942）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/566942.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。本证未列K2，不借另一实体证补作此证数据。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：海峰园南峰阁（629758）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/629758.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：何文田地下（618039）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/618039.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：下康（325481）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325481.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：海之恋（619850）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/619850.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "label": "教育局收费证：海怡（216194）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216194.pdf",
+    "scope": "核对该注册实体2026/27证中所列半日年费，与VEO报价相符；核准项目不等于当前招生，Nursery为K1而非PN。",
+    "sourceType": "government",
+    "academicYear": "2026/27；各证生效日见原件",
+    "checkedOn": "2026-11-14"
   }
 ],
 "canaan-klt": [
