@@ -1,0 +1,22 @@
+{
+  "productionBaselineDeployment": "dpl_9LyK3ybxmRVZWLZSinxrocRdTXif",
+  "productionSourceArchiveSHA1": "fd95ac101a3a51eed6ae05ebab30e65418086bc9",
+  "baselineCodeCommit": "478a062586dd134d08dfa3817212fda9b692c44c",
+  "baselineAcquisition": "same current production deployment verified via Vercel; retained exact source snapshot used for that deployment",
+  "sourceSnapshot": "/private/tmp/hkschool-cb-victoria-release-20261114",
+  "runtimeDifferences": [
+    "src/content/reports/veo-cwb.json",
+    "src/content/report-meta.json",
+    "src/lib/report-sources.ts",
+    "src/lib/school-directory-pilot.ts"
+  ],
+  "catalogueReportsBefore": 239,
+  "catalogueReportsAfter": 239,
+  "reportJSONFiles": 240,
+  "schoolNetArticleJSONs": 17,
+  "schoolNetHubExpectedLinks": 16,
+  "allBlogContentPreserved": true,
+  "sitemapBefore": 5376,
+  "unrelatedUntrackedFilesExcluded": true,
+  "localBuild": "Compilation and TypeScript passed; full static export blocked by local ENOSPC; staged Vercel build required before promotion"
+}

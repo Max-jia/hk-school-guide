@@ -1,0 +1,40 @@
+{
+  "slug": "veo-cwb",
+  "date": "2026-11-14",
+  "chapters": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "chapterCountUnchanged": true,
+  "longExactDuplicateParagraphs": [],
+  "sourceReferences": 34,
+  "reportSha256": "9978c0a8a1f78b59e430d501a8f3f9e6fec65c9797b13d74132d89985512d9db",
+  "otherSchoolMetadataUnchanged": true,
+  "otherSchoolSourceRegistryUnchanged": true,
+  "typecheck": "passed",
+  "reportValidator": "passed; 0 errors, 0 warnings",
+  "eslint": "0 errors; 15 existing unused-variable warnings in school-directory-pilot.ts",
+  "browser": {
+    "localPort": 3392,
+    "languages": [
+      "zh-Hans-CN",
+      "zh-Hant-HK"
+    ],
+    "desktopWidth": 1512,
+    "mobileWidth": 390,
+    "tables": 14,
+    "keyValueTables": 2,
+    "pageHorizontalOverflow": false,
+    "chapterIdsUnique": true,
+    "wideTableHorizontalReading": "visually checked",
+    "radarLabels": "five visible and within SVG",
+    "profileVictoria79LinksReport": true
+  },
+  "publication": "local only; no commit or deployment"
+}

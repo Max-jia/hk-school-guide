@@ -507,131 +507,263 @@ const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
   ],
   "veo-cwb": [
     {
-      "label": "教育局《幼稚园概览2026/27》：铜锣湾维多利亚国际幼稚园",
-      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=3256510001",
-      "scope": "全文与原始HTML；325651/0001、三楼及天台、非牟利、男女、1965、丁毓珠/李美珠、不参加计划。2025年9月26教学人员、25学位/20幼教证书以上、7课室/容额420、AM1:7.2/PM1:6.6且不含2–3岁；K1–3学生AM84/52/50、PM25/52/94。2026/27半日96480/88360/90710十期；全日K3有获批171930但2025在读零，不能当当前开办；无PN。",
-      "sourceType": "school-profile",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27；师生在读2025年9月"
-    },
-    {
-      "label": "教育局概览：同址另一注册的铜锣湾维多利亚幼稚园",
-      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=3247790001",
-      "scope": "全文；324779/0001为G–2楼，8课室、2025年9月34教学人员、师生AM/PM1:6.2且包括2–3岁，PN人数176，非牟利且不参加计划。不能与325651的26人、7课室混成单一学部；也不直接相加教师作独立人数。PN99847属2025幼儿服务数据，现行收费以校方2026/27表交叉。",
-      "sourceType": "school-profile",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27；幼儿服务及师生2025年9月"
-    },
-    {
-      "label": "教育局现行收费证书：铜锣湾维多利亚国际幼稚园",
-      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325651.pdf",
-      "scope": "完整两页；K1半日9648×10=96480，2025-09-01生效；K2 8836×10=88360、K3 9071×10=90710，全日K3 17193×10=171930，2022-09-01生效。旧生效日与2026/27适用资料分开，获批课程不等当年实际开班。中文地址三楼及天台、英文2/F & ROOF，按原件并列不擅改。",
-      "sourceType": "government",
-      "checkedOn": "2026-10-28",
-      "academicYear": "现行证书；2022及2025生效"
-    },
-    {
-      "label": "铜锣湾校方：2026/27全年学费表",
-      "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/35/Tuition%2026-27_TC_1.pdf",
-      "scope": "全文一页；PN104830十一期，K1 96480、K2 88360、K3 90710各十期，分楼层与注册列示。含学生证/通讯/中英文阅读图书/平台/评估毕业证/生日节日礼物/手册/茶点/亲子教材套；不把已包含项目再列成必另收费，不保证校车校服及所有活动全包。",
+      "label": "学校一瞥：兴发街三注册与整校设施",
+      "url": "https://www.cbvictoria.edu.hk/en/quick_facts/",
+      "scope": "兴发街CBVK324779、CBVIK325651、CBVIN CCC/767，1965创办、非牟利。15课室、1,545平方米及两个户外场为整校介绍，不是单一注册独享。",
       "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "教育局概览：铜锣湾维多利亚幼稚园324779",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=3247790001",
+      "scope": "324779为非牟利、非本地课程、不参加教育计划；八课室。2025年9月34名教员，AM/PM均1:6.2；PN人数及旧价对应旧统计日期。",
+      "sourceType": "school-profile",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026/27；师资与PN统计2025年9月"
+    },
+    {
+      "label": "教育局概览：国际幼稚园325651",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=3256510001",
+      "scope": "325651七课室。2025年9月26名教员、25持学位、20持幼教证书或以上；AM1:7.2/PM1:6.6，此注册没有2–3岁服务。",
+      "sourceType": "school-profile",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026/27；师资2025年9月"
+    },
+    {
+      "label": "教育局现行收费证：324779",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/324779.pdf",
+      "scope": "K1全年$96,480、K2 $88,360、K3 $90,710，各10期，2026-09-01生效。证上核准班别不等于目前实际开办。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-14",
+      "academicYear": "现行证书；按各项目生效日"
+    },
+    {
+      "label": "教育局现行收费证：325651",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/325651.pdf",
+      "scope": "K1 $96,480于2025-09-01生效；K2 $88,360、K3 $90,710及K3全日$171,930于2022-09-01生效。现行半日表与官网相符，全日须另核开班。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-14",
+      "academicYear": "现行证书；按各项目生效日"
+    },
+    {
+      "label": "学校2026/27学费及十项包含项目",
+      "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/35/Tuition%2026-27_TC_1.pdf",
+      "scope": "半日自动转账费率：PN $104,830／11期，K1 $96,480、K2 $88,360、K3 $90,710各10期。列十项包含项目，其他付款方式价差未公开。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
       "academicYear": "2026/27"
     },
     {
-      "label": "铜锣湾校方：学校一瞥与注册实体",
-      "url": "https://www.cbvictoria.edu.hk/sc/quick_facts/",
-      "scope": "全文；分别列CBVK324779、CBVIK325651、CBVIN CCC/767，办学团体铜锣湾街坊福利促进会，1965、非牟利、兴发街32号、25789998。15课室/2户外场/1545平方米是整座校舍合并介绍，不是325651单一学部；不可写成当前VEO八校舍之一。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "核对日所见；2026/27收费链接"
-    },
-    {
-      "label": "铜锣湾校方：2027/28班别、活动时间与PN计划学额",
-      "url": "https://www.cbvictoria.edu.hk/sc/activity_time/",
-      "scope": "全文与HTML格式；2027/28红粗下划线招收PN双语和三语AM/PM，K1/K2三语AM/PM、K3三语PM为黑字。PN计划三语78+78/英普26+26=208可调整，非实收或申请分母；英普PN母语须普或英。PN–K2 AM8:45–11:45/PM13–16，K3 PM13–16:30周一四、周五16；没有当前全日班表。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2027/28招生；活动时间当日所见"
-    },
-    {
-      "label": "铜锣湾校方：2027/28 PN申请须知",
-      "url": "https://www.cbvictoria.edu.hk/sc/pn_application/",
-      "scope": "全文；出生2024-09-01至2025-08-31，2026-09-14十时至11-30十七时网申、40费；见2027-01-15/16，2027三月结果/八月开学。适龄申请皆见、中英老师小组15–20分钟/一成人入课室、最多两成人入校；本校亲兄姊在读或三年内毕业豁免家长接见，非保证取录；教职员或校董子女优先，至少懂中或英一种指令。自身注明K3优先入VSA，须与VSA甄选条件并读。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2027/28"
-    },
-    {
-      "label": "铜锣湾校方：K1–K3及当年PN插班初步登记",
-      "url": "https://www.cbvictoria.edu.hk/sc/k1k2k3_application/",
-      "scope": "正文全文；K3/K2/K1及2026/27 PN通过电子登记作初步记录，现阶段无须任何费用。未列固定空缺、放榜窗口、寄信语言/频率或保证面见；未打开登记表内部，不冒称已核其中额外文件。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27 PN与K1–K3滚动登记"
-    },
-    {
-      "label": "铜锣湾校方：报名FAQ",
-      "url": "https://www.cbvictoria.edu.hk/sc/faq/",
-      "scope": "全文；明确报名不分先后，适龄期内网申皆获接见；2025-09-01以后出生等2027九月查2028/29，不以早报加分。确认信、资料更正可邮件联络，不能写必须打印邮寄、不能电邮。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2027/28"
-    },
-    {
-      "label": "铜锣湾校方：本校毕业生小一去向人数",
-      "url": "https://www.cbvictoria.edu.hk/sc/school_placement/",
-      "scope": "正文全表已读；全校毕业生122，VSA60、圣士提反附小12、蔡继有4、SPCC3等，与VEO集团四年offer表不同。学年由同页官方图明确2024/25，按60/122计算约49.2%仅该届公布去向占比，非申请成功率；未分324779/325651，不能当国际学部独立结果。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2024/25"
-    },
-    {
-      "label": "铜锣湾校方：2024/25 K3毕业生入读小学图表",
-      "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/22/Piechart_Primary%20School%20Placement%20for%20Upper%20Class%20(K3)%20Graduates%20(AY%202024-2025).jpg",
-      "scope": "已下载目读原图；标题2024–2025高班毕业生入读小学一年级概况，官津16%、私立/直资77%、国际7%。属于该校公布的毕业去向分类；不拿分类77%当VSA或名校比例，也未独立核最终注册。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2024/25"
-    },
-    {
-      "label": "IB官方名录：铜锣湾维多利亚",
-      "url": "https://www.ibo.org/school/003716/",
-      "scope": "web全文已读，直接请求403但web成功；IB003716、2012-03-06起获授权，校名合并Kindergarten and International Kindergarten，校长Sabrina Lee、授课English/Chinese。课程授权不代表升小一条龙或录取率。",
-      "sourceType": "exam-authority",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2012-03-06起；核对日现行名录"
-    },
-    {
-      "label": "铜锣湾校方：IB课程",
-      "url": "https://www.cbvictoria.edu.hk/sc/ib/",
-      "scope": "全文；PYP探究、以学生为中心、老师引导资料搜集分析整理汇报，两文三语及中国文化/国际意识。未公布可推全部学生学术深浅、抄写数量或外补必要性的指标。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "核对日所见"
-    },
-    {
-      "label": "铜锣湾校方：读写计划与语言政策",
-      "url": "https://www.cbvictoria.edu.hk/sc/RWP/",
-      "scope": "全文；一老师一语言；中文IB框架、喜阅写意、核心经验与哥伦比亚读写策略，精读泛读及家校共读。不能由英语沉浸直接推中文最弱、每家K2必须补习。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "核对日所见"
-    },
-    {
-      "label": "VSA校方：Year1申请、甄选及优先安排",
-      "url": "https://www.vsa.edu.hk/admissions/how-to-apply",
-      "scope": "官方正文已读；相近水平才考虑债券/校董/教职员/兄姊/feeder幼稚园/校友等联系；Y1两轮小组、家长首轮面见，兄姊免家长面见，Y1/2至少中或英一种强项。书面中英数评估明确在Y2–11，不能套成Y1必笔试；Victoria幼稚园或债券优先，不是100%直升。新入Victoria K3者要待空缺；当前Y1巡视指2028/29，通用九月至二月并有提前申请例子。",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "现行通用办法；Y1入口2028/29"
-    },
-    {
-      "label": "教育局：2027小一入学资料单张",
-      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
-      "scope": "完整四页已于前批同一工作流读取；统一派位乙部按儿童居住地址校网，读湾仔或何文田幼稚园不赋予12/41小一校网资格。自行不限住址网；接受直资小学学位后不可再获官津POA学位，私立持位规则须分开。",
+      "label": "教育局附设幼稚园的非资助幼儿中心资料",
+      "url": "https://www.edb.gov.hk/attachment/datagovhk/Non-aided_CCCs_attached_to_KGs_en.csv",
+      "scope": "同名中心2–3岁、上午／下午月费$9,530，与学校11期全年$104,830相符。监管容量与当届计划招生数口径不同；该行未列费用生效日。",
       "sourceType": "government",
-      "checkedOn": "2026-10-28",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "IB官方名录003716",
+      "url": "https://www.ibo.org/school/003716/",
+      "scope": "合并名称覆盖Kindergarten及International Kindergarten，2012-03-06获PYP授权，Sabrina Lee任校长。不是PN独立授权或小学录取证明。",
+      "sourceType": "exam-authority",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "校方PYP课程说明",
+      "url": "https://www.cbvictoria.edu.hk/en/ib/",
+      "scope": "PYP探究、多语言与儿童提问、搜集整理资料和表达；校方列VSA优先机会，仍须合读小学自己的招生规则。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "校方当前英文读写项目：Mossflower",
+      "url": "https://www.cbvictoria.edu.hk/en/RWP/",
+      "scope": "现行英文页列Mossflower Reading and Writing Project、每日读写、学生选择内容及教师培训；没有公开全体儿童成效测量。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "校方中文读写与共读",
+      "url": "https://www.cbvictoria.edu.hk/sc/RWP/",
+      "scope": "中文页列喜阅写意、核心经验、校内精读与家校泛读，仍保留Columbia旧称。与英文页现行称谓不同，不能据此认定当前大学隶属关系。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "2026年K2材料探究展示",
+      "url": "https://www.cbvictoria.edu.hk/en/news_events/detail/548/",
+      "scope": "2026-04-24 K2材料探究展示：建构、围裙、发光小城，孩子向家长讲解提问、计划、尝试及修改过程。属于学校活动记录。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026年4月24日"
+    },
+    {
+      "label": "2027/28 PN直升K1与外部申请公告",
+      "url": "https://www.cbvictoria.edu.hk/en/",
+      "scope": "2026-09-14公告：PN直接升K1，2027/28不作K1常规对外招生；外来K1可登记待空缺联系。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "2027/28班别、时间及PN计划名额",
+      "url": "https://www.cbvictoria.edu.hk/en/activity_time/",
+      "scope": "PN三语上午78／下午78、英普26／26，共208个计划名额，可调整，非单班人数。英普有日常母语条件，另列各级上课时段。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "2027/28 PN申请须知及FAQ",
+      "url": "https://www.cbvictoria.edu.hk/en/pn_application/",
+      "scope": "PN出生范围2024-09-01至2025-08-31；2026-11-30 17时截止，报名费$40；2027-01-15/16接见、三月结果、八月开学。幼儿小组约15–20分钟。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "本校PN报名FAQ",
+      "url": "https://www.cbvictoria.edu.hk/en/faq/",
+      "scope": "不按先到先得，合年龄期内申请获安排接见；另列确认信、编号及资料修订渠道。2025-09-01或以后出生者须查下一届资料。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "K1–K3及当年PN初步登记",
+      "url": "https://www.cbvictoria.edu.hk/en/k1k2k3_application/",
+      "scope": "初步登记现阶段不收费，待空缺才联系，没有公布固定补位时窗、年级名额或保证面试。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "K1–3及2026/27 PN"
+    },
+    {
+      "label": "本校2024/25毕业生小学去向",
+      "url": "https://www.cbvictoria.edu.hk/en/school_placement/",
+      "scope": "2024/25整校122人，VSA60、圣士提反附小12、圣若瑟5、蔡继有4。私直94、官津20、国际8；不是各小学申请成功率，未拆注册学部。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2024/25"
+    },
+    {
+      "label": "本校2024/25升小原图",
+      "url": "https://www.cbvictoria.edu.hk/uploaded_files/page/22/Piechart_Primary%20School%20Placement%20for%20Upper%20Class%20%28K3%29%20Graduates%20%28AY%202024-2025%29.jpg",
+      "scope": "原图标题为2024/25毕业生入读小一概况，私直77%、官津16%、国际7%；77%包含VSA，不是传统名小考取率。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2024/25"
+    },
+    {
+      "label": "VSA申请及优先政策",
+      "url": "https://www.vsa.edu.hk/admissions/how-to-apply",
+      "scope": "Victoria园生优先仍须评估；Y1–2至少一种语言有强项，新转入Victoria K3须待空缺。70%香港永久居民规则是身份学额要求。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "VSA2028/29 Y1申请时点",
+      "url": "https://www.vsa.edu.hk/admissions/how-to-apply/key-dates",
+      "scope": "2027/28 Y1已截止；2028/29 Y1于2027-02-16截止。所连官方K2通告列三月首轮、四月次轮及五月24–28日结果。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2028/29"
+    },
+    {
+      "label": "VSA费用与资本费政策",
+      "url": "https://www.vsa.edu.hk/admissions/school-fees",
+      "scope": "2026/27 Y1–Y5每年$191,700／10期，五年静态$958,500。页面另列杂费与新生资本费政策，未来年度可能变化。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026/27"
+    },
+    {
+      "label": "VSA可退还资本费政策",
+      "url": "https://www.vsa.edu.hk/fs/resource-manager/view/ff837c84-1cf1-4125-aba7-6ba10a0137c2",
+      "scope": "可退还资本费$60,000，有入学后部分退还及毕业／退出条款；退款依协议，不等于随时全额退还或必须买债券。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "教育王国：2018本校PN家长本人回顾",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3598114",
+      "scope": "Soniafong于2018-12-14自述PN约四个月，肯定具体教师反馈与沟通、孩子喜欢上学。历史匿名本人经历，身份未独立认证，不代表现况。",
+      "sourceType": "parent-discussion",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2018年家长自述（历史样本）"
+    },
+    {
+      "label": "教育王国：2021本校转校家长本人经历",
+      "url": "https://www.edu-kingdom.com/forum.php?mod=viewthread&tid=3856934",
+      "scope": "gingercatcat于2021-06-24自述读过两年本校，描述学习反馈及家庭补强压力、转校后更自信。属于历史个人体验，不代表全校或2026现况。",
+      "sourceType": "parent-discussion",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2021年家长自述（历史样本）"
+    },
+    {
+      "label": "VEO2026/27比较费率",
+      "url": "https://www.victoria.edu.hk/tution/",
+      "scope": "中康2026/27 K1 $111,221／11期、K2 $101,290及K3 $102,210各10期。三个年级静态合计$314,721，不含未来加费及其他支出。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026/27"
+    },
+    {
+      "label": "国际英文九龙塘215120收费",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+      "scope": "九龙塘215120注册2026-09-01起K1 $80,234、K2/3 $87,241，均11期，不是红磡PN报价。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026/27"
+    },
+    {
+      "label": "国际英文九龙塘215120课程",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2151200001",
+      "scope": "九龙塘本地校本中英普课程，结合主题、故事及活动，持续观察和学习档案。不能据课程名称比较全体儿童能力高低。",
+      "sourceType": "school-profile",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026/27"
+    },
+    {
+      "label": "宝山565938收费",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/565938.pdf",
+      "scope": "2026-08-01起K1–K3每期$11,550，共12期，全年$138,600。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-14",
+      "academicYear": "2026/27"
+    },
+    {
+      "label": "宝山申请及班别",
+      "url": "http://bhns.edu.hk/en/admissions.html",
+      "scope": "官网列中英课程及书面索取初步申请表的程序；没有公布固定候补年数。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "圣士提反附小课程及衔接",
+      "url": "https://www.sscps.edu.hk/curriculum",
+      "scope": "全日男女校，英语及普通话学习，达学业要求者获书院优先接纳；六年级一年寄宿为必修，不能视为无条件升中。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "蔡继有十二年课程",
+      "url": "https://www.cky.edu.hk/en/site/view?name=unique-features-of-the-curriculum",
+      "scope": "十二年课程结构、中英读本教学及从小一开始的科学探究，为毕业出口的课程方向参考。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "蔡继有双语教学",
+      "url": "https://www.cky.edu.hk/en/site/view?name=bilingual-teaching",
+      "scope": "小学双班主任、中英读本及主题、项目活动与表达写作安排。属于课程说明，不是录取难度或官方排名。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-14"
+    },
+    {
+      "label": "教育局2027小一入学资料单张",
+      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
+      "scope": "小一校网按儿童居住地址，自行不受地区限制；统一派位先跨网后按住址校网。就读铜锣湾幼稚园不产生12网资格，官津结果不能全归因幼稚园考小训练。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-14",
       "academicYear": "2027/28小一"
     }
   ],
