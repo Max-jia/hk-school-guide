@@ -18,5 +18,11 @@
   "allBlogContentPreserved": true,
   "sitemapBefore": 5376,
   "unrelatedUntrackedFilesExcluded": true,
-  "localBuild": "Compilation and TypeScript passed; full static export blocked by local ENOSPC; staged Vercel build required before promotion"
+  "localBuild": "Compilation and TypeScript passed; full static export blocked by local ENOSPC; staged Vercel build required before promotion",
+  "generatedRuntimeChanges": [
+    "src/content/generated/directory-assets.json",
+    "public/directory-data/kindergarten.7e42c2ca76192e50.json"
+  ],
+  "stagedSourceFilesSHA1Verified": 2195,
+  "cloudBuild": "passed; 5401 static pages generated"
 }

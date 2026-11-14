@@ -1,0 +1,12 @@
+{
+  "changed": [
+    "src/content/generated/directory-assets.json",
+    "src/content/report-meta.json",
+    "src/content/reports/veo-cwb.json",
+    "src/lib/report-sources.ts",
+    "src/lib/school-directory-pilot.ts"
+  ],
+  "added": [
+    "public/directory-data/kindergarten.7e42c2ca76192e50.json"
+  ]
+}

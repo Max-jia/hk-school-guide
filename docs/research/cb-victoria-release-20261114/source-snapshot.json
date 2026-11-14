@@ -1,0 +1,6 @@
+{
+  "src/content/reports/veo-cwb.json": "9978c0a8a1f78b59e430d501a8f3f9e6fec65c9797b13d74132d89985512d9db",
+  "src/content/report-meta.json": "cfcc6bbfee00dceae8e7b60769ff52b86f218ac08cdd59f65ff6752c6c23c6ea",
+  "src/lib/report-sources.ts": "1578a32d7994280b02bfc564cf54a108991bb78c90f1184fd7caefcaa187fe2c",
+  "src/lib/school-directory-pilot.ts": "1ec5f5e79e4c116591b76f90e29d9be1ee6f73f8910036d6d9d45b8f3ef96f34"
+}
