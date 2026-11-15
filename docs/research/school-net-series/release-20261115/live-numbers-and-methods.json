@@ -1,0 +1,121 @@
+{
+  "primaryDefaults": [
+    {
+      "net": "11",
+      "expected": 76,
+      "passed": true
+    },
+    {
+      "net": "12",
+      "expected": 71,
+      "passed": true
+    },
+    {
+      "net": "31",
+      "expected": 60,
+      "passed": true
+    },
+    {
+      "net": "32",
+      "expected": 67,
+      "passed": true
+    },
+    {
+      "net": "34",
+      "expected": 80,
+      "passed": true
+    },
+    {
+      "net": "35",
+      "expected": 65,
+      "passed": true
+    },
+    {
+      "net": "40",
+      "expected": 70,
+      "passed": true
+    },
+    {
+      "net": "41",
+      "expected": 96,
+      "passed": true
+    },
+    {
+      "net": "62",
+      "expected": 72,
+      "passed": true
+    },
+    {
+      "net": "64",
+      "expected": 50,
+      "passed": true
+    },
+    {
+      "net": "84",
+      "expected": 67,
+      "passed": true
+    },
+    {
+      "net": "88",
+      "expected": 45,
+      "passed": true
+    },
+    {
+      "net": "89",
+      "expected": 65,
+      "passed": true
+    },
+    {
+      "net": "91",
+      "expected": 82,
+      "passed": true
+    },
+    {
+      "slug": "primary-net-11-analysis",
+      "officialName": "李陞小学",
+      "passed": true
+    },
+    {
+      "slug": "primary-net-12-analysis",
+      "officialName": "李陞大坑学校",
+      "passed": true
+    },
+    {
+      "slug": "primary-net-31-analysis",
+      "officialName": "油蔴地天主教小学",
+      "passed": true
+    }
+  ],
+  "methods": [
+    {
+      "file": "primary-2026.html",
+      "lang": "sc",
+      "passed": true
+    },
+    {
+      "file": "primary-2026.html",
+      "lang": "tc",
+      "passed": true
+    },
+    {
+      "file": "primary-population.html",
+      "lang": "sc",
+      "passed": true
+    },
+    {
+      "file": "primary-population.html",
+      "lang": "tc",
+      "passed": true
+    },
+    {
+      "file": "secondary-method.html",
+      "lang": "sc",
+      "passed": true
+    },
+    {
+      "file": "secondary-method.html",
+      "lang": "tc",
+      "passed": true
+    }
+  ]
+}

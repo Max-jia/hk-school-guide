@@ -1,0 +1,36 @@
+[
+  {
+    "slug": "primary-net-31-analysis",
+    "title": "31校网小学：两所油天、圣玛利和德信，升中安排有什么不同",
+    "description": "逐校核对31网10所官津小学、正式升中关系及5所直私选择；区分2027小一申请与现学年插班，列明费用、保位合同和统派学额缺口。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "editedAt": "2026-11-14",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "primaryPopulationRevision": "2026-11-15-local-only",
+    "primaryPopulationEvidence": "官方人口推算及2025派位原值；2027乙部需求为条件估算，目标学额未取得，不报实际竞争率",
+    "historicalCA2026Status": "verified-against-archived-edb-original-pdf",
+    "historicalCA2026Deployment": "published-20261115",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  },
+  {
+    "slug": "yau-tsim-mong-secondary-net-analysis",
+    "title": "油尖旺升中：九华、圣芳济、圣玛利之外，怎样扩大选择",
+    "description": "核对2026 KL1乙部完整51项及备注，分清民间分类与男女竞争情境；加入女拔、李国宝、男拔及私立蔡继有的申请、费用与课程。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "editedAt": "2026-11-14",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  }
+]

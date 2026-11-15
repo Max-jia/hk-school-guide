@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "primary-net-84-analysis",
+    "title": "大埔84校网小学：两所旧墟、田家炳与孙方中怎么选",
+    "description": "核对84网19所官津、课堂差别及三校2026升中原件，分清79.8%历史分母、正式衔接和直资私立申请。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "primaryPopulationRevision": "2026-11-15-local-only",
+    "primaryPopulationEvidence": "官方人口推算及2025派位原值；2027乙部需求为条件估算，目标学额未取得，不报实际竞争率",
+    "historicalCA2026Status": "verified-against-archived-edb-original-pdf",
+    "historicalCA2026Deployment": "published-20261115",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  },
+  {
+    "slug": "tai-po-secondary-net-analysis",
+    "title": "大埔升中NT6：五校360个共享位，三育、罗定邦和德萃另怎么报",
+    "description": "核对NT6完整30项历史名册及360／216共享位情境，区分三育派位、罗定邦独立招生和大光德萃私校合同。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  }
+]

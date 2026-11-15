@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "primary-net-11-analysis",
+    "title": "11校网小学：女孩看直属路径，男孩怎样选学校",
+    "description": "逐校核对11网16项官津列名、语言和正式升中关系，补入6所直私小学的学费、2027申请和派位影响；新会商会资格另注。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "primaryPopulationRevision": "2026-11-15-local-only",
+    "primaryPopulationEvidence": "官方人口推算及2025派位原值；2027乙部需求为条件估算，目标学额未取得，不报实际竞争率",
+    "historicalCA2026Status": "verified-against-archived-edb-original-pdf",
+    "historicalCA2026Deployment": "published-20261115",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  },
+  {
+    "slug": "central-western-secondary-net-analysis",
+    "title": "中西区升中：英皇、英华女之外，还有哪些合适选择",
+    "description": "核对2026 HK1乙部46项名册，分男女比较本区7校与共同5校的非保留位和竞争情境；补核3所直资中学课程、收费及申请取舍。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  }
+]

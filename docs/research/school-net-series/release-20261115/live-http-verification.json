@@ -1,0 +1,304 @@
+{
+  "deployment": "dpl_7V6ex7pfeBxo6KXzyngTK6rPDHJs",
+  "sitemapBefore": 5376,
+  "sitemapAfter": 5390,
+  "lostURLs": [],
+  "newURLs": [
+    "https://hkschool.guide/blog/kwai-tsing-secondary-net-analysis",
+    "https://hkschool.guide/blog/primary-net-62-analysis",
+    "https://hkschool.guide/blog/primary-net-64-analysis",
+    "https://hkschool.guide/blog/primary-net-84-analysis",
+    "https://hkschool.guide/blog/primary-net-88-analysis",
+    "https://hkschool.guide/blog/tai-po-secondary-net-analysis",
+    "https://hkschool.guide/blog/tsuen-wan-secondary-net-analysis",
+    "https://hkschool.guide/cn/blog/kwai-tsing-secondary-net-analysis",
+    "https://hkschool.guide/cn/blog/primary-net-62-analysis",
+    "https://hkschool.guide/cn/blog/primary-net-64-analysis",
+    "https://hkschool.guide/cn/blog/primary-net-84-analysis",
+    "https://hkschool.guide/cn/blog/primary-net-88-analysis",
+    "https://hkschool.guide/cn/blog/tai-po-secondary-net-analysis",
+    "https://hkschool.guide/cn/blog/tsuen-wan-secondary-net-analysis"
+  ],
+  "assets": [
+    {
+      "path": "school-net-reference/primary-2026.html",
+      "bytes": 237848,
+      "status": 200,
+      "sha256": "6ff2d6e0089526c6c532c82bd6535730ea5f49dec196311cb7b18be820cce48c"
+    },
+    {
+      "path": "school-net-reference/tai-po-secondary-net-analysis.html",
+      "bytes": 52170,
+      "status": 200,
+      "sha256": "0719bf9def3be7c5fcd1a3718f0410851c1f9606f34f91625ee2f1c00e7ac604"
+    },
+    {
+      "path": "school-net-reference/kowloon-city-secondary-net-analysis.html",
+      "bytes": 41009,
+      "status": 200,
+      "sha256": "f674788c7e99ebe0e56489b92f86e6600d4108ba2adf21202485fc69e122a633"
+    },
+    {
+      "path": "school-net-reference/kwai-tsing-secondary-net-analysis.html",
+      "bytes": 45443,
+      "status": 200,
+      "sha256": "a0cb3489cac33bc635e3c26f04f27fc6f107389602a9f030b5b5d832c51a3123"
+    },
+    {
+      "path": "school-net-reference/sha-tin-secondary-net-analysis.html",
+      "bytes": 45538,
+      "status": 200,
+      "sha256": "12796b6f3afface5c5a5309b63e5135783453ca656b65da2d987bbfc1dbf1142"
+    },
+    {
+      "path": "school-net-reference/wan-chai-secondary-net-analysis.html",
+      "bytes": 45275,
+      "status": 200,
+      "sha256": "6503cc1800d6bc23163a5b3e5fed3ff821ae9d59f586c7e51c72b68c3ea28dac"
+    },
+    {
+      "path": "school-net-reference/sham-shui-po-secondary-net-analysis.html",
+      "bytes": 47026,
+      "status": 200,
+      "sha256": "09ccbcc6f54a9f596db872562a3385cdc847f57fdd2b44ad9260a75899ed7a8d"
+    },
+    {
+      "path": "school-net-reference/secondary-method.html",
+      "bytes": 54288,
+      "status": 200,
+      "sha256": "7c7d6a3b548bf5863037da4db77be5ada6e87dacb2a478b840badd8822ef7afc"
+    },
+    {
+      "path": "school-net-reference/yau-tsim-mong-secondary-net-analysis.html",
+      "bytes": 42543,
+      "status": 200,
+      "sha256": "4d14f155546af57253a9ced213f1081f0c470b4d11d1f52888c02ced894d4058"
+    },
+    {
+      "path": "school-net-reference/tsuen-wan-secondary-net-analysis.html",
+      "bytes": 50237,
+      "status": 200,
+      "sha256": "b69a00e8defe5e70f7458e0862f645be70f518c56f1223529b364e950f41b39d"
+    },
+    {
+      "path": "school-net-reference/primary-population.html",
+      "bytes": 66234,
+      "status": 200,
+      "sha256": "a5d2f0c9cb44c99bffe82b3678327813ace936954fee8eb24a8189cfeef6658f"
+    },
+    {
+      "path": "school-net-reference/central-western-secondary-net-analysis.html",
+      "bytes": 44833,
+      "status": 200,
+      "sha256": "842d67440c08c61595faaf30fa3bcd21a25d19d0b0252882bf63dc5d632a70aa"
+    },
+    {
+      "path": "school-net-reference/sources/701f757767e40df1.json",
+      "bytes": 2048,
+      "status": 200,
+      "sha256": "71851a91bafb5bde717b9a89fabc44cf0a3f4ec49c18067bfc7e0f7635713532"
+    },
+    {
+      "path": "school-net-reference/sources/aa5ddb12987adfcb.json",
+      "bytes": 11453,
+      "status": 200,
+      "sha256": "aa5ddb12987adfcb28604aeb3f89ef71c19fe6c7cbc50cc4ecb6419b2823bf5d"
+    },
+    {
+      "path": "school-net-reference/sources/f71852100dc8b7e7.json",
+      "bytes": 17175,
+      "status": 200,
+      "sha256": "f71852100dc8b7e7d3a78d786ed4486c13fa3e4dcdf2cd10ec71288dc2fbaacd"
+    },
+    {
+      "path": "school-net-reference/sources/fc34cdef64c937cd.pdf",
+      "bytes": 7278680,
+      "status": 200,
+      "sha256": "fc34cdef64c937cdc97df5d9a235ef164dbe64e07eb7b4d75822fbe0bf8a3d93"
+    },
+    {
+      "path": "school-net-reference/sources/79a0573cc990fa0a.png",
+      "bytes": 140921,
+      "status": 200,
+      "sha256": "79a0573cc990fa0a47fe7f8bb119ac60572d02b31c9836c46b6fe7fc324a8ea4"
+    },
+    {
+      "path": "school-net-reference/sources/d410b6777d73bb4e.png",
+      "bytes": 305867,
+      "status": 200,
+      "sha256": "d410b6777d73bb4e59b415473854fa7eeb2e82539f337d4ce17a144f3149cefa"
+    },
+    {
+      "path": "school-net-reference/sources/a63ad117d3e7905e.json",
+      "bytes": 43194,
+      "status": 200,
+      "sha256": "a63ad117d3e7905e16f543d092142832bc8f68d9e27a5f6d40a038bd7de420a4"
+    },
+    {
+      "path": "covers/og/primary-net-11-analysis.png",
+      "bytes": 45859,
+      "status": 200,
+      "sha256": "d4e552ad28012b6bc2ff90e251270a217a228f1ca80bbbc5094ec3c296231d33"
+    },
+    {
+      "path": "covers/og/primary-net-12-analysis.png",
+      "bytes": 46135,
+      "status": 200,
+      "sha256": "7ca6bd0a01911db878e26dd233c991df6e76fc5eb3a58ddbbf56c974f001157b"
+    },
+    {
+      "path": "covers/og/primary-net-31-analysis.png",
+      "bytes": 47632,
+      "status": 200,
+      "sha256": "dc40da4a94fc7f01375e5be3292dd121b447c578609cf0bf12c782a3041e37a9"
+    },
+    {
+      "path": "covers/og/primary-net-32-analysis.png",
+      "bytes": 48366,
+      "status": 200,
+      "sha256": "a26e9f5223220211e72afb3681a7f5d759d58f369f0df8e3c26229d507763b35"
+    },
+    {
+      "path": "covers/og/primary-net-34-analysis.png",
+      "bytes": 46696,
+      "status": 200,
+      "sha256": "ad3efb72961c50438cff4591e1f454e98cfdfa7910397afd070577db5d2ab101"
+    },
+    {
+      "path": "covers/og/primary-net-35-analysis.png",
+      "bytes": 47739,
+      "status": 200,
+      "sha256": "3fc801786e34b79a48332a5738fec1131b69a5cb7ed93ad474f5e28c3487cae3"
+    },
+    {
+      "path": "covers/og/primary-net-40-analysis.png",
+      "bytes": 48578,
+      "status": 200,
+      "sha256": "501ae9e7b03edbd5e35eca9c9c40031108130a7e62a1fff5f9d1c5a232a90450"
+    },
+    {
+      "path": "covers/og/primary-net-41-analysis.png",
+      "bytes": 47376,
+      "status": 200,
+      "sha256": "c3d0a045bae423d3bca54e4c260f04261f2505448235b7b781561bbd84e1feae"
+    },
+    {
+      "path": "covers/og/primary-net-62-analysis.png",
+      "bytes": 48996,
+      "status": 200,
+      "sha256": "37a18d9b4ccbfb7f9b1c05fa4d54d04ef2c9b1da732e4cadcb02a9f67350c4ef"
+    },
+    {
+      "path": "covers/og/primary-net-64-analysis.png",
+      "bytes": 46342,
+      "status": 200,
+      "sha256": "f8774944f810367d151a69c3a26ec41fa85b331c2ed2902570e994da9055df91"
+    },
+    {
+      "path": "covers/og/primary-net-84-analysis.png",
+      "bytes": 47817,
+      "status": 200,
+      "sha256": "b3dfa1e6aa573a924464e237834a9c2c3c03b6611673d5bc06141003f7024a94"
+    },
+    {
+      "path": "covers/og/primary-net-88-analysis.png",
+      "bytes": 49410,
+      "status": 200,
+      "sha256": "e50ab4818210caeb05d2dd5f1d634ed620f06fb05dc9cd47bbaf666ad75c1a4b"
+    },
+    {
+      "path": "covers/og/primary-net-89-analysis.png",
+      "bytes": 50363,
+      "status": 200,
+      "sha256": "195803eeedda6292ed25631a16c321a6e0204e3597e8637aab02c55b9c70adf0"
+    },
+    {
+      "path": "covers/og/primary-net-91-analysis.png",
+      "bytes": 48037,
+      "status": 200,
+      "sha256": "6ece94be3b8fc7fcecff6c6738e84a7580254e2b3590fd4fffc24f994fef7691"
+    },
+    {
+      "path": "covers/og/central-western-secondary-net-analysis.png",
+      "bytes": 43118,
+      "status": 200,
+      "sha256": "5a231e78cff642898be1172961342140b3a35289a697d34c4419372a2057cc14"
+    },
+    {
+      "path": "covers/og/wan-chai-secondary-net-analysis.png",
+      "bytes": 46121,
+      "status": 200,
+      "sha256": "be808b819b48ec9f981f1c6b2f94e08aaea6f48e86cebc2654ceefab952fff72"
+    },
+    {
+      "path": "covers/og/yau-tsim-mong-secondary-net-analysis.png",
+      "bytes": 44912,
+      "status": 200,
+      "sha256": "95ae8350d2f0bad3ab83e5a22cc6930f8befca563566236d0b69bbef90796d71"
+    },
+    {
+      "path": "covers/og/sham-shui-po-secondary-net-analysis.png",
+      "bytes": 46169,
+      "status": 200,
+      "sha256": "12b1b3ac557514f4536df1a1461e3573a954de2733484f62ea5a8d8d116e8783"
+    },
+    {
+      "path": "covers/og/kowloon-city-secondary-net-analysis.png",
+      "bytes": 47929,
+      "status": 200,
+      "sha256": "0fb9c90f8773a343f805229f95e1eae4ce6bf5ab5f7365032a86400f3b2f23dc"
+    },
+    {
+      "path": "covers/og/tsuen-wan-secondary-net-analysis.png",
+      "bytes": 45497,
+      "status": 200,
+      "sha256": "54745aece3435b771dae93198a872cd07c841f06fd70b2cf393896baef3dbbe3"
+    },
+    {
+      "path": "covers/og/kwai-tsing-secondary-net-analysis.png",
+      "bytes": 44233,
+      "status": 200,
+      "sha256": "408d44b7fcb10898ef221fa67d2e8888b63e9bce16795e12d79373d352e40ca9"
+    },
+    {
+      "path": "covers/og/tai-po-secondary-net-analysis.png",
+      "bytes": 47498,
+      "status": 200,
+      "sha256": "742bd8b29596dc3355b890590fbeb44bf52f0fe12241f3ccbd3ffb8db0787257"
+    },
+    {
+      "path": "covers/og/sha-tin-secondary-net-analysis.png",
+      "bytes": 44427,
+      "status": 200,
+      "sha256": "de1a00488bba7f435370b52983eb153f0e60a2210f45dddc2d273f291f5c0bd9"
+    }
+  ],
+  "reportAPI": [
+    {
+      "slug": "veo-cwb",
+      "htmlSHA256": "7be10bb8a968e7f84b7e8ed17fa350026d4e5f6f1caf9c1e7b23eea8000351f9",
+      "matchesBaseline": true
+    },
+    {
+      "slug": "lsps",
+      "htmlSHA256": "0ddfaddb5eb2ef0c38b4e351c77a063ed6d5133e5570a705cbf4a609cca45a3c",
+      "matchesBaseline": true
+    },
+    {
+      "slug": "dbs",
+      "htmlSHA256": "0a913f7f0a7f45ddec847fb36547edb121c2b931f70fbaa5a669e511b42e5abc",
+      "matchesBaseline": true
+    },
+    {
+      "slug": "lh",
+      "htmlSHA256": "9d4af6d1d0045d1f05c40f3b62f1100818d5b78f92eba9674717744ad22835f3",
+      "matchesBaseline": true
+    },
+    {
+      "slug": "spccps",
+      "htmlSHA256": "e101bcee8c8d7bd09606b4169b9cdd8186a8a5f065fe095783d8f141a7d6c2ac",
+      "matchesBaseline": true
+    }
+  ],
+  "errors": []
+}

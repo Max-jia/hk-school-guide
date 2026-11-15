@@ -1,0 +1,10 @@
+{
+  "deployment": "dpl_7V6ex7pfeBxo6KXzyngTK6rPDHJs",
+  "codeCommit": "3a82263b",
+  "articleLayouts": 92,
+  "toolLayouts": 92,
+  "topicPages": 6,
+  "fullBrowserQA": "passed",
+  "rawFileTreeSHA256": "79a0b38e15bcdca4a992640d122a1c4031423839f3a76182b707fdb0d710e3f5",
+  "replacedBy": "final deployment corrects seven date fields only"
+}

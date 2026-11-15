@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "primary-net-41-analysis",
+    "title": "41校网小学：喇沙、玛利诺和圣家怎么选，直私何时申请",
+    "description": "核对41网10所小学的性质、教学语言及直属联系关系，分男孩女孩分析目标依赖、升中路径和2027申请安排。未取得的统派学额及竞争人数不作推定。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "primaryPopulationRevision": "2026-11-15-local-only",
+    "primaryPopulationEvidence": "官方人口推算及2025派位原值；2027乙部需求为条件估算，目标学额未取得，不报实际竞争率",
+    "historicalCA2026Status": "verified-against-archived-edb-original-pdf",
+    "historicalCA2026Deployment": "published-20261115",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  },
+  {
+    "slug": "kowloon-city-secondary-net-analysis",
+    "title": "九龙城升中：喇沙、玛利诺的外校位多少，直资怎样另报",
+    "description": "逐项核对2026九龙城KL3名册83项记录，分男孩女孩解析本区13所Band 1参考样本的非保留学额、直联限制与竞争压力情境；补核男拔、协恩、颜宝铃课程、学费、申请期及接受录取的派位影响，保留2027数据边界。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  }
+]

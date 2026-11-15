@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "primary-net-91-analysis",
+    "title": "沙田91校网小学：两所吕明才、培基与其他学校怎么选",
+    "description": "核对91网17所资助小学、两吕小及培基的衔接区别、历史乙部结果和3所独立招生选择，说明2027学额、收费冲突与保位条款。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "primaryPopulationRevision": "2026-11-15-local-only",
+    "primaryPopulationEvidence": "官方人口推算及2025派位原值；2027乙部需求为条件估算，目标学额未取得，不报实际竞争率",
+    "historicalCA2026Status": "verified-against-archived-edb-original-pdf",
+    "historicalCA2026Deployment": "published-20261115",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  },
+  {
+    "slug": "sha-tin-secondary-net-analysis",
+    "title": "沙田升中：13校902个共享位，男女怎样选学校",
+    "description": "核对2026 NT7完整62项，比较13校及共同11校的男女需求情境，列4所直资、私立大光德萃及体艺特殊招生安排。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  }
+]

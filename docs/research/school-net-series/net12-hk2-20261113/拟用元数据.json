@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "primary-net-12-analysis",
+    "title": "12校网小学：三所女小、圣若瑟与两所轩尼诗怎么选",
+    "description": "核对12网14所官津小学、语言与正式升中关系，补入5所直私小学费用、2027招生及派位取舍；圣若瑟暂迁计划与未核条款单列。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "primaryPopulationRevision": "2026-11-15-local-only",
+    "primaryPopulationEvidence": "官方人口推算及2025派位原值；2027乙部需求为条件估算，目标学额未取得，不报实际竞争率",
+    "historicalCA2026Status": "verified-against-archived-edb-original-pdf",
+    "historicalCA2026Deployment": "published-20261115",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  },
+  {
+    "slug": "wan-chai-secondary-net-analysis",
+    "title": "湾仔升中：女校学额怎样看，男孩除了皇仁还能选什么",
+    "description": "逐行核对2026 HK2乙部50项名册，分析本区7校男女非保留位与竞争情境；补入直资申请、私立道尔顿课程及费用和当届规则。",
+    "status": "published",
+    "verifiedAt": "2026-11-15",
+    "revisionStatus": "published-20261115",
+    "evidenceNote": "公开可读资料已复核；正文注明的未公开、原件读取受限及官方冲突仍保留",
+    "writingAuditSkill": "humanizer-zh",
+    "writingAuditAt": "2026-11-15",
+    "writingRevisionStatus": "published-20261115",
+    "publishedAt": "2026-11-15",
+    "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D"
+  }
+]

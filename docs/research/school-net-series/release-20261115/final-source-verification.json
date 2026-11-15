@@ -1,0 +1,10 @@
+{
+  "deployment": "dpl_jkhYpchEiiakc7CYf63nKhvneZ8D",
+  "codeCommit": "210b3e5c",
+  "runtimeFilesVerified": 1446,
+  "changedSinceFullBrowserQA": [
+    "src/content/blog-meta.json"
+  ],
+  "missingFiles": [],
+  "errors": []
+}
