@@ -1,0 +1,55 @@
+[
+  {
+    "id": "census-full",
+    "url": "https://www.censtatd.gov.hk/api/get.php?id=925-92026&lang=en&full_series=1",
+    "file": "census-full.json",
+    "sha256": "90f7ed754f41a3ee1c14a2887d7b4514dd79ed5b7b6c2ccad497eaba4fb0af21",
+    "checked": "2026-11-15",
+    "bytes": 2357822
+  },
+  {
+    "id": "enrol-2025",
+    "url": "https://www.edb.gov.hk/attachment/en/about-edb/publications-stat/figures/Enrol_2025.pdf",
+    "file": "enrol-2025.pdf",
+    "sha256": "a4c9d17fe3b4ef7b7cab6f26434ea3f9d23420cc9a9e3a1f490a4fa784e559cd",
+    "checked": "2026-11-15",
+    "bytes": 1256970
+  },
+  {
+    "id": "enrol-2024",
+    "url": "https://www.edb.gov.hk/attachment/en/about-edb/publications-stat/figures/Enrol_2024.pdf",
+    "file": "enrol-2024.pdf",
+    "sha256": "3676335453649871a007d46a5bf411c7bac9f7f3642fa81dd7917919d29113a7",
+    "checked": "2026-11-15",
+    "bytes": 1904104
+  },
+  {
+    "id": "legco-2026",
+    "url": "https://www.edb.gov.hk/attachment/tc/about-edb/press/legco/replies-to-fc/edb-c-2627.pdf",
+    "file": "legco-2026.pdf",
+    "sha256": "d4b43ea53d18dd7769669548cc7a667ebb0d2eab656951b697e720cfe117041a",
+    "checked": "2026-11-15",
+    "bytes": 6942651
+  },
+  {
+    "id": "sspa2026-ca-faq",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2026_Sept_CA_TC.pdf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "sspa2026-leaflet",
+    "url": "https://www.edb.gov.hk/attachment/sc/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/SSPA_2026_leaflet_SC.pdf",
+    "file": "sspa2026-leaflet.pdf",
+    "sha256": "0a585a854b41b4d9f03441384bb4943b422a8c757441a10b8cc978cc6ff7d734",
+    "checked": "2026-11-15",
+    "bytes": 702386
+  },
+  {
+    "id": "sspa2026-results",
+    "url": "https://www.news.gov.hk/chi/2026/07/20260706/20260706_143902_974.html",
+    "file": "sspa2026-results.html",
+    "sha256": "e891ef0eb878871825ae95eaa2a072cbf1bc3298422595c892511117b35abaa6",
+    "checked": "2026-11-15",
+    "bytes": 31639
+  }
+]

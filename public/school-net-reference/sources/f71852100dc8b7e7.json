@@ -1,0 +1,618 @@
+[
+  {
+    "year": 2024,
+    "method": "growth",
+    "calibration": 1.0078703935196833,
+    "nationalActual": 51393,
+    "MAPE": 2.7226617341467394,
+    "rows": [
+      {
+        "district": "中西區",
+        "code": "A",
+        "actual": 1487,
+        "estimated": 1471.6506949332813,
+        "error": -15.34930506671867,
+        "absolutePercentError": 1.0322330239891506
+      },
+      {
+        "district": "灣仔",
+        "code": "B",
+        "actual": 1457,
+        "estimated": 1602.245663026081,
+        "error": 145.24566302608105,
+        "absolutePercentError": 9.968816954432468
+      },
+      {
+        "district": "東區",
+        "code": "C",
+        "actual": 3010,
+        "estimated": 2873.698177449434,
+        "error": -136.30182255056616,
+        "absolutePercentError": 4.528299752510503
+      },
+      {
+        "district": "南區",
+        "code": "D",
+        "actual": 1027,
+        "estimated": 990.0760716001975,
+        "error": -36.92392839980255,
+        "absolutePercentError": 3.5953192210129066
+      },
+      {
+        "district": "油尖旺",
+        "code": "E",
+        "actual": 1909,
+        "estimated": 1944.846736006819,
+        "error": 35.8467360068189,
+        "absolutePercentError": 1.8777755896709745
+      },
+      {
+        "district": "深水埗",
+        "code": "F",
+        "actual": 3146,
+        "estimated": 3202.795370369328,
+        "error": 56.795370369327884,
+        "absolutePercentError": 1.8053201007415094
+      },
+      {
+        "district": "九龍城",
+        "code": "G",
+        "actual": 4838,
+        "estimated": 4841.024195811193,
+        "error": 3.0241958111928398,
+        "absolutePercentError": 0.06250921478282016
+      },
+      {
+        "district": "黃大仙",
+        "code": "H",
+        "actual": 2282,
+        "estimated": 2180.3824488478103,
+        "error": -101.61755115218966,
+        "absolutePercentError": 4.453003994399197
+      },
+      {
+        "district": "觀塘",
+        "code": "J",
+        "actual": 4372,
+        "estimated": 4462.816423947492,
+        "error": 90.81642394749178,
+        "absolutePercentError": 2.0772283611045697
+      },
+      {
+        "district": "荃灣",
+        "code": "K",
+        "actual": 1695,
+        "estimated": 1708.8825796782921,
+        "error": 13.882579678292132,
+        "absolutePercentError": 0.819031249456763
+      },
+      {
+        "district": "屯門",
+        "code": "L",
+        "actual": 3845,
+        "estimated": 3869.5768468060323,
+        "error": 24.576846806032336,
+        "absolutePercentError": 0.6391897738890074
+      },
+      {
+        "district": "元朗",
+        "code": "M",
+        "actual": 4731,
+        "estimated": 4705.413870517348,
+        "error": -25.586129482651813,
+        "absolutePercentError": 0.5408186320577428
+      },
+      {
+        "district": "北區",
+        "code": "N",
+        "actual": 3482,
+        "estimated": 3556.01060262465,
+        "error": 74.01060262464989,
+        "absolutePercentError": 2.125519891575241
+      },
+      {
+        "district": "大埔",
+        "code": "P",
+        "actual": 2264,
+        "estimated": 2148.013028755719,
+        "error": -115.986971244281,
+        "absolutePercentError": 5.12309943658485
+      },
+      {
+        "district": "西貢",
+        "code": "Q",
+        "actual": 2206,
+        "estimated": 2290.7167075769685,
+        "error": 84.71670757696847,
+        "absolutePercentError": 3.8402859282397315
+      },
+      {
+        "district": "沙田",
+        "code": "R",
+        "actual": 5018,
+        "estimated": 4982.156533701028,
+        "error": -35.84346629897209,
+        "absolutePercentError": 0.7142978537060998
+      },
+      {
+        "district": "葵青",
+        "code": "S",
+        "actual": 3521,
+        "estimated": 3425.5607280203335,
+        "error": -95.4392719796665,
+        "absolutePercentError": 2.710572904847103
+      },
+      {
+        "district": "離島",
+        "code": "T",
+        "actual": 1103,
+        "estimated": 1137.1333203279967,
+        "error": 34.13332032799667,
+        "absolutePercentError": 3.094589331640677
+      }
+    ],
+    "scope": "只检验全网总参派规模分配，使用该年已知全港总数；不验证性别、Band1、乙部需求或个人概率。"
+  },
+  {
+    "year": 2024,
+    "method": "stable-share",
+    "calibration": 1.0175219767165598,
+    "nationalActual": 51393,
+    "MAPE": 3.513715635094351,
+    "rows": [
+      {
+        "district": "中西區",
+        "code": "A",
+        "actual": 1487,
+        "estimated": 1410.2854597291519,
+        "error": -76.71454027084815,
+        "absolutePercentError": 5.159014140608483
+      },
+      {
+        "district": "灣仔",
+        "code": "B",
+        "actual": 1457,
+        "estimated": 1542.5633167023045,
+        "error": 85.56331670230452,
+        "absolutePercentError": 5.872568064674297
+      },
+      {
+        "district": "東區",
+        "code": "C",
+        "actual": 3010,
+        "estimated": 2834.8162271323354,
+        "error": -175.18377286766463,
+        "absolutePercentError": 5.820058899257961
+      },
+      {
+        "district": "南區",
+        "code": "D",
+        "actual": 1027,
+        "estimated": 992.0839272986458,
+        "error": -34.91607270135421,
+        "absolutePercentError": 3.3998123370354634
+      },
+      {
+        "district": "油尖旺",
+        "code": "E",
+        "actual": 1909,
+        "estimated": 1835.6096459966739,
+        "error": -73.39035400332614,
+        "absolutePercentError": 3.8444397068269325
+      },
+      {
+        "district": "深水埗",
+        "code": "F",
+        "actual": 3146,
+        "estimated": 3208.246792587313,
+        "error": 62.24679258731294,
+        "absolutePercentError": 1.9786011629787965
+      },
+      {
+        "district": "九龍城",
+        "code": "G",
+        "actual": 4838,
+        "estimated": 4654.145521501544,
+        "error": -183.85447849845605,
+        "absolutePercentError": 3.8002165874009104
+      },
+      {
+        "district": "黃大仙",
+        "code": "H",
+        "actual": 2282,
+        "estimated": 2292.477013542409,
+        "error": 10.477013542409168,
+        "absolutePercentError": 0.4591154050135481
+      },
+      {
+        "district": "觀塘",
+        "code": "J",
+        "actual": 4372,
+        "estimated": 4321.415835115229,
+        "error": -50.58416488477087,
+        "absolutePercentError": 1.1570028564677692
+      },
+      {
+        "district": "荃灣",
+        "code": "K",
+        "actual": 1695,
+        "estimated": 1773.5408054169636,
+        "error": 78.54080541696362,
+        "absolutePercentError": 4.633675835809063
+      },
+      {
+        "district": "屯門",
+        "code": "L",
+        "actual": 3845,
+        "estimated": 4050.7549893086243,
+        "error": 205.75498930862432,
+        "absolutePercentError": 5.351235092551998
+      },
+      {
+        "district": "元朗",
+        "code": "M",
+        "actual": 4731,
+        "estimated": 4961.437158469946,
+        "error": 230.43715846994564,
+        "absolutePercentError": 4.870791766433009
+      },
+      {
+        "district": "北區",
+        "code": "N",
+        "actual": 3482,
+        "estimated": 3585.7474459491564,
+        "error": 103.74744594915637,
+        "absolutePercentError": 2.9795360697632503
+      },
+      {
+        "district": "大埔",
+        "code": "P",
+        "actual": 2264,
+        "estimated": 2139.8487170349254,
+        "error": -124.15128296507464,
+        "absolutePercentError": 5.483713911884922
+      },
+      {
+        "district": "西貢",
+        "code": "Q",
+        "actual": 2206,
+        "estimated": 2216.162865288667,
+        "error": 10.162865288667035,
+        "absolutePercentError": 0.46069198951346485
+      },
+      {
+        "district": "沙田",
+        "code": "R",
+        "actual": 5018,
+        "estimated": 5068.276966025184,
+        "error": 50.276966025184265,
+        "absolutePercentError": 1.0019323639933093
+      },
+      {
+        "district": "葵青",
+        "code": "S",
+        "actual": 3521,
+        "estimated": 3460.5922428130198,
+        "error": -60.407757186980234,
+        "absolutePercentError": 1.7156420672246588
+      },
+      {
+        "district": "離島",
+        "code": "T",
+        "actual": 1103,
+        "estimated": 1044.995070087907,
+        "error": -58.004929912093075,
+        "absolutePercentError": 5.258833174260478
+      }
+    ],
+    "scope": "只检验全网总参派规模分配，使用该年已知全港总数；不验证性别、Band1、乙部需求或个人概率。"
+  },
+  {
+    "year": 2025,
+    "method": "growth",
+    "calibration": 0.9915249930103888,
+    "nationalActual": 48011,
+    "MAPE": 1.310567897835918,
+    "rows": [
+      {
+        "district": "中西區",
+        "code": "A",
+        "actual": 1413,
+        "estimated": 1411.5657734702713,
+        "error": -1.4342265297286758,
+        "absolutePercentError": 0.10150223140330332
+      },
+      {
+        "district": "灣仔",
+        "code": "B",
+        "actual": 1466,
+        "estimated": 1450.5424425014214,
+        "error": -15.45755749857858,
+        "absolutePercentError": 1.0544036492891256
+      },
+      {
+        "district": "東區",
+        "code": "C",
+        "actual": 2810,
+        "estimated": 2842.6218554014918,
+        "error": 32.62185540149176,
+        "absolutePercentError": 1.1609201210495288
+      },
+      {
+        "district": "南區",
+        "code": "D",
+        "actual": 988,
+        "estimated": 1024.4820791215204,
+        "error": 36.48207912152043,
+        "absolutePercentError": 3.6925181297085454
+      },
+      {
+        "district": "油尖旺",
+        "code": "E",
+        "actual": 1761,
+        "estimated": 1744.9084429803518,
+        "error": -16.091557019648235,
+        "absolutePercentError": 0.9137738228079634
+      },
+      {
+        "district": "深水埗",
+        "code": "F",
+        "actual": 2997,
+        "estimated": 3024.627934012587,
+        "error": 27.627934012587048,
+        "absolutePercentError": 0.9218529867396412
+      },
+      {
+        "district": "九龍城",
+        "code": "G",
+        "actual": 4719,
+        "estimated": 4733.618136972203,
+        "error": 14.618136972202592,
+        "absolutePercentError": 0.3097719214283236
+      },
+      {
+        "district": "黃大仙",
+        "code": "H",
+        "actual": 2144,
+        "estimated": 2134.8823863622647,
+        "error": -9.117613637735303,
+        "absolutePercentError": 0.4252618301182511
+      },
+      {
+        "district": "觀塘",
+        "code": "J",
+        "actual": 3910,
+        "estimated": 3933.0625043028413,
+        "error": 23.062504302841262,
+        "absolutePercentError": 0.589833869637884
+      },
+      {
+        "district": "荃灣",
+        "code": "K",
+        "actual": 1650,
+        "estimated": 1633.590064859727,
+        "error": -16.40993514027309,
+        "absolutePercentError": 0.9945415236529147
+      },
+      {
+        "district": "屯門",
+        "code": "L",
+        "actual": 3676,
+        "estimated": 3636.855044155821,
+        "error": -39.144955844179094,
+        "absolutePercentError": 1.0648791034869176
+      },
+      {
+        "district": "元朗",
+        "code": "M",
+        "actual": 4316,
+        "estimated": 4267.700493360155,
+        "error": -48.299506639845276,
+        "absolutePercentError": 1.1190803206636997
+      },
+      {
+        "district": "北區",
+        "code": "N",
+        "actual": 3097,
+        "estimated": 3220.0410428703713,
+        "error": 123.04104287037126,
+        "absolutePercentError": 3.9729106512874153
+      },
+      {
+        "district": "大埔",
+        "code": "P",
+        "actual": 1989,
+        "estimated": 1971.8657695758468,
+        "error": -17.134230424153202,
+        "absolutePercentError": 0.8614494934214783
+      },
+      {
+        "district": "西貢",
+        "code": "Q",
+        "actual": 2142,
+        "estimated": 2095.3078301318546,
+        "error": -46.692169868145356,
+        "absolutePercentError": 2.1798398631253666
+      },
+      {
+        "district": "沙田",
+        "code": "R",
+        "actual": 4674,
+        "estimated": 4692.8277722454695,
+        "error": 18.827772245469532,
+        "absolutePercentError": 0.402819260707521
+      },
+      {
+        "district": "葵青",
+        "code": "S",
+        "actual": 3280,
+        "estimated": 3199.9484502765677,
+        "error": -80.05154972343234,
+        "absolutePercentError": 2.440596028153425
+      },
+      {
+        "district": "離島",
+        "code": "T",
+        "actual": 979,
+        "estimated": 992.5519773992355,
+        "error": 13.551977399235511,
+        "absolutePercentError": 1.3842673543652209
+      }
+    ],
+    "scope": "只检验全网总参派规模分配，使用该年已知全港总数；不验证性别、Band1、乙部需求或个人概率。"
+  },
+  {
+    "year": 2025,
+    "method": "stable-share",
+    "calibration": 0.934193372638297,
+    "nationalActual": 48011,
+    "MAPE": 2.9982856702542517,
+    "rows": [
+      {
+        "district": "中西區",
+        "code": "A",
+        "actual": 1413,
+        "estimated": 1389.1455451131478,
+        "error": -23.85445488685218,
+        "absolutePercentError": 1.6882133677885478
+      },
+      {
+        "district": "灣仔",
+        "code": "B",
+        "actual": 1466,
+        "estimated": 1361.1197439339987,
+        "error": -104.88025606600127,
+        "absolutePercentError": 7.154178449249746
+      },
+      {
+        "district": "東區",
+        "code": "C",
+        "actual": 2810,
+        "estimated": 2811.9220516412743,
+        "error": 1.9220516412742654,
+        "absolutePercentError": 0.06840041428022296
+      },
+      {
+        "district": "南區",
+        "code": "D",
+        "actual": 988,
+        "estimated": 959.4165936995311,
+        "error": -28.583406300468937,
+        "absolutePercentError": 2.893057317861228
+      },
+      {
+        "district": "油尖旺",
+        "code": "E",
+        "actual": 1761,
+        "estimated": 1783.3751483665092,
+        "error": 22.375148366509165,
+        "absolutePercentError": 1.2705933200743422
+      },
+      {
+        "district": "深水埗",
+        "code": "F",
+        "actual": 2997,
+        "estimated": 2938.9723503200826,
+        "error": -58.02764967991743,
+        "absolutePercentError": 1.936191180511092
+      },
+      {
+        "district": "九龍城",
+        "code": "G",
+        "actual": 4719,
+        "estimated": 4519.627536824081,
+        "error": -199.3724631759187,
+        "absolutePercentError": 4.224887967279481
+      },
+      {
+        "district": "黃大仙",
+        "code": "H",
+        "actual": 2144,
+        "estimated": 2131.8292763605937,
+        "error": -12.170723639406333,
+        "absolutePercentError": 0.5676643488529073
+      },
+      {
+        "district": "觀塘",
+        "code": "J",
+        "actual": 3910,
+        "estimated": 4084.2934251746346,
+        "error": 174.29342517463465,
+        "absolutePercentError": 4.457632357407536
+      },
+      {
+        "district": "荃灣",
+        "code": "K",
+        "actual": 1650,
+        "estimated": 1583.4577666219136,
+        "error": -66.5422333780864,
+        "absolutePercentError": 4.032862628974933
+      },
+      {
+        "district": "屯門",
+        "code": "L",
+        "actual": 3676,
+        "estimated": 3591.973517794252,
+        "error": -84.02648220574793,
+        "absolutePercentError": 2.28581290004755
+      },
+      {
+        "district": "元朗",
+        "code": "M",
+        "actual": 4316,
+        "estimated": 4419.668845951784,
+        "error": 103.66884595178362,
+        "absolutePercentError": 2.40196584689026
+      },
+      {
+        "district": "北區",
+        "code": "N",
+        "actual": 3097,
+        "estimated": 3252.86132352655,
+        "error": 155.86132352655022,
+        "absolutePercentError": 5.032654941122061
+      },
+      {
+        "district": "大埔",
+        "code": "P",
+        "actual": 1989,
+        "estimated": 2115.0137956531044,
+        "error": 126.01379565310435,
+        "absolutePercentError": 6.33553522640042
+      },
+      {
+        "district": "西貢",
+        "code": "Q",
+        "actual": 2142,
+        "estimated": 2060.830580040083,
+        "error": -81.16941995991692,
+        "absolutePercentError": 3.7894220336095668
+      },
+      {
+        "district": "沙田",
+        "code": "R",
+        "actual": 4674,
+        "estimated": 4687.782343898974,
+        "error": 13.782343898974432,
+        "absolutePercentError": 0.2948725695116481
+      },
+      {
+        "district": "葵青",
+        "code": "S",
+        "actual": 3280,
+        "estimated": 3289.294865059444,
+        "error": 9.294865059443964,
+        "absolutePercentError": 0.2833800323001209
+      },
+      {
+        "district": "離島",
+        "code": "T",
+        "actual": 979,
+        "estimated": 1030.4152900200415,
+        "error": 51.41529002004154,
+        "absolutePercentError": 5.251817162414866
+      }
+    ],
+    "scope": "只检验全网总参派规模分配，使用该年已知全港总数；不验证性别、Band1、乙部需求或个人概率。"
+  }
+]

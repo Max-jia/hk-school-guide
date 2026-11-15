@@ -1,0 +1,1963 @@
+{
+  "articles": 163,
+  "localeCases": 326,
+  "errors": [],
+  "rows": [
+    {
+      "slug": "primary-net-11-analysis",
+      "locale": "tc",
+      "title": "11校網小學：女孩看直屬路徑，男孩怎樣選學校",
+      "description": "逐校核對11網16項官津列名、語言和正式升中關係，補入6所直私小學的學費、2027申請和派位影響；新會商會資格另注。"
+    },
+    {
+      "slug": "primary-net-11-analysis",
+      "locale": "sc",
+      "title": "11校网小学：女孩看直属路径，男孩怎样选学校",
+      "description": "逐校核对11网16项官津列名、语言和正式升中关系，补入6所直私小学的学费、2027申请和派位影响；新会商会资格另注。"
+    },
+    {
+      "slug": "primary-net-12-analysis",
+      "locale": "tc",
+      "title": "12校網小學：三所女小、聖若瑟與兩所軒尼詩怎麼選",
+      "description": "核對12網14所官津小學、語言與正式升中關係，補入5所直私小學費用、2027招生及派位取捨；聖若瑟暫遷計劃與未核條款單列。"
+    },
+    {
+      "slug": "primary-net-12-analysis",
+      "locale": "sc",
+      "title": "12校网小学：三所女小、圣若瑟与两所轩尼诗怎么选",
+      "description": "核对12网14所官津小学、语言与正式升中关系，补入5所直私小学费用、2027招生及派位取舍；圣若瑟暂迁计划与未核条款单列。"
+    },
+    {
+      "slug": "primary-net-31-analysis",
+      "locale": "tc",
+      "title": "31校網小學：兩所油天、聖瑪利和德信，升中安排有什麼不同",
+      "description": "逐校核對31網10所官津小學、正式升中關係及5所直私選擇；區分2027小一申請與現學年插班，列明費用、保位合同和統派學額缺口。"
+    },
+    {
+      "slug": "primary-net-31-analysis",
+      "locale": "sc",
+      "title": "31校网小学：两所油天、圣玛利和德信，升中安排有什么不同",
+      "description": "逐校核对31网10所官津小学、正式升中关系及5所直私选择；区分2027小一申请与现学年插班，列明费用、保位合同和统派学额缺口。"
+    },
+    {
+      "slug": "primary-net-32-analysis",
+      "locale": "tc",
+      "title": "32校網小學：兩所大天、協和怎麼選，基全合併進展怎樣看",
+      "description": "核對32網2027七所官津、合併計劃、語言與正式升中關係；補入2025官方乙部結果及五所直私費用申請，保留男女情境與未公開條款。"
+    },
+    {
+      "slug": "primary-net-32-analysis",
+      "locale": "sc",
+      "title": "32校网小学：两所大天、协和怎么选，基全合并进展怎样看",
+      "description": "核对32网2027七所官津、合并计划、语言与正式升中关系；补入2025官方乙部结果及五所直私费用申请，保留男女情境与未公开条款。"
+    },
+    {
+      "slug": "primary-net-34-analysis",
+      "locale": "tc",
+      "title": "34校網小學：協恩、聖羅撒與啓德學校怎麼選",
+      "description": "核對34校網小學的學校名單、正式升中關係、歷史派位及男女選擇，列出直資私立申請與數據限制。"
+    },
+    {
+      "slug": "primary-net-34-analysis",
+      "locale": "sc",
+      "title": "34校网小学：协恩、圣罗撒与启德学校怎么选",
+      "description": "核对34校网小学的学校名单、正式升中关系、历史派位及男女选择，列出直资私立申请与数据限制。"
+    },
+    {
+      "slug": "primary-net-35-analysis",
+      "locale": "tc",
+      "title": "35校網小學：天神、紅馬、兩所奉基和黃埔學校怎麼選",
+      "description": "核對35校網小學的學校名單、正式升中關係、歷史派位及男女選擇，列出直資私立申請與數據限制。"
+    },
+    {
+      "slug": "primary-net-35-analysis",
+      "locale": "sc",
+      "title": "35校网小学：天神、红马、两所奉基和黄埔学校怎么选",
+      "description": "核对35校网小学的学校名单、正式升中关系、历史派位及男女选择，列出直资私立申请与数据限制。"
+    },
+    {
+      "slug": "primary-net-40-analysis",
+      "locale": "tc",
+      "title": "40校網小學：20所男女校，聯繫中學與課堂安排怎麼分",
+      "description": "核對2027年40網20所官津小學、升中關係及5所直資私立選擇；區分歷史統派結果、現行收費與申請期限，說明女生聯繫資格及合併計劃。"
+    },
+    {
+      "slug": "primary-net-40-analysis",
+      "locale": "sc",
+      "title": "40校网小学：20所男女校，联系中学与课堂安排怎么分",
+      "description": "核对2027年40网20所官津小学、升中关系及5所直资私立选择；区分历史统派结果、现行收费与申请期限，说明女生联系资格及合并计划。"
+    },
+    {
+      "slug": "primary-net-41-analysis",
+      "locale": "tc",
+      "title": "41校網小學：喇沙、瑪利諾和聖家怎麼選，直私何時申請",
+      "description": "核對41網10所小學的性質、教學語言及直屬聯繫關係，分男孩女孩分析目標依賴、升中路徑和2027申請安排。未取得的統派學額及競爭人數不作推定。"
+    },
+    {
+      "slug": "primary-net-41-analysis",
+      "locale": "sc",
+      "title": "41校网小学：喇沙、玛利诺和圣家怎么选，直私何时申请",
+      "description": "核对41网10所小学的性质、教学语言及直属联系关系，分男孩女孩分析目标依赖、升中路径和2027申请安排。未取得的统派学额及竞争人数不作推定。"
+    },
+    {
+      "slug": "primary-net-89-analysis",
+      "locale": "tc",
+      "title": "馬鞍山89校網小學：主風、循道、雨川怎麼選，泰伯資格怎樣核",
+      "description": "逐校核對89網11項及泰伯參派條件，區分四校升中出口口徑、歷史志願分母，保留直資私立選項和沙田男女競爭情境。"
+    },
+    {
+      "slug": "primary-net-89-analysis",
+      "locale": "sc",
+      "title": "马鞍山89校网小学：主风、循道、雨川怎么选，泰伯资格怎样核",
+      "description": "逐校核对89网11项及泰伯参派条件，区分四校升中出口口径、历史志愿分母，保留直资私立选项和沙田男女竞争情境。"
+    },
+    {
+      "slug": "primary-net-91-analysis",
+      "locale": "tc",
+      "title": "沙田91校網小學：兩所呂明才、培基與其他學校怎麼選",
+      "description": "核對91網17所資助小學、兩呂小及培基的銜接區別、歷史乙部結果和3所獨立招生選擇，說明2027學額、收費衝突與保位條款。"
+    },
+    {
+      "slug": "primary-net-91-analysis",
+      "locale": "sc",
+      "title": "沙田91校网小学：两所吕明才、培基与其他学校怎么选",
+      "description": "核对91网17所资助小学、两吕小及培基的衔接区别、历史乙部结果和3所独立招生选择，说明2027学额、收费冲突与保位条款。"
+    },
+    {
+      "slug": "central-western-secondary-net-analysis",
+      "locale": "tc",
+      "title": "中西區升中：英皇、英華女之外，還有哪些合適選擇",
+      "description": "核對2026 HK1乙部46項名冊，分男女比較本區7校與共同5校的非保留位和競爭情境；補核3所直資中學課程、收費及申請取捨。"
+    },
+    {
+      "slug": "central-western-secondary-net-analysis",
+      "locale": "sc",
+      "title": "中西区升中：英皇、英华女之外，还有哪些合适选择",
+      "description": "核对2026 HK1乙部46项名册，分男女比较本区7校与共同5校的非保留位和竞争情境；补核3所直资中学课程、收费及申请取舍。"
+    },
+    {
+      "slug": "wan-chai-secondary-net-analysis",
+      "locale": "tc",
+      "title": "灣仔升中：女校學額怎樣看，男孩除了皇仁還能選什麼",
+      "description": "逐行核對2026 HK2乙部50項名冊，分析本區7校男女非保留位與競爭情境；補入直資申請、私立道爾頓課程及費用和當屆規則。"
+    },
+    {
+      "slug": "wan-chai-secondary-net-analysis",
+      "locale": "sc",
+      "title": "湾仔升中：女校学额怎样看，男孩除了皇仁还能选什么",
+      "description": "逐行核对2026 HK2乙部50项名册，分析本区7校男女非保留位与竞争情境；补入直资申请、私立道尔顿课程及费用和当届规则。"
+    },
+    {
+      "slug": "yau-tsim-mong-secondary-net-analysis",
+      "locale": "tc",
+      "title": "油尖旺升中：九華、聖芳濟、聖瑪利之外，怎樣擴大選擇",
+      "description": "核對2026 KL1乙部完整51項及備註，分清民間分類與男女競爭情境；加入女拔、李國寶、男拔及私立蔡繼有的申請、費用與課程。"
+    },
+    {
+      "slug": "yau-tsim-mong-secondary-net-analysis",
+      "locale": "sc",
+      "title": "油尖旺升中：九华、圣芳济、圣玛利之外，怎样扩大选择",
+      "description": "核对2026 KL1乙部完整51项及备注，分清民间分类与男女竞争情境；加入女拔、李国宝、男拔及私立蔡继有的申请、费用与课程。"
+    },
+    {
+      "slug": "sham-shui-po-secondary-net-analysis",
+      "locale": "tc",
+      "title": "深水埗升中：女孩多哪些選擇，男孩怎樣安排後備",
+      "description": "核對2026 KL2乙部84項歷史名冊，比較7校與共同4校參考樣本、男女需求及共享位情境；獨立列英華、聖瑪加利、基崇與蔡繼有。"
+    },
+    {
+      "slug": "sham-shui-po-secondary-net-analysis",
+      "locale": "sc",
+      "title": "深水埗升中：女孩多哪些选择，男孩怎样安排后备",
+      "description": "核对2026 KL2乙部84项历史名册，比较7校与共同4校参考样本、男女需求及共享位情境；独立列英华、圣玛加利、基崇与蔡继有。"
+    },
+    {
+      "slug": "kowloon-city-secondary-net-analysis",
+      "locale": "tc",
+      "title": "九龍城升中：喇沙、瑪利諾的外校位多少，直資怎樣另報",
+      "description": "逐項核對2026九龍城KL3名冊83項記錄，分男孩女孩解析本區13所Band 1參考樣本的非保留學額、直聯限制與競爭壓力情境；補核男拔、協恩、顏寶鈴課程、學費、申請期及接受錄取的派位影響，保留2027數據邊界。"
+    },
+    {
+      "slug": "kowloon-city-secondary-net-analysis",
+      "locale": "sc",
+      "title": "九龙城升中：喇沙、玛利诺的外校位多少，直资怎样另报",
+      "description": "逐项核对2026九龙城KL3名册83项记录，分男孩女孩解析本区13所Band 1参考样本的非保留学额、直联限制与竞争压力情境；补核男拔、协恩、颜宝铃课程、学费、申请期及接受录取的派位影响，保留2027数据边界。"
+    },
+    {
+      "slug": "sha-tin-secondary-net-analysis",
+      "locale": "tc",
+      "title": "沙田升中：13校902個共享位，男女怎樣選學校",
+      "description": "核對2026 NT7完整62項，比較13校及共同11校的男女需求情境，列4所直資、私立大光德萃及體藝特殊招生安排。"
+    },
+    {
+      "slug": "sha-tin-secondary-net-analysis",
+      "locale": "sc",
+      "title": "沙田升中：13校902个共享位，男女怎样选学校",
+      "description": "核对2026 NT7完整62项，比较13校及共同11校的男女需求情境，列4所直资、私立大光德萃及体艺特殊招生安排。"
+    },
+    {
+      "slug": "hk-kg-terminology-types",
+      "locale": "tc",
+      "title": "香港幼稚園怎樣分類？性質、資助、課程、時段要分開看",
+      "description": "認識非牟利、私立獨立、計劃園與非計劃園，按課程、語言和照顧時段比較幼稚園。"
+    },
+    {
+      "slug": "hk-kg-terminology-types",
+      "locale": "sc",
+      "title": "香港幼稚园怎样分类？性质、资助、课程、时段要分开看",
+      "description": "认识非牟利、私立独立、计划园与非计划园，按课程、语言和照顾时段比较幼稚园。"
+    },
+    {
+      "slug": "hk-kg-terminology-admissions",
+      "locale": "tc",
+      "title": "幼稚園班級、年齡與註冊",
+      "description": "讀懂PG、PN、大B細B、神幼龍校，以及註冊證、入學許可書和候補安排。"
+    },
+    {
+      "slug": "hk-kg-terminology-admissions",
+      "locale": "sc",
+      "title": "幼稚园班级、年龄与注册",
+      "description": "读懂PG、PN、大B细B、神幼龙校，以及注册证、入学许可书和候补安排。"
+    },
+    {
+      "slug": "hk-primary-terminology-system",
+      "locale": "tc",
+      "title": "小學分類、計分與派位",
+      "description": "分清小學類別，理解自行計分、統一派位、校網與1-1-1。"
+    },
+    {
+      "slug": "hk-primary-terminology-system",
+      "locale": "sc",
+      "title": "小学分类、计分与派位",
+      "description": "分清小学类别，理解自行计分、统一派位、校网与1-1-1。"
+    },
+    {
+      "slug": "hk-primary-terminology-admissions",
+      "locale": "tc",
+      "title": "小學申請、錄取與學位取捨",
+      "description": "看懂offer、接受錄取和留位的區別，處理直資、私立、叩門與插班申請。"
+    },
+    {
+      "slug": "hk-primary-terminology-admissions",
+      "locale": "sc",
+      "title": "小学申请、录取与学位取舍",
+      "description": "看懂offer、接受录取和留位的区别，处理直资、私立、叩门与插班申请。"
+    },
+    {
+      "slug": "hk-primary-terminology-learning",
+      "locale": "tc",
+      "title": "小學評估、支援與升學數據",
+      "description": "解釋默書、普教中、TSA、呈分及學習支援，讀清升學數據的分母。"
+    },
+    {
+      "slug": "hk-primary-terminology-learning",
+      "locale": "sc",
+      "title": "小学评估、支援与升学数据",
+      "description": "解释默书、普教中、TSA、呈分及学习支援，读清升学数据的分母。"
+    },
+    {
+      "slug": "hk-secondary-terminology-pathways",
+      "locale": "tc",
+      "title": "呈分、派位組別與升中銜接",
+      "description": "理解呈分、派位組別、一條龍與直屬聯繫，以及DSE和其他課程路徑。"
+    },
+    {
+      "slug": "hk-secondary-terminology-pathways",
+      "locale": "sc",
+      "title": "呈分、派位组别与升中衔接",
+      "description": "理解呈分、派位组别、一条龙与直属联系，以及DSE和其他课程路径。"
+    },
+    {
+      "slug": "hk-secondary-terminology-admissions",
+      "locale": "tc",
+      "title": "中學分類與升中申請",
+      "description": "分清中學類別、自行兩校、統一派位、學校網和非參加派位直資收位。"
+    },
+    {
+      "slug": "hk-secondary-terminology-admissions",
+      "locale": "sc",
+      "title": "中学分类与升中申请",
+      "description": "分清中学类别、自行两校、统一派位、学校网和非参加派位直资收位。"
+    },
+    {
+      "slug": "hk-secondary-terminology-subjects",
+      "locale": "tc",
+      "title": "中學語言、選科與評核",
+      "description": "瞭解教學語言、高中選科、M1與M2、校本評核和學習經歷記錄。"
+    },
+    {
+      "slug": "hk-secondary-terminology-subjects",
+      "locale": "sc",
+      "title": "中学语言、选科与评核",
+      "description": "了解教学语言、高中选科、M1与M2、校本评核和学习经历记录。"
+    },
+    {
+      "slug": "hk-secondary-terminology-dse",
+      "locale": "tc",
+      "title": "DSE計分與大學申請",
+      "description": "讀懂DSE等級、計分公式、JUPAS志願和大學升學率。"
+    },
+    {
+      "slug": "hk-secondary-terminology-dse",
+      "locale": "sc",
+      "title": "DSE计分与大学申请",
+      "description": "读懂DSE等级、计分公式、JUPAS志愿和大学升学率。"
+    },
+    {
+      "slug": "hk-new-arrival-terminology",
+      "locale": "tc",
+      "title": "來港插班與家庭升學規劃",
+      "description": "準備插班檔案，理解年級安排、受養人身份和家庭長期升學規劃。"
+    },
+    {
+      "slug": "hk-new-arrival-terminology",
+      "locale": "sc",
+      "title": "来港插班与家庭升学规划",
+      "description": "准备插班档案，理解年级安排、受养人身份和家庭长期升学规划。"
+    },
+    {
+      "slug": "hk-kg-system-1",
+      "locale": "tc",
+      "title": "香港幼稚園①：按班級、資助和家庭安排選校",
+      "description": "分清班級、資助、課程語言與照顧時數，再按家庭生活地點和三年預算篩選學校。"
+    },
+    {
+      "slug": "hk-kg-system-1",
+      "locale": "sc",
+      "title": "香港幼稚园①：按班级、资助和家庭安排选校",
+      "description": "分清班级、资助、课程语言与照顾时数，再按家庭生活地点和三年预算筛选学校。"
+    },
+    {
+      "slug": "hk-kg-system-2",
+      "locale": "tc",
+      "title": "香港幼稚園②：K1報名、註冊證申請與面試安排",
+      "description": "核對孩子報名資格，準備註冊證和申請材料，按學校通知安排面試。"
+    },
+    {
+      "slug": "hk-kg-system-2",
+      "locale": "sc",
+      "title": "香港幼稚园②：K1报名、注册证申请与面试安排",
+      "description": "核对孩子报名资格，准备注册证和申请材料，按学校通知安排面试。"
+    },
+    {
+      "slug": "hk-kg-system-3",
+      "locale": "tc",
+      "title": "香港幼稚園③：錄取後怎樣註冊、轉校和準備升小",
+      "description": "收到錄取後辦理註冊、跟進候補及轉校，並準備入學適應和升小日程。"
+    },
+    {
+      "slug": "hk-kg-system-3",
+      "locale": "sc",
+      "title": "香港幼稚园③：录取后怎样注册、转校和准备升小",
+      "description": "收到录取后办理注册、跟进候补及转校，并准备入学适应和升小日程。"
+    },
+    {
+      "slug": "hk-primary-system-1",
+      "locale": "tc",
+      "title": "香港小學①：學校類別、課程方向和六年預算",
+      "description": "分清官津、直資、私立與國際學校，比較課程方向、入學資格和六年預算。"
+    },
+    {
+      "slug": "hk-primary-system-1",
+      "locale": "sc",
+      "title": "香港小学①：学校类别、课程方向和六年预算",
+      "description": "分清官津、直资、私立与国际学校，比较课程方向、入学资格和六年预算。"
+    },
+    {
+      "slug": "hk-primary-system-2",
+      "locale": "tc",
+      "title": "香港小學②：小一計分、統一派位與錄取取捨",
+      "description": "逐項看懂自行分配學位計分、統一派位和校本招生，籤錄取文件前核對影響。"
+    },
+    {
+      "slug": "hk-primary-system-2",
+      "locale": "sc",
+      "title": "香港小学②：小一计分、统一派位与录取取舍",
+      "description": "逐项看懂自行分配学位计分、统一派位和校本招生，签录取文件前核对影响。"
+    },
+    {
+      "slug": "hk-primary-system-3",
+      "locale": "tc",
+      "title": "香港小學③：入學適應、呈分和升中要查哪些安排",
+      "description": "從開學適應、功課評估到呈分和升中，按孩子當前階段列出跟進事項。"
+    },
+    {
+      "slug": "hk-primary-system-3",
+      "locale": "sc",
+      "title": "香港小学③：入学适应、呈分和升中要查哪些安排",
+      "description": "从开学适应、功课评估到呈分和升中，按孩子当前阶段列出跟进事项。"
+    },
+    {
+      "slug": "victoria-ocean-pride-kg-interview-guide",
+      "locale": "tc",
+      "title": "維多利亞（海之戀）K1面試攻略：兩輪時間、陪同安排與準備",
+      "description": "校方2027/28兩輪面試日期、陪同安排與家庭準備。"
+    },
+    {
+      "slug": "victoria-ocean-pride-kg-interview-guide",
+      "locale": "sc",
+      "title": "维多利亚（海之恋）K1面试攻略：两轮时间、陪同安排与准备",
+      "description": "校方2027/28两轮面试日期、陪同安排与家庭准备。"
+    },
+    {
+      "slug": "learning-habitat-hampton-loft-kg-interview-guide",
+      "locale": "tc",
+      "title": "學之園幼稚園（凱帆薈）面試攻略：申請、家長面談與準備",
+      "description": "區分校舍、K1舊面經與本屆申請安排。"
+    },
+    {
+      "slug": "learning-habitat-hampton-loft-kg-interview-guide",
+      "locale": "sc",
+      "title": "学之园幼稚园（凯帆荟）面试攻略：申请、家长面谈与准备",
+      "description": "区分校舍、K1旧面经与本届申请安排。"
+    },
+    {
+      "slug": "topkids-yuen-long-kg-interview-guide",
+      "locale": "tc",
+      "title": "德怡國際幼稚園（元朗）面試攻略：申請進度、語言與準備",
+      "description": "區分K1和PN，瞭解歷史面見資料及申請步驟。"
+    },
+    {
+      "slug": "topkids-yuen-long-kg-interview-guide",
+      "locale": "sc",
+      "title": "德怡国际幼稚园（元朗）面试攻略：申请进度、语言与准备",
+      "description": "区分K1和PN，了解历史面见资料及申请步骤。"
+    },
+    {
+      "slug": "plk-tam-au-yeung-siu-fong-kg-interview-guide",
+      "locale": "tc",
+      "title": "保良局譚歐陽少芳紀念幼稚園面試攻略：第二輪申請與面見準備",
+      "description": "核對第二輪申請、面見日期及語言支援。"
+    },
+    {
+      "slug": "plk-tam-au-yeung-siu-fong-kg-interview-guide",
+      "locale": "sc",
+      "title": "保良局谭欧阳少芳纪念幼稚园面试攻略：第二轮申请与面见准备",
+      "description": "核对第二轮申请、面见日期及语言支援。"
+    },
+    {
+      "slug": "good-health-tsing-yi-south-kg-interview-guide",
+      "locale": "tc",
+      "title": "康傑中英文幼稚園（青衣南）面試攻略：報名、面見時間和準備",
+      "description": "核對青衣南校舍、K1面見時間和申請步驟。"
+    },
+    {
+      "slug": "good-health-tsing-yi-south-kg-interview-guide",
+      "locale": "sc",
+      "title": "康杰中英文幼稚园（青衣南）面试攻略：报名、面见时间和准备",
+      "description": "核对青衣南校舍、K1面见时间和申请步骤。"
+    },
+    {
+      "slug": "yew-chung-somerset-kg-interview-guide",
+      "locale": "tc",
+      "title": "耀中幼稚園（森麻實道）面試攻略：申請、歷史形式與準備",
+      "description": "釐清校舍、歷史面見資料和本屆待確認事項。"
+    },
+    {
+      "slug": "yew-chung-somerset-kg-interview-guide",
+      "locale": "sc",
+      "title": "耀中幼稚园（森麻实道）面试攻略：申请、历史形式与准备",
+      "description": "厘清校舍、历史面见资料和本届待确认事项。"
+    },
+    {
+      "slug": "think-laguna-city-kg-interview-guide",
+      "locale": "tc",
+      "title": "朗思國際幼稚園（麗港城）K1面試：報名、語言班與家庭準備",
+      "description": "核對麗港城K1申請、舊年經驗與不同語言班的家庭選擇。"
+    },
+    {
+      "slug": "think-laguna-city-kg-interview-guide",
+      "locale": "sc",
+      "title": "朗思国际幼稚园（丽港城）K1面试：报名、语言班与家庭准备",
+      "description": "核对丽港城K1申请、旧年经验与不同语言班的家庭选择。"
+    },
+    {
+      "slug": "tutor-time-kowloon-tong-kg-interview-guide",
+      "locale": "tc",
+      "title": "多多國際幼稚園（九龍塘）K1面試：校舍、語言與申請準備",
+      "description": "分清多實街校舍和PN、K1資料，核對面見與語言安排。"
+    },
+    {
+      "slug": "tutor-time-kowloon-tong-kg-interview-guide",
+      "locale": "sc",
+      "title": "多多国际幼稚园（九龙塘）K1面试：校舍、语言与申请准备",
+      "description": "分清多实街校舍和PN、K1资料，核对面见与语言安排。"
+    },
+    {
+      "slug": "christian-youth-centre-kg-interview-guide",
+      "locale": "tc",
+      "title": "基督教中心幼稚園（九龍塘）K1面試：報名、舊面經與親子準備",
+      "description": "分清九龍塘與油塘招生，參考歷史K1面見經歷和家庭準備。"
+    },
+    {
+      "slug": "christian-youth-centre-kg-interview-guide",
+      "locale": "sc",
+      "title": "基督教中心幼稚园（九龙塘）K1面试：报名、旧面经与亲子准备",
+      "description": "分清九龙塘与油塘招生，参考历史K1面见经历和家庭准备。"
+    },
+    {
+      "slug": "st-margaret-mary-kg-interview-guide",
+      "locale": "tc",
+      "title": "天主教聖瑪加利大幼稚園 K1 面試：報名、舊年形式與家庭準備",
+      "description": "分辨本屆報名資訊和上一屆面見方式，準備語言支援與家庭安排。"
+    },
+    {
+      "slug": "st-margaret-mary-kg-interview-guide",
+      "locale": "sc",
+      "title": "天主教圣玛加利大幼稚园 K1 面试：报名、旧年形式与家庭准备",
+      "description": "分辨本届报名资讯和上一届面见方式，准备语言支援与家庭安排。"
+    },
+    {
+      "slug": "immaculate-heart-mary-kg-interview-guide",
+      "locale": "tc",
+      "title": "聖母無玷聖心幼稚園 K1 面試：小組面見、全日班及註冊安排",
+      "description": "核對本屆小組面見、翻譯支援、全日班申請和註冊安排。"
+    },
+    {
+      "slug": "immaculate-heart-mary-kg-interview-guide",
+      "locale": "sc",
+      "title": "圣母无玷圣心幼稚园 K1 面试：小组面见、全日班及注册安排",
+      "description": "核对本届小组面见、翻译支援、全日班申请和注册安排。"
+    },
+    {
+      "slug": "st-nicholas-kg-interview-guide",
+      "locale": "tc",
+      "title": "金巴倫英文幼稚園面試：N1等同K1、舊面經與家長準備",
+      "description": "分清N1與K1，參考舊年面試經歷並核對本屆申請安排。"
+    },
+    {
+      "slug": "st-nicholas-kg-interview-guide",
+      "locale": "sc",
+      "title": "金巴伦英文幼稚园面试：N1等同K1、旧面经与家长准备",
+      "description": "分清N1与K1，参考旧年面试经历并核对本届申请安排。"
+    },
+    {
+      "slug": "luk-yeung-kg-interview-guide",
+      "locale": "tc",
+      "title": "綠楊幼稚園 K1 面試：2027/28 通知、舊年題目與準備",
+      "description": "核對K1與N1通知時間，辨別舊年面經並準備班次與接送。"
+    },
+    {
+      "slug": "luk-yeung-kg-interview-guide",
+      "locale": "sc",
+      "title": "绿杨幼稚园 K1 面试：2027/28 通知、旧年题目与准备",
+      "description": "核对K1与N1通知时间，辨别旧年面经并准备班次与接送。"
+    },
+    {
+      "slug": "ming-wai-north-point-kg-interview-guide",
+      "locale": "tc",
+      "title": "明慧國際幼稚園（北角分校）面試：K1報名、語言及校舍核對",
+      "description": "核對北角三所明慧學校、K1申請、語言選擇與歷史面見經驗。"
+    },
+    {
+      "slug": "ming-wai-north-point-kg-interview-guide",
+      "locale": "sc",
+      "title": "明慧国际幼稚园（北角分校）面试：K1报名、语言及校舍核对",
+      "description": "核对北角三所明慧学校、K1申请、语言选择与历史面见经验。"
+    },
+    {
+      "slug": "st-pauls-church-kg-interview-guide",
+      "locale": "tc",
+      "title": "聖保羅堂幼稚園 K1 面試：中環校報名、舊經驗與選校準備",
+      "description": "分清中環校與北角舊面經，核對報名、語言支援和選校準備。"
+    },
+    {
+      "slug": "st-pauls-church-kg-interview-guide",
+      "locale": "sc",
+      "title": "圣保罗堂幼稚园 K1 面试：中环校报名、旧经验与选校准备",
+      "description": "分清中环校与北角旧面经，核对报名、语言支援和选校准备。"
+    },
+    {
+      "slug": "creative-primary-school-kg-interview-guide",
+      "locale": "tc",
+      "title": "啓思小學附屬幼稚園 K1 面試：申請資格、遊戲互動與升小選擇",
+      "description": "核對附幼申請資格、過去的遊戲面見經歷和小學銜接條件。"
+    },
+    {
+      "slug": "creative-primary-school-kg-interview-guide",
+      "locale": "sc",
+      "title": "启思小学附属幼稚园 K1 面试：申请资格、游戏互动与升小选择",
+      "description": "核对附幼申请资格、过去的游戏面见经历和小学衔接条件。"
+    },
+    {
+      "slug": "hk-true-light-tai-hang-kg-interview-guide",
+      "locale": "tc",
+      "title": "大坑真光幼稚園 K1 面試：2027/28 日期、語言與升小學條件",
+      "description": "逐項核對本屆面見時間、粵語安排、收生條件及附小升學程序。"
+    },
+    {
+      "slug": "hk-true-light-tai-hang-kg-interview-guide",
+      "locale": "sc",
+      "title": "大坑真光幼稚园 K1 面试：2027/28 日期、语言与升小学条件",
+      "description": "逐项核对本届面见时间、粤语安排、收生条件及附小升学程序。"
+    },
+    {
+      "slug": "st-stephens-girls-kg-interview-guide",
+      "locale": "tc",
+      "title": "聖士提反女子中學附屬幼稚園 K1 面試：報名、舊年經歷與升小選擇",
+      "description": "核對當屆報名和舊年面見經歷，分清附小升學與幼稚園錄取。"
+    },
+    {
+      "slug": "st-stephens-girls-kg-interview-guide",
+      "locale": "sc",
+      "title": "圣士提反女子中学附属幼稚园 K1 面试：报名、旧年经历与升小选择",
+      "description": "核对当届报名和旧年面见经历，分清附小升学与幼稚园录取。"
+    },
+    {
+      "slug": "kowloon-ling-liang-kg-interview-guide",
+      "locale": "tc",
+      "title": "九龍靈糧堂幼稚園 K1 面試：校舍區別、往年經驗與準備",
+      "description": "分清幼稚園與幼兒園，瞭解舊年面見及本屆待確認事項。"
+    },
+    {
+      "slug": "kowloon-ling-liang-kg-interview-guide",
+      "locale": "sc",
+      "title": "九龙灵粮堂幼稚园 K1 面试：校舍区别、往年经验与准备",
+      "description": "分清幼稚园与幼儿园，了解旧年面见及本届待确认事项。"
+    },
+    {
+      "slug": "raimondi-kg-interview-guide",
+      "locale": "tc",
+      "title": "高主教書院幼稚園部 K1 面試：報名安排、舊年經歷與家庭準備",
+      "description": "區分本屆通知與舊年家長經驗，梳理面見、材料及升小選擇。"
+    },
+    {
+      "slug": "raimondi-kg-interview-guide",
+      "locale": "sc",
+      "title": "高主教书院幼稚园部 K1 面试：报名安排、旧年经历与家庭准备",
+      "description": "区分本届通知与旧年家长经验，梳理面见、材料及升小选择。"
+    },
+    {
+      "slug": "precious-blood-happy-valley-kg-interview-guide",
+      "locale": "tc",
+      "title": "寶血幼稚園（跑馬地）K1 面試：往年形式、準備與升小選擇",
+      "description": "區分跑馬地和深水埗校舍，瞭解舊年遊戲面見及升小路徑。"
+    },
+    {
+      "slug": "precious-blood-happy-valley-kg-interview-guide",
+      "locale": "sc",
+      "title": "宝血幼稚园（跑马地）K1 面试：往年形式、准备与升小选择",
+      "description": "区分跑马地和深水埗校舍，了解旧年游戏面见及升小路径。"
+    },
+    {
+      "slug": "kowloon-city-baptist-kg-interview-guide",
+      "locale": "tc",
+      "title": "九龍城浸信會幼稚園面試：報名後面見、陪同與班次選擇",
+      "description": "核對亞皆老街校舍的遊戲面見、語言支援與全日需求。"
+    },
+    {
+      "slug": "kowloon-city-baptist-kg-interview-guide",
+      "locale": "sc",
+      "title": "九龙城浸信会幼稚园面试：报名后面见、陪同与班次选择",
+      "description": "核对亚皆老街校舍的游戏面见、语言支援与全日需求。"
+    },
+    {
+      "slug": "holy-trinity-centre-kg-interview-guide",
+      "locale": "tc",
+      "title": "聖三一中心幼稚園面試：K1與PN日期、親子游戲及全日安排",
+      "description": "分清K1與PN的面試、輪候和全日照顧安排。"
+    },
+    {
+      "slug": "holy-trinity-centre-kg-interview-guide",
+      "locale": "sc",
+      "title": "圣三一中心幼稚园面试：K1与PN日期、亲子游戏及全日安排",
+      "description": "分清K1与PN的面试、轮候和全日照顾安排。"
+    },
+    {
+      "slug": "creative-kowloon-tong-kg-interview-guide",
+      "locale": "tc",
+      "title": "啟思幼稚園九龍塘正校 K1 面試：報名、陪同與家庭準備",
+      "description": "核對正校報名、個別面見和半日全日選擇。"
+    },
+    {
+      "slug": "creative-kowloon-tong-kg-interview-guide",
+      "locale": "sc",
+      "title": "启思幼稚园九龙塘正校 K1 面试：报名、陪同与家庭准备",
+      "description": "核对正校报名、个别面见和半日全日选择。"
+    },
+    {
+      "slug": "kiangsu-chekiang-kg-interview-guide",
+      "locale": "tc",
+      "title": "蘇浙幼稚園 K1 面試：本屆語言、申請安排與家庭準備",
+      "description": "核對面見語言如何安排，並分清N1與K1申請。"
+    },
+    {
+      "slug": "kiangsu-chekiang-kg-interview-guide",
+      "locale": "sc",
+      "title": "苏浙幼稚园 K1 面试：本届语言、申请安排与家庭准备",
+      "description": "核对面见语言如何安排，并分清N1与K1申请。"
+    },
+    {
+      "slug": "cckg-interview-guide",
+      "locale": "tc",
+      "title": "基督堂幼稚園 K2 面試：2027入學資格、往年形式與準備",
+      "description": "瞭解K2申請年齡、歷年面試形式及轉校安排。"
+    },
+    {
+      "slug": "cckg-interview-guide",
+      "locale": "sc",
+      "title": "基督堂幼稚园 K2 面试：2027入学资格、往年形式与准备",
+      "description": "了解K2申请年龄、历年面试形式及转校安排。"
+    },
+    {
+      "slug": "york-klt-kg-interview-guide",
+      "locale": "tc",
+      "title": "約克英文小學暨幼稚園（九龍塘）K1 面試：校舍、申請與準備",
+      "description": "分清49號與51號校舍，核對申請及面試資料。"
+    },
+    {
+      "slug": "york-klt-kg-interview-guide",
+      "locale": "sc",
+      "title": "约克英文小学暨幼稚园（九龙塘）K1 面试：校舍、申请与准备",
+      "description": "分清49号与51号校舍，核对申请及面试资料。"
+    },
+    {
+      "slug": "pooi-to-kg-interview-guide",
+      "locale": "tc",
+      "title": "香港培道幼稚園 K1 面試：本屆時間、一位家長陪同及生病安排",
+      "description": "核對11月面試、陪同人數及孩子生病時的安排。"
+    },
+    {
+      "slug": "pooi-to-kg-interview-guide",
+      "locale": "sc",
+      "title": "香港培道幼稚园 K1 面试：本届时间、一位家长陪同及生病安排",
+      "description": "核对11月面试、陪同人数及孩子生病时的安排。"
+    },
+    {
+      "slug": "tsung-tsin-kg-interview-guide",
+      "locale": "tc",
+      "title": "崇真幼稚園 K1 面試：兩校部申請、面試與註冊安排",
+      "description": "分清英普部與中英文部的面試、放榜及註冊日期。"
+    },
+    {
+      "slug": "tsung-tsin-kg-interview-guide",
+      "locale": "sc",
+      "title": "崇真幼稚园 K1 面试：两校部申请、面试与注册安排",
+      "description": "分清英普部与中英文部的面试、放榜及注册日期。"
+    },
+    {
+      "slug": "tak-sun-kg-interview-guide",
+      "locale": "tc",
+      "title": "德信幼稚園 K1 面試：本屆日期、往年形式與家庭準備",
+      "description": "核對本屆面見時間，參考校長對往年活動的介紹。"
+    },
+    {
+      "slug": "tak-sun-kg-interview-guide",
+      "locale": "sc",
+      "title": "德信幼稚园 K1 面试：本届日期、往年形式与家庭准备",
+      "description": "核对本届面见时间，参考校长对往年活动的介绍。"
+    },
+    {
+      "slug": "kowloon-rhenish-kg-interview-guide",
+      "locale": "tc",
+      "title": "九龍禮賢幼稚園 K1 面試：日期、往年形式與家庭準備",
+      "description": "核對本屆面試日期，瞭解舊年活動與升小取捨。"
+    },
+    {
+      "slug": "kowloon-rhenish-kg-interview-guide",
+      "locale": "sc",
+      "title": "九龙礼贤幼稚园 K1 面试：日期、往年形式与家庭准备",
+      "description": "核对本届面试日期，了解旧年活动与升小取舍。"
+    },
+    {
+      "slug": "st-rose-of-lima-kg-interview-guide",
+      "locale": "tc",
+      "title": "聖羅撒幼稚園 K1 面試：本屆申請、往年經驗與家庭準備",
+      "description": "查看本屆申請資料和歷年家長面見經驗。"
+    },
+    {
+      "slug": "st-rose-of-lima-kg-interview-guide",
+      "locale": "sc",
+      "title": "圣罗撒幼稚园 K1 面试：本届申请、往年经验与家庭准备",
+      "description": "查看本届申请资料和历年家长面见经验。"
+    },
+    {
+      "slug": "soka-kg-interview-guide",
+      "locale": "tc",
+      "title": "香港創價幼稚園 K1 面試：本屆安排、往年題目與家長準備",
+      "description": "核對本屆面見安排，並參考往年家長的真實記錄。"
+    },
+    {
+      "slug": "soka-kg-interview-guide",
+      "locale": "sc",
+      "title": "香港创价幼稚园 K1 面试：本届安排、往年题目与家长准备",
+      "description": "核对本届面见安排，并参考往年家长的真实记录。"
+    },
+    {
+      "slug": "heep-yunn-kg-interview-guide",
+      "locale": "tc",
+      "title": "協恩幼稚園 K1 面試：報名、往年面見與家長準備",
+      "description": "核對本屆報名信息，理解往年面見與陪同方式的變化。"
+    },
+    {
+      "slug": "heep-yunn-kg-interview-guide",
+      "locale": "sc",
+      "title": "协恩幼稚园 K1 面试：报名、往年面见与家长准备",
+      "description": "核对本届报名信息，理解往年面见与陪同方式的变化。"
+    },
+    {
+      "slug": "kowloon-true-light-kg-interview-guide",
+      "locale": "tc",
+      "title": "九龍真光幼稚園 K1 面試：2027/28 日期、地點與往年題目",
+      "description": "核對11月面試地點、安排和歷史家長分享。"
+    },
+    {
+      "slug": "kowloon-true-light-kg-interview-guide",
+      "locale": "sc",
+      "title": "九龙真光幼稚园 K1 面试：2027/28 日期、地点与往年题目",
+      "description": "核对11月面试地点、安排和历史家长分享。"
+    },
+    {
+      "slug": "alliance-kg-interview-guide",
+      "locale": "tc",
+      "title": "宣道幼稚園 K1 面試：申請日期、往年遊戲與家庭準備",
+      "description": "瞭解本屆K1申請信息與往年家長記錄的互動遊戲。"
+    },
+    {
+      "slug": "alliance-kg-interview-guide",
+      "locale": "sc",
+      "title": "宣道幼稚园 K1 面试：申请日期、往年游戏与家庭准备",
+      "description": "了解本届K1申请信息与往年家长记录的互动游戏。"
+    },
+    {
+      "slug": "keen-mind-kg-interview-guide",
+      "locale": "tc",
+      "title": "劍鳴幼稚園 K1 面試：2027/28 時間與往年遊戲題",
+      "description": "核對K1當屆申請與面見月份，分辨舊年遊戲及面試語言。"
+    },
+    {
+      "slug": "keen-mind-kg-interview-guide",
+      "locale": "sc",
+      "title": "剑鸣幼稚园 K1 面试：2027/28 时间与往年游戏题",
+      "description": "核对K1当届申请与面见月份，分辨旧年游戏及面试语言。"
+    },
+    {
+      "slug": "kau-yan-kg-interview-guide",
+      "locale": "tc",
+      "title": "救恩學校（幼稚園部）K1 面試：家長問卷、面談及親子活動",
+      "description": "核對本屆面談篩選與結果日期，瞭解問卷及往年親子活動。"
+    },
+    {
+      "slug": "kau-yan-kg-interview-guide",
+      "locale": "sc",
+      "title": "救恩学校（幼稚园部）K1 面试：家长问卷、面谈及亲子活动",
+      "description": "核对本届面谈筛选与结果日期，了解问卷及往年亲子活动。"
+    },
+    {
+      "slug": "skh-kg-interview-guide",
+      "locale": "tc",
+      "title": "聖公會幼稚園 K1 面試：往年形式、家長問題與本屆核對",
+      "description": "區分上一學年官方面見安排和本屆仍需確認的地點、語言。"
+    },
+    {
+      "slug": "skh-kg-interview-guide",
+      "locale": "sc",
+      "title": "圣公会幼稚园 K1 面试：往年形式、家长问题与本届核对",
+      "description": "区分上一学年官方面见安排和本届仍需确认的地点、语言。"
+    },
+    {
+      "slug": "good-hope-kg-interview-guide",
+      "locale": "tc",
+      "title": "德望幼稚園 K1 面試：當屆申請狀態與往年家長經驗",
+      "description": "查閱當屆報名狀態、往年面試經歷與家長準備事項。"
+    },
+    {
+      "slug": "good-hope-kg-interview-guide",
+      "locale": "sc",
+      "title": "德望幼稚园 K1 面试：当届申请状态与往年家长经验",
+      "description": "查阅当届报名状态、往年面试经历与家长准备事项。"
+    },
+    {
+      "slug": "pui-ching-kg-interview-guide",
+      "locale": "tc",
+      "title": "香港培正小學（幼稚園）K1面試：2027/28安排與往年家長經驗",
+      "description": "核對本屆兩輪面見安排，並分辨舊家長記錄與今年通知。"
+    },
+    {
+      "slug": "pui-ching-kg-interview-guide",
+      "locale": "sc",
+      "title": "香港培正小学（幼稚园）K1面试：2027/28安排与往年家长经验",
+      "description": "核对本届两轮面见安排，并分辨旧家长记录与今年通知。"
+    },
+    {
+      "slug": "learning-habitat-chatham-lv-kg-interview-guide",
+      "locale": "tc",
+      "title": "學之園（昇御海逸）K1 面試：2027/28安排與歷史面見形式",
+      "description": "核對當屆面見日期與地點，分辨歷史校長訪談和今年安排。"
+    },
+    {
+      "slug": "learning-habitat-chatham-lv-kg-interview-guide",
+      "locale": "sc",
+      "title": "学之园（升御海逸）K1 面试：2027/28安排与历史面见形式",
+      "description": "核对当届面见日期与地点，分辨历史校长访谈和今年安排。"
+    },
+    {
+      "slug": "braemar-hill-kg-interview-guide",
+      "locale": "tc",
+      "title": "寶山幼兒園面試：怎樣查證申請安排與往年經驗",
+      "description": "區分歷史家長經驗與尚待校方確認的當屆申請安排。"
+    },
+    {
+      "slug": "braemar-hill-kg-interview-guide",
+      "locale": "sc",
+      "title": "宝山幼儿园面试：怎样查证申请安排与往年经验",
+      "description": "区分历史家长经验与尚待校方确认的当届申请安排。"
+    },
+    {
+      "slug": "cannan-kowloon-tong-kg-interview-guide",
+      "locale": "tc",
+      "title": "迦南幼稚園（九龍塘）K1 面試：申請信息與往年活動參考",
+      "description": "區分九龍塘K1和PN、校方當屆信息及媒體整理的歷史面試活動。"
+    },
+    {
+      "slug": "cannan-kowloon-tong-kg-interview-guide",
+      "locale": "sc",
+      "title": "迦南幼稚园（九龙塘）K1 面试：申请信息与往年活动参考",
+      "description": "区分九龙塘K1和PN、校方当届信息及媒体整理的历史面试活动。"
+    },
+    {
+      "slug": "st-pauls-kg-interview-guide",
+      "locale": "tc",
+      "title": "聖保祿幼稚園 K1 面試：2027/28 申請與往年家長分享",
+      "description": "核對本屆官方報名要求，說明舊年媒體轉述的面試經歷與尚待確認的安排。"
+    },
+    {
+      "slug": "st-pauls-kg-interview-guide",
+      "locale": "sc",
+      "title": "圣保禄幼稚园 K1 面试：2027/28 申请与往年家长分享",
+      "description": "核对本届官方报名要求，说明旧年媒体转述的面试经历与尚待确认的安排。"
+    },
+    {
+      "slug": "hong-kong-ling-liang-kg-interview-guide",
+      "locale": "tc",
+      "title": "香港靈糧堂幼稚園 K1 面試：銅鑼灣申請安排與家長經歷",
+      "description": "核對2027/28會見時間線，並分清兩位家長2017年的銅鑼灣校舍經驗。"
+    },
+    {
+      "slug": "hong-kong-ling-liang-kg-interview-guide",
+      "locale": "sc",
+      "title": "香港灵粮堂幼稚园 K1 面试：铜锣湾申请安排与家长经历",
+      "description": "核对2027/28会见时间线，并分清两位家长2017年的铜锣湾校舍经验。"
+    },
+    {
+      "slug": "victoria-south-horizons-kg-interview-guide",
+      "locale": "tc",
+      "title": "維多利亞（海怡）K1 面試：2027/28 流程與往年家長經驗",
+      "description": "區分2027/28機構收生程序與海怡校舍往年個別家庭的面試經歷。"
+    },
+    {
+      "slug": "victoria-south-horizons-kg-interview-guide",
+      "locale": "sc",
+      "title": "维多利亚（海怡）K1 面试：2027/28 流程与往年家长经验",
+      "description": "区分2027/28机构收生程序与海怡校舍往年个别家庭的面试经历。"
+    },
+    {
+      "slug": "munsang-kg-interview-guide",
+      "locale": "tc",
+      "title": "民生書院幼稚園 K1 面試：2027/28 安排、歷史題目與家長準備",
+      "description": "核對當屆面見日期、文件和問卷，並按年份看兩位家長的面試經歷。"
+    },
+    {
+      "slug": "munsang-kg-interview-guide",
+      "locale": "sc",
+      "title": "民生书院幼稚园 K1 面试：2027/28 安排、历史题目与家长准备",
+      "description": "核对当届面见日期、文件和问卷，并按年份看两位家长的面试经历。"
+    },
+    {
+      "slug": "yau-yat-chuen-interview-guide",
+      "locale": "tc",
+      "title": "又一村學校 K1 面試：2027/28 形式、歷史題目與家長準備",
+      "description": "核對2027/28面見安排，區分校方通知與往年家長經驗，整理文件和語言支援。"
+    },
+    {
+      "slug": "yau-yat-chuen-interview-guide",
+      "locale": "sc",
+      "title": "又一村学校 K1 面试：2027/28 形式、历史题目与家长准备",
+      "description": "核对2027/28面见安排，区分校方通知与往年家长经验，整理文件和语言支援。"
+    },
+    {
+      "slug": "secondary-results-guide",
+      "locale": "tc",
+      "title": "DSE與升大學成績怎麼看：332A、22222和錄取率",
+      "description": "先讀懂332A、22222，再分清達標、錄取、入讀與科次比例；用同一張核對表判斷學校的升學成績。"
+    },
+    {
+      "slug": "secondary-results-guide",
+      "locale": "sc",
+      "title": "DSE与升大学成绩怎么看：332A、22222和录取率",
+      "description": "先读懂332A、22222，再分清达标、录取、入读与科次比例；用同一张核对表判断学校的升学成绩。"
+    },
+    {
+      "slug": "secondary-curriculum-pathways-guide",
+      "locale": "tc",
+      "title": "DSE、IB與A-Level：課程壓力、中文與轉軌成本",
+      "description": "比較DSE、IB與A-Level的真實學習任務、中文要求和轉軌成本；先核對孩子與大學條件，再選擇課程。"
+    },
+    {
+      "slug": "secondary-curriculum-pathways-guide",
+      "locale": "sc",
+      "title": "DSE、IB与A-Level：课程压力、中文与转轨成本",
+      "description": "比较DSE、IB与A-Level的真实学习任务、中文要求和转轨成本；先核对孩子与大学条件，再选择课程。"
+    },
+    {
+      "slug": "secondary-transfer-guide",
+      "locale": "tc",
+      "title": "中一叩門與中學插班：不同年級怎樣準備",
+      "description": "把中一叩門、初中插班和高中轉校分成三條流程；查真實空缺、語言與選科銜接，先保留可就讀學位。"
+    },
+    {
+      "slug": "secondary-transfer-guide",
+      "locale": "sc",
+      "title": "中一叩门与中学插班：不同年级怎样准备",
+      "description": "把中一叩门、初中插班和高中转校分成三条流程；查真实空缺、语言与选科衔接，先保留可就读学位。"
+    },
+    {
+      "slug": "secondary-subject-choice-guide",
+      "locale": "tc",
+      "title": "中三選科：從學校開科反推大學與職業方向",
+      "description": "把孩子能力、學校科目組合和大學先修要求放在同一張表，分清必須、偏好與加權，並準備可行的第二組合。"
+    },
+    {
+      "slug": "secondary-subject-choice-guide",
+      "locale": "sc",
+      "title": "中三选科：从学校开科反推大学与职业方向",
+      "description": "把孩子能力、学校科目组合和大学先修要求放在同一张表，分清必须、偏好与加权，并准备可行的第二组合。"
+    },
+    {
+      "slug": "secondary-new-arrival-guide",
+      "locale": "tc",
+      "title": "新來港家庭讀中學：申請、插班與升學資格分開看",
+      "description": "把中學入學、學校收費、中小學資助與大學本地資格分開；按2027/28新安排核對居留、語言和證明文件。"
+    },
+    {
+      "slug": "secondary-new-arrival-guide",
+      "locale": "sc",
+      "title": "新来港家庭读中学：申请、插班与升学资格分开看",
+      "description": "把中学入学、学校收费、中小学资助与大学本地资格分开；按2027/28新安排核对居留、语言和证明文件。"
+    },
+    {
+      "slug": "kg-waitlist-transfer-guide",
+      "locale": "tc",
+      "title": "幼稚園候補與轉校：沒有offer或原校停辦怎麼辦",
+      "description": "按K1候補、K2／K3插班和停辦轉校分開行動，先確認新學位，再處理電子取消註冊、費用和照顧銜接。"
+    },
+    {
+      "slug": "kg-waitlist-transfer-guide",
+      "locale": "sc",
+      "title": "幼稚园候补与转校：没有offer或原校停办怎么办",
+      "description": "按K1候补、K2／K3插班和停办转校分开行动，先确认新学位，再处理电子取消注册、费用和照顾衔接。"
+    },
+    {
+      "slug": "kg-primary-outcomes-guide",
+      "locale": "tc",
+      "title": "幼稚園升小成績怎麼看：派位、考獲與入讀分開",
+      "description": "用真實校方圖表分清分母、重複offer及最終入讀，讀懂同屆前三直私去向對家庭目標的參考價值。"
+    },
+    {
+      "slug": "kg-primary-outcomes-guide",
+      "locale": "sc",
+      "title": "幼稚园升小成绩怎么看：派位、考获与入读分开",
+      "description": "用真实校方图表分清分母、重复offer及最终入读，读懂同届前三直私去向对家庭目标的参考价值。"
+    },
+    {
+      "slug": "primary-transfer-guide",
+      "locale": "tc",
+      "title": "小學插班：P2至P6的年級、測試與轉校代價",
+      "description": "先核實年級與實際空缺，再比較課程、測試語言、呈分資料和家庭適應；以官方校本實例拆解插班，不設虛假的統一死線。"
+    },
+    {
+      "slug": "primary-transfer-guide",
+      "locale": "sc",
+      "title": "小学插班：P2至P6的年级、测试与转校代价",
+      "description": "先核实年级与实际空缺，再比较课程、测试语言、呈分资料和家庭适应；以官方校本实例拆解插班，不设虚假的统一死线。"
+    },
+    {
+      "slug": "primary-school-learning-guide",
+      "locale": "tc",
+      "title": "小學日常適不適合：語言、功課、測考與家長投入",
+      "description": "逐科核對語言，用校本政策和家庭時間記錄判斷功課、評估及支援；兩所小學官方例子幫助家長把宣傳變成可比較的日常。"
+    },
+    {
+      "slug": "primary-school-learning-guide",
+      "locale": "sc",
+      "title": "小学日常适不适合：语言、功课、测考与家长投入",
+      "description": "逐科核对语言，用校本政策和家庭时间记录判断功课、评估及支援；两所小学官方例子帮助家长把宣传变成可比较的日常。"
+    },
+    {
+      "slug": "primary-interview-guide",
+      "locale": "tc",
+      "title": "直資和私立小一面試：材料與家庭準備怎麼做",
+      "description": "按三校2027/28公開形式拆解材料、圖書分享與小組互動；區分校規與面經，幫助家庭控制準備成本和選擇負擔。"
+    },
+    {
+      "slug": "primary-interview-guide",
+      "locale": "sc",
+      "title": "直资和私立小一面试：材料与家庭准备怎么做",
+      "description": "按三校2027/28公开形式拆解材料、图书分享与小组互动；区分校规与面经，帮助家庭控制准备成本和选择负担。"
+    },
+    {
+      "slug": "secondary-language-guide",
+      "locale": "tc",
+      "title": "英中還是中中：逐科、分班、分年級看教學語言",
+      "description": "按授課、教材、作答和支援四方面拆解中學教學語言，附逐科表、學校原文實例、八個提問及2027/28版本核對方法。"
+    },
+    {
+      "slug": "secondary-language-guide",
+      "locale": "sc",
+      "title": "英中还是中中：逐科、分班、分年级看教学语言",
+      "description": "按授课、教材、作答和支援四方面拆解中学教学语言，附逐科表、学校原文实例、八个提问及2027/28版本核对方法。"
+    },
+    {
+      "slug": "secondary-discretionary-guide",
+      "locale": "tc",
+      "title": "中一自行怎麼選兩所：收生比重、材料與面試",
+      "description": "用七校公開收生框架說明資格、入圍、面試與材料的區別，分清2027/28當屆及歷史資料，按孩子真實強項選擇自行兩校。"
+    },
+    {
+      "slug": "secondary-discretionary-guide",
+      "locale": "sc",
+      "title": "中一自行怎么选两所：收生比重、材料与面试",
+      "description": "用七校公开收生框架说明资格、入围、面试与材料的区别，分清2027/28当届及历史资料，按孩子真实强项选择自行两校。"
+    },
+    {
+      "slug": "secondary-school-cost-guide",
+      "locale": "tc",
+      "title": "中學六年成本：學費、雜項、獎學金與減免",
+      "description": "分開學費、按金、建設費、交通和資助，核對2026/27學校收費實例，附年度淨支出表、演算例子與六年壓力情境。"
+    },
+    {
+      "slug": "secondary-school-cost-guide",
+      "locale": "sc",
+      "title": "中学六年成本：学费、杂项、奖学金与减免",
+      "description": "分开学费、按金、建设费、交通和资助，核对2026/27学校收费实例，附年度净支出表、演算例子与六年压力情境。"
+    },
+    {
+      "slug": "p1-offer-registration-guide",
+      "locale": "tc",
+      "title": "多個小一offer怎麼選：留位、保證書與派位資格",
+      "description": "直資保證書、私立留位及官津註冊分開看；用書面條款、六年成本和家庭日常比較幾份小一錄取，保留可執行的後備。"
+    },
+    {
+      "slug": "p1-offer-registration-guide",
+      "locale": "sc",
+      "title": "多个小一offer怎么选：留位、保证书与派位资格",
+      "description": "直资保证书、私立留位及官津注册分开看；用书面条款、六年成本和家庭日常比较几份小一录取，保留可执行的后备。"
+    },
+    {
+      "slug": "kg-school-types-guide",
+      "locale": "tc",
+      "title": "幼稚園類型怎麼分：私立、非牟利與國際課程",
+      "description": "先分清辦學性質、課程和資助三個維度，再按升小路線、預算與照顧需要篩選學校。"
+    },
+    {
+      "slug": "kg-school-types-guide",
+      "locale": "sc",
+      "title": "幼稚园类型怎么分：私立、非牟利与国际课程",
+      "description": "先分清办学性质、课程和资助三个维度，再按升小路线、预算与照顾需要筛选学校。"
+    },
+    {
+      "slug": "kg-school-hours-care-guide",
+      "locale": "tc",
+      "title": "半日、全日與長全日：雙職家庭怎樣接好照顧",
+      "description": "用放學、下班、通勤與學校假期排出一週照顧表，分清全日教學、長全日服務、延托和暫托。"
+    },
+    {
+      "slug": "kg-school-hours-care-guide",
+      "locale": "sc",
+      "title": "半日、全日与长全日：双职家庭怎样接好照顾",
+      "description": "用放学、下班、通勤与学校假期排出一周照顾表，分清全日教学、长全日服务、延托和暂托。"
+    },
+    {
+      "slug": "secondary-admission-guide",
+      "locale": "tc",
+      "title": "2027/28升中總指南：自行、直資與統一派位",
+      "description": "按2027/28升中安排，拆開自行、非參派直資及統一派位兩條線，附關鍵節點、文件後果、家庭取捨和後備行動。"
+    },
+    {
+      "slug": "secondary-admission-guide",
+      "locale": "sc",
+      "title": "2027/28升中总指南：自行、直资与统一派位",
+      "description": "按2027/28升中安排，拆开自行、非参派直资及统一派位两条线，附关键节点、文件后果、家庭取舍和后备行动。"
+    },
+    {
+      "slug": "secondary-banding-guide",
+      "locale": "tc",
+      "title": "中學Banding怎麼看：孩子組別與學校1A、1B的區別",
+      "description": "分清學生全港／校網組別、學校1A/1B參考定位、教學語言與DSE表現；用邊界情境和六個問題建立可承受誤差的選校名單。"
+    },
+    {
+      "slug": "secondary-banding-guide",
+      "locale": "sc",
+      "title": "中学Banding怎么看：孩子组别与学校1A、1B的区别",
+      "description": "分清学生全港／校网组别、学校1A/1B参考定位、教学语言与DSE表现；用边界情境和六个问题建立可承受误差的选校名单。"
+    },
+    {
+      "slug": "secondary-central-allocation-guide",
+      "locale": "tc",
+      "title": "升中統一派位：甲乙部、校網與志願次序",
+      "description": "按2027升中制度解釋甲乙部、全港與校網組別、隨機編號及直屬聯繫資格，附假設選擇案例與填表核對單。"
+    },
+    {
+      "slug": "secondary-central-allocation-guide",
+      "locale": "sc",
+      "title": "升中统一派位：甲乙部、校网与志愿次序",
+      "description": "按2027升中制度解释甲乙部、全港与校网组别、随机编号及直属联系资格，附假设选择案例与填表核对单。"
+    },
+    {
+      "slug": "secondary-dss-offer-guide",
+      "locale": "tc",
+      "title": "直資中學offer與官津派位｜2027/28承諾書、取回文件與選擇",
+      "description": "按2027/28升中安排，分清直資接受學位、家長承諾書、4月8日取回文件與官津正取的關係；附三校當屆實例、家庭取捨表及簽字前清單。"
+    },
+    {
+      "slug": "secondary-dss-offer-guide",
+      "locale": "sc",
+      "title": "直资中学offer与官津派位｜2027/28承诺书、取回文件与选择",
+      "description": "收到香港直资中学录取后，签承诺书会影响什么？按2027/28教育局安排，分清4月8日与校本时限，比较课程、成本及后备方案。"
+    },
+    {
+      "slug": "true-light-primary-search",
+      "locale": "tc",
+      "title": "真光小學怎樣分：大坑與九龍校名、升中安排核對",
+      "description": "先分清大坑真光與九龍真光，再核對招生、男女性別與升中安排。文中搜尋數字為2026年10月歷史快照，不代表現時申請人數。"
+    },
+    {
+      "slug": "true-light-primary-search",
+      "locale": "sc",
+      "title": "真光小学怎样分：大坑与九龙校名、升中安排核对",
+      "description": "先分清大坑真光与九龙真光，再核对招生、男女性别与升中安排。文中搜索数字为2026年10月历史快照，不代表现时申请人数。"
+    },
+    {
+      "slug": "munsang-kg-search",
+      "locale": "tc",
+      "title": "民生幼稚園升小怎樣看：學費、評估與後備準備",
+      "description": "選民生之前，先問清民小升讀條件、評估安排與未獲學位的後備。保留2026年10月搜尋紀錄，舊學費與比例不作當屆承諾。"
+    },
+    {
+      "slug": "munsang-kg-search",
+      "locale": "sc",
+      "title": "民生幼稚园升小怎样看：学费、评估与后备准备",
+      "description": "选民生之前，先问清民小升读条件、评估安排与未获学位的后备。保留2026年10月搜索记录，旧学费与比例不作当届承诺。"
+    },
+    {
+      "slug": "soka-kg-search",
+      "locale": "tc",
+      "title": "創價幼稚園怎樣選：費用、語言與升小準備",
+      "description": "從全年支出、實際授課語言和升小路線核對創價是否合適；保留2026年10月搜尋快照及現行指南，不把熱度當錄取率。"
+    },
+    {
+      "slug": "soka-kg-search",
+      "locale": "sc",
+      "title": "创价幼稚园怎样选：费用、语言与升小准备",
+      "description": "从全年支出、实际授课语言和升小路线核对创价是否合适；保留2026年10月搜索快照及现行指南，不把热度当录取率。"
+    },
+    {
+      "slug": "gt-primary-guide",
+      "locale": "tc",
+      "title": "優才小學2026/27學費：小一HK$35,310，校舍與升中分析",
+      "description": "優才（楊殷有娣）書院2026/27小一全年學費 HK$35,310。比較旺角與將軍澳校舍通勤、小一申請及中學 DSE／IB 路線。"
+    },
+    {
+      "slug": "gt-primary-guide",
+      "locale": "sc",
+      "title": "优才小学2026/27学费：小一HK$35,310，校舍与升中分析",
+      "description": "优才（杨殷有娣）书院2026/27小一全年学费 HK$35,310。比较旺角与将军澳校舍通勤、小一申请及中学 DSE／IB 路线。"
+    },
+    {
+      "slug": "skh-same-name-schools",
+      "locale": "tc",
+      "title": "聖公會三組「同名小學」：李兆強、基顯、阮鄭夢芹——為什麼每組都有兩所？",
+      "description": "「油塘基顯」+250%、「聖公會李兆強」+250%、「阮鄭夢芹」+130%——這幾條搜尋其實是三組雙胞胎：每組兩所、名字只差幾個字、都由聖公會辦學，而且都源自同一次「上下午校分拆」。六所在官方《小學概覽》的資料一次排開。"
+    },
+    {
+      "slug": "skh-same-name-schools",
+      "locale": "sc",
+      "title": "圣公会三组「同名小学」：李兆强、基显、阮郑梦芹——为什么每组都有两所？",
+      "description": "「油塘基显」+250%、「圣公会李兆强」+250%、「阮郑梦芹」+130%——这几条搜索其实是三组双胞胎：每组两所、名字只差几个字、都由圣公会办学，而且都源自同一次「上下午校分拆」。六所在官方《小学概览》的资料一次排开。"
+    },
+    {
+      "slug": "psp-2026-guide",
+      "locale": "tc",
+      "title": "《小學概覽 2026》使用指南：先看四個欄位，篩掉一半學校（附官方入口）",
+      "description": "「小學概覽 2026」搜尋量 Breakout。它是官方免費資料庫，不是排名——先看地區列表的四個欄位（校網／資助種類／宗教／性別），通常已能篩掉一半學校。附官方入口與六組必看資料。"
+    },
+    {
+      "slug": "psp-2026-guide",
+      "locale": "sc",
+      "title": "《小学概览 2026》使用指南：先看四个栏位，筛掉一半学校（附官方入口）",
+      "description": "「小学概览 2026」搜索量 Breakout。它是官方免费数据库，不是排名——先看地区列表的四个栏位（校网／资助种类／宗教／性别），通常已能筛掉一半学校。附官方入口与六组必看资料。"
+    },
+    {
+      "slug": "lui-ming-choi-5-schools",
+      "locale": "tc",
+      "title": "「呂明才小學」搜尋全港最高——但香港有五所，分屬四個辦學團體｜附官方對照表",
+      "description": "「呂明才小學」是全榜興趣值最高的一條搜尋，但香港有五所呂明才小學、分屬四個辦學團體，只有兩所同屬一個聯會、也只有兩所有聯繫中學。用教育局《小學概覽》官方欄位一次排開。"
+    },
+    {
+      "slug": "lui-ming-choi-5-schools",
+      "locale": "sc",
+      "title": "「吕明才小学」搜索全港最高——但香港有五所，分属四个办学团体｜附官方对照表",
+      "description": "「吕明才小学」是全榜兴趣值最高的一条搜索，但香港有五所吕明才小学、分属四个办学团体，只有两所同属一个联会、也只有两所有联系中学。用教育局《小学概览》官方字段一次排开。"
+    },
+    {
+      "slug": "pooi-to-kg",
+      "locale": "tc",
+      "title": "培道幼稚園全攻略：半日免費券幼、100% 免試直升培道小學——但要留意小學是私立，一年 $51,984",
+      "description": "「培道幼稚園」+150%、「培道小學」+70%——家長在問同一件事：這條路走到底要多少錢？幼稚園半日免費，但直升的培道小學是私立、一年 $51,984。"
+    },
+    {
+      "slug": "pooi-to-kg",
+      "locale": "sc",
+      "title": "香港培道幼稚园全攻略：半日免费学券幼、100% 免试直升培道小学",
+      "description": "「培道幼稚园」+150%、「培道小学」+70%。幼稚园半日免费，但直升的培道小学是私立、一年 $51,984——12 年的账一次算清。"
+    },
+    {
+      "slug": "skh-kg",
+      "locale": "tc",
+      "title": "聖公會幼稚園 SKH 全攻略：學費 $71,830、每級 180 個學額、師生比 1:8——它不是券校，也不是聖保羅男女的附屬幼稚園",
+      "description": "「聖公會幼稚園」連續進熱搜榜。但兩個流傳很廣的說法都不對：它不是券校（校方寫明沒參加幼稚園教育計劃），也與聖保羅男女沒有直升關係。官方數字一次講清。"
+    },
+    {
+      "slug": "skh-kg",
+      "locale": "sc",
+      "title": "香港圣公会幼稚园 SKH 全攻略：学费 $71,830、每级 180 个学额、师生比 1:8",
+      "description": "「圣公会幼稚园」进热搜。两个常见误解要澄清：它不是学券校（校方写明没参加幼稚园教育计划），也跟圣保罗男女没有直升关系。"
+    },
+    {
+      "slug": "lh-kg",
+      "locale": "tc",
+      "title": "學之園LH學費2026/27：8校區粵英與普英收費",
+      "description": "學之園2026/27學年K1至K3半日班，粵英班全年HK$87,600至90,000，普英班HK$91,200至93,600，另有雜項費。逐校區核對收費與最新升小去向。"
+    },
+    {
+      "slug": "lh-kg",
+      "locale": "sc",
+      "title": "香港学之园LH学费2026/27：8校区收费表",
+      "description": "学之园2026/27学年K1至K3半日班，粤英班全年HK$87,600至90,000，普英班HK$91,200至93,600，另有杂项费。按校区核对收费与升小去向。"
+    },
+    {
+      "slug": "spcps-primary",
+      "locale": "tc",
+      "title": "聖保羅書院小學 SPCPS 全攻略：$32,000 年費的直資男校、面試 100 分怎麼算——別和聖保羅男女、聖保羅堂搞混",
+      "description": "「聖保羅書院小學」搜索 +170%、「面試」+90%——第一輪面試資訊 9 月 9 日剛公佈。$32,000/年、中一 210 個學額留 110 個給附屬小學、收生 100 分怎麼算，一次講清。"
+    },
+    {
+      "slug": "spcps-primary",
+      "locale": "sc",
+      "title": "香港圣保罗书院小学 SPCPS 全攻略：学费 $32,000、中一 210 个学额留 110 个给附属小学、面试 100 分怎么算——别和圣保罗男女、圣保罗堂搞混",
+      "description": "「圣保罗书院小学」搜索 +170%、「面试」+90%。$32,000/年的直资男校，中一 210 个学额留 110 个给附属小学，收生 100 分怎么算一次讲清。"
+    },
+    {
+      "slug": "ling-liang-kg-search-2026",
+      "locale": "tc",
+      "title": "靈糧堂系幼稚園校區怎樣分：2026年9月搜尋紀錄",
+      "description": "用2026年9月搜尋紀錄辨識同系校名，再按具體校區核對班制、費用、語言和接送；八個舊辦學點的整理不代表最新分校總數。"
+    },
+    {
+      "slug": "ling-liang-kg-search-2026",
+      "locale": "sc",
+      "title": "灵粮堂系幼稚园校区怎样分：2026年9月搜索记录",
+      "description": "用2026年9月搜索记录辨识同系校名，再按具体校区核对班制、费用、语言和接送；八个旧办学点的整理不代表最新分校总数。"
+    },
+    {
+      "slug": "hk-school-agency-red-flags",
+      "locale": "tc",
+      "title": "香港擇校中介避坑指南：5句紅旗話術+一套DIY盡調流程",
+      "description": "收費30倍價差、低價引流、賣學籍灰色產業。5句聽到就走的紅旗話術＋一套不花錢的DIY擇校盡調流程。"
+    },
+    {
+      "slug": "hk-school-agency-red-flags",
+      "locale": "sc",
+      "title": "香港择校中介避坑指南：5句红旗话术+一套DIY尽调流程",
+      "description": "收费30倍价差、低价引流、卖学籍灰色产业。5句听到就走的红旗话术＋一套不花钱的DIY择校尽调流程。"
+    },
+    {
+      "slug": "hk-school-net-diy-analysis",
+      "locale": "tc",
+      "title": "小學校網怎麼查：核對地址、名單與當屆學額",
+      "description": "按真實住址核對校網及當屆名單，區分自行與統派學額。用通勤及家庭接受程度建立候選表，不把供應數字拼成個人錄取率。"
+    },
+    {
+      "slug": "hk-school-net-diy-analysis",
+      "locale": "sc",
+      "title": "小学校网怎么查：核对地址、名单与当届学额",
+      "description": "按真实住址核对校网及当届名单，区分自行与统派学额。用通勤及家庭接受程度建立候选表，不把供应数字拼成个人录取率。"
+    },
+    {
+      "slug": "kg-open-day-guide-2026",
+      "locale": "tc",
+      "title": "幼稚園開放日：怎樣把宣傳特色問成可比較的事實",
+      "description": "用師幼互動、遊戲、午睡如廁、家校溝通與接送觀察表，看清日常安排及家庭需要承擔的代價。"
+    },
+    {
+      "slug": "kg-open-day-guide-2026",
+      "locale": "sc",
+      "title": "幼稚园开放日：怎样把宣传特色问成可比较的事实",
+      "description": "用师幼互动、游戏、午睡如厕、家校沟通与接送观察表，看清日常安排及家庭需要承担的代价。"
+    },
+    {
+      "slug": "hk-kg-k1-transparency-audit-2027-28",
+      "locale": "tc",
+      "title": "2027/28香港幼稚園K1招生信息公開度核查：5所學校逐項對照",
+      "description": "原創逐校核查：把申請、面見、結果、註冊和家長待確認事項放在同一張表；僅依據當屆官方資料，不推算錄取難度。"
+    },
+    {
+      "slug": "hk-kg-k1-transparency-audit-2027-28",
+      "locale": "sc",
+      "title": "2027/28香港幼稚园K1招生信息公开度核查：5所学校逐项对照",
+      "description": "原创逐校核查：把申请、面见、结果、注册和家长待确认事项放在同一张表；仅依据当届官方资料，不推算录取难度。"
+    },
+    {
+      "slug": "ma-on-shan-kg-2026",
+      "locale": "tc",
+      "title": "馬鞍山幼稚園盤點：7間學校，免費券校到國際路線一次看清",
+      "description": "「馬鞍山幼稚園」搜索27 Breakout。靈糧、崇真美善免費券校，到朗思國際路線，學費師生比一表對比。"
+    },
+    {
+      "slug": "ma-on-shan-kg-2026",
+      "locale": "sc",
+      "title": "马鞍山幼稚园盘点：7间学校，免费券校到国际路线一次看清",
+      "description": "「马鞍山幼稚园」搜索27 Breakout。灵粮、崇真美善免费券校，到朗思国际路线，学费师生比一表对比。"
+    },
+    {
+      "slug": "hy-kg-search-2026",
+      "locale": "tc",
+      "title": "協恩幼稚園怎樣選：升小條件與申請前核對",
+      "description": "把幼稚園、小學及中學的升學安排分開核對，不把校名或舊申請比例當錄取保證；附2026年9月搜尋紀錄與現行指南。"
+    },
+    {
+      "slug": "hy-kg-search-2026",
+      "locale": "sc",
+      "title": "协恩幼稚园怎样选：升小条件与申请前核对",
+      "description": "把幼稚园、小学及中学的升学安排分开核对，不把校名或旧申请比例当录取保证；附2026年9月搜索记录与现行指南。"
+    },
+    {
+      "slug": "hk-p1-admission-guide-2027",
+      "locale": "tc",
+      "title": "2027/28小一申請總指南：自行、統派與校本申請",
+      "description": "按當前狀態安排2027小一申請：分清官津與校本招生、統派甲乙部、註冊和接受直資的後果，列出家庭可執行的後備路徑。"
+    },
+    {
+      "slug": "hk-p1-admission-guide-2027",
+      "locale": "sc",
+      "title": "2027/28小一申请总指南：自行、统派与校本申请",
+      "description": "按当前状态安排2027小一申请：分清官津与校本招生、统派甲乙部、注册和接受直资的后果，列出家庭可执行的后备路径。"
+    },
+    {
+      "slug": "school-net-41-vs-12",
+      "locale": "tc",
+      "title": "41校網與12校網怎麼選：先看地址、學校名單和志願風險",
+      "description": "按教育局校網地圖與當屆名單核對兩網的地址、學校組合和乙部選擇邊界；舊文未能核實的派位百分比已撤下。"
+    },
+    {
+      "slug": "school-net-41-vs-12",
+      "locale": "sc",
+      "title": "香港41校网与12校网怎么选：地址、学校名单和派位风险",
+      "description": "按教育局资料核对两网覆盖范围和学校组合，了解为何名校数量不能直接推算录取机会。"
+    },
+    {
+      "slug": "plk-skh-kg-comparison",
+      "locale": "tc",
+      "title": "保良局 vs 聖公會幼稚園：兩大辦學團體全港 84 間學校怎麼選——牌子差異在哪，一次講清",
+      "description": "保良局 55 間、聖公會 29 間，九成七都參加免費計劃。社福底色 vs 教會背景，課程風格差在哪？還有兩間「例外名校」學費比小學還貴——牌子怎麼選，一次講清。"
+    },
+    {
+      "slug": "plk-skh-kg-comparison",
+      "locale": "sc",
+      "title": "保良局 vs 圣公会幼稚园：两大办学团体全港 84 间学校怎么选——牌子差异在哪，一次讲清",
+      "description": "保良局 55 间、圣公会 29 间，九成七都参加免费计划。社福底色 vs 教会背景，课程风格差在哪？还有两间「例外名校」学费比小学还贵——牌子怎么选，一次讲清。"
+    },
+    {
+      "slug": "n-class-guide",
+      "locale": "tc",
+      "title": "N班要讀嗎：照顧需要、孩子適應與實際支出",
+      "description": "先分清照顧缺口與入學準備，再比較半日、全日、資助資格和全年淨支出；附家庭選擇表、訪校問題及2027/28招生實例。"
+    },
+    {
+      "slug": "n-class-guide",
+      "locale": "sc",
+      "title": "N班要读吗：照顾需要、孩子适应与实际支出",
+      "description": "先分清照顾缺口与入学准备，再比较半日、全日、资助资格和全年净支出；附家庭选择表、访校问题及2027/28招生实例。"
+    },
+    {
+      "slug": "kg-english-guide",
+      "locale": "tc",
+      "title": "粵語、普通話還是英語：幼稚園教學語言怎樣核對",
+      "description": "用課堂、日常溝通、專項課和活動四欄，看清不同校區、班別與年級的真實語言安排。"
+    },
+    {
+      "slug": "kg-english-guide",
+      "locale": "sc",
+      "title": "粤语、普通话还是英语：幼稚园教学语言怎样核对",
+      "description": "用课堂、日常沟通、专项课和活动四栏，看清不同校区、班别与年级的真实语言安排。"
+    },
+    {
+      "slug": "eduhk-jcps-guide",
+      "locale": "tc",
+      "title": "香港教育大學賽馬會小學：免費的資助校，坐擁大學校園——「全港首間大學附屬小學」搜索量 +250%，來頭與真相一次講清",
+      "description": "「香港教育大學賽馬會小學」搜索量 +250%。不是新校——2002 年創校、全港首間建於大學校園的小學、恆温泳池圖書館隨便用。來頭與真相一次講清。"
+    },
+    {
+      "slug": "eduhk-jcps-guide",
+      "locale": "sc",
+      "title": "香港教育大学赛马会小学：免费的资助校，坐拥大学校园——「全港首间大学附属小学」搜索量 +250%，来头与真相一次讲清",
+      "description": "「香港教育大学赛马会小学」搜索量 +250%。不是新校——2002 年创校、全港首间建于大学校园的小学、恒温泳池图书馆随便用。来头与真相一次讲清。"
+    },
+    {
+      "slug": "good-hope-primary-guide",
+      "locale": "tc",
+      "title": "德望小學2026/27學費及升中：HK$56,500–57,500",
+      "description": "德望小學2026/27學費：小一至小三每年HK$56,500，小四至小六HK$57,500；另看2027/28小一招生、教學語言及升中銜接條件。"
+    },
+    {
+      "slug": "good-hope-primary-guide",
+      "locale": "sc",
+      "title": "香港德望小学2026/27学费及升中：HK$56,500–57,500",
+      "description": "德望小学2026/27学费：小一至小三每年HK$56,500，小四至小六HK$57,500；另看2027/28小一招生、教学语言及升中衔接条件。"
+    },
+    {
+      "slug": "kg-subsidy-guide",
+      "locale": "tc",
+      "title": "幼稚園學費資助2026/27：家庭淨支出怎樣計算",
+      "description": "把學費、膳食、校車與用品分開計算；區分教育計劃、學校減免與就學開支津貼，並核對2026/27金額及2027/28資格。"
+    },
+    {
+      "slug": "kg-subsidy-guide",
+      "locale": "sc",
+      "title": "幼稚园学费资助2026/27：家庭净支出怎么算",
+      "description": "把学费、膳食、校车与用品分开计算；区分教育计划、学校减免与就学开支津贴，并核对2026/27金额及2027/28资格。"
+    },
+    {
+      "slug": "rainstorm-class-guide",
+      "locale": "tc",
+      "title": "紅雨小學、幼稚園和中學要返學嗎？教育局停課時段一表看清",
+      "description": "紅色暴雨警告下，上午班、下午班和全日制學校何時停課？按教育局通告整理時段表，並列出官方來源。實際安排請以教育局及學校最新通知為準。"
+    },
+    {
+      "slug": "rainstorm-class-guide",
+      "locale": "sc",
+      "title": "红雨小学、幼儿园和中学要上学吗？教育局停课时段一表看清",
+      "description": "红色暴雨警告下，上午班、下午班和全日制学校何时停课？按教育局通告整理时段表，并列出官方来源。实际安排请以教育局及学校最新通知为准。"
+    },
+    {
+      "slug": "st-margaret-kg",
+      "locale": "tc",
+      "title": "聖瑪加利大幼稚園：跑馬地 A+ 天主教券校，學費全免——本週家長都在搜什麼？",
+      "description": "「聖瑪加利大幼稚園校服」搜索量 Breakout。免費券校到底值不值得讀？報名、校服、面試一次講清。"
+    },
+    {
+      "slug": "st-margaret-kg",
+      "locale": "sc",
+      "title": "圣玛加利大幼稚园：跑马地 A+ 天主教券校，学费全免——本周家长都在搜什么？",
+      "description": "「圣玛加利大幼稚园校服」搜索量 Breakout。免费券校到底值不值得读？报名、校服、面试一次讲清。"
+    },
+    {
+      "slug": "p1-scoring-guide",
+      "locale": "tc",
+      "title": "小一自行分配怎麼計分：哪些分可以加、哪些不能",
+      "description": "按教育局2027年度計分表核對必收與計分兩類、5擇1和2擇1規則，附可復算例子、證明文件與同分超額安排；最高35分不等於錄取承諾。"
+    },
+    {
+      "slug": "p1-scoring-guide",
+      "locale": "sc",
+      "title": "小一自行分配怎么计分：哪些分可以加、哪些不能",
+      "description": "按教育局2027年度计分表核对必收与计分两类、5择1和2择1规则，附可复算例子、证明文件与同分超额安排；最高35分不等于录取承诺。"
+    },
+    {
+      "slug": "st-margaret-primary",
+      "locale": "tc",
+      "title": "聖瑪加利男女英文中小學：$53,570 一條龍直資、不限校網——和「聖瑪加利大」不是同一間",
+      "description": "「st margaret 小學」搜索量 +300%。全英教學一條龍直資，和跑馬地聖瑪加利大幼稚園是兩間名字很像的學校，一文分清。"
+    },
+    {
+      "slug": "st-margaret-primary",
+      "locale": "sc",
+      "title": "圣玛加利男女英文中小学：$53,570 一条龙直资、不限校网——和「圣玛加利大」不是同一间",
+      "description": "「st margaret 小学」搜索量 +300%。全英教学一条龙直资，和跑马地圣玛加利大幼稚园是两间名字很像的学校，一文分清。"
+    },
+    {
+      "slug": "net40-ranking",
+      "locale": "tc",
+      "title": "40校網小學排名 2026：深水埗 26 間小學完整比較，升中通路才是關鍵",
+      "description": "「40校網小學排名」搜索量 Breakout。26 間學校完整表：官立聯繫網、瑪利諾神父直屬，排名之外的重點是升中通路。"
+    },
+    {
+      "slug": "net40-ranking",
+      "locale": "sc",
+      "title": "40校网小学排名 2026：深水埗 26 间小学完整比较，升中通路才是关键",
+      "description": "「40校网小学排名」搜索量 Breakout。26 间学校完整表：官立联系网、玛利诺神父直属，排名之外的重点是升中通路。"
+    },
+    {
+      "slug": "funful-kg",
+      "locale": "tc",
+      "title": "海濱方方樂趣幼稚園：荃灣私立園，全日/半日學費多少？搜索量暴漲 4,700% 的幼稚園值不值",
+      "description": "「方方樂趣幼稚園」搜索量 +4,700%。半日 $88,272/年、全日 $119,928/年、師生比 1:7.5、有 PN。學費班別一次看清。"
+    },
+    {
+      "slug": "funful-kg",
+      "locale": "sc",
+      "title": "海滨方方乐趣幼稚园：荃湾私立园，全日/半日学费多少？搜索量暴涨 4,700% 的幼稚园值不值",
+      "description": "「方方乐趣幼稚园」搜索量 +4,700%。半日 $88,272/年、全日 $119,928/年、师生比 1:7.5、有 PN。学费班别一次看清。"
+    },
+    {
+      "slug": "wellcome-kg",
+      "locale": "tc",
+      "title": "宏廣國際幼稚園：屯門 Wellcome 英語幼稚園，2026/27 招生已開、半日 $67,392 起",
+      "description": "「宏廣國際幼稚園」搜索量 +2,700%。英語教學、有 PN，附官網招生程序：報名費 $40、面試安排、註冊費。"
+    },
+    {
+      "slug": "wellcome-kg",
+      "locale": "sc",
+      "title": "宏广国际幼稚园：屯门 Wellcome 英语幼稚园，2026/27 招生已开、半日 $67,392 起",
+      "description": "「宏广国际幼稚园」搜索量 +2,700%。英语教学、有 PN，附官网招生程序：报名费 $40、面试安排、注册费。"
+    },
+    {
+      "slug": "zenith-kg",
+      "locale": "tc",
+      "title": "英藝幼稚園五校園對比：將軍澳/沙田/兆康/大埔/賞湖，學費師生比一表看清",
+      "description": "「zenith kindergarten」搜索量 Breakout。5 間分校學費 $74,400-$135,276、師生比 1:2.5 至 1:12.4，全部有 PN。"
+    },
+    {
+      "slug": "zenith-kg",
+      "locale": "sc",
+      "title": "英艺幼稚园五校园对比：将军澳/沙田/兆康/大埔/赏湖，学费师生比一表看清",
+      "description": "「zenith kindergarten」搜索量 Breakout。5 间分校学费 $74,400-$135,276、师生比 1:2.5 至 1:12.4，全部有 PN。"
+    },
+    {
+      "slug": "cheungchau-kg",
+      "locale": "tc",
+      "title": "長洲幼稚園全攻略：5 間學校一次看清——免費券校、全日班、師生比全表",
+      "description": "「長洲幼稚園」搜索量 +800%。島上 5 間幼稚園全表：聖心半日免費、兩間路德會全日約 $3.4 萬、國民學校有 PN。"
+    },
+    {
+      "slug": "cheungchau-kg",
+      "locale": "sc",
+      "title": "长洲幼稚园全攻略：5 间学校一次看清——免费券校、全日班、师生比全表",
+      "description": "「长洲幼稚园」搜索量 +800%。岛上 5 间幼稚园全表：圣心半日免费、两间路德会全日约 $3.4 万、国民学校有 PN。"
+    },
+    {
+      "slug": "hyps-primary",
+      "locale": "tc",
+      "title": "協恩中學附屬小學：34網資助名校，直屬Band 1A協恩中學——2026熱搜背後",
+      "description": "「協恩中學附屬小學」搜索量 Breakout。免費資助女校、直屬協恩中學（1A）、班師比 1:2.2、錨點分 95。"
+    },
+    {
+      "slug": "hyps-primary",
+      "locale": "sc",
+      "title": "香港协恩中学附属小学：34 校网资助名校、直属 Band 1A 协恩中学，为什么内地来港家庭也在搜",
+      "description": "34 校网、资助、免学费，直属 Band 1A 协恩中学。校网怎么算、插班要注意什么，一篇说清。"
+    },
+    {
+      "slug": "dgs-primary",
+      "locale": "tc",
+      "title": "拔萃女小學 DGS：一條龍直升拔萃女書院，$8.6萬年費的私立名校值不值",
+      "description": "「dgs primary school」搜索量 +400%。私立一條龍直升拔萃女書院（1A），不受校網限制，有校車。"
+    },
+    {
+      "slug": "dgs-primary",
+      "locale": "sc",
+      "title": "香港拔萃女小学 DGS：一条龙直升拔萃女书院、$8.6 万年费的私立名校值不值",
+      "description": "DGS 搜索 +400%。私立女校、一条龙直升 Band 1A 拔萃女书院、年费约 $8.6 万——值不值得读，看这篇。"
+    },
+    {
+      "slug": "lht-primary",
+      "locale": "tc",
+      "title": "陸慶濤小學 LHT：將軍澳直資一條龍，$13,000 年費讀出 Band 1B 升中通路",
+      "description": "「lht 小學」搜索量 Breakout。LHT = 陸慶濤，不是嶺南。一條龍直升羅氏基金中學（1B），年費僅 $13,000。"
+    },
+    {
+      "slug": "lht-primary",
+      "locale": "sc",
+      "title": "陆庆涛小学 LHT：将军澳直资一条龙，$13,000 年费读出 Band 1B 升中通路",
+      "description": "「lht 小学」搜索量 Breakout。LHT = 陆庆涛，不是岭南。一条龙直升罗氏基金中学（1B），年费仅 $13,000。"
+    },
+    {
+      "slug": "delia-primary",
+      "locale": "tc",
+      "title": "地利亞英文小學暨幼稚園：深水埗英文私立小學，$34,000/年（附與閩僑分校分別）",
+      "description": "「delia english primary school & kindergarten」搜索量 Breakout。帶幼稚園部那間在深水埗，和葵青閩僑分校是兩間不同 Delia。"
+    },
+    {
+      "slug": "delia-primary",
+      "locale": "sc",
+      "title": "地利亚英文小学暨幼稚园：深水埗英文私立小学，$34,000/年（附与闽侨分校分别）",
+      "description": "「delia english primary school & kindergarten」搜索量 Breakout。带幼稚园部那间在深水埗，和葵青闽侨分校是两间不同 Delia。"
+    },
+    {
+      "slug": "mulberry-kg",
+      "locale": "tc",
+      "title": "懋柏禮國際幼稚園：Mulberry House 雙校園，Montessori 英語教學——和「童樂天」別搞混",
+      "description": "「mulberry house international kindergarten」搜索量 Breakout。南區/大埔雙校園；沙田那間是 Mulberry Tree，不同品牌。"
+    },
+    {
+      "slug": "mulberry-kg",
+      "locale": "sc",
+      "title": "懋柏礼国际幼稚园：Mulberry House 双校园，Montessori 英语教学——和「童乐天」别搞混",
+      "description": "「mulberry house international kindergarten」搜索量 Breakout。南区/大埔双校园；沙田那间是 Mulberry Tree，不同品牌。"
+    },
+    {
+      "slug": "plk-camoes-primary",
+      "locale": "tc",
+      "title": "陳守仁小學：油尖旺A級直資，英文教學+學費親民，中產家長的隱藏寶石",
+      "description": "英文教學+直資學費+不限校網——同時滿足這三條的A級學校全港沒幾所。"
+    },
+    {
+      "slug": "plk-camoes-primary",
+      "locale": "sc",
+      "title": "陈守仁小学：油尖旺A级直资，英文教学+学费亲民，中产家长的隐藏宝石",
+      "description": "英文教学+直资学费+不限校网——同时满足这三条的A级学校全港没几所。"
+    },
+    {
+      "slug": "hkuga-primary",
+      "locale": "tc",
+      "title": "港大同學會小學升中有IB嗎？書院DSE／iAL、學費與收生",
+      "description": "港大同學會書院高中採用 HKDSE 與國際 A Level（iAL），不是 IB。本文核對港大同學會小學 2026/27 學費 HK$41,630、一條龍升中安排及 2027/28 小一招生進度。"
+    },
+    {
+      "slug": "hkuga-primary",
+      "locale": "sc",
+      "title": "港大同学会小学升中有IB吗？书院DSE／iAL、学费与收生",
+      "description": "港大同学会书院高中采用 HKDSE 与国际 A Level（iAL），不是 IB。本文核对港大同学会小学 2026/27 学费 HK$41,630、一条龙升中安排及 2027/28 小一招生进度。"
+    },
+    {
+      "slug": "st-joseph-primary",
+      "locale": "tc",
+      "title": "聖若瑟小學：灣仔12校網最強男校，為什麼2026年家長都在搜？",
+      "description": "Google Trends Breakout——免費讀Band 1A中學的通道。英文教學+12校網+聯繫聖若瑟書院。"
+    },
+    {
+      "slug": "st-joseph-primary",
+      "locale": "sc",
+      "title": "香港圣若瑟小学：湾仔 12 校网最强男校，2026 年家长都在搜什么",
+      "description": "湾仔 12 校网资助男校。校网派位怎么算、插班与家长口碑一次整理。"
+    },
+    {
+      "slug": "knocking-letter-guide",
+      "locale": "tc",
+      "title": "小一叩門：先保留學位，再準備求位與候補",
+      "description": "按註冊、校本申請、材料、評估和候補五步處理小一求位；辨清111邊界，附可修改的求位信結構與後備安排。"
+    },
+    {
+      "slug": "knocking-letter-guide",
+      "locale": "sc",
+      "title": "小一叩门：先保留学位，再准备求位与候补",
+      "description": "按注册、校本申请、材料、评估和候补五步处理小一求位；辨清111边界，附可修改的求位信结构与后备安排。"
+    },
+    {
+      "slug": "talent-scheme-school-guide",
+      "locale": "tc",
+      "title": "高才通帶娃來港插班，我踩過的5個坑（第3個差點毀了升中）",
+      "description": "高才通、優才、專才來港後孩子怎麼上學？什麼時候插班最好？一文講清從簽證到入學的每一步。"
+    },
+    {
+      "slug": "talent-scheme-school-guide",
+      "locale": "sc",
+      "title": "高才通带娃来港插班，我踩过的5个坑（第3个差点毁了升中）",
+      "description": "高才通、优才、专才来港后孩子怎么上学？什么时候插班最好？一文讲清从签证到入学的每一步。"
+    },
+    {
+      "slug": "trending-kindergartens-2026",
+      "locale": "tc",
+      "title": "七所幼稚園怎樣比較：2026年7月搜尋名單回顧",
+      "description": "靈糧堂、維多利亞、培正、培道、民生、迦南與聖公會：先分校區，再核對語言、費用與升小條件；七月搜尋名單不是排名。"
+    },
+    {
+      "slug": "trending-kindergartens-2026",
+      "locale": "sc",
+      "title": "七所幼稚园怎样比较：2026年7月搜索名单回顾",
+      "description": "灵粮堂、维多利亚、培正、培道、民生、迦南与圣公会：先分校区，再核对语言、费用与升小条件；七月搜索名单不是排名。"
+    },
+    {
+      "slug": "breakout-schools-2026",
+      "locale": "tc",
+      "title": "Google Trends 告訴我們：2026年香港家長正在瘋狂搜索這 8 所小學",
+      "description": "聖伯多祿、培基、陳守仁、聖若瑟…這些學校的搜索量正在Breakout。背後反映了什麼選校趨勢？"
+    },
+    {
+      "slug": "breakout-schools-2026",
+      "locale": "sc",
+      "title": "Google Trends 告诉我们：2026年香港家长正在疯狂搜索这 8 所小学",
+      "description": "圣伯多禄、培基、陈守仁、圣若瑟…这些学校的搜索量正在Breakout。背后反映了什么选校趋势？"
+    },
+    {
+      "slug": "primary-rankings-2026",
+      "locale": "tc",
+      "title": "2026 香港小學排名全解析：哪個排名更值得參考？",
+      "description": "三套排名體系對比：HKPEP教育競爭力、Kidemy升中成績、本平台四因子。排名不是終點，是幫你縮小選擇範圍的工具。"
+    },
+    {
+      "slug": "primary-rankings-2026",
+      "locale": "sc",
+      "title": "2026 香港小学排名全解析：哪个排名更值得参考？",
+      "description": "三套排名体系对比：HKPEP教育竞争力、Kidemy升中成绩、本平台四因子。排名不是终点，是帮你缩小选择范围的工具。"
+    },
+    {
+      "slug": "stcat-interview",
+      "locale": "tc",
+      "title": "St. Catherine 2027/28 K1面試：日期與流程",
+      "description": "按校方2027/28 K1招生通知核對申請、面試和結果日期，拆開官方流程與往年家長經驗，再看粵語、英語及普通話選項怎樣影響準備。"
+    },
+    {
+      "slug": "stcat-interview",
+      "locale": "sc",
+      "title": "St. Catherine 2027/28 K1面试：日期与流程",
+      "description": "按校方2027/28 K1招生通知核对日期和面试形式，区分当届官方安排与往年经验，并给出语言选择和准备建议。"
+    },
+    {
+      "slug": "through-train-guide",
+      "locale": "tc",
+      "title": "一條龍、直屬與聯繫：升中保障到底到哪一步",
+      "description": "看懂直升權利、85%與25%的真實分母、組別及志願條件；分清官津制度與直私校本安排，再比較升中保障和外報代價。"
+    },
+    {
+      "slug": "through-train-guide",
+      "locale": "sc",
+      "title": "一条龙、直属与联系：升中保障到底到哪一步",
+      "description": "看懂直升权利、85%与25%的真实分母、组别及志愿条件；分清官津制度与直私校本安排，再比较升中保障和外报代价。"
+    },
+    {
+      "slug": "school-types-guide",
+      "locale": "tc",
+      "title": "官津、直資與私立小學：家庭怎樣取捨",
+      "description": "從收生、課程、六年成本、語言和升中路徑比較小學；先找家庭可持續的路線，再看學校名氣。"
+    },
+    {
+      "slug": "school-types-guide",
+      "locale": "sc",
+      "title": "官津、直资与私立小学：家庭怎样取舍",
+      "description": "从收生、课程、六年成本、语言和升中路径比较小学；先找家庭可持续的路线，再看学校名气。"
+    },
+    {
+      "slug": "hot-schools-2026-07",
+      "locale": "tc",
+      "title": "蘇浙與王錦輝小學怎樣比較：語言、費用與升中核對",
+      "description": "從2026年夏季搜尋文章出發，比較兩校要核對的語言、全年成本與升中條件；不把小學語言直接等同將來的IB或A-Level出口。"
+    },
+    {
+      "slug": "hot-schools-2026-07",
+      "locale": "sc",
+      "title": "苏浙与王锦辉小学怎样比较：语言、费用与升中核对",
+      "description": "从2026年夏季搜索文章出发，比较两校要核对的语言、全年成本与升中条件；不把小学语言直接等同将来的IB或A-Level出口。"
+    },
+    {
+      "slug": "hk-kg-k1-application-roadmap-2027-28",
+      "locale": "tc",
+      "title": "2027/28 K1報名與註冊：兩條時間線怎樣安排",
+      "description": "分清申請學校和申請電子註冊證，按當屆日期處理面見、錄取、統一註冊、候補與轉校。"
+    },
+    {
+      "slug": "hk-kg-k1-application-roadmap-2027-28",
+      "locale": "sc",
+      "title": "2027/28 K1报名与注册：两条时间线怎样安排",
+      "description": "分清申请学校和申请电子注册证，按当届日期处理面见、录取、统一注册、候补与转校。"
+    },
+    {
+      "slug": "hk-kg-interview-prep-guide-2027-28",
+      "locale": "tc",
+      "title": "K1面試怎樣準備：孩子、家長與語言需要",
+      "description": "按學校當屆公開形式安排生活化準備，區分個別、小組和家長面見，處理慢熱、哭鬧及語言支援。"
+    },
+    {
+      "slug": "hk-kg-interview-prep-guide-2027-28",
+      "locale": "sc",
+      "title": "K1面试怎样准备：孩子、家长与语言需要",
+      "description": "按学校当届公开形式安排生活化准备，区分个别、小组和家长面见，处理慢热、哭闹及语言支援。"
+    },
+    {
+      "slug": "primary-net-43-analysis",
+      "locale": "tc",
+      "title": "43校網深度分析：小學學額、男女選擇與升中路徑",
+      "description": "逐校核對八所小學的學額、最新可查升中結果與歷史派位，並標明數據口徑和缺口。"
+    },
+    {
+      "slug": "primary-net-43-analysis",
+      "locale": "sc",
+      "title": "43校网深度分析：小学学额、男女选择与升中路径",
+      "description": "逐校核对八所小学的学额、最新可查升中结果与历史派位，并标明数据口径和缺口。"
+    },
+    {
+      "slug": "primary-net-62-analysis",
+      "locale": "tc",
+      "title": "荃灣62校網小學：兩所官小、浸聯與馬灣學校怎麼選",
+      "description": "核對62網18所官津、官小聯繫、全完第一合併及三校2026出口，分清歷史派位分母和直資私立申請。"
+    },
+    {
+      "slug": "primary-net-62-analysis",
+      "locale": "sc",
+      "title": "荃湾62校网小学：两所官小、浸联与马湾学校怎么选",
+      "description": "核对62网18所官津、官小联系、全完第一合并及三校2026出口，分清历史派位分母和直资私立申请。"
+    },
+    {
+      "slug": "primary-net-64-analysis",
+      "locale": "tc",
+      "title": "64校網小學：梨木樹、石蔭和石籬，升中網怎樣分",
+      "description": "核對64網8所資助小學、梨木樹三校行政區區別、分班與升中出口，比較跨區直私申請及派位影響。"
+    },
+    {
+      "slug": "primary-net-64-analysis",
+      "locale": "sc",
+      "title": "64校网小学：梨木树、石荫和石篱，升中网怎样分",
+      "description": "核对64网8所资助小学、梨木树三校行政区区别、分班与升中出口，比较跨区直私申请及派位影响。"
+    },
+    {
+      "slug": "primary-net-84-analysis",
+      "locale": "tc",
+      "title": "大埔84校網小學：兩所舊墟、田家炳與孫方中怎麼選",
+      "description": "核對84網19所官津、課堂差別及三校2026升中原件，分清79.8%歷史分母、正式銜接和直資私立申請。"
+    },
+    {
+      "slug": "primary-net-84-analysis",
+      "locale": "sc",
+      "title": "大埔84校网小学：两所旧墟、田家炳与孙方中怎么选",
+      "description": "核对84网19所官津、课堂差别及三校2026升中原件，分清79.8%历史分母、正式衔接和直资私立申请。"
+    },
+    {
+      "slug": "primary-net-88-analysis",
+      "locale": "tc",
+      "title": "大圍88校網小學：聖心、陳元喜和沙官，課堂與升中聯繫怎麼分",
+      "description": "核對88網11所官津、三組聯繫關係及四校當屆升中原件，比較課堂語言、歷史派位分母、男女情境及直資私立申請。"
+    },
+    {
+      "slug": "primary-net-88-analysis",
+      "locale": "sc",
+      "title": "大围88校网小学：圣心、陈元喜和沙官，课堂与升中联系怎么分",
+      "description": "核对88网11所官津、三组联系关系及四校当届升中原件，比较课堂语言、历史派位分母、男女情境及直资私立申请。"
+    },
+    {
+      "slug": "tsuen-wan-secondary-net-analysis",
+      "locale": "tc",
+      "title": "荃灣升中NT2：五校364個共享位，男女怎樣選學校",
+      "description": "核對NT2完整32項歷史名冊、364／215共享位情境及聯繫資格，比較英華、基崇和本區私立的課程與申請。"
+    },
+    {
+      "slug": "tsuen-wan-secondary-net-analysis",
+      "locale": "sc",
+      "title": "荃湾升中NT2：五校364个共享位，男女怎样选学校",
+      "description": "核对NT2完整32项历史名册、364／215共享位情境及联系资格，比较英华、基崇和本区私立的课程与申请。"
+    },
+    {
+      "slug": "kwai-tsing-secondary-net-analysis",
+      "locale": "tc",
+      "title": "葵青升中NT1：蕭明、保祿六世與男女校怎樣比較",
+      "description": "核對44項歷史乙部學校與附註，比較464共享及137女校位、民間分類分歧和男女競爭假設。"
+    },
+    {
+      "slug": "kwai-tsing-secondary-net-analysis",
+      "locale": "sc",
+      "title": "葵青升中NT1：萧明、保禄六世与男女校怎样比较",
+      "description": "核对44项历史乙部学校与附注，比较464共享及137女校位、民间分类分歧和男女竞争假设。"
+    },
+    {
+      "slug": "tai-po-secondary-net-analysis",
+      "locale": "tc",
+      "title": "大埔升中NT6：五校360個共享位，三育、羅定邦和德萃另怎麼報",
+      "description": "核對NT6完整30項歷史名冊及360／216共享位情境，區分三育派位、羅定邦獨立招生和大光德萃私校合同。"
+    },
+    {
+      "slug": "tai-po-secondary-net-analysis",
+      "locale": "sc",
+      "title": "大埔升中NT6：五校360个共享位，三育、罗定邦和德萃另怎么报",
+      "description": "核对NT6完整30项历史名册及360／216共享位情境，区分三育派位、罗定邦独立招生和大光德萃私校合同。"
+    }
+  ]
+}

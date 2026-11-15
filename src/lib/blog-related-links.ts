@@ -106,6 +106,13 @@ function entry(stage: BlogRelatedConfig["stage"], focus: string, guides: BlogRel
 // One reviewed selection per article; deliberately no same-stage first-N fallback.
 // New articles must be added here and pass scripts/validate-blog-related-links.mjs.
 export const BLOG_RELATED_LINKS: Record<string, BlogRelatedConfig> = {
+  "primary-net-62-analysis": entry("primary", "校网分析 · 申请与升学", [G.through, G.net], [G.psp, G.pNetTopic], "制度与选校", [A.net, A.simulator]),
+  "primary-net-64-analysis": entry("primary", "校网分析 · 申请与升学", [G.through, G.net], [G.psp, G.pNetTopic], "制度与选校", [A.net, A.simulator]),
+  "primary-net-84-analysis": entry("primary", "校网分析 · 申请与升学", [G.through, G.net], [G.psp, G.pNetTopic], "制度与选校", [A.net, A.simulator]),
+  "primary-net-88-analysis": entry("primary", "校网分析 · 申请与升学", [G.through, G.net], [G.psp, G.pNetTopic], "制度与选校", [A.net, A.simulator]),
+  "tsuen-wan-secondary-net-analysis": entry("secondary", "校网分析 · 升中派位", [G.sBand, G.sOverview], [G.sResults], "升中资料", [A.secondary, A.shortlist]),
+  "kwai-tsing-secondary-net-analysis": entry("secondary", "校网分析 · 升中派位", [G.sBand, G.sOverview], [G.sResults], "升中资料", [A.secondary, A.shortlist]),
+  "tai-po-secondary-net-analysis": entry("secondary", "校网分析 · 升中派位", [G.sBand, G.sOverview], [G.sResults], "升中资料", [A.secondary, A.shortlist]),
   "primary-net-40-analysis": entry("primary", "校网分析 · 申请与升学", [guide("sham-shui-po-secondary-net-analysis", "配套学段分析", "核对学校组合与升学条件"), G.through], [G.net, G.psp], "制度与选校", [A.net, A.simulator]),
   "primary-net-41-analysis": entry("primary", "校网分析 · 申请与升学", [guide("kowloon-city-secondary-net-analysis", "配套学段分析", "核对学校组合与升学条件"), G.through], [G.net, G.psp], "制度与选校", [A.net, A.simulator]),
   "primary-net-89-analysis": entry("primary", "校网分析 · 申请与升学", [guide("sha-tin-secondary-net-analysis", "配套学段分析", "核对学校组合与升学条件"), G.through], [G.net, G.psp], "制度与选校", [A.net, A.simulator]),

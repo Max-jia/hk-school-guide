@@ -6,6 +6,13 @@ export type BlogTopic = "admissions" | "fees" | "schools" | "comparison" | "prac
 // Editorial classification is explicit so a school name or a translated title
 // cannot silently put an article in the wrong parent-facing filter.
 const STAGES: Record<string, BlogStage> = {
+  "tai-po-secondary-net-analysis": "secondary",
+  "kwai-tsing-secondary-net-analysis": "secondary",
+  "tsuen-wan-secondary-net-analysis": "secondary",
+  "primary-net-88-analysis": "primary",
+  "primary-net-84-analysis": "primary",
+  "primary-net-64-analysis": "primary",
+  "primary-net-62-analysis": "primary",
   "sha-tin-secondary-net-analysis": "secondary",
   "kowloon-city-secondary-net-analysis": "secondary",
   "sham-shui-po-secondary-net-analysis": "secondary",
@@ -148,6 +155,13 @@ const STAGES: Record<string, BlogStage> = {
 };
 
 const TOPICS: Partial<Record<string, BlogTopic>> = {
+  "tai-po-secondary-net-analysis": "comparison",
+  "kwai-tsing-secondary-net-analysis": "comparison",
+  "tsuen-wan-secondary-net-analysis": "comparison",
+  "primary-net-88-analysis": "comparison",
+  "primary-net-84-analysis": "comparison",
+  "primary-net-64-analysis": "comparison",
+  "primary-net-62-analysis": "comparison",
   "sha-tin-secondary-net-analysis": "comparison",
   "kowloon-city-secondary-net-analysis": "comparison",
   "sham-shui-po-secondary-net-analysis": "comparison",

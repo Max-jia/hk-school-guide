@@ -1,0 +1,16 @@
+{
+  "articles": 23,
+  "primary": 14,
+  "secondary": 9,
+  "tablesRetained": 150,
+  "sourceLinksMissing": 0,
+  "recordedEditsMatchFinalArticles": true,
+  "browserArticleCases": 92,
+  "browserAssertions": 1358,
+  "browserFailures": 0,
+  "browserRuntimeErrors": 0,
+  "planPagesChecked": 14,
+  "planFailures": 0,
+  "productionChangedByThisTask": false,
+  "deployment": "not-deployed"
+}

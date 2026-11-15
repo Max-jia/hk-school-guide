@@ -1,0 +1,1184 @@
+[
+  {
+    "article": "中西区升中校网",
+    "batch": "net11-hk1-20261113",
+    "district": "中西區",
+    "code": "A",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 749,
+    "censusP6Girls": 929,
+    "censusP6Total": 1678,
+    "censusPriorP6Total": 1640,
+    "p6ChangePercent": 2.3170731707317094,
+    "observedNetParticipants2023": 1386,
+    "observedNetParticipants2024": 1487,
+    "observedNetParticipants2025": 1413,
+    "historicalLinkFactor": 0.8615853658536585,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 1445.3946574460288,
+    "estimatedSexParticipants2026": {
+      "boys": 645.1731814225718,
+      "girls": 800.2214760234571
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 215.05772714085728,
+      "girls": 266.740492007819
+    },
+    "boysShareProxy": 0.4463647199046484,
+    "backtest2025": {
+      "district": "中西區",
+      "code": "A",
+      "actual": 1413,
+      "estimated": 1411.5657734702713,
+      "error": -1.4342265297286758,
+      "absolutePercentError": 0.10150223140330332
+    },
+    "variants": {
+      "main": {
+        "shared": 6,
+        "boysExclusive": 91,
+        "girlsExclusive": 112,
+        "modelBoysSupply": 93.67818831942789,
+        "modelGirlsSupply": 115.32181168057211,
+        "breakEvenResidualShareBoys": 0.4355955471345193,
+        "breakEvenResidualShareGirls": 0.43233710342407133,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 53.76443178521432,
+            "girlsDemand": 66.68512300195475,
+            "boysPer100": 57.39268953610212,
+            "girlsPer100": 57.825247479344775
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 107.52886357042864,
+            "girlsDemand": 133.3702460039095,
+            "boysPer100": 114.78537907220424,
+            "girlsPer100": 115.65049495868955
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 161.29329535564295,
+            "girlsDemand": 200.05536900586424,
+            "boysPer100": 172.17806860830635,
+            "girlsPer100": 173.4757424380343
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 215.05772714085728,
+            "girlsDemand": 266.740492007819,
+            "boysPer100": 229.57075814440847,
+            "girlsPer100": 231.3009899173791
+          }
+        ]
+      },
+      "common": {
+        "shared": 6,
+        "boysExclusive": 64,
+        "girlsExclusive": 100,
+        "modelBoysSupply": 66.67818831942789,
+        "modelGirlsSupply": 103.32181168057211,
+        "breakEvenResidualShareBoys": 0.3100478611296556,
+        "breakEvenResidualShareGirls": 0.38734955800240267,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 53.76443178521432,
+            "girlsDemand": 66.68512300195475,
+            "boysPer100": 80.63271234612877,
+            "girlsPer100": 64.54118633548288
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 107.52886357042864,
+            "girlsDemand": 133.3702460039095,
+            "boysPer100": 161.26542469225754,
+            "girlsPer100": 129.08237267096575
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 161.29329535564295,
+            "girlsDemand": 200.05536900586424,
+            "boysPer100": 241.89813703838627,
+            "girlsPer100": 193.62355900644857
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 215.05772714085728,
+            "girlsDemand": 266.740492007819,
+            "boysPer100": 322.5308493845151,
+            "girlsPer100": 258.1647453419315
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.skhykh.edu.hk/CustomPage/12/school_list_CEN_2026.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "湾仔升中校网",
+    "batch": "net12-hk2-20261113",
+    "district": "灣仔",
+    "code": "B",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 860,
+    "censusP6Girls": 1089,
+    "censusP6Total": 1949,
+    "censusPriorP6Total": 1970,
+    "p6ChangePercent": -1.0659898477157315,
+    "observedNetParticipants2023": 1516,
+    "observedNetParticipants2024": 1457,
+    "observedNetParticipants2025": 1466,
+    "historicalLinkFactor": 0.7441624365482233,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 1450.0258950708915,
+    "estimatedSexParticipants2026": {
+      "boys": 639.826716142107,
+      "girls": 810.1991789287845
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 213.275572047369,
+      "girls": 270.0663929762615
+    },
+    "boysShareProxy": 0.44125192406362235,
+    "backtest2025": {
+      "district": "灣仔",
+      "code": "B",
+      "actual": 1466,
+      "estimated": 1450.5424425014214,
+      "error": -15.45755749857858,
+      "absolutePercentError": 1.0544036492891256
+    },
+    "variants": {
+      "main": {
+        "shared": 62,
+        "boysExclusive": 77,
+        "girlsExclusive": 80,
+        "modelBoysSupply": 104.35761929194459,
+        "modelGirlsSupply": 114.64238070805541,
+        "breakEvenResidualShareBoys": 0.48930882374455203,
+        "breakEvenResidualShareGirls": 0.4244970262484023,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 53.31889301184225,
+            "girlsDemand": 67.51659824406538,
+            "boysPer100": 51.09247736160072,
+            "girlsPer100": 58.89322764153072
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 106.6377860236845,
+            "girlsDemand": 135.03319648813076,
+            "boysPer100": 102.18495472320144,
+            "girlsPer100": 117.78645528306144
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 159.95667903552675,
+            "girlsDemand": 202.54979473219612,
+            "boysPer100": 153.27743208480214,
+            "girlsPer100": 176.67968292459219
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 213.275572047369,
+            "girlsDemand": 270.0663929762615,
+            "boysPer100": 204.3699094464029,
+            "girlsPer100": 235.57291056612289
+          }
+        ]
+      },
+      "common": {
+        "shared": 62,
+        "boysExclusive": 77,
+        "girlsExclusive": 30,
+        "modelBoysSupply": 104.35761929194459,
+        "modelGirlsSupply": 64.64238070805541,
+        "breakEvenResidualShareBoys": 0.48930882374455203,
+        "breakEvenResidualShareGirls": 0.239357366889176,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 53.31889301184225,
+            "girlsDemand": 67.51659824406538,
+            "boysPer100": 51.09247736160072,
+            "girlsPer100": 104.44633614128603
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 106.6377860236845,
+            "girlsDemand": 135.03319648813076,
+            "boysPer100": 102.18495472320144,
+            "girlsPer100": 208.89267228257205
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 159.95667903552675,
+            "girlsDemand": 202.54979473219612,
+            "boysPer100": 153.27743208480214,
+            "girlsPer100": 313.339008423858
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 213.275572047369,
+            "girlsDemand": 270.0663929762615,
+            "boysPer100": 204.3699094464029,
+            "girlsPer100": 417.7853445651441
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.ktgps-smr.edu.hk/sites/default/files/download/2426_%E7%81%A3%E4%BB%94%E5%8D%80.pdf",
+    "commonLabel": "“不选香港真光”家庭清单",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "油尖旺升中校网",
+    "batch": "net31-kl1-20261113",
+    "district": "油尖旺",
+    "code": "E",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 1130,
+    "censusP6Girls": 1159,
+    "censusP6Total": 2289,
+    "censusPriorP6Total": 2265,
+    "p6ChangePercent": 1.059602649006619,
+    "observedNetParticipants2023": 1804,
+    "observedNetParticipants2024": 1909,
+    "observedNetParticipants2025": 1761,
+    "historicalLinkFactor": 0.7774834437086092,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 1779.23419686931,
+    "estimatedSexParticipants2026": {
+      "boys": 878.3462832950285,
+      "girls": 900.8879135742814
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 292.78209443167617,
+      "girls": 300.2959711914271
+    },
+    "boysShareProxy": 0.49366535605067713,
+    "backtest2025": {
+      "district": "油尖旺",
+      "code": "E",
+      "actual": 1761,
+      "estimated": 1744.9084429803518,
+      "error": -16.091557019648235,
+      "absolutePercentError": 0.9137738228079634
+    },
+    "variants": {
+      "main": {
+        "shared": 206,
+        "boysExclusive": 160,
+        "girlsExclusive": 86,
+        "modelBoysSupply": 261.6950633464395,
+        "modelGirlsSupply": 190.3049366535605,
+        "breakEvenResidualShareBoys": 0.8938219526519195,
+        "breakEvenResidualShareGirls": 0.6337245747870804,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 73.19552360791904,
+            "girlsDemand": 75.07399279785677,
+            "boysPer100": 27.969776224254062,
+            "girlsPer100": 39.44931440981207
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 146.39104721583809,
+            "girlsDemand": 150.14798559571355,
+            "boysPer100": 55.939552448508124,
+            "girlsPer100": 78.89862881962414
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 219.58657082375714,
+            "girlsDemand": 225.22197839357034,
+            "boysPer100": 83.9093286727622,
+            "girlsPer100": 118.34794322943623
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 292.78209443167617,
+            "girlsDemand": 300.2959711914271,
+            "boysPer100": 111.87910489701625,
+            "girlsPer100": 157.79725763924827
+          }
+        ]
+      },
+      "common": {
+        "shared": 134,
+        "boysExclusive": 160,
+        "girlsExclusive": 86,
+        "modelBoysSupply": 226.15115771079076,
+        "modelGirlsSupply": 153.84884228920924,
+        "breakEvenResidualShareBoys": 0.7724214083165716,
+        "breakEvenResidualShareGirls": 0.5123240304517324,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 73.19552360791904,
+            "girlsDemand": 75.07399279785677,
+            "boysPer100": 32.36575233522518,
+            "girlsPer100": 48.797242592655095
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 146.39104721583809,
+            "girlsDemand": 150.14798559571355,
+            "boysPer100": 64.73150467045036,
+            "girlsPer100": 97.59448518531019
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 219.58657082375714,
+            "girlsDemand": 225.22197839357034,
+            "boysPer100": 97.09725700567556,
+            "girlsPer100": 146.3917277779653
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 292.78209443167617,
+            "girlsDemand": 300.2959711914271,
+            "boysPer100": 129.46300934090073,
+            "girlsPer100": 195.18897037062038
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.ktgps-smr.edu.hk/sites/default/files/download/2426_%E6%B2%B9%E5%B0%96%E6%97%BA%E5%8D%80.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "深水埗升中校网",
+    "batch": "net40-kl2-20261114",
+    "district": "深水埗",
+    "code": "F",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 1915,
+    "censusP6Girls": 1662,
+    "censusP6Total": 3577,
+    "censusPriorP6Total": 3481,
+    "p6ChangePercent": 2.7578282102844076,
+    "observedNetParticipants2023": 3153,
+    "observedNetParticipants2024": 3146,
+    "observedNetParticipants2025": 2997,
+    "historicalLinkFactor": 0.8609594943981614,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 3078.9159584328913,
+    "estimatedSexParticipants2026": {
+      "boys": 1648.3433213304406,
+      "girls": 1430.5726371024507
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 549.4477737768135,
+      "girls": 476.8575457008169
+    },
+    "boysShareProxy": 0.5353648308638523,
+    "backtest2025": {
+      "district": "深水埗",
+      "code": "F",
+      "actual": 2997,
+      "estimated": 3024.627934012587,
+      "error": 27.627934012587048,
+      "absolutePercentError": 0.9218529867396412
+    },
+    "variants": {
+      "main": {
+        "shared": 139,
+        "boysExclusive": 63,
+        "girlsExclusive": 239,
+        "modelBoysSupply": 137.41571149007547,
+        "modelGirlsSupply": 303.58428850992453,
+        "breakEvenResidualShareBoys": 0.2500978583378407,
+        "breakEvenResidualShareGirls": 0.636635178046223,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 137.36194344420338,
+            "girlsDemand": 119.21438642520422,
+            "boysPer100": 99.96087198087537,
+            "girlsPer100": 39.268957893157555
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 274.72388688840675,
+            "girlsDemand": 238.42877285040845,
+            "boysPer100": 199.92174396175074,
+            "girlsPer100": 78.53791578631511
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 412.08583033261016,
+            "girlsDemand": 357.6431592756127,
+            "boysPer100": 299.8826159426261,
+            "girlsPer100": 117.80687367947267
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 549.4477737768135,
+            "girlsDemand": 476.8575457008169,
+            "boysPer100": 399.84348792350147,
+            "girlsPer100": 157.07583157263022
+          }
+        ]
+      },
+      "common": {
+        "shared": 76,
+        "boysExclusive": 63,
+        "girlsExclusive": 168,
+        "modelBoysSupply": 103.68772714565279,
+        "modelGirlsSupply": 203.3122728543472,
+        "breakEvenResidualShareBoys": 0.18871261672955816,
+        "breakEvenResidualShareGirls": 0.4263585103923394,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 137.36194344420338,
+            "girlsDemand": 119.21438642520422,
+            "boysPer100": 132.47656904586938,
+            "girlsPer100": 58.63609941078634
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 274.72388688840675,
+            "girlsDemand": 238.42877285040845,
+            "boysPer100": 264.95313809173877,
+            "girlsPer100": 117.27219882157269
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 412.08583033261016,
+            "girlsDemand": 357.6431592756127,
+            "boysPer100": 397.4297071376082,
+            "girlsPer100": 175.90829823235904
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 549.4477737768135,
+            "girlsDemand": 476.8575457008169,
+            "boysPer100": 529.9062761834775,
+            "girlsPer100": 234.54439764314537
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.ktgps-smr.edu.hk/sites/default/files/download/2426_%E6%B7%B1%E6%B0%B4%E5%9F%97%E5%8D%80.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "荃湾升中网NT2",
+    "batch": "net62-nt2-20261114",
+    "district": "荃灣",
+    "code": "K",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 1038,
+    "censusP6Girls": 961,
+    "censusP6Total": 1999,
+    "censusPriorP6Total": 2014,
+    "p6ChangePercent": -0.7447864945382299,
+    "observedNetParticipants2023": 1743,
+    "observedNetParticipants2024": 1695,
+    "observedNetParticipants2025": 1650,
+    "historicalLinkFactor": 0.8192651439920556,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 1637.3195481257685,
+    "estimatedSexParticipants2026": {
+      "boys": 850.1939424484981,
+      "girls": 787.1256056772704
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 283.397980816166,
+      "girls": 262.3752018924235
+    },
+    "boysShareProxy": 0.5192596298149075,
+    "backtest2025": {
+      "district": "荃灣",
+      "code": "K",
+      "actual": 1650,
+      "estimated": 1633.590064859727,
+      "error": -16.40993514027309,
+      "absolutePercentError": 0.9945415236529147
+    },
+    "variants": {
+      "main": {
+        "shared": 364,
+        "boysExclusive": 0,
+        "girlsExclusive": 0,
+        "modelBoysSupply": 189.01050525262633,
+        "modelGirlsSupply": 174.98949474737367,
+        "breakEvenResidualShareBoys": 0.6669437259513619,
+        "breakEvenResidualShareGirls": 0.6669437259513616,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 70.8494952040415,
+            "girlsDemand": 65.59380047310587,
+            "boysPer100": 37.4844218893262,
+            "girlsPer100": 37.48442188932621
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 141.698990408083,
+            "girlsDemand": 131.18760094621175,
+            "boysPer100": 74.9688437786524,
+            "girlsPer100": 74.96884377865241
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 212.54848561212452,
+            "girlsDemand": 196.7814014193176,
+            "boysPer100": 112.4532656679786,
+            "girlsPer100": 112.45326566797861
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 283.397980816166,
+            "girlsDemand": 262.3752018924235,
+            "boysPer100": 149.9376875573048,
+            "girlsPer100": 149.93768755730483
+          }
+        ]
+      },
+      "common": {
+        "shared": 215,
+        "boysExclusive": 0,
+        "girlsExclusive": 0,
+        "modelBoysSupply": 111.64082041020511,
+        "modelGirlsSupply": 103.35917958979489,
+        "breakEvenResidualShareBoys": 0.3939365414273154,
+        "breakEvenResidualShareGirls": 0.39393654142731527,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 70.8494952040415,
+            "girlsDemand": 65.59380047310587,
+            "boysPer100": 63.461997989370865,
+            "girlsPer100": 63.46199798937088
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 141.698990408083,
+            "girlsDemand": 131.18760094621175,
+            "boysPer100": 126.92399597874173,
+            "girlsPer100": 126.92399597874176
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 212.54848561212452,
+            "girlsDemand": 196.7814014193176,
+            "boysPer100": 190.3859939681126,
+            "girlsPer100": 190.38599396811261
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 283.397980816166,
+            "girlsDemand": 262.3752018924235,
+            "boysPer100": 253.84799195748346,
+            "girlsPer100": 253.84799195748352
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.ktgps-smr.edu.hk/sites/default/files/download/2426_%E8%8D%83%E7%81%A3%E5%8D%80.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "葵青升中网NT1",
+    "batch": "net64-nt1-20261115",
+    "district": "葵青",
+    "code": "S",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 1539,
+    "censusP6Girls": 1370,
+    "censusP6Total": 2909,
+    "censusPriorP6Total": 2846,
+    "p6ChangePercent": 2.213633169360496,
+    "observedNetParticipants2023": 3401,
+    "observedNetParticipants2024": 3521,
+    "observedNetParticipants2025": 3280,
+    "historicalLinkFactor": 1.1524947294448349,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 3351.8057683704196,
+    "estimatedSexParticipants2026": {
+      "boys": 1773.2654099422743,
+      "girls": 1578.5403584281453
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 591.0884699807581,
+      "girls": 526.1801194760484
+    },
+    "boysShareProxy": 0.5290477827432107,
+    "backtest2025": {
+      "district": "葵青",
+      "code": "S",
+      "actual": 3280,
+      "estimated": 3199.9484502765677,
+      "error": -80.05154972343234,
+      "absolutePercentError": 2.440596028153425
+    },
+    "variants": {
+      "main": {
+        "shared": 464,
+        "boysExclusive": 0,
+        "girlsExclusive": 137,
+        "modelBoysSupply": 245.47817119284977,
+        "modelGirlsSupply": 355.5218288071502,
+        "breakEvenResidualShareBoys": 0.4152985274790437,
+        "breakEvenResidualShareGirls": 0.6756656430903667,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 147.77211749518952,
+            "girlsDemand": 131.5450298690121,
+            "boysPer100": 60.197661069871046,
+            "girlsPer100": 37.000549392529024
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 295.54423499037904,
+            "girlsDemand": 263.0900597380242,
+            "boysPer100": 120.39532213974209,
+            "girlsPer100": 74.00109878505805
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 443.3163524855686,
+            "girlsDemand": 394.6350896070363,
+            "boysPer100": 180.59298320961315,
+            "girlsPer100": 111.00164817758709
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 591.0884699807581,
+            "girlsDemand": 526.1801194760484,
+            "boysPer100": 240.79064427948418,
+            "girlsPer100": 148.0021975701161
+          }
+        ]
+      },
+      "common": {
+        "shared": 342,
+        "boysExclusive": 0,
+        "girlsExclusive": 137,
+        "modelBoysSupply": 180.93434169817806,
+        "modelGirlsSupply": 298.06565830182194,
+        "breakEvenResidualShareBoys": 0.3061036560298124,
+        "breakEvenResidualShareGirls": 0.5664707716411354,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 147.77211749518952,
+            "girlsDemand": 131.5450298690121,
+            "boysPer100": 81.67168051584844,
+            "girlsPer100": 44.13290367581001
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 295.54423499037904,
+            "girlsDemand": 263.0900597380242,
+            "boysPer100": 163.34336103169687,
+            "girlsPer100": 88.26580735162003
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 443.3163524855686,
+            "girlsDemand": 394.6350896070363,
+            "boysPer100": 245.0150415475453,
+            "girlsPer100": 132.39871102743007
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 591.0884699807581,
+            "girlsDemand": 526.1801194760484,
+            "boysPer100": 326.68672206339374,
+            "girlsPer100": 176.53161470324005
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.ktgps-smr.edu.hk/sites/default/files/download/2426_%E8%91%B5%E9%9D%92%E5%8D%80.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "大埔升中网NT6",
+    "batch": "net84-nt6-20261114",
+    "district": "大埔",
+    "code": "P",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 1240,
+    "censusP6Girls": 1050,
+    "censusP6Total": 2290,
+    "censusPriorP6Total": 2254,
+    "p6ChangePercent": 1.5971606033717833,
+    "observedNetParticipants2023": 2103,
+    "observedNetParticipants2024": 2264,
+    "observedNetParticipants2025": 1989,
+    "historicalLinkFactor": 0.8824312333629104,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 2020.284484732679,
+    "estimatedSexParticipants2026": {
+      "boys": 1093.9531707722804,
+      "girls": 926.3313139603986
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 364.65105692409344,
+      "girls": 308.7771046534662
+    },
+    "boysShareProxy": 0.5414847161572053,
+    "backtest2025": {
+      "district": "大埔",
+      "code": "P",
+      "actual": 1989,
+      "estimated": 1971.8657695758468,
+      "error": -17.134230424153202,
+      "absolutePercentError": 0.8614494934214783
+    },
+    "variants": {
+      "main": {
+        "shared": 360,
+        "boysExclusive": 0,
+        "girlsExclusive": 0,
+        "modelBoysSupply": 194.9344978165939,
+        "modelGirlsSupply": 165.0655021834061,
+        "breakEvenResidualShareBoys": 0.5345781785493958,
+        "breakEvenResidualShareGirls": 0.5345781785493957,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 91.16276423102336,
+            "girlsDemand": 77.19427616336655,
+            "boysPer100": 46.76584455399719,
+            "girlsPer100": 46.765844553997205
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 182.32552846204672,
+            "girlsDemand": 154.3885523267331,
+            "boysPer100": 93.53168910799438,
+            "girlsPer100": 93.53168910799441
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 273.4882926930701,
+            "girlsDemand": 231.58282849009964,
+            "boysPer100": 140.2975336619916,
+            "girlsPer100": 140.2975336619916
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 364.65105692409344,
+            "girlsDemand": 308.7771046534662,
+            "boysPer100": 187.06337821598876,
+            "girlsPer100": 187.06337821598882
+          }
+        ]
+      },
+      "common": {
+        "shared": 216,
+        "boysExclusive": 0,
+        "girlsExclusive": 0,
+        "modelBoysSupply": 116.96069868995635,
+        "modelGirlsSupply": 99.03930131004365,
+        "breakEvenResidualShareBoys": 0.3207469071296375,
+        "breakEvenResidualShareGirls": 0.3207469071296374,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 91.16276423102336,
+            "girlsDemand": 77.19427616336655,
+            "boysPer100": 77.94307425666199,
+            "girlsPer100": 77.943074256662
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 182.32552846204672,
+            "girlsDemand": 154.3885523267331,
+            "boysPer100": 155.88614851332397,
+            "girlsPer100": 155.886148513324
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 273.4882926930701,
+            "girlsDemand": 231.58282849009964,
+            "boysPer100": 233.829222769986,
+            "girlsPer100": 233.829222769986
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 364.65105692409344,
+            "girlsDemand": 308.7771046534662,
+            "boysPer100": 311.77229702664795,
+            "girlsPer100": 311.772297026648
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.ktgps-smr.edu.hk/sites/default/files/download/2426_%E5%A4%A7%E5%9F%94%E5%8D%80.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "沙田升中校网",
+    "batch": "net91-nt7-20261114",
+    "district": "沙田",
+    "code": "R",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 2545,
+    "censusP6Girls": 2484,
+    "censusP6Total": 5029,
+    "censusPriorP6Total": 5064,
+    "p6ChangePercent": -0.6911532385466046,
+    "observedNetParticipants2023": 4981,
+    "observedNetParticipants2024": 5018,
+    "observedNetParticipants2025": 4674,
+    "historicalLinkFactor": 0.9229857819905213,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 4640.585957306247,
+    "estimatedSexParticipants2026": {
+      "boys": 2348.4373158370254,
+      "girls": 2292.1486414692217
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 782.8124386123418,
+      "girls": 764.0495471564072
+    },
+    "boysShareProxy": 0.5060648240206801,
+    "backtest2025": {
+      "district": "沙田",
+      "code": "R",
+      "actual": 4674,
+      "estimated": 4692.8277722454695,
+      "error": 18.827772245469532,
+      "absolutePercentError": 0.402819260707521
+    },
+    "variants": {
+      "main": {
+        "shared": 902,
+        "boysExclusive": 0,
+        "girlsExclusive": 12,
+        "modelBoysSupply": 456.4704712666534,
+        "modelGirlsSupply": 457.5295287333466,
+        "breakEvenResidualShareBoys": 0.583116017006346,
+        "breakEvenResidualShareGirls": 0.5988218047326275,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 195.70310965308545,
+            "girlsDemand": 191.0123867891018,
+            "boysPer100": 42.87311490489881,
+            "girlsPer100": 41.74864676339306
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 391.4062193061709,
+            "girlsDemand": 382.0247735782036,
+            "boysPer100": 85.74622980979763,
+            "girlsPer100": 83.49729352678612
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 587.1093289592563,
+            "girlsDemand": 573.0371603673054,
+            "boysPer100": 128.61934471469644,
+            "girlsPer100": 125.24594029017916
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 782.8124386123418,
+            "girlsDemand": 764.0495471564072,
+            "boysPer100": 171.49245961959525,
+            "girlsPer100": 166.99458705357225
+          }
+        ]
+      },
+      "common": {
+        "shared": 844,
+        "boysExclusive": 0,
+        "girlsExclusive": 0,
+        "modelBoysSupply": 427.11871147345397,
+        "modelGirlsSupply": 416.88128852654603,
+        "breakEvenResidualShareBoys": 0.5456207520547184,
+        "breakEvenResidualShareGirls": 0.5456207520547185,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 195.70310965308545,
+            "girlsDemand": 191.0123867891018,
+            "boysPer100": 45.819371616372905,
+            "girlsPer100": 45.81937161637289
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 391.4062193061709,
+            "girlsDemand": 382.0247735782036,
+            "boysPer100": 91.63874323274581,
+            "girlsPer100": 91.63874323274578
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 587.1093289592563,
+            "girlsDemand": 573.0371603673054,
+            "boysPer100": 137.45811484911872,
+            "girlsPer100": 137.4581148491187
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 782.8124386123418,
+            "girlsDemand": 764.0495471564072,
+            "boysPer100": 183.27748646549162,
+            "girlsPer100": 183.27748646549156
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.ktgps-smr.edu.hk/sites/default/files/download/2426_%E6%B2%99%E7%94%B0%E5%8D%80.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  },
+  {
+    "article": "九龙城升中校网样板",
+    "batch": "secondary-additions-20261113",
+    "district": "九龍城",
+    "code": "G",
+    "primaryYear": "2025/26",
+    "secondaryIntake": "2026/27",
+    "censusP6Boys": 2637,
+    "censusP6Girls": 2495,
+    "censusP6Total": 5132,
+    "censusPriorP6Total": 5004,
+    "p6ChangePercent": 2.5579536370903266,
+    "observedNetParticipants2023": 4574,
+    "observedNetParticipants2024": 4838,
+    "observedNetParticipants2025": 4719,
+    "historicalLinkFactor": 0.9430455635491607,
+    "nationalCalibrationFactor": 0.999760962276683,
+    "estimatedNetParticipants2026": 4838.552958914504,
+    "estimatedSexParticipants2026": {
+      "boys": 2486.2167094032634,
+      "girls": 2352.336249511241
+    },
+    "band1ShareAssumed": 0.3333333333333333,
+    "estimatedPotentialTargetBySex": {
+      "boys": 828.7389031344211,
+      "girls": 784.1120831704137
+    },
+    "boysShareProxy": 0.5138347622759158,
+    "backtest2025": {
+      "district": "九龍城",
+      "code": "G",
+      "actual": 4719,
+      "estimated": 4733.618136972203,
+      "error": 14.618136972202592,
+      "absolutePercentError": 0.3097719214283236
+    },
+    "variants": {
+      "main": {
+        "shared": 527,
+        "boysExclusive": 17,
+        "girlsExclusive": 129,
+        "modelBoysSupply": 287.79091971940767,
+        "modelGirlsSupply": 385.20908028059233,
+        "breakEvenResidualShareBoys": 0.34726367813908227,
+        "breakEvenResidualShareGirls": 0.4912678793611621,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 207.18472578360527,
+            "girlsDemand": 196.02802079260343,
+            "boysPer100": 71.99140472729565,
+            "girlsPer100": 50.8887331134078
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 414.36945156721055,
+            "girlsDemand": 392.05604158520686,
+            "boysPer100": 143.9828094545913,
+            "girlsPer100": 101.7774662268156
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 621.5541773508158,
+            "girlsDemand": 588.0840623778103,
+            "boysPer100": 215.97421418188696,
+            "girlsPer100": 152.6661993402234
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 828.7389031344211,
+            "girlsDemand": 784.1120831704137,
+            "boysPer100": 287.9656189091826,
+            "girlsPer100": 203.5549324536312
+          }
+        ]
+      },
+      "common": {
+        "shared": 374,
+        "boysExclusive": 17,
+        "girlsExclusive": 78,
+        "modelBoysSupply": 209.17420109119251,
+        "modelGirlsSupply": 259.8257989088075,
+        "breakEvenResidualShareBoys": 0.252400605667313,
+        "breakEvenResidualShareGirls": 0.33136308505570966,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 207.18472578360527,
+            "girlsDemand": 196.02802079260343,
+            "boysPer100": 99.04889068670572,
+            "girlsPer100": 75.4459417101242
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 414.36945156721055,
+            "girlsDemand": 392.05604158520686,
+            "boysPer100": 198.09778137341144,
+            "girlsPer100": 150.8918834202484
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 621.5541773508158,
+            "girlsDemand": 588.0840623778103,
+            "boysPer100": 297.14667206011717,
+            "girlsPer100": 226.3378251303726
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 828.7389031344211,
+            "girlsDemand": 784.1120831704137,
+            "boysPer100": 396.1955627468229,
+            "girlsPer100": 301.7837668404968
+          }
+        ]
+      },
+      "alternative": {
+        "shared": 374,
+        "boysExclusive": 90,
+        "girlsExclusive": 78,
+        "modelBoysSupply": 282.1742010911925,
+        "modelGirlsSupply": 259.8257989088075,
+        "breakEvenResidualShareBoys": 0.3404862496788376,
+        "breakEvenResidualShareGirls": 0.33136308505570966,
+        "scenarios": [
+          {
+            "residualTargetShareAssumed": 0.25,
+            "boysDemand": 207.18472578360527,
+            "girlsDemand": 196.02802079260343,
+            "boysPer100": 73.42440413843777,
+            "girlsPer100": 75.4459417101242
+          },
+          {
+            "residualTargetShareAssumed": 0.5,
+            "boysDemand": 414.36945156721055,
+            "girlsDemand": 392.05604158520686,
+            "boysPer100": 146.84880827687553,
+            "girlsPer100": 150.8918834202484
+          },
+          {
+            "residualTargetShareAssumed": 0.75,
+            "boysDemand": 621.5541773508158,
+            "girlsDemand": 588.0840623778103,
+            "boysPer100": 220.2732124153133,
+            "girlsPer100": 226.3378251303726
+          },
+          {
+            "residualTargetShareAssumed": 1.0,
+            "boysDemand": 828.7389031344211,
+            "girlsDemand": 784.1120831704137,
+            "boysPer100": 293.69761655375106,
+            "girlsPer100": 301.7837668404968
+          }
+        ]
+      }
+    },
+    "sourceSupply": "https://www.skhykh.edu.hk/CustomPage/12/school_list_KLNC_2026.pdf",
+    "commonLabel": "两站共同参考样本",
+    "assumptions": [
+      "2025校网参加人数／2024校址区小六数的衔接系数延续一年",
+      "2026校网合计按官方全港48545校准；分网数仍为估计",
+      "参加者男女结构近似该区普通小学小六男女结构",
+      "各性别潜在目标比例各取1/3；官方仅规定整体均分三组",
+      "共享位按模型男女需求占比分配；非官方配额",
+      "r为潜在目标中仍竞争此组乙部非保留位的净比例，未取得观测值；25/50/75/100仅敏感性网格，不是预测区间"
+    ]
+  }
+]

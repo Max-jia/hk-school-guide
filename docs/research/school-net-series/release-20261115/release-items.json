@@ -1,0 +1,209 @@
+[
+  {
+    "slug": "primary-net-11-analysis",
+    "title": "11校网小学：女孩看直属路径，男孩怎样选学校",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net11-hk1-20261113/11校网小学.md",
+    "sourceSHA256": "3ccd386db142fc7d307e85a627c0e9e317396553355b15becb1dd0c4474d8e03",
+    "bodySHA256": "82aaab2c71719cd9efdc3e8c18448069d466969a0369cd3742e5d70afed5b6c0",
+    "tool": "/school-net-reference/primary-2026.html?net=11"
+  },
+  {
+    "slug": "primary-net-12-analysis",
+    "title": "12校网小学：三所女小、圣若瑟与两所轩尼诗怎么选",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net12-hk2-20261113/12校网小学.md",
+    "sourceSHA256": "2fe3eefb19dfcae1669a2705e0afc6ee9ddab73718c91bb616b9dd3532877f84",
+    "bodySHA256": "796bf09d2b311b339e5f03734997d02d0caf49347990d0ca1a644f39ce631db6",
+    "tool": "/school-net-reference/primary-2026.html?net=12"
+  },
+  {
+    "slug": "primary-net-31-analysis",
+    "title": "31校网小学：两所油天、圣玛利和德信，升中安排有什么不同",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net31-kl1-20261113/31校网小学.md",
+    "sourceSHA256": "9f39f0e4c12cc6aaf46d91614d74b73fcca1fbe91f9e0eb7d0a424a16bcd688c",
+    "bodySHA256": "0be1024ead024711c1dab03ab3caec7a651172d136a126e659ff785d4c03453a",
+    "tool": "/school-net-reference/primary-2026.html?net=31"
+  },
+  {
+    "slug": "primary-net-32-analysis",
+    "title": "32校网小学：两所大天、协和怎么选，基全合并进展怎样看",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net32-20261114/32校网小学.md",
+    "sourceSHA256": "e14333c1a7b439709a080b931d74a1da2b5048a837db4ac89794d9e7d85ccdb0",
+    "bodySHA256": "6faa31c8ec52a4e38bbfa4dfebbe434db15a92c69038d8a64b298e78e671321c",
+    "tool": "/school-net-reference/primary-2026.html?net=32"
+  },
+  {
+    "slug": "primary-net-34-analysis",
+    "title": "34校网小学：协恩、圣罗撒与启德学校怎么选",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net34-20261114/34校网小学.md",
+    "sourceSHA256": "be48c0107fd95d6599a324d1ee7d5b9b3887612ee30fbf7943938cb3c99c9659",
+    "bodySHA256": "6fe14332fee5231b46958cb77af5a17ee9d710f3d27a1de06047ec0ad90df29e",
+    "tool": "/school-net-reference/primary-2026.html?net=34"
+  },
+  {
+    "slug": "primary-net-35-analysis",
+    "title": "35校网小学：天神、红马、两所奉基和黄埔学校怎么选",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net35-20261114/35校网小学.md",
+    "sourceSHA256": "7a5d736a47c833962362d63f86f5abba4d8c139a611982fbbfc5d1b86eb0ae99",
+    "bodySHA256": "593254ba983a806faaf9525396d527d895461c4d35595871d997b398f4b9b19e",
+    "tool": "/school-net-reference/primary-2026.html?net=35"
+  },
+  {
+    "slug": "primary-net-40-analysis",
+    "title": "40校网小学：20所男女校，联系中学与课堂安排怎么分",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net40-kl2-20261114/40校网小学.md",
+    "sourceSHA256": "b114267931fb2d39445973a8d9f001f3b36bafae35dce0eda9595d0e7f2feeaa",
+    "bodySHA256": "27ff5115754f7adad74d8335b103af9c98f3891d814910c483995793e6d2c311",
+    "tool": "/school-net-reference/primary-2026.html?net=40"
+  },
+  {
+    "slug": "primary-net-41-analysis",
+    "title": "41校网小学：喇沙、玛利诺和圣家怎么选，直私何时申请",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/secondary-additions-20261113/41校网样板.md",
+    "sourceSHA256": "8ca0caf453af5b1381bcd734f5a674bac7de8070484187b4db813753d176eda7",
+    "bodySHA256": "b9926dcecb8c980140baf0facbc2c4a5bb8817f87a55a6b5ae6c456e7895d7cc",
+    "tool": "/school-net-reference/primary-2026.html?net=41"
+  },
+  {
+    "slug": "primary-net-62-analysis",
+    "title": "荃湾62校网小学：两所官小、浸联与马湾学校怎么选",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net62-nt2-20261114/62校网小学.md",
+    "sourceSHA256": "23fb86f828f4464ad0b78f8733f40fc7a390ec05530fb34cb6260546f17fcdd9",
+    "bodySHA256": "4177a54a959700a7a480e9d4ccd42e407c49d5790e0fce07ac0f8941985cfdc8",
+    "tool": "/school-net-reference/primary-2026.html?net=62"
+  },
+  {
+    "slug": "primary-net-64-analysis",
+    "title": "64校网小学：梨木树、石荫和石篱，升中网怎样分",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net64-nt1-20261115/64校网小学.md",
+    "sourceSHA256": "ffc243d58d448437b13678a72726e4c9f613c4b66984190daf68ef79e5b323b6",
+    "bodySHA256": "bf000611c24012e3beefdf30d51c26e91ef932c034a52013e03d509039bf2ab6",
+    "tool": "/school-net-reference/primary-2026.html?net=64"
+  },
+  {
+    "slug": "primary-net-84-analysis",
+    "title": "大埔84校网小学：两所旧墟、田家炳与孙方中怎么选",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net84-nt6-20261114/84校网小学.md",
+    "sourceSHA256": "173dc76bcbbfa7f556bb94a213115016f48d6b1f269ffa3eeeaa50458bb0ccbe",
+    "bodySHA256": "bcf8eba2f5f0a990b607342ab1c8e13ec6f30af3b2fa4416ddc3f1e9a92aaa11",
+    "tool": "/school-net-reference/primary-2026.html?net=84"
+  },
+  {
+    "slug": "primary-net-88-analysis",
+    "title": "大围88校网小学：圣心、陈元喜和沙官，课堂与升中联系怎么分",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net88-20261114/88校网小学.md",
+    "sourceSHA256": "cc7689920029b30032a6e70c043df60744862a6ebefb72dfea18a14a814bc86a",
+    "bodySHA256": "efb86b51262ccfb69f45a3f00223e4bdf70a9e2024a788ffdb31b1a6acd9c822",
+    "tool": "/school-net-reference/primary-2026.html?net=88"
+  },
+  {
+    "slug": "primary-net-89-analysis",
+    "title": "马鞍山89校网小学：主风、循道、雨川怎么选，泰伯资格怎样核",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net89-20261114/89校网小学.md",
+    "sourceSHA256": "a1ac8acfec81120e695ac70be285a1a789a4d112a5683cf2a63249f0f08ede9d",
+    "bodySHA256": "64a8504b82a87250ffc69e96970f88d08b140ab9805cce006da3036ed9b50169",
+    "tool": "/school-net-reference/primary-2026.html?net=89"
+  },
+  {
+    "slug": "primary-net-91-analysis",
+    "title": "沙田91校网小学：两所吕明才、培基与其他学校怎么选",
+    "stage": "primary",
+    "source": "docs/research/school-net-series/net91-nt7-20261114/91校网小学.md",
+    "sourceSHA256": "4378520e108a2238b035e7f88c214bf5547de9be47772b20a44b4547e3318c24",
+    "bodySHA256": "f2cc16f4ce64bf9333356b97bde0984c982e2dcd601cf4bce5a65a9d6840555e",
+    "tool": "/school-net-reference/primary-2026.html?net=91"
+  },
+  {
+    "slug": "central-western-secondary-net-analysis",
+    "title": "中西区升中：英皇、英华女之外，还有哪些合适选择",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net11-hk1-20261113/中西区升中校网.md",
+    "sourceSHA256": "7f61c6a16160a712b43ab27a52b3a14e1c43431c8d5fbbebc59de628b06cc24c",
+    "bodySHA256": "76da23952fd9142685180e09741032082a2567cdf2ceb452f603d2acccf57760",
+    "tool": "/school-net-reference/central-western-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "wan-chai-secondary-net-analysis",
+    "title": "湾仔升中：女校学额怎样看，男孩除了皇仁还能选什么",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net12-hk2-20261113/湾仔升中校网.md",
+    "sourceSHA256": "03a70cba04cb7c1092ff7fe472d835dfa75759f32e4451d4ad8e7c32224289ba",
+    "bodySHA256": "f1f5448682893d57c5fa2e5149fcaf156176adce13505425afd77138c8f251d2",
+    "tool": "/school-net-reference/wan-chai-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "yau-tsim-mong-secondary-net-analysis",
+    "title": "油尖旺升中：九华、圣芳济、圣玛利之外，怎样扩大选择",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net31-kl1-20261113/油尖旺升中校网.md",
+    "sourceSHA256": "8ffbc24a5601cca909954336d45622373e1d6d3fe2581334bd13b0bf495c3721",
+    "bodySHA256": "6218826597eff662d0b8b58b69481d3afa19e83c7567bf2a0fe5074a055b995f",
+    "tool": "/school-net-reference/yau-tsim-mong-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "sham-shui-po-secondary-net-analysis",
+    "title": "深水埗升中：女孩多哪些选择，男孩怎样安排后备",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net40-kl2-20261114/深水埗升中校网.md",
+    "sourceSHA256": "ac3b0b833bb439cc2bfdaa0a37788535853c40f70c299560e8e2dbb8f77a0f39",
+    "bodySHA256": "225c2fd2f3269a91f9b69f887f5370ae6fb8b6038cb37528fd5d21de06cc70ac",
+    "tool": "/school-net-reference/sham-shui-po-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "kowloon-city-secondary-net-analysis",
+    "title": "九龙城升中：喇沙、玛利诺的外校位多少，直资怎样另报",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/secondary-additions-20261113/九龙城升中校网样板.md",
+    "sourceSHA256": "52c4f27e8b0baf997c695651a7145716a27ad75f81ab79327da67cd71f6cda5c",
+    "bodySHA256": "78e5165b563f65fd8be96f80d10eff0ff7979fa2dd47b4606f6dd7e47d7dc61b",
+    "tool": "/school-net-reference/kowloon-city-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "tsuen-wan-secondary-net-analysis",
+    "title": "荃湾升中NT2：五校364个共享位，男女怎样选学校",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net62-nt2-20261114/荃湾升中网NT2.md",
+    "sourceSHA256": "5d108f273a307b65d2e96d49928ffaea59322890b560f22ab59815a82d4928e3",
+    "bodySHA256": "ae7bc67a3336a8bb0a18fdd8b2c98181686436df068d032a17fe5e992af582f1",
+    "tool": "/school-net-reference/tsuen-wan-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "kwai-tsing-secondary-net-analysis",
+    "title": "葵青升中NT1：萧明、保禄六世与男女校怎样比较",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net64-nt1-20261115/葵青升中网NT1.md",
+    "sourceSHA256": "17eb206e72b69e485f8d6eb387511fa33626108f7df05dfb633cc7f7ea4d57ce",
+    "bodySHA256": "4222f8f3436fff33e6850336c5570af23db9ba4bfceec54f3c02d04b5543b415",
+    "tool": "/school-net-reference/kwai-tsing-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "tai-po-secondary-net-analysis",
+    "title": "大埔升中NT6：五校360个共享位，三育、罗定邦和德萃另怎么报",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net84-nt6-20261114/大埔升中网NT6.md",
+    "sourceSHA256": "84eeb85b452c45a3a874f4706c942b4019b12b62e7b878487966ff593a6eb71b",
+    "bodySHA256": "b83671e53a423563456bd4baed2326c55e1ae9ac8ccba623bc4305bd07b6f50c",
+    "tool": "/school-net-reference/tai-po-secondary-net-analysis.html#tool"
+  },
+  {
+    "slug": "sha-tin-secondary-net-analysis",
+    "title": "沙田升中：13校902个共享位，男女怎样选学校",
+    "stage": "secondary",
+    "source": "docs/research/school-net-series/net91-nt7-20261114/沙田升中校网.md",
+    "sourceSHA256": "00531daa3ff3668ee7424c4df1edcd06eebf36b744e547185f53d41a9e0eaf6b",
+    "bodySHA256": "04777d3a0a86936470df1fd732d62351a1947371e5253c27a8dc0d469b21a962",
+    "tool": "/school-net-reference/sha-tin-secondary-net-analysis.html#tool"
+  }
+]

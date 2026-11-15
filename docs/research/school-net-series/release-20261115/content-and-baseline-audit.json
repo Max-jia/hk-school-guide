@@ -1,0 +1,201 @@
+{
+  "articles": [
+    {
+      "slug": "primary-net-11-analysis",
+      "tables": 6,
+      "links": 75,
+      "sourceURLs": 57
+    },
+    {
+      "slug": "primary-net-12-analysis",
+      "tables": 6,
+      "links": 59,
+      "sourceURLs": 46
+    },
+    {
+      "slug": "primary-net-31-analysis",
+      "tables": 5,
+      "links": 64,
+      "sourceURLs": 52
+    },
+    {
+      "slug": "primary-net-32-analysis",
+      "tables": 7,
+      "links": 85,
+      "sourceURLs": 58
+    },
+    {
+      "slug": "primary-net-34-analysis",
+      "tables": 4,
+      "links": 59,
+      "sourceURLs": 43
+    },
+    {
+      "slug": "primary-net-35-analysis",
+      "tables": 4,
+      "links": 48,
+      "sourceURLs": 31
+    },
+    {
+      "slug": "primary-net-40-analysis",
+      "tables": 4,
+      "links": 75,
+      "sourceURLs": 53
+    },
+    {
+      "slug": "primary-net-41-analysis",
+      "tables": 9,
+      "links": 58,
+      "sourceURLs": 49
+    },
+    {
+      "slug": "primary-net-62-analysis",
+      "tables": 6,
+      "links": 76,
+      "sourceURLs": 54
+    },
+    {
+      "slug": "primary-net-64-analysis",
+      "tables": 6,
+      "links": 61,
+      "sourceURLs": 45
+    },
+    {
+      "slug": "primary-net-84-analysis",
+      "tables": 6,
+      "links": 73,
+      "sourceURLs": 48
+    },
+    {
+      "slug": "primary-net-88-analysis",
+      "tables": 6,
+      "links": 73,
+      "sourceURLs": 47
+    },
+    {
+      "slug": "primary-net-89-analysis",
+      "tables": 5,
+      "links": 70,
+      "sourceURLs": 49
+    },
+    {
+      "slug": "primary-net-91-analysis",
+      "tables": 5,
+      "links": 69,
+      "sourceURLs": 50
+    },
+    {
+      "slug": "central-western-secondary-net-analysis",
+      "tables": 8,
+      "links": 43,
+      "sourceURLs": 27
+    },
+    {
+      "slug": "wan-chai-secondary-net-analysis",
+      "tables": 9,
+      "links": 64,
+      "sourceURLs": 41
+    },
+    {
+      "slug": "yau-tsim-mong-secondary-net-analysis",
+      "tables": 8,
+      "links": 44,
+      "sourceURLs": 29
+    },
+    {
+      "slug": "sham-shui-po-secondary-net-analysis",
+      "tables": 8,
+      "links": 43,
+      "sourceURLs": 26
+    },
+    {
+      "slug": "kowloon-city-secondary-net-analysis",
+      "tables": 9,
+      "links": 43,
+      "sourceURLs": 28
+    },
+    {
+      "slug": "tsuen-wan-secondary-net-analysis",
+      "tables": 7,
+      "links": 54,
+      "sourceURLs": 36
+    },
+    {
+      "slug": "kwai-tsing-secondary-net-analysis",
+      "tables": 7,
+      "links": 52,
+      "sourceURLs": 35
+    },
+    {
+      "slug": "tai-po-secondary-net-analysis",
+      "tables": 7,
+      "links": 52,
+      "sourceURLs": 36
+    },
+    {
+      "slug": "sha-tin-secondary-net-analysis",
+      "tables": 8,
+      "links": 60,
+      "sourceURLs": 42
+    }
+  ],
+  "errors": [],
+  "baselineFiles": 2195,
+  "changedBaseline": [
+    "public/covers/blog_central-western-secondary-net-analysis.svg",
+    "public/covers/blog_kowloon-city-secondary-net-analysis.svg",
+    "public/covers/blog_primary-net-11-analysis.svg",
+    "public/covers/blog_primary-net-12-analysis.svg",
+    "public/covers/blog_primary-net-31-analysis.svg",
+    "public/covers/blog_primary-net-32-analysis.svg",
+    "public/covers/blog_primary-net-34-analysis.svg",
+    "public/covers/blog_primary-net-35-analysis.svg",
+    "public/covers/blog_primary-net-40-analysis.svg",
+    "public/covers/blog_primary-net-41-analysis.svg",
+    "public/covers/blog_primary-net-89-analysis.svg",
+    "public/covers/blog_primary-net-91-analysis.svg",
+    "public/covers/blog_sha-tin-secondary-net-analysis.svg",
+    "public/covers/blog_sham-shui-po-secondary-net-analysis.svg",
+    "public/covers/blog_wan-chai-secondary-net-analysis.svg",
+    "public/covers/blog_yau-tsim-mong-secondary-net-analysis.svg",
+    "public/covers/og/central-western-secondary-net-analysis.png",
+    "public/covers/og/kowloon-city-secondary-net-analysis.png",
+    "public/covers/og/primary-net-11-analysis.png",
+    "public/covers/og/primary-net-12-analysis.png",
+    "public/covers/og/primary-net-31-analysis.png",
+    "public/covers/og/primary-net-32-analysis.png",
+    "public/covers/og/primary-net-34-analysis.png",
+    "public/covers/og/primary-net-35-analysis.png",
+    "public/covers/og/primary-net-40-analysis.png",
+    "public/covers/og/primary-net-41-analysis.png",
+    "public/covers/og/primary-net-89-analysis.png",
+    "public/covers/og/primary-net-91-analysis.png",
+    "public/covers/og/sha-tin-secondary-net-analysis.png",
+    "public/covers/og/sham-shui-po-secondary-net-analysis.png",
+    "public/covers/og/wan-chai-secondary-net-analysis.png",
+    "public/covers/og/yau-tsim-mong-secondary-net-analysis.png",
+    "src/app/(tc)/blog/[slug]/page.tsx",
+    "src/content/blog-meta.json",
+    "src/content/blog/central-western-secondary-net-analysis.json",
+    "src/content/blog/kowloon-city-secondary-net-analysis.json",
+    "src/content/blog/primary-net-11-analysis.json",
+    "src/content/blog/primary-net-12-analysis.json",
+    "src/content/blog/primary-net-31-analysis.json",
+    "src/content/blog/primary-net-32-analysis.json",
+    "src/content/blog/primary-net-34-analysis.json",
+    "src/content/blog/primary-net-35-analysis.json",
+    "src/content/blog/primary-net-40-analysis.json",
+    "src/content/blog/primary-net-41-analysis.json",
+    "src/content/blog/primary-net-89-analysis.json",
+    "src/content/blog/primary-net-91-analysis.json",
+    "src/content/blog/sha-tin-secondary-net-analysis.json",
+    "src/content/blog/sham-shui-po-secondary-net-analysis.json",
+    "src/content/blog/wan-chai-secondary-net-analysis.json",
+    "src/content/blog/yau-tsim-mong-secondary-net-analysis.json",
+    "src/content/school-net-scenarios.json",
+    "src/lib/blog-clusters.ts",
+    "src/lib/blog-related-links.ts",
+    "src/lib/blog-taxonomy.ts"
+  ],
+  "tableCount": 150
+}

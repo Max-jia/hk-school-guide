@@ -1,0 +1,37 @@
+[
+  {
+    "source": "docs/research/school-net-series/primary-ca2026-20261115/sources/official-2026-booklet.pdf",
+    "url": "/school-net-reference/sources/fc34cdef64c937cd.pdf",
+    "sha256": "fc34cdef64c937cdc97df5d9a235ef164dbe64e07eb7b4d75822fbe0bf8a3d93"
+  },
+  {
+    "source": "docs/research/school-net-series/population-model-20261115/官方人数与网别对照.json",
+    "url": "/school-net-reference/sources/aa5ddb12987adfcb.json",
+    "sha256": "aa5ddb12987adfcb28604aeb3f89ef71c19fe6c7cbc50cc4ecb6419b2823bf5d"
+  },
+  {
+    "source": "docs/research/school-net-series/population-model-20261115/官方底数条件模型.json",
+    "url": "/school-net-reference/sources/a63ad117d3e7905e.json",
+    "sha256": "a63ad117d3e7905e16f543d092142832bc8f68d9e27a5f6d40a038bd7de420a4"
+  },
+  {
+    "source": "docs/research/school-net-series/population-model-20261115/回测.json",
+    "url": "/school-net-reference/sources/f71852100dc8b7e7.json",
+    "sha256": "f71852100dc8b7e7d3a78d786ed4486c13fa3e4dcdf2cd10ec71288dc2fbaacd"
+  },
+  {
+    "source": "docs/research/school-net-series/population-model-20261115/sources/manifest-fetch-official.json",
+    "url": "/school-net-reference/sources/701f757767e40df1.json",
+    "sha256": "71851a91bafb5bde717b9a89fabc44cf0a3f4ec49c18067bfc7e0f7635713532"
+  },
+  {
+    "source": "docs/research/school-net-series/population-model-20261115/sources/EDB142-附件一.png",
+    "url": "/school-net-reference/sources/79a0573cc990fa0a.png",
+    "sha256": "79a0573cc990fa0a47fe7f8bb119ac60572d02b31c9836c46b6fe7fc324a8ea4"
+  },
+  {
+    "source": "docs/research/school-net-series/population-model-20261115/sources/EDB2025-表3.7A.png",
+    "url": "/school-net-reference/sources/d410b6777d73bb4e.png",
+    "sha256": "d410b6777d73bb4e59b415473854fa7eeb2e82539f337d4ce17a144f3149cefa"
+  }
+]
