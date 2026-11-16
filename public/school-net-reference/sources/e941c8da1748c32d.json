@@ -1,0 +1,459 @@
+{
+  "year": "2026 conditional demand and historical 2026/27 supply; not 2027 prediction",
+  "p6Boys": 860,
+  "p6Girls": 1089,
+  "p6Total": 1949,
+  "priorP6": 1970,
+  "observedParticipants2025": 1466,
+  "nationalParticipants2026": 48545,
+  "nationalCalibration": 0.999760962276683,
+  "estimatedParticipants2026": 1450.0258950708915,
+  "boysShareProxy": 0.44125192406362235,
+  "estimatedPotentialBoys": 213.275572047369,
+  "estimatedPotentialGirls": 270.0663929762615,
+  "band1ShareAssumed": 0.3333333333333333,
+  "variants": {
+    "local": {
+      "codes": [
+        "122",
+        "124",
+        "126",
+        "127",
+        "131",
+        "134",
+        "135"
+      ],
+      "boysExclusive": 77,
+      "girlsExclusive": 80,
+      "shared": 62,
+      "reservedExcluded": 289,
+      "boysModelSupply": 104.35761929194459,
+      "girlsModelSupply": 114.64238070805541,
+      "boysBreakEven": 0.48930882374455203,
+      "girlsBreakEven": 0.4244970262484023,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.5109247736160072,
+          "girlsIndex": 0.5889322764153072,
+          "boysPer100": 51.09247736160072,
+          "girlsPer100": 58.89322764153072
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 1.0218495472320144,
+          "girlsIndex": 1.1778645528306144,
+          "boysPer100": 102.18495472320144,
+          "girlsPer100": 117.78645528306144
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.5327743208480216,
+          "girlsIndex": 1.7667968292459217,
+          "boysPer100": 153.27743208480214,
+          "girlsPer100": 176.67968292459219
+        },
+        {
+          "residual": 1,
+          "boysIndex": 2.0436990944640288,
+          "girlsIndex": 2.355729105661229,
+          "boysPer100": 204.3699094464029,
+          "girlsPer100": 235.57291056612289
+        }
+      ]
+    },
+    "borrowed": {
+      "codes": [
+        "122",
+        "124",
+        "126",
+        "127",
+        "131",
+        "134",
+        "135",
+        "103",
+        "108",
+        "113",
+        "114",
+        "136",
+        "105"
+      ],
+      "boysExclusive": 83,
+      "girlsExclusive": 89,
+      "shared": 65,
+      "reservedExcluded": 474,
+      "boysModelSupply": 111.68137506413545,
+      "girlsModelSupply": 125.31862493586455,
+      "boysBreakEven": 0.5236482265269965,
+      "girlsBreakEven": 0.4640289506398521,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.47741973969449,
+          "girlsIndex": 0.5387594882932921,
+          "boysPer100": 47.741973969449,
+          "girlsPer100": 53.87594882932921
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 0.95483947938898,
+          "girlsIndex": 1.0775189765865842,
+          "boysPer100": 95.483947938898,
+          "girlsPer100": 107.75189765865842
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.43225921908347,
+          "girlsIndex": 1.6162784648798763,
+          "boysPer100": 143.225921908347,
+          "girlsPer100": 161.62784648798763
+        },
+        {
+          "residual": 1,
+          "boysIndex": 1.90967895877796,
+          "girlsIndex": 2.1550379531731685,
+          "boysPer100": 190.967895877796,
+          "girlsPer100": 215.50379531731684
+        }
+      ]
+    },
+    "disputed": {
+      "codes": [
+        "122",
+        "124",
+        "126",
+        "127",
+        "131",
+        "134",
+        "135",
+        "103",
+        "108",
+        "113",
+        "114",
+        "136",
+        "105",
+        "154"
+      ],
+      "boysExclusive": 83,
+      "girlsExclusive": 89,
+      "shared": 67,
+      "reservedExcluded": 476,
+      "boysModelSupply": 112.5638789122627,
+      "girlsModelSupply": 126.4361210877373,
+      "boysBreakEven": 0.5277860836648559,
+      "girlsBreakEven": 0.46816680777771147,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.47367675605245774,
+          "girlsIndex": 0.5339977030552358,
+          "boysPer100": 47.36767560524577,
+          "girlsPer100": 53.399770305523575
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 0.9473535121049155,
+          "girlsIndex": 1.0679954061104715,
+          "boysPer100": 94.73535121049154,
+          "girlsPer100": 106.79954061104715
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.4210302681573732,
+          "girlsIndex": 1.6019931091657071,
+          "boysPer100": 142.1030268157373,
+          "girlsPer100": 160.1993109165707
+        },
+        {
+          "residual": 1,
+          "boysIndex": 1.894707024209831,
+          "girlsIndex": 2.135990812220943,
+          "boysPer100": 189.4707024209831,
+          "girlsPer100": 213.5990812220943
+        }
+      ]
+    },
+    "withoutTrueLight": {
+      "codes": [
+        "122",
+        "124",
+        "126",
+        "127",
+        "131",
+        "135"
+      ],
+      "boysExclusive": 77,
+      "girlsExclusive": 30,
+      "shared": 62,
+      "reservedExcluded": 268,
+      "boysModelSupply": 104.35761929194459,
+      "girlsModelSupply": 64.64238070805541,
+      "boysBreakEven": 0.48930882374455203,
+      "girlsBreakEven": 0.239357366889176,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.5109247736160072,
+          "girlsIndex": 1.0444633614128602,
+          "boysPer100": 51.09247736160072,
+          "girlsPer100": 104.44633614128603
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 1.0218495472320144,
+          "girlsIndex": 2.0889267228257205,
+          "boysPer100": 102.18495472320144,
+          "girlsPer100": 208.89267228257205
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.5327743208480216,
+          "girlsIndex": 3.13339008423858,
+          "boysPer100": 153.27743208480214,
+          "girlsPer100": 313.339008423858
+        },
+        {
+          "residual": 1,
+          "boysIndex": 2.0436990944640288,
+          "girlsIndex": 4.177853445651441,
+          "boysPer100": 204.3699094464029,
+          "girlsPer100": 417.7853445651441
+        }
+      ]
+    }
+  },
+  "backtests": [
+    {
+      "year": 2024,
+      "calibration": 1.0078703935196833,
+      "mape": 2.7226617341467376,
+      "maxAPE": 9.968816954432459,
+      "rows": [
+        {
+          "code": "A",
+          "actual": 1487,
+          "estimate": 1471.6506949332813,
+          "errorPercent": -1.0322330239891486
+        },
+        {
+          "code": "B",
+          "actual": 1457,
+          "estimate": 1602.245663026081,
+          "errorPercent": 9.968816954432459
+        },
+        {
+          "code": "C",
+          "actual": 3010,
+          "estimate": 2873.698177449434,
+          "errorPercent": -4.528299752510501
+        },
+        {
+          "code": "D",
+          "actual": 1027,
+          "estimate": 990.0760716001975,
+          "errorPercent": -3.595319221012905
+        },
+        {
+          "code": "E",
+          "actual": 1909,
+          "estimate": 1944.8467360068187,
+          "errorPercent": 1.8777755896709714
+        },
+        {
+          "code": "F",
+          "actual": 3146,
+          "estimate": 3202.795370369328,
+          "errorPercent": 1.8053201007415032
+        },
+        {
+          "code": "G",
+          "actual": 4838,
+          "estimate": 4841.024195811193,
+          "errorPercent": 0.06250921478281324
+        },
+        {
+          "code": "H",
+          "actual": 2282,
+          "estimate": 2180.3824488478103,
+          "errorPercent": -4.453003994399197
+        },
+        {
+          "code": "J",
+          "actual": 4372,
+          "estimate": 4462.816423947492,
+          "errorPercent": 2.077228361104577
+        },
+        {
+          "code": "K",
+          "actual": 1695,
+          "estimate": 1708.8825796782921,
+          "errorPercent": 0.8190312494567697
+        },
+        {
+          "code": "L",
+          "actual": 3845,
+          "estimate": 3869.576846806033,
+          "errorPercent": 0.6391897738890151
+        },
+        {
+          "code": "M",
+          "actual": 4731,
+          "estimate": 4705.413870517349,
+          "errorPercent": -0.5408186320577268
+        },
+        {
+          "code": "N",
+          "actual": 3482,
+          "estimate": 3556.0106026246503,
+          "errorPercent": 2.125519891575256
+        },
+        {
+          "code": "P",
+          "actual": 2264,
+          "estimate": 2148.013028755719,
+          "errorPercent": -5.123099436584855
+        },
+        {
+          "code": "Q",
+          "actual": 2206,
+          "estimate": 2290.7167075769685,
+          "errorPercent": 3.8402859282397284
+        },
+        {
+          "code": "R",
+          "actual": 5018,
+          "estimate": 4982.156533701029,
+          "errorPercent": -0.7142978537060807
+        },
+        {
+          "code": "S",
+          "actual": 3521,
+          "estimate": 3425.5607280203335,
+          "errorPercent": -2.7105729048471083
+        },
+        {
+          "code": "T",
+          "actual": 1103,
+          "estimate": 1137.1333203279964,
+          "errorPercent": 3.0945893316406625
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "calibration": 0.9915249930103888,
+      "mape": 1.310567897835915,
+      "maxAPE": 3.972910651287398,
+      "rows": [
+        {
+          "code": "A",
+          "actual": 1413,
+          "estimate": 1411.5657734702716,
+          "errorPercent": -0.10150223140328318
+        },
+        {
+          "code": "B",
+          "actual": 1466,
+          "estimate": 1450.5424425014214,
+          "errorPercent": -1.0544036492891262
+        },
+        {
+          "code": "C",
+          "actual": 2810,
+          "estimate": 2842.6218554014918,
+          "errorPercent": 1.1609201210495357
+        },
+        {
+          "code": "D",
+          "actual": 988,
+          "estimate": 1024.4820791215204,
+          "errorPercent": 3.692518129708544
+        },
+        {
+          "code": "E",
+          "actual": 1761,
+          "estimate": 1744.908442980352,
+          "errorPercent": -0.9137738228079506
+        },
+        {
+          "code": "F",
+          "actual": 2997,
+          "estimate": 3024.627934012587,
+          "errorPercent": 0.9218529867396352
+        },
+        {
+          "code": "G",
+          "actual": 4719,
+          "estimate": 4733.618136972203,
+          "errorPercent": 0.30977192142831456
+        },
+        {
+          "code": "H",
+          "actual": 2144,
+          "estimate": 2134.8823863622647,
+          "errorPercent": -0.4252618301182509
+        },
+        {
+          "code": "J",
+          "actual": 3910,
+          "estimate": 3933.0625043028413,
+          "errorPercent": 0.5898338696378902
+        },
+        {
+          "code": "K",
+          "actual": 1650,
+          "estimate": 1633.590064859727,
+          "errorPercent": -0.9945415236529143
+        },
+        {
+          "code": "L",
+          "actual": 3676,
+          "estimate": 3636.855044155821,
+          "errorPercent": -1.0648791034869154
+        },
+        {
+          "code": "M",
+          "actual": 4316,
+          "estimate": 4267.700493360155,
+          "errorPercent": -1.1190803206637012
+        },
+        {
+          "code": "N",
+          "actual": 3097,
+          "estimate": 3220.041042870371,
+          "errorPercent": 3.972910651287398
+        },
+        {
+          "code": "P",
+          "actual": 1989,
+          "estimate": 1971.8657695758468,
+          "errorPercent": -0.8614494934214734
+        },
+        {
+          "code": "Q",
+          "actual": 2142,
+          "estimate": 2095.307830131855,
+          "errorPercent": -2.1798398631253435
+        },
+        {
+          "code": "R",
+          "actual": 4674,
+          "estimate": 4692.8277722454695,
+          "errorPercent": 0.40281926070753205
+        },
+        {
+          "code": "S",
+          "actual": 3280,
+          "estimate": 3199.9484502765677,
+          "errorPercent": -2.44059602815343
+        },
+        {
+          "code": "T",
+          "actual": 979,
+          "estimate": 992.5519773992356,
+          "errorPercent": 1.3842673543652317
+        }
+      ]
+    }
+  ]
+}

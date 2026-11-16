@@ -1,0 +1,100 @@
+[
+  {
+    "code": "204",
+    "name": "中華基督教會銘賢書院",
+    "schooland": {
+      "name": "中華基督教會銘賢書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sham-shui-po"
+    },
+    "banding": {
+      "name": "中華基督教會銘賢書院",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sham-shui-po/"
+    }
+  },
+  {
+    "code": "194",
+    "name": "長沙灣天主教英文中學",
+    "schooland": {
+      "name": "長沙灣天主教英文中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sham-shui-po"
+    },
+    "banding": {
+      "name": "長沙灣天主教英文中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sham-shui-po/"
+    }
+  },
+  {
+    "code": "200",
+    "name": "香港四邑商工總會黃棣珊紀念中學",
+    "schooland": {
+      "name": "黃棣珊紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sham-shui-po"
+    },
+    "banding": {
+      "name": "香港四邑商工總會黃棣珊紀念中學",
+      "band": "未列",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sham-shui-po/"
+    }
+  },
+  {
+    "code": "201",
+    "name": "寶血會上智英文書院",
+    "schooland": {
+      "name": "寶血會上智英文書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sham-shui-po"
+    },
+    "banding": {
+      "name": "寶血會上智英文書院",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sham-shui-po/"
+    }
+  },
+  {
+    "code": "203",
+    "name": "瑪利諾神父教會學校",
+    "schooland": {
+      "name": "瑪利諾神父教會學校",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sham-shui-po"
+    },
+    "banding": {
+      "name": "瑪利諾神父教會學校",
+      "band": "Band2B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sham-shui-po/"
+    }
+  },
+  {
+    "code": "206",
+    "name": "聖母玫瑰書院",
+    "schooland": {
+      "name": "聖母玫瑰書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sham-shui-po"
+    },
+    "banding": {
+      "name": "聖母玫瑰書院",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sham-shui-po/"
+    }
+  },
+  {
+    "code": "211",
+    "name": "德雅中學",
+    "schooland": {
+      "name": "德雅中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sham-shui-po"
+    },
+    "banding": {
+      "name": "德雅中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sham-shui-po/"
+    }
+  }
+]

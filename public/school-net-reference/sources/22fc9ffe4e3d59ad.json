@@ -1,0 +1,142 @@
+{
+  "year": "2026 estimated demand and 2026/27 historical supply; not 2027 prediction",
+  "p6Boys": 2438,
+  "p6Girls": 2277,
+  "p6Total": 4715,
+  "priorP6": 4548,
+  "observedParticipants2025": 4316,
+  "nationalParticipants2026": 48545,
+  "nationalCalibration": 0.999760962276683,
+  "estimatedParticipants2026": 4473.41152081635,
+  "boysShareProxy": 0.5170731707317073,
+  "estimatedPotentialBoys": 771.0270263520864,
+  "estimatedPotentialGirls": 720.1101472533637,
+  "band1ShareAssumed": 0.3333333333333333,
+  "variants": {
+    "main": {
+      "codes": [
+        "394",
+        "402",
+        "407",
+        "391"
+      ],
+      "label": "两份分类共同4校",
+      "boysExclusive": 0,
+      "girlsExclusive": 0,
+      "shared": 276,
+      "open": 276,
+      "reservedExcluded": 38,
+      "boysModelSupply": 142.71219512195123,
+      "girlsModelSupply": 133.28780487804877,
+      "boysBreakEven": 0.18509363517016622,
+      "girlsBreakEven": 0.18509363517016622,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 1.3506677297150815,
+          "girlsIndex": 1.3506677297150818,
+          "boysPer100": 135.06677297150816,
+          "girlsPer100": 135.0667729715082
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 2.701335459430163,
+          "girlsIndex": 2.7013354594301635,
+          "boysPer100": 270.1335459430163,
+          "girlsPer100": 270.1335459430164
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 4.052003189145244,
+          "girlsIndex": 4.052003189145245,
+          "boysPer100": 405.2003189145244,
+          "girlsPer100": 405.20031891452453
+        },
+        {
+          "residual": 1,
+          "boysIndex": 5.402670918860326,
+          "girlsIndex": 5.402670918860327,
+          "boysPer100": 540.2670918860326,
+          "girlsPer100": 540.2670918860327
+        }
+      ]
+    },
+    "alternative": {
+      "codes": [
+        "394",
+        "402",
+        "407",
+        "391",
+        "385",
+        "400",
+        "405",
+        "404",
+        "408"
+      ],
+      "label": "民间分类较宽名单（九校）",
+      "boysExclusive": 0,
+      "girlsExclusive": 0,
+      "shared": 646,
+      "open": 646,
+      "reservedExcluded": 61,
+      "boysModelSupply": 334.02926829268296,
+      "girlsModelSupply": 311.97073170731704,
+      "boysBreakEven": 0.43322640695625864,
+      "girlsBreakEven": 0.4332264069562586,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.5770654696615518,
+          "girlsIndex": 0.5770654696615519,
+          "boysPer100": 57.70654696615518,
+          "girlsPer100": 57.706546966155194
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 1.1541309393231036,
+          "girlsIndex": 1.1541309393231038,
+          "boysPer100": 115.41309393231036,
+          "girlsPer100": 115.41309393231039
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.7311964089846554,
+          "girlsIndex": 1.7311964089846559,
+          "boysPer100": 173.11964089846555,
+          "girlsPer100": 173.11964089846558
+        },
+        {
+          "residual": 1,
+          "boysIndex": 2.3082618786462072,
+          "girlsIndex": 2.3082618786462077,
+          "boysPer100": 230.82618786462072,
+          "girlsPer100": 230.82618786462078
+        }
+      ]
+    }
+  },
+  "backtests": [
+    {
+      "year": 2024,
+      "mape": 2.7226617341467376,
+      "maxAPE": 9.968816954432459,
+      "thisNet": {
+        "dc": "M",
+        "actual": 4731,
+        "estimate": 4705.413870517349,
+        "errorPercent": -0.5408186320577268
+      }
+    },
+    {
+      "year": 2025,
+      "mape": 1.310567897835915,
+      "maxAPE": 3.972910651287398,
+      "thisNet": {
+        "dc": "M",
+        "actual": 4316,
+        "estimate": 4267.700493360155,
+        "errorPercent": -1.1190803206637012
+      }
+    }
+  ]
+}

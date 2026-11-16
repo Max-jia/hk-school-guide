@@ -1,0 +1,146 @@
+{
+  "year": "2026 estimated demand and 2026/27 historical supply; not 2027 prediction",
+  "p6Boys": 1934,
+  "p6Girls": 1728,
+  "p6Total": 3662,
+  "priorP6": 3646,
+  "observedParticipants2025": 3676,
+  "nationalParticipants2026": 48545,
+  "nationalCalibration": 0.999760962276683,
+  "estimatedParticipants2026": 3691.2490923804485,
+  "boysShareProxy": 0.5281267067176406,
+  "estimatedPotentialBoys": 649.8157422777887,
+  "estimatedPotentialGirls": 580.6006218490274,
+  "band1ShareAssumed": 0.3333333333333333,
+  "variants": {
+    "main": {
+      "codes": [
+        "354",
+        "364",
+        "365",
+        "371",
+        "372",
+        "503",
+        "381",
+        "378"
+      ],
+      "label": "两份分类共同8校",
+      "boysExclusive": 0,
+      "girlsExclusive": 0,
+      "shared": 513,
+      "open": 513,
+      "reservedExcluded": 105,
+      "boysModelSupply": 270.9290005461496,
+      "girlsModelSupply": 242.07099945385036,
+      "boysBreakEven": 0.4169320361437637,
+      "girlsBreakEven": 0.4169320361437637,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.5996181111729123,
+          "girlsIndex": 0.5996181111729124,
+          "boysPer100": 59.961811117291234,
+          "girlsPer100": 59.96181111729124
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 1.1992362223458246,
+          "girlsIndex": 1.1992362223458248,
+          "boysPer100": 119.92362223458247,
+          "girlsPer100": 119.92362223458248
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.7988543335187372,
+          "girlsIndex": 1.7988543335187372,
+          "boysPer100": 179.88543335187373,
+          "girlsPer100": 179.88543335187373
+        },
+        {
+          "residual": 1,
+          "boysIndex": 2.398472444691649,
+          "girlsIndex": 2.3984724446916497,
+          "boysPer100": 239.84724446916493,
+          "girlsPer100": 239.84724446916496
+        }
+      ]
+    },
+    "alternative": {
+      "codes": [
+        "354",
+        "364",
+        "365",
+        "371",
+        "372",
+        "503",
+        "381",
+        "378",
+        "362"
+      ],
+      "label": "加刘金龙女校",
+      "boysExclusive": 0,
+      "girlsExclusive": 76,
+      "shared": 513,
+      "open": 589,
+      "reservedExcluded": 105,
+      "boysModelSupply": 270.9290005461496,
+      "girlsModelSupply": 318.0709994538504,
+      "boysBreakEven": 0.4169320361437637,
+      "girlsBreakEven": 0.5478309658727128,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.5996181111729123,
+          "girlsIndex": 0.45634514215847904,
+          "boysPer100": 59.961811117291234,
+          "girlsPer100": 45.63451421584791
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 1.1992362223458246,
+          "girlsIndex": 0.9126902843169581,
+          "boysPer100": 119.92362223458247,
+          "girlsPer100": 91.26902843169582
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.7988543335187372,
+          "girlsIndex": 1.3690354264754372,
+          "boysPer100": 179.88543335187373,
+          "girlsPer100": 136.90354264754373
+        },
+        {
+          "residual": 1,
+          "boysIndex": 2.398472444691649,
+          "girlsIndex": 1.8253805686339162,
+          "boysPer100": 239.84724446916493,
+          "girlsPer100": 182.53805686339163
+        }
+      ]
+    }
+  },
+  "backtests": [
+    {
+      "year": 2024,
+      "mape": 2.7226617341467376,
+      "maxAPE": 9.968816954432459,
+      "thisNet": {
+        "dc": "L",
+        "actual": 3845,
+        "estimate": 3869.576846806033,
+        "errorPercent": 0.6391897738890151
+      }
+    },
+    {
+      "year": 2025,
+      "mape": 1.310567897835915,
+      "maxAPE": 3.972910651287398,
+      "thisNet": {
+        "dc": "L",
+        "actual": 3676,
+        "estimate": 3636.855044155821,
+        "errorPercent": -1.0648791034869154
+      }
+    }
+  ]
+}

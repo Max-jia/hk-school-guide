@@ -1,0 +1,153 @@
+{
+  "year": "2026 estimated demand and 2026/27 historical supply; not 2027 prediction",
+  "p6Boys": 2545,
+  "p6Girls": 2484,
+  "p6Total": 5029,
+  "priorP6": 5064,
+  "observedParticipants2025": 4674,
+  "nationalParticipants2026": 48545,
+  "nationalCalibration": 0.999760962276683,
+  "estimatedParticipants2026": 4640.585957306247,
+  "boysShareProxy": 0.5060648240206801,
+  "estimatedPotentialBoys": 782.8124386123418,
+  "estimatedPotentialGirls": 764.0495471564072,
+  "band1ShareAssumed": 0.3333333333333333,
+  "variants": {
+    "main": {
+      "codes": [
+        "448",
+        "454",
+        "458",
+        "459",
+        "460",
+        "467",
+        "474",
+        "475",
+        "471",
+        "476",
+        "472",
+        "473",
+        "240"
+      ],
+      "label": "原主参考样本",
+      "boysExclusive": 0,
+      "girlsExclusive": 12,
+      "shared": 902,
+      "open": 914,
+      "reservedExcluded": 71,
+      "boysModelSupply": 456.4704712666534,
+      "girlsModelSupply": 457.5295287333466,
+      "boysBreakEven": 0.583116017006346,
+      "girlsBreakEven": 0.5988218047326275,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.4287311490489881,
+          "girlsIndex": 0.4174864676339306,
+          "boysPer100": 42.87311490489881,
+          "girlsPer100": 41.74864676339306
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 0.8574622980979762,
+          "girlsIndex": 0.8349729352678612,
+          "boysPer100": 85.74622980979763,
+          "girlsPer100": 83.49729352678612
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.2861934471469645,
+          "girlsIndex": 1.2524594029017917,
+          "boysPer100": 128.61934471469644,
+          "girlsPer100": 125.24594029017916
+        },
+        {
+          "residual": 1,
+          "boysIndex": 1.7149245961959525,
+          "girlsIndex": 1.6699458705357224,
+          "boysPer100": 171.49245961959525,
+          "girlsPer100": 166.99458705357225
+        }
+      ]
+    },
+    "common": {
+      "codes": [
+        "448",
+        "454",
+        "459",
+        "460",
+        "467",
+        "474",
+        "475",
+        "471",
+        "476",
+        "472",
+        "473"
+      ],
+      "label": "两份分类共同参考样本",
+      "boysExclusive": 0,
+      "girlsExclusive": 0,
+      "shared": 844,
+      "open": 844,
+      "reservedExcluded": 49,
+      "boysModelSupply": 427.11871147345397,
+      "girlsModelSupply": 416.88128852654603,
+      "boysBreakEven": 0.5456207520547184,
+      "girlsBreakEven": 0.5456207520547185,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.45819371616372906,
+          "girlsIndex": 0.4581937161637289,
+          "boysPer100": 45.819371616372905,
+          "girlsPer100": 45.81937161637289
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 0.9163874323274581,
+          "girlsIndex": 0.9163874323274578,
+          "boysPer100": 91.63874323274581,
+          "girlsPer100": 91.63874323274578
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.3745811484911872,
+          "girlsIndex": 1.3745811484911867,
+          "boysPer100": 137.45811484911872,
+          "girlsPer100": 137.4581148491187
+        },
+        {
+          "residual": 1,
+          "boysIndex": 1.8327748646549162,
+          "girlsIndex": 1.8327748646549156,
+          "boysPer100": 183.27748646549162,
+          "girlsPer100": 183.27748646549156
+        }
+      ]
+    }
+  },
+  "backtests": [
+    {
+      "year": 2024,
+      "mape": 2.7226617341467376,
+      "maxAPE": 9.968816954432459,
+      "thisNet": {
+        "dc": "R",
+        "actual": 5018,
+        "estimate": 4982.156533701029,
+        "errorPercent": -0.7142978537060807
+      }
+    },
+    {
+      "year": 2025,
+      "mape": 1.310567897835915,
+      "maxAPE": 3.972910651287398,
+      "thisNet": {
+        "dc": "R",
+        "actual": 4674,
+        "estimate": 4692.8277722454695,
+        "errorPercent": 0.40281926070753205
+      }
+    }
+  ]
+}

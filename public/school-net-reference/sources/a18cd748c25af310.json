@@ -1,0 +1,185 @@
+[
+  {
+    "code": "448",
+    "name": "浸信會呂明才中學",
+    "schooland": {
+      "name": "浸信會呂明才中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "浸信會呂明才中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "454",
+    "name": "香港九龍塘基督教中華宣道會鄭榮之中學",
+    "schooland": {
+      "name": "宣道會鄭榮之中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "香港九龍塘基督教中華宣道會鄭榮之中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "458",
+    "name": "聖母無玷聖心書院",
+    "schooland": {
+      "name": "聖母無玷聖心書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "聖母無玷聖心書院",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "459",
+    "name": "沙田蘇浙公學",
+    "schooland": {
+      "name": "沙田蘇浙公學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "沙田蘇浙公學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "460",
+    "name": "天主教郭得勝中學",
+    "schooland": {
+      "name": "天主教郭得勝中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "天主教郭得勝中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "467",
+    "name": "五旬節林漢光中學",
+    "schooland": {
+      "name": "五旬節林漢光中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "五旬節林漢光中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "474",
+    "name": "沙田官立中學",
+    "schooland": {
+      "name": "沙田官立中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "沙田官立中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "475",
+    "name": "沙田循道衞理中學",
+    "schooland": {
+      "name": "沙田循道衞理中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "沙田循道衛理中學／沙田循道衞理中學",
+      "band": "Band1A及Band1C两条，均为Band1大组",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/",
+      "note": "该站以衛／衞字形重复列出，不裁定细分组别；大组共同名单不变"
+    }
+  },
+  {
+    "code": "471",
+    "name": "沙田培英中學",
+    "schooland": {
+      "name": "沙田培英中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "沙田培英中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "476",
+    "name": "沙田崇真中學",
+    "schooland": {
+      "name": "沙田崇真中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "沙田崇真中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "472",
+    "name": "聖公會林裘謀中學",
+    "schooland": {
+      "name": "聖公會林裘謀中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "聖公會林裘謀中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "473",
+    "name": "聖公會曾肇添中學",
+    "schooland": {
+      "name": "聖公會曾肇添中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "聖公會曾肇添中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  },
+  {
+    "code": "240",
+    "name": "聖羅撒書院",
+    "schooland": {
+      "name": "聖羅撒書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/sha-tin"
+    },
+    "banding": {
+      "name": "聖羅撒書院",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/sha-tin/"
+    }
+  }
+]

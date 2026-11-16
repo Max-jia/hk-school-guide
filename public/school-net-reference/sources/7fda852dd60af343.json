@@ -1,0 +1,128 @@
+[
+  {
+    "code": "303",
+    "name": "佛教善德英文中學",
+    "schooland": {
+      "name": "佛教善德英文中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "佛教善德英文中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "307",
+    "name": "中華基督教會全完中學",
+    "schooland": {
+      "name": "中華基督教會全完中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "中華基督教會全完中學",
+      "band": "Band2C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "308",
+    "name": "中華傳道會安柱中學",
+    "schooland": {
+      "name": "中華傳道會安柱中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "中華傳道會安柱中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "310",
+    "name": "天主教母佑會蕭明中學",
+    "schooland": {
+      "name": "天主教母佑會蕭明中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "天主教母佑會蕭明中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "324",
+    "name": "保良局羅傑承（一九八三）中學",
+    "schooland": {
+      "name": "保良局羅傑承(一九八三)中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "保良局羅傑承（一九八三）中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "325",
+    "name": "保祿六世書院",
+    "schooland": {
+      "name": "保祿六世書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "保祿六世書院",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "318",
+    "name": "聖公會林護紀念中學",
+    "schooland": {
+      "name": "聖公會林護紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "聖公會林護紀念中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "331",
+    "name": "順德聯誼總會李兆基中學",
+    "schooland": {
+      "name": "順德聯誼總會李兆基中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "順德聯誼總會李兆基中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  },
+  {
+    "code": "332",
+    "name": "東華三院陳兆民中學",
+    "schooland": {
+      "name": "東華三院陳兆民中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/kwai-tsing"
+    },
+    "banding": {
+      "name": "東華三院陳兆民中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/kwai-tsing/"
+    }
+  }
+]

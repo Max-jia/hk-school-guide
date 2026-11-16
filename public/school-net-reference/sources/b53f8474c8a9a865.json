@@ -1,0 +1,145 @@
+{
+  "year": "2026 estimated demand and 2026/27 historical supply; not 2027 prediction",
+  "p6Boys": 1539,
+  "p6Girls": 1370,
+  "p6Total": 2909,
+  "priorP6": 2846,
+  "observedParticipants2025": 3280,
+  "nationalParticipants2026": 48545,
+  "nationalCalibration": 0.999760962276683,
+  "estimatedParticipants2026": 3351.80576837042,
+  "boysShareProxy": 0.5290477827432107,
+  "estimatedPotentialBoys": 591.0884699807582,
+  "estimatedPotentialGirls": 526.1801194760485,
+  "band1ShareAssumed": 0.3333333333333333,
+  "variants": {
+    "main": {
+      "codes": [
+        "303",
+        "310",
+        "318",
+        "308",
+        "325",
+        "332",
+        "307",
+        "324",
+        "331"
+      ],
+      "label": "原主参考样本",
+      "boysExclusive": 0,
+      "girlsExclusive": 137,
+      "shared": 464,
+      "open": 601,
+      "reservedExcluded": 42,
+      "boysModelSupply": 245.47817119284977,
+      "girlsModelSupply": 355.5218288071502,
+      "boysBreakEven": 0.41529852747904367,
+      "girlsBreakEven": 0.6756656430903665,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.6019766106987106,
+          "girlsIndex": 0.37000549392529036,
+          "boysPer100": 60.19766106987105,
+          "girlsPer100": 37.00054939252904
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 1.2039532213974211,
+          "girlsIndex": 0.7400109878505807,
+          "boysPer100": 120.3953221397421,
+          "girlsPer100": 74.00109878505808
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 1.8059298320961317,
+          "girlsIndex": 1.110016481775871,
+          "boysPer100": 180.59298320961318,
+          "girlsPer100": 111.00164817758711
+        },
+        {
+          "residual": 1,
+          "boysIndex": 2.4079064427948422,
+          "girlsIndex": 1.4800219757011615,
+          "boysPer100": 240.7906442794842,
+          "girlsPer100": 148.00219757011615
+        }
+      ]
+    },
+    "common": {
+      "codes": [
+        "303",
+        "310",
+        "318",
+        "308",
+        "325",
+        "332",
+        "324"
+      ],
+      "label": "两份分类共同参考样本",
+      "boysExclusive": 0,
+      "girlsExclusive": 137,
+      "shared": 342,
+      "open": 479,
+      "reservedExcluded": 21,
+      "boysModelSupply": 180.93434169817806,
+      "girlsModelSupply": 298.06565830182194,
+      "boysBreakEven": 0.3061036560298123,
+      "girlsBreakEven": 0.5664707716411352,
+      "scenarios": [
+        {
+          "residual": 0.25,
+          "boysIndex": 0.8167168051584845,
+          "girlsIndex": 0.44132903675810026,
+          "boysPer100": 81.67168051584845,
+          "girlsPer100": 44.13290367581003
+        },
+        {
+          "residual": 0.5,
+          "boysIndex": 1.633433610316969,
+          "girlsIndex": 0.8826580735162005,
+          "boysPer100": 163.3433610316969,
+          "girlsPer100": 88.26580735162005
+        },
+        {
+          "residual": 0.75,
+          "boysIndex": 2.4501504154754534,
+          "girlsIndex": 1.3239871102743008,
+          "boysPer100": 245.01504154754534,
+          "girlsPer100": 132.3987110274301
+        },
+        {
+          "residual": 1,
+          "boysIndex": 3.266867220633938,
+          "girlsIndex": 1.765316147032401,
+          "boysPer100": 326.6867220633938,
+          "girlsPer100": 176.5316147032401
+        }
+      ]
+    }
+  },
+  "backtests": [
+    {
+      "year": 2024,
+      "mape": 2.7226617341467376,
+      "maxAPE": 9.968816954432459,
+      "thisNet": {
+        "dc": "S",
+        "actual": 3521,
+        "estimate": 3425.5607280203335,
+        "errorPercent": -2.7105729048471083
+      }
+    },
+    {
+      "year": 2025,
+      "mape": 1.310567897835915,
+      "maxAPE": 3.972910651287398,
+      "thisNet": {
+        "dc": "S",
+        "actual": 3280,
+        "estimate": 3199.9484502765677,
+        "errorPercent": -2.44059602815343
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "code": "336",
+    "name": "可風中學（嗇色園主辦）",
+    "schooland": {
+      "name": "可風中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tsuen-wan",
+      "matchNote": "官方全名与民间简称人工对照"
+    },
+    "banding": {
+      "name": "可風中學（嗇色園主辦）",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tsuen-wan/"
+    }
+  },
+  {
+    "code": "337",
+    "name": "廖寶珊紀念書院",
+    "schooland": {
+      "name": "廖寶珊紀念書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tsuen-wan"
+    },
+    "banding": {
+      "name": "廖寶珊紀念書院",
+      "band": "未列",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tsuen-wan/"
+    }
+  },
+  {
+    "code": "341",
+    "name": "寶安商會王少清中學",
+    "schooland": {
+      "name": "王少清中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tsuen-wan",
+      "matchNote": "官方全名与民间简称人工对照"
+    },
+    "banding": {
+      "name": "寶安商會王少清中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tsuen-wan/"
+    }
+  },
+  {
+    "code": "346",
+    "name": "荃灣官立中學",
+    "schooland": {
+      "name": "荃灣官立中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tsuen-wan"
+    },
+    "banding": {
+      "name": "荃灣官立中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tsuen-wan/"
+    }
+  },
+  {
+    "code": "347",
+    "name": "荃灣公立何傳耀紀念中學",
+    "schooland": {
+      "name": "何傳耀紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tsuen-wan"
+    },
+    "banding": {
+      "name": "荃灣公立何傳耀紀念中學",
+      "band": "未列",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tsuen-wan/"
+    }
+  }
+]

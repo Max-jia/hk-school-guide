@@ -1,0 +1,128 @@
+[
+  {
+    "code": "354",
+    "name": "香港九龍塘基督教中華宣道會陳瑞芝紀念中學",
+    "schooland": {
+      "name": "宣道會陳瑞芝紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "香港九龍塘基督教中華宣道會陳瑞芝紀念中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "362",
+    "name": "妙法寺劉金龍中學",
+    "schooland": {
+      "name": "妙法寺劉金龍中學",
+      "band": "BAND2",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "妙法寺劉金龍中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "364",
+    "name": "保良局百周年李兆忠紀念中學",
+    "schooland": {
+      "name": "保良局百周年李兆忠紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "保良局百周年李兆忠紀念中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "365",
+    "name": "保良局董玉娣中學",
+    "schooland": {
+      "name": "保良局董玉娣中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "保良局董玉娣中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "503",
+    "name": "馬錦明慈善基金馬可賓紀念中學",
+    "schooland": {
+      "name": "馬可賓紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "馬錦明慈善基金馬可賓紀念中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "371",
+    "name": "順德聯誼總會梁銶琚中學",
+    "schooland": {
+      "name": "順德聯誼總會梁銶琚中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "順德聯誼總會梁銶琚中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "372",
+    "name": "順德聯誼總會譚伯羽中學",
+    "schooland": {
+      "name": "順德聯誼總會譚伯羽中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "順德聯誼總會譚伯羽中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "378",
+    "name": "屯門官立中學",
+    "schooland": {
+      "name": "屯門官立中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "屯門官立中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  },
+  {
+    "code": "381",
+    "name": "仁愛堂田家炳中學",
+    "schooland": {
+      "name": "仁愛堂田家炳中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tuen-mun"
+    },
+    "banding": {
+      "name": "仁愛堂田家炳中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tuen-mun/"
+    }
+  }
+]

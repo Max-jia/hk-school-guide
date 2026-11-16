@@ -1,0 +1,128 @@
+[
+  {
+    "code": "391",
+    "name": "中華基督教會基元中學",
+    "schooland": {
+      "name": "中華基督教會基元中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "中華基督教會基元中學",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "385",
+    "name": "趙聿修紀念中學",
+    "schooland": {
+      "name": "趙聿修紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "趙聿修紀念中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "405",
+    "name": "香港管理專業協會羅桂祥中學",
+    "schooland": {
+      "name": "香港管理專業協會羅桂祥中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "香港管理專業協會羅桂祥中學",
+      "band": "Band2B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "394",
+    "name": "新界鄉議局元朗區中學",
+    "schooland": {
+      "name": "新界鄉議局元朗區中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "新界鄉議局元朗區中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "402",
+    "name": "天主教崇德英文書院",
+    "schooland": {
+      "name": "天主教崇德英文書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "天主教崇德英文書院",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "400",
+    "name": "聖公會白約翰會督中學",
+    "schooland": {
+      "name": "聖公會白約翰會督中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "聖公會白約翰會督中學",
+      "band": "Band2B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "407",
+    "name": "基督教香港信義會元朗信義中學",
+    "schooland": {
+      "name": "元朗信義中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "基督教香港信義會元朗信義中學",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "404",
+    "name": "東華三院盧幹庭紀念中學",
+    "schooland": {
+      "name": "東華三院盧幹庭紀念中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "東華三院盧幹庭紀念中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  },
+  {
+    "code": "408",
+    "name": "元朗商會中學",
+    "schooland": {
+      "name": "元朗商會中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yuen-long"
+    },
+    "banding": {
+      "name": "元朗商會中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yuen-long/"
+    }
+  }
+]

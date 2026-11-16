@@ -1,0 +1,72 @@
+[
+  {
+    "code": "434",
+    "name": "迦密柏雨中學",
+    "schooland": {
+      "name": "迦密柏雨中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tai-po"
+    },
+    "banding": {
+      "name": "迦密柏雨中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tai-po/"
+    }
+  },
+  {
+    "code": "439",
+    "name": "南亞路德會沐恩中學",
+    "schooland": {
+      "name": "南亞路德會沐恩中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tai-po"
+    },
+    "banding": {
+      "name": "南亞路德會沐恩中學",
+      "band": "Band2B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tai-po/"
+    }
+  },
+  {
+    "code": "443",
+    "name": "聖公會莫壽增會督中學",
+    "schooland": {
+      "name": "聖公會莫壽增會督中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tai-po"
+    },
+    "banding": {
+      "name": "聖公會莫壽增會督中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tai-po/"
+    }
+  },
+  {
+    "code": "446",
+    "name": "恩主教書院",
+    "schooland": {
+      "name": "恩主教書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tai-po"
+    },
+    "banding": {
+      "name": "恩主教書院",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tai-po/"
+    }
+  },
+  {
+    "code": "447",
+    "name": "王肇枝中學",
+    "schooland": {
+      "name": "王肇枝中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/tai-po"
+    },
+    "banding": {
+      "name": "王肇枝中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/tai-po/"
+    }
+  }
+]

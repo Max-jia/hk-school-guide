@@ -18,7 +18,7 @@ export const BLOG_CLUSTERS: BlogCluster[] = [
     "slug": "school-net-series",
     "kind": "series",
     "title": "香港校网逐网分析：小学与升中",
-    "description": "已完成14篇小学及9篇升中分析，比较官津、直资私立选择，并用官方人数与历史学额作条件估算。未知条件和来源局限逐项说明。",
+    "description": "已完成14篇小学及11篇升中分析，比较官津、直资私立选择，并用官方人数与历史学额作条件估算。未知条件和来源局限逐项说明。",
     "intent": "按真实住址和孩子需要比较校网的家庭",
     "coreSlug": "primary-net-11-analysis",
     "articleSlugs": [
@@ -44,7 +44,9 @@ export const BLOG_CLUSTERS: BlogCluster[] = [
       "tsuen-wan-secondary-net-analysis",
       "kwai-tsing-secondary-net-analysis",
       "tai-po-secondary-net-analysis",
-      "sha-tin-secondary-net-analysis"
+      "sha-tin-secondary-net-analysis",
+      "tuen-mun-secondary-net-analysis",
+      "yuen-long-secondary-net-analysis"
     ],
     "sections": [
       {
@@ -79,7 +81,9 @@ export const BLOG_CLUSTERS: BlogCluster[] = [
           "tsuen-wan-secondary-net-analysis",
           "kwai-tsing-secondary-net-analysis",
           "tai-po-secondary-net-analysis",
-          "sha-tin-secondary-net-analysis"
+          "sha-tin-secondary-net-analysis",
+      "tuen-mun-secondary-net-analysis",
+      "yuen-long-secondary-net-analysis"
         ]
       }
     ]
@@ -110,7 +114,7 @@ export const BLOG_CLUSTERS: BlogCluster[] = [
   {
     "slug": "school-net-secondary",
     "title": "香港升中校网逐网分析",
-    "description": "9个升中网的历史名册、官方小六男女底数和条件估算；学校民间分类、未知净留存及共享位假设分别说明。",
+    "description": "11个升中网的历史名册、官方小六男女底数和条件估算；学校民间分类、未知净留存及共享位假设分别说明。",
     "intent": "比较升中选校组合及直资私立申请的家庭",
     "coreSlug": "central-western-secondary-net-analysis",
     "articleSlugs": [
@@ -122,7 +126,9 @@ export const BLOG_CLUSTERS: BlogCluster[] = [
       "tsuen-wan-secondary-net-analysis",
       "kwai-tsing-secondary-net-analysis",
       "tai-po-secondary-net-analysis",
-      "sha-tin-secondary-net-analysis"
+      "sha-tin-secondary-net-analysis",
+      "tuen-mun-secondary-net-analysis",
+      "yuen-long-secondary-net-analysis"
     ]
   }
 ,

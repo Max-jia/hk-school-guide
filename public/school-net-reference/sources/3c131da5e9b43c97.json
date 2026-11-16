@@ -1,0 +1,100 @@
+[
+  {
+    "code": "183",
+    "name": "中華基督教會銘基書院",
+    "schooland": {
+      "name": "中華基督教會銘基書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yau-tsim-mong"
+    },
+    "banding": {
+      "name": "中華基督教會銘基書院",
+      "band": "Band1C",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yau-tsim-mong/"
+    }
+  },
+  {
+    "code": "182",
+    "name": "循道中學",
+    "schooland": {
+      "name": "循道中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yau-tsim-mong"
+    },
+    "banding": {
+      "name": "循道中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yau-tsim-mong/"
+    }
+  },
+  {
+    "code": "185",
+    "name": "伊利沙伯中學",
+    "schooland": {
+      "name": "伊利沙伯中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yau-tsim-mong"
+    },
+    "banding": {
+      "name": "伊利沙伯中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yau-tsim-mong/"
+    }
+  },
+  {
+    "code": "187",
+    "name": "聖芳濟書院",
+    "schooland": {
+      "name": "聖芳濟書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yau-tsim-mong"
+    },
+    "banding": {
+      "name": "聖芳濟書院",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yau-tsim-mong/"
+    }
+  },
+  {
+    "code": "189",
+    "name": "嘉諾撒聖瑪利書院",
+    "schooland": {
+      "name": "嘉諾撒聖瑪利書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yau-tsim-mong"
+    },
+    "banding": {
+      "name": "嘉諾撒聖瑪利書院",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yau-tsim-mong/"
+    }
+  },
+  {
+    "code": "190",
+    "name": "真光女書院",
+    "schooland": {
+      "name": "真光女書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yau-tsim-mong"
+    },
+    "banding": {
+      "name": "真光女書院",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yau-tsim-mong/"
+    }
+  },
+  {
+    "code": "191",
+    "name": "華仁書院（九龍）",
+    "schooland": {
+      "name": "華仁書院(九龍)",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/yau-tsim-mong"
+    },
+    "banding": {
+      "name": "華仁書院（九龍）",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/yau-tsim-mong/"
+    }
+  }
+]

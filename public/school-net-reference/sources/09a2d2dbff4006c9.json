@@ -1,0 +1,100 @@
+[
+  {
+    "code": "103",
+    "name": "英皇書院",
+    "schooland": {
+      "name": "英皇書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/central-west"
+    },
+    "banding": {
+      "name": "英皇書院",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/central-western/"
+    }
+  },
+  {
+    "code": "105",
+    "name": "高主教書院",
+    "schooland": {
+      "name": "高主教書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/central-west"
+    },
+    "banding": {
+      "name": "高主教書院",
+      "band": "Band1B",
+      "url": "https://banding.hk/hk-secondary-schools-banding/central-western/"
+    }
+  },
+  {
+    "code": "107",
+    "name": "聖嘉勒女書院",
+    "schooland": {
+      "name": "聖嘉勒女書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/central-west"
+    },
+    "banding": {
+      "name": "聖嘉勒女書院",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/central-western/"
+    }
+  },
+  {
+    "code": "108",
+    "name": "聖若瑟書院",
+    "schooland": {
+      "name": "聖若瑟書院",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/central-west"
+    },
+    "banding": {
+      "name": "聖若瑟書院",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/central-western/"
+    }
+  },
+  {
+    "code": "109",
+    "name": "聖類斯中學",
+    "schooland": {
+      "name": "聖類斯中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/central-west"
+    },
+    "banding": {
+      "name": "聖類斯中學",
+      "band": "Band2A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/central-western/"
+    }
+  },
+  {
+    "code": "113",
+    "name": "聖士提反女子中學",
+    "schooland": {
+      "name": "聖士提反女子中學",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/central-west"
+    },
+    "banding": {
+      "name": "聖士提反女子中學",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/central-western/"
+    }
+  },
+  {
+    "code": "114",
+    "name": "英華女學校",
+    "schooland": {
+      "name": "英華女學校",
+      "band": "BAND1",
+      "url": "https://www.schooland.hk/ss/central-west"
+    },
+    "banding": {
+      "name": "英華女學校",
+      "band": "Band1A",
+      "url": "https://banding.hk/hk-secondary-schools-banding/central-western/"
+    }
+  }
+]
