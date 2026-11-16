@@ -1594,6 +1594,8 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
 }
 
 /* School-net tables retain readable columns on small screens. */
+.blog-article .choice-results table { width: 100%; min-width: 0; }
+.blog-article .choice-results :is(th, td) { white-space: normal; }
 .blog-article .school-net-table { max-width: 100%; }
 .blog-article .school-net-table table { min-width: 760px; width: 100%; table-layout: auto; }
 .blog-article .school-net-table td { overflow-wrap: anywhere; }

@@ -79,8 +79,8 @@ const STORIES: Story[] = [
   {
     id: "#H-01",
     month: "8 月",
-    title: "40 校网，到底有多强？",
-    tease: "九龙城名校密度全港第一，官津直资私立一条街集齐，数据一次算清。",
+    title: "深水埗40网，小学怎样选？",
+    tease: "先看20所官津小学，再比较升中联系和另行报名的直资学校。",
     img: "/shots/2026_02_happy-map.jpg",
     href: "/blog/net40-ranking",
     bg: "var(--p-gray-100)",
