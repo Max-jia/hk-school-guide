@@ -309,10 +309,15 @@ export const BLOG_CLUSTERS: BlogCluster[] = [
   {
     slug: "kindergarten-interviews",
     title: "幼稚园面试专题",
-    description: "查找50所幼稚园的面试文章，了解已公开的申请安排、往年面见经验和家庭准备。不同校舍、学年与年级的资料不应混用。",
+    description: "核对幼稚园面试、第二轮、放榜与注册安排，按学校查面见语言，也可读家长回答与候补处理指南。",
     intent: "准备幼稚园申请、想了解个别学校面见形式的家庭",
     coreSlug: "hk-kg-interview-prep-guide-2027-28",
     articleSlugs: [
+    "kg-interview-language-cantonese-putonghua",
+    "kg-interview-day-checklist",
+    "kg-interview-child-silent",
+    "kg-parent-child-interview-parents-guide",
+    "kg-interview-results-waitlist-registration",
     "victoria-ocean-pride-kg-interview-guide",
     "learning-habitat-hampton-loft-kg-interview-guide",
     "topkids-yuen-long-kg-interview-guide",
