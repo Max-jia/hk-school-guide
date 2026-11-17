@@ -1,7 +1,7 @@
 "use client";
 
 import Localize from "@/components/Localize";
-import { L, type Locale } from "@/lib/i18n";
+import { L, localeHref, type Locale } from "@/lib/i18n";
 
 import { useMemo, useRef, useState } from "react";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
@@ -293,7 +293,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
                       <div className="mt-3 flex flex-wrap gap-2">
                         {code && (
                           <a
-                            href={`/reports/${code}`}
+                            href={localeHref(`/reports/${code}`, locale)}
                             className="inline-block rounded-[6px] border border-[var(--p-fg)] px-3 py-1 font-mono text-xs uppercase text-[var(--p-fg)] no-underline transition-colors hover:bg-[var(--p-fg)] hover:text-[var(--p-bg)]"
                           >
                             查看完整报告 →
@@ -344,14 +344,14 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
                     ))}
                     {/* 好评/吐槽行 */}
                     <tr className="border-t border-black/10 dark:border-white/10">
-                      <td className="py-3 pr-3 font-mono text-xs uppercase text-[var(--p-secondary)]">家长口碑</td>
+                      <td className="py-3 pr-3 font-mono text-xs uppercase text-[var(--p-secondary)]">选校参考</td>
                       {digests.map((dig, si) => (
                         <td key={si} className="border-l border-black/10 py-3 pl-3 align-top text-sm dark:border-white/10">
                           {dig?.pros?.length || dig?.cons?.length ? (
                             <>
                               {dig.pros.length > 0 && (
                                 <div className="mb-2">
-                                  <div className="mb-1 inline-flex items-center gap-1 font-mono text-xs font-bold text-[#0F766E]"><ThumbsUp className="size-3.5" />好评</div>
+                                  <div className="mb-1 inline-flex items-center gap-1 font-mono text-xs font-bold text-[#0F766E]"><ThumbsUp className="size-3.5" />{dig.slug === "rc" ? "已核资料" : "好评"}</div>
                                   <ul className="m-0 list-none space-y-1 p-0 text-xs leading-relaxed text-[var(--p-secondary)]">
                                     {dig.pros.slice(0, 3).map((p: string, j: number) => (
                                       <li key={j}>· {p.slice(0, 50)}{p.length > 50 ? "…" : ""}</li>
@@ -361,7 +361,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
                               )}
                               {dig.cons.length > 0 && (
                                 <div>
-                                  <div className="mb-1 inline-flex items-center gap-1 font-mono text-xs font-bold text-[#B45309]"><ThumbsDown className="size-3.5" />吐槽</div>
+                                  <div className="mb-1 inline-flex items-center gap-1 font-mono text-xs font-bold text-[#B45309]"><ThumbsDown className="size-3.5" />{dig.slug === "rc" ? "待核事项" : "吐槽"}</div>
                                   <ul className="m-0 list-none space-y-1 p-0 text-xs leading-relaxed text-[var(--p-secondary)]">
                                     {dig.cons.slice(0, 3).map((c: string, j: number) => (
                                       <li key={j}>· {c.slice(0, 50)}{c.length > 50 ? "…" : ""}</li>
@@ -384,7 +384,7 @@ export default function ComparePage({ locale = "tc" }: { locale?: Locale }) {
         </div>
 
         <p className="mt-8 font-mono text-xs text-[var(--p-secondary)]">
-          数据来源：教育局学校概览（KGP/PSP 2025）与公开资料 · 评级为本平台参考体系 · 不构成入学建议
+          数据来源：教育局学校概览及公开资料（学年按各项标注） · 评级为本平台参考体系 · 不构成入学建议
         </p>
       </div>
       <SiteFooter locale={locale} />

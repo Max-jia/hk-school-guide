@@ -1,0 +1,28 @@
+[
+  {
+    "page": "reports/rc",
+    "locale": "cn",
+    "description": "高主教幼稚园部2027/28 K1面试为11月14日或21日，父母可陪同。报告核对40,800港元现行学费、幼小申请条件，以及本学年下午班和下学年插班的不同入口。",
+    "jsonLdBlocks": 1,
+    "result": "PASS"
+  },
+  {
+    "page": "reports/rc",
+    "locale": "tc",
+    "description": "高主教幼稚園部2027/28 K1面試為11月14日或21日，父母可陪同。報告核對40,800港元現行學費、幼小申請條件，以及本學年下午班和下學年插班的不同入口。",
+    "jsonLdBlocks": 1,
+    "result": "PASS"
+  },
+  {
+    "page": "home",
+    "locale": "cn",
+    "official2025Results": "41:434/524=82.8%;12:418/557=75.0%",
+    "result": "PASS"
+  },
+  {
+    "page": "home",
+    "locale": "tc",
+    "official2025Results": "41:434/524=82.8%;12:418/557=75.0%",
+    "result": "PASS"
+  }
+]

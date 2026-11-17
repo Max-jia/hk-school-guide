@@ -1,0 +1,65 @@
+{
+  "productionBaseline": "dpl_DgJ87k3uoEFaJFZWnZAu7oadx88B",
+  "checkedSourceFiles": 1593,
+  "changes": [
+    {
+      "path": "src/app/(tc)/compare/page.tsx",
+      "baselineSha1": "4a672ec1f7a46259546ed6cad3b0958799d53b44",
+      "candidateSha1": "eb4250f9dd208dd7e394a3489c13c9604a88199a"
+    },
+    {
+      "path": "src/components/StoryGrid.tsx",
+      "baselineSha1": "f57a20aaffe65d123a3b27e38849066e1e353781",
+      "candidateSha1": "f43bd9027c9dace146c9d569929c3ee23f148199"
+    },
+    {
+      "path": "src/content/kindergartens.json",
+      "baselineSha1": "b3f6d91866997e85e2969910e5778d4777cc56e9",
+      "candidateSha1": "f835988f5f713bf44cad02e89fee0b9a023a8aed"
+    },
+    {
+      "path": "src/content/report-digests.json",
+      "baselineSha1": "a0c5f1780b9718cc7126f24ece92c57679c50f5b",
+      "candidateSha1": "4ae35d057bd853f5417f3c99cfc0a1a84f6cb7c1"
+    },
+    {
+      "path": "src/content/report-meta.json",
+      "baselineSha1": "2acd7b4c1916ba9638ba34cb58fd3bf24b0f53a9",
+      "candidateSha1": "bb192f37dc6958ab0bd2927e05123718078604a9"
+    },
+    {
+      "path": "src/content/reports/rc.json",
+      "baselineSha1": "32f53f2ead002e13d9791b3df521134e65dde19c",
+      "candidateSha1": "d5f06980dcb2041d09ef4d91b73843a069bd5ff9"
+    },
+    {
+      "path": "src/lib/report-sources.ts",
+      "baselineSha1": "36298262da296cfa72605abe8d1b7aafb8d3e13f",
+      "candidateSha1": "516deabc9c6eb60e86a97f300768d3dee70014d7"
+    },
+    {
+      "path": "src/lib/reports.ts",
+      "baselineSha1": "84133ddeee44534bc385d4d026b06b5149f23079",
+      "candidateSha1": "4679cf8634a0f212c0aadfd63dbcdd54adb605f8"
+    },
+    {
+      "path": "src/lib/school-directory-batch-34.ts",
+      "baselineSha1": "770020df0dd5068d8b50a05f458fc362c261eaf0",
+      "candidateSha1": "7874fe27929a6411ae55702cd30665551fefe85f"
+    }
+  ],
+  "unrelatedSourceChanges": 0,
+  "localMobile": {
+    "width": 390,
+    "documentWidth": 390,
+    "chapters": 8,
+    "h1": 1
+  },
+  "checks": [
+    "typecheck PASS",
+    "p1-history PASS",
+    "directory-assets PASS",
+    "git diff --check PASS"
+  ],
+  "lintLimitation": "compare/page.tsx: 42 existing no-explicit-any errors, unchanged from HEAD"
+}

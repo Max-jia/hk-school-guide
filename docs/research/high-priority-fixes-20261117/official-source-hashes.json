@@ -1,0 +1,42 @@
+[
+  {
+    "path": "sources/p1-2025.pdf",
+    "sha256": "f9592d7ed821fe5fa70c798d6fd93ab11d1955b16968cfffd2b7a5f2291d61d4"
+  },
+  {
+    "path": "sources/rc-fee.pdf",
+    "sha256": "b439d8526a7879b9d64a0a50addd445347eb4729f33acc6ed23a20305b41fc46"
+  },
+  {
+    "path": "sources/rc-k1.html",
+    "sha256": "d1de3cf5af7fed4c94dceb61559d06385876be7cd4aa2de59f979f435671356a"
+  },
+  {
+    "path": "sources/rc-k1.txt",
+    "sha256": "4ae6226a636afae8a8bdda11e388c3a8bf3311057edf709b124eacedfd78c674"
+  },
+  {
+    "path": "sources/rc-profile.html",
+    "sha256": "b5fa10c608c21491d2909820b34a51fb96894f60f608895542a44db5892c5c4a"
+  },
+  {
+    "path": "sources/rc-profile.txt",
+    "sha256": "6897fae62e00fa0575dfec3a7011f09f911c818c5d3c0e4fb3e34b28c05c2485"
+  },
+  {
+    "path": "sources/rc-transfer.html",
+    "sha256": "56fc338fa25591b5ac23df4b7a33effc9e1c384742d4a51a3bc44defa2e0c44e"
+  },
+  {
+    "path": "sources/rc-transfer.txt",
+    "sha256": "2b2bf515181f54a6f5f842244e70f68fb243d77a61f64b94b4c1243165ba7aa3"
+  },
+  {
+    "path": "sources/rcps-admission.html",
+    "sha256": "229f60b8a2fe22b1e14fb67609a4afa957fff8591397682cc1a8970f191818eb"
+  },
+  {
+    "path": "sources/rcps-admission.txt",
+    "sha256": "96fcf95c45e377cd19f051972342b0f261fe0b2ca5568ab6e09b815de9567a6e"
+  }
+]

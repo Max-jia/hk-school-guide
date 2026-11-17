@@ -5089,55 +5089,55 @@ const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
   }
 ],
   "rc": [
-    {
-      "label": "教育局《幼稚园概览2026/27》：高主教书院幼稚园部",
-      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2155380001",
-      "scope": "不参加计划、当届年费40800十期；2025年9月教员26、22持学位及26具幼儿教育证书以上、上午1:10.3/下午1:6.1；校长郑美宝、9课室、北角建华街30号地下至2楼。22/26约84.6%为持学位比例，非89%幼教学士；分时段比例不作班额。",
-      "sourceType": "school-profile",
-      "academicYear": "2026/27；师资/比例为2025年9月",
-      "checkedOn": "2026-10-28"
-    },
-    {
-      "label": "教育局收费证明书：高主教幼稚园部",
-      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215538.pdf",
-      "scope": "K1-K3上午及下午均40800（4080×10），现行证书生效2023-09-01。与KGP2026/27一致，但不可将旧生效日期改成2026新证书。",
-      "sourceType": "government",
-      "academicYear": "现行收费，2023-09-01生效；KGP2026/27仍同额",
-      "checkedOn": "2026-10-28"
-    },
-    {
-      "label": "高主教幼稚园部：教区官方网上收生系统",
-      "url": "https://dki-rckg.catholic.edu.hk/admission",
-      "scope": "2026-10-05 09时至10-16 17时网上申请，40元FPS，文件为证件照/出生及居留证明/针卡/领洗纸及校友或兄姊关系证明（如有）；按申请顺序编面见及电邮通知。页面未列具体面见日、结果日或学额，不补猜。",
-      "sourceType": "school-official",
-      "academicYear": "2026年秋季申请（页面正文未标独立入读学年）",
-      "checkedOn": "2026-10-28"
-    },
-    {
-      "label": "高主教幼稚园部：2025年旧届K1申请原件",
-      "url": "https://www.rckg.edu.hk/?page_id=3933",
-      "scope": "该页仍列2025-10-06至15申请、11-15/22面见；仅作历史收生准则：面试、在读兄姊优先、就近、天主教及校友，同时明示优先不保证取录。不能作为2026年秋季日程或当前面试日。Exa已成功读取全文。",
-      "sourceType": "school-official",
-      "academicYear": "2026/27 K1（2025年申请的历史页）",
-      "checkedOn": "2026-10-28"
-    },
-    {
-      "label": "高主教小学部：2024/2026升中获派情况",
-      "url": "https://rcps.raimondi.edu.hk/wordpress/achievement/secondary-school-places-allocation/",
-      "scope": "校方页面正文列79名小六学生获派高主教书院；是获派人数，非最终入读，未另列全届分母，不能换成79%或85%幼小中升读率。图片未读部分不算新增证据。",
-      "sourceType": "school-official",
-      "academicYear": "2024/2026升中周期",
-      "checkedOn": "2026-10-28"
-    },
-    {
-      "label": "教育局：2025/2027升中一般事项常见问题",
-      "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/spa-systems/secondary-spa/general-info/FAQ_SSPA_2027_Sept_General_EN.pdf",
-      "scope": "直属85%/联系25%的分母均是扣除留级及自行分配后剩余中一学额；一般须校网Band1/2及乙部首志愿，超额依组别及随机编号，跨网会失去保留资格。不是小学毕业生实际入读率，不能保证取录。",
-      "sourceType": "government",
-      "academicYear": "2025/2027派位周期（2027年9月升中）",
-      "checkedOn": "2026-10-28"
-    }
-  ],
+  {
+    "label": "高主教幼稚园部：2027/28 K1及K2／K3入学申请",
+    "url": "https://www.rckg.edu.hk/?page_id=5175",
+    "scope": "K1年龄、两种报名方式、11月14/21日面试、确认电邮或接见证、父母陪同及优先准则；K2/K3另列10月31日报名和11月21日面试。具体面试语言、放榜与注册日未列。",
+    "sourceType": "school-official",
+    "academicYear": "2027/28",
+    "checkedOn": "2026-11-17"
+  },
+  {
+    "label": "高主教幼稚园部：本学年下午班插班",
+    "url": "https://www.rckg.edu.hk/?page_id=4713",
+    "scope": "2026/27下午班K1至K3邮寄或电邮申请、资料要求及按校本情况安排面试；未列空缺或录取率。",
+    "sourceType": "school-official",
+    "academicYear": "2026/27",
+    "checkedOn": "2026-11-17"
+  },
+  {
+    "label": "教育局幼稚园概览2026/27：高主教",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2155380001",
+    "scope": "非牟利、本地课程、男女、校址；年费40800十期；校长及教学人员26人、22人持学位、26具幼教证书以上、上午1:10.3/下午1:6.1；无2至3及2岁以下幼儿服务。持续观察、每月记录与半年座谈会。",
+    "sourceType": "school-profile",
+    "academicYear": "2026/27；师资及服务为2025年9月",
+    "checkedOn": "2026-11-17"
+  },
+  {
+    "label": "教育局收费证明书：高主教幼稚园部",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215538.pdf",
+    "scope": "上午及下午K1至K3为4080十期共40800。证书生效2023-09-01，现行概览同额，不作2027/28最终收费。",
+    "sourceType": "government",
+    "academicYear": "现行证书，2023-09-01生效",
+    "checkedOn": "2026-11-17"
+  },
+  {
+    "label": "高主教小学部：小一申请",
+    "url": "https://rcps.raimondi.edu.hk/wordpress/information/admission/",
+    "scope": "2027/28网上7月6日至8月21日，亲身文件7月11日至8月22日；幼稚园录取不代替小学申请。",
+    "sourceType": "school-official",
+    "academicYear": "2027/28",
+    "checkedOn": "2026-11-17"
+  },
+  {
+    "label": "教育局小学概览2026：高主教小学",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=409",
+    "scope": "私立男女校，直属高主教书院，一条龙及联系栏未列学校；学校正式关系与幼小入读比例分别解释。",
+    "sourceType": "school-profile",
+    "academicYear": "2026/27",
+    "checkedOn": "2026-11-17"
+  }
+],
   "scps": [
     {
       "label": "教育局《小学概览2026》：圣嘉勒小学",

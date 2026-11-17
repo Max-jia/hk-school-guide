@@ -1,0 +1,18 @@
+[
+  {
+    "version": "HEAD",
+    "errorCount": 42,
+    "warningCount": 0,
+    "rules": [
+      "@typescript-eslint/no-explicit-any"
+    ]
+  },
+  {
+    "version": "working",
+    "errorCount": 42,
+    "warningCount": 0,
+    "rules": [
+      "@typescript-eslint/no-explicit-any"
+    ]
+  }
+]

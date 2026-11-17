@@ -1,5 +1,6 @@
 
 import blogMeta from "@/content/blog-meta.json";
+import allocationHistory from "@/content/p1-allocation-history.json";
 import Localize from "@/components/Localize";
 import { L, localeHref, type Locale } from "@/lib/i18n";
 import { REPORT_COUNT } from "@/lib/report-count";
@@ -15,12 +16,22 @@ type Story = {
   filter: string;
 };
 
+function allocationChoiceSummary(net: number): string {
+  const row = allocationHistory.netResultsByYear["2025"].find((item) => item.net === net);
+  if (!row) throw new Error(`Missing official 2025 allocation results for net ${net}`);
+  const partB = row.homeNetTop3 + row.homeNet4to10 + row.homeNetBeyond10;
+  const percent = ((row.homeNetTop3 / partB) * 100).toFixed(1);
+  return `${net}网${row.homeNetTop3}/${partB}人（${percent}%）`;
+}
+
+const netComparisonTease = `2025年乙部获派前三：${allocationChoiceSummary(41)}，${allocationChoiceSummary(12)}。再按孩子能填的学校和接送安排比较。`;
+
 const STORIES: Story[] = [
   {
     id: "#S-01",
     month: "全文开放",
     title: "寶山幼兒園",
-    tease: "40 校网名幼，联系学位与收生数据全公开，全文免费读。",
+    tease: "核对寶山的课程与申请安排，比较孩子的学习需要、家庭预算和接送。",
     img: "/shots/2025_04_birthday-effect.jpg",
     href: "/reports/braemar-hill",
     bg: "var(--p-bg-green)",
@@ -30,7 +41,7 @@ const STORIES: Story[] = [
     id: "#S-02",
     month: "全文开放",
     title: "拔萃女小學",
-    tease: "女拔小，直资一条龙，DSE 女校标杆，全文免费读。",
+    tease: "小一怎样申请、费用怎样算？再了解学校课程与升中安排。",
     img: "/shots/2025_03_language.jpg",
     href: "/reports/dgjs",
     bg: "var(--p-bg-blue)",
@@ -40,7 +51,7 @@ const STORIES: Story[] = [
     id: "#S-03",
     month: "深度报告",
     title: "圣保禄学校（小学部）",
-    tease: "A+ 级私立女校，1864 年创校，英文教学，一条龙直升联系中学。",
+    tease: "查看课程、收费和小一申请，分清小学录取与后续升中条件。",
     img: "/shots/2025_02_middle-school.jpg",
     href: "/reports/spcs",
     bg: "var(--p-bg-red)",
@@ -50,7 +61,7 @@ const STORIES: Story[] = [
     id: "#S-04",
     month: "深度报告",
     title: "拔萃男书院附属小学",
-    tease: "九龙一条龙男校小学部：直资、直升中学，IB+DSE 双轨，运动与学业并重。",
+    tease: "从小一申请看课程与升中安排，再核对家庭投入及实际入读条件。",
     img: "/shots/2025_11_democracy.jpg",
     href: "/reports/dbs",
     bg: "var(--p-bg-blue)",
@@ -60,7 +71,7 @@ const STORIES: Story[] = [
     id: "#S-05",
     month: "深度报告",
     title: "玛利诺修院学校（小学部）",
-    tease: "41 校网英文学校小学部：联系小学 + 直属学位双重保障，收生数据全公开。",
+    tease: "41校网资助女校，直属玛利诺修院学校中学部。升中时须核当届资格与学额。",
     img: "/shots/2025_05_aapi-casting.jpg",
     href: "/reports/mcs",
     bg: "var(--p-bg-purple)",
@@ -70,7 +81,7 @@ const STORIES: Story[] = [
     id: "#S-06",
     month: "深度报告",
     title: "喇沙小学",
-    tease: "48 校网官津名校小学部：联系中学喇沙书院，学费全免，成绩稳定前列。",
+    tease: "41校网资助男校，直属喇沙书院。比较小一申请、课堂安排和升中条件。",
     img: "/shots/2025_06_hello-stranger.jpg",
     href: "/reports/lsps",
     bg: "var(--p-bg-yellow)",
@@ -100,7 +111,7 @@ const STORIES: Story[] = [
     id: "#H-03",
     month: "7 月",
     title: "叩门信怎么写",
-    tease: "派位没中？7 月叩门是最后机会，附完整模板与学校偏好分析。",
+    tease: "说明孩子的具体情况、入读意愿和需要补交的资料，申请前核学校收表安排。",
     img: "/shots/2026_07_essential-words.jpg",
     href: "/blog/knocking-letter-guide",
     bg: "var(--p-gray-100)",
@@ -120,7 +131,7 @@ const STORIES: Story[] = [
     id: "#H-05",
     month: "6 月",
     title: "一条龙、直属、联系，到底差在哪",
-    tease: "升中保障排序：一条龙 > 直属 > 联系，用图讲清三者的实际差别。",
+    tease: "分别了解直升与保留学额的适用条件，再看孩子具有什么资格。",
     img: "/shots/2026_05_similes.jpg",
     href: "/blog/through-train-guide",
     bg: "var(--p-gray-100)",
@@ -130,7 +141,7 @@ const STORIES: Story[] = [
     id: "#H-06",
     month: "6 月",
     title: "41 校网 vs 12 校网",
-    tease: "41 网首三志愿获派率 79.6% 全港第三,12 网 70.4%——但 41 网首志愿命中率全港最低。名单、派位数据、边界陷阱一次讲清。",
+    tease: netComparisonTease,
     img: "/shots/2026_05_kpop-generations.jpg",
     href: "/blog/school-net-41-vs-12",
     bg: "var(--p-gray-100)",
@@ -273,7 +284,7 @@ export default function StoryGrid({ locale = "tc" }: { locale?: Locale }) {
         <CardList stories={BLOGS} locale={locale} />
         {/* 原 promo 黑条降级：热文区底部一行小字（避免首屏双黑块竞争） */}
         <p className="mt-2 px-4 pb-8 text-center text-sm text-[var(--p-secondary)]">
-          2026-27 学年自行分配学位申请即将开始 ·{" "}
+          准备小一选校，先了解计分及派位规则 ·{" "}
           <a
             href={localeHref("/blog/p1-scoring-guide", locale)}
             className="inline-block py-2 -my-2 font-mono text-sm font-bold text-[var(--p-fg)] no-underline hover:underline"
