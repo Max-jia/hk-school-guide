@@ -10,6 +10,8 @@ import {
   loadReport,
   reportMetadata,
   reportJsonLd,
+  reportPublicationDate,
+  reportRevisionDate,
   type ReportData,
 } from "@/lib/reports";
 import { L, type Locale } from "@/lib/i18n";
@@ -202,6 +204,7 @@ export default async function ReportPage({
         commuteInfo={commuteInfo}
         sourceReferences={sourceReferences}
         schoolProfiles={schoolProfiles}
+        editorialDates={reportPublicationDate(d) || reportRevisionDate(d) ? { publishedAt: reportPublicationDate(d), updatedAt: reportRevisionDate(d) } : undefined}
       />
     </>
   );

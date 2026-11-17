@@ -32,6 +32,7 @@ export default function ReportViewer({
   commuteInfo,
   sourceReferences = [],
   schoolProfiles = [],
+  editorialDates,
 }: {
   slug: string;
   hero: string;
@@ -44,6 +45,7 @@ export default function ReportViewer({
   commuteInfo: ReportCommuteInfo;
   sourceReferences?: ReportSourceReference[];
   schoolProfiles?: ReportSchoolProfileLink[];
+  editorialDates?: { publishedAt?: string; updatedAt?: string };
 }) {
   const z = (s: string) => L(s, locale);
   const editorialReport = usesEditorialReportLayout(slug);
@@ -154,6 +156,11 @@ export default function ReportViewer({
       {/* 所有报告章节均公开展示；付费标记只保留在历史数据中，不再作为访问限制。 */}
       <div className="report-article" dangerouslySetInnerHTML={{ __html: heroHtml }} />
         <div className={`report-page__content mx-auto max-w-[960px] px-4 pb-24${editorialReport ? " report-editorial__content" : ""}`}>
+        {editorialDates && <p className="my-5 text-sm leading-7 text-[var(--p-secondary)]" data-report-editorial-dates="">
+          {z("首次發布")}：{editorialDates.publishedAt ? <time dateTime={editorialDates.publishedAt}>{editorialDates.publishedAt}</time> : z("未確認")}
+          {editorialDates.updatedAt && <> · {z("內容修訂")}：<time dateTime={editorialDates.updatedAt}>{editorialDates.updatedAt}</time></>}
+          <br />{z("適用學年以各項來源為準。")}{" "}<a href={localeHref("/about/data-methodology", locale)} className="underline underline-offset-4">{z("審核與更正方法")}</a>
+        </p>}
         <section data-nosnippet="" className="report-contact-cta" aria-label={z("微信及 WhatsApp 咨询")}>
           <div className="report-contact-cta__copy">
             <p className="report-contact-cta__eyebrow">{z("港学荟 · 家长择校支持")}</p>

@@ -1,0 +1,47 @@
+{
+  "baselineDeployment": "dpl_BvhVpd9x1WcLswjQWoWaoz9eKi2Z",
+  "baselineSourceFiles": 1593,
+  "changedSourcePaths": [
+    "src/app/(sc)/cn/about/data-methodology/page.tsx",
+    "src/app/(tc)/about/data-methodology/page.tsx",
+    "src/app/(tc)/reports/[slug]/page.tsx",
+    "src/app/globals.css",
+    "src/components/MethodologyPage.tsx",
+    "src/components/ReportViewer.tsx",
+    "src/content/blog-meta.json",
+    "src/content/blog/kg-interview-child-silent.json",
+    "src/content/blog/kg-interview-day-checklist.json",
+    "src/content/blog/kg-interview-language-cantonese-putonghua.json",
+    "src/content/blog/kg-interview-results-waitlist-registration.json",
+    "src/content/blog/kg-parent-child-interview-parents-guide.json",
+    "src/content/reports/canaan.json",
+    "src/lib/reports.ts"
+  ],
+  "newSourcePaths": [
+    "public/covers/reports/canaan-sc.png",
+    "public/covers/reports/canaan-sc.svg",
+    "public/covers/reports/canaan-tc.png",
+    "public/covers/reports/canaan-tc.svg",
+    "public/covers/reports/pc-sc.png",
+    "public/covers/reports/pc-sc.svg",
+    "public/covers/reports/pc-tc.png",
+    "public/covers/reports/pc-tc.svg",
+    "public/covers/reports/rc-sc.png",
+    "public/covers/reports/rc-sc.svg",
+    "public/covers/reports/rc-tc.png",
+    "public/covers/reports/rc-tc.svg",
+    "scripts/gen-reviewed-report-og.mjs",
+    "src/lib/editorial-policy.ts"
+  ],
+  "checks": [
+    "typecheck PASS",
+    "changed-code eslint PASS",
+    "22 bilingual page checks PASS",
+    "git diff --check PASS"
+  ],
+  "limitations": [
+    "No verified social sameAs",
+    "First publication dates remain unknown",
+    "Mobile lab baseline is not an optimized result; no field-data verdict"
+  ]
+}

@@ -1,12 +1,14 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
+import Image from "next/image";
+import { EDITORIAL_REVIEWER, METHODOLOGY_DESCRIPTION, METHODOLOGY_UPDATED_AT } from "@/lib/editorial-policy";
 import { L, localeHref, type Locale } from "@/lib/i18n";
 import { ORGANIZATION_ID, breadcrumbJsonLd, jsonLdGraph, serializeJsonLd, webPageJsonLd } from "@/lib/structured-data";
 
 function methodologyJsonLd(locale: Locale) {
   const path = "/about/data-methodology";
   return jsonLdGraph(locale, [
-    { ...webPageJsonLd({ path, title: "資料來源與評估方法", description: "港學薈學校資料、來源標示、評估分析及使用限制說明。", locale, type: "AboutPage" }), about: { "@id": ORGANIZATION_ID } },
+    { ...webPageJsonLd({ path, title: "資料來源與評估方法", description: METHODOLOGY_DESCRIPTION, locale, type: "AboutPage" }), dateModified: METHODOLOGY_UPDATED_AT, about: { "@id": ORGANIZATION_ID } },
     breadcrumbJsonLd(path, [{ name: "首頁", path: "/" }, { name: "資料來源與評估方法", path }], locale),
   ]);
 }
@@ -22,25 +24,23 @@ const sections = [
   {
     title: "資料怎樣整理和更新",
     paragraphs: [
-      "我們先把教育局、學校公開資料、公開報道和家長公開分享分開記錄，再把可以核對的內容整理到學校欄位。能找到來源網址、資料年份或核驗日期的，會在相關頁面保留；找不到的內容不應被寫成已核實事實。",
-      "校網、收生安排、學費、課程、學額和升學規則都有時效。這些欄位不能只靠一次快照長期沿用；家長作決定前，應查看頁面標示的年份和來源，並向教育局或學校核對當屆安排。",
-      "港學荟的整理和分析由平台內容流程維護；報告中的平台評分、定位和建議不等同教育局、學校或招生機構的官方結論。",
+      "先找教育局或學校原件，記下校名、校址、適用學年和查閱日。報名、面試、放榜及註冊分別核對，不能把某一屆的日期套到下一屆。師資統計與收費的年份也要分開標示。",
+      "兩份官方資料有出入時，先檢查是否同一校址、年級、學年及收費範圍，再找正式通告或收費證明。仍無法釐清的，同時列出差異和待問事項，不把兩個不同數字寫成互相印證。",
+      "家長經驗與平台分析另行標示。個別取錄名單不能換算成全校錄取率；沒有申請人數和獲錄人數，就不給孩子估算成功概率。",
     ],
   },
   {
     title: "誰負責哪一類內容",
     paragraphs: [
-      "教育局制度、學校公開資料、課程和收生欄位，先按來源網址、資料年份和核驗日期整理；沒有足夠來源的內容會保留為待核，不能當作已確認事實。",
-      "平台分析、比較、評分和選校建議由港學荟的內容流程整理，目的是幫家長提出下一步要核對的問題，不代表教育局、學校或具官方資格的招生意見。",
-      "如果不同來源有出入，應優先查看教育局或學校當年正式公布，再把報告中的資料年份、來源和限制一起閱讀。網站會按資料更新逐步修訂公開內容，不會用沒有證據的作者資歷或第三方背書代替核驗。",
+      "港學薈對本站資料的整理、分析和更正負責，內容審核署名為Max Jia。教育局和學校是原始資料來源，不為本站的比較、評分或建議背書。",
+      "文章的日期和來源說明，表示該頁所列內容的整理範圍，不代表全站已在同一天重查。未確認的欄位會保留標示；學校自述的教學理念，也不等於獨立驗證的學習成效。",
     ],
   },
   {
     title: "發現資料有誤，怎樣幫我們更正",
     paragraphs: [
-      "如果你發現學費、校網、收生日期、課程或學校基本資料可能過期，請一併記下學校名稱、報告章節或欄位、問題內容，以及教育局或學校官方來源連結。只有指出具體欄位和來源，才方便我們重現和核對。",
-      "收到資料後，我們會先分辨是來源年份不同、校方更新未同步，還是平台整理錯誤；必要時保留「待核」標示，不會在未完成核對前把家長提供的單一說法當成官方事實。修訂後會更新相關頁面的來源範圍和核驗日期。",
-      "本頁不承諾所有資料即時更新，也不代替學校或教育局處理申請。涉及當屆收生、學費或學位的決定，仍應以官方最新公告為準。",
+      "透過本頁的微信或WhatsApp入口，把文章網址、具體句子或欄位、疑似錯誤和官方連結一併發來。涉及孩子的通知，先遮去姓名、申請編號及證件資料。",
+      "我們會對照原件，分辨是年份不同、校方更新，還是本站整理有誤。確認後修正文與摘要，補上修訂日期；仍有衝突的保留待核說明。面試或註冊快到期時，請直接向學校確認，勿等待網站更正才處理。",
     ],
   },
   {
@@ -62,7 +62,7 @@ const sections = [
     paragraphs: [
       "新加入的幼稚園報告會按課程特色、師資與支援、升小證據、申請與費用透明度，以及家庭適配限制，給出 A 或 B 的編輯參考級別。A 表示有較充分的官方資料和清楚的適用家庭；B 表示值得納入候選，但仍有重要條件需要書面核對。B 不代表教學質素差。",
       "這項擇校參考評級與較早按家長平台共識整理的 S／A+／A 名氣分級口徑不同，不宜直接排序。沒有可核算的多屆升小結果時，不會因個別取錄名單或校名而給予 S／A+；教育局質素評核也須連同評核年份及改善建議閱讀。",
-      "例如德萃的 2025/26 校方收費頁與幼稚園概覽的年費口徑不同，報告會同時列出兩者，將當屆書面收費列為家長下一步核對事項。評級、學費和收生資料均須隨新公告再評估。",
+      "學費看適用學年，師資看統計月份。即使同在一份概覽內，也不能把所有欄位都當作今年的即時資料。",
     ],
   },
   {
@@ -144,12 +144,16 @@ export default function MethodologyPage({ locale = "tc" }: { locale?: Locale }) 
             {L("資料來源與評估方法", locale)}
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-[var(--p-secondary)]">
-            {L(
-              "這裡說明港學荟的學校資料從哪裡整理、報告評分代表甚麼，以及閱讀時需要留意的限制。",
-              locale
-            )}
+            {L(METHODOLOGY_DESCRIPTION, locale)}
           </p>
+          <p className="mt-4 text-sm text-[var(--p-secondary)]">{L("內容審核與更正", locale)}：{EDITORIAL_REVIEWER} · {L("本頁修訂", locale)} <time dateTime={METHODOLOGY_UPDATED_AT}>{METHODOLOGY_UPDATED_AT}</time></p>
+          <a href="#corrections" className="mt-3 inline-block py-2 font-semibold underline underline-offset-4">{L("發現資料有誤？查看更正入口", locale)} →</a>
         </header>
+
+        <section className="mb-8 rounded-xl border border-[var(--p-gray-300)] p-5 sm:p-7" aria-labelledby="brand-identity">
+          <h2 id="brand-identity" className="font-serif text-2xl font-bold">{L("核對品牌，先看官網域名", locale)}</h2>
+          <p className="mt-3 leading-7 text-[var(--p-secondary)]">{L("本站名稱為港學薈，官網為hkschool.guide，提供香港學校資料與升學規劃內容。其他帳號或服務即使同名，也不能單憑名稱判定與本站有關。", locale)}</p>
+        </section>
 
         <div className="mb-10 grid gap-4 sm:grid-cols-2">
           <a
@@ -221,6 +225,18 @@ export default function MethodologyPage({ locale = "tc" }: { locale?: Locale }) 
             </section>
           ))}
         </div>
+
+        <section id="corrections" className="mt-8 scroll-mt-6 rounded-xl border border-[var(--p-gray-300)] p-5 sm:p-7" aria-labelledby="correction-title">
+          <h2 id="correction-title" className="font-serif text-2xl font-bold">{L("資料更正，直接聯絡我們", locale)}</h2>
+          <p className="mt-3 leading-7 text-[var(--p-secondary)]">{L("透過以下現有聯絡入口提出資料更正，由Max Jia跟進。請附文章網址、原句或欄位、問題及官方依據。", locale)}</p>
+          <div className="mt-5 flex flex-wrap gap-6">
+            {[{ name: "微信", src: "/brand/wechat-qr.jpg", width: 630 }, { name: "WhatsApp", src: "/brand/whatsapp-qr.jpg", width: 515 }].map((channel) => <a key={channel.src} href={channel.src} target="_blank" rel="noreferrer" className="block text-center underline underline-offset-4">
+              <Image src={channel.src} width={channel.width} height={channel.width} alt={L(`${channel.name}聯絡二維碼`, locale)} unoptimized className="mb-2 h-32 w-32 object-contain" />
+              {L(`查看${channel.name}二維碼`, locale)}
+            </a>)}
+          </div>
+          <p className="mt-5 rounded-lg bg-[var(--p-gray-100)] p-4 text-sm leading-7">{L("更正訊息範本：文章網址［　］；原句／欄位［　］；疑似錯誤［　］；官方來源及適用年份［　］。", locale)}</p>
+        </section>
 
         <aside className="mt-8 rounded-xl border-l-4 border-[var(--p-green)] bg-[var(--p-gray-100)] p-5 text-sm leading-7 text-[var(--p-secondary)]">
           {L(

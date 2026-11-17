@@ -1,0 +1,16 @@
+{
+  "registrationWorksheet": {
+    "viewport": 390,
+    "pageWidth": 390,
+    "fields": 15,
+    "editable": true,
+    "testInputCleared": true
+  },
+  "openedLocalPreviews": [
+    "overview",
+    "methodology-sc",
+    "registration-sc",
+    "language-email-sc"
+  ],
+  "checks": "Reviewed visible responsibility, correction channels, blank forms and official scope; no production action"
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "path": "/about/data-methodology",
+    "status": 200
+  },
+  {
+    "path": "/blog/kg-parent-child-interview-parents-guide",
+    "status": 200
+  },
+  {
+    "path": "/blog/kg-interview-results-waitlist-registration",
+    "status": 200
+  },
+  {
+    "path": "/blog/kg-interview-language-cantonese-putonghua",
+    "status": 200
+  },
+  {
+    "path": "/blog/kg-interview-day-checklist",
+    "status": 200
+  },
+  {
+    "path": "/blog/kg-interview-child-silent",
+    "status": 200
+  },
+  {
+    "path": "/reports/pc",
+    "status": 200
+  },
+  {
+    "path": "/reports/canaan",
+    "status": 200
+  },
+  {
+    "path": "/reports/rc",
+    "status": 200
+  },
+  {
+    "path": "/blog",
+    "status": 200
+  },
+  {
+    "path": "/blog/topics/kindergarten-interviews",
+    "status": 200
+  },
+  {
+    "path": "/cn/about/data-methodology",
+    "status": 200
+  },
+  {
+    "path": "/cn/blog/kg-parent-child-interview-parents-guide",
+    "status": 200
+  },
+  {
+    "path": "/cn/blog/kg-interview-results-waitlist-registration",
+    "status": 200
+  },
+  {
+    "path": "/cn/blog/kg-interview-language-cantonese-putonghua",
+    "status": 200
+  },
+  {
+    "path": "/cn/blog/kg-interview-day-checklist",
+    "status": 200
+  },
+  {
+    "path": "/cn/blog/kg-interview-child-silent",
+    "status": 200
+  },
+  {
+    "path": "/cn/reports/pc",
+    "status": 200
+  },
+  {
+    "path": "/cn/reports/canaan",
+    "status": 200
+  },
+  {
+    "path": "/cn/reports/rc",
+    "status": 200
+  },
+  {
+    "path": "/cn/blog",
+    "status": 200
+  },
+  {
+    "path": "/cn/blog/topics/kindergarten-interviews",
+    "status": 200
+  }
+]

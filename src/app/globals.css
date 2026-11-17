@@ -460,6 +460,25 @@ table.factor-table th:nth-child(4), table.factor-table td:nth-child(4) { width: 
 }
 .blog-article .highlight { background: var(--p-hl-bg); border-left: 4px solid var(--p-hl-border); padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
 .blog-article .warn { background: #fff7ed; border-left: 4px solid #f97316; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.blog-article .parent-worksheet { margin: 28px 0; padding: 20px; border: 1px solid var(--p-gray-300); border-radius: 10px; background: var(--p-bg-yellow); scroll-margin-top: 24px; }
+.blog-article .parent-worksheet h2 { margin: 0 0 14px; border: 0; padding: 0; }
+.blog-article .parent-worksheet .worksheet-note { font-size: 14px; color: var(--p-secondary); }
+.blog-article .parent-worksheet label { display: block; margin: 16px 0; font-size: 15px; }
+.blog-article .parent-worksheet textarea { display: block; width: 100%; min-width: 0; margin-top: 7px; padding: 10px; border: 1px solid var(--p-gray-300); border-radius: 5px; background: var(--p-bg); color: var(--p-fg); font: inherit; line-height: 1.6; resize: vertical; }
+.blog-article .parent-worksheet .worksheet-check { display: flex; align-items: flex-start; gap: 10px; }
+.blog-article .worksheet-check input { flex: 0 0 auto; width: 18px; height: 18px; margin-top: 5px; accent-color: #204f49; }
+.blog-article .worksheet-table table { width: 900px; table-layout: fixed; }
+.blog-article .worksheet-table :is(th, td) { white-space: normal; }
+.blog-article .worksheet-dates table { width: 100%; min-width: 0; table-layout: fixed; }
+.blog-article .worksheet-dates :is(th, td) { white-space: normal; overflow-wrap: anywhere; }
+.blog-article .worksheet-dates :is(th, td):first-child { width: 26%; }
+.blog-article .worksheet-email { margin: 16px 0; padding: 16px; border-left: 3px solid #204f49; background: var(--p-bg); }
+@media print {
+  .blog-article .parent-worksheet { background: white; border-color: #777; }
+  .blog-article .parent-worksheet textarea { min-height: 70px; border-color: #777; }
+  .blog-article .worksheet-table { overflow: visible; }
+  .blog-article .worksheet-table table { width: 100%; font-size: 11px; }
+}
 .blog-article ul { margin: 0 0 1.2em; padding-left: 1.5em; }
 .blog-article li { margin: 6px 0; }
 .blog-article ol { margin: 0 0 1.2em; padding-left: 1.6em; list-style: decimal; }

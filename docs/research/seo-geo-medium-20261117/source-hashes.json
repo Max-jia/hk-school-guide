@@ -1,0 +1,34 @@
+[
+  {
+    "file": "edb-faq.pdf",
+    "sha256": "63f9f998caf60f2512a9bdd015f1e6e6e6972860facc92bcd70a867e7e5959a3"
+  },
+  {
+    "file": "edb-faq.txt",
+    "sha256": "a4e78fad7a13c68b6ad917e6d6c37ac52cb07e8832ddc73043a4576ee2c17d2d"
+  },
+  {
+    "file": "pui-ching.html",
+    "sha256": "4b1e1946a83cd9e331ef07df8f66fd29c981543381b6aa5133240f3f63f11237"
+  },
+  {
+    "file": "pui-ching.txt",
+    "sha256": "ec1041ad5a7db8d1fda99f0e11d77501e26266641967f955023688333b2b26de"
+  },
+  {
+    "file": "raimondi.html",
+    "sha256": "fd72ecf8e77d0187c5ead3c337300cefdb034037464ba46a7ef8f3c8ff89fb4d"
+  },
+  {
+    "file": "stcat.html",
+    "sha256": "6526ade9cfbdf33b5d52a0bf7ba9277b3fc9faaee047b9fe4ef9868677e52bcc"
+  },
+  {
+    "file": "taysfm.html",
+    "sha256": "8bf6a6914718c2ae72326b3f71929ca0f501290a2e61291c3cc57c78c1909b69"
+  },
+  {
+    "file": "true-light.html",
+    "sha256": "7c11a9180207fd8f3d0afe04d8c90be5c4d2ffe154d2a70cc440ca43d16ba942"
+  }
+]

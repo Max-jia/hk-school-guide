@@ -1,0 +1,65 @@
+{
+  "measuredOn": "2026-11-17",
+  "scope": "production baseline, mobile laboratory measurement; not an after-optimization result",
+  "device": "Moto G Power simulated",
+  "network": "slow 4G",
+  "lighthouse": "13.6.0",
+  "rows": [
+    {
+      "path": "/schools/kindergarten/directory",
+      "report": "https://pagespeed.web.dev/analysis/https-hkschool-guide-schools-kindergarten-directory/bwf6in1h72?form_factor=mobile",
+      "performance": 63,
+      "fcpSeconds": 2.8,
+      "lcpSeconds": 2.8,
+      "tbtMs": 1230,
+      "cls": 0,
+      "speedIndexSeconds": 5.7
+    },
+    {
+      "path": "/blog",
+      "report": "https://pagespeed.web.dev/analysis/https-hkschool-guide-blog/dfrqf82tm0?form_factor=mobile",
+      "performance": 79,
+      "fcpSeconds": 1.1,
+      "lcpSeconds": 1.1,
+      "tbtMs": 840,
+      "cls": 0,
+      "speedIndexSeconds": 3.7
+    },
+    {
+      "path": "/blog/topics/kindergarten-interviews",
+      "report": "https://pagespeed.web.dev/analysis/https-hkschool-guide-blog-topics-kindergarten-interviews/pn12y6updx?form_factor=mobile",
+      "performance": 93,
+      "fcpSeconds": 1.0,
+      "lcpSeconds": 1.0,
+      "tbtMs": 320,
+      "cls": 0.001,
+      "speedIndexSeconds": 1.7
+    }
+  ],
+  "fieldData": {
+    "searchConsole": "Not enough usage data in the last 90 days for this device type.",
+    "devices": [
+      "mobile",
+      "desktop"
+    ],
+    "gscLastUpdated": "2026-11-09",
+    "pageSpeed": "No real user data for all three URLs",
+    "cwvPass": null
+  },
+  "directoryDiagnostics": {
+    "mainThreadSeconds": 3.5,
+    "jsExecutionSeconds": 1.8,
+    "firstPartyCpuMs": 1694,
+    "firstPartyChunkCpuMs": 801,
+    "gtmCpuMs": 365,
+    "fundingChoicesCpuMs": 339,
+    "adsCpuMs": 338,
+    "unusedJsPotentialKiB": 310
+  },
+  "limits": [
+    "One run per URL; not a distribution or a causal before/after test",
+    "TBT is a laboratory diagnostic, not INP",
+    "No current field-data verdict is available",
+    "No content inventory, analytics or advertising policy changed"
+  ]
+}

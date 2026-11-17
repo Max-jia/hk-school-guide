@@ -29,10 +29,16 @@ export type ReportData = {
   singleUrl: string;
   /** Actual editorial revision date, never a build or source-link check date. */
   updatedAt?: string;
+  /** Only a verified first-publication record; an import commit is insufficient. */
+  publishedAt?: string;
 };
 
 export function reportRevisionDate(d: Pick<ReportData, "updatedAt">): string | undefined {
   return d.updatedAt && /^\d{4}-\d{2}-\d{2}$/.test(d.updatedAt) ? d.updatedAt : undefined;
+}
+
+export function reportPublicationDate(d: Pick<ReportData, "publishedAt">): string | undefined {
+  return d.publishedAt && /^\d{4}-\d{2}-\d{2}$/.test(d.publishedAt) ? d.publishedAt : undefined;
 }
 
 export function listReportSlugs(): string[] {
@@ -268,7 +274,9 @@ export function reportTitle(d: ReportData, locale: Locale): string {
   return L(`${scope}深度报告｜${focus}｜港学荟`, locale);
 }
 
-export function reportOgImage(slug: string): string {
+export function reportOgImage(slug: string, locale: Locale = "tc"): string {
+  const localized = `/covers/reports/${slug}-${locale}.png`;
+  if (fs.existsSync(path.join(process.cwd(), "public", localized))) return localized;
   const png = path.join(process.cwd(), "public", "covers", `${slug}.png`);
   return fs.existsSync(png) ? `/covers/${slug}.png` : "/og-home.png";
 }
@@ -289,7 +297,7 @@ export function reportMetadata(slug: string, locale: Locale): Metadata {
   const title = reportTitle(d, locale);
   const description = makeReportDescription(d, locale);
   const url = localeHref(`/reports/${slug}`, locale);
-  const image = reportOgImage(slug);
+  const image = reportOgImage(slug, locale);
 
   return {
     title,
@@ -298,11 +306,12 @@ export function reportMetadata(slug: string, locale: Locale): Metadata {
     openGraph: {
       type: "article",
       modifiedTime: reportRevisionDate(d),
+      publishedTime: reportPublicationDate(d),
       siteName: L("港学荟", locale),
       title,
       description,
       url,
-      images: [{ url: image, alt: title }],
+      images: [{ url: image, alt: title, ...(image.startsWith("/covers/reports/") ? { width: 1200, height: 630 } : {}) }],
     },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
@@ -326,10 +335,11 @@ export function reportJsonLd(d: ReportData, locale: Locale, sourceReferences: Re
     headline: title,
     description,
     dateModified: reportRevisionDate(d),
+    datePublished: reportPublicationDate(d),
     author: { "@id": ORGANIZATION_ID },
     publisher: { "@id": ORGANIZATION_ID },
     mainEntityOfPage: { "@id": `${pageUrl}#webpage` },
-    image: `${SITE_URL}${reportOgImage(d.slug)}`,
+    image: `${SITE_URL}${reportOgImage(d.slug, locale)}`,
     // Editorial policy is linked from the publisher. It is not school evidence.
     citation: declaredCitations.length ? declaredCitations : undefined,
     inLanguage: LOCALE_META[locale].htmlLang,
