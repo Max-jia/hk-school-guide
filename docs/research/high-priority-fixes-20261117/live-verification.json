@@ -1,0 +1,78 @@
+{
+  "origin": "https://hkschool.guide",
+  "pages": [
+    {
+      "path": "/",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/cn",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/reports/rc",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/cn/reports/rc",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/schools/kindergarten/rc",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/cn/schools/kindergarten/rc",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/reports",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/cn/reports",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/compare",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/cn/compare",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/blog/raimondi-kg-interview-guide",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/cn/blog/raimondi-kg-interview-guide",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/blog/primary-net-41-analysis",
+      "h1": 1,
+      "result": "PASS"
+    },
+    {
+      "path": "/cn/blog/primary-net-41-analysis",
+      "h1": 1,
+      "result": "PASS"
+    }
+  ],
+  "sitemapBefore": 5414,
+  "sitemapAfter": 5414,
+  "lostUrls": 0
+}
