@@ -1,0 +1,182 @@
+{
+  "origin": "https://hkschool.guide",
+  "pages": 22,
+  "results": [
+    {
+      "path": "/about/data-methodology",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "港學薈由Max Jia負責內容審核與更正。說明官方原件怎樣核對、來源衝突怎樣處理，以及如何通過微信或WhatsApp反饋具體錯誤。",
+      "ogImage": "https://hkschool.guide/og-home.png"
+    },
+    {
+      "path": "/blog/kg-parent-child-interview-parents-guide",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 4,
+      "description": "附可填寫的“事實—處理—孩子反應”練習框，準備選校、管教和陪伴問題；核對培正第二輪及高主教的陪同要求。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-parent-child-interview-parents-guide.png"
+    },
+    {
+      "path": "/blog/kg-interview-results-waitlist-registration",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 15,
+      "description": "附可填寫的放榜與註冊進度表，分校記錄結果渠道、截止時間和退讀條件；核對培正12月8日結果及國際英文11月26日電郵通知。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-results-waitlist-registration.png"
+    },
+    {
+      "path": "/blog/kg-interview-language-cantonese-putonghua",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 1,
+      "description": "附面試語言查詢郵件模板及答覆記錄框。逐校核對大坑真光、國際英文和譚歐陽少芳安排，說明普通話家庭與非華語支援的適用範圍。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-language-cantonese-putonghua.png"
+    },
+    {
+      "path": "/blog/kg-interview-day-checklist",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 8,
+      "description": "附可勾選的面試清單，按高主教K1、培正第二輪、大坑真光分別核對文件和陪同；另記個人場次、校址及撞期答覆。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-day-checklist.png"
+    },
+    {
+      "path": "/blog/kg-interview-child-silent",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 7,
+      "description": "附面試前、現場和回家後的行動清單及復盤框。結合大坑真光、高主教公開收生準則，說明哪些表現不能換算成錄取概率。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-child-silent.png"
+    },
+    {
+      "path": "/reports/pc",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "香港培正小學（幼稚園部）深度擇校報告：解讀授課語言、課程、學費、入學申請與升小去向，比較孩子適配、家庭投入與選校關注點。收費及收生安排按正文所列年度核對。",
+      "ogImage": "https://hkschool.guide/covers/reports/pc-tc.png"
+    },
+    {
+      "path": "/reports/canaan",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "迦南幼稚園品牌報告：比較分校、課程與入讀安排，解讀升小去向及資料限制；未有已核實的全品牌升小分母，不推算直私錄取率。",
+      "ogImage": "https://hkschool.guide/covers/reports/canaan-tc.png"
+    },
+    {
+      "path": "/reports/rc",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "高主教幼稚園部2027/28 K1面試為11月14日或21日，父母可陪同。報告核對40,800港元現行學費、幼小申請條件，以及本學年下午班和下學年插班的不同入口。",
+      "ogImage": "https://hkschool.guide/covers/reports/rc-tc.png"
+    },
+    {
+      "path": "/blog",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 1,
+      "description": "按幼稚園、小學、中學與家長問題找文章：入學申請、學費資助、學校觀察和選校比較。每篇註明發佈時間，有實質更新時單獨標記。",
+      "ogImage": "https://hkschool.guide/og-home.png"
+    },
+    {
+      "path": "/blog/topics/kindergarten-interviews",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 1,
+      "description": "核對幼稚園面試、第二輪、放榜與註冊安排，按學校查面見語言，也可讀家長回答與候補處理指南。",
+      "ogImage": "https://hkschool.guide/og-home.png"
+    },
+    {
+      "path": "/cn/about/data-methodology",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "港学荟由Max Jia负责内容审核与更正。说明官方原件怎样核对、来源冲突怎样处理，以及如何通过微信或WhatsApp反馈具体错误。",
+      "ogImage": "https://hkschool.guide/og-home.png"
+    },
+    {
+      "path": "/cn/blog/kg-parent-child-interview-parents-guide",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 4,
+      "description": "附可填写的“事实—处理—孩子反应”练习框，准备选校、管教和陪伴问题；核对培正第二轮及高主教的陪同要求。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-parent-child-interview-parents-guide.png"
+    },
+    {
+      "path": "/cn/blog/kg-interview-results-waitlist-registration",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 15,
+      "description": "附可填写的放榜与注册进度表，分校记录结果渠道、截止时间和退读条件；核对培正12月8日结果及国际英文11月26日电邮通知。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-results-waitlist-registration.png"
+    },
+    {
+      "path": "/cn/blog/kg-interview-language-cantonese-putonghua",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 1,
+      "description": "附面试语言查询邮件模板及答复记录框。逐校核对大坑真光、国际英文和谭欧阳少芳安排，说明普通话家庭与非华语支援的适用范围。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-language-cantonese-putonghua.png"
+    },
+    {
+      "path": "/cn/blog/kg-interview-day-checklist",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 8,
+      "description": "附可勾选的面试清单，按高主教K1、培正第二轮、大坑真光分别核对文件和陪同；另记个人场次、校址及撞期答复。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-day-checklist.png"
+    },
+    {
+      "path": "/cn/blog/kg-interview-child-silent",
+      "result": "PASS",
+      "worksheets": 1,
+      "fields": 7,
+      "description": "附面试前、现场和回家后的行动清单及复盘框。结合大坑真光、高主教公开收生准则，说明哪些表现不能换算成录取概率。",
+      "ogImage": "https://hkschool.guide/covers/og/kg-interview-child-silent.png"
+    },
+    {
+      "path": "/cn/reports/pc",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "香港培正小学（幼稚园部）深度择校报告：解读授课语言、课程、学费、入学申请与升小去向，比较孩子适配、家庭投入与选校关注点。收费及收生安排按正文所列年度核对。",
+      "ogImage": "https://hkschool.guide/covers/reports/pc-sc.png"
+    },
+    {
+      "path": "/cn/reports/canaan",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "迦南幼稚园品牌报告：比较分校、课程与入读安排，解读升小去向及资料限制；未有已核实的全品牌升小分母，不推算直私录取率。",
+      "ogImage": "https://hkschool.guide/covers/reports/canaan-sc.png"
+    },
+    {
+      "path": "/cn/reports/rc",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 0,
+      "description": "高主教幼稚园部2027/28 K1面试为11月14日或21日，父母可陪同。报告核对40,800港元现行学费、幼小申请条件，以及本学年下午班和下学年插班的不同入口。",
+      "ogImage": "https://hkschool.guide/covers/reports/rc-sc.png"
+    },
+    {
+      "path": "/cn/blog",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 1,
+      "description": "按幼稚园、小学、中学与家长问题找文章：入学申请、学费资助、学校观察和选校比较。每篇注明发布时间，有实质更新时单独标记。",
+      "ogImage": "https://hkschool.guide/og-home.png"
+    },
+    {
+      "path": "/cn/blog/topics/kindergarten-interviews",
+      "result": "PASS",
+      "worksheets": 0,
+      "fields": 1,
+      "description": "核对幼稚园面试、第二轮、放榜与注册安排，按学校查面见语言，也可读家长回答与候补处理指南。",
+      "ogImage": "https://hkschool.guide/og-home.png"
+    }
+  ]
+}

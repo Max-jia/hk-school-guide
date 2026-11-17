@@ -1,0 +1,32 @@
+[
+  {
+    "file": "public/covers/reports/pc-sc.png",
+    "width": 1200,
+    "height": 630
+  },
+  {
+    "file": "public/covers/reports/pc-tc.png",
+    "width": 1200,
+    "height": 630
+  },
+  {
+    "file": "public/covers/reports/canaan-sc.png",
+    "width": 1200,
+    "height": 630
+  },
+  {
+    "file": "public/covers/reports/canaan-tc.png",
+    "width": 1200,
+    "height": 630
+  },
+  {
+    "file": "public/covers/reports/rc-sc.png",
+    "width": 1200,
+    "height": 630
+  },
+  {
+    "file": "public/covers/reports/rc-tc.png",
+    "width": 1200,
+    "height": 630
+  }
+]

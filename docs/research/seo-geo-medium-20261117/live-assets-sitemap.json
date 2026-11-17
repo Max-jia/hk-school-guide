@@ -1,0 +1,37 @@
+{
+  "images": [
+    {
+      "url": "/covers/reports/canaan-sc.png",
+      "sha256": "96169afa80581cff976831a34569a00072665db0779d73ba5c30665f19c88e87",
+      "result": "PASS"
+    },
+    {
+      "url": "/covers/reports/canaan-tc.png",
+      "sha256": "492436ab5cb767d9a5e3a078b505e3af65059dafb94641389fc823bbcf348847",
+      "result": "PASS"
+    },
+    {
+      "url": "/covers/reports/pc-sc.png",
+      "sha256": "195440579eadc1771e0044a4b4d6c29fd8641ba53fd5c04f318f6497cb51004a",
+      "result": "PASS"
+    },
+    {
+      "url": "/covers/reports/pc-tc.png",
+      "sha256": "e04a382e9c27aff8727bf6b154cf83bd0a596688b364546bc2bb5c881707f039",
+      "result": "PASS"
+    },
+    {
+      "url": "/covers/reports/rc-sc.png",
+      "sha256": "0700acd03b12e92f87a0ded2f59c425704c13e27bc4df6583fb8c53f00ddfcbb",
+      "result": "PASS"
+    },
+    {
+      "url": "/covers/reports/rc-tc.png",
+      "sha256": "348c8611424cc8e453e3625abbf1ccffc3465cd613096b7f2c901be97539db22",
+      "result": "PASS"
+    }
+  ],
+  "sitemapBefore": 5414,
+  "sitemapAfter": 5414,
+  "lostUrls": 0
+}

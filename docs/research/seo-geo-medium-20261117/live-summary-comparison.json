@@ -1,0 +1,12 @@
+{
+  "pages": 22,
+  "exactMatchWithLocal": true,
+  "comparedFields": [
+    "path",
+    "result",
+    "worksheets",
+    "fields",
+    "description",
+    "ogImage"
+  ]
+}
