@@ -9,36 +9,15 @@ import * as OpenCC from "opencc-js";
 // 站点既有 lib/zh.ts 是纯浏览器端切换,Google 抓不到;这里是服务端渲染期的转换,
 // 两个语言各自有可抓取的 URL 和 hreflang 配对。
 
-export type Locale = "tc" | "sc";
-export const DEFAULT_LOCALE: Locale = "tc";
-export const LOCALES: readonly Locale[] = ["tc", "sc"] as const;
-
-type LocaleMeta = {
-  /** <html lang> 用值 */
-  htmlLang: string;
-  /** hreflang 用值 */
-  hreflang: string;
-  /** URL 前缀(主版本为空) */
-  prefix: string;
-  /** 语言切换器上显示的本语言名 */
-  label: string;
-  /** openGraph locale */
-  ogLocale: string;
-};
-
-export const LOCALE_META: Record<Locale, LocaleMeta> = {
-  tc: { htmlLang: "zh-Hant-HK", hreflang: "zh-Hant-HK", prefix: "", label: "繁體", ogLocale: "zh_HK" },
-  sc: { htmlLang: "zh-Hans-CN", hreflang: "zh-Hans", prefix: "/cn", label: "简体", ogLocale: "zh_CN" },
-};
-
-export function isLocale(v: string | undefined | null): v is Locale {
-  return v === "tc" || v === "sc";
-}
+import { type Locale } from "./locale";
+export * from "./locale";
 
 // ── 简繁转换 ─────────────────────────────────────────────
 // s2hk 而非 s2tw:这是香港站,用香港字形标准(裏/為/着),避免台湾用词。
-const _toTrad = OpenCC.Converter({ from: "cn", to: "hk" });
-const _toSimp = OpenCC.Converter({ from: "hk", to: "cn" });
+// Build only the direction actually used. The large s2hk trie is unnecessary
+// on Simplified pages; constructing both blocked hydration before any UI ran.
+let _toTrad: ReturnType<typeof OpenCC.Converter> | undefined;
+let _toSimp: ReturnType<typeof OpenCC.Converter> | undefined;
 
 // OpenCC 的 s2hk 输出采用「日式」字形:説 / 税 / 脱 / 悦 / 兑 / 麪。
 // 香港报刊、教育局文件和一般家长读到的是 說 / 稅 / 脫 / 悅 / 兌 / 麵。
@@ -101,7 +80,7 @@ export function L<T extends string | undefined | null>(text: T, locale: Locale):
   if (hit !== undefined) return hit as T;
   let out: string;
   try {
-    out = locale === "tc" ? normalizeHk(_toTrad(text)) : _toSimp(text).replace(/梁𨱇琚/g, "梁銶琚");
+    out = locale === "tc" ? normalizeHk((_toTrad ??= OpenCC.Converter({ from: "cn", to: "hk" }))(text)) : (_toSimp ??= OpenCC.Converter({ from: "hk", to: "cn" }))(text).replace(/梁𨱇琚/g, "梁銶琚");
   } catch {
     out = text;
   }
@@ -119,33 +98,6 @@ export function localizeDeep<T>(value: T, locale: Locale): T {
     return out as T;
   }
   return value;
-}
-
-// ── 路径 ────────────────────────────────────────────────
-
-/** 把站内路径映射到指定语言的 URL: localeHref("/blog/x", "sc") → "/cn/blog/x" */
-export function localeHref(path: string, locale: Locale): string {
-  const clean = "/" + path.replace(/^\/+/, "");
-  const bare = clean === "/" ? "" : clean;
-  const url = LOCALE_META[locale].prefix + bare;
-  return url === "" ? "/" : url;
-}
-
-/** 语言切换目标:同一页面切到另一种语言 */
-export function otherLocale(locale: Locale): Locale {
-  return locale === "tc" ? "sc" : "tc";
-}
-
-/**
- * hreflang 配对。canonical 由各页面自己指定(当前语言),
- * 这里给出各语言版本 + x-default(指向主版本繁體)。
- */
-export function languageAlternates(path: string): Record<string, string> {
-  return {
-    "zh-Hant-HK": localeHref(path, "tc"),
-    "zh-Hans": localeHref(path, "sc"),
-    "x-default": localeHref(path, DEFAULT_LOCALE),
-  };
 }
 
 // ── 站内 UI 文案 ─────────────────────────────────────────

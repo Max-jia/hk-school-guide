@@ -1,0 +1,12 @@
+[
+  {
+    "file": "sitemap.xml.body",
+    "same": true,
+    "sha256": "39f5039215c1f8a015edee14d753c48d1c098b918ceee537cd679f453b9da35f"
+  },
+  {
+    "file": "robots.txt.body",
+    "same": true,
+    "sha256": "237e7276a06a333f96195b1fe08d32722dfa5fa7f26f01cb37e5c0d8250f5a85"
+  }
+]

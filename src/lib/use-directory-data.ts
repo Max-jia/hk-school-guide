@@ -22,7 +22,7 @@ function publish(store: Store, state: State) {
 }
 
 /** Share one immutable dataset across filters; never put it back into route props. */
-export function useDirectoryData<T extends { slug: string }>(asset: DirectoryAsset, query: string) {
+export function useDirectoryData<T extends { slug: string }>(asset: Pick<DirectoryAsset, "url" | "total">, query: string) {
   const store = getStore(asset.url);
   const subscribe = useCallback((listener: () => void) => {
     store.listeners.add(listener);

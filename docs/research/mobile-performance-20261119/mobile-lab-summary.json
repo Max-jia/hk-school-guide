@@ -1,0 +1,91 @@
+{
+  "rows": [
+    {
+      "path": "/cn/blog",
+      "before": {
+        "performance": 99,
+        "lcpMs": 1534.016,
+        "tbtMs": 79.5,
+        "cls": 0.000456,
+        "mainThreadMs": 835.524,
+        "jsExecutionMs": 350.94,
+        "tbtRangeMs": [
+          74,
+          117
+        ]
+      },
+      "after": {
+        "performance": 100,
+        "lcpMs": 1534.874,
+        "tbtMs": 12.5,
+        "cls": 0.000456,
+        "mainThreadMs": 685.468,
+        "jsExecutionMs": 151.544,
+        "tbtRangeMs": [
+          12,
+          15
+        ]
+      }
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory",
+      "before": {
+        "performance": 99,
+        "lcpMs": 1533.037,
+        "tbtMs": 68.5,
+        "cls": 0.000189,
+        "mainThreadMs": 1022.64,
+        "jsExecutionMs": 362.22,
+        "tbtRangeMs": [
+          64.5,
+          229.5
+        ]
+      },
+      "after": {
+        "performance": 100,
+        "lcpMs": 1533.865,
+        "tbtMs": 19.5,
+        "cls": 0.000189,
+        "mainThreadMs": 820.724,
+        "jsExecutionMs": 266.316,
+        "tbtRangeMs": [
+          18,
+          35.5
+        ]
+      }
+    },
+    {
+      "path": "/schools/kindergarten/directory",
+      "before": {
+        "performance": 99,
+        "lcpMs": 1532.865,
+        "tbtMs": 86.068,
+        "cls": 0.000189,
+        "mainThreadMs": 932.188,
+        "jsExecutionMs": 371.544,
+        "tbtRangeMs": [
+          78.67,
+          150.17
+        ]
+      },
+      "after": {
+        "performance": 99,
+        "lcpMs": 1534.046,
+        "tbtMs": 124,
+        "cls": 0.000189,
+        "mainThreadMs": 965.516,
+        "jsExecutionMs": 359.476,
+        "tbtRangeMs": [
+          79,
+          127.5
+        ]
+      }
+    }
+  ],
+  "scope": "Local first-party comparison. All HTTPS third-party requests blocked equally to avoid test analytics and advertising variability.",
+  "limits": [
+    "Not comparable to the previous production PSI run with third-party scripts enabled.",
+    "Not field data, INP, or a Core Web Vitals pass.",
+    "Local origin omits real network distance/CDN effects."
+  ]
+}

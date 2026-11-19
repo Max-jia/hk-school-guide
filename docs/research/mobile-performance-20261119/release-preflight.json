@@ -1,0 +1,44 @@
+{
+  "baselineSourceFiles": 1607,
+  "releaseSourceFiles": 1619,
+  "changedSourcePaths": [
+    "next.config.ts",
+    "scripts/generate-directory-assets.cjs",
+    "src/components/BlogClusterCards.tsx",
+    "src/components/BlogList.tsx",
+    "src/components/SiteFooter.tsx",
+    "src/components/SiteHeader.tsx",
+    "src/lib/i18n.ts",
+    "src/lib/report-count.ts",
+    "src/lib/use-directory-data.ts"
+  ],
+  "newSourcePaths": [
+    "src/components/BlogClusterCardsView.tsx",
+    "src/components/BlogListFilters.tsx",
+    "src/content/generated/blog-list-data.json",
+    "src/content/generated/blog-search-asset.json",
+    "src/content/generated/report-count.json",
+    "src/lib/blog-cluster-cards-data.ts",
+    "src/lib/blog-list-data.ts",
+    "src/lib/blog-query-normalizer.ts",
+    "src/lib/blog-search-index.ts",
+    "src/lib/locale.ts",
+    "src/lib/normalize-search.ts",
+    "src/lib/site-header-copy.json"
+  ],
+  "checks": [
+    "local production build PASS",
+    "5428 HTML content and SEO comparison PASS",
+    "30 browser checks PASS",
+    "3 search loading/retry checks PASS",
+    "typecheck PASS",
+    "64 navigation copy checks and 291 conversion inputs PASS",
+    "scoped ESLint no errors; 2 existing img recommendations"
+  ],
+  "limitations": [
+    "Local lab excludes third-party scripts; not field CWV",
+    "No stable Traditional directory TBT improvement",
+    "Unknown social identity and first publication dates remain marked"
+  ],
+  "rollback": "Re-promote the preserved prior READY production deployment"
+}

@@ -63,7 +63,7 @@ const nextConfig: NextConfig = {
   // are rejected as cross-origin when opened via 127.0.0.1.
   allowedDevOrigins: ["127.0.0.1", "localhost"],
   async headers() {
-    return [{ source: "/directory-data/:file", headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }] }];
+    return [{ source: "/blog-data/:file", headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }] }, { source: "/directory-data/:file", headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }] }];
   },
   async redirects() {
     return [...skhylRedirects, ...legacyRedirects];

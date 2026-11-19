@@ -40,6 +40,10 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
                 <a href={localeHref("/blog", locale)}>
                   <img
                     src="/stickers/popular@2x.png"
+                    width={320}
+                    height={320}
+                    loading="lazy"
+                    decoding="async"
                     alt={L("看全部热文", locale)}
                     className="w-full max-w-[180px] rotate-2 transition-transform duration-100 hover:rotate-0 hover:scale-105"
                   />
@@ -71,6 +75,10 @@ export default function SiteFooter({ locale = "tc" }: { locale?: Locale }) {
                 <a href={localeHref("/tools", locale)}>
                   <img
                     src="/stickers/your_input@2x.png"
+                    width={320}
+                    height={320}
+                    loading="lazy"
+                    decoding="async"
                     alt={L("开始匹配", locale)}
                     className="w-full max-w-[180px] -rotate-2 transition-transform duration-100 hover:rotate-0 hover:scale-105"
                   />

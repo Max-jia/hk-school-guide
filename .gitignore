@@ -87,3 +87,6 @@ temp/
 
 # Reproducible versioned directory datasets (generated before dev/build)
 /public/directory-data/
+
+# Versioned blog search index, generated before dev/build
+/public/blog-data/

@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { L, LOCALE_META, localeHref, otherLocale, type Locale } from "@/lib/i18n";
+import { LOCALE_META, localeHref, otherLocale, type Locale } from "@/lib/locale";
+import headerCopy from "@/lib/site-header-copy.json";
 import { REPORT_COUNT } from "@/lib/report-count";
 import { useDirectoryQuery } from "@/lib/use-directory-query";
 
@@ -24,7 +25,7 @@ const STAGE_NAV: { label: string; href: string }[] = [
 const MENU: { label: string; sub: string; href: string; rot: string }[] = [
   { label: "首页", sub: "12 个精选故事", href: "/", rot: "-rotate-2" },
   { label: "开始规划", sub: "按阶段与路线进入", href: "/planning", rot: "rotate-1" },
-  { label: "深度报告", sub: `${REPORT_COUNT} 所学校 · 8 章讲透`, href: "/reports", rot: "rotate-1" },
+  { label: "深度报告", sub: "所学校 · 8 章讲透", href: "/reports", rot: "rotate-1" },
   { label: "分区盘点", sub: "18 区学校逐区看", href: "/districts", rot: "rotate-2" },
   { label: "幼稚园", sub: "幼稚园学校资料与择校攻略", href: "/schools/kindergarten", rot: "-rotate-1" },
   { label: "小学", sub: "小学学校资料与择校攻略", href: "/schools/primary", rot: "rotate-1" },
@@ -35,6 +36,13 @@ const MENU: { label: string; sub: string; href: string; rot: string }[] = [
   { label: "面试题库", sub: "按学校筛真题", href: "/questions", rot: "rotate-2" },
   { label: "热文", sub: "按主题查找择校攻略", href: "/blog", rot: "-rotate-1" },
 ];
+
+// Fixed navigation copy is already localized; no dictionary or converter on the client.
+function L(text: string, locale: Locale): string {
+  const copy = headerCopy[text as keyof typeof headerCopy];
+  if (!copy) throw new Error(`Missing navigation copy: ${text}`);
+  return copy[locale];
+}
 
 export default function SiteHeader({ locale = "tc", compact = false }: { locale?: Locale; compact?: boolean }) {
   const [open, setOpen] = useState(false);
@@ -209,7 +217,7 @@ export default function SiteHeader({ locale = "tc", compact = false }: { locale?
                   <span className="block font-serif text-xl font-bold leading-tight text-black md:text-2xl">
                     {L(m.label, locale)}
                   </span>
-                  <span className="mt-1 block text-xs text-[#666]">{L(m.sub, locale)}</span>
+                  <span className="mt-1 block text-xs text-[#666]">{m.href === "/reports" ? `${REPORT_COUNT} ${L(m.sub, locale)}` : L(m.sub, locale)}</span>
                 </a>
               ))}
             </nav>

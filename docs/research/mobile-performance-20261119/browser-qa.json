@@ -1,0 +1,181 @@
+{
+  "results": [
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "學費",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "学费",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "K1 面试",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "九龍城",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "學费",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "st cat",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "梁銶琚",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "search parity",
+      "query": "不存在的学校xyz",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "blog viewport",
+      "width": 375,
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "blog viewport",
+      "width": 768,
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "blog viewport",
+      "width": 1440,
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "navigation opens, count, Escape closes",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "directory initial mobile render",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "directory mobile filter and full-dataset Traditional search",
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "test": "select two schools and compare",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "學費",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "学费",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "K1 面试",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "九龍城",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "學费",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "st cat",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "梁銶琚",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "search parity",
+      "query": "不存在的学校xyz",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "blog viewport",
+      "width": 375,
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "blog viewport",
+      "width": 768,
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "blog viewport",
+      "width": 1440,
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "navigation opens, count, Escape closes",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "directory initial mobile render",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "directory mobile filter and full-dataset Traditional search",
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "test": "select two schools and compare",
+      "result": "PASS"
+    }
+  ],
+  "appErrors": [],
+  "limits": [
+    "Local isolated browser; third-party requests blocked to avoid sending test analytics.",
+    "Responsive render and interaction checks do not establish field Core Web Vitals."
+  ]
+}

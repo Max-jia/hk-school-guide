@@ -1,0 +1,131 @@
+{
+  "pagesCompared": 5428,
+  "mismatches": [],
+  "initialFirstPartyJs": [
+    {
+      "path": "blog/topics/kindergarten-interviews.html",
+      "before": {
+        "files": 10,
+        "rawBytes": 1835954,
+        "gzipBytes": 693575
+      },
+      "after": {
+        "files": 10,
+        "rawBytes": 1794061,
+        "gzipBytes": 680606
+      },
+      "htmlBeforeBytes": 126156,
+      "htmlAfterBytes": 126192
+    },
+    {
+      "path": "blog.html",
+      "before": {
+        "files": 12,
+        "rawBytes": 1994461,
+        "gzipBytes": 729076
+      },
+      "after": {
+        "files": 10,
+        "rawBytes": 759181,
+        "gzipBytes": 227608
+      },
+      "htmlBeforeBytes": 262704,
+      "htmlAfterBytes": 271765
+    },
+    {
+      "path": "cn/blog/topics/kindergarten-interviews.html",
+      "before": {
+        "files": 10,
+        "rawBytes": 1835954,
+        "gzipBytes": 693575
+      },
+      "after": {
+        "files": 10,
+        "rawBytes": 1794061,
+        "gzipBytes": 680606
+      },
+      "htmlBeforeBytes": 127360,
+      "htmlAfterBytes": 127396
+    },
+    {
+      "path": "cn/blog.html",
+      "before": {
+        "files": 12,
+        "rawBytes": 1994461,
+        "gzipBytes": 729076
+      },
+      "after": {
+        "files": 10,
+        "rawBytes": 759181,
+        "gzipBytes": 227608
+      },
+      "htmlBeforeBytes": 264229,
+      "htmlAfterBytes": 273279
+    },
+    {
+      "path": "cn/schools/kindergarten/directory.html",
+      "before": {
+        "files": 11,
+        "rawBytes": 1890438,
+        "gzipBytes": 706992
+      },
+      "after": {
+        "files": 11,
+        "rawBytes": 1848434,
+        "gzipBytes": 693987
+      },
+      "htmlBeforeBytes": 450189,
+      "htmlAfterBytes": 450225
+    },
+    {
+      "path": "cn.html",
+      "before": {
+        "files": 10,
+        "rawBytes": 1834672,
+        "gzipBytes": 692984
+      },
+      "after": {
+        "files": 9,
+        "rawBytes": 598673,
+        "gzipBytes": 184863
+      },
+      "htmlBeforeBytes": 125509,
+      "htmlAfterBytes": 125197
+    },
+    {
+      "path": "index.html",
+      "before": {
+        "files": 10,
+        "rawBytes": 1834672,
+        "gzipBytes": 692984
+      },
+      "after": {
+        "files": 9,
+        "rawBytes": 598673,
+        "gzipBytes": 184863
+      },
+      "htmlBeforeBytes": 124666,
+      "htmlAfterBytes": 124354
+    },
+    {
+      "path": "schools/kindergarten/directory.html",
+      "before": {
+        "files": 11,
+        "rawBytes": 1890438,
+        "gzipBytes": 706992
+      },
+      "after": {
+        "files": 11,
+        "rawBytes": 1848434,
+        "gzipBytes": 693987
+      },
+      "htmlBeforeBytes": 448544,
+      "htmlAfterBytes": 448580
+    }
+  ],
+  "limits": [
+    "Raw/gzip totals are static asset sizes, not mobile transfer timing or Core Web Vitals.",
+    "Same locked dependencies and Next.js 16.3.0 Turbopack; two isolated local builds.",
+    "Search converter is loaded only after text entry and is excluded from initial scripts."
+  ]
+}

@@ -37,4 +37,21 @@ for (const key of ["kindergarten", "primary-tc", "primary-sc", "secondary-tc", "
 const generated = path.join(root, "src/content/generated");
 fs.mkdirSync(generated, { recursive: true });
 fs.writeFileSync(path.join(generated, "directory-assets.json"), JSON.stringify(manifest, null, 2) + "\n");
+// Navigation needs a count, not the full report archive in every client bundle.
+const reportMeta = JSON.parse(fs.readFileSync(path.join(root, "src/content/report-meta.json"), "utf8"));
+const reportCount = reportMeta.PS_REPORTS.length + reportMeta.KG_REPORTS.length + reportMeta.SS_REPORTS.length;
+fs.writeFileSync(path.join(generated, "report-count.json"), JSON.stringify({ total: reportCount }) + "\n");
 console.log(`Generated ${Object.keys(manifest).length} versioned static directory datasets`);
+
+// Keep the complete article index out of initial HTML; fetch only when searching.
+const { blogSearchRows } = require("../src/lib/blog-search-index.ts");
+const blogRows = blogSearchRows();
+const blogJson = JSON.stringify(blogRows);
+const blogHash = crypto.createHash("sha256").update(blogJson).digest("hex").slice(0, 16);
+const blogPublicDir = path.join(root, "public/blog-data");
+fs.mkdirSync(blogPublicDir, { recursive: true });
+fs.writeFileSync(path.join(blogPublicDir, `search.${blogHash}.json`), blogJson);
+fs.writeFileSync(path.join(generated, "blog-search-asset.json"), JSON.stringify({ url: `/blog-data/search.${blogHash}.json`, total: blogRows.length }) + "\n");
+
+const { blogListData } = require("../src/lib/blog-list-data.ts");
+fs.writeFileSync(path.join(generated, "blog-list-data.json"), JSON.stringify({ tc: blogListData("tc"), sc: blogListData("sc") }) + "\n");
