@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-19",
+  "applicationCommit": "93071aaf",
+  "branch": "codex/school-net-humanizer-20261115",
+  "deploymentId": "dpl_A8PfjGc2rt4axZD9ajmJ9AJLd76H",
+  "deploymentUrl": "https://hk-school-guide-gf63bkhdl-max-jia-s-projects.vercel.app",
+  "production": "https://hkschool.guide",
+  "state": "READY",
+  "previousDeploymentId": "dpl_4umaBm3TwaStzNdzi1sDfsSA2kVy",
+  "sourceFilesVerified": 1619,
+  "existingOutputPaths": 27197,
+  "lostOutputPaths": 0,
+  "productionPagesChecked": 40,
+  "browserChecks": 30,
+  "searchRetryChecks": 3,
+  "sitemapUrls": 5414,
+  "robotsUnchanged": true,
+  "searchIndexRows": 175,
+  "liveCwvClaim": false
+}

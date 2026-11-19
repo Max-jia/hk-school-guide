@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "checks": [
+    "No search index request before text entry",
+    "Network failure preserves browseable articles and shows retry",
+    "Retry fetches versioned index and returns search results"
+  ],
+  "requests": 2
+}
