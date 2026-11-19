@@ -1,0 +1,12 @@
+{
+  "productionBaseline": "dpl_A8PfjGc2rt4axZD9ajmJ9AJLd76H",
+  "sourceFiles": 1619,
+  "changedSourcePaths": [
+    "src/content/report-meta.json",
+    "src/content/reports/think.json",
+    "src/lib/report-sources.ts",
+    "src/lib/reports.ts"
+  ],
+  "unexpectedDifferences": [],
+  "releasePath": "/private/tmp/hk-think-release-1tqvn94t"
+}

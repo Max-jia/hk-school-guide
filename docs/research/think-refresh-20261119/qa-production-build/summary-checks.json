@@ -1,0 +1,346 @@
+[
+  {
+    "locale": "sc",
+    "meta": {
+      "description": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。",
+      "og": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。",
+      "twitter": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/think"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/think"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/think"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://hkschool.guide/#organization",
+              "name": "港学荟",
+              "alternateName": "港學薈",
+              "url": "https://hkschool.guide",
+              "publishingPrinciples": "https://hkschool.guide/cn/about/data-methodology",
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://hkschool.guide/#logo",
+                "url": "https://hkschool.guide/brand/site-mark.png",
+                "width": 512,
+                "height": 512,
+                "caption": "港学荟"
+              },
+              "description": "整理香港学校资料、升学路线和择校工具，供家长核对公开信息和规划下一步。",
+              "knowsAbout": [
+                "香港幼稚园、小学与中学资料",
+                "DSE",
+                "IB",
+                "A-Level",
+                "小一入学与校网"
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://hkschool.guide/#website",
+              "name": "港学荟",
+              "alternateName": [
+                "港學薈",
+                "hkschool.guide"
+              ],
+              "url": "https://hkschool.guide",
+              "description": "把香港教育局公开数据做成看得懂的视觉内容：学校报告、择校工具、面试题库、热文与趋势。",
+              "publisher": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "inLanguage": [
+                "zh-Hant-HK",
+                "zh-Hans-CN"
+              ]
+            },
+            {
+              "@type": "Article",
+              "@id": "https://hkschool.guide/cn/reports/think#article",
+              "headline": "朗思国际幼稚园深度报告｜课程、学费与入学选择｜港学荟",
+              "description": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。",
+              "dateModified": "2026-11-19",
+              "author": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "publisher": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://hkschool.guide/cn/reports/think#webpage"
+              },
+              "image": "https://hkschool.guide/og-home.png",
+              "citation": [
+                "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+                "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+                "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
+                "https://www.swd.gov.hk/storage/asset/section/644/tc/Child%20Care%20Centre%20Co-registered%20with%20Kindergarten%20(as%20at%20September%202026).pdf",
+                "https://zh.think.edu.hk/fees",
+                "https://zh.think.edu.hk/admission2023",
+                "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+                "https://zh.think.edu.hk/copy-of-interview-dates",
+                "https://zh.think.edu.hk/services-7",
+                "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+                "https://www.think.edu.hk/philosophy-curriculum",
+                "https://www.think.edu.hk/post/think-gazette-laguna-city",
+                "https://www.think.edu.hk/learning-outcomes",
+                "https://zh.think.edu.hk/learning-outcomes",
+                "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+                "https://kgp2026.kindergartenprofile.com/school/?schid=2160540001",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/216054.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/612391.pdf",
+                "https://admission.ekinder.com.hk/stcikg",
+                "https://www.learninghabitat.org/en/admission/programmes"
+              ],
+              "inLanguage": "zh-Hans-CN",
+              "about": [
+                {
+                  "@type": "School",
+                  "@id": "https://hkschool.guide/schools/kindergarten/think#school",
+                  "name": "朗思国际幼稚园"
+                }
+              ],
+              "isPartOf": {
+                "@id": "https://hkschool.guide/#website"
+              },
+              "isAccessibleForFree": true
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://hkschool.guide/cn/reports/think#webpage",
+              "url": "https://hkschool.guide/cn/reports/think",
+              "name": "朗思国际幼稚园深度报告｜课程、学费与入学选择｜港学荟",
+              "description": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。",
+              "inLanguage": "zh-Hans-CN",
+              "publisher": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "isPartOf": {
+                "@id": "https://hkschool.guide/#website"
+              },
+              "mainEntity": {
+                "@id": "https://hkschool.guide/cn/reports/think#article"
+              },
+              "breadcrumb": {
+                "@id": "https://hkschool.guide/cn/reports/think#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://hkschool.guide/cn/reports/think#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "首页",
+                  "item": "https://hkschool.guide/cn"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "学校报告",
+                  "item": "https://hkschool.guide/cn/reports"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "朗思国际幼稚园",
+                  "item": "https://hkschool.guide/cn/reports/think"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "card": "全文公开\n朗思国际幼稚园\n\n丽港城／马鞍山／南昌 · 三校区PN／K1·语言班·收费与升小",
+    "result": "PASS"
+  },
+  {
+    "locale": "tc",
+    "meta": {
+      "description": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。",
+      "og": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。",
+      "twitter": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/think"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/think"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/think"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://hkschool.guide/#organization",
+              "name": "港學薈",
+              "alternateName": "港学荟",
+              "url": "https://hkschool.guide",
+              "publishingPrinciples": "https://hkschool.guide/about/data-methodology",
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://hkschool.guide/#logo",
+                "url": "https://hkschool.guide/brand/site-mark.png",
+                "width": 512,
+                "height": 512,
+                "caption": "港學薈"
+              },
+              "description": "整理香港學校資料、升學路線和擇校工具，供家長核對公開信息和規劃下一步。",
+              "knowsAbout": [
+                "香港幼稚園、小學與中學資料",
+                "DSE",
+                "IB",
+                "A-Level",
+                "小一入學與校網"
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://hkschool.guide/#website",
+              "name": "港學薈",
+              "alternateName": [
+                "港学荟",
+                "hkschool.guide"
+              ],
+              "url": "https://hkschool.guide",
+              "description": "把香港教育局公開數據做成看得懂的視覺內容：學校報告、擇校工具、面試題庫、熱文與趨勢。",
+              "publisher": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "inLanguage": [
+                "zh-Hant-HK",
+                "zh-Hans-CN"
+              ]
+            },
+            {
+              "@type": "Article",
+              "@id": "https://hkschool.guide/reports/think#article",
+              "headline": "朗思國際幼稚園深度報告｜課程、學費與入學選擇｜港學薈",
+              "description": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。",
+              "dateModified": "2026-11-19",
+              "author": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "publisher": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "mainEntityOfPage": {
+                "@id": "https://hkschool.guide/reports/think#webpage"
+              },
+              "image": "https://hkschool.guide/og-home.png",
+              "citation": [
+                "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+                "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+                "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
+                "https://www.swd.gov.hk/storage/asset/section/644/tc/Child%20Care%20Centre%20Co-registered%20with%20Kindergarten%20(as%20at%20September%202026).pdf",
+                "https://zh.think.edu.hk/fees",
+                "https://zh.think.edu.hk/admission2023",
+                "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+                "https://zh.think.edu.hk/copy-of-interview-dates",
+                "https://zh.think.edu.hk/services-7",
+                "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+                "https://www.think.edu.hk/philosophy-curriculum",
+                "https://www.think.edu.hk/post/think-gazette-laguna-city",
+                "https://www.think.edu.hk/learning-outcomes",
+                "https://zh.think.edu.hk/learning-outcomes",
+                "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+                "https://kgp2026.kindergartenprofile.com/school/?schid=2160540001",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/216054.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+                "https://applications.edb.gov.hk/schoolsearch/schoolfee/612391.pdf",
+                "https://admission.ekinder.com.hk/stcikg",
+                "https://www.learninghabitat.org/en/admission/programmes"
+              ],
+              "inLanguage": "zh-Hant-HK",
+              "about": [
+                {
+                  "@type": "School",
+                  "@id": "https://hkschool.guide/schools/kindergarten/think#school",
+                  "name": "朗思國際幼稚園"
+                }
+              ],
+              "isPartOf": {
+                "@id": "https://hkschool.guide/#website"
+              },
+              "isAccessibleForFree": true
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://hkschool.guide/reports/think#webpage",
+              "url": "https://hkschool.guide/reports/think",
+              "name": "朗思國際幼稚園深度報告｜課程、學費與入學選擇｜港學薈",
+              "description": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。",
+              "inLanguage": "zh-Hant-HK",
+              "publisher": {
+                "@id": "https://hkschool.guide/#organization"
+              },
+              "isPartOf": {
+                "@id": "https://hkschool.guide/#website"
+              },
+              "mainEntity": {
+                "@id": "https://hkschool.guide/reports/think#article"
+              },
+              "breadcrumb": {
+                "@id": "https://hkschool.guide/reports/think#breadcrumb"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://hkschool.guide/reports/think#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "首頁",
+                  "item": "https://hkschool.guide/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "學校報告",
+                  "item": "https://hkschool.guide/reports"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "朗思國際幼稚園",
+                  "item": "https://hkschool.guide/reports/think"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "card": "全文公開\n朗思國際幼稚園\n\n麗港城／馬鞍山／南昌 · 三校區PN／K1·語言班·收費與升小",
+    "result": "PASS"
+  }
+]

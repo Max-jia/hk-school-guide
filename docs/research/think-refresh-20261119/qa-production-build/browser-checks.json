@@ -1,0 +1,409 @@
+{
+  "checks": [
+    {
+      "locale": "sc",
+      "width": 390,
+      "h1": [
+        "朗思国际幼稚园"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先选校区，再决定PN、K1和语言班"
+        },
+        {
+          "id": "chapter-2",
+          "title": "2三语班和全英班，差别要看一周课表"
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升小名单可以看，70%不能当录取率"
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28怎样申请：年龄、校区和面试分开看"
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班和求位：先问空缺，付款前看退出日期"
+        },
+        {
+          "id": "chapter-6",
+          "title": "6孩子能否适应，要看中文衔接和照顾安排"
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同预算怎样比：用具体校区和K1收费比较"
+        },
+        {
+          "id": "chapter-8",
+          "title": "8先把一年预算算清，再决定是否注册"
+        }
+      ],
+      "headings": [
+        "如有深度择校及插班申请需求，扫码咨询！",
+        "1先选校区，再决定PN、K1和语言班",
+        "2三语班和全英班，差别要看一周课表",
+        "3升小名单可以看，70%不能当录取率",
+        "42027/28怎样申请：年龄、校区和面试分开看",
+        "5插班和求位：先问空缺，付款前看退出日期",
+        "6孩子能否适应，要看中文衔接和照顾安排",
+        "7同预算怎样比：用具体校区和K1收费比较",
+        "8先把一年预算算清，再决定是否注册",
+        "可直接查阅的来源",
+        "相关报告"
+      ],
+      "overflow": false,
+      "description": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。",
+      "canonical": "https://hkschool.guide/cn/reports/think",
+      "alternates": [
+        "https://hkschool.guide/reports/think",
+        "https://hkschool.guide/cn/reports/think",
+        "https://hkschool.guide/reports/think"
+      ],
+      "facts": [
+        "地区／校区\n丽港城（蓝田）／马鞍山／南昌\n类型\n私立独立 · 2026/27不参加幼稚园教育计划\n丽港城K1学费\n2026/27一般上午HK$79,200\n学段\nPN至K3"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 12,
+      "sources": [
+        "http://127.0.0.1:3455/cn/reports/think#chapter-7",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
+        "https://zh.think.edu.hk/fees",
+        "https://zh.think.edu.hk/admission2023",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+        "https://zh.think.edu.hk/copy-of-interview-dates",
+        "https://zh.think.edu.hk/services-7",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+        "https://www.think.edu.hk/philosophy-curriculum",
+        "https://www.think.edu.hk/post/think-gazette-laguna-city",
+        "https://www.think.edu.hk/learning-outcomes",
+        "https://zh.think.edu.hk/learning-outcomes",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2160540001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216054.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612391.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html"
+      ],
+      "result": "PASS"
+    },
+    {
+      "locale": "sc",
+      "width": 1440,
+      "h1": [
+        "朗思国际幼稚园"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先选校区，再决定PN、K1和语言班"
+        },
+        {
+          "id": "chapter-2",
+          "title": "2三语班和全英班，差别要看一周课表"
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升小名单可以看，70%不能当录取率"
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28怎样申请：年龄、校区和面试分开看"
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班和求位：先问空缺，付款前看退出日期"
+        },
+        {
+          "id": "chapter-6",
+          "title": "6孩子能否适应，要看中文衔接和照顾安排"
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同预算怎样比：用具体校区和K1收费比较"
+        },
+        {
+          "id": "chapter-8",
+          "title": "8先把一年预算算清，再决定是否注册"
+        }
+      ],
+      "headings": [
+        "如有深度择校及插班申请需求，扫码咨询！",
+        "1先选校区，再决定PN、K1和语言班",
+        "2三语班和全英班，差别要看一周课表",
+        "3升小名单可以看，70%不能当录取率",
+        "42027/28怎样申请：年龄、校区和面试分开看",
+        "5插班和求位：先问空缺，付款前看退出日期",
+        "6孩子能否适应，要看中文衔接和照顾安排",
+        "7同预算怎样比：用具体校区和K1收费比较",
+        "8先把一年预算算清，再决定是否注册",
+        "可直接查阅的来源",
+        "相关报告"
+      ],
+      "overflow": false,
+      "description": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。",
+      "canonical": "https://hkschool.guide/cn/reports/think",
+      "alternates": [
+        "https://hkschool.guide/reports/think",
+        "https://hkschool.guide/cn/reports/think",
+        "https://hkschool.guide/reports/think"
+      ],
+      "facts": [
+        "地区／校区\n丽港城（蓝田）／马鞍山／南昌\n类型\n私立独立 · 2026/27不参加幼稚园教育计划\n丽港城K1学费\n2026/27一般上午HK$79,200\n学段\nPN至K3"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 12,
+      "sources": [
+        "http://127.0.0.1:3455/cn/reports/think#chapter-7",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
+        "https://zh.think.edu.hk/fees",
+        "https://zh.think.edu.hk/admission2023",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+        "https://zh.think.edu.hk/copy-of-interview-dates",
+        "https://zh.think.edu.hk/services-7",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+        "https://www.think.edu.hk/philosophy-curriculum",
+        "https://www.think.edu.hk/post/think-gazette-laguna-city",
+        "https://www.think.edu.hk/learning-outcomes",
+        "https://zh.think.edu.hk/learning-outcomes",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2160540001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216054.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612391.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html"
+      ],
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "width": 390,
+      "h1": [
+        "朗思國際幼稚園"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先選校區，再決定PN、K1和語言班"
+        },
+        {
+          "id": "chapter-2",
+          "title": "2三語班和全英班，差別要看一週課表"
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升小名單可以看，70%不能當錄取率"
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28怎樣申請：年齡、校區和面試分開看"
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班和求位：先問空缺，付款前看退出日期"
+        },
+        {
+          "id": "chapter-6",
+          "title": "6孩子能否適應，要看中文銜接和照顧安排"
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同預算怎樣比：用具體校區和K1收費比較"
+        },
+        {
+          "id": "chapter-8",
+          "title": "8先把一年預算算清，再決定是否註冊"
+        }
+      ],
+      "headings": [
+        "如有深度擇校及插班申請需求，掃碼諮詢！",
+        "1先選校區，再決定PN、K1和語言班",
+        "2三語班和全英班，差別要看一週課表",
+        "3升小名單可以看，70%不能當錄取率",
+        "42027/28怎樣申請：年齡、校區和面試分開看",
+        "5插班和求位：先問空缺，付款前看退出日期",
+        "6孩子能否適應，要看中文銜接和照顧安排",
+        "7同預算怎樣比：用具體校區和K1收費比較",
+        "8先把一年預算算清，再決定是否註冊",
+        "可直接查閱的來源",
+        "相關報告"
+      ],
+      "overflow": false,
+      "description": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。",
+      "canonical": "https://hkschool.guide/reports/think",
+      "alternates": [
+        "https://hkschool.guide/reports/think",
+        "https://hkschool.guide/cn/reports/think",
+        "https://hkschool.guide/reports/think"
+      ],
+      "facts": [
+        "地區／校區\n麗港城（藍田）／馬鞍山／南昌\n類型\n私立獨立 · 2026/27不參加幼稚園教育計劃\n麗港城K1學費\n2026/27一般上午HK$79,200\n學段\nPN至K3"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 12,
+      "sources": [
+        "http://127.0.0.1:3455/reports/think#chapter-7",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
+        "https://zh.think.edu.hk/fees",
+        "https://zh.think.edu.hk/admission2023",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+        "https://zh.think.edu.hk/copy-of-interview-dates",
+        "https://zh.think.edu.hk/services-7",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+        "https://www.think.edu.hk/philosophy-curriculum",
+        "https://www.think.edu.hk/post/think-gazette-laguna-city",
+        "https://www.think.edu.hk/learning-outcomes",
+        "https://zh.think.edu.hk/learning-outcomes",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2160540001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216054.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612391.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html"
+      ],
+      "result": "PASS"
+    },
+    {
+      "locale": "tc",
+      "width": 1440,
+      "h1": [
+        "朗思國際幼稚園"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先選校區，再決定PN、K1和語言班"
+        },
+        {
+          "id": "chapter-2",
+          "title": "2三語班和全英班，差別要看一週課表"
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升小名單可以看，70%不能當錄取率"
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28怎樣申請：年齡、校區和面試分開看"
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班和求位：先問空缺，付款前看退出日期"
+        },
+        {
+          "id": "chapter-6",
+          "title": "6孩子能否適應，要看中文銜接和照顧安排"
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同預算怎樣比：用具體校區和K1收費比較"
+        },
+        {
+          "id": "chapter-8",
+          "title": "8先把一年預算算清，再決定是否註冊"
+        }
+      ],
+      "headings": [
+        "如有深度擇校及插班申請需求，掃碼諮詢！",
+        "1先選校區，再決定PN、K1和語言班",
+        "2三語班和全英班，差別要看一週課表",
+        "3升小名單可以看，70%不能當錄取率",
+        "42027/28怎樣申請：年齡、校區和面試分開看",
+        "5插班和求位：先問空缺，付款前看退出日期",
+        "6孩子能否適應，要看中文銜接和照顧安排",
+        "7同預算怎樣比：用具體校區和K1收費比較",
+        "8先把一年預算算清，再決定是否註冊",
+        "可直接查閱的來源",
+        "相關報告"
+      ],
+      "overflow": false,
+      "description": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。",
+      "canonical": "https://hkschool.guide/reports/think",
+      "alternates": [
+        "https://hkschool.guide/reports/think",
+        "https://hkschool.guide/cn/reports/think",
+        "https://hkschool.guide/reports/think"
+      ],
+      "facts": [
+        "地區／校區\n麗港城（藍田）／馬鞍山／南昌\n類型\n私立獨立 · 2026/27不參加幼稚園教育計劃\n麗港城K1學費\n2026/27一般上午HK$79,200\n學段\nPN至K3"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 12,
+      "sources": [
+        "http://127.0.0.1:3455/reports/think#chapter-7",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
+        "https://zh.think.edu.hk/fees",
+        "https://zh.think.edu.hk/admission2023",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+        "https://zh.think.edu.hk/copy-of-interview-dates",
+        "https://zh.think.edu.hk/services-7",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+        "https://www.think.edu.hk/philosophy-curriculum",
+        "https://www.think.edu.hk/post/think-gazette-laguna-city",
+        "https://www.think.edu.hk/learning-outcomes",
+        "https://zh.think.edu.hk/learning-outcomes",
+        "https://kgp2026.kindergartenprofile.com/school/?schid=2160540001",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/216054.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/612391.pdf",
+        "https://www.edb.gov.hk/tc/edu-system/preprimary-kindergarten/free-quality-kg-edu/index.html"
+      ],
+      "result": "PASS"
+    }
+  ],
+  "errors": []
+}

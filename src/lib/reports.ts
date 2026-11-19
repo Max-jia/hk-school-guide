@@ -87,6 +87,9 @@ function reportScope(d: ReportData): string {
 
 /** 搜索摘要使用报告类型和用户关心的主题生成，避免从免责声明或表格表头硬截文字。 */
 export function makeReportDescription(d: ReportData, locale: Locale): string {
+  if (d.slug === "think") {
+    return L("朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。", locale);
+  }
   if (d.slug === "rc") {
     return L("高主教幼稚园部2027/28 K1面试为11月14日或21日，父母可陪同。报告核对40,800港元现行学费、幼小申请条件，以及本学年下午班和下学年插班的不同入口。", locale);
   }

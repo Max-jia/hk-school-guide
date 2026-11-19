@@ -1,0 +1,274 @@
+{
+  "checkedOn": "2026-11-19",
+  "rows": [
+    {
+      "key": "admission-year",
+      "claim": "招生首頁及下載申請表均明示2027/2028。",
+      "scope": "三校區",
+      "sources": [
+        "https://zh.think.edu.hk/admission2023",
+        "https://www.think.edu.hk/admission2023",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": ""
+    },
+    {
+      "key": "partial-admission",
+      "claim": "目前招生頁說部分班級仍招生，須向相關分校約時間查詢。",
+      "scope": "2027/28品牌頁",
+      "sources": [
+        "https://zh.think.edu.hk/admission2023",
+        "https://www.think.edu.hk/admission2023"
+      ],
+      "status": "confirmed",
+      "limitation": "不是麗港城K1或任何特定班別即時有位證據。"
+    },
+    {
+      "key": "interview-date",
+      "claim": "官方面試頁海報列2026-10-31面試及開放日。",
+      "scope": "三校區海報；截至查閱日日期已過",
+      "sources": [
+        "https://zh.think.edu.hk/copy-of-interview-dates",
+        "https://static.wixstatic.com/media/e60f26_0dae8a1cc62c4797a852536253c39592~mv2.jpg"
+      ],
+      "status": "confirmed",
+      "limitation": "不可寫成下一場面試或持續開放日。海報檔名2024不是內容適用年。"
+    },
+    {
+      "key": "birth-cohort",
+      "claim": "同一海報列LN2–3歲：2025年出生；K1/UN3–4歲：2024年出生。",
+      "scope": "連自2027/28招生頁的2026-10-31海報",
+      "sources": [
+        "https://zh.think.edu.hk/admission2023",
+        "https://static.wixstatic.com/media/e60f26_0dae8a1cc62c4797a852536253c39592~mv2.jpg"
+      ],
+      "status": "confirmed",
+      "limitation": "LN首天滿2歲條件另適用，不能據年份保證晚出生兒童於8月開課。"
+    },
+    {
+      "key": "outdated-cohort",
+      "claim": "通用程序頁仍列LN2024年出生、K12023年出生。",
+      "scope": "未標同一年度的通用頁",
+      "sources": [
+        "https://zh.think.edu.hk/services-7"
+      ],
+      "status": "conflict",
+      "limitation": "不得外推成2027/28年齡要求；本屆表格及海報優先並集中說明差異。"
+    },
+    {
+      "key": "interview-invitation",
+      "claim": "海報說以電郵邀請出席面試。",
+      "scope": "2026-10-31場次",
+      "sources": [
+        "https://static.wixstatic.com/media/e60f26_0dae8a1cc62c4797a852536253c39592~mv2.jpg"
+      ],
+      "status": "confirmed",
+      "limitation": "不是任何全年插班或後續場次保證。"
+    },
+    {
+      "key": "result-and-registration",
+      "claim": "海報說成功取錄者面試後兩週內以郵寄通知，並於指定日期到分校註冊。",
+      "scope": "2026-10-31場次",
+      "sources": [
+        "https://static.wixstatic.com/media/e60f26_0dae8a1cc62c4797a852536253c39592~mv2.jpg"
+      ],
+      "status": "confirmed",
+      "limitation": "未列具體註冊日期、留位費和候補通知；不外推所有申請。"
+    },
+    {
+      "key": "single-campus",
+      "claim": "程序頁要求每名幼兒只申請一間分校。",
+      "scope": "校方目前公開程序頁",
+      "sources": [
+        "https://zh.think.edu.hk/services-7"
+      ],
+      "status": "confirmed",
+      "limitation": "同頁有舊出生年份；最新申請表先選報讀校區並提供滿額後考慮其他校區選項。"
+    },
+    {
+      "key": "alternative-campus",
+      "claim": "2027/28表格可勾選：所申校區滿額時，是否考慮其他分校。",
+      "scope": "三校區2027/28表格",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": "表示可表達意願，不是轉校區必獲位。"
+    },
+    {
+      "key": "class-and-session-options",
+      "claim": "2027/28表列LN(2–3)、UN(3–4)、LK(4–5)、UK(5–6)；上午/下午/全日及三語英粵普/國際全英選項。",
+      "scope": "申請選項",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": "表格選項不代表各校、各級、各班制全部實際開辦；未列兩文三語時間比例。"
+    },
+    {
+      "key": "am-pm",
+      "claim": "申請表註明不介意上午或下午可兩者皆選。",
+      "scope": "三校區2027/28表格",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": ""
+    },
+    {
+      "key": "uk-session",
+      "claim": "申請表註明因課室限制UK上午或下午由學校決定。",
+      "scope": "三校區2027/28表格",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": ""
+    },
+    {
+      "key": "entry-date",
+      "claim": "申請表設希望入學日期、曾就讀學校/班別及轉校原因欄位。",
+      "scope": "三校區2027/28表格",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": "可提出轉入意向，不證明特定月份有空缺或保證插班。"
+    },
+    {
+      "key": "documents-fee",
+      "claim": "程序頁列填妥表格、證明文件副本、近照、40港元不退報名費及貼4港元郵票的23×10cm回郵信封；網上申請於面試日交信封。",
+      "scope": "目前公開程序頁",
+      "sources": [
+        "https://zh.think.edu.hk/services-7"
+      ],
+      "status": "confirmed",
+      "limitation": "此通用頁部分出生年份舊；具體當屆金額、文件與送件安排按所選校區書面指示。"
+    },
+    {
+      "key": "arn",
+      "claim": "程序頁說完成表格及文件後提供申請編號ARN，供後續聯絡。",
+      "scope": "目前公開程序",
+      "sources": [
+        "https://zh.think.edu.hk/services-7"
+      ],
+      "status": "confirmed",
+      "limitation": "ARN不是取錄承諾或某一通知日。"
+    },
+    {
+      "key": "ln-min-age",
+      "claim": "程序頁說LN每年8月開課，實際開學首日須滿2歲。",
+      "scope": "目前公開程序",
+      "sources": [
+        "https://zh.think.edu.hk/services-7"
+      ],
+      "status": "confirmed",
+      "limitation": "須連同孩子生日及擬入學日期判斷；晚出生兒童的安排與空位未公布。"
+    },
+    {
+      "key": "withdrawal-new",
+      "claim": "目前程序頁鏈結退學表：已註冊新生須在書簿雜費自動轉帳前一個月交退學申請。",
+      "scope": "校方目前公開退學表，未標適用學年",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+        "https://zh.think.edu.hk/services-7"
+      ],
+      "status": "confirmed",
+      "limitation": "不是以開學日前一個月為界，未載保證退款。"
+    },
+    {
+      "key": "withdrawal-existing",
+      "claim": "在讀生最少離校前一個月交退學表；未滿通知期需補一個月學費。",
+      "scope": "校方目前公開退學表，未標適用學年",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": ""
+    },
+    {
+      "key": "withdrawal-monthly",
+      "claim": "學費按整月收，未提供按實際出席日比例調整。",
+      "scope": "校方目前公開退學表",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": ""
+    },
+    {
+      "key": "withdrawal-administration",
+      "claim": "逾期交取消學位申請有行政費，金額向校務處查詢；十天內未收到學校確認應追問。",
+      "scope": "校方目前公開退學表",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": "公開表未載行政費金額及各種已付費用的退款公式。"
+    },
+    {
+      "key": "old-form",
+      "claim": "招生首頁PDF9f3cb7_81dc...仍為列四校區的舊退學表；程序頁下載e60f26_513...為列三校區的退學表。",
+      "scope": "頁面附件版本差別",
+      "sources": [
+        "https://zh.think.edu.hk/_files/ugd/9f3cb7_81dcf2db5ea440ef948deb2eb4485a03.pdf",
+        "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": "檔名或首頁連結存在不能證明舊美孚仍招生，報告使用目前程序頁三校區版本。"
+    },
+    {
+      "key": "closure-official-gap",
+      "claim": "未取得教育局或校方具名原件確認2025美孚4月/九龍塘小學7月31日的停辦日期。",
+      "scope": "本次官方資料搜索",
+      "sources": [
+        "https://www.legco.gov.hk/yr2025/english/panels/ed/minutes/ed20250905.pdf"
+      ],
+      "status": "not-confirmed",
+      "limitation": "媒體轉述不得改寫成當前幼稚園財務結論。"
+    },
+    {
+      "key": "legco-history",
+      "claim": "2025-09-05教育事務委員會紀錄第29頁，梁熙議員在私校學債議題中點名朗思國際學校；第30頁教育局副局長未逐宗回應個案細節。",
+      "scope": "官方會議紀錄，議員陳述而非個案財務審計",
+      "sources": [
+        "https://www.legco.gov.hk/yr2025/english/panels/ed/minutes/ed20250905.pdf"
+      ],
+      "status": "confirmed",
+      "limitation": "不能據此斷言現有三所幼稚園債務/財困，亦不能藉此確認上述停辦日期。"
+    },
+    {
+      "key": "pn-k1-progression",
+      "claim": "本次查閱招生首頁、2027/28申請表、公開程序和課程頁，未找到PN升K1必獲保留學位、無需再評估或保證班制的公開條款。",
+      "scope": "已查官方公開資料",
+      "sources": [
+        "https://www.think.edu.hk/services-7",
+        "https://zh.think.edu.hk/admission2023",
+        "https://www.think.edu.hk/programs"
+      ],
+      "status": "not-published-in-reviewed-sources",
+      "limitation": "不能把未找到寫成校方一定重考或一定不保留；應在入讀PN前向所選校區取得升班安排書面答覆。"
+    },
+    {
+      "key": "old-ib-admissions-page",
+      "claim": "仍可存取的ib-admissions頁寫九龍塘117界限街、2024/25及2025/26招生與IB幼稚園費用；不屬現行三校區2027/28招生資料。",
+      "scope": "舊九龍塘頁",
+      "sources": [
+        "https://www.think.edu.hk/ib-admissions"
+      ],
+      "status": "confirmed-historical-page",
+      "limitation": "其8:00–16:30 School hours不得借用為麗港城、馬鞍山、南昌的現行課堂或託管時間。"
+    },
+    {
+      "key": "opening-vs-class-hours",
+      "claim": "官網聯絡頁三校地址及頁尾寫開放時間平日9:00–17:00、週六9:00–13:00。",
+      "scope": "辦公/開放時間",
+      "sources": [
+        "https://www.think.edu.hk/contact"
+      ],
+      "status": "confirmed",
+      "limitation": "不是上課時間或保證託管時間；上課時段以逐校教育局概覽核實。"
+    }
+  ]
+}

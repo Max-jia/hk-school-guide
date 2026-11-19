@@ -1,0 +1,107 @@
+[
+  {
+    "file": "zh-admission.html",
+    "url": "https://zh.think.edu.hk/admission2023",
+    "sha256": "f0ac7ddbfb5c7f3f012f4307321569008327c4ceedcd0e04e98c9cc99e962e42",
+    "bytes": 553137,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "en-admission.html",
+    "url": "https://www.think.edu.hk/admission2023",
+    "sha256": "a09f673883a49d297025559b768848009960ce8a873102ebc3abcabf73f460bb",
+    "bytes": 553179,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "zh-procedure.html",
+    "url": "https://zh.think.edu.hk/services-7",
+    "sha256": "d0bd57e82b40eb440a6908dd8d9eb47d56381493c12b29561f9def689e20ab98",
+    "bytes": 550723,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "zh-interview.html",
+    "url": "https://zh.think.edu.hk/copy-of-interview-dates",
+    "sha256": "55721a6c4a6b99f26a6e6906e13f3f5b7db2d8b1c6fc876ca5176ac32ec4bc71",
+    "bytes": 489335,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "zh-fees.html",
+    "url": "https://zh.think.edu.hk/fees",
+    "sha256": "fc1fbb3466324b2c02f24f1d2b68bbdbe9ef48c671ed03b3f057fa6c536d2aff",
+    "bytes": 483359,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "interview-notice.jpg",
+    "url": "https://static.wixstatic.com/media/e60f26_0dae8a1cc62c4797a852536253c39592~mv2.jpg",
+    "sha256": "2d020edf4f69502867bc757540fe6f915766823b361b7f38467925c01f564c7d",
+    "bytes": 425745,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "fees-notice.jpg",
+    "url": "https://static.wixstatic.com/media/e60f26_9cdd83b0135f4d3f961bdab20329ae1d~mv2.jpg",
+    "sha256": "232594264d9badcb4f6fe7fb9b33dd76aa2b60bf3813da09bfa85b8b09b77ecf",
+    "bytes": 134286,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "admission-form.pdf",
+    "url": "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+    "sha256": "27a0ad716b00975ad0afe1df9bab90617936d8aeef1c4ac8361063936dda7f24",
+    "bytes": 253807,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "guidelines.pdf",
+    "url": "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+    "sha256": "899a547bf653e05ba69a5435df9d5590e7459777be74fb484303b587949696bb",
+    "bytes": 166038,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "poster.pdf",
+    "url": "https://zh.think.edu.hk/_files/ugd/9f3cb7_81dcf2db5ea440ef948deb2eb4485a03.pdf",
+    "sha256": "bb41a090093329aadccd6e55e1c084d260a8702d16295a59ffdd9f49d0ad21e9",
+    "bytes": 269740,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "file": "legco-minutes.pdf",
+    "url": "https://www.legco.gov.hk/yr2025/english/panels/ed/minutes/ed20250905.pdf",
+    "sha256": "45266b6f6dbfeac8158a2a710a433b57ad38f17234c8d60a13359af6ac879733",
+    "bytes": 1325491,
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "url": "https://www.think.edu.hk/programs",
+    "filename": "programs.html",
+    "bytes": 547169,
+    "sha256": "dcb236434a0ab5c997d79fcc876b4416fda5416b8de7b05b25098b8bc8f6f5d1",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "url": "https://www.think.edu.hk/contact",
+    "filename": "contact.html",
+    "bytes": 511489,
+    "sha256": "8befc35f6900a6f7e8aae759064c90f4f9067b5e9df32a99b76ceebb570ec0f6",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "url": "https://www.think.edu.hk/ib-admissions",
+    "filename": "old-ib-admissions.html",
+    "bytes": 538917,
+    "sha256": "c80fb4ba80e263205721699e4d05e5c824c2eb05e60bd32f90d0295dbf79361d",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "url": "https://www.think.edu.hk/parenteducation",
+    "filename": "new-joiners-seminar.html",
+    "bytes": 538621,
+    "sha256": "b35b48950eef25de07421bd48fd639f694cbc92d7b121e77855e51a265c726b4",
+    "checkedOn": "2026-11-19"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "outcomes-en",
+    "url": "https://www.think.edu.hk/learning-outcomes",
+    "bytes": 565582,
+    "sha256": "7d03054a91e9f22c2405c8efba4577ff7f842db78e4093ce01c745272624af91"
+  },
+  {
+    "name": "outcomes-zh",
+    "url": "https://zh.think.edu.hk/learning-outcomes",
+    "bytes": 571070,
+    "sha256": "3169d9134089c476de19dbdc5d713f231a524d933c708688a5c34e5e2ecc0e57"
+  },
+  {
+    "name": "curriculum-en",
+    "url": "https://www.think.edu.hk/philosophy-curriculum",
+    "bytes": 634192,
+    "sha256": "9403a61c695ea4c14f29ee9939a8ffe4164088cf7f645d4ee974eef373339c52"
+  },
+  {
+    "name": "curriculum-zh",
+    "url": "https://zh.think.edu.hk/philosophy-curriculum",
+    "bytes": 637406,
+    "sha256": "c9c8f9ec3db3f906759b7c1eadb2894c68d5d0837356a526994f389875cb18a9"
+  },
+  {
+    "name": "learning-contents",
+    "url": "https://www.think.edu.hk/learning-contents",
+    "bytes": 626967,
+    "sha256": "a0bdfd3baeb40ae6d5da690d6d5b48b59f12d60812a0d9186a02ae0a19d9f81e"
+  },
+  {
+    "name": "home-en",
+    "url": "https://www.think.edu.hk/",
+    "bytes": 651324,
+    "sha256": "91bb7ff61a2d13cfcf38aaf5bd15968ad26a861b433d25ca28b790c475d01a44"
+  },
+  {
+    "name": "kgp-lc",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+    "bytes": 1204913,
+    "sha256": "025e689263eb0fe50874476b174f83d186d371a138c80054d39ff40183a64a74"
+  },
+  {
+    "name": "kgp-mos",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+    "bytes": 1204922,
+    "sha256": "3b7236c22bc03c7ee0e3040cba752322f6eac64f0abde6ca82e8f395dbdb607b"
+  },
+  {
+    "name": "kgp-nc",
+    "url": "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+    "bytes": 1205023,
+    "sha256": "41e988a8d650ffa1471586c676b5a3956c370b82514a277e7026ce92646b2d3f"
+  },
+  {
+    "name": "campus-lc",
+    "url": "https://www.think.edu.hk/laguna-city",
+    "bytes": 651324,
+    "sha256": "91bb7ff61a2d13cfcf38aaf5bd15968ad26a861b433d25ca28b790c475d01a44"
+  },
+  {
+    "name": "campus-mos",
+    "url": "https://www.think.edu.hk/ma-on-shan",
+    "bytes": 542383,
+    "sha256": "5d7e7aac89147667df09ea00af23bd5ae28b674dde4f37f25e92e6ad91e4668c"
+  },
+  {
+    "name": "campus-nc",
+    "url": "https://www.think.edu.hk/nam-cheong",
+    "bytes": 553894,
+    "sha256": "125e96ec6c57390894233b0725b6f49f34ec12af6750ffe894c608d21e6cd8ee"
+  },
+  {
+    "name": "news",
+    "url": "https://www.think.edu.hk/news",
+    "bytes": 1292231,
+    "sha256": "a55067980392cb8920e7a7864f73e355fc92ea57994084468c27259ccd5056eb"
+  },
+  {
+    "name": "testimonials",
+    "url": "https://www.think.edu.hk/testimonials",
+    "bytes": 525710,
+    "sha256": "6040aa1c483044eb2a11c1255c29606ced06ea792800541f959fc8da50296eb2"
+  },
+  {
+    "name": "enrichment",
+    "url": "https://www.think.edu.hk/enrichment-program",
+    "bytes": 553251,
+    "sha256": "99681c6e83cb212e1ce828ec1b24095d435ebfe3719ae8fd48f48edc986ed6ee"
+  },
+  {
+    "name": "ib-old-admissions",
+    "url": "https://www.think.edu.hk/ib-admissions",
+    "bytes": 538917,
+    "sha256": "c80fb4ba80e263205721699e4d05e5c824c2eb05e60bd32f90d0295dbf79361d"
+  },
+  {
+    "name": "gazette-july-2024",
+    "url": "https://www.think.edu.hk/post/think-gazette-14",
+    "bytes": 797771,
+    "sha256": "8f18553a5ee8dfc64c5b6cc725f2bd0504e831e4b2a6b42f7d30b6f8e7a1a379"
+  },
+  {
+    "name": "gazette-lc-2026",
+    "url": "https://www.think.edu.hk/post/think-gazette-laguna-city",
+    "bytes": 683785,
+    "sha256": "2789d6133a5e352473bc9ca0767a7bbe7cefd64a7f485222632749770ade9825"
+  },
+  {
+    "name": "gazette-mos-2026",
+    "url": "https://www.think.edu.hk/post/think-gazette-%E9%A6%AC%E9%9E%8D%E5%B1%B1",
+    "bytes": 684367,
+    "sha256": "6dba7cbed7854afc81b22e4dbf89640df1b3741c8e7faf75fa4da8c1b64ac9f3"
+  },
+  {
+    "name": "gazette-nc-2026",
+    "url": "https://www.think.edu.hk/post/think-gazette-2027",
+    "bytes": 689882,
+    "sha256": "9829fb54efd322049c02d58f74539987e25771f753d19ad8b422e85f5dbd5028"
+  }
+]

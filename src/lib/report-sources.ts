@@ -2984,106 +2984,187 @@ const REPORT_SOURCES: Record<string, ReportSourceReference[]> = {
     {
       "label": "家校会《幼稚园概览2026/27》：朗思丽港城",
       "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
-      "scope": "主实体蓝田216267/0001，1994、私立独立未参加计划；2025年9月教师12（学位9）、上午1:9.3/下午1:1.3、已使用容量210；2027/28全年申请。学生表标签不完整不编总数",
+      "scope": "独立注册校区；私立独立、不参加幼稚园教育计划；校长及教学人员12、其中持学位9；上午／下午师生比1:9.3／1:1.3包括2–3岁服务。非实时班额及固定每班配额。",
       "sourceType": "school-profile",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27（师资容量2025年9月）"
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27；师资截至2025年9月"
     },
     {
       "label": "家校会《幼稚园概览2026/27》：朗思马鞍山",
       "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
-      "scope": "533360/0002，新港城广场2楼，私立独立未参加计划；2025年9月教师11、上午1:7.2/下午1:3.4、容量168。独立校区不用作丽港城数据",
+      "scope": "独立注册校区；私立独立、不参加幼稚园教育计划；校长及教学人员11、其中持学位8；上午／下午师生比1:7.2／1:3.4包括2–3岁服务。非实时班额及固定每班配额。",
       "sourceType": "school-profile",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27（师资容量2025年9月）"
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27；师资截至2025年9月"
     },
     {
       "label": "家校会《幼稚园概览2026/27》：朗思南昌",
       "url": "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
-      "scope": "612782/0001，V WALK G26，私立独立未参加计划；概览创校2020、2025年9月教师15、上午1:8.5/下午1:5.8、容量224。品牌沿革2019与登记创校年分开",
+      "scope": "独立注册校区；私立独立、不参加幼稚园教育计划；校长及教学人员15、其中持学位8；上午／下午师生比1:8.5／1:5.8包括2–3岁服务。非实时班额及固定每班配额。",
       "sourceType": "school-profile",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27（师资容量2025年9月）"
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27；师资截至2025年9月"
     },
     {
-      "label": "教育局：朗思丽港城现行收费证书",
+      "label": "教育局收费证明书：朗思丽港城",
       "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
-      "scope": "一般/国际上午79200、一般/国际下午52800、英普下午79200，全日132000另膳食8635，11期；不能用PN或其他校区费用代替",
+      "scope": "一般上午79200、一般下午52800、英普下午79200；国际K1/K2半日项目分别列明；一般全日K1–K3学费132000、膳食8635。均11期；证书列项不证明实时开班及空缺。",
       "sourceType": "government",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27（2026-09-01生效）"
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27；2026-09-01生效"
     },
     {
-      "label": "教育局：朗思马鞍山现行收费证书",
+      "label": "教育局收费证明书：朗思马鞍山",
       "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
-      "scope": "一般/国际上午79200、下午52800、英普下午79200，国际K1/K2全日132000另膳食8635；全日项目未列K3，不承诺全级开班",
+      "scope": "一般上午79200、一般下午52800、英普下午79200；国际全日K1/K2学费132000、膳食8635，不扩大到K3。均11期；证书列项不证明实时开班及空缺。",
       "sourceType": "government",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27（2026-09-01生效）"
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27；2026-09-01生效"
     },
     {
-      "label": "教育局：朗思南昌现行收费证书",
+      "label": "教育局收费证明书：朗思南昌",
       "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
-      "scope": "双语半日84480，其他非本地按年级/时段62920至92400，全日147400另膳食8635，11期；K1下午非双语92400与K2/K3下午62920分开",
+      "scope": "双语K1–K3半日84480；其他非本地K1AM/PM及K2/K3AM92400，K2/K3PM62920；全日147400、膳食8635。均11期；证书列项不证明实时开班及空缺。",
       "sourceType": "government",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2026/27（2026-09-01生效）"
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27；2026-09-01生效"
     },
     {
-      "label": "校方：首页与校区沿革",
-      "url": "https://www.think.edu.hk/",
-      "scope": "当前列丽港城/马鞍山/南昌及2027/28招生入口；1994创办，品牌沿革南昌2019；旧历史叙述不作现在小学直升或未来续营保证",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "页面含2027/28入口与历史叙述"
-    },
-    {
-      "label": "校方：Application",
-      "url": "https://www.think.edu.hk/services-7",
-      "scope": "每名孩子只申请一个校区、40费用、出生证明相片信封、ARN；2岁班开课首日满2岁；页面仍列2024/2023出生例，与首页2027/28不一致，未擅改新年度年龄",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "当前流程页未明列适用学年，出生例仍2024/2023"
-    },
-    {
-      "label": "校方：Philosophy & Curriculum",
-      "url": "https://www.think.edu.hk/philosophy-curriculum",
-      "scope": "儿童主导项目、母语教师语言环境、游戏探究、听说读写及参观；品牌理念不证明每校每班配置、成效或IB认证",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "当前网页未注明学年"
-    },
-    {
-      "label": "校方：P1 Allocation / Learning outcomes",
-      "url": "https://www.think.edu.hk/learning-outcomes",
-      "scope": "Statistics by NC, Feb 2026，2025/26小学分流官津18/直私70/国际12；未列人数分母、逐校与offer，不能套丽港城或集团录取率",
-      "sourceType": "school-official",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2025/26分流（2026年2月统计）"
-    },
-    {
-      "label": "Now新闻：朗思小学疑停办、教育局回应",
-      "url": "https://news.now.com/home/local/player?newsId=609253",
-      "scope": "2025-06-29转述EDB当时未接小学结业通知、已收美孚4月停办通知及敦促退款；只作历史，不证当前三园营运风险",
-      "sourceType": "media-report",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2025年6月历史报道"
-    },
-    {
-      "label": "东网：朗思小学通知拟7月底停办",
-      "url": "https://hk.on.cc/hk/bkn/cnt/news/20250629/bkn-20250629180430569-0629_00822_001.html",
-      "scope": "2025-06-29报道小学向家长电邮拟7/31停办及债券争议，EDB当时未收结业通知；未亲读电邮，不把债券当幼稚园义务",
-      "sourceType": "media-report",
-      "checkedOn": "2026-10-28",
-      "academicYear": "2025年6月历史报道"
-    },
-    {
-      "label": "教育局：2027年9月小一入学资料单张",
-      "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/EDB%20-%20P1Leaflet_TC.pdf",
-      "scope": "幼稚园品牌及地址不赋官津派位优先；自行计分及统一派位住址校网、随机与注册边界",
+      "label": "政府：幼稚园暨幼儿中心名册（2026年9月）",
+      "url": "https://www.swd.gov.hk/storage/asset/section/644/tc/Child%20Care%20Centre%20Co-registered%20with%20Kindergarten%20(as%20at%20September%202026).pdf",
+      "scope": "PDF第76、147、162页：丽港城／马鞍山PN半日月费7200、全日12535；南昌半日7680，未列PN全日。名册为月费，全年期数另看校方班别。",
       "sourceType": "government",
-      "checkedOn": "2026-10-28",
+      "checkedOn": "2026-11-19",
+      "academicYear": "截至2026年9月"
+    },
+    {
+      "label": "校方2026/27收费图",
+      "url": "https://zh.think.edu.hk/fees",
+      "scope": "LN半日12期；国际PN–K3栏11期；全日LN11750另膳食785，不重复加膳食；三语英粵普、国际全英；未逐项展示证书低价下午班。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27"
+    },
+    {
+      "label": "校方2027/28招生入口",
+      "url": "https://zh.think.edu.hk/admission2023",
+      "scope": "当届申请入口，不代表仍有空缺。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19",
       "academicYear": "2027/28"
+    },
+    {
+      "label": "校方2027/28申请表",
+      "url": "https://zh.think.edu.hk/_files/ugd/e60f26_2987c3344a5f4c5c9d4d75f16b48dab0.pdf",
+      "scope": "单一校区，可勾选原校满额时考虑其他校区；拟入学日、转校原因、时段及课程选择；UK时段校方编配。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "校方2027/28面试海报",
+      "url": "https://zh.think.edu.hk/copy-of-interview-dates",
+      "scope": "图片列2026-10-31面试，LN2025出生／K12024出生，电邮邀请及成功者两周邮寄通知；日期已过，不承诺其他轮次同一时限。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "校方申请流程",
+      "url": "https://zh.think.edu.hk/services-7",
+      "scope": "申请费40不退、照片出生证明、指定信封及邮资、ARN、PN首日满2岁。出生年份例子仍属旧届，不套当届。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19"
+    },
+    {
+      "label": "校方退学申请（三校区版本）",
+      "url": "https://zh.think.edu.hk/_files/ugd/e60f26_513e6a61a2ab496b9ab01ac5928554f5.pdf",
+      "scope": "新生首次书簿杂费扣款前一月通知；在读一月通知、不足补一月学费；整月收费；10天未确认须跟进，行政费未定额；不推断退款保证。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19"
+    },
+    {
+      "label": "校方课程理念",
+      "url": "https://www.think.edu.hk/philosophy-curriculum",
+      "scope": "项目探究、语言学习取向；不推断IB认证、固定英语比例或外教配额。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19"
+    },
+    {
+      "label": "校方丽港城2026年7月校刊",
+      "url": "https://www.think.edu.hk/post/think-gazette-laguna-city",
+      "scope": "p2阅读计划、家长伴读、高班周记及英语／普通话教师小组活动；p4消化系统、埃及等探究及外出。校方自述，非独立成效评估。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026年7月刊；网页2026-09-10发布"
+    },
+    {
+      "label": "校方英文升小页及名单图片",
+      "url": "https://www.think.edu.hk/learning-outcomes",
+      "scope": "70%直私、18%官津、12%国际。英文注NC未定义及Feb2026，中文注2025年2月；正文2025–2026／名单2026毕业；无完整分母，不归属单校录取率。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19"
+    },
+    {
+      "label": "校方中文升小页及名单图片",
+      "url": "https://zh.think.edu.hk/learning-outcomes",
+      "scope": "70%直私、18%官津、12%国际。英文注NC未定义及Feb2026，中文注2025年2月；正文2025–2026／名单2026毕业；无完整分母，不归属单校录取率。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19"
+    },
+    {
+      "label": "教育局小一入学统筹办法",
+      "url": "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+      "scope": "官津入学统筹及乙部校网规则；与逐校直私招生分开。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-19"
+    },
+    {
+      "label": "家校会概览：迦南丽港城",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2160540001",
+      "scope": "本地、非牟利、参加计划；2026/27全年资助后4370分10期；2025年9月服务未列PN。",
+      "sourceType": "school-profile",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27"
+    },
+    {
+      "label": "教育局收费证明书：迦南丽港城",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216054.pdf",
+      "scope": "资助后4370全年分10期，结合2026/27概览确认适用学年。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27参考"
+    },
+    {
+      "label": "教育局收费证明书：国际英文幼稚园",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/215120.pdf",
+      "scope": "K1AM/PM7294×11=80234，2026-09-01生效；不是海逸豪园PN实体。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27参考"
+    },
+    {
+      "label": "教育局收费证明书：学之园海翩康城",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/612391.pdf",
+      "scope": "K1–K3英粤7500×12=90000、英普7800×12=93600，2026-08-01生效。",
+      "sourceType": "government",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2026/27参考"
+    },
+    {
+      "label": "国际英文2027/28 K1招生",
+      "url": "https://admission.ekinder.com.hk/stcikg",
+      "scope": "英粤／英普课程选择，K1实体与PN不同。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19",
+      "academicYear": "2027/28"
+    },
+    {
+      "label": "学之园课程",
+      "url": "https://www.learninghabitat.org/en/admission/programmes",
+      "scope": "英粤PN–K3、英普K1–K3；不套班时及教师配置到朗思。",
+      "sourceType": "school-official",
+      "checkedOn": "2026-11-19"
     }
   ],
   "tkocps": [

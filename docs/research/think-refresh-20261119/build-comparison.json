@@ -1,0 +1,25 @@
+{
+  "pagesCompared": 5428,
+  "changedPages": [
+    {
+      "path": "cn/reports/think.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "reports/think.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    }
+  ],
+  "unexpectedDifferences": [],
+  "routeInventoryUnchanged": true
+}

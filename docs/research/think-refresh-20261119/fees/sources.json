@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-11-19",
+  "rows": [
+    {
+      "file": "fee-216267.pdf",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/216267.pdf",
+      "bytes": 94985,
+      "sha256": "7228dc1547a5b7bcda7c35197119684c4c9a3bb241066980c0db826e2582c4f5"
+    },
+    {
+      "file": "fee-533360.pdf",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/533360.pdf",
+      "bytes": 95018,
+      "sha256": "f2b841c569d319f1d5f244f0c2f4e5443fb669331d4c6ca92a729231a38879a5"
+    },
+    {
+      "file": "fee-612782.pdf",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/612782.pdf",
+      "bytes": 95107,
+      "sha256": "0b3070a634a9bdf9c6a5adfe569066323e5a57bb6a06261e8f19d60c04e06bc9"
+    },
+    {
+      "file": "kgp-2162670001.html",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+      "bytes": 1204913,
+      "sha256": "025e689263eb0fe50874476b174f83d186d371a138c80054d39ff40183a64a74"
+    },
+    {
+      "file": "kgp-5333600002.html",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+      "bytes": 1204923,
+      "sha256": "eab58c7c4c075d19c8d2074a0a1f229c77ae8a2159813a26c76ccfd87d5a81ee"
+    },
+    {
+      "file": "kgp-6127820001.html",
+      "url": "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+      "bytes": 1205022,
+      "sha256": "58c9d8d3ffe757ce5e65ee33894fc66872eaf5f3d99460d4a87c2ba7e9f55cb1"
+    },
+    {
+      "file": "school-fees-page.html",
+      "url": "https://zh.think.edu.hk/fees",
+      "bytes": 483359,
+      "sha256": "fc1fbb3466324b2c02f24f1d2b68bbdbe9ef48c671ed03b3f057fa6c536d2aff"
+    },
+    {
+      "file": "registration-216267000113.html",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=1&scrn=216267000113",
+      "bytes": 194122,
+      "sha256": "e6e55d1fcbf76d8863f7429b07f15b239c4071b65a7f6a1dc7093409d5c0533e"
+    },
+    {
+      "file": "registration-533360000213.html",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=1&scrn=533360000213",
+      "bytes": 194248,
+      "sha256": "22b05546cea7803c9af0e2796a356200669c0cc8deb89b6396b591b1d300f266"
+    },
+    {
+      "file": "registration-612782000113.html",
+      "url": "https://applications.edb.gov.hk/schoolsearch/schoolinfo.aspx?langno=1&scrn=612782000113",
+      "bytes": 194201,
+      "sha256": "a4122be0465fa58a423cc2ad5cf9485290525725dbda9322c947415caa2747a7"
+    },
+    {
+      "file": "school-fees-2026-27-image.jpg",
+      "url": "https://static.wixstatic.com/media/e60f26_9cdd83b0135f4d3f961bdab20329ae1d~mv2.jpg/v1/crop/x_0,y_3,w_960,h_714/fill/w_960,h_714,al_c,q_85,enc_avif,quality_auto/School%20fee%202026-2027%20revised0308.jpg",
+      "parent": "https://zh.think.edu.hk/fees",
+      "sha256": "8718581f011faf039d524dc91e1b1f9746aa798bf154c0c4fc182711737329df",
+      "visuallyRead": true
+    },
+    {
+      "file": "swd-co-registered-2026-09.pdf",
+      "url": "https://www.swd.gov.hk/storage/asset/section/644/tc/Child%20Care%20Centre%20Co-registered%20with%20Kindergarten%20(as%20at%20September%202026).pdf",
+      "sha256": "be62896605b5f4cc572dc34ac7e28f56a02c45e3b48d2dfd34f24e2bdb01f0d4"
+    },
+    {
+      "file": "swd-service.html",
+      "url": "https://www.swd.gov.hk/tc/pubsvc/family/cat_childcareservice/daychildcares/cccs/index.html",
+      "sha256": "0da7bf99839731a6290d91292c35ea5190ce2418a67fcc079a160a1ddb024faa"
+    }
+  ]
+}

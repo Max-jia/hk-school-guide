@@ -1,0 +1,227 @@
+[
+  {
+    "id": "LC-type",
+    "claim": "私立獨立；沒有參加2026/27幼稚園教育計劃；質素評核欄為不適用",
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+    "limitation": "不能將不適用解讀為評核不合格；概覽內多個課程/支援欄為沒有資料。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "LC-course",
+    "claim": "本地及非本地",
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+    "limitation": "課程行政分類不能證明IB認證，也不等於固定語言配置。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "MOS-type",
+    "claim": "私立獨立；沒有參加2026/27幼稚園教育計劃；質素評核欄為不適用",
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+    "limitation": "不能將不適用解讀為評核不合格；概覽內多個課程/支援欄為沒有資料。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "MOS-course",
+    "claim": "本地及非本地",
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+    "limitation": "課程行政分類不能證明IB認證，也不等於固定語言配置。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "NC-type",
+    "claim": "私立獨立；沒有參加2026/27幼稚園教育計劃；質素評核欄為不適用",
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+    "limitation": "不能將不適用解讀為評核不合格；概覽內多個課程/支援欄為沒有資料。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "NC-course",
+    "claim": "非本地",
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+    "limitation": "課程行政分類不能證明IB認證，也不等於固定語言配置。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "LC-stats",
+    "claim": {
+      "teachers_including_principal": 12,
+      "degree": 9,
+      "non_degree": 3,
+      "ece_certificate_or_above": 10,
+      "qualified_kg_teacher": 1,
+      "other": 1,
+      "ratio_am": "1:9.3",
+      "ratio_pm": "1:1.3",
+      "k_am": [
+        37,
+        20,
+        20
+      ],
+      "k_pm": [
+        2,
+        1,
+        2
+      ],
+      "k_wd": [
+        0,
+        0,
+        0
+      ],
+      "pn": 37,
+      "capacity": 210,
+      "classrooms": 8
+    },
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=2162670001",
+    "limitation": "2025年9月快照；師生比包括2–3歲。不能當作每班實際人數、常駐外教配置、2027/28名額或空位。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "MOS-stats",
+    "claim": {
+      "teachers_including_principal": 11,
+      "degree": 8,
+      "non_degree": 3,
+      "ece_certificate_or_above": 11,
+      "qualified_kg_teacher": 0,
+      "other": 0,
+      "ratio_am": "1:7.2",
+      "ratio_pm": "1:3.4",
+      "k_am": [
+        21,
+        9,
+        15
+      ],
+      "k_pm": [
+        6,
+        4,
+        5
+      ],
+      "k_wd": [
+        0,
+        8,
+        4
+      ],
+      "pn": 22,
+      "capacity": 168,
+      "classrooms": null
+    },
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=5333600002",
+    "limitation": "2025年9月快照；師生比包括2–3歲。不能當作每班實際人數、常駐外教配置、2027/28名額或空位。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "NC-stats",
+    "claim": {
+      "teachers_including_principal": 15,
+      "degree": 8,
+      "non_degree": 7,
+      "ece_certificate_or_above": 14,
+      "qualified_kg_teacher": 0,
+      "other": 1,
+      "ratio_am": "1:8.5",
+      "ratio_pm": "1:5.8",
+      "k_am": [
+        16,
+        30,
+        25
+      ],
+      "k_pm": [
+        1,
+        22,
+        21
+      ],
+      "k_wd": [
+        9,
+        0,
+        0
+      ],
+      "pn": 44,
+      "capacity": 224,
+      "classrooms": 8
+    },
+    "status": "confirmed-official-profile",
+    "source": "https://kgp2026.kindergartenprofile.com/school/?schid=6127820001",
+    "limitation": "2025年9月快照；師生比包括2–3歲。不能當作每班實際人數、常駐外教配置、2027/28名額或空位。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "language-brand",
+    "claim": "校方升小頁列英語/粵語或英語/普通話的雙語學前環境",
+    "status": "confirmed-school-statement",
+    "source": "https://www.think.edu.hk/learning-outcomes",
+    "limitation": "不是各校各班現行時間表；與費用表三語及International(English Only)不可直接合併。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "language-curriculum",
+    "claim": "校方課程頁述英普粵語文、聽說讀寫、主題與兒童發起的探究、生活經驗及外出活動",
+    "status": "confirmed-school-statement",
+    "source": "https://www.think.edu.hk/philosophy-curriculum",
+    "limitation": "沒有三語比例、每班老師數、英語時數、年級識字量或成效量化。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "gazette-reading",
+    "claim": "2026年7月麗港城校訊p2述每日在校閱讀、系統閱讀計劃、家長伴讀指導，以及高班週記；英語及普通話老師亦參與分組遊戲",
+    "status": "confirmed-school-statement-image-read",
+    "source": "https://www.think.edu.hk/post/think-gazette-laguna-city",
+    "limitation": "2026-09-10發布；是校方實務描述，沒有按班課表、閱讀程度、時數或教師編制。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "gazette-project",
+    "claim": "同校訊p4示範消化系統、埃及等探究主題及外出學習",
+    "status": "confirmed-school-statement-image-read",
+    "source": "https://www.think.edu.hk/post/think-gazette-laguna-city",
+    "limitation": "舉例不能擴張成所有孩子每學期必做的項目；探究式教學不等於IB認證。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "after-school",
+    "claim": "2–6歲課後活動頁列跆拳道、體操、科學、羽毛球、K-pop/HipHop、普通話及PN分離預備班",
+    "status": "confirmed-school-menu",
+    "source": "https://www.think.edu.hk/enrichment-program",
+    "limitation": "不能稱全部包含在學費、必修、或三校各時段均有。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "outcomes-ratio",
+    "claim": "圖示70%直資/私立、18%官津、12%國際",
+    "status": "confirmed-image-with-conflicting-metadata",
+    "source": "https://www.think.edu.hk/learning-outcomes",
+    "limitation": "英文Statistics by NC, Feb 2026；中文2025年2月；正文2025–2026，名單圖Think Graduates in 2026。未公布分母、NC定義、分校範圍及offer或實際入讀口徑。不得稱麗港城70%或全品牌70%。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "outcomes-list",
+    "claim": "三圖列20個直資私立、16個官津、7個國際學校名稱，屬校方列出的2025–2026/2026畢業生去向參考",
+    "status": "confirmed-school-list-images",
+    "source": "https://www.think.edu.hk/learning-outcomes",
+    "limitation": "沒有各校人數；不能作排名、offer率、成功率或保證；分類名稱個別需獨立核對。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "ib",
+    "claim": "本次未取得麗港城、馬鞍山、南昌校舍相對應IB官方認證記錄",
+    "status": "unresolved-not-negative-proof",
+    "source": "https://www.ibo.org/programmes/find-an-ib-school/",
+    "limitation": "IB目錄動態頁可開但未取得結果；直接下載403；不能據此斷言未獲認證。",
+    "checked": "2026-11-19"
+  },
+  {
+    "id": "ib-old-page",
+    "claim": "校方IB招生頁指九龍塘117界限街，2024/25、2025/26幼稚園IB雙語項目",
+    "status": "confirmed-historical-school-page",
+    "source": "https://www.think.edu.hk/ib-admissions",
+    "limitation": "不適用作三現行幼稚園的IB認證證明。",
+    "checked": "2026-11-19"
+  }
+]
