@@ -1,0 +1,68 @@
+{
+  "runtimeReportContent": [
+    {
+      "slug": "spccps",
+      "exactContentMatch": true,
+      "sha256": "30c7ad4f074fe51641a423826e1f15cf5f27ada38d4963cd6e85c535f7b6e502"
+    },
+    {
+      "slug": "dgjs",
+      "exactContentMatch": true,
+      "sha256": "e0b46f0a1ed610ababdc827c8a52c95043c80471d89be744f38a73436da96287"
+    },
+    {
+      "slug": "dbs",
+      "exactContentMatch": true,
+      "sha256": "824d4c4b9c4e96a7a95a8f103fba23f2b4a38d3d04278a726e65eb406342ec59"
+    },
+    {
+      "slug": "ywps",
+      "exactContentMatch": true,
+      "sha256": "80ee5dcbfa8d0318b508584e55be1710e98f8bca73fd288ec6d515c7ed2e8444"
+    },
+    {
+      "slug": "tsl",
+      "exactContentMatch": true,
+      "sha256": "269a74a916345516c3dcf3ee9c492dcb3116eb0aca25f87926813f73f4e77724"
+    },
+    {
+      "slug": "pkcps",
+      "exactContentMatch": true,
+      "sha256": "a2ea89edf17c5fc962c2c9dfd84180bee0868c498b49bca6301eb74adaa2f86b"
+    },
+    {
+      "slug": "plk-choi-kai-yau-primary",
+      "exactContentMatch": true,
+      "sha256": "8670f9fc72aec87d00588fd3d003bbb492b18b6a873c0384bf55c1a17a760814"
+    },
+    {
+      "slug": "isf-academy-primary",
+      "exactContentMatch": true,
+      "sha256": "5e74008c30e4ec1099dce811e3dd803502ab0d5a5127d9f640b475697671f05a"
+    },
+    {
+      "slug": "cis-primary",
+      "exactContentMatch": true,
+      "sha256": "40e2a389922633dd7597aefb1f29526721daa5bb9454b7baa6e2010322639b2b"
+    },
+    {
+      "slug": "hkis-primary",
+      "exactContentMatch": true,
+      "sha256": "f193379a9e322b662583bb5e50fc6b0bd54e98235e5955a0e86cbac8922b96a0"
+    }
+  ],
+  "sitemapBefore": 5414,
+  "sitemapAfter": 5422,
+  "missingUrls": [],
+  "newUrls": [
+    "https://hkschool.guide/cn/reports/cis-primary",
+    "https://hkschool.guide/cn/reports/hkis-primary",
+    "https://hkschool.guide/cn/reports/isf-academy-primary",
+    "https://hkschool.guide/cn/reports/plk-choi-kai-yau-primary",
+    "https://hkschool.guide/reports/cis-primary",
+    "https://hkschool.guide/reports/hkis-primary",
+    "https://hkschool.guide/reports/isf-academy-primary",
+    "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+  ],
+  "robotsUnchanged": true
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-19",
+  "domain": "https://hkschool.guide",
+  "deploymentId": "dpl_6KDFVoQkJP3xKPCgyZfKtvt54GVZ",
+  "state": "READY",
+  "productionAliasVerified": true,
+  "rollbackDeploymentRetained": "dpl_9twCnWSaBsMEM8arVbrrt4hUP3Cm",
+  "applicationCommits": [
+    "53e872cb",
+    "a8e3742f"
+  ],
+  "branch": "codex/school-net-humanizer-20261115",
+  "sourceFilesVerified": 1677,
+  "oldOutputPathsPreserved": 27197,
+  "newOutputPaths": 40,
+  "oldStaticPagesCompared": 5428,
+  "newBilingualReportRoutes": 8,
+  "unexpectedContentOrSeoChanges": 0,
+  "productionReportViewportChecks": 40,
+  "productionCards": 20,
+  "productionContentSeoPagesCompared": 58,
+  "runtimePayloadExactMatches": 10,
+  "sitemapBefore": 5414,
+  "sitemapAfter": 5422,
+  "robotsUnchanged": true,
+  "factsPublishedOnlyWithinExplicitYearAndVerificationBounds": true
+}

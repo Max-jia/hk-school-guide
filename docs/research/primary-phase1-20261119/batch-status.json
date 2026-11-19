@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-19",
+  "scope": [
+    "spccps",
+    "dgjs",
+    "dbs",
+    "ywps",
+    "tsl",
+    "pkcps",
+    "plk-choi-kai-yau-primary",
+    "isf-academy-primary",
+    "cis-primary",
+    "hkis-primary"
+  ],
+  "status": "deployed-and-verified",
+  "deploymentAuthorized": true,
+  "firstReport": "spccps",
+  "officialVerification": "completed with explicitly disclosed unavailable/current-year boundaries",
+  "humanizer": "completed for all ten reports",
+  "browserChecks": {
+    "reportPages": 40,
+    "locales": [
+      "tc",
+      "sc"
+    ],
+    "widths": [
+      390,
+      1440
+    ],
+    "failures": 0,
+    "runtimeErrors": 0,
+    "reportCards": 20,
+    "visualContactSheets": 20
+  },
+  "build": "PASS",
+  "typecheck": "PASS",
+  "scopedLint": "PASS",
+  "committed": true,
+  "deployed": true,
+  "previewOrigin": "http://127.0.0.1:3456",
+  "previewIndex": "/primary-phase1-review.html",
+  "previewSnapshot": "/private/tmp/hk-primary-phase1-oqiqexuh",
+  "knownBoundaries": [
+    "培侨2027/28详细招生页及平台读取受限，报名、权重及个人条款未猜测",
+    "英华官网所链升中政策未标适用学年，仍用常识科名；分科后的当届标准待校方确认",
+    "2027/28未公布或未取得的核准学费不以2026/27费用冒充",
+    "未公开完整退学及退款条款的学校，须取得录取文件和书面答复"
+  ],
+  "applicationCommits": [
+    "53e872cb",
+    "a8e3742f"
+  ],
+  "deploymentId": "dpl_6KDFVoQkJP3xKPCgyZfKtvt54GVZ",
+  "productionOrigin": "https://hkschool.guide",
+  "releaseEvidence": "../primary-phase1-release-20261119/release-receipt.md",
+  "productionBrowserChecks": 40
+}

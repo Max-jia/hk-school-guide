@@ -1,0 +1,10 @@
+{
+  "issue": "QA search query from draft label differed from preserved published school-name key",
+  "draftQuery": "培僑書院（小學部）",
+  "publishedName": "培僑書院",
+  "observedDraftQueryResults": 0,
+  "canonicalNameIndependentlyTested": true,
+  "simplifiedAndTraditionalCanonicalQueriesWork": true,
+  "resolution": "Read actual PS_REPORTS name as query; genuine keyboard input; do not change product source or deployment",
+  "productionContentAndSeoChecksRemainPassing": true
+}

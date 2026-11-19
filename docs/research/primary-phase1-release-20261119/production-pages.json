@@ -1,0 +1,298 @@
+{
+  "origin": "https://hkschool.guide",
+  "deployment": "dpl_6KDFVoQkJP3xKPCgyZfKtvt54GVZ",
+  "pages": 58,
+  "imageComparison": "Only the verified current deployment dpl parameter is normalized; source, width, quality and alt must match",
+  "results": [
+    {
+      "path": "/reports/spccps",
+      "result": "PASS",
+      "description": "聖保羅男女附小深度報告：核對2027/28小一150個學額、不少於30%無關係申請人名額、面試與插班規則；解釋粵語起步、分級語言過渡、一條龍升中條件及2026/27學費。"
+    },
+    {
+      "path": "/cn/reports/spccps",
+      "result": "PASS",
+      "description": "圣保罗男女附小深度报告：核对2027/28小一150个学额、不少于30%无关系申请人名额、面试与插班规则；解释粤语起步、分级语言过渡、一条龙升中条件及2026/27学费。"
+    },
+    {
+      "path": "/reports/dgjs",
+      "result": "PASS",
+      "description": "核實2027/28小一144位及已過申請期，拆解英文教學、粵語中文、女書院升讀待確認事項與94,000元學費。"
+    },
+    {
+      "path": "/cn/reports/dgjs",
+      "result": "PASS",
+      "description": "核实2027/28小一144位及已过申请期，拆解英文教学、粤语中文、女书院升读待确认事项与94,000元学费。"
+    },
+    {
+      "path": "/reports/dbs",
+      "result": "PASS",
+      "description": "核實2027/28小一150位及首輪結果，說明英語授課例外科目、升中基本要求、本地與非本地費用和接受直資學位的派位影響。"
+    },
+    {
+      "path": "/cn/reports/dbs",
+      "result": "PASS",
+      "description": "核实2027/28小一150位及首轮结果，说明英语授课例外科目、升中基本要求、本地与非本地费用和接受直资学位的派位影响。"
+    },
+    {
+      "path": "/reports/ywps",
+      "result": "PASS",
+      "description": "核實19,700元學費、普教中及測驗安排；說明官網未標學年升中政策的評估與操行要求，並提醒核實分科後當屆條件。2027/28次輪結果將於2027年1月底通知。"
+    },
+    {
+      "path": "/cn/reports/ywps",
+      "result": "PASS",
+      "description": "核实19,700元学费、普教中及测验安排；说明官网未标学年升中政策的评估与操行要求，并提醒核实分科后当届条件。2027/28次轮结果将于2027年1月底通知。"
+    },
+    {
+      "path": "/reports/tsl",
+      "result": "PASS",
+      "description": "陳守仁小學深度報告：核對2026/27學費20,500元、英語及中文學習、第三語言選擇，說明獨立升中、2027/28小一面試候補與插班安排，以及接受直資學位的派位影響。"
+    },
+    {
+      "path": "/cn/reports/tsl",
+      "result": "PASS",
+      "description": "陈守仁小学深度报告：核对2026/27学费20,500元、英语及中文学习、第三语言选择，说明独立升中、2027/28小一面试候补与插班安排，以及接受直资学位的派位影响。"
+    },
+    {
+      "path": "/reports/pkcps",
+      "result": "PASS",
+      "description": "培僑書院小學深度報告：解釋英普學習環境與十二年一貫的升班條件，核對2026/27本地年費31,260元及非本地收費，說明小一、插班申請資料與當屆招生核驗範圍。"
+    },
+    {
+      "path": "/cn/reports/pkcps",
+      "result": "PASS",
+      "description": "培侨书院小学深度报告：解释英普学习环境与十二年一贯的升班条件，核对2026/27本地年费31,260元及非本地收费，说明小一、插班申请资料与当届招生核验范围。"
+    },
+    {
+      "path": "/reports/plk-choi-kai-yau-primary",
+      "result": "PASS",
+      "description": "蔡繼有學校小學Y1–5的雙語校本課程與家庭適配，核對2026/27年費108,801元、2027/28招生，以及後續IGCSE、IBDP路徑中的升班、出席與評估條件。"
+    },
+    {
+      "path": "/cn/reports/plk-choi-kai-yau-primary",
+      "result": "PASS",
+      "description": "蔡继有学校小学Y1–5的双语校本课程与家庭适配，核对2026/27年费108,801元、2027/28招生，以及后续IGCSE、IBDP路径中的升班、出席与评估条件。"
+    },
+    {
+      "path": "/reports/isf-academy-primary",
+      "result": "PASS",
+      "description": "弘立小學Foundation Year至Grade 5的雙語比例與年級銜接，核對2027/28申請、2026/27學費、資本徵費和90天退學通知；Grade 6屬中學部，須先確認孩子對應年級。"
+    },
+    {
+      "path": "/cn/reports/isf-academy-primary",
+      "result": "PASS",
+      "description": "弘立小学Foundation Year至Grade 5的双语比例与年级衔接，核对2027/28申请、2026/27学费、资本征费和90天退学通知；Grade 6属中学部，须先确认孩子对应年级。"
+    },
+    {
+      "path": "/reports/cis-primary",
+      "result": "PASS",
+      "description": "漢基國際學校小學Reception至Year 6報告：解釋校本雙語與中文分層，核對2027/28申請、插班與候補，以及學費、資本費和其他年度費用，按實際小學階段比較。"
+    },
+    {
+      "path": "/cn/reports/cis-primary",
+      "result": "PASS",
+      "description": "汉基国际学校小学Reception至Year 6报告：解释校本双语与中文分层，核对2027/28申请、插班与候补，以及学费、资本费和其他年度费用，按实际小学阶段比较。"
+    },
+    {
+      "path": "/reports/hkis-primary",
+      "result": "PASS",
+      "description": "香港國際學校小學R1至Grade 5報告：解釋美國課程、普通話必修與DLI雙語班範圍，核對已截止的2027/28常規申請、候補優先類別，以及學費、退學與退款條件。"
+    },
+    {
+      "path": "/cn/reports/hkis-primary",
+      "result": "PASS",
+      "description": "香港国际学校小学R1至Grade 5报告：解释美国课程、普通话必修与DLI双语班范围，核对已截止的2027/28常规申请、候补优先类别，以及学费、退学与退款条件。"
+    },
+    {
+      "path": "/reports/think",
+      "result": "PASS",
+      "description": "朗思國際幼稚園三校區比較：核對2027/28 PN與K1申請、三語及全英班、2026/27學費與退學條款，說明升小70%比例的統計限制，附國際英文、學之園等具體校區比較。"
+    },
+    {
+      "path": "/cn/reports/think",
+      "result": "PASS",
+      "description": "朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。"
+    },
+    {
+      "path": "/reports",
+      "result": "PASS",
+      "description": "全港小學、幼稚園及中學深度擇校報告：學校定位、課程路線、申請安排、費用和公開升學資料。逐份列明來源與適用年份；中學報告不設評級。"
+    },
+    {
+      "path": "/cn/reports",
+      "result": "PASS",
+      "description": "全港小学、幼稚园及中学深度择校报告：学校定位、课程路线、申请安排、费用和公开升学资料。逐份列明来源与适用年份；中学报告不设评级。"
+    },
+    {
+      "path": "/",
+      "result": "PASS",
+      "description": "按幼稚園、小學和中學查找香港學校資料與深度報告，比較課程、學費、校網和升學路徑，並使用小一派位及擇校工具；招生以校方當屆公告為準。"
+    },
+    {
+      "path": "/cn",
+      "result": "PASS",
+      "description": "按幼稚园、小学和中学查找香港学校资料与深度报告，比较课程、学费、校网和升学路径，并使用小一派位及择校工具；招生以校方当届公告为准。"
+    },
+    {
+      "path": "/blog",
+      "result": "PASS",
+      "description": "按幼稚園、小學、中學與家長問題找文章：入學申請、學費資助、學校觀察和選校比較。每篇註明發佈時間，有實質更新時單獨標記。"
+    },
+    {
+      "path": "/cn/blog",
+      "result": "PASS",
+      "description": "按幼稚园、小学、中学与家长问题找文章：入学申请、学费资助、学校观察和选校比较。每篇注明发布时间，有实质更新时单独标记。"
+    },
+    {
+      "path": "/blog/topics/kindergarten-interviews",
+      "result": "PASS",
+      "description": "核對幼稚園面試、第二輪、放榜與註冊安排，按學校查面見語言，也可讀家長回答與候補處理指南。"
+    },
+    {
+      "path": "/cn/blog/topics/kindergarten-interviews",
+      "result": "PASS",
+      "description": "核对幼稚园面试、第二轮、放榜与注册安排，按学校查面见语言，也可读家长回答与候补处理指南。"
+    },
+    {
+      "path": "/schools/kindergarten/directory",
+      "result": "PASS",
+      "description": "搜尋香港幼稚園的地區、辦學類別、課程與官方來源。簡明資料頁供核對學校事實；已有深度報告的學校另提供課程、入學與家庭適配分析。"
+    },
+    {
+      "path": "/cn/schools/kindergarten/directory",
+      "result": "PASS",
+      "description": "搜寻香港幼稚园的地区、办学类别、课程与官方来源。简明资料页供核对学校事实；已有深度报告的学校另提供课程、入学与家庭适配分析。"
+    },
+    {
+      "path": "/schools/primary/directory",
+      "result": "PASS",
+      "description": "搜尋香港小學的地區、辦學類別、課程與官方來源。簡明資料頁供核對學校事實；已有深度報告的學校另提供課程、入學與家庭適配分析。"
+    },
+    {
+      "path": "/cn/schools/primary/directory",
+      "result": "PASS",
+      "description": "搜寻香港小学的地区、办学类别、课程与官方来源。简明资料页供核对学校事实；已有深度报告的学校另提供课程、入学与家庭适配分析。"
+    },
+    {
+      "path": "/schools/secondary/directory",
+      "result": "PASS",
+      "description": "搜尋香港中學的地區、辦學類別、課程與官方來源。簡明資料頁供核對學校事實；已有深度報告的學校另提供課程、入學與家庭適配分析。"
+    },
+    {
+      "path": "/cn/schools/secondary/directory",
+      "result": "PASS",
+      "description": "搜寻香港中学的地区、办学类别、课程与官方来源。简明资料页供核对学校事实；已有深度报告的学校另提供课程、入学与家庭适配分析。"
+    },
+    {
+      "path": "/about/data-methodology",
+      "result": "PASS",
+      "description": "港學薈由Max Jia負責內容審核與更正。說明官方原件怎樣核對、來源衝突怎樣處理，以及如何通過微信或WhatsApp反饋具體錯誤。"
+    },
+    {
+      "path": "/cn/about/data-methodology",
+      "result": "PASS",
+      "description": "港学荟由Max Jia负责内容审核与更正。说明官方原件怎样核对、来源冲突怎样处理，以及如何通过微信或WhatsApp反馈具体错误。"
+    },
+    {
+      "path": "/reports/pkps",
+      "result": "PASS",
+      "description": "培僑小學是東區16校網資助男女校，《小學概覽2026》未列一條龍、直屬或聯繫中學。報告整理小一派位、教學特色及升中規劃，並說明它與沙田培僑書院的分別。"
+    },
+    {
+      "path": "/cn/reports/pkps",
+      "result": "PASS",
+      "description": "培侨小学是东区16校网资助男女校，《小学概览2026》未列一条龙、直属或联系中学。报告整理小一派位、教学特色及升中规划，并说明它与沙田培侨书院的分别。"
+    },
+    {
+      "path": "/reports/cckg",
+      "result": "PASS",
+      "description": "基督堂幼稚園 CCKG深度擇校報告：只設K2、K3，不設K1。解讀英語教學、K2申請準備、升小去向與家庭適配；學校歷史結果不等於個別孩子的錄取機會。"
+    },
+    {
+      "path": "/cn/reports/cckg",
+      "result": "PASS",
+      "description": "基督堂幼稚园 CCKG深度择校报告：只设K2、K3，不设K1。解读英语教学、K2申请准备、升小去向与家庭适配；学校历史结果不等于个别孩子的录取机会。"
+    },
+    {
+      "path": "/reports/dbs-secondary",
+      "result": "PASS",
+      "description": "拔萃男書院（中學部）深度擇校報告：解讀課程與教學語言、學費、收生安排和公開升學資料，比較課程路線、家庭投入與選校關注點。收費及申請條件按正文所列年度核對。"
+    },
+    {
+      "path": "/cn/reports/dbs-secondary",
+      "result": "PASS",
+      "description": "拔萃男书院（中学部）深度择校报告：解读课程与教学语言、学费、收生安排和公开升学资料，比较课程路线、家庭投入与选校关注点。收费及申请条件按正文所列年度核对。"
+    },
+    {
+      "path": "/reports/fkgs",
+      "result": "PASS",
+      "description": "福榮街官立小學深度擇校報告：解讀授課語言、課程特點、學費、小一入學與升中通路，比較孩子適配、家庭投入與升學取捨。收費及收生安排按正文所列年度核對。"
+    },
+    {
+      "path": "/cn/reports/fkgs",
+      "result": "PASS",
+      "description": "福荣街官立小学深度择校报告：解读授课语言、课程特点、学费、小一入学与升中通路，比较孩子适配、家庭投入与升学取舍。收费及收生安排按正文所列年度核对。"
+    },
+    {
+      "path": "/reports/tlps",
+      "result": "PASS",
+      "description": "香港真光中學附屬小學暨幼稚園深度報告：整理教學語言、學費、小一收生與已公佈升中去向，並說明公開比例的分母限制和家庭適配。"
+    },
+    {
+      "path": "/cn/reports/tlps",
+      "result": "PASS",
+      "description": "香港真光中学附属小学暨幼稚园深度报告：整理教学语言、学费、小一收生与已公布升中去向，并说明公开比例的分母限制和家庭适配。"
+    },
+    {
+      "path": "/districts/sha-tin",
+      "result": "PASS",
+      "description": "沙田區（Sha Tin）小學與幼稚園完整盤點：學校清單、平台評級、學費與師生比。91 校網資源豐富：浸信會沙田圍呂明才、培僑書院 A 級；幼稚園有學之園（迎海）A+、聖瑪加利大 A+ 級券校。"
+    },
+    {
+      "path": "/cn/districts/sha-tin",
+      "result": "PASS",
+      "description": "沙田区（Sha Tin）小学与幼稚园完整盘点：学校清单、平台评级、学费与师生比。91 校网资源丰富：浸信会沙田围吕明才、培侨书院 A 级；幼稚园有学之园（迎海）A+、圣玛加利大 A+ 级券校。"
+    },
+    {
+      "path": "/districts/sham-shui-po",
+      "result": "PASS",
+      "description": "深水埗區（Sham Shui Po）小學與幼稚園完整盤點：學校清單、平台評級、學費與師生比。40 校網：英華小學 A+、聖方濟各英文小學 A 級；幼稚園有學之園（星匯居）A+、崇真小學暨幼稚園 A 級。"
+    },
+    {
+      "path": "/cn/districts/sham-shui-po",
+      "result": "PASS",
+      "description": "深水埗区（Sham Shui Po）小学与幼稚园完整盘点：学校清单、平台评级、学费与师生比。40 校网：英华小学 A+、圣方济各英文小学 A 级；幼稚园有学之园（星汇居）A+、崇真小学暨幼稚园 A 级。"
+    },
+    {
+      "path": "/districts/yau-tsim-mong",
+      "result": "PASS",
+      "description": "油尖旺區（Yau Tsim Mong）小學與幼稚園完整盤點：學校清單、平台評級、學費與師生比。31 校網強區：拔萃女小學 S 級，嘉諾撒聖瑪利、保良局陳守仁 A 級；幼稚園有學之園（凱帆/奧運）A+。"
+    },
+    {
+      "path": "/cn/districts/yau-tsim-mong",
+      "result": "PASS",
+      "description": "油尖旺区（Yau Tsim Mong）小学与幼稚园完整盘点：学校清单、平台评级、学费与师生比。31 校网强区：拔萃女小学 S 级，嘉诺撒圣玛利、保良局陈守仁 A 级；幼稚园有学之园（凯帆/奥运）A+。"
+    },
+    {
+      "path": "/blog/primary-net-41-analysis",
+      "result": "PASS",
+      "description": "2025年41網乙部有434人獲派前三志願，佔82.8%。附第四及以後、第十一及以後的獲派人數，以及本區學校的填表例子。"
+    },
+    {
+      "path": "/cn/blog/primary-net-41-analysis",
+      "result": "PASS",
+      "description": "2025年41网乙部有434人获派前三志愿，占82.8%。附第四及以后、第十一及以后的获派人数，以及本区学校的填表例子。"
+    },
+    {
+      "path": "/blog/wan-chai-secondary-net-analysis",
+      "result": "PASS",
+      "description": "按2026/27歷史學額，假設半數潛在目標學生仍爭位。男孩中等，每100位約102人；女孩緊張，每100位約118人。附逐校公開位、直資申請與估算依據。"
+    },
+    {
+      "path": "/cn/blog/wan-chai-secondary-net-analysis",
+      "result": "PASS",
+      "description": "按2026/27历史学额，假设半数潜在目标学生仍争位。男孩中等，每100位约102人；女孩紧张，每100位约118人。附逐校公开位、直资申请与估算依据。"
+    }
+  ]
+}

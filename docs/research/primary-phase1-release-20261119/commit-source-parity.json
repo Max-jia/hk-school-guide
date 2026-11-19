@@ -1,5 +1,9 @@
 {
-  "applicationCommit": "53e872cbce218809d45ae7cfb782c53c9e4fe93f",
-  "applicationPathsVerified": 75,
+  "applicationCommits": [
+    "53e872cb",
+    "a8e3742f"
+  ],
+  "applicationCommit": "a8e3742f82460d00f7067ebd68dd2d5a94ded611",
+  "applicationPathsVerified": 76,
   "mismatches": []
 }
