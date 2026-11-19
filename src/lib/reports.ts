@@ -21,6 +21,8 @@ const SECONDARY_REPORT_SLUGS = new Set(reportMeta.SS_REPORTS.map((report) => rep
 export type ReportData = {
   slug: string;
   title: string;
+  /** Reviewed plain-text summary; rendered consistently in both locales and share metadata. */
+  description?: string;
   hero: string;
   body: string;
   premiumHtml: string;
@@ -87,6 +89,7 @@ function reportScope(d: ReportData): string {
 
 /** 搜索摘要使用报告类型和用户关心的主题生成，避免从免责声明或表格表头硬截文字。 */
 export function makeReportDescription(d: ReportData, locale: Locale): string {
+  if (d.description) return L(d.description, locale);
   if (d.slug === "think") {
     return L("朗思国际幼稚园三校区比较：核对2027/28 PN与K1申请、三语及全英班、2026/27学费与退学条款，说明升小70%比例的统计限制，附国际英文、学之园等具体校区比较。", locale);
   }
@@ -120,20 +123,11 @@ export function makeReportDescription(d: ReportData, locale: Locale): string {
   if (d.slug === "rcps") {
     return L("高主教書院小學部（RCPS）深度報告：整理學費、課程、小一收生及升中去向，解釋與高主教書院的直屬關係及其適用條件；直屬不等於一條龍或保證升讀。", locale);
   }
-  if (d.slug === "dbs") {
-    return L("拔萃男書院附屬小學深度報告：了解小一收生、一條龍升中及非官方Banding參考；2026/27本地生全年學費HK$60,630，以校方公告為準。", locale);
-  }
   if (d.slug === "spcs") {
     return L("聖保祿學校（小學部）深度報告：核對2026/27學費 HK$55,000、英文教學、小一收生，以及校方所稱的小學至中學銜接安排；實際升中條件需向校方確認。", locale);
   }
-  if (d.slug === "dgjs") {
-    return L("拔萃女小學 DGJS 深度報告：2026/27 學費全年 HK$94,000，另看小一申請、英語教學及拔萃女書院升學安排。收費和招生以校方當屆公布為準。", locale);
-  }
   if (d.slug === "hkups") {
     return L("港大同學會小學深度報告：核對2026/27學費 HK$41,630、小一收生安排、教學特色，以及升讀港大同學會書院的路徑與條件。", locale);
-  }
-  if (d.slug === "spccps") {
-    return L("聖保羅男女中學附屬小學深度報告：查看課程、評估、小一收生及升讀聖保羅男女中學的銜接條件；校方未公開可核驗的完整直升分母，不推算升讀率。", locale);
   }
   if (d.slug === "tlps") {
     return L("香港真光中學附屬小學暨幼稚園深度報告：整理教學語言、學費、小一收生與已公布升中去向，並說明公開比例的分母限制和家庭適配。", locale);
@@ -168,14 +162,8 @@ export function makeReportDescription(d: ReportData, locale: Locale): string {
   if (d.slug === "evangel") {
     return L("播道書院2026/27小學全年學費為HK$26,000；了解英語為主的教學安排、小一校本收生及原校升中條件。報告說明一條龍制度的適用邊界，不把歷年升學資料當作個人結果。", locale);
   }
-  if (d.slug === "pkcps") {
-    return L("培僑書院2026/27本地生小學全年學費為HK$31,260；了解全面普教中、英普學習環境及一條龍升中安排。報告分開解讀小學與中學資料，不把校內銜接當作個人升學保證。", locale);
-  }
   if (d.slug === "pkps") {
     return L("培僑小學是東區16校網資助男女校，《小學概覽2026》未列一條龍、直屬或聯繫中學。報告整理小一派位、教學特色及升中規劃，並說明它與沙田培僑書院的分別。", locale);
-  }
-  if (d.slug === "ywps") {
-    return L("英華小學是深水埗直資男校，中文科以普通話教學，並與英華書院有條件銜接。報告整理小一校本收生、評估安排與升中要求，區分小學和書院的歷史及制度。", locale);
   }
   if (d.slug === "plklht") {
     return L("保良局陸慶濤小學2026/27全年學費HK$14,260，與保良局羅氏基金中學一條龍；安達臣道新校舍預計2028/29落成及遷入。報告說明升中條件，以及現址與規劃校舍的差異。", locale);
@@ -206,9 +194,6 @@ export function makeReportDescription(d: ReportData, locale: Locale): string {
   }
   if (d.slug === "tpom") {
     return L("大埔舊墟公立學校（安祥路）是84校網資助男女校，中文科以普通話授課。報告核對校本課程、升中去向及逐校人數資料，並與寶湖道同名學校分開；校名中的「公立」不代表官立辦學。", locale);
-  }
-  if (d.slug === "tsl") {
-    return L("保良局陳守仁小學2026/27學費為HK$20,500，屬直資男女校，不限小一校網；沒有一條龍或直屬中學。報告比較課程、入學競爭與升中選擇，並說明學費以外的家庭投入。", locale);
   }
   const isKindergarten = isKindergartenReport(d);
   const isSecondary = SECONDARY_REPORT_SLUGS.has(d.slug) || d.slug.endsWith("-secondary");

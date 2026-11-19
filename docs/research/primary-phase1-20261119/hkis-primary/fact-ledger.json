@@ -1,0 +1,295 @@
+[
+  {
+    "id": "hkis-primary-01",
+    "claim": "小学R1/2及G1–2、G3–5分部",
+    "original": "Grades 3-5 (Upper Primary)",
+    "url": "https://www.hkis.edu.hk/admissions/faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-02",
+    "claim": "R1满4岁R2满5岁截至8月31日",
+    "original": "students must be aged 4 years on or before August 31",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-03",
+    "claim": "低年级按学习标准游戏学习",
+    "original": "HKIS uses a comprehensive standards-based curriculum",
+    "url": "https://www.hkis.edu.hk/student-learning/lower-primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-04",
+    "claim": "高年级探究式学习",
+    "original": "inquiry-based learning",
+    "url": "https://www.hkis.edu.hk/student-learning/upper-primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-05",
+    "claim": "ACTFL中文能力分层",
+    "original": "HKIS has adopted ACTFL proficiency guidelines",
+    "url": "https://www.hkis.edu.hk/student-learning/chinese-studies",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-06",
+    "claim": "DLI于2025/26两班R1开始",
+    "original": "two Reception 1 classes as part of its first year implementation.",
+    "url": "https://www.hkis.edu.hk/student-learning/chinese-studies",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-07",
+    "claim": "DLI主班中英约各半",
+    "original": "approximately 50% in English and another 50% in Chinese in their homeroom classes.",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-08",
+    "claim": "DLI采用简体字",
+    "original": "HKIS adopts simplified Chinese in DLI.",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-09",
+    "claim": "DLI R1抽签，中文非前提",
+    "original": "Parents must select ‘Yes’ on the application form",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-10",
+    "claim": "较高年级DLI如有空缺优先在读",
+    "original": "we prioritize currently enrolled students",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-11",
+    "claim": "Grade5后无中学DLI",
+    "original": "After Grade 5, students transition into the Middle School mainstream program",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-12",
+    "claim": "2027/28小学2026年10月1日截止",
+    "original": "Primary School (Reception 1 - Grade 5): October 1, 2026",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-13",
+    "claim": "当前小学申请关闭海外或个案",
+    "original": "Our 2027/28 Primary School applications are now closed.",
+    "url": "https://www.hkis.edu.hk/admissions/welcome-to-admissions",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-14",
+    "claim": "邀请评估按优先及预计空缺",
+    "original": "Invitations are based on applicant priority",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-15",
+    "claim": "分级评估：低年级发展英语G3起自适应测试",
+    "original": "Standardized computerized adaptive assessment for math, reading, writing, and oral language.",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-16",
+    "claim": "有效居留至少一位家长全职在港",
+    "original": "at least one parent who is in full-time residence in Hong Kong.",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-17",
+    "claim": "个人医疗保险必须",
+    "original": "all of its students to be covered by personal health insurance.",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-18",
+    "claim": "ABC优先类别",
+    "original": "Priority A - Debenture Holders",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "hkis-primary-19",
+    "claim": "候补池按适配非等候时长",
+    "original": "rather than considering how long he or she has been waiting for admission.",
+    "url": "https://www.hkis.edu.hk/admissions/faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-20",
+    "claim": "小学强制校车另行收费",
+    "original": "HKIS operates mandatory busing for Lower and Upper Primary students.",
+    "url": "https://www.hkis.edu.hk/admissions/faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-21",
+    "claim": "R1 8点至13:50、G1–2至14:50、G3–5 7:55至14:50",
+    "original": "Grades 3-5 (Upper Primary): 7:55 a.m. - 2:50 p.m.",
+    "url": "https://www.hkis.edu.hk/admissions/faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-22",
+    "claim": "小学班额按级别不同",
+    "original": "Grade 3 - 5: 21 - 24 Students",
+    "url": "https://www.hkis.edu.hk/admissions/faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-23",
+    "claim": "小学每学期115800全年231600",
+    "original": "Reception 1 - Grade 2 | $115,800",
+    "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-24",
+    "claim": "年度资本费24500",
+    "original": "annual capital levy of HK$24,500",
+    "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-25",
+    "claim": "申请2000新生入学15000",
+    "original": "Application Fee* | $2,000",
+    "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-26",
+    "claim": "债券300万/500万可选不保证",
+    "original": "Debentures are not mandatory and do not guarantee admission.",
+    "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-27",
+    "claim": "MacBook自备要求Grade6–12不套小学",
+    "original": "All Grade 6 to 12 students are required to bring an Apple Macintosh laptop",
+    "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-28",
+    "claim": "新生退款10日或开学日前较早限",
+    "original": "within 10 calendar days after the payment due date or before the Semester commencement date, whichever is earlier.",
+    "url": "https://www.hkis.edu.hk/userfiles/hkismvc/Finance/New%20Students%20Reservation%20Deposit%20Payment%20and%20Refund%20Policy%202026-27.pdf",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "hkis-primary-calculation",
+    "claim": "报告所有合计由列明学费、年度资本费及明确杂费逐项相加，不含未知额外项目",
+    "original": "Derived arithmetic from officially published amounts",
+    "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "editorial-calculation"
+  },
+  {
+    "id": "hkis-primary-poa",
+    "claim": "POA为官津小一派位，本校直接招生；不可把DSS退出规则泛化",
+    "original": "尚未入读小学及从未获派小一学位；接受直资小一学位规则见FAQ Q7。",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-by-main-agent-official-pdf"
+  },
+  {
+    "claim": "DLI计划覆盖至Grade5不等于2027/28各级都开设",
+    "original": "2025-26 ... implemented across two Reception 1 classes",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "checkedOn": "2026-11-19",
+    "judgement": "scope-guardrail-not-assumed-current-all-grades"
+  },
+  {
+    "id": "hkis-primary-review-dli-decline",
+    "claim": "R1获DLI录取后拒绝并欲回主流，申请进入主流候补池待空缺，不保证保留主流学位",
+    "original": "if they decide to decline the offer and would like to return to the main program, their application will be placed in the wait pool to be considered for the main program if space allows.",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "source-04.txt Admission Process。该条未规定须重新评估，正文不加此要求。"
+  },
+  {
+    "id": "hkis-primary-review-mandarin-required",
+    "claim": "R1至Grade5普通话必修并按能力分组",
+    "original": "From Reception 1 - Grade 5, Mandarin is compulsory. Children are placed in ability groups according to grade level.",
+    "url": "https://www.hkis.edu.hk/admissions/faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "source-07.txt Curriculum / What modern languages are offered。未编造统一中文分钟数。"
+  }
+]

@@ -1,0 +1,478 @@
+[
+  {
+    "id": "SPCC-001",
+    "topic": "身份及定位",
+    "claim": "黄竹坑南风径11号，直资男女全日、基督教",
+    "sources": [
+      "PSP",
+      "EDB",
+      "CLS"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-002",
+    "topic": "身份及定位",
+    "claim": "各级五班共三十班；平均约三十人一班",
+    "sources": [
+      "PSP",
+      "EDB",
+      "CLS"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-003",
+    "topic": "身份及定位",
+    "claim": "不按住址校网招生；住附近不因此取得面试优先",
+    "sources": [
+      "PSP",
+      "EDB",
+      "CLS"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-004",
+    "topic": "语言课程",
+    "claim": "低年级粤语授课；P1/P2中文科粤语、普通话母语助教",
+    "sources": [
+      "MOI",
+      "CN",
+      "EN"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-005",
+    "topic": "语言课程",
+    "claim": "小三起转普通话中文；P4–6中文普通话",
+    "sources": [
+      "MOI",
+      "CN",
+      "EN"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-006",
+    "topic": "语言课程",
+    "claim": "P6除中文及术科外用英语媒介",
+    "sources": [
+      "MOI",
+      "CN",
+      "EN"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-007",
+    "topic": "语言课程",
+    "claim": "英文P1–6分级读本；P2/3儿童经典；高小文学、戏剧、课间英语",
+    "sources": [
+      "MOI",
+      "CN",
+      "EN"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-008",
+    "topic": "语言课程",
+    "claim": "中文阅读写作及名篇教材；小一衔接与亲子阅读属校方安排",
+    "sources": [
+      "MOI",
+      "CN",
+      "EN"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-009",
+    "topic": "测考及日常",
+    "claim": "小一0测验2考试，上学期进展性评估代替测考；二至六0测验3考试",
+    "sources": [
+      "PSP",
+      "SUP"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-010",
+    "topic": "测考及日常",
+    "claim": "一般8–15时作息",
+    "sources": [
+      "PSP",
+      "SUP"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-011",
+    "topic": "测考及日常",
+    "claim": "学生支援页列学习增益、心理、读写社交言语等支持；未承诺个别频率",
+    "sources": [
+      "PSP",
+      "SUP"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-012",
+    "topic": "升中及高中",
+    "claim": "一条龙升SPCC，合要求小六毕业生可直升；学业品德条件须学校明确",
+    "sources": [
+      "PSP",
+      "TFAQ",
+      "DSE",
+      "IB"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-013",
+    "topic": "升中及高中",
+    "claim": "中学DSE和IBDP是高中路线，小学非因此IB课程",
+    "sources": [
+      "PSP",
+      "TFAQ",
+      "DSE",
+      "IB"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-014",
+    "topic": "升中及高中",
+    "claim": "高中选科按成绩及面谈；不能同时DSE/IB；中四IB预备完成后不可转DSE",
+    "sources": [
+      "PSP",
+      "TFAQ",
+      "DSE",
+      "IB"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-015",
+    "topic": "升中及高中",
+    "claim": "近届小六毕业总分母及最终升中人数未取得，未报100%",
+    "sources": [
+      "PSP",
+      "TFAQ",
+      "DSE",
+      "IB"
+    ],
+    "verification": "算术或证据边界／推论，未冒充校方保证",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-016",
+    "topic": "小一招生",
+    "claim": "2027/28适龄2020-09-01至2021-12-31",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-017",
+    "topic": "小一招生",
+    "claim": "2026-09-07 09至09-11 16申请，75不退，已截止",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-018",
+    "topic": "小一招生",
+    "claim": "所有申请人首轮，约300入二轮；沟通专注待人等",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-019",
+    "topic": "小一招生",
+    "claim": "面见10–12月，结果暂定2027-01中下旬",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-020",
+    "topic": "小一招生",
+    "claim": "150位，关系不超过70%，无关系不少于30%；助学不多于5%整体名额",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-021",
+    "topic": "小一招生",
+    "claim": "150×30%=45为最低份额算术，不是实际录取概率",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "算术或证据边界／推论，未冒充校方保证",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-022",
+    "topic": "小一招生",
+    "claim": "两年幼稚园学习报告、带照片在学证明；额外证书非必要至多两A4页，截止不补",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-023",
+    "topic": "小一招生",
+    "claim": "提名助学全免资格＋甄选，不是幼稚园保送",
+    "sources": [
+      "P1",
+      "P1PAGE",
+      "NOM"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-024",
+    "topic": "插班",
+    "claim": "2026/27 P3–5，4/27–5/8报名已截止；2025/26不招",
+    "sources": [
+      "TRANSFER",
+      "TFAQ",
+      "TPAGE",
+      "OLD"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-025",
+    "topic": "插班",
+    "claim": "一份申请，不申请现就读年级、重读或降级",
+    "sources": [
+      "TRANSFER",
+      "TFAQ",
+      "TPAGE",
+      "OLD"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-026",
+    "topic": "插班",
+    "claim": "75不退，近两年成绩，逾期不修改补资料",
+    "sources": [
+      "TRANSFER",
+      "TFAQ",
+      "TPAGE",
+      "OLD"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-027",
+    "topic": "插班",
+    "claim": "笔试筛选、中英数、数学中文、简体字可答",
+    "sources": [
+      "TRANSFER",
+      "TFAQ",
+      "TPAGE",
+      "OLD"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-028",
+    "topic": "插班",
+    "claim": "惯用语言面见、家长参与；仍须粤语课堂能力",
+    "sources": [
+      "TRANSFER",
+      "TFAQ",
+      "TPAGE",
+      "OLD"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-029",
+    "topic": "插班",
+    "claim": "2026-07-11笔试/07-15或16面试，已过",
+    "sources": [
+      "TRANSFER",
+      "TFAQ",
+      "TPAGE",
+      "OLD"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-030",
+    "topic": "插班",
+    "claim": "不设年度开放日，不特别安排家长参观",
+    "sources": [
+      "TRANSFER",
+      "TFAQ",
+      "TPAGE",
+      "OLD"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-031",
+    "topic": "费用及资助",
+    "claim": "2026/27 P1–3 85700/8570×10；P4 82200/8220×10；P5/6 77300/7730×10",
+    "sources": [
+      "FEE",
+      "REM",
+      "PSP"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-032",
+    "topic": "费用及资助",
+    "claim": "EDB3142026-09-01生效，与官网同价；PTA100",
+    "sources": [
+      "FEE",
+      "REM",
+      "PSP"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-033",
+    "topic": "费用及资助",
+    "claim": "未来按年级减价不是已承诺；2027/28核准报价及完整杂费未取得",
+    "sources": [
+      "FEE",
+      "REM",
+      "PSP"
+    ],
+    "verification": "算术或证据边界／推论，未冒充校方保证",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-034",
+    "topic": "费用及资助",
+    "claim": "20/40/60/80/100%五档，无名额上限；四人家庭可动用收入基准421250",
+    "sources": [
+      "FEE",
+      "REM",
+      "PSP"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-035",
+    "topic": "费用及资助",
+    "claim": "可动用收入不同税前年薪，按家庭主要居所及资产等正式计算",
+    "sources": [
+      "FEE",
+      "REM",
+      "PSP"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-036",
+    "topic": "费用及资助",
+    "claim": "新生完整注册退费合同未取得，不承诺一月通知全退",
+    "sources": [
+      "FEE",
+      "REM",
+      "PSP"
+    ],
+    "verification": "算术或证据边界／推论，未冒充校方保证",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-037",
+    "topic": "路线比较",
+    "claim": "英华直资男校；女拔私立女校；弘立私立独立男女",
+    "sources": [
+      "PSP",
+      "EDB",
+      "POA"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-038",
+    "topic": "路线比较",
+    "claim": "接受DSS小一位即不再统筹获派，已派也取消",
+    "sources": [
+      "PSP",
+      "EDB",
+      "POA"
+    ],
+    "verification": "官方原文核对；算术/边界项按上下文说明",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "id": "SPCC-039",
+    "topic": "路线比较",
+    "claim": "没有同类申请人数，不计算关系组/初二面或学校间录取率",
+    "sources": [
+      "PSP",
+      "EDB",
+      "POA"
+    ],
+    "verification": "算术或证据边界／推论，未冒充校方保证",
+    "checkedOn": "2026-11-19"
+  }
+]

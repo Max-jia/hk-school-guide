@@ -1,0 +1,100 @@
+{
+  "reviewDate": "2026-11-19",
+  "uniqueOfficialUrls": 101,
+  "httpOriginalsRetrieved": 73,
+  "webReaderFallbacks": 26,
+  "currentDetailedPagesUnavailable": 2,
+  "psp2026OriginalUnchanged": true,
+  "schools": [
+    {
+      "slug": "spccps",
+      "claimsReviewed": 39,
+      "sourcesRechecked": 19,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    },
+    {
+      "slug": "dgjs",
+      "claimsReviewed": 109,
+      "sourcesRechecked": 9,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    },
+    {
+      "slug": "dbs",
+      "claimsReviewed": 120,
+      "sourcesRechecked": 10,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    },
+    {
+      "slug": "ywps",
+      "claimsReviewed": 119,
+      "sourcesRechecked": 7,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [
+        "current linked promotion PDF still uses General Studies; current cohort after subject split not confirmed"
+      ],
+      "result": "PASS_WITH_EXPLICIT_BOUNDARIES"
+    },
+    {
+      "slug": "tsl",
+      "claimsReviewed": 16,
+      "sourcesRechecked": 13,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    },
+    {
+      "slug": "pkcps",
+      "claimsReviewed": 17,
+      "sourcesRechecked": 13,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [
+        "current detailed admissions unavailable; no specific terms invented"
+      ],
+      "result": "PASS_WITH_EXPLICIT_BOUNDARIES"
+    },
+    {
+      "slug": "plk-choi-kai-yau-primary",
+      "claimsReviewed": 22,
+      "sourcesRechecked": 18,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    },
+    {
+      "slug": "isf-academy-primary",
+      "claimsReviewed": 32,
+      "sourcesRechecked": 14,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    },
+    {
+      "slug": "cis-primary",
+      "claimsReviewed": 28,
+      "sourcesRechecked": 12,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    },
+    {
+      "slug": "hkis-primary",
+      "claimsReviewed": 33,
+      "sourcesRechecked": 12,
+      "verification": "School/government primary text, PDF originals and published fee images; date, denominator and scope checked",
+      "unpublishedBoundaries": [],
+      "result": "PASS"
+    }
+  ],
+  "wordingClarifications": [
+    "英华零考试标题限定为低年级",
+    "蔡继有明确校本小学与后续IBDP的学段区别",
+    "HKIS页首直接列学校类别与课程，移除无助决策的登记名称说明"
+  ],
+  "noUnsupportedAcceptanceRateOrRanking": true
+}

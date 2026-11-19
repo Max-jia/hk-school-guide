@@ -1,0 +1,99 @@
+[
+  {
+    "label": "PSP2026",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=327",
+    "scope": "学校类别、地址、语言、班数、评估、作息、设施及升中关系；培侨收费栏与现行314冲突，不作收费依据",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27（教师部分为2025/26）"
+  },
+  {
+    "label": "EDB314",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/560553.pdf",
+    "scope": "EDB314所列具体事实，见fact-ledger对应条目",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "学费",
+    "url": "https://www.puikiu.edu.hk/tc/school.php?id=35",
+    "scope": "学费所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "小一2027/28",
+    "url": "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1194&page=1",
+    "scope": "小一2027/28所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "插班2026/27",
+    "url": "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1190&page=1",
+    "scope": "插班2026/27所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "招生简报",
+    "url": "https://www.puikiu.edu.hk/tc/news_detail.php?id=468",
+    "scope": "招生简报所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校务FAQ",
+    "url": "https://help.puikiu.college/support/solutions/articles/150000173570-general-office-faq",
+    "scope": "校务FAQ所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局小一入学2027",
+    "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+    "scope": "教育局小一入学2027所列具体事实，见fact-ledger对应条目",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局2027填表须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "scope": "直资接受学位与私立录取对POA的不同影响",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "陈守仁PSP2026",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+    "scope": "三校比较：直资、语言、中学关系与费用",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "蔡继有收费",
+    "url": "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+    "scope": "三校比较、分学段收费",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "2026DSE128人多数从小学来，不是小学升中率（官方原文）",
+    "url": "https://www.puikiu.edu.hk/tc/news_detail.php?id=466",
+    "scope": "2026DSE128人多数从小学来，不是小学升中率",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026DSE"
+  },
+  {
+    "label": "插班目录存在不代表现有学额；笔试范围未全核（官方原文）",
+    "url": "https://www.puikiu.edu.hk/tc/achievements.php?cid=75",
+    "scope": "插班目录存在不代表现有学额；笔试范围未全核",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  }
+]

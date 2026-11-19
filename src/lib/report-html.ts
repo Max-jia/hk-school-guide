@@ -3,6 +3,10 @@ import reportMeta from "@/content/report-meta.json";
 
 /** Every report JSON, including the archived direct route, is admitted after content-parity checks. */
 export const EDITORIAL_REPORT_SLUGS = [
+  "plk-choi-kai-yau-primary",
+  "isf-academy-primary",
+  "cis-primary",
+  "hkis-primary",
   "st-johannes-college-kg",
   "st-rose-of-lima-kg",
   "alliance",
@@ -556,7 +560,12 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
   const [englishName, ...details] = cleanText(subtitle).split(/\s*·\s*/);
   const isUnrated = /暂缓评级|暂不评级|未作评级|未评级|暂无评级|暫緩評級|暫不評級|未作評級|未評級|暫無評級/i.test(cleanText(tier));
   const tierGrade = isUnrated ? null : cleanText(tier).match(/S|A\+?|B|C/i)?.[0] ?? "—";
-  const isSecondaryReport = /中学|中學/.test(`${title} ${cleanText(tier)}`);
+  // Keep this correction within the primary reports reviewed in this batch.
+  const isPrimaryReport = Boolean(slug && [
+    "spccps", "dgjs", "dbs", "ywps", "tsl", "pkcps",
+    "plk-choi-kai-yau-primary", "isf-academy-primary", "cis-primary", "hkis-primary",
+  ].includes(slug));
+  const isSecondaryReport = !isPrimaryReport && /中学|中學/.test(`${title} ${cleanText(tier)}`);
   const facts = isSecondaryReport ? getSecondaryHeroFacts(slug, hero, locale) : getReportFacts(body);
   const schoolNetwork = getSchoolNetwork(facts);
   const freeBadge = free ? `<span class="hero-free-badge">${L("本报告完全免费", locale)}</span>` : "";

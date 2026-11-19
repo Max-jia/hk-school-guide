@@ -1,0 +1,55 @@
+[
+  {
+    "label": "小学概览2026",
+    "url": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "scope": "类别、师资、测考、活动、助学及比较校字段",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "中文科",
+    "url": "https://www.yingwaps.edu.hk/tc/content.php?wid=41",
+    "scope": "普教中与读写",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "英文科",
+    "url": "https://www.yingwaps.edu.hk/tc/content.php?wid=43",
+    "scope": "阅读策略、戏剧与创作",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "学生就学政策",
+    "url": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "scope": "招生类别、面见、插班、请假、退学和升中",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2027/28小一官方专页",
+    "url": "https://sites.google.com/yingwa.hk/ywps-2728-p1",
+    "scope": "延长报名、面试及次轮结果日期",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "教育局E.D.314",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/550477.pdf",
+    "scope": "英华街3号小一至六年费及期数",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "教育局2027填表须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "scope": "接受直资学位对统筹派位影响",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  }
+]

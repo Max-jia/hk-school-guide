@@ -1,0 +1,133 @@
+[
+  {
+    "label": "教育局现行收费证明书（E.D.314）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/543560.pdf",
+    "scope": "原件与渲染页逐项核对：年费及期数与校方当届价目一致；证书生效日不等于适用学年。",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27；现行证书2026-03-18生效"
+  },
+  {
+    "label": "学校简介",
+    "url": "https://www.cky.edu.hk/en/site/view?name=About+CKY+Introduction",
+    "scope": "学校简介所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "课程",
+    "url": "https://www.cky.edu.hk/en/site/view?name=theCurriculum",
+    "scope": "课程所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "双语",
+    "url": "https://www.cky.edu.hk/en/site/view?name=bilingual-teaching",
+    "scope": "双语所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "课程特色",
+    "url": "https://www.cky.edu.hk/en/site/view?name=unique-features-of-the-curriculum",
+    "scope": "课程特色所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "学费",
+    "url": "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+    "scope": "学费所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "招生更新",
+    "url": "https://www.cky.edu.hk/en/site/view?name=Admissions+News",
+    "scope": "招生更新所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "减免",
+    "url": "https://www.cky.edu.hk/en/site/view?name=Fee+Remission+Scheme",
+    "scope": "减免所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "小一2027/28",
+    "url": "https://www.cky.edu.hk/en/news/view?id=33",
+    "scope": "小一2027/28所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "招生政策",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+    "scope": "2026年8月招生政策：Y1面见、插班笔试、额外考虑类别、升班与85%出席、支援／观察／留级及IBDP门槛；见fact-ledger",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "家课政策",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Homework%20policy.pdf",
+    "scope": "家课政策所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "12年课程图",
+    "url": "https://www.cky.edu.hk/uploads/pages/1/images/Structure-of-the-12-year-curriculum.png",
+    "scope": "12年课程图所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局小一入学2027",
+    "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+    "scope": "教育局小一入学2027所列具体事实，见fact-ledger对应条目",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局2027填表须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "scope": "直资接受学位与私立录取对POA的不同影响",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "陈守仁PSP2026",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+    "scope": "三校比较：直资、语言、中学关系与费用",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "培侨2026/27收费",
+    "url": "https://www.puikiu.edu.hk/tc/school.php?id=35",
+    "scope": "三校比较、学费、身份转变收费",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "Y9–10IGCSE、Y11–12IBDP，不称小学IB认证（官方原文）",
+    "url": "https://www.cky.edu.hk/en/site/view?name=igcse-introduction",
+    "scope": "Y9–10IGCSE、Y11–12IBDP，不称小学IB认证",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "当前"
+  },
+  {
+    "label": "教育局学校位置及身份原始名册",
+    "url": "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json",
+    "scope": "编号543560000423：小学、男女、深水埗、私立独立学校计划及校址",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  }
+]

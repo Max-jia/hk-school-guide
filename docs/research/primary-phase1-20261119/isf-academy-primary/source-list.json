@@ -1,0 +1,101 @@
+[
+  {
+    "label": "小学课程",
+    "url": "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "双语比例",
+    "url": "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "评估作业",
+    "url": "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/assessment/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "招生政策",
+    "url": "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "招生评估",
+    "url": "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/admissions-assessment-process/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2027/28申请期限",
+    "url": "https://academy.isf.edu.hk/index.php/news/applications-for-the-2027-28-academic-year/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2026/27学费",
+    "url": "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "资本收费",
+    "url": "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/capital-contribution-scheme/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "日常安排",
+    "url": "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-faq/",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "旧招生册仅用于查对版本",
+    "url": "https://academy.isf.edu.hk/wp-content/uploads/Admissions-Information-2026-27_ENG.pdf",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2027年度小一入学统筹办法常见问题",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+    "scope": "2027年度POA资格；由主代理下载核验",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "汉基小学官方课程",
+    "url": "https://www.cis.edu.hk/academics/primary/primary-programme",
+    "scope": "比较学校的小学双语及中文分层",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "HKIS双语沉浸课程",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "scope": "比较学校DLI实施范围及语言比例",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局弘立学校档案",
+    "url": "https://internationalschools.edb.gov.hk/en/schools/92.html",
+    "scope": "PIS性质及校址；收费字段旧于校方现行页不采用",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  }
+]

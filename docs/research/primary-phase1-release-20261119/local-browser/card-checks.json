@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "spccps",
+    "locale": "tc",
+    "text": "全文公開\n聖保羅男女中學附屬小學\n\n南區黃竹坑 · 粵語起步·分級語言過渡·一條龍條件與小一申請",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/spccps.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "dgjs",
+    "locale": "tc",
+    "text": "全文公開\n拔萃女小學\n\n油尖旺區 · 私立女校 · 英文課堂、粵語中文與女書院銜接",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/dgjs.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "dbs",
+    "locale": "tc",
+    "text": "全文公開\n拔萃男書院附屬小學\n\n九龍城區 · 直資男校 · 學科英語、校內選修與有條件升中",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/dbs.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "ywps",
+    "locale": "tc",
+    "text": "全文公開\n英華小學\n\n深水埗區 · 直資男校 · 普教中、閱讀體驗與升中政策核對",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/ywps.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "tsl",
+    "locale": "tc",
+    "text": "全文公開\n保良局陳守仁小學\n\n油尖旺 · 直資 · 英語學習與第三語言 · 獨立升中",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/tsl.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "pkcps",
+    "locale": "tc",
+    "text": "全文公開\n培僑書院（小學部）\n\n沙田 · 直資 · 英普學習環境 · 十二年一貫",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/pkcps.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "plk-choi-kai-yau-primary",
+    "locale": "tc",
+    "text": "全文公開\n保良局蔡繼有學校（小學階段）\n\n深水埗 · 私立獨立 · 雙語校本 · 十二年路線",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/plk-choi-kai-yau-primary.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "isf-academy-primary",
+    "locale": "tc",
+    "text": "全文公開\n弘立書院（小學部）\n\n南區薄扶林 · 私立獨立 · Foundation至G5·雙語比例·資本徵費與退出通知",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/isf-academy-primary.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "cis-primary",
+    "locale": "tc",
+    "text": "全文公開\n漢基國際學校（小學部）\n\n東區寶馬山 · 國際學校 · Reception至Y6·校本雙語·中文分層與入學評估",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/cis-primary.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "hkis-primary",
+    "locale": "tc",
+    "text": "全文公開\n香港國際學校（小學部）\n\n南區淺水灣 · 國際學校 · R1至G5·美國課程·普通話與DLI雙語區別",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/hkis-primary.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "spccps",
+    "locale": "sc",
+    "text": "全文公开\n圣保罗男女中学附属小学\n\n南区黄竹坑 · 粤语起步·分级语言过渡·一条龙条件与小一申请",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/spccps.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "dgjs",
+    "locale": "sc",
+    "text": "全文公开\n拔萃女小学\n\n油尖旺区 · 私立女校 · 英文课堂、粤语中文与女书院衔接",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/dgjs.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "dbs",
+    "locale": "sc",
+    "text": "全文公开\n拔萃男书院附属小学\n\n九龙城区 · 直资男校 · 学科英语、校内选修与有条件升中",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/dbs.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "ywps",
+    "locale": "sc",
+    "text": "全文公开\n英华小学\n\n深水埗区 · 直资男校 · 普教中、阅读体验与升中政策核对",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/ywps.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "tsl",
+    "locale": "sc",
+    "text": "全文公开\n保良局陈守仁小学\n\n油尖旺 · 直资 · 英语学习与第三语言 · 独立升中",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/tsl.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "pkcps",
+    "locale": "sc",
+    "text": "全文公开\n培侨书院（小学部）\n\n沙田 · 直资 · 英普学习环境 · 十二年一贯",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/pkcps.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "plk-choi-kai-yau-primary",
+    "locale": "sc",
+    "text": "全文公开\n保良局蔡继有学校（小学阶段）\n\n深水埗 · 私立独立 · 双语校本 · 十二年路线",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/plk-choi-kai-yau-primary.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "isf-academy-primary",
+    "locale": "sc",
+    "text": "全文公开\n弘立书院（小学部）\n\n南区薄扶林 · 私立独立 · Foundation至G5·双语比例·资本征费与退出通知",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/isf-academy-primary.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "cis-primary",
+    "locale": "sc",
+    "text": "全文公开\n汉基国际学校（小学部）\n\n东区宝马山 · 国际学校 · Reception至Y6·校本双语·中文分层与入学评估",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/cis-primary.svg",
+        "complete": false,
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  },
+  {
+    "slug": "hkis-primary",
+    "locale": "sc",
+    "text": "全文公开\n香港国际学校（小学部）\n\n南区浅水湾 · 国际学校 · R1至G5·美国课程·普通话与DLI双语区别",
+    "imgs": [
+      {
+        "src": "http://127.0.0.1:3458/covers/hkis-primary.svg",
+        "complete": true,
+        "width": 600
+      }
+    ],
+    "overflow": false,
+    "shareImage": {
+      "width": 1200,
+      "height": 630
+    },
+    "result": "PASS"
+  }
+]

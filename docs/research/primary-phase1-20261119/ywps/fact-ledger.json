@@ -1,0 +1,943 @@
+[
+  {
+    "claim": "﻿區域：深水埗區",
+    "originalText": "深水埗區",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校名稱：英華小學",
+    "originalText": "英華小學",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校地址：九龍深水埗英華街三號",
+    "originalText": "九龍深水埗英華街三號",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "小一學校網：/",
+    "originalText": "/",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校電話：27283320",
+    "originalText": "27283320",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校傳真：27286266",
+    "originalText": "27286266",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校電郵：school@yingwa.hk",
+    "originalText": "school@yingwa.hk",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校網址：http://www.yingwaps.edu.hk/",
+    "originalText": "http://www.yingwaps.edu.hk/",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校類別1：直資",
+    "originalText": "直資",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校類別2：全日",
+    "originalText": "全日",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "法團校董會：不適用",
+    "originalText": "不適用",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "校監和校董_校管會主席和成員的培訓達標率：不適用",
+    "originalText": "不適用",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "校監_校管會主席姓名：曾昭群",
+    "originalText": "曾昭群",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "校監_校管會主席稱謂：太平紳士",
+    "originalText": "太平紳士",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "校長姓名：陳美娟  M.H.",
+    "originalText": "陳美娟  M.H.",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學生性別：男",
+    "originalText": "男",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "辦學團體：中華基督教會香港區會",
+    "originalText": "中華基督教會香港區會",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "創校年份：2003",
+    "originalText": "2003",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "宗教：基督教",
+    "originalText": "基督教",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "校訓：篤信善行",
+    "originalText": "篤信善行",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校佔地面積：14000",
+    "originalText": "14000",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "教學語言：中文",
+    "originalText": "中文",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "一條龍中學：英華書院",
+    "originalText": "英華書院",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "校車：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "保姆車：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "家長教師會：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "舊生會_校友會：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "4Rs精神健康約章：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全校園健康計劃：行動學校",
+    "originalText": "行動學校",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學費：\"$19700\"",
+    "originalText": "\"$19700\"",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "家長教師會費：\"$100\"",
+    "originalText": "\"$100\"",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "課室數目：30",
+    "originalText": "30",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "禮堂數目：1",
+    "originalText": "1",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "操場數目：1",
+    "originalText": "1",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "圖書館數目：1",
+    "originalText": "1",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "特別室：展示廳、視藝室、STEAM　LAB、夢工場、常識室、英文室、音樂室2個、錄影室。",
+    "originalText": "展示廳、視藝室、STEAM　LAB、夢工場、常識室、英文室、音樂室2個、錄影室。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "其他學校設施：全校課室／禮堂供冷氣，與中學共用泳池、多用途室、跑道、足球場、3個籃球場及食堂。",
+    "originalText": "全校課室／禮堂供冷氣，與中學共用泳池、多用途室、跑道、足球場、3個籃球場及食堂。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "支援有特殊教育需要學生的設施：暢通易達升降機、暢通易達洗手間、觸覺引路帶及無障礙通道。",
+    "originalText": "暢通易達升降機、暢通易達洗手間、觸覺引路帶及無障礙通道。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年教師總人數：66",
+    "originalText": "66",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年已接受師資培訓人數百分率：99",
+    "originalText": "99",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年學士人數百分率：100",
+    "originalText": "100",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年碩士_博士或以上人數百分率：41",
+    "originalText": "41",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年特殊教育培訓人數百分率：25",
+    "originalText": "25",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年0至4年年資人數百分率：17",
+    "originalText": "17",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年5至9年年資人數百分率：15",
+    "originalText": "15",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年10年年資或以上人數百分率：68",
+    "originalText": "68",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年小一班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年小二班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年小三班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年小四班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年小五班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年小六班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "上學年總班數：30",
+    "originalText": "30",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "本學年小一班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "本學年小二班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "本學年小三班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "本學年小四班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "本學年小五班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "本學年小六班數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "本學年總班數：30",
+    "originalText": "30",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "班級教學模式：照顧學習需要，進行拔尖小班教學。另設輔導及鞏固學習班，以減少個別差異。",
+    "originalText": "照顧學習需要，進行拔尖小班教學。另設輔導及鞏固學習班，以減少個別差異。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全年全科測驗次數_一年級：2",
+    "originalText": "2",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全年全科考試次數_一年級：0",
+    "originalText": "0",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "小一上學期以多元化的進展性評估代替測驗及考試：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全年全科測驗次數_二至六年級：3",
+    "originalText": "3",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全年全科考試次數_二至六年級：0",
+    "originalText": "0",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "制定適切的校本課業政策_讓家長了解相關安排_並定期蒐集教師_學生和家長的意見：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "將校本評估政策上載至學校網頁_讓公眾及持份者知悉：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "將校本課業政策上載至學校網頁_讓公眾及持份者知悉：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "多元學習評估：總結性評估及進展性評估",
+    "originalText": "總結性評估及進展性評估",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "避免緊接在長假期後安排測考_讓學生在假期有充分的休息：無",
+    "originalText": "無",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "按校情靈活編排時間表_盡量在下午安排導修時段_讓學生能在教師指導下完成部分家課：有",
+    "originalText": "有",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "分班安排：小二以上班級按學生興趣分班。",
+    "originalText": "小二以上班級按學生興趣分班。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "每週上學日數：5",
+    "originalText": "5",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "每日一般上課節數：8",
+    "originalText": "8",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "每節一般時間：30",
+    "originalText": "30",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "一般上學時間：8:00",
+    "originalText": "8:00",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "一般上學時段：上午",
+    "originalText": "上午",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "一般放學時間：2:30",
+    "originalText": "2:30",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "一般放學時段：下午",
+    "originalText": "下午",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "午膳開始時間：12:40",
+    "originalText": "12:40",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "午膳結束時間：1:40",
+    "originalText": "1:40",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "午膳安排：由學校食堂提供或家長自行安排。",
+    "originalText": "由學校食堂提供或家長自行安排。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "健康校園生活：一生一體藝、推展4Rs計劃、森林課程及野外教室。",
+    "originalText": "一生一體藝、推展4Rs計劃、森林課程及野外教室。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校生活備註：每天安排生活提點、公民、國民、德育、靈修、早禱分享等活動。每週進行升旗禮、早操／早會、課外活動或生命教育，幫助學生健康成長。",
+    "originalText": "每天安排生活提點、公民、國民、德育、靈修、早禱分享等活動。每週進行升旗禮、早操／早會、課外活動或生命教育，幫助學生健康成長。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全方位學習：童軍、管弦樂、弦樂、管樂、中樂、鼓隊、敲擊樂、合唱團、田徑、游泳、籃球、足球、乒乓球、排球、羽毛球、手球、劍擊、資訊科技組、辯論隊、朗誦隊、話劇組、科學DIY隊、奧數隊、常識問答隊、學生大使、綠色大使、「腹有詩書」隊、文脈薪傳、通識專家、視藝進階班。",
+    "originalText": "童軍、管弦樂、弦樂、管樂、中樂、鼓隊、敲擊樂、合唱團、田徑、游泳、籃球、足球、乒乓球、排球、羽毛球、手球、劍擊、資訊科技組、辯論隊、朗誦隊、話劇組、科學DIY隊、奧數隊、常識問答隊、學生大使、綠色大使、「腹有詩書」隊、文脈薪傳、通識專家、視藝進階班。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "辦學宗旨：以基督精神，辦全人教育。",
+    "originalText": "以基督精神，辦全人教育。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校管理超連結：http://www.yingwaps.edu.hk/main.html",
+    "originalText": "http://www.yingwaps.edu.hk/main.html",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校管理架構：校董會、轄下設管理及財務委員會、「一條龍」督導委員會、術科委員會。",
+    "originalText": "校董會、轄下設管理及財務委員會、「一條龍」督導委員會、術科委員會。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "法團校董會_校管會_校董會：校董會主席：王家輝牧師<br>校董會成員詳見學校網頁學校資訊欄。",
+    "originalText": "校董會主席：王家輝牧師<br>校董會成員詳見學校網頁學校資訊欄。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "環保政策：廢紙循環再用、環保餐盒、自備食具、廢紙回收、綠化天台、親子種植、綠色大使、再生能源計劃、綠色午餐、海洋公園保育聯盟、廚餘收集先導計劃。",
+    "originalText": "廢紙循環再用、環保餐盒、自備食具、廢紙回收、綠化天台、親子種植、綠色大使、再生能源計劃、綠色午餐、海洋公園保育聯盟、廚餘收集先導計劃。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校關注事項：1.　發展數字教育，提升行政及學與教之成效。<br>2.　建構校園正向思維文化與正面價值觀。",
+    "originalText": "1.　發展數字教育，提升行政及學與教之成效。<br>2.　建構校園正向思維文化與正面價值觀。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "教學規劃超連結：http://www.yingwaps.edu.hk",
+    "originalText": "http://www.yingwaps.edu.hk",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學習和教學策略：1.　多元學習經歷；<br>2.　森林課程及野外教室；<br>3.　網上教室；<br>4.　「一人一機」計劃；<br>5.　專科教學及普教中；<br>6.　靈命教育；<br>7.　生活課融合德、訓、輔與靈育元素。",
+    "originalText": "1.　多元學習經歷；<br>2.　森林課程及野外教室；<br>3.　網上教室；<br>4.　「一人一機」計劃；<br>5.　專科教學及普教中；<br>6.　靈命教育；<br>7.　生活課融合德、訓、輔與靈育元素。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "小學教育課程更新重點的發展：培養國家觀念、中華文化、價值觀教育、自主學習、STEAM教育、媒體和資訊素養、健康的生活方式、4Rs計劃、身心均衡發展及發展終身學習的能力。",
+    "originalText": "培養國家觀念、中華文化、價值觀教育、自主學習、STEAM教育、媒體和資訊素養、健康的生活方式、4Rs計劃、身心均衡發展及發展終身學習的能力。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "共通能力的培養：重視學生的溝通和自理能力，透過教學設計，滲入批判性思考和解難能力，培養創造力和運用資訊科技的能力，使學生建立自尊、自信和自主學習，讓他們樂於學習。",
+    "originalText": "重視學生的溝通和自理能力，透過教學設計，滲入批判性思考和解難能力，培養創造力和運用資訊科技的能力，使學生建立自尊、自信和自主學習，讓他們樂於學習。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "正確價值觀_態度和行為的培養：早會／周會及國旗下講話配合德育、公民及國民教育、環保及多元學習主題，灌輸品德及國情教育，培養學生的良好品格、正確價值觀及國民身份認同。家教會籌辦不同活動，以身教形式培養孩子養成良好品格及正確價值。",
+    "originalText": "早會／周會及國旗下講話配合德育、公民及國民教育、環保及多元學習主題，灌輸品德及國情教育，培養學生的良好品格、正確價值觀及國民身份認同。家教會籌辦不同活動，以身教形式培養孩子養成良好品格及正確價值。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學生支援超連結：http://www.yingwaps.edu.hk/",
+    "originalText": "http://www.yingwaps.edu.hk/",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全校參與照顧學生的多樣性：拔尖活動、小班、自主學習及導修時間。",
+    "originalText": "拔尖活動、小班、自主學習及導修時間。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "全校參與模式融合教育：學生支援組的主要成員為學校社工、訓輔組老師及教育心理學家。<br>支援有特殊教育需要學生的具體措施︰教學及評估調適、家長講座及小組訓練。",
+    "originalText": "學生支援組的主要成員為學校社工、訓輔組老師及教育心理學家。<br>支援有特殊教育需要學生的具體措施︰教學及評估調適、家長講座及小組訓練。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "課程剪裁及調適措施：銜接中小學一條龍課程、課後拔尖班、跳級／跨班抽離學習、自主學習及導修時間。",
+    "originalText": "銜接中小學一條龍課程、課後拔尖班、跳級／跨班抽離學習、自主學習及導修時間。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "家校合作：家長教師會及各監察小組、家長義工。",
+    "originalText": "家長教師會及各監察小組、家長義工。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "校風：1.　建立關愛的校風及兄弟情，培養學生成為一個有心有品的人。<br>2.　培養學生健康的生活習慣、積極正面的人生觀及建立良好品格。<br>3.　培養學生自律精神，提升他們的領袖才能、責任感及服務效能。<br>4.　培養學生世界觀，提升他們對公民、國民身份的認同。",
+    "originalText": "1.　建立關愛的校風及兄弟情，培養學生成為一個有心有品的人。<br>2.　培養學生健康的生活習慣、積極正面的人生觀及建立良好品格。<br>3.　培養學生自律精神，提升他們的領袖才能、責任感及服務效能。<br>4.　培養學生世界觀，提升他們對公民、國民身份的認同。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校發展計劃：1.　發展數字教育，促進自主學習，照顧學生學習多樣性。　<br>2.　正向班級經營。　<br>3.　優化校園，完備設施。　<br>4.　課程方面︰發展一條龍銜接課程；為男生設計的校本課程；提升兩文三語的能力；推展4Rs計劃。<br>5.　多元學習活動，發展制服團隊，一生一體藝，家校合作︰善用本校及區外資源。",
+    "originalText": "1.　發展數字教育，促進自主學習，照顧學生學習多樣性。　<br>2.　正向班級經營。　<br>3.　優化校園，完備設施。　<br>4.　課程方面︰發展一條龍銜接課程；為男生設計的校本課程；提升兩文三語的能力；推展4Rs計劃。<br>5.　多元學習活動，發展制服團隊，一生一體藝，家校合作︰善用本校及區外資源。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "教師專業培訓及發展：同級備課、評課／同儕觀課／示範課／專家指導／與他校及外地學校交流。",
+    "originalText": "同級備課、評課／同儕觀課／示範課／專家指導／與他校及外地學校交流。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學校特色_其他：設有獎學金予校外、內表現卓越的同學；資助音樂、體育、科學、數學校隊之訓練、外出比賽及交流。",
+    "originalText": "設有獎學金予校外、內表現卓越的同學；資助音樂、體育、科學、數學校隊之訓練、外出比賽及交流。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "學費減免：本校設有學費全免及減免學費申請。有需要的學生（包括來自綜援家庭的學生及領取在職家庭及學生資助事務處財政資助的學生）可提出申請學費減免。<br>- 新生可於開學後的2個星期內遞交申請，其申請結果會在1個月內公布。<br>- 本校學費減免計劃詳情包括家庭入息限額，請瀏覽網上版的<a href='https://www.yingwaps.edu.hk/tc/content.php?wid=23' target='_blank'><span class='title_link'>超連結</span></a>。",
+    "originalText": "本校設有學費全免及減免學費申請。有需要的學生（包括來自綜援家庭的學生及領取在職家庭及學生資助事務處財政資助的學生）可提出申請學費減免。<br>- 新生可於開學後的2個星期內遞交申請，其申請結果會在1個月內公布。<br>- 本校學費減免計劃詳情包括家庭入息限額，請瀏覽網上版的<a href='https://www.yingwaps.edu.hk/tc/content.php?wid=23' target='_blank'><span class='title_link'>超連結</span></a>。",
+    "sourceUrl": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "sourceFile": "psp2026-row.json",
+    "verdict": "官方学校填报字段已核；按字段所属学年使用",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "最终申请截止23:59",
+    "originalText": "7月19日 6:00pm ... 順延至7月19日11:59pm",
+    "sourceUrl": "https://sites.google.com/yingwa.hk/ywps-2728-p1",
+    "verdict": "正文已核；旧版18:00不是最终截止",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "次轮结果2027年1月底",
+    "originalText": "第二輪面試結果：將於2027年1月底透過電郵及SMS通知家長",
+    "sourceUrl": "https://sites.google.com/yingwa.hk/ywps-2728-p1",
+    "verdict": "正文已核",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "普教中",
+    "originalText": "普通話教中文；低小課程以說話寫話為主，中高小發展讀寫結合",
+    "sourceUrl": "https://www.yingwaps.edu.hk/tc/content.php?wid=41",
+    "verdict": "正文已核",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "官网所链未标学年文件所列：升书院阶段条件",
+    "originalText": "五年級第三次評估及六年級第一次評估...中文英文數學常識均及格...操行B級或以上",
+    "sourceUrl": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "verdict": "原PDF第3页已读，属官网仍链接的未标学年政策；常识科名未更新，不证明分科后当届或2027/28入学届别未来完整条件。原文仅作参考，须取得校方当届说明。",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "官网所链未标学年文件所列：小六第二次未达标承诺失效",
+    "originalText": "六年級第二次評估...其中一科不及格...操行未達B...承諾書作廢...參加中學統一派位",
+    "sourceUrl": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "verdict": "原PDF第3页已读，属官网仍链接的未标学年政策；常识科名未更新，不证明分科后当届或2027/28入学届别未来完整条件。原文仅作参考，须取得校方当届说明。",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "插班三科时长",
+    "originalText": "中文、英文每份試卷考1小時，數學考45分鐘",
+    "sourceUrl": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "verdict": "PDF第2页已读",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "两轮面试及申请类别",
+    "originalText": "第一輪...每位報名...分組；第二輪...每個家庭見面約10分鐘",
+    "sourceUrl": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "verdict": "PDF第1–2页已读，不把未标年份政策变当届题库",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "退学要书面通知",
+    "originalText": "家長必須以書面通知學校學生退學原因及將往何校升讀",
+    "sourceUrl": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "verdict": "PDF第3页已读；退款细则未列",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "19,700十期收费",
+    "originalText": "1,970.00 - 10/- 19,700.00; With effect from 01.09.2026",
+    "sourceUrl": "https://applications.edb.gov.hk/schoolsearch/schoolfee/550477.pdf",
+    "verdict": "PDF文字及第1页渲染已核",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "提前外游影响操行",
+    "originalText": "無故提早放假或外遊，學生的操行等級將會被調低",
+    "sourceUrl": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "verdict": "PDF第2页已读",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "接受直资学位后不能再统筹获派，已派取消；私立录取仍参加统筹名单2027年6月前送校参考",
+    "originalText": "见shared/edb-poa2027-notes.txt第324–334行，对应PDF纸标第7页四(2)–(4)",
+    "sourceUrl": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "verdict": "原PDF及文本已核，不把私立误作直资",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "claim": "升班留级条款亦仅作未标学年官网政策参考",
+    "originalText": "小一至小五學生必須中、英、數、常四科及格，方可升班；學生在整個小學階段只可留級一次，六年級不可留級。",
+    "sourceUrl": "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+    "sourceFile": "student-policy.txt",
+    "verdict": "原件已读，正文前置未标学年及分科限制；不能当作2027/28入学届别未来锁定政策。",
+    "checkedOn": "2026-11-19"
+  }
+]

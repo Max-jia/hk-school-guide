@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "spccps",
+    "chapters": 8,
+    "tables": 8,
+    "officialReferences": 19,
+    "ledgerEntries": 39,
+    "sha256": "f9fb22446eb52e12583f36d89ea4241303b1d25109b50d0af5c2932f8889dc8b",
+    "result": "PASS"
+  },
+  {
+    "slug": "dgjs",
+    "chapters": 8,
+    "tables": 7,
+    "officialReferences": 9,
+    "ledgerEntries": 109,
+    "sha256": "1a24c1a2d7c57ee438bba7d02cb92ff3e78073fd7b08d9517b7b3d435880d538",
+    "result": "PASS"
+  },
+  {
+    "slug": "dbs",
+    "chapters": 8,
+    "tables": 7,
+    "officialReferences": 10,
+    "ledgerEntries": 120,
+    "sha256": "fe16e107fbbe7fda31b60dfc652391111e38d50761c989750287abc4a42a96aa",
+    "result": "PASS"
+  },
+  {
+    "slug": "ywps",
+    "chapters": 8,
+    "tables": 7,
+    "officialReferences": 7,
+    "ledgerEntries": 119,
+    "sha256": "1b27ca0a778fa9849ef5fcb1b236d959c8ffb57fafe67891d52138c670d2ac07",
+    "result": "PASS"
+  },
+  {
+    "slug": "tsl",
+    "chapters": 8,
+    "tables": 3,
+    "officialReferences": 13,
+    "ledgerEntries": 16,
+    "sha256": "6afa0a24095bca668f8b6fa1643738e959b0c5696b826f11c62f5ae77cbfccc2",
+    "result": "PASS"
+  },
+  {
+    "slug": "pkcps",
+    "chapters": 8,
+    "tables": 3,
+    "officialReferences": 13,
+    "ledgerEntries": 17,
+    "sha256": "119721d78a3290c2ff7862c0ec686a655f67717120c575501af11ce72611c555",
+    "result": "PASS"
+  },
+  {
+    "slug": "plk-choi-kai-yau-primary",
+    "chapters": 8,
+    "tables": 4,
+    "officialReferences": 18,
+    "ledgerEntries": 22,
+    "sha256": "78a39614a9a4c82ba50f956d8e77f8e382cf855d805f7f16426d4d14eebe510f",
+    "result": "PASS"
+  },
+  {
+    "slug": "isf-academy-primary",
+    "chapters": 8,
+    "tables": 7,
+    "officialReferences": 14,
+    "ledgerEntries": 32,
+    "sha256": "305c878f38c0fd856b43c6849b610ff3d249fc712f4ed17dddf8f9c09b6756bc",
+    "result": "PASS"
+  },
+  {
+    "slug": "cis-primary",
+    "chapters": 8,
+    "tables": 8,
+    "officialReferences": 12,
+    "ledgerEntries": 28,
+    "sha256": "3136a38a74fd06035f2f2e5b013e812ebc924c711adb865ad84f66589a014810",
+    "result": "PASS"
+  },
+  {
+    "slug": "hkis-primary",
+    "chapters": 8,
+    "tables": 8,
+    "officialReferences": 12,
+    "ledgerEntries": 33,
+    "sha256": "2bdf588fc17ae56d41ff3a90c9a4c586cb56490ccd8616f2a169995311721d1d",
+    "result": "PASS"
+  }
+]

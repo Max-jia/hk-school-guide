@@ -1,0 +1,87 @@
+[
+  {
+    "label": "低年级课程",
+    "url": "https://www.hkis.edu.hk/student-learning/lower-primary",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "高年级课程",
+    "url": "https://www.hkis.edu.hk/student-learning/upper-primary",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "中文课程",
+    "url": "https://www.hkis.edu.hk/student-learning/chinese-studies",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "双语沉浸路线",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "申请与优先",
+    "url": "https://www.hkis.edu.hk/admissions/how-to-apply",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "招生现况",
+    "url": "https://www.hkis.edu.hk/admissions/welcome-to-admissions",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "学校问答",
+    "url": "https://www.hkis.edu.hk/admissions/faq",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2026/27收费及退费",
+    "url": "https://www.hkis.edu.hk/admissions/tuition-fees",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2026/27新生订金退费原件",
+    "url": "https://www.hkis.edu.hk/userfiles/hkismvc/Finance/New%20Students%20Reservation%20Deposit%20Payment%20and%20Refund%20Policy%202026-27.pdf",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2027年度小一入学统筹办法常见问题",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+    "scope": "2027年度POA资格；由主代理下载核验",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "汉基小学官方课程",
+    "url": "https://www.cis.edu.hk/academics/primary/primary-programme",
+    "scope": "比较学校的小学双语及中文分层",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "弘立小学官方语言比例",
+    "url": "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+    "scope": "比较学校小学语言比例与学制",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  }
+]

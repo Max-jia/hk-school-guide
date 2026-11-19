@@ -1,0 +1,252 @@
+[
+  {
+    "id": "cis-primary-01",
+    "claim": "小学Reception至Year 6",
+    "original": "Reception-Year 6",
+    "url": "https://www.cis.edu.hk/academics/primary/primary-programme",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-02",
+    "claim": "双语母语教师搭档",
+    "original": "Every homeroom is headed by two teaching partners",
+    "url": "https://www.cis.edu.hk/academics/primary/primary-programme",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-03",
+    "claim": "Y4–6中文三层级一年复核两次",
+    "original": "Students’ placement in their proficiency level is reviewed twice annually",
+    "url": "https://www.cis.edu.hk/academics/primary/primary-programme",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-04",
+    "claim": "中文读写包括笔顺部首和高年级文体",
+    "original": "In lower Primary, students start writing with radicals, stroke order and characters.",
+    "url": "https://www.cis.edu.hk/academics/primary/primary-programme",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-05",
+    "claim": "Reception半日入学年8月31日前满4岁",
+    "original": "Reception is a half-day programme",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/reception",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-06",
+    "claim": "Reception96位、只需一门语言较强",
+    "original": "there are openings for 96 students",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/reception",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-07",
+    "claim": "Reception10月1日截止",
+    "original": "1 October of the academic year prior to entry.",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/reception",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-08",
+    "claim": "Reception申请2000进入第二阶段另2000",
+    "original": "An additional HK$2,000 non-refundable assessment fee",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/reception",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-09",
+    "claim": "Y1–6空缺很少4月底确认",
+    "original": "The Admissions Office will know how many openings are available by the end of April",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-10",
+    "claim": "Y1–6在2月28日前申请",
+    "original": "Online Applications for Year 1-6 must be submitted by 28 February.",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-11",
+    "claim": "2027-01-14说明会",
+    "original": "Thursday, 14 January 2027",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-12",
+    "claim": "5–6月评估1–1.5小时",
+    "original": "The assessment usually lasts about 1-1.5 hours.",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-13",
+    "claim": "双语及数学笔试口试",
+    "original": "written tests in English, Chinese (Mandarin), and Mathematics",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-14",
+    "claim": "四题家长视频",
+    "original": "submit video responses to four questions",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/primary",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-15",
+    "claim": "非永久居民须有就学签证",
+    "original": "must hold a valid passport with a valid visa that enables the student to study in Hong Kong.",
+    "url": "https://www.cis.edu.hk/admissions/entry-requirements",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-16",
+    "claim": "在读兄弟姐妹、CNR等有优先但不保证",
+    "original": "their status does not confer an absolute guarantee of admission.",
+    "url": "https://www.cis.edu.hk/admissions/admissions-faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-17",
+    "claim": "小学自动过渡中学",
+    "original": "students may automatically transition from CIS Primary to CIS Secondary.",
+    "url": "https://www.cis.edu.hk/admissions/admissions-faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-18",
+    "claim": "Y1–6未面试申请可维持开放",
+    "original": "If your child is not invited for assessment, your application is still kept “open.”",
+    "url": "https://www.cis.edu.hk/admissions/admissions-faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-19",
+    "claim": "Reception未安排评估申请关闭",
+    "original": "Applications for Reception will be closed if no entrance assessment is arranged.",
+    "url": "https://www.cis.edu.hk/admissions/admissions-faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-20",
+    "claim": "Year1–6申请费2000",
+    "original": "There is a HK$2,000 non-refundable application fee for all Year 1-6 applicants.",
+    "url": "https://www.cis.edu.hk/admissions/admissions-faq",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-21",
+    "claim": "2026/27 R226400；Y1–6 300300",
+    "original": "RECEPTION HK$226,400; YEAR 1–6 HK$300,300",
+    "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1782266092/chineseis/enu1mtfoiivduffdetyi/schoolfee.png",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "cis-primary-22",
+    "claim": "新生ACL30200，旧生28000不套新生",
+    "original": "for students who are joining CIS in or after the 2025-26 academic year HK$30,200",
+    "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1782266092/chineseis/enu1mtfoiivduffdetyi/schoolfee.png",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "cis-primary-23",
+    "claim": "Annual Fees R–Y2 12740–13320；Y3–6 15020–18780",
+    "original": "Reception–Y2 HK$12,740 - $13,320; Y3–Y6 HK$15,020 - $18,780",
+    "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1782200455/chineseis/gfwa5ovujintguwtaaxh/Screenshot2026-06-23at34033PM.png",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "cis-primary-24",
+    "claim": "Year6台北行程13300另列",
+    "original": "Y6 Taipei Trip HK$13,300",
+    "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1782200455/chineseis/gfwa5ovujintguwtaaxh/Screenshot2026-06-23at34033PM.png",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "cis-primary-25",
+    "claim": "15万元订金不可退，抵学费资本费及年费",
+    "original": "a non-refundable reservation deposit of HK$150,000",
+    "url": "https://www.cis.edu.hk/admissions/school-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "官方正文已阅读；如属建议或计算，正文另有说明。"
+  },
+  {
+    "id": "cis-primary-26",
+    "claim": "INR可申请优先，CNR不新发",
+    "original": "new INRs are currently available",
+    "url": "https://www.cis.edu.hk/admissions/school-fees/existing-nomination-rights-historical-annual-levy",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-official",
+    "evidenceNote": "收费图片两张已实际审看；PDF已提取阅读全文。弘立原站正文经web工具阅读，curl拦截页不作证据。"
+  },
+  {
+    "id": "cis-primary-calculation",
+    "claim": "报告所有合计由列明学费、年度资本费及明确杂费逐项相加，不含未知额外项目",
+    "original": "Derived arithmetic from officially published amounts",
+    "url": "https://www.cis.edu.hk/admissions/school-fees",
+    "checkedOn": "2026-11-19",
+    "judgement": "editorial-calculation"
+  },
+  {
+    "id": "cis-primary-poa",
+    "claim": "POA为官津小一派位，本校直接招生；不可把DSS退出规则泛化",
+    "original": "尚未入读小学及从未获派小一学位；接受直资小一学位规则见FAQ Q7。",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+    "checkedOn": "2026-11-19",
+    "judgement": "verified-by-main-agent-official-pdf"
+  }
+]

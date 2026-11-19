@@ -1,0 +1,181 @@
+[
+  {
+    "claim": "蔡继有小学身份为私立独立学校计划，男女、全日、深水埗",
+    "officialExcerpt": "SCHOOL NO. 543560000423; FINANCE TYPE PRIVATE INDEPENDENT SCH SCHEME",
+    "url": "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json",
+    "verdict": "verified_original_json",
+    "checkedOn": "2026-11-19",
+    "originalFile": "docs/research/primary-popularity-50-20261119/edb-school-location-information.json",
+    "originalSha256": "598d02578b3380f00eb117f1f3bd31405b4e901b97125bb97a7c1145a855993a"
+  },
+  {
+    "claim": "私立独立非牟利十二年双语一贯",
+    "officialExcerpt": "independent and non-profit making through-train school",
+    "url": "https://www.cky.edu.hk/en/site/view?name=About+CKY+Introduction",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "当前"
+  },
+  {
+    "claim": "校本小学Y1–5，图示Y6–10英国国家课程基础",
+    "officialExcerpt": "Year 1–5；Year 6–10",
+    "url": "https://www.cky.edu.hk/uploads/pages/1/images/Structure-of-the-12-year-curriculum.png",
+    "verdict": "verified_image_read",
+    "checkedOn": "2026-11-19",
+    "academicYear": "当前图"
+  },
+  {
+    "claim": "Y9–10IGCSE、Y11–12IBDP，不称小学IB认证",
+    "officialExcerpt": "In years 9 and 10 students embark on a two-year course",
+    "url": "https://www.cky.edu.hk/en/site/view?name=igcse-introduction",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "当前"
+  },
+  {
+    "claim": "小学双班主任，以读本小说教中英",
+    "officialExcerpt": "We operate a co-tutor system for the Primary Section",
+    "url": "https://www.cky.edu.hk/en/site/view?name=bilingual-teaching",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "当前"
+  },
+  {
+    "claim": "Y1科学；Y1–5心算解难速算，Y4–8外访",
+    "officialExcerpt": "CKY introduces science in Year 1",
+    "url": "https://www.cky.edu.hk/en/site/view?name=unique-features-of-the-curriculum",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "当前"
+  },
+  {
+    "claim": "家课为评估组成；记录按时交，班主任协调工作量",
+    "officialExcerpt": "Homework is considered an integral part of formative and summative assessment",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Homework%20policy.pdf",
+    "verdict": "verified_pdf_read",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026-08"
+  },
+  {
+    "claim": "不能抽正常课补家课、支援欠交学生",
+    "officialExcerpt": "never withdraw a child from any timetabled lesson",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Homework%20policy.pdf",
+    "verdict": "verified_pdf_read",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026-08"
+  },
+  {
+    "claim": "升班有条件，不能单纯成绩差开除；有支援观察留级",
+    "officialExcerpt": "must fulfill the academic requirements of promotion",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+    "verdict": "verified_pdf_read",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026-08"
+  },
+  {
+    "claim": "进入IBDP至少3B3C，各选科另有要求",
+    "officialExcerpt": "minimum of 3Bs and 3Cs",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+    "verdict": "verified_pdf_read",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026-08"
+  },
+  {
+    "claim": "2027/28小一8/31–9/4，首面9/16–19，400不退无作品集",
+    "officialExcerpt": "Parents DO NOT need to create/submit student portfolios.",
+    "url": "https://www.cky.edu.hk/en/news/view?id=33",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "claim": "11/23–24二面含家长；小一及本届插班关闭",
+    "officialExcerpt": "second interviews on 23rd–24th November 26 include child and parent",
+    "url": "https://www.cky.edu.hk/en/site/view?name=Admissions+News",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "claim": "下届插班第二学期开始，非全部年级开放",
+    "officialExcerpt": "Year levels will only be open if spaces are available",
+    "url": "https://www.cky.edu.hk/en/site/view?name=Admissions+News",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "claim": "Y1组面不设正式笔试，插班须笔试",
+    "officialExcerpt": "They will not be required to sit any formal written examinations.",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+    "verdict": "verified_pdf_read",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026-08"
+  },
+  {
+    "claim": "Y1–5费108801，Y6–8 141460，Y9–10 158543，Y11–12 160149",
+    "officialExcerpt": "1-5 108,801.00 9,891.00 11",
+    "url": "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+    "verdict": "verified_via_web_reader",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "claim": "五年同价544005，Y6段差32659，非未来报价",
+    "officialExcerpt": "108,801 × 5 = 544,005；141,460−108,801 = 32,659",
+    "url": "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+    "verdict": "calculation",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27费率算术"
+  },
+  {
+    "claim": "减免旧截止2026/4/28，不作下届仍可申请",
+    "officialExcerpt": "on or before 28th April, 2026",
+    "url": "https://www.cky.edu.hk/en/site/view?name=Fee+Remission+Scheme",
+    "verdict": "historical_verified",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "claim": "未取得完整退出及退款条款",
+    "officialExcerpt": "未从可读网页核得完整退款规则",
+    "url": "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+    "verdict": "not_established",
+    "checkedOn": "2026-11-19",
+    "academicYear": "当前"
+  },
+  {
+    "claim": "接受直资小一位不再获派、已派取消；私立录取仍参加统筹名单送校参考",
+    "officialExcerpt": "四(2)、四(3)：直資及私立小學安排分别说明",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "verdict": "verified_shared_official_pdf",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "claim": "家庭适配、陪读、选择与下一步建议",
+    "officialExcerpt": null,
+    "url": null,
+    "verdict": "editorial_analysis_from_verified_conditions",
+    "checkedOn": "2026-11-19",
+    "note": "不当作校方承诺；正文含明确建议措辞"
+  },
+  {
+    "claim": "出席率至少85%；低于可能留级或审查学籍，获准缺席综合审议",
+    "officialExcerpt": "4.1.2 students are expected to maintain an attendance rate of at least 85% of total school days; 4.1.3 Authorised absences ... will be considered during the promotion review",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+    "originalFile": "docs/research/primary-phase1-20261119/plk-choi-kai-yau-primary/originals/8.pdf",
+    "verdict": "verified_pdf_read_cross_review",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026-08政策，第6页§4.1.2–4.1.3"
+  },
+  {
+    "claim": "兄弟姐妹、现职教员子女、校友子女及保良局关联申请人额外考虑，不保证录取",
+    "officialExcerpt": "2.7.1 Additional consideration is given to applicants who are siblings of currently enrolled students, children of current staff members, children of alumni and those affiliated with Po Leung Kuk. 2.7.2 All admissions decisions are made holistically.",
+    "url": "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+    "originalFile": "docs/research/primary-phase1-20261119/plk-choi-kai-yau-primary/originals/8.pdf",
+    "verdict": "verified_pdf_read_cross_review",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026-08政策，第5页§2.7"
+  }
+]

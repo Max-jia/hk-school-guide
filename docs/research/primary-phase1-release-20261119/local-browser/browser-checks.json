@@ -1,0 +1,4034 @@
+{
+  "checks": [
+    {
+      "h1": [
+        "聖保羅男女中學附屬小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看粵語起步、升中條件和六年投入",
+          "text": 626
+        },
+        {
+          "id": "chapter-2",
+          "title": "2語言按年級轉變，閱讀與日常評估都要跟上",
+          "text": 926
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一條龍升中有條件，DSE和IB是後續選擇",
+          "text": 706
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，先分清面試、名額與派位",
+          "text": 1014
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先對年級：不接受重讀，數學也要讀懂中文",
+          "text": 677
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要配合的，是閱讀、語言適應和接送",
+          "text": 697
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比較其他學校時，把性別、課程與升中機制分開",
+          "text": 581
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年要付多少，註冊前把費用和退出條件拿齊",
+          "text": 1065
+        }
+      ],
+      "overflow": false,
+      "description": "聖保羅男女附小深度報告：核對2027/28小一150個學額、不少於30%無關係申請人名額、面試與插班規則；解釋粵語起步、分級語言過渡、一條龍升中條件及2026/27學費。",
+      "ogDescription": "聖保羅男女附小深度報告：核對2027/28小一150個學額、不少於30%無關係申請人名額、面試與插班規則；解釋粵語起步、分級語言過渡、一條龍升中條件及2026/27學費。",
+      "twitterDescription": "聖保羅男女附小深度報告：核對2027/28小一150個學額、不少於30%無關係申請人名額、面試與插班規則；解釋粵語起步、分級語言過渡、一條龍升中條件及2026/27學費。",
+      "canonical": "https://hkschool.guide/reports/spccps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/spccps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/spccps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/spccps"
+        }
+      ],
+      "facts": [
+        "地區／地址\n南區黃竹坑\n類型／性別\n直資 · 全日制 · 男女校\n2026/27學費\n小一至小三HK$85,700／年\n學段\n小一至小六"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/spccps-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.spcc.edu.hk/f/page/1089/10753/2027-2028%20%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E5%A0%B1%E5%90%8D%E5%90%8D%E9%A0%88%E7%9F%A5.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/514187.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/fee-remission-and-financial-aid",
+        "https://www.spccps.edu.hk/tc/medium-instruction",
+        "https://www.spccps.edu.hk/tc/%E4%B8%AD%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/%E8%8B%B1%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/class-structure",
+        "https://www.spccps.edu.hk/tc/student-support",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E7%94%B3%E8%AB%8B%E9%A0%88%E7%9F%A5%202026-27.pdf",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%202026-27.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p3-p5",
+        "https://www.spccps.edu.hk/tc/latest_new/%E6%9C%89%E9%97%9C-2025-%E5%B9%B4%E5%BA%A6%E6%8F%92%E7%8F%AD%E7%94%9F%E6%8B%9B%E6%94%B6",
+        "https://www.spcc.edu.hk/f/page/1089/10725/FD%20Scheme%20%E9%A0%88%E7%9F%A5%E5%8F%8A%E6%A0%A1%E9%95%B7%E6%8F%90%E5%90%8D%E8%A1%A8%E6%A0%BC2027.pdf",
+        "https://www.spcc.edu.hk/academic/curriculum/dse",
+        "https://www.spcc.edu.hk/academic/curriculum/ibdp",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "spccps-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "spccps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "聖保羅男女中學附屬小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看粵語起步、升中條件和六年投入",
+          "text": 627
+        },
+        {
+          "id": "chapter-2",
+          "title": "2語言按年級轉變，閱讀與日常評估都要跟上",
+          "text": 927
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一條龍升中有條件，DSE和IB是後續選擇",
+          "text": 707
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，先分清面試、名額與派位",
+          "text": 1015
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先對年級：不接受重讀，數學也要讀懂中文",
+          "text": 678
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要配合的，是閱讀、語言適應和接送",
+          "text": 698
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比較其他學校時，把性別、課程與升中機制分開",
+          "text": 582
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年要付多少，註冊前把費用和退出條件拿齊",
+          "text": 1066
+        }
+      ],
+      "overflow": false,
+      "description": "聖保羅男女附小深度報告：核對2027/28小一150個學額、不少於30%無關係申請人名額、面試與插班規則；解釋粵語起步、分級語言過渡、一條龍升中條件及2026/27學費。",
+      "ogDescription": "聖保羅男女附小深度報告：核對2027/28小一150個學額、不少於30%無關係申請人名額、面試與插班規則；解釋粵語起步、分級語言過渡、一條龍升中條件及2026/27學費。",
+      "twitterDescription": "聖保羅男女附小深度報告：核對2027/28小一150個學額、不少於30%無關係申請人名額、面試與插班規則；解釋粵語起步、分級語言過渡、一條龍升中條件及2026/27學費。",
+      "canonical": "https://hkschool.guide/reports/spccps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/spccps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/spccps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/spccps"
+        }
+      ],
+      "facts": [
+        "地區／地址\n南區黃竹坑\n類型／性別\n直資 · 全日制 · 男女校\n2026/27學費\n小一至小三HK$85,700／年\n學段\n小一至小六"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/spccps-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.spcc.edu.hk/f/page/1089/10753/2027-2028%20%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E5%A0%B1%E5%90%8D%E5%90%8D%E9%A0%88%E7%9F%A5.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/514187.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/fee-remission-and-financial-aid",
+        "https://www.spccps.edu.hk/tc/medium-instruction",
+        "https://www.spccps.edu.hk/tc/%E4%B8%AD%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/%E8%8B%B1%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/class-structure",
+        "https://www.spccps.edu.hk/tc/student-support",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E7%94%B3%E8%AB%8B%E9%A0%88%E7%9F%A5%202026-27.pdf",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%202026-27.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p3-p5",
+        "https://www.spccps.edu.hk/tc/latest_new/%E6%9C%89%E9%97%9C-2025-%E5%B9%B4%E5%BA%A6%E6%8F%92%E7%8F%AD%E7%94%9F%E6%8B%9B%E6%94%B6",
+        "https://www.spcc.edu.hk/f/page/1089/10725/FD%20Scheme%20%E9%A0%88%E7%9F%A5%E5%8F%8A%E6%A0%A1%E9%95%B7%E6%8F%90%E5%90%8D%E8%A1%A8%E6%A0%BC2027.pdf",
+        "https://www.spcc.edu.hk/academic/curriculum/dse",
+        "https://www.spcc.edu.hk/academic/curriculum/ibdp",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "spccps-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "spccps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "圣保罗男女中学附属小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看粤语起步、升中条件和六年投入",
+          "text": 626
+        },
+        {
+          "id": "chapter-2",
+          "title": "2语言按年级转变，阅读与日常评估都要跟上",
+          "text": 926
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一条龙升中有条件，DSE和IB是后续选择",
+          "text": 706
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，先分清面试、名额与派位",
+          "text": 1014
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先对年级：不接受重读，数学也要读懂中文",
+          "text": 677
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要配合的，是阅读、语言适应和接送",
+          "text": 697
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比较其他学校时，把性别、课程与升中机制分开",
+          "text": 581
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年要付多少，注册前把费用和退出条件拿齐",
+          "text": 1065
+        }
+      ],
+      "overflow": false,
+      "description": "圣保罗男女附小深度报告：核对2027/28小一150个学额、不少于30%无关系申请人名额、面试与插班规则；解释粤语起步、分级语言过渡、一条龙升中条件及2026/27学费。",
+      "ogDescription": "圣保罗男女附小深度报告：核对2027/28小一150个学额、不少于30%无关系申请人名额、面试与插班规则；解释粤语起步、分级语言过渡、一条龙升中条件及2026/27学费。",
+      "twitterDescription": "圣保罗男女附小深度报告：核对2027/28小一150个学额、不少于30%无关系申请人名额、面试与插班规则；解释粤语起步、分级语言过渡、一条龙升中条件及2026/27学费。",
+      "canonical": "https://hkschool.guide/cn/reports/spccps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/spccps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/spccps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/spccps"
+        }
+      ],
+      "facts": [
+        "地区／地址\n南区黄竹坑\n类型／性别\n直资 · 全日制 · 男女校\n2026/27学费\n小一至小三HK$85,700／年\n学段\n小一至小六"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/spccps-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.spcc.edu.hk/f/page/1089/10753/2027-2028%20%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E5%A0%B1%E5%90%8D%E5%90%8D%E9%A0%88%E7%9F%A5.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/514187.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/fee-remission-and-financial-aid",
+        "https://www.spccps.edu.hk/tc/medium-instruction",
+        "https://www.spccps.edu.hk/tc/%E4%B8%AD%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/%E8%8B%B1%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/class-structure",
+        "https://www.spccps.edu.hk/tc/student-support",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E7%94%B3%E8%AB%8B%E9%A0%88%E7%9F%A5%202026-27.pdf",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%202026-27.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p3-p5",
+        "https://www.spccps.edu.hk/tc/latest_new/%E6%9C%89%E9%97%9C-2025-%E5%B9%B4%E5%BA%A6%E6%8F%92%E7%8F%AD%E7%94%9F%E6%8B%9B%E6%94%B6",
+        "https://www.spcc.edu.hk/f/page/1089/10725/FD%20Scheme%20%E9%A0%88%E7%9F%A5%E5%8F%8A%E6%A0%A1%E9%95%B7%E6%8F%90%E5%90%8D%E8%A1%A8%E6%A0%BC2027.pdf",
+        "https://www.spcc.edu.hk/academic/curriculum/dse",
+        "https://www.spcc.edu.hk/academic/curriculum/ibdp",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "spccps-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "spccps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "圣保罗男女中学附属小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看粤语起步、升中条件和六年投入",
+          "text": 627
+        },
+        {
+          "id": "chapter-2",
+          "title": "2语言按年级转变，阅读与日常评估都要跟上",
+          "text": 927
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一条龙升中有条件，DSE和IB是后续选择",
+          "text": 707
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，先分清面试、名额与派位",
+          "text": 1015
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先对年级：不接受重读，数学也要读懂中文",
+          "text": 678
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要配合的，是阅读、语言适应和接送",
+          "text": 698
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比较其他学校时，把性别、课程与升中机制分开",
+          "text": 582
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年要付多少，注册前把费用和退出条件拿齐",
+          "text": 1066
+        }
+      ],
+      "overflow": false,
+      "description": "圣保罗男女附小深度报告：核对2027/28小一150个学额、不少于30%无关系申请人名额、面试与插班规则；解释粤语起步、分级语言过渡、一条龙升中条件及2026/27学费。",
+      "ogDescription": "圣保罗男女附小深度报告：核对2027/28小一150个学额、不少于30%无关系申请人名额、面试与插班规则；解释粤语起步、分级语言过渡、一条龙升中条件及2026/27学费。",
+      "twitterDescription": "圣保罗男女附小深度报告：核对2027/28小一150个学额、不少于30%无关系申请人名额、面试与插班规则；解释粤语起步、分级语言过渡、一条龙升中条件及2026/27学费。",
+      "canonical": "https://hkschool.guide/cn/reports/spccps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/spccps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/spccps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/spccps"
+        }
+      ],
+      "facts": [
+        "地区／地址\n南区黄竹坑\n类型／性别\n直资 · 全日制 · 男女校\n2026/27学费\n小一至小三HK$85,700／年\n学段\n小一至小六"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/spccps-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.spcc.edu.hk/f/page/1089/10753/2027-2028%20%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E5%A0%B1%E5%90%8D%E5%90%8D%E9%A0%88%E7%9F%A5.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/514187.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/fee-remission-and-financial-aid",
+        "https://www.spccps.edu.hk/tc/medium-instruction",
+        "https://www.spccps.edu.hk/tc/%E4%B8%AD%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/%E8%8B%B1%E6%96%87%E7%A7%91",
+        "https://www.spccps.edu.hk/tc/class-structure",
+        "https://www.spccps.edu.hk/tc/student-support",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E7%94%B3%E8%AB%8B%E9%A0%88%E7%9F%A5%202026-27.pdf",
+        "https://www.spcc.edu.hk/f/page/1090/10485/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%202026-27.pdf",
+        "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p3-p5",
+        "https://www.spccps.edu.hk/tc/latest_new/%E6%9C%89%E9%97%9C-2025-%E5%B9%B4%E5%BA%A6%E6%8F%92%E7%8F%AD%E7%94%9F%E6%8B%9B%E6%94%B6",
+        "https://www.spcc.edu.hk/f/page/1089/10725/FD%20Scheme%20%E9%A0%88%E7%9F%A5%E5%8F%8A%E6%A0%A1%E9%95%B7%E6%8F%90%E5%90%8D%E8%A1%A8%E6%A0%BC2027.pdf",
+        "https://www.spcc.edu.hk/academic/curriculum/dse",
+        "https://www.spcc.edu.hk/academic/curriculum/ibdp",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "spccps-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "spccps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃女小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看英文學習和六年預算，再看女拔品牌",
+          "text": 652
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文課堂之外，中文讀寫和測考怎樣安排",
+          "text": 709
+        },
+        {
+          "id": "chapter-3",
+          "title": "3有一條龍關係，升中條件仍要問到具體一屆",
+          "text": 647
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28已截止：現階段看次輪和正式通知",
+          "text": 780
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班已截止，候補也要按個人結果處理",
+          "text": 530
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要投入的是閱讀、作息與穩定接送",
+          "text": 445
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比較女校與男女校，先看程序和課程差異",
+          "text": 471
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年最低學費94,000，退出條款另問清楚",
+          "text": 691
+        }
+      ],
+      "overflow": false,
+      "description": "核實2027/28小一144位及已過申請期，拆解英文教學、粵語中文、女書院升讀待確認事項與94,000元學費。",
+      "ogDescription": "核實2027/28小一144位及已過申請期，拆解英文教學、粵語中文、女書院升讀待確認事項與94,000元學費。",
+      "twitterDescription": "核實2027/28小一144位及已過申請期，拆解英文教學、粵語中文、女書院升讀待確認事項與94,000元學費。",
+      "canonical": "https://hkschool.guide/reports/dgjs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dgjs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dgjs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dgjs"
+        }
+      ],
+      "facts": [
+        "2026/27學費\n小一至六每年HK$94,000，9,400×10期；收費證2026年9月1日生效\n升中\n結龍拔萃女書院；具體升讀手續、資格及不升讀者安排須書面確認\n班級與師資\n概覽列各級4班、共24班；2025/26教師67人，99%持學士學歷\n校舍\n九龍佐敦道1號；油尖旺區，校號210706"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dgjs-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dgjs.edu.hk/?page_id=14231",
+        "https://admission.dgjs.edu.hk/?page=2",
+        "https://www.dgjs.edu.hk/?page_id=3103",
+        "https://www.dgjs.edu.hk/?page_id=858",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/210706.pdf",
+        "https://www.dgjs.edu.hk/?page_id=51",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dgjs-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "dgjs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃女小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看英文學習和六年預算，再看女拔品牌",
+          "text": 653
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文課堂之外，中文讀寫和測考怎樣安排",
+          "text": 710
+        },
+        {
+          "id": "chapter-3",
+          "title": "3有一條龍關係，升中條件仍要問到具體一屆",
+          "text": 648
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28已截止：現階段看次輪和正式通知",
+          "text": 781
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班已截止，候補也要按個人結果處理",
+          "text": 531
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要投入的是閱讀、作息與穩定接送",
+          "text": 446
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比較女校與男女校，先看程序和課程差異",
+          "text": 472
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年最低學費94,000，退出條款另問清楚",
+          "text": 692
+        }
+      ],
+      "overflow": false,
+      "description": "核實2027/28小一144位及已過申請期，拆解英文教學、粵語中文、女書院升讀待確認事項與94,000元學費。",
+      "ogDescription": "核實2027/28小一144位及已過申請期，拆解英文教學、粵語中文、女書院升讀待確認事項與94,000元學費。",
+      "twitterDescription": "核實2027/28小一144位及已過申請期，拆解英文教學、粵語中文、女書院升讀待確認事項與94,000元學費。",
+      "canonical": "https://hkschool.guide/reports/dgjs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dgjs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dgjs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dgjs"
+        }
+      ],
+      "facts": [
+        "2026/27學費\n小一至六每年HK$94,000，9,400×10期；收費證2026年9月1日生效\n升中\n結龍拔萃女書院；具體升讀手續、資格及不升讀者安排須書面確認\n班級與師資\n概覽列各級4班、共24班；2025/26教師67人，99%持學士學歷\n校舍\n九龍佐敦道1號；油尖旺區，校號210706"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dgjs-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dgjs.edu.hk/?page_id=14231",
+        "https://admission.dgjs.edu.hk/?page=2",
+        "https://www.dgjs.edu.hk/?page_id=3103",
+        "https://www.dgjs.edu.hk/?page_id=858",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/210706.pdf",
+        "https://www.dgjs.edu.hk/?page_id=51",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dgjs-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "dgjs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃女小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看英文学习和六年预算，再看女拔品牌",
+          "text": 652
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文课堂之外，中文读写和测考怎样安排",
+          "text": 709
+        },
+        {
+          "id": "chapter-3",
+          "title": "3有一条龙关系，升中条件仍要问到具体一届",
+          "text": 647
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28已截止：现阶段看次轮和正式通知",
+          "text": 780
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班已截止，候补也要按个人结果处理",
+          "text": 530
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要投入的是阅读、作息与稳定接送",
+          "text": 445
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比较女校与男女校，先看程序和课程差异",
+          "text": 471
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年最低学费94,000，退出条款另问清楚",
+          "text": 691
+        }
+      ],
+      "overflow": false,
+      "description": "核实2027/28小一144位及已过申请期，拆解英文教学、粤语中文、女书院升读待确认事项与94,000元学费。",
+      "ogDescription": "核实2027/28小一144位及已过申请期，拆解英文教学、粤语中文、女书院升读待确认事项与94,000元学费。",
+      "twitterDescription": "核实2027/28小一144位及已过申请期，拆解英文教学、粤语中文、女书院升读待确认事项与94,000元学费。",
+      "canonical": "https://hkschool.guide/cn/reports/dgjs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dgjs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dgjs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dgjs"
+        }
+      ],
+      "facts": [
+        "2026/27学费\n小一至六每年HK$94,000，9,400×10期；收费证2026年9月1日生效\n升中\n结龙拔萃女书院；具体升读手续、资格及不升读者安排须书面确认\n班级与师资\n概览列各级4班、共24班；2025/26教师67人，99%持学士学历\n校舍\n九龙佐敦道1号；油尖旺区，校号210706"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dgjs-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dgjs.edu.hk/?page_id=14231",
+        "https://admission.dgjs.edu.hk/?page=2",
+        "https://www.dgjs.edu.hk/?page_id=3103",
+        "https://www.dgjs.edu.hk/?page_id=858",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/210706.pdf",
+        "https://www.dgjs.edu.hk/?page_id=51",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dgjs-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "dgjs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃女小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先看英文学习和六年预算，再看女拔品牌",
+          "text": 653
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文课堂之外，中文读写和测考怎样安排",
+          "text": 710
+        },
+        {
+          "id": "chapter-3",
+          "title": "3有一条龙关系，升中条件仍要问到具体一届",
+          "text": 648
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28已截止：现阶段看次轮和正式通知",
+          "text": 781
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班已截止，候补也要按个人结果处理",
+          "text": 531
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要投入的是阅读、作息与稳定接送",
+          "text": 446
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比较女校与男女校，先看程序和课程差异",
+          "text": 472
+        },
+        {
+          "id": "chapter-8",
+          "title": "8一年最低学费94,000，退出条款另问清楚",
+          "text": 692
+        }
+      ],
+      "overflow": false,
+      "description": "核实2027/28小一144位及已过申请期，拆解英文教学、粤语中文、女书院升读待确认事项与94,000元学费。",
+      "ogDescription": "核实2027/28小一144位及已过申请期，拆解英文教学、粤语中文、女书院升读待确认事项与94,000元学费。",
+      "twitterDescription": "核实2027/28小一144位及已过申请期，拆解英文教学、粤语中文、女书院升读待确认事项与94,000元学费。",
+      "canonical": "https://hkschool.guide/cn/reports/dgjs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dgjs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dgjs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dgjs"
+        }
+      ],
+      "facts": [
+        "2026/27学费\n小一至六每年HK$94,000，9,400×10期；收费证2026年9月1日生效\n升中\n结龙拔萃女书院；具体升读手续、资格及不升读者安排须书面确认\n班级与师资\n概览列各级4班、共24班；2025/26教师67人，99%持学士学历\n校舍\n九龙佐敦道1号；油尖旺区，校号210706"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dgjs-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dgjs.edu.hk/?page_id=14231",
+        "https://admission.dgjs.edu.hk/?page=2",
+        "https://www.dgjs.edu.hk/?page_id=3103",
+        "https://www.dgjs.edu.hk/?page_id=858",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/210706.pdf",
+        "https://www.dgjs.edu.hk/?page_id=51",
+        "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dgjs-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "dgjs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃男書院附屬小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1男拔適不適合，先看學科英語和課後生活",
+          "text": 777
+        },
+        {
+          "id": "chapter-2",
+          "title": "2多數科目用英文，人文等科要分別確認",
+          "text": 786
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升男拔中學有基本要求，IB也不是小學承諾",
+          "text": 651
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28首輪已公佈，先守電郵與個人通知",
+          "text": 718
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班輪次已經結束，求位要先問是否接受",
+          "text": 563
+        },
+        {
+          "id": "chapter-6",
+          "title": "6體藝資源多，家庭仍要替孩子保留休息",
+          "text": 556
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與英華、喇沙比較，重點是語言和升中制度",
+          "text": 554
+        },
+        {
+          "id": "chapter-8",
+          "title": "8預算須分本地與非本地，退出規則別漏問",
+          "text": 774
+        }
+      ],
+      "overflow": false,
+      "description": "核實2027/28小一150位及首輪結果，說明英語授課例外科目、升中基本要求、本地與非本地費用和接受直資學位的派位影響。",
+      "ogDescription": "核實2027/28小一150位及首輪結果，說明英語授課例外科目、升中基本要求、本地與非本地費用和接受直資學位的派位影響。",
+      "twitterDescription": "核實2027/28小一150位及首輪結果，說明英語授課例外科目、升中基本要求、本地與非本地費用和接受直資學位的派位影響。",
+      "canonical": "https://hkschool.guide/reports/dbs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dbs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dbs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dbs"
+        }
+      ],
+      "facts": [
+        "地址與校號\n九龍旺角亞皆老街131號；官方行政區為九龍城區。教育局註冊名為拔萃男書院，校號510777\n辦學類別\n直資、全日制男校，基督教。\n2026/27學費\n本地小一至六60,630元；非本地另有收費項目\n升中\n一條龍拔萃男書院；小六成績及表現須符合學校基本要求"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dbs-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dbspd.edu.hk/download/dbspd_prospectus_2026.pdf",
+        "https://www.dbspd.edu.hk/g1-admission",
+        "https://www.dbspd.edu.hk/admission-news",
+        "https://www.dbspd.edu.hk/node/417",
+        "https://www.dbspd.edu.hk/g2-6-admission",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/510777.pdf",
+        "https://www.dbspd.edu.hk/node/416",
+        "https://www.dbspd.edu.hk/fee-remission",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dbs-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "dbs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃男書院附屬小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1男拔適不適合，先看學科英語和課後生活",
+          "text": 778
+        },
+        {
+          "id": "chapter-2",
+          "title": "2多數科目用英文，人文等科要分別確認",
+          "text": 787
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升男拔中學有基本要求，IB也不是小學承諾",
+          "text": 652
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28首輪已公佈，先守電郵與個人通知",
+          "text": 719
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班輪次已經結束，求位要先問是否接受",
+          "text": 564
+        },
+        {
+          "id": "chapter-6",
+          "title": "6體藝資源多，家庭仍要替孩子保留休息",
+          "text": 557
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與英華、喇沙比較，重點是語言和升中制度",
+          "text": 555
+        },
+        {
+          "id": "chapter-8",
+          "title": "8預算須分本地與非本地，退出規則別漏問",
+          "text": 775
+        }
+      ],
+      "overflow": false,
+      "description": "核實2027/28小一150位及首輪結果，說明英語授課例外科目、升中基本要求、本地與非本地費用和接受直資學位的派位影響。",
+      "ogDescription": "核實2027/28小一150位及首輪結果，說明英語授課例外科目、升中基本要求、本地與非本地費用和接受直資學位的派位影響。",
+      "twitterDescription": "核實2027/28小一150位及首輪結果，說明英語授課例外科目、升中基本要求、本地與非本地費用和接受直資學位的派位影響。",
+      "canonical": "https://hkschool.guide/reports/dbs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dbs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dbs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dbs"
+        }
+      ],
+      "facts": [
+        "地址與校號\n九龍旺角亞皆老街131號；官方行政區為九龍城區。教育局註冊名為拔萃男書院，校號510777\n辦學類別\n直資、全日制男校，基督教。\n2026/27學費\n本地小一至六60,630元；非本地另有收費項目\n升中\n一條龍拔萃男書院；小六成績及表現須符合學校基本要求"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dbs-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dbspd.edu.hk/download/dbspd_prospectus_2026.pdf",
+        "https://www.dbspd.edu.hk/g1-admission",
+        "https://www.dbspd.edu.hk/admission-news",
+        "https://www.dbspd.edu.hk/node/417",
+        "https://www.dbspd.edu.hk/g2-6-admission",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/510777.pdf",
+        "https://www.dbspd.edu.hk/node/416",
+        "https://www.dbspd.edu.hk/fee-remission",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dbs-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "dbs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃男书院附属小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1男拔适不适合，先看学科英语和课后生活",
+          "text": 777
+        },
+        {
+          "id": "chapter-2",
+          "title": "2多数科目用英文，人文等科要分别确认",
+          "text": 786
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升男拔中学有基本要求，IB也不是小学承诺",
+          "text": 651
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28首轮已公布，先守电邮与个人通知",
+          "text": 718
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班轮次已经结束，求位要先问是否接受",
+          "text": 563
+        },
+        {
+          "id": "chapter-6",
+          "title": "6体艺资源多，家庭仍要替孩子保留休息",
+          "text": 556
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与英华、喇沙比较，重点是语言和升中制度",
+          "text": 554
+        },
+        {
+          "id": "chapter-8",
+          "title": "8预算须分本地与非本地，退出规则别漏问",
+          "text": 774
+        }
+      ],
+      "overflow": false,
+      "description": "核实2027/28小一150位及首轮结果，说明英语授课例外科目、升中基本要求、本地与非本地费用和接受直资学位的派位影响。",
+      "ogDescription": "核实2027/28小一150位及首轮结果，说明英语授课例外科目、升中基本要求、本地与非本地费用和接受直资学位的派位影响。",
+      "twitterDescription": "核实2027/28小一150位及首轮结果，说明英语授课例外科目、升中基本要求、本地与非本地费用和接受直资学位的派位影响。",
+      "canonical": "https://hkschool.guide/cn/reports/dbs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dbs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dbs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dbs"
+        }
+      ],
+      "facts": [
+        "地址与校号\n九龙旺角亚皆老街131号；官方行政区为九龙城区。教育局注册名为拔萃男书院，校号510777\n办学类别\n直资、全日制男校，基督教。\n2026/27学费\n本地小一至六60,630元；非本地另有收费项目\n升中\n一条龙拔萃男书院；小六成绩及表现须符合学校基本要求"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dbs-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dbspd.edu.hk/download/dbspd_prospectus_2026.pdf",
+        "https://www.dbspd.edu.hk/g1-admission",
+        "https://www.dbspd.edu.hk/admission-news",
+        "https://www.dbspd.edu.hk/node/417",
+        "https://www.dbspd.edu.hk/g2-6-admission",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/510777.pdf",
+        "https://www.dbspd.edu.hk/node/416",
+        "https://www.dbspd.edu.hk/fee-remission",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dbs-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "dbs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "拔萃男书院附属小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1男拔适不适合，先看学科英语和课后生活",
+          "text": 778
+        },
+        {
+          "id": "chapter-2",
+          "title": "2多数科目用英文，人文等科要分别确认",
+          "text": 787
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升男拔中学有基本要求，IB也不是小学承诺",
+          "text": 652
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28首轮已公布，先守电邮与个人通知",
+          "text": 719
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班轮次已经结束，求位要先问是否接受",
+          "text": 564
+        },
+        {
+          "id": "chapter-6",
+          "title": "6体艺资源多，家庭仍要替孩子保留休息",
+          "text": 557
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与英华、喇沙比较，重点是语言和升中制度",
+          "text": 555
+        },
+        {
+          "id": "chapter-8",
+          "title": "8预算须分本地与非本地，退出规则别漏问",
+          "text": 775
+        }
+      ],
+      "overflow": false,
+      "description": "核实2027/28小一150位及首轮结果，说明英语授课例外科目、升中基本要求、本地与非本地费用和接受直资学位的派位影响。",
+      "ogDescription": "核实2027/28小一150位及首轮结果，说明英语授课例外科目、升中基本要求、本地与非本地费用和接受直资学位的派位影响。",
+      "twitterDescription": "核实2027/28小一150位及首轮结果，说明英语授课例外科目、升中基本要求、本地与非本地费用和接受直资学位的派位影响。",
+      "canonical": "https://hkschool.guide/cn/reports/dbs",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/dbs"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/dbs"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/dbs"
+        }
+      ],
+      "facts": [
+        "地址与校号\n九龙旺角亚皆老街131号；官方行政区为九龙城区。教育局注册名为拔萃男书院，校号510777\n办学类别\n直资、全日制男校，基督教。\n2026/27学费\n本地小一至六60,630元；非本地另有收费项目\n升中\n一条龙拔萃男书院；小六成绩及表现须符合学校基本要求"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/dbs-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.dbspd.edu.hk/download/dbspd_prospectus_2026.pdf",
+        "https://www.dbspd.edu.hk/g1-admission",
+        "https://www.dbspd.edu.hk/admission-news",
+        "https://www.dbspd.edu.hk/node/417",
+        "https://www.dbspd.edu.hk/g2-6-admission",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/510777.pdf",
+        "https://www.dbspd.edu.hk/node/416",
+        "https://www.dbspd.edu.hk/fee-remission",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "dbs-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "dbs",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "英華小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英華值得看的是閱讀和體驗，也要接受升中條件",
+          "text": 702
+        },
+        {
+          "id": "chapter-2",
+          "title": "2低年級不設考試，仍要看讀寫和日常評估",
+          "text": 700
+        },
+        {
+          "id": "chapter-3",
+          "title": "3官網升中政策列三次評估，分科後須再確認",
+          "text": 808
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28報名已過，次輪結果要等到1月底",
+          "text": 658
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班考中英數，開考日期並非全年固定",
+          "text": 578
+        },
+        {
+          "id": "chapter-6",
+          "title": "6活動與自律都重要，先排出能長期執行的一週",
+          "text": 534
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與男拔、聖保羅書院小學比，要認清結龍和直屬",
+          "text": 631
+        },
+        {
+          "id": "chapter-8",
+          "title": "8年費19,700只是起點，轉校要書面通知",
+          "text": 715
+        }
+      ],
+      "overflow": false,
+      "description": "核實19,700元學費、普教中及測驗安排；說明官網未標學年升中政策的評估與操行要求，並提醒核實分科後當屆條件。2027/28次輪結果將於2027年1月底通知。",
+      "ogDescription": "核實19,700元學費、普教中及測驗安排；說明官網未標學年升中政策的評估與操行要求，並提醒核實分科後當屆條件。2027/28次輪結果將於2027年1月底通知。",
+      "twitterDescription": "核實19,700元學費、普教中及測驗安排；說明官網未標學年升中政策的評估與操行要求，並提醒核實分科後當屆條件。2027/28次輪結果將於2027年1月底通知。",
+      "canonical": "https://hkschool.guide/reports/ywps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/ywps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/ywps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/ywps"
+        }
+      ],
+      "facts": [
+        "地址\n九龍深水埗英華街3號；小一按校本程序申請，不因住深水埗自動獲錄取\n收費\n2026/27小一至六均HK$19,700，1,970×10期；費證2026年9月1日生效\n升中\n結龍英華書院；官網所鏈未標學年的政策載有學業及操行條件；分科後當屆要求見第三章"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/ywps-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=41",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=43",
+        "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+        "https://sites.google.com/yingwa.hk/ywps-2728-p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/550477.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "ywps-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "ywps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "英華小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英華值得看的是閱讀和體驗，也要接受升中條件",
+          "text": 703
+        },
+        {
+          "id": "chapter-2",
+          "title": "2低年級不設考試，仍要看讀寫和日常評估",
+          "text": 701
+        },
+        {
+          "id": "chapter-3",
+          "title": "3官網升中政策列三次評估，分科後須再確認",
+          "text": 809
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28報名已過，次輪結果要等到1月底",
+          "text": 659
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班考中英數，開考日期並非全年固定",
+          "text": 579
+        },
+        {
+          "id": "chapter-6",
+          "title": "6活動與自律都重要，先排出能長期執行的一週",
+          "text": 535
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與男拔、聖保羅書院小學比，要認清結龍和直屬",
+          "text": 632
+        },
+        {
+          "id": "chapter-8",
+          "title": "8年費19,700只是起點，轉校要書面通知",
+          "text": 716
+        }
+      ],
+      "overflow": false,
+      "description": "核實19,700元學費、普教中及測驗安排；說明官網未標學年升中政策的評估與操行要求，並提醒核實分科後當屆條件。2027/28次輪結果將於2027年1月底通知。",
+      "ogDescription": "核實19,700元學費、普教中及測驗安排；說明官網未標學年升中政策的評估與操行要求，並提醒核實分科後當屆條件。2027/28次輪結果將於2027年1月底通知。",
+      "twitterDescription": "核實19,700元學費、普教中及測驗安排；說明官網未標學年升中政策的評估與操行要求，並提醒核實分科後當屆條件。2027/28次輪結果將於2027年1月底通知。",
+      "canonical": "https://hkschool.guide/reports/ywps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/ywps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/ywps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/ywps"
+        }
+      ],
+      "facts": [
+        "地址\n九龍深水埗英華街3號；小一按校本程序申請，不因住深水埗自動獲錄取\n收費\n2026/27小一至六均HK$19,700，1,970×10期；費證2026年9月1日生效\n升中\n結龍英華書院；官網所鏈未標學年的政策載有學業及操行條件；分科後當屆要求見第三章"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/ywps-tc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=41",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=43",
+        "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+        "https://sites.google.com/yingwa.hk/ywps-2728-p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/550477.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "ywps-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "ywps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "英华小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英华值得看的是阅读和体验，也要接受升中条件",
+          "text": 702
+        },
+        {
+          "id": "chapter-2",
+          "title": "2低年级不设考试，仍要看读写和日常评估",
+          "text": 700
+        },
+        {
+          "id": "chapter-3",
+          "title": "3官网升中政策列三次评估，分科后须再确认",
+          "text": 808
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28报名已过，次轮结果要等到1月底",
+          "text": 658
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班考中英数，开考日期并非全年固定",
+          "text": 578
+        },
+        {
+          "id": "chapter-6",
+          "title": "6活动与自律都重要，先排出能长期执行的一周",
+          "text": 534
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与男拔、圣保罗书院小学比，要认清结龙和直属",
+          "text": 631
+        },
+        {
+          "id": "chapter-8",
+          "title": "8年费19,700只是起点，转校要书面通知",
+          "text": 715
+        }
+      ],
+      "overflow": false,
+      "description": "核实19,700元学费、普教中及测验安排；说明官网未标学年升中政策的评估与操行要求，并提醒核实分科后当届条件。2027/28次轮结果将于2027年1月底通知。",
+      "ogDescription": "核实19,700元学费、普教中及测验安排；说明官网未标学年升中政策的评估与操行要求，并提醒核实分科后当届条件。2027/28次轮结果将于2027年1月底通知。",
+      "twitterDescription": "核实19,700元学费、普教中及测验安排；说明官网未标学年升中政策的评估与操行要求，并提醒核实分科后当届条件。2027/28次轮结果将于2027年1月底通知。",
+      "canonical": "https://hkschool.guide/cn/reports/ywps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/ywps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/ywps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/ywps"
+        }
+      ],
+      "facts": [
+        "地址\n九龙深水埗英华街3号；小一按校本程序申请，不因住深水埗自动获录取\n收费\n2026/27小一至六均HK$19,700，1,970×10期；费证2026年9月1日生效\n升中\n结龙英华书院；官网所链未标学年的政策载有学业及操行条件；分科后当届要求见第三章"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/ywps-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=41",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=43",
+        "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+        "https://sites.google.com/yingwa.hk/ywps-2728-p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/550477.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "ywps-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "ywps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "英华小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英华值得看的是阅读和体验，也要接受升中条件",
+          "text": 703
+        },
+        {
+          "id": "chapter-2",
+          "title": "2低年级不设考试，仍要看读写和日常评估",
+          "text": 701
+        },
+        {
+          "id": "chapter-3",
+          "title": "3官网升中政策列三次评估，分科后须再确认",
+          "text": 809
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28报名已过，次轮结果要等到1月底",
+          "text": 659
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班考中英数，开考日期并非全年固定",
+          "text": 579
+        },
+        {
+          "id": "chapter-6",
+          "title": "6活动与自律都重要，先排出能长期执行的一周",
+          "text": 535
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与男拔、圣保罗书院小学比，要认清结龙和直属",
+          "text": 632
+        },
+        {
+          "id": "chapter-8",
+          "title": "8年费19,700只是起点，转校要书面通知",
+          "text": 716
+        }
+      ],
+      "overflow": false,
+      "description": "核实19,700元学费、普教中及测验安排；说明官网未标学年升中政策的评估与操行要求，并提醒核实分科后当届条件。2027/28次轮结果将于2027年1月底通知。",
+      "ogDescription": "核实19,700元学费、普教中及测验安排；说明官网未标学年升中政策的评估与操行要求，并提醒核实分科后当届条件。2027/28次轮结果将于2027年1月底通知。",
+      "twitterDescription": "核实19,700元学费、普教中及测验安排；说明官网未标学年升中政策的评估与操行要求，并提醒核实分科后当届条件。2027/28次轮结果将于2027年1月底通知。",
+      "canonical": "https://hkschool.guide/cn/reports/ywps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/ywps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/ywps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/ywps"
+        }
+      ],
+      "facts": [
+        "地址\n九龙深水埗英华街3号；小一按校本程序申请，不因住深水埗自动获录取\n收费\n2026/27小一至六均HK$19,700，1,970×10期；费证2026年9月1日生效\n升中\n结龙英华书院；官网所链未标学年的政策载有学业及操行条件；分科后当届要求见第三章"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/ywps-sc.png",
+      "sources": [
+        "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=41",
+        "https://www.yingwaps.edu.hk/tc/content.php?wid=43",
+        "https://drive.google.com/file/d/1aZqJjtQlEyHZNDzyiamiSrB7zzYMFurh/view",
+        "https://sites.google.com/yingwa.hk/ywps-2728-p1",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/550477.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf"
+      ],
+      "label": "ywps-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "ywps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局陳守仁小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英語環境適合孩子，也要接受小六再選中學",
+          "text": 539
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文授課之外，中文和家課怎樣跟上",
+          "text": 549
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升中沒有保留位，六年後仍須按孩子表現選擇",
+          "text": 525
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：現階段應等二面名單",
+          "text": 598
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班參考有筆試，舊窗口已經關閉",
+          "text": 507
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要付出的主要是語言陪伴和時間",
+          "text": 632
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與培僑、蔡繼有比較，先排升中和費用",
+          "text": 446
+        },
+        {
+          "id": "chapter-8",
+          "title": "8接受學位前，把六年預算和退出手續問清",
+          "text": 683
+        }
+      ],
+      "overflow": false,
+      "description": "陳守仁小學深度報告：核對2026/27學費20,500元、英語及中文學習、第三語言選擇，說明獨立升中、2027/28小一面試候補與插班安排，以及接受直資學位的派位影響。",
+      "ogDescription": "陳守仁小學深度報告：核對2026/27學費20,500元、英語及中文學習、第三語言選擇，說明獨立升中、2027/28小一面試候補與插班安排，以及接受直資學位的派位影響。",
+      "twitterDescription": "陳守仁小學深度報告：核對2026/27學費20,500元、英語及中文學習、第三語言選擇，說明獨立升中、2027/28小一面試候補與插班安排，以及接受直資學位的派位影響。",
+      "canonical": "https://hkschool.guide/reports/tsl",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/tsl"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/tsl"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/tsl"
+        }
+      ],
+      "facts": [
+        "地區與校網\n九龍油麻地海庭道6號，油尖旺區；小一自行收生，POA校網不適用。\n辦學類別\n直資、全日制男女小學；辦學團體保良局，宗教不適用。\n2026/27學費\nHK$20,500，分10期，每期HK$2,050；不包括校車、午膳及書簿等。\n升中關係\n沒有一條龍、直屬或聯繫中學。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/tsl-tc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/529796.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://plkctslps.edu.hk/en/content.php?wid=87",
+        "https://plkctslps.edu.hk/en/content.php?wid=89",
+        "https://plkctslps.edu.hk/en/content.php?wid=149",
+        "https://plkctslps.edu.hk/en/content.php?wid=49",
+        "https://plkctslps.edu.hk/en/content.php?wid=191",
+        "https://plkctslps.edu.hk/en/content.php?wid=109",
+        "https://plkctslps.edu.hk/en/content.php?wid=29",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees"
+      ],
+      "label": "tsl-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "tsl",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局陳守仁小學"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英語環境適合孩子，也要接受小六再選中學",
+          "text": 540
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文授課之外，中文和家課怎樣跟上",
+          "text": 550
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升中沒有保留位，六年後仍須按孩子表現選擇",
+          "text": 526
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：現階段應等二面名單",
+          "text": 599
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班參考有筆試，舊窗口已經關閉",
+          "text": 508
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要付出的主要是語言陪伴和時間",
+          "text": 633
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與培僑、蔡繼有比較，先排升中和費用",
+          "text": 447
+        },
+        {
+          "id": "chapter-8",
+          "title": "8接受學位前，把六年預算和退出手續問清",
+          "text": 684
+        }
+      ],
+      "overflow": false,
+      "description": "陳守仁小學深度報告：核對2026/27學費20,500元、英語及中文學習、第三語言選擇，說明獨立升中、2027/28小一面試候補與插班安排，以及接受直資學位的派位影響。",
+      "ogDescription": "陳守仁小學深度報告：核對2026/27學費20,500元、英語及中文學習、第三語言選擇，說明獨立升中、2027/28小一面試候補與插班安排，以及接受直資學位的派位影響。",
+      "twitterDescription": "陳守仁小學深度報告：核對2026/27學費20,500元、英語及中文學習、第三語言選擇，說明獨立升中、2027/28小一面試候補與插班安排，以及接受直資學位的派位影響。",
+      "canonical": "https://hkschool.guide/reports/tsl",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/tsl"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/tsl"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/tsl"
+        }
+      ],
+      "facts": [
+        "地區與校網\n九龍油麻地海庭道6號，油尖旺區；小一自行收生，POA校網不適用。\n辦學類別\n直資、全日制男女小學；辦學團體保良局，宗教不適用。\n2026/27學費\nHK$20,500，分10期，每期HK$2,050；不包括校車、午膳及書簿等。\n升中關係\n沒有一條龍、直屬或聯繫中學。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/tsl-tc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/529796.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://plkctslps.edu.hk/en/content.php?wid=87",
+        "https://plkctslps.edu.hk/en/content.php?wid=89",
+        "https://plkctslps.edu.hk/en/content.php?wid=149",
+        "https://plkctslps.edu.hk/en/content.php?wid=49",
+        "https://plkctslps.edu.hk/en/content.php?wid=191",
+        "https://plkctslps.edu.hk/en/content.php?wid=109",
+        "https://plkctslps.edu.hk/en/content.php?wid=29",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees"
+      ],
+      "label": "tsl-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "tsl",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局陈守仁小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英语环境适合孩子，也要接受小六再选中学",
+          "text": 539
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文授课之外，中文和家课怎样跟上",
+          "text": 549
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升中没有保留位，六年后仍须按孩子表现选择",
+          "text": 525
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：现阶段应等二面名单",
+          "text": 598
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班参考有笔试，旧窗口已经关闭",
+          "text": 507
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要付出的主要是语言陪伴和时间",
+          "text": 632
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与培侨、蔡继有比较，先排升中和费用",
+          "text": 446
+        },
+        {
+          "id": "chapter-8",
+          "title": "8接受学位前，把六年预算和退出手续问清",
+          "text": 683
+        }
+      ],
+      "overflow": false,
+      "description": "陈守仁小学深度报告：核对2026/27学费20,500元、英语及中文学习、第三语言选择，说明独立升中、2027/28小一面试候补与插班安排，以及接受直资学位的派位影响。",
+      "ogDescription": "陈守仁小学深度报告：核对2026/27学费20,500元、英语及中文学习、第三语言选择，说明独立升中、2027/28小一面试候补与插班安排，以及接受直资学位的派位影响。",
+      "twitterDescription": "陈守仁小学深度报告：核对2026/27学费20,500元、英语及中文学习、第三语言选择，说明独立升中、2027/28小一面试候补与插班安排，以及接受直资学位的派位影响。",
+      "canonical": "https://hkschool.guide/cn/reports/tsl",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/tsl"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/tsl"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/tsl"
+        }
+      ],
+      "facts": [
+        "地区与校网\n九龙油麻地海庭道6号，油尖旺区；小一自行收生，POA校网不适用。\n办学类别\n直资、全日制男女小学；办学团体保良局，宗教不适用。\n2026/27学费\nHK$20,500，分10期，每期HK$2,050；不包括校车、午膳及书簿等。\n升中关系\n没有一条龙、直属或联系中学。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/tsl-sc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/529796.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://plkctslps.edu.hk/en/content.php?wid=87",
+        "https://plkctslps.edu.hk/en/content.php?wid=89",
+        "https://plkctslps.edu.hk/en/content.php?wid=149",
+        "https://plkctslps.edu.hk/en/content.php?wid=49",
+        "https://plkctslps.edu.hk/en/content.php?wid=191",
+        "https://plkctslps.edu.hk/en/content.php?wid=109",
+        "https://plkctslps.edu.hk/en/content.php?wid=29",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees"
+      ],
+      "label": "tsl-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "tsl",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局陈守仁小学"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1英语环境适合孩子，也要接受小六再选中学",
+          "text": 540
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英文授课之外，中文和家课怎样跟上",
+          "text": 550
+        },
+        {
+          "id": "chapter-3",
+          "title": "3升中没有保留位，六年后仍须按孩子表现选择",
+          "text": 526
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：现阶段应等二面名单",
+          "text": 599
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班参考有笔试，旧窗口已经关闭",
+          "text": 508
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要付出的主要是语言陪伴和时间",
+          "text": 633
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与培侨、蔡继有比较，先排升中和费用",
+          "text": 447
+        },
+        {
+          "id": "chapter-8",
+          "title": "8接受学位前，把六年预算和退出手续问清",
+          "text": 684
+        }
+      ],
+      "overflow": false,
+      "description": "陈守仁小学深度报告：核对2026/27学费20,500元、英语及中文学习、第三语言选择，说明独立升中、2027/28小一面试候补与插班安排，以及接受直资学位的派位影响。",
+      "ogDescription": "陈守仁小学深度报告：核对2026/27学费20,500元、英语及中文学习、第三语言选择，说明独立升中、2027/28小一面试候补与插班安排，以及接受直资学位的派位影响。",
+      "twitterDescription": "陈守仁小学深度报告：核对2026/27学费20,500元、英语及中文学习、第三语言选择，说明独立升中、2027/28小一面试候补与插班安排，以及接受直资学位的派位影响。",
+      "canonical": "https://hkschool.guide/cn/reports/tsl",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/tsl"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/tsl"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/tsl"
+        }
+      ],
+      "facts": [
+        "地区与校网\n九龙油麻地海庭道6号，油尖旺区；小一自行收生，POA校网不适用。\n办学类别\n直资、全日制男女小学；办学团体保良局，宗教不适用。\n2026/27学费\nHK$20,500，分10期，每期HK$2,050；不包括校车、午膳及书簿等。\n升中关系\n没有一条龙、直属或联系中学。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/tsl-sc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/529796.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://plkctslps.edu.hk/en/content.php?wid=87",
+        "https://plkctslps.edu.hk/en/content.php?wid=89",
+        "https://plkctslps.edu.hk/en/content.php?wid=149",
+        "https://plkctslps.edu.hk/en/content.php?wid=49",
+        "https://plkctslps.edu.hk/en/content.php?wid=191",
+        "https://plkctslps.edu.hk/en/content.php?wid=109",
+        "https://plkctslps.edu.hk/en/content.php?wid=29",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees"
+      ],
+      "label": "tsl-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "tsl",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "培僑書院（小學部）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先認同英普與十二年課程，再考慮一條龍",
+          "text": 618
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英普學習要看讀寫與表達，不能只看口音",
+          "text": 591
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一條龍有課程延續，升班和高中分流仍要問",
+          "text": 534
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：先查原申請狀態，不套舊面試規則",
+          "text": 612
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候補和插班要分別管理，先確認有沒有開放年級",
+          "text": 505
+        },
+        {
+          "id": "chapter-6",
+          "title": "6大圍通勤、課後家課與家庭價值教育一起考慮",
+          "text": 583
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比較三校，區別在升中連續性和課程終點",
+          "text": 477
+        },
+        {
+          "id": "chapter-8",
+          "title": "8預算先分本地與非本地，再問資助和退出",
+          "text": 610
+        }
+      ],
+      "overflow": false,
+      "description": "培僑書院小學深度報告：解釋英普學習環境與十二年一貫的升班條件，核對2026/27本地年費31,260元及非本地收費，說明小一、插班申請資料與當屆招生核驗範圍。",
+      "ogDescription": "培僑書院小學深度報告：解釋英普學習環境與十二年一貫的升班條件，核對2026/27本地年費31,260元及非本地收費，說明小一、插班申請資料與當屆招生核驗範圍。",
+      "twitterDescription": "培僑書院小學深度報告：解釋英普學習環境與十二年一貫的升班條件，核對2026/27本地年費31,260元及非本地收費，說明小一、插班申請資料與當屆招生核驗範圍。",
+      "canonical": "https://hkschool.guide/reports/pkcps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/pkcps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/pkcps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/pkcps"
+        }
+      ],
+      "facts": [
+        "地址與校網\n沙田大圍大圍新村路1號；小學自行收生，POA校網不適用。\n本地小學學費\n2026/27 HK$31,260，10期，每期HK$3,126；PSP2026的HK$30,000與現行證明書有衝突，預算按現行收費證明書計算。\n班制及升中\n2026/27概覽列每級5班、共30班；一條龍中學為培僑書院。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/pkcps-tc.png",
+      "sources": [
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=327",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/560553.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1194&page=1",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1190&page=1",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=468",
+        "https://help.puikiu.college/support/solutions/articles/150000173570-general-office-faq",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=466",
+        "https://www.puikiu.edu.hk/tc/achievements.php?cid=75"
+      ],
+      "label": "pkcps-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "pkcps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "培僑書院（小學部）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先認同英普與十二年課程，再考慮一條龍",
+          "text": 619
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英普學習要看讀寫與表達，不能只看口音",
+          "text": 592
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一條龍有課程延續，升班和高中分流仍要問",
+          "text": 535
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：先查原申請狀態，不套舊面試規則",
+          "text": 613
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候補和插班要分別管理，先確認有沒有開放年級",
+          "text": 506
+        },
+        {
+          "id": "chapter-6",
+          "title": "6大圍通勤、課後家課與家庭價值教育一起考慮",
+          "text": 584
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比較三校，區別在升中連續性和課程終點",
+          "text": 478
+        },
+        {
+          "id": "chapter-8",
+          "title": "8預算先分本地與非本地，再問資助和退出",
+          "text": 611
+        }
+      ],
+      "overflow": false,
+      "description": "培僑書院小學深度報告：解釋英普學習環境與十二年一貫的升班條件，核對2026/27本地年費31,260元及非本地收費，說明小一、插班申請資料與當屆招生核驗範圍。",
+      "ogDescription": "培僑書院小學深度報告：解釋英普學習環境與十二年一貫的升班條件，核對2026/27本地年費31,260元及非本地收費，說明小一、插班申請資料與當屆招生核驗範圍。",
+      "twitterDescription": "培僑書院小學深度報告：解釋英普學習環境與十二年一貫的升班條件，核對2026/27本地年費31,260元及非本地收費，說明小一、插班申請資料與當屆招生核驗範圍。",
+      "canonical": "https://hkschool.guide/reports/pkcps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/pkcps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/pkcps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/pkcps"
+        }
+      ],
+      "facts": [
+        "地址與校網\n沙田大圍大圍新村路1號；小學自行收生，POA校網不適用。\n本地小學學費\n2026/27 HK$31,260，10期，每期HK$3,126；PSP2026的HK$30,000與現行證明書有衝突，預算按現行收費證明書計算。\n班制及升中\n2026/27概覽列每級5班、共30班；一條龍中學為培僑書院。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/pkcps-tc.png",
+      "sources": [
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=327",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/560553.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1194&page=1",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1190&page=1",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=468",
+        "https://help.puikiu.college/support/solutions/articles/150000173570-general-office-faq",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=466",
+        "https://www.puikiu.edu.hk/tc/achievements.php?cid=75"
+      ],
+      "label": "pkcps-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "pkcps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "培侨书院（小学部）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先认同英普与十二年课程，再考虑一条龙",
+          "text": 618
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英普学习要看读写与表达，不能只看口音",
+          "text": 591
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一条龙有课程延续，升班和高中分流仍要问",
+          "text": 534
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：先查原申请状态，不套旧面试规则",
+          "text": 612
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候补和插班要分别管理，先确认有没有开放年级",
+          "text": 505
+        },
+        {
+          "id": "chapter-6",
+          "title": "6大围通勤、课后家课与家庭价值教育一起考虑",
+          "text": 583
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比较三校，区别在升中连续性和课程终点",
+          "text": 477
+        },
+        {
+          "id": "chapter-8",
+          "title": "8预算先分本地与非本地，再问资助和退出",
+          "text": 610
+        }
+      ],
+      "overflow": false,
+      "description": "培侨书院小学深度报告：解释英普学习环境与十二年一贯的升班条件，核对2026/27本地年费31,260元及非本地收费，说明小一、插班申请资料与当届招生核验范围。",
+      "ogDescription": "培侨书院小学深度报告：解释英普学习环境与十二年一贯的升班条件，核对2026/27本地年费31,260元及非本地收费，说明小一、插班申请资料与当届招生核验范围。",
+      "twitterDescription": "培侨书院小学深度报告：解释英普学习环境与十二年一贯的升班条件，核对2026/27本地年费31,260元及非本地收费，说明小一、插班申请资料与当届招生核验范围。",
+      "canonical": "https://hkschool.guide/cn/reports/pkcps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/pkcps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/pkcps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/pkcps"
+        }
+      ],
+      "facts": [
+        "地址与校网\n沙田大围大围新村路1号；小学自行收生，POA校网不适用。\n本地小学学费\n2026/27 HK$31,260，10期，每期HK$3,126；PSP2026的HK$30,000与现行证明书有冲突，预算按现行收费证明书计算。\n班制及升中\n2026/27概览列每级5班、共30班；一条龙中学为培侨书院。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/pkcps-sc.png",
+      "sources": [
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=327",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/560553.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1194&page=1",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1190&page=1",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=468",
+        "https://help.puikiu.college/support/solutions/articles/150000173570-general-office-faq",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=466",
+        "https://www.puikiu.edu.hk/tc/achievements.php?cid=75"
+      ],
+      "label": "pkcps-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "pkcps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "培侨书院（小学部）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先认同英普与十二年课程，再考虑一条龙",
+          "text": 619
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英普学习要看读写与表达，不能只看口音",
+          "text": 592
+        },
+        {
+          "id": "chapter-3",
+          "title": "3一条龙有课程延续，升班和高中分流仍要问",
+          "text": 535
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一：先查原申请状态，不套旧面试规则",
+          "text": 613
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候补和插班要分别管理，先确认有没有开放年级",
+          "text": 506
+        },
+        {
+          "id": "chapter-6",
+          "title": "6大围通勤、课后家课与家庭价值教育一起考虑",
+          "text": 584
+        },
+        {
+          "id": "chapter-7",
+          "title": "7比较三校，区别在升中连续性和课程终点",
+          "text": 478
+        },
+        {
+          "id": "chapter-8",
+          "title": "8预算先分本地与非本地，再问资助和退出",
+          "text": 611
+        }
+      ],
+      "overflow": false,
+      "description": "培侨书院小学深度报告：解释英普学习环境与十二年一贯的升班条件，核对2026/27本地年费31,260元及非本地收费，说明小一、插班申请资料与当届招生核验范围。",
+      "ogDescription": "培侨书院小学深度报告：解释英普学习环境与十二年一贯的升班条件，核对2026/27本地年费31,260元及非本地收费，说明小一、插班申请资料与当届招生核验范围。",
+      "twitterDescription": "培侨书院小学深度报告：解释英普学习环境与十二年一贯的升班条件，核对2026/27本地年费31,260元及非本地收费，说明小一、插班申请资料与当届招生核验范围。",
+      "canonical": "https://hkschool.guide/cn/reports/pkcps",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/pkcps"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/pkcps"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/pkcps"
+        }
+      ],
+      "facts": [
+        "地址与校网\n沙田大围大围新村路1号；小学自行收生，POA校网不适用。\n本地小学学费\n2026/27 HK$31,260，10期，每期HK$3,126；PSP2026的HK$30,000与现行证明书有冲突，预算按现行收费证明书计算。\n班制及升中\n2026/27概览列每级5班、共30班；一条龙中学为培侨书院。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 3,
+      "ogImage": "https://hkschool.guide/covers/reports/pkcps-sc.png",
+      "sources": [
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=327",
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/560553.pdf",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1194&page=1",
+        "https://www.puikiu.edu.hk/tc/achievements_detail.php?cid=75&id=1190&page=1",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=468",
+        "https://help.puikiu.college/support/solutions/articles/150000173570-general-office-faq",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.puikiu.edu.hk/tc/news_detail.php?id=466",
+        "https://www.puikiu.edu.hk/tc/achievements.php?cid=75"
+      ],
+      "label": "pkcps-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "pkcps",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局蔡繼有學校（小學階段）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先確定雙語校本路線，別把小學當成IB課程",
+          "text": 561
+        },
+        {
+          "id": "chapter-2",
+          "title": "2讀本、雙班主任和探究，家課仍要獨立完成",
+          "text": 618
+        },
+        {
+          "id": "chapter-3",
+          "title": "3十二年一貫仍有升班和IBDP門檻",
+          "text": 672
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，11月二麵包含家長",
+          "text": 760
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班只在有空缺的年級開放，不能先設定一定有位",
+          "text": 501
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭投入在閱讀、自主和出行安排",
+          "text": 691
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與英普直資比較，差別是課程與長期成本",
+          "text": 479
+        },
+        {
+          "id": "chapter-8",
+          "title": "8Year 6收費明顯提高，預算要做到後段",
+          "text": 711
+        }
+      ],
+      "overflow": false,
+      "description": "蔡繼有學校小學Y1–5的雙語校本課程與家庭適配，核對2026/27年費108,801元、2027/28招生，以及後續IGCSE、IBDP路徑中的升班、出席與評估條件。",
+      "ogDescription": "蔡繼有學校小學Y1–5的雙語校本課程與家庭適配，核對2026/27年費108,801元、2027/28招生，以及後續IGCSE、IBDP路徑中的升班、出席與評估條件。",
+      "twitterDescription": "蔡繼有學校小學Y1–5的雙語校本課程與家庭適配，核對2026/27年費108,801元、2027/28招生，以及後續IGCSE、IBDP路徑中的升班、出席與評估條件。",
+      "canonical": "https://hkschool.guide/reports/plk-choi-kai-yau-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        }
+      ],
+      "facts": [
+        "地點與校網\n九龍琵琶山郝德傑道6號；自行收生，不經官津小一校網派位。\n辦學類別\n保良局蔡繼有學校，私立獨立（PIS）、非牟利、男女一貫學校。PIS是辦學類別，不宜籠統改稱國際學校。\n2026/27學費\nYear 1–5全年HK$108,801，每月HK$9,891，11期；Year 6–8另按較高收費。\n小學學段與課程\n官網課程圖列Year 1–5為校本雙語階段，採用讀本和小說；後續IBDP不能等同小學就讀IB小學項目（PYP）。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 4,
+      "ogImage": "https://hkschool.guide/covers/reports/plk-choi-kai-yau-primary-tc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/543560.pdf",
+        "https://www.cky.edu.hk/en/site/view?name=About+CKY+Introduction",
+        "https://www.cky.edu.hk/en/site/view?name=theCurriculum",
+        "https://www.cky.edu.hk/en/site/view?name=bilingual-teaching",
+        "https://www.cky.edu.hk/en/site/view?name=unique-features-of-the-curriculum",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.cky.edu.hk/en/site/view?name=Admissions+News",
+        "https://www.cky.edu.hk/en/site/view?name=Fee+Remission+Scheme",
+        "https://www.cky.edu.hk/en/news/view?id=33",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Homework%20policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/1/images/Structure-of-the-12-year-curriculum.png",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=igcse-introduction",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "plk-choi-kai-yau-primary-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "plk-choi-kai-yau-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局蔡繼有學校（小學階段）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先確定雙語校本路線，別把小學當成IB課程",
+          "text": 562
+        },
+        {
+          "id": "chapter-2",
+          "title": "2讀本、雙班主任和探究，家課仍要獨立完成",
+          "text": 619
+        },
+        {
+          "id": "chapter-3",
+          "title": "3十二年一貫仍有升班和IBDP門檻",
+          "text": 673
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，11月二麵包含家長",
+          "text": 761
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班只在有空缺的年級開放，不能先設定一定有位",
+          "text": 502
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭投入在閱讀、自主和出行安排",
+          "text": 692
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與英普直資比較，差別是課程與長期成本",
+          "text": 480
+        },
+        {
+          "id": "chapter-8",
+          "title": "8Year 6收費明顯提高，預算要做到後段",
+          "text": 712
+        }
+      ],
+      "overflow": false,
+      "description": "蔡繼有學校小學Y1–5的雙語校本課程與家庭適配，核對2026/27年費108,801元、2027/28招生，以及後續IGCSE、IBDP路徑中的升班、出席與評估條件。",
+      "ogDescription": "蔡繼有學校小學Y1–5的雙語校本課程與家庭適配，核對2026/27年費108,801元、2027/28招生，以及後續IGCSE、IBDP路徑中的升班、出席與評估條件。",
+      "twitterDescription": "蔡繼有學校小學Y1–5的雙語校本課程與家庭適配，核對2026/27年費108,801元、2027/28招生，以及後續IGCSE、IBDP路徑中的升班、出席與評估條件。",
+      "canonical": "https://hkschool.guide/reports/plk-choi-kai-yau-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        }
+      ],
+      "facts": [
+        "地點與校網\n九龍琵琶山郝德傑道6號；自行收生，不經官津小一校網派位。\n辦學類別\n保良局蔡繼有學校，私立獨立（PIS）、非牟利、男女一貫學校。PIS是辦學類別，不宜籠統改稱國際學校。\n2026/27學費\nYear 1–5全年HK$108,801，每月HK$9,891，11期；Year 6–8另按較高收費。\n小學學段與課程\n官網課程圖列Year 1–5為校本雙語階段，採用讀本和小說；後續IBDP不能等同小學就讀IB小學項目（PYP）。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 4,
+      "ogImage": "https://hkschool.guide/covers/reports/plk-choi-kai-yau-primary-tc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/543560.pdf",
+        "https://www.cky.edu.hk/en/site/view?name=About+CKY+Introduction",
+        "https://www.cky.edu.hk/en/site/view?name=theCurriculum",
+        "https://www.cky.edu.hk/en/site/view?name=bilingual-teaching",
+        "https://www.cky.edu.hk/en/site/view?name=unique-features-of-the-curriculum",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.cky.edu.hk/en/site/view?name=Admissions+News",
+        "https://www.cky.edu.hk/en/site/view?name=Fee+Remission+Scheme",
+        "https://www.cky.edu.hk/en/news/view?id=33",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Homework%20policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/1/images/Structure-of-the-12-year-curriculum.png",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=igcse-introduction",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "plk-choi-kai-yau-primary-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "plk-choi-kai-yau-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局蔡继有学校（小学阶段）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先确定双语校本路线，别把小学当成IB课程",
+          "text": 561
+        },
+        {
+          "id": "chapter-2",
+          "title": "2读本、双班主任和探究，家课仍要独立完成",
+          "text": 618
+        },
+        {
+          "id": "chapter-3",
+          "title": "3十二年一贯仍有升班和IBDP门槛",
+          "text": 672
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，11月二面包含家长",
+          "text": 760
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班只在有空缺的年级开放，不能先设定一定有位",
+          "text": 501
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭投入在阅读、自主和出行安排",
+          "text": 691
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与英普直资比较，差别是课程与长期成本",
+          "text": 479
+        },
+        {
+          "id": "chapter-8",
+          "title": "8Year 6收费明显提高，预算要做到后段",
+          "text": 711
+        }
+      ],
+      "overflow": false,
+      "description": "蔡继有学校小学Y1–5的双语校本课程与家庭适配，核对2026/27年费108,801元、2027/28招生，以及后续IGCSE、IBDP路径中的升班、出席与评估条件。",
+      "ogDescription": "蔡继有学校小学Y1–5的双语校本课程与家庭适配，核对2026/27年费108,801元、2027/28招生，以及后续IGCSE、IBDP路径中的升班、出席与评估条件。",
+      "twitterDescription": "蔡继有学校小学Y1–5的双语校本课程与家庭适配，核对2026/27年费108,801元、2027/28招生，以及后续IGCSE、IBDP路径中的升班、出席与评估条件。",
+      "canonical": "https://hkschool.guide/cn/reports/plk-choi-kai-yau-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        }
+      ],
+      "facts": [
+        "地点与校网\n九龙琵琶山郝德杰道6号；自行收生，不经官津小一校网派位。\n办学类别\n保良局蔡继有学校，私立独立（PIS）、非牟利、男女一贯学校。PIS是办学类别，不宜笼统改称国际学校。\n2026/27学费\nYear 1–5全年HK$108,801，每月HK$9,891，11期；Year 6–8另按较高收费。\n小学学段与课程\n官网课程图列Year 1–5为校本双语阶段，采用读本和小说；后续IBDP不能等同小学就读IB小学项目（PYP）。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 4,
+      "ogImage": "https://hkschool.guide/covers/reports/plk-choi-kai-yau-primary-sc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/543560.pdf",
+        "https://www.cky.edu.hk/en/site/view?name=About+CKY+Introduction",
+        "https://www.cky.edu.hk/en/site/view?name=theCurriculum",
+        "https://www.cky.edu.hk/en/site/view?name=bilingual-teaching",
+        "https://www.cky.edu.hk/en/site/view?name=unique-features-of-the-curriculum",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.cky.edu.hk/en/site/view?name=Admissions+News",
+        "https://www.cky.edu.hk/en/site/view?name=Fee+Remission+Scheme",
+        "https://www.cky.edu.hk/en/news/view?id=33",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Homework%20policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/1/images/Structure-of-the-12-year-curriculum.png",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=igcse-introduction",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "plk-choi-kai-yau-primary-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "plk-choi-kai-yau-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "保良局蔡继有学校（小学阶段）"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先确定双语校本路线，别把小学当成IB课程",
+          "text": 562
+        },
+        {
+          "id": "chapter-2",
+          "title": "2读本、双班主任和探究，家课仍要独立完成",
+          "text": 619
+        },
+        {
+          "id": "chapter-3",
+          "title": "3十二年一贯仍有升班和IBDP门槛",
+          "text": 673
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小一已截止，11月二面包含家长",
+          "text": 761
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班只在有空缺的年级开放，不能先设定一定有位",
+          "text": 502
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭投入在阅读、自主和出行安排",
+          "text": 692
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与英普直资比较，差别是课程与长期成本",
+          "text": 480
+        },
+        {
+          "id": "chapter-8",
+          "title": "8Year 6收费明显提高，预算要做到后段",
+          "text": 712
+        }
+      ],
+      "overflow": false,
+      "description": "蔡继有学校小学Y1–5的双语校本课程与家庭适配，核对2026/27年费108,801元、2027/28招生，以及后续IGCSE、IBDP路径中的升班、出席与评估条件。",
+      "ogDescription": "蔡继有学校小学Y1–5的双语校本课程与家庭适配，核对2026/27年费108,801元、2027/28招生，以及后续IGCSE、IBDP路径中的升班、出席与评估条件。",
+      "twitterDescription": "蔡继有学校小学Y1–5的双语校本课程与家庭适配，核对2026/27年费108,801元、2027/28招生，以及后续IGCSE、IBDP路径中的升班、出席与评估条件。",
+      "canonical": "https://hkschool.guide/cn/reports/plk-choi-kai-yau-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/plk-choi-kai-yau-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/plk-choi-kai-yau-primary"
+        }
+      ],
+      "facts": [
+        "地点与校网\n九龙琵琶山郝德杰道6号；自行收生，不经官津小一校网派位。\n办学类别\n保良局蔡继有学校，私立独立（PIS）、非牟利、男女一贯学校。PIS是办学类别，不宜笼统改称国际学校。\n2026/27学费\nYear 1–5全年HK$108,801，每月HK$9,891，11期；Year 6–8另按较高收费。\n小学学段与课程\n官网课程图列Year 1–5为校本双语阶段，采用读本和小说；后续IBDP不能等同小学就读IB小学项目（PYP）。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 4,
+      "ogImage": "https://hkschool.guide/covers/reports/plk-choi-kai-yau-primary-sc.png",
+      "sources": [
+        "https://applications.edb.gov.hk/schoolsearch/schoolfee/543560.pdf",
+        "https://www.cky.edu.hk/en/site/view?name=About+CKY+Introduction",
+        "https://www.cky.edu.hk/en/site/view?name=theCurriculum",
+        "https://www.cky.edu.hk/en/site/view?name=bilingual-teaching",
+        "https://www.cky.edu.hk/en/site/view?name=unique-features-of-the-curriculum",
+        "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+        "https://www.cky.edu.hk/en/site/view?name=Admissions+News",
+        "https://www.cky.edu.hk/en/site/view?name=Fee+Remission+Scheme",
+        "https://www.cky.edu.hk/en/news/view?id=33",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Admissions%20Policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/2/files/Homework%20policy.pdf",
+        "https://www.cky.edu.hk/uploads/pages/1/images/Structure-of-the-12-year-curriculum.png",
+        "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+        "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+        "https://www.puikiu.edu.hk/tc/school.php?id=35",
+        "https://www.cky.edu.hk/en/site/view?name=igcse-introduction",
+        "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json"
+      ],
+      "label": "plk-choi-kai-yau-primary-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "plk-choi-kai-yau-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "弘立書院小學部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先認清學制：弘立小學部到Grade 5，Grade 6已屬中學",
+          "text": 581
+        },
+        {
+          "id": "chapter-2",
+          "title": "2中文佔比隨年級下降，評估也不只看考試",
+          "text": 508
+        },
+        {
+          "id": "chapter-3",
+          "title": "3同校中學是連續路線，語言和預算會再變",
+          "text": 556
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28申請：低年級已截止，Grade 2–5仍有時間",
+          "text": 887
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先看雙語學科能力，候補不能當成已有學位",
+          "text": 546
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每天的閱讀、功課和車程，要放進同一張時間表",
+          "text": 609
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同看漢基和HKIS，先比較雙語怎樣落實",
+          "text": 577
+        },
+        {
+          "id": "chapter-8",
+          "title": "8預算先計29萬餘元，再處理資本票據和退出期限",
+          "text": 841
+        }
+      ],
+      "overflow": false,
+      "description": "弘立小學Foundation Year至Grade 5的雙語比例與年級銜接，核對2027/28申請、2026/27學費、資本徵費和90天退學通知；Grade 6屬中學部，須先確認孩子對應年級。",
+      "ogDescription": "弘立小學Foundation Year至Grade 5的雙語比例與年級銜接，核對2027/28申請、2026/27學費、資本徵費和90天退學通知；Grade 6屬中學部，須先確認孩子對應年級。",
+      "twitterDescription": "弘立小學Foundation Year至Grade 5的雙語比例與年級銜接，核對2027/28申請、2026/27學費、資本徵費和90天退學通知；Grade 6屬中學部，須先確認孩子對應年級。",
+      "canonical": "https://hkschool.guide/reports/isf-academy-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/isf-academy-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        }
+      ],
+      "facts": [
+        "地址與學段\n薄扶林鋼綫灣道1號；Foundation Year及Grade 1–5。Foundation Year約相當本地K3。\n辦學類別\n非牟利私立獨立學校；日常營運不獲政府資助。\n2026/27學費與資本費\n小學年學費HK$251,130；通常另付年度資本費HK$40,000。\n升中年級銜接\nGrade 6在校方中學部，年齡對應本地小六；Grade 7才對應本地中一。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/isf-academy-primary-tc.png",
+      "sources": [
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/assessment/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/admissions-assessment-process/",
+        "https://academy.isf.edu.hk/index.php/news/applications-for-the-2027-28-academic-year/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/capital-contribution-scheme/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-faq/",
+        "https://academy.isf.edu.hk/wp-content/uploads/Admissions-Information-2026-27_ENG.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://internationalschools.edb.gov.hk/en/schools/92.html"
+      ],
+      "label": "isf-academy-primary-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "isf-academy-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "弘立書院小學部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先認清學制：弘立小學部到Grade 5，Grade 6已屬中學",
+          "text": 582
+        },
+        {
+          "id": "chapter-2",
+          "title": "2中文佔比隨年級下降，評估也不只看考試",
+          "text": 509
+        },
+        {
+          "id": "chapter-3",
+          "title": "3同校中學是連續路線，語言和預算會再變",
+          "text": 557
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28申請：低年級已截止，Grade 2–5仍有時間",
+          "text": 888
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先看雙語學科能力，候補不能當成已有學位",
+          "text": 547
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每天的閱讀、功課和車程，要放進同一張時間表",
+          "text": 610
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同看漢基和HKIS，先比較雙語怎樣落實",
+          "text": 578
+        },
+        {
+          "id": "chapter-8",
+          "title": "8預算先計29萬餘元，再處理資本票據和退出期限",
+          "text": 842
+        }
+      ],
+      "overflow": false,
+      "description": "弘立小學Foundation Year至Grade 5的雙語比例與年級銜接，核對2027/28申請、2026/27學費、資本徵費和90天退學通知；Grade 6屬中學部，須先確認孩子對應年級。",
+      "ogDescription": "弘立小學Foundation Year至Grade 5的雙語比例與年級銜接，核對2027/28申請、2026/27學費、資本徵費和90天退學通知；Grade 6屬中學部，須先確認孩子對應年級。",
+      "twitterDescription": "弘立小學Foundation Year至Grade 5的雙語比例與年級銜接，核對2027/28申請、2026/27學費、資本徵費和90天退學通知；Grade 6屬中學部，須先確認孩子對應年級。",
+      "canonical": "https://hkschool.guide/reports/isf-academy-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/isf-academy-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        }
+      ],
+      "facts": [
+        "地址與學段\n薄扶林鋼綫灣道1號；Foundation Year及Grade 1–5。Foundation Year約相當本地K3。\n辦學類別\n非牟利私立獨立學校；日常營運不獲政府資助。\n2026/27學費與資本費\n小學年學費HK$251,130；通常另付年度資本費HK$40,000。\n升中年級銜接\nGrade 6在校方中學部，年齡對應本地小六；Grade 7才對應本地中一。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/isf-academy-primary-tc.png",
+      "sources": [
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/assessment/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/admissions-assessment-process/",
+        "https://academy.isf.edu.hk/index.php/news/applications-for-the-2027-28-academic-year/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/capital-contribution-scheme/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-faq/",
+        "https://academy.isf.edu.hk/wp-content/uploads/Admissions-Information-2026-27_ENG.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://internationalschools.edb.gov.hk/en/schools/92.html"
+      ],
+      "label": "isf-academy-primary-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "isf-academy-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "弘立书院小学部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先认清学制：弘立小学部到Grade 5，Grade 6已属中学",
+          "text": 581
+        },
+        {
+          "id": "chapter-2",
+          "title": "2中文占比随年级下降，评估也不只看考试",
+          "text": 508
+        },
+        {
+          "id": "chapter-3",
+          "title": "3同校中学是连续路线，语言和预算会再变",
+          "text": 556
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28申请：低年级已截止，Grade 2–5仍有时间",
+          "text": 887
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先看双语学科能力，候补不能当成已有学位",
+          "text": 546
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每天的阅读、功课和车程，要放进同一张时间表",
+          "text": 609
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同看汉基和HKIS，先比较双语怎样落实",
+          "text": 577
+        },
+        {
+          "id": "chapter-8",
+          "title": "8预算先计29万余元，再处理资本票据和退出期限",
+          "text": 841
+        }
+      ],
+      "overflow": false,
+      "description": "弘立小学Foundation Year至Grade 5的双语比例与年级衔接，核对2027/28申请、2026/27学费、资本征费和90天退学通知；Grade 6属中学部，须先确认孩子对应年级。",
+      "ogDescription": "弘立小学Foundation Year至Grade 5的双语比例与年级衔接，核对2027/28申请、2026/27学费、资本征费和90天退学通知；Grade 6属中学部，须先确认孩子对应年级。",
+      "twitterDescription": "弘立小学Foundation Year至Grade 5的双语比例与年级衔接，核对2027/28申请、2026/27学费、资本征费和90天退学通知；Grade 6属中学部，须先确认孩子对应年级。",
+      "canonical": "https://hkschool.guide/cn/reports/isf-academy-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/isf-academy-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        }
+      ],
+      "facts": [
+        "地址与学段\n薄扶林钢线湾道1号；Foundation Year及Grade 1–5。Foundation Year约相当本地K3。\n办学类别\n非牟利私立独立学校；日常营运不获政府资助。\n2026/27学费与资本费\n小学年学费HK$251,130；通常另付年度资本费HK$40,000。\n升中年级衔接\nGrade 6在校方中学部，年龄对应本地小六；Grade 7才对应本地中一。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/isf-academy-primary-sc.png",
+      "sources": [
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/assessment/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/admissions-assessment-process/",
+        "https://academy.isf.edu.hk/index.php/news/applications-for-the-2027-28-academic-year/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/capital-contribution-scheme/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-faq/",
+        "https://academy.isf.edu.hk/wp-content/uploads/Admissions-Information-2026-27_ENG.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://internationalschools.edb.gov.hk/en/schools/92.html"
+      ],
+      "label": "isf-academy-primary-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "isf-academy-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "弘立书院小学部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1先认清学制：弘立小学部到Grade 5，Grade 6已属中学",
+          "text": 582
+        },
+        {
+          "id": "chapter-2",
+          "title": "2中文占比随年级下降，评估也不只看考试",
+          "text": 509
+        },
+        {
+          "id": "chapter-3",
+          "title": "3同校中学是连续路线，语言和预算会再变",
+          "text": 557
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28申请：低年级已截止，Grade 2–5仍有时间",
+          "text": 888
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班先看双语学科能力，候补不能当成已有学位",
+          "text": 547
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每天的阅读、功课和车程，要放进同一张时间表",
+          "text": 610
+        },
+        {
+          "id": "chapter-7",
+          "title": "7同看汉基和HKIS，先比较双语怎样落实",
+          "text": 578
+        },
+        {
+          "id": "chapter-8",
+          "title": "8预算先计29万余元，再处理资本票据和退出期限",
+          "text": 842
+        }
+      ],
+      "overflow": false,
+      "description": "弘立小学Foundation Year至Grade 5的双语比例与年级衔接，核对2027/28申请、2026/27学费、资本征费和90天退学通知；Grade 6属中学部，须先确认孩子对应年级。",
+      "ogDescription": "弘立小学Foundation Year至Grade 5的双语比例与年级衔接，核对2027/28申请、2026/27学费、资本征费和90天退学通知；Grade 6属中学部，须先确认孩子对应年级。",
+      "twitterDescription": "弘立小学Foundation Year至Grade 5的双语比例与年级衔接，核对2027/28申请、2026/27学费、资本征费和90天退学通知；Grade 6属中学部，须先确认孩子对应年级。",
+      "canonical": "https://hkschool.guide/cn/reports/isf-academy-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/isf-academy-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/isf-academy-primary"
+        }
+      ],
+      "facts": [
+        "地址与学段\n薄扶林钢线湾道1号；Foundation Year及Grade 1–5。Foundation Year约相当本地K3。\n办学类别\n非牟利私立独立学校；日常营运不获政府资助。\n2026/27学费与资本费\n小学年学费HK$251,130；通常另付年度资本费HK$40,000。\n升中年级衔接\nGrade 6在校方中学部，年龄对应本地小六；Grade 7才对应本地中一。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 7,
+      "ogImage": "https://hkschool.guide/covers/reports/isf-academy-primary-sc.png",
+      "sources": [
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://academy.isf.edu.hk/index.php/learning/primary-school-curriculum/assessment/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-policy/admissions-assessment-process/",
+        "https://academy.isf.edu.hk/index.php/news/applications-for-the-2027-28-academic-year/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/fees-tuition/capital-contribution-scheme/",
+        "https://academy.isf.edu.hk/index.php/welcome-from-dean-of-admissions/admissions-faq/",
+        "https://academy.isf.edu.hk/wp-content/uploads/Admissions-Information-2026-27_ENG.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://internationalschools.edb.gov.hk/en/schools/92.html"
+      ],
+      "label": "isf-academy-primary-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "isf-academy-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "漢基國際學校小學部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1漢基小學的重點，是孩子能否用兩種語言學習",
+          "text": 618
+        },
+        {
+          "id": "chapter-2",
+          "title": "2兩位教師協作，不代表每個孩子讀一樣的中文",
+          "text": 534
+        },
+        {
+          "id": "chapter-3",
+          "title": "3小學可以接中學，但別把小學寫成IB課程",
+          "text": 545
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28招生：Reception已過期，Year 1–6到2月底",
+          "text": 750
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班空缺很少，沒獲面見和進候補是兩種狀態",
+          "text": 626
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要支持兩種語言，也要接受學校的觀察方式",
+          "text": 606
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與弘立、HKIS比較，先把年齡和中文要求對齊",
+          "text": 551
+        },
+        {
+          "id": "chapter-8",
+          "title": "8全年預算要加Annual Fees，15萬元留位費不能再重複算",
+          "text": 945
+        }
+      ],
+      "overflow": false,
+      "description": "漢基國際學校小學Reception至Year 6報告：解釋校本雙語與中文分層，核對2027/28申請、插班與候補，以及學費、資本費和其他年度費用，按實際小學階段比較。",
+      "ogDescription": "漢基國際學校小學Reception至Year 6報告：解釋校本雙語與中文分層，核對2027/28申請、插班與候補，以及學費、資本費和其他年度費用，按實際小學階段比較。",
+      "twitterDescription": "漢基國際學校小學Reception至Year 6報告：解釋校本雙語與中文分層，核對2027/28申請、插班與候補，以及學費、資本費和其他年度費用，按實際小學階段比較。",
+      "canonical": "https://hkschool.guide/reports/cis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/cis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        }
+      ],
+      "facts": [
+        "辦學類別與校舍\n私立國際學校，男女校；寶馬山校園徑1號。\n2026/27學費\nReception HK$226,400；Year 1–6 HK$300,300，另有資本費及Annual Fees。\n小學學段\nReception至Year 6；Reception為半日課程，入學當年8月31日須滿4歲。\n教學語言與課程\n校本探究及綜合課程，中英文協作教學；小學採用校本課程，並非IB PYP。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/cis-primary-tc.png",
+      "sources": [
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.cis.edu.hk/admissions/admissions-process/primary",
+        "https://www.cis.edu.hk/admissions/admissions-process/reception",
+        "https://www.cis.edu.hk/admissions/entry-requirements",
+        "https://www.cis.edu.hk/admissions/admissions-faq",
+        "https://www.cis.edu.hk/admissions/school-fees",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782266092/chineseis/enu1mtfoiivduffdetyi/schoolfee.png",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782200455/chineseis/gfwa5ovujintguwtaaxh/Screenshot2026-06-23at34033PM.png",
+        "https://www.cis.edu.hk/admissions/school-fees/existing-nomination-rights-historical-annual-levy",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion"
+      ],
+      "label": "cis-primary-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "cis-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "漢基國際學校小學部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1漢基小學的重點，是孩子能否用兩種語言學習",
+          "text": 619
+        },
+        {
+          "id": "chapter-2",
+          "title": "2兩位教師協作，不代表每個孩子讀一樣的中文",
+          "text": 535
+        },
+        {
+          "id": "chapter-3",
+          "title": "3小學可以接中學，但別把小學寫成IB課程",
+          "text": 546
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28招生：Reception已過期，Year 1–6到2月底",
+          "text": 751
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班空缺很少，沒獲面見和進候補是兩種狀態",
+          "text": 627
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要支持兩種語言，也要接受學校的觀察方式",
+          "text": 607
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與弘立、HKIS比較，先把年齡和中文要求對齊",
+          "text": 552
+        },
+        {
+          "id": "chapter-8",
+          "title": "8全年預算要加Annual Fees，15萬元留位費不能再重複算",
+          "text": 946
+        }
+      ],
+      "overflow": false,
+      "description": "漢基國際學校小學Reception至Year 6報告：解釋校本雙語與中文分層，核對2027/28申請、插班與候補，以及學費、資本費和其他年度費用，按實際小學階段比較。",
+      "ogDescription": "漢基國際學校小學Reception至Year 6報告：解釋校本雙語與中文分層，核對2027/28申請、插班與候補，以及學費、資本費和其他年度費用，按實際小學階段比較。",
+      "twitterDescription": "漢基國際學校小學Reception至Year 6報告：解釋校本雙語與中文分層，核對2027/28申請、插班與候補，以及學費、資本費和其他年度費用，按實際小學階段比較。",
+      "canonical": "https://hkschool.guide/reports/cis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/cis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        }
+      ],
+      "facts": [
+        "辦學類別與校舍\n私立國際學校，男女校；寶馬山校園徑1號。\n2026/27學費\nReception HK$226,400；Year 1–6 HK$300,300，另有資本費及Annual Fees。\n小學學段\nReception至Year 6；Reception為半日課程，入學當年8月31日須滿4歲。\n教學語言與課程\n校本探究及綜合課程，中英文協作教學；小學採用校本課程，並非IB PYP。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/cis-primary-tc.png",
+      "sources": [
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.cis.edu.hk/admissions/admissions-process/primary",
+        "https://www.cis.edu.hk/admissions/admissions-process/reception",
+        "https://www.cis.edu.hk/admissions/entry-requirements",
+        "https://www.cis.edu.hk/admissions/admissions-faq",
+        "https://www.cis.edu.hk/admissions/school-fees",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782266092/chineseis/enu1mtfoiivduffdetyi/schoolfee.png",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782200455/chineseis/gfwa5ovujintguwtaaxh/Screenshot2026-06-23at34033PM.png",
+        "https://www.cis.edu.hk/admissions/school-fees/existing-nomination-rights-historical-annual-levy",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion"
+      ],
+      "label": "cis-primary-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "cis-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "汉基国际学校小学部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1汉基小学的重点，是孩子能否用两种语言学习",
+          "text": 618
+        },
+        {
+          "id": "chapter-2",
+          "title": "2两位教师协作，不代表每个孩子读一样的中文",
+          "text": 534
+        },
+        {
+          "id": "chapter-3",
+          "title": "3小学可以接中学，但别把小学写成IB课程",
+          "text": 545
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28招生：Reception已过期，Year 1–6到2月底",
+          "text": 750
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班空缺很少，没获面见和进候补是两种状态",
+          "text": 626
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要支持两种语言，也要接受学校的观察方式",
+          "text": 606
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与弘立、HKIS比较，先把年龄和中文要求对齐",
+          "text": 551
+        },
+        {
+          "id": "chapter-8",
+          "title": "8全年预算要加Annual Fees，15万元留位费不能再重复算",
+          "text": 945
+        }
+      ],
+      "overflow": false,
+      "description": "汉基国际学校小学Reception至Year 6报告：解释校本双语与中文分层，核对2027/28申请、插班与候补，以及学费、资本费和其他年度费用，按实际小学阶段比较。",
+      "ogDescription": "汉基国际学校小学Reception至Year 6报告：解释校本双语与中文分层，核对2027/28申请、插班与候补，以及学费、资本费和其他年度费用，按实际小学阶段比较。",
+      "twitterDescription": "汉基国际学校小学Reception至Year 6报告：解释校本双语与中文分层，核对2027/28申请、插班与候补，以及学费、资本费和其他年度费用，按实际小学阶段比较。",
+      "canonical": "https://hkschool.guide/cn/reports/cis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/cis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        }
+      ],
+      "facts": [
+        "办学类别与校舍\n私立国际学校，男女校；宝马山校园径1号。\n2026/27学费\nReception HK$226,400；Year 1–6 HK$300,300，另有资本费及Annual Fees。\n小学学段\nReception至Year 6；Reception为半日课程，入学当年8月31日须满4岁。\n教学语言与课程\n校本探究及综合课程，中英文协作教学；小学采用校本课程，并非IB PYP。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/cis-primary-sc.png",
+      "sources": [
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.cis.edu.hk/admissions/admissions-process/primary",
+        "https://www.cis.edu.hk/admissions/admissions-process/reception",
+        "https://www.cis.edu.hk/admissions/entry-requirements",
+        "https://www.cis.edu.hk/admissions/admissions-faq",
+        "https://www.cis.edu.hk/admissions/school-fees",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782266092/chineseis/enu1mtfoiivduffdetyi/schoolfee.png",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782200455/chineseis/gfwa5ovujintguwtaaxh/Screenshot2026-06-23at34033PM.png",
+        "https://www.cis.edu.hk/admissions/school-fees/existing-nomination-rights-historical-annual-levy",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion"
+      ],
+      "label": "cis-primary-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "cis-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "汉基国际学校小学部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1汉基小学的重点，是孩子能否用两种语言学习",
+          "text": 619
+        },
+        {
+          "id": "chapter-2",
+          "title": "2两位教师协作，不代表每个孩子读一样的中文",
+          "text": 535
+        },
+        {
+          "id": "chapter-3",
+          "title": "3小学可以接中学，但别把小学写成IB课程",
+          "text": 546
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28招生：Reception已过期，Year 1–6到2月底",
+          "text": 751
+        },
+        {
+          "id": "chapter-5",
+          "title": "5插班空缺很少，没获面见和进候补是两种状态",
+          "text": 627
+        },
+        {
+          "id": "chapter-6",
+          "title": "6家庭要支持两种语言，也要接受学校的观察方式",
+          "text": 607
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与弘立、HKIS比较，先把年龄和中文要求对齐",
+          "text": 552
+        },
+        {
+          "id": "chapter-8",
+          "title": "8全年预算要加Annual Fees，15万元留位费不能再重复算",
+          "text": 946
+        }
+      ],
+      "overflow": false,
+      "description": "汉基国际学校小学Reception至Year 6报告：解释校本双语与中文分层，核对2027/28申请、插班与候补，以及学费、资本费和其他年度费用，按实际小学阶段比较。",
+      "ogDescription": "汉基国际学校小学Reception至Year 6报告：解释校本双语与中文分层，核对2027/28申请、插班与候补，以及学费、资本费和其他年度费用，按实际小学阶段比较。",
+      "twitterDescription": "汉基国际学校小学Reception至Year 6报告：解释校本双语与中文分层，核对2027/28申请、插班与候补，以及学费、资本费和其他年度费用，按实际小学阶段比较。",
+      "canonical": "https://hkschool.guide/cn/reports/cis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/cis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/cis-primary"
+        }
+      ],
+      "facts": [
+        "办学类别与校舍\n私立国际学校，男女校；宝马山校园径1号。\n2026/27学费\nReception HK$226,400；Year 1–6 HK$300,300，另有资本费及Annual Fees。\n小学学段\nReception至Year 6；Reception为半日课程，入学当年8月31日须满4岁。\n教学语言与课程\n校本探究及综合课程，中英文协作教学；小学采用校本课程，并非IB PYP。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/cis-primary-sc.png",
+      "sources": [
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://www.cis.edu.hk/admissions/admissions-process/primary",
+        "https://www.cis.edu.hk/admissions/admissions-process/reception",
+        "https://www.cis.edu.hk/admissions/entry-requirements",
+        "https://www.cis.edu.hk/admissions/admissions-faq",
+        "https://www.cis.edu.hk/admissions/school-fees",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782266092/chineseis/enu1mtfoiivduffdetyi/schoolfee.png",
+        "https://resources.finalsite.net/images/f_auto,q_auto/v1782200455/chineseis/gfwa5ovujintguwtaaxh/Screenshot2026-06-23at34033PM.png",
+        "https://www.cis.edu.hk/admissions/school-fees/existing-nomination-rights-historical-annual-levy",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion"
+      ],
+      "label": "cis-primary-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "cis-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "香港國際學校小學部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1小學在淺水灣，先分清主流課程和新雙語路線",
+          "text": 586
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英語主流與DLI雙語沉浸，要按目標年級問清",
+          "text": 742
+        },
+        {
+          "id": "chapter-3",
+          "title": "3Grade 5後去大潭，雙語沉浸不會原樣延續",
+          "text": 613
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小學已關閉常規申請，先確認是否接受個案",
+          "text": 718
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候補池按適配及優先選人，不是先到先得",
+          "text": 601
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每日校車和英語溝通，是家庭要長期承擔的部分",
+          "text": 626
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與漢基、弘立比較：課程路線比“國際”標籤有用",
+          "text": 546
+        },
+        {
+          "id": "chapter-8",
+          "title": "8新生首年基礎額27.31萬元，校車與保險還要另計",
+          "text": 773
+        }
+      ],
+      "overflow": false,
+      "description": "香港國際學校小學R1至Grade 5報告：解釋美國課程、普通話必修與DLI雙語班範圍，核對已截止的2027/28常規申請、候補優先類別，以及學費、退學與退款條件。",
+      "ogDescription": "香港國際學校小學R1至Grade 5報告：解釋美國課程、普通話必修與DLI雙語班範圍，核對已截止的2027/28常規申請、候補優先類別，以及學費、退學與退款條件。",
+      "twitterDescription": "香港國際學校小學R1至Grade 5報告：解釋美國課程、普通話必修與DLI雙語班範圍，核對已截止的2027/28常規申請、候補優先類別，以及學費、退學與退款條件。",
+      "canonical": "https://hkschool.guide/reports/hkis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/hkis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        }
+      ],
+      "facts": [
+        "校舍地址\n小學在淺水灣；大潭為後續中學及行政辦公地點，不能拿中學校址規劃小學通勤。\n辦學類別\n私立國際學校，男女校；採用美國課程。\n2026/27學費及資本費\nR1至Grade 5年學費HK$231,600，年度資本費24,500；新生入學費15,000。\n小學學段\nLower Primary：Reception 1、Reception 2、Grades 1–2；Upper Primary：Grades 3–5。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/hkis-primary-tc.png",
+      "sources": [
+        "https://www.hkis.edu.hk/student-learning/lower-primary",
+        "https://www.hkis.edu.hk/student-learning/upper-primary",
+        "https://www.hkis.edu.hk/student-learning/chinese-studies",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://www.hkis.edu.hk/admissions/how-to-apply",
+        "https://www.hkis.edu.hk/admissions/welcome-to-admissions",
+        "https://www.hkis.edu.hk/admissions/faq",
+        "https://www.hkis.edu.hk/admissions/tuition-fees",
+        "https://www.hkis.edu.hk/userfiles/hkismvc/Finance/New%20Students%20Reservation%20Deposit%20Payment%20and%20Refund%20Policy%202026-27.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/"
+      ],
+      "label": "hkis-primary-tc-390",
+      "locale": "tc",
+      "width": 390,
+      "slug": "hkis-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "香港國際學校小學部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1小學在淺水灣，先分清主流課程和新雙語路線",
+          "text": 587
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英語主流與DLI雙語沉浸，要按目標年級問清",
+          "text": 743
+        },
+        {
+          "id": "chapter-3",
+          "title": "3Grade 5後去大潭，雙語沉浸不會原樣延續",
+          "text": 614
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小學已關閉常規申請，先確認是否接受個案",
+          "text": 719
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候補池按適配及優先選人，不是先到先得",
+          "text": 602
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每日校車和英語溝通，是家庭要長期承擔的部分",
+          "text": 627
+        },
+        {
+          "id": "chapter-7",
+          "title": "7與漢基、弘立比較：課程路線比“國際”標籤有用",
+          "text": 547
+        },
+        {
+          "id": "chapter-8",
+          "title": "8新生首年基礎額27.31萬元，校車與保險還要另計",
+          "text": 774
+        }
+      ],
+      "overflow": false,
+      "description": "香港國際學校小學R1至Grade 5報告：解釋美國課程、普通話必修與DLI雙語班範圍，核對已截止的2027/28常規申請、候補優先類別，以及學費、退學與退款條件。",
+      "ogDescription": "香港國際學校小學R1至Grade 5報告：解釋美國課程、普通話必修與DLI雙語班範圍，核對已截止的2027/28常規申請、候補優先類別，以及學費、退學與退款條件。",
+      "twitterDescription": "香港國際學校小學R1至Grade 5報告：解釋美國課程、普通話必修與DLI雙語班範圍，核對已截止的2027/28常規申請、候補優先類別，以及學費、退學與退款條件。",
+      "canonical": "https://hkschool.guide/reports/hkis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/hkis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        }
+      ],
+      "facts": [
+        "校舍地址\n小學在淺水灣；大潭為後續中學及行政辦公地點，不能拿中學校址規劃小學通勤。\n辦學類別\n私立國際學校，男女校；採用美國課程。\n2026/27學費及資本費\nR1至Grade 5年學費HK$231,600，年度資本費24,500；新生入學費15,000。\n小學學段\nLower Primary：Reception 1、Reception 2、Grades 1–2；Upper Primary：Grades 3–5。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/hkis-primary-tc.png",
+      "sources": [
+        "https://www.hkis.edu.hk/student-learning/lower-primary",
+        "https://www.hkis.edu.hk/student-learning/upper-primary",
+        "https://www.hkis.edu.hk/student-learning/chinese-studies",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://www.hkis.edu.hk/admissions/how-to-apply",
+        "https://www.hkis.edu.hk/admissions/welcome-to-admissions",
+        "https://www.hkis.edu.hk/admissions/faq",
+        "https://www.hkis.edu.hk/admissions/tuition-fees",
+        "https://www.hkis.edu.hk/userfiles/hkismvc/Finance/New%20Students%20Reservation%20Deposit%20Payment%20and%20Refund%20Policy%202026-27.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/"
+      ],
+      "label": "hkis-primary-tc-1440",
+      "locale": "tc",
+      "width": 1440,
+      "slug": "hkis-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "香港国际学校小学部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1小学在浅水湾，先分清主流课程和新双语路线",
+          "text": 586
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英语主流与DLI双语沉浸，要按目标年级问清",
+          "text": 742
+        },
+        {
+          "id": "chapter-3",
+          "title": "3Grade 5后去大潭，双语沉浸不会原样延续",
+          "text": 613
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小学已关闭常规申请，先确认是否接受个案",
+          "text": 718
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候补池按适配及优先选人，不是先到先得",
+          "text": 601
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每日校车和英语沟通，是家庭要长期承担的部分",
+          "text": 626
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与汉基、弘立比较：课程路线比“国际”标签有用",
+          "text": 546
+        },
+        {
+          "id": "chapter-8",
+          "title": "8新生首年基础额27.31万元，校车与保险还要另计",
+          "text": 773
+        }
+      ],
+      "overflow": false,
+      "description": "香港国际学校小学R1至Grade 5报告：解释美国课程、普通话必修与DLI双语班范围，核对已截止的2027/28常规申请、候补优先类别，以及学费、退学与退款条件。",
+      "ogDescription": "香港国际学校小学R1至Grade 5报告：解释美国课程、普通话必修与DLI双语班范围，核对已截止的2027/28常规申请、候补优先类别，以及学费、退学与退款条件。",
+      "twitterDescription": "香港国际学校小学R1至Grade 5报告：解释美国课程、普通话必修与DLI双语班范围，核对已截止的2027/28常规申请、候补优先类别，以及学费、退学与退款条件。",
+      "canonical": "https://hkschool.guide/cn/reports/hkis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/hkis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        }
+      ],
+      "facts": [
+        "校舍地址\n小学在浅水湾；大潭为后续中学及行政办公地点，不能拿中学校址规划小学通勤。\n办学类别\n私立国际学校，男女校；采用美国课程。\n2026/27学费及资本费\nR1至Grade 5年学费HK$231,600，年度资本费24,500；新生入学费15,000。\n小学学段\nLower Primary：Reception 1、Reception 2、Grades 1–2；Upper Primary：Grades 3–5。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/hkis-primary-sc.png",
+      "sources": [
+        "https://www.hkis.edu.hk/student-learning/lower-primary",
+        "https://www.hkis.edu.hk/student-learning/upper-primary",
+        "https://www.hkis.edu.hk/student-learning/chinese-studies",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://www.hkis.edu.hk/admissions/how-to-apply",
+        "https://www.hkis.edu.hk/admissions/welcome-to-admissions",
+        "https://www.hkis.edu.hk/admissions/faq",
+        "https://www.hkis.edu.hk/admissions/tuition-fees",
+        "https://www.hkis.edu.hk/userfiles/hkismvc/Finance/New%20Students%20Reservation%20Deposit%20Payment%20and%20Refund%20Policy%202026-27.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/"
+      ],
+      "label": "hkis-primary-sc-390",
+      "locale": "sc",
+      "width": 390,
+      "slug": "hkis-primary",
+      "result": "PASS"
+    },
+    {
+      "h1": [
+        "香港国际学校小学部"
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "1小学在浅水湾，先分清主流课程和新双语路线",
+          "text": 587
+        },
+        {
+          "id": "chapter-2",
+          "title": "2英语主流与DLI双语沉浸，要按目标年级问清",
+          "text": 743
+        },
+        {
+          "id": "chapter-3",
+          "title": "3Grade 5后去大潭，双语沉浸不会原样延续",
+          "text": 614
+        },
+        {
+          "id": "chapter-4",
+          "title": "42027/28小学已关闭常规申请，先确认是否接受个案",
+          "text": 719
+        },
+        {
+          "id": "chapter-5",
+          "title": "5候补池按适配及优先选人，不是先到先得",
+          "text": 602
+        },
+        {
+          "id": "chapter-6",
+          "title": "6每日校车和英语沟通，是家庭要长期承担的部分",
+          "text": 627
+        },
+        {
+          "id": "chapter-7",
+          "title": "7与汉基、弘立比较：课程路线比“国际”标签有用",
+          "text": 547
+        },
+        {
+          "id": "chapter-8",
+          "title": "8新生首年基础额27.31万元，校车与保险还要另计",
+          "text": 774
+        }
+      ],
+      "overflow": false,
+      "description": "香港国际学校小学R1至Grade 5报告：解释美国课程、普通话必修与DLI双语班范围，核对已截止的2027/28常规申请、候补优先类别，以及学费、退学与退款条件。",
+      "ogDescription": "香港国际学校小学R1至Grade 5报告：解释美国课程、普通话必修与DLI双语班范围，核对已截止的2027/28常规申请、候补优先类别，以及学费、退学与退款条件。",
+      "twitterDescription": "香港国际学校小学R1至Grade 5报告：解释美国课程、普通话必修与DLI双语班范围，核对已截止的2027/28常规申请、候补优先类别，以及学费、退学与退款条件。",
+      "canonical": "https://hkschool.guide/cn/reports/hkis-primary",
+      "alternates": [
+        {
+          "lang": "zh-Hant-HK",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        },
+        {
+          "lang": "zh-Hans",
+          "url": "https://hkschool.guide/cn/reports/hkis-primary"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://hkschool.guide/reports/hkis-primary"
+        }
+      ],
+      "facts": [
+        "校舍地址\n小学在浅水湾；大潭为后续中学及行政办公地点，不能拿中学校址规划小学通勤。\n办学类别\n私立国际学校，男女校；采用美国课程。\n2026/27学费及资本费\nR1至Grade 5年学费HK$231,600，年度资本费24,500；新生入学费15,000。\n小学学段\nLower Primary：Reception 1、Reception 2、Grades 1–2；Upper Primary：Grades 3–5。"
+      ],
+      "toc": [
+        "#chapter-1",
+        "#chapter-2",
+        "#chapter-3",
+        "#chapter-4",
+        "#chapter-5",
+        "#chapter-6",
+        "#chapter-7",
+        "#chapter-8"
+      ],
+      "tables": 8,
+      "ogImage": "https://hkschool.guide/covers/reports/hkis-primary-sc.png",
+      "sources": [
+        "https://www.hkis.edu.hk/student-learning/lower-primary",
+        "https://www.hkis.edu.hk/student-learning/upper-primary",
+        "https://www.hkis.edu.hk/student-learning/chinese-studies",
+        "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+        "https://www.hkis.edu.hk/admissions/how-to-apply",
+        "https://www.hkis.edu.hk/admissions/welcome-to-admissions",
+        "https://www.hkis.edu.hk/admissions/faq",
+        "https://www.hkis.edu.hk/admissions/tuition-fees",
+        "https://www.hkis.edu.hk/userfiles/hkismvc/Finance/New%20Students%20Reservation%20Deposit%20Payment%20and%20Refund%20Policy%202026-27.pdf",
+        "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+        "https://www.cis.edu.hk/academics/primary/primary-programme",
+        "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/"
+      ],
+      "label": "hkis-primary-sc-1440",
+      "locale": "sc",
+      "width": 1440,
+      "slug": "hkis-primary",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "failures": []
+}

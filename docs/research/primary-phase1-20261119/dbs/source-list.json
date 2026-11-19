@@ -1,0 +1,82 @@
+[
+  {
+    "label": "小学概览2026",
+    "url": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "scope": "学校基本资料、测考、支援和比较学校",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "2026学校招生书",
+    "url": "https://www.dbspd.edu.hk/download/dbspd_prospectus_2026.pdf",
+    "scope": "科目语言、师资、选修、减免",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "2027/28小一招生",
+    "url": "https://www.dbspd.edu.hk/g1-admission",
+    "scope": "150名额、年龄、日程及升中基本要求",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "最新招生结果",
+    "url": "https://www.dbspd.edu.hk/admission-news",
+    "scope": "11月9日首轮结果及申请截止",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "面试入口通知",
+    "url": "https://www.dbspd.edu.hk/node/417",
+    "scope": "10月8–10日安排",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "插班",
+    "url": "https://www.dbspd.edu.hk/g2-6-admission",
+    "scope": "2026/27结束与结果",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "教育局E.D.314",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/510777.pdf",
+    "scope": "本地、非本地小学及中学收费",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "学校收费通知",
+    "url": "https://www.dbspd.edu.hk/node/416",
+    "scope": "本地非本地年度收费",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "减免网页",
+    "url": "https://www.dbspd.edu.hk/fee-remission",
+    "scope": "制度与旧轮次截止",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "教育局2027填表须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "scope": "接受直资及私立程序区别",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  }
+]

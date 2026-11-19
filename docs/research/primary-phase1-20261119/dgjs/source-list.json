@@ -1,0 +1,73 @@
+[
+  {
+    "label": "小学概览2026官方数据",
+    "url": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "scope": "学校性质、课程、评估及比较校字段",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "女拔2027/28小一招生",
+    "url": "https://www.dgjs.edu.hk/?page_id=14231",
+    "scope": "年龄、144名额、材料及日程",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "女拔招生系统",
+    "url": "https://admission.dgjs.edu.hk/?page=2",
+    "scope": "11月6日首轮结果",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "女拔FAQ",
+    "url": "https://www.dgjs.edu.hk/?page_id=3103",
+    "scope": "面见原则、初小粤语中文；旧日期不采用",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "女拔插班",
+    "url": "https://www.dgjs.edu.hk/?page_id=858",
+    "scope": "2026/27已截止",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "EDB314女拔",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/210706.pdf",
+    "scope": "2026/9生效学费及期数",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "女拔学费减免",
+    "url": "https://www.dgjs.edu.hk/?page_id=51",
+    "scope": "援助和处理时限",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "教育局小一入学",
+    "url": "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+    "scope": "官津统筹制度与私立／直资区别",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "教育局2027小一填表须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "scope": "直资接受及私立名单送交规则，第7页",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  }
+]

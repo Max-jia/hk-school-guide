@@ -1,0 +1,87 @@
+[
+  {
+    "label": "小学课程",
+    "url": "https://www.cis.edu.hk/academics/primary/primary-programme",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "小一至六申请",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/primary",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "Reception申请",
+    "url": "https://www.cis.edu.hk/admissions/admissions-process/reception",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "入学要求",
+    "url": "https://www.cis.edu.hk/admissions/entry-requirements",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "招生问答",
+    "url": "https://www.cis.edu.hk/admissions/admissions-faq",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2026/27收费",
+    "url": "https://www.cis.edu.hk/admissions/school-fees",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2026/27收费原图",
+    "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1782266092/chineseis/enu1mtfoiivduffdetyi/schoolfee.png",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2026/27杂费原图",
+    "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1782200455/chineseis/gfwa5ovujintguwtaaxh/Screenshot2026-06-23at34033PM.png",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "提名权现行说明",
+    "url": "https://www.cis.edu.hk/admissions/school-fees/existing-nomination-rights-historical-annual-levy",
+    "scope": "小学阶段；具体适用学年见正文",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "2027年度小一入学统筹办法常见问题",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/FAQ_TC.pdf",
+    "scope": "2027年度POA资格；由主代理下载核验",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "弘立小学官方语言比例",
+    "url": "https://academy.isf.edu.hk/index.php/learning/putonghua-and-english-mastery/",
+    "scope": "比较学校小学语言比例与学制",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "HKIS双语沉浸课程",
+    "url": "https://www.hkis.edu.hk/student-learning/dual-language-immersion",
+    "scope": "比较学校DLI实施范围及语言比例",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  }
+]

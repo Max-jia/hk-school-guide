@@ -1,0 +1,285 @@
+{
+  "pagesCompared": 5428,
+  "newBilingualPages": [
+    "cn/reports/cis-primary.html",
+    "cn/reports/hkis-primary.html",
+    "cn/reports/isf-academy-primary.html",
+    "cn/reports/plk-choi-kai-yau-primary.html",
+    "reports/cis-primary.html",
+    "reports/hkis-primary.html",
+    "reports/isf-academy-primary.html",
+    "reports/plk-choi-kai-yau-primary.html"
+  ],
+  "missingPages": [],
+  "changedPages": [
+    {
+      "path": "cn/reports/braemar-hill.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/cckg.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/dbs-secondary.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/dbs.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "cn/reports/dgjs.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "cn/reports/evangel.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/icqm.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/pkcps.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "cn/reports/spccps.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "cn/reports/spcps.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/stcat.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/tsl.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "cn/reports/wkf.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "cn/reports/ywps.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "cn/reports.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "cn.html",
+      "changed": [
+        "text"
+      ]
+    },
+    {
+      "path": "index.html",
+      "changed": [
+        "text"
+      ]
+    },
+    {
+      "path": "reports/braemar-hill.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/cckg.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/dbs-secondary.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/dbs.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "reports/dgjs.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "reports/evangel.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/icqm.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/pkcps.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "reports/spccps.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "reports/spcps.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/stcat.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/tsl.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "reports/wkf.html",
+      "changed": [
+        "text",
+        "links"
+      ]
+    },
+    {
+      "path": "reports/ywps.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    },
+    {
+      "path": "reports.html",
+      "changed": [
+        "text",
+        "seo",
+        "links",
+        "schemas"
+      ]
+    }
+  ],
+  "unexpectedDifferences": [],
+  "relatedFooterOnlyChanges": [
+    "cn/reports/braemar-hill.html",
+    "cn/reports/cckg.html",
+    "cn/reports/dbs-secondary.html",
+    "cn/reports/evangel.html",
+    "cn/reports/icqm.html",
+    "cn/reports/spcps.html",
+    "cn/reports/stcat.html",
+    "cn/reports/wkf.html",
+    "reports/braemar-hill.html",
+    "reports/cckg.html",
+    "reports/dbs-secondary.html",
+    "reports/evangel.html",
+    "reports/icqm.html",
+    "reports/spcps.html",
+    "reports/stcat.html",
+    "reports/wkf.html"
+  ]
+}

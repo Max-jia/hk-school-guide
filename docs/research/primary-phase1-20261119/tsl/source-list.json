@@ -1,0 +1,98 @@
+[
+  {
+    "label": "教育局现行收费证明书（E.D.314）",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/529796.pdf",
+    "scope": "原件与渲染页逐项核对：年费及期数与校方当届价目一致；证书生效日不等于适用学年。",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27；现行证书2023-09-01生效"
+  },
+  {
+    "label": "PSP2026",
+    "url": "https://www.chsc.hk/psp2026/sch_detail.php?lang_id=2&sch_id=529",
+    "scope": "学校类别、地址、语言、班数、评估、作息、设施及升中关系；培侨收费栏与现行314冲突，不作收费依据",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27（教师部分为2025/26）"
+  },
+  {
+    "label": "小一2027/28",
+    "url": "https://plkctslps.edu.hk/en/content.php?wid=87",
+    "scope": "小一2027/28所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "插班2026",
+    "url": "https://plkctslps.edu.hk/en/content.php?wid=89",
+    "scope": "插班2026所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "学费",
+    "url": "https://plkctslps.edu.hk/en/content.php?wid=149",
+    "scope": "学费所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "班制课程",
+    "url": "https://plkctslps.edu.hk/en/content.php?wid=49",
+    "scope": "班制课程所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "升中2025/26",
+    "url": "https://plkctslps.edu.hk/en/content.php?wid=191",
+    "scope": "升中2025/26所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "中文科",
+    "url": "https://plkctslps.edu.hk/en/content.php?wid=109",
+    "scope": "中文科所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "减免",
+    "url": "https://plkctslps.edu.hk/en/content.php?wid=29",
+    "scope": "减免所列具体事实，见fact-ledger对应条目",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局小一入学2027",
+    "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/spa-systems/primary-1-admission/index.html",
+    "scope": "教育局小一入学2027所列具体事实，见fact-ledger对应条目",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局2027填表须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "scope": "直资接受学位与私立录取对POA的不同影响",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2027/28"
+  },
+  {
+    "label": "培侨2026/27收费",
+    "url": "https://www.puikiu.edu.hk/tc/school.php?id=35",
+    "scope": "三校比较、学费、身份转变收费",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  },
+  {
+    "label": "蔡继有收费",
+    "url": "https://www.cky.edu.hk/en/site/view?name=School+Fees",
+    "scope": "三校比较、分学段收费",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19",
+    "academicYear": "2026/27"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "skill": "humanizer-zh",
+  "checkedOn": "2026-11-19",
+  "dimensions": {
+    "直接性": 9,
+    "节奏": 8,
+    "信任读者": 9,
+    "真人感": 8,
+    "简洁性": 8
+  },
+  "total": 42,
+  "max": 50,
+  "scope": "编辑自评，不是学校评级，也不等于用户验收",
+  "changes": [
+    "删除民间排名、录取概率、匿名家长故事及雷达分",
+    "按年级写语言比例和实际申请状态",
+    "预算列算式，留位订金避免重复计费",
+    "保留明确未知项，未用反复空泛免责声明代替解释",
+    "独立复审P2修订：明确小学普通话必修及拒绝DLI转主流须进候补池"
+  ],
+  "reviewStatus": "content-authored-needs-root-render-review",
+  "remaining": [
+    "根代理统一繁简转换、来源区域及桌面手机浏览器验收"
+  ],
+  "reviewP2Status": "fixed-and-structurally-checked-2026-11-19"
+}

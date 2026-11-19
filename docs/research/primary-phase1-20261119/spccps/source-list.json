@@ -1,0 +1,154 @@
+[
+  {
+    "label": "家校会《小学概览2026》：圣保罗男女附小",
+    "url": "https://www.chsc.hk/datagovhk/psp_2026_tc.csv",
+    "scope": "本校官方行：直资男女、地址、语言、各级班数、测考、作息、家教会100、一条龙；比较校英华/女拔性质与性别。",
+    "academicYear": "2026/27",
+    "sourceType": "school-profile",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方2027/28小一报名须知",
+    "url": "https://www.spcc.edu.hk/f/page/1089/10753/2027-2028%20%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E5%A0%B1%E5%90%8D%E5%90%8D%E9%A0%88%E7%9F%A5.pdf",
+    "scope": "出生年、9/7–11截止、75不退、附件上限2页、两轮面见约300入围、150名额、70%上限/30%下限/助学整体5%、2027/1暂定结果。",
+    "academicYear": "2027/28",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方小一招生当前状态",
+    "url": "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p1",
+    "scope": "明确已截止；不把网页仍有报名链接当仍有空缺。",
+    "academicYear": "2027/28",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局收费证明书：圣保罗男女附小",
+    "url": "https://applications.edb.gov.hk/schoolsearch/schoolfee/514187.pdf",
+    "scope": "P1–3 85700；P4 82200；P5–6 77300，十期，2026-09-01生效，原件与渲染页已读。",
+    "academicYear": "2026/27",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方学费减免及财务支援",
+    "url": "https://www.spcc.edu.hk/chi/admissions/fee-remission-and-financial-aid",
+    "scope": "小学分级收费与314一致；20–100%五档不设名额上限；四人家庭可动用收入基准421250；非税前年薪，正式审批区别。",
+    "academicYear": "2026/27",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方教学语言",
+    "url": "https://www.spccps.edu.hk/tc/medium-instruction",
+    "scope": "粤语授课，小三开始普通话中文，小四至六普通话中文，小六除中文及术科外英语媒介。",
+    "academicYear": "当前官网",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方中文科",
+    "url": "https://www.spccps.edu.hk/tc/%E4%B8%AD%E6%96%87%E7%A7%91",
+    "scope": "小一二粤语中文及普通话母语助教；阅读写作、名篇、主题阅读及家长阅读安排；不把做法当统一学习结果。",
+    "academicYear": "当前官网",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方英文科",
+    "url": "https://www.spccps.edu.hk/tc/%E8%8B%B1%E6%96%87%E7%A7%91",
+    "scope": "分级读本、P2/3儿童经典、高小文学、戏剧、课间英语、亲子阅读及入学前衔接；具体参与与服务不保证。",
+    "academicYear": "当前官网",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方班级编制",
+    "url": "https://www.spccps.edu.hk/tc/class-structure",
+    "scope": "每级5班，共30班，每班平均约30人；非固定同时在班师资。",
+    "academicYear": "当前官网",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方学生支援",
+    "url": "https://www.spccps.edu.hk/tc/student-support",
+    "scope": "学习支援、辅导/增益、心理支援、读写/社交/言语小组；不保证个别支援次数。",
+    "academicYear": "当前官网",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方2026/27插班须知",
+    "url": "https://www.spcc.edu.hk/f/page/1090/10485/%E7%94%B3%E8%AB%8B%E9%A0%88%E7%9F%A5%202026-27.pdf",
+    "scope": "P3–5、4/27–5/8、一份申请不重读、75不退、两年成绩、7/11笔试、7/15–16面试、7月通知，均属已过轮次。",
+    "academicYear": "2026/27",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方2026/27插班常见问题",
+    "url": "https://www.spcc.edu.hk/f/page/1090/10485/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%202026-27.pdf",
+    "scope": "内地海外无指定比例但须粤语学习能力；不降级重读，数学中文，简体字/惯用语回答，家长面见；符合要求升中；不设年度开放日及不特别安排参观。",
+    "academicYear": "2026/27",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方插班当前页面",
+    "url": "https://www.spcc.edu.hk/chi/admissions/local-admissions/primary/p3-p5",
+    "scope": "2026/27已截止，目标P3–5，未来未公告。",
+    "academicYear": "2026/27",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方2025/26不招插班公告",
+    "url": "https://www.spccps.edu.hk/tc/latest_new/%E6%9C%89%E9%97%9C-2025-%E5%B9%B4%E5%BA%A6%E6%8F%92%E7%8F%AD%E7%94%9F%E6%8B%9B%E6%94%B6",
+    "scope": "只作历史轮次对照，不预测以后必收或不收。",
+    "academicYear": "2025/26历史",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "校方2027/28幼稚园提名助学须知",
+    "url": "https://www.spcc.edu.hk/f/page/1089/10725/FD%20Scheme%20%E9%A0%88%E7%9F%A5%E5%8F%8A%E6%A0%A1%E9%95%B7%E6%8F%90%E5%90%8D%E8%A1%A8%E6%A0%BC2027.pdf",
+    "scope": "全免资格、提名及两轮甄选；整体不多于5%，不是保送。",
+    "academicYear": "2027/28",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "中学官网DSE课程与选科问答",
+    "url": "https://www.spcc.edu.hk/academic/curriculum/dse",
+    "scope": "高中课程选择及成绩编配、有意IB面谈、不可同时修读/完成中四IB预备后不可转DSE，属于后续阶段非小学入读承诺。",
+    "academicYear": "当前官网",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "中学官网IBDP课程",
+    "url": "https://www.spcc.edu.hk/academic/curriculum/ibdp",
+    "scope": "确认中学并行DSE及IBDP，不把中学课程或成绩写为小学IB。",
+    "academicYear": "当前官网",
+    "sourceType": "school-official",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局2027小一填表须知",
+    "url": "https://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/Notes_application_form.pdf",
+    "scope": "第四(2)接受直资取消统筹获派；与私立第四(3)名单送校规则分别处理，不保证所有路线同时保留。",
+    "academicYear": "2027/28",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  },
+  {
+    "label": "教育局学校位置及资料",
+    "url": "https://www.edb.gov.hk/attachment/en/student-parents/sch-info/sch-search/sch-location-info/SCH_LOC_EDB.json",
+    "scope": "本校实体及比较校弘立PIS、男女；比较不延伸到未核当届收费与录取概率。",
+    "academicYear": "2026-11-19读取",
+    "sourceType": "government",
+    "checkedOn": "2026-11-19"
+  }
+]
