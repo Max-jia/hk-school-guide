@@ -19,7 +19,8 @@
     "src/content/reports/ywps.json",
     "src/lib/report-html.ts",
     "src/lib/report-sources.ts",
-    "src/lib/reports.ts"
+    "src/lib/reports.ts",
+    "src/content/generated/report-count.json"
   ],
   "addedSourcePaths": [
     "public/covers/cis-primary.png",
@@ -81,5 +82,10 @@
     "src/content/reports/plk-choi-kai-yau-primary.json"
   ],
   "releasePath": "/private/tmp/hk-primary-phase1-release-20261119",
-  "unexpectedDifferences": []
+  "unexpectedDifferences": [],
+  "generatedCountChange": {
+    "before": 239,
+    "after": 243,
+    "reason": "four new primary reports; prebuild generation"
+  }
 }
