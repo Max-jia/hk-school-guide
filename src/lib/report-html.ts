@@ -531,25 +531,6 @@ function getSecondaryHeroFacts(slug: string, hero: string, locale: Locale): { la
   ];
 }
 
-function getSchoolNetwork(facts: { label: string; value: string }[]): { fact: { label: string; value: string }; number: string; caption: string } | null {
-  const fact = facts.find(({ label, value }) => /校網|校网/.test(label) && /\d+\s*(?:校網|校网)/.test(cleanText(value)));
-  if (!fact) return null;
-
-  const value = cleanText(fact.value);
-  const number = value.match(/(\d+)\s*(?:校網|校网)/)?.[1];
-  if (!number) return null;
-
-  const caption = value
-    .split(/\s*[·•]\s*/)
-    .filter((part) => !new RegExp(`${number}\\s*(?:校網|校网)`).test(part))
-    .map((part) => part.replace(/\s*✅.*$/, "").trim())
-    .filter(Boolean)
-    .slice(0, 2)
-    .join(" · ");
-
-  return { fact, number, caption };
-}
-
 export function buildEditorialHeroHtml(hero: string, body: string, locale: Locale, free: boolean, slug = ""): string {
   const tier = hero.match(/<div\b[^>]*class=(['"])[^'"]*\btier-mega\b[^'"]*\1[^>]*>([\s\S]*?)<\/div>/i)?.[2] ?? "";
   const originalTitle = hero.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? "";
@@ -560,16 +541,16 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
   const subtitle = hero.match(/<p\b[^>]*class=(['"])[^'"]*\bsub\b[^'"]*\1[^>]*>([\s\S]*?)<\/p>/i)?.[2] ?? "";
   const [englishName, ...details] = cleanText(subtitle).split(/\s*·\s*/);
   const isUnrated = /暂缓评级|暂不评级|未作评级|未评级|暂无评级|暫緩評級|暫不評級|未作評級|未評級|暫無評級/i.test(cleanText(tier));
-  const tierGrade = isUnrated ? null : cleanText(tier).match(/S|A\+?|B|C/i)?.[0] ?? "—";
+  const tierGrade = cleanText(tier).match(/^(?:(?:✅|✔️?)\s*)?(S|A\+?|B|C)(?=[\s级級·]|$)/)?.[1];
   // Keep this correction within the primary reports reviewed in this batch.
   const isPrimaryReport = Boolean(slug && [
     "spccps", "dgjs", "dbs", "ywps", "tsl", "pkcps",
     "plk-choi-kai-yau-primary", "isf-academy-primary", "cis-primary", "hkis-primary",
     "spcps", "hkups", "wkf", "logos", "evangel", "gt", "vsa-primary", "pcps", "munsangps", "aps",
+    "kts", "sfa", "ghps", "spcs", "sscps", "rcps", "shckps", "lsps", "mcs", "sjps",
   ].includes(slug));
   const isSecondaryReport = !isPrimaryReport && /中学|中學/.test(`${title} ${cleanText(tier)}`);
   const facts = isSecondaryReport ? getSecondaryHeroFacts(slug, hero, locale) : getReportFacts(body);
-  const schoolNetwork = getSchoolNetwork(facts);
   const freeBadge = free ? `<span class="hero-free-badge">${L("本报告完全免费", locale)}</span>` : "";
   const secondaryRatingStatus = isSecondaryReport
     ? `<span class="hero-rating-status" aria-label="${escapeHtml(L("平台综合评级暂缓；坊间学术定位另行标示，不代表教育局评级或学校质量结论", locale))}">${escapeHtml(L("平台评级：暂缓", locale))}</span>`
@@ -578,11 +559,7 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
     /^(.*?)(官立小學|官立小学)$/,
     (_match, prefix: string, suffix: string) => `${prefix}<br>${suffix}`
   );
-  const ribbonFacts = schoolNetwork
-    ? facts.filter((fact) => fact !== schoolNetwork.fact).slice(0, 4)
-    : isSecondaryReport
-      ? facts.slice(0, 4)
-      : facts;
+  const ribbonFacts = isSecondaryReport ? facts.slice(0, 4) : facts;
   const factMarkup = ribbonFacts.map((fact) => {
     const fullValue = cleanText(fact.value);
     const summaryValue = getEditorialFactValue(fact);
@@ -590,17 +567,10 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
   }).join("");
   const secondaryFactClass = isSecondaryReport ? " fact-ribbon--secondary" : "";
   const factsRibbon = factMarkup ? `<div class="fact-ribbon fact-ribbon--${ribbonFacts.length}${secondaryFactClass}">${factMarkup}</div>` : "";
-  const indexLabel = schoolNetwork ? L("所屬校網", locale) : L(isUnrated ? "暂缓评级" : "報告評級", locale);
-  const indexNumber = schoolNetwork
-    ? schoolNetwork.number
-    : isUnrated
-      ? L("暂缓", locale)
-      : tierGrade ?? "—";
-  const indexCaption = schoolNetwork?.caption
-      ? `<span class="hero-index-caption">${escapeHtml(schoolNetwork.caption)}</span>`
-      : "";
+  const indexLabel = L("平台评级", locale);
+  const indexNumber = isUnrated ? L("暂缓", locale) : tierGrade ?? "—";
 
-  return `<section class="shell hero"><div class="hero-grid${isSecondaryReport ? " hero-grid--secondary" : ""}"><div><div class="hero-kicker">${tier}${secondaryRatingStatus}${freeBadge}</div><h1 id="school-title">${titleMarkup}</h1><div class="english-name">${escapeHtml(englishName ?? "")}</div>${details.length ? `<p class="dek">${escapeHtml(details.join(" · "))}</p>` : ""}</div>${isSecondaryReport ? "" : `<aside class="hero-index${isUnrated ? " hero-index--unrated" : ""}" aria-label="${escapeHtml(indexLabel)}"><span class="hero-index-label">${escapeHtml(indexLabel)}</span><span class="hero-index-number">${escapeHtml(indexNumber)}</span>${indexCaption}</aside>`}</div>${factsRibbon}</section>`;
+  return `<section class="shell hero"><div class="hero-grid${isSecondaryReport ? " hero-grid--secondary" : ""}"><div><div class="hero-kicker">${tier}${secondaryRatingStatus}${freeBadge}</div><h1 id="school-title">${titleMarkup}</h1><div class="english-name">${escapeHtml(englishName ?? "")}</div>${details.length ? `<p class="dek">${escapeHtml(details.join(" · "))}</p>` : ""}</div>${isSecondaryReport ? "" : `<aside class="hero-index${isUnrated ? " hero-index--unrated" : ""}" aria-label="${escapeHtml(indexLabel)}"><span class="hero-index-label">${escapeHtml(indexLabel)}</span><span class="hero-index-number">${escapeHtml(indexNumber)}</span></aside>`}</div>${factsRibbon}</section>`;
 }
 
 export function reportChapterItems(html: string): { id: string; title: string }[] {
