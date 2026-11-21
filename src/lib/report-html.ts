@@ -3,6 +3,7 @@ import reportMeta from "@/content/report-meta.json";
 
 /** Every report JSON, including the archived direct route, is admitted after content-parity checks. */
 export const EDITORIAL_REPORT_SLUGS = [
+  "vsa-primary",
   "plk-choi-kai-yau-primary",
   "isf-academy-primary",
   "cis-primary",
@@ -564,6 +565,7 @@ export function buildEditorialHeroHtml(hero: string, body: string, locale: Local
   const isPrimaryReport = Boolean(slug && [
     "spccps", "dgjs", "dbs", "ywps", "tsl", "pkcps",
     "plk-choi-kai-yau-primary", "isf-academy-primary", "cis-primary", "hkis-primary",
+    "spcps", "hkups", "wkf", "logos", "evangel", "gt", "vsa-primary", "pcps", "munsangps", "aps",
   ].includes(slug));
   const isSecondaryReport = !isPrimaryReport && /中学|中學/.test(`${title} ${cleanText(tier)}`);
   const facts = isSecondaryReport ? getSecondaryHeroFacts(slug, hero, locale) : getReportFacts(body);
